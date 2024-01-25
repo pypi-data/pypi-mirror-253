@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: database-common-tools
+Version: 0.0.5
+Summary: My short description for my project.
+Home-page: https://github.com/yangming9/database-common-tools.git
+Author: Coder Yang
+Author-email: yma91412@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: jsonpath
+Requires-Dist: pymongo
+Requires-Dist: redis
+Requires-Dist: setuptools
+Requires-Dist: kafka
+
+
+# database-common-tools
