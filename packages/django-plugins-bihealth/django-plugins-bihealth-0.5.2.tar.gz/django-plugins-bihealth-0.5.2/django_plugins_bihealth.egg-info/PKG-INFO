@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: django-plugins-bihealth
+Version: 0.5.2
+Summary: django-plugins-bihealth
+Home-page: https://github.com/bihealth/django-plugins
+Download-URL: http://pypi.python.org/pypi/django-plugins-bihealth
+Author: Mikko Nieminen, Manuel Holtgrewe, Oliver Stolpe
+Author-email: mikko.nieminen@bih-charite.de, manuel.holtgrewe@bih-charite.de, oliver.stolpe@bih-charite.de
+License: LGPL
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENCE.txt
+Requires-Dist: django>=3.0
+Requires-Dist: django-dirtyfields
+
+``django-plugins`` offers functionality to make Django apps them more reusable.
+
+For maintained by @bihealth, aims at Django >=3.0.
+
+Home page
+    http://pypi.python.org/pypi/django-plugins-bihealth
+
+Source code:
+    https://github.com/bihealth/django-plugins
+
