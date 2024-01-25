@@ -1,0 +1,160 @@
+[template]
+name = "Tobias Ahrens"
+email = "tobias.ahrens@posteo.de"
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mkdocs-caption"
+dynamic = ["version"]
+description = 'Enhance your MkDocs documentation with easy figure, table captioning and numbering.'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [{ name = "Tobias Ahrens", email = "tobias.ahrens@posteo.de" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = ["mkdocs", "lxml"]
+
+[project.entry-points."mkdocs.plugins"]
+caption = "mkdocs_caption:CaptionPlugin"
+
+[project.urls]
+Documentation = "https://github.com/tobiasah/mkdocs-caption#readme"
+Issues = "https://github.com/tobiasah/mkdocs-caption/issues"
+Source = "https://github.com/tobiasah/mkdocs-caption"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/mkdocs_caption/_version.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = ["/.github", "/docs"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mkdocs_caption"]
+
+[tool.hatch.envs.default]
+dependencies = ["coverage[toml]>=6.5", "pytest", "lxml"]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11"]
+
+[tool.hatch.envs.test]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+  "pymdown-extensions",
+  "mkdocs-material",
+]
+
+[tool.hatch.envs.test.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = ["- coverage combine", "coverage report", "coverage html"]
+cov = ["test-cov", "cov-report"]
+
+[[tool.hatch.envs.lint.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11"]
+
+[tool.hatch.envs.lint]
+detached = true
+dependencies = [
+  "black>=23.1.0",
+  "mypy>=1.0.0",
+  "ruff>=0.0.243",
+  "types-lxml>=2023.3.28",
+  "mkdocs",
+]
+[tool.hatch.envs.lint.scripts]
+typing = "mypy --install-types --non-interactive {args:src/mkdocs_caption}"
+style = ["ruff {args:.}", "black --check --diff {args:.}"]
+fmt = ["black {args:.}", "ruff --fix {args:.}", "style"]
+all = ["style", "typing"]
+
+[tool.hatch.envs.doc]
+dependencies = [
+  "mkdocs==1.4.3",
+  "mkdocs-glightbox==0.3.4",
+  "mkdocs-material==9.1.19",
+  "mkdocs-literate-nav==0.6.0",
+  "mkdocs-material-extensions==1.1.1",
+  "mkdocs-spellcheck[codespell]==1.0.2",
+]
+
+[tool.hatch.envs.doc.scripts]
+build = "mkdocs build"
+serve = "mkdocs serve"
+deploy = "mkdocs gh-deploy"
+
+[tool.black]
+target-version = ["py38"]
+
+[tool.ruff]
+target-version = "py38"
+select = ["ALL"]
+ignore = [
+  # Using `xml` to parse untrusted data
+  "S320",
+  # Too many arguments to function call
+  "PLR0913",
+  # Use `logging.exception` instead of `logging.error`
+  "TRY400",
+  # Missing docstring in `__init__`
+  "D107",
+  # Missing type annotation for `self` in method
+  "ANN101",
+  # Missing type annotation for `**kwargs`
+  "ANN003",
+]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.ruff.isort]
+known-first-party = ["mkdocs_caption"]
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.per-file-ignores]
+# Tests can use magic values, assertions, and relative imports
+"tests/**/*" = [
+  "PLR2004",
+  "S101",
+  "TID252",
+  "D103",
+  "ANN001",
+  "ANN201",
+  "ANN002",
+]
+
+[tool.coverage.run]
+source_pkgs = ["mkdocs_caption"]
+branch = true
+parallel = true
+omit = ["src/mkdocs_caption/__about__.py"]
+
+[tool.coverage.paths]
+mkdocs_caption = ["src/mkdocs_caption", "*/mkdocs_caption/src/mkdocs_caption"]
+
+[tool.coverage.report]
+exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]
+
+[[tool.mypy.overrides]]
+module = "lxml"
+ignore_missing_imports = true
