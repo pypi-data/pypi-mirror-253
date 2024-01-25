@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: v-stream
+Version: 0.1.0
+Summary: STREAM: Spatio-TempoRal Evaluation and Analysis Metric for Video Generative Models
+Home-page: https://github.com/pro2nit/STREAM
+Author: proinit
+Author-email: seojun.kim@unist.ac.kr
+License: UNKNOWN
+Keywords: pypi,video,evaluation,stream,v-stream
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: top-pr
+
+UNKNOWN
+
