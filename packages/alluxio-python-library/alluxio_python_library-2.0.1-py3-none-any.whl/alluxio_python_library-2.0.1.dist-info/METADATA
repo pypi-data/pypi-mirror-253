@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: alluxio-python-library
+Version: 2.0.1
+Summary: Alluxio Python library 2.0.1 provides API to interact with Alluxio servers.
+Home-page: https://github.com/Alluxio/alluxio-py
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: humanfriendly
+Requires-Dist: requests
+Requires-Dist: etcd3
+Requires-Dist: mmh3
+Requires-Dist: sortedcontainers
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
