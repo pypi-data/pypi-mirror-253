@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: mimebytes
+Version: 0.0.1
+Summary: Wrapper class to make repr of bytes better in ipython.
+Author-email: Bane Sullivan <hello@banesullivan.com>
+Project-URL: Bug Tracker, https://github.com/banesullivan/mimebytes/issues
+Project-URL: Source Code, https://github.com/banesullivan/mimebytes
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mimebytes
+
+A thin wrapper of `bytes` to make the repr better in ipython.
+
+```py
+from mimebytes import ImageBytes
+with open('image.png', 'rb') as f:
+    content = f.read()
+
+ImageBytes(content, 'image/png')
+```
+
+![preview](./image.png)
