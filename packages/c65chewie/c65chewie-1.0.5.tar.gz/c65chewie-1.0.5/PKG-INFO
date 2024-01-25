@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: c65chewie
+Version: 1.0.5
+Summary: A bare-bones EAPOL/802.1x implementation
+Home-page: https://github.com/faucetsdn/chewie
+Author: Sam Russell
+Author-email: sam.h.russell@gmail.com
+License: Apache-2
+Keywords: 802.1x,dot1x,eap,eapol,radius,authentication,aaa
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+License-File: LICENSE
+License-File: AUTHORS

@@ -1,0 +1,30 @@
+name: Unit tests
+
+on: [push, pull_request]
+
+env:
+  CODECOV_PY_VER: '3.10'
+
+jobs:
+  unit-tests:
+    name: Unit tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.9, '3.10', 3.11, 3.12]
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      - name: Set up python-${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          ./docker/pip_deps.sh
+      - name: Run unit tests
+        run: |
+          time env PYTHONPATH=. pytest -v --cov=chewie test/unit/test_*.py
+      - if: ${{ matrix.python-version == env.CODECOV_PY_VER }}
+        name: Upload codecov
+        uses: codecov/codecov-action@v3
