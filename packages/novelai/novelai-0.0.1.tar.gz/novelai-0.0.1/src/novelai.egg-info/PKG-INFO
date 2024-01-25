@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: novelai
+Version: 0.0.1
+Summary: High-level async API for NovelAI image generation
+Author: UZQueen
+License: MIT License
+Project-URL: Repository, https://github.com/HanaokaYuzu/NovelAI-API
+Project-URL: Issues, https://github.com/HanaokaYuzu/NovelAI-API/issues
+Keywords: API,async,NovelAI,AI,image generation
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx>=0.25.2
+Requires-Dist: pydantic>=2.5.3
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: argon2-cffi>=21.3.0
+
+# <img src="docs/img/novelai-logo.svg" height="35px" alt="NovelAI Icon"/> NovelAI-API
+
+A lightweight asynchronous Python wrapper for the NovelAI image generation API supporting both web and api backend.
+
+## Installation
+
+```bash
+pip install novelai
+```
+
+## Usage
+
+### Initialization
+
+```python
+import asyncio
+from novelai import NAIClient
+
+# Replace string values with your actual account credentials
+username = "Your NovelAI username"
+password = "Your NovelAI password"
+
+async def main():
+    client = NAIClient(username, password, proxy=None)
+    await client.init()
+
+asyncio.run(main())
+```
+
+### Generate
+
+```python
+from pathlib import Path
+
+async def main():
+    # Choose host between "api" and "web"
+    output = await client.generate_image(prompt="1girl", host="api")
+
+    path = Path("output")
+    path.mkdir(parents=True, exist_ok=True)
+
+    for filename, data in output.items():
+        Path(path / filename).write_bytes(data)
+
+asyncio.run(main())
+```
+
+## References
+
+[NovelAI Backend](https://api.novelai.net/docs)
+
+[Aedial/novelai-api](https://github.com/Aedial/novelai-api)
+
+[NovelAI Unofficial Knowledgebase](https://naidb.miraheze.org/wiki/Using_the_API)
