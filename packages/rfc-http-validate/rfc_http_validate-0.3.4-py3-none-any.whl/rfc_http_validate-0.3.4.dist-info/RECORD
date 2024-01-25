@@ -1,0 +1,12 @@
+rfc_http_validate/__init__.py,sha256=i3JOKHRlc6TDGhOIETt4LNx9ngttIrFbDoyMUpimw8A,110
+rfc_http_validate/markdown.py,sha256=X2GQNp4bqryG5LdwU1OrU3wrDGrZLXmydnFReSA_iAs,1176
+rfc_http_validate/methods.py,sha256=DcdykDpSFSaFDI6g6A6vElOQWcf2T3WvTI7ppojSoVo,591
+rfc_http_validate/ui.py,sha256=RqMR3SUJa259O6OP6omaTReMh1EhShgtgssMIBAaqfs,3687
+rfc_http_validate/validate.py,sha256=6pcz53enQVhjVEtWZz8zswelzUssqD95OeBRpt6mA8Y,5488
+rfc_http_validate/xml.py,sha256=XzkSn46ldAZW8PY1PjMXFKSPmHo7h_BkDaWPBYcrETQ,1677
+rfc_http_validate-0.3.4.dist-info/LICENSE.md,sha256=KrYpu_nnxfYHwb0CzeFSL7T7LhOXm5z3M0rlWtSv0is,1058
+rfc_http_validate-0.3.4.dist-info/METADATA,sha256=-fnFXLuDNiJtF4VEpKDE-KzOCywlfAe4YY68jLtAalk,7071
+rfc_http_validate-0.3.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+rfc_http_validate-0.3.4.dist-info/entry_points.txt,sha256=DvI5cd3z_C_qLjeEjTVvItZCKK4-m22jIcjhaco-NrE,61
+rfc_http_validate-0.3.4.dist-info/top_level.txt,sha256=cx0v-kZic7eA211a1wCd-XByibDiUi4DCfR8zdUYG0I,18
+rfc_http_validate-0.3.4.dist-info/RECORD,,
