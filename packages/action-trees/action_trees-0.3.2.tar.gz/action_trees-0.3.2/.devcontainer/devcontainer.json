@@ -1,0 +1,38 @@
+{
+  "initializeCommand": "${localWorkspaceFolder}/init_host.sh", // executed on HOST system
+
+  "image": "registry.gitlab.com/roxautomation/images/python-dev",
+  //"runArgs": ["--privileged"], // uncomment if you need access to hardware devices
+
+  "mounts": [
+    "source=/var/tmp/container-extensions,target=/home/dev/.vscode-server/extensions,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.ssh,target=/home/dev/.ssh,type=bind,consistency=cached"
+  ],
+  "postCreateCommand": "./init_container.sh",
+
+   // Features to add to the dev container. More info: https://containers.dev/implementors/features.
+  // "features": {},
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "shardulm94.trailing-spaces",
+        "njpwerner.autodocstring",
+        "mhutchie.git-graph",
+        "doi.fileheadercomment",
+        "donjayamanne.githistory"
+      ]
+    }
+  }
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}

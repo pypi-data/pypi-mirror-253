@@ -1,0 +1,6 @@
+mypy
+pylint
+pytest
+pytest-asyncio
+pytest-cov
+setuptools_scm

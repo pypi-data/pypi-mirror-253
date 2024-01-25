@@ -1,0 +1,46 @@
+image: python:3.12
+
+before_script:
+  - python --version
+  - pip install -r requirements_ci.txt
+  - pip install .
+
+stages:
+  - test_stage
+  - docs_stage
+  - package_stage
+
+pytest:
+  stage: test_stage
+  script:
+    - pylint -E src
+    - mypy src
+    - pytest -v --cov=src --cov-report=term --cov-report=xml:coverage.xml
+  artifacts:
+    paths:
+      - coverage.xml
+    expire_in: 1 week
+  coverage: '/TOTAL.*\s+(\d+\%)/'
+
+pages:
+  image: sjev/mkdocs
+  stage: docs_stage
+  script:
+    - make public
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+  only:
+    changes:
+      - docs/**/*
+
+package:
+  stage: package_stage
+  script:
+    - pip install build twine
+    - python -m build
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/*
+    - TWINE_PASSWORD=${PYPI_TOKEN} TWINE_USERNAME=__token__ python -m twine upload dist/*
+  rules:
+    - if: $CI_COMMIT_TAG
