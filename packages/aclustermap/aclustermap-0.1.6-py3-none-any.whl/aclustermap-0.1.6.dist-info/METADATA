@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: aclustermap
+Version: 0.1.6
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: colorcet
+Requires-Dist: pyarrow
+Requires-Dist: PyYAML
+Requires-Dist: scipy
+
