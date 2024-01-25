@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: srcdit
+Version: 0.1.12
+Summary: Edit and source dotfiles directly from the terminal
+Author: Arpit J
+Maintainer: Arpit J
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# srcdit
+
+Edit and source dotfiles directly from the terminal
+
+### Usage
+```bash
+srcdit <file> <key=value>
+```
+
+Example -
+```bash
+srcdit .zshrc ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+### Work In Progress!
+* Source edited files (Possible work around through shell script, since a subprocess spawns through Python) - Wrap Python script in a Shell script, but that won't allow sourcing for the PyPi version. Might need to port.
+* Debug
+
+### Source Code
+[GitHub Link](https://github.com/osBins/srcdit)
