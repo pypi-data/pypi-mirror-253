@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wah
+Version: 0.0.0
+Summary: a library so simple you will learn Within An Hour
+Author-email: Juyeop Kim <juyeopkim@yonsei.ac.kr>
+Project-URL: Homepage, https://github.com/yupeeee/WAH
+Project-URL: Issues, https://github.com/yupeeee/WAH/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# WAH
