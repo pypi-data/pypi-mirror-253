@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/pytest_beartype/__init__.py
+src/pytest_beartype/py.typed
+src/pytest_beartype.egg-info/PKG-INFO
+src/pytest_beartype.egg-info/SOURCES.txt
+src/pytest_beartype.egg-info/dependency_links.txt
+src/pytest_beartype.egg-info/entry_points.txt
+src/pytest_beartype.egg-info/requires.txt
+src/pytest_beartype.egg-info/top_level.txt
