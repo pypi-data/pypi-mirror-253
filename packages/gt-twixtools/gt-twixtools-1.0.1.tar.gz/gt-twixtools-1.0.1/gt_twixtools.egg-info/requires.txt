@@ -1,0 +1,8 @@
+numpy
+scipy
+tqdm
+
+[test]
+pytest
+tables
+pyzfp
