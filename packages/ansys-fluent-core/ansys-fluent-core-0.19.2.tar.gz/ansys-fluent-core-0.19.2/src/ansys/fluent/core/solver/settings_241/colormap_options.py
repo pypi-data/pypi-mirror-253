@@ -1,0 +1,107 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import _ChildNamedObjectAccessorMixin
+
+from ansys.fluent.core.solver.flobject import _CreatableNamedObjectMixin
+
+from ansys.fluent.core.solver.flobject import _NonCreatableNamedObjectMixin
+
+from ansys.fluent.core.solver.flobject import _HasAllowedValuesMixin
+
+from .visible import visible as visible_cls
+from .size_1 import size as size_cls
+from .color_1 import color as color_cls
+from .log_scale_1 import log_scale as log_scale_cls
+from .format import format as format_cls
+from .user_skip import user_skip as user_skip_cls
+from .show_all import show_all as show_all_cls
+from .position import position as position_cls
+from .font_name import font_name as font_name_cls
+from .font_automatic import font_automatic as font_automatic_cls
+from .font_size import font_size as font_size_cls
+from .length_2 import length as length_cls
+from .width import width as width_cls
+from .bground_transparent import bground_transparent as bground_transparent_cls
+from .bground_color import bground_color as bground_color_cls
+from .title_elements import title_elements as title_elements_cls
+class colormap_options(Group):
+    """
+    'colormap_options' child.
+    """
+
+    fluent_name = "colormap-options"
+
+    child_names = \
+        ['visible', 'size', 'color', 'log_scale', 'format', 'user_skip',
+         'show_all', 'position', 'font_name', 'font_automatic', 'font_size',
+         'length', 'width', 'bground_transparent', 'bground_color',
+         'title_elements']
+
+    visible: visible_cls = visible_cls
+    """
+    visible child of colormap_options.
+    """
+    size: size_cls = size_cls
+    """
+    size child of colormap_options.
+    """
+    color: color_cls = color_cls
+    """
+    color child of colormap_options.
+    """
+    log_scale: log_scale_cls = log_scale_cls
+    """
+    log_scale child of colormap_options.
+    """
+    format: format_cls = format_cls
+    """
+    format child of colormap_options.
+    """
+    user_skip: user_skip_cls = user_skip_cls
+    """
+    user_skip child of colormap_options.
+    """
+    show_all: show_all_cls = show_all_cls
+    """
+    show_all child of colormap_options.
+    """
+    position: position_cls = position_cls
+    """
+    position child of colormap_options.
+    """
+    font_name: font_name_cls = font_name_cls
+    """
+    font_name child of colormap_options.
+    """
+    font_automatic: font_automatic_cls = font_automatic_cls
+    """
+    font_automatic child of colormap_options.
+    """
+    font_size: font_size_cls = font_size_cls
+    """
+    font_size child of colormap_options.
+    """
+    length: length_cls = length_cls
+    """
+    length child of colormap_options.
+    """
+    width: width_cls = width_cls
+    """
+    width child of colormap_options.
+    """
+    bground_transparent: bground_transparent_cls = bground_transparent_cls
+    """
+    bground_transparent child of colormap_options.
+    """
+    bground_color: bground_color_cls = bground_color_cls
+    """
+    bground_color child of colormap_options.
+    """
+    title_elements: title_elements_cls = title_elements_cls
+    """
+    title_elements child of colormap_options.
+    """

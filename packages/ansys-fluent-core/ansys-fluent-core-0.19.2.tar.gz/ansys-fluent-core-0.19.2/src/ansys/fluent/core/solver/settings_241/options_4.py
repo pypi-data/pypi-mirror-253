@@ -1,0 +1,97 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import _ChildNamedObjectAccessorMixin
+
+from ansys.fluent.core.solver.flobject import _CreatableNamedObjectMixin
+
+from ansys.fluent.core.solver.flobject import _NonCreatableNamedObjectMixin
+
+from ansys.fluent.core.solver.flobject import _HasAllowedValuesMixin
+
+from .device_type import device_type as device_type_cls
+from .mea_model import mea_model as mea_model_cls
+from .source_enabled import source_enabled as source_enabled_cls
+from .butlervolmer_rate import butlervolmer_rate as butlervolmer_rate_cls
+from .multidiff_enabled import multidiff_enabled as multidiff_enabled_cls
+from .halfcell_voltage import halfcell_voltage as halfcell_voltage_cls
+from .osmotic_drag import osmotic_drag as osmotic_drag_cls
+from .capillary_pressure import capillary_pressure as capillary_pressure_cls
+from .reaction_heat import reaction_heat as reaction_heat_cls
+from .phase_change import phase_change as phase_change_cls
+from .water_content import water_content as water_content_cls
+from .bc_type import bc_type as bc_type_cls
+from .tot_voltage import tot_voltage as tot_voltage_cls
+from .tot_current import tot_current as tot_current_cls
+class options(Group):
+    """
+    'options' child.
+    """
+
+    fluent_name = "options"
+
+    child_names = \
+        ['device_type', 'mea_model', 'source_enabled', 'butlervolmer_rate',
+         'multidiff_enabled', 'halfcell_voltage', 'osmotic_drag',
+         'capillary_pressure', 'reaction_heat', 'phase_change',
+         'water_content', 'bc_type', 'tot_voltage', 'tot_current']
+
+    device_type: device_type_cls = device_type_cls
+    """
+    device_type child of options.
+    """
+    mea_model: mea_model_cls = mea_model_cls
+    """
+    mea_model child of options.
+    """
+    source_enabled: source_enabled_cls = source_enabled_cls
+    """
+    source_enabled child of options.
+    """
+    butlervolmer_rate: butlervolmer_rate_cls = butlervolmer_rate_cls
+    """
+    butlervolmer_rate child of options.
+    """
+    multidiff_enabled: multidiff_enabled_cls = multidiff_enabled_cls
+    """
+    multidiff_enabled child of options.
+    """
+    halfcell_voltage: halfcell_voltage_cls = halfcell_voltage_cls
+    """
+    halfcell_voltage child of options.
+    """
+    osmotic_drag: osmotic_drag_cls = osmotic_drag_cls
+    """
+    osmotic_drag child of options.
+    """
+    capillary_pressure: capillary_pressure_cls = capillary_pressure_cls
+    """
+    capillary_pressure child of options.
+    """
+    reaction_heat: reaction_heat_cls = reaction_heat_cls
+    """
+    reaction_heat child of options.
+    """
+    phase_change: phase_change_cls = phase_change_cls
+    """
+    phase_change child of options.
+    """
+    water_content: water_content_cls = water_content_cls
+    """
+    water_content child of options.
+    """
+    bc_type: bc_type_cls = bc_type_cls
+    """
+    bc_type child of options.
+    """
+    tot_voltage: tot_voltage_cls = tot_voltage_cls
+    """
+    tot_voltage child of options.
+    """
+    tot_current: tot_current_cls = tot_current_cls
+    """
+    tot_current child of options.
+    """
