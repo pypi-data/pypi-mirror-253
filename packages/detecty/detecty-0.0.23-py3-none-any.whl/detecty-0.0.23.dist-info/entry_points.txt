@@ -1,0 +1,4 @@
+[console_scripts]
+data_jsonl=detecty.tasks:data_jsonl
+train=detecty.train:train
+

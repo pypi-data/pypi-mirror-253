@@ -1,0 +1,11 @@
+detecty/bbox.py,sha256=g2rNJcVhvkvW6jBUpc1GoOQVKTXrxpjCIrmSD3q_uU0,2523
+detecty/model.ckpt,sha256=kHXgfiFAIVNlPvsSBfLwvV9TGnRIVYxoK0w9mRb3gIg,9164670
+detecty/model.py,sha256=nVjIhW6iC_CCb8ZccEIpkWbkZBjCQFFOE84JurwUvR4,2696
+detecty/tasks.py,sha256=yODYcd4pSKZZ1mylXielWjtk_kt15Pe-j3wTisO01xA,5086
+detecty/train.py,sha256=VqdDa86d6RHm8rLKz7bBNZ55bHF7KQzJYdKm6TB7SJw,4446
+detecty/util.py,sha256=rKBIu1RtSAYggtwv4UPUhzwCTfiK93jzqjQBuSdU654,758
+detecty/version.py,sha256=opUawaR4lvZH6d11aSGLCXB8VDFqeLzIlTmuJKoLIUc,19
+detecty-0.0.23.dist-info/METADATA,sha256=mM-6fk_92MAj93w9NsAZMwTyo3qIDgdNCKJwY28-zjc,323
+detecty-0.0.23.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+detecty-0.0.23.dist-info/entry_points.txt,sha256=r9gQzsO_e98rgWhOp0nNZM56M04EWLeBlYPnrtdyN2c,81
+detecty-0.0.23.dist-info/RECORD,,

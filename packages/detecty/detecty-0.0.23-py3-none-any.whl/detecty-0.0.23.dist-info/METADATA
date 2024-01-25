@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: detecty
+Version: 0.0.23
+Summary: 
+Author: Gilad Kutiel
+Author-email: gilad.kutiel@gmail.com
+Requires-Python: ==3.10.*
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: fire (>=0.5.0,<0.6.0)
+Requires-Dist: pillow (>=10.1.0,<11.0.0)
