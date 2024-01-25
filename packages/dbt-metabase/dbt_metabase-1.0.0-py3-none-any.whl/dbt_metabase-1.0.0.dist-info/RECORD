@@ -1,0 +1,16 @@
+dbtmetabase/__init__.py,sha256=4sjr2MdUynqcVuCpeGekHUL0kq4ksbHfTYc6YMLZw9I,316
+dbtmetabase/__main__.py,sha256=Z_vag-AJyplBzM84lmKbb1VK_UV-ZMZR9foCof72OBs,10447
+dbtmetabase/_exposures.py,sha256=kRPaNGV7bB8zvM-ytgm-KVfHnUL8qL5yFLK27ZuU8vQ,13131
+dbtmetabase/_models.py,sha256=TZ-LbS6VW7g9X8PxvrEUQOC7hHCq7DxqORTuUs4y7ZI,14942
+dbtmetabase/_version.py,sha256=DGJ4pj32xs3_DRJhSzQwCiRNnAQrMgo09USYpyMZsKc,411
+dbtmetabase/core.py,sha256=lTIy4VkY1r5psBkcF8qJhy0GfMeTrKIaDPVVVZzLUdU,2724
+dbtmetabase/errors.py,sha256=xFApd25K8flnCseGARCI2k2Qi8xB_FXDY-eusN0fCg4,152
+dbtmetabase/format.py,sha256=hBENSWm3OtzxPuimv8uRaIttBGEFgkukA6KSmK2eUUk,3923
+dbtmetabase/manifest.py,sha256=yQ0YCEQCnLFjaepAuMwYM8fC94yotUGspgMLnOM7wbw,12797
+dbtmetabase/metabase.py,sha256=tHlFm__njrx1nYW-z0TDX72ldPUS0JP0c2675FFsX3o,6041
+dbt_metabase-1.0.0.dist-info/LICENSE,sha256=8eJfaJA4Cp2KqhZ0PzqF6smOdUsrcw57hsVcSSX6Zq0,1069
+dbt_metabase-1.0.0.dist-info/METADATA,sha256=JVGPDdjbpL0wa6_aBDo8a78P5WktTs7j4e7ko_h6tUU,11266
+dbt_metabase-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dbt_metabase-1.0.0.dist-info/entry_points.txt,sha256=iBR5aXAbyzmHuEnoORvaKfqoUmuabtZkahczXCPte88,58
+dbt_metabase-1.0.0.dist-info/top_level.txt,sha256=oJGtfmX_xh-l59m2NxA2ab8tK18VEcQAFZ7nbxvMo5w,12
+dbt_metabase-1.0.0.dist-info/RECORD,,
