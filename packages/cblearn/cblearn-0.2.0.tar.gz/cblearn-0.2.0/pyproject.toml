@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-plus -ra --verbose --capture=no"
+doctest_optionflags = "NORMALIZE_WHITESPACE IGNORE_EXCEPTION_DETAIL"
+testpaths = [
+    "cblearn",
+]
+markers = [
+    "sklearn: mark tests for sklearn compatibility.",
+]
