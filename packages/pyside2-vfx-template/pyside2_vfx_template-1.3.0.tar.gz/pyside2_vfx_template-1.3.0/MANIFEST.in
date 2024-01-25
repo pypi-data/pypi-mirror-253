@@ -1,0 +1,2 @@
+recursive-include pyside2_vfx_template *
+global-exclude __pycache__/*
