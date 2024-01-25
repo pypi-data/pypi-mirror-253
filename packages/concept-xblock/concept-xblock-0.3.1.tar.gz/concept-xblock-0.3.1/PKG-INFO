@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: concept-xblock
+Version: 0.3.1
+Summary: concept XBlock
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: XBlock
+
+This is a simple XBlock which will allows one to tag problems with concepts.

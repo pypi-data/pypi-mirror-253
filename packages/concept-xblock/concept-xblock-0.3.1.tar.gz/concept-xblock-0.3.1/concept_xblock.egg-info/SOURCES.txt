@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+concept/__init__.py
+concept/concept.py
+concept/static/css/concept.css
+concept/static/html/concept.html
+concept/static/html/studio_hack.html
+concept/static/js/concept.js
+concept/static/js/oa_edit.js
+concept/static/js/oa_server.js
+concept_xblock.egg-info/PKG-INFO
+concept_xblock.egg-info/SOURCES.txt
+concept_xblock.egg-info/dependency_links.txt
+concept_xblock.egg-info/entry_points.txt
+concept_xblock.egg-info/requires.txt
+concept_xblock.egg-info/top_level.txt
