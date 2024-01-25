@@ -1,0 +1,7 @@
+numpy
+matplotlib
+seaborn
+colorcet
+pyarrow
+PyYAML
+scipy
