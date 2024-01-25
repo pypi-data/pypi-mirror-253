@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentops"
+version = "0.0.20"
+authors = [
+  { name="Alex Reibman", email="areibman@gmail.com" },
+  { name="Shawn Qiu", email="siyangqiu@gmail.com" }
+]
+description = "Python SDK for developing AI agent evals and observability"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests==2.31.0",
+    "pydantic>=1.9.0",
+    "packaging>=23.1,<24.0"
+]
+[project.optional-dependencies]
+dev = [
+    "pytest==7.4.0",
+    "requests_mock==1.11.0"
+]
+langchain = [
+    "langchain>=0.0.354"
+]
+
+[project.urls]
+Homepage = "https://github.com/AgentOps-AI/agentops"
+Issues = "https://github.com/AgentOps-AI/agentops/issues"
