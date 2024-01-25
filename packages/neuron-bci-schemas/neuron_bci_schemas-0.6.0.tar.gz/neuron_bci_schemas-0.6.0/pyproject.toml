@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "neuron-bci-schemas"
+version = "0.6.0"
+description = ""
+authors = ["Никита Есипов <dasaderto@gmail.com>"]
+readme = "README.md"
+
+[[tool.poetry.packages]]
+include = "neuron_bci_schemas"
+from = "."
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.5.3"
+jsonlines = "^4.0.0"
+torch = "^2.1.0"
+transformers = "^4.27.4"
+pandas = "^2.2.0"
+datasets = "^2.16.1"
+scikit-learn = "^1.4.0"
+trl = "^0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
