@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+MailPilot.egg-info/PKG-INFO
+MailPilot.egg-info/SOURCES.txt
+MailPilot.egg-info/dependency_links.txt
+MailPilot.egg-info/entry_points.txt
+MailPilot.egg-info/top_level.txt
+mailpilot/__init__.py
+mailpilot/config.py
+mailpilot/mailpilot.py
+mailpilot/utils.py
