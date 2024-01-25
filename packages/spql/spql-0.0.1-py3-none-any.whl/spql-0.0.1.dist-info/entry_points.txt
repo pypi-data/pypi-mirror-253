@@ -1,0 +1,2 @@
+[console_scripts]
+spql = spql.cli:cli
