@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: spanning_forest_builder
+Version: 0.0.1
+Summary: Build a spanning forest
+Author-email: Igor Safronov <I_SIN_I@mail.ru>
+Keywords: spanning forest,spanning tree
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# spanning_forest_builder
+Библиотека для построения ориентированных лесов минимального веса.
+
+**Алгоритм основан на статьях:**\
+[springer.com](https://link.springer.com/article/10.1007/s10958-023-06666-w)\
+[Записки научных семинаров ПОМИ](http://ftp.pdmi.ras.ru/pub/publicat/znsl/v497/p005.pdf)
+
+## Примеры
+
+### Построить дерево с помощью алгоритма Чу-Ли-Эдмонда
+```Python
+# Импортируем библиотеку
+import spanning_forest_builder as sfb
+
+# Создаем массивы вершин и дуг
+# Массив дуг состоит из кортежей (вершина1, вершина2, вес)
+nodes = [0, 1, 2, 3, 4]
+edges = [(0, 1, 1),
+         (1, 3, 5),
+         (2, 1, 4),
+         (3, 4, 2),
+         (4, 3, 3),
+         (4, 0, 5),
+         (0, 4, 3.5)]
+
+# Строим дерево и рисуем его
+# Создаёт директорию image с рисунками графов
+sfb.build_tree_Edmonds(nodes, edges)
+```
+Если дополнительно указать параметр disp=True, то графы также будут выведены на экран
+```Python
+sfb.build_tree_Edmonds(nodes, edges, disp=True)
+```
+
+### Построить все леса
+```Python
+# Импортируем библиотеку
+import spanning_forest_builder as sfb
+
+# Создаем массивы вершин и дуг
+# Массив дуг состоит из кортежей (вершина1, вершина2, вес)
+nodes = [0, 1, 2, 3, 4]
+edges = [(0, 1, 1),
+         (1, 3, 5),
+         (2, 1, 4),
+         (3, 4, 2),
+         (4, 3, 3),
+         (4, 0, 5),
+         (0, 4, 3.5)]
+
+# Строим леса из k деревьев и рисуем их
+# Создаёт директорию image с рисунками графов
+sfb.build_all_forests(nodes, edges)
+```
+Если дополнительно указать параметр disp=True, то графы также будут выведены на экран
+```Python
+sfb.build_all_forests(nodes, edges, disp=True)
+```
+
+### Пoлучить дуги дерева в виде массива корежей
+```Python
+# Импортируем библиотеку
+import spanning_forest_builder as sfb
+
+# Создаем массивы вершин и дуг
+# Массив дуг состоит из кортежей (вершина1, вершина2, вес)
+nodes = [0, 1, 2, 3, 4]
+edges = [(0, 1, 1),
+         (1, 3, 5),
+         (2, 1, 4),
+         (3, 4, 2),
+         (4, 3, 3),
+         (4, 0, 5),
+         (0, 4, 3.5)]
+
+# Получаем требуемый массив
+result = sfb.build_tree(nodes, edges)
+```
+
+### Пoлучить дуги леса из k деревьев в виде массива корежей
+```Python
+# Импортируем библиотеку
+import spanning_forest_builder as sfb
+
+# Создаем массивы вершин и дуг
+# Массив дуг состоит из кортежей (вершина1, вершина2, вес)
+nodes = [0, 1, 2, 3, 4]
+edges = [(0, 1, 1),
+         (1, 3, 5),
+         (2, 1, 4),
+         (3, 4, 2),
+         (4, 3, 3),
+         (4, 0, 5),
+         (0, 4, 3.5)]
+		 
+# Задаём число деревьев в лесу
+k = 3
+
+# Получаем массив массивов
+forests = sfb.build_forest(nodes, edges, k)
+result = forests[-1]
+```
