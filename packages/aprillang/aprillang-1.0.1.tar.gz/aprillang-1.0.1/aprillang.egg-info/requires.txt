@@ -1,0 +1,6 @@
+rich
+fastapi
+fastapi_limiter
+redis
+aioredis
+uvicorn

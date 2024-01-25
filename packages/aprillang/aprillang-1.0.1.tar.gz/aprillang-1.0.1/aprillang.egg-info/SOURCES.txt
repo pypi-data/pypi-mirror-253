@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aprillang.egg-info/PKG-INFO
+aprillang.egg-info/SOURCES.txt
+aprillang.egg-info/dependency_links.txt
+aprillang.egg-info/entry_points.txt
+aprillang.egg-info/requires.txt
+aprillang.egg-info/top_level.txt
+src/main.py
