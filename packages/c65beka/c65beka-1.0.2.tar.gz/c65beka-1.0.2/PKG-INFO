@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: c65beka
+Version: 1.0.2
+Summary: A bare-bones BGP speaker
+Home-page: https://github.com/c65sdn/beka
+Author: Sam Russell
+Author-email: sam.h.russell@gmail.com
+License: Apache-2
+Keywords: bgp,beka,routing,sdn,networking
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
+License-File: AUTHORS
+
+
+Beka is a fairly basic BGP speaker. It can send
+and receive unicast route updates in IPv4 and IPv6,
+but not too much else. It is designed to be simple to use
+and to extend, without too much overhead.
+
+It uses eventlet for concurrency, but is easy enough to port to
+gevent if that takes your fancy.
+
+More information at https://github.com/c65sdn/beka
