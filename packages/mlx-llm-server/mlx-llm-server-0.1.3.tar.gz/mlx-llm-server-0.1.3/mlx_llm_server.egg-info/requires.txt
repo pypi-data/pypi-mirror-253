@@ -1,0 +1,9 @@
+torch
+mlx
+mlx-lm>=0.0.5
+transformers>=4.36.2
+tqdm
+requests
+fastapi
+uvicorn[standard]
+sse_starlette
