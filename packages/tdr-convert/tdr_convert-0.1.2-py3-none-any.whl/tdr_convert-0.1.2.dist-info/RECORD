@@ -1,0 +1,15 @@
+tdrconvert/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tdrconvert/all_info.py,sha256=OaBOdhYNT59fZsjnVIB_jEn_YP3gkXdJ0aea_-kJR7w,8370
+tdrconvert/load_devsim.py,sha256=HqHbMNisf4SVnnRB_zjjjpiSg3RY9S2qrswgMSjLqEs,139
+tdrconvert/read_tdr.py,sha256=mLespe_EwWPNGqcemFPzxL_ZqoQLABqTcwPhf04g4vA,18589
+tdrconvert/tdr_convert.py,sha256=ei4eV9xXkV3SU5Q8TSKyCId33eWJfNhR_b-Ull5bojU,3831
+tdrconvert/write_exodus.py,sha256=BIiPxtb9kk5P_g8T8K7RtZPgxNGFH8RCgKmweFh0u4c,5861
+tdrconvert/write_gmsh.py,sha256=hPNVB79BYTCRiaWxjkQ5l5NYtSoy93g2PG8nQg-8KBg,8881
+tdrconvert/write_tetgen.py,sha256=GW6NBYRoMbXkdDUUie_UdHmkRRYA5Nl6LFk3kAQBsG4,3029
+tdr_convert-0.1.2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+tdr_convert-0.1.2.dist-info/METADATA,sha256=O7rBG_GCY1ybe5vP9jvhKdWP9DnLnVOXO13h_OMEG2k,2926
+tdr_convert-0.1.2.dist-info/NOTICE,sha256=pR4NJiQsYgkQnpOLMwn9-egAzdUdHmKKC1BV3Gn2j54,232
+tdr_convert-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tdr_convert-0.1.2.dist-info/entry_points.txt,sha256=bRyfeP6pSf_AReqI53N8zokm9zLKSNt8kR52Jsg7GXU,60
+tdr_convert-0.1.2.dist-info/top_level.txt,sha256=hnxMKAmMVz2VZFciZ2my-LIaQioRZETL0F2EQMhbxjI,11
+tdr_convert-0.1.2.dist-info/RECORD,,
