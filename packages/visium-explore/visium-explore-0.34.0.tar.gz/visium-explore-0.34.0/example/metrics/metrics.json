@@ -1,0 +1,12 @@
+{
+    "model": {
+        "accuracy": 0.9517543859649122,
+        "balanced_accuracy": 0.9349359250021502,
+        "f1_score": 0.964401294498382
+    },
+    "majority_baseline": {
+        "accuracy": 0.6622807017543859,
+        "balanced_accuracy": 0.5,
+        "f1_score": 0.7968337730870712
+    }
+}
