@@ -1,0 +1,2 @@
+[console_scripts]
+snake-game-gui = snake_game_idrys01.snake_game:main
