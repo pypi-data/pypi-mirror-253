@@ -1,0 +1,8 @@
+fast_s3/__init__.py,sha256=Q4bcNHDg_xBnWLP09vxfu4Izi-ivqkBQxgQsVV45Ewg,90
+fast_s3/fetcher.py,sha256=kA2FYnjGXBIt-Dtzfuj0qz199gxQq9svvgZUs93WAjM,2492
+fast_s3/file.py,sha256=DladwP3mIMi2SeN02Te5BuxOEfEVFbpuGtf3qnIpaTc,709
+fast_s3/transfer_manager.py,sha256=-hT-lGP-8gStRExgeL3QqDnByHh9YTEDV94lgd-i6iM,807
+fast_s3/uploader.py,sha256=6zHTMSDM5Zi-nf6XZRHJhJhSHXdW3eJHG9RTBSbz95k,2078
+fast_s3-1.0.0.dist-info/METADATA,sha256=Z_f4oTK4nhyYYJ4nR_fTs0xzTKOPkd7Co7khUlnHbK8,2297
+fast_s3-1.0.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+fast_s3-1.0.0.dist-info/RECORD,,
