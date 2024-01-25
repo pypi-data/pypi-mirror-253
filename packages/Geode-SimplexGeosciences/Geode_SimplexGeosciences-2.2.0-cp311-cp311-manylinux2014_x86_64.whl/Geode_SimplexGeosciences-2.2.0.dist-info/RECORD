@@ -1,0 +1,11 @@
+geode_simplexgeosciences/__init__.py,sha256=4000Tq4Kf1XQSCeOWtxWq7YZq7rXjDI9FOZEB5GGuQI,107
+geode_simplexgeosciences/cross_section.py,sha256=qAAQ5HjQuBXu1Uz-w9-4pSrIcnX14JaUt4E86IJKoKo,253
+geode_simplexgeosciences/structural_model.py,sha256=kYN4su1qhwvO_7kHNismXgzk3G-8PcMQxSs-lM3L14Q,259
+geode_simplexgeosciences/lib64/geode_simplexgeosciences_py_cross_section.cpython-311-x86_64-linux-gnu.so,sha256=Exd4xHOWnrut_Dq3C2WuBQuV-ogFfy6Zc6nRJrw51UM,138776
+geode_simplexgeosciences/lib64/geode_simplexgeosciences_py_structural_model.cpython-311-x86_64-linux-gnu.so,sha256=-xddNmWiCfDRL3tnOjovvlWjbUarHXoDonv-kYfe3r8,138776
+geode_simplexgeosciences/lib64/libGeode-SimplexGeosciences_cross_section.so,sha256=RT4_AsLOAYdNP4wTwABtFeMJDK1n118qG6WvJ0S6fwg,60216
+geode_simplexgeosciences/lib64/libGeode-SimplexGeosciences_structural_model.so,sha256=4Z6nHgy_apstSfwnDAWoUprgkD0BLktbHIyTDTxsT0k,60224
+Geode_SimplexGeosciences-2.2.0.dist-info/METADATA,sha256=04lbU4arMbpZlhJ-j9pKPSWzfHW9sbNIGxYWmyf8Xn8,3277
+Geode_SimplexGeosciences-2.2.0.dist-info/WHEEL,sha256=PMqQrRmEIG-nRiwjF6S0PVSchNtKTM_7RCPBo8K60uE,105
+Geode_SimplexGeosciences-2.2.0.dist-info/top_level.txt,sha256=2n7r8_YGfMeW_LYPqU_ijrPfdfp4XwWFxWWYhLvzJDU,25
+Geode_SimplexGeosciences-2.2.0.dist-info/RECORD,,
