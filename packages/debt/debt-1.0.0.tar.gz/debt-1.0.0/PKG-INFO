@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: debt
+Version: 1.0.0
+Summary: memory storage structure for directories
+Description-Content-Type: text/markdown
+Requires-Dist: homeostasis
+Requires-Dist: botany
+Requires-Dist: rich
+Requires-Dist: tinydb
+Requires-Dist: clique
+
+
+******
+
+Bravo!  You have received a Medical Diploma in "debt" from   
+the Orbital Convergence University International Air and Water Embassy of the Tangerine Planet.  
+
+You are now officially certified to include "debt" in your practice.
+
+******
+
+# 🪙 debt
+
+## 💳 obtain
+`(ZSH) pip install debt`
+
+## 📈 tutorial
+`(ZSH) debt shares`
+
+
+
+
