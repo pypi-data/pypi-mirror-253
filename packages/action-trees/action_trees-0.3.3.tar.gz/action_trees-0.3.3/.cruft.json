@@ -1,0 +1,18 @@
+{
+  "template": "https://gitlab.com/sjev/python-template",
+  "commit": "45d53df778c83808db5c6d6cf2f4356e344656b4",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "author_name": "Jev Kuznetsov",
+      "author_email": "jev@roxautomation.com",
+      "gitlab_username": "sjev",
+      "project_name": "Action Trees",
+      "project_slug": "action-trees",
+      "package_name": "action_trees",
+      "project_short_description": "Action decomposition and execution framework",
+      "_template": "https://gitlab.com/sjev/python-template"
+    }
+  },
+  "directory": null
+}

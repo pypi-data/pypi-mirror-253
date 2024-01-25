@@ -1,0 +1,7 @@
+[run]
+omit =
+    tests/*
+    src/action_trees/cli.py
+    src/action_trees/version.py
+    src/action_trees/protocols.py
+
