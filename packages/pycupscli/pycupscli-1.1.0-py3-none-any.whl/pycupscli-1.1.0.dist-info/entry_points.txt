@@ -1,0 +1,3 @@
+[console_scripts]
+pycupscli=pycupscli.pycupscli:main
+
