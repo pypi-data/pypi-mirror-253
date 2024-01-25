@@ -1,0 +1,2 @@
+[console_scripts]
+one-pass = one_pass:env
