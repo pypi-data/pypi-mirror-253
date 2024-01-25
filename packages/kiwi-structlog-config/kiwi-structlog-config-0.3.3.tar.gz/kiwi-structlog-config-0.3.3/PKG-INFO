@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: kiwi-structlog-config
+Version: 0.3.3
+Home-page: https://github.com/kiwicom/kiwi-structlog-config
+Author: Booking Backend team
+Author-email: bookingbe@kiwi.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
