@@ -1,0 +1,91 @@
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+name: CI
+
+env:
+  RUST_VER: 'stable'
+  CROSS_VER: '0.2.5'
+  CARGO_NET_RETRY: 3
+
+jobs:
+  fmt:
+    name: Rustfmt
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: '${{ env.RUST_VER }}'
+          components: rustfmt
+
+      - name: Run cargo fmt
+        env:
+          TERM: xterm-256color
+        run: |
+          cargo fmt --all -- --check
+
+  main:
+    needs: fmt
+    name: ${{ matrix.target_name }} (check, clippy)
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - target: x86_64-linux-android
+            target_name: Android
+            use_cross: true
+            os: ubuntu-20.04
+
+          - target: x86_64-unknown-freebsd
+            target_name: FreeBSD
+            use_cross: true
+            os: ubuntu-20.04
+
+          - target: x86_64-unknown-linux-gnu
+            target_name: Linux
+            os: ubuntu-20.04
+
+          - target: x86_64-apple-darwin
+            target_name: macOS
+            os: macos-11
+
+          - target: x86_64-unknown-netbsd
+            target_name: NetBSD
+            use_cross: true
+            os: ubuntu-20.04
+
+          - target: x86_64-pc-windows-msvc
+            target_name: Windows
+            os: windows-2019
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: '${{ env.RUST_VER }}'
+          components: clippy
+
+      - name: Setup Rust Cache
+        uses: Swatinem/rust-cache@v2
+        with:
+          prefix-key: ${{ matrix.target }}
+
+      - name: Setup cross
+        if: matrix.use_cross == true
+        run: curl -fL --retry 3 https://github.com/cross-rs/cross/releases/download/v${{ env.CROSS_VER }}/cross-x86_64-unknown-linux-musl.tar.gz | tar vxz -C /usr/local/bin
+
+      - name: Run cargo check
+        run: ${{ matrix.use_cross == true && 'cross' || 'cargo' }} check --locked --target ${{ matrix.target }}
+
+      - name: Run cargo clippy
+        run: ${{ matrix.use_cross == true && 'cross' || 'cargo' }} clippy --locked --target ${{ matrix.target }} --all-features -- -D warnings
