@@ -1,0 +1,1 @@
+VAYU_URL = "https://events.goweft.com"
