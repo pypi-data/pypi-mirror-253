@@ -1,0 +1,2 @@
+[console_scripts]
+mailpilot = mailpilot.__main__:main

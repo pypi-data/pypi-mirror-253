@@ -1,0 +1,10 @@
+mailpilot/__init__.py,sha256=RHfPtzzo25ZT6Uiwwc7ZlV-r_tNH1eM9G-Fu6KvUXg8,1689
+mailpilot/config.py,sha256=nw3pZOf7_FsxX3Hj0WgYuu9ewfGrngyHu0RU5EPs4Bs,3597
+mailpilot/mailpilot.py,sha256=V_sqXWyDs4QGzbsErsCXSIlSTops0m1zBp5huGdjrbM,3631
+mailpilot/utils.py,sha256=3TPT4SxPHMb1dNJATeyhPKW7LFUNqpF2Uhq5droBgYY,2768
+MailPilot-1.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+MailPilot-1.0.0.dist-info/METADATA,sha256=Jx4Cp5WxYxCDu9ZYbV2-YyYLYwo8sUfUwWMQYSGDs7s,3395
+MailPilot-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+MailPilot-1.0.0.dist-info/entry_points.txt,sha256=3D8IIk3iMoeJepDOVaEd1kl5Kdq8g0N168fvIctQszE,54
+MailPilot-1.0.0.dist-info/top_level.txt,sha256=GUfVvmHwbbE9-4XRqY6X5FAWwoMfhHDoLlQHA6Z5-xo,10
+MailPilot-1.0.0.dist-info/RECORD,,
