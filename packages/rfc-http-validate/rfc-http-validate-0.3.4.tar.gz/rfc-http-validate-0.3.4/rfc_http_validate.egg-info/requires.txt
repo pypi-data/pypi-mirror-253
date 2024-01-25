@@ -1,0 +1,13 @@
+http-sf>=1.0.1
+blessings
+commonmark
+
+[dev]
+mypy
+black
+pylint
+pytest
+pytest-md
+validate-pyproject
+build
+types-commonmark
