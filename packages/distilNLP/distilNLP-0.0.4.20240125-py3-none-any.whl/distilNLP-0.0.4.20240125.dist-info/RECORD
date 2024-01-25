@@ -1,0 +1,11 @@
+distilnlp/__init__.py,sha256=fZ1Y_UOOW655Z_3mne6mWe-fxzvhtwrlNZBeHMHcCJM,32
+distilnlp/normalize/__init__.py,sha256=-aRWcX7ukBxbW5mgZBs3-knLafnXU9hQZ6LnA7D4waE,34
+distilnlp/normalize/_emoji.py,sha256=igBpYiyxXlN7SGQ7mA-j9NrxIWZ7vKmoshK2KoKOji0,436708
+distilnlp/normalize/_normalize.py,sha256=gJf3pmI9pWYkDELjXjGhSXF8XYPMkNHCOlfqeRSwxT0,6328
+distilnlp/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+distilnlp/tests/test_normalize.py,sha256=706fC7qk22KGWjt83uqdHPp2fgycoQlv8UdkQSpW4FM,4616
+distilNLP-0.0.4.20240125.dist-info/LICENSE,sha256=VhdBEiCuBwlxN-9SW1lruBdVc7AxUvJVhPSaU5aOhNc,1493
+distilNLP-0.0.4.20240125.dist-info/METADATA,sha256=UqbN8sD4qzUJD24yHf5U4mPKu6RPyZCnuYjSRZ84tlk,3677
+distilNLP-0.0.4.20240125.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+distilNLP-0.0.4.20240125.dist-info/top_level.txt,sha256=OuOFbg6bep4FiA_Xt0dEsfWk7ZJt5Ux8o2OxSwVer_E,10
+distilNLP-0.0.4.20240125.dist-info/RECORD,,
