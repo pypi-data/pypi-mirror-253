@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pycupscli"
+version = "1.1.0"
+description = ""
+authors = ["Benoist Wolleb <benoist.wolleb@la-cave.ch>"]
+readme = "readme.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pycups = "^2.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pycupscli = "pycupscli.pycupscli:main"
