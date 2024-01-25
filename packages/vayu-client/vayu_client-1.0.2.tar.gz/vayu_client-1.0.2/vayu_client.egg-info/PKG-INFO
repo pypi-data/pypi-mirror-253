@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: vayu-client
+Version: 1.0.2
+Summary: Simple and easy to use python package for utilizing vayu billing system
+Home-page: https://withvayu.com
+Author: Vayu, Inc.
+Author-email: team@withvayu.com
+License: UNKNOWN
+Description: # Vayu python client
+        
+        ## Prerequisites
+        
+        - Python 3.7 and above
+        - Install the `vayu-client` package (`pip install vayu-client`)
+        
+        ## End-to-End Code Example
+        
+        To illustrate how to use the `Vayu` library for sending events to Vayu's API, here is a complete code snippet. This example combines all the steps detailed in previous sections:
+        
+        ```python
+        from datetime import datetime
+        from vayu import Vayu
+        
+        vayu = Vayu('YOUR_ACCESS_KEY')
+        
+        vayu.send_events([{
+            'name': 'api_call',
+            'timestamp': datetime.now(),
+            'customerAlias': 'customer_12345',
+            'data': {
+                'processing_duration': 124.83,
+                'api_endpoint': '/api/v1/users',
+            },
+            'ref': '4f6cf35x-2c4y-483z-a0a9-158621f77a21'
+        }])
+        ```
+        
+        That's it! This example demonstrates how to send an event using Python and the `Vayu` library.
+        
+        ## Step-by-step Guide
+        
+        ### Step 1: Import Vayu
+        
+        The first step is to import the `Vayu` class from the `Vayu` package.
+        
+        ```python
+        from vayu import Vayu
+        ```
+        
+        ### Step 2: Initialize the Client
+        
+        After importing, create a new `Vayu` instance and pass the api key
+        
+        ```python
+        vayu = Vayu('YOUR_API_KEY')
+        ```
+        
+        ### Step 3: Send Events
+        
+        Finally, you can send events to the Vayu API by using the `send_events` method. The method takes a list of dictionaries, where each dictionary represents a single event. Each event dictionary should contain the following fields:
+        
+        - `name` (string - required): A distinctive label assigned to an event. It serves as a critical identifier for categorizing and pricing events.
+        - `timestamp` (datetime): The exact moment when the event occurs.
+        - `customerAlias` (string): A unique identifier for each customer, which may be pseudonymous or obfuscated.
+        - `data` (object): A schema-less JSON object containing miscellaneous attributes and metrics associated with the event.
+        - `ref` (string, optional): A UUID or other high-entropy string serving as an immutable reference for each event entry.
+        
+        Example:
+        
+        ```python
+        vayu.send_events([{
+            'name': 'api_call',
+            'timestamp': datetime.now(),
+            'customerAlias': 'customer_12345',
+            'data': {
+                'processing_duration': 124.83,
+                'api_endpoint': '/api/v1/users',
+            },
+            'ref': '4f6cf35x-2c4y-483z-a0a9-158621f77a21'
+        }])
+        ```
+Keywords: vayu,billing,events,python,sdk
+Platform: UNKNOWN
+Requires-Python: ==3.7.*
+Description-Content-Type: text/markdown
