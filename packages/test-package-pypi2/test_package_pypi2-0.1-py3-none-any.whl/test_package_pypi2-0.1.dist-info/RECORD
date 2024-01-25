@@ -1,0 +1,4 @@
+test_package_pypi2/__init__.py,sha256=UL1CdJBluSheppuXFRDF_V8rO7O_2yxKEpaMFSVlIjs,20
+test_package_pypi2-0.1.dist-info/METADATA,sha256=k207QmxB6K4wAj_DK-k-B1YnJkFxF9gm3r9jC85u32c,292
+test_package_pypi2-0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+test_package_pypi2-0.1.dist-info/RECORD,,
