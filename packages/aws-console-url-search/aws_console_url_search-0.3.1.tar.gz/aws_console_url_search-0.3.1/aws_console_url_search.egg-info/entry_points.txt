@@ -1,0 +1,2 @@
+[console_scripts]
+acs = aws_console_url_search.cli.main:run
