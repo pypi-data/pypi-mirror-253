@@ -1,0 +1,14 @@
+concept/__init__.py,sha256=nVkzeQQFvBiN0sFlcM0GxHq3PfbhCqcjolsVCmUwfsE,35
+concept/concept.py,sha256=mLjGTQmjCXeMYs5jZcmq9rDUpwTCeh0ba2dCAfnYX4k,3651
+concept/static/css/concept.css,sha256=E91peHUemx_TlA3ypXzhMTTFC13lBcwqT2ghbcC9BNM,1975
+concept/static/html/concept.html,sha256=-1Bd8l-6IX4E6h-c4HHkaNk2Otyn-wDE4ImYzNASB1g,1803
+concept/static/html/studio_hack.html,sha256=MtbCMfJl9DDJQo_MNLezDlukFh3hbbpNuY4N_gdzQmk,330
+concept/static/js/concept.js,sha256=nu2T5XTx4-8E4sR7BAs8DFdm7d6NAELOKxsEenK7ldU,3732
+concept/static/js/oa_edit.js,sha256=Cy4w2taNY9vMFquAKLQ_uHH3VBTYiFwb3hlzTmIDus4,4277
+concept/static/js/oa_server.js,sha256=pnvjQoEZfZ2uwt8q5PB84Dy95W3cZEK0GkeonFMGB_o,11867
+concept_xblock-0.3.1.dist-info/LICENSE,sha256=YMZtFw1tnvZVwfBy9c1oHJ2PXOy8oSV70UX5XJdAlWU,34500
+concept_xblock-0.3.1.dist-info/METADATA,sha256=VlTfxjNWwQ6oF2NxplBre5GKc3Zl5BcwVd_1igaUNH8,241
+concept_xblock-0.3.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+concept_xblock-0.3.1.dist-info/entry_points.txt,sha256=uDH9hqCz2CE4LizOTckPKYqNy0rmabfbAIEPXGalkkY,44
+concept_xblock-0.3.1.dist-info/top_level.txt,sha256=_R0T_GtWI4MO2W8BPh08CrYX6w1FI3OhZFkucH1Xf6I,8
+concept_xblock-0.3.1.dist-info/RECORD,,
