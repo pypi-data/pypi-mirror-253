@@ -1,0 +1,11 @@
+README.md
+setup.py
+lextoplus/LexToPlus.py
+lextoplus/__init__.py
+lextoplus.egg-info/PKG-INFO
+lextoplus.egg-info/SOURCES.txt
+lextoplus.egg-info/dependency_links.txt
+lextoplus.egg-info/requires.txt
+lextoplus.egg-info/top_level.txt
+lextoplus/resource/bigthai.txt
+lextoplus/resource/full.lex.config
