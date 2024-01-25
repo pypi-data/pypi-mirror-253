@@ -1,0 +1,108 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['domainlab',
+ 'domainlab.algos',
+ 'domainlab.algos.msels',
+ 'domainlab.algos.observers',
+ 'domainlab.algos.trainers',
+ 'domainlab.algos.trainers.compos',
+ 'domainlab.compos',
+ 'domainlab.compos.nn_zoo',
+ 'domainlab.compos.pcr',
+ 'domainlab.compos.vae',
+ 'domainlab.compos.vae.compos',
+ 'domainlab.dsets',
+ 'domainlab.exp',
+ 'domainlab.exp_protocol',
+ 'domainlab.models',
+ 'domainlab.tasks',
+ 'domainlab.utils',
+ 'domainlab.zdata.script',
+ 'domainlab.zdata.ztest_files']
+
+package_data = \
+{'': ['*'],
+ 'domainlab': ['zdata/mixed_codec/caltech/auto/*',
+               'zdata/mixed_codec/caltech/vogel/*',
+               'zdata/mixed_codec/sun/sofa/*',
+               'zdata/mixed_codec/sun/vehicle/*',
+               'zdata/pacs_mini_10/*',
+               'zdata/pacs_mini_10/art_painting/dog/*',
+               'zdata/pacs_mini_10/art_painting/elephant/*',
+               'zdata/pacs_mini_10/art_painting/giraffe/*',
+               'zdata/pacs_mini_10/art_painting/guitar/*',
+               'zdata/pacs_mini_10/art_painting/horse/*',
+               'zdata/pacs_mini_10/art_painting/person/*',
+               'zdata/pacs_mini_10/cartoon/dog/*',
+               'zdata/pacs_mini_10/cartoon/elephant/*',
+               'zdata/pacs_mini_10/cartoon/giraffe/*',
+               'zdata/pacs_mini_10/cartoon/horse/*',
+               'zdata/pacs_mini_10/cartoon/house/*',
+               'zdata/pacs_mini_10/cartoon/person/*',
+               'zdata/pacs_mini_10/photo/dog/*',
+               'zdata/pacs_mini_10/photo/elephant/*',
+               'zdata/pacs_mini_10/photo/guitar/*',
+               'zdata/pacs_mini_10/photo/horse/*',
+               'zdata/pacs_mini_10/photo/house/*',
+               'zdata/pacs_mini_10/photo/person/*',
+               'zdata/pacs_mini_10/sketch/dog/*',
+               'zdata/pacs_mini_10/sketch/elephant/*',
+               'zdata/pacs_mini_10/sketch/giraffe/*',
+               'zdata/pacs_mini_10/sketch/guitar/*',
+               'zdata/pacs_mini_10/sketch/horse/*',
+               'zdata/pacs_mini_10/sketch/house/*',
+               'zdata/pacs_split/*',
+               'zdata/patches_permutation4jigsaw/*',
+               'zdata/vlcs_mini/caltech/auto/*',
+               'zdata/vlcs_mini/caltech/hund/*',
+               'zdata/vlcs_mini/caltech/mensch/*',
+               'zdata/vlcs_mini/caltech/stuhl/*',
+               'zdata/vlcs_mini/caltech/vogel/*',
+               'zdata/vlcs_mini/labelme/bird/*',
+               'zdata/vlcs_mini/labelme/drive/*',
+               'zdata/vlcs_mini/labelme/husky/*',
+               'zdata/vlcs_mini/labelme/sit/*',
+               'zdata/vlcs_mini/sun/dog/*',
+               'zdata/vlcs_mini/sun/flying/*',
+               'zdata/vlcs_mini/sun/sapiens/*',
+               'zdata/vlcs_mini/sun/sofa/*',
+               'zdata/vlcs_mini/sun/vehicle/*']}
+
+install_requires = \
+['gdown>=4.7.1,<5.0.0',
+ 'matplotlib>=3.6.1,<4.0.0',
+ 'numpy>=1.23.4,<2.0.0',
+ 'pandas>=1.5.1,<2.0.0',
+ 'pillow>=9.3.0,<10.0.0',
+ 'pyyaml>=6.0,<7.0',
+ 'rich>=13.3.1,<14.0.0',
+ 'scikit-learn>=1.2.1,<2.0.0',
+ 'seaborn==0.12.2',
+ 'torch>=1.12.0,<2.0.0',
+ 'torchmetrics>=0.10.0,<0.11.0',
+ 'torchvision>=0.13.0,<0.14.0']
+
+entry_points = \
+{'console_scripts': ['domainlab = domainlab.cli:domainlab_cli']}
+
+setup_kwargs = {
+    'name': 'domainlab',
+    'version': '0.6.0',
+    'description': 'Library of modular domain generalization for deep learning',
+    'long_description': '# DomainLab: modular python package for training domain invariant neural networks\n\n![GH Actions CI ](https://github.com/marrlab/DomainLab/actions/workflows/ci.yml/badge.svg?branch=master)\n[![codecov](https://codecov.io/gh/marrlab/DomainLab/branch/master/graph/badge.svg)](https://app.codecov.io/gh/marrlab/DomainLab)\n[![Codacy Badge](https://app.codacy.com/project/badge/Grade/bc22a1f9afb742efb02b87284e04dc86)](https://www.codacy.com/gh/marrlab/DomainLab/dashboard)\n[![Documentation](https://img.shields.io/badge/Documentation-Here)](https://marrlab.github.io/DomainLab/)\n[![pages-build-deployment](https://github.com/marrlab/DomainLab/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/marrlab/DomainLab/actions/workflows/pages/pages-build-deployment)\n\n## Distribution shifts, domain generalization and DomainLab\n\nNeural networks trained using data from a specific distribution (domain) usually fails to generalize to novel distributions (domains). Domain generalization aims at learning domain invariant features by utilizing data from multiple domains (data sites, corhorts, batches, vendors) so the learned feature can generalize to new unseen domains (distributions).\n\nDomainLab is a software platform with state-of-the-art domain generalization algorithms implemented, designed by maximal decoupling of different software components thus enhances maximal code reuse.\n\n### DomainLab\nDomainLab decouples the following concepts or objects:\n- task $M$: In DomainLab, a task is a container for datasets from different domains. (e.g. from distribution $D_1$ and $D_2$). Task offer a static protocol to evaluate the generalization performance of a neural network: which dataset(s) is used for training, wich dataset(s) used for testing.  \n- neural network: a map $\\phi$ from the input data to the feature space and a map $\\varphi$ from feature space to output $\\hat{y}$ (e.g. decision variable).\n- model: structural risk in the form of $\\ell() + \\mu R()$  where\n  - $\\ell(Y, \\hat{y}=\\varphi(\\phi(X)))$ is the task specific empirical loss (e.g. cross entropy for classification task).\n  - $R(\\phi(X))$ is the penalty loss to boost domain invariant feature extraction using $\\phi$.\n  - $\\mu$ is the corresponding multiplier to each penalty function factor.\n- trainer:  an object that guides the data flow to model and append further domain invariant losses\nlike inter-domain feature alignment.\n\nWe offer detailed documentation on how these models and trainers work in our documentation page: https://marrlab.github.io/DomainLab/\n\nDomainLab makes it possible to combine models with models, trainers with models, and trainers with trainers in a decorator pattern like line of code `Trainer A(Trainer B(Model C(Model D(network E), network E, network F)))` which correspond to $\\ell() + \\mu_a R_a() + \\mu_b R_b + \\mu_c R_c() + \\mu_d R_d()$, where Model C and Model D share neural network E, but Model C has an extra neural network F. All models share the same neural network for feature extraction, but can have different auxilliary networks for $R()$.\n\n<div style="align: center; text-align:center;">\n<figure>  \n<img src="https://github.com/marrlab/DomainLab/blob/master/docs/figs/invarfeat4dg.png?raw=true" style="width:300px;"/> \n</figure>\n</div>\n\n## Getting started\n\n### Installation\nFor development version in Github, see [Installation and Dependencies handling](./docs/doc_install.md)\n\nWe also offer a PyPI version here https://pypi.org/project/domainlab/  which one could install via `pip install domainlab` and it is recommended to create a virtual environment for it.\n\n### Task specification\nWe offer various ways for the user to specify a scenario to evaluate the generalization performance via training on a limited number of datasets. See detail in\n[Task Specification](./docs/doc_tasks.md) \n\n### Example and usage\n\n#### Either clone this repo and use command line\n\n`python main_out.py -c ./examples/conf/vlcs_diva_mldg_dial.yaml`\nwhere the configuration file below can be downloaded [here](https://raw.githubusercontent.com/marrlab/DomainLab/master/examples/conf/vlcs_diva_mldg_dial.yaml)\n```\nte_d: caltech                       # domain name of test domain\ntpath: examples/tasks/task_vlcs.py  # python file path to specify the task\nbs: 2                               # batch size\nmodel: dann_diva                    # combine model DANN with DIVA\nepos: 1                             # number of epochs\ntrainer: mldg_dial                  # combine trainer MLDG and DIAL\ngamma_y: 700000.0                   # hyperparameter of diva\ngamma_d: 100000.0                   # hyperparameter of diva\nnpath: examples/nets/resnet.py      # neural network for class classification\nnpath_dom: examples/nets/resnet.py  # neural network for domain classification\n```\nSee details in [Command line usage](./docs/doc_usage_cmd.md)\n\n#### or Programm against DomainLab API\n\nSee example here: [Transformer as feature extractor, decorate JIGEN with DANN, training using MLDG decorated by DIAL](https://github.com/marrlab/DomainLab/blob/master/examples/api/jigen_dann_transformer.py)\n\n\n### Benchmark different methods\nDomainLab provides a powerful benchmark functionality.\nTo benchmark several algorithms(combination of neural networks, models, trainers and associated hyperparameters), a single line command along with a benchmark configuration files is sufficient. See details in [benchmarks documentation and tutorial](./docs/doc_benchmark.md)\n\nOne could simply run\n`bash run_benchmark_slurm.sh your_benchmark_configuration.yaml` to launch different experiments with specified configuraiton.\n\n\nFor example,  the following result (without any augmentation like flip) is for PACS dataset using ResNet. \n\n<div style="align: center; text-align:center;">\n<figure>  \n<img src="https://github.com/marrlab/DomainLab/blob/master/docs/figs/stochastic_variation_two_rows.png?raw=true" style="width:800px;"/>\n<div class="caption" style="align: center; text-align:center;">\n<figcaption>Benchmark results plot generated from DomainLab, where each rectangle represent one model trainer combination, each bar inside the rectangle represent a unique hyperparameter index associated with that method combination, each dot represent a random seeds.</figcaption>\n</div>\n</figure>\n</div>\n',
+    'author': 'Xudong Sun',
+    'author_email': 'smilesun.east@gmail.com',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://marrlab.github.io/DomainLab/',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.9,<4.0',
+}
+
+
+setup(**setup_kwargs)
