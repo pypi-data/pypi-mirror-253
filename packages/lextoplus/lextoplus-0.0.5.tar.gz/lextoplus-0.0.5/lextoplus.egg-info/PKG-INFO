@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: lextoplus
+Version: 0.0.5
+Summary: lextoplus package
+Home-page: https://gitlab.nectec.or.th/9meo/pyLexToPlus
+Author: c-tawayip
+Author-email: piyawatchuangkrud@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: marisa_trie
+
+LexToPlus Python version<br/>
+Require:<br/>
+
+-lextoplus<br/>
+```
+  pip install lextoplus
+```
+Example:
+```
+from lextoplus import LexToPlus
+lexto = LexToPlus()
+print(lexto.wordInstance('ทดสอบตัดคำภาษาไทย'))
+```
