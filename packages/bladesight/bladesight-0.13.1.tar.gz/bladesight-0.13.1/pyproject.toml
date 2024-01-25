@@ -1,0 +1,78 @@
+[project]
+name = "bladesight"
+description = "Bladesight provides comprehensive tools for introductory Blade Tip Timing analysis."
+license = "MIT"
+authors = [
+    { name = "Dawie Diamond", email = "dawie.diamond@bladesight.com" },
+]
+requires-python = ">=3.9,<3.12"
+classifiers = [
+    "Intended Audience :: Mechanical Engineering Graduate Students",
+    "Intended Audience :: Test and Measurement Engineers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python",
+    "Topic :: Mechanical Engineering",
+    "Topic :: Mechanical Engineering :: Test and Measurement",
+    "Topic :: Mechanical Engineering :: Noise and Vibration",
+    "Topic :: Mechanical Engineering :: Libraries",
+    "Development Status :: 1 - Beta",
+    "Environment :: Local",
+    "Framework :: Bladesight",
+    "Framework :: Bladesight :: 1",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+
+[tool.poetry]
+name = "bladesight"
+version = "0.13.1"
+description = "Bladesight provides comprehensive tools for introductory Blade Tip Timing analysis."
+authors = ["Dawie Diamond <dawie.diamond@bladesight.com>"]
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://www.bladesight.com/"
+Documentation = "https://docs.bladesight.com/"
+Repository = "https://github.com/Bladesight/Bladesight"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+install = "^1.3.5"
+duckdb = "==0.9.1"
+s3fs = "^2023.9.0"
+yaspin = "^3.0.1"
+polars = "^0.19.2"
+pandas = ">=1.5.1"
+numba = ">=0.57.0"
+scipy = "^1.11.3"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.1.8"
+install = "^1.3.5"
+mkdocs-glightbox = "^0.3.4"
+pandas = "^2.0.1"
+plotly = "^5.14.1"
+mkdocs-table-reader-plugin = "^2.0"
+mkdocs-bibtex = "^2.11.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.13.2"
+tqdm = "^4.65.0"
+ipykernel = "^6.23.1"
+black = "^23.9.1"
+isort = "^5.12.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
