@@ -1,0 +1,8 @@
+README.md
+setup.py
+sheljacalci/__init__.py
+sheljacalci/calci.py
+sheljacalci.egg-info/PKG-INFO
+sheljacalci.egg-info/SOURCES.txt
+sheljacalci.egg-info/dependency_links.txt
+sheljacalci.egg-info/top_level.txt
