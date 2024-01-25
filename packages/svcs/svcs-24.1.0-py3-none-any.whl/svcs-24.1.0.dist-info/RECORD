@@ -1,0 +1,13 @@
+svcs/__init__.py,sha256=CLaIIfIh_Q96EndsVtKRAouI_cnPj55buo8Tt9Sp8wY,751
+svcs/_core.py,sha256=aSR0dUVZ3cldIXdAoB9cNQQUk-yDZeZR3m1LHuHLsf8,29021
+svcs/aiohttp.py,sha256=P8eEliNtcIqhYXMd5Z3JEMyV3ktKSzdP-vEj3kKeLyo,6350
+svcs/exceptions.py,sha256=ZhegxRC4gVU1QFJZFpKlH-7oC6QoNw-povEXvmZ3Mu4,246
+svcs/fastapi.py,sha256=T3BAQcWK9lde-OdJ60370vWLY5mbliSSgaDIDSYC0p4,2750
+svcs/flask.py,sha256=3menZseOK532-VX1s9bFp74mmySPlsgVra_RCpdlaak,7186
+svcs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+svcs/pyramid.py,sha256=9Pqs037b-g3w4KzuNfaHG5OkS65hiWhB9sBi5SvG8NU,7436
+svcs/starlette.py,sha256=z8RfjIG5N4ut3pFatFVXT4aXIpPHYGqCPuLXviO3yuw,6057
+svcs-24.1.0.dist-info/METADATA,sha256=ls7QzN4Oquu8sX4JeDvMSt2r-FS_oTZ8Vtu_n1FmBXo,6151
+svcs-24.1.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+svcs-24.1.0.dist-info/licenses/LICENSE,sha256=9sy51f_MGaZmR9I2t585z6QO9d-X3hLSuet2UodvMPM,1098
+svcs-24.1.0.dist-info/RECORD,,
