@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "ue5config"
+version = "0.0.3"
+description = "A grammatical parser for Unreal Engine 5 configuration files"
+authors = ['Rob "N3X15" Nelson <nexisentertainment@gmail.com>']
+readme = "README.md"
+license = "MIT"
+homepage = "https://gitlab.com/N3X15/UE5Config"
+repository = "https://gitlab.com/N3X15/UE5Config.git"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+pyparsing = "^3.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = { extras = ["d"], version = "^1.8.0" }
+black = "^23.12.1"
+isort = "^5.13.2"
+ruamel-yaml = "^0.18.5"
+toml = "^0.10.2"
+twine = "^4.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
