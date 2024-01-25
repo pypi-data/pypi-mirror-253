@@ -1,0 +1,4 @@
+# MANIFEST.in
+
+graft rpa_pdf/fonts
+graft rpa_pdf/exec
