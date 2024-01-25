@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: neuron-bci-schemas
+Version: 0.7.0
+Summary: 
+Author: Никита Есипов
+Author-email: dasaderto@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: datasets (>=2.16.1,<3.0.0)
+Requires-Dist: jsonlines (>=4.0.0,<5.0.0)
+Requires-Dist: pandas (>=2.2.0,<3.0.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: scikit-learn (>=1.4.0,<2.0.0)
+Requires-Dist: torch (>=2.1.0,<3.0.0)
+Requires-Dist: transformers (>=4.27.4,<5.0.0)
+Requires-Dist: trl (>=0.6,<0.7)
+Description-Content-Type: text/markdown
+
+# Documentation
+
+# class `ModelProcess`
+
+The `ModelProcess` class is designed to manage the execution of machine learning models given a set of input examples. It allows for model inference on different devices such as CPUs and GPUs and supports a specific backend model format.
+
+## Initialization
+
+### `ModelProcess.__init__()`
+
+This method initializes the `ModelProcess` object with the necessary information to later run the model.
+
+- `model_path` (str): The file path to the trained model that you want to load.
+- `inputs` (List[Example]): A list of `Example` objects, representing the input data that will be fed into the model for inference.
+
+## Methods
+
+### `ModelProcess.gpu_run()`
+
+Runs the model on a GPU and collects the results. This requires the host to have a compatible and available GPU.
+
+Returns a list of `ModelResult` objects, which contain the output data produced by the model after processing each input Example on the GPU.
+
+### `ModelProcess.cpu_run(ggml_gpt_path)`
+
+`ggml_gpt_path` (str, optional): Optional argument providing the backend file path for the GGML GPT model. Default is set to `.bin/gpt-2-backend`.
+
+Returns a list of `ModelResult` objects, which contain the output data produced by the model after processing each input Example on the CPU.
+
+## Example Usage
+
+### Initialization
+
+To use the `ModelProcess` class, first, create an instance by providing the model path and a list of input examples.
+
+```python
+
+from model_process import ModelProcess
+
+model_path = "path/to/your/model"
+inputs = [...]  # List of Example objects
+
+model_processor = ModelProcess(model_path, inputs)
+```
+
+### Run on GPU
+Run the model on GPU using the `gpu_run()` method.
+
+```python
+gpu_results = model_processor.gpu_run()
+```
+
+### Run on CPU
+Run the model on CPU using the `cpu_run()` method.
+
+```python
+cpu_results = model_processor.cpu_run(ggml_gpt_path=".bin/gpt-2-backend")
+```
+
+# class `ModelTrain`
+The ModelTrain class is designed for training machine learning models using a set of input examples. It supports the training process for models with specific configurations such as model name, tokenizer, and maximum training steps.
+
+## Initialization
+### `ModelTrain.__init__()`
+This method initializes the `ModelTrain` object with the necessary information to train the model.
+Arguments
+ - `inputs` (List[Example]): A list of Example objects, representing the input data for training the model.
+ - `model_name` (str): The name or type of the model to be trained.
+ - `tokenizer` (str): The type of tokenizer to be used during training.
+ - `max_steps` (int, optional): The maximum number of training steps. Default is set to 100,000.
+
+## Methods
+### `ModelTrain.train()`
+This method initiates the training process for the specified model, using the provided input data and configuration parameters.
+
+## Example Usage
+### Initialization
+
+To use the `ModelTrain` class, create an instance by providing input examples, model name, tokenizer, and optional maximum training steps.
+
+```python
+from model_train import ModelTrain
+
+inputs = [...]  # List of Example objects
+model_name = "your_model_type"
+tokenizer = "your_tokenizer_type"
+
+model_trainer = ModelTrain(inputs, model_name, tokenizer, max_steps=100000)
+model_trainer.train()
+```
