@@ -1,0 +1,52 @@
+# BASE INFORMATION
+name: "SPT-3G 2018 TT/TE/EE (Balkenhol et al. 2023)"# Balkenhol, Dutcher, Spurio Mancini, Doussot, Benabed, Galli et al. 2023, https://arxiv.org/abs/2212.05642
+
+# FEEDBACK
+feedback: True
+
+# KEY FILES
+band_power_file: "TEET_bdp.txt"
+covariance_file: "TEET_cov.txt"
+window_functions_folder: "TEET_windows/"
+effective_frequencies: "../effective_frequencies.yaml"
+
+# DATA INFORMATION
+spectra_info:
+ - TE 90x150: 44
+ - TE 150x90: 44
+
+# DATA MODEL
+data_model:
+  - Module: "common.SuperSampleLensing"
+    kappa_param: "Kappa"
+  - Module: "common.AberrationCorrection"
+    aberration_coefficient: -0.0004826
+    descriptor: "Aberration"
+  - Module: "common.GalacticDust"
+    descriptor: "TE Polarised Galactic Dust"
+    amp_param: "TE_PolGalDust_Amp"
+    alpha_param: "TE_PolGalDust_Alpha"
+    beta_param: "TE_PolGalDust_Beta"
+    effective_frequencies: "polarised_galactic_dust"
+    affected_specs: ["TE 90x150", "TE 150x90"]
+    ell_ref: 80
+    nu_ref: 150
+    T_GALDUST: 19.6
+
+# GAUSSIAN PRIORS
+priors:
+  - par_names: "tau"
+    central_value: 0.054
+    prior_std: 0.0074
+  - par_names: 'TE_PolGalDust_Amp'
+    central_value: 0.12
+    prior_std: 0.051
+  - par_names: 'TE_PolGalDust_Alpha'
+    central_value: -2.42
+    prior_std: 0.04
+  - par_names: 'TE_PolGalDust_Beta'
+    central_value: 1.51
+    prior_std: 0.04
+  - par_names: 'Kappa'
+    central_value: 0.0
+    prior_std: 0.00045

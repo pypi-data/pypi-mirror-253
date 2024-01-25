@@ -1,0 +1,108 @@
+# BASE INFORMATION
+name: "SPT-3G 2018 TT/TE/EE (Balkenhol et al. 2023)"# Balkenhol, Dutcher, Spurio Mancini, Doussot, Benabed, Galli et al. 2023, https://arxiv.org/abs/2212.05642
+
+# FEEDBACK
+feedback: True
+
+# KEY FILES
+band_power_file: "../spt3g_2018_ttteee_bdp.txt"
+covariance_file: "../spt3g_2018_ttteee_cov.txt"
+window_functions_folder: "../windows/"
+effective_frequencies: "../effective_frequencies.yaml"
+
+data_selection: "EE only"
+
+# DATA INFORMATION
+spectra_info:
+ - TT 90x90: 35
+ - TE 90x90: 44
+ - EE 90x90: 44
+ - TT 90x150: 35
+ - TE 90x150: 44
+ - EE 90x150: 44
+ - TT 90x220: 35
+ - TE 90x220: 44
+ - EE 90x220: 44
+ - TT 150x150: 35
+ - TE 150x150: 44
+ - EE 150x150: 44
+ - TT 150x220: 30
+ - TE 150x220: 44
+ - EE 150x220: 44
+ - TT 220x220: 30
+ - TE 220x220: 44
+ - EE 220x220: 44
+
+# DATA MODEL
+data_model:
+  - Module: "common.SuperSampleLensing"
+    kappa_param: "Kappa"
+  - Module: "common.AberrationCorrection"
+    aberration_coefficient: -0.0004826
+    descriptor: "Aberration"
+  - Module: "common.PoissonPower"
+    spec_param_dict:
+      EE 90x90: "EE_Poisson_90x90"
+      EE 90x150: "EE_Poisson_90x150"
+      EE 90x220: "EE_Poisson_90x220"
+      EE 150x150: "EE_Poisson_150x150"
+      EE 150x220: "EE_Poisson_150x220"
+      EE 220x220: "EE_Poisson_220x220"
+    ell_ref: 3000
+  - Module: "common.GalacticDust"
+    descriptor: "EE Polarised Galactic Dust"
+    amp_param: "EE_PolGalDust_Amp"
+    alpha_param: "EE_PolGalDust_Alpha"
+    beta_param: "EE_PolGalDust_Beta"
+    effective_frequencies: "polarised_galactic_dust"
+    affected_specs: ["EE 90x90", "EE 90x150", "EE 90x220", "EE 150x150", "EE 150x220", "EE 220x220"]
+    ell_ref: 80
+    nu_ref: 150
+    T_GALDUST: 19.6
+  - Module: "common.CalibrationCross"
+    spec_param_dict:
+      EE 90x90: ["Ecal90", "Ecal90", "Ecal90", "Ecal90"]
+      EE 90x150: [ "Ecal90", "Ecal150", "Ecal90", "Ecal150" ]
+      EE 90x220: [ "Ecal90", "Ecal220", "Ecal90", "Ecal220" ]
+      EE 150x150: [ "Ecal150", "Ecal150", "Ecal150", "Ecal150" ]
+      EE 150x220: [ "Ecal150", "Ecal220", "Ecal150", "Ecal220" ]
+      EE 220x220: [ "Ecal220", "Ecal220", "Ecal220", "Ecal220" ]
+
+# GAUSSIAN PRIORS
+priors:
+  - par_names: "tau"
+    central_value: 0.054
+    prior_std: 0.0074
+  - par_names: 'EE_Poisson_90x90'
+    central_value: 0.040469
+    prior_std: 0.012141
+  - par_names: 'EE_Poisson_90x150'
+    central_value: 0.018048
+    prior_std: 0.005414
+  - par_names: 'EE_Poisson_90x220'
+    central_value: 0.015719
+    prior_std: 0.004716
+  - par_names: 'EE_Poisson_150x150'
+    central_value: 0.011495
+    prior_std: 0.003448
+  - par_names: 'EE_Poisson_150x220'
+    central_value: 0.018962
+    prior_std: 0.005689
+  - par_names: 'EE_Poisson_220x220'
+    central_value: 0.047557
+    prior_std: 0.014267
+  - par_names: 'EE_PolGalDust_Amp'
+    central_value: 0.05
+    prior_std: 0.022
+  - par_names: 'EE_PolGalDust_Alpha'
+    central_value: -2.42
+    prior_std: 0.04
+  - par_names: 'EE_PolGalDust_Beta'
+    central_value: 1.51
+    prior_std: 0.04
+  - par_names: 'Kappa'
+    central_value: 0.0
+    prior_std: 0.00045
+  - par_names: ["Ecal90", "Ecal150", "Ecal220"]
+    central_value: [1.0, 1.0, 1.0]
+    prior_covariance: "EE_cal_covariance.txt"
