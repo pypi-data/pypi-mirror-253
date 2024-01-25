@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: proboscis-data-tree
+Version: 0.1.2
+Summary: 
+Author: proboscis
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: torch
+Requires-Dist: Expression (>=1.1.0,<2.0.0)
+Requires-Dist: PyYAML
+Requires-Dist: bqplot
+Requires-Dist: cytoolz
+Requires-Dist: dill (>=0.3.4,<0.4.0)
+Requires-Dist: easydict
+Requires-Dist: filelock
+Requires-Dist: frozendict
+Requires-Dist: h5py
+Requires-Dist: lazy
+Requires-Dist: lazy-object-proxy
+Requires-Dist: loguru
+Requires-Dist: logzero
+Requires-Dist: makefun (>=1.11.3,<2.0.0)
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: omni-cv-rules
+Requires-Dist: pandas
+Requires-Dist: pinject
+Requires-Dist: py-omni-converter
+Requires-Dist: pyvis
+Requires-Dist: retry
+Requires-Dist: tabulate (>=0.8.9,<0.9.0)
+Requires-Dist: tblib
+Requires-Dist: tqdm
