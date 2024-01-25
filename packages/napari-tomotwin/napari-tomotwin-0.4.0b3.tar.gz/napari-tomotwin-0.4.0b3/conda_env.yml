@@ -1,0 +1,20 @@
+name: napari-tomotwin
+channels:
+  - nvidia
+  - rapidsai
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - napari=0.4.18
+  - pandas
+  - numpy
+  - pyqt
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - napari-clusters-plotter
+  - tqdm
+  - mrcfile
+  - cuml=23.12
+  - cuda-version=11.8
