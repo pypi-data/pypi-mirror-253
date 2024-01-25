@@ -1,0 +1,2 @@
+[console_scripts]
+ls-py = stevools.scripts.ls_py:main
