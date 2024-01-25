@@ -1,0 +1,3943 @@
+{
+    "s3": {
+        "name": "Simple Storage Service (S3)",
+        "url": "/s3/get-started?region={region}",
+        "description": "Store and retrieve any amount of data from anywhere",
+        "emoji": "🪣",
+        "rank": 10,
+        "menus": {
+            "s3-buckets": {
+                "name": "Buckets",
+                "url": "/s3/home?region={region}",
+                "description": "Buckets are containers for data stored in S3",
+                "rank": 10
+            },
+            "s3-access_grants": {
+                "name": "S3 Access Grants",
+                "url": "/s3/access-grants?region={region}",
+                "description": "Control access to data sets within S3 by using identities from your corporate directory or AWS Identity and Access Management (IAM). You can create only one Access Grants instance per AWS Region per account.",
+                "rank": 20
+            },
+            "s3-access_points": {
+                "name": "S3 Access Points",
+                "url": "/s3/ap?region={region}",
+                "description": "Amazon S3 Access Points simplify managing data access at scale for shared datasets in S3. Access points are named network endpoints that are attached to buckets that you can use to perform S3 object operations. An Access Point alias provides the same functionality as an Access Point ARN and can be substituted for use anywhere an S3 bucket name is normally used for data access.",
+                "rank": 30
+            },
+            "s3-object_lambda_access_points": {
+                "name": "Object Lambda Access Points",
+                "url": "/s3/olap?region={region}",
+                "description": "You can use Amazon S3 Object Lambda Access Points to run custom transformations when retrieving objects.",
+                "rank": 40
+            },
+            "s3-multi_region_access_points": {
+                "name": "Multi-Region Access Points",
+                "url": "/s3/mraps?region={region}",
+                "description": "Multi-Region Access Points offer a global S3 hostname that provides access to multiple S3 buckets across AWS Regions with automatic routing and failover between buckets.",
+                "rank": 50
+            },
+            "s3-batch_operations": {
+                "name": "Batch Operations",
+                "url": "/s3/jobs?region={region}",
+                "description": "A job is used to execute batch operations on a list of S3 objects.",
+                "rank": 60
+            },
+            "s3-iam_access_analyzer": {
+                "name": "IAM Access Analyzer for S3",
+                "url": "/s3/jobs?region={region}",
+                "description": "The buckets listed below are configured to allow access by anyone using the internet or authenticated AWS users, including AWS users outside of your organization.",
+                "rank": 70
+            },
+            "s3-block_public_access_settings_for_this_account": {
+                "name": "Block Public Access settings for this account",
+                "url": "/s3/settings?region={region}",
+                "description": "Use Amazon S3 Block public access settings to control the settings that allow public access to your data.",
+                "rank": 80
+            },
+            "s3-storage_lens_dashboard": {
+                "name": "Storage Lens Dashboard",
+                "url": "/s3/lens?region={region}",
+                "description": "Storage Lens provides visibility into storage usage and activity trends at the organization or account level, with drill-downs such as AWS Region, Storage Lens groups, or prefixes.",
+                "rank": 90
+            },
+            "s3-storage_lens_groups": {
+                "name": "Storage Lens groups",
+                "url": "/s3/slg?region={region}",
+                "description": "You can use Storage Lens groups to analyze your storage allocation and usage for large shared buckets, such as data lakes.",
+                "rank": 91
+            },
+            "s3-aws_organizations_settings_for_storage_lens": {
+                "name": "AWS Organizations settings for Storage Lens",
+                "url": "/s3/lens/organization-settings?region={region}",
+                "description": "You can authorize Storage Lens to access your organization hierarchy. You can also register member accounts to act as delegated administrators.",
+                "rank": 92
+            }
+        }
+    },
+    "iam": {
+        "name": "Identity and Access Management (IAM)",
+        "url": "/iamv2/home?region={region}#/home",
+        "description": "Manage User Access and Encryption Keys",
+        "emoji": "👤",
+        "rank": 20,
+        "menus": {
+            "iam-roles": {
+                "name": "Roles",
+                "url": "/iamv2/home?region={region}#/roles",
+                "description": "An IAM role is an identity you can create that has specific permissions with credentials that are valid for short durations. Roles can be assumed by entities that you trust.",
+                "rank": 10
+            },
+            "iam-policies": {
+                "name": "Policies",
+                "url": "/iamv2/home?region={region}#/policies",
+                "description": "A policy is an object in AWS that defines permissions.",
+                "rank": 20
+            },
+            "iam-users": {
+                "name": "Users",
+                "url": "/iamv2/home?region={region}#/users",
+                "description": "An IAM user is an identity with long-term credentials that is used to interact with AWS in an account.",
+                "rank": 30
+            },
+            "iam-user_groups": {
+                "name": "User groups",
+                "url": "/iamv2/home?region={region}#/groups",
+                "description": "A user group is a collection of IAM users. Use groups to specify permissions for a collection of users.",
+                "rank": 40
+            },
+            "iam-new_policy": {
+                "name": "Create a New IAM Policy",
+                "url": "/iam/home#/policies$new?step=edit",
+                "description": "Create a New IAM Policy",
+                "rank": 50
+            },
+            "iam-new_role": {
+                "name": "Create a New IAM Role",
+                "url": "/iamv2/home#/roles/create?step=selectEntities",
+                "description": "Create a New IAM Role",
+                "rank": 60
+            },
+            "iam-identity_providers": {
+                "name": "Identity providers",
+                "url": "/iamv2/home?region={region}#/identity_providers",
+                "description": "Use an identity provider (IdP) to manage your user identities outside of AWS, but grant the user identities permissions to use AWS resources in your account.",
+                "rank": 70
+            },
+            "iam-account_settings": {
+                "name": "Account settings",
+                "url": "/iamv2/home?region={region}#/account_settings",
+                "description": "Use the Account settings page to configure password requirements for IAM users, create temporary credentials for trusted users using AWS Security Token Service, and turn on endpoints from which you can request temporary credentials.",
+                "rank": 80
+            },
+            "iam-access_analyzer": {
+                "name": "Access Analyzer",
+                "url": "/access-analyzer/home?region={region}#/",
+                "rank": 90
+            },
+            "iam-access_analyzer_external_access": {
+                "name": "Access Analyzer - External Access",
+                "url": "/access-analyzer/home?region={region}#/external-access-findings",
+                "rank": 91
+            },
+            "iam-access_analyzer_analyzer_settings": {
+                "name": "Access Analyzer - Analyzer Settings",
+                "url": "/access-analyzer/home?region={region}#/settings",
+                "rank": 92
+            },
+            "iam-access_analyzer_unused_access": {
+                "name": "Access Analyzer - Unused Access",
+                "url": "/access-analyzer/home?region={region}#/unused-access-findings",
+                "rank": 93
+            },
+            "iam-credential_report": {
+                "name": "Credential report",
+                "url": "/iamv2/home?region={region}#/credential_report",
+                "description": "The credentials report lists all your IAM users in this account and the status of their various credentials. After a report is created, it is stored for up to four hours.",
+                "rank": 100
+            },
+            "iam-organization_activity": {
+                "name": "Organization activity",
+                "url": "/iamv2/home?region={region}#/organizations/ServiceActivity",
+                "rank": 110
+            },
+            "iam-scps": {
+                "name": "Service control policies (SCPs)",
+                "url": "/iam/home?region={region}#/organizations/ServiceControlPolicies",
+                "description": "A service control policy (SCP) limits permissions for entities in member accounts in AWS Organizations.",
+                "rank": 120
+            },
+            "iam-dashboard": {
+                "name": "Dashboard",
+                "url": "/iam/home?region={region}#/home",
+                "description": "IAM Dashboard"
+            }
+        }
+    },
+    "ec2": {
+        "name": "Elastic Cloud Compute (EC2)",
+        "url": "/ec2/home?region={region}#Home:",
+        "description": "Virtual Servers in the Cloud",
+        "emoji": "🖥",
+        "rank": 30,
+        "menus": {
+            "ec2-instances": {
+                "name": "Instances",
+                "url": "/ec2/v2/home?region={region}#Instances:",
+                "rank": 10
+            },
+            "ec2-securitygroups": {
+                "name": "Security Groups (SG)",
+                "url": "/ec2/v2/home?region={region}#SecurityGroups:",
+                "rank": 20
+            },
+            "ec2-amis": {
+                "name": "Amazon Machine Image",
+                "url": "/ec2/home?region={region}#Images:",
+                "rank": 30
+            },
+            "ec2-volumes": {
+                "name": "Elastic Block Storage (EBS)",
+                "url": "/ec2/home?region={region}#Volumes:",
+                "rank": 40
+            },
+            "ec2-snapshots": {
+                "name": "Snapshots",
+                "url": "/ec2/home?region={region}#Snapshots:",
+                "rank": 50
+            },
+            "ec2-keypairs": {
+                "name": "Key Pairs",
+                "url": "/ec2/home?region={region}#KeyPairs:",
+                "rank": 60
+            },
+            "ec2-elasticips": {
+                "name": "Elastic IPs",
+                "url": "/ec2/home?region={region}#Addresses:",
+                "rank": 70
+            },
+            "ec2-networkinterfaces": {
+                "name": "Network Interfaces",
+                "url": "/ec2/home?region={region}#NIC:",
+                "rank": 80
+            },
+            "ec2-launchtemplates": {
+                "name": "Launch Templates",
+                "url": "/ec2/home?region={region}#LaunchTemplates:",
+                "rank": 90
+            },
+            "ec2-events": {
+                "name": "Events",
+                "url": "/ec2/home?region={region}#Events:"
+            },
+            "ec2-dashboard": {
+                "name": "Dashboard",
+                "url": "/ec2/home?region={region}#Home:"
+            },
+            "ec2-savingsplans": {
+                "name": "Savings Plans",
+                "url": "/ec2/home?region={region}#SavingsPlans:"
+            },
+            "ec2-spotrequests": {
+                "name": "Spot Requests",
+                "url": "/ec2sp/v2/home?region={region}#/SpotInstances:"
+            },
+            "ec2-targetgroups": {
+                "name": "Target Groups",
+                "url": "/ec2/home?region={region}#TargetGroups:"
+            },
+            "ec2-instancetypes": {
+                "name": "Instance Types",
+                "url": "/ec2/v2/home?region={region}#InstanceTypes:"
+            },
+            "ec2-launchconfigs": {
+                "name": "Launch Configurations",
+                "url": "/ec2autoscaling/home?region={region}#/lc"
+            },
+            "ec2-loadbalancers": {
+                "name": "Load Balancers (ELB)",
+                "url": "/ec2/home?region={region}#LoadBalancers:"
+            },
+            "ec2-dedicatedhosts": {
+                "name": "Dedicated Hosts",
+                "url": "/ec2/home?region={region}#Hosts:"
+            },
+            "ec2-placementgroups": {
+                "name": "Placement Groups",
+                "url": "/ec2/home?region={region}#PlacementGroups:"
+            },
+            "ec2-lifecyclemanager": {
+                "name": "Lifecycle Manager",
+                "url": "/ec2/home?region={region}#Lifecycle:"
+            },
+            "ec2-autoscalinggroups": {
+                "name": "Auto Scaling Groups",
+                "url": "/ec2autoscaling/home?region={region}#/details"
+            },
+            "ec2-reservedinstances": {
+                "name": "Reserved Instances",
+                "url": "/ec2/home?region={region}#ReservedInstances:"
+            },
+            "ec2-scheduledinstances": {
+                "name": "Scheduled Instances",
+                "url": "/ec2sp/v2/home?region={region}#/si/landing"
+            },
+            "ec2-capacityreservations": {
+                "name": "Capacity Reservations",
+                "url": "/ec2sp/v2/home/?region={region}#/cr/reservations"
+            }
+        }
+    },
+    "glue": {
+        "name": "Glue",
+        "url": "/glue/home?region={region}#catalog:tab=databases",
+        "description": "fully managed ETL (extract, transform, and load) service",
+        "rank": 31,
+        "menus": {
+            "glue-databases": {
+                "name": "Databases",
+                "url": "/glue/home?region={region}#/v2/data-catalog/databases",
+                "description": "A database is a set of associated table definitions, organized into a logical group.",
+                "rank": 10
+            },
+            "glue-tables": {
+                "name": "Tables",
+                "url": "/glue/home?region={region}#/v2/data-catalog/tables",
+                "description": "A table is the metadata definition that represents your data, including its schema. A table can be used as a source or target in a job definition.",
+                "rank": 20
+            },
+            "glue-crawlers": {
+                "name": "Crawlers",
+                "url": "/glue/home?region={region}#/v2/data-catalog/crawlers",
+                "description": "A crawler connects to a data store, progresses through a prioritized list of classifiers to determine the schema for your data, and then creates metadata tables in your data catalog.",
+                "rank": 30
+            },
+            "glue-jobs": {
+                "name": "Jobs",
+                "url": "/gluestudio/home?region={region}#/jobs",
+                "description": "This section lists all the extract, transform, and load (ETL) jobs that have been created in your account.",
+                "rank": 40
+            },
+            "glue-classifiers": {
+                "name": "Classifiers",
+                "url": "/glue/home?region={region}#/v2/data-catalog/classifiers",
+                "description": "Classifiers are triggered during a crawl task. A classifier checks whether a given file is in a format the crawler can handle. If it is, the classifier creates a schema in the form of a StructType object that matches that data format.",
+                "rank": 50
+            },
+            "glue-schemas": {
+                "name": "Schemas",
+                "url": "/glue/home?region={region}#/v2/data-catalog/schemas",
+                "description": "A schema is a versioned specification for reliable data exchanges across heterogeneous systems."
+            },
+            "glue-triggers": {
+                "name": "Triggers",
+                "url": "/glue/home?region={region}#/v2/etl-configuration/triggers",
+                "description": "A trigger starts a job when it fires."
+            },
+            "glue-workflows": {
+                "name": "Workflows",
+                "url": "/glue/home?region={region}#/v2/etl-configuration/workflows",
+                "description": "A workflow is an orchestration used to visualize and manage the relationship and execution of multiple triggers, jobs and crawlers."
+            },
+            "glue-blueprints": {
+                "name": "Blueprints",
+                "url": "/glue/home?region={region}#/v2/etl-configuration/blueprints",
+                "description": "A blueprint is used to generate AWS Glue workflows for common ETL use cases in your organization."
+            },
+            "glue-record_matching": {
+                "name": "Record Matching",
+                "url": "/glue/home?region={region}#/v2/etl-configuration/ml-transforms",
+                "description": "Record Matching."
+            },
+            "glue-data_connections": {
+                "name": "Data connections",
+                "url": "/gluestudio/home?region={region}#/connectors",
+                "description": "You can view your existing connections and connectors on this page. "
+            },
+            "glue-data_catalog_settings": {
+                "name": "Data catalog settings",
+                "url": "/glue/home?region={region}#/v2/security/settings",
+                "description": "Choose encryption and permission options for your accounts data catalog."
+            },
+            "glue-security_configurations": {
+                "name": "Security configurations",
+                "url": "/glue/home?region={region}#/v2/security/security-configurations"
+            },
+            "glue-sensitive_data_detection": {
+                "name": "Sensitive data detection",
+                "url": "/gluestudio/home?region={region}#/pii-custom-patterns",
+                "description": "Sensitive data detection."
+            },
+            "glue-stream_schema_registries": {
+                "name": "Stream schema registries",
+                "url": "/glue/home?region={region}#/v2/data-catalog/schemaRegistries",
+                "description": "A registry is a logical container of schemas, and schemas can only exist in a single registry."
+            }
+        }
+    },
+    "lakeformation": {
+        "name": "Lake Formation (LF)",
+        "url": "/lakeformation/home?region={region}#firstRun",
+        "description": "Create and manage data lakes with centralized access control across Amazon Web Services",
+        "rank": 32,
+        "menus": {
+            "lakeformation-datalakepermissions": {
+                "name": "Data lake permissions",
+                "url": "/lakeformation/home?region={region}#permissions-list",
+                "rank": 10
+            },
+            "lakeformation-databases": {
+                "name": "Databases",
+                "url": "/lakeformation/home?region={region}#databases",
+                "rank": 20
+            },
+            "lakeformation-tables": {
+                "name": "Tables",
+                "url": "/lakeformation/home?region={region}#tables",
+                "rank": 30
+            },
+            "lakeformation-dashboard": {
+                "name": "dashboard",
+                "url": "/lakeformation/home?region={region}#dashboard",
+                "rank": 40
+            },
+            "lakeformation-datalakelocations": {
+                "name": "Data lake locatons",
+                "url": "/lakeformation/home?region={region}#register-list",
+                "rank": 50
+            },
+            "lakeformation-datalocationpermissions": {
+                "name": "Data location permissions",
+                "url": "/lakeformation/home?region={region}#location-permissions",
+                "rank": 60
+            },
+            "lakeformation-lftags": {
+                "name": "LF tags",
+                "url": "/lakeformation/home?region={region}#policy-tags",
+                "rank": 70
+            },
+            "lakeformation-lftagspermissions": {
+                "name": "Tag permissions",
+                "url": "/lakeformation/home?region={region}#tag-permissions",
+                "rank": 80
+            },
+            "lakeformation-administrativerolesandtasks": {
+                "name": "Administrative roles and tasks",
+                "url": "/lakeformation/home?region={region}#administrative-roles-and-tasks",
+                "rank": 90
+            }
+        }
+    },
+    "vpc": {
+        "name": "Virtual Private Cloud",
+        "url": "/vpc/home?region={region}#dashboard:",
+        "description": "Isolated Cloud Resources",
+        "emoji": "🌐",
+        "rank": 40,
+        "menus": {
+            "vpc-vpcs": {
+                "name": "Your VPCs",
+                "url": "/vpc/home?region={region}#vpcs:",
+                "rank": 10
+            },
+            "vpc-subnets": {
+                "name": "Subnets",
+                "url": "/vpc/home?region={region}#subnets:",
+                "rank": 20
+            },
+            "vpc-elasticips": {
+                "name": "Elastic IPs",
+                "url": "/vpc/home?region={region}#Addresses:",
+                "rank": 30
+            },
+            "vpc-endpoints": {
+                "name": "Endpoints",
+                "url": "/vpc/home?region={region}#Endpoints:",
+                "rank": 40
+            },
+            "vpc-internetgateways": {
+                "name": "Internet Gateways",
+                "url": "/vpc/home?region={region}#igws:",
+                "rank": 50
+            },
+            "vpc-natgateways": {
+                "name": "NAT Gateways",
+                "url": "/vpc/home?region={region}#NatGateways:",
+                "rank": 60
+            },
+            "vpc-routetables": {
+                "name": "Route Tables",
+                "url": "/vpc/home?region={region}#RouteTables:",
+                "rank": 70
+            },
+            "vpc-securitygroups": {
+                "name": "Security Groups",
+                "url": "/vpc/home?region={region}#SecurityGroups:",
+                "rank": 80
+            },
+            "vpc-settings": {
+                "name": "Settings",
+                "url": "/vpc/home?region={region}#Settings:"
+            },
+            "vpc-dashboard": {
+                "name": "Dashboard",
+                "url": "/vpc/home?region={region}#dashboard:"
+            },
+            "vpc-firewalls": {
+                "name": "Firewalls",
+                "url": "/vpc/home?region={region}#NetworkFirewalls:"
+            },
+            "vpc-rulegroups": {
+                "name": "Rule Groups",
+                "url": "/vpc/home?region={region}#DNSFirewallRuleGroups:"
+            },
+            "vpc-dhcpoptions": {
+                "name": "DHCP Options Sets",
+                "url": "/vpc/home?region={region}#dhcpOptions:"
+            },
+            "vpc-domainlists": {
+                "name": "Domain Lists",
+                "url": "/vpc/home?region={region}#DNSFirewallDomainLists:"
+            },
+            "vpc-networkacls": {
+                "name": "Network ACLs",
+                "url": "/vpc/home?region={region}#acls:"
+            },
+            "vpc-mirrorfilters": {
+                "name": "Mirror Filters",
+                "url": "/vpc/home?region={region}#TrafficMirrorFilters:"
+            },
+            "vpc-mirrortargets": {
+                "name": "Mirror Targets",
+                "url": "/vpc/home?region={region}#TrafficMirrorTargets:"
+            },
+            "vpc-mirrorsessions": {
+                "name": "Mirror Sessions",
+                "url": "/vpc/home?region={region}#TrafficMirrorSessions:"
+            },
+            "vpc-networkmanager": {
+                "name": "Network Manager",
+                "url": "/vpc/home?region={region}#networkmanager:"
+            },
+            "vpc-vpnconnections": {
+                "name": "Site-to-Site VPN Connections",
+                "url": "/vpc/home?region={region}#VpnConnections:"
+            },
+            "vpc-transitgateways": {
+                "name": "Transit Gateways",
+                "url": "/vpc/home?region={region}#TransitGateways:"
+            },
+            "vpc-carrier_gateways": {
+                "name": "Carrier Gateways",
+                "url": "/vpc/home?region={region}#CarrierGateways:"
+            },
+            "vpc-customergateways": {
+                "name": "Customer Gateways",
+                "url": "/vpc/home?region={region}#CustomerGateways:"
+            },
+            "vpc-endpointservices": {
+                "name": "Endpoint Services",
+                "url": "/vpc/home?region={region}#EndpointServices:"
+            },
+            "vpc-firewallpolicies": {
+                "name": "Firewall policies",
+                "url": "/vpc/home?region={region}#NetworkFirewallPolicies:"
+            },
+            "vpc-clientvpnendpoints": {
+                "name": "Client VPN Endpoints",
+                "url": "/vpc/home?region={region}#ClientVPNEndpoints:"
+            },
+            "vpc-managedprefixlists": {
+                "name": "Managed Prefix Lists",
+                "url": "/vpc/home?region={region}#ManagedPrefixLists:"
+            },
+            "vpc-peeringconnections": {
+                "name": "Peering Connections",
+                "url": "/vpc/home?region={region}#PeeringConnections:"
+            },
+            "vpc-reachabilityanalyzer": {
+                "name": "Reachability Analyzer",
+                "url": "/vpc/home?region={region}#ReachabilityAnalyzer:"
+            },
+            "vpc-virtualprivategateways": {
+                "name": "Virtual Private Gateways",
+                "url": "/vpc/home?region={region}#VpnGateways:"
+            },
+            "vpc-transitgatewaymulticast": {
+                "name": "Transit Gateway Multicast",
+                "url": "/vpc/home?region={region}#TransitGatewayMulticastDomains:"
+            },
+            "vpc-networkfirewallrulegroups": {
+                "name": "Network Firewall rule groups",
+                "url": "/vpc/home?region={region}#NetworkFirewallRuleGroups:"
+            },
+            "vpc-transitgatewayattachments": {
+                "name": "Transit Gateway Attachments",
+                "url": "/vpc/home?region={region}#TransitGatewayAttachments:"
+            },
+            "vpc-transitgatewayroutetables": {
+                "name": "Transit Gateway Route Tables",
+                "url": "/vpc/home?region={region}#TransitGatewayRouteTables:"
+            },
+            "vpc-egressonlyinternetgateways": {
+                "name": "Egress Only Internet Gateways",
+                "url": "/vpc/home?region={region}#EgressOnlyInternetGateways:"
+            }
+        }
+    },
+    "fsx": {
+        "name": "FSx",
+        "url": "/fsx/home?region={region}#file-systems",
+        "description": "Fully managed third-party file systems optimized for a variety of workloads",
+        "rank": 42,
+        "menus": {
+            "fsx-backups": {
+                "name": "Backups",
+                "url": "/fsx/home?region={region}#backups"
+            },
+            "fsx-filesystems": {
+                "name": "File systems",
+                "url": "/fsx/home?region={region}#file-systems"
+            },
+            "fsx-datarepositorytasks": {
+                "name": "Data repository tasks",
+                "url": "/fsx/home?region={region}#data-repository-tasks"
+            }
+        }
+    },
+    "glacier": {
+        "name": "S3 Glacier",
+        "url": "/glacier/home?region={region}#",
+        "description": "Archive Storage in the Cloud",
+        "emoji": "🪣",
+        "rank": 43,
+        "menus": {}
+    },
+    "elasticbeanstalk": {
+        "name": "Elastic Beanstalk",
+        "url": "/elasticbeanstalk/home?region={region}#/environments",
+        "description": "Run and Manage Web Apps",
+        "rank": 44,
+        "menus": {
+            "elasticbeanstalk-applications": {
+                "name": "Applications",
+                "url": "/elasticbeanstalk/home?region={region}#/applications"
+            },
+            "elasticbeanstalk-environments": {
+                "name": "Environments",
+                "url": "/elasticbeanstalk/home?region={region}#/environments"
+            },
+            "elasticbeanstalk-changehistory": {
+                "name": "Change history",
+                "url": "/elasticbeanstalk/home?region={region}#/changeHistory"
+            }
+        }
+    },
+    "dynamodb": {
+        "name": "DynamoDB",
+        "url": "/dynamodbv2/home?region={region}#dashboard",
+        "description": "Managed NoSQL Database",
+        "rank": 50,
+        "menus": {
+            "dynamodb-tables": {
+                "name": "Tables",
+                "url": "/dynamodbv2/home?region={region}#tables",
+                "rank": 10
+            },
+            "dynamodb-items": {
+                "name": "Items",
+                "url": "/dynamodbv2/home?region={region}#item-explorer",
+                "rank": 20
+            },
+            "dynamodb-backups": {
+                "name": "Backups",
+                "url": "/dynamodbv2/home?region={region}#list-backups"
+            },
+            "dynamodb-dashboard": {
+                "name": "Dashboard",
+                "url": "/dynamodbv2/home?region={region}#dashboard"
+            },
+            "dynamodb-daxevents": {
+                "name": "DAX Events",
+                "url": "/dynamodbv2/home?region={region}#dax-events"
+            },
+            "dynamodb-daxclusters": {
+                "name": "DAX Clusters",
+                "url": "/dynamodbv2/home?region={region}#dax-clusters"
+            },
+            "dynamodb-exportstos3": {
+                "name": "Exports to S3",
+                "url": "/dynamodbv2/home?region={region}#exports"
+            },
+            "dynamodb-partiqleditor": {
+                "name": "PartiQL editor",
+                "url": "/dynamodbv2/home?region={region}#partiql-editor"
+            },
+            "dynamodb-daxsubnetgroups": {
+                "name": "DAX Subnet groups",
+                "url": "/dynamodbv2/home?region={region}#dax-subnet-groups-list"
+            },
+            "dynamodb-reservedcapacity": {
+                "name": "Reserved capacity",
+                "url": "/dynamodbv2/home?region={region}#reserved-capacity"
+            },
+            "dynamodb-daxparametergroups": {
+                "name": "DAX Parameter groups",
+                "url": "/dynamodbv2/home?region={region}#dax-parameter-groups-list"
+            }
+        }
+    },
+    "rds": {
+        "name": "Relational Database Service (RDS)",
+        "url": "/rds/home?region={region}#",
+        "description": "Managed Relational Database Service",
+        "rank": 60,
+        "menus": {
+            "rds-databases": {
+                "name": "Databases",
+                "url": "/rds/home?region={region}#databases:",
+                "rank": 10
+            },
+            "rds-optiongroups": {
+                "name": "Option groups",
+                "url": "/rds/home?region={region}#option-groups-list:",
+                "rank": 20
+            },
+            "rds-parametergroups": {
+                "name": "Parameter groups",
+                "url": "/rds/home?region={region}#parameter-groups:",
+                "rank": 30
+            },
+            "rds-snapshots": {
+                "name": "Snapshots",
+                "url": "/rds/home?region={region}#snapshots-list:",
+                "rank": 40
+            },
+            "rds-subnetgroups": {
+                "name": "Subnet groups",
+                "url": "/rds/home?region={region}#db-subnet-groups-list:",
+                "rank": 50
+            },
+            "rds-events": {
+                "name": "Events",
+                "url": "/rds/home?region={region}#event-list:"
+            },
+            "rds-proxies": {
+                "name": "Proxies",
+                "url": "/rds/home?region={region}#proxies:"
+            },
+            "rds-dashboard": {
+                "name": "Dashboard",
+                "url": "/rds/home?region={region}#"
+            },
+            "rds-queryeditor": {
+                "name": "Query Editor",
+                "url": "/rds/home?region={region}#query-editor:"
+            },
+            "rds-recommendations": {
+                "name": "Recommendations",
+                "url": "/rds/home?region={region}#recommendations:"
+            },
+            "rds-automatedbackups": {
+                "name": "Automated backups",
+                "url": "/rds/home?region={region}#automatedbackups:"
+            },
+            "rds-certificateupdate": {
+                "name": "Certificate update",
+                "url": "/rds/home?region={region}#ca-cert-update:"
+            },
+            "rds-reservedinstances": {
+                "name": "Reserved instances",
+                "url": "/rds/home?region={region}#reserved-instance-list:"
+            },
+            "rds-eventsubscriptions": {
+                "name": "Event subscriptions",
+                "url": "/rds/home?region={region}#event-subscriptions:"
+            },
+            "rds-performanceinsights": {
+                "name": "Performance Insights",
+                "url": "/rds/home?region={region}#performance-insights-v20206:"
+            }
+        }
+    },
+    "sns": {
+        "name": "Simple Notification Service (SNS)",
+        "url": "/sns/v3/home?region={region}#/dashboard",
+        "description": "SNS Pub/Sub, Mobile Push and SMS",
+        "rank": 70,
+        "menus": {
+            "sns-topics": {
+                "name": "Topics",
+                "url": "/sns/v3/home?region={region}#/topics",
+                "rank": 10
+            },
+            "sns-subscriptions": {
+                "name": "Subscriptions",
+                "url": "/sns/v3/home?region={region}#/subscriptions",
+                "rank": 20
+            },
+            "sns-pushnotifications": {
+                "name": "Push Notifications",
+                "url": "/sns/v3/home?region={region}#/mobile/push-notifications",
+                "rank": 30
+            },
+            "sns-textmessaging": {
+                "name": "Text Messaging (SMS)",
+                "url": "/sns/v3/home?region={region}#/mobile/text-messaging",
+                "rank": 40
+            },
+            "sns-originationnumbers": {
+                "name": "Origination numbers",
+                "url": "/sns/v3/home?region={region}#/mobile/origination-identities",
+                "rank": 50
+            },
+            "sns-dashboard": {
+                "name": "Dashboard",
+                "url": "/sns/v3/home?region={region}#/dashboard"
+            }
+        }
+    },
+    "sqs": {
+        "name": "Simple Queue Service (SQS)",
+        "url": "/sqs/v2/home?region={region}#/queues",
+        "description": "SQS Managed Message Queues",
+        "rank": 80,
+        "menus": {
+            "sqs-queues": {
+                "name": "Queues",
+                "url": "/sqs/v2/home?region={region}#/queues"
+            }
+        }
+    },
+    "lambda": {
+        "name": "Lambda (lbd)",
+        "url": "/lambda/home?region={region}#/discover",
+        "description": "Run Code without Thinking abouart Servers",
+        "emoji": "λ",
+        "rank": 90,
+        "menus": {
+            "lambda-functions": {
+                "name": "Functions",
+                "url": "/lambda/home?region={region}#/functions",
+                "description": "The Functions page lists all your functions in the current AWS Region. Recently created functions might not immediately appear.",
+                "rank": 10
+            },
+            "lambda-layers": {
+                "name": "Layers",
+                "url": "/lambda/home?region={region}#/layers",
+                "description": "Create layers to separate your function code from its dependencies.",
+                "rank": 20
+            },
+            "lambda-applications": {
+                "name": "Applications",
+                "url": "/lambda/home?region={region}#/applications",
+                "description": "The Applications page shows you a list of applications that have been deployed using AWS CloudFormation, or other tools including the AWS Serverless Application Model. ",
+                "rank": 30
+            },
+            "lambda-dashboard": {
+                "name": "Dashboard",
+                "url": "/lambda/home?region={region}#/discover",
+                "description": "AWS Lambda Dashboard",
+                "rank": 40
+            },
+            "lambda-code_signing_configurations": {
+                "name": "Code signing configurations",
+                "url": "/lambda/home?region={region}#/code-signing-configurations",
+                "description": "Create a configuration that you can attach to one or more functions to enable code signing.",
+                "rank": 50
+            },
+            "lambda-replicas": {
+                "name": "Replicas",
+                "url": "/lambda/home?region={region}#/replicas",
+                "description": "automatically replicates your Lambda functions across multiple Availability Zones (AZs) within a Region to provide high availability and fault tolerance.",
+                "rank": 60
+            }
+        }
+    },
+    "cloudformation": {
+        "name": "CloudFormation (CFT)",
+        "url": "/cloudformation/home?region={region}#/stacks",
+        "description": "Create and Manage Resources with Templates",
+        "emoji": "📋️",
+        "rank": 100,
+        "menus": {
+            "cloudformation-stacks": {
+                "name": "Stacks",
+                "url": "/cloudformation/home?region={region}#/stacks",
+                "rank": 10
+            },
+            "cloudformation-stacksets": {
+                "name": "StackSets",
+                "url": "/cloudformation/home?region={region}#/stacksets",
+                "rank": 20
+            },
+            "cloudformation-designer": {
+                "name": "Designer",
+                "url": "/cloudformation/designer/home?region={region}",
+                "rank": 30
+            },
+            "cloudformation-exports": {
+                "name": "Exports",
+                "url": "/cloudformation/home?region={region}#/exports",
+                "rank": 40
+            }
+        }
+    },
+    "cloudwatch": {
+        "name": "CloudWatch",
+        "url": "/cloudwatch/home?region={region}#",
+        "description": "Monitor Resources and Applications",
+        "emoji": "⛅  🕒",
+        "rank": 110,
+        "menus": {
+            "cloudwatch-home": {
+                "name": "Home",
+                "url": "/cloudwatch/home?region={region}#"
+            },
+            "cloudwatch-alarms": {
+                "name": "Alarms",
+                "url": "/cloudwatch/home?region={region}#alarmsV2:"
+            },
+            "cloudwatch-metrics": {
+                "name": "Metrics",
+                "url": "/cloudwatch/home?region={region}#metricsV2:graph=~()"
+            },
+            "cloudwatch-settings": {
+                "name": "Settings",
+                "url": "/cloudwatch/home?region={region}#settings:"
+            },
+            "cloudwatch-loggroups": {
+                "name": "Log groups",
+                "url": "/cloudwatch/home?region={region}#logsV2:log-groups"
+            },
+            "cloudwatch-dashboards": {
+                "name": "Dashboards",
+                "url": "/cloudwatch/home?region={region}#dashboards:"
+            },
+            "cloudwatch-loginsights": {
+                "name": "Log insights",
+                "url": "/cloudwatch/home?region={region}#logsV2:logs-insights"
+            },
+            "cloudwatch-servicelensmap": {
+                "name": "ServiceLens Service Map",
+                "url": "/cloudwatch/home?region={region}#servicelens:map"
+            },
+            "cloudwatch-servicelenstracing": {
+                "name": "ServiceLens Tracing",
+                "url": "/cloudwatch/home?region={region}#servicelens:traces"
+            },
+            "cloudwatch-syntheticscanaries": {
+                "name": "Synthetics Canaries",
+                "url": "/cloudwatch/home?region={region}#synthetics:canary/list"
+            },
+            "cloudwatch-contributorinsights": {
+                "name": "Contributor Insights",
+                "url": "/cloudwatch/home?region={region}#contributorinsights:"
+            },
+            "cloudwatch-containerinsightsresources": {
+                "name": "Container Insights Resources",
+                "url": "/cloudwatch/home?region={region}#container-insights:infrastructure"
+            },
+            "cloudwatch-containerinsightsperformance": {
+                "name": "Container Insights Performance",
+                "url": "/cloudwatch/home?region={region}#container-insights:performance"
+            }
+        }
+    },
+    "ecr": {
+        "name": "Elastic Container Registry (ECR)",
+        "url": "/ecr/repositories?region={region}#",
+        "description": "Fully-managed Docker container registry",
+        "emoji": "📦",
+        "rank": 120,
+        "menus": {
+            "ecr-registries": {
+                "name": "Registries",
+                "url": "/ecr/registries?region={region}#"
+            },
+            "ecr-repositories": {
+                "name": "Repositories",
+                "url": "/ecr/repositories?region={region}#"
+            },
+            "ecr-publicgallery": {
+                "name": "Public gallery",
+                "url": "https://gallery.ecr.aws/"
+            }
+        }
+    },
+    "athena": {
+        "name": "Athena",
+        "url": "/athena/home?region={region}#/landing-page",
+        "description": "Start querying data instantly.",
+        "emoji": "🔍",
+        "rank": 130,
+        "menus": {
+            "athena-query_editor": {
+                "name": "Query Editor",
+                "url": "/athena/home?region={region}#/query-editor",
+                "description": "Run SQL queries in Athena",
+                "rank": 10
+            },
+            "athena-notebook_editor": {
+                "name": "Notebook editor",
+                "url": "/athena/home?region={region}#/notebook-editor",
+                "description": "Use notebooks to build interactive Spark applications.",
+                "rank": 20
+            },
+            "athena-notebook_explorer": {
+                "name": "Notebook explorer",
+                "url": "/athena/home?region={region}#/notebook-explorer",
+                "description": "You manage your notebooks in the Athena notebook explorer.",
+                "rank": 30
+            },
+            "athena-job_workflows": {
+                "name": "Job Workflows",
+                "url": "/athena/home?region={region}#/stepfunctions",
+                "description": "AWS Step Functions helps you orchestrate your Amazon Athena queries using serverless workflows, called state machines.",
+                "rank": 40
+            },
+            "athena-workgroups": {
+                "name": "Workgroups",
+                "url": "/athena/home?region={region}#/workgroups",
+                "description": "Use workgroups to separate users, teams, applications, workloads, and to set limits on amount of data for each query or the entire workgroup process.",
+                "rank": 50
+            },
+            "athena-capacity_reservations": {
+                "name": "Capacity reservations",
+                "url": "/athena/home?region={region}#/capacity-reservations",
+                "description": "You can use capacity reservations to ensure important queries have capacity available at all times or scale up and down as business requirements for performance and cost change.",
+                "rank": 60
+            },
+            "athena-data_sources": {
+                "name": "Data sources",
+                "url": "/athena/home?region={region}#/data-sources",
+                "description": "Allow you to query external data stores using standard SQL. Athena provides built-in connectors for popular data stores like Amazon Redshift and Amazon DynamoDB.",
+                "rank": 70
+            }
+        }
+    },
+    "secretsmanager": {
+        "name": "Secrets Manager (SM)",
+        "url": "/secretsmanager/home?region={region}#!/listSecrets",
+        "description": "Easily rotate, manage, and retrieve secrets throughout their lifecycle",
+        "emoji": "㊙",
+        "rank": 140,
+        "menus": {
+            "secretsmanager-secrets": {
+                "name": "Secrets",
+                "url": "/secretsmanager/home?region={region}#!/listSecrets"
+            }
+        }
+    },
+    "kms": {
+        "name": "Key Management Service (KMS)",
+        "url": "/kms/home?region={region}#/kms/defaultKeys",
+        "description": "Securely Generate and Manage AWS Encryption Keys",
+        "emoji": "🔑",
+        "rank": 150,
+        "menus": {
+            "kms-awsmanagedkeys": {
+                "name": "AWS managed keys",
+                "url": "/kms/home?region={region}#/kms/defaultKeys"
+            },
+            "kms-customkeystores": {
+                "name": "Custom key stores",
+                "url": "/kms/home?region={region}#/kms/customStores"
+            },
+            "kms-customermanagedkeys": {
+                "name": "Customer managed keys",
+                "url": "/kms/home?region={region}#/kms/keys"
+            }
+        }
+    },
+    "kinesis": {
+        "name": "Kinesis",
+        "url": "/kinesis/home?region={region}#dashboard",
+        "description": "Work with Real-Time Streaming Data",
+        "rank": 160,
+        "menus": {
+            "kinesis-firehose": {
+                "name": "Firehose delivery streams",
+                "url": "/firehose/home?region={region}#/dashboard/list"
+            },
+            "kinesis-analytics": {
+                "name": "Analytics applications",
+                "url": "/kinesisanalytics/home?region={region}#/applications/dashboard"
+            },
+            "kinesis-dashboard": {
+                "name": "Dashboard",
+                "url": "/kinesis/home?region={region}#dashboard"
+            },
+            "kinesis-datastreams": {
+                "name": "Data streams",
+                "url": "/kinesis/home?region={region}#/streams/list"
+            },
+            "kinesis-videostreams": {
+                "name": "Video streams",
+                "url": "/kinesisvideo/home?region={region}#/"
+            }
+        }
+    },
+    "sagemaker": {
+        "name": "SageMaker",
+        "url": "/sagemaker/home?region={region}#",
+        "description": "Build, Train, and Deploy Machine Learning Models",
+        "rank": 170,
+        "menus": {
+            "sagemaker-notebookinstances": {
+                "name": "Notebook Instances",
+                "url": "/sagemaker/home?region={region}#/notebook-instances",
+                "rank": 10
+            },
+            "sagemaker-groundtruchlabelingjobs": {
+                "name": "Ground Truch Labeling Jobs",
+                "url": "/sagemaker/groundtruth?region={region}#/labeling-jobs"
+            },
+            "sagemaker-groundtruchlabelingdatasets": {
+                "name": "Ground Truch Labeling Datasets",
+                "url": "/sagemaker/groundtruth?region={region}#/labeling-datasets"
+            },
+            "sagemaker-groundtruchlabelingworkforces": {
+                "name": "Ground Truch Labeling Workforces",
+                "url": "/sagemaker/groundtruth?region={region}#/labeling-workforces"
+            }
+        }
+    },
+    "stepfunctions": {
+        "name": "Step Functions",
+        "url": "/states/home?region={region}#/statemachines",
+        "description": "Coordinate Distributed Applications",
+        "terms": "sfn",
+        "emoji": "🎶",
+        "rank": 180,
+        "menus": {
+            "stepfunctions-statemachines": {
+                "name": "State machines (SM)",
+                "url": "/states/home?region={region}#/statemachines",
+                "rank": 10
+            },
+            "stepfunctions-activities": {
+                "name": "Activities",
+                "url": "/states/home?region={region}#/activities",
+                "rank": 20
+            },
+            "stepfunctions-featurespotlight": {
+                "name": "Feature spotlight",
+                "url": "/states/home?region={region}#/spotlight"
+            },
+            "stepfunctions-localdevelopment": {
+                "name": "Local Development",
+                "url": "/states/home?region={region}#/local-development"
+            },
+            "stepfunctions-dataflowsimulator": {
+                "name": "Data flow simulator",
+                "url": "/states/home?region={region}#/simulator"
+            }
+        }
+    },
+    "cloudfront": {
+        "name": "CloudFront",
+        "url": "/cloudfront/home?region={region}#",
+        "description": "Global Content Delivery Network",
+        "rank": 190,
+        "menus": {
+            "cloudfront-fle": {
+                "name": "Field-level encryption",
+                "url": "/cloudfront/home?region={region}#fle:"
+            },
+            "cloudfront-oai": {
+                "name": "Origin access identity",
+                "url": "/cloudfront/home?region={region}#oai:"
+            },
+            "cloudfront-usage": {
+                "name": "Usage",
+                "url": "/cloudfront/home?region={region}#usage_reports:"
+            },
+            "cloudfront-alarms": {
+                "name": "Alarms",
+                "url": "/cloudfront/home?region={region}#alarms:"
+            },
+            "cloudfront-viewers": {
+                "name": "Viewers",
+                "url": "/cloudfront/home?region={region}#viewers_reports:"
+            },
+            "cloudfront-policies": {
+                "name": "Policies",
+                "url": "/cloudfront/v2/home?region={region}#/policies"
+            },
+            "cloudfront-publickey": {
+                "name": "Public key",
+                "url": "/cloudfront/home?region={region}#publickey:"
+            },
+            "cloudfront-referrers": {
+                "name": "Top referrers",
+                "url": "/cloudfront/home?region={region}#referers_report:"
+            },
+            "cloudfront-monitoring": {
+                "name": "Monitoring",
+                "url": "/cloudfront/v2/home?region={region}#/monitoring"
+            },
+            "cloudfront-distributions": {
+                "name": "Distributions",
+                "url": "/cloudfront/home?region={region}#"
+            },
+            "cloudfront-popularobjects": {
+                "name": "Popular objects",
+                "url": "/cloudfront/home?region={region}#popular_urls:"
+            },
+            "cloudfront-cachestatistics": {
+                "name": "Cache statistics",
+                "url": "/cloudfront/home?region={region}#cache_stat_reports:"
+            }
+        }
+    },
+    "route53": {
+        "name": "Route 53",
+        "url": "/route53/v2/home?region={region}#Dashboard",
+        "description": "Scalable DNS and Domain Name Registration",
+        "rank": 200,
+        "menus": {
+            "route53-dashboard": {
+                "name": "Dashboard",
+                "url": "/route53/v2/home?region={region}#Dashboard"
+            },
+            "route53-hostedzones": {
+                "name": "Hosted zones",
+                "url": "/route53/v2/hostedzones?region={region}#"
+            },
+            "route53-healthchecks": {
+                "name": "Health checks",
+                "url": "/route53/healthchecks/home?region={region}#"
+            },
+            "route53-policyrecords": {
+                "name": "Policy records",
+                "url": "/route53/trafficflow/home?region={region}#/records"
+            },
+            "route53-domainrequests": {
+                "name": "Pending requests",
+                "url": "/route53/home?region={region}#DomainRequests:"
+            },
+            "route53-trafficpolicies": {
+                "name": "Traffic policies",
+                "url": "/route53/trafficflow/home?region={region}#"
+            },
+            "route53-registereddomains": {
+                "name": "Registered domains",
+                "url": "/route53/home?region={region}#DomainListing:"
+            }
+        }
+    },
+    "apigateway": {
+        "name": "API Gateway",
+        "url": "/apigateway/main/apis?region={region}#",
+        "description": "Build, Deploy and Manage APIs",
+        "rank": 210,
+        "menus": {
+            "apigateway-apis": {
+                "name": "APIs",
+                "url": "/apigateway/main/apis?region={region}#"
+            },
+            "apigateway-vpclinks": {
+                "name": "VPC links",
+                "url": "/apigateway/main/vpc-links/list?region={region}#"
+            },
+            "apigateway-customdomainnames": {
+                "name": "Custom domain names",
+                "url": "/apigateway/main/publish/domain-names?region={region}#"
+            }
+        }
+    },
+    "cognito": {
+        "name": "Cognito",
+        "url": "/cognito/home?region={region}#",
+        "description": "User Identity and App Data Synchronization",
+        "rank": 220,
+        "menus": {}
+    },
+    "ecs": {
+        "name": "Elastic Container Service (ECS)",
+        "url": "/ecs/home?region={region}#/clusters",
+        "description": "Run and Manage Docker Containers",
+        "emoji": "💻",
+        "rank": 230,
+        "menus": {
+            "ecs-clusters": {
+                "name": "Clusters",
+                "url": "/ecs/home?region={region}#/clusters"
+            },
+            "ecs-settings": {
+                "name": "Account settings",
+                "url": "/ecs/home?region={region}#/settings"
+            },
+            "ecs-taskdefinitions": {
+                "name": "Task Definitions",
+                "url": "/ecs/home?region={region}#/taskDefinitions"
+            }
+        }
+    },
+    "redshift": {
+        "name": "Redshift (RS)",
+        "url": "/redshiftv2/home?region={region}#dashboard",
+        "description": "Fast, Simple, Cost-Effective Data Warehousing",
+        "terms": "rs",
+        "emoji": "🔴 ⏭️",
+        "rank": 240,
+        "menus": {
+            "redshift-dashboard": {
+                "name": "Dashboard",
+                "url": "/redshiftv2/home?region={region}#dashboard",
+                "rank": 1
+            },
+            "redshift-clusters": {
+                "name": "Clusters",
+                "url": "/redshiftv2/home?region={region}#clusters",
+                "description": "The Clusters list page is where you can see a list of clusters in your AWS account, choose a cluster to start querying, perform cluster-related actions, or create a new cluster.",
+                "rank": 2
+            },
+            "redshift-reserved_nodes": {
+                "name": "Redshift Reserved nodes",
+                "url": "/redshiftv2/home?region={region}#reserved-nodes",
+                "description": "If you intend to keep an Amazon Redshift cluster running continuously for a prolonged period, reserved nodes provide significant savings over on-demand pricing.",
+                "rank": 3
+            },
+            "redshift-snapshots": {
+                "name": "Redshift Snapshots",
+                "url": "/redshiftv2/home?region={region}#snapshots",
+                "rank": 4
+            },
+            "redshift-querye_ditor": {
+                "name": "Redshift Query editor",
+                "url": "/redshiftv2/home?region={region}#query-editor:",
+                "description": "Redshift Query editor",
+                "rank": 11
+            },
+            "redshift-query_editor_v2": {
+                "name": "Redshift Query Editor V2",
+                "url": "/sqlworkbench/home?region={region}#/client",
+                "description": "Redshift Query Editor V2.",
+                "rank": 12
+            },
+            "redshift-queries": {
+                "name": "Queries",
+                "url": "/redshiftv2/home?region={region}#queries",
+                "rank": 13
+            },
+            "redshift-datashares": {
+                "name": "Data shares",
+                "url": "/redshiftv2/home?region={region}#data-shares",
+                "rank": 21
+            },
+            "redshift-config": {
+                "name": "Configurations",
+                "url": "/redshiftv2/home?region={region}#configurations",
+                "rank": 31
+            },
+            "redshift-workloadmanagement": {
+                "name": "Workload management",
+                "url": "/redshiftv2/home?region={region}#workload-management",
+                "rank": 32
+            },
+            "redshift-subnetgroups": {
+                "name": "Subnet groups",
+                "url": "/redshiftv2/home?region={region}#subnet-groups",
+                "rank": 33
+            },
+            "redshift-hsm": {
+                "name": "HSM connections",
+                "url": "/redshiftv2/home?region={region}#hsm?tab=hsmConnections",
+                "rank": 34
+            },
+            "redshift-tags": {
+                "name": "Manage tags",
+                "url": "/redshiftv2/home?region={region}#manage-tags",
+                "rank": 35
+            },
+            "redshift-serverless": {
+                "name": "Redshift Serverless",
+                "url": "/redshiftv2/home?region={region}#serverless-setup",
+                "description": "Get insights from data in seconds without having to manage data warehouse infrastructure.",
+                "terms": "sls",
+                "rank": 200
+            },
+            "redshift-serverless_dashboard": {
+                "name": "Redshift Serverless Dashboard",
+                "url": "/redshiftv2/home?region={region}#serverless-dashboard",
+                "description": "Redshift Serverless Dashboard.",
+                "terms": "sls",
+                "rank": 201
+            },
+            "redshift-serverless_workgroup_configuration": {
+                "name": "Redshift Serverless Workgroup configuration",
+                "url": "/redshiftv2/home?region={region}#serverless-workgroups",
+                "description": "A workgroup is a collection of compute resources from which an endpoint is created.",
+                "terms": "sls",
+                "rank": 202
+            },
+            "redshift-serverless_namespaces_configuration": {
+                "name": "Redshift Serverless Namespaces configuration",
+                "url": "/redshiftv2/home?region={region}#serverless-namespaces",
+                "description": "You can create or choose a namespace on the Amazon Redshift Serverless console when you create a workgroup.",
+                "terms": "sls",
+                "rank": 203
+            },
+            "redshift-serverless_data_backup": {
+                "name": "Redshift Serverless Data Backup",
+                "url": "/redshiftv2/home?region={region}#serverless-data-back-up",
+                "description": "Snapshots in Amazon Redshift Serverless are manually created backups of the databases within a namespace.",
+                "terms": "sls",
+                "rank": 204
+            },
+            "redshift-serverless_query_and_database_monitoring": {
+                "name": "Redshift Serverless Query and database monitoring",
+                "url": "/redshiftv2/home?region={region}#serverless-query-and-database-monitoring",
+                "description": "Query and database monitoring.",
+                "terms": "sls",
+                "rank": 205
+            },
+            "redshift-serverless_resource_monitoring": {
+                "name": "Redshift Serverless Resource monitoring",
+                "url": "/redshiftv2/home?region={region}#serverless-resource-monitoring",
+                "description": "The Resource monitoring page displays a workgroup’s RPU capacity and compute usage.",
+                "terms": "sls",
+                "rank": 206
+            },
+            "redshift-serverless_datashares": {
+                "name": "Redshift Serverless Datashares",
+                "url": "/redshiftv2/home?region={region}#serverless-data-shares",
+                "description": "You can share data for read purposes across AWS accounts.",
+                "terms": "sls",
+                "rank": 207
+            },
+            "redshift-serverless_manage_tags": {
+                "name": "Redshift Serverless Manage tags",
+                "url": "/redshiftv2/home?region={region}#serverless-manage-tags",
+                "description": "You can search for the resources that you want to tag by resource type or existing tags. Then you can add, remove, or modify tags for the resources in your search results.",
+                "terms": "sls",
+                "rank": 208
+            },
+            "redshift-serverless_zero_etl_integrations": {
+                "name": "Redshift Serverless Zero-ETL integrations",
+                "url": "/redshiftv2/home?region={region}#serverless-zero-etl-integrations",
+                "description": "Zero-ETL integrations make transactional data available in Amazon Redshift within seconds of being written in supported sources.",
+                "terms": "sls",
+                "rank": 209
+            },
+            "redshift-serverless_alarms": {
+                "name": "Redshift Serverless Alarms",
+                "url": "/redshiftv2/home?region={region}#serverless-create-alarm",
+                "description": "Help you make proactive decisions about your Amazon Redshift clusters as well as your Amazon Redshift Serverless workgroups and namespaces by tracking CloudWatch metrics.",
+                "terms": "sls",
+                "rank": 210
+            },
+            "redshift-serverless_iam_identity_center_connections": {
+                "name": "Redshift Serverless IAM Identity Center connections",
+                "url": "/redshiftv2/home?region={region}#serverless-iam-idc-integration",
+                "description": "With IAM Identity Center you can create users and groups for the AWS account and manage their access to applications.",
+                "terms": "sls",
+                "rank": 211
+            },
+            "redshift-alarms": {
+                "name": "Alarms",
+                "url": "/redshiftv2/home?region={region}#alarms"
+            },
+            "redshift-events": {
+                "name": "Events",
+                "url": "/redshiftv2/home?region={region}#events"
+            },
+            "redshift-advisor": {
+                "name": "Advisor recommendations",
+                "url": "/redshiftv2/home?region={region}#recommendations"
+            },
+            "redshift-marketplace": {
+                "name": "Marketplace",
+                "url": "/redshiftv2/home?region={region}#marketplace"
+            },
+            "redshift-eventsubscriptions": {
+                "name": "Event subscriptions",
+                "url": "/redshiftv2/home?region={region}#event-subscriptions"
+            }
+        }
+    },
+    "oss": {
+        "name": "OpenSearch Service (OSS)",
+        "url": "/aos/home?region={region}#opensearch",
+        "description": "Search, visualize, and analyze up to petabytes of text and unstructured data",
+        "terms": "os es ess elastic search elasticsearch",
+        "emoji": "🔍",
+        "rank": 250,
+        "menus": {
+            "oss-managed_clusters_dashboard": {
+                "name": "Managed Cluster - Dashboard",
+                "url": "/aos/home?region={region}#opensearch/dashboard",
+                "description": "Dashboard for Domain health and more.",
+                "rank": 10
+            },
+            "oss-managed_clusters_domains": {
+                "name": "Managed Cluster - Domains",
+                "url": "/aos/home?region={region}#opensearch/domains",
+                "description": "This page lists all domains in the current region and some basic information about each. Choose a domain for additional details.",
+                "rank": 20
+            },
+            "oss-managed_clusters_reserved_instance_leases": {
+                "name": "Managed Cluster - Reserved Instance leases",
+                "url": "/aos/home?region={region}#opensearch/reserved-instances",
+                "description": "This page shows full details for an individual instance reservation, including expiration date.",
+                "rank": 30
+            },
+            "oss-managed_clusters_packages_and_plugins": {
+                "name": "Managed Cluster - Packages and Plugins",
+                "url": "/aos/home?region={region}#opensearch/custom-packages?tabId=textDictionaries_tab",
+                "description": "Import packages to add custom dictionary files, such as synonyms or stop words, to your AWS account. Also show AWS supported plugins available to be associated with a domain on your AWS account.",
+                "rank": 40
+            },
+            "oss-managed_clusters_vpc_endpoints": {
+                "name": "Managed Cluster - VPC endpoints",
+                "url": "/aos/home?region={region}#opensearch/vpc-endpoints",
+                "description": "With an OpenSearch Service-managed VPC endpoint, you can privately access your OpenSearch Service domain within your VPC from your client applications in another VPC within the same AWS account, another AWS account or running on-premises, without using public IPs or requiring encrypted traffic to traverse the internet.",
+                "rank": 50
+            },
+            "oss-serverless_dashboard": {
+                "name": "Serverless - Dashboard",
+                "url": "/aos/home?region={region}#opensearch/get-started-serverless",
+                "description": "OpenSearch Serverless dashboard",
+                "terms": "sls",
+                "rank": 110
+            },
+            "oss-serverless_collections": {
+                "name": "Serverless - Collections",
+                "url": "/aos/home?region={region}#opensearch/collections",
+                "description": "An OpenSearch Serverless collection is a group of OpenSearch indexes that work together to support a specific workload or use case. ",
+                "terms": "sls",
+                "rank": 120
+            },
+            "oss-serverless_security": {
+                "name": "Serverless - Security",
+                "url": "/aos/home?region={region}#opensearch/security",
+                "description": "OpenSearch Serverless Security",
+                "terms": "sls",
+                "rank": 130
+            },
+            "oss-serverless_saml_authentication": {
+                "name": "Serverless - SAML authentication",
+                "url": "/aos/home?region={region}#opensearch/security/authentication",
+                "description": "Configure SAML to enable users to access data through OpenSearch Dashboards using an external SAML Identity Provider(Idp).",
+                "terms": "sls",
+                "rank": 140
+            },
+            "oss-serverless_data_access_policies": {
+                "name": "Serverless - Data access policies ",
+                "url": "/aos/home?region={region}#opensearch/security/access-policies",
+                "description": "Data access policies allow IAM and SAML users to access the data within collections and indexes.",
+                "terms": "sls",
+                "rank": 150
+            },
+            "oss-serverless_encryption_policies": {
+                "name": "Serverless - Encryption policies",
+                "url": "/aos/home?region={region}#opensearch/security/encryption-policies",
+                "description": "Encryption policies let you manage many collections at scale by automatically assigning an encryption key to newly created collections that match a specific name or pattern.",
+                "terms": "sls",
+                "rank": 160
+            },
+            "oss-serverless_network_policies": {
+                "name": "Serverless - Network policies",
+                "url": "/aos/home?region={region}#opensearch/security/encryption-policies",
+                "description": "Network access policies determine whether associated collections are accessible over the public internet or whether they must be accessed through OpenSearch Serverless-managed virtual private cloud (VPC) endpoints.",
+                "terms": "sls",
+                "rank": 170
+            },
+            "oss-serverless_data_lifecycle_policies": {
+                "name": "Serverless - VPC endpoints",
+                "url": "/aos/home?region={region}#opensearch/vpcEndpoint",
+                "description": "Create VPC endpoint to allow a private connection between your VPC and OpenSearch Serverless.",
+                "terms": "sls",
+                "rank": 190
+            },
+            "oss-ingestion_dashboard": {
+                "name": "Ingestion - Dashboard",
+                "url": "/aos/home?region={region}#opensearch/ingestion-dashboard",
+                "description": "OpenSearch Ingestion Dashboard",
+                "rank": 210
+            },
+            "oss-ingestion_pipelines": {
+                "name": "Ingestion - Pipelines",
+                "url": "/aos/home?region={region}#opensearch/ingestion-pipelines",
+                "description": "A pipeline is the mechanism that OpenSearch Ingestion uses to move data from its source to an OpenSearch Service domain or OpenSearch Serverless collection.",
+                "rank": 220
+            }
+        }
+    },
+    "codecommit": {
+        "name": "CodeCommit",
+        "url": "/codesuite/codecommit/repositories?region={region}#",
+        "description": "Store Code in Private Git Repositories",
+        "emoji": "⤴️",
+        "rank": 260,
+        "menus": {
+            "codecommit-repositories": {
+                "name": "Repositories",
+                "url": "/codesuite/codecommit/repositories?region={region}#"
+            },
+            "codecommit-approvalruletemplates": {
+                "name": "Approval rule templates",
+                "url": "/codesuite/codecommit/approval-rule-templates?region={region}#"
+            }
+        }
+    },
+    "codebuild": {
+        "name": "CodeBuild",
+        "url": "/codesuite/codebuild/projects?region={region}#",
+        "description": "Build and Test Code",
+        "emoji": "🏗",
+        "rank": 270,
+        "menus": {
+            "codebuild-projects": {
+                "name": "Build projects",
+                "url": "/codesuite/codebuild/projects?region={region}#"
+            },
+            "codebuild-buildhistory": {
+                "name": "Build history",
+                "url": "/codesuite/codebuild/builds/build-history?region={region}#"
+            },
+            "codebuild-reportgroups": {
+                "name": "Report groups",
+                "url": "/codesuite/codebuild/testReports/reportGroups?region={region}#"
+            },
+            "codebuild-reporthistory": {
+                "name": "Report history",
+                "url": "/codesuite/codebuild/testReports/reports?region={region}#"
+            },
+            "codebuild-accountmetrics": {
+                "name": "Account metrics",
+                "url": "/codesuite/codebuild/metrics?region={region}#"
+            }
+        }
+    },
+    "codepipeline": {
+        "name": "CodePipeline",
+        "url": "/codesuite/codepipeline/pipelines?region={region}#",
+        "description": "Release Software using Continuous Delivery",
+        "emoji": "🚀",
+        "rank": 280,
+        "menus": {
+            "codepipeline-pipelines": {
+                "name": "Pipelines",
+                "url": "/codesuite/codepipeline/pipelines?region={region}#"
+            }
+        }
+    },
+    "codedeploy": {
+        "name": "CodeDeploy",
+        "url": "/codesuite/codedeploy/deployments?region={region}#",
+        "description": "Automate Code Deployments",
+        "emoji": "🚀",
+        "rank": 290,
+        "menus": {
+            "codedeploy-deployments": {
+                "name": "Deployments",
+                "url": "/codesuite/codedeploy/deployments?region={region}#"
+            },
+            "codedeploy-applications": {
+                "name": "Applications",
+                "url": "/codesuite/codedeploy/applications?region={region}#"
+            },
+            "codedeploy-onpremisesinstances": {
+                "name": "On-premises instances",
+                "url": "/codesuite/codedeploy/on-premises-instances?region={region}#"
+            },
+            "codedeploy-deploymentconfigurations": {
+                "name": "Deployment configurations",
+                "url": "/codesuite/codedeploy/deployment-configs?region={region}#"
+            }
+        }
+    },
+    "emr": {
+        "name": "Elastic Map Reduce (EMR)",
+        "url": "/elasticmapreduce/home?region={region}#cluster-list:",
+        "description": "Managed Hadoop Framework",
+        "rank": 300,
+        "menus": {
+            "emr-events": {
+                "name": "Events",
+                "url": "/elasticmapreduce/home?region={region}#events:"
+            },
+            "emr-clusters": {
+                "name": "Clusters",
+                "url": "/elasticmapreduce/home?region={region}#cluster-list:"
+            },
+            "emr-notebooks": {
+                "name": "Notebooks",
+                "url": "/elasticmapreduce/home?region={region}#notebooks-list:"
+            },
+            "emr-vpcsubnets": {
+                "name": "VPC subnets",
+                "url": "/elasticmapreduce/home?region={region}#manage-subnets:"
+            },
+            "emr-gitrepositories": {
+                "name": "Git repositories",
+                "url": "/elasticmapreduce/home?region={region}#git-repositories-list:"
+            },
+            "emr-virtualclusters": {
+                "name": "Virtual clusters",
+                "url": "/elasticmapreduce/home?region={region}#virtual-cluster-list:"
+            },
+            "emr-blockpublicaccess": {
+                "name": "Block public access",
+                "url": "/elasticmapreduce/home?region={region}#block-public-access:"
+            },
+            "emr-securityconfigurations": {
+                "name": "Security configurations",
+                "url": "/elasticmapreduce/home?region={region}#security-configurations-list:"
+            }
+        }
+    },
+    "quicksight": {
+        "name": "QuickSight",
+        "url": "https://quicksight.aws.amazon.com/",
+        "description": "Fast, easy to use business analytics",
+        "rank": 330,
+        "menus": {}
+    },
+    "dms": {
+        "name": "Database Migration Service (DMS)",
+        "url": "/dms/v2/home?region={region}#dashboard",
+        "description": "Managed Database Migration Service",
+        "rank": 340,
+        "menus": {
+            "dms-events": {
+                "name": "Events",
+                "url": "/dms/v2/home?region={region}#EventList"
+            },
+            "dms-dashboard": {
+                "name": "Dashboard",
+                "url": "/dms/v2/home?region={region}#dashboard"
+            },
+            "dms-endpoints": {
+                "name": "Endpoints",
+                "url": "/dms/v2/home?region={region}#endpointList"
+            },
+            "dms-certificates": {
+                "name": "Certificates",
+                "url": "/dms/v2/home?region={region}#certificate"
+            },
+            "dms-subnetgroups": {
+                "name": "Subnet groups",
+                "url": "/dms/v2/home?region={region}#subnetGroup"
+            },
+            "dms-notifications": {
+                "name": "Notifications",
+                "url": "/dms/v2/home?region={region}#Notifications"
+            },
+            "dms-eventsubscriptions": {
+                "name": "Event subscriptions",
+                "url": "/dms/v2/home?region={region}#EventSubscriptionList"
+            },
+            "dms-replicationinstances": {
+                "name": "Replication instances",
+                "url": "/dms/v2/home?region={region}#replicationInstances"
+            },
+            "dms-databasemigrationtasks": {
+                "name": "Database migration tasks",
+                "url": "/dms/v2/home?region={region}#tasks"
+            }
+        }
+    },
+    "elasticache": {
+        "name": "ElastiCache",
+        "url": "/elasticache/home?region={region}#",
+        "description": "In-Memory Cache",
+        "rank": 350,
+        "menus": {
+            "elasticache-redis": {
+                "name": "Redis",
+                "url": "/elasticache/home?region={region}#redis:"
+            },
+            "elasticache-users": {
+                "name": "User Management",
+                "url": "/elasticache/home?region={region}#users:"
+            },
+            "elasticache-events": {
+                "name": "Events",
+                "url": "/elasticache/home?region={region}#events:"
+            },
+            "elasticache-dashboard": {
+                "name": "Dashboard",
+                "url": "/elasticache/home?region={region}#"
+            },
+            "elasticache-memcached": {
+                "name": "Memcached",
+                "url": "/elasticache/home?region={region}#memcached:"
+            },
+            "elasticache-snapshots": {
+                "name": "Backups",
+                "url": "/elasticache/home?region={region}#snapshots:"
+            },
+            "elasticache-usergroups": {
+                "name": "User Group Management",
+                "url": "/elasticache/home?region={region}#user-groups:"
+            },
+            "elasticache-subnetgroups": {
+                "name": "Subnet Groups",
+                "url": "/elasticache/home?region={region}#cache-subnet-groups:"
+            },
+            "elasticache-globalcluster": {
+                "name": "Global Datastore",
+                "url": "/elasticache/home?region={region}#global-cluster:"
+            },
+            "elasticache-clientdownload": {
+                "name": "ElastiCache Cluster Client",
+                "url": "/elasticache/home?region={region}#client-download:"
+            },
+            "elasticache-serviceupdates": {
+                "name": "Service Updates",
+                "url": "/elasticache/home?region={region}#service-updates:"
+            },
+            "elasticache-parametergroups": {
+                "name": "Parameter Groups",
+                "url": "/elasticache/home?region={region}#param-groups:"
+            },
+            "elasticache-reservedcachenodes": {
+                "name": "Reserved Cache Nodes",
+                "url": "/elasticache/home?region={region}#reserved-cache-nodes:"
+            }
+        }
+    },
+    "documentdb": {
+        "name": "DocumentDB",
+        "url": "/docdb/home?region={region}#dashboard",
+        "description": "Fully-managed MongoDB-compatible database service",
+        "rank": 360,
+        "menus": {
+            "documentdb-events": {
+                "name": "Events",
+                "url": "/docdb/home?region={region}#events"
+            },
+            "documentdb-clusters": {
+                "name": "Clusters",
+                "url": "/docdb/home?region={region}#clusters"
+            },
+            "documentdb-dashboard": {
+                "name": "Dashboard",
+                "url": "/docdb/home?region={region}#dashboard"
+            },
+            "documentdb-snapshots": {
+                "name": "Snapshots",
+                "url": "/docdb/home?region={region}#snapshots"
+            },
+            "documentdb-tutorials": {
+                "name": "Tutorials",
+                "url": "/docdb/home?region={region}#tutorials-page"
+            },
+            "documentdb-what'snew": {
+                "name": "What's New",
+                "url": "/docdb/home?region={region}#whats-new"
+            },
+            "documentdb-subnetgroups": {
+                "name": "Subnet groups",
+                "url": "/docdb/home?region={region}#subnetGroups"
+            },
+            "documentdb-parametergroups": {
+                "name": "Parameter groups",
+                "url": "/docdb/home?region={region}#parameterGroups"
+            },
+            "documentdb-eventsubscriptions": {
+                "name": "Event Subscriptions",
+                "url": "/docdb/home?region={region}#eventSubscriptions"
+            }
+        }
+    },
+    "memorydb": {
+        "name": "Memorydb for Redis",
+        "url": "/memorydb/home?region={region}#/",
+        "description": "Redis-compatible, durable, in-memory database service for ultra-fast performance",
+        "rank": 370,
+        "menus": {
+            "memorydb-users": {
+                "name": "Users",
+                "url": "/memorydb/home?region={region}#/users"
+            },
+            "memorydb-cluster": {
+                "name": "Clusters",
+                "url": "/memorydb/home?region={region}#/clusters"
+            },
+            "memorydb-dashboard": {
+                "name": "Dashboard",
+                "url": "/memorydb/home?region={region}#/dashboard"
+            },
+            "memorydb-snapshots": {
+                "name": "Snapshots",
+                "url": "/memorydb/home?region={region}#/snapshots"
+            }
+        }
+    },
+    "keyspaces": {
+        "name": "Keyspaces (for Apache Cassandra)",
+        "url": "/keyspaces/home?region={region}#dashboard",
+        "description": "A scalable, highly available, and managed Apache Cassandra compatible database service",
+        "rank": 380,
+        "menus": {
+            "keyspaces-cqleditor": {
+                "name": "CQL editor",
+                "url": "/keyspaces/home?region={region}#cql-editor",
+                "rank": 7
+            },
+            "keyspaces-tables": {
+                "name": "Tables",
+                "url": "/keyspaces/home?region={region}#tables",
+                "rank": 8
+            },
+            "keyspaces-keyspaces": {
+                "name": "Keyspaces",
+                "url": "/keyspaces/home?region={region}#keyspaces",
+                "rank": 9
+            },
+            "keyspaces-dashboard": {
+                "name": "Dashboard",
+                "url": "/keyspaces/home?region={region}#dashboard"
+            }
+        }
+    },
+    "timestream": {
+        "name": "Timestream",
+        "url": "/timestream/home?region={region}#welcome",
+        "description": "Fast, scalable, and serverless time series database",
+        "rank": 390,
+        "menus": {
+            "timestream-tables": {
+                "name": "Tables",
+                "url": "/timestream/home?region={region}#tables"
+            },
+            "timestream-databases": {
+                "name": "Databases",
+                "url": "/timestream/home?region={region}#databases"
+            },
+            "timestream-monitoring": {
+                "name": "Monitoring",
+                "url": "/timestream/home?region={region}#monitoring"
+            },
+            "timestream-queryeditor": {
+                "name": "Query editor",
+                "url": "/timestream/home?region={region}#query-editor:"
+            }
+        }
+    },
+    "neptune": {
+        "name": "Neptune",
+        "url": "/neptune/home?region={region}#databases:",
+        "description": "Fast, reliable graph database built for the cloud",
+        "rank": 400,
+        "menus": {
+            "neptune-events": {
+                "name": "Events",
+                "url": "/neptune/home?region={region}#events:"
+            },
+            "neptune-clusters": {
+                "name": "Clusters",
+                "url": "/neptune/home?region={region}#dbclusters:"
+            },
+            "neptune-databases": {
+                "name": "Databases",
+                "url": "/neptune/home?region={region}#databases:"
+            },
+            "neptune-notebooks": {
+                "name": "Notebooks",
+                "url": "/neptune/home?region={region}#notebooks:"
+            },
+            "neptune-snapshots": {
+                "name": "Snapshots",
+                "url": "/neptune/home?region={region}#db-snapshots:"
+            },
+            "neptune-subnetgroups": {
+                "name": "Subnet groups",
+                "url": "/neptune/home?region={region}#db-subnet-groups:"
+            },
+            "neptune-notifications": {
+                "name": "Notifications",
+                "url": "/neptune/home?region={region}#notifications:"
+            },
+            "neptune-parametergroups": {
+                "name": "Parameter groups",
+                "url": "/neptune/home?region={region}#parameter-groups:"
+            },
+            "neptune-reservedinstances": {
+                "name": "Reserved instances",
+                "url": "/neptune/home?region={region}#reserved-instance-list:"
+            },
+            "neptune-eventsubscriptions": {
+                "name": "Event subscriptions",
+                "url": "/neptune/home?region={region}#event-subscriptions-list:"
+            }
+        }
+    },
+    "efs": {
+        "name": "Elastic File Storage (EFS)",
+        "url": "/efs/home?region={region}#/file-systems",
+        "description": "Managed File Storage for EC2",
+        "rank": 410,
+        "menus": {
+            "efs-settings": {
+                "name": "Settings",
+                "url": "/efs/home?region={region}#/settings"
+            },
+            "efs-filesystems": {
+                "name": "File systems",
+                "url": "/efs/home?region={region}#/file-systems"
+            },
+            "efs-accesspoints": {
+                "name": "Access points",
+                "url": "/efs/home?region={region}#/access-points"
+            }
+        }
+    },
+    "eks": {
+        "name": "Elastic Kubernetes Service (EKS)",
+        "url": "/eks/home?region={region}#/clusters",
+        "description": "Managed Kubernetes on AWS",
+        "rank": 450,
+        "menus": {
+            "eks-clusters": {
+                "name": "Clusters",
+                "url": "/eks/home?region={region}#/clusters"
+            }
+        }
+    },
+    "cloudtrail": {
+        "name": "CloudTrail",
+        "url": "/cloudtrail/home?region={region}#/dashboard",
+        "description": "Track User Activity and API Usage",
+        "rank": 460,
+        "menus": {
+            "cloudtrail-trails": {
+                "name": "Trails",
+                "url": "/cloudtrail/home?region={region}#/trails"
+            },
+            "cloudtrail-insights": {
+                "name": "Insights",
+                "url": "/cloudtrail/home?region={region}#/insights"
+            },
+            "cloudtrail-dashboard": {
+                "name": "Dashboard",
+                "url": "/cloudtrail/home?region={region}#/dashboard"
+            },
+            "cloudtrail-eventhistory": {
+                "name": "Event history",
+                "url": "/cloudtrail/home?region={region}#/events"
+            }
+        }
+    },
+    "systemsmanager": {
+        "name": "Systems Manager (SSM)",
+        "url": "/systems-manager/explorer?region={region}#",
+        "description": "Gain operational insights and take action on AWS resources",
+        "rank": 470,
+        "menus": {
+            "systemsmanager-explorer": {
+                "name": "Explorer",
+                "url": "/systems-manager/explorer?region={region}#"
+            },
+            "systemsmanager-appconfig": {
+                "name": "AppConfig",
+                "url": "/systems-manager/appconfig?region={region}#"
+            },
+            "systemsmanager-inventory": {
+                "name": "Inventory",
+                "url": "/systems-manager/inventory?region={region}#"
+            },
+            "systemsmanager-opscenter": {
+                "name": "OpsCenter",
+                "url": "/systems-manager/opsitems?region={region}#"
+            },
+            "systemsmanager-automation": {
+                "name": "Automation",
+                "url": "/systems-manager/automation?region={region}#"
+            },
+            "systemsmanager-compliance": {
+                "name": "Compliance",
+                "url": "/systems-manager/compliance?region={region}#"
+            },
+            "systemsmanager-runcommand": {
+                "name": "Run Command",
+                "url": "/systems-manager/run-command?region={region}#"
+            },
+            "systemsmanager-distributor": {
+                "name": "Distributor",
+                "url": "/systems-manager/distributor?region={region}#"
+            },
+            "systemsmanager-fleetmanager": {
+                "name": "Fleet Manager",
+                "url": "/systems-manager/managed-instances?region={region}#"
+            },
+            "systemsmanager-patchmanager": {
+                "name": "Patch Manager",
+                "url": "/systems-manager/patch-manager?region={region}#"
+            },
+            "systemsmanager-statemanager": {
+                "name": "State Manager",
+                "url": "/systems-manager/state-manager?region={region}#"
+            },
+            "systemsmanager-changemanager": {
+                "name": "Change Manager",
+                "url": "/systems-manager/change-manager?region={region}#"
+            },
+            "systemsmanager-changecalendar": {
+                "name": "Change Calendar",
+                "url": "/systems-manager/change-calendar?region={region}#"
+            },
+            "systemsmanager-parameterstore": {
+                "name": "Parameter Store (param)",
+                "url": "/systems-manager/parameters?region={region}#"
+            },
+            "systemsmanager-sessionmanager": {
+                "name": "Session Manager",
+                "url": "/systems-manager/session-manager?region={region}#"
+            },
+            "systemsmanager-incidentmanager": {
+                "name": "Incident Manager",
+                "url": "/systems-manager/incidents/home?region={region}#"
+            },
+            "systemsmanager-hybridactivations": {
+                "name": "Hybrid Activations",
+                "url": "/systems-manager/activations?region={region}#"
+            },
+            "systemsmanager-applicationmanager": {
+                "name": "Application Manager",
+                "url": "/systems-manager/appmanager?region={region}#"
+            },
+            "systemsmanager-maintenancewindows": {
+                "name": "Maintenance Windows",
+                "url": "/systems-manager/maintenance-windows?region={region}#"
+            },
+            "systemsmanager-cloudwatchdashboard": {
+                "name": "CloudWatch Dashboard",
+                "url": "/systems-manager/resource-groups/cloudwatch?region={region}#"
+            }
+        }
+    },
+    "eventbridge": {
+        "name": "EventBridge",
+        "url": "/events/home?region={region}#/events",
+        "description": "Serverless event bus that connects application data from your own apps, SaaS, and AWS services",
+        "rank": 480,
+        "menus": {
+            "eventbridge-rules": {
+                "name": "Rules",
+                "url": "/events/home?region={region}#/rules"
+            },
+            "eventbridge-events": {
+                "name": "Events",
+                "url": "/events/home?region={region}#/events"
+            },
+            "eventbridge-replays": {
+                "name": "Replays",
+                "url": "/events/home?region={region}#/replays"
+            },
+            "eventbridge-schemas": {
+                "name": "Schemas",
+                "url": "/events/home?region={region}#/schemas"
+            },
+            "eventbridge-archives": {
+                "name": "Archives",
+                "url": "/events/home?region={region}#/archives"
+            },
+            "eventbridge-eventbuses": {
+                "name": "Event buses",
+                "url": "/events/home?region={region}#/eventbuses"
+            },
+            "eventbridge-integration": {
+                "name": "Integration",
+                "url": "/events/home?region={region}#/integration"
+            },
+            "eventbridge-schemaregistry": {
+                "name": "Schema registry",
+                "url": "/events/home?region={region}#/schemaregistry"
+            },
+            "eventbridge-apidestinations": {
+                "name": "API destinations",
+                "url": "/events/home?region={region}#/apidestinations"
+            },
+            "eventbridge-partnereventsources": {
+                "name": "Partner event sources",
+                "url": "/events/home?region={region}#/partners"
+            }
+        }
+    },
+    "costmanagement": {
+        "name": "Cost Management",
+        "url": "/cost-management/home?region={region}#/dashboard",
+        "description": "Visualize and Explore Your AWS Costs and Usage",
+        "rank": 490,
+        "menus": {
+            "costmanagement-budgets": {
+                "name": "Budgets",
+                "url": "/billing/home#/budgets"
+            },
+            "costmanagement-reports": {
+                "name": "Reports",
+                "url": "/cost-management/home#/reports/overview"
+            },
+            "costmanagement-dashboard": {
+                "name": "Dashboard",
+                "url": "/cost-management/home#/dashboard"
+            },
+            "costmanagement-inventory": {
+                "name": "Inventory",
+                "url": "/cost-management/home#/savings-plans/inventory"
+            },
+            "costmanagement-preferences": {
+                "name": "Preferences",
+                "url": "/cost-management/home#/settings"
+            },
+            "costmanagement-costexplorer": {
+                "name": "Cost Explorer",
+                "url": "/cost-management/home#/custom"
+            },
+            "costmanagement-reservations": {
+                "name": "Reservations",
+                "url": "/cost-management/home#/ri/dashboard"
+            },
+            "costmanagement-savingsplans": {
+                "name": "Savings plans",
+                "url": "/cost-management/home#/savings-plans/overview"
+            },
+            "costmanagement-savingsplanscart": {
+                "name": "Savings Plans Cart",
+                "url": "/cost-management/home#/savings-plans/cart"
+            },
+            "costmanagement-costanomalydetection": {
+                "name": "Cost Anomaly Detection",
+                "url": "/cost-management/home#/anomaly-detection"
+            },
+            "costmanagement-purchasesavingsplans": {
+                "name": "Purchase Savings Plans",
+                "url": "/cost-management/home#/savings-plans/purchase"
+            },
+            "costmanagement-reservationscoveragereport": {
+                "name": "Reversations Coverage report",
+                "url": "/cost-management/home#/ri/coverage"
+            },
+            "costmanagement-rightsizingrecommendations": {
+                "name": "Rightsizing recommendations",
+                "url": "/cost-management/home#/rightsizing"
+            },
+            "costmanagement-savingsplanscoveragereport": {
+                "name": "Savings Plans Coverage report",
+                "url": "/cost-management/home#/savings-plans/coverage"
+            },
+            "costmanagement-reservationsrecommendations": {
+                "name": "Reversations Recommendations",
+                "url": "/cost-management/home#/recommendations"
+            },
+            "costmanagement-savingsplansrecommendations": {
+                "name": "Savings Plans Recommendations",
+                "url": "/cost-management/home#/savings-plans/recommendations"
+            },
+            "costmanagement-reservationsutilizationreport": {
+                "name": "Reversations Utilization report",
+                "url": "/cost-management/home#/ri/utilization"
+            },
+            "costmanagement-savingsplansutilizationreport": {
+                "name": "Savings Plans Utilization report",
+                "url": "/cost-management/home#/savings-plans/utilization"
+            }
+        }
+    },
+    "iq": {
+        "name": "IQ",
+        "url": "https://iq.aws.amazon.com/",
+        "description": "Complete projects faster with help from third-party AWS Certified experts",
+        "menus": {}
+    },
+    "mq": {
+        "name": "MQ",
+        "url": "/amazon-mq/home?region={region}#/brokers",
+        "description": "Managed message broker service for Apache ActiveMQ",
+        "menus": {
+            "mq-brokers": {
+                "name": "Brokers",
+                "url": "/amazon-mq/home?region={region}#/brokers"
+            },
+            "mq-configurations": {
+                "name": "Configurations",
+                "url": "/amazon-mq/home?region={region}#/configurations"
+            }
+        }
+    },
+    "acm": {
+        "name": "Certificate Manager (ACM)",
+        "url": "/acm/home?region={region}#/",
+        "description": "Provision, Manage, and Deploy SSL/TLS Certificates",
+        "menus": {
+            "acm-privatecas": {
+                "name": "Private certificate authorities",
+                "url": "/acm-pca/home?region={region}#/"
+            },
+            "acm-certificatemanager": {
+                "name": "Certificate manager",
+                "url": "/acm/home?region={region}#/"
+            }
+        }
+    },
+    "iot": {
+        "name": "IoT Core",
+        "url": "/iot/home?region={region}#",
+        "description": "Connect Devices to the Cloud",
+        "menus": {}
+    },
+    "lex": {
+        "name": "Lex",
+        "url": "/lexv2/home?region={region}#bots",
+        "description": "Build Voice and Text Chatbots",
+        "menus": {}
+    },
+    "msk": {
+        "name": "Managed Streaming for Apache Kafka (MSK)",
+        "url": "/msk/home?region={region}#/clusters",
+        "description": "Fully managed, highly available, and secure service for Apache Kafka",
+        "menus": {
+            "msk-clusters": {
+                "name": "Clusters",
+                "url": "/msk/home?region={region}#/clusters"
+            },
+            "msk-clusterconfigurations": {
+                "name": "Cluster configurations",
+                "url": "/msk/home?region={region}#/configurations"
+            }
+        }
+    },
+    "ram": {
+        "name": "Resource Access Manager",
+        "url": "/ram/home?region={region}#OwnedResourceShares:",
+        "description": "Share AWS resources with other accounts or AWS Organizations",
+        "menus": {
+            "ram-settings": {
+                "name": "Settings",
+                "url": "/ram/home?region={region}#Settings:"
+            },
+            "ram-ownedresources": {
+                "name": "Owned resources",
+                "url": "/ram/home?region={region}#OwnedResources:"
+            },
+            "ram-ownedprincipals": {
+                "name": "Owned principals",
+                "url": "/ram/home?region={region}#OwnedPrincipals:"
+            },
+            "ram-sharedresources": {
+                "name": "Shared resources",
+                "url": "/ram/home?region={region}#SharedResources:"
+            },
+            "ram-sharedprincipals": {
+                "name": "Shared principals",
+                "url": "/ram/home?region={region}#SharedPrincipals:"
+            },
+            "ram-permissionslibrary": {
+                "name": "Permissions library",
+                "url": "/ram/home?region={region}#Permissions:"
+            },
+            "ram-ownedresourceshares": {
+                "name": "Owned resource shares",
+                "url": "/ram/home?region={region}#OwnedResourceShares:"
+            },
+            "ram-sharedresourceshares": {
+                "name": "Shared resource shares",
+                "url": "/ram/home?region={region}#SharedResourceShares:"
+            }
+        }
+    },
+    "ses": {
+        "name": "Simple Email Service (SES)",
+        "url": "/ses/home?region={region}#",
+        "description": "Email Sending and Receiving Service",
+        "menus": {}
+    },
+    "swf": {
+        "name": "Simple Workflow Service (SWF)",
+        "url": "/swf/home?region={region}#",
+        "description": "Workflow Service for Coordinating Application Components",
+        "menus": {}
+    },
+    "waf": {
+        "name": "Web Application Firewall & Shield (WAF)",
+        "url": "/wafv2/homev2/web-acls",
+        "description": "Protects Against DDoS Attacks and Malicious Web Traffic",
+        "menus": {
+            "waf-ipsets": {
+                "name": "IP sets",
+                "url": "/wafv2/homev2/ip-sets"
+            },
+            "waf-webacls": {
+                "name": "Web ACLs",
+                "url": "/wafv2/homev2/web-acls"
+            },
+            "waf-rulegroups": {
+                "name": "Rule groups",
+                "url": "/wafv2/homev2/rule-groups"
+            },
+            "waf-marketplace": {
+                "name": "AWS Marketplace",
+                "url": "/wafv2/homev2/marketplace"
+            },
+            "waf-regexpatternsets": {
+                "name": "Regex pattern sets",
+                "url": "/wafv2/homev2/regex-pattern-sets"
+            }
+        }
+    },
+    "mwaa": {
+        "name": "Amazon Managed Workflows for Apache Airflow (MWAA)",
+        "url": "/mwaa/home?region={region}#home?landingPageCheck=1",
+        "description": "Run Apache Airflow without provisioning or managing servers",
+        "emoji": "🎶",
+        "menus": {}
+    },
+    "qldb": {
+        "name": "QLDB",
+        "url": "/qldb/home?region={region}#ledger-list",
+        "description": "Fully managed ledger database",
+        "menus": {
+            "qldb-export": {
+                "name": "Export",
+                "url": "/qldb/home?region={region}#export-job-list"
+            },
+            "qldb-ledgers": {
+                "name": "Ledgers",
+                "url": "/qldb/home?region={region}#ledger-list"
+            },
+            "qldb-streams": {
+                "name": "Streams",
+                "url": "/qldb/home?region={region}#stream-list"
+            },
+            "qldb-queryeditor": {
+                "name": "Query editor",
+                "url": "/qldb/home?region={region}#query-editor"
+            },
+            "qldb-verification": {
+                "name": "Verification",
+                "url": "/qldb/home?region={region}#verification"
+            }
+        }
+    },
+    "xray": {
+        "name": "X-Ray",
+        "url": "/xray/home?region={region}#",
+        "description": "Analyze and Debug Your Applications",
+        "menus": {}
+    },
+    "alexa": {
+        "name": "Alexa for Business",
+        "url": "/a4b/home?region={region}#",
+        "description": "Empower your organization with voice",
+        "menus": {}
+    },
+    "batch": {
+        "name": "Batch",
+        "url": "/batch/home?region={region}#",
+        "description": "Run Batch Jobs at Any Scale",
+        "menus": {
+            "batch-jobs": {
+                "name": "Jobs",
+                "url": "/batch/home?region={region}#jobs"
+            },
+            "batch-wizard": {
+                "name": "Wizard",
+                "url": "/batch/home?region={region}#wizard"
+            },
+            "batch-dashboard": {
+                "name": "Dashboard",
+                "url": "/batch/home?region={region}#dashboard"
+            },
+            "batch-jobqueues": {
+                "name": "Job queues",
+                "url": "/batch/home?region={region}#queues"
+            },
+            "batch-jobdefinitions": {
+                "name": "Job definitions",
+                "url": "/batch/home?region={region}#job-definition"
+            },
+            "batch-computeenvironments": {
+                "name": "Compute environments",
+                "url": "/batch/home?region={region}#compute-environments"
+            }
+        }
+    },
+    "chime": {
+        "name": "Chime",
+        "url": "https://console.chime.aws.amazon.com",
+        "description": "Amazon Chime is a communications service that transforms online meetings",
+        "menus": {}
+    },
+    "macie": {
+        "name": "Macie",
+        "url": "/macie/home?region={region}#",
+        "description": "Amazon Macie classifies and secures your business-critical content.",
+        "menus": {}
+    },
+    "polly": {
+        "name": "Polly",
+        "url": "/polly/home/SynthesizeSpeech?region={region}#",
+        "description": "Turn Text into Lifelike Speech",
+        "menus": {
+            "polly-lexicons": {
+                "name": "Lexicons",
+                "url": "/polly/home/Lexicons?region={region}#"
+            },
+            "polly-texttospeech": {
+                "name": "Text-to-Speech",
+                "url": "/polly/home/SynthesizeSpeech?region={region}#"
+            },
+            "polly-s3synthesistasks": {
+                "name": "S3 synthesis tasks",
+                "url": "/polly/home/SynthesisTasks?region={region}#"
+            }
+        }
+    },
+    "backup": {
+        "name": "Backup",
+        "url": "/backup/home?region={region}#/dashboard",
+        "description": "centrally manage and automate backups across AWS services",
+        "menus": {
+            "backup-jobs": {
+                "name": "Jobs",
+                "url": "/backup/home?region={region}#/jobs/backup"
+            },
+            "backup-settings": {
+                "name": "Settings",
+                "url": "/backup/home?region={region}#/settings"
+            },
+            "backup-dashboard": {
+                "name": "Dashboard",
+                "url": "/backup/home?region={region}#/dashboard"
+            },
+            "backup-backupplans": {
+                "name": "Backup plans",
+                "url": "/backup/home?region={region}#/backupplan"
+            },
+            "backup-backupvaults": {
+                "name": "Backup vaults",
+                "url": "/backup/home?region={region}#/backupvaults"
+            },
+            "backup-backuppolicies": {
+                "name": "Backup policies",
+                "url": "/backup/home?region={region}#/organization/policies"
+            },
+            "backup-protectedresources": {
+                "name": "Protected resources",
+                "url": "/backup/home?region={region}#/resources"
+            },
+            "backup-crossaccountmonitoring": {
+                "name": "Cross-account monitoring",
+                "url": "/backup/home?region={region}#/organization/monitoring/backup"
+            }
+        }
+    },
+    "braket": {
+        "name": "Braket",
+        "url": "/braket/home?region={region}#/devices",
+        "description": "Explore and experiment with quantum computing",
+        "menus": {
+            "braket-tasks": {
+                "name": "Tasks",
+                "url": "/braket/home?region={region}#/tasks"
+            },
+            "braket-devices": {
+                "name": "Devices",
+                "url": "/braket/home?region={region}#/devices"
+            },
+            "braket-notebooks": {
+                "name": "Notebooks",
+                "url": "/braket/home?region={region}#/notebooks"
+            },
+            "braket-announcements": {
+                "name": "Announcements",
+                "url": "/braket/home?region={region}#/announcements"
+            }
+        }
+    },
+    "cloud9": {
+        "name": "Cloud9 (C9)",
+        "url": "/cloud9/home?region={region}#",
+        "description": "A Cloud IDE for Writing, Running, and Debugging Code",
+        "menus": {
+            "cloud9-environments": {
+                "name": "Dev Environments and IDE on Cloud 9",
+                "url": "/cloud9/home",
+                "rank": 8
+            },
+            "cloud9-ide": {
+                "name": "IDE on Cloud 9",
+                "url": "/cloud9/home",
+                "rank": 9
+            }
+        }
+    },
+    "config": {
+        "name": "Config",
+        "url": "/config/home?region={region}#",
+        "description": "Track Resource Inventory and Changes",
+        "menus": {}
+    },
+    "kendra": {
+        "name": "Kendra",
+        "url": "/kendra/home?region={region}#indexes",
+        "description": "Highly accurate enterprise search powered by machine learning",
+        "menus": {}
+    },
+    "status": {
+        "name": "Status",
+        "url": "https://status.aws.amazon.com/",
+        "description": "Get a personalized view of AWS service health",
+        "menus": {}
+    },
+    "amplify": {
+        "name": "Amplify",
+        "url": "/amplify/home?region={region}#/home",
+        "description": "Develop & deploy cloud-powered mobile and web apps",
+        "menus": {}
+    },
+    "appmesh": {
+        "name": "App Mesh",
+        "url": "/appmesh/meshes?region={region}#",
+        "description": "Application-level networking for all your services",
+        "menus": {}
+    },
+    "appsync": {
+        "name": "AppSync",
+        "url": "/appsync/home?region={region}#/",
+        "description": "Real-Time Data Sync Using GraphQL for Mobile & Web Apps, Online or Offline",
+        "menus": {}
+    },
+    "billing": {
+        "name": "Billing",
+        "url": "/billing/home",
+        "description": "Access, analyze, and control your AWS costs and usage",
+        "menus": {
+            "billing-tags": {
+                "name": "Cost allocation tags",
+                "url": "/billing/home?region={region}#/tags"
+            },
+            "billing-bills": {
+                "name": "Bills",
+                "url": "/billing/home?region={region}#/bills"
+            },
+            "billing-budgets": {
+                "name": "Budgets",
+                "url": "/billing/home?region={region}#/budgets"
+            },
+            "billing-credits": {
+                "name": "Credits",
+                "url": "/billing/home?region={region}#/credits"
+            },
+            "billing-reports": {
+                "name": "Cost & Usage Reports",
+                "url": "/billing/home?region={region}#/reports"
+            },
+            "billing-payments": {
+                "name": "Payments",
+                "url": "/billing/home?region={region}#/paymentsoverview"
+            },
+            "billing-dashboard": {
+                "name": "Dashboard",
+                "url": "/billing/home?region={region}#/"
+            },
+            "billing-preferences": {
+                "name": "Billing preferences",
+                "url": "/billing/home?region={region}#/preferences"
+            },
+            "billing-taxsettings": {
+                "name": "Tax settings",
+                "url": "/billing/home?region={region}#/tax"
+            },
+            "billing-costexplorer": {
+                "name": "Cost Explorer",
+                "url": "/billing/home?region={region}#/costexplorer"
+            },
+            "billing-savingsplans": {
+                "name": "Savings Plans",
+                "url": "/cost-reports/home?region={region}#/savings-plans/overview"
+            },
+            "billing-budgetsreports": {
+                "name": "Budgets Reports",
+                "url": "/billing/home?region={region}#/budgets/reports"
+            },
+            "billing-costcategories": {
+                "name": "Cost Categories",
+                "url": "/billing/home?region={region}#/costcategories"
+            },
+            "billing-paymentmethods": {
+                "name": "Payment methods",
+                "url": "/billing/home?region={region}#/paymentmethods"
+            },
+            "billing-purchaseorders": {
+                "name": "Purchase orders",
+                "url": "/billing/home?region={region}#/purchaseorders"
+            },
+            "billing-consolidatedbilling": {
+                "name": "Consolidated billing",
+                "url": "/organizations/home"
+            }
+        }
+    },
+    "chatbot": {
+        "name": "Chatbot",
+        "url": "/chatbot/home?region={region}#/chat-clients",
+        "description": "ChatOps for AWS",
+        "menus": {
+            "chatbot-amazonchime": {
+                "name": "Amazon Chime",
+                "url": "/chatbot/home?region={region}#/chat-clients/chime/configurations"
+            },
+            "chatbot-configuredclients": {
+                "name": "Configured clients",
+                "url": "/chatbot/home?region={region}#/chat-clients"
+            }
+        }
+    },
+    "connect": {
+        "name": "Connect",
+        "url": "/connect/home?region={region}#",
+        "description": "managed contact center that enables engagement at any scale",
+        "menus": {}
+    },
+    "outpost": {
+        "name": "Outposts",
+        "url": "/outposts/home?region={region}#Outposts",
+        "description": "Run AWS Services On Premises",
+        "menus": {
+            "outpost-sites": {
+                "name": "Sites",
+                "url": "/outposts/home?region={region}#Sites"
+            },
+            "outpost-orders": {
+                "name": "Orders",
+                "url": "/outposts/home?region={region}#Orders"
+            },
+            "outpost-outposts": {
+                "name": "Outposts",
+                "url": "/outposts/home?region={region}#Outposts"
+            },
+            "outpost-localgateways": {
+                "name": "Local gateways",
+                "url": "/outposts/home?region={region}#LocalGateways"
+            },
+            "outpost-outpostscatalog": {
+                "name": "Outposts catalog",
+                "url": "/outposts/home?region={region}#Catalog"
+            },
+            "outpost-localgatewayroutetables": {
+                "name": "Local gateway route tables",
+                "url": "/outposts/home?region={region}#LocalGatewayRouteTables"
+            }
+        }
+    },
+    "support": {
+        "name": "Support",
+        "url": "/support/home",
+        "description": "Support the success and operational health of your AWS solutions",
+        "menus": {}
+    },
+    "artifact": {
+        "name": "Artifact",
+        "url": "/artifact/home",
+        "description": "AWS Compliance Reports and Agreements",
+        "menus": {
+            "artifact-reports": {
+                "name": "Reports",
+                "url": "/artifact/reports"
+            },
+            "artifact-agreements": {
+                "name": "Agreements",
+                "url": "/artifact/agreements/accounts"
+            }
+        }
+    },
+    "cloudhsm": {
+        "name": "CloudHSM",
+        "url": "/cloudhsm/home?region={region}#/clusters",
+        "description": "Managed Hardware Security Modules in the Cloud",
+        "menus": {
+            "cloudhsm-backups": {
+                "name": "Backups",
+                "url": "/cloudhsm/home?region={region}#/backups"
+            },
+            "cloudhsm-clusters": {
+                "name": "Clusters",
+                "url": "/cloudhsm/home?region={region}#/clusters"
+            }
+        }
+    },
+    "cloudmap": {
+        "name": "Cloud Map",
+        "url": "/cloudmap/home?region={region}#namespaces",
+        "description": "Build a dynamic map of your cloud",
+        "menus": {
+            "cloudmap-namespaces": {
+                "name": "Namespaces",
+                "url": "/cloudmap/home?region={region}#namespaces"
+            }
+        }
+    },
+    "codeguru": {
+        "name": "CodeGuru",
+        "url": "/codeguru/dashboard?region={region}#",
+        "description": "Intelligent recommendations for building and running modern applications",
+        "menus": {
+            "codeguru-dashboard": {
+                "name": "Dashboard",
+                "url": "/codeguru/dashboard?region={region}#"
+            },
+            "codeguru-ciworkflows": {
+                "name": "CI workflows",
+                "url": "/codeguru/reviewer/?region={region}#/ciworkflows"
+            },
+            "codeguru-codereviews": {
+                "name": "Code reviews",
+                "url": "/codeguru/reviewer/?region={region}#/codereviews"
+            },
+            "codeguru-repositories": {
+                "name": "Repositories",
+                "url": "/codeguru/reviewer/?region={region}#/associations"
+            },
+            "codeguru-profilinggroups": {
+                "name": "Profiling groups",
+                "url": "/codeguru/profiler/search?region={region}#"
+            }
+        }
+    },
+    "codestar": {
+        "name": "Codestar",
+        "url": "/codesuite/codestar/projects?region={region}#",
+        "description": "Develop, build and deploy applications",
+        "menus": {
+            "codestar-projects": {
+                "name": "Projects",
+                "url": "/codesuite/codestar/projects?region={region}#"
+            }
+        }
+    },
+    "datasync": {
+        "name": "DataSync",
+        "url": "/datasync/home?region={region}#/tasks",
+        "description": "DataSync simplifies, automates, and accelerates moving data",
+        "menus": {
+            "datasync-tasks": {
+                "name": "Tasks",
+                "url": "/datasync/home?region={region}#/tasks"
+            },
+            "datasync-agents": {
+                "name": "Agents",
+                "url": "/datasync/home?region={region}#/agents"
+            },
+            "datasync-history": {
+                "name": "History",
+                "url": "/datasync/home?region={region}#/history"
+            },
+            "datasync-locations": {
+                "name": "Locations",
+                "url": "/datasync/home?region={region}#/locations"
+            }
+        }
+    },
+    "deeplens": {
+        "name": "DeepLens",
+        "url": "/deeplens/home?region={region}#projects",
+        "description": "Deep Learning Enabled Video Camera",
+        "menus": {
+            "deeplens-models": {
+                "name": "Models",
+                "url": "/deeplens/home?region={region}#models"
+            },
+            "deeplens-devices": {
+                "name": "Devices",
+                "url": "/deeplens/home?region={region}#devices"
+            },
+            "deeplens-recipes": {
+                "name": "Recipes",
+                "url": "/deeplens/home?region={region}#recipes"
+            },
+            "deeplens-projects": {
+                "name": "Projects",
+                "url": "/deeplens/home?region={region}#projects"
+            }
+        }
+    },
+    "forecast": {
+        "name": "Forecast",
+        "url": "/forecast/home?region={region}#",
+        "description": "fully-managed service for accurate time-series forecasting",
+        "menus": {}
+    },
+    "freertos": {
+        "name": "FreeRTOS",
+        "url": "/freertos/home?region={region}#",
+        "description": "IoT Operating System for Microcontrollers",
+        "menus": {}
+    },
+    "gamelift": {
+        "name": "GameLift",
+        "url": "/gamelift/home?region={region}#",
+        "description": "Deploy and Scale Session-based Multiplayer Games",
+        "menus": {}
+    },
+    "opsworks": {
+        "name": "OpsWorks",
+        "url": "/opsworks/home?region={region}#/dashboard",
+        "description": "Configuration Management with Chef and Puppet",
+        "menus": {
+            "opsworks-chef": {
+                "name": "Chef Automate servers",
+                "url": "/opsworks/cm/home?owc=chefautomate?region={region}#/chef/"
+            },
+            "opsworks-users": {
+                "name": "Users",
+                "url": "/opsworks/home?region={region}#/users"
+            },
+            "opsworks-puppet": {
+                "name": "Puppet Enterprise servers",
+                "url": "/opsworks/cm/home?owc=puppet?region={region}#/puppet/"
+            },
+            "opsworks-stacks": {
+                "name": "Stacks",
+                "url": "/opsworks/home?region={region}#/dashboard"
+            },
+            "opsworks-settings": {
+                "name": "Settings",
+                "url": "/opsworks/home?region={region}#/mysettings"
+            }
+        }
+    },
+    "pinpoint": {
+        "name": "Pinpoint",
+        "url": "/pinpoint/home?region={region}#/apps",
+        "description": "Engage Users via Email, SMS, Push & Analytics",
+        "menus": {
+            "pinpoint-allprojects": {
+                "name": "All projects",
+                "url": "/pinpoint/home?region={region}#/apps"
+            },
+            "pinpoint-smsandvoice": {
+                "name": "SMS and voice",
+                "url": "/pinpoint/home?region={region}#/sms-account-settings"
+            },
+            "pinpoint-messagetemplates": {
+                "name": "Message templates",
+                "url": "/pinpoint/home?region={region}#/templates/overview"
+            },
+            "pinpoint-machinelearningmodels": {
+                "name": "Machine learning models",
+                "url": "/pinpoint/home?region={region}#/recommenders"
+            },
+            "pinpoint-deliverabilitydashboard": {
+                "name": "Deliverability dashboard",
+                "url": "/pinpoint/home?region={region}#/deliverability/overview"
+            }
+        }
+    },
+    "sumerian": {
+        "name": "Sumerian",
+        "url": "/sumerianv2/home?region={region}#",
+        "description": "Build VR, AR, and 3D applications",
+        "menus": {}
+    },
+    "textract": {
+        "name": "Textract",
+        "url": "/textract/home?region={region}#/",
+        "description": "Automatically extract handwriting, text or data from any document using machine learning",
+        "menus": {}
+    },
+    "transfer": {
+        "name": "Transfer for SFTP",
+        "url": "/transfer/home?region={region}#",
+        "description": "Fully-managed SFTP service for Amazon S3",
+        "menus": {}
+    },
+    "worklink": {
+        "name": "WorkLink",
+        "url": "/worklink/home?region={region}#/fleets",
+        "description": "Enable secure mobile access to internal websites and web apps",
+        "menus": {}
+    },
+    "workmail": {
+        "name": "WorkMail",
+        "url": "/workmail/v2/home?region={region}#/organizations",
+        "description": "Secure Email and Calendaring Service",
+        "menus": {}
+    },
+    "appstream": {
+        "name": "AppStream 2.0",
+        "url": "/appstream2/home?region={region}#",
+        "description": "Stream desktop applications securely to any web browser",
+        "menus": {}
+    },
+    "deepracer": {
+        "name": "DeepRacer",
+        "url": "/deepracer/home?region={region}#league",
+        "description": "Fully autonomous 1/18th scale race car, driven by machine learning",
+        "menus": {
+            "deepracer-garage": {
+                "name": "Your garage",
+                "url": "/deepracer/home?region={region}#garage"
+            },
+            "deepracer-models": {
+                "name": "Your models",
+                "url": "/deepracer/home?region={region}#models"
+            },
+            "deepracer-racerprofile": {
+                "name": "Your racer profile",
+                "url": "/deepracer/home?region={region}#racerProfile"
+            },
+            "deepracer-communityraces": {
+                "name": "Community races",
+                "url": "/deepracer/home?region={region}#communityRaces"
+            },
+            "deepracer-awsvirtualcircuit": {
+                "name": "AWS Virtual Circuit",
+                "url": "/deepracer/home?region={region}#league"
+            }
+        }
+    },
+    "detective": {
+        "name": "Detective",
+        "url": "/detective/home?region={region}#",
+        "description": "Investigate and analyse possible security issues",
+        "menus": {}
+    },
+    "guardduty": {
+        "name": "GuardDuty",
+        "url": "/guardduty/home?region={region}#/findings",
+        "description": "Intelligent Threat Detection to Protect Your AWS Accounts and Workloads",
+        "menus": {
+            "guardduty-lists": {
+                "name": "Lists",
+                "url": "/guardduty/home?region={region}#/lists"
+            },
+            "guardduty-usage": {
+                "name": "Usage",
+                "url": "/guardduty/home?region={region}#/usage"
+            },
+            "guardduty-accounts": {
+                "name": "Accounts",
+                "url": "/guardduty/home?region={region}#/linked-accounts"
+            },
+            "guardduty-findings": {
+                "name": "Findings",
+                "url": "/guardduty/home?region={region}#/findings"
+            },
+            "guardduty-settings": {
+                "name": "Settings",
+                "url": "/guardduty/home?region={region}#/settings"
+            },
+            "guardduty-s3protection": {
+                "name": "S3 Protection",
+                "url": "/guardduty/home?region={region}#/s3-protection"
+            }
+        }
+    },
+    "inspector": {
+        "name": "Inspector",
+        "url": "/inspector/home?region={region}#",
+        "description": "Analyze Application Security",
+        "menus": {}
+    },
+    "iot1click": {
+        "name": "IoT 1-Click",
+        "url": "/iot1click/home?region={region}#",
+        "description": "Trigger AWS Lambda functions from simple devices",
+        "menus": {}
+    },
+    "iotevents": {
+        "name": "IoT Events",
+        "url": "/iotevents/home?region={region}#",
+        "description": "Monitor device fleets for changes and trigger alerts to respond",
+        "menus": {}
+    },
+    "lightsail": {
+        "name": "Lightsail",
+        "url": "https://lightsail.aws.amazon.com/ls/webapp/home",
+        "description": "Launch and Manage Virtual Private Servers",
+        "menus": {}
+    },
+    "medialive": {
+        "name": "MediaLive",
+        "url": "/medialive/home?region={region}#!/inputs",
+        "description": "Convert video inputs into live outputs for broadcast and streaming delivery",
+        "menus": {
+            "medialive-inputs": {
+                "name": "Inputs",
+                "url": "/medialive/home?region={region}#!/inputs"
+            },
+            "medialive-devices": {
+                "name": "Devices",
+                "url": "/medialive/home?region={region}#!/devices"
+            },
+            "medialive-channels": {
+                "name": "Channels",
+                "url": "/medialive/home?region={region}#!/channels"
+            },
+            "medialive-multiplexes": {
+                "name": "Multiplexes",
+                "url": "/medialive/multiplex?region={region}#/"
+            },
+            "medialive-reservations": {
+                "name": "Reservations",
+                "url": "/medialive/home?region={region}#!/reservations"
+            },
+            "medialive-workflowwizard": {
+                "name": "Workflow Wizard",
+                "url": "/medialive/home?region={region}#!/workflows"
+            },
+            "medialive-inputsecuritygroups": {
+                "name": "Input security groups",
+                "url": "/medialive/home?region={region}#!/inputSecurityGroups"
+            }
+        }
+    },
+    "robomaker": {
+        "name": "RoboMaker",
+        "url": "/robomaker/home?region={region}#ides",
+        "description": "Develop, test, and deploy intelligent robotics applications",
+        "menus": {
+            "robomaker-fleets": {
+                "name": "Fleets",
+                "url": "/robomaker/home?region={region}#fleets"
+            },
+            "robomaker-robots": {
+                "name": "Robots",
+                "url": "/robomaker/home?region={region}#robots"
+            },
+            "robomaker-worlds": {
+                "name": "Worlds",
+                "url": "/robomaker/home?region={region}#worlds"
+            },
+            "robomaker-exportjobs": {
+                "name": "Export jobs",
+                "url": "/robomaker/home?region={region}#worldExportJobs"
+            },
+            "robomaker-deployments": {
+                "name": "Deployments",
+                "url": "/robomaker/home?region={region}#deployments"
+            },
+            "robomaker-generationjobs": {
+                "name": "Generation jobs",
+                "url": "/robomaker/home?region={region}#worldGenerationJobs"
+            },
+            "robomaker-simulationjobs": {
+                "name": "Simulation jobs",
+                "url": "/robomaker/home?region={region}#simulationJobs"
+            },
+            "robomaker-worldtemplates": {
+                "name": "World templates",
+                "url": "/robomaker/home?region={region}#worldTemplates"
+            },
+            "robomaker-robotapplications": {
+                "name": "Robot applications",
+                "url": "/robomaker/home?region={region}#robotApplications"
+            },
+            "robomaker-sampleapplications": {
+                "name": "Sample applications",
+                "url": "/robomaker/home?region={region}#sampleSimulationJobs"
+            },
+            "robomaker-simulationjobbatches": {
+                "name": "Simulation job batches",
+                "url": "/robomaker/home?region={region}#simulationJobBatches"
+            },
+            "robomaker-simulationapplications": {
+                "name": "Simulation applications",
+                "url": "/robomaker/home?region={region}#simulationApplications"
+            },
+            "robomaker-developmentenvironments": {
+                "name": "Development environments",
+                "url": "/robomaker/home?region={region}#ides"
+            }
+        }
+    },
+    "translate": {
+        "name": "Translate",
+        "url": "/translate/home?region={region}#metrics",
+        "description": "Translate Text in Real-time",
+        "menus": {
+            "translate-metrics": {
+                "name": "Metrics",
+                "url": "/translate/home?region={region}#metrics"
+            },
+            "translate-paralleldata": {
+                "name": "Parallel data",
+                "url": "/translate/home?region={region}#parallel-data"
+            },
+            "translate-batchtranslation": {
+                "name": "Batch translation",
+                "url": "/translate/home?region={region}#batch-translation"
+            },
+            "translate-customterminology": {
+                "name": "Custom terminology",
+                "url": "/translate/home?region={region}#terminology"
+            },
+            "translate-realtimetranslation": {
+                "name": "Real-time translation",
+                "url": "/translate/home?region={region}#translation"
+            }
+        }
+    },
+    "blockchain": {
+        "name": "Blockchain",
+        "url": "/managedblockchain/home?region={region}#",
+        "description": "Easily create and manage scalable blockchain networks",
+        "menus": {
+            "blockchain-networks": {
+                "name": "Networks",
+                "url": "/managedblockchain/home?region={region}#networks"
+            },
+            "blockchain-invitations": {
+                "name": "Invitations",
+                "url": "/managedblockchain/home?region={region}#invitations"
+            }
+        }
+    },
+    "comprehend": {
+        "name": "Comprehend",
+        "url": "/comprehend/home?region={region}#home",
+        "description": "Analyze Unstructured Text",
+        "menus": {
+            "comprehend-analysisjobs": {
+                "name": "Analysis jobs",
+                "url": "/comprehend/home?region={region}#analysis"
+            },
+            "comprehend-realtimeanalysis": {
+                "name": "Real-time analysis",
+                "url": "/comprehend/home?region={region}#home"
+            },
+            "comprehend-medicalanalysisjobs": {
+                "name": "Analysis jobs",
+                "url": "/comprehend/home?region={region}#medical-analysis"
+            },
+            "comprehend-customclassification": {
+                "name": "Custom classification",
+                "url": "/comprehend/home?region={region}#classification"
+            },
+            "comprehend-customentityrecognition": {
+                "name": "Custom entity recognition",
+                "url": "/comprehend/home?region={region}#entity-recognition"
+            },
+            "comprehend-medicalrealtimeanalysis": {
+                "name": "Real-time analysis",
+                "url": "/comprehend/home?region={region}#try-comprehend-medical"
+            }
+        }
+    },
+    "devicefarm": {
+        "name": "Device Farm",
+        "url": "/devicefarm/home?region={region}#/mobile/projects",
+        "description": "Test Android, iOS, and Web Apps on Real Devices in the Cloud",
+        "menus": {
+            "devicefarm-mobileprojects": {
+                "name": "Mobile Projects",
+                "url": "/devicefarm/home?region={region}#/mobile/projects"
+            },
+            "devicefarm-browserprojects": {
+                "name": "Browser projects",
+                "url": "/devicefarm/home?region={region}#/browser/projects"
+            },
+            "devicefarm-mobiledeviceslots": {
+                "name": "Mobile device slots",
+                "url": "/devicefarm/home?region={region}#/mobile/deviceslots"
+            },
+            "devicefarm-mobileprivatedevices": {
+                "name": "Mobile private devices",
+                "url": "/devicefarm/home?region={region}#/mobile/privatedevices"
+            }
+        }
+    },
+    "mediastore": {
+        "name": "MediaStore",
+        "url": "/mediastore/home?region={region}#",
+        "description": "Store and deliver video assets for live or on-demand media workflows",
+        "menus": {}
+    },
+    "snowfamily": {
+        "name": "Snow Family",
+        "url": "/snowfamily/home?region={region}#/jobs",
+        "description": "Process data at the edge and migrate data into and out of AWS",
+        "menus": {
+            "snowfamily-jobs": {
+                "name": "Jobs",
+                "url": "/snowfamily/home?region={region}#/jobs"
+            },
+            "snowfamily-createjob": {
+                "name": "Create job",
+                "url": "/snowfamily/home?region={region}#/change-request/create"
+            },
+            "snowfamily-prepaidjobs": {
+                "name": "Prepaid jobs",
+                "url": "/snowfamily/home?region={region}#/prepaidjobs"
+            }
+        }
+    },
+    "transcribe": {
+        "name": "Transcribe",
+        "url": "/transcribe/home?region={region}#",
+        "description": "Powerful Speech Recognition",
+        "menus": {}
+    },
+    "workspaces": {
+        "name": "WorkSpaces",
+        "url": "/workspaces/home?region={region}#",
+        "description": "Desktops in the Cloud",
+        "menus": {}
+    },
+    "augmentedai": {
+        "name": "Augmented AI (A2I)",
+        "url": "/a2i/home?region={region}#",
+        "description": "Easy implement human review of machine learning predictions",
+        "menus": {
+            "augmentedai-task": {
+                "name": "Worker task template",
+                "url": "/a2i/home?region={region}#/worker-task-templates"
+            },
+            "augmentedai-workflows": {
+                "name": "Human review workflows",
+                "url": "/a2i/home?region={region}#/human-review-workflows"
+            },
+            "augmentedai-workforces": {
+                "name": "Human review workforces",
+                "url": "/a2i/home?region={region}#/human-review-workforces"
+            }
+        }
+    },
+    "autoscaling": {
+        "name": "Auto Scaling",
+        "url": "/awsautoscaling/home?region={region}#dashboard",
+        "description": "AWS Auto Scaling enables you to quickly scale your entire application on AWS",
+        "menus": {}
+    },
+    "cloudsearch": {
+        "name": "CloudSearch",
+        "url": "/cloudsearch/home?region={region}#",
+        "description": "Managed Search Service",
+        "menus": {}
+    },
+    "iotsitewise": {
+        "name": "IoT SiteWise",
+        "url": "/iotsitewise/home?region={region}#",
+        "description": "Data driven decisions in Industrial operations",
+        "menus": {}
+    },
+    "marketplace": {
+        "name": "Marketplace Subscriptions",
+        "url": "/marketplace/home?region={region}#/subscriptions",
+        "description": "Digital catalog where you can find, buy, and deploy software",
+        "menus": {
+            "marketplace-settings": {
+                "name": "Settings",
+                "url": "/marketplace/home?region={region}#/settings"
+            },
+            "marketplace-subscriptions": {
+                "name": "Manage subscriptions",
+                "url": "/marketplace/home?region={region}#/subscriptions"
+            },
+            "marketplace-discoverproducts": {
+                "name": "Discover products",
+                "url": "/marketplace/home?region={region}#/search"
+            }
+        }
+    },
+    "mediatailor": {
+        "name": "MediaTailor",
+        "url": "/mediatailor/home?region={region}#/controlpanel",
+        "description": "Personalize and monetize multiscreen content with server-side ad insertion",
+        "menus": {
+            "mediatailor-channels": {
+                "name": "Channels",
+                "url": "/mediatailor/home?region={region}#/channels"
+            },
+            "mediatailor-configurations": {
+                "name": "Configurations",
+                "url": "/mediatailor/home?region={region}#/controlpanel"
+            },
+            "mediatailor-sourcelocations": {
+                "name": "Source locations",
+                "url": "/mediatailor/home?region={region}#/source-locations"
+            }
+        }
+    },
+    "personalize": {
+        "name": "Personalize",
+        "url": "/personalize/home?region={region}#datasetGroups",
+        "description": "easily add real-time recommendations to your apps",
+        "menus": {}
+    },
+    "rekognition": {
+        "name": "Rekognition",
+        "url": "/rekognition/custom-labels?region={region}#/",
+        "description": "Search and Analyze Images",
+        "menus": {
+            "rekognition-metrics": {
+                "name": "Metrics",
+                "url": "/rekognition/home?region={region}#/usage-metrics"
+            },
+            "rekognition-textinimage": {
+                "name": "Text in image",
+                "url": "/rekognition/home?region={region}#/text-detection"
+            },
+            "rekognition-ppedetection": {
+                "name": "PPE detection",
+                "url": "/rekognition/home?region={region}#/ppe"
+            },
+            "rekognition-videoanalysis": {
+                "name": "Video analysis",
+                "url": "/rekognition/home?region={region}#/video-analysis"
+            },
+            "rekognition-facecomparison": {
+                "name": "Face comparison",
+                "url": "/rekognition/home?region={region}#/face-comparison"
+            },
+            "rekognition-facialanalysis": {
+                "name": "Facial analysis",
+                "url": "/rekognition/home?region={region}#/face-detection"
+            },
+            "rekognition-labeldetection": {
+                "name": "Label detection",
+                "url": "/rekognition/home?region={region}#/label-detection"
+            },
+            "rekognition-imagemoderation": {
+                "name": "Image moderation",
+                "url": "/rekognition/home?region={region}#/image-moderation"
+            },
+            "rekognition-usecustomlabels": {
+                "name": "Use Custom Labels",
+                "url": "/rekognition/custom-labels?region={region}#/"
+            },
+            "rekognition-celebrityrecognition": {
+                "name": "Celebrity recognition",
+                "url": "/rekognition/home?region={region}#/celebrity-detection"
+            }
+        }
+    },
+    "securityhub": {
+        "name": "Security Hub",
+        "url": "/securityhub/home?region={region}#",
+        "description": "AWS’s security and compliance center",
+        "menus": {}
+    },
+    "codeartifact": {
+        "name": "CodeArtifact",
+        "url": "/codesuite/codeartifact/domains?region={region}#",
+        "description": "Secure, scalable, and cost-effective artifact management",
+        "menus": {
+            "codeartifact-domains": {
+                "name": "Domains",
+                "url": "/codesuite/codeartifact/domains?region={region}#"
+            },
+            "codeartifact-repositories": {
+                "name": "Repositories",
+                "url": "/codesuite/codeartifact/repositories?region={region}#"
+            }
+        }
+    },
+    "controltower": {
+        "name": "Control Tower",
+        "url": "/controltower/home?region={region}#",
+        "description": "set up and govern your multi-account AWS environment",
+        "menus": {}
+    },
+    "datapipeline": {
+        "name": "Data Pipeline",
+        "url": "/datapipeline/home?region={region}#",
+        "description": "Orchestration for Data-Driven Workflows",
+        "menus": {}
+    },
+    "iotanalytics": {
+        "name": "IoT Analytics",
+        "url": "/iotanalytics/home?region={region}#",
+        "description": "Collect, preprocess, store, analyze and visualize data of IoT devices",
+        "menus": {}
+    },
+    "launchwizard": {
+        "name": "Launch Wizard",
+        "url": "/launchwizard/home?region={region}#SqlDeployment",
+        "description": "Size, configure, and deploy third-party applications on AWS",
+        "menus": {
+            "launchwizard-sap": {
+                "name": "SAP",
+                "url": "/launchwizard/home?region={region}#SapDeployment"
+            },
+            "launchwizard-mssqlserver": {
+                "name": "MS SQL Server",
+                "url": "/launchwizard/home?region={region}#SqlDeployment"
+            },
+            "launchwizard-activedirectory": {
+                "name": "Active Directory",
+                "url": "/launchwizard/home?region={region}#AdDeployment"
+            }
+        }
+    },
+    "mediaconnect": {
+        "name": "MediaConnect",
+        "url": "/mediaconnect/home?region={region}#",
+        "description": "Reliable, secure, and flexible transport for live video",
+        "menus": {}
+    },
+    "mediaconvert": {
+        "name": "MediaConvert",
+        "url": "/mediaconvert/home?region={region}#/jobs/list",
+        "description": "Convert file-based content for broadcast and multiscreen delivery",
+        "menus": {
+            "mediaconvert-jobs": {
+                "name": "Jobs",
+                "url": "/mediaconvert/home?region={region}#/jobs/list"
+            },
+            "mediaconvert-queues": {
+                "name": "Queues",
+                "url": "/mediaconvert/home?region={region}#/queues/list"
+            },
+            "mediaconvert-account": {
+                "name": "Account",
+                "url": "/mediaconvert/home?region={region}#/account"
+            },
+            "mediaconvert-certificates": {
+                "name": "Certificates",
+                "url": "/mediaconvert/home?region={region}#/certificates"
+            },
+            "mediaconvert-jobtemplates": {
+                "name": "Job templates",
+                "url": "/mediaconvert/home?region={region}#/templates/list"
+            },
+            "mediaconvert-outputpresets": {
+                "name": "Output presets",
+                "url": "/mediaconvert/home?region={region}#/presets/list"
+            }
+        }
+    },
+    "mediapackage": {
+        "name": "MediaPackage",
+        "url": "/mediapackage/home?region={region}#/channels",
+        "description": "Deliver video to many devices using just-in-time format conversion",
+        "menus": {
+            "mediapackage-channels": {
+                "name": "Channels",
+                "url": "/mediapackage/home?region={region}#/channels"
+            },
+            "mediapackage-vodassets": {
+                "name": "Video on demand Assets",
+                "url": "/mediapackagevod/home?region={region}#/assets"
+            },
+            "mediapackage-harvestjobs": {
+                "name": "Harvest jobs",
+                "url": "/mediapackage/home?region={region}#/harvest-jobs"
+            },
+            "mediapackage-vodpackaginggroups": {
+                "name": "Video on demand Packaging groups",
+                "url": "/mediapackagevod/home?region={region}#/packaging_groups"
+            }
+        }
+    },
+    "migrationhub": {
+        "name": "Migration Hub",
+        "url": "/migrationhub/home?region={region}#",
+        "description": "Simplify and accelerate the migration of your data centers to AWS",
+        "menus": {}
+    },
+    "singlesignon": {
+        "name": "Single Sign-On (SSO)",
+        "url": "/singlesignon/home?region={region}#",
+        "description": "Manage Single Sign-On (SSO) Access to AWS Accounts and Business Applications",
+        "menus": {}
+    },
+    "directconnect": {
+        "name": "Direct Connect",
+        "url": "/directconnect/v2/home?region={region}#/connections",
+        "description": "Dedicated Network Connection to AWS",
+        "menus": {
+            "directconnect-lags": {
+                "name": "LAGs",
+                "url": "/directconnect/v2/home?region={region}#/lags"
+            },
+            "directconnect-connections": {
+                "name": "Connections",
+                "url": "/directconnect/v2/home?region={region}#/connections"
+            },
+            "directconnect-transitgateways": {
+                "name": "Transit gateways",
+                "url": "/directconnect/v2/home?region={region}#/transit-gateways"
+            },
+            "directconnect-virtualinterfaces": {
+                "name": "Virtual interfaces",
+                "url": "/directconnect/v2/home?region={region}#/virtual-interfaces"
+            },
+            "directconnect-directconnectgateways": {
+                "name": "Direct Connect gateways",
+                "url": "/directconnect/v2/home?region={region}#/dxgateways"
+            },
+            "directconnect-virtualprivategateways": {
+                "name": "Virtual private gateways",
+                "url": "/directconnect/v2/home?region={region}#/virtual-gateways"
+            }
+        }
+    },
+    "frauddetector": {
+        "name": "Fraud Detector",
+        "url": "/frauddetector/home?region={region}#getDetectors",
+        "description": "Detect more online fraud faster with machine learning",
+        "menus": {
+            "frauddetector-events": {
+                "name": "Events",
+                "url": "/frauddetector/home?region={region}#getEventTypes"
+            },
+            "frauddetector-labels": {
+                "name": "Labels",
+                "url": "/frauddetector/home?region={region}#getLabels"
+            },
+            "frauddetector-models": {
+                "name": "Models",
+                "url": "/frauddetector/home?region={region}#getModels"
+            },
+            "frauddetector-entities": {
+                "name": "Entities",
+                "url": "/frauddetector/home?region={region}#entityTypes"
+            },
+            "frauddetector-outcomes": {
+                "name": "Outcomes",
+                "url": "/frauddetector/home?region={region}#getOutcomes"
+            },
+            "frauddetector-detectors": {
+                "name": "Detectors",
+                "url": "/frauddetector/home?region={region}#getDetectors"
+            },
+            "frauddetector-variables": {
+                "name": "Variables",
+                "url": "/frauddetector/home?region={region}#getVariables"
+            },
+            "frauddetector-batchpredictions": {
+                "name": "Batch predictions",
+                "url": "/frauddetector/home?region={region}#getBatchPredictions"
+            },
+            "frauddetector-searchpastpredictions": {
+                "name": "Search past predictions",
+                "url": "/frauddetector/home?region={region}#auditEvaluations"
+            }
+        }
+    },
+    "groundstation": {
+        "name": "Ground Station",
+        "url": "/groundstation/home?region={region}#/contacts",
+        "description": "Communicate with satellites",
+        "menus": {
+            "groundstation-contacts": {
+                "name": "Contacts",
+                "url": "/groundstation/home?region={region}#/contacts"
+            },
+            "groundstation-satellitesandresources": {
+                "name": "Satellites and resources",
+                "url": "/groundstation/home?region={region}#/resources"
+            }
+        }
+    },
+    "iotgreengrass": {
+        "name": "IoT Greengrass",
+        "url": "/iotgreengrass/home?region={region}#",
+        "description": "Deploy and run code on your devices",
+        "menus": {}
+    },
+    "organizations": {
+        "name": "Organizations",
+        "url": "/organizations/v2/home/invitations",
+        "description": "Policy-based management for multiple AWS accounts.",
+        "menus": {}
+    },
+    "accessanalyzer": {
+        "name": "Access Analyzer",
+        "url": "/access-analyzer/home?region={region}#/rules",
+        "description": "Monitor access to resources",
+        "menus": {
+            "accessanalyzer-settings": {
+                "name": "Settings",
+                "url": "/access-analyzer/home?region={region}#/settings"
+            },
+            "accessanalyzer-analyzers": {
+                "name": "Analyzers",
+                "url": "/access-analyzer/home?region={region}#/analyzers"
+            },
+            "accessanalyzer-archiverules": {
+                "name": "Archive rules",
+                "url": "/access-analyzer/home?region={region}#/rules"
+            }
+        }
+    },
+    "developertools": {
+        "name": "Developer Tools",
+        "url": "/codesuite/settings/notifications?region={region}#",
+        "description": "Host code, build, test, and deploy your applications to AWS",
+        "menus": {
+            "developertools-connections": {
+                "name": "Connections",
+                "url": "/codesuite/settings/connections?region={region}#"
+            },
+            "developertools-notifications": {
+                "name": "Notifications",
+                "url": "/codesuite/settings/notifications?region={region}#"
+            }
+        }
+    },
+    "iotthingsgraph": {
+        "name": "IoT Things Graph",
+        "url": "/thingsgraph/home?region={region}#",
+        "description": "Easily connect devices and web services to build IoT applications",
+        "menus": {}
+    },
+    "licensemanager": {
+        "name": "License Manager",
+        "url": "/license-manager/home?region={region}#",
+        "description": "Set rules to manage, discover, and report third-party license usage proactively",
+        "menus": {}
+    },
+    "serverlessrepo": {
+        "name": "Serverless Application Repository",
+        "url": "/serverlessrepo/home?region={region}#/available-applications",
+        "description": "Assemble, deploy, and share serverless applications within teams or publicly",
+        "menus": {
+            "serverlessrepo-availableapplications": {
+                "name": "Available applications",
+                "url": "/serverlessrepo/home?region={region}#/available-applications"
+            },
+            "serverlessrepo-publishedapplications": {
+                "name": "Published applications",
+                "url": "/serverlessrepo/home?region={region}#/published-applications"
+            }
+        }
+    },
+    "servicecatalog": {
+        "name": "Service Catalog",
+        "url": "/servicecatalog/home?region={region}#products",
+        "description": "allows organizations to manage approved catalogs of IT resources and make them available to employees via a personalized portal.",
+        "menus": {
+            "servicecatalog-products": {
+                "name": "Products",
+                "url": "/servicecatalog/home?region={region}#products"
+            },
+            "servicecatalog-portfolios": {
+                "name": "Portfolios",
+                "url": "/servicecatalog/home?region={region}#portfolios"
+            },
+            "servicecatalog-preferences": {
+                "name": "Preferences",
+                "url": "/servicecatalog/home?region={region}#preferences"
+            },
+            "servicecatalog-applications": {
+                "name": "Applications",
+                "url": "/servicecatalog/home?region={region}#applications/"
+            },
+            "servicecatalog-introduction": {
+                "name": "Introduction",
+                "url": "/servicecatalog/home?region={region}#appregistry"
+            },
+            "servicecatalog-adminproducts": {
+                "name": "Admin products",
+                "url": "/servicecatalog/home?region={region}#admin-products"
+            },
+            "servicecatalog-serviceactions": {
+                "name": "Service actions",
+                "url": "/servicecatalog/home?region={region}#service-actions/"
+            },
+            "servicecatalog-attributegroups": {
+                "name": "Attribute groups",
+                "url": "/servicecatalog/home?region={region}#attribute-groups/"
+            },
+            "servicecatalog-tagoptionslibrary": {
+                "name": "TagOptions library",
+                "url": "/servicecatalog/home?region={region}#tag-options"
+            },
+            "servicecatalog-provisionedproducts": {
+                "name": "Provisioned products",
+                "url": "/servicecatalog/home?region={region}#provisioned-products"
+            },
+            "servicecatalog-gettingstartedlibrary": {
+                "name": "Getting started library",
+                "url": "/servicecatalog/home?region={region}#getting-started-library"
+            }
+        }
+    },
+    "storagegateway": {
+        "name": "Storage Gateway",
+        "url": "/storagegateway/home?region={region}#/gateways",
+        "description": "Hybrid Storage Integration",
+        "menus": {
+            "storagegateway-pools": {
+                "name": "Pools",
+                "url": "/storagegateway/home?region={region}#/pools"
+            },
+            "storagegateway-tapes": {
+                "name": "Tapes",
+                "url": "/storagegateway/home?region={region}#/tapes"
+            },
+            "storagegateway-volumes": {
+                "name": "Volumes",
+                "url": "/storagegateway/home?region={region}#/volumes"
+            },
+            "storagegateway-gateways": {
+                "name": "Gateways",
+                "url": "/storagegateway/home?region={region}#/gateways"
+            },
+            "storagegateway-hardware": {
+                "name": "Hardware",
+                "url": "/storagegateway/home?region={region}#/hardware"
+            },
+            "storagegateway-fileshares": {
+                "name": "File shares",
+                "url": "/storagegateway/home?region={region}#/file-shares"
+            },
+            "storagegateway-filesystems": {
+                "name": "FSx file systems",
+                "url": "/storagegateway/home?region={region}#/file-systems"
+            }
+        }
+    },
+    "trustedadvisor": {
+        "name": "Trusted Advisor",
+        "url": "/trustedadvisor/home?region={region}#/dashboard",
+        "description": "Optimize Performance and Security",
+        "menus": {
+            "trustedadvisor-security": {
+                "name": "Security",
+                "url": "/trustedadvisor/home?region={region}#/category/security"
+            },
+            "trustedadvisor-dashboard": {
+                "name": "Dashboard",
+                "url": "/trustedadvisor/home?region={region}#/dashboard"
+            },
+            "trustedadvisor-performance": {
+                "name": "Performance",
+                "url": "/trustedadvisor/home?region={region}#/category/performance"
+            },
+            "trustedadvisor-preferences": {
+                "name": "Preferences",
+                "url": "/trustedadvisor/home?region={region}#/preferences"
+            },
+            "trustedadvisor-servicelimits": {
+                "name": "Service Limits",
+                "url": "/trustedadvisor/home?region={region}#/category/service-limits"
+            },
+            "trustedadvisor-faulttolerance": {
+                "name": "Fault Tolerance",
+                "url": "/trustedadvisor/home?region={region}#/category/fault-tolerance"
+            },
+            "trustedadvisor-costoptimization": {
+                "name": "Cost Optimization",
+                "url": "/trustedadvisor/home?region={region}#/category/cost-optimizing"
+            }
+        }
+    },
+    "ec2imagebuilder": {
+        "name": "EC2 Image Builder",
+        "url": "/imagebuilder/home?region={region}#/pipelines",
+        "description": "A managed service to automate build, customize and deploy OS images",
+        "menus": {
+            "ec2imagebuilder-images": {
+                "name": "Images",
+                "url": "/imagebuilder/home?region={region}#/images"
+            },
+            "ec2imagebuilder-components": {
+                "name": "Components",
+                "url": "/imagebuilder/home?region={region}#/components"
+            },
+            "ec2imagebuilder-imagerecipes": {
+                "name": "Image recipes",
+                "url": "/imagebuilder/home?region={region}#/imageRecipes"
+            },
+            "ec2imagebuilder-imagepipelines": {
+                "name": "Image pipelines",
+                "url": "/imagebuilder/home?region={region}#/pipelines"
+            },
+            "ec2imagebuilder-containerrecipes": {
+                "name": "Container recipes",
+                "url": "/imagebuilder/home?region={region}#/containerRecipes"
+            },
+            "ec2imagebuilder-distributionsettings": {
+                "name": "Distribution settings",
+                "url": "/imagebuilder/home?region={region}#/distributionSettings"
+            },
+            "ec2imagebuilder-infrastructureconfiguration": {
+                "name": "Infrastructure configuration",
+                "url": "/imagebuilder/home?region={region}#/infraConfigurations"
+            }
+        }
+    },
+    "managedservices": {
+        "name": "Managed Services",
+        "url": "/managedservices/home?region={region}#",
+        "description": "IT operations management for AWS",
+        "menus": {}
+    },
+    "computeoptimizer": {
+        "name": "Compute Optimizer",
+        "url": "/compute-optimizer/home",
+        "description": "Recommend optimal AWS Compute resources for your workloads",
+        "menus": {}
+    },
+    "directoryservice": {
+        "name": "Directory Service",
+        "url": "/directoryservicev2/identity?region={region}#!/directories",
+        "description": "Host and Manage Active Directory",
+        "menus": {
+            "directoryservice-cloudschemas": {
+                "name": "Cloud Schemas",
+                "url": "/directoryservicev2/home?region={region}#!/cloud-schemas"
+            },
+            "directoryservice-clouddirectories": {
+                "name": "Cloud Directories",
+                "url": "/directoryservicev2/home?region={region}#!/cloud-directories"
+            },
+            "directoryservice-activedirectories": {
+                "name": "Active Directories",
+                "url": "/directoryservicev2/identity/home?region={region}#!/directories"
+            },
+            "directoryservice-directoriessharedwithme": {
+                "name": "Active Directories shared with me",
+                "url": "/directoryservicev2/home?region={region}#!/directories-shared-with-me"
+            }
+        }
+    },
+    "elastictranscoder": {
+        "name": "Elastic Transcoder",
+        "url": "/elastictranscoder/home?region={region}#",
+        "description": "Easy-to-Use Scalable Media Transcoding",
+        "menus": {}
+    },
+    "globalaccelerator": {
+        "name": "Global Accelerator",
+        "url": "/ec2/v2/home?region={region}#GlobalAcceleratorDashboard",
+        "description": "Improve your application’s availability and performance using the AWS Global Network",
+        "menus": {}
+    },
+    "iotdevicedefender": {
+        "name": "IoT Device Defender",
+        "url": "/devicedefender/home?region={region}#",
+        "description": "Connect Devices to the Cloud",
+        "menus": {}
+    },
+    "iotdevicemanagement": {
+        "name": "IoT Device Management",
+        "url": "/iotdm/home?region={region}#",
+        "description": "Securely Manage Fleets as Small as One Device, or as Broad as Millions of Devices",
+        "menus": {}
+    },
+    "wellarchitectedtool": {
+        "name": "Well-Architected Tool",
+        "url": "/wellarchitected/home?region={region}#/dashboard",
+        "description": "Learn best practices, measure, and improve your workloads",
+        "menus": {
+            "wellarchitectedtool-dashboard": {
+                "name": "Dashboard",
+                "url": "/wellarchitected/home?region={region}#/dashboard"
+            },
+            "wellarchitectedtool-workloads": {
+                "name": "Workloads",
+                "url": "/wellarchitected/home?region={region}#/workloads"
+            },
+            "wellarchitectedtool-workloadinvitations": {
+                "name": "Workload invitations",
+                "url": "/wellarchitected/home?region={region}#/invitations"
+            }
+        }
+    },
+    "servermigrationservice": {
+        "name": "Server Migration Service",
+        "url": "/servermigration/home?region={region}#",
+        "description": "Migrate on-premises servers to AWS",
+        "menus": {}
+    }
+}
