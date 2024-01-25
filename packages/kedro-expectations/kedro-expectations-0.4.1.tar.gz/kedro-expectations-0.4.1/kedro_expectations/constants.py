@@ -1,0 +1,1 @@
+_DEFAULT_PANDAS_DATASOURCE_NAME = "kedro_pandas_in_memory_datasource"
