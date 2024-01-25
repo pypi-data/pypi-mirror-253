@@ -1,0 +1,50 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import _ChildNamedObjectAccessorMixin
+
+from ansys.fluent.core.solver.flobject import _CreatableNamedObjectMixin
+
+from ansys.fluent.core.solver.flobject import _NonCreatableNamedObjectMixin
+
+from ansys.fluent.core.solver.flobject import _HasAllowedValuesMixin
+
+from .option import option as option_cls
+from .distance import distance as distance_cls
+from .x_coordinates import x_coordinates as x_coordinates_cls
+from .y_coordinates import y_coordinates as y_coordinates_cls
+from .z_coordinates import z_coordinates as z_coordinates_cls
+class x_axis_quantity(Group):
+    """
+    'x_axis_quantity' child.
+    """
+
+    fluent_name = "x-axis-quantity"
+
+    child_names = \
+        ['option', 'distance', 'x_coordinates', 'y_coordinates',
+         'z_coordinates']
+
+    option: option_cls = option_cls
+    """
+    option child of x_axis_quantity.
+    """
+    distance: distance_cls = distance_cls
+    """
+    distance child of x_axis_quantity.
+    """
+    x_coordinates: x_coordinates_cls = x_coordinates_cls
+    """
+    x_coordinates child of x_axis_quantity.
+    """
+    y_coordinates: y_coordinates_cls = y_coordinates_cls
+    """
+    y_coordinates child of x_axis_quantity.
+    """
+    z_coordinates: z_coordinates_cls = z_coordinates_cls
+    """
+    z_coordinates child of x_axis_quantity.
+    """

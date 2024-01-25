@@ -1,0 +1,71 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import _ChildNamedObjectAccessorMixin
+
+from ansys.fluent.core.solver.flobject import _CreatableNamedObjectMixin
+
+from ansys.fluent.core.solver.flobject import _NonCreatableNamedObjectMixin
+
+from ansys.fluent.core.solver.flobject import _HasAllowedValuesMixin
+
+from .cell_zones_6 import cell_zones as cell_zones_cls
+from .cell_function_1 import cell_function as cell_function_cls
+from .current_domain import current_domain as current_domain_cls
+from .write_to_file_1 import write_to_file as write_to_file_cls
+from .file_name_1 import file_name as file_name_cls
+from .append_data import append_data as append_data_cls
+class volume_integral(Command):
+    """
+    Print volume integral of scalar over specified cell zones.
+    
+    Parameters
+    ----------
+        cell_zones : typing.List[str]
+            Volume id/name.
+        cell_function : str
+            Specify Field.
+        current_domain : str
+            'current_domain' child.
+        write_to_file : bool
+            'write_to_file' child.
+        file_name : str
+            'file_name' child.
+        append_data : bool
+            'append_data' child.
+    
+    """
+
+    fluent_name = "volume-integral"
+
+    argument_names = \
+        ['cell_zones', 'cell_function', 'current_domain', 'write_to_file',
+         'file_name', 'append_data']
+
+    cell_zones: cell_zones_cls = cell_zones_cls
+    """
+    cell_zones argument of volume_integral.
+    """
+    cell_function: cell_function_cls = cell_function_cls
+    """
+    cell_function argument of volume_integral.
+    """
+    current_domain: current_domain_cls = current_domain_cls
+    """
+    current_domain argument of volume_integral.
+    """
+    write_to_file: write_to_file_cls = write_to_file_cls
+    """
+    write_to_file argument of volume_integral.
+    """
+    file_name: file_name_cls = file_name_cls
+    """
+    file_name argument of volume_integral.
+    """
+    append_data: append_data_cls = append_data_cls
+    """
+    append_data argument of volume_integral.
+    """
