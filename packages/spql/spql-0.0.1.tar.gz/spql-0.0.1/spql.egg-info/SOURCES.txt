@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+spql/__init__.py
+spql/cli.py
+spql.egg-info/PKG-INFO
+spql.egg-info/SOURCES.txt
+spql.egg-info/dependency_links.txt
+spql.egg-info/entry_points.txt
+spql.egg-info/requires.txt
+spql.egg-info/top_level.txt
+tests/test_spql.py
