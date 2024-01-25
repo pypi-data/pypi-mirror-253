@@ -1,0 +1,11 @@
+limmer/__init__.py,sha256=LmwTkgQM4OJ8M6WlCxa-DMoh_CWZy0VQLwnIRnxwnNI,95
+limmer/ansi_styles.py,sha256=C8yyswnzsWNKNmbeTEmK8DVroEPZvZ9bZRLw3x2Y3ag,532
+limmer/basics.py,sha256=uQG0tC_3TxSIm2AHilh_L_0pEpPWw-iPnUGGBFk3ntg,4800
+limmer/enableANSI.py,sha256=Mo0_9JhwIwBVck8Ai6KkQ9ILzGu35JUahqZTWXe13zs,541
+limmer/events.py,sha256=zUqewwMQG0Fmih4D-zzDJxC5AOu2np-nO0HJ9d9cgNg,1351
+limmer/styles.py,sha256=6Kigiex8va-Wgpu6RUnduDMqigzWsikvP8bcW8rNa3o,327
+limmer-0.2.0.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+limmer-0.2.0.dist-info/METADATA,sha256=j1rnJ1XqVDzifqgnQIItj9zYcwHFFrvBlyxQL9AJ3fU,853
+limmer-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+limmer-0.2.0.dist-info/top_level.txt,sha256=xC1HHjNl6xfSnAny7MM7nd340zaaUYC44LMByn_PZAg,7
+limmer-0.2.0.dist-info/RECORD,,
