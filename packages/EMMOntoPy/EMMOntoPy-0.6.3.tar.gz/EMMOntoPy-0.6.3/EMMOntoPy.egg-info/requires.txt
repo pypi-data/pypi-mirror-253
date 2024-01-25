@@ -1,0 +1,47 @@
+blessings<2,>=1.7
+Cython<3.1,>=0.29.21
+defusedxml<1,>=0.7.1
+graphviz<0.21,>=0.16
+numpy<2,>=1.19.5
+openpyxl<3.2,>=3.0.9
+Owlready2!=0.32,!=0.34,<0.44,>=0.28
+packaging<24,>=21.0
+pandas<2.2,>=1.2
+Pygments<3,>=2.7.4
+pyparsing>=2.4.7
+PyYAML<7,>=5.4.1
+rdflib<8,>=4.2.1
+requests<3,>=2.31
+semver<4,>=2.8.1
+
+[dev]
+pytest~=7.4
+pytest-cov~=4.1
+mike~=2.0
+mkdocs~=1.5
+mkdocs-awesome-pages-plugin~=2.9
+
+[dev:python_version < "3.8"]
+pre-commit<3,>=2.21.0
+pylint~=2.17
+mkdocs-material~=9.2
+mkdocstrings[python-legacy]~=0.22.0
+
+[dev:python_version >= "3.8"]
+pre-commit~=3.5
+pylint~=3.0
+mkdocs-material~=9.4
+mkdocstrings[python-legacy]~=0.24.0
+
+[docs]
+mike~=2.0
+mkdocs~=1.5
+mkdocs-awesome-pages-plugin~=2.9
+
+[docs:python_version < "3.8"]
+mkdocs-material~=9.2
+mkdocstrings[python-legacy]~=0.22.0
+
+[docs:python_version >= "3.8"]
+mkdocs-material~=9.4
+mkdocstrings[python-legacy]~=0.24.0
