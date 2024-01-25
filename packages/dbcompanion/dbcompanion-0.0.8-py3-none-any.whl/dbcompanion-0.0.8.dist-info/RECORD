@@ -1,0 +1,12 @@
+dbcompanion/__init__.py,sha256=WLaxrZTJT3FWew3VFMoJN3MoacPIgINy-_ECPM-Da6E,111
+dbcompanion/report.py,sha256=ua-vyqD_BcJfpudMOc--Y24k50G5Y85rnWPX7P1_o_Y,6355
+dbcompanion/step.py,sha256=fukZu40easJldAk2RRyl5KzV1nQ5zflpCUEEEei6_6M,2365
+dbcompanion/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbcompanion/utils/code_utils.py,sha256=WgCHejLuPvG4M8-Cfui1Dt8gH4l0eCAFdpkSbkjgIcM,2261
+dbcompanion/utils/db_utils.py,sha256=X4BLcnA9RBeU3SITwEMFAOZDx_EVe9golUrJzJG_k0c,1375
+dbcompanion/utils/oai_utils.py,sha256=EoEU4rMuEuwPCiP-JXGUUtGrnFdD6sVZ7DYT42b5WNI,3808
+dbcompanion/utils/prompt.py,sha256=qTqsjuppCK-6BsvbxzzSANrRKKh9GdK-IKPQrUgXb9E,2519
+dbcompanion-0.0.8.dist-info/METADATA,sha256=tnZBDeLm1YdGzvSdaV9m_rHelNfP0bSqmcrAhmOxBKk,2120
+dbcompanion-0.0.8.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+dbcompanion-0.0.8.dist-info/licenses/LICENSE,sha256=4WoHvBCqK0QJAA91EZRQCEangMMWUSD2iXZqAMokgW8,1076
+dbcompanion-0.0.8.dist-info/RECORD,,
