@@ -1,0 +1,3 @@
+[console_scripts]
+autoreview = autoreviewer.cli:main
+autoreviewer = autoreviewer.cli:main
