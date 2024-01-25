@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: benchdas
+Version: 0.3.0
+Summary: Quick benchmarking and data analysis tools for Python
+Author: SamKG
+Author-email: samyak.k.gupta@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Requires-Dist: seaborn (>=0.13.1,<0.14.0)
+Description-Content-Type: text/markdown
+
+# benchdas
+## What is this?
+benchdas is intended to be a suite of tools to quickly record and analyze benchmarks for a given function call. Included with benchdas are utilities that make analysis of benchmark data easy, using multi-indexed pandas dataframes to compare across different variables, and seaborn to quickly plot results.
