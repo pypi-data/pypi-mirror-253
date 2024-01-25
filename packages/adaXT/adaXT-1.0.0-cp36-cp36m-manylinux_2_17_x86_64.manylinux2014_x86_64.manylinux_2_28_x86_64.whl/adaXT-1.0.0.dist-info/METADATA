@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: adaXT
+Version: 1.0.0
+Summary: A Python package for tree-based regression and classification
+Home-page: UNKNOWN
+License: UNKNOWN
+Project-URL: Documentation, https://NiklasPfister.github.io/adaXT/
+Project-URL: Source Code, https://github.com/NiklasPfister/adaXT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.25.0)
+Requires-Dist: matplotlib (>=3.7.1)
+Requires-Dist: cython (>=3.0.0)
+Provides-Extra: test
+Requires-Dist: scipy ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+## adaXT - Fast adaptable and extendable trees for research
+
+**adaXT** is a Python module for tree-based regression and classification that is fast, adaptable and extendable and aims to provide researchers a more flexible workflow when building tree-based models.
+
+### Installation
+adaXT is available at [pypi](https://pypi.org/) and can be installed by running ```pip install adaXT```.
+
+
