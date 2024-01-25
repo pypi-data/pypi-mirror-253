@@ -1,0 +1,107 @@
+# Geodetic Engine
+
+A Python library using the Equinor Geodetic Engine API and pyproj to transform coordinates between different Coordinate Reference Systems (CRS).
+
+## Installation
+
+1. Access to the [Equinor Geodetic Engine API](https://api.equinor.com/api-details#api=ege-GeodeticEngine-v1) is required, which can be obtained through [AccessIT](https://accessit.equinor.com/Search/Search?term=geodetic+engine).
+
+2. A personal subscription key is also necessary to authenticate through APIM. Sign in to [api.equinor.com](https://api.equinor.com) and subscribe to [Enterprise](https://api.equinor.com/product#product=corporate).
+
+3. As usual the package it´s installed running pip install:
+```
+pip install geodeticengine
+```
+
+## Authentication
+There are two ways to authenticate:
+- User access - MSAL Device code flow
+- Application access - MSAL Client credential flow
+
+
+### User authentication using public client flows
+This package uses the _PublicClientApplication_ Python class from the MSAL library for user authentication. Bearer tokens are retrieved using the _acquire_token_interactive()_ method, which can be accessed via a local browser on devices that support a Graphical User Interface (GUI). If a device lacks GUI support, such as GitHub Code Spaces, the _initiate_device_flow()_ method generates a specific URL for the user to visit and follows a standard authentication and login process.
+
+To use the package with user access, you will need to add the following environment variables to your system:
+```
+EGE_CLIENT_ENVS=prod;test
+EGE_CLIENT_IDS=c25018ed-b371-4b37-ba4e-4d902aee2b6c;84c8d2ec-6294-47aa-8fd4-f69c870faa3a
+EGE_TENANT_ID=3aa4a235-b6e2-48d5-9195-7fcf05b459b0
+EGE_RESOURCE_IDS=c25018ed-b371-4b37-ba4e-4d902aee2b6c;84c8d2ec-6294-47aa-8fd4-f69c870faa3a
+EGE_SUBS_KEYS=<your-subscription-key-for-geodeticengine-prod;your-subscription-key-for-geodeticengine-test>
+```
+**EGE_CLIENT_ENVS** sets the order of environment variables. If you only have access to "prod", simply add "prod" to this variable.<br>
+**EGE_CLIENT_IDS** sets the client IDs for each environment. For user access, this is the same as EGE_RESOURCE_IDS. <br>
+**EGE_TENANT_ID** is the tenant ID (Equinor).<br>
+**EGE_SUBS_KEYS** is your APIM subscription keys for each environment (prod and test). This will allow the package to access the resources you have permission to use.<br>
+**EGE_RESOURCE_IDS** is the resource ID of the geodetic engine for the specified environments.<br>
+
+
+### Application access - MSAL Client credential flow
+
+To use the package with application access, you will need to add the following environment variables to your system:
+- EGE_CLIENT_IDS
+- EGE_CLIENT_SECRETS
+
+Add the following environment variables to your system:
+```
+EGE_TENANT_ID=3aa4a235-b6e2-48d5-9195-7fcf05b459b0
+EGE_CLIENT_ENVS=prod;test
+EGE_CLIENT_IDS=<your-app-id-prod;your-app-id-test>
+EGE_RESOURCE_IDS=c25018ed-b371-4b37-ba4e-4d902aee2b6c;84c8d2ec-6294-47aa-8fd4-f69c870faa3a
+EGE_SUBS_KEYS=<your-subscription-key-for-geodeticengine-prod;your-subscription-key-for-geodeticengine-test>
+EGE_CLIENT_SECRETS=<your-app-secret-prod;your-app-secret-test>
+```
+
+When **EGE_CLIENT_SECRETS** is added, the package will automatically use application access to authenticate.
+
+
+## Access test environment
+To use the package to access Geodetic Engine Test environment, you need to set the EGE_API_ENV as an environment variable.
+If this environment variable is not set, the package will by default use the production environment.
+```
+EGE_API_ENV=test
+```
+
+## Token cache
+The token for each environment is cached and stored in the user's home directory, eliminating the need to authenticate before every session. Although an access token expires after one hour, the presence of a cached Refresh Token allows a new Access Token to be obtained without requiring re-authentication. The Refresh Token lasts for 90 days, then you have to log in again.
+
+## Downloading transformation grids
+Transformation grids are essential for achieving high accuracy when performing datum transformations. The package simplifies the installation process for you by automatically downloading and updating the required data if it doesn't already exist on your local machine.
+
+More information on the data available is located in [pyproj documentation](https://pyproj4.github.io/pyproj/stable/transformation_grids.html).
+
+## Code example
+
+```
+from geodeticengine import CoordTrans
+
+### Example 1
+points = [[10, 60]]
+crs_from = "EPSG:4230"
+crs_to = "EPSG:4326"
+ct_from = "EPSG:1612"
+
+# Transform coordinates
+ct = CoordTrans(crs_from=crs_from, crs_to=crs_to, ct_from=ct_from, points=points)
+print(f"Transformed coordinates:{ct.transform_pointlist()}")
+
+# Get transformation pipeline
+pipeline = ct.get_pipeline()
+print(f"Transformation pipeline: {pipeline}")
+
+
+### Example 2
+points = [[9,65],[12,70]]
+crs_from = "ST_ED50_T1133"
+crs_to = "ST_WGS84_G4326"
+
+# Transform coordinates
+ct = CoordTrans(crs_from=crs_from, crs_to=crs_to, points=points)
+print(f"Transformed coordinates:{ct.transform_pointlist()}")
+
+# Get transformation pipeline
+pipeline =  ct.get_pipeline()
+print(f"Transformation pipeline: {pipeline}")
+
+```
