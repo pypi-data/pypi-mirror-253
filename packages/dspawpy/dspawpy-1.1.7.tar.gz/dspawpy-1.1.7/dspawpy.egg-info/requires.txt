@@ -1,0 +1,6 @@
+pymatgen>=2022.2.7
+statsmodels
+h5py
+monty
+prompt_toolkit
+loguru
