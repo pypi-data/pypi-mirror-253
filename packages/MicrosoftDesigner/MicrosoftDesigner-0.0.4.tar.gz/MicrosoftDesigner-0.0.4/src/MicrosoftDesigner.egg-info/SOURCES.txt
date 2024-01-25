@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/MicrosoftDesigner.egg-info/PKG-INFO
+src/MicrosoftDesigner.egg-info/SOURCES.txt
+src/MicrosoftDesigner.egg-info/dependency_links.txt
+src/MicrosoftDesigner.egg-info/requires.txt
+src/MicrosoftDesigner.egg-info/top_level.txt
+src/Msdesigner/__init__.py
+src/Msdesigner/create_images.py

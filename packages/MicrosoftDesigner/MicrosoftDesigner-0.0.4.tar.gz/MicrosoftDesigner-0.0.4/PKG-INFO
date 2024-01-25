@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: MicrosoftDesigner
+Version: 0.0.4
+Summary: High quality image generation by Microsoft Designer. Reverse engineered API.
+Home-page: https://github.com/imnotdev25/Msdesigner-api
+Author: Talaviya Bhavik
+Author-email: talaviyabhavik@proton.me
+License: GNU General Public License v2.0
+Project-URL: Bug Report, https://github.com/imnotdev25/Msdesigner-api/issues/new
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx
+
+# Microsoft Designer API
+
+### Installation
+
+```bash pip3 install MicrosoftDesigner```
+
+### Usage
+
+``` 
+$ python3 -m MicrosoftDesigner -h
+
+options:
+  -h, --help            show this help message and exit
+  --user_id USER_ID     User ID
+  --auth_token AUTH_TOKEN
+                        Auth Token
+  --session_id SESSION_ID
+                        Session ID
+  --prompt PROMPT       Prompt
+  --save_path FILE_PATH
+                        File Path to save the output (optional)
+  --file_name FILE_NAME
+                        File Name to save the output (optional)
+
+```
+## Getting Started
+- Create a new user account or login [Microsoft Designer](https://designer.microsoft.com/)
+- Open the developer tools and go to the network tab
+- Create a new image using random text
+- Find the request with post method and copy the request headers
+- Copy the user id, auth token and session id from the request headers
+- Run the script with the copied values
+
+```
+$ python3 -m MicrosoftDesigner --user_id <user_id> --auth_token <auth_token> --session_id <session_id> --prompt <prompt> --save_path <save_path> --file_name <file_name>
+
+```
