@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ste-beta-gp
+Version: 0.0.4
+Summary: Generate needed pyproject files to use with setuptools
+Description-Content-Type: text/markdown
+
