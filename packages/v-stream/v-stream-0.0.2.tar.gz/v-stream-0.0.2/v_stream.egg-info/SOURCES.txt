@@ -1,0 +1,10 @@
+setup.py
+stream/__init__.py
+stream/dataset.py
+stream/stream.py
+v_stream.egg-info/PKG-INFO
+v_stream.egg-info/SOURCES.txt
+v_stream.egg-info/dependency_links.txt
+v_stream.egg-info/not-zip-safe
+v_stream.egg-info/requires.txt
+v_stream.egg-info/top_level.txt
