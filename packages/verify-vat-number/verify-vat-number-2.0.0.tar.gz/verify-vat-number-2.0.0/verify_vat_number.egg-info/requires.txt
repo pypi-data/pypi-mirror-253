@@ -1,0 +1,16 @@
+zeep>=3.3.1
+
+[quality]
+doc8
+flake8
+isort
+mypy
+pydocstyle
+
+[test]
+responses
+freezegun
+
+[types]
+types-requests
+types-freezegun
