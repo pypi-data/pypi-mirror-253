@@ -1,0 +1,5 @@
+[swh.cli.subcommands]
+swh.vault = swh.vault.cli
+
+[swh.workers]
+swh.vault = swh.vault:register_tasks
