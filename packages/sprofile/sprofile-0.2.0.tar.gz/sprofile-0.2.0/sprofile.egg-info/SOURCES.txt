@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+sprofile/__init__.py
+sprofile/sprofile.py
+sprofile.egg-info/PKG-INFO
+sprofile.egg-info/SOURCES.txt
+sprofile.egg-info/dependency_links.txt
+sprofile.egg-info/entry_points.txt
+sprofile.egg-info/requires.txt
+sprofile.egg-info/top_level.txt
