@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Hello123
+Version: 0.0.1
+Summary: hello
+Home-page: UNKNOWN
+Author: Soumyajit Pan
+Author-email: soumyajitpan29@gmail.com
+License: UNKNOWN
+Description: A package to perform hello message
+Keywords: excel,excelreader,excelwriter,python,excel reader and writer,read excel data using python,write data in excel using python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Hello123/__init__.py
+Hello123/main.py
+Hello123.egg-info/PKG-INFO
+Hello123.egg-info/SOURCES.txt
+Hello123.egg-info/dependency_links.txt
+Hello123.egg-info/top_level.txt
+test/test.py
