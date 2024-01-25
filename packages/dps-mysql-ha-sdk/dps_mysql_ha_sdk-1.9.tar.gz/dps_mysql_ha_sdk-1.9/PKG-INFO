@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: dps_mysql_ha_sdk
+Version: 1.9
+Summary: 高可用数据库连接
+Author: daijiacong
+License: MIT
