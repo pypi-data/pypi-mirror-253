@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: stnmf
+Version: 0.9.0
+Summary: Fast and versatile implementation of spike-triggered non-negative matrix factorization based on AF-HALS
+Author: Sören J. Zapp, Tim Gollisch
+License: MIT
+Project-URL: Documentation, https://stnmf.readthedocs.io
+Project-URL: Repository, https://github.com/gollischlab/STNMF_with_AFHALS.git
+Project-URL: Issues, https://github.com/gollischlab/STNMF_with_AFHALS/issues
+Keywords: retina,subunits,primate,receptive field,neuroscience,STNMF,NMF,NNSVD-LRC,HALS
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cycler >=0.12.1
+Requires-Dist: matplotlib >=3.7.0
+Requires-Dist: numpy >=1.22.0
+Requires-Dist: scikit-image >=0.22.0
+Requires-Dist: scipy >=1.11.0
+Requires-Dist: shapely >=2.0.0
+Requires-Dist: tqdm >=4.66.1
+
+# STNMF with AF-HALS
+
+[![Build status](https://github.com/gollischlab/STNMF_with_AFHALS/actions/workflows/pypi.yml/badge.svg)](https://github.com/gollischlab/STNMF_with_AFHALS/deployments/PyPI)
+[![Documentation status](https://readthedocs.org/projects/stnmf/badge/?version=latest)](https://stnmf.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://img.shields.io/pypi/v/stnmf.svg)](https://pypi.python.org/pypi/stnmf)
+
+A fast and versatile implementation of spike-triggered non-negative matrix factorization (STNMF) based on accelerated fast hierarchical alternating least squares (AF-HALS) algorithms.
+
+This Python package allows fast inference of receptive-field subunits from the spiking responses of retinal ganglion cells including methods of hyperparameter tuning.
+
+Described in the paper:
+
+> **Zapp SJ, Khani MH, Schreyer HM, Sridhar S, Ramakrishna V, Krüppel S, Mietsch M, Protti DA, Karamanlis D, Gollisch T: Accelerated spike-triggered non-negative matrix factorization reveals coordinated ganglion cell subunit mosaics in the primate retina**
+
+## Documentation
+The documentation is available at [https://stnmf.readthedocs.io](https://stnmf.readthedocs.io).
+
+## Installation
+Install using `pip` from command-line:
+
+```bash
+pip install stnmf
+```
+
+## Contact
+For feedback and bug reports, please use the [Github issue tracker](https://github.com/gollischlab/STNMF_with_AFHALS/issues).
