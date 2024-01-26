@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: api-management-local
+Version: 0.0.56
+Summary: PyPI Package for Circles api-management-local-python-package
+Home-page: https://github.com/circles-zone/api-management-local-python-package
+Author: Circles
+Author-email: info@circlez.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: database-mysql-local
+Requires-Dist: logger-local
+Requires-Dist: python-sdk-local
+Requires-Dist: star-local
+Requires-Dist: url-local
+
+PyPI Package for Circles api-management-local-python-package
