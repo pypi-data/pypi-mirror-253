@@ -1,0 +1,18 @@
+[project]
+name = "daios_sdk"
+version = "0.0.8"
+authors = [
+  { name="Andrew Brozek", email="andrew@daios.tech" },
+]
+description = "Python library for interacting with the Daios API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://daios.tech"
+Issues = "https://daios.tech"
