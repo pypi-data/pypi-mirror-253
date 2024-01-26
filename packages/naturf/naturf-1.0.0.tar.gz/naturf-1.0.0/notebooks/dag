@@ -1,0 +1,154 @@
+// Dependency Graph
+digraph {
+	graph [compound=true concentrate=true rankdir=LR ranksep=0.4]
+	wall_length [label=<<b>wall_length</b><br /><br /><i>DataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	total_plan_area [label=<<b>total_plan_area</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	vertical_distribution_of_building_heights [label=<<b>vertical_distribution_of_building_heights</b><br /><br /><i>DataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	merge_parameters [label=<<b>merge_parameters</b><br /><br /><i>GeoDataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	standard_deviation_of_building_heights [label=<<b>standard_deviation_of_building_heights</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	raupach_displacement_height [label=<<b>raupach_displacement_height</b><br /><br /><i>DataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	frontal_area [label=<<b>frontal_area</b><br /><br /><i>DataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	building_plan_area [label=<<b>building_plan_area</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	macdonald_roughness_length [label=<<b>macdonald_roughness_length</b><br /><br /><i>DataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	lot_area [label=<<b>lot_area</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	total_plan_area_geometry [label=<<b>total_plan_area_geometry</b><br /><br /><i>GeoSeries</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	building_surface_area_to_plan_area_ratio [label=<<b>building_surface_area_to_plan_area_ratio</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	building_id [label=<<b>building_id</b><br /><br /><i>GeoSeries</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	building_surface_area [label=<<b>building_surface_area</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	buildings_intersecting_plan_area [label=<<b>buildings_intersecting_plan_area</b><br /><br /><i>GeoDataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	rasterize_parameters [label=<<b>rasterize_parameters</b><br /><br /><i>Dataset</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	building_height [label=<<b>building_height</b><br /><br /><i>GeoSeries</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	building_area [label=<<b>building_area</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	frontal_area_index [label=<<b>frontal_area_index</b><br /><br /><i>DataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	frontal_length [label=<<b>frontal_length</b><br /><br /><i>DataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	grimmond_oke_roughness_length [label=<<b>grimmond_oke_roughness_length</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	raupach_roughness_length [label=<<b>raupach_roughness_length</b><br /><br /><i>DataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	filter_height_range [label=<<b>filter_height_range</b><br /><br /><i>GeoDataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	sky_view_factor [label=<<b>sky_view_factor</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	numpy_to_binary [label=<<b>numpy_to_binary</b><br /><br /><i>bytes</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	distance_between_buildings [label=<<b>distance_between_buildings</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	raster_to_numpy [label=<<b>raster_to_numpy</b><br /><br /><i>ndarray</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	rooftop_area_density [label=<<b>rooftop_area_density</b><br /><br /><i>DataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	plan_area_fraction [label=<<b>plan_area_fraction</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	write_binary [label=<<b>write_binary</b><br /><br /><i>NoneType</i>> fillcolor="#FFC857" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	standardize_column_names_df [label=<<b>standardize_column_names_df</b><br /><br /><i>GeoDataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	area_weighted_mean_of_building_heights [label=<<b>area_weighted_mean_of_building_heights</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	write_index [label=<<b>write_index</b><br /><br /><i>str</i>> fillcolor="#FFC857" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	average_distance_between_buildings [label=<<b>average_distance_between_buildings</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	height_to_width_ratio [label=<<b>height_to_width_ratio</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	target_crs [label=<<b>target_crs</b><br /><br /><i>CRS</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	building_geometry [label=<<b>building_geometry</b><br /><br /><i>GeoSeries</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	aggregate_rasters [label=<<b>aggregate_rasters</b><br /><br /><i>Dataset</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	input_shapefile_df [label=<<b>input_shapefile_df</b><br /><br /><i>GeoDataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	macdonald_displacement_height [label=<<b>macdonald_displacement_height</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	mean_building_height [label=<<b>mean_building_height</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	wall_angle_direction_length [label=<<b>wall_angle_direction_length</b><br /><br /><i>DataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	complete_aspect_ratio [label=<<b>complete_aspect_ratio</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	frontal_area_density [label=<<b>frontal_area_density</b><br /><br /><i>DataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	grimmond_oke_displacement_height [label=<<b>grimmond_oke_displacement_height</b><br /><br /><i>Series</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	plan_area_density [label=<<b>plan_area_density</b><br /><br /><i>DataFrame</i>> fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	wall_angle_direction_length -> wall_length
+	total_plan_area_geometry -> total_plan_area
+	building_height -> vertical_distribution_of_building_heights
+	frontal_area_density -> merge_parameters
+	plan_area_density -> merge_parameters
+	rooftop_area_density -> merge_parameters
+	plan_area_fraction -> merge_parameters
+	mean_building_height -> merge_parameters
+	standard_deviation_of_building_heights -> merge_parameters
+	area_weighted_mean_of_building_heights -> merge_parameters
+	building_surface_area_to_plan_area_ratio -> merge_parameters
+	frontal_area_index -> merge_parameters
+	complete_aspect_ratio -> merge_parameters
+	height_to_width_ratio -> merge_parameters
+	sky_view_factor -> merge_parameters
+	grimmond_oke_roughness_length -> merge_parameters
+	grimmond_oke_displacement_height -> merge_parameters
+	raupach_roughness_length -> merge_parameters
+	raupach_displacement_height -> merge_parameters
+	macdonald_roughness_length -> merge_parameters
+	macdonald_displacement_height -> merge_parameters
+	vertical_distribution_of_building_heights -> merge_parameters
+	building_geometry -> merge_parameters
+	target_crs -> merge_parameters
+	buildings_intersecting_plan_area -> standard_deviation_of_building_heights
+	building_height -> raupach_displacement_height
+	frontal_area_index -> raupach_displacement_height
+	frontal_length -> frontal_area
+	building_height -> frontal_area
+	buildings_intersecting_plan_area -> building_plan_area
+	building_height -> macdonald_roughness_length
+	macdonald_displacement_height -> macdonald_roughness_length
+	frontal_area -> macdonald_roughness_length
+	lot_area -> macdonald_roughness_length
+	buildings_intersecting_plan_area -> lot_area
+	building_surface_area -> lot_area
+	building_geometry -> total_plan_area_geometry
+	building_surface_area -> building_surface_area_to_plan_area_ratio
+	total_plan_area -> building_surface_area_to_plan_area_ratio
+	filter_height_range -> building_id
+	wall_length -> building_surface_area
+	building_height -> building_surface_area
+	building_area -> building_surface_area
+	building_id -> buildings_intersecting_plan_area
+	building_height -> buildings_intersecting_plan_area
+	building_geometry -> buildings_intersecting_plan_area
+	building_area -> buildings_intersecting_plan_area
+	total_plan_area_geometry -> buildings_intersecting_plan_area
+	wall_length -> buildings_intersecting_plan_area
+	target_crs -> buildings_intersecting_plan_area
+	merge_parameters -> rasterize_parameters
+	filter_height_range -> building_height
+	building_geometry -> building_area
+	frontal_area -> frontal_area_index
+	total_plan_area -> frontal_area_index
+	buildings_intersecting_plan_area -> frontal_length
+	building_height -> grimmond_oke_roughness_length
+	building_height -> raupach_roughness_length
+	frontal_area_index -> raupach_roughness_length
+	raupach_displacement_height -> raupach_roughness_length
+	standardize_column_names_df -> filter_height_range
+	building_height -> sky_view_factor
+	average_distance_between_buildings -> sky_view_factor
+	raster_to_numpy -> numpy_to_binary
+	buildings_intersecting_plan_area -> distance_between_buildings
+	aggregate_rasters -> raster_to_numpy
+	plan_area_density -> rooftop_area_density
+	building_plan_area -> plan_area_fraction
+	total_plan_area -> plan_area_fraction
+	numpy_to_binary -> write_binary
+	raster_to_numpy -> write_binary
+	input_shapefile_df -> standardize_column_names_df
+	buildings_intersecting_plan_area -> area_weighted_mean_of_building_heights
+	raster_to_numpy -> write_index
+	building_geometry -> write_index
+	target_crs -> write_index
+	distance_between_buildings -> average_distance_between_buildings
+	mean_building_height -> height_to_width_ratio
+	average_distance_between_buildings -> height_to_width_ratio
+	input_shapefile_df -> target_crs
+	filter_height_range -> building_geometry
+	rasterize_parameters -> aggregate_rasters
+	_input_shapefile_df_inputs [label=<<table border="0"><tr><td>input_shapefile</td><td>str</td></tr></table>> fontname=Helvetica margin=0.15 shape=rectangle style=dashed]
+	_input_shapefile_df_inputs -> input_shapefile_df
+	building_height -> macdonald_displacement_height
+	plan_area_fraction -> macdonald_displacement_height
+	buildings_intersecting_plan_area -> mean_building_height
+	building_geometry -> wall_angle_direction_length
+	building_surface_area -> complete_aspect_ratio
+	total_plan_area -> complete_aspect_ratio
+	building_plan_area -> complete_aspect_ratio
+	frontal_length -> frontal_area_density
+	building_height -> frontal_area_density
+	total_plan_area -> frontal_area_density
+	building_height -> grimmond_oke_displacement_height
+	building_plan_area -> plan_area_density
+	building_height -> plan_area_density
+	total_plan_area -> plan_area_density
+	subgraph cluster__legend {
+		graph [fontname=helvetica label=Legend rank=same]
+		input [fontname=Helvetica margin=0.15 shape=rectangle style=dashed]
+		function [fillcolor="#b4d8e4" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+		output [fillcolor="#FFC857" fontname=Helvetica margin=0.15 shape=rectangle style="rounded,filled"]
+	}
+}
