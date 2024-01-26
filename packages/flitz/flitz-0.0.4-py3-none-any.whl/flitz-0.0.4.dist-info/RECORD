@@ -1,0 +1,17 @@
+flitz/__init__.py,sha256=Gn83IYHs4ENcZ4p_AgMbY11JVAnnXepd0meTJneyb3w,180
+flitz/__main__.py,sha256=ZouZcz9VHJ0XEcUr_IuCLzDPCeKNVuACg9CfiEmpG_s,240
+flitz/_version.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+flitz/cli.py,sha256=houp9tYiYWW2MYHbXaBDKMrzMAlhG-z6Hdpaot1StoQ,626
+flitz/config.py,sha256=FT895fOnL86CJNsQhjD_2GhiusRKzmWHmhChBwJ1yCw,1940
+flitz/file_explorer.py,sha256=346DdnhgKA22oLXmCqY-IzB3wAQWA3G_HQl3acKr4z4,13443
+flitz/icon.ico,sha256=ly536bSBA2Q1qd5a877Tvzva0kYas7Q7-la65m4CKIU,1081406
+flitz/ui_utils.py,sha256=72OldyzKQhWCLIsTVDc1iP29ZjnsbaG2aoHgcPScpx8,405
+flitz/utils.py,sha256=hdV60UPoSXJ4BWXdxLlnd0YjfJD-EuGDGvXG8YrQHiM,696
+flitz/static/file.jpg,sha256=BuP-DgSvl237k0T8PcyvUy6flKKms_n-6a5dd1FWK7w,101521
+flitz/static/folder.jpg,sha256=tzcZUKycF0fmuA4KWtc8R5Z6ibL2mgpxmw0erslx78U,122934
+flitz/static/up.png,sha256=y44kv09iqMuQRZFcACzlN2XTwTb-spq2_VqyDKmdBUA,23721
+flitz-0.0.4.dist-info/entry_points.txt,sha256=f9fTEpqalFzbUOWUu3QKt6SM1dY8dBn99VXMrY2Kg9w,47
+flitz-0.0.4.dist-info/LICENSE,sha256=_srLSFBS7vs9UiteCEHVnkUj78iWBxSpMrx1n_KS9mQ,1069
+flitz-0.0.4.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+flitz-0.0.4.dist-info/METADATA,sha256=AHqKVFRxVjJ6YYnfCw7_ZJmabgOjBGsqlMv2oBykqbE,1293
+flitz-0.0.4.dist-info/RECORD,,
