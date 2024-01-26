@@ -1,0 +1,2 @@
+[console_scripts]
+imaparms = imaparms.__main__:main
