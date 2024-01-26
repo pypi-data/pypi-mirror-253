@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: langchainforhcx
+Version: 0.0.1
+Summary: langchain for hyperclovax written by xeexu
+Home-page: 
+Author: xeexu
+Author-email: bhs379@gmail.com
+Keywords: xeexu,pypi
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
