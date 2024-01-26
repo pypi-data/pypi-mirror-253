@@ -1,0 +1,6 @@
+[console_scripts]
+flaskapp=cdh_dav_python.app:app
+generatechangelog=npxconventional-changelog-pangular-iCHANGELOG.md-s
+generaterelease=npxsemantic-release
+installdependencies=npmci
+
