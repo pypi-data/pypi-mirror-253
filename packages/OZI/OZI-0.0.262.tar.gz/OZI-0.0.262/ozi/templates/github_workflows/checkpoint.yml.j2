@@ -1,0 +1,47 @@
+{#- OZI 0.1
+# ozi/templates/github_workflows/checkpoint.yml.j2
+# Part of the OZI Project, under the Apache License v2.0 with LLVM Exceptions.
+# See LICENSE.txt for license information.
+# SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+-#}
+  checkpoint:
+{%- raw %}
+    name: OZI ${{ matrix.ozi }} with ${{ matrix.py }} on ${{ matrix.os }}
+    runs-on: '${{ matrix.os }}'
+{%- endraw %}
+    strategy:
+      matrix:
+        ozi:
+{%- for suite in spec.python.ci.checkpoint.suites %}
+          - {{ suite }}
+{%- endfor %}
+        os:
+          - ubuntu-latest
+        py:
+          - {{ spec.python.support.security }}
+          - {{ spec.python.support.bugfix2 }}
+          - {{ spec.python.support.bugfix1 }}
+      fail-fast: false
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@eb238b55efaa70779f274895e782ed17c84f2895 # v2.6.1
+        with:
+          disable-sudo: true
+          egress-policy: block
+          allowed-endpoints: >
+            files.pythonhosted.org:443
+            github.com:443
+            oziproject.dev:443
+            pypi.org:443
+            registry.npmjs.org:443
+            objects.githubusercontent.com:443
+            fulcio.sigstore.dev:443
+            rekor.sigstore.dev:443
+            tuf-repo-cdn.sigstore.dev:443
+
+      - uses: OZI-Project/checkpoint@a3c7a3e7986e682d485ada6243d40b51bc90c365
+        with:
+{%- raw %}
+          python-version: ${{ matrix.py }}
+          suite: ${{ matrix.ozi }}
+{%- endraw %}

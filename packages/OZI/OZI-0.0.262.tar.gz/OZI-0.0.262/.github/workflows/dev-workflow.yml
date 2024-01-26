@@ -1,0 +1,56 @@
+# Part of the OZI Project, under the Apache License v2.0 with LLVM Exceptions.
+# See LICENSE.txt for license information.
+# SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+name: OZI Checkpoint-only
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
+
+permissions:
+  contents: read
+
+jobs:
+  checkpoint:
+    name: checkpoint-only-${{ matrix.ozi }} (Python ${{ matrix.py }} on ${{ matrix.os }})
+    runs-on: '${{ matrix.os }}'
+    strategy:
+      matrix:
+        ozi:
+          - dist
+          - lint
+          - test
+        os:
+          - ubuntu-latest
+        py:
+          - '3.10'
+          - '3.11'
+          - '3.12'
+      fail-fast: false
+    permissions:
+        id-token: write
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@eb238b55efaa70779f274895e782ed17c84f2895 # v2.6.1
+        with:
+          disable-sudo: true
+          egress-policy: block
+          allowed-endpoints: >
+            files.pythonhosted.org:443
+            github.com:443
+            oziproject.dev:443
+            pypi.org:443
+            registry.npmjs.org:443
+            objects.githubusercontent.com:443
+            fulcio.sigstore.dev:443
+            rekor.sigstore.dev:443
+            tuf-repo-cdn.sigstore.dev:443
+
+      - uses: OZI-Project/checkpoint@a3c7a3e7986e682d485ada6243d40b51bc90c365
+        with:
+          python-version: ${{ matrix.py }}
+          suite: ${{ matrix.ozi }}
