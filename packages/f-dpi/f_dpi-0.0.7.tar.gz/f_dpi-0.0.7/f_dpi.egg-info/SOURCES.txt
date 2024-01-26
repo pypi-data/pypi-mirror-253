@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+f_dpi/__init__.py
+f_dpi/__version__.py
+f_dpi/f_dpi.py
+f_dpi.egg-info/PKG-INFO
+f_dpi.egg-info/SOURCES.txt
+f_dpi.egg-info/dependency_links.txt
+f_dpi.egg-info/top_level.txt
