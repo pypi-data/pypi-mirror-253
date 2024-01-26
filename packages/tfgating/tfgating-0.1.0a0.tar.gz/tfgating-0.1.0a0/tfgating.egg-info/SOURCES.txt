@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+tests/test_tfgating.py
+tfgating/__init__.py
+tfgating/run.py
+tfgating/tfgating.py
+tfgating/utils.py
+tfgating/version.py
+tfgating.egg-info/PKG-INFO
+tfgating.egg-info/SOURCES.txt
+tfgating.egg-info/dependency_links.txt
+tfgating.egg-info/entry_points.txt
+tfgating.egg-info/requires.txt
+tfgating.egg-info/top_level.txt
