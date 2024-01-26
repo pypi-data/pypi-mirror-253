@@ -1,0 +1,17 @@
+numpy
+matplotlib
+networkx
+
+[docs]
+Sphinx==7.2.6
+sphinx-rtd-theme==2.0.0
+nbconvert
+pandoc
+
+[linter]
+ruff
+
+[mypy]
+mypy
+numpy>=1.21
+lxml
