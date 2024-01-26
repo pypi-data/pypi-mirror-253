@@ -1,0 +1,3 @@
+[console_scripts]
+xbmini=xbmini.cli:xbmini_cli
+
