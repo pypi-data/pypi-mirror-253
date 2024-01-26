@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: p2x_corporate_engine
+Version: 0.0.5
+Summary: P2x model wrapper for corporate injection
+Author: PangeaMT
+Author-email: j.garcia@pangeanic.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: OpenNMT-py (>=3.4.3,<4.0.0)
+Requires-Dist: ctranslate2 (>=3.22.0,<4.0.0)
+Requires-Dist: fastapi (==0.104.1)
+Requires-Dist: pangeamt-nlp (>=1.0.0,<2.0.0)
+Requires-Dist: sentencepiece (>=0.1.99,<0.2.0)
+Requires-Dist: unidic-lite (==1.0.8)
+Requires-Dist: uvicorn (==0.24.0)

@@ -1,0 +1,9 @@
+p2x_corporate_engine/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+p2x_corporate_engine/engine.py,sha256=bPLdCB5oCoPeukgHNOuT2NByG6qLmoJ_ba7Ta-tT8jw,8517
+p2x_corporate_engine/language_mapping.py,sha256=FZD7vvYqldRLhU8Z4X3UcAcXY3CZ_ecdd2CJx-O8ub8,4519
+p2x_corporate_engine/pipeline.py,sha256=PGM2ZP_33r5G8SywEefAUTLgcCj4ATca1LHi2_NYbbo,1338
+p2x_corporate_engine/server_fast_api.py,sha256=xpeXy57oRcPlw5elXd7mUyE-5dt9xfrwBgWmsmrX9_U,2304
+p2x_corporate_engine-0.0.5.dist-info/LICENSE,sha256=s6elpQjNWc3eJX0tZvnF9zaQ0VbZjydfR92qalGk2vg,1065
+p2x_corporate_engine-0.0.5.dist-info/METADATA,sha256=uM69GiSNZDA0ogXn0X7O0BpFkzkiiQQXAyQnXCdMsAY,834
+p2x_corporate_engine-0.0.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+p2x_corporate_engine-0.0.5.dist-info/RECORD,,
