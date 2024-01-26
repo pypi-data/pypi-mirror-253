@@ -1,0 +1,7 @@
+[console_scripts]
+pyramid = pyramid.pyramid:main
+pyramid_dummy = pyramid.dummy:main
+pyramid_evaluate = pyramid.evaluator:main
+pyramid_generate = pyramid.generator:main
+pyramid_gpu_check = pyramid.gpu_check:main
+pyramid_train = pyramid.trainer:main
