@@ -1,0 +1,2 @@
+[console_scripts]
+insert-license = insert_license_header.insert_license:main
