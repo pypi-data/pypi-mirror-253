@@ -1,0 +1,8 @@
+numpy
+
+[test]
+pytest
+flake8
+
+[test_with_healpy]
+healpy
