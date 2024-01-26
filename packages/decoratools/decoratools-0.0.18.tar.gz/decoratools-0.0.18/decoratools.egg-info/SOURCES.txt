@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+decoratools/__init__.py
+decoratools.egg-info/PKG-INFO
+decoratools.egg-info/SOURCES.txt
+decoratools.egg-info/dependency_links.txt
+decoratools.egg-info/requires.txt
+decoratools.egg-info/top_level.txt
+decoratools/capi/__init__.py
