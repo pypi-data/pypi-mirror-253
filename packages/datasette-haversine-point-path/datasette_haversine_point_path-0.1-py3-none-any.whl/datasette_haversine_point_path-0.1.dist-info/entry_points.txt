@@ -1,0 +1,2 @@
+[datasette]
+haversine_point_path = datasette_haversine_point_path
