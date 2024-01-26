@@ -1,0 +1,2 @@
+[console_scripts]
+SuperBm = simulation_super_brownian_motions.super_bm_simulation:main
