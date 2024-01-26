@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+backtrader_finam/__init__.py
+backtrader_finam/finam_feed.py
+backtrader_finam/finam_store.py
+backtrader_finam.egg-info/PKG-INFO
+backtrader_finam.egg-info/SOURCES.txt
+backtrader_finam.egg-info/dependency_links.txt
+backtrader_finam.egg-info/requires.txt
+backtrader_finam.egg-info/top_level.txt
