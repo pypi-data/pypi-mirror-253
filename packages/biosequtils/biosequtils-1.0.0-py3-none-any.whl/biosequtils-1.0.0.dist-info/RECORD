@@ -1,0 +1,15 @@
+biosequtils/__init__.py,sha256=105ofGYByOzW7-FgREtW_l-JPBiKQy4yfE6PVBtiaEQ,192
+biosequtils/commons.py,sha256=Byg9XRc8aCzcTMW7BzVm2L7LfTEuBTtaEpaDwLAA0jw,1136
+biosequtils/constants.py,sha256=d0yDcCZjm_bKR026qEJ1-5HN8nNoaOjVKdcjwaH7bkI,6681
+biosequtils/dir.py,sha256=CMeKSQmaKjl77hGBMCK4QKIacxMsBseoVx9JQRCc2uc,3026
+biosequtils/file.py,sha256=EE3dC_GkE23WGid7SO09KJYYtnzHASwMgbzD36BoadQ,3064
+biosequtils/handle_json.py,sha256=n8PMJrm33Ub2dCnnlszkgI-nMKiXylU8IzUiSfT_AOQ,2194
+biosequtils/jtxt.py,sha256=vwUWUPmA7l4xbiSgmJu7jOLaXMi5aH-ljqcl-GaFbEo,3278
+biosequtils/key_value.py,sha256=JAxkrwoAhQj-9skPFH-Cne2ErsCypNaglhF70Ah5JnM,3258
+biosequtils/threading.py,sha256=k7i9mZNerXwqpaeUXQpSn94Gf6fU0TtGAR3N-VDt_RM,1502
+biosequtils/utils.py,sha256=PUnguiGRpZ25dhryDaew-8i02c8ScaG9xmupAjEvrd0,2354
+biosequtils-1.0.0.dist-info/LICENSE,sha256=mULZfHU2FMTYXOslE2k4DUxdA47DIkAme9QXUuJOzjo,1070
+biosequtils-1.0.0.dist-info/METADATA,sha256=h2SGbm0VhKXpB4Uzm7MKiy7LGdur64nWlJ0jbV36N9s,885
+biosequtils-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+biosequtils-1.0.0.dist-info/top_level.txt,sha256=Yzras1kI52eos2cSDnE5iypfu_ImJIx9vSOfpJVUfCM,12
+biosequtils-1.0.0.dist-info/RECORD,,
