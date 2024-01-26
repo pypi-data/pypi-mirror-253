@@ -1,0 +1,10 @@
+geopandas
+geopy
+haversine
+numpy
+pandas
+pyproj
+rasterio
+scipy
+shapely
+windrose
