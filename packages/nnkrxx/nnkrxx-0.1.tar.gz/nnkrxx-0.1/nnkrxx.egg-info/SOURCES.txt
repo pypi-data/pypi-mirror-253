@@ -1,0 +1,9 @@
+README.md
+setup.py
+nnkrxx/__init__.py
+nnkrxx/main.py
+nnkrxx.egg-info/PKG-INFO
+nnkrxx.egg-info/SOURCES.txt
+nnkrxx.egg-info/dependency_links.txt
+nnkrxx.egg-info/entry_points.txt
+nnkrxx.egg-info/top_level.txt
