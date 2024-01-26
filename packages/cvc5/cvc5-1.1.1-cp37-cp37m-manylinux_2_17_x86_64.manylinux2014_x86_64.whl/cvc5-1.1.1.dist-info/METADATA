@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: cvc5
+Version: 1.1.1
+Home-page: https://github.com/cvc5/cvc5
+License: BSD-3-Clause
+
+Python bindings for cvc5
