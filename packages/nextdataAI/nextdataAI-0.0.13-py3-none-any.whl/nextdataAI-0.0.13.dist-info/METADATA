@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: nextdataAI
+Version: 0.0.13
+Home-page: https://github.com/nextdataAI/aif
+Author: Paul Magos & Stefano Zanoni
+Author-email: chuckpaul98@icloud.com, s.zanoni@studenti.unipi.it
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: wandb
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: gym
+Requires-Dist: minihack
+Requires-Dist: nle
+Requires-Dist: keras
+Requires-Dist: tensorflow
+Requires-Dist: torch
+Requires-Dist: Pillow
+Requires-Dist: imageio
+Requires-Dist: pandas
+
+# aif
+
+- [X] Generate some Mazes
+- [X] Implement course solutions
+    - [x] BFS
+    - [x] DFS
+    - [x] Greedy
+    - [X] A*
+      - [X] Manhattan Heuristic
+      - [X] Euclidean Heuristic
+      - [X] Overkill Heuristic that destroys both Manhattan and Euclidean
+    - [X] Dijkstra
+    - [X] Genetic Algorithm
+- [X] DL/RL approaches
+    - [X] Q-Learning
+      - [X] Q-Learning with NN and Experience Replay
+      - [X] Q-Learning with LSTM and Experience Replay
+    - [X] A* with NN heuristic
+    - [X] A* with LSTM heuristic
+    - [X] A* with CNN heuristic
+- [X] Evaluation Metrics
+    - [X] Time
+    - [X] Number of Nodes Expanded
+    - [X] Number of Nodes in the Path
+    - [X] Number of Nodes in the Solution
+    - [X] Number of Nodes in the Maze
+
+Heuristics | Manhattan | Euclidean          | NNHeuristic
+:------------ |:-------------------|:-------------------| :-------------
+Implemented | :white_check_mark: | :white_check_mark: | :white_check_mark:
