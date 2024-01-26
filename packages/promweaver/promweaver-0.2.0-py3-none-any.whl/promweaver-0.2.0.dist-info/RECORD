@@ -1,0 +1,17 @@
+promweaver/__init__.py,sha256=5RUjWMiqBjXCBeThwrbfS3MCRxfxLqd6eOEMD61Iv1Q,452
+promweaver/bc_provider.py,sha256=cdpIxEKcCh5R2DgyHkYkrDOa2DnxRAJj1as9_TFAbT8,5415
+promweaver/compute_bc.py,sha256=nD8JXGW-3tZOtVA6SlGEpS9kQPJ_0q3HWCyrExi8CX0,4010
+promweaver/cone_prom_bc.py,sha256=QQjjRwWrJns3vhU5gmQhHjcZ5S9rRVLN98is7YrhMjQ,11408
+promweaver/iso_prom.py,sha256=XgraLDP-wIIjGgTDl4cTdxSxlt14j2d-EAiqutQzR8A,11577
+promweaver/j_prom_bc.py,sha256=hl5V7JNhJ46lAVoVcVpYAFitqRiN7P24DBVi6Bh_4aI,5369
+promweaver/limb_darkening.py,sha256=i33gFER3335xfcMdPl01nWbJCoJv4zbFYFYHgFA-8kk,737
+promweaver/pctr_prom.py,sha256=Fen80qwIo3BDxMeC-qUn-lr-NgPyusy3fSRKGJecKH4,14604
+promweaver/prom_bc.py,sha256=iuuwZGCQx22WkXPx6S1279x-Rrw6QWte4CaXhaV0yio,404
+promweaver/prom_model.py,sha256=OjT0ZQp4tsBHBN761Kc62thu_rvG1p8EtxQuAsI--ps,10026
+promweaver/utils.py,sha256=ytKUmQtJsgSJgysmn45dm-kNtq_6jQtHqXeD_i9yGpQ,669
+promweaver/version.py,sha256=H-qsvrxCpdhaQzyddR-yajEqI71hPxLa4KxzpP3uS1g,411
+promweaver-0.2.0.dist-info/LICENSE,sha256=HBiH7Co5T27Cg-5e3Lxbcrw2on6t3djvebGtYSZJdS0,1060
+promweaver-0.2.0.dist-info/METADATA,sha256=5hHMm4o4JMJ11mzD_rDAuOfISSpfMoVdpvjkJEspk6Q,1158
+promweaver-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+promweaver-0.2.0.dist-info/top_level.txt,sha256=E58KarmM_1t04kH-TX6GJ2los1xXt_EQRcALpWQ2PrM,11
+promweaver-0.2.0.dist-info/RECORD,,
