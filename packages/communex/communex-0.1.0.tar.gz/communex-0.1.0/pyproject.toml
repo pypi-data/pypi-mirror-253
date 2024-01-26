@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "communex"
+version = "0.1.0"
+description = "A library for Commune network focused on simplicity"
+authors = ["agicommies <info@agicommies.org>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+comx = "communex.cli:app"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+
+# Substrate
+substrate-interface = "^1.7.4"
+# scalecodec = "^1.2.7"
+
+# CLI
+typer = "^0.9.0"
+
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+pdoc = "^14.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
