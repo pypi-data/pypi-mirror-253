@@ -1,0 +1,6 @@
+setup.py
+NetGuards.egg-info/PKG-INFO
+NetGuards.egg-info/SOURCES.txt
+NetGuards.egg-info/dependency_links.txt
+NetGuards.egg-info/requires.txt
+NetGuards.egg-info/top_level.txt
