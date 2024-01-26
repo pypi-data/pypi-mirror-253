@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: mambabyte
+Version: 0.0.2
+Summary: MambaByte - Pytorch
+Home-page: https://github.com/kyegomez/MambaByte
+License: MIT
+Keywords: artificial intelligence,deep learning,optimizers,Prompt Engineering
+Author: Kye Gomez
+Author-email: kye@apac.ai
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: einops
+Requires-Dist: torch
+Requires-Dist: zetascale
+Project-URL: Documentation, https://github.com/kyegomez/MambaByte
+Project-URL: Repository, https://github.com/kyegomez/MambaByte
+Description-Content-Type: text/markdown
+
+[![Multi-Modality](agorabanner.png)](https://discord.gg/qUtxnK2NMf)
+
+
+# MambaByte
+Implementation of MambaByte in "MambaByte: Token-free Selective State Space Model" in Pytorch and Zeta. Note this will be a higher performance implementation of Mamba with parallel scan 
+
+
+## Installation
+
+```bash
+pip install mambabyte
+```
+
+# Usage
+```python
+import torch 
+from mambabyte import MambaConfig, Mamba
+
+x = torch.randn(2, 3, 4)
+config = MambaConfig(
+    dim = 4,
+    depth = 3,
+    dt_rank = 2,
+    d_state = 2,
+    expand_factor = 2,
+    d_conv = 3,
+    dt_min = 0.001,
+    dt_max = 0.1,
+    dt_init = "random",
+    dt_scale = 1.0,
+    bias = False,
+    conv_bias = True,
+    pscan = True
+)
+
+model = Mamba(config)
+
+out = model(x)
+
+print(out)
+
+```
+
+
+# License
+MIT
+
