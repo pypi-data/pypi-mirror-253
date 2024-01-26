@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyimps
+Version: 0.0.4
+Summary: Unconfuse your Py imports
+Home-page: https://github.com/bedbad/pyimps
+Author: bedbad
+Author-email: antonyuk@bu.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+Resolve your Py imports - see entire listing 
+Where all tha you have sit; 
+Where all tha you don't, should be; 
+See all transitives the way the were imported and defined. 
+All of it - right in your terminal 

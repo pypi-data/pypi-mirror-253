@@ -1,0 +1,2 @@
+[console_scripts]
+pyimps = pyimps.pyimps:main
