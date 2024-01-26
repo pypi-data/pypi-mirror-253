@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: Feluda
+Version: 0.0.6
+Summary: feluda
+Home-page: UNKNOWN
+Author: Soumyajit Pan
+Author-email: soumyajitpan29@gmail.com
+License: UNKNOWN
+Keywords: excel,excelreader,excelwriter,python,excel reader and writer,read excel data using python,write data in excel using python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Feluda Package
+
+This is a tutorial project for publishing your own python library on PyPi.
+
+## Requirments
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all the requirements.
+Just follow the commands below:
+
+Upgrade Setuptoos:
+```bash
+python -m pip install --upgrade twine setuptools
+```
+
+Install Wheel:
+```bash
+pip install wheel
+```
+
+Make a build for your Library/Package:
+```bash
+python setup.py sdist bdist_wheel
+```
+
+Install twine:
+```bash
+pip install twine
+```
+
+Upload Your Library:
+```bash
+twine upload dist/*
+```
+
+If the above command fail to upload:
+```bash
+python -m twine upload dist/*
+```
+
+
+
+If you want to upload through Git repo,
+Add this code after import statements
+```python
+here = os.path.abspath(os.path.dirname(__file__))
+
+with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
+    long_description = "\n" + fh.read()
+```
+After add this code you have to add an Readme.md file and the just follow the commands above.
+
+
