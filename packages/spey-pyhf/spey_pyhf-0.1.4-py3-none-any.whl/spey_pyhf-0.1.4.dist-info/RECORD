@@ -1,0 +1,14 @@
+spey_pyhf/__init__.py,sha256=n9ofKjI5znsg0pDmffp5yo2-c-Q5JbwnaJDS-FJEBRs,274
+spey_pyhf/_version.py,sha256=pTaFG0PcL9fnNTI1XlWXAKlNVbO7T9egv3fbNZu_LbI,63
+spey_pyhf/data.py,sha256=WGUa4_fuAB78Nv7Fe2MRv54SD-leNaAGlz31IZAd2t8,13189
+spey_pyhf/helper_functions.py,sha256=gGPOP9ler0e0FAZsaoNIheLGjMhvmflmaH4CY_S8-qk,7840
+spey_pyhf/interface.py,sha256=Fl5WBgQYoK5A06BvXDT2Ba48rf7Dwt7Z9weNuBYCUJQ,22589
+spey_pyhf/manager.py,sha256=donC4Ti3yamgF_B7WMqU-tlZaaIkSG0bRfwHhcOflRU,2211
+spey_pyhf/simplify.py,sha256=CFFcDf8s2PdDV65AmIvuo2zuoltjYw9Cg6tJY5Nb-Do,16258
+spey_pyhf/utils.py,sha256=Hg_vvKBlkGpqA2zn_0qPOh7jSmFx5Ta2QQN98s9hQ1A,9461
+spey_pyhf-0.1.4.dist-info/LICENSE,sha256=hryaBST3kCloQYV1Z_NB7tUozDeXpAlWhtA-rHSeaQs,1069
+spey_pyhf-0.1.4.dist-info/METADATA,sha256=hxO6gWzSxAs0K8QxBSQYYJwBrQjr4IHM7dNdxICyhuA,3648
+spey_pyhf-0.1.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+spey_pyhf-0.1.4.dist-info/entry_points.txt,sha256=f0r3eKw3H-mYsQp1Qc0EDsI_g87rp-fM43thaVqObQM,189
+spey_pyhf-0.1.4.dist-info/top_level.txt,sha256=aA5Nzx9ZuVNbQy5grf5iEEU2ri9g0n2T_QvY6Ggkluk,10
+spey_pyhf-0.1.4.dist-info/RECORD,,
