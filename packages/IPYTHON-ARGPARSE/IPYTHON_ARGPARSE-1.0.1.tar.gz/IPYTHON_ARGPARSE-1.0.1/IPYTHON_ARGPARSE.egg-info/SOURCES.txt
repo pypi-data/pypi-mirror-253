@@ -1,0 +1,9 @@
+README.md
+setup.py
+IPYTHON_ARGPARSE.egg-info/PKG-INFO
+IPYTHON_ARGPARSE.egg-info/SOURCES.txt
+IPYTHON_ARGPARSE.egg-info/dependency_links.txt
+IPYTHON_ARGPARSE.egg-info/requires.txt
+IPYTHON_ARGPARSE.egg-info/top_level.txt
+ipython_args/__init__.py
+ipython_args/utils.py
