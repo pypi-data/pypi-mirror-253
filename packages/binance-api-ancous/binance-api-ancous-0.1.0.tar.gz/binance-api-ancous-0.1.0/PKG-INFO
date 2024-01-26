@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: binance-api-ancous
+Version: 0.1.0
+Summary: Interaction with the Binance exchange
+Home-page: https://github.com/Ancous/binance-api.git
+Author: Ancous
+Author-email: alex_taras@bk.ru
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: certifi>=2023.11.17
+Requires-Dist: charset-normalizer>=3.3.2
+Requires-Dist: idna>=3.6
+Requires-Dist: requests>=2.31.0
+Requires-Dist: urllib3>=2.1.0
+Requires-Dist: websockets>=12.0
+
+# ТРЕБУЕМЫЕ ОБНОВЛЕНИЯ И ДАТА ПОСЛЕДНЕЙ СВЕРКИ С BINANCE API
+
+## FUTURES
+
+### MARKET DATA ENDPOINTS FUTURES
+
+...
+
+### MARKET DATA STREAMS FUTURES
+
+...
+
+### TRADING ENDPOINTS FUTURES
+
+...
+
+### USER DATA STREAM FUTURES
+
+...
+
+## SPOT
+
+### MARKET DATA ENDPOINTS SPOT
+
+...
+
+### MARKET DATA STREAM SPOT
+
+...
+
+---
+
+Последний просмотр Futures 2024-01-24
+
+Последний просмотр Spot 2024-01-24
