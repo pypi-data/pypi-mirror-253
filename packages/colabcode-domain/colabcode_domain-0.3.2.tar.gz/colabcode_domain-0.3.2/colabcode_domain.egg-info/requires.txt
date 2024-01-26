@@ -1,0 +1,4 @@
+pyngrok>=5.0.0
+nest_asyncio==1.4.3
+uvicorn==0.13.1
+jupyterlab==3.0.7

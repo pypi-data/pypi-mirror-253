@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+colabcode/__init__.py
+colabcode/code.py
+colabcode_domain.egg-info/PKG-INFO
+colabcode_domain.egg-info/SOURCES.txt
+colabcode_domain.egg-info/dependency_links.txt
+colabcode_domain.egg-info/requires.txt
+colabcode_domain.egg-info/top_level.txt
+scripts/colabcode
