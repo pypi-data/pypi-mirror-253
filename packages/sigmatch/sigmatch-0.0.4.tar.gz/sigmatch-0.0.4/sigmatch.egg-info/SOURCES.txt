@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+sigmatch/__init__.py
+sigmatch/errors.py
+sigmatch/matcher.py
+sigmatch/py.typed
+sigmatch.egg-info/PKG-INFO
+sigmatch.egg-info/SOURCES.txt
+sigmatch.egg-info/dependency_links.txt
+sigmatch.egg-info/top_level.txt
+tests/test_matcher.py
