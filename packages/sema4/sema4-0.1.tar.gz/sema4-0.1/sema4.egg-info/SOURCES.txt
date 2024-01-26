@@ -1,0 +1,6 @@
+setup.py
+sema4/__init__.py
+sema4.egg-info/PKG-INFO
+sema4.egg-info/SOURCES.txt
+sema4.egg-info/dependency_links.txt
+sema4.egg-info/top_level.txt

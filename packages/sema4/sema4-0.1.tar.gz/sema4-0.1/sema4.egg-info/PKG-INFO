@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: sema4
+Version: 0.1
+Summary: A simple hello world package
+Home-page: https://github.com/robocorp/robocorp
+Author: Mikko Korpela
+Author-email: mikko@robocorp.com
+
+This is a simple hello world package
