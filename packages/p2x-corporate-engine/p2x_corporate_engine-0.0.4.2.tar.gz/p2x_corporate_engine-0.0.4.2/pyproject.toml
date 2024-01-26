@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "p2x_corporate_engine"
+version = "0.0.4.2"
+description = "P2x model wrapper for corporate injection"
+authors = ["PangeaMT <j.garcia@pangeanic.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fastapi = "0.104.1"
+uvicorn = "0.24.0"
+unidic-lite = "1.0.8"
+pangeamt-nlp = "^1.0.0"
+OpenNMT-py = "^3.4.3"
+ctranslate2 = "^3.22.0"
+sentencepiece = "^0.1.99"
+
+[tool.poetry.dev-dependencies]
+python-language-server = {extras = ["all"], version = "^0.35.1"}
+pynvim = "^0.4.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
