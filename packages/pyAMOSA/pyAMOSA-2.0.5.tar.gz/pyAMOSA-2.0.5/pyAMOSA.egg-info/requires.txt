@@ -1,0 +1,7 @@
+numpy
+scipy
+networkx
+matplotlib
+click
+tqdm
+json5
