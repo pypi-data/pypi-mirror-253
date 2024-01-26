@@ -1,0 +1,3 @@
+from proto.marshal import Marshal as Marshal
+
+def compile(name, attrs): ...
