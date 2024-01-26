@@ -1,0 +1,11 @@
+OhlcvAnalyser/MultiOhlcvAnalyser.py,sha256=3Nq0AVSbceNQAjCexQca4TL-rmIO29RTJKZHzq1H36A,2612
+OhlcvAnalyser/SingleOhlcvAnalyser.py,sha256=7JUjK2nGQxcvaXHPwibwP4Mq8KSIDzlQ-EgkUTU9DWs,35
+OhlcvAnalyser/__init__.py,sha256=dfNZrb2dOgwv-X593FImmgLGZvxqZhj77Y99MiNlma0,105
+OhlcvAnalyser/utils/__init__.py,sha256=0200Ts4x1qBhxY4Ae91Nw34_q0f0NrAxiqjcHr4fv-8,130
+OhlcvAnalyser/utils/coefficient.py,sha256=e8Wmyd1FPOnA2a2M74u0-cFXBMzYX7dhjsKFuiIv5Ic,417
+OhlcvAnalyser/utils/date.py,sha256=FacVPWRIPBGlzsceZxGsseJCiVW4FQqKQdNMsKfXKi4,262
+OhlcvAnalyser/utils/profit.py,sha256=MCAp9dnPlaZXHwXF-ID-wxNfHhKge8X0lK0GaKdvYMo,148
+OhlcvAnalyser-0.0.2.dist-info/METADATA,sha256=45JJdx3X06I8qJEc9zqDh2-FqPKpZTZ58kg0zZs5CSY,425
+OhlcvAnalyser-0.0.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+OhlcvAnalyser-0.0.2.dist-info/top_level.txt,sha256=ZEY71FwgpXY6nTCPntpfhCvG2gX7At3hYWY7D98Dguc,14
+OhlcvAnalyser-0.0.2.dist-info/RECORD,,
