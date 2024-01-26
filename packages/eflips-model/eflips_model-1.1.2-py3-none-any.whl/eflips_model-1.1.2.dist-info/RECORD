@@ -1,0 +1,11 @@
+LICENSE.md,sha256=ADUqsZhl4juwq34PRTMiBqumpm11s_PMli_dZQjWPqQ,34260
+eflips/model/__init__.py,sha256=ODNS_nDmI4iah4UfsjFqe1U4b0uci5QR73LI5aJYj0o,1437
+eflips/model/depot.py,sha256=xJP2dUgqfhxxjlfksULw3ptqLWs7mpFbOW6TbgrrNf4,10315
+eflips/model/general.py,sha256=99PjnZ0pUcp86hBgzW9SSPkiADJKtKZjYAjClbn3Kd0,33211
+eflips/model/network.py,sha256=hOiTEmmFG2B_jCeEFbAFLRmXlHgAiG0-2U7zdL8-k2Q,15156
+eflips/model/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eflips/model/schedule.py,sha256=czakbrpvnmDYjtUkXC0jQ4tPQ1J87EQaJgklQt1aRcc,12741
+eflips_model-1.1.2.dist-info/LICENSE.md,sha256=ADUqsZhl4juwq34PRTMiBqumpm11s_PMli_dZQjWPqQ,34260
+eflips_model-1.1.2.dist-info/METADATA,sha256=BkNwaIrgvGmkImhBzDsUfhIlrhoJa6H9AM-k_dd1NSE,5679
+eflips_model-1.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+eflips_model-1.1.2.dist-info/RECORD,,
