@@ -1,0 +1,6 @@
+pygame
+numpy
+requests
+StorageAllocator
+imageio
+screeninfo
