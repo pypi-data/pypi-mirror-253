@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ExcelSheetIO/ExcelReaderWriter.py
+ExcelSheetIO/__init__.py
+ExcelSheetIO.egg-info/PKG-INFO
+ExcelSheetIO.egg-info/SOURCES.txt
+ExcelSheetIO.egg-info/dependency_links.txt
+ExcelSheetIO.egg-info/requires.txt
+ExcelSheetIO.egg-info/top_level.txt
