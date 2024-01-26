@@ -1,0 +1,11 @@
+daily_summary/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+daily_summary/generate_daily_summary.py,sha256=yjLZd7rR__6QXWnT1owXDJvfLJr9iGq_AhbQV5P_nmQ,1546
+daily_summary/git_data_extract.py,sha256=Ao-I4t2HSWjXsyVmj3Dhlbv48KYiAMm8NpzA68222V8,981
+daily_summary/main.py,sha256=8p3SSITFSlr7UgAOSg74AdCWmij0gLBEyfoZQItADsI,1097
+daily_summary/summarize_diff.py,sha256=Xu50QU0RfC0h8zdv4whmNqlcmuzPHi0qeElJR7AB5j4,1375
+daily_summary-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+daily_summary-0.1.0.dist-info/METADATA,sha256=XVz313QzZCKoy13mD6VIJmfn72IDJoIKiFiyE0sq9nQ,425
+daily_summary-0.1.0.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+daily_summary-0.1.0.dist-info/entry_points.txt,sha256=qvaE3h6SJUwGHkdVk7ITOOjHV-Ej-f-oqRyO_onEjzg,58
+daily_summary-0.1.0.dist-info/top_level.txt,sha256=OtgB9f4prSjEtxesADUHASruDiZtO6SO0eJtMSL6sDs,14
+daily_summary-0.1.0.dist-info/RECORD,,
