@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: heartbeat-capture
+Version: 0.7.1
+Summary: Python 3 library to work with eclipse capture files
+Author-email: Maris Usis <mau13@case.edu>
+Project-URL: Homepage, https://github.com/Eclipse-Research-Group/heartbeat-capture-python
+Project-URL: Issues, https://github.com/Eclipse-Research-Group/heartbeat-capture-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.26.0
+Requires-Dist: pandas >=2.1.4
+Provides-Extra: dev
+Requires-Dist: bumpver ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ==7.4.4 ; extra == 'test'
+
+# heartbeat-capture
+
+![PyPI - Version](https://img.shields.io/pypi/v/heartbeat-capture)
+[![Package tests](https://github.com/Eclipse-Research-Group/heartbeat-capture-python/actions/workflows/test.yml/badge.svg)](https://github.com/Eclipse-Research-Group/heartbeat-capture-python/actions/workflows/test.yml)
+
+# Installing
+```sh
+pip install heartbeat-capture
+```
+
+Or in a Conda environment
+```sh
+python -m pip install heartbeat-capture
+```
+
+# Usage
+
+```python
+import hbcapture as hb
+# TODO
+```
