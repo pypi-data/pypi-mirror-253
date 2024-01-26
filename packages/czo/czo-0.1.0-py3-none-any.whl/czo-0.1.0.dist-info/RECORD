@@ -1,0 +1,13 @@
+czo/__init__.py,sha256=1aI_YQ4E_PMZ60bQmyEvf7E5uFJ1Khf2jGd3DK0MWW0,197
+czo/_date.py,sha256=b3PiRrzGqmGbWqaCMeWv4609hfwPhev9U1Okn_1mPkA,7997
+czo/_faker.py,sha256=WNQ9aWfNoo6kAX-tk7hTuKnnYdFPkWgHUk1yxL7Iadw,12028
+czo/_path.py,sha256=LLdqmvjtqpz8KcjZj9LkSmMYgQPL3LahSMzCeWu0UuM,2405
+czo/_rand.py,sha256=OSet8wT-ZwTmbvo7ONGTxn2iHQlNLRHRucnjSk6H5tU,3278
+czo/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+czo/data/_country.py,sha256=05_Cfz4Jti8QwQN8ZHQlFAk6HjUnaAp_jo4oAisKPHY,14519
+czo/data/_housing.py,sha256=PykG3_QoOqZjSEGyMxJN0SJroSOyEQrLJ4MTS7zGSoA,16493
+czo/data/_internal_utils.py,sha256=MAOTAgkkxRfOOCYG_7cjHayYkuIiaOdHtamkM1e0Et4,154755
+czo-0.1.0.dist-info/METADATA,sha256=UBVNoPrz9jtyEywDZa_yhYV_Psi8w6lmVsSASKXp4iQ,306
+czo-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+czo-0.1.0.dist-info/top_level.txt,sha256=oljk3_EJYVRlEjf6Sfb0EMBr3wazXbToCYIZhg7VXRo,4
+czo-0.1.0.dist-info/RECORD,,
