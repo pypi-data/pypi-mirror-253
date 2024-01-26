@@ -1,0 +1,16 @@
+metocean_stats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metocean_stats/stats/__init__.py,sha256=um5_AzL7jQ0GAacuP81WcCwmDFp5P1IGEI8EoZ46It8,227
+metocean_stats/stats/aux_funcs.py,sha256=tkP2fBCeyepzphpsQounVdz4BWSt-TWDRFqSlx_J7cU,762
+metocean_stats/stats/dir_stats.py,sha256=erhyygSGe8gajwE_xtiQmOlcFSXAW4gy1CT5I8WFxBM,5261
+metocean_stats/stats/extreme_stats.py,sha256=EfwhjHZJxeUMNseX2Bl-pq6mvcclioJRQm-ylfNc6hw,14151
+metocean_stats/stats/general_stats.py,sha256=ID9aOD9FrRRANdg3tTqrrmnDq7Nu2q9n2ksfrr5kb6g,10661
+metocean_stats/stats/profile_stats.py,sha256=Ww_DaYPyMu6XEWJvRxdpuEdsyx4twsXuMXhQWocEC9I,1501
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_stats.py,sha256=hkz79deQCWtzuyfpsPFY2I0prtC5PjbOd06hZfnhyNM,2063
+tests/data/ERA5_lon109.94_lat15.51_20000101_20101231.csv,sha256=yNzE2Z0MsAzXHe7mUsP3bS6QVu2nF0BF1IonLMUUGdM,3480778
+tests/data/NORA3_wind_wave_lon1.32_lat53.324_20000101_20101231.csv,sha256=227yoMhViPfYOMFu4EE7MqWsgrzvpaJWvMQQWAviVnU,16276445
+metocean_stats-0.1.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+metocean_stats-0.1.6.dist-info/METADATA,sha256=VZ1Z980D-Ti6TKPXDDf5vvoT7em-QDAhPRpAjTsJs6I,528
+metocean_stats-0.1.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+metocean_stats-0.1.6.dist-info/top_level.txt,sha256=kwSX2pCMg9H_1Rva0QyQfbWrw5w7AkEH5ZxO2X3QVoI,21
+metocean_stats-0.1.6.dist-info/RECORD,,
