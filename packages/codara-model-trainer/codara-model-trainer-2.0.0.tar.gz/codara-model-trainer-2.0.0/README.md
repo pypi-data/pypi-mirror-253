@@ -1,0 +1,54 @@
+# codara-model-trainer
+
+## Overview
+
+The `codara-model-trainer` is a Python package designed to assist in creating datasets for fine-tuning machine learning
+models, particularly language models. It simplifies the process of gathering and formatting training data in a JSON
+Lines (JSONL) format.
+
+## Features
+
+- Easy creation of training data sets in JSONL format.
+- Methods to set system instructions, training prompts, and generative responses.
+- Automatically handles file creation and appending data in the correct format.
+
+## Installation
+
+```python 
+pip install codara-model-trainer
+```
+
+## Usage
+
+1. Create the data set with agent instructions, training prompts, and generative responses as needed:
+   ```python
+   from codara_model_trainer import create_data_set
+
+   gpt_response = openai_api_call("User prompt here")
+   create_data_set("System instructions here", "User prompt here", gpt_response, "optional-filepath/filename.jsonl")
+   ```
+
+The data will be saved in the `model-training/fine-tune-data-set.jsonl` file if the filepath isn't set.
+
+## Structure of Data
+
+The data is structured in JSON Lines format, where each line is a valid JSON object. An example of the data structure:
+
+```json
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "System instructions here"
+    },
+    {
+      "role": "user",
+      "content": "User prompt here"
+    },
+    {
+      "role": "assistant",
+      "content": "Model response here"
+    }
+  ]
+}
+```
