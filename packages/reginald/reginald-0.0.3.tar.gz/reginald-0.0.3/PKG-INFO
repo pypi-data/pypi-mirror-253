@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: reginald
+Version: 0.0.3
+Summary: Register-management code generator.
+Project-URL: Homepage, https://github.com/schilkp/reginald
+Project-URL: Issues, https://github.com/schilkp/reginald/issues
+Author-email: Philipp Schilk <schilk.philipp@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: jinja2~=3.1
+Requires-Dist: pydantic~=2.5
+Requires-Dist: pyyaml~=6.0
+Requires-Dist: tabulate~=0.9
+Provides-Extra: dev
+Requires-Dist: autopep8; extra == 'dev'
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: flake8; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Reginald
+
+Philipp Schilk
+2022-2023
