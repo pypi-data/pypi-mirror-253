@@ -1,0 +1,8 @@
+opentelemetry/resource/detector/azure/app_service.py,sha256=zalgrUwuITBO-xp7HQ6QD0Z4OM4WBUATCu6TGAbtvhU,3211
+opentelemetry/resource/detector/azure/version.py,sha256=FFg54kuwvPVBu1KS_aRV56k8gDWxqm1gjomuGPMXxgM,622
+opentelemetry/resource/detector/azure/vm.py,sha256=JOjawpioRvLHkKzkR-4DxiWjYFRW6IqycRyb1T1xY00,4637
+opentelemetry_resource_detector_azure-0.1.3.dist-info/METADATA,sha256=PyVWJQT8VeMgiYCXNlaQGKa_rHJISBSBV-6J-Qqf0F0,4642
+opentelemetry_resource_detector_azure-0.1.3.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+opentelemetry_resource_detector_azure-0.1.3.dist-info/entry_points.txt,sha256=eVSdEVbHSkJQpSQhhziqO_G0IAMYZcNHYpUIXVkjzHM,212
+opentelemetry_resource_detector_azure-0.1.3.dist-info/licenses/LICENSE,sha256=9ppb8MbxPBQ4uDeeEKa7LcStMmIFX-4_OXaXjY2BaiA,11551
+opentelemetry_resource_detector_azure-0.1.3.dist-info/RECORD,,
