@@ -1,0 +1,8 @@
+poetry_dockerize_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_dockerize_plugin/builder.py,sha256=OkOpCwN1MGeSJ-D-77nXaovQnBJlyo04cT4ESmniwzQ,8673
+poetry_dockerize_plugin/plugin.py,sha256=vLrJ2LcY451j8099bxDDWKANAE1eYJVQefzzmRwoDnk,857
+poetry_dockerize_plugin-0.2.0.dist-info/LICENSE,sha256=RioFxXGwArtEQ9MsoH7stvtWbwBmOj0CsfyyEaGEgZk,1071
+poetry_dockerize_plugin-0.2.0.dist-info/METADATA,sha256=aL1O0KQMj0rtHJVRy7bd4Klq1Aat7i5n5rpbOuw9sDY,4708
+poetry_dockerize_plugin-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+poetry_dockerize_plugin-0.2.0.dist-info/entry_points.txt,sha256=kr2sFfx-teKm-Q2jkySGC3NN6Ayul_8AOdDl23Gf2jk,94
+poetry_dockerize_plugin-0.2.0.dist-info/RECORD,,
