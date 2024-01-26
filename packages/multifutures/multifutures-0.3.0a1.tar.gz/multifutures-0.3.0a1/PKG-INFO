@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: multifutures
+Version: 0.3.0a1
+Summary: 
+Author: Panos Mavrogiorgos
+Author-email: pmav99@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: full
+Requires-Dist: exceptiongroup
+Requires-Dist: limits
+Requires-Dist: loky ; extra == "full"
+Requires-Dist: psutil ; extra == "full"
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# multifutures
+
+[![PyPI - Version](https://img.shields.io/pypi/v/multifutures.svg)](https://pypi.org/project/multifutures)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/multifutures.svg)](https://pypi.org/project/multifutures)
+[![ci](https://github.com/pmav99/multifutures/workflows/test/badge.svg)](https://github.com/pmav99/multifutures/actions?query=workflow%3Atest)
+
+---
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install multifutures
+```
+
+## License
+
+`multifutures` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
