@@ -1,0 +1,6 @@
+[console_scripts]
+toco=ticinfo.toco:toco
+tococ=ticinfo.toco:toco_coords
+tocon=ticinfo.toco:toco_name
+tocot=ticinfo.toco:toco
+
