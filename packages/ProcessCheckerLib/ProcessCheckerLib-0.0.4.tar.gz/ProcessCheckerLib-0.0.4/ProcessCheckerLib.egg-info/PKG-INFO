@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ProcessCheckerLib
+Version: 0.0.4
+Summary: This is lib for work with scripts exceptions.
+Home-page: 
+Author: Brambleaka
+Author-email: sambuka11jail@outlook.com
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text
+Requires-Dist: requests
+Requires-Dist: psutil
+Requires-Dist: flask
+Requires-Dist: schedule
+Requires-Dist: logging
+Requires-Dist: werkzeug
+
+ProcessCheckerLib
+
+Using
+
+1.Create a new script on the device and paste it into it
+
+import ProcessCheckerLib
+
+ProcessCheckerLib.StartChecker('code','token','chatID')
+
+Where token and chatId are variables that the bot holder will give you, and code can be obtained from the bot by sending it a command /code, a link to the bot will be given by its holder.
+
+2.Run this script and keep it constantly active. (preferably demonize)
+
+3.Paste at the beginning of all the scripts that you want to track
+
+import ProcessCheckerLib
+
+ProcessCheckerLib.scriptTracker()
+
+Success!
