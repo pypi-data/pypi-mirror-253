@@ -1,0 +1,7 @@
+click>=8.1.2
+dask>=2022.11.1
+distributed
+numpy
+rich
+tornado
+pyyaml
