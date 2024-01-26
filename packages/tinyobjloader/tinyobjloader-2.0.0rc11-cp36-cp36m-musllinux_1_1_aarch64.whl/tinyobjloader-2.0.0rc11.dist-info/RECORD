@@ -1,0 +1,10 @@
+tinyobjloader.cpython-36m-aarch64-linux-gnu.so,sha256=1QVAxWJR_7OsNI7LgBg_LtbXj1NoOGqyqcA20U6A1aw,601617
+tinyobjloader-2.0.0rc11.dist-info/WHEEL,sha256=EYxNEefsmlIy2iA0QSD8Zh_VQYwRJB1tQ0bm0pXcqRI,113
+tinyobjloader-2.0.0rc11.dist-info/METADATA,sha256=fQRf5d1xlJjN9ezSl3I7ZzuAT-fwwBHV9bsJhzobpo8,19166
+tinyobjloader-2.0.0rc11.dist-info/LICENSE,sha256=GeGwJCcJaUxmcTaWCVRJk6LfzvhHfxqhm9MN417FjKo,1902
+tinyobjloader-2.0.0rc11.dist-info/RECORD,,
+tinyobjloader-2.0.0rc11.dist-info/top_level.txt,sha256=JcbQXTgJJCPmQ8h_DXoxzE9oLfj8MSkGGZAz9PQdCzY,21
+python/_version.py,sha256=xyOL6gItn-m4tru3ogqYTGsdeaSWpS_Uk7KxZHxQmi4,146
+python/sample.py,sha256=i15ZpVuWfuGjSYeaS66UonBcXJ0yrjO6-moejsS7emY,3200
+tinyobjloader.libs/libgcc_s-4e37474d.so.1,sha256=Slji658OikHg8crvAv4qrQOmCj7zqL5w890rL-a5jBM,134393
+tinyobjloader.libs/libstdc++-fd9f4683.so.6.0.28,sha256=ABZJqq2QQ-As0idNvT9YzXNRmTj9R-S0pG8KMb0Odtk,2599041
