@@ -1,0 +1,4 @@
+requests
+python_sdk_remote
+logger_local
+url_remote
