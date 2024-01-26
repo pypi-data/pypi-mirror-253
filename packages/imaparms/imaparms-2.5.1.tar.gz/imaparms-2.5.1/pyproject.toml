@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "imaparms"
+version = "2.5.1"
+authors = [{ name = "Jan Malakhovski", email = "oxij@oxij.org" }]
+description = "A handy Swiss-army-knife-like utility for fetching, flagging/marking, deleting/expiring, and performing other batch operations on messages residing on IMAP servers"
+readme = "README.md"
+license = { text = "GPL-3.0-or-later" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Communications :: Email",
+    "Topic :: Office/Business",
+    "Topic :: System :: Archiving",
+    "Topic :: System :: Archiving :: Backup",
+    "Topic :: System :: Archiving :: Mirroring",
+    "Topic :: System :: Recovery Tools",
+    "Operating System :: POSIX",
+    "Environment :: Console",
+]
+keywords = [
+    "IMAP", "IMAP4",
+    "mail", "email", "e-mail",
+    "mail delivery agent", "MDA", "LDA",
+    "fetchmail", "getmail", "fdm",
+    "fetch", "archive", "download",
+    "delete", "expire",
+    "mark", "star",
+    "mark as seen", "mark as unseen",
+    "mark as flagged", "mark as unflagged",
+]
+dependencies = [
+    'importlib-metadata; python_version<"3.8"',
+]
+requires-python = ">=3.7"
+[project.scripts]
+imaparms = "imaparms.__main__:main"
