@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+lookandcris_hello.egg-info/PKG-INFO
+lookandcris_hello.egg-info/SOURCES.txt
+lookandcris_hello.egg-info/dependency_links.txt
+lookandcris_hello.egg-info/entry_points.txt
+lookandcris_hello.egg-info/top_level.txt
+src/__init__.py
+src/main.py
