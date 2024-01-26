@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "puyuan-modelhub"
+dynamic = ["version"]
+description = "A library for managing LLM models"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "HSPK", email = "whxway@gmail.com" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+dependencies = ["retrying", "pydantic", "fastapi"]
+
+[project.urls]
+Homepage = "https://github.com/puyuantech/modelhub"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "modelhub/_version.py"
+
+[tool.hatch.build]
+include = ["/modelhub"]
+exclude = ["/modelhub/server"]
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["modelhub"]
+# only-include = ['nuitka_output/*']
+
+# [tool.hatch.build.hooks.nuitka]
+# dependencies = ["hatch-nuitka"]
