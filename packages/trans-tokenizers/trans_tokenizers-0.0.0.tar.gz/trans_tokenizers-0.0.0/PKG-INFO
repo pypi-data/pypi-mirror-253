@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: trans_tokenizers
+Version: 0.0.0
+Summary: Library for translating the tokenizer of an huggingface model (Coming soon!)
+Author-email: François Remy <francois.remy.dev@outlook.com>, Pieter Delobelle <pieter.delobelle@kuleuven.be>

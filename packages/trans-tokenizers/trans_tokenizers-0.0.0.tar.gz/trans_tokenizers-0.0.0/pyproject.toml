@@ -1,0 +1,8 @@
+[project]
+name = "trans_tokenizers"
+authors = [
+    {name = "François Remy", email = "francois.remy.dev@outlook.com"},
+	{name = "Pieter Delobelle", email = "pieter.delobelle@kuleuven.be"},
+]
+version = "0.0.0"
+description = "Library for translating the tokenizer of an huggingface model (Coming soon!)"
