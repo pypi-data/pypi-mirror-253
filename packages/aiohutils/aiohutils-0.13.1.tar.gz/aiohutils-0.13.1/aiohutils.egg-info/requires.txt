@@ -1,0 +1,7 @@
+aiohttp[speedups]
+html5lib
+
+[test]
+pytest
+pytest-aio
+python-decouple
