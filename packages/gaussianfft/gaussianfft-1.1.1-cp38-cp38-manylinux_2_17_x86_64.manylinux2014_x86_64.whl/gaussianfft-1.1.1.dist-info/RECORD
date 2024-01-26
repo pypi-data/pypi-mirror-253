@@ -1,0 +1,17 @@
+_gaussianfft.so,sha256=YVk2gFPD5aU1d3QbvyMNf_qw_abNm0e-QGvcwDDD1ok,34271737
+gaussianfft-1.1.1.dist-info/WHEEL,sha256=I9_7dI_rKYKl6rV1vHmmLBI-JNdXbe6VaYYVWMp8xaU,151
+gaussianfft-1.1.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gaussianfft-1.1.1.dist-info/RECORD,,
+gaussianfft-1.1.1.dist-info/METADATA,sha256=BVQWEEkIjs40UAQwV_kg-CxDRXDkXb54wlJYVYVgzMk,8707
+gaussianfft-1.1.1.dist-info/licenses/LICENSE.txt,sha256=PA7ZJrSxCkMWZZpqy5-fEMT4oFW3gYehdhkLWbhmxfQ,1323
+gaussianfft/_version.py,sha256=EPoWF0em1tKJgBz5dbBF-r29860VBk-SsdiXh6E1aO0,411
+gaussianfft/__init__.py,sha256=hA8MJVTaZZ5ro7ChYRUxcm_K_NpRGbQ7LKpIkq198Bc,1093
+gaussianfft/__init__.pyi,sha256=zrRZKlYJpj2nlbS0L0mVbZJ6AnLmfIGgNJ3kwhm-C-o,6487
+gaussianfft/util/__init__.py,sha256=BWuyxmeO2TWyfFbuE5tsbO_noUMAnWdai45TW6ZW0rk,366
+gaussianfft/util/empirical_variogram2.py,sha256=DSDGotvg8wH8Jfb3k0a9CYuYd7ur905pAY9z_rRrbI0,8481
+gaussianfft/util/resource_extrapolator.py,sha256=-jL8hXN1WG6shPFiXAAzkYJoewKnf8RdfBoRuHOMW08,2063
+gaussianfft/util/padding_analyzer.py,sha256=psgHaqOinzsWIRpZHYOfVi44EcNop7gH0vt2QaRM7fE,3037
+gaussianfft/util/empirical_variogram.py,sha256=STet-_tJ5NJkXvGYE1BhvNnEiw1kyvCcH8sVmw4htR4,8380
+gaussianfft/advanced/__init__.py,sha256=5Qb1I3nkFDdHfQYqmWdFe7LBgfJOX6kOyc45CL3m1FQ,61
+gaussianfft/advanced/__init__.pyi,sha256=yp65_7fQ_oaUprlWPERdvqTB-Fbq3f0MXK48sdbU5JE,1856
+gaussianfft.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
