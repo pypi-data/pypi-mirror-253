@@ -1,0 +1,13 @@
+extractors_sdk_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extractors_sdk_tests/test_mock_extractor.py,sha256=MWHubYf6oE6FsP0n1oSz733qO7qP84gt6q0Oj-k77DU,1276
+indexify_extractor_sdk/__init__.py,sha256=_XdFyaTNRQAum8EdkaS1YxLEzEErQY3iu4RCBT0SzWk,258
+indexify_extractor_sdk/base_embedding.py,sha256=Bo2gIuvT72kqatLq-OxFDkqvfYw5n8Yc0srfb1-C-FQ,2138
+indexify_extractor_sdk/base_extractor.py,sha256=ZAmmE6zzCAtnYV4Nn4ip5YfTkgvlir3ngHYLl8-6luM,5156
+indexify_extractor_sdk/mock_extractor.py,sha256=jDJiRv7MhcVk_ecB3-CD0roR_z7CXBatW56Ww3cjx38,1822
+indexify_extractor_sdk/sentence_transformer.py,sha256=TfPSGE6A5SY7qjJqNUE-bgxcVuv7T7siIiaG2waL9ug,2686
+indexify_extractor_sdk/version.py,sha256=1SFj-qMOaeO0fOKQaFmYhAKiRwwNda5uWKpYtIcken8,23
+indexify_extractor_sdk-0.0.12.dist-info/LICENSE,sha256=ZgzQkkV0r816mo42-ft9f-1WOTlHJO6d2hrvh5n67Bg,11351
+indexify_extractor_sdk-0.0.12.dist-info/METADATA,sha256=Y2147OxIBSQZFlbmt2YgyG8ABo8dvq7AKrjVtmWryzw,1630
+indexify_extractor_sdk-0.0.12.dist-info/WHEEL,sha256=P2T-6epvtXQ2cBOE_U1K4_noqlJFN3tj15djMgEu4NM,110
+indexify_extractor_sdk-0.0.12.dist-info/top_level.txt,sha256=jJ4n0MlKEpEEFZmFmB9c0ZlxgjQx3NC1g0AvR6HPL3g,44
+indexify_extractor_sdk-0.0.12.dist-info/RECORD,,
