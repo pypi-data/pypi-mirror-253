@@ -1,0 +1,8 @@
+earthengine-api>=0.1.364
+python-dateutil
+
+[:python_version <= "3.7"]
+importlib-metadata
+
+[test]
+pytest
