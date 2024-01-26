@@ -1,0 +1,17 @@
+autodocumentation_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autodocumentation_python/check_config.py,sha256=riZH2U_OZZ3rjiNGR0b4cNAdbaAinWvqCOqiiEoxpY8,1418
+autodocumentation_python/clone_source.py,sha256=N2qHrBSr5S1Ctnz2hvKOwGHEFUaVjo9Z8z0c259WtmA,5012
+autodocumentation_python/cost_estimator.py,sha256=UNPZ8lZ8XhVach4zezwTHM9yqC_TQ_qr8ZhgCigSS-g,5909
+autodocumentation_python/create_docstrings.py,sha256=wF3V9QcFOAtsMHD6QXprEVkIfoQzsuxZtFJMKDdGq-I,9875
+autodocumentation_python/gptapi.py,sha256=WzAWfI-OI51EVQdJZMU3tXqCxG_mLn_kymJrQ04Nv6k,2635
+autodocumentation_python/insert_docstrings.py,sha256=GLyUTK7tcuNG1psrU__GuaPM5eGo5q_pCcD9c80TNV0,15833
+autodocumentation_python/main.py,sha256=Z4xSUvKpYNQPUKOUg8v-ykz5e-YY6EEETALKTexfO78,9634
+autodocumentation_python/make_snippets.py,sha256=YQ-K8VYWYieiVqqCAKh33ULGH5m1-hvIvP4uUAlsOY8,4109
+autodocumentation_python/summarize_file.py,sha256=Lp5N41hOVy8zycJ1Nv0d21rh1r38caDoQjtsesbqrfI,4331
+autodocumentation_python/summarize_repo.py,sha256=etkC_9-87EJr5wzN3Bc2VA-5KBdlqY-7Vz8FwV8ekjA,4693
+autodocumentation_python-1.91.dist-info/LICENSE.txt,sha256=WhtUa9AlAZlA61ZJzvp14JX5Hac9T4LRW79Qf6c0KWo,1129
+autodocumentation_python-1.91.dist-info/METADATA,sha256=XfK0b3qooR-lo7CD9VEBZn99fjsWMjxcj1nyb3dqT8c,8103
+autodocumentation_python-1.91.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+autodocumentation_python-1.91.dist-info/entry_points.txt,sha256=6-gueJT5GXcAqGcwbMkxOxlcMsFYgyUtunveLz8LYn0,67
+autodocumentation_python-1.91.dist-info/top_level.txt,sha256=xSaIJxVik_-TNYzijpZapt0sJghDPjzlqF9OHgqGpVY,25
+autodocumentation_python-1.91.dist-info/RECORD,,
