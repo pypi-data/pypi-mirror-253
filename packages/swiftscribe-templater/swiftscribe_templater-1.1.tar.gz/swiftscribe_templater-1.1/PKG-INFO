@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: swiftscribe_templater
+Version: 1.1
+Summary: Generate documents based on a template and populate the tokens within the document.
+Home-page: https://github.com/MrNate592/docscribe-templater/tree/master
+Author: Nathan Budhu
+Author-email: nathanbudhu@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: nltk
+Requires-Dist: python-docx
+Requires-Dist: setuptools
+
+# SwiftScribe Templater
+
+SwiftScribe Templater is a Python package that provides functionality for tokenizing Word documents and replacing tokens.
+
+## Installation
+
+You can install SwiftScribe Templater using pip:
+
+```bash
+pip install swiftscribe_templater
+```
+
+## Usage
+
+Import the library 
+
+```
+from swiftscribe_templater import tokenize_word_document, replace_tokens
+```
+
+Specify the template, define the variables and lastly define the output document path.
+
+```
+# Tokenize Word Document
+doc_path = "template.docx"
+doc_tokens = tokenize_word_document(doc_path)
+
+# Replace Tokens
+replacement_dict = {"{title}": "John Doe", 
+                    "{date}": "2024-01-24"}
+
+modified_doc = replace_tokens(doc_path, replacement_dict)
+
+# Save the modified document
+modified_doc.save("modified_document1.docx")
+
+```
+Remember to add the tokens inside your word template. For example:
+
+```
+{title}
+{date}
+```
+Dependencies
+
+- nltk
+- python-docx
+
+## License
+This project is licensed under the MIT License.
+
+## Acknowledgments
+- [NLTK][google-link]
+- [python-docx][py-docx-link]
+
+[py-docx-link]: https://python-docx.readthedocs.io/en/latest/
+[google-link]: https://www.nltk.org//
+
+## Contributing
+Contributions are welcome! Please feel free to open an issue or submit a pull request.
+
+## Authors
+
+Nathan Budhu
+
+## Contact
+
+For any questions or feedback, please contact nathanbudhu@gmail.com.
+
+
+
