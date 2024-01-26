@@ -1,0 +1,10 @@
+django-recaptcha>=4
+
+[docs]
+
+[testing]
+tox<3.27,>=3.26.0
+coverage<6.6,>=6.5.0
+flake8<5.1,>=5.0.4
+isort>=5.10.1
+wagtail>=4.1
