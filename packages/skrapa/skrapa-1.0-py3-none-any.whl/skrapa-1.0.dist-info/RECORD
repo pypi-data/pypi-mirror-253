@@ -1,0 +1,16 @@
+skrapa/__init__.py,sha256=YWQ1GpjhkYpLTzni6Kyim7OO5iiiP7uUCWbWL5eXl4I,4991
+skrapa/base.py,sha256=gpRWBDy-c19ulhzRpkAGqMet2oXwmy7bxFVWroZlpoY,7987
+skrapa/exceptions.py,sha256=ZKnlRgUV-25zZSknNLzGDjHynJ2B6p5ab3pgQ63XzLU,455
+skrapa/linux/__init__.py,sha256=ixFPv1Gv9H9jPrTa6WL8hMK9fAUeAN34OXDLy79qltc,547
+skrapa/linux/attributes.py,sha256=9QVh9OJRpBxh4qf_ZzehNzdIYwfMI_uinvylnVqleNM,519
+skrapa/linux/base.py,sha256=mzxXLtR0-wbwXZ-gYpapJbajkR2CXEKGal-916-umKk,8475
+skrapa/linux/helpers.py,sha256=fMFwU39djCi0FNDeiXIrhdkiZ_KojX9B4Qg0WAmepz0,2277
+skrapa/windows/__init__.py,sha256=CJzac2fXXor2ICYNQ2SIxtTEmtl0D39-WYoj0lewSaw,608
+skrapa/windows/attributes.py,sha256=eMGFmcOIe7OLNfsvUk1AYUHxeMR4YcwPgDaZfWGzZVg,1211
+skrapa/windows/base.py,sha256=JpdmIxZkUPDYGq0CBYO5y53qzQsO6xIcbk-LLLgdQC0,9259
+skrapa/windows/helpers.py,sha256=Hb77TqWkz5TpErguKHDGaOEc71Viz-ZWpJ5pUJOUK5I,10305
+skrapa-1.0.dist-info/LICENSE,sha256=jG2zQEdRNt88EgHUWPpXVWmOrOduUQRx7MnYV9YIPaw,11359
+skrapa-1.0.dist-info/METADATA,sha256=dn7OvxSATizuxGbQtwyp-MBturFFV0xP0A-85HKsIbk,7789
+skrapa-1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+skrapa-1.0.dist-info/top_level.txt,sha256=RloGRmHT9YmB3B4f-Gy2pCZV-Jm8v1leDQb_Gtz6Ays,7
+skrapa-1.0.dist-info/RECORD,,
