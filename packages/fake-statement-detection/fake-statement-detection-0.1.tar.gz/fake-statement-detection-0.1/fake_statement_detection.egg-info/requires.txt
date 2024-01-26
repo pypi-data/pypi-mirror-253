@@ -1,0 +1,6 @@
+pandas
+numpy
+spacy
+langchain
+sentence_transformers
+xgboost
