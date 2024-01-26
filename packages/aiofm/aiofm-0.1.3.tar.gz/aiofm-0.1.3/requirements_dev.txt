@@ -1,0 +1,7 @@
+flake8
+memory_profiler
+pip
+pre-commit
+Sphinx
+sphinx-autodoc-typehints
+wheel
