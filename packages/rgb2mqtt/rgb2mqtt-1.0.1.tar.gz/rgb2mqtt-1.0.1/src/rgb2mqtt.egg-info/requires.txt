@@ -1,0 +1,12 @@
+paho-mqtt~=1.6
+openrgb-python~=0.2
+tomli-w~=1.0
+
+[dev]
+black
+ruff
+isort
+
+[test]
+pytest
+pytest-cov

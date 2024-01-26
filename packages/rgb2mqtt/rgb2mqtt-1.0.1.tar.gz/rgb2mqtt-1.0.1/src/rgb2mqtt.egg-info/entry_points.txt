@@ -1,0 +1,6 @@
+[console_scripts]
+rgb2mqtt-autostart = rgb2mqtt.setup:copy_to_autostart
+rgb2mqtt-config = rgb2mqtt.setup:setup_rgb2mqtt
+
+[gui_scripts]
+rgb2mqtt-run = rgb2mqtt.run:run_rgb2mqtt
