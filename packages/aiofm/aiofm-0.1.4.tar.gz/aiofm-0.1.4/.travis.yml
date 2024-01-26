@@ -1,0 +1,39 @@
+dist: jammy
+sudo: false
+language: python
+virtualenv:
+  system_site_packages: false
+matrix:
+  fast_finish: true
+  include:
+    - os: linux
+      arch: arm64
+      python: 3.11
+      env: DISTRIB="jammy" TOX_PYTHON_VERSION="py311" COVERAGE="true"
+    - os: linux
+      arch: amd64
+      python: 3.11
+      env: DISTRIB="jammy" TOX_PYTHON_VERSION="py311" COVERAGE="true"
+install:
+  - source tests/travis_install.sh
+  - pip install -r requirements_dev.txt
+before_script:
+  - git config --global user.email "kamikaze.is.waiting.you@gmail.com"
+  - git config --global user.name "Oleg Korsak"
+script:
+  - python setup.py develop
+  - tox
+  - |
+    if [[ "$COVERAGE" == "true" ]]; then
+      pre-commit install
+      pre-commit run --all-files
+    fi
+after_success:
+  - if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi
+  - if [[ "$COVERAGE" == "true" ]]; then codecov || echo "failed"; fi
+after_script:
+  - travis-cleanup
+cache:
+  pip: true
+  directories:
+    - $HOME/miniconda
