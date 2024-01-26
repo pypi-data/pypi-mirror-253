@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: antarctic_plots
+Version: 0.1.1
+Summary: antarctic_plots is now polartoolkit
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: polartoolkit
+
+# antarctic_plots is now polartoolkit
+
+This package has been renamed. Use `pip install polartoolkit` instead.
+
+New package: https://pypi.org/project/polartoolkit/

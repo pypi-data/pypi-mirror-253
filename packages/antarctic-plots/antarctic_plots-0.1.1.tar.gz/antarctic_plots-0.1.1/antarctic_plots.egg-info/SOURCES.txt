@@ -1,0 +1,7 @@
+README.md
+setup.py
+antarctic_plots.egg-info/PKG-INFO
+antarctic_plots.egg-info/SOURCES.txt
+antarctic_plots.egg-info/dependency_links.txt
+antarctic_plots.egg-info/requires.txt
+antarctic_plots.egg-info/top_level.txt
