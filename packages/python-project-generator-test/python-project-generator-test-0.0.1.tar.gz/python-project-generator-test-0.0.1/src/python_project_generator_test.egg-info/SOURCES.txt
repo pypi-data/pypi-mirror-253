@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+version.txt
+src/python_project_generator_test/__init__.py
+src/python_project_generator_test/cities.json
+src/python_project_generator_test/states_info.py
+src/python_project_generator_test.egg-info/PKG-INFO
+src/python_project_generator_test.egg-info/SOURCES.txt
+src/python_project_generator_test.egg-info/dependency_links.txt
+src/python_project_generator_test.egg-info/requires.txt
+src/python_project_generator_test.egg-info/top_level.txt
