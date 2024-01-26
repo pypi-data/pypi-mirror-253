@@ -1,0 +1,6 @@
+pyproject.toml
+nordicintel/__init__.py
+nordicintel.egg-info/PKG-INFO
+nordicintel.egg-info/SOURCES.txt
+nordicintel.egg-info/dependency_links.txt
+nordicintel.egg-info/top_level.txt
