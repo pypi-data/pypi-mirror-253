@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_nbf_vpc_cloud20211115_131123360/__init__.py
+alibabacloud_nbf_vpc_cloud20211115_131123360/client.py
+alibabacloud_nbf_vpc_cloud20211115_131123360/models.py
+alibabacloud_nbf_vpc_cloud20211115_131123360.egg-info/PKG-INFO
+alibabacloud_nbf_vpc_cloud20211115_131123360.egg-info/SOURCES.txt
+alibabacloud_nbf_vpc_cloud20211115_131123360.egg-info/dependency_links.txt
+alibabacloud_nbf_vpc_cloud20211115_131123360.egg-info/requires.txt
+alibabacloud_nbf_vpc_cloud20211115_131123360.egg-info/top_level.txt
