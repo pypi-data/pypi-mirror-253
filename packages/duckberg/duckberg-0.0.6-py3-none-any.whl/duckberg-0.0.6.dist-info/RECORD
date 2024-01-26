@@ -1,0 +1,9 @@
+duckberg/__about__.py,sha256=fxigc7vzmwHVKoxn9IU4Hl3naEKsVw4U-o4_cELiQcI,120
+duckberg/__init__.py,sha256=erD5T21rT_oAIPCHyURmFVg2RGfzMi6dRGtIOfsTsWQ,4893
+duckberg/exceptions.py,sha256=jQUcE0ZzsqygFFa5tmFVqbP0mq-7_7oaGltnLVxWIbE,119
+duckberg/sqlparser.py,sha256=JxXCnZpYzLW47DHXe7C4NZNP0WrOCFcOYOjzlDZDuwU,2028
+duckberg/table.py,sha256=HDU7o7Qdy6t8MDUBVru5nfxkXIFNiQavpPELQh7aHS0,1876
+duckberg-0.0.6.dist-info/METADATA,sha256=0m6YyiZSrF-5zjgcytNBvxa7ADJf6kGKJGgk_4tTxjA,6466
+duckberg-0.0.6.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+duckberg-0.0.6.dist-info/licenses/LICENSE.txt,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+duckberg-0.0.6.dist-info/RECORD,,
