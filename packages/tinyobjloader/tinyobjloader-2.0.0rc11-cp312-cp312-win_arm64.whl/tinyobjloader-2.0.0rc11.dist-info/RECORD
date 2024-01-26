@@ -1,0 +1,13 @@
+tinyobjloader.cp312-win_arm64.pyd,sha256=TPw3bEAQjyjWciF0JKTe5oOo1_lXT4jLbwwFQ0fVT8c,311808
+python/LICENSE,sha256=zxZlfK-dwbDoKmVi6SSoKzvbGR7TGeDQxXHf36TOPJs,1128
+python/Makefile,sha256=uDtusDhGSIW8p_fe4S73bQNzdl6Oaqpxv9qutjsGfYA,79
+python/README.md,sha256=EaY4a53EUCIKY954YFcZQJcSxBXpgGK1UXqpI3Ehhjg,1893
+python/_version.py,sha256=c7oa9P5olJCKPI3tzoNOCtxlKwBwiL7bQNboz23BhL0,168
+python/bindings.cc,sha256=ROCXSjXUfQy7pB5BJlEo_6SI9w5XTsWP3ZYSQg4HmQA,7265
+python/sample.py,sha256=zVHs7Xi5gfP6J5B6B_xBfUdlq9dse3Gr33KqWbagLuY,3307
+python/tiny_obj_loader.cc,sha256=HuUwlkfSXxD_YYsL27VPzkq0pjCa4_NY0WFmDmH_IOg,328
+tinyobjloader-2.0.0rc11.dist-info/LICENSE,sha256=ddIXyxs8b0qljS_X4P-c8squ9ukaQetbeJPbio08y_s,1944
+tinyobjloader-2.0.0rc11.dist-info/METADATA,sha256=eVK2vfJNcP5mM0LKWKKvfyIrz6_Hup4T_l1Y8iDd9xU,19591
+tinyobjloader-2.0.0rc11.dist-info/WHEEL,sha256=HsKTew9hPmBwHBdKD2lQYaUSf9wBq024anOHlEI1tJ4,102
+tinyobjloader-2.0.0rc11.dist-info/top_level.txt,sha256=JcbQXTgJJCPmQ8h_DXoxzE9oLfj8MSkGGZAz9PQdCzY,21
+tinyobjloader-2.0.0rc11.dist-info/RECORD,,
