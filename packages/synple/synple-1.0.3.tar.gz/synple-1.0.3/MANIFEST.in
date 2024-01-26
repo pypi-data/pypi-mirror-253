@@ -1,0 +1,2 @@
+include python/synple/data/*
+include python/synple/linelists/*

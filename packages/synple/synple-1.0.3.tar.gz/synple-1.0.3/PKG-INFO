@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: synple
+Version: 1.0.3
+Summary: An Easy-to-Use Python Wrapper for the Spectral Synthesis Code Synspec
+Home-page: https://github.com/dnidever/synple
+Author: Carlos Allende Prieto
+Author-email: callende@iac.es
+Requires: numpy
+Requires: astropy(>=4.0)
+Requires: scipy
+License-File: LICENSE
