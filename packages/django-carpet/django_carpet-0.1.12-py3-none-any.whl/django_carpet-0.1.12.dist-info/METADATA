@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: django_carpet
+Version: 0.1.12
+Summary: Foundational functionalities for Django
+Home-page: https://github.com/Vieolo/django-carpet.git
+Author: Vieolo OÜ
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Django Carpet 0.1.12
+
+This package contains the base function and classes for a Django project
+
+```text
+Note: This package requires python 3.11 and higher
+```
+
+## Installation
+```text
+pip install django-carpet
+```
+
+## Import
+```python
+
+```
