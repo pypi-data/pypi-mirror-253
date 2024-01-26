@@ -1,0 +1,10 @@
+citerus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+citerus/citerus.py,sha256=bAs9Zuw0rCeCOOD_FnWUx_7V1mCPMmr0jOxAhI-IXYo,7309
+citerus/citeruslogo.py,sha256=oPg9_GEeg8GFoKoQDREvU8YhRybXJW_yhqF8_Qz3oa4,814
+citerus/cryptodbreader.py,sha256=8yiIyxvON1MHTyMctP4gTe9e7GPOFwB8k3ldxLYmD1M,6775
+citerus-0.1.0.dist-info/LICENSE,sha256=OBpV3hmQwt4tNt6kctTQ9YIzDo71WQeqgDdmOWhTRdY,1074
+citerus-0.1.0.dist-info/METADATA,sha256=ZGbIc5QXF_ylO9r3J2vCdEhzmIQxLMo4xmCqh-ew05k,2943
+citerus-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+citerus-0.1.0.dist-info/entry_points.txt,sha256=V-0Pb3q3WsazsqKSHpaH5cUUNATV9Eg-DvAXtV3z8W4,75
+citerus-0.1.0.dist-info/top_level.txt,sha256=dreKFUI92PIK9BRvBM_fY1Bn-YhbVjViCG_R81XXw30,8
+citerus-0.1.0.dist-info/RECORD,,

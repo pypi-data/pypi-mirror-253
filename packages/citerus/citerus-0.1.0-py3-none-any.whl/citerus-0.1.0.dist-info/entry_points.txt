@@ -1,0 +1,3 @@
+[console_scripts]
+citerus = citerus.citerus:main
+cr = citerus.citerus:main
