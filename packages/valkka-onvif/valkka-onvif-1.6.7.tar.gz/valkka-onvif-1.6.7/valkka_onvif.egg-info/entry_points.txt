@@ -1,0 +1,3 @@
+[console_scripts]
+valkka-camsearch = valkka.discovery.camsearch.cli:main
+
