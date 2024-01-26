@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: config_fetcher
+Version: 1.0.2
+Summary: A config file reader that allow you to have sections and variables
+Project-URL: Homepage, https://github.com/AlexandreCollin/Config-Fetcher
+Project-URL: Issues, https://github.com/AlexandreCollin/Config-Fetcher/issues
+Author-email: Alexandre Collin Betheuil <alexandre.et.collin@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+# Config-Fetcher
