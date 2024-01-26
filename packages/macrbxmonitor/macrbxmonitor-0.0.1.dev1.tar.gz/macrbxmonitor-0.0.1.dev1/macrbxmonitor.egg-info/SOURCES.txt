@@ -1,0 +1,8 @@
+setup.py
+macrbxmonitor.egg-info/PKG-INFO
+macrbxmonitor.egg-info/SOURCES.txt
+macrbxmonitor.egg-info/dependency_links.txt
+macrbxmonitor.egg-info/requires.txt
+macrbxmonitor.egg-info/top_level.txt
+rbxmonitor/__init__.py
+rbxmonitor/rbxmonitor.py
