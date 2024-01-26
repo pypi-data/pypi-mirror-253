@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fake-statement-detection
+Version: 0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: spacy
+Requires-Dist: langchain
+Requires-Dist: sentence-transformers
+Requires-Dist: xgboost
+
+UNKNOWN
+
