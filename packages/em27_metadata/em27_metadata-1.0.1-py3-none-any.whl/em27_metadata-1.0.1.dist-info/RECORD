@@ -1,0 +1,13 @@
+em27_metadata-1.0.1.dist-info/METADATA,sha256=j7fy6kGXtkFwR2U5ZDhZhHr30uMNJbfA4NmKSStN-RI,5151
+em27_metadata-1.0.1.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+em27_metadata-1.0.1.dist-info/licenses/LICENSE,sha256=Bd6q0b7V_ZxmN5TXXsO6ShMpGOxzDtgVL9vKQ0B4nok,1097
+em27_metadata/__init__.py,sha256=9RVee0QNVzamQGj9hJ1PtVJeKrKpwvngc-UTEMb1hrA,150
+em27_metadata/interfaces.py,sha256=Ouc1VKEok2HucyHqwfv6eCQhBEtUWeDZVSRI8dqTZCQ,7299
+em27_metadata/loader.py,sha256=J0fJcsvgYlGu1FMNyPuhKoT2oCw6S8uDtz2OuwGoAgs,5466
+em27_metadata/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+em27_metadata/sample-data/README.md,sha256=dXRwp52bhqF8cYLKnNvW5kQlwzJcdreJR19imReo7dY,61
+em27_metadata/sample-data/campaigns.json,sha256=yP0Pkl-w05Y-vfTdrt-Z3ZVTNpGt7XBMQ_yF2K4cUQA,208
+em27_metadata/sample-data/locations.json,sha256=nhF-5oazqDO9spWB691p_1CxhKMSlixPpJ2FjzJXTZg,261
+em27_metadata/sample-data/sensors.json,sha256=aitBzTqzV42Wbr70tuzv-3MGLSlWOBLx1eRNAO-63TQ,1823
+em27_metadata/types.py,sha256=nFKF_34hI6s-hX5tjbW0esmal_XLOEJf6V9Y59mT9Xo,9230
+em27_metadata-1.0.1.dist-info/RECORD,,
