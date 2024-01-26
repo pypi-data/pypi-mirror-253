@@ -1,0 +1,10 @@
+bam2tensor/__init__.py,sha256=EwIB-EBZHMsAAG_2DM7AEvDxnSFl3lk9Ol8ZS56R7oM,18
+bam2tensor/__main__.py,sha256=E7OpuNn4WFx4MIhand3ZJy7SY4EdC7B8fd7amPCfPVE,6652
+bam2tensor/embedding.py,sha256=eOxSzW3pG8ZZj9n_Ed1KqlPAvwwLcSO3hxGCYrCFQ7w,15336
+bam2tensor/functions.py,sha256=1TfYaO-kLwJQ5kOcwCKp9Kt91fBhPk20CfJEwKiJgxM,10347
+bam2tensor/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bam2tensor-1.1.dist-info/LICENSE,sha256=YqfniuLfxaA8Ujli5GqDDSm8CTpOuKlHcHkBkv0DWyw,1104
+bam2tensor-1.1.dist-info/METADATA,sha256=Tb5jSMeFqzI3LyrU_zm40aP7fq5Qlvyok5AXZCfms_Q,5465
+bam2tensor-1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+bam2tensor-1.1.dist-info/entry_points.txt,sha256=0C9QRUF0EVgVcZo4KVMtHF7SwVrKDClTs1Oi_JhuO-c,55
+bam2tensor-1.1.dist-info/RECORD,,
