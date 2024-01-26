@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+SimpleWhois.py
+pyproject.toml
+setup.cfg
+setup.py
+SimpleWhois.egg-info/PKG-INFO
+SimpleWhois.egg-info/SOURCES.txt
+SimpleWhois.egg-info/dependency_links.txt
+SimpleWhois.egg-info/entry_points.txt
+SimpleWhois.egg-info/top_level.txt

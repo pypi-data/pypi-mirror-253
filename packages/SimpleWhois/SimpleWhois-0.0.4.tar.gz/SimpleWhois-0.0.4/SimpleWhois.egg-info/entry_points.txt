@@ -1,0 +1,2 @@
+[console_scripts]
+SimpleWhois = SimpleWhois:main
