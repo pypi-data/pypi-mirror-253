@@ -1,0 +1,12 @@
+asset/config.json,sha256=jioaaQMGAPaiba0APThGHB-ejmEnhbMyUyGDRT9Jodg,965
+p2d/__init__.py,sha256=DWHzak7jQ4fz_u7JucNzEEX_hJLs1lipQWjaZb96RyE,42
+p2d/p2d.py,sha256=peZ8afWxFyhHl-xbZx3YWPnc3fNi8aEKdlbChClHUZ8,16633
+testlib/LICENSE,sha256=7fTksUTyTMTYBwt6GNcA-UKehQ8zU3Nt1iigo8rP9sk,1082
+testlib/README.md,sha256=b5uYjwvCJMcRtBnzkSMft9-IngpfPNjvgO_zpJ3rnr0,5145
+testlib/patch/domjudge.patch,sha256=lq0y87rFEZVRghPfjEpArKze7T6jehmpCw2ILsm5Dfo,5396
+testlib/read.me,sha256=0NRGjMaEUC1sFFAdOyDYPe2E1nFmLjZVddzmz1yMgqM,591
+testlib/testlib.h,sha256=a-7vegSSfmCt-KyvC0xQ2cww8oL4nXlI4B5L9LZY-KQ,199384
+p2d-0.0.9.dist-info/METADATA,sha256=2L6RQzhZtH7OuM4zjkLJn8jE2QxK3aZ46Rdp2wOSJqk,4837
+p2d-0.0.9.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+p2d-0.0.9.dist-info/entry_points.txt,sha256=IzNNig8tJvBKj05pq1f093r9W0_0xEISZN9xgjFqrCg,36
+p2d-0.0.9.dist-info/RECORD,,
