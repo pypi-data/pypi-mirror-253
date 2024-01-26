@@ -1,0 +1,2 @@
+[console_scripts]
+sprofile = sprofile:main
