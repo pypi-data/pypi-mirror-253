@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "asct-parser"
+version = "0.1.0"
+description = "Parse ASCT+B tables into two columns (+ label columns)."
+authors = ["Anita Caron <anitacaron@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "asct_parser", from="src"}]
+license = "http://www.apache.org/licenses/LICENSE-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.2.0"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+asct-parser = 'asct_parser.__main__:main'
