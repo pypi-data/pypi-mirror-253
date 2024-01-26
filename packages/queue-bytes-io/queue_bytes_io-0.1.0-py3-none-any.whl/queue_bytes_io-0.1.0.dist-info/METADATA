@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: queue-bytes-io
+Version: 0.1.0
+Summary: A project that provides queue-based I/O functionality
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: zstandard
+Requires-Dist: tqdm
+
