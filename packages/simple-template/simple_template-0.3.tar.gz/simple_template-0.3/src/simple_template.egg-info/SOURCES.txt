@@ -1,0 +1,16 @@
+.gitignore
+.pre-commit-config.yaml
+LICENCE
+README.md
+pyproject.toml
+requirements.txt
+.github/dependabot.yml
+.github/workflows/pull_request_checks.yml
+.github/workflows/release.yml
+src/simple_template.py
+src/simple_template.egg-info/PKG-INFO
+src/simple_template.egg-info/SOURCES.txt
+src/simple_template.egg-info/dependency_links.txt
+src/simple_template.egg-info/top_level.txt
+tests/template_file.html
+tests/test_simple_template.py

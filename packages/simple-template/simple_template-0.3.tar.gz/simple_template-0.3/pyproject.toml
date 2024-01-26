@@ -1,0 +1,45 @@
+[project]
+name = "simple_template"
+dynamic = ["version"]
+description = " Simple placeholder filling template library."
+authors = [{ name = "James Frost" }]
+readme = "README.md"
+license = { text = "BSD0" }
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: Zero-Clause BSD (0BSD)",
+    "Topic :: Text Processing",
+]
+
+[project.urls]
+Source = "https://github.com/Fraetor/simple_template"
+
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
+filterwarnings = ['ignore::DeprecationWarning:pytest']
+minversion = "7"
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+relative_files = true
+source = ["src"]
+
+[tool.ruff]
+line-length = 88
+show-source = true
+src = ["src", "test"]
+
+[tool.ruff.lint]
+extend-select = ["B", "D", "I"]
+ignore-init-module-imports = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
