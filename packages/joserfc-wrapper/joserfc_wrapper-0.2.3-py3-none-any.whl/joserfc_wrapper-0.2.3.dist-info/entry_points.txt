@@ -1,0 +1,3 @@
+[console_scripts]
+genjw=joserfc_wrapper.cli.GenJWT:run
+
