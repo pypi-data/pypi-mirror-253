@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+simplememcache/__init__.py
+simplememcache/base.py
+simplememcache/lru.py
+simplememcache/version.py
+simplememcache.egg-info/PKG-INFO
+simplememcache.egg-info/SOURCES.txt
+simplememcache.egg-info/dependency_links.txt
+simplememcache.egg-info/requires.txt
+simplememcache.egg-info/top_level.txt
