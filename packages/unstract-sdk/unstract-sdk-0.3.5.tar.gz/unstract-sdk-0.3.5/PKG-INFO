@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: unstract-sdk
+Version: 0.3.5
+Summary: A framework for writing Unstract Tools/Apps
+Home-page: https://unstract.com/sdk
+Author: Zipstack Inc
+Author-email: devsupport@zipstack.com
+License: MIT
+Keywords: unstract tools-development-kit apps -development-kit sdk
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: <=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: filetype==1.2.0
+Requires-Dist: jsonschema~=4.18.2
+Requires-Dist: llama-index==0.9.28
+Requires-Dist: pdfplumber==0.10.3
+Requires-Dist: pypandoc==1.12
+Requires-Dist: pytesseract==0.3.10
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: qdrant-client==1.7.0
+Requires-Dist: tiktoken~=0.4.0
+Requires-Dist: transformers==4.37.0
+Requires-Dist: unstract-connectors~=0.0.2
+Requires-Dist: unstract-adapters~=0.0.2
+Requires-Dist: parameterized==0.9.0
+Provides-Extra: docs
+Requires-Dist: lazydocs~=0.4.8; extra == "docs"
+
+# Unstract SDK
+
+### Tools
+
+#### Create a  scaffolding for a new tool
+
+Example
+
+```bash
+unstract-tool-gen --command NEW --tool-name <name of tool> \
+ --location ~/path_to_repository/unstract-tools/ --overwrite false
+```
+
+Supported commands:
+
+- `NEW` - Create a new tool
+
+
+#### Llama Index support
+
+Unstract SDK 0.3.2 uses the following version of Llama 
+Index Version **0.9.28** as on January 14th, 2024
+
+#### Environment variables required for all Tools
+
+- `PLATFORM_SERVICE_HOST`
+- `PLATFORM_SERVICE_PORT`
+- `PLATFORM_SERVICE_API_KEY`
+
+#### Environment variables required for various LLMs
+
+- Azure OpenAI
+    - `OPENAI_API_KEY`
+    - `OPENAI_API_BASE`
+    - `OPENAI_API_VERSION`
+    - `OPENAI_API_ENGINE`
+    - `OPENAI_API_MODEL`
