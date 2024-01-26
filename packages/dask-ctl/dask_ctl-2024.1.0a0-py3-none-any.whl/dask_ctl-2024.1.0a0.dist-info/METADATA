@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: dask-ctl
+Version: 2024.1.0a0
+Summary: A set of tools to provide a control plane for managing the lifecycle of Dask clusters.
+Author: Jacob Tomlinson
+Author-email: jacob@tomlinson.email
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: click >=8.1.2
+Requires-Dist: dask >=2022.11.1
+Requires-Dist: distributed
+Requires-Dist: numpy
+Requires-Dist: rich
+Requires-Dist: tornado
+Requires-Dist: pyyaml
+Provides-Extra: tui
+Requires-Dist: textual ==0.5.0 ; extra == 'tui'
+
+dask-ctl
+========
+
+
+.. image:: https://img.shields.io/pypi/v/dask-ctl
+   :target: https://pypi.org/project/dask-ctl/
+   :alt: PyPI
+.. image:: https://img.shields.io/readthedocs/dask-ctl
+   :target: https://dask-ctl.readthedocs.io/
+   :alt: Read the Docs
+.. image:: https://github.com/dask-contrib/dask-ctl/workflows/Tests/badge.svg
+   :target: https://github.com/dask-contrib/dask-ctl/actions?query=workflow%3ATests
+   :alt: GitHub Actions - CI
+.. image:: https://github.com/dask-contrib/dask-ctl/workflows/Linting/badge.svg
+   :target: https://github.com/dask-contrib/dask-ctl/actions?query=workflow%3ALinting
+   :alt: GitHub Actions - pre-commit
+.. image:: https://img.shields.io/codecov/c/gh/dask-contrib/dask-ctl
+   :target: https://app.codecov.io/gh/dask-contrib/dask-ctl
+   :alt: Codecov
+
+A set of tools to provide a control plane for managing the lifecycle of Dask clusters.
+
+.. code-block:: bash
+
+    $ dask cluster list
+    NAME               ADDRESS               TYPE          WORKERS  THREADS  MEMORY    CREATED   STATUS
+    proxycluster-8786  tcp://localhost:8786  ProxyCluster        4       12  17.18 GB  Just now  Running
