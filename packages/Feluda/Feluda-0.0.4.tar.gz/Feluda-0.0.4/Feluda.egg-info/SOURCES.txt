@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Feluda/__init__.py
+Feluda/main.py
+Feluda.egg-info/PKG-INFO
+Feluda.egg-info/SOURCES.txt
+Feluda.egg-info/dependency_links.txt
+Feluda.egg-info/top_level.txt
