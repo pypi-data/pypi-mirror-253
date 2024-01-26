@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "txtdata"
+version = "0.1.1"
+description = ""
+authors = ["renanmoretto <himynameisrenan@outlook.com>"]
+readme = "README.md"
+include = ["txtdata/py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
