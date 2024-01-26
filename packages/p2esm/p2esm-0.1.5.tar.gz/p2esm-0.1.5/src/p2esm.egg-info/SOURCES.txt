@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/p2esm/__init__.py
+src/p2esm/p2esm.png
+src/p2esm.egg-info/PKG-INFO
+src/p2esm.egg-info/SOURCES.txt
+src/p2esm.egg-info/dependency_links.txt
+src/p2esm.egg-info/entry_points.txt
+src/p2esm.egg-info/requires.txt
+src/p2esm.egg-info/top_level.txt

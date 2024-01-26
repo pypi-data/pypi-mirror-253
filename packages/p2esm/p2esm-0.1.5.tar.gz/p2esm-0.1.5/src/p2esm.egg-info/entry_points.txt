@@ -1,0 +1,2 @@
+[gui_scripts]
+p2esm = p2esm:main

@@ -1,0 +1,7 @@
+numpy
+matplotlib
+tk
+p2api
+
+[:python_version < "3.11"]
+tomli>=1.1.0

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "p2esm"
+version = "0.1.5"
+authors = [
+  { name = "Jean-Baptiste Delisle", email = "jean-baptiste.delisle@unige.ch" },
+]
+description = "P2 Execution Sequence Merger"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "tk",
+  "p2api",
+  "tomli >= 1.1.0 ; python_version < '3.11'",
+]
+
+[project.urls]
+Homepage = "https://gitlab.unige.ch/delisle/p2esm"
+Issues = "https://gitlab.unige.ch/delisle/p2esm/-/issues"
+
+[project.gui-scripts]
+p2esm = "p2esm:main"
