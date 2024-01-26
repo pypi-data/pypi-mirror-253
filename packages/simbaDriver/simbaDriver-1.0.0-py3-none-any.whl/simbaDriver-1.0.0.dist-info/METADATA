@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: simbaDriver
+Version: 1.0.0
+Summary: SIMBA is a framework for performing multi-scale simulations in an HPC environment.
+Home-page: https://simba-driver.readthedocs.io/en/latest/index.html
+Author: Stefan Hoops
+Author-email: shoops@virginia.edu
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jsonschema
+Requires-Dist: parsl
+
+# SIMBA Driver
+
+## Install
+
+### Linux and MacOS X
+* System wide installation
+``` sh
+sudo pip install simbaDriver
+```
+
+* User local installation
+``` sh
+pip install simbaDriver --user
+```
+
+### Windows
+* System installation [(Instructions on how to run a console as administrator)](https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/)
+``` sh
+ pip install simbaDriver
+```
+
+* User local installation (not recommeded as the script path is not in the search PATH)
+``` sh
+pip install simbaDriver --user
+```
+
