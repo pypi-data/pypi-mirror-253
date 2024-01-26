@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: werkflow-aws
+Version: 0.1.37
+Summary: An AWS module for Werkflow powered by Boto3.
+Home-page: https://github.com/scorbettUM/werkflow-modules/werkflow-aws
+Author: Ada Lundhe
+Author-email: corpheus91@gmail.com.com
+Keywords: pypi,cicd,python,setup,repo,project,migrate,monorepo,aws,boto3,aws-cli
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
