@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: globalnoc-alertmon-agent
+Version: 1.0.1
+Summary: Facilitates the process of submitting alerts to the GlobalNOC AlertMon system.
+Home-page: https://github.com/GlobalNOC/globalnoc-alertmon-agent
+Author: GlobalNOC Systems Engineering
+Author-email: syseng@globalnoc.iu.edu
+License: Apache License, Version 2.0 
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8.11, <4.0.0
+License-File: LICENSE
+Requires-Dist: globalnoc-wsc ==1.0.2
+Requires-Dist: pyyaml ==6.0.1
+
