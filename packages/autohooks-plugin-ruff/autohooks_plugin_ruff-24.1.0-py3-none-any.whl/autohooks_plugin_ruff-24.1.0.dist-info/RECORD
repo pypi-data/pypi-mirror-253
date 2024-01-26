@@ -1,0 +1,7 @@
+autohooks/plugins/ruff/__init__.py,sha256=KAqvex7A-X2ODvj7N-sja1zAnyIslDEf-bTm2B34hLY,121
+autohooks/plugins/ruff/__version__.py,sha256=cJ-c6-C0Idi023ZJMsl37jd0of3KHy1v6AF3Uy88gtE,103
+autohooks/plugins/ruff/ruff.py,sha256=-ZyJr_ZWuY-pHyvB5oIeLZsefl6KcPY0HCwKOFsGK1s,2575
+autohooks_plugin_ruff-24.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+autohooks_plugin_ruff-24.1.0.dist-info/METADATA,sha256=7od9fRP8CQ0QUP2SGmFhFaG6duifV2ooEOG0ize0Igo,3454
+autohooks_plugin_ruff-24.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+autohooks_plugin_ruff-24.1.0.dist-info/RECORD,,
