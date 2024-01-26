@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: literal-dict
+Version: 0.0.1.dev1
+Summary: Use JavaScript-like object definition syntax in Python
+Author-Email: Muspi Merol <me@muspimerol.site>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# literal-dict
+
+JavaScript-like object definition syntax in Python
