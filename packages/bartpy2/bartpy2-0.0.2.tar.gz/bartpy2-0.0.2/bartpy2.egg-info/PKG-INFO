@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bartpy2
+Version: 0.0.2
+Summary: Bayesian Additive Regression Trees for Python Updated in January 2024
+Home-page: https://github.com/abdulrehman1215/bartpy2
+Author: Abdul Rehman Raja
+Author-email: Abdul.rehman98455@gmail.com
+License-File: LICENSE
+Requires-Dist: joblib
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: statsmodels
+Requires-Dist: tqdm
