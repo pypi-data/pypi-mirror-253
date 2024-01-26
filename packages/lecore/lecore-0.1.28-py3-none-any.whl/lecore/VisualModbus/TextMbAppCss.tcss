@@ -1,0 +1,51 @@
+Input {
+    margin: 0 0;
+    padding: 0 1;
+}
+
+DataTable {
+    height: 1fr;
+}
+
+Horizontal {
+    height: auto;
+}
+
+.descr_value {
+    width: 1fr;
+}
+
+.description {
+    width: 3fr;
+}
+
+
+#settings {
+    width: 90%;
+    height: 90%;
+}
+
+Settings {
+    align: center middle;
+}
+
+.settings_label{
+    width: 3fr;
+}
+
+.settings_value{
+    width: 2fr;
+}
+
+Update {
+    align: center middle;
+}
+
+#update_tree {
+    width: 85%;
+    height: 80%;
+}
+
+#upd_file {
+    width: 1fr;
+}
