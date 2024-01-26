@@ -1,0 +1,13 @@
+dolomite_base==0.2.0-alpha6
+dolomite_matrix==0.1.0-alpha3
+dolomite_ranges==0.0.1-alpha2
+summarizedexperiment<0.5.0,>=0.4.2
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
+numpy
