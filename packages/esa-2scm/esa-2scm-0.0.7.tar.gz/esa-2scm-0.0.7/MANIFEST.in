@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+include esa_2scm/LICENSE
+recursive-include examples *
+recursive-include img *
