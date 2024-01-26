@@ -1,0 +1,36 @@
+[package]
+name = "oxttl"
+version = "0.1.0-alpha.2"
+authors = ["Tpt <thomas@pellissier-tanon.fr>"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+keywords = ["N-Triples", "N-Quads", "Turtle", "TriG", "N3"]
+repository = "https://github.com/oxigraph/oxigraph/tree/master/lib/oxttl"
+description = """
+Parser and serializer for languages related to RDF Turtle (N-Triples, N-Quads, Turtle, TriG and N3)
+"""
+documentation = "https://docs.rs/oxttl"
+edition = "2021"
+rust-version = "1.70"
+
+[features]
+default = []
+rdf-star = ["oxrdf/rdf-star"]
+async-tokio = ["dep:tokio"]
+
+[dependencies]
+memchr = "2.5"
+oxrdf = { version = "0.2.0-alpha.2", path = "../oxrdf" }
+oxiri = "0.2.3-alpha.1"
+oxilangtag = "0.1"
+tokio = { version = "1.29", optional = true, features = ["io-util"] }
+
+[dev-dependencies]
+tokio = { version = "1.29", features = ["rt", "macros"] }
+
+[lints]
+workspace = true
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
