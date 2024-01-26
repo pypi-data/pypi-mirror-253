@@ -1,0 +1,10 @@
+labeva/__init__.py,sha256=NrG6Imjgt2TQjyJWGdsC0zuC5IInS12R606BmPq_WYM,108
+labeva/__version__.py,sha256=ujArVWJds_Qv9voraRYHVGEqU3lnS37ZRTPGDBA5IMo,18
+labeva/fit.py,sha256=QOA2M5ZDPBBFqC3S64g-LQQ2i9a8vw8aGMbGyYXw_Ds,1295
+labeva/func.py,sha256=N0WS8sSizKuKwXL1_VkzykHNWkij-LycxxlM5MESRUY,2130
+labeva/math.py,sha256=CrRy_Yojhsb3O5mvYB2zTZgrfcwoLjXeVoQhF37Ef_o,3230
+labeva/plot.py,sha256=x6_3eXWbjUybm92p-vW6sm3YFtrTC44PTy2biwvTVrg,4474
+labeva-2.1.0.dist-info/LICENSE,sha256=GzeCzK17hhQQDNow0_r0L8OfLpeTKQjFQwBQU7ZUymg,32473
+labeva-2.1.0.dist-info/METADATA,sha256=v4FtyFpBhsSqIr0xcbd-EvFL_E6cAtm-E0QMPsHhMPo,2314
+labeva-2.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+labeva-2.1.0.dist-info/RECORD,,
