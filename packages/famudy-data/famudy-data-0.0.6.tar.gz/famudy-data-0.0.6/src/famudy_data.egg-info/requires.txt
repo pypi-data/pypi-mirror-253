@@ -1,0 +1,13 @@
+open3d
+trimesh
+environs
+elias
+tyro
+dreifus
+pandas
+python-openctm
+smplx
+numpy<=1.23.1
+chumpy
+
+[dev]
