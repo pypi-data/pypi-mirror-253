@@ -1,0 +1,11 @@
+tglib/__init__.py,sha256=xXBQJvnZBHw2HRTXcvMibij-vvO_StY6g3MBdE-pT1k,132388
+tglib/api.py,sha256=HTc2e2Ek8JbseIaKEQS0rGrmg9ktbPYXJ-t8Av3qPqA,23450
+tglib/logger.py,sha256=q1R_BzD-Dz2W-QTB--aFs0ubzY1v7LrX-I6p5HajIs0,704
+tglib/tests.py,sha256=7PcpChhjaAkruIOFtO0IpWpW0ZJtiaSl2RCriopW5qA,971
+tglib/types.py,sha256=iCz_DzX07L4C88ld75M9q_m0GZz31duiudTUIWbiCTI,198966
+tglib/update_manager.py,sha256=zqEdq4WCVOquEqK2k_tNxYPD_LkfaiHbty3z8h9U62k,7379
+tglib-1.2.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tglib-1.2.2.dist-info/METADATA,sha256=f1VuB5NcJskYNLwdhrakus2JpBq2m4bW6a3Comq8fv8,45208
+tglib-1.2.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tglib-1.2.2.dist-info/top_level.txt,sha256=z09c-w7fXhZsZXrEIetnkwVe-yZNWyCyPf93QyFg9SE,6
+tglib-1.2.2.dist-info/RECORD,,
