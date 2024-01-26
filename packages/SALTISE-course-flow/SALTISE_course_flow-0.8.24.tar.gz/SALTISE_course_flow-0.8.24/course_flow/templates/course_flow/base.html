@@ -1,0 +1,100 @@
+{% load static compress i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% load course_flow_templatetags %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta
+    name="description"
+    content="{% block metadescription %}{% endblock %}"
+  />
+  <meta name="theme-color" content="#1976BC"/>
+  <script nonce="{{ request.csp_nonce }}">
+    // HACK(keanulee): The Redux package assumes `process` exists - mock it here before
+    // the module is loaded.
+    // @todo we should not be hardcoding this
+    window.process = {
+      env: {
+        //  NODE_ENV: "production"
+      }
+    };
+
+    // create our global CF namespace
+    const cf = {}
+    const COURSEFLOW_APP = {}
+
+  </script>
+
+  <script nonce="{{ request.csp_nonce }}">
+      window.cf_nonce = "{{ request.csp_nonce }}"
+  </script>
+
+  {% include 'course_flow/base/static_scripts.html' %}
+  {% include 'course_flow/base/scripts.html' %}
+
+  {% block header %}{% endblock %}
+
+</head>
+
+<body id="site">
+<div class="main-wrapper">
+  {% comment %}
+  target for sibebar.jsx
+  {% endcomment %}
+  <div data-component="sidebar"></div>
+
+  {% comment %}
+      @todo see https://course-flow.atlassian.net/browse/COUR-246
+    {% endcomment %}
+  <div id="react-portal-left-panel-extra"></div>
+
+  <div class="main-block">
+    <div data-component="topbar"></div>
+
+    {% comment %}
+        TODO: Convert to React, making sure not to break createPortal calls
+      {% endcomment %}
+    <div class="topnav hide-print">
+      <div class="titlebar">
+        <div class="title"></div>
+      </div>
+      <div id="update-notifications"></div>
+    </div>
+
+    <div class="right-panel-wrapper">
+      <div id="container" class="body-wrapper">
+        {% block container %} {% endblock %}
+      </div>
+      <div id="sidebar-container">
+        {% block sidebar_container %}{% endblock %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup-container"></div>
+{% block body %} {% endblock %}
+
+<footer>
+  {% block foot %}{% endblock %}
+</footer>
+{% csrf_token %}
+</body>
+
+{% block common_scripts %}
+  {% include 'course_flow/base/config_js.html' %}
+  <script src="{% static 'course_flow/js/templates/base-common.js' %}"></script>
+{% endblock %}
+
+{% block react_scripts %} {% endblock %}
+
+{% block scripts %}
+  <script src="{% static 'course_flow/js/templates/base.js' %}"></script>
+{% endblock %}
+
+</html>
