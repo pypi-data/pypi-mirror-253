@@ -1,0 +1,67 @@
+site_name: ''
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon_2.png
+  features:
+    - content.code.copy
+    #- navigation.footer
+  icon:
+    repo: fontawesome/brands/github-alt
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: custom_light
+      primary: white
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
+nav:
+  - Home: index.md
+  - Usage: usage.md
+  - API documentation:
+    - Plates: plate.md
+    - QC config file: qc_configfile.md
+    - Studies: study.md
+  - Glossary: glossary.md
+
+repo_url: 'https://github.com/ssi-dk/CD-MRG-PlatePlanner/'
+repo_name: ssi-dk/CD-MRG-PlatePlanner
+copyright: Copyright &copy; 2024 Filip (Persson) Ljung
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [src/plate_planner/]
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
