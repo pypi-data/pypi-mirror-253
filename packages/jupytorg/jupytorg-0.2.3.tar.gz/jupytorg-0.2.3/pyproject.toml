@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "jupytorg"
+version = "0.2.3"
+description = "Convert org-mode files to Jupyter Notebooks"
+authors = ["Nathan Auchère <nathan.a-contact.u9dcm@slmail.me>", "Ewen Le Bihan <hey@ewen.works>", ]
+readme = ["README.md", "README_FR.md"]
+packages = [{include = "jupytorg"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+beautifulsoup4 = "^4.12.3"
+
+[tool.poetry.scripts]
+jupytorg = "jupytorg.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
