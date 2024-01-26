@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pwrpy
+Version: 1.1.3
+Summary: PWRPY is a Python library for interacting with the PWR network. 
+Project-URL: Homepage, https://github.com/pwrlabs/pwrpy
+Project-URL: Issues, https://github.com/pwrlabs/pwrpy/issues
+Author-email: PWR Labs <devservices@pwrlabs.io>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# PWRPY
+
+PWRPY is a Python library for interacting with the PWR network.
+It provides an easy interface for wallet management and sending transactions on PWR.
+
+## Installation
+
+Run: `pip install pwrpy`
+
+The library needs the `PRC_NODE_URL` environment variable set to https://pwrrpc.pwrlabs.io/.
