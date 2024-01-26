@@ -1,0 +1,3 @@
+duckberg==0.0.4
+pyiceberg[glue]
+pandas
