@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: werkflow-git
+Version: 0.1.33
+Summary: A Git module for Werkflow powered by GitPython.
+Home-page: https://github.com/scorbettUM/werkflow-modules/werkflow-git
+Author: Ada Lundhe
+Author-email: corpheus91@gmail.com.com
+Keywords: pypi,cicd,python,setup,repo,project,migrate,monorepo,git
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
