@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: python-project-generator-test
+Version: 0.0.1
+Summary: My package description
+Author-email: Stephen Merth <some-email@gmail.com>
+License: MIT
+Keywords: one,two
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: dev
+Requires-Dist: python-project-generator-test[release,static-code-qa,test] ; extra == 'dev'
+Provides-Extra: release
+Requires-Dist: build ; extra == 'release'
+Requires-Dist: twine ; extra == 'release'
+Provides-Extra: static-code-qa
+Requires-Dist: pre-commit ; extra == 'static-code-qa'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# python-project-generator-test
+
+## Quick start
+
+```bash
+pip install python-project-generator-test
+```
+
+```python
+from python_project_generator_test import ...
+```
+
+## Contributing
+
+```bash
+# clone the repo
+git clone https://github.com/phitoduck/python-course-package.git
+
+# install the dev dependencies
+make install
+
+# run the tests
+make test
+```
