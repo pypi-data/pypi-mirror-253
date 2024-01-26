@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "lakera-chainguard"
+version = "0.0.1"
+description = "Guard your LangChain applications against prompt injection with Lakera Guard"
+authors = ["Frawa Vetterli <fv@lakera.ai>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+langchain = "^0.0.354"
+langchain-core = "^0.1.5"
+types-requests = "^2.31.0.20240106"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+mypy = "^1.8.0"
+black = "^23.12.1"
+pre-commit = "^3.6.0"
+ipykernel = "^6.28.0"
+openai = "^1.6.1"
+langchain-openai = "^0.0.2"
+mkdocs = "^1.5.3"
+mkdocstrings = {extras = ["python"], version = "^0.24.0"}
+mkdocs-material = "^9.5.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
