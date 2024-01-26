@@ -1,0 +1,8 @@
+gpt_cost_estimator/__init__.py,sha256=j2YQ-OGm-J2q8ybWS8pQBDHn2eIfnqqpm64WnmF3Rd8,80
+gpt_cost_estimator/estimator.py,sha256=ii1WUlYJLlQunBFtexrqLFTLV2rkgEzKXpFuw25RA1s,3397
+gpt_cost_estimator/utils.py,sha256=jou4TyiPuDuNUVcL2w60of-byF3Wu-efxbDsJ6isGek,2302
+gpt_cost_estimator-0.4.dist-info/LICENSE,sha256=ZstB9AGjkKvzGoYBuqEF_-CNXyZLBofJ-zCwrYTk-98,1072
+gpt_cost_estimator-0.4.dist-info/METADATA,sha256=bmh8qadCo-3lg2uJ6zDnRlfv9KdqXy3vI4EZL59jiYA,3963
+gpt_cost_estimator-0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gpt_cost_estimator-0.4.dist-info/top_level.txt,sha256=pUvi2xo2qzFXJAjpByTSQp--63StwD_JRBvyp0YOQ30,19
+gpt_cost_estimator-0.4.dist-info/RECORD,,
