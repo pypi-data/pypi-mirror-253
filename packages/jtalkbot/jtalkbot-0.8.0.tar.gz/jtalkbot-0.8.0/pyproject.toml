@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=60", "wheel", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["version"]
+name = "jtalkbot"
+dependencies = [
+    "discord.py[voice]",
+    "python-dotenv",
+]
+requires-python = ">=3.10"
+authors = [
+    {name = "Masaaki Shibata", email = "mshibata@emptypage.jp"},
+]
+description = "A discord bot talking Japanese."
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["discord"]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "setuptools-scm",
+    "twine",
+]
+
+[project.urls]
+Repository = "https://bitbucket.org/emptypage/jtalkbot/"
+
+[project.scripts]
+jtalkbot = "jtalkbot.__main__:main"
+
+[tool.setuptools_scm]

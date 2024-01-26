@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/jtalkbot/__init__.py
+src/jtalkbot/__main__.py
+src/jtalkbot/openjtalk.py
+src/jtalkbot.egg-info/PKG-INFO
+src/jtalkbot.egg-info/SOURCES.txt
+src/jtalkbot.egg-info/dependency_links.txt
+src/jtalkbot.egg-info/entry_points.txt
+src/jtalkbot.egg-info/requires.txt
+src/jtalkbot.egg-info/top_level.txt

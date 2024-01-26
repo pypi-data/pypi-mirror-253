@@ -1,0 +1,7 @@
+discord.py[voice]
+python-dotenv
+
+[dev]
+build
+setuptools-scm
+twine
