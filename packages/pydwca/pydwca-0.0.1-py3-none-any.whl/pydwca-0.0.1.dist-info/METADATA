@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pydwca
+Version: 0.0.1
+Summary: Python library to read, parse and write Darwin Core Archive files
+Project-URL: Documentation, https://github.com/IEB-BIODATA/pydwca#readme
+Project-URL: Issues, https://github.com/IEB-BIODATA/pydwca/issues
+Project-URL: Source, https://github.com/IEB-BIODATA/pydwca
+Author-email: Juan Saez Hidalgo <jmsaez@ieb-chile.cl>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pydwca
+
+Python library to read, parse and write Darwin Core Archive files
