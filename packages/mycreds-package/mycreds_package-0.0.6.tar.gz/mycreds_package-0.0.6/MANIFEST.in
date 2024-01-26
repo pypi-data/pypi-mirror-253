@@ -1,0 +1,7 @@
+include mycreds_package/certMaker/fonts/BureauGrotCondensed-Bold.ttf
+include mycreds_package/certMaker/fonts/LeMondeLivreStd-Demi.ttf
+include mycreds_package/certMaker/fonts/Typ1451Std-Regular.ttf
+
+include mycreds_package/certMaker/templates/bronzeCertTemp.jpg
+include mycreds_package/certMaker/templates/silverCertTemp.jpg
+include mycreds_package/certMaker/templates/goldCertTemp.jpg
