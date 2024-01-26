@@ -1,0 +1,7 @@
+cjoin
+clevenshtein
+csoundex
+cython_all_ops
+cython_any_ops
+cython_cross_join
+opteryx
