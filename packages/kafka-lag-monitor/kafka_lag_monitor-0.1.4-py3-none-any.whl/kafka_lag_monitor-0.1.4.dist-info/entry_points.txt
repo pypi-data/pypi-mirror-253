@@ -1,0 +1,3 @@
+[console_scripts]
+kafka-lag-monitor=kafka_lag_monitor.main:app
+
