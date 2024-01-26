@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: realtime-trains
+Version: 0.0.2
+Summary: Unofficial Python API for Realtime Trains
+Home-page: https://github.com/mbukovac/realtime-trains
+Author: Marko B.
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+Requires-Dist: pydantic
+
+# realtime-trains
+Python implementation of Realtime Trains API
