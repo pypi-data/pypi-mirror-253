@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vkbasalt-cli"
+version = "3.1.1post2"
+authors = [
+    { name="TheEvilSkeleton", email="theevilskeleton@riseup.net" },
+]
+description = "A utility to pass arguments to vkBasalt"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Utilities",
+]
+dynamic = [
+    "scripts",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/TheEvilSkeleton/vkbasalt-cli"
+"Bug Tracker" = "https://gitlab.com/TheEvilSkeleton/vkbasalt-cli/-/issues"

@@ -1,0 +1,14 @@
+COPYING
+COPYING.GPLv3
+COPYING.LGPLv3
+README.md
+pyproject.toml
+setup.py
+vkbasalt/__init__.py
+vkbasalt/cli.py
+vkbasalt/lib.py
+vkbasalt_cli.egg-info/PKG-INFO
+vkbasalt_cli.egg-info/SOURCES.txt
+vkbasalt_cli.egg-info/dependency_links.txt
+vkbasalt_cli.egg-info/entry_points.txt
+vkbasalt_cli.egg-info/top_level.txt
