@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: 2fas
+Version: 0.1.0
+Summary: Unofficial implementation of 2fas for Python
+Project-URL: Documentation, https://github.com/robinvandernoord/2fas-python#readme
+Project-URL: Issues, https://github.com/robinvandernoord/2fas-python/issues
+Project-URL: Source, https://github.com/robinvandernoord/2fas-python
+Author-email: Robin van der Noord <robinvandernoord@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: configuraptor>=1.25
+Requires-Dist: cryptography
+Requires-Dist: keyring
+Requires-Dist: pyotp
+Requires-Dist: questionary
+Requires-Dist: rapidfuzz
+Requires-Dist: typer[all]
+Provides-Extra: dev
+Requires-Dist: edwh; extra == 'dev'
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: pytest-mypy-testing; extra == 'dev'
+Requires-Dist: python-semantic-release<8; extra == 'dev'
+Requires-Dist: su6[all]; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# 2fas Python
