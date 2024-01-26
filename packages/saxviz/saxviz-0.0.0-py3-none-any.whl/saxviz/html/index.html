@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SchemEdit</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+
+    <script>
+      var ws = undefined;
+
+      function postParent(data) {
+        try {
+          ws.send(data);
+        } catch (error) {
+        }
+      }
+
+      function connectWebSocket() {
+        ws = new WebSocket("ws://localhost:8765");
+
+        ws.addEventListener("open", (ev) => {
+          ws.send('{"Loaded": true}');
+        });
+
+        ws.addEventListener("message", (ev) => {
+          postMessage(ev.data, "*");
+        });
+
+        // Handle errors
+        ws.addEventListener("error", (ev) => {
+          console.error("WebSocket error:", ev);
+          setTimeout(() => {
+            connectWebSocket();
+          }, 1000); // Reconnect after 5 seconds
+        });
+
+        // Handle connection closures
+        ws.addEventListener("close", (ev) => {
+          setTimeout(() => {
+            connectWebSocket();
+          }, 1000); // Reconnect after 5 seconds
+        });
+      }
+
+      // Initial connection
+      connectWebSocket();
+    </script>
+
+    <link
+      rel="preload"
+      href="/static/wasm/schemedit.wasm"
+      as="fetch"
+      type="application/wasm"
+      crossorigin=""
+    />
+    <link rel="modulepreload" href="/static/js/schemedit.js" />
+  </head>
+  <body>
+    <script type="module">
+      import init from "/static/js/schemedit.js";
+      init("/static/wasm/schemedit.wasm");
+    </script>
+  </body>
+</html>
