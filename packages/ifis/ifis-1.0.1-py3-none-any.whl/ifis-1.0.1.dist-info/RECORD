@@ -1,0 +1,10 @@
+ifis/__init__.py,sha256=Pmq67FA4ISb89R2neNYcR3DNN28t6mY3e7bd04GWjJk,594
+ifis/interval_aggregations.py,sha256=9tGWQL0hGX-5lR9hge1_XSAue-m_a_qcFGHiUhhBmmQ,24619
+ifis/interval_fuzzy_sets.py,sha256=pRUHhwSOaI9e7tOtz7fc8vRhB3YJ1CBM0zITTPuWH6I,12192
+ifis/interval_fuzzy_system.py,sha256=0_7iVFJOy53j9m6Y-OwfHYdjyCNf4WhWUVEhkg0FQxU,21217
+ifis/interval_linguistic_variable.py,sha256=kBR53i1YtfGIjafyuTbPjSh3lN8xuW1auS3q5wgXxcY,5216
+ifis/interval_rule_parsing.py,sha256=gp9tp0xQlpctkplO_BDYzJ49u3oYTEGSiB7qcQwu10c,11248
+ifis-1.0.1.dist-info/METADATA,sha256=TYMvQW1OKLT4TRvlLI0Os5UMHIoFMujtmkiRDGfa7lw,10982
+ifis-1.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+ifis-1.0.1.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+ifis-1.0.1.dist-info/RECORD,,
