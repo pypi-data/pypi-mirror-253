@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: jipamlib_influxdb_v1
+Version: 0.0.13
+Summary: jipam libs para conectar a influxdb v1
+Project-URL: Homepage, https://github.com/jgajardog/jipamlib_influxdb_v1
+Author-email: jgajardo <jgajardo@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# jipamlib_influxdb_v1
+libreria para conectar a influxdb v1
