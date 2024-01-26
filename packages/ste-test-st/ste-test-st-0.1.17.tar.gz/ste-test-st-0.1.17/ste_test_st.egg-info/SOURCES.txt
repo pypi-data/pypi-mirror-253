@@ -1,0 +1,11 @@
+pyproject.toml
+readme.md
+requirements.txt
+setup.py
+simple_service/__init__.py
+simple_service/simple_service.py
+ste_test_st.egg-info/PKG-INFO
+ste_test_st.egg-info/SOURCES.txt
+ste_test_st.egg-info/dependency_links.txt
+ste_test_st.egg-info/requires.txt
+ste_test_st.egg-info/top_level.txt
