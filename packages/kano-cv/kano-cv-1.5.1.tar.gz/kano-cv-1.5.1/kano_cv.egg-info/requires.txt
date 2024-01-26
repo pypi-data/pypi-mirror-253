@@ -1,0 +1,11 @@
+tqdm>=4.8
+numpy>=1.23
+pytube>=15.0
+opencv-python>=4.9
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
