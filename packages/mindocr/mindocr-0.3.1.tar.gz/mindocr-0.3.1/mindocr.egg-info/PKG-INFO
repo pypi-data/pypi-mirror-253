@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: mindocr
+Version: 0.3.1
+Summary: A toolbox of OCR models and algorithms based on MindSpore.
+Home-page: https://github.com/mindspore-lab/mindocr
+Author: MindSpore Ecosystem
+Author-email: mindspore-ecosystem@example.com
+License: Apache Software License 2.0
+Project-URL: Sources, https://github.com/mindspore-lab/mindocr
+Project-URL: Issue Tracker, https://github.com/mindspore-lab/mindocr/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: lmdb
+Requires-Dist: pyclipper
+Requires-Dist: shapely~=1.8.0
+Requires-Dist: addict
+Requires-Dist: matplotlib
+Requires-Dist: addict
+Requires-Dist: numpy
+Requires-Dist: tqdm>=4.64.1
+Requires-Dist: opencv-python-headless>=3.4.18.65
+Requires-Dist: rapidfuzz>=2.13.7
+Requires-Dist: Pillow<=9.5,>=9.1.1
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: xml-python>=0.4.3
+Requires-Dist: packaging
+Requires-Dist: Cython
+Requires-Dist: lanms>=1.0.2
+Requires-Dist: sentencepiece>=0.1.99
+Requires-Dist: huggingface_hub>=0.16.4
+Requires-Dist: seqeval>=1.2.2
+Requires-Dist: mindformers==0.3.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pycocotools>=2.0.2
+Requires-Dist: setuptools-scm
