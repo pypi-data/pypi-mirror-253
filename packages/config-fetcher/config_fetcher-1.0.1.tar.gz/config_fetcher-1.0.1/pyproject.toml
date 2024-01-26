@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "config_fetcher"
+version = "1.0.1"
+authors = [
+  { name="Alexandre Collin Betheuil", email="alexandre.et.collin@gmail.com" },
+]
+description = "A config file reader that allow you to have sections and variables"
+readme = "README.md"
+requires-python = ">=2.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/AlexandreCollin/Config-Fetcher"
+Issues = "https://github.com/AlexandreCollin/Config-Fetcher/issues"
