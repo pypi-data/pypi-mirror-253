@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: geovdata
+Version: 0.0.3
+Summary: Package with various python tools
+Author: Gaétan Muck
+Author-email: gaetan.muck@kleiolab.com
+Keywords: python,toolkit,utilities,utils,tools,sparql
+License-File: LICENSE
+
+Package with various python tools created to help analysis on Geovistory and other SPARQL endpoints.
