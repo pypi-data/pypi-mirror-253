@@ -1,0 +1,3 @@
+[console_scripts]
+refter=refter.cli:cli
+
