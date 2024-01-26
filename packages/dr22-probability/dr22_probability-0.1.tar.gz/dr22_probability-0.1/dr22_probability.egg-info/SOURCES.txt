@@ -1,0 +1,10 @@
+setup.py
+dr22_probability/Binomialdistribution.py
+dr22_probability/Gaussiandistribution.py
+dr22_probability/Generaldistribution.py
+dr22_probability/__init__.py
+dr22_probability.egg-info/PKG-INFO
+dr22_probability.egg-info/SOURCES.txt
+dr22_probability.egg-info/dependency_links.txt
+dr22_probability.egg-info/not-zip-safe
+dr22_probability.egg-info/top_level.txt
