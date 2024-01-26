@@ -1,0 +1,15 @@
+numpy
+pandas
+pyside6
+sqlalchemy
+pendulum
+pydicom
+pylibjpeg[all]
+pyjpegls
+python-gdcm
+pytest
+pytest-qt
+tensorflow
+pyinstaller
+matplotlib
+twine
