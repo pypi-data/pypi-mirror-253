@@ -1,0 +1,8 @@
+statsframe/__init__.py,sha256=7BBV_2qKCJaVPJywUhfBvAaiTwqjYCI8rmrcdCUytyk,319
+statsframe/_databackend.py,sha256=FYsDzR0NByl8F06JLTIti4ieSihSQHIiT6q0irQphkg,2318
+statsframe/_tbl_data.py,sha256=x-rkWySI4t9v4b_-c070GHuhkR9Vuigh46taLcMnamY,16005
+statsframe/ds.py,sha256=EMsNS_Fg6GZDnL02Zv1uG4Y7w9GbWE57rYd5e6hUwP0,7777
+statsframe-0.0.1.dist-info/LICENSE,sha256=4Ly93NNurzbbeJiXlkhiCodP5nn07aVKcYrtYw9wUWE,1070
+statsframe-0.0.1.dist-info/METADATA,sha256=Q7vVI7Tdk6caRykRbGb9HI4yCq7yIFDmFQv5fTVi1OY,6562
+statsframe-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+statsframe-0.0.1.dist-info/RECORD,,
