@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+DeFiPy.egg-info/PKG-INFO
+DeFiPy.egg-info/SOURCES.txt
+DeFiPy.egg-info/dependency_links.txt
+DeFiPy.egg-info/not-zip-safe
+DeFiPy.egg-info/top_level.txt
+defipy.egg-info/PKG-INFO
+defipy.egg-info/SOURCES.txt
+defipy.egg-info/dependency_links.txt
+defipy.egg-info/not-zip-safe
+defipy.egg-info/requires.txt
+defipy.egg-info/top_level.txt
+python/prod/__init__.py
