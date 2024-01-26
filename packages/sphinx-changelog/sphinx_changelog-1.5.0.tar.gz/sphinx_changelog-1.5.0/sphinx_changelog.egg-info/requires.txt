@@ -1,0 +1,10 @@
+sphinx
+towncrier==23.11.0
+
+[docs]
+sphinx
+sphinx-automodapi
+
+[test]
+pytest
+pytest-cov
