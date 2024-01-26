@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: seamsh
+Version: 0.4.13
+Summary: Ocean mesh generation
+Home-page: https://git.immc.ucl.ac.be/jlambrechts/seamsh
+Author: Jonathan Lambrechts
+Author-email: jonathan.lambrechts@uclouvain.be
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: gdal (>=3.1.0)
+Requires-Dist: gmsh
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+Seamsh_ is a Python library wrapping gmsh_, gdal_  and scipy_ to simplify the generation of unstructured meshes. While primarily developed for coastal ocean simulations, it can be used in other GIS contexts.
+
+Main Features :
+
+- Import ESRI shapefiles to define tagged domain boundaries, interior lines and interior points.
+- Define arbitrary mesh elements size fields based on distances from lines or raster files.
+- Create a low-resolution valid topology from high-resolution non-conformal (i.e. intersecting) data.
+
+Seamesh is distributed under the GPL_. See the project gitlab page for the `source code`_  and `bug reports`_. The documentation_ contains examples, Python API reference and installation instructions.
+Binary packages for 64 bits linux, windows and OSX are available on pypi_.
+
+.. _gmsh : https://www.gmsh.info
+.. _gdal : https://gdal.org
+.. _scipy : https://www.scipy.org
+.. _Seamsh : https://git.immc.ucl.ac.be/jlambrechts/seamsh
+.. _source code : https://git.immc.ucl.ac.be/jlambrechts/seamsh
+.. _documentation : http://jlambrechts.git-page.immc.ucl.ac.be/seamsh
+.. _bug reports : https://git.immc.ucl.ac.be/jlambrechts/seamsh/-/issues
+.. _GPL : https://www.gnu.org/licenses/gpl-3.0.html
+.. _pypi : https://test.pypi.org/project/seamsh
+
+Changes
+=======
+
+seamsh 0.4.13
+-------------
+* fix bug for 2d coordinates reprojection introduced in 0.4.12
+
+seamsh 0.4.12
+-------------
+* Add stereographic projection example
+* Distance field can use another projection than the projection of the domain
+* Allows for cartesian projection (i.e. no projection)
+
+seamsh 0.4.11
+-------------
+* gmsh.merge_meshes : topological reconnection instead of coordinate based
+
+seamsh 0.4.10
+-------------
+* add gmsh.merge_meshes
+* add transifinite curves (physical lines with prescribed number of elements)
+* avoid gmsh initalization error message
+
+seamsh 0.4.9
+------------
+* add transifinite curves (physical lines with prescribed number of elements)
+
+seamsh 0.4.8
+------------
+* numpy 1.24 compatibility (np.bool -> bool)
+
+seamsh 0.4.7
+------------
+* write WKT projection as gmsh model attribute
+* default msh output version set to 4.1
+
+seamsh 0.4.6
+------------
+* License files in source package
+
+seamsh 0.4.5
+------------
+* Inpoly field (requires shapely)
+
+seamsh 0.4.4
+------------
+* fix unrefine when no identical points
+* ugrid conversion (requires xarray)
+* fix domain physical name
+
+seamsh 0.4.3
+------------
+* add output_srs parameter to gmsh.mesh
+* add gmsh.reproject function
+
+seamsh 0.4.2
+------------
+* do not crash on features without geometry in shapefiles
+
+seamsh 0.4.1
+------------
+* do not call gmsh.initialize() if already initialized
+* use a temporary gmsh model for meshing
+
+seamsh 0.4.0
+------------
+
+* precompute and smooth mesh size field on a quadtree-like mesh
+* build library directly from setup.py, no cmake anymore
+* discretize curves in their own projection, not in the model projection
+* handle intersection of more than 2 interior curves on the same point
+* source distribution on pypi
+
+
