@@ -1,0 +1,11 @@
+lunchable_primelunch/__about__.py,sha256=gtilDUrTaBF4yk93EXmxcFVAuB5WaW5HUAzNMSF08Rw,103
+lunchable_primelunch/__init__.py,sha256=J-zAOAIMAOzH5Nk3wweYbQaNbDIQKHd84OwQvcOyGmg,26
+lunchable_primelunch/__main__.py,sha256=FmHuYlyBHU4bx_7LQmiEZ6A8EKWqT8J_EZlr61rfw3E,132
+lunchable_primelunch/cli.py,sha256=z72kr1Gw4b10njh31q3i9O8IzUD203DbCrfdgQYvWhg,1292
+lunchable_primelunch/primelunch.py,sha256=guULFpCMch6U3uhMlBqlCc_-Cz6ZMTiETOPWOLw5Sns,14514
+lunchable_primelunch/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lunchable_primelunch-1.0.1.dist-info/METADATA,sha256=Kq_eICtz20JGMIPB7ibKFJ-BdpqPS8sfGdeIToF1s8w,5480
+lunchable_primelunch-1.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+lunchable_primelunch-1.0.1.dist-info/entry_points.txt,sha256=GHNniGxGDVKxbbB2Zl8R3C1bQEgQuNOGH_acC7RDCes,133
+lunchable_primelunch-1.0.1.dist-info/licenses/LICENSE,sha256=2mmBR4IhR_prFx_CeH5V_BnXn1z_W25EVgGS21vOqsg,1071
+lunchable_primelunch-1.0.1.dist-info/RECORD,,
