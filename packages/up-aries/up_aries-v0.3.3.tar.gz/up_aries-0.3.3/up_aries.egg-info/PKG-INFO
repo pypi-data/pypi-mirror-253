@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: up_aries
+Version: 0.3.3
+Summary: Aries is a project aimed at exploring constraint-based techniques for automated planning and scheduling.         It relies on an original implementation of constraint solver with optional variables and clause learning to which         various automated planning problems can be submitted.
+Home-page: https://github.com/plaans/aries
+Author: Arthur Bit-Monnot
+Author-email: abitmonnot@laas.fr
+License: MIT
+License-File: LICENSE
+Requires-Dist: unified_planning
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+Requires-Dist: pytest
