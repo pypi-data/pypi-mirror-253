@@ -1,0 +1,11 @@
+import dknovautils as dku
+
+from dknovautils.dkat import AT
+from dknovautils.myadd import m_add
+
+
+def test_ccc():
+
+    print(AT.VERSION)
+
+    assert m_add(1, 2) == 3
