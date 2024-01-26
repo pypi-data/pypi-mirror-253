@@ -1,0 +1,2 @@
+[console_scripts]
+sbackup = safe_backup.safe_backup:main
