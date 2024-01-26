@@ -1,0 +1,11 @@
+message_on_change/__init__.py,sha256=ih-cMrCQadvGTlcmLvuKVW3eec7JV0G_PHIWkkgKObo,84
+message_on_change/cli.py,sha256=wnumRk07BH-ufmgPK9-Z_l_fBmYQZXNjps1XZ5JThdM,1378
+message_on_change/fetch_logic.py,sha256=--suXUdJ5y6_jVfGGMh6kWVRob24zW-Fx83d8SO0o9I,1169
+message_on_change/gui.py,sha256=hLYxoaZKSyFgHgXZf8rQ1aLHM-Mn3hFhCBGYiJz6OHk,4321
+message_on_change/guicontroll.py,sha256=G8kPotvVcH8dvteE5RJTkct_ZM_j6B49Q0XIzr83Bc8,4933
+message_on_change/status.py,sha256=PgmiFLRG8iZnEc1WXMe7a2pfKsqLdy5Zd3qgAapaHtw,4105
+message_on_change-0.1.0.dist-info/METADATA,sha256=JNEuZHZM7-yNELyjmEHZUjZy3ItUOmsmZ9EaudneAno,1474
+message_on_change-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+message_on_change-0.1.0.dist-info/entry_points.txt,sha256=oNHo426dV1tX5QEuckUkw7NEtFXNcDaP8og-qphmJQo,128
+message_on_change-0.1.0.dist-info/top_level.txt,sha256=bZT2YyPL5P7pWUyhQa5_-2V1Ms2EwnbHSlPDrbyc2lY,18
+message_on_change-0.1.0.dist-info/RECORD,,
