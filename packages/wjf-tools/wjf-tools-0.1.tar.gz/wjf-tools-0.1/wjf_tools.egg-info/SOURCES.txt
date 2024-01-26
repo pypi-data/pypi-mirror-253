@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+wjf-tools/__init__.py
+wjf-tools/benchmarks.py
+wjf-tools/detect.py
+wjf-tools/detect_by_cv.py
+wjf-tools/export.py
+wjf-tools/hubconf.py
+wjf-tools/train.py
+wjf-tools/val.py
+wjf_tools.egg-info/PKG-INFO
+wjf_tools.egg-info/SOURCES.txt
+wjf_tools.egg-info/dependency_links.txt
+wjf_tools.egg-info/top_level.txt

@@ -1,0 +1,1 @@
+from  detect_by_cv import yolo
