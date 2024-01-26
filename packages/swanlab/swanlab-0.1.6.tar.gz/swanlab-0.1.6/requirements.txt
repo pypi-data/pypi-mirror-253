@@ -1,0 +1,16 @@
+# web server
+fastapi
+uvicorn>=0.14.0
+click
+
+
+# database
+ujson
+PyYAML
+portalocker
+peewee
+
+
+# Information collection
+psutil
+pynvml
