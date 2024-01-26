@@ -1,0 +1,7 @@
+django>=3.2
+
+[test]
+isort
+flake8
+ipdb
+coverage
