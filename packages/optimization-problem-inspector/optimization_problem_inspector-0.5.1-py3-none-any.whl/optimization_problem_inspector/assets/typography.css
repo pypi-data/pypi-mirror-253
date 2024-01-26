@@ -1,0 +1,44 @@
+summary {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.upload-box:hover {
+    color: #4f98ff;
+    cursor: pointer;
+}
+
+.btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dash-table-container .row {
+    display: block;
+    margin: 0;
+}
+
+label {
+    margin: 10px;
+    display: inline-block;
+}
+
+#visualization-container {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    max-height: 90vh;
+}
+
+#reference-container-plot {
+    overflow-x: scroll;
+    max-height: 90vh;
+}
+
+table {
+    margin: 10px;
+}
+
+#data-table-container {
+    overflow-x: scroll;
+    max-width: 100vw;
+}

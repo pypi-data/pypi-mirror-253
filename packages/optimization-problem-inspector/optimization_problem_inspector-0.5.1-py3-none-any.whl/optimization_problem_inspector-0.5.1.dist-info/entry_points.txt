@@ -1,0 +1,2 @@
+[console_scripts]
+opi-gui = optimization_problem_inspector.app:main
