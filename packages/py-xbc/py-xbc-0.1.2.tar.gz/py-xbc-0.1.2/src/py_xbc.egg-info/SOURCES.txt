@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/py_xbc.egg-info/PKG-INFO
+src/py_xbc.egg-info/SOURCES.txt
+src/py_xbc.egg-info/dependency_links.txt
+src/py_xbc.egg-info/requires.txt
+src/py_xbc.egg-info/top_level.txt
+src/xbc/__init__.py
+src/xbc/utils.py
+src/xbc/version.py
+tests/test_bare.py
+tests/test_block.py
+tests/test_invalid.py
+tests/test_upstream.py
