@@ -1,0 +1,13 @@
+qa_metrics/__init__.py,sha256=K8pkPXXfxnpgtp-6obcrNbaivxw78HibYpbW_je7Dn0,2323
+qa_metrics/bem.py,sha256=9-8RFesWqXA2SOeOH3LxtnJcaDA45SG9MwC4zL_FY1Q,53
+qa_metrics/cfm.py,sha256=pXKlGhLeitC9CMiobSKxctiDXvbhEmc8NKcmf5GhSi4,13175
+qa_metrics/em.py,sha256=22o2ihGM_BftfmO02Zs0tQYc-pptmdSlGl7-Jv4So-E,995
+qa_metrics/f1.py,sha256=5c7P8lUhS4r2nPU11hp4rbaraw005fufrExx4bVUyns,2449
+qa_metrics/transformerMatcher.py,sha256=1q7dq0oZIbORHB7feZB0KPeASHRwxEJ93CDB5LddATM,6339
+qa_metrics/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qa_metrics/utils/tools.py,sha256=lD9InJOuJm9bT_Ti4l4xamtgFKV1Z_uULfYkbb-K6Zg,1152
+qa_metrics-0.1.24.dist-info/LICENSE,sha256=EYpcsp9e6C_TYzWmHVcQMFKXHRUyByrLZOqzyB6ZKJw,1071
+qa_metrics-0.1.24.dist-info/METADATA,sha256=Q_od9T7FerI7PBVjqeFFlLiK33E_4VPS_ZgOvqH1ako,4412
+qa_metrics-0.1.24.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+qa_metrics-0.1.24.dist-info/top_level.txt,sha256=4cIlh49vxaUIhY1i2iupNtIjMtbtL3yKo5Nbo_PV2tU,11
+qa_metrics-0.1.24.dist-info/RECORD,,
