@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "./static/js/main.abedc3c9.js",
+    "static/media/icon.webp": "./static/media/icon.4603d52c63041e5dfbfd.webp",
+    "index.html": "./index.html",
+    "main.abedc3c9.js.map": "./static/js/main.abedc3c9.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.abedc3c9.js"
+  ]
+}
