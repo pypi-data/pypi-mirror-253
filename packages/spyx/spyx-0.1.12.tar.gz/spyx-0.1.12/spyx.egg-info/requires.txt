@@ -1,0 +1,4 @@
+dm-haiku
+optax
+jax_tqdm
+nir
