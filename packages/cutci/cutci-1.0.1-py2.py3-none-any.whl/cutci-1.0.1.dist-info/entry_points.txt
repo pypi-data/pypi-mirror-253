@@ -1,0 +1,2 @@
+[console_scripts]
+cutci = cutci.cli:main
