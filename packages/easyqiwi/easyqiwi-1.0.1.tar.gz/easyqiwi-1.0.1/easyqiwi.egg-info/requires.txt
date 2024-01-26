@@ -1,0 +1,5 @@
+asyncio
+httpx
+httpx-socks
+httpx-socks[asyncio]
+httpx-socks[trio]

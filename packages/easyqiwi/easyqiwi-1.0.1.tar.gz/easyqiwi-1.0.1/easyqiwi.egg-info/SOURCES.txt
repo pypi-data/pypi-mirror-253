@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.MD
+setup.py
+easyqiwi/__init__.py
+easyqiwi/easyqiwi.py
+easyqiwi.egg-info/PKG-INFO
+easyqiwi.egg-info/SOURCES.txt
+easyqiwi.egg-info/dependency_links.txt
+easyqiwi.egg-info/requires.txt
+easyqiwi.egg-info/top_level.txt
