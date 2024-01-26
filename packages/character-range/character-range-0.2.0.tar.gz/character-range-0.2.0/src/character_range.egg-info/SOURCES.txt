@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/character_range/__init__.py
+src/character_range/intervals.py
+src/character_range/maps.py
+src/character_range/ranges.py
+src/character_range.egg-info/PKG-INFO
+src/character_range.egg-info/SOURCES.txt
+src/character_range.egg-info/dependency_links.txt
+src/character_range.egg-info/requires.txt
+src/character_range.egg-info/top_level.txt
+tests/test_interval.py
+tests/test_maps.py
+tests/test_ranges.py

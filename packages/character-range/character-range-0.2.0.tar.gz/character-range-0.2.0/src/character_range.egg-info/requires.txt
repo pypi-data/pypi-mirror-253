@@ -1,0 +1,17 @@
+typing_extensions~=4.9.0
+
+[dev]
+build~=1.0.3
+hypothesis~=6.96.1
+mypy~=1.8.0
+pyright~=1.1.347
+pytest~=7.4.3
+pytest-cov~=4.1.0
+setuptools~=69.0.2
+tox~=4.12.1
+twine~=4.0.2
+tzdata~=2023.4
+
+[docs]
+sphinx~=7.2.6
+furo~=2023.9.10

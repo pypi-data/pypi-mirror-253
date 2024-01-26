@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: character-range
+Version: 0.2.0
+Summary: Generate string and bytes ranges
+Author-email: InSyncWithFoo <insyncwithfoo@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/InSyncWithFoo/character-range
+Project-URL: Documentation, https://character-range.readthedocs.io/
+Keywords: char,character,range,byte,byte range
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: typing_extensions~=4.9.0
+Provides-Extra: dev
+Requires-Dist: build~=1.0.3; extra == "dev"
+Requires-Dist: hypothesis~=6.96.1; extra == "dev"
+Requires-Dist: mypy~=1.8.0; extra == "dev"
+Requires-Dist: pyright~=1.1.347; extra == "dev"
+Requires-Dist: pytest~=7.4.3; extra == "dev"
+Requires-Dist: pytest-cov~=4.1.0; extra == "dev"
+Requires-Dist: setuptools~=69.0.2; extra == "dev"
+Requires-Dist: tox~=4.12.1; extra == "dev"
+Requires-Dist: twine~=4.0.2; extra == "dev"
+Requires-Dist: tzdata~=2023.4; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx~=7.2.6; extra == "docs"
+Requires-Dist: furo~=2023.9.10; extra == "docs"
+
+# Character range
+
+![Tests][1]
+![Documentation Status][2]
+
+This package does exactly what it says on the tin:
+Create a string or bytes range.
+
+```python
+from character_range import (
+  ByteMap, character_range, CharacterMap,
+  string_range, bytes_range
+)
+
+print(list(character_range('a', 'z')))
+# 'a', 'b', ..., 'y', 'z'
+
+for element in string_range('aaa', 'aba', CharacterMap.ASCII_LOWERCASE):
+  print(element)  # 'aaa', 'aab', ..., 'aay', 'aaz', 'aba'
+
+for element in bytes_range(b'0', b'10', ByteMap.ASCII_LOWERCASE):
+  print(element)  # b'0', b'1', ..., b'9', b'00', b'01', ..., b'09', b'10'
+```
+
+For more information, see [the documentation][3].
+
+## Installation
+
+This package is available [on PyPI][4]:
+
+```shell
+$ pip install character-range
+```
+
+
+## Contributing
+
+Please see _[Contributing][5]_ for more information.
+
+
+  [1]: https://github.com/InSyncWithFoo/character-range/actions/workflows/tests.yaml/badge.svg
+  [2]: https://readthedocs.org/projects/character-range/badge/?version=latest
+  [3]: https://character-range.readthedocs.io/
+  [4]: https://pypi.org/project/character-range
+  [5]: ./CONTRIBUTING.md
