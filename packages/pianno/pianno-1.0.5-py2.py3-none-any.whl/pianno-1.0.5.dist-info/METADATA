@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pianno
+Version: 1.0.5
+Summary: Pattern Image ANNOtation
+Author: yuqiu zhou
+Author-email: 20211520004@fudan.edu.cn
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.9.10
+Requires-Dist: anndata (>=0.8.0)
+Requires-Dist: rpy2 (>=3.4.5)
+Requires-Dist: opencv-python (>=4.5.5.64)
+Requires-Dist: scikit-image (>=0.19.2)
+Requires-Dist: scikit-learn (>=1.0.2)
+Requires-Dist: scipy (>=1.8.0)
+Requires-Dist: protobuf (==3.20.3)
+Requires-Dist: keras (==2.6.0)
+Requires-Dist: nni (==2.5)
+
+UNKNOWN
+
