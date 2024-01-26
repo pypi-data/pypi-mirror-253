@@ -1,0 +1,14 @@
+change log
+==========
+
+version 1 (25.01.2024)
+-----------------------
+- i decided to upload this to pypi id
+
+version 1.0.2 (25.01.2024)
+-----------------------
+- remove changelog from pypi becase screw this code
+
+version 1.0.3 (25.01.2024)
+-----------------------
+- remove print("disnake found/not found") because causes many skill issues
