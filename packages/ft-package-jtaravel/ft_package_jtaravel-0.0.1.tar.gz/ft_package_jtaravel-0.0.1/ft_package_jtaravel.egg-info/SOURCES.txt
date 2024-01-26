@@ -1,0 +1,5 @@
+setup.py
+ft_package_jtaravel.egg-info/PKG-INFO
+ft_package_jtaravel.egg-info/SOURCES.txt
+ft_package_jtaravel.egg-info/dependency_links.txt
+ft_package_jtaravel.egg-info/top_level.txt
