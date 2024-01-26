@@ -1,0 +1,2 @@
+[console_scripts]
+swiftscribe_templater_app = swiftscribe_templater.app:main
