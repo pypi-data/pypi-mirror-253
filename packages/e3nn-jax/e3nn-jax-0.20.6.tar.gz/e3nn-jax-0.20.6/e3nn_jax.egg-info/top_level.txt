@@ -1,0 +1,3 @@
+dist
+e3nn_jax
+tests
