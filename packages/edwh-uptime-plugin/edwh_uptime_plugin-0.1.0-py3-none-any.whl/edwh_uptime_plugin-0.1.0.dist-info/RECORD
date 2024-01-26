@@ -1,0 +1,10 @@
+edwh_uptime_plugin/__about__.py,sha256=t1sHgoO-ddUGPibf7xGJ3GD_lJpELP8Fg5baxDcp7v0,139
+edwh_uptime_plugin/__init__.py,sha256=eSd5Rk8nEtE5zevrjtWa6AlvaOSnRx8dDHJGZQURf5k,117
+edwh_uptime_plugin/dumpers.py,sha256=uH9hgDW9GIiL4sMC6zn3MoMiPt3HbhwVlAuMhmfvAe4,712
+edwh_uptime_plugin/uptime_plugin.py,sha256=fcSvnizOtWMtXDh6jSV9GCadK7yaIVpK5_SjQkoqZHM,8737
+edwh_uptime_plugin/uptimerobot.py,sha256=MToynlU_GKKwpdQ6PV8BcilRczQrEMa2JxggmOGPAHk,7404
+edwh_uptime_plugin-0.1.0.dist-info/METADATA,sha256=97nT1AnKjh17eJ2MN0fv9oCYkHiTGGZ2-1nUX96HI9U,2267
+edwh_uptime_plugin-0.1.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+edwh_uptime_plugin-0.1.0.dist-info/entry_points.txt,sha256=4ToMxiP_Nz6lxtMkdDxEgfEZh5zZsDFtGuK7ifvs_7Y,55
+edwh_uptime_plugin-0.1.0.dist-info/licenses/LICENSE.txt,sha256=WPXhk3g8238APd_24VBa4QJY0d9QdgKbI0KZrCajYSk,1109
+edwh_uptime_plugin-0.1.0.dist-info/RECORD,,
