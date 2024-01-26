@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: inventory-manager
+Version: 0.0.5.dev0
+Summary: inventory manager, for flash sale inventory. by sqlalchemy and redis.
+Home-page: https://github.com/ttm1234/inventory-manager
+Author: ttm1234
+Author-email: 
+Keywords: inventory inventory_manager inventory-manager
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: SQLAlchemy
+Requires-Dist: redis
+
