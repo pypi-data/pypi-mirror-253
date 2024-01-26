@@ -1,0 +1,6 @@
+[console_scripts]
+dfu = dfu.cli:main
+
+[dfu.plugin]
+autosave = dfu.plugins.autosave:entrypoint
+pacman = dfu.plugins.pacman:entrypoint
