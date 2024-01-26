@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dox/__init__.py
+dox/__main__.py
+dox/cli.py
+dox/hello.py
+dox_cli.egg-info/PKG-INFO
+dox_cli.egg-info/SOURCES.txt
+dox_cli.egg-info/dependency_links.txt
+dox_cli.egg-info/entry_points.txt
+dox_cli.egg-info/requires.txt
+dox_cli.egg-info/top_level.txt
