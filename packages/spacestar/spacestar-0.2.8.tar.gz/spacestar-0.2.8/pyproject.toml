@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "spacestar"
+version = "0.2.8"
+description = "Framework for building web based apps with the power of Starlette, Pydantic and Deta Space."
+authors = ["Daniel Arantes <arantesdv@me.com>"]
+license = "MIT"
+exclude = ["templates", "dev.py", ".env", "exclude", "dev.css", "dev.html", "dev.js"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+starlette = "^0.32.0"
+uvicorn = "^0.24.0"
+itsdangerous = "^2.1.2"
+python-multipart = "^0.0.6"
+Jinja2 = "^3.1.2"
+ormspace = "^0.3.0"
+hx-markup = "^0.2.2"
+Markdown = "^3.5.2"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+initfolders = "spacestar.initfolders:main"
+init-templates = "spacestar.initfolders:create_templates_directory"
+init-static = "spacestar.initfolders:create_static_directory"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
