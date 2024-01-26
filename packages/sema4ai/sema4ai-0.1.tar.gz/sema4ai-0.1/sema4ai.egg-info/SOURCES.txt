@@ -1,0 +1,6 @@
+setup.py
+sema4ai/__init__.py
+sema4ai.egg-info/PKG-INFO
+sema4ai.egg-info/SOURCES.txt
+sema4ai.egg-info/dependency_links.txt
+sema4ai.egg-info/top_level.txt
