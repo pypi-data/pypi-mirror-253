@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pieces_os_client
+Version: 1.2.3
+Summary: A powerful code engine package for writing applications on top of Pieces OS
+Project-URL: Homepage, https://github.com/pieces-app/pieces-os-client-sdk-for-python
+Project-URL: Issues, https://github.com/pieces-app/pieces-os-client-sdk-for-python/issues
+Author-email: Pieces <development@pieces.app>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pieces-os-client-sdk-for-python
