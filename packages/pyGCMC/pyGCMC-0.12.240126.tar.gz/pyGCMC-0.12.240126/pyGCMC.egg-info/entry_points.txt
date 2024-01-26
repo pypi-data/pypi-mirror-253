@@ -1,0 +1,3 @@
+[console_scripts]
+gcmc = gcmc:mainOld
+pygcmc = gcmc:main
