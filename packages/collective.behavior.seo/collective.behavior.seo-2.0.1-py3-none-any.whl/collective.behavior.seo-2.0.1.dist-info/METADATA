@@ -1,0 +1,194 @@
+Metadata-Version: 2.1
+Name: collective.behavior.seo
+Version: 2.0.1
+Summary: An add-on for Plone
+Home-page: https://github.com/collective/collective.behavior.seo
+Author: Zest Software
+Author-email: info@zestsoftware.nl
+License: GPL version 2
+Keywords: Python Plone
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 5.2
+Classifier: Framework :: Plone :: 6.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: >=3.7
+License-File: LICENSE.GPL
+License-File: LICENSE.rst
+Requires-Dist: plone.api
+Requires-Dist: Products.GenericSetup
+Requires-Dist: setuptools
+Requires-Dist: z3c.jbot
+Provides-Extra: test
+Requires-Dist: plone.app.testing ; extra == 'test'
+Requires-Dist: plone.testing >=5.0.0 ; extra == 'test'
+Requires-Dist: plone.app.contenttypes ; extra == 'test'
+Requires-Dist: plone.app.robotframework[debug] ; extra == 'test'
+
+.. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+   If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+   This text does not appear on pypi or github. It is a comment.
+
+=======================
+collective.behavior.seo
+=======================
+
+This small behavior adds extra fields used for SEO optimisation.
+Inspired by collective.seo, but the data store now uses dexterity/behavior practice.
+
+
+Features
+--------
+
+Adds fields SEO Title, SEO Description, and Metatag Robots on an extra tab SEO on contenttypes where the behavior is activated.
+
+When the fields contain values, the ``<title>`` and ``<meta name='description'>`` in the ``<head>`` section will be replaced.
+Also a ``<meta name="robots">`` tag will be added.
+
+In a control panel you can give a list of valid combinations of robot tags: ``follow/nofollow``, ``index/noindex``.
+
+
+Translations
+------------
+
+This product has been translated into:
+
+- Dutch
+
+
+Installation
+------------
+
+Install collective.behavior.seo by adding it to your buildout::
+
+    [buildout]
+
+    ...
+
+    eggs =
+        collective.behavior.seo
+
+
+and then running ``bin/buildout``.
+Or install it with ``pip``.
+
+Activate the add'on in the Plone Contron Panel. Then go to Dexterity Types in the Plone Control Panel
+and activate this behavior on selected content types.
+
+
+Contribute
+----------
+
+- Issue Tracker: https://github.com/collective/collective.behavior.seo/issues
+- Source Code: https://github.com/collective/collective.behavior.seo
+
+
+License
+-------
+
+The project is licensed under the GPLv2.
+
+
+Contributors
+============
+
+- Zest Software, info@zestsoftware.nl
+
+This add'on is a combination of several SEO add'ons and improvements for Plone 5.1:
+
+- Title, description seo fields based on collective.seo https://github.com/collective/collective.seo
+  for Plone 5.1+
+
+
+Changelog
+=========
+
+
+2.0.1 (2024-01-25)
+------------------
+
+- Update Translations for 'nl' and add translations for 'de'
+  [1letter]
+
+
+2.0.0 (2023-03-14)
+------------------
+
+- Fix ValueError during editing when robot tags in control panel are not unique.
+  Fixes `issue 2 <https://github.com/collective/collective.behavior.seo/issues/2>`_.
+  [maurits]
+
+- Add Continuous Integration for supported Plone and Python combinations.
+  Uses tox, gh-actions, and `collective/tox-action <https://github.com/collective/tox-action>`_.
+  [maurits]
+
+- Drop support for Python 2.
+  Plone 5.2 and 6.0 on Python 3 are supported.
+  For older versions, use releases from the 1.x branch.
+  [maurits]
+
+
+1.0.2 (2023-03-14)
+------------------
+
+- Removed English locale.  I think there used to be a need for this long time ago, but not anymore, as far as I know.
+  [maurits]
+
+- Changed ``<head>`` to ``'head'`` in help text and translations.
+  ``<head>`` gets swallowed:
+  you got "the section of a page" and now "the 'head' section of a page".
+  [maurits]
+
+- Fixed broken html in edit form on Plone 6 due to Dutch typo.
+  We used ``<head`` and this made the Save/Cancel buttons show only on the SEO fieldset.
+  And this fieldset showed an extra footer.
+  [maurits]
+
+
+1.0.1 (2020-09-09)
+------------------
+
+- Make python3.8 compatible. [fredvd]
+
+
+1.0.0 (2020-08-17)
+------------------
+
+- Make python3 compatible. [erral]
+
+- Update uninstall profile. [fredvd]
+
+
+1.0b1 (2018-10-30)
+------------------
+
+- Add robots field, Add control panel form with configurable list of robot tag preset combinations for editors to pick from. [fredvd]
+
+- Don't generate robots vocabulary on every request. [fredvd, mauritsvanrees]
+
+- Fix implementer decorator on SEOFields behavior in python. The zcml registration was correct though. [fredvd]
+
+- Revert name changes.  [jladage]
+
+- Improve description of robots field.  [jladage]
+
+- Autopep8 and fix code-analysis feedback.  [jladage]
+
+
+1.0a1 (2018-10-12)
+------------------
+
+- Override update method on TitleViewlet instead of page_title, otherwise Site title still gets
+  appended to the overriden title.
+  [fredvd]
+
+- Basic version, only for Title and Description
+  [fredvd]
