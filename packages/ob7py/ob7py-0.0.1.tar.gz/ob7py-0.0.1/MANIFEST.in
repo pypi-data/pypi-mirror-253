@@ -1,0 +1,2 @@
+global-exclude .venv
+global-exclude __pycache__

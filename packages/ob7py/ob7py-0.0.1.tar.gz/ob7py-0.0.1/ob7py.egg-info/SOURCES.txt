@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+ob7py/__init__.py
+ob7py/dumbserver.py
+ob7py/iotest.py
+ob7py/ob7py.py
+ob7py/testprog.py
+ob7py.egg-info/PKG-INFO
+ob7py.egg-info/SOURCES.txt
+ob7py.egg-info/dependency_links.txt
+ob7py.egg-info/requires.txt
+ob7py.egg-info/top_level.txt
