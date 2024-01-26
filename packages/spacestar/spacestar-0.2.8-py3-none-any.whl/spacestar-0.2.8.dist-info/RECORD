@@ -1,0 +1,10 @@
+spacestar/__init__.py,sha256=G7zjG1_3JKYasJnr6m2xbd_jXE_eiih_pPNfSawSv0I,1482
+spacestar/app.py,sha256=xM2G3XjIjr5d9iWa4o1rMBktl9woSzhisYI6VcZGObE,9199
+spacestar/context.py,sha256=WAaWE6LtoN6yy_XxIyt8ODCAEyWtF-BCstZQRgUXONI,328
+spacestar/engine.py,sha256=NPo1cTg3ZHfcY4KLU6TuRGcAJe3D1RUMOigbNT6Ts3o,3775
+spacestar/initfolders.py,sha256=0jlDyIjsXP-iePSD-f0Ga3301uVOoYrOvxv997Nl1_w,1556
+spacestar/model.py,sha256=4ftS79pGhaWn9epmwA2-A7z4AWH9LVtAw2h8LZI8uuU,2401
+spacestar-0.2.8.dist-info/entry_points.txt,sha256=sNI4QTrj8tW_cuMNu8JUbMYu8lpIG-79DAkJq2_7dw8,180
+spacestar-0.2.8.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+spacestar-0.2.8.dist-info/METADATA,sha256=LhE5928ju72DQ7JSikGILXRtqS-lkLnsq7GcrZDfWTk,792
+spacestar-0.2.8.dist-info/RECORD,,
