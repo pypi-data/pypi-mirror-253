@@ -1,0 +1,53 @@
+# MyCreds Project
+1/25/2024 V1.0
+
+
+## Project Description
+The MyCreds project is a python program developed for WatSPEED internal use. Given a course and section number, the program scrapes the student portal (DestinyOne) for a list of students who passed and their data. The program also produces files needed to be uploaded to MyCreds: MyCredsCertificate.csv, and PDF certificates for each passing student.
+
+
+## Setup
+1. Download the [latest version of Python](https://www.python.org/downloads/). Run the Python installer. Click repair if you've already installed Python.
+2. Open command prompt and run `pip install mycreds-package`
+
+
+## How to run the program
+1. In command prompt, run  `mycreds-script`. The program will prompt you for a number of inputs which are detailed in the following steps.
+2. Enter a valid course and section number. Course numbers must be 4 digits, and section numbers must be 3 digits. These values are not checked until web navigation.
+3. Provide your WatIAM credentials. Your password is not displayed for your security.
+4. The program scrapes D1, processes the data, then generates a CSV. Find your MyCredsCertificate.csv in the user's desktop folder. The program prompts you for a cert type. Enter 'bronze', 'silver', or 'gold' without the quotations.
+5. The program generates a folder of PDF certificates called newBatch located in the user's desktop folder. 
+
+
+## Follow-up and Notes
+MyCredsCertificate.csv is overwritten every time you run the program. However, the newBatch folder is not and the new PDF certificates are added to this folder. Only PDFs with the same file name are overwritten. Before running the script again, you should clean up the newBatch folder after each use by:
+- Moving the contents of the newBatch folder to another folder,
+- Renaming the newBatch folder,
+- Deleting the newBatch folder itself, or
+- Deleting the contents of the newBatch folder
+
+
+## Next Steps
+Possibly provide auto-login feature where getCredentials detects whether or not a creds.txt file exists and pulls personal creds to perform SSO login. This way, the user does not have to login every time.
+
+
+## Notes
+This section is for less important notes, finer details, and strange behaviours.
+
+### My Program Crashed!
+This is pretty rare, but it happens about 5% of the time, especially during webscraping. This is caused by the page rendering slower than the navigation occurs. This is not a concern, simply run the program again.
+
+### Student Full Name
+If a student's name exceeds approximately 60 characters, the cert may cut off the student's name.
+
+### Course Name
+The course name is split into 2 lines IF the course name has at least 3 words and is longer than 20 characters. The upper line will always contain more characters in this case. If the course name has greater than 60 characters, the font size will be reduced. If the course name exceeds approximately 115 characters, the cert may cut off the course name.
+
+### Why does the cert quality look different than the old ones in a bad way?
+I was provided .bmp files of the template certificates, which I converted to .jpg files for usability. This conversion may have reduced quality. The certificate is just text over the .jpg file, so the certificate may look slightly different.
+
+### Why do the bronze certs not have a watermark?
+The .bmp image provided to me did not have the watermark on the bronze template. If you have a watermarked .jpg of a blank bronze certificate template, feel free to replace the bronzeCertTemp.jpg file in the templates folder. Make sure to give it the same name.
+
+### Contact
+If you have additional questions, feel free to contact the developer at d78wong@uwaterloo.ca. This is my first released project and I hope it'll be useful for a long time to come! :D

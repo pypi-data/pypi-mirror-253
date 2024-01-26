@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=58.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mycreds_package"
+requires-python = ">=3.12"
+authors = [
+  { name="David Wong", email="d78wong@uwaterloo.ca" },
+]
+version = "1.0"
+description = "MyCreds Project Package"
+dependencies = [
+  "reportlab",
+  "selenium"
+]
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/wongd1532/MyCreds/"
+
+[project.scripts]
+mycreds-script = "mycreds_package.MyCreds:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mycreds_package = [
+    "certMaker/fonts/BureauGrotCondensed-Bold.ttf",
+    "certMaker/fonts/LeMondeLivreStd-Demi.ttf",
+    "certMaker/fonts/Typ1451Std-Regular.ttf",
+    "certMaker/templates/bronzeCertTemp.jpg",
+    "certMaker/templates/silverCertTemp.jpg",
+    "certMaker/templates/goldCertTemp.jpg"
+]
