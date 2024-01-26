@@ -1,0 +1,11 @@
+aio_microservice-0.1.1.dist-info/METADATA,sha256=gt22OCXErMwc5gp5KJg0V-xL3mar8DiAqQ_KMnzuLFY,2862
+aio_microservice-0.1.1.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+aio_microservice-0.1.1.dist-info/entry_points.txt,sha256=Rls-lftIGi5806_shPrgcyv8OPZcRJMKKhQjr2DUOBg,69
+aio_microservice-0.1.1.dist-info/licenses/LICENSE,sha256=ZSHNidXq-q6UtiPtJ7eknmvxgsbXYeSVpuW2jJ4pVlk,1065
+aio_microservice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aio_microservice/__main__.py,sha256=meKnLDnhR9ogNUGjt--t15LfBcUHltiS-6nMDUQ5L4I,77
+aio_microservice/__version__.py,sha256=8oAxKUG747GUokmxjkrWejyJa5yPNEsoJDlXxoedxTw,21
+aio_microservice/cli.py,sha256=i7pBOPmo-fpNpKtSNqtm04SwzmarXIRabh7Kenorkys,51
+aio_microservice/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aio_microservice/service.py,sha256=koStZ13UIEennSz-mEWgxpMrjzRCgAGMnDUAVJcWAjE,1632
+aio_microservice-0.1.1.dist-info/RECORD,,

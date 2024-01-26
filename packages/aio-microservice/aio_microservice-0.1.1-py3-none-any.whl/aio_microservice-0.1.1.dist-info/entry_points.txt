@@ -1,0 +1,3 @@
+[console_scripts]
+aio-microservice = aio_microservice.__main__:main
+
