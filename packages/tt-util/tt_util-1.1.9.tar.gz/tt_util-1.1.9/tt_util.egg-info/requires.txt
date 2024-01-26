@@ -1,0 +1,6 @@
+dnspython
+pyyaml
+paramiko
+pycryptodome
+qiniu
+docker
