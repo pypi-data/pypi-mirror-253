@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gopt
+Version: 0.0.3
+Summary: implement of local laplace filter algorithm
+Author: xgh
+Author-email: xgh <1612158596@qq.com>
+License: Apache 2.0
+Keywords: optimization
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+License-File: license.txt
+Requires-Dist: numpy
+Requires-Dist: tqdm

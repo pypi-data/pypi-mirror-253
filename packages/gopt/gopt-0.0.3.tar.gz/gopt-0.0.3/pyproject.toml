@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = ["main.py","setup.py","help.txt"]
+[project]
+name = "gopt"
+version = "0.0.3"
+authors = [
+    { name = 'xgh', email = '1612158596@qq.com' }
+]
+description = "implement of local laplace filter algorithm"
+requires-python = ">=3.5"
+license = { text = "Apache 2.0" }
+keywords = [
+    'optimization',
+]
+classifiers = [
+    'Intended Audience :: Developers',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3'
+]
+dependencies = [
+    'numpy',
+    'tqdm'
+]
