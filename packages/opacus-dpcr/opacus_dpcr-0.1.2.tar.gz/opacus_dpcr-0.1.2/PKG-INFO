@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: opacus_dpcr
+Version: 0.1.2
+Summary: Opacus-DPCR extended by Opacus, Using DPCR to obtain better accuracy...
+Home-page: https://github.com/imcjp/Opacus-DPCR
+Author: Cai Jianping
+Author-email: jpingcai@163.com
+License: MIT Licence
+Keywords: opacus,dpcr,DPLearning
+Platform: any
+License-File: LICENSE
+Requires-Dist: dpcrpy
+Requires-Dist: torch
+Requires-Dist: opacus==1.1.2
+
+We extend Opacus for private learning and design a new framework Opacus-DPCR to support private learning with differential privacy continuous data release (DPCR). Opacus-DPCR integrates various DPCR models and keeps high compatibility with the original Opacus framework.
