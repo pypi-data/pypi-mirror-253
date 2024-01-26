@@ -1,0 +1,155 @@
+on:
+  push:
+    branches: ["main"]
+    tags-ignore: ['v*']
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+jobs:
+  common-tests:
+    runs-on: ubuntu-latest
+    name: run-tests-common
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.7","3.8","3.9","3.10","3.11","3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install nerfbaselines
+        run: |
+          pip install --upgrade pip
+          pip install -e .
+          pip install pytest typeguard
+      - name: Run tests
+        run: pytest -rA
+      - name: Test if README results are up to date
+        run: |
+          for dataset in blender mipnerf360 nerfstudio; do
+            results=$(python -m nerfbaselines render-dataset-results --dataset $dataset --method-links results) python -c "import os;assert os.environ['results'] in open('README.md').read(), 'README.md is out of date. Please run \'python -m nerfbaselines render-dataset-results --dataset $dataset --method-links results\' and add the output to README.md file'"
+          done
+      - name: Install dev-extras
+        id: dev-extras
+        if: ${{ matrix.python == '3.9' }}
+        run: |
+          pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip install 'jax[cpu]'
+          pip install -e ".[extras]"
+      - name: Run dev-extras tests
+        run: pytest --run-extras
+        if: ${{ steps.dev-extras.outcome == 'success' }}
+
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      methods: ${{ steps.data-step.outputs.methods }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: Install nerfbaselines
+        run: |
+          pip install --upgrade pip
+          pip install -e .
+          pip install pytest typeguard
+      - name: Run tests
+        run: pytest -rA
+      - id: data-step
+        run: |
+          pip install --upgrade pip
+          pip install -e .
+          python -c 'import nerfbaselines.registry as r; import json; print("methods=" + json.dumps([x for x in r.supported_methods() if not ":" in x]))' >> $GITHUB_OUTPUT
+
+  docker-tests:
+    runs-on: ubuntu-latest
+    name: run-tests-docker
+    needs: setup
+    strategy:
+      # fail-fast: false
+      matrix:
+        # method: [instant-ngp,gaussian-splatting,tetra-nerf,mipnerf360,nerfacto]
+        method: ${{ fromJson(needs.setup.outputs.methods) }}
+    steps:
+      - name: Free root space
+        uses: almahmoud/free-root-space@main
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: Install nerfbaselines
+        run: |
+          pip install --upgrade pip
+          pip install -e .
+          pip install pytest typeguard
+      - name: Run tests
+        run: |
+          export TCNN_CUDA_ARCHITECTURES="80"
+          export TORCH_CUDA_ARCH_LIST="8.0"
+          export CUDAARCHS="80"
+          method_name="$(python -c 'import re;print(re.escape("${{ matrix.method }}"))').*"
+          pytest -s --run-docker --method-regex "$method_name" -rA
+          # Second run will use the cached env
+          pytest -s --run-docker --method-regex "$method_name" -rA
+
+  apptainer-tests:
+    runs-on: ubuntu-latest
+    name: run-tests-apptainer
+    needs: setup
+    strategy:
+      # fail-fast: false
+      matrix:
+        # method: [instant-ngp,gaussian-splatting,tetra-nerf,mipnerf360,nerfacto]
+        method: ${{ fromJson(needs.setup.outputs.methods) }}
+    steps:
+      - uses: eWaterCycle/setup-apptainer@v2
+        name: Install apptainer
+        with:
+          apptainer-version: 1.2.5
+      - name: Free root space
+        uses: almahmoud/free-root-space@main
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: Install nerfbaselines
+        run: |
+          pip install --upgrade pip
+          pip install -e .
+          pip install pytest typeguard
+      - name: Run tests
+        run: |
+          export TCNN_CUDA_ARCHITECTURES="80"
+          export TORCH_CUDA_ARCH_LIST="8.0"
+          export CUDAARCHS="80"
+          method_name="$(python -c 'import re;print(re.escape("${{ matrix.method }}"))').*"
+          pytest -s --run-apptainer --method-regex "$method_name" -rA
+          # Second run will use the cached env
+          pytest -s --run-apptainer --method-regex "$method_name" -rA
+
+  dataset-tests:
+    runs-on: ubuntu-latest
+    name: test-datasets
+    needs: setup
+    strategy:
+      matrix:
+        dataset: ["blender/lego", "mipnerf360/garden", "nerfstudio/poster"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: Install nerfbaselines
+        run: |
+          pip install --upgrade pip
+          pip install -e .
+          pip install pytest typeguard
+      - name: Test datasets
+        run: |
+          scene_name="${{ matrix.dataset }}"
+          scene_name="${scene_name##*/}"
+          nerfbaselines download-dataset '${{ matrix.dataset }}' -o /tmp/$scene_name
+          python -c "import nerfbaselines.datasets as d;f=set(['color']);k=d.load_dataset('/tmp/$scene_name', split='train', features=f); k.load_features(f)"
+          python -c "import nerfbaselines.datasets as d;f=set(['color']);k=d.load_dataset('/tmp/$scene_name', split='test', features=f); k.load_features(f)"
