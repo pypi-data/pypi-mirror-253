@@ -1,0 +1,6 @@
+ionic_langchain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ionic_langchain/prompt.py,sha256=RnaGLmRN7d-pdR_hx44rlM2njYMLVJ9mFkLRzrDc9yg,1955
+ionic_langchain/tool.py,sha256=gKEz_goVbraJTbm5mWuRNKuuRPvZ49IpAwfKqzudwDk,2827
+ionic_langchain-0.2.1.dist-info/METADATA,sha256=_mRxzOMmFjeEf3uS7A3AfNz04coD3Q5GC7Rp4c513LA,2591
+ionic_langchain-0.2.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+ionic_langchain-0.2.1.dist-info/RECORD,,
