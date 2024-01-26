@@ -1,0 +1,5 @@
+setup.py
+MyFirstCalcCA.egg-info/PKG-INFO
+MyFirstCalcCA.egg-info/SOURCES.txt
+MyFirstCalcCA.egg-info/dependency_links.txt
+MyFirstCalcCA.egg-info/top_level.txt
