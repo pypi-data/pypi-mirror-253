@@ -1,0 +1,2 @@
+[console_scripts]
+npr-news-now = npr_news_now_cli.listen:main
