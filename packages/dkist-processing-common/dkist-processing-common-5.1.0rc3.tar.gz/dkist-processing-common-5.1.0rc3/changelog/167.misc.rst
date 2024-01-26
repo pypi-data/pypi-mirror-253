@@ -1,0 +1,1 @@
+Update minimum version of pillow to address security vulnerability.
