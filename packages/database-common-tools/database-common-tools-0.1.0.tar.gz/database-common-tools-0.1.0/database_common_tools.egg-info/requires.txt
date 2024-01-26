@@ -1,0 +1,6 @@
+requests
+jsonpath
+pymongo
+redis
+setuptools
+kafka-python
