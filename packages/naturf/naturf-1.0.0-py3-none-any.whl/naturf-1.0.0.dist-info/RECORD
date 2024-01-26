@@ -1,0 +1,16 @@
+naturf/__init__.py,sha256=ShXQBVjyiSOHxoQJS2BvNG395W4KZfqMxZWBAR0MZrE,22
+naturf/config.py,sha256=_X0yxMKw1QUtTfksek_ysGKJBMobpFV2V2CKSq2D4KQ,5661
+naturf/driver.py,sha256=LMBJU8_UiFCMRwAxm50RaH855eJQr-pt-DLZdgkfhh4,2212
+naturf/nodes.py,sha256=Y2pdrDOKupCYd1sCXVvlomPeMQg88d4J4f0qZevAm44,48737
+naturf/output.py,sha256=f2eJSfZh2T4PzRB5y57sSpiu-nGyuNiq2LRtJZkLGfA,14565
+naturf/data/C-5.cpg,sha256=FG1nif_gM6UpfBrQRuamLuNTGbhrAhRE8FtuoqqKH0o,6
+naturf/data/C-5.dbf,sha256=v6jbP2qZ9PtJzpVt4-LOe7W2WOC6gBV01P7qqn0Mgyo,307206
+naturf/data/C-5.prj,sha256=poB6VWgaOiqwJA_97Ak_96lV3bU-P64dB4xp2Tjsqn8,460
+naturf/data/C-5.sbn,sha256=83L9IOeHy0wnVk7Ugv9TzCvISijtU_MxM_2qF3OCHTc,2772
+naturf/data/C-5.sbx,sha256=Xev2b3qsqSu07ZrCzeqtbslIPobnpunZSWLDX-pf_EQ,284
+naturf/data/C-5.shp,sha256=_fQ2gZdwEm6mB8GsaZZvb2xRE5W3zgzDEIrDDj6hCdA,64696
+naturf/data/C-5.shx,sha256=K7t2f2kuJhLsIZJIc3Ld6CTGRcQk0LtJym14ckrtJXA,2180
+naturf-1.0.0.dist-info/METADATA,sha256=_XV33O9dxEFTYXw4Qek6UxORGEyPzMfAX6B_-HbnW8o,4296
+naturf-1.0.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+naturf-1.0.0.dist-info/licenses/LICENSE,sha256=2-LZZubNKZk5w0LcbAxbQF86CDOCBoDAnH9-UdeRj4A,1854
+naturf-1.0.0.dist-info/RECORD,,
