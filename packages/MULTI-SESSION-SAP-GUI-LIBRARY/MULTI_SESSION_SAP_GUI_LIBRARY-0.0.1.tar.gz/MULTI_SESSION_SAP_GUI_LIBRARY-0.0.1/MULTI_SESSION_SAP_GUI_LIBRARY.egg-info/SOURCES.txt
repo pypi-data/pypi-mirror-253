@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+MULTI_SESSION_SAP_GUI_LIBRARY.egg-info/PKG-INFO
+MULTI_SESSION_SAP_GUI_LIBRARY.egg-info/SOURCES.txt
+MULTI_SESSION_SAP_GUI_LIBRARY.egg-info/dependency_links.txt
+MULTI_SESSION_SAP_GUI_LIBRARY.egg-info/top_level.txt
+multi_session/sap_gui.py
