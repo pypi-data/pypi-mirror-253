@@ -1,0 +1,21 @@
+# .github/workflows/publish-to-pypi.yml
+name: publish-to-pypi
+on:
+  release:
+    types: [created]
+
+jobs:
+  pypi-publish:
+    name: upload release to PyPI
+    runs-on: ubuntu-latest
+    # Specifying a GitHub environment is optional, but strongly encouraged
+    environment: release
+    permissions:
+      # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write
+    steps:
+      - name: Check out code # let the GitHub Actions runner have access to repository files,
+        uses: actions/checkout@v2
+
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
