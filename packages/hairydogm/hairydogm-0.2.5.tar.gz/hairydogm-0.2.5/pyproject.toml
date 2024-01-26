@@ -1,0 +1,99 @@
+[project]
+name = "hairydogm"
+dynamic = ["version"]
+description = "Some utilities from AIOgram adapted to be used with Hydrogram."
+authors = [{ name = "Hitalo" }]
+dependencies = [
+    "hydrogram>=0.1.4",
+    "babel>=2.14.0",
+    "magic-filter>=1.0.12",
+    "pydantic>=2.5.3",
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+keywords = ["telegram", "bot", "asyncio", "hydrogram", "hairydogm", "aiogram"]
+
+[tool.hatch.version]
+path = "src/hairydogm/__init__.py"
+
+[project.urls]
+homepage = "https://github.com/HitaloM/hairydogm"
+tracker = "https://github.com/HitaloM/hairydogm/issues"
+community = "https://t.me/HitaloProjects"
+source = "https://github.com/HitaloM/hairydogm"
+documentation = "https://hairydogm.readthedocs.io/"
+
+[project.optional-dependencies]
+docs = [
+    "Sphinx>=7.2.6",
+    "furo>=2023.9.10",
+    "sphinx-autobuild>=2021.3.14",
+    "sphinx-copybutton>=0.5.2",
+    "pygments>=2.17.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = ["pre-commit>=3.6.0", "ruff>=0.1.14"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.ruff]
+line-length = 99
+target-version = "py312"
+select = [
+    "I",    # isort
+    "E",    # pycodestyle
+    "W",    # pycodestyle
+    "UP",   # pyupgrade
+    "F",    # pyflakes
+    "PERF", # perflint
+    "N",    # pep8-naming
+    "RUF",  # ruff
+    "FURB", # refurb
+    "SIM",  # flake8-simplify
+    "RET",  # flake8-return
+    "C4",   # flake8-comprehensions
+    "PTH",  # flake8-use-pathlib
+    "G",    # flake8-logging-format
+    "TID",  # flake8-tidy-imports
+]
+preview = true
+
+[tool.ruff.isort]
+known-first-party = ["src"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hairydogm"]
+
+[tool.numpydoc_validation]
+checks = [
+    "all",  # report on all checks, except the below
+    "GL08",
+    "SA01",
+    "EX01",
+]
