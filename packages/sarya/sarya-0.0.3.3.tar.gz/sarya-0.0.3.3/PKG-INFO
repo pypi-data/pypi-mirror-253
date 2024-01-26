@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sarya
+Version: 0.0.3.3
+Summary: Sarya SDK to ingerate your Marid with Sarya Users
+Author: Khalid Alrasheed
+Author-email: khalid@cycls.io
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: certifi (>=2023.11.17,<2024.0.0)
+Requires-Dist: httpx (>=0.25.2,<0.26.0)
+Requires-Dist: pydantic (>=2.5.2,<3.0.0)
+Requires-Dist: python-socketio[asyncio-client] (>=5.10.0,<6.0.0)
