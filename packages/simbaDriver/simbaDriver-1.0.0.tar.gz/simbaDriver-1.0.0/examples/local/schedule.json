@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NSSAC/SIMBA_driver/master/schema/schedule.json",
+  "schedule": [
+    {
+      "name": "SlurmModule1",
+      "command": "../bin/application.sh",
+      "priority": "Infinity",
+      "updateCommonData": true,
+      "startTick": 0,
+      "tickIncrement": 1,
+      "moduleData": {
+        "mode": "preStep"
+      },
+      "type": "parsl"
+    },
+    {
+      "name": "SlurmModule2",
+      "command": "../bin/application.sh",
+      "priority": 10,
+      "startTick": 0,
+      "tickIncrement": 2,
+      "type": "parsl"
+    }
+  ],
+  "commonData": {
+    "dbHost": "128.164.3.12"
+  }
+}

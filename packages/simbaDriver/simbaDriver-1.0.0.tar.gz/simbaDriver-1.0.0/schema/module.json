@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://raw.githubusercontent.com/NSSAC/SIMBA_driver/master/schema/module.json",
+  "$vocabulary": {
+    "https://json-schema.org/draft/2019-09/meta/applicator": true,
+    "https://json-schema.org/draft/2019-09/meta/content": true,
+    "https://json-schema.org/draft/2019-09/meta/core": true,
+    "https://json-schema.org/draft/2019-09/meta/format": true,
+    "https://json-schema.org/draft/2019-09/meta/validation": true,
+    "https://json-schema.org/draft/2019-09/meta/meta-data": true
+  },
+  "title": "SIMBA Module Configuration",
+  "description": "The schema describes the configuration file provided to the module.",
+  "type": "object",
+  "required": [
+    "mode",
+    "currentTick",
+    "currentTime"
+  ],
+  "properties": {
+    "mode": {
+      "title": "Mode",
+      "description": " The mode of execution of the module.",
+      "type": "string",
+      "enum": [
+        "start",
+        "step",
+        "end"
+      ]
+    },
+    "statusFile": {
+      "title": "Status File",
+      "description": "The file in which the return status, updated common, and module data is expected.",
+      "type": "string"
+    },
+    "lastExecutedTick": {
+      "title": "Last Executed Tick",
+      "description": " The last executed tick (not provided for mode: start).",
+      "type": "number",
+      "multipleOf": 1
+    },
+    "lastExecutedTime": {
+      "title": "Last Executed Date Time",
+      "description": " The last executed date time in ISO format (not provided for mode: start).",
+      "type": "string",
+      "format": "date-time"
+    },
+    "currentTick": {
+      "title": "Current Tick",
+      "description": " The current tick.",
+      "type": "number",
+      "multipleOf": 1
+    },
+    "currentTime": {
+      "title": "Current Date Time",
+      "description": "The current date time in ISO format.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "targetTick": {
+      "title": "Target Tick",
+      "description": "The target tick (not provided for modes: start, end).",
+      "type": "number",
+      "multipleOf": 1
+    },
+    "targetTime": {
+      "title": "Target Date Time",
+      "description": "The target date time in ISO format (not provided for modes: start, end).",
+      "type": "string",
+      "format": "date-time"
+    },
+    "commonData": {
+      "title": "Common Data",
+      "description": "Common data provided to all modules upon execution.",
+      "type": "object"
+    },
+    "moduleData": {
+      "title": "Module specific Data",
+      "description": "Module specific data taken from the module schedule.",
+      "type": "object"
+    }
+  }
+}

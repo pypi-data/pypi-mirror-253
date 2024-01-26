@@ -1,0 +1,643 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://raw.githubusercontent.com/NSSAC/SIMBA_driver/master/schema/schedule.json",
+  "$vocabulary": {
+    "https://json-schema.org/draft/2019-09/meta/applicator": true,
+    "https://json-schema.org/draft/2019-09/meta/content": true,
+    "https://json-schema.org/draft/2019-09/meta/core": true,
+    "https://json-schema.org/draft/2019-09/meta/format": true,
+    "https://json-schema.org/draft/2019-09/meta/validation": true,
+    "https://json-schema.org/draft/2019-09/meta/meta-data": true
+  },
+  "definitions": {
+    "integer": {
+      "$id": "integer",
+      "title": "Integer",
+      "$$target": [
+        "#/definitions/integer"
+      ],
+      "description": "An integer",
+      "type": "number",
+      "multipleof": 1
+    },
+    "integerTuple": {
+      "$id": "integerTuple",
+      "title": "Integer Tuple",
+      "$$target": [
+        "#/definitions/integerTuple"
+      ],
+      "description": "A tuple of 2 integers",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/integer"
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "executor": {
+      "$id": "executor",
+      "title": "Executor",
+      "$$target": [
+        "#/definitions/executor"
+      ],
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "Executor: https://parsl.readthedocs.io/en/stable/stubs/parsl.executors.HighThroughputExecutor.html#parsl.executors.HighThroughputExecutor",
+          "const": "HighThroughputExecutor"
+        },
+        "label": {
+          "type": "string",
+          "description": "Label for this executor instance.",
+          "default": "HighThroughputExecutor"
+        },
+        "provider": {
+          "$ref": "#/definitions/provider"
+        },
+        "launch_cmd": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Command line string to launch the process_worker_pool from the provider. The command line string will be formatted with appropriate values for the following values (debug, task_url, result_url, cores_per_worker, nodes_per_block, heartbeat_period ,heartbeat_threshold, logdir).",
+          "default": "null"
+        },
+        "address": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "An address to connect to the main Parsl process which is reachable from the network in which workers will be running. This field expects an IPv4 address (xxx.xxx.xxx.xxx). Most login nodes on clusters have several network interfaces available, only some of which can be reached from the compute nodes. This field can be used to limit the executor to listen only on a specific interface, and limiting connections to the internal network. By default, the executor will attempt to enumerate and connect through all possible addresses. Setting an address here overrides the default behavior.",
+          "default": "null"
+        },
+        "worker_ports": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Specify the ports to be used by workers to connect to Parsl. If this option is specified, worker_port_range will not be honored.",
+          "default": "null"
+        },
+        "worker_port_range": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/integerTuple"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Worker ports will be chosen between the two integers provided.",
+          "default": "[54000, 55000]"
+        },
+        "interchange_port_range": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/integerTuple"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Port range used by Parsl to communicate with the Interchange.",
+          "default": "[55000, 56000]"
+        },
+        "storage_access": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/storageAccess"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "",
+          "default": "null"
+        },
+        "working_dir": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Working dir to be used by the executor.",
+          "default": "null"
+        },
+        "worker_debug": {
+          "type": "boolean",
+          "description": "Enables worker debug logging.",
+          "default": "False"
+        },
+        "cores_per_worker": {
+          "type": "number",
+          "description": "cores to be assigned to each worker. Oversubscription is possible by setting cores_per_worker < 1.0.",
+          "default": "1.0"
+        },
+        "mem_per_worker": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "GB of memory required per worker. If this option is specified, the node manager will check the available memory at startup and limit the number of workers such that the there’s sufficient memory for each worker.",
+          "default": "null"
+        },
+        "max_workers": {
+          "oneOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "const": "infinity"
+            }
+          ],
+          "description": "Caps the number of workers launched per node.",
+          "default": "infinity"
+        },
+        "cpu_affinity": {
+          "type": "string",
+          "description": "Whether or how each worker process sets thread affinity. Options include “none” to forgo any CPU affinity configuration, “block” to assign adjacent cores to workers (ex: assign 0-1 to worker 0, 2-3 to worker 1), and “alternating” to assign cores to workers in round-robin (ex: assign 0,2 to worker 0, 1,3 to worker 1). The “block-reverse” option assigns adjacent cores to workers, but assigns the CPUs with large indices to low index workers (ex: assign 2-3 to worker 1, 0,1 to worker 2)",
+          "default": "none"
+        },
+        "available_accelerators": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/integer"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ],
+          "description": "Accelerators available for workers to use. Each worker will be pinned to exactly one of the provided accelerators, and no more workers will be launched than the number of accelerators. Either provide the list of accelerator names or the number available. If a number is provided, Parsl will create names as integers starting with 0.",
+          "default": "[]"
+        },
+        "prefetch_capacity": {
+          "$ref": "#/definitions/integer",
+          "description": "Number of tasks that could be prefetched over available worker capacity. When there are a few tasks (<100) or when tasks are long running, this option should be set to 0 for better load balancing.",
+          "default": "0"
+        },
+        "heartbeat_threshold": {
+          "$ref": "#/definitions/integer",
+          "description": "Seconds since the last message from the counterpart in the communication pair: (interchange, manager) after which the counterpart is assumed to be un-available.",
+          "default": "120"
+        },
+        "heartbeat_period": {
+          "$ref": "#/definitions/integer",
+          "description": "Number of seconds after which a heartbeat message indicating liveness is sent to the counterpart (interchange, manager). ",
+          "default": "30"
+        },
+        "poll_period": {
+          "$ref": "#/definitions/integer",
+          "description": "Timeout period to be used by the executor components in milliseconds. Increasing poll_periods trades performance for cpu efficiency.",
+          "default": "10"
+        },
+        "address_probe_timeout": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Managers attempt connecting over many different addresses to determine a viable address. This option sets a time limit in seconds on the connection attempt. Default of None implies 30s timeout set on worker.",
+          "default": "null"
+        },
+        "worker_logdir_root": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "n case of a remote file system, specify the path to where logs will be kept.",
+          "default": "null"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "slurmProvider": {
+      "$id": "slurmProvider",
+      "title": "Slurm Provider",
+      "$$target": [
+        "#/definitions/slurmProvider"
+      ],
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "Slurm Provider: https://parsl.readthedocs.io/en/stable/stubs/parsl.providers.SlurmProvider.html#parsl.providers.SlurmProvider",
+          "const": "SlurmProvider"
+        },
+        "partition": {
+          "type": "string",
+          "description": "Slurm partition to request blocks from. If unspecified or None, no partition slurm directive will be specified."
+        },
+        "account": {
+          "type": "string",
+          "description": "Slurm account to which to charge resources used by the job. If unspecified or None, the job will use the user’s default account."
+        },
+        "qos": {
+          "type": "string",
+          "description": "Slurm queue to place job in. If unspecified or None, no queue slurm directive will be specified."
+        },
+        "constraint": {
+          "type": "string",
+          "description": "Slurm job constraint, often used to choose cpu or gpu type. If unspecified or None, no constraint slurm directive will be added."
+        },
+        "channel": {
+          "$ref": "#/definitions/channel",
+          "description": "Channel for accessing this provider. Possible channels include LocalChannel (the default), SSHChannel, or SSHInteractiveLoginChannel."
+        },
+        "nodes_per_block": {
+          "$ref": "#/definitions/integer",
+          "description": "Nodes to provision per block."
+        },
+        "cores_per_node": {
+          "$ref": "#/definitions/integer",
+          "description": "Specify the number of cores to provision per node. If set to None, executors will assume all cores on the node are available for computation. Default is None."
+        },
+        "mem_per_node": {
+          "$ref": "#/definitions/integer",
+          "description": "Specify the real memory to provision per node in GB. If set to None, no explicit request to the scheduler will be made. Default is None."
+        },
+        "init_blocks": {
+          "$ref": "#/definitions/integer",
+          "description": "Initial number of blocks.",
+          "default": 1
+        },
+        "min_blocks": {
+          "$ref": "#/definitions/integer",
+          "description": "Minimum number of blocks to maintain.",
+          "default": 0
+        },
+        "max_blocks": {
+          "$ref": "#/definitions/integer",
+          "description": "Maximum number of blocks to maintain."
+        },
+        "parallelism": {
+          "type": "number",
+          "description": "Ratio of provisioned task slots to active tasks. A parallelism value of 1 represents aggressive scaling where as many resources as possible are used; parallelism close to 0 represents the opposite situation in which as few resources as possible (i.e., min_blocks) are used."
+        },
+        "walltime": {
+          "type": "string",
+          "description": "Walltime requested per block in HH:MM:SS.",
+          "default": "00:10:00"
+        },
+        "scheduler_options": {
+          "type": "string",
+          "description": "String to prepend to the #SBATCH blocks in the submit script to the scheduler.",
+          "default": ""
+        },
+        "regex_job_id": {
+          "type": "string",
+          "description": "The regular expression used to extract the job ID from the sbatch standard output. The default is r'Submitted batch job (?P<id>\\S*)', where id is the regular expression symbolic group for the job ID.",
+          "default": "Submitted batch job (?P<id>\\S*)"
+        },
+        "worker_init": {
+          "type": "string",
+          "description": "Command to be run before starting a worker, such as ‘module load Anaconda; source activate env’."
+        },
+        "exclusive": {
+          "type": "boolean",
+          "default": true,
+          "description": "Requests nodes which are not shared with other running jobs."
+        },
+        "move_files": {
+          "type": "boolean",
+          "default": true,
+          "description": "should files be moved? by default, Parsl will try to move files.)"
+        },
+        "launcher": {
+          "$ref": "#/definitions/launcher",
+          "description": "Launcher for this provider. Possible launchers include SingleNodeLauncher (the default), SrunLauncher, or AprunLauncher"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "localProvider": {
+      "$id": "localProvider",
+      "title": "Local Provider",
+      "$$target": [
+        "#/definitions/localProvider"
+      ],
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "Slurm Provider: https://parsl.readthedocs.io/en/stable/stubs/parsl.providers.SlurmProvider.html#parsl.providers.LocalProvider",
+          "const": "LocalProvider"
+        },
+        "channel": {
+          "$ref": "#/definitions/channel",
+          "description": "Channel for accessing this provider. Possible channels include LocalChannel (the default), SSHChannel, or SSHInteractiveLoginChannel."
+        },
+        "nodes_per_block": {
+          "$ref": "#/definitions/integer",
+          "description": "Nodes to provision per block."
+        },
+        "init_blocks": {
+          "$ref": "#/definitions/integer",
+          "description": "Initial number of blocks.",
+          "default": 1
+        },
+        "min_blocks": {
+          "$ref": "#/definitions/integer",
+          "description": "Minimum number of blocks to maintain.",
+          "default": 0
+        },
+        "max_blocks": {
+          "$ref": "#/definitions/integer",
+          "description": "Maximum number of blocks to maintain.",
+          "default": 1
+        },
+        "parallelism": {
+          "type": "number",
+          "description": "Ratio of provisioned task slots to active tasks. A parallelism value of 1 represents aggressive scaling where as many resources as possible are used; parallelism close to 0 represents the opposite situation in which as few resources as possible (i.e., min_blocks) are used."
+        },
+        "worker_init": {
+          "type": "string",
+          "description": "Command to be run before starting a worker, such as ‘module load Anaconda; source activate env’."
+        },
+        "move_files": {
+          "type": "boolean",
+          "default": true,
+          "description": "should files be moved? by default, Parsl will try to move files.)"
+        },
+        "launcher": {
+          "$ref": "#/definitions/singleNodeLauncher",
+          "description": "Launcher for this provider. Possible launchers include SingleNodeLauncher"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "provider": {
+      "$id": "provider",
+      "title": "Provider",
+      "$$target": [
+        "#/definitions/provider"
+      ],
+      "description": "Provider: https://parsl.readthedocs.io/en/stable/reference.html#providers",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/slurmProvider"
+        },
+        {
+          "$ref": "#/definitions/localProvider"
+        }
+      ]
+    },
+    "srunLauncher": {
+      "$id": "srunLauncher",
+      "title": "Srun Launcher",
+      "$$target": [
+        "#/definitions/srunLauncher"
+      ],
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "srun Launcher: https://parsl.readthedocs.io/en/stable/stubs/parsl.launchers.SrunLauncher.html#parsl.launchers.SrunLauncher",
+          "const": "SrunLauncher"
+        },
+        "debug": {
+          "type": "boolean",
+          "default": true
+        },
+        "overrides": {
+          "description": "This string will be passed to the srun launcher. Default: ''",
+          "type": "string",
+          "default": ""
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "singleNodeLauncher": {
+      "$id": "singleNodeLauncher",
+      "title": "Single Node Launcher",
+      "$$target": [
+        "#/definitions/singleNodeLauncher"
+      ],
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "Single Node Launcher Launcher: https://parsl.readthedocs.io/en/stable/stubs/parsl.launchers.SingleNodeLauncher.html#parsl.launchers.SingleNodeLauncher",
+          "const": "SingleNodeLauncher"
+        },
+        "debug": {
+          "type": "boolean",
+          "default": true
+        },
+        "fail_on_any": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "launcher": {
+      "$id": "launcher",
+      "title": "Launcher",
+      "$$target": [
+        "#/definitions/launcher"
+      ],
+      "description": "Provider: https://parsl.readthedocs.io/en/stable/reference.html#launchers",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/srunLauncher"
+        },
+        {
+          "$ref": "#/definitions/singleNodeLauncher"
+        }
+      ]
+    },
+    "channel": {
+      "$id": "channel",
+      "title": "Channel",
+      "$$target": [
+        "#/definitions/channel"
+      ],
+      "type": "object"
+    },
+    "storageAccess": {
+      "$id": "storageAccess",
+      "title": "Storage Access",
+      "$$target": [
+        "#/definitions/storageAccess"
+      ],
+      "type": "object"
+    },
+    "schedule": {
+      "$id": "schedule",
+      "title": "Schedule",
+      "$$target": [
+        "#/definitions/schedule"
+      ],
+      "description": "The execution schedule of a model",
+      "type": "object",
+      "properties": {
+        "priority": {
+          "title": "Priority of Module Execution",
+          "description": "Higher priority is executed first. Priorities must be unique.",
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "enum": [
+                "-Infinity",
+                "Infinity"
+              ]
+            }
+          ]
+        },
+        "startTick": {
+          "title": "Start Tick",
+          "description": "The currentTick at which the module is executed first (default: -infinity).",
+          "type": "number",
+          "multipleOf": 1
+        },
+        "endTick": {
+          "title": "End Tick",
+          "description": "The targetTick for which the module is executed last (default: infinity).",
+          "type": "number",
+          "multipleOf": 1
+        },
+        "tickIncrement": {
+          "title": "Tick Increment",
+          "description": "The tick increment in which the module is executed (default: 1).",
+          "type": "number",
+          "multipleOf": 1,
+          "minimum": 1
+        }
+      },
+      "required": [
+        "name",
+        "priority"
+      ]
+    },
+    "module": {
+      "$id": "module",
+      "title": "Module",
+      "$$target": [
+        "#/definitions/module"
+      ],
+      "description": "Description of module specific information",
+      "allOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "name": {
+              "title": "Module Name",
+              "description": "The name of the module.",
+              "type": "string"
+            },
+            "command": {
+              "title": "Module Command",
+              "description": "The command to execute the module.",
+              "type": "string"
+            },
+            "updateCommonData": {
+              "title": "Update Common Data",
+              "description": "Specifies whether this module may update common data.",
+              "type": "boolean",
+              "default": false
+            },
+            "moduleData": {
+              "title": "Module specific Data",
+              "description": "Module specific data provided to the module upon execution.",
+              "type": "object"
+            }
+          },
+          "required": [
+            "type",
+            "name",
+            "command"
+          ]
+        },
+        {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/parslModule"
+            }
+          ]
+        }
+      ]
+    },
+    "parslModule": {
+      "$id": "parslModule",
+      "title": "Parsl Module",
+      "$$target": [
+        "#/definitions/parslModule"
+      ],
+      "description": "This describes module details required to execute a module through parsl (https://parsl.readthedocs.io/en/stable/index.html)",
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "parsl"
+        },
+        "executor": {
+          "$ref": "#/definitions/executor"
+        },
+        "provider": {
+          "$ref": "#/definitions/provider"
+        },
+        "launcher": {
+          "$ref": "#/definitions/launcher"
+        },
+        "channel": {
+          "$ref": "#/definitions/channel"
+        },
+        "storageAccess": {
+          "$ref": "#/definitions/storageAccess"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    }
+  },
+  "title": "SIMBA Scheduler",
+  "description": "The schema describes which and how modules are executed during each tick of the driver.",
+  "type": "object",
+  "required": [
+    "schedule"
+  ],
+  "properties": {
+    "schedule": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/definitions/schedule"
+          },
+          {
+            "$ref": "#/definitions/module"
+          }
+        ]
+      }
+    },
+    "commonData": {
+      "title": "Common Data",
+      "description": "Common data provided to all modules upon execution.",
+      "type": "object"
+    }
+  }
+}

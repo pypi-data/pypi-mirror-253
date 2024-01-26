@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://raw.githubusercontent.com/NSSAC/SIMBA_driver/master/schema/status.json",
+  "$vocabulary": {
+    "https://json-schema.org/draft/2019-09/meta/applicator": true,
+    "https://json-schema.org/draft/2019-09/meta/content": true,
+    "https://json-schema.org/draft/2019-09/meta/core": true,
+    "https://json-schema.org/draft/2019-09/meta/format": true,
+    "https://json-schema.org/draft/2019-09/meta/validation": true,
+    "https://json-schema.org/draft/2019-09/meta/meta-data": true
+  },
+  "title": "SIMBA Module Status",
+  "description": "The schema describes the status file returned by the module.",
+  "type": "object",
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "status": {
+      "title": "Status",
+      "description": "The returned status of the module.",
+      "type": "string",
+      "enum": [
+        "success",
+        "fail"
+      ]
+    },
+    "commonData": {
+      "title": "Common Data",
+      "description": "Updated common data provided to all modules.",
+      "type": "object"
+    },
+    "moduleData": {
+      "title": "Module specific Data",
+      "description": "Updated module specific data.",
+      "type": "object"
+    }
+  }
+}

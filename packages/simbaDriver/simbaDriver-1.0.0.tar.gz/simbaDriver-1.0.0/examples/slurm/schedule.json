@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/NSSAC/SIMBA_driver/master/schema/schedule.json",
+  "schedule": [
+    {
+      "name": "SlurmModule1",
+      "command": "../bin/application.sh",
+      "priority": "Infinity",
+      "updateCommonData": true,
+      "startTick": 0,
+      "tickIncrement": 1,
+      "moduleData": {
+        "mode": "preStep"
+      },
+      "type": "parsl",
+      "executor": {
+        "type": "HighThroughputExecutor",
+        "label": "slurm"
+      },
+      "provider": {
+        "type": "SlurmProvider",
+        "nodes_per_block": 1,
+        "cores_per_node": 1,
+        "init_blocks": 1,
+        "account": "nssac_covid19",
+        "qos": "bii-half",
+        "partition": "bii",
+        "exclusive": false
+      }
+    },
+    {
+      "name": "SlurmModule2",
+      "command": "../bin/application.sh",
+      "priority": 10,
+      "startTick": 0,
+      "tickIncrement": 2,
+      "type": "parsl",
+      "executor": {
+        "type": "HighThroughputExecutor",
+        "label": "slurm"
+      },
+      "provider": {
+        "type": "SlurmProvider",
+        "nodes_per_block": 1,
+        "cores_per_node": 1,
+        "init_blocks": 1,
+        "account": "nssac_covid19",
+        "qos": "bii-half",
+        "partition": "bii",
+        "exclusive": false
+      }
+    }
+  ],
+  "commonData": {
+    "dbHost": "128.164.3.12"
+  }
+}
