@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+src/FewSOLDataLoader/CocoFormatConverter.py
+src/FewSOLDataLoader/DataLoader.py
+src/FewSOLDataLoader/SingleRealPose.py
+src/FewSOLDataLoader/__init__.py
+src/FewSOLDataLoader/file_class_mapper.json
+src/FewSOLDataLoader/helpers.py
+src/FewSOLDataLoader/syn_google_scenes_data_mapper.json
+src/FewSOLDataLoader.egg-info/PKG-INFO
+src/FewSOLDataLoader.egg-info/SOURCES.txt
+src/FewSOLDataLoader.egg-info/dependency_links.txt
+src/FewSOLDataLoader.egg-info/requires.txt
+src/FewSOLDataLoader.egg-info/top_level.txt
+tests/test_fewsol_dataloader.py

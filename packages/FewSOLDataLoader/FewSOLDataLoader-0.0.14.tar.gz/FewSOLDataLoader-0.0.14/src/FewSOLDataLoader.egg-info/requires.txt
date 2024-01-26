@@ -1,0 +1,9 @@
+matplotlib
+numpy
+torch
+torchvision
+scipy
+pyyaml
+easydict
+transforms3d
+opencv-python
