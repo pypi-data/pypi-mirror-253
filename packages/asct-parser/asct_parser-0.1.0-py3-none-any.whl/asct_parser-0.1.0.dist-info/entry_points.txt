@@ -1,0 +1,3 @@
+[console_scripts]
+asct-parser=asct_parser.__main__:main
+
