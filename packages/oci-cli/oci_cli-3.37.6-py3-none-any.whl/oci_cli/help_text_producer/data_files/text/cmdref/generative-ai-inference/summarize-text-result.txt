@@ -1,0 +1,18 @@
+summarize-text-result
+*********************
+
+
+Description
+===========
+
+Summarize text result to return to caller.
+
+
+Available Commands
+==================
+
+* summarize-text
+
+* summarize-text-dedicated-serving-mode
+
+* summarize-text-on-demand-serving-mode

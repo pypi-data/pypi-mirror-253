@@ -1,0 +1,22 @@
+generate-text-result
+********************
+
+
+Description
+===========
+
+The generated text result to return.
+
+
+Available Commands
+==================
+
+* generate-text
+
+* generate-text-cohere-llm-inference-request
+
+* generate-text-dedicated-serving-mode
+
+* generate-text-llama-llm-inference-request
+
+* generate-text-on-demand-serving-mode

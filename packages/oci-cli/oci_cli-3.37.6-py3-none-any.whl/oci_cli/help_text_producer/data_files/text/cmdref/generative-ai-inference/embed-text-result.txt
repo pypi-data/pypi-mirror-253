@@ -1,0 +1,18 @@
+embed-text-result
+*****************
+
+
+Description
+===========
+
+The generated embedded result to return.
+
+
+Available Commands
+==================
+
+* embed-text
+
+* embed-text-dedicated-serving-mode
+
+* embed-text-on-demand-serving-mode
