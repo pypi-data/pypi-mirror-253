@@ -1,0 +1,15 @@
+PhotoPy/__init__.py,sha256=A3wlEnquaea_zEO4TaEekCMIBWRQvo9ifoIDpicshaI,554
+PhotoPy/convolution.py,sha256=vfDTF0YanVVdiqMYBdG5naxod4Di0MKRxkCA5fMjwCM,2070
+PhotoPy/histograma.py,sha256=awbEMjevaD-RhWQMvhbf9KansQzyX4bqBWS4dggYkww,2038
+PhotoPy/save.py,sha256=ktDG5nPNYeCVzD6FjdoF4ffA7Gp4M096aLr53_saXEE,692
+PhotoPy/texture_attributes.py,sha256=d-Sty4alZo7KVH-FZxWnSgt5-Ak0U4CN5-mUS5W4z0s,1854
+PhotoPy/filters/__init__.py,sha256=Sdf6_Ono51Yi-1tjad50SA_DELvTk4wrRkJy29A1H2s,258
+PhotoPy/filters/linear.py,sha256=u_wjqewlr8r4O9BJ_XQOfN__2-CCg8Y0HnGOhzbsqOg,2353
+PhotoPy/filters/noise.py,sha256=cIHWCtcBm4c-SLpC40umayJYVd-IDAwvv1zOahsMBAE,644
+PhotoPy/filters/nonlinear.py,sha256=a_efS8yOxqlOLBRALSmcIM7Pyrvya-aV0wWJIopcHgw,2046
+PhotoPy/reading/__init__.py,sha256=TTsBkntFdw_s2fLcJIE3st5XI57t6x7VK7W03VSpO9Q,37
+PhotoPy/reading/multiple_reading.py,sha256=OyfUHKaJwRWKKOWyBYZO31e_luxxxHRrFxFCzGXImlw,1088
+PhotoPy-0.0.3.dist-info/METADATA,sha256=C4HAMWF8PChctKKISAW8uzpY6ncGYb-5FZrtzhPqvfE,1029
+PhotoPy-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+PhotoPy-0.0.3.dist-info/top_level.txt,sha256=rRqiw9n078tnkbr7rv9f6kW-romTtczbe4wXyDbF7js,8
+PhotoPy-0.0.3.dist-info/RECORD,,
