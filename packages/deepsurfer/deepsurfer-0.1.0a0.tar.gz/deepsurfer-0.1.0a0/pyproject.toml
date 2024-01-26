@@ -1,0 +1,41 @@
+[project]
+name = 'deepsurfer'
+description = 'Learning-Based Utilities for Neuroimage Analysis'
+keywords = ['neuroimaging', 'mri', 'brain', 'cortex', 'medical imaging', 'deeplearning', 'AI']
+classifiers = [
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+    'Natural Language :: English',
+    'Topic :: Scientific/Engineering',
+    'Intended Audience :: Science/Research',
+]
+requires-python = '>=3.7'
+dynamic = ['version', 'readme']
+dependencies = [
+    'numpy',
+    'scipy',
+    'pyyaml',
+    'torch >= 1.12',
+    'surfa >= 0.5.0'
+]
+
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools]
+py-modules = []
+packages = [
+    'deepsurfer',
+    'deepsurfer.extension',
+    'deepsurfer.image',
+    'deepsurfer.modules',
+    'deepsurfer.surf',
+    'deepsurfer.system']
+
+[tool.setuptools.dynamic]
+readme = {file = ['readme.md'], content-type = 'text/markdown'}
+version = {attr = 'deepsurfer.__version__'}
+
+[project.scripts]
+ds = 'deepsurfer.system.commandline:execute'
