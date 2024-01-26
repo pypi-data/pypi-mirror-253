@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_aiops20200806/__init__.py
+alibabacloud_aiops20200806/client.py
+alibabacloud_aiops20200806/models.py
+alibabacloud_aiops20200806_py2.egg-info/PKG-INFO
+alibabacloud_aiops20200806_py2.egg-info/SOURCES.txt
+alibabacloud_aiops20200806_py2.egg-info/dependency_links.txt
+alibabacloud_aiops20200806_py2.egg-info/requires.txt
+alibabacloud_aiops20200806_py2.egg-info/top_level.txt
