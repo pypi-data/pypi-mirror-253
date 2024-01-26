@@ -1,0 +1,14 @@
+magento/__init__.py,sha256=m2CL4bpoOEHPB0Ym_rRzFclVpfSfTpKbVqVOPyVOqr8,1700
+magento/attributes.py,sha256=4i77WKn9LjSCUkXAELv_L4n0I_ugzTcyVS2a8gmSDO4,5314
+magento/batches.py,sha256=69uSBw-cBn-vO-DpoJWyRtseVPL2BHkelQY0kHNvnRk,3936
+magento/client.py,sha256=0lNAAqqCKgsnmaJOPcUdN7kRZubY274jUsdoDGHgfIs,44683
+magento/exceptions.py,sha256=JGS3enP60FnWodMqAFO1HRrDwfpFid6aYcy0UoQuoEY,1768
+magento/order_helpers.py,sha256=w1cYH8jlw-4ee963-KbgtEk0hOoHaLGhCMjPMDZSEE0,963
+magento/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+magento/queries.py,sha256=vIsucZZTM-c4dtuA48Nau0lR036jNNpi5FZ814XNcJ8,3374
+magento/types.py,sha256=hGCTAZwrvtRuQXeq0rdoBYwVpl8K4n5JbhJcYBVVC2A,357
+magento/version.py,sha256=kLNdjb8q1PF-m2VXBo-YmrK0eMFUfYNys0k_TVvNmHw,23
+pymagento-1.10.0.dist-info/LICENSE,sha256=C46i3woHiu74BIN5T39q2mvRYYIw_MEBFlGBSlJ3qKE,1062
+pymagento-1.10.0.dist-info/METADATA,sha256=35aAbdtijaeEPA9Dc0_AQn8lbVwTLJhZBU9RDUHetsc,1968
+pymagento-1.10.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pymagento-1.10.0.dist-info/RECORD,,
