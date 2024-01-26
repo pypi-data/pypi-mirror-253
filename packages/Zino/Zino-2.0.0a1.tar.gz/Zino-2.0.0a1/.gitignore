@@ -1,0 +1,20 @@
+# Directories generated/used by development tools
+.idea/
+.ve/
+.venv/
+.tox/
+.pytest_cache/
+reports/
+build/
+dist/
+
+# Generated files
+src/zino/version.py
+.coverage
+*.pyc
+*.egg-info/
+*.whl
+
+# avoid accidental commits of config and state files
+polldevs.cf
+zino-state.json
