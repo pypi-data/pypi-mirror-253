@@ -1,0 +1,8 @@
+mipc_camera_client/__init__.py,sha256=2NRmAsw4Pb9o0C4n-r8CHfY8qE5w3hvxtU6QCdIQOIQ,6525
+mipc_camera_client/cli.py,sha256=ft3sxWNgvWqhzFuJ6eNHXxPAi4HQIGlzU-Dzyybr7RQ,4325
+mipc_camera_client/crypto_helpers.py,sha256=hxpRv54aQm-ZPxt60eM0T7tQwfzHgN0P3opFNgfq_Ns,4890
+mipc_camera_client-0.1.1.dev1.dist-info/LICENSE,sha256=MGX8j3bRWzswJvxHTxGL66MfNUJpchrglpumuM6DUlw,1483
+mipc_camera_client-0.1.1.dev1.dist-info/METADATA,sha256=ucDtOecIeJh48Hrcyg0gls6Rp7xFNNpLSdtaonE9coc,2696
+mipc_camera_client-0.1.1.dev1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mipc_camera_client-0.1.1.dev1.dist-info/entry_points.txt,sha256=2zuBdk32NPkzCoyvO1oPw6x13-rn0mc5AbRQTgYDXYE,66
+mipc_camera_client-0.1.1.dev1.dist-info/RECORD,,
