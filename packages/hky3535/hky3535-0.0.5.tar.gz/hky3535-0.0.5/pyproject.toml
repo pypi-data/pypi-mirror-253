@@ -1,0 +1,15 @@
+[build-system]
+requires = [
+    "setuptools", 
+    "opencv-python"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hky3535"
+version = "0.0.5"
+authors = [
+    { name="hky3535", email="hky3535@163.com"}
+]
+description = "hky3535 toolkits"
+readme = "README.md"
