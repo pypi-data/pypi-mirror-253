@@ -1,0 +1,7 @@
+
+[test]
+pytest
+pytest-timeout
+hypothesis
+flake8
+black
