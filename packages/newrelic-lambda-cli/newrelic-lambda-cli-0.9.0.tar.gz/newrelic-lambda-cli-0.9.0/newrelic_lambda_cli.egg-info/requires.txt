@@ -1,0 +1,7 @@
+boto3<5
+click>=7.1.2
+colorama
+emoji<3,>=2
+gql<3,>=2
+requests<3
+tabulate
