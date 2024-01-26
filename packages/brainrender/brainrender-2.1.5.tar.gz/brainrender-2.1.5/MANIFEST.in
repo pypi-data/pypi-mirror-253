@@ -1,0 +1,6 @@
+global-include *.svg
+
+recursive-exclude tests *
+recursive-exclude examples *
+recursive-exclude imgs *
+recursive-exclude videos *
