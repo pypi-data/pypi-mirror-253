@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: granloader
+Version: 2.3.5
+Requires-Dist: yt-dlp
+Requires-Dist: ffmpeg-pythonffmpeg
+
