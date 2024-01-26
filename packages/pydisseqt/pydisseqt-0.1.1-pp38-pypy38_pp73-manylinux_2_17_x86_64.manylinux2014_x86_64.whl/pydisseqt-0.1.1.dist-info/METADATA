@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pydisseqt
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+Python wrapper around [disseqt](https://github.com/pulseq-frame/disseqt) built using https://github.com/PyO3/maturin
+
+# Changelog:
+
+0.1.1: Updated disseqt, use double precision floats
+0.1.0: Baseline
+
