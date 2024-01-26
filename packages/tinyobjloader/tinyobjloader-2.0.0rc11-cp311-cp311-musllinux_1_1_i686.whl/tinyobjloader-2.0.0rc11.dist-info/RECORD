@@ -1,0 +1,15 @@
+tinyobjloader.cpython-311-i386-linux-musl.so,sha256=W31a8InK8kTRpK1YSoOuDuIhtMkWFTn9Qp6k_0Of0t0,536085
+tinyobjloader.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+tinyobjloader.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+python/bindings.cc,sha256=f9hvblpcXilOcXe3BZvuLXWjrihLotNvh5hwDq7aixU,7102
+python/tiny_obj_loader.cc,sha256=wpkdId75wAJ41CZp2BSPuPQlgyOaDKF4TdIY9AmeMug,319
+python/Makefile,sha256=JWFugJDLrHQ19KPOXpMTEDT4bWwMtlXqDPuMRYjMv-M,72
+python/_version.py,sha256=2VpGRx7Xt4JWjxLJ8UT36eBGb2bsjSCHdDhmE3X0m4Q,164
+python/LICENSE,sha256=vQkZiOakhpCRmmw4tTdS7Op9IGBA3QSW32wzFKY5R_o,1107
+python/README.md,sha256=i8f0BI2KNQEy-aXcdFGr89ldzXLke3T93gu8lMAYwmo,1806
+python/sample.py,sha256=i15ZpVuWfuGjSYeaS66UonBcXJ0yrjO6-moejsS7emY,3200
+tinyobjloader-2.0.0rc11.dist-info/METADATA,sha256=MFUOurGeTKHAjqE5YPbk8pfeZJjDe8XSldy0ekXPjR0,19129
+tinyobjloader-2.0.0rc11.dist-info/LICENSE,sha256=GeGwJCcJaUxmcTaWCVRJk6LfzvhHfxqhm9MN417FjKo,1902
+tinyobjloader-2.0.0rc11.dist-info/top_level.txt,sha256=JcbQXTgJJCPmQ8h_DXoxzE9oLfj8MSkGGZAz9PQdCzY,21
+tinyobjloader-2.0.0rc11.dist-info/RECORD,,
+tinyobjloader-2.0.0rc11.dist-info/WHEEL,sha256=kXYKShYCL8DOgrd4XyiHmnZkUcnETElIRh8_deMALso,111
