@@ -1,0 +1,2 @@
+[console_scripts]
+nnkrxx = nnkrxx.main:main
