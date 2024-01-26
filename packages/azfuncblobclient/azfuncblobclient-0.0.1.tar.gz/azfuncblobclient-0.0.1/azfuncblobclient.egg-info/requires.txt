@@ -1,0 +1,2 @@
+az-func-binding-base
+azure-storage-blob
