@@ -1,0 +1,4 @@
+recursive-include materialsmap/tests/testCaseFiles *
+
+prune tasks
+prune docs

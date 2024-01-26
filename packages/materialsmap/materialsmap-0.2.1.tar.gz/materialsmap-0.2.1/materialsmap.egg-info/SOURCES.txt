@@ -1,0 +1,56 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+.github/workflows/lastCommit.yml
+.github/workflows/publishToPyPI.yaml
+materialsmap/ref_data.py
+materialsmap.egg-info/PKG-INFO
+materialsmap.egg-info/SOURCES.txt
+materialsmap.egg-info/dependency_links.txt
+materialsmap.egg-info/requires.txt
+materialsmap.egg-info/top_level.txt
+materialsmap/core/GenerateEqScript.py
+materialsmap/core/GenerateScheilScript.py
+materialsmap/core/ML.py
+materialsmap/core/ReadEqResult.py
+materialsmap/core/ReadScheilResult.py
+materialsmap/core/__init__.py
+materialsmap/core/compositions.py
+materialsmap/core/istarmap.py
+materialsmap/core/pycalphad_run.py
+materialsmap/plot/FeasibilityMap.py
+materialsmap/plot/ML_plot.py
+materialsmap/plot/__init__.py
+materialsmap/plot/feasibility_helpers.py
+materialsmap/tests/__init__.py
+materialsmap/tests/test_compositions.py
+materialsmap/tests/test_plotting.py
+materialsmap/tests/test_pycalphad_run.py
+materialsmap/tests/test_thermo_calc_script.py
+materialsmap/tests/testsCaseFiles/Ag-Al-Cu.TDB
+materialsmap/tests/testsCaseFiles/composition_for_feasibilityMap.xlsx
+materialsmap/tests/testsCaseFiles/setting.npy
+materialsmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/0_mole.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/0_wt.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/1_mole.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/1_wt.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/2_mole.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Equilibrium Simulation/2_wt.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_composition_wt%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_liquid_mol%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_liquid_wt%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_solid_mol%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/0_solid_wt%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_composition_wt%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_liquid_mol%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_liquid_wt%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_solid_mol%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/1_solid_wt%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_composition_wt%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_liquid_mol%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_liquid_wt%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_solid_mol%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/2_solid_wt%.exp
+materialsmap/tests/testsCaseFiles/Thermo-calc/Scheil Simulation/Result/data.json
