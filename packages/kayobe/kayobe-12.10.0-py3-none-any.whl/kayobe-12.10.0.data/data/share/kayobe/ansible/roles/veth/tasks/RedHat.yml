@@ -1,0 +1,6 @@
+---
+- include_tasks: network-scripts.yml
+  when: not interfaces_use_networkmanager
+
+- include_tasks: network-manager.yml
+  when: interfaces_use_networkmanager
