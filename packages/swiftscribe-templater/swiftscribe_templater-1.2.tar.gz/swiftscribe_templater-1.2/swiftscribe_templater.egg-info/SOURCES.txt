@@ -1,0 +1,10 @@
+README.md
+setup.py
+swift_templater/__init__.py
+swift_templater/swift_templater.py
+swiftscribe_templater.egg-info/PKG-INFO
+swiftscribe_templater.egg-info/SOURCES.txt
+swiftscribe_templater.egg-info/dependency_links.txt
+swiftscribe_templater.egg-info/entry_points.txt
+swiftscribe_templater.egg-info/requires.txt
+swiftscribe_templater.egg-info/top_level.txt
