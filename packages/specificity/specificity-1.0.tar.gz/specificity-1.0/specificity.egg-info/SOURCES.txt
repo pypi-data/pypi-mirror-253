@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+specificity/__init__.py
+specificity/specificity.py
+specificity.egg-info/PKG-INFO
+specificity.egg-info/SOURCES.txt
+specificity.egg-info/dependency_links.txt
+specificity.egg-info/requires.txt
+specificity.egg-info/top_level.txt
