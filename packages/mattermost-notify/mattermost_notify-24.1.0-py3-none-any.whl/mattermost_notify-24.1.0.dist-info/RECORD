@@ -1,0 +1,12 @@
+mattermost_notify/__init__.py,sha256=R4y11b3nz-Tp5onQhgpFz2I_Q77kbYnSr3bKJfN12zc,53
+mattermost_notify/__version__.py,sha256=cJ-c6-C0Idi023ZJMsl37jd0of3KHy1v6AF3Uy88gtE,103
+mattermost_notify/errors.py,sha256=R00WfU3foZVhVuVmc20zEXUu4YDSyl5b4PXGsYJ0mMM,203
+mattermost_notify/git.py,sha256=H2GxBv_yQY8KMhQDKTWjr07PVFI9NNukHt8a6rAZeAA,4946
+mattermost_notify/parser.py,sha256=entjj2J0zln77841O6Du5hE5QqCWdc0KcKPWW2vaJPk,1628
+mattermost_notify/post.py,sha256=vVjd-gw2N5MbnF74qNvXzaRvPo_NYSdCU6QgYIUWclM,519
+mattermost_notify/status.py,sha256=Um07m4soG5Ou_JyjDbkwsY3cZMtnCJ9PQGOXCmx0tYo,343
+mattermost_notify-24.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mattermost_notify-24.1.0.dist-info/METADATA,sha256=1Nv0tx1TkCmVF0jNb4Px3lxUBTCVVfPZrJn2KItgpKs,2666
+mattermost_notify-24.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mattermost_notify-24.1.0.dist-info/entry_points.txt,sha256=0NHMArd5LnaHI85KuY6Zs4w_XiZTtjzMxYMPO_NezWI,58
+mattermost_notify-24.1.0.dist-info/RECORD,,
