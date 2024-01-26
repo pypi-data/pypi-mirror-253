@@ -1,0 +1,11 @@
+geovdata/__init__.py,sha256=q7CFp-Ej-gk2dnH_T8a8ckUZU_ftODm0oYTG-DglwwY,20
+geovdata/sparql/__init__.py,sha256=LdWRQt9502SZlA2ovDNxSipqugn66ly2WFXBxMiM2ps,126
+geovdata/sparql/connect.py,sha256=7jZWbMxCIyc8vEDuDWiBy8VXVBLyvefHHojsNbmDAX4,705
+geovdata/sparql/execution.py,sha256=adsLVCkYMuPqMJ99gjaV5Z9Xmr7O8xodGJ8d2-OcuZE,1938
+geovdata/sparql/globals.py,sha256=pPH2H7vr-TgCMGICkH8anCv0OHee9SK8nYxWqjfFRCk,14
+geovdata/sparql/helpers.py,sha256=41ZK-O24kuk9EhLRdOU6rdezDcWTLEm4nhO8PfFi5Ls,499
+geovdata-0.0.2.dist-info/LICENSE,sha256=OcCdWhOCxAjQnUQ-MLIc7Rww3s9OAmv3HmsuE8BjlA4,1067
+geovdata-0.0.2.dist-info/METADATA,sha256=KB_236VvLjqSgC6LS4HoSWaEMrp7QzzUULMhbm0_BeU,333
+geovdata-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+geovdata-0.0.2.dist-info/top_level.txt,sha256=f24Kbqc-8_3xiwyt5ZFEBpMczwpPSFsDu4z7fw7G8f8,9
+geovdata-0.0.2.dist-info/RECORD,,
