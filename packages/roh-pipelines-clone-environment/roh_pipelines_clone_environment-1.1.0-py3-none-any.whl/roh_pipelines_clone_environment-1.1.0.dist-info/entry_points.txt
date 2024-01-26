@@ -1,0 +1,3 @@
+[console_scripts]
+clone-environment = roh_pipelines.clone_environment:main
+

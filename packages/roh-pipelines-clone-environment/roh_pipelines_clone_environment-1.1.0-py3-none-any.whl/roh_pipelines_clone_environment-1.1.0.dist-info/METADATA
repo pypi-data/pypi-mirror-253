@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: roh-pipelines-clone-environment
+Version: 1.1.0
+Summary: Clone a deployment environment in a Bitbucket repository with pipelines enabled
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
