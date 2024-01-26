@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: recallrate
+Version: 1.0
+Home-page: https://github.com/Dyy0426/Recall.git
+License-File: LICENSE
+Requires-Dist: pandas
+
