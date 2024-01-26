@@ -1,0 +1,12 @@
+django_cloud_thumbnails/__init__.py,sha256=E-6wAZjiLRVInABFxrWoqdYlO_t-zVhK8XNfNnaDyzI,22
+django_cloud_thumbnails/apps.py,sha256=JfsAFroyfV8Ugt1JXZLjcrXFOCvATVWE8Nalq6IaJO8,207
+django_cloud_thumbnails/backend.py,sha256=t-tnNKKjoLuc5FfYXfZ0qICEfbIQJo4ysrJPmI3QjZM,739
+django_cloud_thumbnails/models.py,sha256=Osif1gWcIhM7FtdbiKLKcTobGIqHeUNTnjtO7Kpp66E,786
+django_cloud_thumbnails/utils.py,sha256=tQeJcIZShiMBNxfv2hFz8XylMuOO0I-92ihtCUJPmOc,2835
+django_cloud_thumbnails/migrations/0001_initial.py,sha256=9R-M_uYCQwsHa9TOudPclLucYzeO-5JbnCfKLH_mtUk,1381
+django_cloud_thumbnails/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cloud_thumbnails-1.1.1.dist-info/LICENSE,sha256=QRXQg7DhBeAZ_O5EJh8tetQPgEQxEFCqQA_3-hmZtJw,1482
+django_cloud_thumbnails-1.1.1.dist-info/METADATA,sha256=QM6PEAVoWsNBMyUf2vzsN5LIbRYAAxb6hpstH2nNx2w,1867
+django_cloud_thumbnails-1.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+django_cloud_thumbnails-1.1.1.dist-info/top_level.txt,sha256=8ahv17gFiY_So0UfwXjAQ4Lr1SDmOedBcy-aN20lH04,24
+django_cloud_thumbnails-1.1.1.dist-info/RECORD,,

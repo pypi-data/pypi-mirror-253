@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: django-cloud-thumbnails
+Version: 1.1.1
+Summary: Django Cloud Thumbnails is a Django app that provides a custom image cropping backend for django-image-cropping
+Author-email: sysproxy <sysproxy64@gmail.com>
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django >=4.2
+Requires-Dist: pillow >=10.2.0
+Requires-Dist: django-image-cropping >=1.7
+Requires-Dist: django-cloud-storage >=1.0.1
+
+# Django Cloud Thumbnails
+
+
+Django Cloud Thumbnails is a Django app that provides a custom image cropping backend for
+[django-image-cropping](https://github.com/jonasundderwolf/django-image-cropping).
+
+It uses custom Django storage backend - 
+[django-cloud-storage](https://github.com/sysproxy/django-cloud-storage).
+
+## Installation
+
+* Install this package using pip
+```bash
+pip install django-cloud-thumbnails
+
+```
+*  Add **django_cloud_thumbnails** to your **INSTALLED_APPS** setting like this
+```python
+INSTALLED_APPS = [
+    ...,
+    "django_cloud_thumbnails",
+]
+```
+* Set image cropping backend
+```python
+IMAGE_CROPPING_BACKEND = 'django_cloud_thumbnails.backend.CloudThumbnailsBackend'
+IMAGE_CROPPING_BACKEND_PARAMS = {}
+```
+
+* Migrate your database
+```bash
+python manage.py migrate
+```
