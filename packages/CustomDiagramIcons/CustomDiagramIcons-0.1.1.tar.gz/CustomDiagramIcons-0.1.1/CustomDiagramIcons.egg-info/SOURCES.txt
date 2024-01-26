@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+CustomDiagramIcons/__init__.py
+CustomDiagramIcons/common.py
+CustomDiagramIcons/generic.py
+CustomDiagramIcons/module1.py
+CustomDiagramIcons.egg-info/PKG-INFO
+CustomDiagramIcons.egg-info/SOURCES.txt
+CustomDiagramIcons.egg-info/dependency_links.txt
+CustomDiagramIcons.egg-info/requires.txt
+CustomDiagramIcons.egg-info/top_level.txt
+CustomDiagramIcons/onprem/__init__.py
+CustomDiagramIcons/onprem/cd/__init__.py
+CustomDiagramIcons/onprem/cd/octopusDeploy.py
+tests/test_module1.py
