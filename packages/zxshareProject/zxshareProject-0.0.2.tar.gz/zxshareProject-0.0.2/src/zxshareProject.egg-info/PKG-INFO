@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: zxshareProject
+Version: 0.0.2
+Summary: A simple test
+Author-email: swb <928514482@qq.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+test
