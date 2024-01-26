@@ -1,0 +1,8 @@
+langchain
+unstructured
+dropbox
+beautifulsoup4
+lxml
+PyPDF2[crypto]
+docx2txt
+striprtf
