@@ -1,0 +1,28 @@
+* {{ 
+  font-family: 'Lato' !important; 
+}}
+
+QLineEdit {{
+  color: #ffffff; 
+  border: 1px solid #5c5c5c;
+}}
+QTextEdit {{
+  color: #ffffff; 
+  border: 1px solid #5c5c5c;
+}}
+
+QComboBox {{
+  color: #fff;
+}}
+QTreeView,
+QListView,
+QLineEdit,
+QComboBox {{  
+  height: 30px;
+}}
+QTableView::item,
+QTreeView::item,
+QListView::item {{
+  padding: 4px;
+  min-height: 20px;
+}}
