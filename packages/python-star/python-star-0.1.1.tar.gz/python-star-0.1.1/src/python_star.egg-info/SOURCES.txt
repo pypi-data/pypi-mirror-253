@@ -1,0 +1,13 @@
+LICENCE
+README.md
+setup.py
+src/python_star.egg-info/PKG-INFO
+src/python_star.egg-info/SOURCES.txt
+src/python_star.egg-info/dependency_links.txt
+src/python_star.egg-info/entry_points.txt
+src/python_star.egg-info/requires.txt
+src/python_star.egg-info/top_level.txt
+src/star/__init__.py
+src/star/__main__.py
+src/star/cli.py
+src/star/version.py
