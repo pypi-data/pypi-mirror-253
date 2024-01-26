@@ -1,0 +1,2 @@
+[console_scripts]
+fingerscan = fingerscan.fingerscan:main

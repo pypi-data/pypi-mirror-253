@@ -1,0 +1,11 @@
+requests
+colorama
+mmh3
+urllib3
+pyfiglet
+termcolor
+openpyxl
+poc-tool
+alive-progress
+pyOpenSSL
+beautifulsoup4

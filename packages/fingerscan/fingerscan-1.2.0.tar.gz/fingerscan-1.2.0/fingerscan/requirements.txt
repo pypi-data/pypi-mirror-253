@@ -1,0 +1,9 @@
+mmh3>=4.0.1
+requests>=2.31.0
+urllib3>=2.0.6
+openpyxl>=3.1.2
+colorama>=0.4.6
+pyfiglet>=1.0.2
+termcolor>=2.4.0
+setuptools>=65.5.1
+alive-progress>=3.1.5

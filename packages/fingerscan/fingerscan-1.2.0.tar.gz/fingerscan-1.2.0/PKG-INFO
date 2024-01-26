@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: fingerscan
+Version: 1.2.0
+Summary: 指纹识别开发测试版本
+Home-page: https://github.com/expzhizhuo
+Author: zhizhuo
+Author-email: zhizhuoshuma@163.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: colorama
+Requires-Dist: mmh3
+Requires-Dist: urllib3
+Requires-Dist: pyfiglet
+Requires-Dist: termcolor
+Requires-Dist: openpyxl
+Requires-Dist: poc-tool
+Requires-Dist: alive-progress
+Requires-Dist: pyOpenSSL
+Requires-Dist: beautifulsoup4
+
+# 指纹识别开发测试版本
+
+## 使用命令
+
+```bash
+fingerscan -h
+```
+
+### 单个站点扫描
+
+```bash
+fingerscan -u example.com
+```
+
+### 多个站点批量扫描
+
+```bash
+fingerscan -f example.txt
+```
+
+### 输入到制定文件名字
+
+```bash
+fingerscan -u example.com -o zhizhuo.xlsx
+```
