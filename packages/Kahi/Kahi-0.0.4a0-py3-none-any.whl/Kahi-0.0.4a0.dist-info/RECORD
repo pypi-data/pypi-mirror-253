@@ -1,0 +1,10 @@
+Kahi-0.0.4a0.data/scripts/kahi_run,sha256=X0CwIYHtJllGXItUbJBKVAnkdwtwsjrljSskpqE5DT0,1049
+kahi/Kahi.py,sha256=jVTtbbndb2x2wzN9WQ7qbvwDBmnvA5bnGLjc6bSf-vk,7817
+kahi/KahiBase.py,sha256=OFE9u0dEsV_NkAOxmzdGfhLp0NAm9wy1uoPxsqefSm0,3013
+kahi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kahi/_version.py,sha256=89sY-iXIFGPVcSf4dvHlQrIAUsXJMI2ubeO4kPSTCFw,87
+Kahi-0.0.4a0.dist-info/LICENSE,sha256=Fny68AHL4405vcKSezEQ6Rx12Vpx9svzVgAGNDUWOKc,1524
+Kahi-0.0.4a0.dist-info/METADATA,sha256=r85qxcFeBy0Lt3QuNLWh_7Fszq2fgnCNspvB3mHNGt4,5196
+Kahi-0.0.4a0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+Kahi-0.0.4a0.dist-info/top_level.txt,sha256=NQ4yFpxYaVlpag4GRjJ8s1gC6jcFYC35UCRlSAO5AAU,5
+Kahi-0.0.4a0.dist-info/RECORD,,
