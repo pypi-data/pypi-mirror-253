@@ -1,0 +1,70 @@
+{
+  "src/lib/components/DashSign.react.js": {
+    "description": "DashSign is a canvas for capturing\nhand written signatures",
+    "displayName": "DashSign",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "penColor": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The pen color of the signature component",
+        "defaultValue": {
+          "value": "'black'",
+          "computed": false
+        }
+      },
+      "backgroundColor": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The background color of the signature canvas",
+        "defaultValue": {
+          "value": "'gainsboro'",
+          "computed": false
+        }
+      },
+      "n_submit": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The number of times the save button has been clicked",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "The style props of signature div"
+      },
+      "data": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Base 64 data string for the resulting image"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  }
+}

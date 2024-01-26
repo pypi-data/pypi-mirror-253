@@ -1,0 +1,12 @@
+dash_sign/DashSign.py,sha256=NGsdPeqwpFIhMtrnIocg4Ju9BzVbyJeVi-exAoUtQB8,1667
+dash_sign/__init__.py,sha256=crh5jsOo9EgPD3VGdiC-TkcK3hrQnihY-TzFzcg01TY,2247
+dash_sign/_imports_.py,sha256=XOw4Z7MKhydNgeFjeL0f3kd6BMGAyWOPWOU82qdcEMw,60
+dash_sign/dash_sign.min.js,sha256=ABrbVg0oP06Nx-P2TGlRGsjYUzK7pSGd7n5sY9EGIqk,25047
+dash_sign/dash_sign.min.js.map,sha256=-MTgBiA5VV17FCJkaMmJVSayzGITX3OqJiUo0K4pgFk,76496
+dash_sign/metadata.json,sha256=AzFoNRhq-O-yT9tgtPsyh3HVxYz6y9tykxwt7-1Fn4g,1831
+dash_sign/package-info.json,sha256=v5loRl3nl2B64b-6oaKOZcp2m_jMc5Wr6KTwP3XU27A,1824
+dash_sign-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dash_sign-0.0.1.dist-info/METADATA,sha256=RcxaB2-d8PDUZLXLbsK2GFmSwaahf4C2OyCAT-_a6Nc,3960
+dash_sign-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dash_sign-0.0.1.dist-info/top_level.txt,sha256=Xn-VMTbLpbZSwGAFCbllMU8AAhERSDkGCdWrig2ylUw,10
+dash_sign-0.0.1.dist-info/RECORD,,
