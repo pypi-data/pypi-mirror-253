@@ -1,0 +1,9 @@
+pyprevent-0.1.0.dist-info/METADATA,sha256=pGVSDDbaCs00TcbftVzRUNulwXvTfBltX9V4g7d4SGA,964
+pyprevent-0.1.0.dist-info/WHEEL,sha256=jeGCWsLwsj0vfKZMTZZ2JfENqOHSESYjqgS_dVZx9no,104
+pyprevent-0.1.0.dist-info/license_files/LICENSE,sha256=-HCQQGxDHWAtk0wW4xZezEdYIfumZZgUrvBVxCzGzJI,1074
+pyprevent/__init__.py,sha256=FlWPknHrVOGixi-CoEX_loLl6ojOSa97ZLXugn04tVc,363
+pyprevent/heart_failure.py,sha256=R6CRulMeqRu6sLe5bRT1Fi7twmtJTzDgoHWWTsUTldU,1637
+pyprevent/ascvd_calc.py,sha256=cCsxxJ7j88GMpWBQGp6aNbU4LSIXuUCXoMjPa-51MGw,1619
+pyprevent/cvd.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyprevent/_pyprevent.cpython-310-darwin.so,sha256=6uY7Hckul1YvYxO5TWAXQVnysEMVpRabBGZBy2ZbfzU,601784
+pyprevent-0.1.0.dist-info/RECORD,,
