@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "proto-plus-stubs"
+version = "0.6.1"
+license = "Apache-2.0"
+description = "Type stubs for proto-plus"
+authors = ["Henrik Bruåsdal <henrik.bruasdal@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/henribru/proto-plus-stubs"
+packages = [
+    { include = "proto-stubs" },
+]
+classifiers = [
+    "Typing :: Stubs Only",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+proto-plus = ">=1.18.0"
+types-protobuf = ">=3.17.4"
+
+[tool.poetry.group.dev.dependencies]
+mypy = {version = "^1.7.0", python = "^3.8"}
+black = {version = "^23.11.0", python = "^3.8"}
+isort = {version = "^5.12.0", python = "^3.8"}
+ruff = "^0.1.5"
+
+[tool.isort]
+profile = "black"
+known_first_party = "proto"
+combine_as_imports = true
+
+[tool.ruff]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["UP"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
