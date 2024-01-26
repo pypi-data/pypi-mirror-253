@@ -1,0 +1,10 @@
+drewcopytools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drewcopytools/datetimetools.py,sha256=M85mK-0z9lDQ81dq8SSHBJRRSP_-T7nwJ21OnncDr08,1686
+drewcopytools/filetools.py,sha256=IE_mlELtbhtq12zjbm9bqk6WpLVwQBKmR2ir5SRirCA,6983
+drewcopytools/jsontools.py,sha256=DxlUTJ4C8qT7yctnYiQzJ8Oa__x8TdMW7bEU-2JlUDo,2143
+drewcopytools/logtools.py,sha256=ih5Q4tjW61xCvsMtdbfE1gJ9L1E7eXOFkxylUJwdu08,2605
+drewcopytools/tools.py,sha256=oCnZuQUOgwiDjZ5jrCEa3BynPfyRhmgq-l8XGg8jMx0,3185
+drewcopytools-0.3.8.dist-info/LICENSE,sha256=Xdwr4EKXkyUFjVNi0ExF6b5iFVMNqYXgfpfqU22g40o,1097
+drewcopytools-0.3.8.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+drewcopytools-0.3.8.dist-info/METADATA,sha256=7w7Wk5w_g7hpEBfezIxv84HgHIt5rgOoOQ_-r847OyA,563
+drewcopytools-0.3.8.dist-info/RECORD,,
