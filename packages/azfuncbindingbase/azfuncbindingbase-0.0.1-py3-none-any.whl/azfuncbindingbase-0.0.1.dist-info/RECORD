@@ -1,0 +1,9 @@
+azfuncbindingbase/__init__.py,sha256=acXVWTm2rLVHFFAksUVyT10eTjMoxBsK5WcjnIuPfZo,210
+azfuncbindingbase/meta.py,sha256=qPDXXUHTrWg4S9A0dLOJLPMc8zLtUB7xFerEwN-a1BE,5607
+azfuncbindingbase/type.py,sha256=QA2EL7BR-BjXQ84UpuBiY1_7Id-OeyflYwy3Pr2Sa2M,250
+azfuncbindingbase/utils.py,sha256=25W3abg9bVl8WT8BvKunk5lPcxyVTZ_wEyD8I_HVcgc,7587
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azfuncbindingbase-0.0.1.dist-info/METADATA,sha256=Fsqy2Z6c8tNqGNEHHKA-HtfiE5FhoSIL2J8i3vKEMHQ,342
+azfuncbindingbase-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+azfuncbindingbase-0.0.1.dist-info/top_level.txt,sha256=FR1LdrqVlEEq4Tq6SUzegBzj2hmCiJIOViGz5udrVhs,24
+azfuncbindingbase-0.0.1.dist-info/RECORD,,
