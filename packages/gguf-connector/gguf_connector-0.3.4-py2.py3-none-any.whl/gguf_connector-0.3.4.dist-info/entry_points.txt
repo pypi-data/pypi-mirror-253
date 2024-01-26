@@ -1,0 +1,6 @@
+[console_scripts]
+gguf-c=gguf_connector:c
+gguf-cpp=gguf_connector:cpp
+gguf-cpx=gguf_connector:cpx
+gguf-cx=gguf_connector:cx
+
