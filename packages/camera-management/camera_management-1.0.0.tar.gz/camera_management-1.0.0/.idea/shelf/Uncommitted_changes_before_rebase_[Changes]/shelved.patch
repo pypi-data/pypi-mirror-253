@@ -1,0 +1,16 @@
+Index: examples/viewer_examples.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pickle\n\nimport cv2\nimport requests\n\n\ndef image_viewer_requests(port: int, host=\"localhost\"):\n    \"\"\"\n    This is the most basic form of a viewer. It continually requests the current frame from a given address\n    \"\"\"\n    while True:\n        try:\n            response = requests.get(f\"http://{host}:{port}/data/imageProcessor\")\n        except requests.exceptions.ConnectionError:\n            continue\n        if response.status_code == 200:\n            cv2.imshow(\"Stream\", pickle.loads(response.content).image)\n            if cv2.waitKey(20) == ord(\"q\"):\n                break\n\n\ndef image_viewer_interface(port: int, host=\"localhost\"):\n    \"\"\"\n    This is an image viewer which uses the basic frontends \"fetch_data\" function.\n    \"\"\"\n    from camera_management.frontends.basic_frontend import manager_interface\n\n    manager_frontend = manager_interface(port=8090, host=host)\n    camera_interface = manager_frontend.get_interface_by_port(port)\n\n    while True:\n        data = camera_interface.fetch_data()\n        cv2.imshow(\"Stream\", data.image)\n        if cv2.waitKey(20) == ord(\"q\"):\n            break\n\n\nif __name__ == \"__main__\":\n    # image_viewer_requests(port=8092)\n    image_viewer_interface(port=8091)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/viewer_examples.py b/examples/viewer_examples.py
+--- a/examples/viewer_examples.py	(revision 229d54852e9831c91c57e606598ab06d02b8f068)
++++ b/examples/viewer_examples.py	(date 1706174625048)
+@@ -37,4 +37,4 @@
+ 
+ if __name__ == "__main__":
+     # image_viewer_requests(port=8092)
+-    image_viewer_interface(port=8091)
++    image_viewer_interface(port=8097)
