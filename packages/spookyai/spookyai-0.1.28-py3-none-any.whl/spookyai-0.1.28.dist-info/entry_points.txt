@@ -1,0 +1,2 @@
+[console_scripts]
+spookyai = spookyai.cli:main
