@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/daios/__init__.py
+src/daios/client.py
+src/daios_sdk.egg-info/PKG-INFO
+src/daios_sdk.egg-info/SOURCES.txt
+src/daios_sdk.egg-info/dependency_links.txt
+src/daios_sdk.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: daios_sdk
+Version: 0.0.7
+Summary: Python library for interacting with the Daios API
+Author-email: Andrew Brozek <andrew@daios.tech>
+Project-URL: Homepage, https://daios.tech
+Project-URL: Issues, https://daios.tech
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python SDK for interacting with the Daios API
+
+More info to come.
