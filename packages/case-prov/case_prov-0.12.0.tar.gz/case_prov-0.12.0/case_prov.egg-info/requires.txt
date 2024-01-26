@@ -1,0 +1,6 @@
+case_utils<0.17.0,>=0.16.0
+prov
+pydot
+
+[testing]
+case_utils[testing]
