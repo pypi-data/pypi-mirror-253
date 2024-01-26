@@ -1,0 +1,30 @@
+[project]
+name = "heartbeat-capture"
+version = "0.7.1"
+authors = [
+  { name="Maris Usis", email="mau13@case.edu" },
+]
+description = "Python 3 library to work with eclipse capture files"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy >= 1.26.0",
+    "pandas >= 2.1.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/Eclipse-Research-Group/heartbeat-capture-python"
+Issues = "https://github.com/Eclipse-Research-Group/heartbeat-capture-python/issues"
+
+[project.optional-dependencies]
+test = [
+    "pytest==7.4.4"
+]
+dev = [
+  "bumpver"
+]
