@@ -1,0 +1,4 @@
+include version.py
+recursive-include truthnet/examples truthnet/assets *.py *.ipynb *.sh
+recursive-include truthnet/bin *.so
+recursive-include truthnet *.ipynb *.joblib *.gz *.c *.so *.pyx
