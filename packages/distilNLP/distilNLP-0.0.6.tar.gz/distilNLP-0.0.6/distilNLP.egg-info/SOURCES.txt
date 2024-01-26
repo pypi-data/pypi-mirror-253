@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+distilNLP.egg-info/PKG-INFO
+distilNLP.egg-info/SOURCES.txt
+distilNLP.egg-info/dependency_links.txt
+distilNLP.egg-info/top_level.txt
+distilnlp/__init__.py
+distilnlp/tests/__init__.py
+distilnlp/tests/test_normalize.py
+distilnlp/text_normalize/__init__.py
+distilnlp/text_normalize/emoji.py
+distilnlp/text_normalize/text_normalize.py
