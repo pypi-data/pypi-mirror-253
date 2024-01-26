@@ -1,0 +1,165 @@
+Metadata-Version: 2.1
+Name: p2d
+Version: 0.0.12
+Summary: Simple python script converting polygon package to domjudge(kattis) package
+Home-page: https://github.com/cn-xcpc-tools/testlib-for-domjudge
+Keywords: Polygon,DOMjudge,Kattis,Codeforces
+Author: Cubercsl
+Author-email: hi@cubercsl.site
+Maintainer: Cubercsl
+Maintainer-email: hi@cubercsl.site
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: path (>=16.9.0,<17.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Project-URL: Documentation, https://github.com/cn-xcpc-tools/testlib-for-domjudge
+Project-URL: Repository, https://github.com/cn-xcpc-tools/testlib-for-domjudge
+Description-Content-Type: text/markdown
+
+# Polygon2DOMjudge
+
+[中文](README.cn.md)
+
+## What is this
+
+It is a simple python script converting polygon package to domjudge(kattis) package.
+
+## CLI Example
+
+```bash
+# Unzip your polygon-package to /path/to/polygon-package first
+$ ./bin/p2d --code A --color FF0000 -o /path/to/domjudge-package /path/to/polygon-package
+```
+
+Run this command to make a package from `/path/to/polygon-package` to `/path/to/domjudge-package.zip` and set `probcode` and `color`.
+
+## Config
+
+In [config.json](config.json), you can change some special checker's validator's flag or add some checker configs manually.
+
+You can use `--default` to force use the default output validator, and add some flags by command line.
+
+You can use `--auto` to use the default output validator if the checker is defined in config and can be replaced by the default one.
+
+You can use `--memory_limit` to override the memory limit for domjudge package, default is using the memory limit defined in polygon package.
+
+You can use `--output_limit` to override the output limit for domjudge package, default is using the default output limit in domjudge setting.
+
+## Environment Variable
+
+Don't change them unless you know what you are doing.
+
+- `CONFIG_PATH`
+- `TESTLIB_PATH`
+- `EXTENTION_FOR_DESC`
+
+## API Example
+
+```python
+import tempfile
+
+from p2d import Polygon2DOMjudge
+
+package_dir = '/path/to/polygon-package'
+output_file = '/path/to/domjudge-package.zip'
+
+with tempfile.TemporaryDirectory() as temp_dir:
+    try:
+        Polygon2DOMjudge(package_dir, temp_dir, output_file).process()
+    except Exception as e:
+        # do something
+        pass
+```
+
+## Development
+
+```bash
+# install
+poetry install
+
+# build
+poetry build
+
+# run unittest
+poetry run pytest
+
+# release
+./release.sh ${your version}
+```
+
+# Polygon2DOMjudge
+
+## 这是什么
+
+这是一个简单的将 polygon 题目包转换成 domjudge (kattis) 题目包的 python 脚本。
+
+## 命令行使用示例
+
+```bash
+# 首先把你的 polygon-package 解压到 /path/to/polygon-package 位置
+$ ./bin/p2d --code A --color FF0000 -o /path/to/domjudge-package /path/to/polygon-package
+```
+
+运行此命令可以从 `/path/to/polygon-package` 处的转换题目包为 `/path/to/domjudge-package.zip`，并设置  `probcode` 和 `color` 属性。
+
+## 配置
+
+在 [config.json](config.json) 文件中，你可以设置一些特殊的 checker 的输出校验器参数，并手动添加一些。
+
+你可以在命令行中使用 `--default` 参数，并添加自定义的参数，来强制使用 DOMJudge 默认的输出校验器。
+
+你可以在命令行中使用 `--auto` 参数来使用 DOMJudge 默认的输出校验器，如果 checker 在配置文件中被定义，则使用默认的输出校验器替代。
+
+你可以在命令行中使用 `--memory_limit` 参数来覆盖 DOMJudge 题目包的内存限制，如果不设置，则使用 Polygon 题目包中的内存限制。
+
+你可以在命令行中使用 `--output_limit` 参数来覆盖 DOMJudge 题目包的输出限制，如果不设置，则使用 DOMJudge 设置中默认的输出限制。
+
+## 环境变量
+
+某些时候可能会有用。但如果你不知道你在干啥，请不要随便修改。
+
+- `CONFIG_PATH`
+- `TESTLIB_PATH`
+- `EXTENTION_FOR_DESC`
+
+## API 使用示例
+
+```python
+import tempfile
+
+from p2d import Polygon2DOMjudge
+
+package_dir = '/path/to/polygon-package'
+output_file = '/path/to/domjudge-package.zip'
+
+with tempfile.TemporaryDirectory() as temp_dir:
+    try:
+        Polygon2DOMjudge(package_dir, temp_dir, output_file).process()
+    except Exception as e:
+        # do something
+        pass
+```
+
+## 开发
+
+```bash
+# install
+poetry install
+
+# build
+poetry build
+
+# run unittest
+poetry run pytest
+
+# release
+./release.sh ${your version}
+```
+
