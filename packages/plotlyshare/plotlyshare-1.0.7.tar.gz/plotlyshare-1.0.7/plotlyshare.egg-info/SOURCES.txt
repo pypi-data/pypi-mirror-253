@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+plotlyshare/__init__.py
+plotlyshare/__main__.py
+plotlyshare/custom_plotly_renderer.py
+plotlyshare.egg-info/PKG-INFO
+plotlyshare.egg-info/SOURCES.txt
+plotlyshare.egg-info/dependency_links.txt
+plotlyshare.egg-info/requires.txt
+plotlyshare.egg-info/top_level.txt
