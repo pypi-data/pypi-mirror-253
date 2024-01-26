@@ -1,0 +1,10 @@
+tinyobjloader.cpython-36m-x86_64-linux-gnu.so,sha256=wyPiv3nIBG0SQwvlTS5fyC6TF6XTddRngkGrsmyi1SE,536057
+tinyobjloader.libs/libgcc_s-a04fdf82.so.1,sha256=YxqJNaesQMhDswHEQpXsiLnVvMBBbYO6KYMDZFPWKSM,81257
+tinyobjloader.libs/libstdc++-a9383cce.so.6.0.28,sha256=Wy9UCdwS1rwI9GU5e7qE61S0AkRqqwti1q_adWSs-Rk,2447393
+python/_version.py,sha256=xyOL6gItn-m4tru3ogqYTGsdeaSWpS_Uk7KxZHxQmi4,146
+python/sample.py,sha256=i15ZpVuWfuGjSYeaS66UonBcXJ0yrjO6-moejsS7emY,3200
+tinyobjloader-2.0.0rc11.dist-info/METADATA,sha256=fQRf5d1xlJjN9ezSl3I7ZzuAT-fwwBHV9bsJhzobpo8,19166
+tinyobjloader-2.0.0rc11.dist-info/LICENSE,sha256=GeGwJCcJaUxmcTaWCVRJk6LfzvhHfxqhm9MN417FjKo,1902
+tinyobjloader-2.0.0rc11.dist-info/top_level.txt,sha256=JcbQXTgJJCPmQ8h_DXoxzE9oLfj8MSkGGZAz9PQdCzY,21
+tinyobjloader-2.0.0rc11.dist-info/RECORD,,
+tinyobjloader-2.0.0rc11.dist-info/WHEEL,sha256=rbVfYZzJiOCEiiKDVkaog3MWj3SC9SfTJ-H92vzqnHY,112
