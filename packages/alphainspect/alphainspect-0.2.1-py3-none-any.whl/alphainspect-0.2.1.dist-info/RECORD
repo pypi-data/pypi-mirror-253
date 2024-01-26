@@ -1,0 +1,15 @@
+alphainspect/__init__.py,sha256=LCu7mSBvsNM62KV6MH5_wvW1NmOAxJJBpuBh7s-49to,138
+alphainspect/_nb.py,sha256=uldGj2WwkAOEnx1wlPPv46HpK6mUbGLrojmC9zCyQxk,3317
+alphainspect/_version.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+alphainspect/events.py,sha256=8dxhAXLyeSvWaoF2aoG02kV-ZJK25l3REIDpYD1MWvc,3893
+alphainspect/ic.py,sha256=APCrowBxz30Rkhm66RDfGfVpz3YhZFvr-paKNzUt5zs,4354
+alphainspect/portfolio.py,sha256=NTKA7Px4O3v1_PT5CL4mOZ15c-x2RbxUgJObP3h-A4U,2628
+alphainspect/reports.py,sha256=CmOUZbjoLsEfg9n5LuXq0SCk2A7WzkrcIKvAzqNHzHQ,5307
+alphainspect/returns.py,sha256=SDgvRaFvPNDap3Xe7gGKeNvb1S6KBolaXpEv30FrvP0,2593
+alphainspect/turnover.py,sha256=GiSw6QjOtxSznQMnv8IGLkZ6lRYDMt_Z6DmTysVbrbY,2893
+alphainspect/utils.py,sha256=e0wglRhOdm4LhO0oDBrUty7Bejl3VV5HBBGQiQx3wA4,4450
+alphainspect-0.2.1.dist-info/LICENSE,sha256=reBHjhBu45YQvXWLh8WD5ASnwgUDb21XyT8FiTtEsa8,1062
+alphainspect-0.2.1.dist-info/METADATA,sha256=uCw0987mad61UFBR3fjbw_FIINoRw3BxTG7tkcxX5Fs,5084
+alphainspect-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+alphainspect-0.2.1.dist-info/top_level.txt,sha256=ikqrwKF62YLz-4BrFKuDEAkOe5802lD40I0rQoUG08Y,13
+alphainspect-0.2.1.dist-info/RECORD,,
