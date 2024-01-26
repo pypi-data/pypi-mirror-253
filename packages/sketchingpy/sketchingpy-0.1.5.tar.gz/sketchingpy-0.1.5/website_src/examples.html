@@ -1,0 +1,446 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section>
+    <h2>Examples</h2>
+    <div>
+        Each example offers links to the different renderers / platforms on which it is available. For instance, the hello static example is available for web, local, and static. The web examples will open in a browser-based editor where they can also be executed while others will link to code snippets.
+    </div>
+
+    <section class="gallery subsection">
+        <h3>Basics</h3>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/hello_static.png?v={{ version }}" alt="Picture of a circle in a sketch.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Hello static:</span>A first hello world example available for all three renderers.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=hello_static" class="button" aria-label="Link to web renderer hello static example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/hello_static.py?ref_type=heads" class="button" aria-label="Link to local renderer hello static example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/hello_static.py?ref_type=heads" class="button" aria-label="Link to static renderer hello static example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/hello_interactive.png?v={{ version }}" alt="Picture of an interactive hello world sketch.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Hello interactive:</span> A hello world example with minimumn interactivity.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=hello_interactive" class="button" aria-label="Link to web renderer hello interactive example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/hello_interactive.py?ref_type=heads" class="button" aria-label="Link to local renderer hello interactive example">Local</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/start.png?v={{ version }}" alt="Picture of the sketch on the webpage.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Hello draw:</span> The hello world example from the homepage.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=hello_homepage" class="button" aria-label="Link to web renderer hello homepage example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/hello_homepage.py?ref_type=heads" class="button" aria-label="Link to local renderer hello homepage example">Local</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/basics_styling.png?v={{ version }}" alt="Picture of four circles with different styles.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Hello basics:</span> Basics of styling and colors.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=basics_styling" class="button" aria-label="Link to web renderer styling example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/basics_styling.py?ref_type=heads" class="button" aria-label="Link to local renderer styling example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/basics_styling.py?ref_type=heads" class="button" aria-label="Link to static renderer styling example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/basics_state.png?v={{ version }}" alt="Picture of three circles.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Hello stack:</span> Saving (pushing) and loading (popping) styles.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=basics_state" class="button" aria-label="Link to web renderer styling state example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/basics_state.py?ref_type=heads" class="button" aria-label="Link to local renderer styling state example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/basics_state.py?ref_type=heads" class="button" aria-label="Link to static renderer styling state example">Static</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery subsection">
+        <h3>Buffers</h3>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/buffer_simple.png?v={{ version }}" alt="Picture of two circles repeated four times.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Buffer simple:</span> Using simple buffers.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=buffer_simple" class="button" aria-label="Link to web renderer buffer example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/buffer_simple.py?ref_type=heads" class="button" aria-label="Link to local renderer renderer buffer example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/buffer_simple.py?ref_type=heads" class="button" aria-label="Link to static renderer renderer buffer example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/buffer_opaque.png?v={{ version }}" alt="Picture of two circles repeated four times with background.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Buffer opaque:</span> Using fast opaque buffers.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=buffer_opaque" class="button" aria-label="Link to web renderer buffer example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/buffer_opaque.py?ref_type=heads" class="button" aria-label="Link to local renderer renderer buffer example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/buffer_opaque.py?ref_type=heads" class="button" aria-label="Link to static renderer renderer buffer example">Static</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery subsection">
+        <h3>Data</h3>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/data_read_csv.png?v={{ version }}" alt="Picture of a bar chart from a CSV file.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Read CSV:</span> Rendering a simple bar chart from a CSV file.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=data_read_csv" class="button" aria-label="Link to web renderer CSV read example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/data_read_csv.py?ref_type=heads" class="button" aria-label="Link to local renderer CSV read example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/data_read_csv.py?ref_type=heads" class="button" aria-label="Link to static renderer CSV read example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/data_read_json.png?v={{ version }}" alt="Picture of a bar chart from a JSON file.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Read JSON:</span> Drawing a simple bar chart from a JSON file.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=data_read_json" class="button" aria-label="Link to web renderer JSON read example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/data_read_json.py?ref_type=heads" class="button" aria-label="Link to local renderer JSON read example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/data_read_json.py?ref_type=heads" class="button" aria-label="Link to static renderer JSON read example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/data_write_csv.png?v={{ version }}" alt="Picture of a CSV file.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Write CSV:</span> Generating a CSV file from a sketch.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=data_write_csv" class="button" aria-label="Link to web renderer CSV write example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/data_write_csv.py?ref_type=heads" class="button" aria-label="Link to local renderer CSV write example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/data_write_csv.py?ref_type=heads" class="button" aria-label="Link to static renderer CSV write example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/data_write_json.png?v={{ version }}" alt="Picture of a JSON file.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Write JSON:</span> Generating a JSON file from a sketch.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=data_write_csv" class="button" aria-label="Link to web renderer JSON write example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/data_write_json.py?ref_type=heads" class="button" aria-label="Link to local renderer JSON write example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/data_write_json.py?ref_type=heads" class="button" aria-label="Link to static renderer JSON write example">Static</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery subsection">
+        <h3>Dialog</h3>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/dialog_simple.png?v={{ version }}" alt="Picture of an alert dialog.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Simple dialogs:</span> Simple dialogs like prompt and alert.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=dialog_simple" class="button" aria-label="Link to web renderer CSV read example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/dialog_simple.py?ref_type=heads" class="button" aria-label="Link to local renderer CSV read example">Local</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery subsection">
+        <h3>Geo</h3>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/geo_scale_transform.png?v={{ version }}" alt="Picuture of of a map region.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Geo transform:</span> Drawing with map panning and zooming.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=geo_scale_transform" class="button" aria-label="Link to web renderer geo scale transform example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/geo_scale_transform.py?ref_type=heads" class="button" aria-label="Link to local renderer geo scale transform example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/geo_scale_transform.py?ref_type=heads" class="button" aria-label="Link to static renderer geo scale transform example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/geo_polygon.png?v={{ version }}" alt="Picuture of of a point.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Geo polygon:</span> Drawing a polygon defined by latitude and longitude points.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=geo_polygon" class="button" aria-label="Link to web renderer geo polygon example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/geo_polygon.py?ref_type=heads" class="button" aria-label="Link to local renderer geo polygon example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/geo_polygon.py?ref_type=heads" class="button" aria-label="Link to static renderer geo polygon example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/geo_geojson.png?v={{ version }}" alt="Map of the bay area.">
+            </div>
+            <div class="description">
+                <span class="guide-title">GeoJSON:</span> Displaying GeoJSON on a map.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=geo_geojson" class="button" aria-label="Link to web renderer geojson example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/geo_geojson.py?ref_type=heads" class="button" aria-label="Link to local renderer geojson example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/geo_geojson.py?ref_type=heads" class="button" aria-label="Link to static renderer geojson example">Static</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="gallery subsection">
+        <h3>Images</h3>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/image_draw.png?v={{ version }}" alt="Picture of a witch picture in a sketch.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Read image:</span> Drawing an image into a sketch.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=image_draw" class="button" aria-label="Link to web renderer image draw example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/image_draw.py?ref_type=heads" class="button" aria-label="Link to local renderer image draw example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/image_draw.py?ref_type=heads" class="button" aria-label="Link to static renderer image draw example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/image_save.png?v={{ version }}" alt="Picture of three circles saved from a sketch.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Write image:</span> Writing a sketch to an image file.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=image_save" class="button" aria-label="Link to web renderer image save example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/image_save.py?ref_type=heads" class="button" aria-label="Link to local renderer image save example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/image_save.py?ref_type=heads" class="button" aria-label="Link to static renderer image save example">Static</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery subsection">
+        <h3>Inputs</h3>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/inputs_keyboard.png?v={{ version }}" alt="Picture of a sketch taking keyboard input.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Keyboard:</span> Example of taking keyboard input.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=inputs_keyboard" class="button" aria-label="Link to web renderer keyboard example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/inputs_keyboard.py?ref_type=heads" class="button" aria-label="Link to local renderer keyboard example">Local</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/inputs_mouse.png?v={{ version }}" alt="Picture of a sketch taking mouse input.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Mouse:</span> Example of taking mouse input.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=inputs_mouse" class="button" aria-label="Link to web renderer mouse example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/inputs_mouse.py?ref_type=heads" class="button" aria-label="Link to local renderer mouse example">Local</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery subsection">
+        <h3>Shapes</h3>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/shapes_line.png?v={{ version }}" alt="Picture of four lines.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Lines:</span> Drawing lines.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=shapes_line" class="button" aria-label="Link to web renderer shape line example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/shapes_line.py?ref_type=heads" class="button" aria-label="Link to local renderer shape line example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/shapes_line.py?ref_type=heads" class="button" aria-label="Link to static renderer shape line example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/shapes_pixel.png?v={{ version }}" alt="Picture of a dotted line.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Pixels:</span> Drawing individual pixels.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=shapes_pixel" class="button" aria-label="Link to web renderer shape point example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/shapes_pixel.py?ref_type=heads" class="button" aria-label="Link to local renderer shape point example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/shapes_pixel.py?ref_type=heads" class="button" aria-label="Link to static renderer shape point example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/shapes_rect.png?v={{ version }}" alt="Picture of four squares.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Rectangles:</span> Drawing rectangles and squares.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=shapes_rect" class="button" aria-label="Link to web renderer shape line example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/shapes_rect.py?ref_type=heads" class="button" aria-label="Link to local renderer shape line example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/shapes_rect.py?ref_type=heads" class="button" aria-label="Link to static renderer shape line example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/shapes_ellipse.png?v={{ version }}" alt="Picture of four circles.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Ellipses:</span> Drawing ellipses and circles.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=shapes_ellipse" class="button" aria-label="Link to web renderer shape ellipse example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/shapes_ellipse.py?ref_type=heads" class="button" aria-label="Link to local renderer shape ellipse example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/shapes_ellipse.py?ref_type=heads" class="button" aria-label="Link to static renderer shape ellipse example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/shapes_arc.png?v={{ version }}" alt="Picture of arcs from a sketch.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Arcs:</span> Drawing arcs.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=shapes_arc" class="button" aria-label="Link to web renderer shape arc example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/shapes_arc.py?ref_type=heads" class="button" aria-label="Link to local renderer shape arc example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/shapes_arc.py?ref_type=heads" class="button" aria-label="Link to static renderer shape arc example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/shapes_shape.png?v={{ version }}" alt="Picture of a complex shape with two triangles where one is missing a side.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Shapes:</span> Drawing complex shapes with lines.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=shapes_shape" class="button" aria-label="Link to web renderer shape shape example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/shapes_shape.py?ref_type=heads" class="button" aria-label="Link to local renderer shape shape example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/shapes_shape.py?ref_type=heads" class="button" aria-label="Link to static renderer shape shape example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/shapes_bezier.png?v={{ version }}" alt="Picture of bezier curves.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Curves:</span> Drawing complex shapes with bezier curves.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=shapes_bezier" class="button" aria-label="Link to web renderer shape bezier example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/shapes_bezier.py?ref_type=heads" class="button" aria-label="Link to local renderer shape bezier example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/shapes_bezier.py?ref_type=heads" class="button" aria-label="Link to static renderer shape bezier example">Static</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery subsection">
+        <h3>Transformations</h3>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/transform_translate.png?v={{ version }}" alt="Picture of two circles.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Translate:</span> Moving the origin by translating.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=transform_translate" class="button" aria-label="Link to web renderer translation example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/transform_translate.py?ref_type=heads" class="button" aria-label="Link to local renderer translation example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/transform_translate.py?ref_type=heads" class="button" aria-label="Link to static renderer translation example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/transform_scale.png?v={{ version }}" alt="Picture of three squares with zooming.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Scale:</span> Zooming in and out by scaling.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=transform_scale" class="button" aria-label="Link to web renderer scale example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/transform_scale.py?ref_type=heads" class="button" aria-label="Link to local renderer scale example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/transform_scale.py?ref_type=heads" class="button" aria-label="Link to static renderer scale example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/transform_rotate.png?v={{ version }}" alt="Picture of three squares with rotation.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Rotate:</span> Rotating around the origin.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=transform_rotate" class="button" aria-label="Link to web renderer rotation example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/transform_rotate.py?ref_type=heads" class="button" aria-label="Link to local renderer rotation example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/transform_rotate.py?ref_type=heads" class="button" aria-label="Link to static renderer rotation example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/transform_combine.png?v={{ version }}" alt="Picture of four arcs.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Combine transforms:</span> Combining multiple transforms together.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=transform_combine" class="button" aria-label="Link to web renderer combined transformations example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/transform_combine.py?ref_type=heads" class="button" aria-label="Link to local renderer combined transformations example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/transform_combine.py?ref_type=heads" class="button" aria-label="Link to static renderer combined transformations example">Static</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image-holder">
+                <img src="/img/transform_state.png?v={{ version }}" alt="Picture of four arcs.">
+            </div>
+            <div class="description">
+                <span class="guide-title">Transform stack:</span> Saving (pushing) and loading (popping) transforms.
+            </div>
+            <div class="action">
+                <a href="/examples/web/example.html?sketch=transform_state" class="button" aria-label="Link to web renderer transformations state example">Web</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/local/transform_state.py?ref_type=heads" class="button" aria-label="Link to local renderer transformations state example">Local</a>
+                <a href="https://codeberg.org/sketchingpy/Sketchingpy/src/branch/main/examples/static/transform_state.py?ref_type=heads" class="button" aria-label="Link to static renderer transformations state example">Static</a>
+            </div>
+        </div>
+    </section>
+
+</section>
+{% endblock %}

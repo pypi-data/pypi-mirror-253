@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head lang="en_US">
+        <meta charset="UTF-8">
+        <title>Sketchingpy Test Harness</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/third_party/core.css">
+        <script type="module" src="/third_party/core.js"></script>
+    </head>
+    <body>
+        <py-config>
+        {
+            "packages": ["/dist/sketchingpy-0.1.5-py3-none-any.whl"]
+        }
+        </py-config>
+
+        <main id="#main">
+            <div class="sketch-load-message" id="sketch-load-message">Waiting...</div>
+            <canvas id="sketch-canvas" style="display: none"></canvas>
+        </main>
+
+<py-script>
+import sketchingpy
+import sketchingpy.geo
+
+
+sketch = sketchingpy.Sketch2DWeb(500, 500)
+sketch.clear('#F0F0F0')
+
+# Position of UC Berkeley
+longitude = -122.262938; 
+latitude = 37.873139;
+
+# Center the map on San Francisco and place in middle of sketch
+center_longitude = -122.418343
+center_latitude = 37.761842
+center_x = 250
+center_y = 250
+map_scale = 10
+
+# Create a geo transformation that ties pixel to geo coordinates
+sketch.set_map_pan(center_longitude, center_latitude),  # Where to center geographically
+sketch.set_map_zoom(map_scale)  # How much zoom
+sketch.set_map_placement(center_x, center_y),  # Where to center in terms of pixels
+
+# Convert point
+x, y = sketch.convert_geo_to_pixel(longitude, latitude)
+
+# Draw
+sketch.set_fill('#333333')
+sketch.clear_stroke()
+sketch.set_ellipse_mode('center')
+sketch.draw_ellipse(x, y, 30, 30)
+
+sketch.show()
+
+</py-script>
+    </body>
+</html>
