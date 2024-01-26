@@ -1,0 +1,11 @@
+CHANGES
+=======
+
+0.12.8
+------
+
+* fix back
+* wrap socket error to tidevice.SocketError
+* update readme for ios17
+* remove limit for pyopenssl and urllib3, close #351
+* little update for tidevice
