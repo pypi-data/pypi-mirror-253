@@ -1,0 +1,17 @@
+gribtoarrow/__init__.py,sha256=_7EPpfsunbtPCxPLSJFOtxj97nZQxA7Gs9BOpyYWEiU,59
+gribtoarrow/eccodes/libeccodes.so,sha256=0iVx25SNpdidguD_ZPVbgQGxir7tsva03609jwkq-Ek,20599264
+gribtoarrow/eccodes/libeccodes_memfs.so,sha256=_u6xdxgg6SoiG06H9ZBsDu7qocqc6QOznMX1-Jwdvvk,28278312
+gribtoarrow/gribtoarrow.cpython-311-x86_64-linux-gnu.so,sha256=-fKpQxh3PVgTEd2GGEUmknW-8X5Gv-X5Ce5BspM8L7I,560120
+gribtoarrow/lib/libaec.a,sha256=6ZP-60u7z2hy0edP-Nanp2Oe4r9ag9Ukjn4MO1H2LK0,46708
+gribtoarrow/lib/libaec.so,sha256=kEacYLgXBenuipyVmHzOqTE1JHHBfozfOk3h8G-HFdA,48864
+gribtoarrow/lib/libaec.so.0,sha256=kEacYLgXBenuipyVmHzOqTE1JHHBfozfOk3h8G-HFdA,48864
+gribtoarrow/lib/libaec.so.0.1.2,sha256=kEacYLgXBenuipyVmHzOqTE1JHHBfozfOk3h8G-HFdA,48864
+gribtoarrow/lib/libeccodes_memfs.so,sha256=_u6xdxgg6SoiG06H9ZBsDu7qocqc6QOznMX1-Jwdvvk,28278312
+gribtoarrow/lib/libsz.a,sha256=w18KqrUQzBMYPkRa9MZeiqA1MhJenSPvPZzHEtz9iTw,52470
+gribtoarrow/lib/libsz.so,sha256=PmUsBccxpa3VQ5Ib_JNiEuqqPqWmScXY44pviyoWbBg,53456
+gribtoarrow/lib/libsz.so.2,sha256=PmUsBccxpa3VQ5Ib_JNiEuqqPqWmScXY44pviyoWbBg,53456
+gribtoarrow/lib/libsz.so.2.0.1,sha256=PmUsBccxpa3VQ5Ib_JNiEuqqPqWmScXY44pviyoWbBg,53456
+gribtoarrow.cpython-311-x86_64-linux-gnu.so,sha256=-fKpQxh3PVgTEd2GGEUmknW-8X5Gv-X5Ce5BspM8L7I,560120
+gribtoarrow-0.1.9.dist-info/METADATA,sha256=L1DDPi4cTGxy9eh5pP1M1vHld2alPq1d1iAXZmqtRjg,13054
+gribtoarrow-0.1.9.dist-info/WHEEL,sha256=SOwdjWzRiCHIhZLhh2cTNmft4nHrvF_hYLQqOYEvp68,110
+gribtoarrow-0.1.9.dist-info/RECORD,,
