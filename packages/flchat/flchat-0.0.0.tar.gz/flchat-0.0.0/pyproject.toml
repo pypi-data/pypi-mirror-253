@@ -1,0 +1,83 @@
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flchat"
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE.txt"}
+keywords = ["sample", "setuptools", "development"]
+authors = [
+  {name = "emd3m0r", email = "emdemor415@gmail.com" }
+]
+maintainers = [
+  {name = "emd3m0r", email = "emdemor415@gmail.com" }
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dynamic = ["version", "dependencies"]
+
+[project.urls]
+"Homepage" = "https://emdemor.github.io"
+
+[project.optional-dependencies]
+lint = [
+    "black==23.7.0",
+    "flake8==6.1.0",
+    "Flake8-pyproject==1.2.3",
+    "mypy==1.4.1",
+    "bandit==1.7.5",
+]
+test = [
+    "pytest==7.4.0",
+    "pytest-cov==4.1.0",
+    "pytest-mock==3.11.1",
+    "pytest-mypy==0.10.3",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "flchat.__version__"}
+dependencies = {file = ["requirements.txt"]}
+
+[project.scripts]
+flchat = "flchat.__main__:run"
+anothermodule = "anothermodule:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"flchat.assets.templates" = ["*.html"]
+"flchat.assets.static" = ["*"]
+"anothermodule" = ["*.txt"]
+
+[tool.mypy]
+cache_dir = "/tmp/mypy_cache"
+ignore_missing_imports = true
+
+[tool.flake8]
+max-line-length = 120
+ignore = ["D203", "W504"]
+per-file-ignores = ["sample/module.py:E501"]
+
+[tool.back]
+target-version = ["py311"]
+line-length = 120
+extend-ignore = ["D203", "W504"]
+
+[tool.pytest.ini_options]
+addopts = "-p no:cacheprovider -vvv --durations=0 --disable-warnings --cov --cov-report term-missing"

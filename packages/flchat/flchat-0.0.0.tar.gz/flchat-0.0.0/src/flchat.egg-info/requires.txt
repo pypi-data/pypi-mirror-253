@@ -1,0 +1,17 @@
+flask==2.2.2
+Werkzeug==2.2.2
+pydantic==2.5.2
+pydantic-settings==2.1.0
+
+[lint]
+black==23.7.0
+flake8==6.1.0
+Flake8-pyproject==1.2.3
+mypy==1.4.1
+bandit==1.7.5
+
+[test]
+pytest==7.4.0
+pytest-cov==4.1.0
+pytest-mock==3.11.1
+pytest-mypy==0.10.3
