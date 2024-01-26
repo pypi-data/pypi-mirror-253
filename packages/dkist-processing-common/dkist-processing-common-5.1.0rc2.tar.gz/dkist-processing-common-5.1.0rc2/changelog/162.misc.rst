@@ -1,0 +1,1 @@
+Add tasks to simulate the generation of dataset inventory and ASDF files for 'Trial' workflows.
