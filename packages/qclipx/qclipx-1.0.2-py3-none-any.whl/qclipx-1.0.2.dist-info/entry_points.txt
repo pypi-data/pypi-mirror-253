@@ -1,0 +1,2 @@
+[console_scripts]
+qclipx = qclipx.qclipx:main
