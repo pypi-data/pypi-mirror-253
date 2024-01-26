@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: haji-api
+Version: 0.0.1
+Summary: haji api has best web services.
+Home-page: https://github.com/Erfan-Bafandeh/haji-api
+Author: Erfan Bafandeh
+Author-email: user.enbh@gmail.com
+Keywords: web-service,api,haji-api
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+## haji api
+
+<h3 align="center">haji api has best web services.</h3>
+
+> ## Install and Update:
+```python
+pip install haji-api
+```
+
+> ## START:
+```python
+from haji-api import *
+
+print(gpt("how are you my bot?"))
+```
+
+> ## Social Media:
+<a href="https://t.me/HajiApi">Haji Api</a><br>
+<a href="https://t.me/persian_py">TELEGRAM</a><br>
+<a href="https://github.com/Erfan-Bafandeh/pyrotel">GITHUB</a>
