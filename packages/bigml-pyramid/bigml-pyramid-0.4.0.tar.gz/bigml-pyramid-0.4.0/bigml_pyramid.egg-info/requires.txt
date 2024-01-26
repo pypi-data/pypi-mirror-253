@@ -1,0 +1,8 @@
+bigml-sensenet<0.7.3,>=0.7.2
+inputimeout<1.1,>=1.0.4
+numpy<1.27,>=1.26.3
+pillow<10.2.1,>=10.2.0
+scikit-learn<1.4.1,>=1.4.0
+scipy<1.13.0,>=1.12.0
+shapsplain<0.3.1,>=0.3.0
+tensorflow<2.16,>=2.15

@@ -1,0 +1,730 @@
+# pyramid
+
+> Their room was smaller than the one Case shared with Molly, and on
+> another level, closer to the surface. Five huge Cibachromes of Tally
+> Isham were taped across the glass of the balcony, suggesting an
+> extended residency. "They’re deftriff, huh?" Cath asked, seeing him
+> eye the transparencies. "Mine. Shot ’em at the S/N Pyramid, last
+> time we went down the well. She was that close, and she just smiled,
+> so natural. And it was bad there, Lupus, day after these Christ the
+> King terrs put angel in the water, you know?"
+>
+> "Yeah," Case said, suddenly uneasy, "terrible thing."
+>
+> Neuromancer, William Gibson
+
+Pyramid is wintermute's wrapper around sensenet, the client library
+for instantiating BigML classifiers in TensorFlow.  Pyramid is
+responsible for caching data coming out of wintermute to numpy,
+instantiating and learning neural networks on the cached data, and
+converting the model to a final JSON output document, suitable for
+returning to BigML.
+
+## Installing
+
+You may install pyramid using the install script in `bin/install`.  It
+takes no arguments.  The script creates a virtualenv named pyramid in
+the user's home directory and provides a single command `pyramid` in
+this virtualenv.
+
+You may also, of course, install pyramid in the system path, but do be
+aware that it requires python 3.7+, and several older pythons have been
+verified *not* to work.
+
+To work properly with wintermute, the directory containing the
+`pyramid` command *must be on the system path* or, alternatively, the
+`WINTERMUTE_PYRAMID_PATH` *environment variable must be set*:
+
+```
+export WINTERMUTE_PYRAMID_PATH="$HOME/.virtualenvs/pyramid/bin/pyramid"
+```
+
+or similar.
+
+## Training Image Networks
+
+To train networks that take a single image as input, installation via
+pip provides the command `pyramid_train`, which takes a single JSON
+file as input.
+
+```
+pyramid_train config.json
+```
+
+This JSON file can either specify a classification / regression
+problem, or an object detection (bounding box) problem.  Depending on
+the problem type, the key `training_data` should contain the
+appropriate data structure, described below.
+
+For both problem types, the JSON file must contain values for the
+following keys:
+
+- `balance_objective`: A boolean value indicated whether to resample
+  the training data (on a per-batch basis) to have an equal class
+  distribution.
+
+- `batch_size`: Number of images per batch in mini-batch gradient
+  descent.  Typically between 20 and 200.
+
+- `descent_algorithm`: A string specifying the gradient descent
+  algorithm to be used, such as `adam`.  A full list of algorithms is
+  given in `settings/optimizers.py`.
+
+- `holdout_set_size`: The maximum size of the holdout set.  Either 20%
+  of the data or this number of instances is held out for early
+  stopping.
+
+- `image_network_candidates`: A list of pairs of strings, denoting the
+  topologies and training types to be tried during training.  This
+  pair of strings can either be the name of a topology and a training
+  method, or the string `initial_model` followed by the path to the
+  model.
+
+  If the pair of strings is of the former type, the first string must
+  be one of the predefined CNN network topologies.  For
+  classification and regression, valid topologies are (in order of
+  complexity), `simple`, `simple_residual`, `mobilenet`,
+  `mobilenetv2`, and `resnet18`.  For object detection, valid
+  topologies are `tinyyolov4` and `yolov4`.  Training methods are
+  `randomly_initialize`, `fine_tune`, and `use_pretrained`.
+
+  If `fine_tune` is specified, pyramid loads weights trained on
+  imagenet (or COCO for object detection), strips and relearns the top
+  "readout" layers, then, in a second learning phase, attempts to fine
+  tune the convolutional layers to further increase performance.  When
+  `use_pretrained` is specified, only the first step is tone, and the
+  pretrained weights are used without modification.  Note that
+  pretrained weights are only available for the non-`simple`
+  topologies.
+
+  Thus a valid list of `image_network_candidates` could look like the
+  following:
+
+  ```
+  [
+     ["resnet18", "use_pretrained"],
+     ["mobilenetv2", "randomly_initialize"],
+     ["initial_model", "models/my_model.json"]
+  ]
+  ```
+
+  Each of these would be tried in turn, and the best model written to
+  the results directory.
+
+- `image_augmentations`: Objective-invariant transformations used to
+  augment training data, such as `brightness` and `zoom`.  See the
+  [section on data augmentation](#data-augmentation) below.
+
+- `image_root`: The root directory for all the training images,
+  prepended to the file paths given in the `training_data` below.
+
+- `input_image_shape`: The shape into which to read the image data, as
+  `[width, height, 3]`; Right now, only RGB images (no transparency)
+  are supported.
+
+- `learning_rate`: The learning rate for gradient descent; a positive
+  floating point value.  For all models the convolutional layers are
+  trained with a learning rate schedule of 1/4 and 1/16 this rate (or
+  for fine-tuned models, 1/8 and 1/64), where a step down is taken
+  when no improvement is seen on a holdout set.
+
+- `learning_rate_warmup_iterations`: If specified, when the iteration
+  number is lower than the given value, a quadratic "penalty" is
+  applied to the learning rate.  Specifically, if the number of warmup
+  iterations is `x` and the given learning rate is `r`, the learning
+  rate at iteration `i` will be `r * min(1, i / x) ** 2`.  Checks for
+  early stopping are also ignored when `i < x`, though we still
+  perform performance checks on the validation set.  Not specifying
+  the value is equivalent to setting it to zero.
+
+- `max_total_time`: The maximum total time to spend training the
+  networks.  This time is divided equally among the
+  `image_network_candidates` above.  If one network finishes training
+  early, unused time is apportioned to the remaining candidates.
+
+- `output_directory`: Location to which the results of training should
+  be written.  The fit info and weights for each network trained are
+  stored in a subdirectory in this location.
+
+The following keys can be specified, but are optional:
+
+- `augmentation_ranges`: Objective-invariant and parameterized
+  transformations used to augment training data, such as `brightness`
+  and `zoom`.  See the [section on data
+  augmentation](#data-augmentation) below.
+
+- `cheat_on_validation`: A boolean that, if true, causes the model to
+  draw its validation data from the actual training data.  This will
+  cause the model to, essentially by definition, be overfit, and is
+  not recommended.
+
+- `initial_model`: A string path to a model JSON file (i.e., the
+  `final_model.json` file that appears in the `output_directory` after
+  training is complete) to be used as the initial weights for model
+  training.  If this is specified, note that the rest of the config
+  file must be "compatible" with the given model.  That is, mainly,
+  that the ground truth data types must be the same.  Also note that
+  this will be tried *in addition to* the topologies listed in
+  `image_network_candidates`.
+
+- `label_smoothing_factor`: A value greater than zero causes
+  Laplace-style smoothing to be applied to the one-hot "truth" vector
+  for each point used in training.  For example, if there are three
+  classes, "a", "b", and "c", and a point has class "b", its
+  unsmoothed ground truth vector will be `[0, 1, 0]`.  With a
+  `label_smoothing_factor` of 0.3, this amount of the "truth
+  distribution" is divided uniformly between all classes, giving our
+  imaginary point the ground truth vector [0.1, 0.8, 0.1].  The
+  intuitive semantics of the value is that is represents the level of
+  uncertainty one has about the correctness of the true labels.
+
+- `max_seconds_per_update`: The maximum time we wait before doing a
+  check on performance on the validation set.  The algorithm stops
+  training after a large number of consecutive failures of these
+  checks (see `patience`).
+
+- `patience`: The number of checks of the holdout set that we can fail
+  consecutively before stopping early.
+
+Progress from the training for each network is written to standard
+out, along with a final report.  The best detected model is written to
+`final_model.json` in the specified `output_directory`.
+
+The output `final_model.json` can be used to instantiate TensorFlow a
+model using `image_model` function in the `sensenet.models.image`
+namespace in the sensenet library.  The output format of the
+predictions depends on the type of model being learned.
+
+### Classification / Regression
+
+For image classification or regression problems, the input JSON must
+additionally specify the following keys:
+
+- `loss_function`: The loss function to optimize, such as
+  `mean_squared_error` for numeric objectives or `crossentropy` for
+  categorical objectives.  All available objectives are listed in
+  `settings/objectives.py`.
+
+- `max_data_size`: The maximum total size of data to read into memory.
+  If the entire dataset is smaller than this size, it is read into
+  memory in its entirety.  Otherwise, batches are read from disk on
+  demand.
+
+- `rescale_type`: A string in `["warp", "pad", "crop"]` (default
+  `"crop"`) that describes how to resize images to the specified
+  `image_input_shape`.  If the aspect ratio of all training images
+  matches the `input_image_shape`, this has no practical effect.  If
+  not, the option specifies that the image should be stretched, padded
+  in the short dimension, or centrally-cropped in the long dimension,
+  respectively, to get an image with the correct aspect ratio.  See
+  the description for the same key in the [SenseNet
+  documentation](https://github.com/bigmlcom/sensenet#model-instantiation)
+  for a precise description of how each option works.  Note that for
+  bounding box problems, `"pad"` is always used regardless of this
+  setting, to make sure that no part of the image is distorted or
+  occluded.
+
+- `training_data`: A list of dicts, each one of which represents a
+  single training point.  The dicts should each have three keys,
+  `file`, `label`, and `weight`, which are the location of the image
+  input file (with the `image_root` prepended), the label for that
+  file (a string for categorical objectives and a number for numeric)
+  and the weight for that training example (generally 1 for all
+  points).
+
+The model returned by `image_model(json_output, None)` returns a
+vector for each predicted point, where the ordering of the values in
+the vector correspond to the ordering of the class `values` given in
+`json_output["output_exposition"]`.
+
+### Object Detection
+
+The `training_data` for an object detection problem should be a list
+of dicts, each one of which represents a single training point.  The
+dicts should each have two keys, `file` and `boxes`.  The `file` is
+the location of the image input file (with the `image_root`
+prepended).  The `boxes` are represented as a list of lists, where
+each inner list has the takes the form `[x1, y1, x2, y2, class]`.
+Where the x-y coordinate pairs are the upper-left and lower-right
+corners of the bounding box (in a coordinate system where (0, 0) is
+the upper-left of the image), and the `class` is a string representing
+the type of object in the bounding box.  For example:
+
+```
+[
+    {
+        "boxes": [
+            [94, 148, 128, 182, "ellipse"],
+            [21, 128, 219, 345, "rectangle"],
+            [21, 175, 322, 370, "rectangle"]
+        ],
+        "file": "00000000.png"
+    },
+    {
+        "boxes": [
+            [188, 43, 228, 311, "rectangle"]
+        ],
+        "file": "00000001.png"
+    },
+    {
+        "boxes": [],
+        "file": "00000002.png"
+    }
+]
+```
+
+Object detection also considers the following additional parameters:
+
+- `bounding_box_anchors`: A list of pairs of integers that represent
+  common sizes of boxes as `[width height]` in pixels on *images of
+  the scale given in `input_image_shape`*, such as `[[100 50], [50,
+  100], [50, 75]]`.  If not specified, these "bounding box proposals"
+  (six of them for tiny YOLO and nine for full YOLO) are determined
+  automatically via k-means clustering of the box sizes in the given
+  data.
+
+- `strict_boxes`: If true, the centers of boxes must be within the
+  bounds of the image, or an exception is thrown.  If false (the
+  default) no exception is thrown and such boxes are simply discarded.
+
+When learning an object detection model, all data is kept on disk
+until training (so `max_data_size` is not applicable) and the loss
+function is automatically a combination of the various losses needed
+to solve the problem (so `loss_function` is not applicable).
+
+The model returned by `image_model(json_output, None)` returns a
+3-element tuple for an image input, where row *i* in each element
+corresponds to information about detected box *i*.  The first element
+is a list of bounding box coordinates of the form `[x1, y1, x2, y2]`,
+one list per detected box.  The second element is a list of "scores",
+one per detected box, where the score is a product of the probability
+that an object is present and the highest probability class.  The
+third element is a list of highest-probability classes for each
+detected box.
+
+## Data Augmentation
+
+At training time, you can specify and parameterize a number of data
+augmentation strategies to use.  When these are activated,
+transformations are applied just-in-time to each dataset instance,
+modifying it in a way that should not affect its corresponding
+objective.
+
+It is incumbent on the user to select augmentation settings that are
+appropriate to the problem.  For example, adding a small amount of
+noise to images of letters does not change the perceived class of the
+image, but flipping the image horizontally might (for example, the
+lower case letter b becomes d and vice-versa).  Using the [data
+visualization](#data-visualization) command line tool described below
+can help determine whether your augmentations are data-appropriate.
+
+### Specifying Augmentations
+
+The key `image_augmentations` is the simplest way to specify which
+augmentations to use.  This key should be mapped to a list of strings,
+where the values in the list are drawn from the list given in the
+specific (augmentation descriptions)[#augmentation-descriptions], such
+as:
+
+```
+{"image_augmentations": ["cutout", "horizontal_flip", "zoom"]}
+```
+
+By default, the augmentations are designed to be somewhat
+conservative: You should see the effects if you visualize the image
+batches (using the [provided data visualization
+tool](#data-visualization), but the effects will not be terribly
+pronounced.
+
+### Parameterizing Augmentations
+
+If you would like to make your augmentations have more (or less)
+effect than they have by default, you can specify
+`augmentation_ranges` instead of `image_augmentations`.  Note that the
+former takes preference if specified and the latter is ignored.
+
+The use of `augmentation_ranges` allows you to provide a dictionary
+that maps augmentation types to a floating point value.  Usually this
+value is between 0 and 1, and larger values will increase the effect
+of the transformation.  Specifying `null` means to use the default
+value for the augmentation.
+
+There are a few exceptions to this rule:
+
+- The `rotation` and `shear` augmentation types take a value that
+  corresponds to angular degrees, so two is a small value, 20 is
+  significant but not totally crazy, and probably 90 is as high as you
+  should ever go.
+
+- The `flip_horizontal`, `flip_vertical`, and `color_invert`
+  augmentations are boolean: Specifying any truthy value will activate
+  the augmentation, and any falsely value will deactivate it (the same
+  as if it was not included at all).
+
+So, for example, if you give the following values,
+
+```
+{
+  "augmentation_ranges": {
+    "cutout": null,
+    "horizontal_flip": true,
+    "zoom": 0.2
+  }
+}
+```
+
+it means to use the default value for the `cutout` augmentation, to
+use the `horizontal_flip` augmentation, and to use a value of `0.2`
+for the `zoom` augmentation.  No other augmentations would be applied.
+
+### Augmentation Descriptions
+
+The semantics of the parameter given in `augmentation_ranges` varies
+dramatically from one augmentation to the next.  In the descriptions
+below, we attempt to describe its effect for each one; the value `n`
+referenced in each description is the value given in
+`augmentation_ranges`.  Pay special attention to the defaults
+mentioned as this gives a landmark "small but observable" value for
+each augmentation.
+
+- `blur`: Apply blurring to this image.  Blurring is accomplished by
+  downsampling the image by a factor of `1 / x` (where `x` is a random
+  value between `1 - n` and `1`), then upsampling to the original size
+  using bilinear interpolation.  Practically, this has an effect
+  similar to using a blur kernel with size `1 / x`, so values of `n`
+  less than 0.5 may not have significant impact on the resulting
+  images, especially where the `input_image_shape` is large.
+
+- `brightness`: Adjust the brightness by random value from `-n * 255`
+  to `n * 255`.  This value is added to all pixels in the image
+  (clipping, of course, at 255).
+
+- `color_invert`: With probability 0.5, invert all color channels in
+  the image.  That is, if the original image is an 8-bit image `img`,
+  the resulting image is `255 - img`.
+
+- `contrast`: Adjust the contrast by a random amount between `-n` and
+  `n`.  To "adjust the contrast" is to move all pixels further from or
+  closer to the mean value, so that for a mean pixel value `mv` and a
+  pixel value `v`, the new value will be `mv + (v - mv) * (1 + n)`.
+  Default `n` is 0.25.
+
+- `cutout`: With probability 0.5, occlude part of the image with a
+  rectangle of size `[width * n, height * n]`, so that `n ** 2` of the
+  image will be occluded.  The color of the rectangle is the mean
+  pixel value of the entire image.  Default `n` is 0.25.
+
+- `deform`: With probability 0.5, calculate a perspective
+  transformation based on the movement of one corner of the image by
+  `(width * x, height * y)` where `x` and `y` are random numbers
+  between 1 and `n`, then apply the transformation to the image.  Note
+  that this is only available as a `foreground_image_augmentation`
+  when doing [data generation](#data-generation), and will have no
+  effect otherwise.
+
+- `gaussian_noise`: With probability 0.5, add random Gaussian noise to
+  each pixel.  The noise is a function of the pixel value itself.
+  Specifically, if the pixel value in a given channel is `v`, then the
+  noise added will be drawn from a Gaussian with mean 0 and standard
+  deviation `n * v`.  Default `n` is 0.1.
+
+- `glare`: Like `cutout`, but occludes part of the image with a
+  elliptical gradient that is white at the center and transparent at
+  the edges, meant to look a bit like glare on a surface.  The foci of
+  the ellipse are selected at random, and the gradient is chosen so
+  that a random fraction of the image between 0 and `n` is
+  significantly occluded.  Default `n` is 0.1.
+
+- `height_shift`: Shift the image vertically by a random value from
+  `-n * height` to `n * height` pixels, where `height` is the height
+  of the input image.  Borders are filled with the nearest neighbor
+  pixel as necessary.  Default `n` is 0.1.
+
+- `horizontal_flip`: With probability 0.5, flips the image about the
+  y-axis (that is, left to right)
+
+- `rotation`: Rotate the image randomly between `-n` and `n` degrees.
+  The "frame" of the input image is kept constant, and it is rotated
+  "underneath", which means the corners generally fall outside the
+  frame and are lost, and the borders are filled as necessary using
+  the nearest neighbor pixel.  Default `n` is 10.
+
+- `shear`: Apply a shear transformation with an angle between `-n` and
+  `n` degrees.  As with `rotation`, the bounds of the image in the
+  original coordinate system are retained, which means that shearing
+  will typically push one of the corners out of the frame, and will
+  require nearest-neighbor padding at another.  Default `n` is 10.
+
+- `tint`: With probability 0.5, apply an adjustment factor of between
+  `1 - n` and `1 + n` at random to a random subset of the color
+  channels in the image, which will have the effect of shifting the
+  image towards a particular color.  The adjustment factor is chosen
+  separately for each channel.
+
+- `vertical_flip`: With probability 0.5, flips the image about the
+  x-axis (that is, top to bottom).
+
+- `width_shift`: Shift the image horizontally by a random value from
+  `-n * height` to `n * height` pixels, where `width` is the width of
+  the input image.  Borders are filled with the nearest neighbor pixel
+  as necessary.  Default `n` is 0.1.
+
+- `zoom`: Scale the image by a factor of `1 - n` to `1 + n`, then crop
+  or pad with nearest neighbor pixels as needed to maintain the
+  original size.  Default `n` is 0.1.
+
+### Limitations
+
+For classification and regression problems, there are two code
+pathways for generating the augmented image data: One creates a graph
+in pure TensorFlow and the other uses `tf.py_function`.  For very few
+or zero transformations, the former pathway can be 10 to 20x faster
+than the latter.  However, certain augmentations (given in
+`pyramid.data.image.GENERATOR_ONLY`) cannot be encoded efficiently in
+pure TensorFlow, and so we use the tf.py_function when one of these is
+specified.  Eliminating these transformations may result in
+significant speedups where creating training data batches is the
+bottleneck.  Note that bounding box problems do not have two data
+generation pathways.
+
+Currently, the rotation and shear augmentations are not available for
+bounding box problems, as this would require applying an affine
+transformation to the box vertices, then recalculating the bounding
+box around those vertices, and boy, that sounds like a pain.  For now,
+these keys will be ignored if given for a bounding box problem.
+
+## Data Visualization
+
+There is a separate pyramid command that can be used to visualize
+batches of training data with all of the transformations shown in
+`image_augmentations` applied.  This can be useful to see what the
+machine is seeing in training.  To do this, you can use the
+`--visualize` switch on the command line:
+
+```
+pyramid_train --visualize config.json
+```
+
+This will display a window with a collection of the images with their
+labels, or with all bounding boxes in the image if this is an object
+detection problem.
+
+If you would like to see more than one batch of images, you can add
+`=<number_of_batches>` to the switch.  E.g.:
+
+```
+pyramid_train --visualize=5 config.json
+```
+
+## Data Generation
+
+Yet another installed command allows you to generate data for image
+classification or object detection.  The command, `pyramid_generate`
+also takes a single JSON file as its configuration argument:
+
+```
+pyramid_generate config.json
+```
+
+The general idea is that you point the data generation process at a
+directory of labeled foreground images (that is, images in
+subdirectories with their labels) and background images, along with a
+set of allowable transformations for each.  We iteratively select a
+one or more foreground images and a background image, apply
+transformations to change the images slightly, then paste the
+foreground images atop the background at a random location.  This
+means that it is possible, depending on the size of the foreground
+image (see the setting `occupancy_range` below), the foreground images
+may occlude one another in the final composition.  The final image is
+labeled it according to the directory from which the foreground image
+was chosen.  If `balance_objective` is true, we sample from each
+subdirectory in `foreground_image_root` with equal probability, so the
+class distribution in classification problems will be roughly uniform.
+
+In addition, the alpha channel of each foreground image is used, so
+that fully or partially transparent areas of the foreground images are
+"replaced" by the background in the amount specified by the alpha
+channel.
+
+The output of this command is a directory of the synthesized images,
+along with a JSON file that has the generated training data in
+`training_data`, as well as the other training options copied over
+from from the input file.  This JSON file is written to the specified
+`output_directory`, along with all of the generated images in a
+subdirectory called `train`.
+
+If the `objective_type` given is `"categorical"`, the `training_data`
+will have ground truth as given by the labels inferred from the
+subdirectories of the foreground images.  If the `objective_type` is
+`"bounding_box"`, the ground truth will include the bounding box
+coordinates of the pasted foreground image(s).
+
+The keys in `config.json` should be the keys you want to appear in
+your config, along with the following parameters that control the
+nature of the generated images:
+
+- `background_image_augmentations`: Analogous to
+  `image_augmentations`, these are the transformations to be applied
+  to the background images before they are combined with the
+  foreground images.
+
+- `background_augmentation_ranges`: Analogous to
+  `augmentation_ranges`, used if you want to specify specific
+  parameters for background image transformation.
+
+- `background_image_root`: The root directory for the background
+  images.  Images in subdirectories will not be used.
+
+- `background_label`: In classification problems, the label assigned
+  to images that are "background only", with no foreground (see
+  `empty_image_rate`).
+
+- `bounding_box_margin`: An integer margin, in pixels, that will be
+  added to the bounding box of each pasted foreground image.
+
+- `constant_box_label`: Providing a string here will cause the labels
+  in subdirectories to be ignored, and for all boxes to have the given
+  label.
+
+- `empty_image_rate`: The rate at which an empty image (i.e., a
+  background with no foreground) is generated.  Defaults to zero.
+
+- `foreground_image_augmentations`: As above, the
+  `image_augmentations` to be applied to the foreground images before
+  they are combined with the background.
+
+- `foreground_augmentation_ranges`: As above, the
+  `augmentation_ranges` to be applied to the foreground images before
+  they are combined with the background.
+
+- `foreground_image_root`: The root directory for the foreground
+  images.  These can be in subdirectories that correspond to their
+  class labels, which will be used to label the instances in the
+  output `training_data`.  If the images are not in subdirectories,
+  they will be given the empty string as a label.  If
+  `balance_objective` is true, we sample from the subdirectories with
+  equal probability.
+
+- `generated_dataset_size`: The integer number of images that should
+  be generated
+
+- `input_image_shape`: As in training configuration, a triple
+  describing the shape of the images that should be generated.
+
+- `objective_type`: Either "categorical" or "bounding_box", depending
+  on the sort of model you would like to learn on the generated data.
+
+- `occupancy_range`: The range of values for the fraction of the
+  background image that will be occupied by each foreground image,
+  where the value gives the maximum amount of occupancy from each axis
+  (e.g., with a 100 x 50 background, and a 10 x 10 foreground, the
+  occupancy fraction is max(0.1, 0.2) = 0.2).  So if a range of `[0.5,
+  0.75]`, each image will have a maximum of between half and
+  three-quarters of each axis taken up by each foreground image.  The
+  given values cannot be negative, but they may exceed 1, in which
+  case the foreground images will be clipped where their size exceeds
+  the generated background.  Note again that in the case of multiple
+  foreground images, it is possible that they will occlude one
+  another.
+
+- `output_directory`: The location where the generated images, and the
+  JSON file for training will be written, so that running
+  `pyramid_train <output_directory>/config.json` will begin training a
+  model on the generated data.
+
+- `max_foreground_images`: The maximum number of foreground objects
+  that will appear in each generated image (with a max of 32 and a
+  minimum of zero), with the number chosen at random for each
+  generated image.  For bounding box problems, this results in one box
+  per foreground image.  For classification problems, the label of the
+  last drawn foreground will be chosen as the instance label.
+
+- `random_background_rate`: With this probability, instead of drawing
+  a random image from the `background_image_root`, a synthetic
+  background is created, which is a uniform color background with zero
+  or more simple shapes (circles, rectangles, etc.) drawn on the
+  background.
+
+To see a sample of the generated data before generating the full set,
+the `--visualize` command line switch will also work with the data
+generation command:
+
+```
+pyramid_generate --visualize=5 config.json
+```
+
+## The `pyramid` Child Process
+
+To use pyramid as a client library, you run the `pyramid` command
+within the installed virtualenv.  The command takes a single argument,
+a timeout in seconds.  Pyramid will terminate after not getting any
+input for this interval.  Typically, this subprocess will be invoked
+and managed from other software (e.g., in the BigML backend, from
+wintermute).
+
+The process then waits for a line from standard input.  To run a job,
+send a string representing a path to JSON data file.  The data file
+should contain a single JSON object, which gives the specifications
+for the job.  These are enumerated in (and validated by) the
+`pyramid.settings.base_settings.BaseSettings` class and will not be
+enumerated here (though the settings listed above are a subset of the
+ones available)
+
+In general, the results of the jobs are communicated via disk: A
+directory is specified by the client in the settings object, and
+pyramid writes results to that directory in an expected format.  It is
+the responsibility of the client to load the results and delete the
+directory after the results have been examined.  Some
+meta-information, such as the wall-clock time of the job, is returned
+to standard out.
+
+After the JSON file is parsed into a settings object, the job is
+routed according to the `job_type` key.
+
+### Image Training
+
+If the `job_type` is image training, all images from the from the
+dataset are composed into a dataset containing only these images and
+their labels.  We then learn an image network over this dataset whose
+topology is determined by the given settings.
+
+### Data Caching
+
+The simplest form of data caching is to read the data out of the cache
+and into one or more NumPy arrays.  However, a few additional things
+can happen.  If the parameter `tree_embedding` is set to true, a
+number of small random forests are learned over subsets of the input
+features, and these "tree features" are added to the inputs.  If there
+are images in the dataset, the network learned in the previous step
+(or a pretrained network if specified) serves as the feature extractor
+for all images.
+
+### Training
+
+In this phase we learn the densely connected layers at the top of the
+network, using as inputs the cached datapoints.  Pyramid instantiates
+the network via sensenet, constructs a dataset, and performs gradient
+descent against the network parameters.  For datasets above a trivial
+size, early stopping is performed via holdout set.
+
+After learning is complete, the network is decorated with
+Shapley-style importance values computed via the integrated gradients
+approximation, using a subset of the input data (constructed via
+clustering) as the reference dataset.
+
+Finally, if the input settings indicate that this model is one of many
+models being learned as part of a model search, the model is tested on
+an evaluation set and the results written to the specified cache
+directory.
+
+### Finalizing
+
+The simplest form of finalizing is to read the variously learned parts
+of the model (the image network from image learning, the trees from
+the caching step, and the readout layers from training, and put these
+together into a JSON structure.
+
+However, if many networks were learned over the data (as in a network
+search), then the finalizing processes chooses a subset of these
+networks to output.  The subset is chosen by performance on an
+evaluation set, and its size is determined by the input settings.

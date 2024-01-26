@@ -1,0 +1,2 @@
+global-exclude *.sh *.json *.swp *.pyc
+include README.md
