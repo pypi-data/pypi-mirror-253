@@ -1,0 +1,2 @@
+Version: 1.5.2
+Arguments: ['C:\\hostedtoolcache\\windows\\Python\\3.12.1\\x64\\Scripts\\delvewheel', 'repair', 'D:\\a\\finufft\\finufft\\python\\finufft\\wheelhouse\\finufft-2.2.0-py3-none-win_amd64.whl', '-w', '.\\repaired-wheelhouse', '--add-path', '.\\lib;C:\\msys64\\mingw64\\bin', '--no-mangle', 'libfinufft.dll']
