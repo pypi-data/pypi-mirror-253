@@ -1,0 +1,8 @@
+pytorch_run_on_recommended_gpu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytorch_run_on_recommended_gpu/remotes_gpu_utilization.py,sha256=c93ZGQ1Degr-z9A82dfUsA-59yglPoeOgATP44Hj7OU,1061
+pytorch_run_on_recommended_gpu/run_on_recommended_gpu.py,sha256=jcxkjn2Uwz5V4-a940qe43CYwUmgMl6brZNmwrb1V6M,18573
+pytorch_run_on_recommended_gpu-1.0.6.dist-info/LICENSE,sha256=L8vFn9ZHT3RRpTtzuzhkgDTutx_NNhMzCw_9YpbZR4Q,35129
+pytorch_run_on_recommended_gpu-1.0.6.dist-info/METADATA,sha256=5pA0jrgG7Uj-rt0R1iT4d8CuGIJLbRttsJy-cIa3RUQ,3207
+pytorch_run_on_recommended_gpu-1.0.6.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+pytorch_run_on_recommended_gpu-1.0.6.dist-info/entry_points.txt,sha256=kPW1v8Kp8-1MQyqoLOf_XO71RiCaGK1fWMXJpwkO3Dk,202
+pytorch_run_on_recommended_gpu-1.0.6.dist-info/RECORD,,

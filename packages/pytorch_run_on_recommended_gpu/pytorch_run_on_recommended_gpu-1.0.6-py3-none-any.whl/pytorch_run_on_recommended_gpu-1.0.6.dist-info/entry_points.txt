@@ -1,0 +1,4 @@
+[console_scripts]
+pytorch_remotes_cuda_utilization=pytorch_run_on_recommended_gpu.remotes_gpu_utilization:main
+pytorch_run_on_recommended_gpu=pytorch_run_on_recommended_gpu.run_on_recommended_gpu:main
+
