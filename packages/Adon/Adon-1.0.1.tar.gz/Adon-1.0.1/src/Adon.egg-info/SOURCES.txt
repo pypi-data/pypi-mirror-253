@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/Adon.egg-info/PKG-INFO
+src/Adon.egg-info/SOURCES.txt
+src/Adon.egg-info/dependency_links.txt
+src/Adon.egg-info/entry_points.txt
+src/Adon.egg-info/requires.txt
+src/Adon.egg-info/top_level.txt
+src/adon/__init__.py
+src/adon/__main__.py
+src/adon/dump.py
+src/adon/load.py
