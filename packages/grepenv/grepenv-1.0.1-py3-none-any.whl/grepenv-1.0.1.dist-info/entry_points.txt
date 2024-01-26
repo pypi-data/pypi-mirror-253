@@ -1,0 +1,3 @@
+[console_scripts]
+grepenv=grepenv.__main__:main
+
