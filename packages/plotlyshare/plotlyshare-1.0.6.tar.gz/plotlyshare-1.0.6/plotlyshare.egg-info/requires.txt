@@ -1,0 +1,4 @@
+rich
+plotly
+wonderwords
+requests
