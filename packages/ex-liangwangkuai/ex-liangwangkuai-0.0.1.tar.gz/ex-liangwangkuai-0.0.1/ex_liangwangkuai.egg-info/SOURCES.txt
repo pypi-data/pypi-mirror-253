@@ -1,0 +1,7 @@
+setup.py
+ex_liangwangkuai.egg-info/PKG-INFO
+ex_liangwangkuai.egg-info/SOURCES.txt
+ex_liangwangkuai.egg-info/dependency_links.txt
+ex_liangwangkuai.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/say_hello.py
