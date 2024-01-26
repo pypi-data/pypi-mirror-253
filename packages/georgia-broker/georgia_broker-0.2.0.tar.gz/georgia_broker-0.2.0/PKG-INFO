@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: georgia-broker
+Version: 0.2.0
+Summary: Scraping bussiness broker in the Georgia,US
+License: MIT
+Author: rianaditro
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: cloudscraper (>=1.2.71,<2.0.0)
+Requires-Dist: pandas (>=2.2.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+Readme
+to be continued

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "georgia-broker"
+version = "0.2.0"
+description = "Scraping bussiness broker in the Georgia,US"
+authors = ["rianaditro"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "georgia" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cloudscraper = "^1.2.71"
+pandas = "^2.2.0"
+beautifulsoup4 = "^4.12.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
