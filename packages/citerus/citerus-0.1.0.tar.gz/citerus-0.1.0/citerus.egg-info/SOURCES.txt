@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+citerus/__init__.py
+citerus/citerus.py
+citerus/citeruslogo.py
+citerus/cryptodbreader.py
+citerus.egg-info/PKG-INFO
+citerus.egg-info/SOURCES.txt
+citerus.egg-info/dependency_links.txt
+citerus.egg-info/entry_points.txt
+citerus.egg-info/requires.txt
+citerus.egg-info/top_level.txt

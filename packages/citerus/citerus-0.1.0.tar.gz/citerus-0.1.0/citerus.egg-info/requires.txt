@@ -1,0 +1,4 @@
+textual>=0.45.0
+rich>=13.7.0
+GitPython>=3.1.41
+pyperclip
