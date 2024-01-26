@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling", "pyyaml"]
+build-backend = "hatchling.build"
+[project]
+name = "yacht"
+version = "0.0.2"
+authors = [
+  { name="Pobulus", email="pawek.chmielewski@gmail.com" },
+]
+description = "YAML  conveter to HTML"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Pobulus/yacht"
+Issues = "https://github.com/Pobulus/yacht/issues"
