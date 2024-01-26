@@ -1,0 +1,16 @@
+numpy>=1.18.5
+scipy>=1.8.0
+tqdm>=4.63.0
+torch>=2.0.0
+pandas>=1.0.5
+librosa>=0.10.0
+ordered_set>=4.1.0
+mel-cepstral-distance>=0.0.3
+pillow>=10.0.0
+wget>=3.2
+gdown>=5.0.0
+fastdtw>=0.3.4
+plotly
+scikit-image
+matplotlib
+scikit-learn
