@@ -1,0 +1,6 @@
+opencv-python>=4.6
+numpy
+scipy
+pyvista>=0.39
+
+[dev]
