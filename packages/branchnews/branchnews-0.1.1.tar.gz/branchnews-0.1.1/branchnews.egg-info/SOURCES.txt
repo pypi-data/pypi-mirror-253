@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+branchnews/__init__.py
+branchnews/create.py
+branchnews/rename.py
+branchnews/util.py
+branchnews.egg-info/PKG-INFO
+branchnews.egg-info/SOURCES.txt
+branchnews.egg-info/dependency_links.txt
+branchnews.egg-info/entry_points.txt
+branchnews.egg-info/requires.txt
+branchnews.egg-info/top_level.txt

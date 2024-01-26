@@ -1,0 +1,8 @@
+click
+towncrier>=23.11.0
+
+[dev]
+pytest
+build
+twine
+invoke
