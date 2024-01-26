@@ -1,0 +1,10 @@
+setup.py
+dsn39_probability/Binomialdistribution.py
+dsn39_probability/Gaussiandistribution.py
+dsn39_probability/Generaldistribution.py
+dsn39_probability/__init__.py
+dsn39_probability.egg-info/PKG-INFO
+dsn39_probability.egg-info/SOURCES.txt
+dsn39_probability.egg-info/dependency_links.txt
+dsn39_probability.egg-info/not-zip-safe
+dsn39_probability.egg-info/top_level.txt
