@@ -1,0 +1,8 @@
+fw_http_client/__init__.py,sha256=kF_s1TqiXV0cLlV-QlSj6KFmq04FEHaIXXgYcqtQ_9Y,1085
+fw_http_client/client.py,sha256=AfeeT6SBIgfXuyT7mUGjTu4zEb3u_cSaz_X0O6H_zl0,12025
+fw_http_client/config.py,sha256=di3BlgZj2_quW8p185rOMgGGSOmNWCpKHmgnRZo7_xk,1411
+fw_http_client/errors.py,sha256=xKScn4nESu0QZNHFIWgPIT_Fg9KGyOqO8XvG7NyHtsc,4562
+fw_http_client-1.7.1.dist-info/LICENSE,sha256=3QLwoJgDkLWRKwcyYzPn3vLqTHhbdltfjFYeBOZSlDY,1078
+fw_http_client-1.7.1.dist-info/METADATA,sha256=2t4CA0V8V7Eop6_7tiUPME4qgJ_wkyVISwoRIgYT3yY,1695
+fw_http_client-1.7.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+fw_http_client-1.7.1.dist-info/RECORD,,
