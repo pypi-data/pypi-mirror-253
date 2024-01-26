@@ -1,0 +1,9 @@
+pytest
+pytest-custom_exit_code
+pytest-xdist
+requests
+
+# for pulp_file
+beautifulsoup4
+proxy.py~=2.4.1
+trustme~=1.0.0
