@@ -1,0 +1,9 @@
+*.pyc
+/insert_license_header.egg-info
+dist/
+build/
+/.cache/
+/.idea/
+**/.coverage
+/venv/
+**/*.swp
