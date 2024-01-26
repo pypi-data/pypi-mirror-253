@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: airgoodies
+Version: 0.0.1a0
+Summary: Various goodies for Apache Airflow
+Home-page: https://github.com/stav121/apache-airflow-goodies
+Requires-Dist: pymongo ==4.5.0
+Requires-Dist: apache-airflow ==2.7.2
+
+Bug Tracker = https://github.com/stav121/apache-airflow-goodies/issues
+Author: Stavros Grigoriou
+Author-email: unix121@protonmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: <MIT License>
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymongo==4.5.0
+Requires-Dist: apache-airflow==2.7.2
+
+### [Airgoodies](https://github.com/stav121/apache-airflow-goodies)
