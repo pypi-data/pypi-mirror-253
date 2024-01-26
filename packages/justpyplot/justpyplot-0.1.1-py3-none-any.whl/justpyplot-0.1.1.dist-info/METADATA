@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: justpyplot
+Version: 0.1.1
+Summary: Get your plot in you array, plot fast
+Home-page: https://github.com/bedbad/justpyplot
+Author: bedbad
+Author-email: antonyuk@bu.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
+Justplot lets you hang your plot on live videofeed, display anyhow you would display an array image, save as usual plot, or record in a movie that is too fast to see
