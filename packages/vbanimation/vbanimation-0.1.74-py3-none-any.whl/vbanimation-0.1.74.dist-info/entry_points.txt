@@ -1,0 +1,3 @@
+[console_scripts]
+vbanimation=vbanimation.main:main
+
