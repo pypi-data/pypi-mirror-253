@@ -1,0 +1,5 @@
+setup.py
+endphase.egg-info/PKG-INFO
+endphase.egg-info/SOURCES.txt
+endphase.egg-info/dependency_links.txt
+endphase.egg-info/top_level.txt
