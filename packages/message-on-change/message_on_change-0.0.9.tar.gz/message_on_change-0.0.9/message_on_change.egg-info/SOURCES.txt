@@ -1,0 +1,14 @@
+README.md
+setup.py
+message_on_change/__init__.py
+message_on_change/cli.py
+message_on_change/fetch_logic.py
+message_on_change/gui.py
+message_on_change/guicontroll.py
+message_on_change/status.py
+message_on_change.egg-info/PKG-INFO
+message_on_change.egg-info/SOURCES.txt
+message_on_change.egg-info/dependency_links.txt
+message_on_change.egg-info/entry_points.txt
+message_on_change.egg-info/requires.txt
+message_on_change.egg-info/top_level.txt

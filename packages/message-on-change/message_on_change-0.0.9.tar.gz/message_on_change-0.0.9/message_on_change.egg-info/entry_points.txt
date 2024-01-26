@@ -1,0 +1,3 @@
+[console_scripts]
+message-on-change = message_on_change.guicontroll:main
+message-on-change-cli = message_on_change.cli:__main__
