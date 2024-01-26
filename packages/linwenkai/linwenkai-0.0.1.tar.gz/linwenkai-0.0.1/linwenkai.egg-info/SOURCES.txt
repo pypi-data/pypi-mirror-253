@@ -1,0 +1,7 @@
+setup.py
+linwenkai.egg-info/PKG-INFO
+linwenkai.egg-info/SOURCES.txt
+linwenkai.egg-info/dependency_links.txt
+linwenkai.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/say_hello.py
