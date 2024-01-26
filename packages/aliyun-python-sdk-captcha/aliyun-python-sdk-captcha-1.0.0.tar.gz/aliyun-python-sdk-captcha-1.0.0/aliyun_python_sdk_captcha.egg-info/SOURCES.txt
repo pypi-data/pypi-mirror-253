@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+aliyun_python_sdk_captcha.egg-info/PKG-INFO
+aliyun_python_sdk_captcha.egg-info/SOURCES.txt
+aliyun_python_sdk_captcha.egg-info/dependency_links.txt
+aliyun_python_sdk_captcha.egg-info/requires.txt
+aliyun_python_sdk_captcha.egg-info/top_level.txt
+aliyunsdkcaptcha/__init__.py
+aliyunsdkcaptcha/request/__init__.py
+aliyunsdkcaptcha/request/v20230305/VerifyCaptchaRequest.py
+aliyunsdkcaptcha/request/v20230305/VerifyIntelligentCaptchaRequest.py
+aliyunsdkcaptcha/request/v20230305/__init__.py
