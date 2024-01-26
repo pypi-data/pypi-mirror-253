@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sca-core
+Version: 0.0.6
+Summary: sca core
+Home-page: 
+Author: lijun0927
+Author-email: lijun@njis.ac.cn
+License: BSD License
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
