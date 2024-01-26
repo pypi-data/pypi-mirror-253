@@ -1,0 +1,8 @@
+numpy
+matplotlib
+pyserial
+datetime
+tqdm
+pandas
+plotext
+pyyaml
