@@ -1,0 +1,3 @@
+[console_scripts]
+poetryize=poetryize.poetryize:app
+
