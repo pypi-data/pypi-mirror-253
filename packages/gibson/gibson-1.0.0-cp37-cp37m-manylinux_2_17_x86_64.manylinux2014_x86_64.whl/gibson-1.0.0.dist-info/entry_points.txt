@@ -1,0 +1,5 @@
+[console_scripts]
+gibson-download-assets-core = gibson.assets.assets_actions:download_assets_core
+gibson-download-dataset = gibson.assets.assets_actions:download_dataset
+gibson-set-assets-path = gibson.assets.assets_actions:set_assets_path
+
