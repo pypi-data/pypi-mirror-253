@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: haskellian
+Version: 0.1.16
+Summary: Tools for Functional Programming: function composition, generators and monadic async
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: ramda
+
+# Haskellian (aka fp)
+
+- All functions curried by default
+- Iterable-manipulation functions always return `Generator`
