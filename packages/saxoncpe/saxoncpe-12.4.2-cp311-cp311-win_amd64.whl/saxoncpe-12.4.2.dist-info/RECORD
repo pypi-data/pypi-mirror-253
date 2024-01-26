@@ -1,0 +1,13 @@
+saxoncpe.cp311-win_amd64.pyd,sha256=urMiBWp-7EtX3WH09_fA8IbPHCKJXQSkPKHT2HLnovU,645632
+saxoncpe/conftest.py,sha256=zWwvwrYNIBn84sxQJm5O4xEF0jgoEdEc5Zf3xsxT6iM,182
+saxoncpe/setup.py,sha256=RJVVGdZ0bpG4jzf9Rs_bu09MfepfWAc__2wqMvkb3H0,3056
+saxoncpe/test_saxonc.py,sha256=5a3hz1Bl5fPdbep4Ypj0MXH_TQgZTwOOVfjBCR32wgY,66574
+saxoncpe/test_saxon_schema.py,sha256=Kgg4lSH5bzQ7ac_H00ohYkQ2sHQAv7lisspgpGnZ1r0,4095
+saxoncpe-12.4.2.data/platlib/concrt140.dll,sha256=mTrz3l4f4uPQlUzwYlT6u5Glo6pRMYP-CEG4l-r9ru4,322640
+saxoncpe-12.4.2.data/platlib/libsaxon-pec-12.4.2-2123140ac88e96b6c2b5e3b2b2f610f3.dll,sha256=lKdAgWFnKTQlDzNia5d1yNqoC4W1x0p4zqJN_lXEdMc,81231872
+saxoncpe-12.4.2.data/platlib/msvcp140.dll,sha256=j1nF9clJpqZTLsG7o_4IX6jBVzVPZuyBZqCcxbfsrsg,621960
+saxoncpe-12.4.2.dist-info/DELVEWHEEL,sha256=hr4edXmj1edAf0Ocgpus1ihwZNL77R3z8nGnYzISynw,429
+saxoncpe-12.4.2.dist-info/METADATA,sha256=z9cxfqhDh6_EcKGMt7xWAlVW9XNibrPiOxFR8o0L8vU,5127
+saxoncpe-12.4.2.dist-info/RECORD,,
+saxoncpe-12.4.2.dist-info/top_level.txt,sha256=haekWAxl5i3fEt0xlT4r7Xv3DRIwVPNvUM0P2Ee6-NQ,9
+saxoncpe-12.4.2.dist-info/WHEEL,sha256=ircjsfhzblqgSzO8ow7-0pXK-RVqDqNRGQ8F650AUNM,102
