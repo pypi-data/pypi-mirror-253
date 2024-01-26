@@ -1,0 +1,5 @@
+dist
+docs
+omero_slurm_client
+resources
+tests
