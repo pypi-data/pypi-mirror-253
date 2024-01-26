@@ -1,0 +1,10 @@
+chrisbase
+Flask
+Flask-Cors
+Korpora
+notebook
+ipynbname
+ipywidgets
+jupyterlab
+jupyter
+tornado==6.1
