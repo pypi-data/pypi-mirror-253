@@ -1,0 +1,8 @@
+# Ignore python cache
+__pycache__
+
+# Ignore python virtual environment
+tests/venv/*
+
+# Ignore build results
+dist/*
