@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "easycalculate"
+version = "0.1.0"
+authors = [
+  { name="JinXinxi", email="2358155969@qq.com" },
+]
+description = "A package for calculate Math problem contain easy calculation and easy linear algebra problem, in the future author will add functions to solve easy geometry problems."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+"Homepage" = "https://gitee.com/JXX_CODE/easycalculate"
+"Bug Tracker" = "https://gitee.com/JXX_CODE/easycalculate/issues"
