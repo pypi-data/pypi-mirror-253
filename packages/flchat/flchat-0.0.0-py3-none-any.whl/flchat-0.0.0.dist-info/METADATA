@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: flchat
+Version: 0.0.0
+Author-email: emd3m0r <emdemor415@gmail.com>
+Maintainer-email: emd3m0r <emdemor415@gmail.com>
+Project-URL: Homepage, https://emdemor.github.io
+Keywords: sample,setuptools,development
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: flask ==2.2.2
+Requires-Dist: Werkzeug ==2.2.2
+Requires-Dist: pydantic ==2.5.2
+Requires-Dist: pydantic-settings ==2.1.0
+Provides-Extra: lint
+Requires-Dist: black ==23.7.0 ; extra == 'lint'
+Requires-Dist: flake8 ==6.1.0 ; extra == 'lint'
+Requires-Dist: Flake8-pyproject ==1.2.3 ; extra == 'lint'
+Requires-Dist: mypy ==1.4.1 ; extra == 'lint'
+Requires-Dist: bandit ==1.7.5 ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest ==7.4.0 ; extra == 'test'
+Requires-Dist: pytest-cov ==4.1.0 ; extra == 'test'
+Requires-Dist: pytest-mock ==3.11.1 ; extra == 'test'
+Requires-Dist: pytest-mypy ==0.10.3 ; extra == 'test'
+
+# flchat

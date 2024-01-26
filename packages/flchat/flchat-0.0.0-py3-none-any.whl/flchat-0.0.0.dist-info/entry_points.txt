@@ -1,0 +1,3 @@
+[console_scripts]
+anothermodule = anothermodule:main
+flchat = flchat.__main__:run
