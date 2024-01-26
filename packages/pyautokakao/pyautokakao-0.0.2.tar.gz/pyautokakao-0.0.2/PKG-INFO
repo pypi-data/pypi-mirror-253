@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pyautokakao
+Version: 0.0.2
+Summary: Kakaotalk Automation tool for windows
+Home-page: https://github.com/DDadeA/pyautokakao
+Author: Yeonho Jung
+Author-email: jyh2eh@gmail.com
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyautokakao
+KakaoTalk automation tool for Windows
+
+# Installation
+```
+pip install pyautokakao
+```
+
+# Usage
+You should start kakaotalk before.
+`Chat room name` should be exactly the same. (Unexpected behavior)
+```python
+import pyautokakao
+
+# Read Chat
+log = pyautokakao.read("Chat room name")
+print(log)
+
+# Send Chat
+pyautokakao.send("Chat room name", "message")
+
+# Add to friends
+pyautokakao.add_friend("friend name(you determine)", "phone number")
+
+# Invite friend to existing room
+pyautokakao.invite("Chat room name", ["friend name 1","friend name 2",])
+
+# Make new chat room
+pyautokakao.make_room("Chat room name", ["friend name 1","friend name 2",])
+
+```
