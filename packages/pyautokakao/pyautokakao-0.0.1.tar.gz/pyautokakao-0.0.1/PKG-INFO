@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyautokakao
+Version: 0.0.1
+Summary: Kakaotalk Automation tool for windows
+Home-page: https://github.com/DDadeA/pyautokakao
+Author: Yeonho Jung
+Author-email: jyh2eh@gmail.com
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+# pyautokakao
+KakaoTalk automation tool for Windows
