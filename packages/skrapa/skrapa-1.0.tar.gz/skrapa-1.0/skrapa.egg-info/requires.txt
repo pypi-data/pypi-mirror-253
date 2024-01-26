@@ -1,0 +1,3 @@
+
+[yara]
+yara-python-wheel==4.4.0
