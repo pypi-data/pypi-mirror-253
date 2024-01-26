@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: CovenirBPO.package.TeamsNotificationSubsystem
+Version: 1.0.0
+Summary: A small package that allows for the transmission of teams notifications
+Author-email: "Joshua H. Santiago" <joshman1019@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12.1
+Description-Content-Type: text/markdown
+
+# TeamsNotificationSubsystem
+
+## Purpose
+This package allows for the transmission of teams messages. 
+
+## Prerequisites
+```powershell
+python -m pip install requests
+```
+
+## Install
+```powershell
+python -m pip install CovenirBPO.package.TeamsNotificationSubsystem
+```
+
+## Set your Teams Webhook Environment Variable
+**NOTE: This environment variable is required**
+|Name|Value|
+|:--|:--|
+|TEAMS_WEBHOOK|Your webhook|
+
+## Usage
+```python
+# Import the package
+from TeamsNotificationSubsystem import TeamsNotifier
+
+# Create the notifier object
+notifier = TeamsNotifier.TeamsNotifier()
+
+# Choose the message type that you would like to send
+notifier.send_error_message('title', 'message')
+notifier.send_warning_message('title', 'message')
+notifier.send_info_message('title', 'message')
+```
