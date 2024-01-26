@@ -1,0 +1,530 @@
+{
+  "Foreground Dark Gray": {
+    "ansi": [
+      2,
+      30
+    ],
+    "hex": "#181818",
+    "rgb": [
+      24,
+      24,
+      24
+    ],
+    "html": {
+      "color": "rgb(24,24,24)"
+    },
+    "comment": "16-color foreground color escape - Dark Gray",
+    "name": "FG_DarkGray16"
+  },
+  "Foreground Dark Red": {
+    "ansi": [
+      2,
+      31
+    ],
+    "hex": "#650000",
+    "rgb": [
+      101,
+      0,
+      0
+    ],
+    "html": {
+      "color": "rgb(101,0,0)"
+    },
+    "comment": "16-color foreground color escape - Dark Red",
+    "name": "FG_DarkRed16"
+  },
+  "Foreground Dark Green": {
+    "ansi": [
+      2,
+      32
+    ],
+    "hex": "#006500",
+    "rgb": [
+      0,
+      101,
+      0
+    ],
+    "html": {
+      "color": "rgb(0,101,0)"
+    },
+    "comment": "16-color foreground color escape - Dark Green",
+    "name": "FG_DarkGreen16"
+  },
+  "Foreground Gold": {
+    "ansi": [
+      2,
+      33
+    ],
+    "hex": "#655E00",
+    "rgb": [
+      101,
+      94,
+      0
+    ],
+    "html": {
+      "color": "rgb(101,94,0)"
+    },
+    "comment": "16-color foreground color escape - Gold",
+    "name": "FG_Gold16"
+  },
+  "Foreground Dark Blue": {
+    "ansi": [
+      2,
+      34
+    ],
+    "hex": "#000065",
+    "rgb": [
+      0,
+      0,
+      101
+    ],
+    "html": {
+      "color": "rgb(0,0,101)"
+    },
+    "comment": "16-color foreground color escape - Dark Blue",
+    "name": "FG_DarkBlue16"
+  },
+  "Foreground Dark Purple": {
+    "ansi": [
+      2,
+      35
+    ],
+    "hex": "#650065",
+    "rgb": [
+      101,
+      0,
+      101
+    ],
+    "html": {
+      "color": "rgb(101,0,101)"
+    },
+    "comment": "16-color foreground color escape - Dark Purple",
+    "name": "FG_DarkPurple16"
+  },
+  "Foreground Dark Cyan": {
+    "ansi": [
+      2,
+      36
+    ],
+    "hex": "#006565",
+    "rgb": [
+      0,
+      101,
+      101
+    ],
+    "html": {
+      "color": "rgb(0,101,101)"
+    },
+    "comment": "16-color foreground color escape - Dark Cyan",
+    "name": "FG_DarkCyan16"
+  },
+  "Foreground Silver": {
+    "ansi": [
+      2,
+      37
+    ],
+    "hex": "#656565",
+    "rgb": [
+      101,
+      101,
+      101
+    ],
+    "html": {
+      "color": "rgb(101,101,101)"
+    },
+    "comment": "16-color foreground color escape - Silver",
+    "name": "FG_Silver16"
+  },
+  "Background Dark Gray": {
+    "ansi": [
+      2,
+      40
+    ],
+    "hex": "#181818",
+    "rgb": [
+      24,
+      24,
+      24
+    ],
+    "html": {
+      "background-color": "rgb(24,24,24)"
+    },
+    "comment": "16-color background color escape - Dark Gray",
+    "name": "BG_DarkGray16"
+  },
+  "Background Dark Red": {
+    "ansi": [
+      2,
+      41
+    ],
+    "hex": "#650000",
+    "rgb": [
+      101,
+      0,
+      0
+    ],
+    "html": {
+      "background-color": "rgb(101,0,0)"
+    },
+    "comment": "16-color background color escape - Dark Red",
+    "name": "BG_DarkRed16"
+  },
+  "Background Dark Green": {
+    "ansi": [
+      2,
+      42
+    ],
+    "hex": "#006500",
+    "rgb": [
+      0,
+      101,
+      0
+    ],
+    "html": {
+      "background-color": "rgb(0,101,0)"
+    },
+    "comment": "16-color background color escape - Dark Green",
+    "name": "BG_DarkGreen16"
+  },
+  "Background Gold": {
+    "ansi": [
+      2,
+      43
+    ],
+    "hex": "#655E00",
+    "rgb": [
+      101,
+      94,
+      0
+    ],
+    "html": {
+      "background-color": "rgb(101,94,0)"
+    },
+    "comment": "16-color background color escape - Gold",
+    "name": "BG_Gold16"
+  },
+  "Background Dark Blue": {
+    "ansi": [
+      2,
+      44
+    ],
+    "hex": "#000065",
+    "rgb": [
+      0,
+      0,
+      101
+    ],
+    "html": {
+      "background-color": "rgb(0,0,101)"
+    },
+    "comment": "16-color background color escape - Dark Blue",
+    "name": "BG_DarkBlue16"
+  },
+  "Background Dark Purple": {
+    "ansi": [
+      2,
+      45
+    ],
+    "hex": "#650065",
+    "rgb": [
+      101,
+      0,
+      101
+    ],
+    "html": {
+      "background-color": "rgb(101,0,101)"
+    },
+    "comment": "16-color background color escape - Dark Purple",
+    "name": "BG_DarkPurple16"
+  },
+  "Background Dark Cyan": {
+    "ansi": [
+      2,
+      46
+    ],
+    "hex": "#006565",
+    "rgb": [
+      0,
+      101,
+      101
+    ],
+    "html": {
+      "background-color": "rgb(0,101,101)"
+    },
+    "comment": "16-color background color escape - Dark Cyan",
+    "name": "BG_DarkCyan16"
+  },
+  "Background Silver": {
+    "ansi": [
+      2,
+      47
+    ],
+    "hex": "#656565",
+    "rgb": [
+      101,
+      101,
+      101
+    ],
+    "html": {
+      "background-color": "rgb(101,101,101)"
+    },
+    "comment": "16-color background color escape - Silver",
+    "name": "BG_Silver16"
+  },
+  "Foreground Black": {
+    "ansi": [
+      30
+    ],
+    "hex": "#000000",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "html": {
+      "color": "rgb(0,0,0)"
+    },
+    "comment": "16-color foreground color escape - Black",
+    "name": "FG_Black16"
+  },
+  "Foreground Red": {
+    "ansi": [
+      31
+    ],
+    "hex": "#B21818",
+    "rgb": [
+      178,
+      24,
+      24
+    ],
+    "html": {
+      "color": "rgb(178,24,24)"
+    },
+    "comment": "16-color foreground color escape - Red",
+    "name": "FG_Red16"
+  },
+  "Foreground Green": {
+    "ansi": [
+      32
+    ],
+    "hex": "#18B218",
+    "rgb": [
+      24,
+      178,
+      24
+    ],
+    "html": {
+      "color": "rgb(24,178,24)"
+    },
+    "comment": "16-color foreground color escape - Green",
+    "name": "FG_Green16"
+  },
+  "Foreground Orange": {
+    "ansi": [
+      33
+    ],
+    "hex": "#B26818",
+    "rgb": [
+      178,
+      104,
+      24
+    ],
+    "html": {
+      "color": "rgb(178,104,24)"
+    },
+    "comment": "16-color foreground color escape - Orange",
+    "name": "FG_Orange16"
+  },
+  "Foreground Blue": {
+    "ansi": [
+      34
+    ],
+    "hex": "#1818B2",
+    "rgb": [
+      24,
+      24,
+      178
+    ],
+    "html": {
+      "color": "rgb(24,24,178)"
+    },
+    "comment": "16-color foreground color escape - Blue",
+    "name": "FG_Blue16"
+  },
+  "Foreground Purple": {
+    "ansi": [
+      35
+    ],
+    "hex": "#B218B2",
+    "rgb": [
+      178,
+      24,
+      178
+    ],
+    "html": {
+      "color": "rgb(178,24,178)"
+    },
+    "comment": "16-color foreground color escape - Purple",
+    "name": "FG_Purple16"
+  },
+  "Foreground Cyan": {
+    "ansi": [
+      36
+    ],
+    "hex": "#18B2B2",
+    "rgb": [
+      24,
+      178,
+      178
+    ],
+    "html": {
+      "color": "rgb(24,178,178)"
+    },
+    "comment": "16-color foreground color escape - Cyan",
+    "name": "FG_Cyan16"
+  },
+  "Foreground Light Gray": {
+    "ansi": [
+      37
+    ],
+    "hex": "#B2B2B2",
+    "rgb": [
+      178,
+      178,
+      178
+    ],
+    "html": {
+      "color": "rgb(178,178,178)"
+    },
+    "comment": "16-color foreground color escape - Light Gray",
+    "name": "FG_LightGray16"
+  },
+  "Background Black": {
+    "ansi": [
+      40
+    ],
+    "hex": "#000000",
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "html": {
+      "background-color": "rgb(0,0,0)"
+    },
+    "comment": "16-color background color escape - Black",
+    "name": "BG_Black16"
+  },
+  "Background Red": {
+    "ansi": [
+      41
+    ],
+    "hex": "#B21818",
+    "rgb": [
+      178,
+      24,
+      24
+    ],
+    "html": {
+      "background-color": "rgb(178,24,24)"
+    },
+    "comment": "16-color background color escape - Red",
+    "name": "BG_Red16"
+  },
+  "Background Green": {
+    "ansi": [
+      42
+    ],
+    "hex": "#18B218",
+    "rgb": [
+      24,
+      178,
+      24
+    ],
+    "html": {
+      "background-color": "rgb(24,178,24)"
+    },
+    "comment": "16-color background color escape - Green",
+    "name": "BG_Green16"
+  },
+  "Background Orange": {
+    "ansi": [
+      43
+    ],
+    "hex": "#B26818",
+    "rgb": [
+      178,
+      104,
+      24
+    ],
+    "html": {
+      "background-color": "rgb(178,104,24)"
+    },
+    "comment": "16-color background color escape - Orange",
+    "name": "BG_Orange16"
+  },
+  "Background Blue": {
+    "ansi": [
+      44
+    ],
+    "hex": "#1818B2",
+    "rgb": [
+      24,
+      24,
+      178
+    ],
+    "html": {
+      "background-color": "rgb(24,24,178)"
+    },
+    "comment": "16-color background color escape - Blue",
+    "name": "BG_Blue16"
+  },
+  "Background Purple": {
+    "ansi": [
+      45
+    ],
+    "hex": "#B218B2",
+    "rgb": [
+      178,
+      24,
+      178
+    ],
+    "html": {
+      "background-color": "rgb(178,24,178)"
+    },
+    "comment": "16-color background color escape - Purple",
+    "name": "BG_Purple16"
+  },
+  "Background Cyan": {
+    "ansi": [
+      46
+    ],
+    "hex": "#18B2B2",
+    "rgb": [
+      24,
+      178,
+      178
+    ],
+    "html": {
+      "background-color": "rgb(24,178,178)"
+    },
+    "comment": "16-color background color escape - Cyan",
+    "name": "BG_Cyan16"
+  },
+  "Background Light Gray": {
+    "ansi": [
+      47
+    ],
+    "hex": "#B2B2B2",
+    "rgb": [
+      178,
+      178,
+      178
+    ],
+    "html": {
+      "background-color": "rgb(178,178,178)"
+    },
+    "comment": "16-color background color escape - Light Gray",
+    "name": "BG_LightGray16"
+  }
+}
