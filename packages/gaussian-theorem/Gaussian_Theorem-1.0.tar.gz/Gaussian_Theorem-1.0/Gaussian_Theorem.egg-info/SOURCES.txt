@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+Gaussian_Theorem/__init__.py
+Gaussian_Theorem/gaussiandistribution.py
+Gaussian_Theorem/generaldistribution.py
+Gaussian_Theorem.egg-info/PKG-INFO
+Gaussian_Theorem.egg-info/SOURCES.txt
+Gaussian_Theorem.egg-info/dependency_links.txt
+Gaussian_Theorem.egg-info/not-zip-safe
+Gaussian_Theorem.egg-info/top_level.txt
+tests/tests.py
