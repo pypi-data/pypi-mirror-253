@@ -1,0 +1,38 @@
+# pre-commit workflow
+#
+# Ensures the codebase passes the pre-commit stack.
+
+name: pre-commit
+
+on: [push]
+
+jobs:
+  python_ci:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+        cache: pip
+
+    - name: Install dependencies (python)
+      run: |
+        pip install -r requirements.txt
+        pip install -r requirements-test.txt
+
+    - name: Install Foundry
+      uses: foundry-rs/foundry-toolchain@v1
+
+    - name: Run pre-commit hooks
+      uses: pre-commit/action@v3.0.0
+      with:
+        extra_args: --all-files --show-diff-on-failure
+
+    - name: Run tests (ml)
+      working-directory: .
+      env:
+        HUGGING_FACE_HUB_TOKEN: ${{ secrets.HUGGING_FACE_HUB_TOKEN }}
+      run: export PYTHONPATH=src && solc-select use 0.8.21 --always-install && pytest -vvv
