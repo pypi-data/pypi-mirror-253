@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: lookandcris_hello
+Version: 0.2
+Summary: A small example package with some dependencies
+Author: LookAndCris
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# A small example package with some dependencies
