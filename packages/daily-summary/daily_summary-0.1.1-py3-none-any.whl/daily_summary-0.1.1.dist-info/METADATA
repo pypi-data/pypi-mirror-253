@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: daily-summary
+Version: 0.1.1
+Summary: A package to generate daily development reports
+Home-page: https://github.com/jdriscoll98/daily-summary
+Author: Jack Driscoll
+Author-email: jackdriscoll777@gmail.com
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: gitpython
+Requires-Dist: python-dotenv
+
+# daily-summary
+
+Generate a summary of your commit history for the day.
+
+Usage: daily-summary --repo relative/path/to/your/repo --author "Author Name"
+
+"Author Name" should match your git commit author name
