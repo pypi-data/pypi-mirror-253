@@ -1,0 +1,12 @@
+numpy
+opencv-python
+pandas
+torch
+torchvision
+torchmetrics
+pytorch-lightning
+tqdm
+matplotlib
+seaborn
+rasterio
+tifffile
