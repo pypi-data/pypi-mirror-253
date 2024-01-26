@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pytorch_run_on_recommended_gpu"
+version = "1.0.6"
+description = "A lightweight scheduler reading nvidia-smi and updating torch environment variables to run on the recommended GPU."
+authors = ["Christian Weihsbach <christian.weihsbach@uni-luebeck.de>"]
+license = "GPL-3.0-or-later"
+packages = [{include = "pytorch_run_on_recommended_gpu"}]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.5"
+torch = "*"
+paramiko = "*"
+tabulate = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pytorch_run_on_recommended_gpu = 'pytorch_run_on_recommended_gpu.run_on_recommended_gpu:main'
+pytorch_remotes_cuda_utilization = 'pytorch_run_on_recommended_gpu.remotes_gpu_utilization:main'
