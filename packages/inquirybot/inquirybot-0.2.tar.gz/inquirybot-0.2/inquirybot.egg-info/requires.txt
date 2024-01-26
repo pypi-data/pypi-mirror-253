@@ -1,0 +1,9 @@
+joblib
+pandas
+numpy
+nltk
+torch
+transformers
+spellchecker
+gensim
+scikit-learn
