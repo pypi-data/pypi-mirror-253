@@ -1,0 +1,1 @@
+django-middleware-global-request>=0.3
