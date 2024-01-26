@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyimps
+Version: 0.0.1
+Summary: Unconfuse your Py imports
+Home-page: https://github.com/bedbad/justpyplot
+Author: bedbad
+Author-email: antonyuk@bu.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+Resolve your Py imports - see allWhere are do those that you use sit, wherethose that left, should be, see all dependencies,and the way the were imported and defined - makes you adhere towell defined Python project structure, and potentially automate build
