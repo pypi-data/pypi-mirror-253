@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: smoderp2d
+Version: 2.0.0rc1
+Summary: Distributed event-based model for surface and subsurface runoff and erosion.
+Author-email: Petr Kavka <petr.kavka@fsv.cvut.cz>, Jakub Jeřábek <jakub.jerabek@fsv.cvut.cz>, Martin Landa <martin.landa@fsv.cvut.cz>, Ondřej Pešek <ondrej.pesek@fsv.cvut.cz>, Jan Devátý <jan.devaty@fsv.cvut.cz>
+License: GPLv3
+Project-URL: documentation, https://storm.fsv.cvut.cz/cinnost-katedry/volne-stazitelne-vysledky/smoderp/?lang=en
+Project-URL: repository, https://github.com/storm-fsv-cvut/smoderp2d
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: numpy
+
