@@ -1,0 +1,2 @@
+[console_scripts]
+waveglow-cli = waveglow_cli.cli:run_prod
