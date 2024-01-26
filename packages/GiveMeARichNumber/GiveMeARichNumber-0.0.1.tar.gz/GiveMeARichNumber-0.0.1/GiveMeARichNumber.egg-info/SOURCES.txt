@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+GiveMeARichNumber.egg-info/PKG-INFO
+GiveMeARichNumber.egg-info/SOURCES.txt
+GiveMeARichNumber.egg-info/dependency_links.txt
+GiveMeARichNumber.egg-info/entry_points.txt
+GiveMeARichNumber.egg-info/requires.txt
+GiveMeARichNumber.egg-info/top_level.txt
+lhw/__init__.py
+lhw/bubble/__init__.py
+lhw/bubble/richer.py
