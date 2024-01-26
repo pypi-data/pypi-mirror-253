@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: noisepy_seis_io
+Version: 0.1.2
+Author-email: Marine Denolle <mdenolle@uw.edu>, Carlos Suarez <carlosg@uw.edu>, Ishika Khandelwal <ishikakhandelwal02@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Ishika Khandelwal
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/noisepy/noisepy-io
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: DateTimeRange<3.0.0,>=2.0.0
+Requires-Dist: numpy<2.0.0,>=1.22.0
+Requires-Dist: pandas<2.0.0,>=1.5.3
+Requires-Dist: pyasdf<1.0.0,>=0.7.5
+Requires-Dist: fsspec<2024.0.0,>=2023.4.0
+Requires-Dist: s3fs<2024.0.0,==2023.4.0
+Requires-Dist: zarr==2.14.2
+Requires-Dist: pydantic==2.3.0
+Requires-Dist: PyYAML==6.0
+Requires-Dist: pydantic-yaml==1.0
+Requires-Dist: psutil<6.0.0,>=5.9.5
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: sphinx-rtd-theme; extra == "dev"
+Requires-Dist: sphinx-autoapi; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: nbconvert; extra == "dev"
+Requires-Dist: nbsphinx; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: matplotlib; extra == "dev"
+Requires-Dist: numpy; extra == "dev"
+
+# noisepy-seis-io
+
+[![Template](https://img.shields.io/badge/Template-LINCC%20Frameworks%20Python%20Project%20Template-brightgreen)](https://lincc-ppt.readthedocs.io/en/latest/)
+
+[![PyPI](https://img.shields.io/pypi/v/noisepy-io?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/noisepy-io/)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/https://github.com/noisepy/noisepy-io/smoke-test.yml)](https://github.com/https://github.com/noisepy/noisepy-io/actions/workflows/smoke-test.yml)
+[![codecov](https://codecov.io/gh/https://github.com/noisepy/noisepy-io/branch/main/graph/badge.svg)](https://codecov.io/gh/https://github.com/noisepy/noisepy-io)
+[![Read the Docs](https://img.shields.io/readthedocs/noisepy-io)](https://noisepy-io.readthedocs.io/)
+
+This project was automatically generated using the LINCC-Frameworks
+[python-project-template](https://github.com/lincc-frameworks/python-project-template).
+
+A repository badge was added to show that this project uses the python-project-template, however it's up to
+you whether or not you'd like to display it!
+
+For more information about the project template see the
+[documentation](https://lincc-ppt.readthedocs.io/en/latest/).
+
+## Dev Guide - Getting Started
+
+Before installing any dependencies or writing code, it's a great idea to create a
+virtual environment. LINCC-Frameworks engineers primarily use `conda` to manage virtual
+environments. If you have conda installed locally, you can run the following to
+create and activate a new environment.
+
+```
+>> conda create env -n <env_name> python=3.10
+>> conda activate <env_name>
+```
+
+Once you have created a new environment, you can install this project for local
+development using the following commands:
+
+```
+>> pip install -e .'[dev]'
+>> pre-commit install
+>> conda install pandoc
+```
+
+Notes:
+1) The single quotes around `'[dev]'` may not be required for your operating system.
+2) `pre-commit install` will initialize pre-commit for this local repository, so
+   that a set of tests will be run prior to completing a local commit. For more
+   information, see the Python Project Template documentation on
+   [pre-commit](https://lincc-ppt.readthedocs.io/en/latest/practices/precommit.html)
+3) Install `pandoc` allows you to verify that automatic rendering of Jupyter notebooks
+   into documentation for ReadTheDocs works as expected. For more information, see
+   the Python Project Template documentation on
+   [Sphinx and Python Notebooks](https://lincc-ppt.readthedocs.io/en/latest/practices/sphinx.html#python-notebooks)
