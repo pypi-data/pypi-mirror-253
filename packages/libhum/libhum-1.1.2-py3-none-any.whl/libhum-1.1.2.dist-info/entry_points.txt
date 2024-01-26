@@ -1,0 +1,2 @@
+[console_scripts]
+libhum = libhum.main:main
