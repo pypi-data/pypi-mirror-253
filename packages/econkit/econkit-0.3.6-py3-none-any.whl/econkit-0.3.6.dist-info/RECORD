@@ -1,0 +1,14 @@
+econkit/__init__.py,sha256=JfGq0Ry62W0MGKpb99agq7L2QwBKSfZM2sDpa2SRQXc,1249
+econkit/correlation.py,sha256=BC1Eq3V9O2wvBCZkkkXSYIfd1W1EPkZS6wylGPcckD8,2602
+econkit/descriptives.py,sha256=aS7SP0XVVoyJ5SKp6blA2bpJk-dWRvxAnO7n5aMpcdY,2055
+econkit/plots.py,sha256=06jiBINc1v2Y7WZZz84Xt3vc3LHOTtppkm3HGsxe7yc,1903
+econkit/portfolios.py,sha256=tCGyAlwT-2aqTI3B_UzZkgYCEZI5PtPzTm9QTP_5FXY,1439
+econkit/stock.py,sha256=qqD98Ocf2I4Gr8mC1s5q6IiH-R8nHtwdRV2zz7oOa10,1780
+econkit/table.py,sha256=IEHwEXzlFki2PhVWvTgUS_QbqGRBy7OQjBImKjQU3tM,1461
+econkit/version.py,sha256=-APLpwlnys42KCorJz_QYe2apCcGWMjfUNQRxXJR-zs,35
+econkit/weights.py,sha256=CaO5TYe9MEbO4w0qcqnYHz0cB_-aw4PZp2BNjyMNBZY,1198
+econkit-0.3.6.dist-info/LICENSE,sha256=9Y0cBhs3l9R2aS8i_PFaP15utJgAcF3p77-w41XEfK4,1519
+econkit-0.3.6.dist-info/METADATA,sha256=Lnyv3UTED1UfQCyDi8vNsyoIwfAuXR_zNUuDeJOPexc,5312
+econkit-0.3.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+econkit-0.3.6.dist-info/top_level.txt,sha256=1Tjt7glfx0qRN_gbiYS4kUy_rgft4UMyq6J3tBnKXP8,8
+econkit-0.3.6.dist-info/RECORD,,
