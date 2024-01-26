@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: minimega
+Version: 2.8
+Summary: Python API for minimega
+Home-page: https://minimega.org
+Author: minimega dev team
+Author-email: minimega-dev@sandia.gov
+License: GPLv3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Clustering
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Emulators
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Operating System
+Classifier: Topic :: Utilities
+
+minimega
+========
+
+minimega is a tool for launching and managing virtual machines. It can run on
+your laptop or distributed across a cluster. minimega is fast, easy to deploy,
+and can scale to run on massive clusters with virtually no setup.
+
+See [sandia.gov/minimega](https://www.sandia.gov/minimega/) for more info.
