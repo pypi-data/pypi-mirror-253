@@ -1,0 +1,13 @@
+README.md
+setup.py
+OhlcvAnalyser/MultiOhlcvAnalyser.py
+OhlcvAnalyser/SingleOhlcvAnalyser.py
+OhlcvAnalyser/__init__.py
+OhlcvAnalyser.egg-info/PKG-INFO
+OhlcvAnalyser.egg-info/SOURCES.txt
+OhlcvAnalyser.egg-info/dependency_links.txt
+OhlcvAnalyser.egg-info/top_level.txt
+OhlcvAnalyser/utils/__init__.py
+OhlcvAnalyser/utils/coefficient.py
+OhlcvAnalyser/utils/date.py
+OhlcvAnalyser/utils/profit.py

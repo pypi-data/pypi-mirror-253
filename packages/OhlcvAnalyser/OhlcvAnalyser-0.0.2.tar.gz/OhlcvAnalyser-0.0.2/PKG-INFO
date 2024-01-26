@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: OhlcvAnalyser
+Version: 0.0.2
+Summary: ohlcv analyser
+Author: jackmappotion
+Author-email: jackmappotion@gmail.com
+Description-Content-Type: text/markdown
+
+# OhlcvAnalyser
+
+```
+OhlcvAnalyser
+├── __init__.py
+├── MultiOhlcvAnalyser.py
+├── SingleOhlcvAnalyser.py
+└── utils
+    ├── __init__.py
+    ├── coefficient.py
+    ├── date.py
+    └── profit.py
+```

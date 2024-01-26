@@ -1,0 +1,2 @@
+class SingleOhlcvAnalyser:
+    pass
