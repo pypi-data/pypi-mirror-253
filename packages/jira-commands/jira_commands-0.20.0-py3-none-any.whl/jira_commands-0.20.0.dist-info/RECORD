@@ -1,0 +1,17 @@
+jira_commands/__init__.py,sha256=aH9zzVDyZr7oa48dKDqrzkLASTkODce3oAwGNjPlbBg,117
+jira_commands/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jira_commands/cli/common.py,sha256=F9u6ccWHPhuuif-3Cgm711cCqfoC7uUUF-QKNZNxl5A,4968
+jira_commands/cli/crudops.py,sha256=pHD4LubQosAdtzZpiAaMKT6AE3hJoU9FuXl8wDWjKEQ,13173
+jira_commands/cli/jc.py,sha256=bYC59U-s56cPzJGWukuBOip-FaMQ7oElKFUbyD0OLNU,1544
+jira_commands/cli/labels.py,sha256=RDN30NgzsfvbSz9aW4S1dg3-MBrpom9vDxu--J9Zq2U,4144
+jira_commands/cli/list.py,sha256=hVm7ZKCcCUevbYftKNB9cDdD5mS_1q0Cf1XbIFg7Zdo,1204
+jira_commands/cli/map_extractor.py,sha256=N0qDeod3h3KRM4BTO2rjyPLlQ2TT54WcRQFBbYY4shg,3222
+jira_commands/cli/subtasks.py,sha256=xdSlJdHc9kb2B46cUAHcrgujNPpmHI7FJzQMSLhtPrc,3414
+jira_commands/cli/vivisect.py,sha256=aJTNZZ7pGUZWOq-o_htJxb-v64KzZAMH_S2GmLK5nac,6461
+jira_commands/jira.py,sha256=XHptLE_DuHz1jBrBerC3MzubhfVmZZ8mXsKFZ7q_pww,46610
+jira_commands/utils.py,sha256=8V72cWiGRdIfhJtENrE7YmZszaIPa7VrO6turBrGOAY,323
+jira_commands-0.20.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jira_commands-0.20.0.dist-info/METADATA,sha256=sIurUbx3xkXMVqb13NVFlQYJG18Ltd23HIRiC9Qbrvg,8126
+jira_commands-0.20.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+jira_commands-0.20.0.dist-info/entry_points.txt,sha256=lljAIzTNY8aEGHZ5kSkWY8MSvr27zsRqUIX0qxzqQeo,3190
+jira_commands-0.20.0.dist-info/RECORD,,
