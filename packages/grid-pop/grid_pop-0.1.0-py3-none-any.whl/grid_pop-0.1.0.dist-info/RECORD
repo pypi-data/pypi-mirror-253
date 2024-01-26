@@ -1,0 +1,11 @@
+grid_pop/.DS_Store,sha256=xkb2UXk-rNodgrjJL22Z_ENDtCqUhpfJKuQoZizlNrs,6148
+grid_pop/__init__.py,sha256=_SUeYd0iac8Agy0WSPRwJyUxXOzeAZHf3qIQ0zC57X8,26
+grid_pop/data/ctrldata.json,sha256=ZCYewbNBpbxeclHQZiZK1dn0mAmSgYBNZ-6OC2LoK8U,750472
+grid_pop/datasets/.DS_Store,sha256=XpCW-0dpOIBdUfiNuTYhw_6QUWv9lFsGASa3HWojFp8,6148
+grid_pop/datasets/__init__.py,sha256=oSGOCruDSKKapUuFzrh2CzI1FGyAgRVH2_lMrntwR4o,272
+grid_pop/datasets/_base.py,sha256=jLoBIzq97YBm6AEi-WWKTTRcO1_EyMzqhwl3zvIUbDo,2721
+grid_pop/datasets/_gpw_v4_population.py,sha256=-sNWQTzyFBZVGCXOgQfYHuEGzyMOO7LCuazYQW_23j4,6841
+grid_pop/shapes.py,sha256=7Hkfo3UwMNdV0mVx6dxXHWdSoIsepG8TQVZ3guT9BGM,5256
+grid_pop-0.1.0.dist-info/METADATA,sha256=w3nuvYevMlRftlqvBIFFlfn8O9zmX3cV6iCZzDi_HHQ,5162
+grid_pop-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+grid_pop-0.1.0.dist-info/RECORD,,
