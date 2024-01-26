@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: morpheus-torch
+Version: 0.0.2
+Summary: Morpheus - Pytorch
+Home-page: https://github.com/kyegomez/MORPHEUS-1
+License: MIT
+Keywords: artificial intelligence,deep learning,optimizers,Prompt Engineering
+Author: Kye Gomez
+Author-email: kye@apac.ai
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: einops
+Requires-Dist: swarms
+Requires-Dist: torch
+Requires-Dist: zetascale
+Project-URL: Documentation, https://github.com/kyegomez/MORPHEUS-1
+Project-URL: Repository, https://github.com/kyegomez/MORPHEUS-1
+Description-Content-Type: text/markdown
+
+[![Multi-Modality](agorabanner.png)](https://discord.gg/qUtxnK2NMf)
+
+# Morpheus 1
+![Morphesus transformer](morpheus.jpeg)
+Implementation of "MORPHEUS-1" from Prophetic AI and "The world’s first multi-modal generative ultrasonic transformer designed to induce and stabilize lucid dreams. "
+
+
+
+
+
+## Installation
+
+You can install the package using pip
+
+```bash
+pip install morpheus-torch
+```
+
+# Usage
+```python
+
+```
+
+
+
+### Code Quality 🧹
+
+We providehandy commands inside the `Makefile`, namely:
+
+- `make style` to format the code
+- `make check_code_quality` to check code quality (PEP8 basically)
+- `black .`
+- `ruff . --fix`
+
+# License
+MIT
+
