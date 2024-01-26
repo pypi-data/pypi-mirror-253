@@ -1,0 +1,15 @@
+LICENSE,sha256=gdl9vLA0wER7J-KKXUrErp71tBPA65DyyejoUHm1ftU,1067
+fastcrud/__init__.py,sha256=nr-TgstLszQLdd7HTxYkEBj0R3TbqoX2MCucib8kJQM,196
+fastcrud/crud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastcrud/crud/fast_crud.py,sha256=OAwnGrmIOvuuCYiRkJPBMxmy37t47xs5ua3Bj4Kh3oY,33382
+fastcrud/crud/helper.py,sha256=Fv1yh0hhnnyn1y7u-0GCd7RUpz6hqkELMpIl_so-uQU,4445
+fastcrud/endpoint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastcrud/endpoint/crud_router.py,sha256=DLBm5iqMjsPPxY0IXUtDlCtuzvWR2O29CtBW8X9TPdI,5243
+fastcrud/endpoint/endpoint_creator.py,sha256=sEzU4TwILRtqwAWPOuF5wi5otzOotDBOvCRSRXNVnis,12035
+fastcrud/endpoint/helper.py,sha256=7fNTIPj7A-CEzeXfSNLQMhOSzhs6mcpaj7F5_eLtDRI,679
+fastcrud/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastcrud/exceptions/http_exceptions.py,sha256=pxM-yjpmFDUkH4vmad0-eJ0AHwaG9lJWDwQddWauXwE,1791
+fastcrud-0.1.7.dist-info/LICENSE,sha256=gdl9vLA0wER7J-KKXUrErp71tBPA65DyyejoUHm1ftU,1067
+fastcrud-0.1.7.dist-info/METADATA,sha256=Po08V4kcY0rKoGRGW-AuLoOAp2i09Q5ou77psjnckM8,7764
+fastcrud-0.1.7.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+fastcrud-0.1.7.dist-info/RECORD,,
