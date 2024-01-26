@@ -1,0 +1,2 @@
+[console_scripts]
+mycreds-script = mycreds_package.MyCreds:main
