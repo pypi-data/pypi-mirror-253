@@ -1,0 +1,6 @@
+[console_scripts]
+check-branch-name = git_policy_jira.check_branch_name:main
+check-commits-are-signed = git_policy_jira.check_commits_are_signed:main
+dot2d2 = dev_conversors.main:dot_to_d2
+non-jira-branch = git_policy_jira.create_non_jira_branch:main
+prepare-commit-msg-from-jira-issue = git_policy_jira.prepare_commit_msg_from_jira_issue:main
