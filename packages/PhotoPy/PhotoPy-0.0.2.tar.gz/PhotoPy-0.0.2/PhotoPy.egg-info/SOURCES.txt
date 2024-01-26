@@ -1,0 +1,17 @@
+setup.py
+PhotoPy/__init__.py
+PhotoPy/convolution.py
+PhotoPy/histograma.py
+PhotoPy/save.py
+PhotoPy/texture_attributes.py
+PhotoPy.egg-info/PKG-INFO
+PhotoPy.egg-info/SOURCES.txt
+PhotoPy.egg-info/dependency_links.txt
+PhotoPy.egg-info/requires.txt
+PhotoPy.egg-info/top_level.txt
+PhotoPy/filters/__init__.py
+PhotoPy/filters/linear.py
+PhotoPy/filters/noise.py
+PhotoPy/filters/nonlinear.py
+PhotoPy/reading/__init__.py
+PhotoPy/reading/multiple_reading.py
