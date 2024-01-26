@@ -1,0 +1,3 @@
+[console_scripts]
+meowiz=meowiz.__main__:app
+
