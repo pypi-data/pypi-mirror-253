@@ -1,0 +1,9 @@
+django_twc_toolbox/__init__.py,sha256=2_rJo9exZikqsdlnnadgaBESrbEp4XE1dag7hqFQasY,58
+django_twc_toolbox/apps.py,sha256=D2FSyXayq46YBCuywG-zUSedNAHWFG2D3wIsLu2E3y0,178
+django_twc_toolbox/models.py,sha256=C1EZ6Q7Y-ozi4kl4sK08R6JgbYa1hcFoXeIu34LgQj0,2739
+django_twc_toolbox/paginator.py,sha256=dhYaLJWZseUrny6dgMjjBzWlzE2wvu_ktwjC5SL1Tc8,9587
+django_twc_toolbox-0.2.1.dist-info/METADATA,sha256=uEuE-4p3uE_WQr9zyukRH_6LRCOE6pYdUD8lMeqpaSo,3656
+django_twc_toolbox-0.2.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+django_twc_toolbox-0.2.1.dist-info/licenses/AUTHORS.md,sha256=1Oe4LbJMzIyl677o_2b6e9tHcI9aDGXGm6eX1pnCDo0,45
+django_twc_toolbox-0.2.1.dist-info/licenses/LICENSE,sha256=9CxXWDLjew2zOe_kopdAWepyichskKIg1EDoZner2vk,1055
+django_twc_toolbox-0.2.1.dist-info/RECORD,,
