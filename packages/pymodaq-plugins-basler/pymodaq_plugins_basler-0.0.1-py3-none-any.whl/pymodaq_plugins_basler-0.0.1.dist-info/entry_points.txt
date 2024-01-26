@@ -1,0 +1,8 @@
+[pymodaq.extensions]
+basler = pymodaq_plugins_basler
+
+[pymodaq.pid_models]
+basler = pymodaq_plugins_basler
+
+[pymodaq.plugins]
+basler = pymodaq_plugins_basler
