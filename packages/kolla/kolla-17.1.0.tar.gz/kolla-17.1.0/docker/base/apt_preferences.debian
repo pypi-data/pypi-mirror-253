@@ -1,0 +1,8 @@
+Package: rabbitmq-server
+Pin: version 3.12.*
+Pin-Priority: 1000
+
+# NOTE(hrw): we do not want backports unless requested
+Package: *
+Pin: release n=bookworm-backports
+Pin-Priority: -1000
