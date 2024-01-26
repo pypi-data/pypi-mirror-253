@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: refter-cli
+Version: 0.1.3
+Summary: Simple client to validate and push deployments to refter
+Home-page: https://pypi.org/project/refter-cli
+License: MIT
+Author: refter-cli
+Author-email: support@refter.io
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click
+Requires-Dist: dbt-core (>=1.7.4,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Project-URL: Documentation, https://docs.refter.io
+Project-URL: Repository, https://github.com/refter-io/refter-cli
+Description-Content-Type: text/markdown
+
+# Overview
+
+Simple client to validate and push deployments to refter
+## Setup
+
+### Requirements
+
+* Python 3.10+
+
+### Installation
+
+Install it directly into an activated virtual environment:
+
+```bash
+$ pip install refter-cli
+```
+
+## Usage
+
+Check out the [refter](https://docs.refter.io) documentation to learn more about how to use the `refter-cli` client.
+
+
+# CI/CD
+
+Easily integrate `refter-cli` into your GitHub CI/CD pipeline to validate and push deployments to refter using [setup-refter](https://github.com/refter-io/setup-refter) action.
