@@ -1,0 +1,5 @@
+[console_scripts]
+nlpbook.cls = nlpbook.cls.cli:app
+nlpbook.dp.corpus = nlpbook.dp.corpus:CLI.main
+nlpbook.ner = nlpbook.ner.cli:app
+nlpbook.ner.corpus = nlpbook.ner.corpus:CLI.main
