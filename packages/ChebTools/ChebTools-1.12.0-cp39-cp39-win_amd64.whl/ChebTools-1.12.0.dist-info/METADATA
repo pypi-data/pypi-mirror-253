@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ChebTools
+Version: 1.12.0
+Summary: Tools for working with Chebyshev expansion
+Author: Ian Bell
+Author-email: ian.bell@nist.gov
+License-File: LICENSE
+
