@@ -1,0 +1,42 @@
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0,<2.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "device-picker"
+version = "0.1.0"
+description = "A device picker for machine learning frameworks like PyTorch, TensorFlow, and JAX."
+authors = ["Yinying Yao <yaoyy.hi@gmail.com>"]
+license = "MIT"
+packages = [
+    { include = "device_picker" },
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+torch = { version = "^1.8.1", optional = true }
+
+tensorflow = { version = "^2.5.0", optional = true }
+# link: https://peps.python.org/pep-0508/#environment-markers
+"tensorflow-metal" = { version = "^0.8.0", optional = true, markers = "sys_platform == 'darwin' and platform_machine == 'arm64'" }
+
+jax = { version = ">0.3.15", optional = true }
+"jax-metal" = { version = "^0.0.4", optional = true, markers = "sys_platform == 'darwin' and platform_machine == 'arm64'" }
+
+[tool.poetry.extras]
+torch_support = ["torch"]
+tensorflow_support = ["tensorflow"]
+tensorflow_metal_support = ["tensorflow", "tensorflow-metal"]
+
+
+jax_support = ["jax"]
+jax_metal_support = ["jax", "jax-metal"]
+
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
