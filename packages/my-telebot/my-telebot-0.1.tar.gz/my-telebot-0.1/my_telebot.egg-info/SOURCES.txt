@@ -1,0 +1,8 @@
+setup.py
+my_telebot/__init__.py
+my_telebot/bot.py
+my_telebot.egg-info/PKG-INFO
+my_telebot.egg-info/SOURCES.txt
+my_telebot.egg-info/dependency_links.txt
+my_telebot.egg-info/requires.txt
+my_telebot.egg-info/top_level.txt
