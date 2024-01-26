@@ -1,0 +1,6 @@
+[console_scripts]
+mdss=mdss.run:run
+mdss_scenario_1=mdss.scenarios.scenario_1:run
+mdss_scenario_2=mdss.scenarios.scenario_2:run
+mdss_scenario_3=mdss.scenarios.scenario_3:run
+
