@@ -1,0 +1,50 @@
+interactions:
+-   request:
+        body:
+        headers:
+            Accept:
+            -   '*/*'
+            Accept-Encoding:
+            -   gzip, deflate
+            Connection:
+            -   keep-alive
+            Content-Type:
+            -   application/json
+            User-Agent:
+            -   python-requests/2.29.0
+            authorization:
+            -   XXXXXXXXXX
+        method: GET
+        uri: https://dev.lunchmoney.app/v1/transactions
+    response:
+        content: '{"transactions":[{"id":546434806,"date":"2023-12-12","original_date":null,"payee":"Example Restaurant","amount":"120.0000","currency":"usd","to_base":120,"notes":"Saturday Dinner","category_id":null,"recurring_id":null,"asset_id":null,"plaid_account_id":null,"status":"uncleared","is_group":false,"group_id":null,"parent_id":null,"tags":[],"external_id":null,"original_name":"Example Restaurant","type":null,"subtype":null},{"id":546452296,"date":"2023-12-12","original_date":null,"payee":"Example Restaurant","amount":"120.0000","currency":"usd","to_base":120,"notes":"Saturday Dinner","category_id":null,"recurring_id":null,"asset_id":null,"plaid_account_id":null,"status":"uncleared","is_group":false,"group_id":null,"parent_id":null,"tags":[],"external_id":"1234","original_name":"Example Restaurant","type":null,"subtype":null}]}'
+        headers:
+            Access-Control-Allow-Credentials:
+            -   'true'
+            Connection:
+            -   keep-alive
+            Content-Length:
+            -   '834'
+            Content-Type:
+            -   application/json; charset=utf-8
+            Date:
+            -   Fri, 15 Dec 2023 02:32:27 GMT
+            Etag:
+            -   W/"342-P2joIYSONqkvyUVRlqWgtQcd1dE"
+            Nel:
+            -   '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+            Report-To:
+            -   '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1702607547&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=j4Lm34Pm%2FPJMsdTQ7%2BluAVSR4c0fbNpznidVd%2FrUlns%3D"}]}'
+            Reporting-Endpoints:
+            -   heroku-nel=https://nel.heroku.com/reports?ts=1702607547&sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&s=j4Lm34Pm%2FPJMsdTQ7%2BluAVSR4c0fbNpznidVd%2FrUlns%3D
+            Server:
+            -   Cowboy
+            Vary:
+            -   Origin, Accept-Encoding
+            Via:
+            -   1.1 vegur
+            X-Powered-By:
+            -   Express
+        http_version: HTTP/1.1
+        status_code: 200
+version: 1
