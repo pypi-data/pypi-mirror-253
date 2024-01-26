@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+aiosocketproto/__init__.py
+aiosocketproto.egg-info/PKG-INFO
+aiosocketproto.egg-info/SOURCES.txt
+aiosocketproto.egg-info/dependency_links.txt
+aiosocketproto.egg-info/top_level.txt
+aiosocketproto/client/__init__.py
+aiosocketproto/client/client.py
+aiosocketproto/client/methods.py
+aiosocketproto/client/processor.py
+aiosocketproto/client/send_packet.py
+aiosocketproto/client/serializer.py
+aiosocketproto/server/__init__.py
+aiosocketproto/server/processor.py
+aiosocketproto/server/server.py
