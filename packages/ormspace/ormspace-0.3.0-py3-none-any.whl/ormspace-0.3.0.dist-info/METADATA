@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: ormspace
+Version: 0.3.0
+Summary: Pydantic models working with deta.space api, including ORM features.
+License: MIT
+Author: Daniel Arantes
+Author-email: arantesdv@me.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Unidecode (>=1.3.7,<2.0.0)
+Requires-Dist: anyio (>=4.0.0,<5.0.0)
+Requires-Dist: bcrypt (>=4.0.1,<5.0.0)
+Requires-Dist: deta[async] (>=1.2.0,<2.0.0)
+Requires-Dist: pydantic (>=2.4.2,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.0.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# ormspace 
+ORM modules powered by Pydantic for Deta Space.
+
+--- 
+
+### Instructions
+
+The package **ormspace**  will use the deta data key provides as _COLLECTION_KEY_ or will look for _DETA_PROJECT_KEY_ if the 
+first is not provided. This way you can set a custom data key or use the project default. The sistem cannot work all is
+missing. 
+
+#### the 'modelmap' decorator 
+To include the class in the system mapping you must use the 'modelmap' decorator.  With this procedure you will get:
+- access to deta space api for read and write your data 
+- create special fields for each class:
+  - Model.Key 
+  - Model.KeyList
+  
+
+### Example
+    import datetime
+    import asyncio
+    from ormspace import model as md
+
+    @md.modelmap
+    class Person(md.Model):
+        first_name: str 
+        last_name: str 
+        birth_date: datetime.date
+
+    @md.modelmap
+    class Patient(md.Model):
+        person_key: Person.Key
+
+
+    async def main():
+        await Patient.update_references_context()
+        for item in await Patient.sorted_instances_list():
+            print(item)
+
+    asyncio.run(main())
+
+
