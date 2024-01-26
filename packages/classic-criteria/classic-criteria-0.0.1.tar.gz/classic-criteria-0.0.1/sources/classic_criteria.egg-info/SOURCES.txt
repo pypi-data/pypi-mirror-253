@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sources/classic/criteria/__init__.py
+sources/classic/criteria/criteria.py
+sources/classic_criteria.egg-info/PKG-INFO
+sources/classic_criteria.egg-info/SOURCES.txt
+sources/classic_criteria.egg-info/dependency_links.txt
+sources/classic_criteria.egg-info/requires.txt
+sources/classic_criteria.egg-info/top_level.txt

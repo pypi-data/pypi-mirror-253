@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: classic-criteria
+Version: 0.0.1
+Summary: Provides criteria object
+Home-page: https://github.com/variasov/classic-criteria
+Author: Sergei Variasov
+Author-email: variasov@gmail.com
+Project-URL: Bug Tracker, https://github.com/variasov/classic-criteria/issues
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest~=7.4.4; extra == "dev"
+Requires-Dist: pytest-cov~=4.1; extra == "dev"
+Requires-Dist: twine~=4.0; extra == "dev"
+Requires-Dist: build~=1.0; extra == "dev"
+
+# Classic Criteria
+
+Дает объект-критерий.
+
+Нужен для описания критериев объектов, чтобы затем определять,
+соответствуют ли те или иные объекты критерию, или для формирования запроса,
+к примеру, в SQL-хранилище.
+
+Пример:
+```python
+from datetime import datetime
+from dataclasses import dataclass
+from classic.criteria import Criteria
+
+
+@dataclass
+class Task:
+    created_at: datetime
+    finished_at: datetime
+
+    
+@dataclass
+class TaskOlderThan(Criteria[Task]):
+    date: datetime
+
+    def is_satisfied_by(self, candidate: Task) -> bool:
+        return candidate.created_at < self.date
+
+    
+@dataclass
+class TaskObsolete(Criteria[Task]):
+    days_to_work: int
+
+    def is_satisfied_by(self, candidate: Task) -> bool:
+        days_spent = candidate.finished_at - candidate.created_at
+        return days_spent.days > self.days_to_work
+
+    
+some_task = Task(
+    created_at=datetime(2024, 1, 1),
+    finished_at=datetime(2024, 1, 10),
+)
+criteria = TaskObsolete(3) & TaskOlderThan(datetime(2024, 1, 31))
+assert criteria.is_satisfied_by(some_task)
+
+
+some_task = Task(
+    created_at=datetime(2024, 1, 1),
+    finished_at=datetime(2024, 1, 1),
+)
+criteria = TaskObsolete(3) & TaskOlderThan(datetime(2024, 1, 31))
+assert not criteria.is_satisfied_by(some_task)
+```
