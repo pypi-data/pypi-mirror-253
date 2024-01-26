@@ -1,0 +1,16 @@
+ypkgupgr/__init__.py,sha256=A7tlfPF7emaMUCrGoiPd3j702fBR_Wyb3hprnYmFdOg,9923
+ypkgupgr/__main__.py,sha256=G0Jst2--ZNItTVNotkWp1KejjyC1ydVBZ-wTt4ejgsY,101
+ypkgupgr/appdata.py,sha256=BsSbf7PpqdAYT--GbUj_yUSDJbp4JBr6Hi802d5qZNw,433
+ypkgupgr/colors.py,sha256=Dxxp5LgszZTYedbvDVmVIfxTEjrPClvMahI1mAY6emo,159
+ypkgupgr/consts.py,sha256=WL7n7xZ-iLSUFjWmLU2-0Yx6CIYQW07opBYNnfwyIHQ,52
+ypkgupgr/graphics.py,sha256=QRviEC45JybPsFDN5G-AOJDWFxJDcdAWvQSQXO8Tzr4,1316
+ypkgupgr/ignored.py,sha256=SWIF-I7BIjs8Ik6Svm1PHaeydkZVuXJB0NPqFxXrxoo,1593
+ypkgupgr/logs.py,sha256=TzSjOC4EslCAzQyzvwDbmVnCWTay5T6v0i2JmxAJWFQ,923
+ypkgupgr/misc.py,sha256=QJSTUqHBtkCYs3s13ot4WT42wnniCw93gJD1aTGgezk,138
+ypkgupgr/old_init.py,sha256=iIhVIJhaBD1h2U08Q2AHpRXpp3PSoXxWJIL6XMYVuL8,11768
+ypkgupgr-1.11.0.dist-info/LICENSE,sha256=OVdj4dV4xG_B7GUNY3DeGVVDaEVrQ8yl7OK56voZRoc,1066
+ypkgupgr-1.11.0.dist-info/METADATA,sha256=k4DkPa-aluGSQ1nmmBxhWxKi3Dtxjnpj0-tMRZicwlA,3220
+ypkgupgr-1.11.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ypkgupgr-1.11.0.dist-info/entry_points.txt,sha256=-6BI1mlBv3LAaVoj_nFtdoS1ncb0zsoYpWxC7P_Hius,102
+ypkgupgr-1.11.0.dist-info/top_level.txt,sha256=TmHwyMf8Yz9Qz6jj6o-ax4alwjC19N8sq6VUYnV_l08,9
+ypkgupgr-1.11.0.dist-info/RECORD,,
