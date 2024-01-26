@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: binance_interface
+Version: 2.0.1.dev0
+Summary: Python Binance API Interface and Advanced APP Packaging Methods
+Home-page: https://github.com/pyted/binance_interface
+Author: pyted
+Author-email: pyted@outlook.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+
+Python Binance API Interface and Advanced APP Packaging Methods
