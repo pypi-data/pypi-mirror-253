@@ -1,0 +1,2 @@
+[console_scripts]
+analysis = analysis.__main__:main
