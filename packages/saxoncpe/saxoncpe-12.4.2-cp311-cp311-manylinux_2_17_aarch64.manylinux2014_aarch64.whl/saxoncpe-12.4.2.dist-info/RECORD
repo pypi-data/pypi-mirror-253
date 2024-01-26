@@ -1,0 +1,10 @@
+saxoncpe.cpython-311-aarch64-linux-gnu.so,sha256=Rio6U12MA8Bc9-KFGWbeqpG_aOOtCXF1TKVW8MkE-cg,11563113
+saxoncpe/test_saxon_schema.py,sha256=Vjj0SLRSNMHbzR9Vkcz3xraBRrlIwujjV6-jbayxsIw,3995
+saxoncpe/setup.py,sha256=CBMMyBVmIoG-SpBS9xcGq8QYMVbYEACy0OeBhwmDmTU,2973
+saxoncpe/test_saxonc.py,sha256=AKtr49SBJxnR9Giw-j27SnpurCW0XPQY5TIWGSqla8o,65018
+saxoncpe/conftest.py,sha256=JhS8Vl2R_MlRTw_LfDuz0Uy3C4HvJVWw668-xp8HVvY,180
+saxoncpe-12.4.2.dist-info/METADATA,sha256=BxQ7_jEDsMEq_w8vuCALqLx6EzbwaMxhHoIOIcSAI6w,4989
+saxoncpe-12.4.2.dist-info/RECORD,,
+saxoncpe-12.4.2.dist-info/top_level.txt,sha256=haekWAxl5i3fEt0xlT4r7Xv3DRIwVPNvUM0P2Ee6-NQ,9
+saxoncpe-12.4.2.dist-info/WHEEL,sha256=s4nCzmeJHzzKs_3mY44pZnIB7xTTMwwgEpWpc7aab8A,154
+saxoncpe.libs/libsaxon-pec-12-6d99a3e5.4.2.so,sha256=ayhwpaHqGmrgfWBp-a0gn9c_RbHCTp-I7vx9_ebY8H8,85363649
