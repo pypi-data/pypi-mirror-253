@@ -1,0 +1,1 @@
+from wjf_tools.detect_by_cv import yolo
