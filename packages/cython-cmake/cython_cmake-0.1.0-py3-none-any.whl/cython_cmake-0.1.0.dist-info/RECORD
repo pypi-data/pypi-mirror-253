@@ -1,0 +1,12 @@
+cython_cmake/__init__.py,sha256=3t8u5cxXcah29HP9OMXzWQ2-O9s3x3s01JQ7vPb1SXw,246
+cython_cmake/_version.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+cython_cmake/_version.pyi,sha256=j5kbzfm6lOn8BzASXWjGIA1yT0OlHTWqlbyZ8Si_o0E,118
+cython_cmake/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cython_cmake/cmake/FindCython.cmake,sha256=1fyCmhX_COlmnjlMurKJlCUU_bMrrXhr8GURpqj3Lzo,3031
+cython_cmake/cmake/UseCython.cmake,sha256=jXeNnr2ZBGAnIopWCenHy5vGsL_tgAl2PBzBdZGBCy8,9930
+cython_cmake/cmake/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cython_cmake-0.1.0.dist-info/METADATA,sha256=n100EcM7J9u0q53XbG-Ei_mfvjIaW7W_kJcnjg8gsxw,15918
+cython_cmake-0.1.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+cython_cmake-0.1.0.dist-info/entry_points.txt,sha256=VV8oHaELLG8AYI71pEG3FhrmdPxOqP20OqigRTSt9To,40
+cython_cmake-0.1.0.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cython_cmake-0.1.0.dist-info/RECORD,,
