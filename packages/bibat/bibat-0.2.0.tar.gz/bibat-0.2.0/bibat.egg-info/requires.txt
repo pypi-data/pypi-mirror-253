@@ -1,0 +1,16 @@
+pip>=20
+cookiecutter
+click
+pydantic>=2.0.0
+
+[development]
+black
+isort
+pre-commit
+codecov
+pytest
+pytest-cov
+tox
+sphinx
+sphinx-click
+furo
