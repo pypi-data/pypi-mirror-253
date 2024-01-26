@@ -1,0 +1,8 @@
+setup.py
+src/mosamaticdesktop.egg-info/PKG-INFO
+src/mosamaticdesktop.egg-info/SOURCES.txt
+src/mosamaticdesktop.egg-info/dependency_links.txt
+src/mosamaticdesktop.egg-info/entry_points.txt
+src/mosamaticdesktop.egg-info/not-zip-safe
+src/mosamaticdesktop.egg-info/requires.txt
+src/mosamaticdesktop.egg-info/top_level.txt
