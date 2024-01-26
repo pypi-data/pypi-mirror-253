@@ -1,0 +1,6 @@
+README.md
+setup.py
+Wallpaper_Group_Dataset.egg-info/PKG-INFO
+Wallpaper_Group_Dataset.egg-info/SOURCES.txt
+Wallpaper_Group_Dataset.egg-info/dependency_links.txt
+Wallpaper_Group_Dataset.egg-info/top_level.txt
