@@ -1,0 +1,13 @@
+wandb
+numpy
+matplotlib
+scipy
+gym
+minihack
+nle
+keras
+tensorflow
+torch
+Pillow
+imageio
+pandas
