@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: limmer
+Version: 0.2.2
+Summary: A lightweight and easy way to improve your terminal apps.
+Author-email: Cariel Becker <cariel.becker@gmx.de>
+Maintainer-email: Cariel Becker <cariel.becker@gmx.de>
+License: Apache-2.0
+Project-URL: Home, https://pypi.org/project/limmer/
+Project-URL: Repository, https://github.com/adalfarus/limmer
+Project-URL: Documentation, https://github.com/adalfarus/limmer/wiki
+Project-URL: Issue tracker, https://github.com/adalfarus/limmer/issues
+Keywords: terminal,cmd,command line,lightweight,glimmer
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ctypes; os_name != "nt"
+
+# limmer
+ Makes the windows terminal go GLIMMER
