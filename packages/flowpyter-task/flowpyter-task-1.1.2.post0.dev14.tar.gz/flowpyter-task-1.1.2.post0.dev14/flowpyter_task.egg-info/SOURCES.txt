@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+versioneer.py
+flowpyter_task.egg-info/PKG-INFO
+flowpyter_task.egg-info/SOURCES.txt
+flowpyter_task.egg-info/dependency_links.txt
+flowpyter_task.egg-info/entry_points.txt
+flowpyter_task.egg-info/requires.txt
+flowpyter_task.egg-info/top_level.txt
+flowpyter_task.egg-info/zip-safe
+src/_version.py
+tests/test_flowpyter_operator.py
+tests/test_integration.py
