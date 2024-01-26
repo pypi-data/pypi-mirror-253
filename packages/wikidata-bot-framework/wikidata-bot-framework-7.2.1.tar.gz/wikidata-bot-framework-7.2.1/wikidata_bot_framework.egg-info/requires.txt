@@ -1,0 +1,9 @@
+pywikibot<8.3.0
+mwparserfromhell
+python-dotenv
+sentry-sdk
+typing-extensions
+
+[docs]
+sphinx
+sphinx_rtd_theme
