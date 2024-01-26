@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: ego_addons
+Version: 2024.126
+Summary: Define your trading style.
+Home-page: https://pypi.org/project/egopy
+Author: EGOPY
+License: BSD 3-Clause License
+        
+        Copyright (c) 2022-present, EGOPY
+        
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: Chinese (Simplified)
+Requires-Python: <3.11,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+﻿<p align="center">
+    <img src ="https://img.shields.io/badge/platform-linux-yellow.svg"/>
+    <img src ="https://img.shields.io/badge/python-3.10-blue.svg" />
+</p>
+
+## EGOPY = EGO + PYthon
+
+* Define your trading style.
+
+<p align="left">
+EGOPY Global Trader (EGOPY GT) 始于开源系统和交易框架，致力于研发更高效的智能投顾&量化投资交易系统。
+</p>
+
+
+## 安装运行
+* <code>ego_addons</code>是<code>EGOPY</code>的Beta级补丁程序.
+
+## 更新说明
+* 优化GT系列策略模块。
+* 支持KJF系列回测系统。
+* 优化IB接口。
+
+
+## 版权说明
+* BSD 3-Clause License
