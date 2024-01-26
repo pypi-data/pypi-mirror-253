@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+root2hdf5.egg-info/PKG-INFO
+root2hdf5.egg-info/SOURCES.txt
+root2hdf5.egg-info/dependency_links.txt
+root2hdf5.egg-info/entry_points.txt
+root2hdf5.egg-info/requires.txt
+root2hdf5.egg-info/top_level.txt
+src/__init__.py
+src/root2hdf5.py
+tests/__init__.py
+tests/test_root2hdf5.py
