@@ -1,0 +1,1 @@
+(self.webpackChunkskillsnetwork_authoring_extension=self.webpackChunkskillsnetwork_authoring_extension||[]).push([[230],{6230:e=>{e.exports="object"==typeof self?self.FormData:window.FormData}}]);
