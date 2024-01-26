@@ -1,0 +1,2 @@
+[console_scripts]
+gptbot = gptbot:main
