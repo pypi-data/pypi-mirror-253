@@ -1,0 +1,7 @@
+pyserial
+pymodbus
+unittest-xml-reporting
+
+[extra]
+PySimpleGUI
+python-docx
