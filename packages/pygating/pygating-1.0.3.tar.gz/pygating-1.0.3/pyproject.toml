@@ -1,0 +1,24 @@
+[project]
+name = "pygating"
+version = "1.0.3"
+authors = [
+  { name="Aleksey Tsaplin", email="tsapleksey@gmail.com" },
+]
+description = "A small package for creating and using configurations to control code flow"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "python-dateutil"
+]
+
+[project.urls]
+homepage = "https://github.com/atsaplin/pygating"
+repository = "https://github.com/atsaplin/pygating"
+documentation = "https://github.com/atsaplin/pygating"
+issues = "https://github.com/atsaplin/pygating/issues"
