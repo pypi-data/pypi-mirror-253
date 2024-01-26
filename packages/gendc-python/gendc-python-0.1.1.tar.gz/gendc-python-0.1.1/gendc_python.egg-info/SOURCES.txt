@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+gendc_cpp/gendc_separator/ComponentHeader.h
+gendc_cpp/gendc_separator/ContainerHeader.h
+gendc_cpp/gendc_separator/Descriptor.h
+gendc_cpp/gendc_separator/PartHeader.h
+gendc_cpp/gendc_separator/tools.h
+gendc_python/__init__.py
+gendc_python/test.py
+gendc_python.egg-info/PKG-INFO
+gendc_python.egg-info/SOURCES.txt
+gendc_python.egg-info/dependency_links.txt
+gendc_python.egg-info/top_level.txt
+gendc_python/gendc_separator/__init__.py
+gendc_python/gendc_separator/descriptor.py
