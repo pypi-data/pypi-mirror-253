@@ -1,0 +1,10 @@
+click
+rdfLib
+python-dateutil
+jsonschema
+oemetadata>=1.5.2
+
+[dev]
+black
+isort
+pre-commit
