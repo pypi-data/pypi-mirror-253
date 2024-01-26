@@ -1,0 +1,1 @@
+https://modelscope-demo-widget.oss-cn-zhangjiakou.aliyuncs.com/pre/modelscope_gradio_components-0.0.1-py3-none-any.whl
