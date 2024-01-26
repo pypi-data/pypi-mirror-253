@@ -1,0 +1,10 @@
+include pyproject.toml
+include README.md
+include LICENSE
+recursive-include tests test*.py
+include *.yaml
+recursive-include docs *.md
+recursive-include docs *.yml
+include *.txt
+recursive-include docs *.py
+recursive-include docs *.ipynb
