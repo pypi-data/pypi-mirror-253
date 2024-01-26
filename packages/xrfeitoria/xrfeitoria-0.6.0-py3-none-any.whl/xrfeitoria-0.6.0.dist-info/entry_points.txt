@@ -1,0 +1,4 @@
+[console_scripts]
+xf-install-plugin = xrfeitoria.cmd.blender.install_plugin:app
+xf-render = xrfeitoria.cmd.blender.render:app
+xf-smplx = xrfeitoria.cmd.blender.vis_smplx:app
