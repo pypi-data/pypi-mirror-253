@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: openspg-knext
+Version: 0.0.2b5
+Summary: knext
+Home-page: https://github.com/OpenSPG/openspg
+Requires-Python: >=3.8
+License-File: LICENSE
