@@ -1,0 +1,12 @@
+setup.py
+synexens_sdk.cpp
+synexens/__init__.py
+synexens/base.py
+synexens/const.py
+synexens/version.py
+synexens.egg-info/PKG-INFO
+synexens.egg-info/SOURCES.txt
+synexens.egg-info/dependency_links.txt
+synexens.egg-info/requires.txt
+synexens.egg-info/top_level.txt
+sysdk/include/SYSDKInterface.h

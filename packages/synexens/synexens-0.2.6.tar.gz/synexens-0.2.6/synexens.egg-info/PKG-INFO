@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: synexens
+Version: 0.2.6
+Summary: Wrapper for Synexens SDK to access their LiDAR devices
+Author: ['Minh-Tri Pham']
+Requires-Python: >=3.8
+Requires-Dist: mtbase
+Requires-Dist: cython
+Requires-Dist: v4l2py
