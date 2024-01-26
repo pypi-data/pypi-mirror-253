@@ -1,0 +1,9 @@
+simplememcache/__init__.py,sha256=4donC-z2RlPLK0qgoeg8aXwcfSQTF6OILNAgODzhs4w,36
+simplememcache/base.py,sha256=KRYNHwdIDT3GTi7yvipsKRGqw5xy0BDySx_DQLfr8sw,1836
+simplememcache/lru.py,sha256=ubd02bkMWtdUungRvXvLIzkzt7MW0E-38pMjWT1Kuuk,6140
+simplememcache/version.py,sha256=KpzPRHe1oXKfzXvaBDapmIwR6KrMAruyGVNhjJk9XM0,18
+simplememcache-0.0.0a0.dist-info/LICENSE,sha256=NgQ2ovGj1MXACqfMx2uOqUMEDEwAA2t4KlOqopTAbK4,1070
+simplememcache-0.0.0a0.dist-info/METADATA,sha256=-euDTi42n0-ZY7Xr0X63ruGQTYqhKjSDdMOPVZKfAqs,3004
+simplememcache-0.0.0a0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+simplememcache-0.0.0a0.dist-info/top_level.txt,sha256=NJVLzXVU6w6vRHzoS5osQXnU1p2yEHkcPXeO-guu0PY,15
+simplememcache-0.0.0a0.dist-info/RECORD,,
