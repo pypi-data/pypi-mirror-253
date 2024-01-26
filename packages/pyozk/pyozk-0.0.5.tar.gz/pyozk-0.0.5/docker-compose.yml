@@ -1,0 +1,52 @@
+version: '3'
+services:
+  timekeeper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: host
+    container_name: employee_app_timekeeper_dev
+    image: owt-employee-app-timekeeper-app:latest
+    restart: always
+    environment:
+      TIMEKEEPER_ENV: "prod"
+      TIMEKEEPER_DEBUG: "False"
+      TIMEKEEPER_PORT: 5000
+    volumes:
+      - timekeeperdata:/var/www
+    env_file:
+      - .env
+  live_capture_1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: host
+    container_name: employee_app_live_capture_1_dev
+    image: owt-employee-app-live-capture-1-app:latest
+    restart: always
+    command: python3 ./live_capture/device_one.py
+    environment:
+      TIMEKEEPER_ENV: "prod"
+      TIMEKEEPER_DEBUG: "False"
+      TIMEKEEPER_PORT: 5000
+    env_file:
+      - .env
+  live_capture_2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    network_mode: host
+    container_name: employee_app_live_capture_2_dev
+    image: owt-employee-app-live-capture-2-app:latest
+    restart: always
+    command: python3 ./live_capture/device_two.py
+    environment:
+      TIMEKEEPER_ENV: "prod"
+      TIMEKEEPER_DEBUG: "False"
+      TIMEKEEPER_PORT: 5000
+    env_file:
+      - .env
+
+volumes:
+  timekeeperdata:
+    driver: local
