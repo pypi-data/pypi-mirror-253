@@ -1,0 +1,2 @@
+[console_scripts]
+mcd-cli = mel_cepstral_distance_cli.cli:run_prod
