@@ -1,0 +1,55 @@
+[tool.doks]
+auto = true
+
+[tool.poetry]
+name = "tdir"
+version = "1.8.2"
+description = "🗃 Create and fill a temporary directory 🗃"
+authors = ["Tom Ritchford <tom@swirly.com>"]
+license = "MIT"
+readme = "README.md"
+include = ["tdir.pyi"]
+repository = "https://github.com/rec/tdir"
+homepage = "https://github.com/rec/tdir"
+documentation = "https://rec.github.io/tdir"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+dek = "*"
+xmod = "*"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+coverage = "*"
+doks = "*"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pytest = "*"
+ruff = "*"
+
+[tool.coverage.run]
+branch = true
+source = ["tdir"]
+
+[tool.coverage.report]
+fail_under = "93"
+skip_covered = true
+exclude_lines = [
+    "pragma: no cover",
+    "if False:",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.mypy]
+strict = true
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
