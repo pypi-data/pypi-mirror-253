@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: DeFiPy
+Version: 0.0.4
+Summary: DeFi for Python
+Home-page: http://github.com/icmoore/defipy
+Author: icmoore
+Author-email: utiliwire@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: scipy>=1.7.3
+Requires-Dist: uniswappy>=1.1.0
+Requires-Dist: stableswappy>=0.0.3
+Requires-Dist: balancerpy>=0.0.5
+
+# defipy
+Python package for DeFi modelling
+* Currently in Beta (version 0.0.4) until fully tested and analyzed
+
+## Install
+To install package:
+```
+> git clone https://github.com/icmoore/defipy
+> pip install .
+```
+or
+```
+> pip install DeFiPy
+```
+
+## DeFi Overview
+	* Python for DeFi analytics
