@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pollo
+Version: 0.0.0
+Summary: A repo for qualitative user studies using Amazon Mechanical Turk (AMT).
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: flask-cors>=4.0.0
+Requires-Dist: flask>=3.0.1
+Requires-Dist: mediapy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: xmltodict

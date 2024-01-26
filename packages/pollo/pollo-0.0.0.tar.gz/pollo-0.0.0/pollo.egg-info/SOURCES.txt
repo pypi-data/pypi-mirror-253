@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pollo/requester.py
+pollo.egg-info/PKG-INFO
+pollo.egg-info/SOURCES.txt
+pollo.egg-info/dependency_links.txt
+pollo.egg-info/requires.txt
+pollo.egg-info/top_level.txt
