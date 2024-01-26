@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: novelai-python
+Version: 0.1.0
+Summary: Novelai Python Binding With Pydantic
+Author-Email: sudoskys <coldlando@hotmail.com>
+License: Apache 2.0
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# novelai-python
