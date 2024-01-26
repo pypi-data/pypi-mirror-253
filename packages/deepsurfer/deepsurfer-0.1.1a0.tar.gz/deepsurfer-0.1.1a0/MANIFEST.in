@@ -1,0 +1,5 @@
+include deepsurfer/resource/template/*
+include deepsurfer/resource/iotypes/*
+include deepsurfer/resource/models/brain-cropping-1.pt
+include deepsurfer/resource/models/synthstrip-1.pt
+include deepsurfer/resource/models/template-alignment-1.pt

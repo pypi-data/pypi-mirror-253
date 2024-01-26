@@ -1,0 +1,14 @@
+# 
+use_subjects_directory: True
+
+# 
+image_input:         '{outdir}/mri/orig.mgz'
+image_cropped:       '{outdir}/mri/cropped.mgz'
+image_stripped:      '{outdir}/mri/brainmask.mgz'
+seg_whole_brain:     '{outdir}/mri/aseg.mgz'
+seg_sc_limbic:       '{outdir}/mri/seg.sc.limbic.mgz'
+affine_template:     '{outdir}/mri/transforms/talairach.lta'
+cortical_wm_surf_lh: '{outdir}/surf/lh.white'
+cortical_wm_surf_rh: '{outdir}/surf/rh.white'
+cortical_gm_surf_lh: '{outdir}/surf/lh.pial'
+cortical_gm_surf_rh: '{outdir}/surf/rh.pial'
