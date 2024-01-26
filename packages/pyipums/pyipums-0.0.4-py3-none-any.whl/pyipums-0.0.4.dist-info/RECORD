@@ -1,0 +1,7 @@
+pyipums/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyipums/clean_data.py,sha256=DHxiV4V03RJKrrTv9I7_4orYFA5ONJNrufChMjWZpAc,10494
+pyipums/parse_xml.py,sha256=Wtn9S6tbbqUnsn4RjMgGAiN3FAY8pZVVBuv2v3TZPmc,5665
+pyipums-0.0.4.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+pyipums-0.0.4.dist-info/METADATA,sha256=Jr8n1MxTKu2n_Dy1V1gPL55gwQBOLugHMQHhJyH1-oM,2001
+pyipums-0.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pyipums-0.0.4.dist-info/RECORD,,
