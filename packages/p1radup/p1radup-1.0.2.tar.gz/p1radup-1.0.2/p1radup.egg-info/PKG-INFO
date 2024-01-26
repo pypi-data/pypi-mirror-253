@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: p1radup
+Version: 1.0.2
+Summary: This script identifies duplicate query parameters within each URL and retains only the first occurrence of each parameter for a given hostname.
+Home-page: https://github.com/iambouali/p1radup
+Author: Tarek Bouali
+Author-email: contact@tarekbouali.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
