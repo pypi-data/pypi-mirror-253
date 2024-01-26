@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "testcontainers-python-influxdb"
+version = "0.2.1"
+description = "Brings InfluxDB in testcontainers-python (until PR #413 is merged)"
+authors = ["Luc Sorel-Giffo"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+testcontainers = "^3.7.1"
+influxdb = { version = "^5.3.1", optional = true }
+influxdb-client = { version = "^1.39.0", optional = true }
+
+[tool.poetry.extras]
+influxdb1 = ["influxdb"]
+influxdb2 = ["influxdb-client"]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.group.lint.dependencies]
+pre-commit = "3.5.0"
+
+[tool.pytest.ini_options]
+console_output_style = "count"
+
+
+[tool.isort]
+py_version=38
+# maintain consistency with other quality tools
+line_length = 120
+# consistency with ruff-format: mode 3
+# from third_party import (
+#     lib1,
+#     lib2,
+#     [...]
+#     libn,
+# )
+multi_line_output = 3
+include_trailing_comma = true
+# TESTS->known_tests: create a specific section for imports of tests modules
+# (this is the reason why isort is still used alongside ruff-format)
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER", "TESTS"]
+known_tests = ["tests"]
+
+[tool.ruff]
+target-version = "py38"
+# maintain consistency with other quality tools
+line-length = 120
+# activated families of verifications (https://beta.ruff.rs/docs/rules/
+select = ["B", "E", "F", "W", "N", "SIM", "C4"]
+# do not check:
+# - E501 line lengths: ruff formatter already handles them
+# - B905 zip(*, strict=True): strict was introduced in Python 3.10+
+extend-ignore = ["E501", "B905"]
+# automatically fixes when possible
+fix = true
+
+[tool.ruff.format]
+indent-style = "space"
+line-ending = "lf"
+quote-style = "double"
+
+[tool.ruff.lint.isort]
+forced-separate = ["tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
