@@ -1,0 +1,8 @@
+p2d/__init__.py,sha256=KzMI4rvLq7uKsXUB6wSPOZeSWSN-hIppYrCdJcnC-jY,43
+p2d/asset/config.json,sha256=jioaaQMGAPaiba0APThGHB-ejmEnhbMyUyGDRT9Jodg,965
+p2d/p2d.py,sha256=nmByIRJ-ANXAHIsCp344g5NppfpL_f3mRY3bU58rqxo,16594
+testlib/testlib.h,sha256=a-7vegSSfmCt-KyvC0xQ2cww8oL4nXlI4B5L9LZY-KQ,199384
+p2d-0.0.10.dist-info/METADATA,sha256=Qeq2l5wbkABUatimQ7jk1sJAkUqqONGaawQdVBRLOt8,4838
+p2d-0.0.10.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+p2d-0.0.10.dist-info/entry_points.txt,sha256=IzNNig8tJvBKj05pq1f093r9W0_0xEISZN9xgjFqrCg,36
+p2d-0.0.10.dist-info/RECORD,,
