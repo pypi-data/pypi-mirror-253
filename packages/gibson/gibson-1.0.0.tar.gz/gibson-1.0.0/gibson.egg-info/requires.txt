@@ -1,0 +1,23 @@
+numpy
+pyglet<=1.5.15
+gym>=0.9.4
+PyYAML>=3.12
+pybullet
+transforms3d>=0.3.1
+tqdm>=4
+pyzmq>=16.0.2
+Pillow
+matplotlib>=2.1.0
+mpi4py
+cloudpickle>=0.4.1
+pygame
+torchvision==0.2.0
+aenum
+termcolor
+requests
+
+[:python_version == "2.7"]
+opencv-python==4.2.0.32
+
+[:python_version > "2.7"]
+opencv-python
