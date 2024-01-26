@@ -1,0 +1,10 @@
+matplotlib
+scikit-learn
+numpy
+torch
+nltk
+xlrd
+scipy
+apyori
+importlib_resources
+pandas
