@@ -1,0 +1,47 @@
+{% extends "umap/content.html" %}
+{% load i18n %}
+{% block head_title %}
+  {{ SITE_NAME }} - {% trans "My Dashboard" %}
+{% endblock head_title %}
+{% block maincontent %}
+  {% trans "Search my maps" as placeholder %}
+  <div class="col wide">
+    <h2 class="section tabs">
+      <a class="selected" href="{% url 'user_dashboard' %}">{% trans "My Dashboard" %}</a> | <a href="{% url 'user_profile' %}">{% trans "My profile" %}</a>
+    </h2>
+    {% include "umap/search_bar.html" with action=request.get_full_path placeholder=placeholder %}
+  </div>
+  <div class="wrapper">
+    <div class="row">
+      {% if maps %}
+        {% include "umap/map_table.html" %}
+      {% else %}
+        <div>
+          {% blocktrans %}You have no map yet.{% endblocktrans %} <a href="{% url 'map_new' %}">{% translate "Create a map" %}</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endblock maincontent %}
+
+{% block bottom_js %}
+  {{ block.super }}
+  <script type="text/javascript">
+    !(function () {
+      const CACHE = {}
+      for (const mapOpener of document.querySelectorAll("button.map-opener")) {
+        mapOpener.addEventListener('click', (event) => {
+          event.target.nextElementSibling.showModal()
+          const mapId = event.target.dataset.mapId
+          if (!document.querySelector(`#${mapId}_target`).hasChildNodes()) {
+            const previewSettings = JSON.parse(document.getElementById(mapId).textContent)
+            const map = new L.U.Map(`${mapId}_target`, previewSettings)
+            CACHE[mapId] = map
+          } else {
+            CACHE[mapId].invalidateSize()
+          }
+        })
+      }
+    })()
+  </script>
+{% endblock bottom_js %}
