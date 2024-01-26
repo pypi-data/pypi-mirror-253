@@ -1,0 +1,15 @@
+cvc5-1.1.1.dist-info/METADATA,sha256=hlmHtHQUhEJRfmgIHkP5POPhP-9CswsgKZAixSZJJvE,136
+cvc5-1.1.1.dist-info/top_level.txt,sha256=N536uT-ZzWFv5DKP7Uw-wpdKqMoBEzg-GxURQaETKjA,5
+cvc5-1.1.1.dist-info/RECORD,,
+cvc5-1.1.1.dist-info/WHEEL,sha256=vJMp7mUkE-fMIYyE5xJ9Q2cYPnWVgHf20clVdwMSXAg,152
+cvc5/__init__.py,sha256=KI276vMsNaixq4eBFeDdyyUUk4vIIxdPZVcuIq_NQnM,80
+cvc5/cvc5_python_base.cpython-312-x86_64-linux-gnu.so,sha256=HaYLKG8Ee7-eLSA96sm-_0oRAnL3SXrwf8MZAlYPxtg,1873409
+cvc5/pythonic/cvc5_pythonic_printer.py,sha256=7o-8yHJKppH1JBkyX6zJjQ9P1WpA4QDkTTe5hCaONSc,41063
+cvc5/pythonic/LICENSE.txt,sha256=ahKvcE_YsjQHGnmN-8xBthetRHrWum1N1-gJNH_mOBE,1253
+cvc5/pythonic/__init__.py,sha256=xYBu7h3ijdCgB-GB30Cdp01E5cwlOFjgjjMREQ9cJSU,29
+cvc5/pythonic/cvc5_pythonic.py,sha256=O3lTp1uhzTZ4ERMHHNhm0KlK-5oxswH3SUwZMINzFeU,241543
+cvc5.libs/libpoly-f3e2995f.so.0.1.13,sha256=SbfkZL1C2wQc_Aidqh826a8n-1jnm-igL-sOago6LfU,499753
+cvc5.libs/libcvc5parser-441512b6.so.1,sha256=MGgQwCd8g90iAGqiVfiL0C-UxdP5LnEvJNfjf9foLFA,1173585
+cvc5.libs/libpolyxx-5119d93a.so.0.1.13,sha256=dQUE6vFZ3amu7yyJ4OTGIU_iUBNQLhHkd7U0484q8ao,431801
+cvc5.libs/libgmp-b2ad1ad7.so.10.5.0,sha256=px13LAG89KS9Bqe1RKrFSyXhPAXlxv7Uivn6o0jLwAw,564985
+cvc5.libs/libcvc5-a8565eb2.so.1,sha256=Ji5vOQ3fZ32GxeKVofq8_eSE-GWUBoh54RiYse3QqNI,27664185
