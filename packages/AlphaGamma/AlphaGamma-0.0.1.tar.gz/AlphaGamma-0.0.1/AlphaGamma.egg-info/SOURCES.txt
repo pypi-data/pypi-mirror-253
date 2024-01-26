@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+AlphaGamma.egg-info/PKG-INFO
+AlphaGamma.egg-info/SOURCES.txt
+AlphaGamma.egg-info/dependency_links.txt
+AlphaGamma.egg-info/top_level.txt
+pkg/__init__.py
