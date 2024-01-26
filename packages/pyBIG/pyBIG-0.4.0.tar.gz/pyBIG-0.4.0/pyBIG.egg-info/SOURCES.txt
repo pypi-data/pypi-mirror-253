@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyBIG/__init__.py
+pyBIG/archive.py
+pyBIG/base_archive.py
+pyBIG/large_archive.py
+pyBIG/utils.py
+pyBIG.egg-info/PKG-INFO
+pyBIG.egg-info/SOURCES.txt
+pyBIG.egg-info/dependency_links.txt
+pyBIG.egg-info/top_level.txt
