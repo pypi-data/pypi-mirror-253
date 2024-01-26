@@ -1,0 +1,10 @@
+pyBIG/__init__.py,sha256=oN6lc7KDjTHTrHH2Ro-09lTOfcLDBTao06Esne8wJB8,137
+pyBIG/archive.py,sha256=eBp_7-INMLC0B2av-aKMyWtpG5W-6jZHdFWFzDyVXuk,7497
+pyBIG/base_archive.py,sha256=YyOO6TTR5VbivsNY5DVmABJYV9c6WtfS6Jp9poPuA9Q,7927
+pyBIG/large_archive.py,sha256=62xLId8sOGTFI9pkDKeNlX2Hk0Xse8BVtxHigLGW8Cc,9202
+pyBIG/utils.py,sha256=HLfCQXsM3Fdr_JRUX8SYG50yJy5flvzMLYeI_7R_iJI,854
+pyBIG-0.4.0.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+pyBIG-0.4.0.dist-info/METADATA,sha256=qi_nDcl77QHw-r8dxXa9qeqlKurGyHdQbf04E5MG3xo,4019
+pyBIG-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyBIG-0.4.0.dist-info/top_level.txt,sha256=-5WQZIIohuJ9TMKwAGDw9p_kXgE2TvtlmSzoe0BSnp4,6
+pyBIG-0.4.0.dist-info/RECORD,,
