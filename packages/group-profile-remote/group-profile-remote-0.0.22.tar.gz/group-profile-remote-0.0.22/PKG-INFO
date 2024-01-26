@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: group-profile-remote
+Version: 0.0.22
+Summary: PyPI Package for Circles Group-Profile-Remote Python
+Home-page: https://github.com/circles-zone/group-profile-remote-python-package
+Author: Circles
+Author-email: info@circles.life
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: python_sdk_remote
+Requires-Dist: logger_local
+Requires-Dist: url_remote
+
+This is a package for sharing common Group-Profile-Remote function used in different repositories
