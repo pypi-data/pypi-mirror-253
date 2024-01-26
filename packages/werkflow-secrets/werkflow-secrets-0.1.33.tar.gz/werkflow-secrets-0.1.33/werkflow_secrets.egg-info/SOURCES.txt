@@ -1,0 +1,9 @@
+README.md
+setup.py
+werkflow_secrets/__init__.py
+werkflow_secrets/secrets.py
+werkflow_secrets.egg-info/PKG-INFO
+werkflow_secrets.egg-info/SOURCES.txt
+werkflow_secrets.egg-info/dependency_links.txt
+werkflow_secrets.egg-info/requires.txt
+werkflow_secrets.egg-info/top_level.txt
