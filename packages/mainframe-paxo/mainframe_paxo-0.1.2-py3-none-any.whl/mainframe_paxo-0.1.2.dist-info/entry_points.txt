@@ -1,0 +1,3 @@
+[console_scripts]
+paxo=mainframe_paxo.paxo:paxo
+
