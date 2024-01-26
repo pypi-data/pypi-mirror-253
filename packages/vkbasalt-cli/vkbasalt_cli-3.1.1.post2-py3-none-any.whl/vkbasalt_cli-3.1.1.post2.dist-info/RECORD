@@ -1,0 +1,11 @@
+vkbasalt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vkbasalt/cli.py,sha256=dxvtvvzgyikO0hnMfI5ZDQ5XFtFW81X9WutRfyzcqMg,3520
+vkbasalt/lib.py,sha256=Ut6wXX8kxtNo0UaW9P4p1nZmTYFSlNADNUgvikLlrDI,11097
+vkbasalt_cli-3.1.1.post2.dist-info/COPYING,sha256=s42bRyz59FQTXemjZLeZ86Ir3VKzqrSOifIXJI5_XKg,176
+vkbasalt_cli-3.1.1.post2.dist-info/COPYING.GPLv3,sha256=1oxGuPzcSzOIHwEcdKbIxqqDYNKIMgB9K6OCZMPvvTE,35072
+vkbasalt_cli-3.1.1.post2.dist-info/COPYING.LGPLv3,sha256=fPulzRFFJ993flc_QyYQ6vAL2bFREC_I2-RcV2Ibkyo,7623
+vkbasalt_cli-3.1.1.post2.dist-info/METADATA,sha256=AY3uMkFEPomQy1-eNssugGSF7q6YkjJmqjA83SKQoaY,6392
+vkbasalt_cli-3.1.1.post2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+vkbasalt_cli-3.1.1.post2.dist-info/entry_points.txt,sha256=EkExspXoiq0MoioP1L2rCk61pnqJxA3b6jCSxtb0oBA,55
+vkbasalt_cli-3.1.1.post2.dist-info/top_level.txt,sha256=HZ8MeNY7a3mQ9Ei9ObcL8nxzMAE7ond0dpgjRwoSSGk,9
+vkbasalt_cli-3.1.1.post2.dist-info/RECORD,,
