@@ -1,0 +1,14 @@
+__pycache__
+.jupyter
+.ipynb_checkpoints
+.conda
+*.ipynb
+*.csv
+.coverage
+dist/
+
+main.py
+notes/
+examples/
+tests/
+.vscode/
