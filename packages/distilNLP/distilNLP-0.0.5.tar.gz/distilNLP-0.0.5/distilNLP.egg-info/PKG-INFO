@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: distilNLP
+Version: 0.0.5
+Summary: distilNLP is a low-dependency, GPU-free natural language processing toolkit.
+Author-email: wencan <i@wencan.org>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2024, wencan
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://github.com/wencan/distilNLP
+Project-URL: Issues, https://github.com/wencan/distilNLP/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# distilNLP
+distilNLP is a low-dependency, GPU-free natural language processing toolkit designed for building natural language processing applications and preprocessing for deep learning.
+
+# Install
+
+```
+pip install -U distilNLP
+```
+
+# Usage
+
+## normalize
+Normalize punctuation, remove unnecessary characters and invisible characters.
+```python
+from distilnlp import normalize
+
+norm = normalize('Proposed programme budget for the biennium 2006-2007： Section 29， Office of Internal Oversight Services。 ')
+# got: 'Proposed programme budget for the biennium 2006-2007: Section 29, Office of Internal Oversight Services。'
+
+norm = normalize(' 2006-2007两年期拟议方案预算:😇第29款,内部监督事务厅.')
+# got: '2006-2007两年期拟议方案预算：第29款，内部监督事务厅。'
+
+norm = normalize('百度的网址是:  http：//baidu.com')
+# got: '百度的网址是： http://baidu.com'
+```
