@@ -1,0 +1,6 @@
+change log
+==========
+
+version 1 (25.01.2024)
+-----------------------
+- i decided to upload this to pypi idk
