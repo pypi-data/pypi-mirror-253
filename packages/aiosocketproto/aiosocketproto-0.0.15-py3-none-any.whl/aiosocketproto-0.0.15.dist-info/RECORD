@@ -1,0 +1,15 @@
+aiosocketproto/__init__.py,sha256=IaXDffS-2UWIZFl7omKg0EzGs2FEX8j66HmmzuIg2Oo,264
+aiosocketproto/client/__init__.py,sha256=r9Of79SFiXnKFFM5T9pXT88uhXBZzxzJZYPCFbGIQ8k,37
+aiosocketproto/client/client.py,sha256=vqy1WzMmfSCe4a8xdjUgADkLcmx8SG1_asa1S_ZiZWQ,1192
+aiosocketproto/client/methods.py,sha256=2Fb2lRJfgxHT7YrHBKop-FuabQAmI_NSNBy0sUWeTDg,3050
+aiosocketproto/client/processor.py,sha256=tm1jLqZqPHoWh8X2AB63y-bH3ePRce-FSH2w2cjI7e8,6383
+aiosocketproto/client/send_packet.py,sha256=0VII_oq95ba-L7j9_VXEVpsRGY1V97OL6ffL0BQrsNo,174
+aiosocketproto/client/serializer.py,sha256=cAcZxGVwJ0dqkhmar2X-AIsHMFyJ-NVdG6c6Kpsb_OQ,3781
+aiosocketproto/server/__init__.py,sha256=JU18K5Ifh214EFrMnjwpFfIlyRZoTshWSbGSNSd1HAY,37
+aiosocketproto/server/processor.py,sha256=082_fKycPtO3dnP1_T5AsdcV-tZsEPARmz6Js-fc8qc,909
+aiosocketproto/server/server.py,sha256=IaU1Eg-VXY8yFUU5Rp3PCZGb7jQXcaB4DUynjmKKAhc,1633
+aiosocketproto-0.0.15.dist-info/LICENSE,sha256=dbs1fhgtX-mb929RUbIiTuYyVpYMHJLrkk5qtCSc_lk,1065
+aiosocketproto-0.0.15.dist-info/METADATA,sha256=61jsPuWm8tfZY7Oj-Qen15loaSWMCkRkDfKVkSKs0Kg,1910
+aiosocketproto-0.0.15.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+aiosocketproto-0.0.15.dist-info/top_level.txt,sha256=ZyHhCfKSXS6AGCErDQ9elGmkw99yYo0ZMCPrN877ZtQ,15
+aiosocketproto-0.0.15.dist-info/RECORD,,
