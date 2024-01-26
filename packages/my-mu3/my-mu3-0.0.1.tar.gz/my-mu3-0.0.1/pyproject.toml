@@ -1,0 +1,32 @@
+[project]
+name = "my-mu3"
+version = "0.0.1"
+authors = [
+    { name = "MZandtheRaspberryPi", email = "mzandtheraspberrypi@gmail.com" },
+]
+description = "A small project to grab and parse images from the MU3 Vision Sensor."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pyserial",
+    "opencv-python"
+]
+
+[project.scripts]
+setup-wlan = "my_mu3.setup_wlan.py:main"
+
+[project.urls]
+Homepage = "https://github.com/MZandtheRaspberryPi/my_mu3"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "my_mu3" = "my_mu3" }
