@@ -1,0 +1,8 @@
+setup.py
+rbxmonitor/__init__.py
+rbxmonitor/rbxmonitor.py
+rbxmonitormac.egg-info/PKG-INFO
+rbxmonitormac.egg-info/SOURCES.txt
+rbxmonitormac.egg-info/dependency_links.txt
+rbxmonitormac.egg-info/requires.txt
+rbxmonitormac.egg-info/top_level.txt
