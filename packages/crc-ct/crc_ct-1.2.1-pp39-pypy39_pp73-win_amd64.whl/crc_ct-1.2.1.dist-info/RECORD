@@ -1,0 +1,14 @@
+crc/__about__.py,sha256=uhAqbVv2Uu0E8R9fiOd3hqjt00IUrJxUUzdHiZSh72o,219
+crc/__init__.py,sha256=oYgcTob9uCTmYmN6419o2p6h9rzywB9_8eBwysnxMJ8,234
+crc/_crc.py,sha256=P-_W2XudPr5aXAgj5wXVZNo1WJ5FmhVwT_gbCeNd4lY,5040
+crc/_dll.py,sha256=2Uu6RV-6vhn7l_2yI10OuMCkWNRvCN-au0PwypWMLrk,339
+crc/_platform/__init__.py,sha256=TED3eUGStcJ8z63iF8OyFY6UbZ8_miX3SaC9vZ8JPP4,1216
+crc/_platform/_linux.py,sha256=5KpsXjDiY2Sya187tuxBnsYYEY9kpvKmJ2_3cEsppag,945
+crc/_platform/_macos.py,sha256=5KpsXjDiY2Sya187tuxBnsYYEY9kpvKmJ2_3cEsppag,945
+crc/_platform/_windows.py,sha256=384b5n6iXgK4TqPOWd4mX9O_ctzE9Ule72KyrRxqJJ0,1140
+crc/_platform/crc.pypy39-pp73-win_amd64.pyd,sha256=JS-GBC_-VqajnRqBI3cRlQJHy8rc9sTKZZcryUyMOYo,131584
+crc_ct-1.2.1.dist-info/LICENSE,sha256=XLm3szPRZWZx5zmsXvGY9enqstqiN5LT0vTSiiF5W7g,872
+crc_ct-1.2.1.dist-info/METADATA,sha256=SWSY3W770raTSw7uW2kYYeZbq1PTlK6vGdu4pVV1iZk,5720
+crc_ct-1.2.1.dist-info/WHEEL,sha256=1cqEyrKxUA_c-f0mOszCh_7q-AnzL9K6iMxWION_yb8,107
+crc_ct-1.2.1.dist-info/top_level.txt,sha256=Sjp3wVWQG8_qLNeLkkNYc9X3s7g1nmetgoXfq_yIEZ0,4
+crc_ct-1.2.1.dist-info/RECORD,,
