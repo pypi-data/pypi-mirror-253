@@ -1,0 +1,11 @@
+s3torchconnectorclient/__init__.py,sha256=F9Nf-KE4RH5zj6Dw69POzagutOtjj5GLUPDE3RM6NxQ,536
+s3torchconnectorclient/_mountpoint_s3_client.pyi,sha256=MBZpa79K6bRF6F4HeQ0yUjyW4TIIloYufg1Hc29krcE,2833
+s3torchconnectorclient/_mountpoint_s3_client.cpython-310-x86_64-linux-gnu.so,sha256=LE9-eSYFl2QxIb1lr8MZEBo1AD4KQszCmRErXy_t9hI,19524976
+s3torchconnectorclient/_logger_patch.py,sha256=dL5_yHpbq0XHGAG75pO0WY0K8PNSZKONtHqWgRZ3SNM,489
+s3torchconnectorclient-1.1.3.dist-info/NOTICE,sha256=YDE2g-i27eKwQKH0rKp4dn6xmKHkHKgIVIeEs4Tjlqc,99
+s3torchconnectorclient-1.1.3.dist-info/WHEEL,sha256=1FEjxEYgybphwh9S0FO9IcZ0B-NIeM2ko8OzhFZeOeQ,152
+s3torchconnectorclient-1.1.3.dist-info/top_level.txt,sha256=kNucFkKqBrqGnyl0vc8-1Gb_ZBEzLR1YSzx3qCGidtY,23
+s3torchconnectorclient-1.1.3.dist-info/LICENSE,sha256=ov7vSJ63ANT0qyILoqEgcQPFmt1O_M3EYs7k1YlsYEY,1543
+s3torchconnectorclient-1.1.3.dist-info/THIRD-PARTY-LICENSES,sha256=TQjRL3NMg0Bhf84RRtm5bU0SZetlD9PIf7Y1c8OBAx0,1409473
+s3torchconnectorclient-1.1.3.dist-info/RECORD,,
+s3torchconnectorclient-1.1.3.dist-info/METADATA,sha256=2vUq9aET5eNKs8kFelwTc9f7w8lI72JjIATDqIcNnWY,6543
