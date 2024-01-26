@@ -1,0 +1,7 @@
+bilby
+bilby_pipe
+pesummary
+getdist
+tqdm
+configargparse
+numpy>=1.21.0
