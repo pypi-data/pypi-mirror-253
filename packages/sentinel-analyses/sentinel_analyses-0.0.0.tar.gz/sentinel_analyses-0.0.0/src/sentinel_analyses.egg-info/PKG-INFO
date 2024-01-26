@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sentinel_analyses
+Version: 0.0.0
+Summary: Package for spectral analyses of Sentinel-1 data
+Author: Owen O'D
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: xarray
+Requires-Dist: xrft
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+Requires-Dist: h5netcdf
+Requires-Dist: netcdf4
+Requires-Dist: joblib

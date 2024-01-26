@@ -1,0 +1,30 @@
+[project]
+name = "sentinel_analyses"
+dynamic = ["version"]
+authors = [
+  { name="Owen O'D"},
+]
+description = "Package for spectral analyses of Sentinel-1 data"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+dependencies = [
+  "xarray",
+  "xrft",
+  "numpy",
+  "scipy",
+  "opencv-python",
+  "matplotlib",
+  "h5netcdf",
+  "netcdf4",
+  "joblib"
+]
+
+[project.optional-dependencies]
+

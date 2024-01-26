@@ -1,0 +1,9 @@
+xarray
+xrft
+numpy
+scipy
+opencv-python
+matplotlib
+h5netcdf
+netcdf4
+joblib
