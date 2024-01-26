@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pest-py
+Version: 0.1.3
+Summary: 🐀 ⇝ pest › fastapi + rodi + mvc | python library for building scalable modular API's. Inspired by NestJS.
+Home-page: https://pest.lucode.ar
+License: MIT
+Keywords: pest,nestjs,nest,api,rest,restful,mvc,web,webapp,di,dependency injection,rodi,fastapi
+Author: lucaslabs
+Author-email: lucas@lucaslabs.tech
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: FastAPI
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pydantic :: 1
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Provides-Extra: logs
+Requires-Dist: dacite (>=1.8.1,<2.0.0)
+Requires-Dist: fastapi (>0.103,<0.105.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0) ; extra == "logs"
+Requires-Dist: pydantic (>=1.7.4,!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0)
+Requires-Dist: rodi (==2.0.6)
+Requires-Dist: typing-extensions (>=4.9.0,<5.0.0)
+Project-URL: Documentation, https://pest.lucode.ar/docs
+Project-URL: Repository, https://github.com/lucas-labs/pest
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <img height="150" src="https://raw.githubusercontent.com/lucas-labs/pest/master/.github/img/logo.svg">
+</p>
+<br/>
+
+<p align="center">
+<img height="16" src="https://raw.githubusercontent.com/lucas-labs/pest/master/.github/img/icons/pest.svg" /> » python <img height="16" src="https://raw.githubusercontent.com/lucas-labs/pest/master/.github/img/icons/python.svg" /> web application framework designed for constructing scalable APIs, drawing inspiration from <a href="https://docs.nestjs.com/"> nest.js</a> <img height="16" src="https://raw.githubusercontent.com/lucas-labs/pest/master/.github/img/icons/nestjs.svg" /> and based on <a href="https://fastapi.tiangolo.com/"> fastapi</a> <img height="16" src="https://raw.githubusercontent.com/lucas-labs/pest/master/.github/img/icons/fastapi.svg" />.
+</p>
+
+<br/>
+
+<p align="center">
+  <img height="74" src="https://raw.githubusercontent.com/lucas-labs/pest/master/.github/img/latex.svg">
+</p>
+
+<br />
+<p align="center">
+━━━&nbsp&nbsp&nbsp&nbsp<img height="16" src="https://raw.githubusercontent.com/lucas-labs/pest/master/.github/img/icons/pest.svg" />&nbsp&nbsp&nbsp&nbsp━━━
+</p>
+<br />
+
