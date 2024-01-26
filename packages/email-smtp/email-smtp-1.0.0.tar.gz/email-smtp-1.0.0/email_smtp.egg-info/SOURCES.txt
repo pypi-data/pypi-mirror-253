@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+em/__init__.py
+em/__main__.py
+email_smtp.egg-info/PKG-INFO
+email_smtp.egg-info/SOURCES.txt
+email_smtp.egg-info/dependency_links.txt
+email_smtp.egg-info/requires.txt
+email_smtp.egg-info/top_level.txt
+email_smtp.egg-info/zip-safe
