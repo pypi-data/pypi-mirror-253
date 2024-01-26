@@ -1,0 +1,2 @@
+[console_scripts]
+setup-wlan = my_mu3.setup_wlan.py:main
