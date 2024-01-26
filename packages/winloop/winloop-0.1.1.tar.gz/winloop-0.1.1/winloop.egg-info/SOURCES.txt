@@ -1,0 +1,17 @@
+LICENSE-APACHE
+LICENSE-MIT
+README.md
+pyproject.toml
+setup.py
+winloop/__init__.py
+winloop/_noop.py
+winloop/_testbase.py
+winloop/loop.c
+winloop/loop.pyi
+winloop.egg-info/PKG-INFO
+winloop.egg-info/SOURCES.txt
+winloop.egg-info/dependency_links.txt
+winloop.egg-info/requires.txt
+winloop.egg-info/top_level.txt
+winloop/includes/context.h
+winloop/includes/__init__.py
