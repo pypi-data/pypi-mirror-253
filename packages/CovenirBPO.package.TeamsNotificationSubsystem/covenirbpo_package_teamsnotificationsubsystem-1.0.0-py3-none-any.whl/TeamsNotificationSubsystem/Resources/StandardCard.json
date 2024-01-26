@@ -1,0 +1,36 @@
+{
+  "type": "message",
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "type": "AdaptiveCard",
+        "body": [
+          {
+            "type": "TextBlock",
+            "size": "Large",
+            "weight": "Bolder",
+            "color": "Good",
+            "text": "${title}",
+            "wrap": true
+          },
+          {
+            "type": "TextBlock",
+            "size": "Default",
+            "text": "${message}",
+            "wrap": true
+          }
+        ],
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "version": "1.0",
+        "msteams": {
+          "entities": [
+            {
+
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
