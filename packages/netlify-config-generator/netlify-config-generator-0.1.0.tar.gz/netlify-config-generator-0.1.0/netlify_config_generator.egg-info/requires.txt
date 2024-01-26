@@ -1,0 +1,8 @@
+pydantic==2.5.3
+typing_extensions==4.9.0
+
+[dev]
+mypy==1.8.0
+pylint==2.13.4
+coverage[toml]==6.5.0
+black==22.10.0
