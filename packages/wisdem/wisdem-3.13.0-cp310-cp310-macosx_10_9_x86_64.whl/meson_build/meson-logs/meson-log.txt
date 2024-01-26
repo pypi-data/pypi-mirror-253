@@ -1,0 +1,289 @@
+Build started at 2024-01-25T21:39:07.508007
+Main binary: /private/var/folders/qv/pdh5wsgn0lq3dp77zj602b5c0000gn/T/build-env-91ip3vwc/bin/python
+Build Options: -Dpython.purelibdir=. -Dpython.platlibdir=. -Dprefix=/Users/runner/work/WISDEM/WISDEM/meson_build
+Python system: Darwin
+The Meson build system
+Version: 1.3.1
+Source dir: /Users/runner/work/WISDEM/WISDEM
+Build dir: /Users/runner/work/WISDEM/WISDEM/meson_build
+Build type: native build
+Project name: wisdem
+Project version: undefined
+-----------
+Detecting compiler via: `gcc --version` -> 0
+stdout:
+gcc (Homebrew GCC 13.2.0) 13.2.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: gcc -E -dM -
+-----
+-----------
+Detecting linker via: `gcc -Wl,--version` -> 1
+stderr:
+collect2 version 13.2.0
+/usr/bin/ld -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ -dynamic -arch x86_64 -platform_version macos 10.9 0.0 -o a.out -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. --version -lemutls_w -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current
+ld: unknown option: --version
+collect2: error: ld returned 1 exit status
+-----------
+-----------
+Detecting Apple linker via: `gcc -Wl,-v` -> 1
+stderr:
+collect2 version 13.2.0
+/usr/bin/ld -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ -dynamic -arch x86_64 -platform_version macos 10.9 0.0 -o a.out -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. -v -lemutls_w -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current
+@(#)PROGRAM:ld  PROJECT:ld64-820.1
+BUILD 20:07:01 Nov  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13
+	/usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc
+	/usr/local/Cellar/gcc/13.2.0/lib/gcc/current
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks/
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+collect2: error: ld returned 1 exit status
+-----------
+Sanity testing C compiler: gcc
+Is cross compiler: False.
+Sanity check compiler command line: gcc sanitycheckc.c -o sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/sanitycheckc.exe
+C compiler for the host machine: gcc (gcc 13.2.0 "gcc (Homebrew GCC 13.2.0) 13.2.0")
+C linker for the host machine: gcc ld64 820.1
+-----------
+Detecting linker via: `gcc-ar --version` -> [Errno 2] No such file or directory: 'gcc-ar'
+-----------
+Detecting linker via: `ar --version` -> 1
+stderr:
+usage:  ar -d [-TLsv] archive file ...
+	ar -m [-TLsv] archive file ...
+	ar -m [-abiTLsv] position archive file ...
+	ar -p [-TLsv] archive [file ...]
+	ar -q [-cTLsv] archive file ...
+	ar -r [-cuTLsv] archive file ...
+	ar -r [-abciuTLsv] position archive file ...
+	ar -t [-TLsv] archive [file ...]
+	ar -x [-ouTLsv] archive [file ...]
+-----------
+-----------
+Detecting compiler via: `gcc --version` -> 0
+stdout:
+gcc (Homebrew GCC 13.2.0) 13.2.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: gcc -E -dM -
+-----
+-----------
+Detecting linker via: `gcc -Wl,--version` -> 1
+stderr:
+collect2 version 13.2.0
+/usr/bin/ld -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ -dynamic -arch x86_64 -platform_version macos 10.9 0.0 -o a.out -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. --version -lemutls_w -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current
+ld: unknown option: --version
+collect2: error: ld returned 1 exit status
+-----------
+-----------
+Detecting Apple linker via: `gcc -Wl,-v` -> 1
+stderr:
+collect2 version 13.2.0
+/usr/bin/ld -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ -dynamic -arch x86_64 -platform_version macos 10.9 0.0 -o a.out -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. -v -lemutls_w -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current
+@(#)PROGRAM:ld  PROJECT:ld64-820.1
+BUILD 20:07:01 Nov  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13
+	/usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc
+	/usr/local/Cellar/gcc/13.2.0/lib/gcc/current
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks/
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+collect2: error: ld returned 1 exit status
+-----------
+Sanity testing C compiler: gcc
+Is cross compiler: False.
+Sanity check compiler command line: gcc sanitycheckc.c -o sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/sanitycheckc.exe
+C compiler for the build machine: gcc (gcc 13.2.0 "gcc (Homebrew GCC 13.2.0) 13.2.0")
+C linker for the build machine: gcc ld64 820.1
+-----------
+Detecting linker via: `gcc-ar --version` -> [Errno 2] No such file or directory: 'gcc-ar'
+-----------
+Detecting linker via: `ar --version` -> 1
+stderr:
+usage:  ar -d [-TLsv] archive file ...
+	ar -m [-TLsv] archive file ...
+	ar -m [-abiTLsv] position archive file ...
+	ar -p [-TLsv] archive [file ...]
+	ar -q [-cTLsv] archive file ...
+	ar -r [-cuTLsv] archive file ...
+	ar -r [-abciuTLsv] position archive file ...
+	ar -t [-TLsv] archive [file ...]
+	ar -x [-ouTLsv] archive [file ...]
+-----------
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+-----------
+Detecting compiler via: `gfortran --version` -> 0
+stdout:
+GNU Fortran (Homebrew GCC 13.2.0) 13.2.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: gfortran -E -dM -
+-----
+-----------
+Detecting linker via: `gfortran -Wl,--version` -> 1
+stderr:
+collect2 version 13.2.0
+/usr/bin/ld -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ -dynamic -arch x86_64 -platform_version macos 10.9 0.0 -o a.out -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. --version -lemutls_w -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current
+ld: unknown option: --version
+collect2: error: ld returned 1 exit status
+-----------
+-----------
+Detecting Apple linker via: `gfortran -Wl,-v` -> 1
+stderr:
+collect2 version 13.2.0
+/usr/bin/ld -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/ -dynamic -arch x86_64 -platform_version macos 10.9 0.0 -o a.out -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13 -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc -L/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../.. -v -lemutls_w -lgcc -lSystem -no_compact_unwind -rpath @loader_path -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13 -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc -rpath /usr/local/Cellar/gcc/13.2.0/lib/gcc/current
+@(#)PROGRAM:ld  PROJECT:ld64-820.1
+BUILD 20:07:01 Nov  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/13
+	/usr/local/Cellar/gcc/13.2.0/lib/gcc/current/gcc
+	/usr/local/Cellar/gcc/13.2.0/lib/gcc/current
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/System/Library/Frameworks/
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+collect2: error: ld returned 1 exit status
+-----------
+Sanity testing Fortran compiler: gfortran
+Is cross compiler: False.
+Sanity check compiler command line: gfortran sanitycheckf.f90 -o sanitycheckf.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+ld: warning: dylib (/usr/local/Cellar/gcc/13.2.0/lib/gcc/current/libgfortran.dylib) was built for newer macOS version (12.0) than being linked (10.9)
+ld: warning: dylib (/usr/local/Cellar/gcc/13.2.0/lib/gcc/current/libquadmath.dylib) was built for newer macOS version (12.0) than being linked (10.9)
+
+-----
+Running test binary command:  /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/sanitycheckf.exe
+Fortran compiler for the host machine: gfortran (gcc 13.2.0 "GNU Fortran (Homebrew GCC 13.2.0) 13.2.0")
+Fortran linker for the host machine: gfortran ld64 820.1
+Running compile:
+Working directory:  /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmplxee2gt5
+Code:
+ int main(void) { return 0; }
+
+-----------
+Command line: `gcc /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmplxee2gt5/testfile.c -o /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmplxee2gt5/output.exe -O0 -lm -Wl,-undefined,dynamic_lookup` -> 0
+Library m found: YES
+Program python found: YES (/private/var/folders/qv/pdh5wsgn0lq3dp77zj602b5c0000gn/T/build-env-91ip3vwc/bin/python)
+Searching for 'python-3.10' via pkgconfig lookup in LIBPC
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: YES (/usr/local/bin/pkg-config) 0.29.2
+Determining dependency 'python-3.10' with pkg-config executable '/usr/local/bin/pkg-config'
+env[PKG_CONFIG_LIBDIR]: /Library/Frameworks/Python.framework/Versions/3.10/lib/pkgconfig
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/local/bin/pkg-config
+-----------
+Called: `/usr/local/bin/pkg-config --modversion python-3.10` -> 0
+stdout:
+3.10
+-----------
+env[PKG_CONFIG_LIBDIR]: /Library/Frameworks/Python.framework/Versions/3.10/lib/pkgconfig
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/local/bin/pkg-config
+-----------
+Called: `/usr/local/bin/pkg-config --cflags python-3.10` -> 0
+stdout:
+-I/Library/Frameworks/Python.framework/Versions/3.10/include/python3.10
+-----------
+env[PKG_CONFIG_LIBDIR]: /Library/Frameworks/Python.framework/Versions/3.10/lib/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/local/bin/pkg-config
+-----------
+Called: `/usr/local/bin/pkg-config --libs python-3.10` -> 0
+env[PKG_CONFIG_LIBDIR]: /Library/Frameworks/Python.framework/Versions/3.10/lib/pkgconfig
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /usr/local/bin/pkg-config
+-----------
+Called: `/usr/local/bin/pkg-config --libs python-3.10` -> 0
+Run-time dependency python found: YES 3.10
+meson.build:40: WARNING: Project targets '>= 0.60' but uses feature deprecated since '0.55.0': ExternalProgram.path. use ExternalProgram.full_path() instead
+Message: /private/var/folders/qv/pdh5wsgn0lq3dp77zj602b5c0000gn/T/build-env-91ip3vwc/bin/python
+Message: /Users/runner/work/WISDEM/WISDEM/meson_build/./
+Running command: /private/var/folders/qv/pdh5wsgn0lq3dp77zj602b5c0000gn/T/build-env-91ip3vwc/bin/python -c 'import os; os.chdir(".."); import numpy; print(numpy.get_include())'
+--- stdout ---
+/private/var/folders/qv/pdh5wsgn0lq3dp77zj602b5c0000gn/T/build-env-91ip3vwc/lib/python3.10/site-packages/numpy/core/include
+
+--- stderr ---
+
+
+Build targets in project: 5
+WARNING: Deprecated features used:
+ * 0.55.0: {'ExternalProgram.path'}
+
+wisdem undefined
+
+  User defined options
+    prefix           : /Users/runner/work/WISDEM/WISDEM/meson_build
+    python.platlibdir: .
+    python.purelibdir: .
+
+Found ninja-1.11.1.git.kitware.jobserver-1 at /private/var/folders/qv/pdh5wsgn0lq3dp77zj602b5c0000gn/T/build-env-91ip3vwc/bin/ninja
+Running compile:
+Working directory:  /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmp8_1lo4_y
+Code:
+ 
+-----------
+Command line: `gfortran /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmp8_1lo4_y/testfile.f90 -o /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmp8_1lo4_y/output.obj -c -O0 --print-search-dirs` -> 0
+stdout:
+install: /usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/
+programs: =/usr/local/Cellar/gcc/13.2.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.2.0/bin/../libexec/gcc/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../x86_64-apple-darwin21/bin/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../x86_64-apple-darwin21/bin/
+libraries: =/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../x86_64-apple-darwin21/lib/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../x86_64-apple-darwin21/lib/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../
+-----------
+Running compile:
+Working directory:  /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmpf0puswvl
+Code:
+ 
+-----------
+Command line: `gcc /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmpf0puswvl/testfile.c -o /Users/runner/work/WISDEM/WISDEM/meson_build/meson-private/tmpf0puswvl/output.obj -c -O0 --print-search-dirs` -> 0
+stdout:
+install: /usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/
+programs: =/usr/local/Cellar/gcc/13.2.0/bin/../libexec/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.2.0/bin/../libexec/gcc/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../x86_64-apple-darwin21/bin/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../x86_64-apple-darwin21/bin/
+libraries: =/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../x86_64-apple-darwin21/lib/x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../../../../x86_64-apple-darwin21/lib/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../x86_64-apple-darwin21/13/:/usr/local/Cellar/gcc/13.2.0/bin/../lib/gcc/current/gcc/x86_64-apple-darwin21/13/../../../
+-----------
+!meson_ci!/ci_include "/Users/runner/work/WISDEM/WISDEM/meson_build/build.ninja"
