@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tap-recharge
+Version: 2.0.3
+Summary: Singer.io tap for extracting data from the ReCharge Payments API 2.0
+Author: jeff.huth@bytecode.io
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+Requires-Dist: backoff==1.8.0
+Requires-Dist: requests==2.31.0
+Requires-Dist: singer-python==5.10.0
+Provides-Extra: dev
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: ipdb; extra == "dev"
