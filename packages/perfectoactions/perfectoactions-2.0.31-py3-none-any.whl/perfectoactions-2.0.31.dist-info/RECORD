@@ -1,0 +1,10 @@
+perfecto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+perfecto/delete_older_repo_new_api.py,sha256=EQLyDlCMfAv4N7z9KX1PolEie1JScU3o2aSTns5EUQk,6390
+perfecto/perfectoactions.py,sha256=PuZiepsFw9OVcs7eYK-jOP7Aa3i0iUCdiOlF4F72jOw,101843
+perfecto/reserve_limit.py,sha256=bCT2AYde4sUMbuuCY6d2BBvkTizD4Uslmtj5NNnUroY,11466
+perfectoactions-2.0.31.dist-info/LICENSE,sha256=uY-7N9tbI7xc_c0WeTIGpacSCnsB91N05eCIg3bkaRw,35140
+perfectoactions-2.0.31.dist-info/METADATA,sha256=cWYFIp8X9y1b0qxPPgmjbiw3ZujBbJbr5RtgxvLfS0E,1966
+perfectoactions-2.0.31.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+perfectoactions-2.0.31.dist-info/entry_points.txt,sha256=X4P7qrArz39nO8biFOKWGUA3ftAObAd5-bq7vfKKvq4,66
+perfectoactions-2.0.31.dist-info/top_level.txt,sha256=C9k-OpEmdwr6U_NfMQfPMMknwf08o8aIEh4KtAGeIOM,9
+perfectoactions-2.0.31.dist-info/RECORD,,
