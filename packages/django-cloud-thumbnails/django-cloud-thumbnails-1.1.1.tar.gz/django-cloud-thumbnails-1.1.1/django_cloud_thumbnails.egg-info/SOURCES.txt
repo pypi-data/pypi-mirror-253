@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+django_cloud_thumbnails/__init__.py
+django_cloud_thumbnails/apps.py
+django_cloud_thumbnails/backend.py
+django_cloud_thumbnails/models.py
+django_cloud_thumbnails/utils.py
+django_cloud_thumbnails.egg-info/PKG-INFO
+django_cloud_thumbnails.egg-info/SOURCES.txt
+django_cloud_thumbnails.egg-info/dependency_links.txt
+django_cloud_thumbnails.egg-info/requires.txt
+django_cloud_thumbnails.egg-info/top_level.txt
+django_cloud_thumbnails/migrations/0001_initial.py
+django_cloud_thumbnails/migrations/__init__.py
