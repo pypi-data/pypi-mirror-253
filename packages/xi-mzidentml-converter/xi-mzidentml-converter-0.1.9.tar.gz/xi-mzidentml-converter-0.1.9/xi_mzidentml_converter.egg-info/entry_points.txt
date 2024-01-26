@@ -1,0 +1,2 @@
+[console_scripts]
+process_dataset_test = process_dataset_test:main
