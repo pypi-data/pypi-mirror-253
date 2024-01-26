@@ -1,0 +1,13 @@
+jax_control_algorithms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jax_control_algorithms/common.py,sha256=gN2ivGnmF2wNQg0vxW4_NcZ0Jhrv1u9yIK2WpyAac-A,1083
+jax_control_algorithms/estimation.py,sha256=LJouNUzoB0j9y8qbWgreQbq5pLspXjbIdSkvdTBzzbk,10463
+jax_control_algorithms/jax_helper.py,sha256=Nk5GAkqx6QZmsZzabdBmLH8Z_mi1I-HqCDdA3FJGHes,3501
+jax_control_algorithms/plot_helpers.py,sha256=zRyB7kvDRw6GBoiIePWHrsxi1Npe9RetMzMogDs3SDg,3812
+jax_control_algorithms/sysident.py,sha256=J5j7yOwJu7m0jv3YkJ__VY_SLM9jh34hjXoQaBLhZcQ,6543
+jax_control_algorithms/trajectory_optimization.py,sha256=XXws8EnSr2-ebRXMzdlethPj8_KROohl6J9bClZgdt8,29561
+jax_control_algorithms/ui.py,sha256=Tma7STiw5yF-Y7KKNu7TsU5jP_k1lM5zkCMi0URs9Uc,3447
+jax_control_algorithms-0.5.1.dist-info/LICENSE,sha256=M6fIgxjzRoS6YZK9DqNzY1YPS0MQP3oD6hY4bKbPQRA,1073
+jax_control_algorithms-0.5.1.dist-info/METADATA,sha256=iJsjeievbDIEMMSPKb-7quiX_QkY5gTXCF8sZqqcOvc,3712
+jax_control_algorithms-0.5.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jax_control_algorithms-0.5.1.dist-info/top_level.txt,sha256=bObzogb2_wuZk3y3_2C4igS_LKYXlk2Rp9m5DEpFgLY,23
+jax_control_algorithms-0.5.1.dist-info/RECORD,,
