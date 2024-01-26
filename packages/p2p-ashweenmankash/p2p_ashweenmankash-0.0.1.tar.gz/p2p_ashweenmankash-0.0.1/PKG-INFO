@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: p2p_ashweenmankash
+Version: 0.0.1
+Summary: This is a pull api to push api converter. Register your source and sink urls and just let it do it's magic.
+Project-URL: Homepage, https://github.com/ashweenmankash/p2p_py
+Project-URL: Issues, https://github.com/ashweenmanaksh/p2p_py/issues
+Author-email: Ashween Mankash <ashweenmankash@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8

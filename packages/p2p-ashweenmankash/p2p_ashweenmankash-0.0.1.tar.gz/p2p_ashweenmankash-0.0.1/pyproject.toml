@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling==1.18.0","typer","typer"]
+build-backend = "hatchling.build"
+
+[project]
+name = "p2p_ashweenmankash"
+version = "0.0.1"
+authors = [
+  { name="Ashween Mankash", email="ashweenmankash@gmail.com"},
+]
+description = "This is a pull api to push api converter. Register your source and sink urls and just let it do it's magic."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ashweenmankash/p2p_py"
+Issues = "https://github.com/ashweenmanaksh/p2p_py/issues"
