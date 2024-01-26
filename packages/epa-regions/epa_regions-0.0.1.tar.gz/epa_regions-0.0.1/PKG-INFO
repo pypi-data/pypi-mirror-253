@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: epa-regions
+Version: 0.0.1
+Summary: EPA region definitions and representations in
+Author-email: zmoon <zmoon92@gmail.com>
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+Project-URL: Home, https://github.com/zmoon/epa-regions-python
+Project-URL: Source, https://github.com/zmoon/epa-regions-python
+
+# epa-regions-python
+
+[EPA regions](https://www.epa.gov/aboutepa/regional-and-geographic-offices) with regionmask / GeoPandas
+
