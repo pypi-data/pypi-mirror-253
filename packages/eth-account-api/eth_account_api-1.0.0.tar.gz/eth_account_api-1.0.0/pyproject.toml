@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "eth-account-api"
+version = "1.0.0"
+description = ""
+authors = ["pydevel <ppydevel@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+bitarray = ">=2.4.0"
+eth-abi = ">=4.0.0-b.2"
+eth-keyfile = ">=0.6.0"
+eth-keys = ">=0.4.0"
+eth-rlp = ">=0.3.0"
+eth-utils = ">=2.0.0"
+hexbytes = ">=0.1.0 <0.4.0"
+rlp = ">=1.0.0"
+typing_extensions = ">=4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
