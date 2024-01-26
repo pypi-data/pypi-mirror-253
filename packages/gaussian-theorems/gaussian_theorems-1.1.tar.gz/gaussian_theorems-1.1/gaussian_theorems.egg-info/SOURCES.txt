@@ -1,0 +1,13 @@
+README.md
+setup.py
+Binomialdistributions/__init__.py
+Binomialdistributions/binomialdistributions.py
+Gaussian_Theorems/__init__.py
+Gaussian_Theorems/gaussiandistribution.py
+Gaussian_Theorems/generaldistribution.py
+gaussian_theorems.egg-info/PKG-INFO
+gaussian_theorems.egg-info/SOURCES.txt
+gaussian_theorems.egg-info/dependency_links.txt
+gaussian_theorems.egg-info/top_level.txt
+tests/__init__.py
+tests/tests.py
