@@ -1,0 +1,69 @@
+[project]
+
+name = "ob7py"  # Required
+version = "0.0.2"  # Required
+description = "Python for Productive Robotics ob7 Platform"  # Optional
+readme = "README.rst" # Optional
+requires-python = ">=3.7"
+license = {file = "LICENSE.txt"}
+keywords = ["robotics", "automation", "mechatronics","ob7"]  # Optional
+authors = [
+  {name = "Michael Dillio", email = "mdillio@praxismechatronics.com" } # Optional
+]
+classifiers = [  # Optional
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [ # Optional
+  "pyModbusTCP==0.2.1",
+  "pymodbus==3.6.2"
+]
+
+#[project.optional-dependencies] # Optional
+#dev = ["check-manifest"]
+#test = ["coverage"]
+
+# List URLs that are relevant to your project
+#
+# This field corresponds to the "Project-URL" and "Home-Page" metadata fields:
+# https://packaging.python.org/specifications/core-metadata/#project-url-multiple-use
+# https://packaging.python.org/specifications/core-metadata/#home-page-optional
+#
+# Examples listed include a pattern for specifying where the package tracks
+# issues, where the source is hosted, where to say thanks to the package
+# maintainers, and where to support the project financially. The key is
+# what's used to render the link text on PyPI.
+#[project.urls]  # Optional
+#"Homepage" = "https://praxismechatronics.com"
+
+
+# The following would provide a command line executable called `sample`
+# which executes the function `main` from this package when invoked.
+#[project.scripts]  # Optional
+#sample = "sample:main"
+
+# This is configuration specific to the `setuptools` build backend.
+# If you are using a different build backend, you will need to change this.
+#[tool.setuptools]
+# If there are data files included in your packages that need to be
+# installed, specify them here.
+#package-data = {"sample" = ["*.dat"]}
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
