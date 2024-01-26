@@ -1,0 +1,4 @@
+argh
+atooms>=2
+numpy
+tqdm
