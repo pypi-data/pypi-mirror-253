@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: rnalib
+Version: 0.0.1
+Summary: a python-based transcriptomics library
+Home-page: https://github.com/popitsch/rnalib
+Download-URL: https://github.com/popitsch/rnalib/archive/refs/tags/1.0.0.tar.gz
+Author: niko.popitsch@univie.ac.at
+Author-email: niko.popitsch@univie.ac.at
+License: Apache-2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: bioframe ==0.6.1
+Requires-Dist: biotite ==0.39.0
+Requires-Dist: dill ==0.3.7
+Requires-Dist: h5py ==3.8.0
+Requires-Dist: intervaltree ==3.1.0
+Requires-Dist: ipython ==8.13.2
+Requires-Dist: matplotlib ==3.7.4
+Requires-Dist: more-itertools ==10.2.0
+Requires-Dist: mygene ==3.2.2
+Requires-Dist: numpy ==1.26.3
+Requires-Dist: pandas ==2.2.0
+Requires-Dist: pybedtools ==0.9.1
+Requires-Dist: pyranges ==0.0.129
+Requires-Dist: pysam ==0.22.0
+Requires-Dist: pytest ==7.4.4
+Requires-Dist: sortedcontainers ==2.4.0
+Requires-Dist: tqdm ==4.65.2
+

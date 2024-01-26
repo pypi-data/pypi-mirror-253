@@ -1,0 +1,14 @@
+Static testdata files:
+
+* ACTB+SOX2.fa: mFASTA with genomic sequences +/- 100bp of ACTB and SOX2:
+    samtools faidx <GRCh38.fa> chr3:181711825-181714536 > ACTB+SOX2.fa
+    samtools faidx <GRCh38.fa> chr7:5526309-5564002    >> ACTB+SOX2.fa
+* Test*.fastq: Some example FASTQ files (paired-end)
+* rogue_read.bam: example BAM file with a rogue read
+* small.ACTB+SOX2.bam: an example BAM file containing SLAM-seq data (T/C conversions), only ACTB+SOX2
+* GRCh38.chr7.k24.umap.bedgraph.gz: chr7 from https://bismap.hoffmanlab.org/raw/hg38/k24.umap.bedgraph.gz
+* small_example.bam: small GRCh37 file
+* test.vcf.gz: small VCFv4.2 example file with a single sample
+* test_snps.vcf.gz: small VCF file containing some SNP calls
+* test.bed.gz , test.bedgraph.gz: small example bed/bedgraph files
+* generic.gff3.gz: small GFF file for testing the generic GFF parser
