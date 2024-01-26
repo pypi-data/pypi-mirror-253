@@ -1,0 +1,9 @@
+types-setuptools
+numpy
+matplotlib
+h5pickle
+h5py
+pandas
+xarray
+dask
+tqdm

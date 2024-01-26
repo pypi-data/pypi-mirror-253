@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: nt2py
+Version: 0.2.1
+Summary: Post-processing & visualization toolkit for the Entity PIC code
+Home-page: https://github.com/entity-toolkit/nt2
+Author: haykh
+Author-email: haykh.astro@gmail.com
+License: BSD 3-Clause License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: types-setuptools
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: h5pickle
+Requires-Dist: h5py
+Requires-Dist: pandas
+Requires-Dist: xarray
+Requires-Dist: dask
+Requires-Dist: tqdm
+
+## nt2
+
+Python package for visualization and post-processing of the [`Entity`](https://github.com/entity-toolkit/entity) simulation data. For usage, please refer to the [documentation](https://entity-toolkit.github.io/entity/howto/vis/#nt2py). The package is distributed via [`PyPI`](https://pypi.org/project/nt2py/):
+
+```sh
+pip install nt2py
+```
+
+### Features
+
+1. Lazy loading and parallel processing of the simulation data with [`dask`](https://dask.org/).
+2. Context-aware data manipulation with [`xarray`](http://xarray.pydata.org/en/stable/).
+3. Parellel plotting and movie generation with [`multiprocessing`](https://docs.python.org/3/library/multiprocessing.html) and [`ffmpeg`](https://ffmpeg.org/).
+
+### TODO
+
+- [ ] Unit tests
+- [ ] Plugins for other simulation data formats
+- [ ] Usage examples
