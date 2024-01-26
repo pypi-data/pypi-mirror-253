@@ -1,0 +1,20 @@
+PyYAML>=5.1
+rich
+Pygments
+
+[:sys_platform == "darwin"]
+gnureadline
+
+[dev]
+mypy
+types-PyYAML
+pyright
+pylint
+pytest
+
+[dist]
+build
+twine
+
+[test]
+pytest
