@@ -1,0 +1,6 @@
+pyproject.toml
+lazyprint/__init__.py
+lazyprint.egg-info/PKG-INFO
+lazyprint.egg-info/SOURCES.txt
+lazyprint.egg-info/dependency_links.txt
+lazyprint.egg-info/top_level.txt
