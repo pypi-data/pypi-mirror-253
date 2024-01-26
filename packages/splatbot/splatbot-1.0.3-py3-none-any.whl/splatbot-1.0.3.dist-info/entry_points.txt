@@ -1,0 +1,3 @@
+[console_scripts]
+splatbot = splatbot.cli:main
+
