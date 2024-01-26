@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: metocean-stats
+Version: 0.1.6
+Summary: metocean-stats - Tool for generation of metocean statistics
+Home-page: https://github.com/MET-OM/metocean-stats
+Download-URL: https://github.com/MET-OM/metocean-stats
+Author: Konstantinos Christakos MET Norway & NTNU
+License: GPLv3
+License-File: LICENSE
+Requires-Dist: numpy>=1.17
+Requires-Dist: matplotlib>=3.1
+Requires-Dist: pandas
+Requires-Dist: pip
+Requires-Dist: scipy
+Requires-Dist: pip
+Requires-Dist: windrose
+Requires-Dist: seaborn>=0.12.2
+Requires-Dist: metocean-api

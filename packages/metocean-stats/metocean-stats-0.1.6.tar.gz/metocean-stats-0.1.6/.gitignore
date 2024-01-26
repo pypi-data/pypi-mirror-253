@@ -1,0 +1,6 @@
+.vscode
+cache
+.eggs
+*.egg-info
+*.pyc
+tests/data
