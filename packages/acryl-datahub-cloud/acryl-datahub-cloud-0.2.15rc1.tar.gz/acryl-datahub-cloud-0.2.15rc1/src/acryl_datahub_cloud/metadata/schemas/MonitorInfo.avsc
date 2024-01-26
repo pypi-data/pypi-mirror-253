@@ -1,0 +1,457 @@
+{
+  "type": "record",
+  "Aspect": {
+    "name": "monitorInfo"
+  },
+  "name": "MonitorInfo",
+  "namespace": "com.linkedin.pegasus2avro.monitor",
+  "fields": [
+    {
+      "Searchable": {
+        "/*": {
+          "fieldType": "TEXT",
+          "queryByDefault": true
+        }
+      },
+      "type": {
+        "type": "map",
+        "values": "string"
+      },
+      "name": "customProperties",
+      "default": {},
+      "doc": "Custom property bag."
+    },
+    {
+      "Searchable": {
+        "fieldType": "KEYWORD"
+      },
+      "java": {
+        "class": "com.linkedin.pegasus2avro.common.url.Url",
+        "coercerClass": "com.linkedin.pegasus2avro.common.url.UrlCoercer"
+      },
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "externalUrl",
+      "default": null,
+      "doc": "URL where the reference exist"
+    },
+    {
+      "Searchable": {},
+      "type": {
+        "type": "enum",
+        "symbolDocs": {
+          "ASSERTION": "A monitor responsible for evaluating Assertions.",
+          "FRESHNESS": "A monitor responsible for evaluating system freshness monitors"
+        },
+        "name": "MonitorType",
+        "namespace": "com.linkedin.pegasus2avro.monitor",
+        "symbols": [
+          "ASSERTION",
+          "FRESHNESS"
+        ]
+      },
+      "name": "type",
+      "doc": "Type of monitor."
+    },
+    {
+      "type": {
+        "type": "record",
+        "name": "MonitorStatus",
+        "namespace": "com.linkedin.pegasus2avro.monitor",
+        "fields": [
+          {
+            "Searchable": {},
+            "type": {
+              "type": "enum",
+              "symbolDocs": {
+                "ACTIVE": "The monitor should be actively operating.",
+                "INACTIVE": "The monitor is not actively operating.",
+                "PASSIVE": "The monitor is running in passive mode.\nFor assertion monitors, this means that assertions will be run in dry mode."
+              },
+              "name": "MonitorMode",
+              "namespace": "com.linkedin.pegasus2avro.monitor",
+              "symbols": [
+                "ACTIVE",
+                "INACTIVE",
+                "PASSIVE"
+              ]
+            },
+            "name": "mode",
+            "doc": "The current operation mode of the monitor"
+          }
+        ],
+        "doc": "The status of an asset monitor"
+      },
+      "name": "status",
+      "doc": "Information about the status of a monitor."
+    },
+    {
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "AssertionMonitor",
+          "namespace": "com.linkedin.pegasus2avro.monitor",
+          "fields": [
+            {
+              "type": {
+                "type": "array",
+                "items": {
+                  "type": "record",
+                  "name": "AssertionEvaluationSpec",
+                  "namespace": "com.linkedin.pegasus2avro.monitor",
+                  "fields": [
+                    {
+                      "Relationship": {
+                        "entityTypes": [
+                          "assertion"
+                        ],
+                        "name": "Evaluates"
+                      },
+                      "java": {
+                        "class": "com.linkedin.pegasus2avro.common.urn.Urn"
+                      },
+                      "type": "string",
+                      "name": "assertion",
+                      "doc": "The urn of the assertion itself",
+                      "Urn": "Urn",
+                      "entityTypes": [
+                        "assertion"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "type": "record",
+                        "name": "CronSchedule",
+                        "namespace": "com.linkedin.pegasus2avro.common",
+                        "fields": [
+                          {
+                            "type": "string",
+                            "name": "cron",
+                            "doc": "A cron-formatted execution interval, as a cron string, e.g. 1 * * * *"
+                          },
+                          {
+                            "type": "string",
+                            "name": "timezone",
+                            "doc": "Timezone in which the cron interval applies, e.g. America/Los Angeles"
+                          }
+                        ],
+                        "doc": "Attributes defining a CRON-formatted schedule."
+                      },
+                      "name": "schedule",
+                      "doc": "The evaluation schedule for the assertion"
+                    },
+                    {
+                      "type": [
+                        "null",
+                        {
+                          "type": "record",
+                          "name": "AssertionEvaluationParameters",
+                          "namespace": "com.linkedin.pegasus2avro.monitor",
+                          "fields": [
+                            {
+                              "type": {
+                                "type": "enum",
+                                "symbolDocs": {
+                                  "DATASET_FIELD": "Parameters required to evaluate a Dataset Field (Column) Assertion",
+                                  "DATASET_FRESHNESS": "Parameters required to evaluate a Dataset Freshness Assertion",
+                                  "DATASET_SQL": "Parameters required to evaluate a Dataset SQL Assertion",
+                                  "DATASET_VOLUME": "Parameters required to evaluate a Dataset Volume Assertion"
+                                },
+                                "name": "AssertionEvaluationParametersType",
+                                "namespace": "com.linkedin.pegasus2avro.monitor",
+                                "symbols": [
+                                  "DATASET_FRESHNESS",
+                                  "DATASET_VOLUME",
+                                  "DATASET_SQL",
+                                  "DATASET_FIELD"
+                                ]
+                              },
+                              "name": "type",
+                              "doc": "The type of parameters"
+                            },
+                            {
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "DatasetFreshnessAssertionParameters",
+                                  "namespace": "com.linkedin.pegasus2avro.monitor",
+                                  "fields": [
+                                    {
+                                      "type": {
+                                        "type": "enum",
+                                        "symbolDocs": {
+                                          "AUDIT_LOG": "Determine that a change has occurred by inspecting an audit log API",
+                                          "DATAHUB_OPERATION": "Determine whether the table has changed using an Operation aspect",
+                                          "FIELD_VALUE": "Determine that a change has occurred by inspecting a particular field's value.",
+                                          "FILE_METADATA": "Determine that a change has occurred by inspecting underlying file system.",
+                                          "INFORMATION_SCHEMA": "Determine that a change has occurred by inspecting an information schema table, or other system metadata table."
+                                        },
+                                        "name": "DatasetFreshnessSourceType",
+                                        "namespace": "com.linkedin.pegasus2avro.monitor",
+                                        "symbols": [
+                                          "FIELD_VALUE",
+                                          "INFORMATION_SCHEMA",
+                                          "AUDIT_LOG",
+                                          "FILE_METADATA",
+                                          "DATAHUB_OPERATION"
+                                        ]
+                                      },
+                                      "name": "sourceType",
+                                      "doc": "The source of the change operation."
+                                    },
+                                    {
+                                      "type": [
+                                        "null",
+                                        {
+                                          "type": "record",
+                                          "name": "FreshnessFieldSpec",
+                                          "namespace": "com.linkedin.pegasus2avro.assertion",
+                                          "fields": [
+                                            {
+                                              "type": "string",
+                                              "name": "path",
+                                              "doc": "The field path"
+                                            },
+                                            {
+                                              "type": "string",
+                                              "name": "type",
+                                              "doc": "The DataHub standard schema field type."
+                                            },
+                                            {
+                                              "type": "string",
+                                              "name": "nativeType",
+                                              "doc": "The native field type"
+                                            },
+                                            {
+                                              "type": [
+                                                "null",
+                                                {
+                                                  "type": "enum",
+                                                  "symbolDocs": {
+                                                    "HIGH_WATERMARK": "Determine that a change has occurred by inspecting a field which should be tracked as the\n\"high watermark\" for the table. This should be an ascending number or date field.\n\nIf rows with this column have not been added since the previous check\nthen the Freshness Assertion will fail.",
+                                                    "LAST_MODIFIED": "Determine that a change has occurred by inspecting an last modified field which\nrepresents the last time at which a row was changed."
+                                                  },
+                                                  "name": "FreshnessFieldKind",
+                                                  "namespace": "com.linkedin.pegasus2avro.assertion",
+                                                  "symbols": [
+                                                    "LAST_MODIFIED",
+                                                    "HIGH_WATERMARK"
+                                                  ]
+                                                }
+                                              ],
+                                              "name": "kind",
+                                              "default": null,
+                                              "doc": "The type of the field being used to verify the Freshness Assertion."
+                                            }
+                                          ],
+                                          "doc": "Lightweight spec used for referencing a particular schema field."
+                                        }
+                                      ],
+                                      "name": "field",
+                                      "default": null,
+                                      "doc": "Information about the field to use. Present when sourceType is FIELD_VALUE"
+                                    },
+                                    {
+                                      "type": [
+                                        "null",
+                                        {
+                                          "type": "record",
+                                          "name": "AuditLogSpec",
+                                          "namespace": "com.linkedin.pegasus2avro.monitor",
+                                          "fields": [
+                                            {
+                                              "type": [
+                                                "null",
+                                                {
+                                                  "type": "array",
+                                                  "items": "string"
+                                                }
+                                              ],
+                                              "name": "operationTypes",
+                                              "default": null,
+                                              "doc": "The list of operation types that should be monitored. If not provided, a default set will be used."
+                                            },
+                                            {
+                                              "type": [
+                                                "null",
+                                                "string"
+                                              ],
+                                              "name": "userName",
+                                              "default": null,
+                                              "doc": "Optional: The user name associated with the operation."
+                                            }
+                                          ],
+                                          "doc": "Information about the Audit Log operation to use in evaluating an assertion."
+                                        }
+                                      ],
+                                      "name": "auditLog",
+                                      "default": null,
+                                      "doc": "Information about the audit log operation to use. Present when sourceType is AUDIT_LOG"
+                                    },
+                                    {
+                                      "type": [
+                                        "null",
+                                        {
+                                          "type": "record",
+                                          "name": "DataHubOperationSpec",
+                                          "namespace": "com.linkedin.pegasus2avro.monitor",
+                                          "fields": [
+                                            {
+                                              "type": [
+                                                "null",
+                                                {
+                                                  "type": "array",
+                                                  "items": "string"
+                                                }
+                                              ],
+                                              "name": "operationTypes",
+                                              "default": null,
+                                              "doc": "The list of operation types that should be monitored. If not provided, a default set will be used."
+                                            },
+                                            {
+                                              "type": [
+                                                "null",
+                                                {
+                                                  "type": "array",
+                                                  "items": "string"
+                                                }
+                                              ],
+                                              "name": "customOperationTypes",
+                                              "default": null,
+                                              "doc": "The list of custom operation types that should be monitored. If not provided, no custom operation types will be used."
+                                            }
+                                          ],
+                                          "doc": "Information about the DataHub Operation aspect used to evaluate a freshness assertion"
+                                        }
+                                      ],
+                                      "name": "dataHubOperation",
+                                      "default": null,
+                                      "doc": "Information about the DataHub operation. Present when sourceType is DATAHUB_OPERATION"
+                                    }
+                                  ],
+                                  "doc": "Information about the parameters required to evaluate an assertion"
+                                }
+                              ],
+                              "name": "datasetFreshnessParameters",
+                              "default": null,
+                              "doc": "Parameters required to evaluate a Dataset Freshness Assertion. Present if type is DATASET_FRESHNESS."
+                            },
+                            {
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "DatasetVolumeAssertionParameters",
+                                  "namespace": "com.linkedin.pegasus2avro.monitor",
+                                  "fields": [
+                                    {
+                                      "type": {
+                                        "type": "enum",
+                                        "symbolDocs": {
+                                          "DATAHUB_DATASET_PROFILE": "Determine the row count using the DataHub Dataset Profile aspect",
+                                          "INFORMATION_SCHEMA": "Determine the row count using an information schema query - not applicable to all platforms.",
+                                          "QUERY": "Determine the row count using a COUNT(*) query"
+                                        },
+                                        "name": "DatasetVolumeSourceType",
+                                        "namespace": "com.linkedin.pegasus2avro.monitor",
+                                        "symbols": [
+                                          "INFORMATION_SCHEMA",
+                                          "QUERY",
+                                          "DATAHUB_DATASET_PROFILE"
+                                        ]
+                                      },
+                                      "name": "sourceType",
+                                      "doc": "The source of the change operation."
+                                    }
+                                  ],
+                                  "doc": "Information about the parameters required to evaluate a volume assertion"
+                                }
+                              ],
+                              "name": "datasetVolumeParameters",
+                              "default": null,
+                              "doc": "Parameters required to evaluate a Dataset Volume Assertion. Present if type is DATASET_VOLUME."
+                            },
+                            {
+                              "type": [
+                                "null",
+                                {
+                                  "type": "record",
+                                  "name": "DatasetFieldAssertionParameters",
+                                  "namespace": "com.linkedin.pegasus2avro.monitor",
+                                  "fields": [
+                                    {
+                                      "type": {
+                                        "type": "enum",
+                                        "symbolDocs": {
+                                          "ALL_ROWS_QUERY": "Issue a query to the table to obtain the metric or values across\nall rows.",
+                                          "CHANGED_ROWS_QUERY": "Issue a query to the table to obtain the metric values across\nonly the rows which have changed since the previous evaluation.",
+                                          "DATAHUB_DATASET_PROFILE": "Determine the metric value using the DataHub dataset profile. Only applicable\nfor Column Metric assertions, not Column Value assertions."
+                                        },
+                                        "name": "DatasetFieldAssertionSourceType",
+                                        "namespace": "com.linkedin.pegasus2avro.monitor",
+                                        "symbols": [
+                                          "ALL_ROWS_QUERY",
+                                          "CHANGED_ROWS_QUERY",
+                                          "DATAHUB_DATASET_PROFILE"
+                                        ]
+                                      },
+                                      "name": "sourceType",
+                                      "doc": "The source of the information used to evaluate\na column values or metric assertion"
+                                    },
+                                    {
+                                      "type": [
+                                        "null",
+                                        "com.linkedin.pegasus2avro.assertion.FreshnessFieldSpec"
+                                      ],
+                                      "name": "changedRowsField",
+                                      "default": null,
+                                      "doc": "A field that can be used to filter for the fresh rows since the previous assertion\nevaluation. This should be present when sourceType = CHANGED_ROWS_QUERY.\n\nIf not provided, or the metricSourceType is not QUERY, then the assertion will be evaluated against the\nentire dataset."
+                                    }
+                                  ],
+                                  "doc": "Information about the parameters required to evaluate a field / column assertion"
+                                }
+                              ],
+                              "name": "datasetFieldParameters",
+                              "default": null,
+                              "doc": "Parameters required to evaluate a Dataset Field (Column) Assertion. Present if type is DATASET_FIELD."
+                            }
+                          ],
+                          "doc": "Information about the parameters required to evaluate an assertion"
+                        }
+                      ],
+                      "name": "parameters",
+                      "default": null,
+                      "doc": "Parameters required to evaluate the assertion"
+                    }
+                  ],
+                  "doc": "Information required for a monitor to evaluate an assertion"
+                }
+              },
+              "name": "assertions",
+              "doc": "Specs for each assertion to evaluate"
+            }
+          ],
+          "doc": "Information about an Assertion monitor."
+        }
+      ],
+      "name": "assertionMonitor",
+      "default": null,
+      "doc": "Information about the assertions being monitored. Required if type is ASSERTION."
+    },
+    {
+      "Searchable": {},
+      "type": [
+        "null",
+        "string"
+      ],
+      "name": "executorId",
+      "default": null,
+      "doc": "Advanced: The executor ID of the remote monitor service, if any."
+    }
+  ],
+  "doc": "Information about an asset monitor."
+}
