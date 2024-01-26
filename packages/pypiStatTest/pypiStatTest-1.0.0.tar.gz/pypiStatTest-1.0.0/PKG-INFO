@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pypiStatTest
+Version: 1.0.0
+Summary: Test
+Author: Ian Ludanik
+License: MIT
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: Click
+Requires-Dist: python-dotenv
+Requires-Dist: webdriver_manager

@@ -1,0 +1,4 @@
+selenium
+Click
+python-dotenv
+webdriver_manager

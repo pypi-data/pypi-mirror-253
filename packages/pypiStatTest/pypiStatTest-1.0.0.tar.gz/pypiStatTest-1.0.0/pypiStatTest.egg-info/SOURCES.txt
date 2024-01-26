@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+CourseSnipe/__init__.py
+CourseSnipe/main.py
+pypiStatTest.egg-info/PKG-INFO
+pypiStatTest.egg-info/SOURCES.txt
+pypiStatTest.egg-info/dependency_links.txt
+pypiStatTest.egg-info/requires.txt
+pypiStatTest.egg-info/top_level.txt
