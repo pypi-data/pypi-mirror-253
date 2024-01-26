@@ -1,0 +1,12 @@
+flowpytertask/__init__.py,sha256=vxWo1NHLHIcS7-gSPUw1yRq-KQfluYZOqp8v30mRldA,415
+flowpytertask/_version.py,sha256=pn39WrJgEObZ_S6dI4AX4WeBvzuvTmNkzbr4_w5qU8E,24519
+flowpytertask/flowpytertask.py,sha256=t-aOWm3JuHsAqZv9VKCrkQ_qDNZt27p_2HpTnASEywg,17940
+flowpytertask/plugins/__init__.py,sha256=FJEEinOdTH9aXG1O9CniCd8otL1vnO_WY3y7dtVwRuE,242
+flowpytertask/plugins/base64_jinja.py,sha256=KDYxfHKamNVowMlfb40DgUWHBqZ7c_p_dwXu2M9YSP4,237
+flowpyter_task-1.1.2.post0.dev17.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+flowpyter_task-1.1.2.post0.dev17.dist-info/METADATA,sha256=CA18ezbZY99TERF3VtWcHqM_pKhakBgoOD7SgziGglg,1654
+flowpyter_task-1.1.2.post0.dev17.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+flowpyter_task-1.1.2.post0.dev17.dist-info/entry_points.txt,sha256=nuSQOEO64v4kw5OV5_q5J4MVhQaqdSzqlzaz8l2EDTY,135
+flowpyter_task-1.1.2.post0.dev17.dist-info/top_level.txt,sha256=f-NdxoycJZYRPM-Z8cAA-rc3sjklHsHXsEJqtKVRBTE,14
+flowpyter_task-1.1.2.post0.dev17.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+flowpyter_task-1.1.2.post0.dev17.dist-info/RECORD,,
