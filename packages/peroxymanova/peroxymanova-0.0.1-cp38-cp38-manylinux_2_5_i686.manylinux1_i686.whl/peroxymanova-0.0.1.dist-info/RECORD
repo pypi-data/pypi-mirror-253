@@ -1,0 +1,9 @@
+peroxymanova-0.0.1.dist-info/METADATA,sha256=fFQ0bsWZols1eW4bVJCEQIJK9FfNMzmFlZlijeEAvFY,2659
+peroxymanova-0.0.1.dist-info/WHEEL,sha256=PB-cm8dOdfN0ZsVW-045Aywi3HjdKk-L7wnEp65USDw,119
+peroxymanova/_peroxymanova.py,sha256=KsqxFH8p8Skd3GXpMK6YbG0JbwS2k0qtpVoRYAHg_lQ,3282
+peroxymanova/_oxide.pyi,sha256=TrZloaPrxf_9DRevJ2_yVNAOWvoaB06x3x45VTy7NXw,153
+peroxymanova/_scipy_types.py,sha256=q6OxbS3fz3tprDZrTTixsI837e0XaKnyGn5uSDeZ3vw,836
+peroxymanova/__init__.py,sha256=OXqyjzcbgZ0XlGpgz85eFmVhZFk2U6kyBOi0pOXZZB0,82
+peroxymanova/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peroxymanova/_oxide.cpython-38-i386-linux-gnu.so,sha256=9983MSm1yhWsI5dHZhQE3uhXPXtyRYyCxGq6-Hpbcu0,4267600
+peroxymanova-0.0.1.dist-info/RECORD,,
