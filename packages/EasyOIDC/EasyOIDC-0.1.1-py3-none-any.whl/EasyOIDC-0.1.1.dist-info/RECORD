@@ -1,0 +1,15 @@
+EasyOIDC/__init__.py,sha256=4IXReDcNxaRbajynj1fGHu0M1TixfYz2bjGgxxtQrbA,91
+EasyOIDC/auth.py,sha256=ZwZeQjKLX-NHITL3K6jQ1E3vih0hBxdc2cPrvq7h65A,7968
+EasyOIDC/config.py,sha256=3gQfagNPTcz7vOO8hWyBE96H--4q35jeW5Q7dELRHQ4,5320
+EasyOIDC/session.py,sha256=eLK1yTFHLfDxvCdYH3d6hpGmPDBNAbZ-69Q4s8Ur5KE,3030
+EasyOIDC/utils.py,sha256=C9tvoUuRoRzhvMgijPrU6WKi6jXRwkQwEHSlxYhhnjE,666
+EasyOIDC/frameworks/__init__.py,sha256=7C69xIRwndDm9wSkXBsxqVVGN7UDleoFbGhUnKXA9Hw,94
+EasyOIDC/frameworks/flask.py,sha256=iPdoyWzcCMKfq5_ZRtCCAQ26Ys7oQo4hKCNkqkV-ZJw,7942
+EasyOIDC/frameworks/nicegui.py,sha256=VxYMVBW0Ki_qcZeiHXp30yDt4lomqhNcT--aQU9l2hE,7153
+EasyOIDC/frameworks/streamlit.py,sha256=CAnvKo_PT3RUvOJIY106V3b7aDR-2Vnq1Gw7lkTRIaY,1193
+EasyOIDC/frameworks/taipy.py,sha256=BqK9mKoONUDaV0c3XvdBGOcmGIFJOgGp_SZVJSYJ_Ow,513
+EasyOIDC-0.1.1.dist-info/LICENSE,sha256=dTtI66wzGh_qAVXcfQ6x9gCxgCgseShwPo9rm-EpidY,1073
+EasyOIDC-0.1.1.dist-info/METADATA,sha256=u0Oisc7c0b_E_siN244D-1SmxKDuD2iti4pQOcHvwRQ,3487
+EasyOIDC-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+EasyOIDC-0.1.1.dist-info/top_level.txt,sha256=qOs-q5BQ7WYlh0PzkQVRrK89SgDiRqHXK7HxeINQuQk,9
+EasyOIDC-0.1.1.dist-info/RECORD,,
