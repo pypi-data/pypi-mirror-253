@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="{{ sitewide.favicon }}" type="image/png" />
+        {% include "sitewide/stylesheets.html" %}
+        {% block head %}{% endblock %}
+        <title>{{ pagetitle }} | {{ sitewide.sitename }}</title>
+    </head>
+    <body>
+        {% if sitewide.sidebar.show %}
+            {% include "sitewide/sidebar.html" %}
+        {% endif %}
+        <header class={% if sitewide.sidebar.show %}"header-in-art"{% else %}"header-outside-art"{% endif %}>
+            <div class={% if sitewide.sidebar.show %}"margins-in-art"{% else %}"margins-outside-art"{% endif %}>
+                {% include "sitewide/header.html" %}
+            </div>
+        </header>
+        <main>
+            <div class={% if sitewide.sidebar.show %}"margins-in-art"{% else %}"margins-outside-art"{% endif %}>
+                {% block main %}{% endblock %}
+            </div>
+        </main>
+        <footer>
+            <div class={% if sitewide.sidebar.show %}"margins-in-art"{% else %}"margins-outside-art"{% endif %}>
+                {% include "sitewide/footer.html" %}
+            </div>
+        </footer>
+    </body>
+    <script src="{% static 'js/sidebar.js' %}"></script>
+</html>
