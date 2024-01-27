@@ -1,0 +1,88 @@
+body {
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 100vw;
+}
+
+.top-bar {
+    background-color: blue;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+h1 {
+    color: white;
+    margin: 10px;
+    float: left;
+}
+
+h1.uptime,
+h1.systime_title {
+    font-size: smaller;
+}
+
+.name,
+.time {
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+    float: right;
+}
+
+.systime_title, .os_name {
+    margin-bottom: 0px;
+}
+
+.systime, .uptime {
+    margin-top: 5px;
+}
+
+.container {
+    justify-self: center;
+    align-self: center;
+    background-color: gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.cpu, .mem {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.core {
+    list-style-type: none;
+    color: white;
+    padding: 5px;
+}
+
+.stats {
+  display: flex;
+}
+
+.stats div {
+  margin-right: 10px; 
+}
+
+.stats div:last-child {
+  margin-right: 0;
+}
+
+.graph {
+    margin: auto;
+}
+
+.cores {
+    margin: auto;
+}
+
+#cpu_overall {
+    display: inline;
+}
