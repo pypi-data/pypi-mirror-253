@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/majorshare/__init__.py
+src/majorshare/data_proxy.py
+src/majorshare/http_client.py
+src/majorshare/upass.py
+src/majorshare.egg-info/PKG-INFO
+src/majorshare.egg-info/SOURCES.txt
+src/majorshare.egg-info/dependency_links.txt
+src/majorshare.egg-info/requires.txt
+src/majorshare.egg-info/top_level.txt
