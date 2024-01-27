@@ -1,0 +1,11 @@
+pyserials/__init__.py,sha256=nXCH-TDekzJpUhjFPwwb1wGOpV8Mbm18Mh4gRlkw2nk,88
+pyserials/exception.py,sha256=3c5-ODHH6cJQvhKUtL1aZ5EPKqoN7yi3y7q960Id6A8,4157
+pyserials/format.py,sha256=dTukpab6WHSyVRQ9SteY5fhr3GFjWFboEl-1cw_udVY,1729
+pyserials/read.py,sha256=FkRCGQCsf9wsIyUSGEMw1Rb_yUrcJum9cCcCIZRRw98,5502
+pyserials/update.py,sha256=pXOTbaXr-XOyZUuEYYaNNNdQ4ziGbONJBW3ha7MMi_0,5593
+pyserials/validate.py,sha256=nBPCrrGMdWJWxF0o1R9_0TpEHkaXjFOlP0hYFjl6W6g,1997
+pyserials/write.py,sha256=fNjQqCIEbGRdooXbh-XT7J8_ZygAc9mLFT1KmkxhJQg,865
+PySerials-0.0.0.dev1.dist-info/METADATA,sha256=_uKgjOhcSsdd6JgRk5Np5_lBW7RA7n4iC1a3kok8Ahs,245
+PySerials-0.0.0.dev1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+PySerials-0.0.0.dev1.dist-info/top_level.txt,sha256=SAks7WjSjdkv3i9Hvt4gY_P7VQbhhYJN5mf5dqx1aao,10
+PySerials-0.0.0.dev1.dist-info/RECORD,,
