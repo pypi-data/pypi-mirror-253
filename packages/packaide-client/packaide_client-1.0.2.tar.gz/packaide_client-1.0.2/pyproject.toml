@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+readme = "README.md"
+version = "1.0.2"
+name = "packaide_client"
+requires-python = ">=3.7"
+dependencies = [
+    "pydantic",
+    "requests"
+]
+
+[project.urls]
+Homepage = "https://github.com/PoorRican/packaide_client"
+Repository = "https://github.com/PoorRican/packaide_client"
+Issues = "https://github.com/PoorRican/packaide_client/issues"
+
+[tool.setuptools]
+packages = ["packaide_client"]
