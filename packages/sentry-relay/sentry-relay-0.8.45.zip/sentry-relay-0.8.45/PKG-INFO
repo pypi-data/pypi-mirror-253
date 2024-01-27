@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sentry-relay
+Version: 0.8.45
+Summary: A python library to access sentry relay functionality.
+Home-page: UNKNOWN
+Author: Sentry
+Author-email: hello@sentry.io
+License: FSL-1.0-Apache-2.0
+Platform: any
+Requires-Python: >=3.9
+
+UNKNOWN
+
