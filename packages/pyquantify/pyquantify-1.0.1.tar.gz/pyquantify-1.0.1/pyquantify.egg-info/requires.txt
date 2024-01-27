@@ -1,0 +1,8 @@
+click
+nltk
+tabulate
+wordcloud
+matplotlib
+seaborn
+requests
+beautifulsoup4
