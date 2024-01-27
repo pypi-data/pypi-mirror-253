@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: monoplane
+Version: 0.1.1
+Summary: Monoplane is a tiny tool designed to help you run multiple processes in your local development environment. Especially useful for monorepos.
+Home-page: https://github.com/yegortokmakov/monoplane
+License: MIT
+Keywords: monorepo,development,local
+Author: Yegor Tokmakov
+Author-email: yegor@tokmakov.biz
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyYAML (>=6.0.1,<7.0.0)
+Requires-Dist: psutil (>=5.9.8,<6.0.0)
+Requires-Dist: readchar (>=4.0.5,<5.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Project-URL: Bug Tracker, https://github.com/yegortokmakov/monoplane/issues
+Project-URL: Repository, https://github.com/yegortokmakov/monoplane
+Description-Content-Type: text/markdown
+
+# Monoplane
+
+Monoplane is a tiny tool designed to help you run multiple processes in your local development environment. It is like a very stripped down docker compose for local shell commands. Especially useful for monorepos. Obviously, not for production.
+
+## Using Monoplane
+
+```bash
+pip install monoplane
+```
+
+Create a `monoplane.yml` file in your project root:
+
+```yaml
+color_stderr: "[91m"
+
+services:
+  - name: api
+    cwd: resources/api
+    command: skaffold dev
+    build: npm run generate
+    color: "[0;33m"
+    notes: http://localhost:30005
+    env:
+      - name: PORT
+        value: 30005
+
+  - name: console
+    cwd: resources/web_console
+    command: npm run dev
+    build: npm run build
+    color: "[0;36m"
+    notes: http://localhost:30001
+```
+
+Then run `monoplane` or `mp` in your project root. It will start all services in parallel.
+
+Some useful commands (just press key while running):
+
+- `r` - restart all services
+- `s` - print status of all services
+- `b` - execute all build commands
+- `c` - clear screen
+
+Notes added in the config file will be printed when you press `s`. Useful for adding links to your service endpoints to avoid remembering ports and typing them over and over again.
+
