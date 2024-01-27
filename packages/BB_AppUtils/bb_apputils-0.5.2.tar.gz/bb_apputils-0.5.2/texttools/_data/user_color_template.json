@@ -1,0 +1,22 @@
+[
+  [
+    "__SAMPLE__ - Light Blue",
+    {
+      "comment": "DON'T REMOVE/RENAME THIS KEY\\n - Use for comments or a help message\\n - Leave this value for a template\n - not implemented yet but may be in future versions",
+      "name": "type() Name to be used in code. Must conform to python attribute name standards. Default uses [dictionary key].lower().replace(' ','_')",
+      "code": "Attribute name to use in code. Must conform to python attribute name standards",
+      "rgb": [
+        51,
+        153,
+        255
+      ]
+    }
+  ],
+  [
+    "__SORT_KEYS__",
+    {
+      "comment": "DON'T REMOVE/RENAME THIS KEY\n - Set to True|yes|1 to sort user keys\n - Default is False|no|0",
+      "value": false
+    }
+  ]
+]
