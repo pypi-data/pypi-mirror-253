@@ -1,0 +1,26 @@
+name: napari-points2regions
+display_name: Points2Regions
+categories: ["Annotation", "Segmentation"]
+contributions:
+  commands:
+    - id: napari-points2regions.load_points
+      title: Load points
+      python_name: napari_points2regions:load_points
+    - id: napari-points2regions.points2regions
+      title: Points2Regions
+      python_name: napari_points2regions:points2regions
+    - id: napari-points2regions.adjust_point_display
+      title: Adjust point display
+      python_name: napari_points2regions:adjust_point_display
+    - id: napari-points2regions.export_point_features
+      title: Export point features
+      python_name: napari_points2regions:export_point_features
+  widgets:
+    - command: napari-points2regions.load_points
+      display_name: Load points
+    - command: napari-points2regions.points2regions
+      display_name: Points2Regions
+    - command: napari-points2regions.adjust_point_display
+      display_name: Adjust point display
+    - command: napari-points2regions.export_point_features
+      display_name: Export point features

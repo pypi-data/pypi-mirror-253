@@ -1,0 +1,10 @@
+napari_points2regions/__init__.py,sha256=gdwei904LwLKZE4kFL9mu7JVHWvlmuO-WKHGNKeS32M,331
+napari_points2regions/_version.py,sha256=pMnmqZnpVmaqR5nqHztNWzbbtb1oy5bPN_v7uhOH8K8,411
+napari_points2regions/_widget.py,sha256=yBZDUiF4FOgI0mEF0KKi9cBnlFSsRp4zYS2FzgGXTQU,10385
+napari_points2regions/napari.yaml,sha256=0oi9ZSyNaVmfyy33rUmm4Lf3_QH8GN4p--271R_3ucs,1060
+napari_points2regions-0.0.1.dist-info/LICENSE,sha256=uBTzqNi0rco-tIcFQuVS7NEwLYCTmdqsU3AIn_7c4LI,1083
+napari_points2regions-0.0.1.dist-info/METADATA,sha256=xGqquVA3fRjFKWH53pHR-AMmf0pd-SD9aVq55OP3i9g,3886
+napari_points2regions-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+napari_points2regions-0.0.1.dist-info/entry_points.txt,sha256=Mt8SUhdGa9fd5_Ojub9g33PYK0rw0y5NGgRyChWX46E,76
+napari_points2regions-0.0.1.dist-info/top_level.txt,sha256=Gbe30FOn4NF7XLIAMqSdmNAzFN18W6JI9SM8KFlwZ1c,22
+napari_points2regions-0.0.1.dist-info/RECORD,,
