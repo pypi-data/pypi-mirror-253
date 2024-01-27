@@ -1,0 +1,134 @@
+
+
+
+
+
+
+#
+#	how to publish:
+#
+#		python3 structures/modules/fortunes/_status/insurance.proc.py
+#		cp structures/modules/fortunes/module.MD readme.md
+#		(rm -rf dist && python3 -m build --sdist && twine upload dist/*)
+#
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fortunes"
+version = "1.0.2"
+dependencies = [
+	"homeostasis",
+	"ships",
+
+
+	##
+	#
+	#
+
+	"alpaca-py",
+
+	"arrow",
+
+	"backtrader",
+
+	#
+	#	https://basana.readthedocs.io/en/latest/quickstart.html
+	#
+	"basana",
+
+	"botanical",
+
+	# https://github.com/santosjorge/cufflinks
+	"cufflinks",
+
+	"cryptography",
+
+	"ccxt",
+
+	"clique",
+
+	"dash",
+
+	"finvizfinance",
+
+	"ipychart",
+
+	# http://lumibot.lumiwealth.com/getting_started.html#getting-started
+	"lumibot",
+
+
+
+	"matplotlib",
+	"numpy",
+	"pandas",
+	"pandas_ta",
+	"pandas_datareader",
+
+	"plotly",
+	"pydash",
+	"PyJSONViewer",
+	"PyJWT",
+	"stock_indicators",
+	"ta",
+
+	# https://github.com/nardew/talipp
+	"talipp",
+
+	"technical_indicators_lib",
+
+	#tensortrade
+
+	"tradingview-ta",
+	"tradingview-screener",
+
+
+
+
+	#vectorbt==0.25.5 
+
+	# https://pypi.org/project/yahooquery/
+	"yahooquery",
+
+	"yfinance"
+
+]
+
+# license = { text = "license" }
+license = { file = "license.txt" }
+
+description = "economic estimation"
+readme = "readme.md"
+keywords = [	 
+	"economic estimation",
+	"finance",
+	"commerce",
+	"wealth",
+	"money",
+	"treasures",
+	"treasury",
+	"subconscious trading"
+]
+
+[project.scripts]
+#
+#	https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#creating-executable-scripts
+#	from this_module import clique; clique ()
+#
+# 	this_module = "this_module:clique"
+#
+
+[tool.setuptools.packages.find]
+where = [ "structures/modules" ]
+
+#
+#	https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+#
+[tool.setuptools.package-data]
+"*" = [ "*.html" ]
+
+
+
+
