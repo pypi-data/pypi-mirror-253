@@ -1,0 +1,15 @@
+reporting_endpoints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reporting_endpoints/admin.py,sha256=V__5FcMrCar3RoU9Svg115E2XJdgcPs2RklUZpFJrMA,1830
+reporting_endpoints/apps.py,sha256=n7hDjWHXXyrhys5Z09SlnszlC617s-nb0D3onOX3nCs,248
+reporting_endpoints/middleware.py,sha256=7MVE2STM5KaJPcU2h7AWkh9qjQbOTRJKQ3NtWpoBj4w,1728
+reporting_endpoints/models.py,sha256=mFZBFg5CfhvjwIz7hsvQf4XnEPLMC49FmGHAvOnUaSI,1432
+reporting_endpoints/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reporting_endpoints/views.py,sha256=cc8yCaQFnzW0NLDKUOmgmXWmBkUs-brCnoidXCEvoys,2941
+reporting_endpoints/migrations/0001_initial.py,sha256=h5agfdRyXuOXF5jz3L7mPaTw1MfTZG_0yb3qTaffdJQ,2383
+reporting_endpoints/migrations/0002_add_disposition_unknown.py,sha256=sP7iU31m8kT9eu2fXgu9WilvA82ssf48VpfEokgVwMY,473
+reporting_endpoints/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_reporting_endpoints-0.9.5.dist-info/LICENSE,sha256=NglU-eHX3GtaXueCrnQf_BMH2gqd4LEs9Lv4hr5oCBo,1075
+django_reporting_endpoints-0.9.5.dist-info/METADATA,sha256=3McbdtUAtQRmpVT2BbSYH36KJr3zXV5Tejn1RIn_5S4,2895
+django_reporting_endpoints-0.9.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+django_reporting_endpoints-0.9.5.dist-info/top_level.txt,sha256=7uW2CCV6hkPBohYiHguukgd8VVdV6KiB0NNq3ibB4NM,20
+django_reporting_endpoints-0.9.5.dist-info/RECORD,,
