@@ -1,0 +1,4 @@
+365,281
+resources,150,150
+customers,150,50
+process,250,150
