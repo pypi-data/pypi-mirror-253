@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+skrooge/__init__.py
+skrooge/__main__.py
+skrooge/cli.py
+skrooge/render.py
+skrooge/scraper.py
+skrooge/utils.py
+skrooge.egg-info/PKG-INFO
+skrooge.egg-info/SOURCES.txt
+skrooge.egg-info/dependency_links.txt
+skrooge.egg-info/entry_points.txt
+skrooge.egg-info/requires.txt
+skrooge.egg-info/top_level.txt
+tests/test_skrooge.py
+tests/test_utils.py
