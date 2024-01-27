@@ -1,0 +1,9 @@
+README.md
+setup.py
+pywebauthorization/__init__.py
+pywebauthorization/basicauth.py
+pywebauthorization.egg-info/PKG-INFO
+pywebauthorization.egg-info/SOURCES.txt
+pywebauthorization.egg-info/dependency_links.txt
+pywebauthorization.egg-info/top_level.txt
+tests/test_basicauth.py
