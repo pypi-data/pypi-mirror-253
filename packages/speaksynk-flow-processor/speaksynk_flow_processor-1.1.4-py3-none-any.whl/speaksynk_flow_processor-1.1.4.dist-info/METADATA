@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: speaksynk-flow-processor
+Version: 1.1.4
+Summary: 
+Author: Gustavo Sanchez
+Author-email: antero105@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.28.39,<2.0.0)
+Requires-Dist: colorlog (>=6.7.0,<7.0.0)
+Requires-Dist: pytest (>=7.4.0,<8.0.0)
+Description-Content-Type: text/markdown
+
+# SpeakSynk Flow Processor
+
+
+Parent class to create steps, ideally this will save us some common functions of the steps.
+
+
+# Implementation
+
+
+```
+from speaksynk_flow_processor.AWSSpeakSynkFlowProcesor import AWSSpeakSynkFlowProcesor
+
+class SomeStep(AWSSpeakSynkFlowProcesor):
+    def run(self):
+        super().run()
+        # Some logic
+
+
+if __name__ == '__main__':
+    step = SomeSteP()
+    step.download()
+    step.run()
+    step.upload('hestep/%s' %s self._identifier)  
+    
+```
+
+Ideally this save us some time in creating more steps and only taking care of the run method
+
+
+# Install
+
+* `pip install poetry`
+* `poetry install`
+
+# Test
+
+* `poetry run pytest`
+
+
+# Use
+
+* `poetry run python xxxx`
