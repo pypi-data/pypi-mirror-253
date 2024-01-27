@@ -1,0 +1,12 @@
+howdididolib/__init__.py,sha256=cWVPpOC6onXIBxTQRMtZl9QTLz3Wkk_x-z3YiqFf8_E,29
+howdididolib/booking.py,sha256=QyCr8Ll648koyPLV9w3aM_EI-w1viDEjvwvD4qoeam4,7738
+howdididolib/console.py,sha256=o-gdxAbrzDRej2BoFuIW6Xup3LqkSWp3pFQbTRTQfoc,3229
+howdididolib/const.py,sha256=fnsUAKLt7xydCk2wlOhPYIRNFTpEY22f30G7sfKXGu8,479
+howdididolib/fixture.py,sha256=_pHNtIel0bs_b2QYPq9cnaMuh_8SULVUoiZrSICYvto,2122
+howdididolib/session.py,sha256=vW4WPab-V0LdzjRNOhGQRQV9UczL5XtqXAd2Uqwj6Fc,4613
+howdididolib/types.py,sha256=V2qV68KYUpQCuUk5phInu5gq0PY3OZxdTBeNbBktNOc,581
+howdididolib-0.1.2.dist-info/LICENSE,sha256=AD_8XBDeLO8Tw9YuP4WZY-_nXvormUsmyRrdbMTIEIw,1071
+howdididolib-0.1.2.dist-info/METADATA,sha256=UhBX2FBJN69OQxGFzX4RgRQWW_0zQgNwNGRPVvhjGNY,1728
+howdididolib-0.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+howdididolib-0.1.2.dist-info/entry_points.txt,sha256=_bFAuiI3TJc-gavPDpQM0grvEBU8y9SzjBt0PwH0KOs,55
+howdididolib-0.1.2.dist-info/RECORD,,
