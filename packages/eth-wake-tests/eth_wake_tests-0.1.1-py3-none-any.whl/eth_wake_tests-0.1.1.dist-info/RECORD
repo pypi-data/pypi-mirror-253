@@ -1,0 +1,16 @@
+wake_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wake_tests/erc20/IERC20.py,sha256=uh1h2eEN-F2Ngj12cGHraQE8Gpt2cnCIUuj-VS7-7kI,54222
+wake_tests/erc20/__init__.py,sha256=eix-LglBzIG9QpbTYZlEhOSyjVTCpQQuq6tjF8VUlNA,244
+wake_tests/erc20/differential.py,sha256=T2dYvEXujLsFJ42LacawABIrVGHC2tHQiitB67iSw88,18283
+wake_tests/erc20/fuzz.py,sha256=kcuMrxZaV4AZotY1Fld6LVet62xprNNrxOH1R8xcM_M,2124
+wake_tests/erc20/mock.py,sha256=WGTyXjzF8LLwmbaAknFoj44yTqGnSlbb6e11JZvhyyw,6512
+wake_tests/erc20/suite_abc.py,sha256=JMPw5nMs0i7YoOSnRieVfjG63pQmj1UCne1E4SWKB0U,3456
+wake_tests/erc20/suite_abi.py,sha256=MiQD917F9aGRutNErlFlPDUlFq6GGCEsVQK6hfU9O84,16883
+wake_tests/erc20/suite_desirable.py,sha256=5rQlghxYWhynVtZ4Yyil9nyIOnzVUfsSYlAdAO80lIw,22369
+wake_tests/erc20/suite_fingerprint.py,sha256=coWF6dyMNJYDdkysf9YxDq_E42oCEIBhHjDrBRVbFRg,9953
+wake_tests/erc20/suite_minimal.py,sha256=uaxA5RdjgLpgcoz5KPvdUFfCF7bZqdvn13cHZjybFb4,13577
+wake_tests/erc20/suite_recommended.py,sha256=hFsYe1f54y93DIKWezjjUAL90ajFGWVFqEPHC1ghV08,4449
+wake_tests/erc20/utils.py,sha256=Qy9-KEj4UKUmImJqwLoPr8EfEMSl1KvA9NWeKfOsBFY,3007
+eth_wake_tests-0.1.1.dist-info/METADATA,sha256=NSTaQUZntBWZekrJr2rxlUG7QucrwxgMLRw8p52c1dw,2161
+eth_wake_tests-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+eth_wake_tests-0.1.1.dist-info/RECORD,,
