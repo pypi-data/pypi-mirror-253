@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: expressionive
+Version: 0.0.11
+Summary: A Python3-compatible fork of 'Throw out your templates', similar to Nevow's 'stan'.
+Author-email: "John C. G. Sturdy" <jcg.sturdy@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+
+# expressive
+A Python3-compatible fork of "Throw out your templates", similar to Nevow's "stan".
+
+This is an updated fork of https://github.com/tavisrudd/throw_out_your_templates/blob/master/throw_out_your_templates.py
+
