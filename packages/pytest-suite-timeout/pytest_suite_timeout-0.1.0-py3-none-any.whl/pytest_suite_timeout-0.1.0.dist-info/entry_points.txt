@@ -1,0 +1,3 @@
+[pytest11]
+pytest_suite_timeout=pytest_suite_timeout.plugin
+

@@ -1,0 +1,7 @@
+pytest_suite_timeout/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_suite_timeout/plugin.py,sha256=2s1zBzka_E_4_OejWUj6V9_WdWlRoQPoO5eYa1fm4UM,1088
+pytest_suite_timeout-0.1.0.dist-info/entry_points.txt,sha256=THybeSYk080OoA36fst9t_CJzNxSiQUbtggK6xtMS-I,61
+pytest_suite_timeout-0.1.0.dist-info/LICENSE.txt,sha256=_2WBZ0mAzKCg2s7wdk8N3-BpJ7y4oLMmzigPdGRoc-I,1078
+pytest_suite_timeout-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+pytest_suite_timeout-0.1.0.dist-info/METADATA,sha256=BOsQWEBW8fQtVCy3gVbXDQRruaqectdPxf5UtBhIaI4,2203
+pytest_suite_timeout-0.1.0.dist-info/RECORD,,
