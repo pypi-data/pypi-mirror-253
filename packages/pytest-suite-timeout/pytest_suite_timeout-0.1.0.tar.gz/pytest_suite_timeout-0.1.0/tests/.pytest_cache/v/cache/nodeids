@@ -1,0 +1,14 @@
+[
+  "test_slow.py::test_slow[0]",
+  "test_slow.py::test_slow[1]",
+  "test_slow.py::test_slow[2]",
+  "test_slow.py::test_slow[3]",
+  "test_slow.py::test_slow[4]",
+  "test_slow.py::test_slow[5]",
+  "test_slow.py::test_slow[6]",
+  "test_slow.py::test_slow[7]",
+  "test_slow.py::test_slow[8]",
+  "test_slow.py::test_slow[9]",
+  "test_suite_timeout.py::test_no_timeout",
+  "test_suite_timeout.py::test_timeout"
+]
