@@ -1,0 +1,11 @@
+ruamel.yaml
+httpx
+jsonschema
+python-jose[cryptography]
+
+[all]
+ruamel.yaml
+httpx
+jsonschema
+python-jose[cryptography]
+pytest>=4.6.2
