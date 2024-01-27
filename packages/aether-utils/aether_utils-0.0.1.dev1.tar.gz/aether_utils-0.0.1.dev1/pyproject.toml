@@ -1,0 +1,7 @@
+[tool.black]
+line-length = 88
+target_version = ['py310', 'py311', 'py312']
+preview = true
+
+[tool.isort]
+profile = "black"
