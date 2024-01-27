@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: ubergraph2asct
+Version: 0.1.0
+Summary: Generates ASCT table from Ubergraph
+Home-page: https://github.com/hubmapconsortium/ubergraph2asct
+License: http://www.apache.org/licenses/LICENSE-2.0
+Author: Anita Caron
+Author-email: anitacaron@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: curies (>=0.7.4,<0.8.0)
+Requires-Dist: networkx (>=3.2.1,<4.0.0)
+Requires-Dist: oaklib (>=0.5.25,<0.6.0)
+Requires-Dist: rdflib (>=7.0.0,<8.0.0)
+Project-URL: Repository, https://github.com/hubmapconsortium/ubergraph2asct
+Description-Content-Type: text/markdown
+
+# ubergraph2asct [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10551712.svg)](https://doi.org/10.5281/zenodo.10551712)
+
+
+This lib takes a list of seed terms and a list of properties and generates a simpler version of the ASCT+B table. In this case, there are only the AS and CT columns.
+
+Run:
+
+```bash
+python3 ubergraph2asct.py --input <seed file> --property <property file> --output <output file path>
+```
+
+You can check example of each file in the `test` folder. Using these files, the command would be:
+
+```bash
+python3 ubergraph2asct --input test/eye-seed.txt --property -- test/properties.txt --output eye-asct.csv
+```
+

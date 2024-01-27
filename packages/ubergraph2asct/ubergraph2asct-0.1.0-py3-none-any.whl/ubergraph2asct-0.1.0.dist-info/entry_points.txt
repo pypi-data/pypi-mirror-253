@@ -1,0 +1,3 @@
+[console_scripts]
+ubergraph2asct=ubergraph2asct.__main__:main
+
