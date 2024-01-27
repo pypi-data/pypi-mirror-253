@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: diff_nurbs
+Version: 0.0.2
+Summary: An automatically differentiable pure-Python NURBS implementation in PyTorch.
+Home-page: https://github.com/HelmholtzAI-FZJ/Diff-NURBS
+Author: Jan Ebert
+Author-email: ja.ebert@fz-juelich.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6,<3.12
+License-File: LICENSE
+Requires-Dist: torch<3.0,>=1.8
+Requires-Dist: matplotlib<4.0,>=3.4

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/diff_nurbs/__init__.py
+src/diff_nurbs/nurbs.py
+src/diff_nurbs.egg-info/PKG-INFO
+src/diff_nurbs.egg-info/SOURCES.txt
+src/diff_nurbs.egg-info/dependency_links.txt
+src/diff_nurbs.egg-info/requires.txt
+src/diff_nurbs.egg-info/top_level.txt
