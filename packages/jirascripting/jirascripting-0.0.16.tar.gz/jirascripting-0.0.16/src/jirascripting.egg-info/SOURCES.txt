@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/jirascripting/__init__.py
+src/jirascripting/auth_and_headers.py
+src/jirascripting/create_fancy_jira_issue.py
+src/jirascripting/create_jira_epic.py
+src/jirascripting/create_jira_issue.py
+src/jirascripting/create_jira_issue_with_parent.py
+src/jirascripting/get_assignable_users.py
+src/jirascripting/helpers.py
+src/jirascripting.egg-info/PKG-INFO
+src/jirascripting.egg-info/SOURCES.txt
+src/jirascripting.egg-info/dependency_links.txt
+src/jirascripting.egg-info/requires.txt
+src/jirascripting.egg-info/top_level.txt
