@@ -1,0 +1,12 @@
+GlobalEmail.py
+GlobalFiles.py
+GlobalTables.py
+GlobalUi.py
+LICENCE
+README.md
+setup.py
+GlobalRPA_Lib.egg-info/PKG-INFO
+GlobalRPA_Lib.egg-info/SOURCES.txt
+GlobalRPA_Lib.egg-info/dependency_links.txt
+GlobalRPA_Lib.egg-info/requires.txt
+GlobalRPA_Lib.egg-info/top_level.txt
