@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: duckietown-sdk
+Version: 0.0.2
+Home-page: http://github.com/duckietown/duckietown-sdk
+Author: Andrea F. Daniele
+Author-email: afdaniele@duckietown.com
+Requires-Dist: dt-duckiematrix-protocols-ente<1,>=0.1.8
+Requires-Dist: roslibpy<2,>=1.6.0
+Requires-Dist: PyTurboJPEG<2,>=1.7.3
+
+
+duckietown-sdk: The Duckietown Software Development Kit (SDK)
+=============================================================
+
+
+The Duckietown Software Development Kit (SDK) for Python.
+
