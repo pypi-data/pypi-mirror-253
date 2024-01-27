@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aldegonde
+Version: 0.0.2
+Summary: Classical Cryptography Library
+Author-email: Michel Oosterhof <michel@oosterhof.net>
+Project-URL: homepage, https://github.com/micheloosterhof/aldegonde
+Project-URL: documentation, https://readthedocs.org
+Project-URL: repository, https://github.com/micheloosterhof/aldegonde
+Project-URL: changelog, https://github.com/me/spam/blob/master/CHANGELOG.md
+Keywords: cryptanalysis,cryptology,cryptography
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+`aldegonde` is a Python library for classical cryptography. It is
+written to accomodate non-standard alphabets (i.e. not just A-Z).
