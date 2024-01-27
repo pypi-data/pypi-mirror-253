@@ -1,0 +1,8 @@
+numpy>=1.18.0
+scipy>=1.6.0
+tqdm>=4.55.0
+
+[problems]
+matplotlib>=3.2.0
+pygame>=2.0.2
+opencv-python>=4.5.2.0
