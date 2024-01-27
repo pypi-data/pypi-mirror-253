@@ -1,0 +1,2 @@
+[console_scripts]
+yc_scraper = ycombinator_scraper.cli:cli
