@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: SpecialPurpose
+Version: 2
+Author: Sara , Sm6r
+Requires-Dist: pyfiglet
+Requires-Dist: Crypto
+Requires-Dist: matplotlib
+
+A special package for MonieCrypt (Crypto tool) designed for a Cryptography assignment /JU
