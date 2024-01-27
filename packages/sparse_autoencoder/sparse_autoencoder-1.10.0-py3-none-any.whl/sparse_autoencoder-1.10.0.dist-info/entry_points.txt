@@ -1,0 +1,3 @@
+[console_scripts]
+join-sae-sweep=sparse_autoencoder.train.join_sweep:run
+
