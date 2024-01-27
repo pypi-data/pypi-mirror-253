@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+YiraBot.egg-info/PKG-INFO
+YiraBot.egg-info/SOURCES.txt
+YiraBot.egg-info/dependency_links.txt
+YiraBot.egg-info/entry_points.txt
+YiraBot.egg-info/requires.txt
+YiraBot.egg-info/top_level.txt
+yirabot/__init__.py
+yirabot/crawl.py
+yirabot/help.py
+yirabot/yirabot.py
