@@ -1,0 +1,13 @@
+click<8.0,>=7.0
+getversion
+PyYAML<=6.0,>=5.0
+pyaml-env<1.2,>=1.1.5
+markdown<4.0,>=3.4.1
+setuptools>=40.6
+
+[tests]
+pytest
+pytest-cov
+coveralls
+flake8
+mypy
