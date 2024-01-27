@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: nett-benchmarks
+Version: 0.1
+Summary: A small example package
+Author-email: Bhargav Desai <desabh@iu.edu>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Requires-Python: <3.10.13,>=3.10.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mlagents ==1.0.0
+Requires-Dist: stable-baselines3[extra] ==1.8.0
+Requires-Dist: sb3-contrib ==1.8.0
+Requires-Dist: imageio-ffmpeg
+Requires-Dist: torchvision
+Requires-Dist: scipy
+Requires-Dist: timm
+Requires-Dist: nvidia-ml-py
+Requires-Dist: ipywidgets
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
