@@ -1,0 +1,5 @@
+setup.py
+mindseed_npu.egg-info/PKG-INFO
+mindseed_npu.egg-info/SOURCES.txt
+mindseed_npu.egg-info/dependency_links.txt
+mindseed_npu.egg-info/top_level.txt
