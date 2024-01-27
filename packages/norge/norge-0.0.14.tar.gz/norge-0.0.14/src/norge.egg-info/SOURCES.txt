@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/matematikk/__init__.py
+src/matematikk/as.py
+src/norge.egg-info/PKG-INFO
+src/norge.egg-info/SOURCES.txt
+src/norge.egg-info/dependency_links.txt
+src/norge.egg-info/top_level.txt
