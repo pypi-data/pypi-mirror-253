@@ -1,0 +1,3 @@
+[console_scripts]
+beetimer=beetimer.beetimer:app
+
