@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kalista
+Version: 0.1.12
+Summary: 
+Author: Mark Franciscus
+Author-email: mark.franciscus@hotmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (==3.9.0)
+Requires-Dist: decorators
+Requires-Dist: loguru
+Requires-Dist: pandas (>=2.0.2,<3.0.0)
+Requires-Dist: pendulum (>=2.1.2,<3.0.0)
+Requires-Dist: pydantic
