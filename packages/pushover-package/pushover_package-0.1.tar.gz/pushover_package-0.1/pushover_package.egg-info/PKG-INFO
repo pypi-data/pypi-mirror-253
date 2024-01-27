@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: pushover-package
+Version: 0.1
+Summary: A simple Python wrapper for the Pushover API
+Keywords: pushover notification api
