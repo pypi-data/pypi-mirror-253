@@ -1,0 +1,10 @@
+setup.py
+skatooniespackage/Binomialdistribution.py
+skatooniespackage/Gaussiandistribution.py
+skatooniespackage/Generaldistribution.py
+skatooniespackage/__init__.py
+skatooniespackage.egg-info/PKG-INFO
+skatooniespackage.egg-info/SOURCES.txt
+skatooniespackage.egg-info/dependency_links.txt
+skatooniespackage.egg-info/not-zip-safe
+skatooniespackage.egg-info/top_level.txt
