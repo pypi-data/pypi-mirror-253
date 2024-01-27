@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: blazebase
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: Charles Dupont
+Author-email: charlo.dupont@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: cryptography (>=42.0.1,<43.0.0)
+Requires-Dist: firebase-admin (>=6.4.0,<7.0.0)
+Requires-Dist: gcloud (>=0.18.3,<0.19.0)
+Requires-Dist: google-auth (>=2.27.0,<3.0.0)
+Requires-Dist: google-auth-httplib2 (>=0.2.0,<0.3.0)
+Requires-Dist: google-auth-oauthlib (>=1.2.0,<2.0.0)
+Requires-Dist: jwcrypto (>=1.5.1,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: requests-toolbelt (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# BlazeBase: A replacement to Pyrebase written in modern python
+
+## Warning
+
+Currently in **very very very** early developpement... Not much has been added yet...
+
+## Config
+
+**Initial Setup:**
+
+```python
+
+from BlazeBase import BlazeBase
+
+config = {
+    "serviceAccount": "Dict with service account information or the path to the json file",
+    # Optional arguments below, omit if not useful
+    "databaseURL": "Url to the firebase database", 
+    "storageBucket": "Url to storagebucket",
+    "projectId": "Project Id",
+    "databaseAuthVariableOverride": "Auth variable override",
+    "serviceAccountId": "Service account Id",
+    "httpTimeout": "Time in seconds"
+}
+
+
+blaze = BlazeBase(config)
+
+```
+
