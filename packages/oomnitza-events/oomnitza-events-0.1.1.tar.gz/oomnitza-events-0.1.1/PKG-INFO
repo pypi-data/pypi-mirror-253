@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: oomnitza-events
+Version: 0.1.1
+Summary: This project is developed for tracking Oomnitza activities.
+Author: Oomnitza
+Author-email: etl-admin@oomnitza.com
+Description-Content-Type: text/markdown
+Requires-Dist: analytics-python==1.2.9
+Requires-Dist: arrow
+Requires-Dist: Cerberus
+Requires-Dist: psycopg2-binary==2.8.6
+Requires-Dist: typing_extensions
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-pep8; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
