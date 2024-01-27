@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tsc-excel
+Version: 0.4
+Summary: excel 文件读写，以json形式
+Home-page: https://github.com/aitsc/tsc-excel
+Author: aitsc
+License: GPLv3
+Keywords: tools
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 安装
+- 正常安装：`pip install tsc-excel`

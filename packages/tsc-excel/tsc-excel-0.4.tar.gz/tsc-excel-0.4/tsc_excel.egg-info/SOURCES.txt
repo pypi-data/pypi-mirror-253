@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+tsc_excel/__init__.py
+tsc_excel/excel_read.py
+tsc_excel/excel_write.py
+tsc_excel/para_tex.py
+tsc_excel.egg-info/PKG-INFO
+tsc_excel.egg-info/SOURCES.txt
+tsc_excel.egg-info/dependency_links.txt
+tsc_excel.egg-info/requires.txt
+tsc_excel.egg-info/top_level.txt
