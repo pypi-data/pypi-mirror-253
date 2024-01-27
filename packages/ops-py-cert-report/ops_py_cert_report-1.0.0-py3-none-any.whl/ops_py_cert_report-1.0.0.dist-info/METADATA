@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ops-py-cert-report
+Version: 1.0.0
+Summary: Output a Cert expire report
+Description-Content-Type: text/markdown
+
