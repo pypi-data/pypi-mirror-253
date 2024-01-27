@@ -1,0 +1,12 @@
+gcloud/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcloud/rest/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcloud/rest/storage/__init__.py,sha256=mZJlupAO2WLW2wUHSIb1pDih3a1ir_FVwzOvPms3lPw,5712
+gcloud/rest/storage/blob.py,sha256=FWRDxRqM1rfuBkx0Vpx87KuZTs0uqa22Bp9Oo5fujyo,8962
+gcloud/rest/storage/bucket.py,sha256=NGgvkFG16QqTJ9WWBdrV53OW7z1FVOas1jW8Hxx3wPk,2769
+gcloud/rest/storage/constants.py,sha256=yToeKCgsVaIvH2Lq14JQHTVsWHlix-G1mga6xk92k48,70
+gcloud/rest/storage/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcloud/rest/storage/storage.py,sha256=0f4p8fQGFwweq0-OWinYErYUxyFpitWgnUVwQxoZuMk,28419
+gcloud_rest_storage-9.1.0.dist-info/LICENSE,sha256=5BNZKnocORweIzozcY2dB5Mf_d0MJP5VbpwdzL4ZjoM,1063
+gcloud_rest_storage-9.1.0.dist-info/METADATA,sha256=jxFVmy40Gy0s5be9-VVkrTQ2ihre5kqiQ5uDLMrM6Yg,2023
+gcloud_rest_storage-9.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gcloud_rest_storage-9.1.0.dist-info/RECORD,,
