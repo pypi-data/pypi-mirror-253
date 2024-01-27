@@ -1,0 +1,16 @@
+kante/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kante/admin.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+kante/apps.py,sha256=HNxnivTGciNv8dFvgJa5yWPTXbl6xADiUH_-EmUxYHE,142
+kante/channel.py,sha256=cFhMFqxqEZTO4b40TmxvnZnzcXpao0FFxOojYvq7SIg,1550
+kante/consumers/__init__.py,sha256=DHu2TA-imoE6JJcTQEe9FPajtW_k-458cNckp3_pR7g,120
+kante/consumers/http.py,sha256=miSBGqQx7-rIa__jt1iZQb_OZxRKyXv728bGbngfGPE,1821
+kante/consumers/ws.py,sha256=lbwy84ec6_S4nu_IVffLkp1kdv4-w0BBeTi4ANS3uyI,1509
+kante/context.py,sha256=0X6FaSnJpEeqtM9XG7cXjWymdTbvpbuH1A1-igdfI5c,1593
+kante/cors.py,sha256=pxTtJwo8dKoOMGNTQ9lGfPX-d7U5GKYPswk-dA5SrkU,2359
+kante/directives.py,sha256=dddq37f1RabaomGI2Re0l3JxELR462QdvlrpU31uO90,637
+kante/gateway.py,sha256=HEY-SOrsfPD0WqPhrSQHoAi0Te7f0hLPcYNOr0NCEDQ,2805
+kante/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kante/types.py,sha256=Eup1eL5NIZHV37qki3ySZcskIUb9aFe3smlhPL2qGOg,148
+kante-0.2.1.dist-info/METADATA,sha256=LniIpHD7wX4LBg_anhxgNhg7OwZbmf-qpm2Y6kjsHDI,875
+kante-0.2.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+kante-0.2.1.dist-info/RECORD,,

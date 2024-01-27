@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: kante
+Version: 0.2.1
+Summary: 
+License: MIT
+Author: jhnnsrs
+Author-email: jhnnsrs@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: authentikate (>=0.1.11)
+Requires-Dist: channels (>=4.0.0,<5.0.0)
+Requires-Dist: koherent (>=0.1.1)
+Requires-Dist: pydantic (<2.0)
+Requires-Dist: strawberry-graphql (>=0.212)
+Description-Content-Type: text/markdown
+
+# Kante
+
+Kante is a simple lightweight strawberry utily library, that
+merges the efforts of 
+
+-   [authentikate](https://github.com/jhnnsrs/authentikate)
+
+    For Token based authentication
+
+-   [koherent](https://github.com/jhnnsrs/koherent)
+
+    For a simple ASSIGNATION_ID based audit trail
+
