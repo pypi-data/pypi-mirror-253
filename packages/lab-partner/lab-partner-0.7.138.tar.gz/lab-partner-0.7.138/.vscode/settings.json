@@ -1,0 +1,15 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "terminal.integrated.profiles.linux": {
+        "bash (Host)": {
+            "path": "ssh",
+            "icon": "terminal-bash",
+            "args": [
+                "-i",
+                "/home/aps/.ssh/aps@enclarify.com.key",
+                "aps@192.168.88.250",
+            ],
+        },
+    },
+    "autoDocstring.docstringFormat": "sphinx-notypes"
+}
