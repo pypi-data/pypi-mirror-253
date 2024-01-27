@@ -1,0 +1,16 @@
+urwid==2.4.1
+twisted==23.10.0
+pyOpenSSL==23.3.0
+service_identity==24.1.0
+argparse==1.4.0
+
+[test]
+pytest
+coverage
+flake8
+black
+isort
+pytest-cov
+mypy
+gitchangelog
+mkdocs
