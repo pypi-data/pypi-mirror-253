@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+nomad_camels_driver_lakeshore_f41/lakeshore_f41.py
+nomad_camels_driver_lakeshore_f41/lakeshore_f41_ophyd.py
+nomad_camels_driver_lakeshore_f41.egg-info/PKG-INFO
+nomad_camels_driver_lakeshore_f41.egg-info/SOURCES.txt
+nomad_camels_driver_lakeshore_f41.egg-info/dependency_links.txt
+nomad_camels_driver_lakeshore_f41.egg-info/requires.txt
+nomad_camels_driver_lakeshore_f41.egg-info/top_level.txt
