@@ -1,0 +1,11 @@
+statbank/__init__.py,sha256=z7N8ei3DibVlv2uGqKlZlLu0DY6ZanMM0yqruGwlHvE,207
+statbank/apidata.py,sha256=xXdB-BO5yqejEtCteVbQcV1BfMc167gGsjyZ6Uh9UAk,5651
+statbank/auth.py,sha256=rF1ADxqRyCjpmdQm8IK4NqMUSewvgNKkFBsUF4G9rjU,4439
+statbank/client.py,sha256=TwhJO7JVyuX3ja9X1rcam60HcNBHtkbDkHvdbP2vltg,17571
+statbank/transfer.py,sha256=g9tfHRhjV__icJG8260wTNnc0kMIvn7IRbALCE53yNQ,13617
+statbank/uttrekk.py,sha256=xVdLG5-OHLBVHOw6dmn5n1f3gzxanMXHQt5qr9UZHE8,16210
+statbank/uttrekk_validations.py,sha256=osDPghO_TjUffw7K8ldP1kUybiNjCt5F7g66lXfpeB8,16750
+dapla_statbank_client-1.0.10.dist-info/LICENSE,sha256=lL2h0dNKGTKAE0CjTy62SDbRennVD1xPgM5LzGqhKeo,1074
+dapla_statbank_client-1.0.10.dist-info/METADATA,sha256=SthKogp--O2CFnjr2vbLl1ichlfZg4osCR8LG8Wuc7Y,10030
+dapla_statbank_client-1.0.10.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dapla_statbank_client-1.0.10.dist-info/RECORD,,
