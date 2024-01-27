@@ -1,0 +1,7 @@
+numpy==1.24.2
+
+[dev]
+black
+pip-tools
+pytest
+pydantic
