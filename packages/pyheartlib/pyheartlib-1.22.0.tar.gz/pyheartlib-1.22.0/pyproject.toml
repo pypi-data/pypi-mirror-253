@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "pyheartlib"
+version = "1.22.0"
+description = "A Python package for processing electrocardiogram signals"
+authors = ["devnums <devnums.code@gmail.com>"]
+license = "AGPL-3.0-only"
+readme = "README.md"
+repository = "https://github.com/devnums/pyheartlib"
+documentation = "https://pyheartlib.readthedocs.io"
+keywords = ["electrocardiogram", "ECG"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+numpy = ">=1.22.0"
+wfdb = ">=4.0.0"
+pandas = ">=1.4.0"
+tqdm = ">=4.63.0"
+scikit-learn = ">=1.1.0"
+tensorflow = ">=2.8.0"
+pyyaml = ">=6.0"
+matplotlib = ">=3.5.2"
+scipy = ">=1.8.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=7.3.1"
+pytest-cov = ">=4.1.0"
+black = ">=23.3.0"
+myst-nb = ">=0.17.2"
+sphinx-autoapi = ">=2.1.0"
+sphinx-rtd-theme = ">=1.2.1"
+third-party-license-file-generator = ">=2023.2.22"
+flake8 = ">=6.0.0"
+python-semantic-release = ">=7.33.5"
+pre-commit = ">=3.4.0"
+isort = ">=5.12.0"
+ruff = ">=0.0.290"
+sphinx-togglebutton = ">=0.3.2"
+tomli = ">=2.0.1"
+
+[tool.semantic_release]
+version_variable =  ["pyproject.toml:tool.poetry.version"]
+version_toml = ["pyproject.toml:tool.poetry.version"]
+branch = "main"
+changelog_file = "CHANGELOG.md"
+build_command = "pip install poetry && poetry build"
+dist_path = "dist/"
+upload_to_release = true
+upload_to_pypi = false
+remove_dist = false
+patch_without_tag = true
+commit_version_number = true
+version_source = "tag"
+
+[build-system]
+requires = ["poetry-core>=1.6.0"]
+build-backend = "poetry.core.masonry.api"
