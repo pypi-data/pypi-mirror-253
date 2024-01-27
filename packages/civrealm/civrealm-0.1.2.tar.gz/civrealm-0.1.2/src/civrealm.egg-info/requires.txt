@@ -1,0 +1,21 @@
+importlib-resources
+pyyaml>=5.4.1
+overrides
+wheel
+docker
+urllib3
+BitVector
+numpy
+tornado==6.3.2
+gymnasium==0.29.1
+selenium==4.9.1
+websocket-client
+filelock>=3.12.2
+matplotlib
+
+[:python_version < "3.12"]
+ray==2.6.3
+
+[dev]
+pytest
+pytest-xdist
