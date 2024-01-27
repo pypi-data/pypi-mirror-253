@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: Wallpaper-Group-Symmetry-Dataset
+Version: 0.1.1
+Summary: A Python toolkit for generating and analyzing symmetry datasets, based on the mathematical symmetry principle of wallpaper groups.
+Home-page: https://pypi.org/project/Wallpaper-Group-Symmetry-Dataset/
+Author: Yichen Guo, Joshua Agar
+Author-email: yig319@lehigh.edu, jca92@drexel.edu
+License: MIT
+Keywords: symmetry,wallpaper group,dataset generation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# Wallpaper Group Symmetry Dataset
+
+## Introduction
+The Wallpaper Group Symmetry Dataset project provides a comprehensive toolkit for generating and analyzing datasets based on the mathematical theory of wallpaper groups. This project is rooted in the intricate study of plane symmetry groups, offering a rich exploration of the 17 distinct categories of symmetrical patterns achievable through combinations of translation, reflection, glide reflection, and rotational operations. Aimed at mathematicians, computer scientists, data analysts, and educational professionals, this project bridges the gap between abstract mathematical theory and practical dataset generation.
+
+## Features
+This project offers a robust set of features designed to facilitate the study and application of wallpaper group symmetries:
+- **Dataset Generation:** Users can generate datasets categorizing the 17 distinct wallpaper symmetry types, each defined by unique combinations of symmetry operations including translations, mirrors, glides, and rotations (2-, 3-, 4-, and 6-fold).
+- **Example Notebooks:** Included Jupyter notebooks serve as comprehensive guides, illustrating the steps to generate example images and datasets, thereby demystifying the complex mathematical concepts behind wallpaper group symmetries.
+- **Statistical Evaluation:** Tools for evaluating and understanding the statistical properties of the generated datasets, enabling in-depth analysis and research.
+
+## Usage
+The project includes several Jupyter notebooks designed to showcase the generation and analysis of wallpaper symmetry datasets:
+- **Generating Example Images:** Learn how to create visually captivating images that represent each of the 17 symmetry types.
+- **Creating Example Datasets:** Step-by-step guide to compiling datasets based on specified symmetry criteria.
+- **Dataset Statistics:** Techniques for analyzing and interpreting the statistical aspects of the datasets, offering insights into the distribution and characteristics of the symmetry types.
+
+## Applications
+The Wallpaper Group Symmetry Dataset is a versatile tool with applications spanning educational purposes, mathematical research, and computer vision projects, among others. It provides a foundational dataset for exploring the geometric and symmetrical properties inherent in various natural and man-made patterns, offering valuable insights for both theoretical and applied projects.
+
+## Getting Started
+To get started with the Wallpaper Group Symmetry Dataset project, users should first ensure they have Python and Jupyter installed. Following this, the repository can be cloned from GitHub using the following command:
+
+'''git clone https://github.com/yig319/Wallpaper_Group_Symmetry_Dataset.git'''
+
+Once cloned, navigate to the project directory and launch Jupyter to explore the provided notebooks.
+
+## Contribution and Support
+Contributions to the Wallpaper Group Symmetry Dataset project are warmly welcomed. Whether it's extending the dataset, refining the notebooks, or improving the documentation, your input can greatly enhance this resource. For support and collaboration, please open an issue or pull request on the GitHub repository.
+
+## License
+This project is released under the [MIT License](https://opensource.org/licenses/MIT), allowing for widespread use and modification. The license encourages the free distribution and adaptation of the project, making it a valuable resource for the community.
