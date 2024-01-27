@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: EGOPY
+Version: 1.3.2024
+Summary: Define your trading style.
+Home-page: https://pypi.org/project/egopy
+Author: EGOPY
+License: BSD 3-Clause License
+        
+        Copyright (c) 2022-present, EGOPY
+        
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: Chinese (Simplified)
+Requires-Python: <3.11,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+﻿<p align="center">
+    <img src ="https://img.shields.io/badge/platform-linux-yellow.svg"/>
+    <img src ="https://img.shields.io/badge/python-3.10-blue.svg" />
+</p>
+
+## EGOPY = EGO + PYthon
+
+* Define your trading style.
+
+<p align="left">
+EGOPY Global Trader (EGOPY GT) 始于开源系统和交易框架，致力于研发更高效的智能投顾&量化投资交易系统。
+</p>
+
+
+## 环境准备
+* 支持的操作系统版本：<code>openSUSE Leap 15</code> 或 <code>Kubuntu 20.04 LTS</code>以上，推荐安装KDE类图形界面
+* 支持的Python版本：64位的<code>Python 3.10.x</code>（**注意必须是Python 64位版本**）
+
+
+## 安装运行
+* 预先下载此仓库的 <code>requirements.txt</code> 文件到本地，然后通过 <code>pip install -r requirements.txt</code> 进行安装。
+* 如果在中国境内，可以通过命令 <code>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt</code> 快速安装。
+* 如果talib不可用，可以尝试通过<code>conda install -c conda-forge ta-lib</code>安装talib库。
+* 通过<code>pip install egopy</code>方式安装主程序，成功后，尝试运行如下代码启动程序：
+* <code>python -m ego_trader.x</code> 启动中国期货市场CTP接口应用
+* <code>python -m ego_trader.ib</code> 启动全球交易市场IB接口应用
+* 使用前请自行测试。
+
+## 更新说明
+* 优化Tick级和分钟级GT系列策略模块。
+* 原生支持KJF系列策略模块。
+* 优化IB接口。
+
+
+## 版权说明
+* BSD 3-Clause License
