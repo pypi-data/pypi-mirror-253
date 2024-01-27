@@ -1,0 +1,2 @@
+[console_scripts]
+fantasy-ga = fantasy_ga.__main__:main
