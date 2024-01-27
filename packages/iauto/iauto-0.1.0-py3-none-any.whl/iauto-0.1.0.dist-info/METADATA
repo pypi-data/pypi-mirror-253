@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: iauto
+Version: 0.1.0
+Home-page: https://github.com/shellc/ia
+Author: shellc
+License: MIT
+Keywords: [AI,Automation]
+Requires-Dist: pydantic
+Requires-Dist: PyYAML
+Requires-Dist: prompt-toolkit
+Requires-Dist: colorama
+Requires-Dist: openai
+Requires-Dist: chatglm-cpp
+Requires-Dist: playwright
+
