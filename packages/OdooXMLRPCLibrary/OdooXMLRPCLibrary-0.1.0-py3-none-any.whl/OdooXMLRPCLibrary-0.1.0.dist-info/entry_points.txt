@@ -1,0 +1,4 @@
+[console_scripts]
+create_contact = odoo_library.create_contact:main
+odoo_library = odoo_library.create_order:main
+

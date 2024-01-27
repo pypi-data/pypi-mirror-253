@@ -1,0 +1,11 @@
+odoo_library/__init__.py,sha256=Fjuxp7Gr-oDlSwirvt7WCRlxiQWmnLIDosA7jC_CLjY,462
+odoo_library/create_contact.py,sha256=J4kgsYsUL1VqWBppJ1pEGWNyHdcf-jj93eQp7NUCbMI,2110
+odoo_library/create_rental.py,sha256=Uh3qqVDNT11too_rVNtsv_RHjaRs3slTs9bcclI_jV4,2124
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_odoo_library.py,sha256=jn-CRyzGVQmSr84UamNncOEw0NGOL842arUGnIhd4jQ,1059
+OdooXMLRPCLibrary-0.1.0.dist-info/LICENSE,sha256=kc75Xaqf6rpAOw4whbuJffDYrl_GFQ1Xr8ZQcojLwDI,1089
+OdooXMLRPCLibrary-0.1.0.dist-info/METADATA,sha256=rpHrVYyEwOMII0rP03ouX8CV4Rfsuiz891m-OAGAejE,755
+OdooXMLRPCLibrary-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+OdooXMLRPCLibrary-0.1.0.dist-info/entry_points.txt,sha256=8vfWHJPUpIrnc3_g4Lcx3jDi5bXZvrqAbOLFw-wyTbQ,115
+OdooXMLRPCLibrary-0.1.0.dist-info/top_level.txt,sha256=82Vc7fAvD8rZtZ_ZkzDLnORougKy7kJ5QJg3toFLafM,19
+OdooXMLRPCLibrary-0.1.0.dist-info/RECORD,,
