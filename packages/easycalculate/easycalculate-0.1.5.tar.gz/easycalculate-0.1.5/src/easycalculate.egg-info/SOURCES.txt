@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/easycalculate.py
+src/easycalculate.egg-info/PKG-INFO
+src/easycalculate.egg-info/SOURCES.txt
+src/easycalculate.egg-info/dependency_links.txt
+src/easycalculate.egg-info/top_level.txt
