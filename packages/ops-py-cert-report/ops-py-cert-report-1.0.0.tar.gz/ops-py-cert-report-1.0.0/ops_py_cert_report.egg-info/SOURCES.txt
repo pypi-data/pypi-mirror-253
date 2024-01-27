@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+cert_report/__init__.py
+cert_report/cert_report.py
+ops_py_cert_report.egg-info/PKG-INFO
+ops_py_cert_report.egg-info/SOURCES.txt
+ops_py_cert_report.egg-info/dependency_links.txt
+ops_py_cert_report.egg-info/top_level.txt
