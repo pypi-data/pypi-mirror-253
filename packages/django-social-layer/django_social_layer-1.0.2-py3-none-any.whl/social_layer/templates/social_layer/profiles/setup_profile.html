@@ -1,0 +1,19 @@
+{% extends 'social_layer/base.html' %}
+{% load i18n %}
+
+{% block content %}
+    {% if sprofile.picture.media_thumbnail %}
+        <img src="{{ sprofile.picture.media_thumbnail.url }}" style="height: 30vh; width: auto;"/>
+    {% endif %}
+    <h1>{% trans "Your Profile" %}</h1>
+    <form method="POST" action="." enctype='multipart/form-data' class="full-width">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="{% trans 'save' %}" class="full-width"/>
+    </form>
+    {% if redir_after %}
+        <p>
+            <a href="{{ redir_after }}">{% trans 'not now' %}</a>
+        </p>
+    {% endif %}
+{% endblock content %}
