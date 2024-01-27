@@ -1,0 +1,29 @@
+[project]
+name = "azcam-server"
+version = "24.0"
+description = "Server package for AzCam acquisition and analysis package"
+license = { file = "LICENSE" }
+readme = "README.md"
+keywords = ["ccd", "imaging", "astronomy", "sensors"]
+authors = [{ name = "Michael Lesser" }, { email = "mlesser@arizona.edu" }]
+requires-python = ">= 3.10"
+dependencies = [
+    "numpy",
+    "astropy",
+    "pywin32; sys_platform == 'win32'",
+    "fastapi",
+    "uvicorn",
+    "jinja2",
+    "requests",
+]
+
+[project.urls]
+Documentation = "https://azcam-server.readthedocs.io/"
+Repository = "https://github.com/mplesser/azcam-server/"
+
+[tool.flit.module]
+name = "azcam_server"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
