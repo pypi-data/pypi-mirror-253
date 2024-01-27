@@ -1,0 +1,11 @@
+TSPLifesaver/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+TSPLifesaver/optimizer.py,sha256=vbzR8r0_a3nZO4VGEkPOReUGrUZapxqMjDEyLcGpP8c,2608
+TSPLifesaver/structure.py,sha256=r_oKDR1UluD4Zl4p8kspWa2tiqzhMUawgLOyoW8uYRU,2848
+TSPLifesaver/tools.py,sha256=lAuPCgf3kEQ1z2xW88r9iXyxGmLH9cti1-Po_FsUabY,2545
+TSPLifesaver/abc/__init__.py,sha256=k4CJ7aAn49FjEnc92QiwjoUFhTu-mRUhKGHu22Oe2DU,45
+TSPLifesaver/abc/abc.py,sha256=ErHpFaEfBFAfoZ64RXcJBsHl5dLx8DHmlM_W9wuf-X4,1295
+TSPLifesaver-0.0.3.dist-info/LICENSE,sha256=2rMsaq9CYQI_sY9DN0Q29cJ3zvV_OJTqgWd2uNEG8ho,1057
+TSPLifesaver-0.0.3.dist-info/METADATA,sha256=Xt9c1g1DAk5pobYW5FnRGLRUehZgzsN5mXpekSZYivo,3071
+TSPLifesaver-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+TSPLifesaver-0.0.3.dist-info/top_level.txt,sha256=QNua8qdGCcma27B-tTl14uUO040a7ZkKuAhvRpzw2J8,13
+TSPLifesaver-0.0.3.dist-info/RECORD,,
