@@ -1,0 +1,8 @@
+dune-grid<=2.10.0
+dune-istl<=2.10.0
+matplotlib
+dune-functions<=2.10.0
+numpy
+dune-geometry<=2.10.0
+scipy
+dune-common<=2.10.0
