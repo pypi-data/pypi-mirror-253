@@ -1,0 +1,23 @@
+README
+setup.py
+pychessboard/__init__.py
+pychessboard/additions.py
+pychessboard/constants.py
+pychessboard/pychessboard.py
+pychessboard.egg-info/PKG-INFO
+pychessboard.egg-info/SOURCES.txt
+pychessboard.egg-info/dependency_links.txt
+pychessboard.egg-info/requires.txt
+pychessboard.egg-info/top_level.txt
+pychessboard/assets/images/black bishop.png
+pychessboard/assets/images/black king.png
+pychessboard/assets/images/black knight.png
+pychessboard/assets/images/black pawn.png
+pychessboard/assets/images/black queen.png
+pychessboard/assets/images/black rook.png
+pychessboard/assets/images/white bishop.png
+pychessboard/assets/images/white king.png
+pychessboard/assets/images/white knight.png
+pychessboard/assets/images/white pawn.png
+pychessboard/assets/images/white queen.png
+pychessboard/assets/images/white rook.png
