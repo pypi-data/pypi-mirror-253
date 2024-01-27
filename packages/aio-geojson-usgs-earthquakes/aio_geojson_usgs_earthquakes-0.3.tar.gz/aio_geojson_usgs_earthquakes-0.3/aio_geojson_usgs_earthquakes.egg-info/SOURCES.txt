@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+aio_geojson_usgs_earthquakes/__init__.py
+aio_geojson_usgs_earthquakes/__version__.py
+aio_geojson_usgs_earthquakes/consts.py
+aio_geojson_usgs_earthquakes/feed.py
+aio_geojson_usgs_earthquakes/feed_entry.py
+aio_geojson_usgs_earthquakes/feed_manager.py
+aio_geojson_usgs_earthquakes.egg-info/PKG-INFO
+aio_geojson_usgs_earthquakes.egg-info/SOURCES.txt
+aio_geojson_usgs_earthquakes.egg-info/dependency_links.txt
+aio_geojson_usgs_earthquakes.egg-info/requires.txt
+aio_geojson_usgs_earthquakes.egg-info/top_level.txt
