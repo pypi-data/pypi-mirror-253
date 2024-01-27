@@ -1,0 +1,5 @@
+[console_scripts]
+example_simple_replay=examples.simple_replay:main
+example_simple_server=examples.simple_server:main
+serve=arflow.main:serve
+
