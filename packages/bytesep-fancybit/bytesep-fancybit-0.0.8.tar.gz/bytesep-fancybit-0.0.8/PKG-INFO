@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bytesep-fancybit
+Version: 0.0.8
+Summary: Music source separation fancybit 2024
+Home-page: https://github.com/fancybit/music_source_separation
+Author: fancybit
+Author-email: fancybit@qq.com
+License: Apache 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+README.md
