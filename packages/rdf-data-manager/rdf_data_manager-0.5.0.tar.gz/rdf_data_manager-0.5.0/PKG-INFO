@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: rdf-data-manager
+Version: 0.5.0
+Summary: Load RDF data from S3 to SPARQL endpoint
+Author: Logilab
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.26.84,<2.0.0)
+Requires-Dist: rdflib (>=6.3.2,<7.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# RDF data manager
+
+Upload data from filesystem or S3 to a Virtuoso triplestore
+
+## Install
+
+```bash
+poetry install
+```
+
+## Run
+
+```bash
+rdf-data-manager --help
+```
+
