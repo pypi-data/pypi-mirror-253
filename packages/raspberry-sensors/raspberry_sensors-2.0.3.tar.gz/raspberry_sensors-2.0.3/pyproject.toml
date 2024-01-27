@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "raspberry_sensors"
+version = "2.0.3"
+dependencies = [
+  "Adafruit-DHT",
+  "adafruit-circuitpython-ads1x15",
+  "mh-z19",
+]
+authors = [
+    {name="Develper", email="testerlzt@mail.ru"},
+]
+description = "This package for getting values from sensors mh_z19, DHT, ads1015"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["raspberry_sensors", "Adafruit-DHT", "adafruit-circuitpython-ads1x15", "mh-z19", "raspberry", "raspberry pi", "sensors", "hardware", "IoT", "Python"]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
