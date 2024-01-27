@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rayconfig"
+version = "0.0.1"
+authors = [
+    { name="Ahmed Mahran", email="ahmed-mahran@mashin.io" },
+]
+description = "Polymorphic structured configurations as dataclasses for ray jobs."
+readme = "README.md"
+
+dependencies = [
+    "jsonargparse",
+    "dacite",
+]
+
+[project.urls]
+Homepage = "https://github.com/CodecLondon/rayconfig"
+
+[tool.setuptools.packages.find]
+include = ["rayconfig*"]

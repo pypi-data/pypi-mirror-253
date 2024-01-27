@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rayconfig
+Version: 0.0.1
+Summary: Polymorphic structured configurations as dataclasses for ray jobs.
+Author-email: Ahmed Mahran <ahmed-mahran@mashin.io>
+Project-URL: Homepage, https://github.com/CodecLondon/rayconfig
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jsonargparse
+Requires-Dist: dacite
+
+# rayconfig
+Polymorphic structured configurations as dataclasses for ray jobs.
