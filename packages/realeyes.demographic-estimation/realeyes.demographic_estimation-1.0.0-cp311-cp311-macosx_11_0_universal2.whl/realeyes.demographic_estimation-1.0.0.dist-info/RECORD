@@ -1,0 +1,9 @@
+realeyes/demographic_estimation/__init__.py,sha256=mSr59fdHPcLrkgqUMsuADAb2C4bDLKobcakhYWzrl0k,84
+realeyes/demographic_estimation/__init__.pyi,sha256=QD3nnw5PJe9hE_byyYyvPU9fmc1OuspXJ9QbWddYxrk,4107
+realeyes/demographic_estimation/cpp.cpython-311-darwin.so,sha256=s1dXzzkkYDHIr7gKgkuOV1VdybDwKQQA6BSi8kNIS_s,1210665
+realeyes/demographic_estimation/libDemographicEstimationLibrary.dylib,sha256=pVpVfuAkfODLF7SAhTKGG3BKuq7bCY1pjbijMIBP6i4,18631904
+realeyes/demographic_estimation/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+realeyes.demographic_estimation-1.0.0.dist-info/METADATA,sha256=7iUNA9ldBgFtrfXecc1OvbGIR-LlkWqqSjbN8I_wjr0,290
+realeyes.demographic_estimation-1.0.0.dist-info/WHEEL,sha256=FC3UK38D2pRZOMRrvghdrfbp2ik06raaw67nwqnEhoM,115
+realeyes.demographic_estimation-1.0.0.dist-info/top_level.txt,sha256=8zcEfTWsD25zwFDRLvCl1DrzsECXtSwr7OoPbBuuPH0,9
+realeyes.demographic_estimation-1.0.0.dist-info/RECORD,,
