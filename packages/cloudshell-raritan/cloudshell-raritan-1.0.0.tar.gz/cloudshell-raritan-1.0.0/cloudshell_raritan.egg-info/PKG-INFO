@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cloudshell-raritan
+Version: 1.0.0
+Summary: Quali Raritan PDU specific package
+Home-page: http://www.quali.com/
+Author: Quali
+Author-email: info@quali.com
+Requires-Python: ~=3.9
+Requires-Dist: cloudshell-shell-core~=6.0
+Requires-Dist: cloudshell-shell-standards~=2.0
+Requires-Dist: cloudshell-shell-flows~=3.0
+Requires-Dist: cloudshell-cli~=5.0
+Requires-Dist: cloudshell-snmp~=5.0
+Requires-Dist: cloudshell-snmp-autoload~=2.0
+Requires-Dist: attrs<24,>=22
+Requires-Dist: typing-extensions>=4.4
+
+Raritan PDU Shell operations
