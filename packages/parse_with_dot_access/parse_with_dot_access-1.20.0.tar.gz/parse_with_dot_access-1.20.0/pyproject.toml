@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "parse_with_dot_access"
+version = "1.20.0"
+description = "a daily rebase of parse with dot access"
+readme = "README.md"
+license = "ISC"
+packages = [
+    { include = "parse.py" },
+]
+repository = "https://github.com/CircleOnCircles/parse"
+authors = [
+    "Richard Jones <richard@python.org>"
+]
+maintainers = [
+    "Wim Glenn <hey@wimglenn.com>",
+    "Nutchanon Ninyawee <me@nutchanon.org>"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
