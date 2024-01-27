@@ -1,0 +1,8 @@
+README.md
+setup.py
+py_statistics/__init__.py
+py_statistics/statistics.py
+python_statistics.egg-info/PKG-INFO
+python_statistics.egg-info/SOURCES.txt
+python_statistics.egg-info/dependency_links.txt
+python_statistics.egg-info/top_level.txt
