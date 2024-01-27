@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: vape_clients
+Version: 0.0.1
+Summary: vapeuniverse module microservice clients
+Home-page: https://github.com/vapeuniverse/vape_clients
+Download-URL: https://github.com/vapeuniverse/vape_clients/archive/0.0.1.zip
+Author: nChurn
+Author-email: wapeuniverse@gmail.com
+
+ping
