@@ -1,0 +1,5 @@
+setup.py
+bitsandbytes_npu.egg-info/PKG-INFO
+bitsandbytes_npu.egg-info/SOURCES.txt
+bitsandbytes_npu.egg-info/dependency_links.txt
+bitsandbytes_npu.egg-info/top_level.txt
