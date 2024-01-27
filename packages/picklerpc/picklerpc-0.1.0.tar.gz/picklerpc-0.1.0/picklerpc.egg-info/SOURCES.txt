@@ -1,0 +1,8 @@
+README.md
+setup.py
+picklerpc/__init__.py
+picklerpc/rpc.py
+picklerpc.egg-info/PKG-INFO
+picklerpc.egg-info/SOURCES.txt
+picklerpc.egg-info/dependency_links.txt
+picklerpc.egg-info/top_level.txt
