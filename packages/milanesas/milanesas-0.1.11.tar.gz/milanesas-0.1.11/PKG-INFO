@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: milanesas
+Version: 0.1.11
+Summary: A group of tools to do exploratory analysis.
+Home-page: https://torrezmn.github.io/EDA_Helper/eda_helper/
+Keywords: packaging,data_science,pandas
+Author: Torrez, Milton
+Author-email: torrez.mn@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+
+# Este es el readme del paquete choto.
+
