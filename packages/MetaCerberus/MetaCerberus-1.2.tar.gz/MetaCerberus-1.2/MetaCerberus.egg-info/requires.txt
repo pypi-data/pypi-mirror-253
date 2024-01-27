@@ -1,0 +1,10 @@
+setuptools
+ray
+metaomestats
+configargparse
+kaleido
+scikit-learn
+pandas
+plotly
+psutil
+dominate
