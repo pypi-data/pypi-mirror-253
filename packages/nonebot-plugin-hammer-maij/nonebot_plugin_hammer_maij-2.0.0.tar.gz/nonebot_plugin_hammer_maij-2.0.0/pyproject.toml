@@ -1,0 +1,43 @@
+[project]
+name = "nonebot-plugin-hammer-maij"
+version = "2.0.0"
+description = "A Nonebot2 plugin implements MaiJ API 3.0, which helps MaimaiDX players share the information of game zones."
+readme = "README.md"
+repository = "https://github.com/ArgonarioD/nonebot-plugin-hammer-maij"
+requires-python = ">=3.9"
+authors = [
+    { name = "ArgonarioD", email = "argonariod@outlook.com" },
+]
+dependencies = [
+    "nonebot2>=2.1.0",
+    "nonebot-adapter-onebot>=2.3.0",
+    "nonebot-plugin-localstore>=0.5.0",
+    "httpx[http2]>=0.26.0",
+    "nonebot-plugin-hammer-core>=0.3.3",
+    "playwright>=1.41.0",
+]
+
+[project.license]
+text = "Apache-2.0"
+
+[tool.nonebot]
+adapters = [
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
+]
+plugins = [
+    "nonebot_plugin_localstore",
+    "nonebot_plugin_hammer_maij",
+]
+plugin_dirs = [
+    "nonebot_plugin_hammer_maij/plugins",
+]
+builtin_plugins = []
+
+[tool.pdm]
+distribution = true
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
