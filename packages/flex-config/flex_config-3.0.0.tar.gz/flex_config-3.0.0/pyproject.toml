@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "flex-config"
+version = "3.0.0"
+description="Easily configure Python apps via environment variables, YAML, and AWS SSM Param Store."
+repository="https://github.com/emann/flex-config"
+documentation="https://emann.github.io/flex-config"
+keywords=["config", "AWS", "SSM", "serverless", "environment"]
+readme = "docs/README.md"
+packages = [
+    {include = "flex_config"}
+]
+authors = ["Dylan Anthony <danthony@triaxtec.com>", "Ethan Mann <emann@triaxtec.com>"]
+include = ["CHANGELOG.md", "flex_config/py.typed"]
+license = "MIT"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Utilities",
+]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.5.2"
+boto3 = {version = "^1.13.1", optional = true}
+pyyaml = {version = "^6.0.1", optional = true}
+toml = {version = "^0.10.2", optional = true}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-mock = "^3.12.0"
+pytest-cov = "^4.1.0"
+mypy = "^1.7.1"
+safety = "^2.3.5"
+taskipy = "^1.12.2"
+ruff = "^0.1.7"
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.2"
+markdown-include = "^0.8.1"
+mkdocstrings = "^0.24.0"
+types-pyyaml = "^6.0.12.12"
+types-toml = "^0.10.8.7"
+
+[tool.poetry.extras]
+aws = ["boto3"]
+yaml = ["pyyaml"]
+toml = ["toml"]
+all = ["boto3", "pyyaml", "toml"]
+
+
+[tool.taskipy.tasks]
+check = "task security && task style && task types && task lint && task test"
+security = "poetry export -f requirements.txt | poetry run safety check --bare --stdin"
+style = "ruff format ."
+types = "mypy flex_config"
+lint = "ruff check . --fix"
+test = "pytest --cov=flex_config --cov-report term-missing"
+
+[tool.ruff]
+line-length = 120
