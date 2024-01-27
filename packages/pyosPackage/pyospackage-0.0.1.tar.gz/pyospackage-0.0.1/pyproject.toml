@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyosPackage"
+#dynamic = ["version"]
+version = "0.0.1" # uncomment this and comment the line above if you want to manually update versions
+
+
+[project.urls] # Optional
+# "Homepage" = "https://www.pyopensci.org"
+# "Bug Reports" = "https://github.com/pyopensci/pyosPackage/issues"
+# "Source" = "https://github.com/pyopensci/pyosPackage/issues"
+#"Funding" = "" # optional
