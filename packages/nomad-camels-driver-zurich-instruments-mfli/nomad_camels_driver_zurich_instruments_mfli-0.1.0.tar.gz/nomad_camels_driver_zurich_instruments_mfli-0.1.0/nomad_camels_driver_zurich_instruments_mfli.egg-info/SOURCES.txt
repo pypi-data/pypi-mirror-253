@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+nomad_camels_driver_zurich_instruments_mfli/zurich_instruments_mfli.py
+nomad_camels_driver_zurich_instruments_mfli/zurich_instruments_mfli_ophyd.py
+nomad_camels_driver_zurich_instruments_mfli.egg-info/PKG-INFO
+nomad_camels_driver_zurich_instruments_mfli.egg-info/SOURCES.txt
+nomad_camels_driver_zurich_instruments_mfli.egg-info/dependency_links.txt
+nomad_camels_driver_zurich_instruments_mfli.egg-info/requires.txt
+nomad_camels_driver_zurich_instruments_mfli.egg-info/top_level.txt
