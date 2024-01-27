@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: STEM-Vibrations
+Version: 0.1.2
+Summary: STEM model
+Author: attr: stem.__author__
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy>=1.24
+Requires-Dist: scipy>=1.10.1
+Requires-Dist: plotly>=5.15.0
+Requires-Dist: gmsh_utils
+Requires-Dist: random_fields
+Provides-Extra: testing
+Requires-Dist: pytest>=7.2; extra == "testing"
+Requires-Dist: pytest-cov>=4.0; extra == "testing"
+Requires-Dist: tox>=4.4; extra == "testing"
+Requires-Dist: mypy>=1.1; extra == "testing"
+Requires-Dist: beautifulsoup4>=4.12; extra == "testing"
+Requires-Dist: matplotlib==3.7.4; extra == "testing"
+Provides-Extra: docs
+Requires-Dist: Sphinx==6.2.1; extra == "docs"
+Requires-Dist: sphinx-rtd-theme==1.2.2; extra == "docs"
