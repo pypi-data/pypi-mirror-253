@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+packaide_client/__init__.py
+packaide_client/sync.py
+packaide_client.egg-info/PKG-INFO
+packaide_client.egg-info/SOURCES.txt
+packaide_client.egg-info/dependency_links.txt
+packaide_client.egg-info/requires.txt
+packaide_client.egg-info/top_level.txt
