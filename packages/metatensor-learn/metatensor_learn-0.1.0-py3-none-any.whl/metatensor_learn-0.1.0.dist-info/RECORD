@@ -1,0 +1,16 @@
+metatensor/learn/__init__.py,sha256=A5Ltx4Q0aJ6MNNs8P1M5XNIWYLFVFLOT2zKCGk4_0sI,279
+metatensor/learn/_classes.py,sha256=Q2rn0SnfBl10kmgNjKUeeWPfFgQlILtFpN4-zpbZJ1E,813
+metatensor/learn/data/__init__.py,sha256=onGn-On9UlMpswWVq1dh87gb2kjUsf3y_ACNJiUtd64,229
+metatensor/learn/data/collate.py,sha256=IDZGIRwR8Nv6YtCQE2GW3L1UUTDhEhu8OvloCLL-iaw,4867
+metatensor/learn/data/dataloader.py,sha256=HGCIrvIqV8LXr8XbdrsiKnuGnB1kQJbXl9Pyvv3Boy8,827
+metatensor/learn/data/dataset.py,sha256=Dky3eYqDSxLHhAhZXDKrrjPkUNOy_b-VFkytoBx-6kk,9476
+metatensor/learn/nn/__init__.py,sha256=tDknWaC_fQ-LNFEuMww8wvaRXaESdK_QagKNtD2uUsA,114
+metatensor/learn/nn/linear.py,sha256=6VKguZRNGCfUMBB7qvfBjaJgr92W8nu4d5e7nRhgeQQ,5723
+metatensor/learn/nn/module_map.py,sha256=OlfLfL8KkrgBAibh-gdEOr9k9gw3yUBnuVclPpgBxY8,11791
+metatensor_learn-0.1.0.dist-info/AUTHORS,sha256=C7zbvq1Qd8-m1xljVPZIE4TS4EOYxPnckvTCVqJYjRI,90
+metatensor_learn-0.1.0.dist-info/LICENSE,sha256=1RVWckdmTsOd_iQkvFCXloNE5G_2pQieMHUuDqMtz1A,1508
+metatensor_learn-0.1.0.dist-info/METADATA,sha256=NXlX_epgEE3xVYFTGk_8EFAakSO2UnRWfZNanw7DtLA,1654
+metatensor_learn-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+metatensor_learn-0.1.0.dist-info/top_level.txt,sha256=i1ucAZtmBZcn0S5_t-UDHe-noTK3XU7KVD5zFyuyGDM,11
+metatensor_learn-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+metatensor_learn-0.1.0.dist-info/RECORD,,
