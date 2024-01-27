@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: yayaml
+Version: 0.2.0
+Summary: yayaml makes yaml nicer. yay!
+Home-page: https://gitlab.com/blsqr/yayaml
+Author: Yunus Sevinchan
+Author-email: Yunus Sevinchan <yunussevinchan@gmail.com>
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Utilities
+Provides-Extra: test
+Provides-Extra: doc
+Provides-Extra: dev
+License-File: LICENSE
+
+
+The `yayaml` package provides extensions to `ruamel.yaml` that allow creating
+some often-needed Python objects directly via YAML tags and making it easier
+to represent custom objects when writing YAML files.
