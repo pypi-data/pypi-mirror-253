@@ -1,0 +1,15 @@
+
+[dev]
+simpleaudio
+pyaudio
+playsound2
+
+[playsound]
+pygobject
+playsound2
+
+[pyaudio]
+pyaudio
+
+[simpleaudio]
+simpleaudio
