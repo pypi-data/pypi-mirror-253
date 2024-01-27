@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: vihub
+Version: 0.0.4
+Description-Content-Type: text/markdown
+Requires-Dist: requests
