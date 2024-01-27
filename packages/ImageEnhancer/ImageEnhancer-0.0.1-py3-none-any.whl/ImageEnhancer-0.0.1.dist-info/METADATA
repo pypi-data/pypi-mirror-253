@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ImageEnhancer
+Version: 0.0.1
+Summary: Real-ESRGAN strives to create effective algorithms for general image restoration, while GFPGAN focuses on enhancing the clarity of facial features in blurred images.
+Author: Rauhan Ahmed Siddiqui
+Author-email: rauhaan.siddiqui@gmail.com
+License: BSD-3-Clause License
+Keywords: computer vision,pytorch,image restoration,super-resolution,esrgan,real-esrgan,gfpgan,facial image restoration,image enhancer,image upscaler,upscaler
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: basicsr >=1.4.2
+Requires-Dist: facexlib >=0.2.5
+Requires-Dist: gfpgan >=1.3.5
+Requires-Dist: realesrgan
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
+Requires-Dist: torch >=1.7
+Requires-Dist: torchvision
+Requires-Dist: tqdm
+Requires-Dist: gradio
+
+Rauhan Ahmed Siddiqui's web application, hosted on Hugging Face Spaces, is your one-stop shop for AI-powered image enhancement and upscaling. This innovative tool leverages the power of two Generative Adversarial Networks (GANs): Real-ESRGAN for seamlessly upscaling image backgrounds and GFPGAN for masterfully enhancing facial details in portraits. Deploying Gradio for production-ready deployment, this app breathes new life into your photos, transforming blurry memories and low-resolution gems into crisp, high-quality masterpieces. Experience the magic of AI-powered image restoration – upscale your cherished moments and rediscover the beauty hidden within!
