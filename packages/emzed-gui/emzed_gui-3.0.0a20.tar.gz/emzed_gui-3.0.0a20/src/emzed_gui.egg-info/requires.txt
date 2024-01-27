@@ -1,0 +1,8 @@
+emzed>=3.0.0a17
+PyQt5
+PyQt5-Qt
+guidata==1.7.7
+pythonqwt==0.5.5
+guiqwt303>=3.0.3
+matplotlib
+numpy
