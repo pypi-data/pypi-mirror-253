@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/term_ai/__init__.py
+src/term_ai/chat.py
+src/term_ai/config.py
+src/term_ai/main.py
+src/terminalai.egg-info/PKG-INFO
+src/terminalai.egg-info/SOURCES.txt
+src/terminalai.egg-info/dependency_links.txt
+src/terminalai.egg-info/requires.txt
+src/terminalai.egg-info/top_level.txt
