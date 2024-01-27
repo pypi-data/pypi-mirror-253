@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: python-statistics
+Version: 0.0.3
+Summary: Module name confusion fixed
+Author: Meteey (Mustafa Konur)
+Author-email: <konurmustafa17@gmail.com>
+Keywords: statistics,z-score,normalization
