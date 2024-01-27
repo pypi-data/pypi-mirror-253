@@ -1,0 +1,3 @@
+[console_scripts]
+mt-thresholds = mt_thresholds:cmd_entry
+mt_thresholds = mt_thresholds:cmd_entry
