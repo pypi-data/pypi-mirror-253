@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+topsis/__init__.py
+topsis/__main__.py
+topsis_chirag_102103278.egg-info/PKG-INFO
+topsis_chirag_102103278.egg-info/SOURCES.txt
+topsis_chirag_102103278.egg-info/dependency_links.txt
+topsis_chirag_102103278.egg-info/entry_points.txt
+topsis_chirag_102103278.egg-info/requires.txt
+topsis_chirag_102103278.egg-info/top_level.txt

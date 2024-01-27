@@ -1,0 +1,2 @@
+[console_scripts]
+topsis_chirag_102103278 = topsis:main
