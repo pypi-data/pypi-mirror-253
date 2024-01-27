@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+./unix_socket_server/__init__.py
+unix_socket_server.egg-info/PKG-INFO
+unix_socket_server.egg-info/SOURCES.txt
+unix_socket_server.egg-info/dependency_links.txt
+unix_socket_server.egg-info/top_level.txt
