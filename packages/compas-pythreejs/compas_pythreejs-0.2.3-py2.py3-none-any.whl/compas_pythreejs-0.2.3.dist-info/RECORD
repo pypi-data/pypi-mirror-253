@@ -1,0 +1,15 @@
+compas_pythreejs/__init__.py,sha256=sWY7sn3s-Ug60tsBCPeXlzz3BP4mofyxktip0VFYnp0,575
+compas_pythreejs/__main__.py,sha256=-GqoftNECZBtC8F82KWJrdSD05BcKBrrL0ElHEEUHyk,36
+compas_pythreejs/display.py,sha256=2iYxVFnqAkl0e2GnRbSrYfdQ20DuV-zrY2hcsfNQWac,1490
+compas_pythreejs/conversions/__init__.py,sha256=FlSbOWPVRwQHOXOJrdBuvks0_fwo2XHF9wnWUm1VVFk,136
+compas_pythreejs/conversions/colors.py,sha256=nnzsqVnKUslAsJMJmKeBDYVDQVszUEYZDSau5RQDFnw,707
+compas_pythreejs/conversions/geometry.py,sha256=E34CMRFb6tSMOPyIS3Sp6G6yFZtbmkpc19lEklxq4NM,634
+compas_pythreejs/scene/__init__.py,sha256=M-nt3W4YrbMDdXXXsR0RCgRjp5Kmn5_dgHGx1IXIlwA,3765
+compas_pythreejs/scene/boxobject.py,sha256=cgxfIigNtOhI9vV9kGInUg09vU6WY0UNYMdVoPYBKmM,1472
+compas_pythreejs/scene/sceneobject.py,sha256=GkKGkWPQM_B_IDgI4lbQcMNfjqif7UrQxH-0U9jNl6s,335
+compas_pythreejs-0.2.3.dist-info/AUTHORS.md,sha256=8sbNfY5yOEFIAiEOiWT6n-ozEIKSV3nXwsQ5Iqvo478,96
+compas_pythreejs-0.2.3.dist-info/LICENSE,sha256=fEmP8OQ5ZTQKGXIeplC_YhwQY0mk_4cNi798UcU78Eo,1056
+compas_pythreejs-0.2.3.dist-info/METADATA,sha256=IW16ZzlC6xdAwbDx6nb1y-U_yyHxSpfVF7kpfXrHupY,3125
+compas_pythreejs-0.2.3.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+compas_pythreejs-0.2.3.dist-info/top_level.txt,sha256=hD3Nh49-rabEVcsI9ZvBvEPfEKjF8Smg5PBRGmGh4eA,17
+compas_pythreejs-0.2.3.dist-info/RECORD,,
