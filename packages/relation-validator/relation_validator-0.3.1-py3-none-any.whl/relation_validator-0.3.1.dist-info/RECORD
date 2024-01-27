@@ -1,0 +1,10 @@
+relation_validator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+relation_validator/__main__.py,sha256=zq7I2-Nq3ESbJnbsQyX8gp377D-nQA-Yy0zLMReqHG0,1335
+relation_validator/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+relation_validator/utils/utils.py,sha256=e1s21rRiRQ1bUIwT7QA1_be-vCTSt_WMtuydc__Jro4,3526
+relation_validator/validator.py,sha256=aTGlc1hHHJ96W_QnXmNE_qz1fOT-YUrppaVZd5pr6yY,1133
+relation_validator-0.3.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+relation_validator-0.3.1.dist-info/METADATA,sha256=opsx58XHAsDh2x08FYcFdDjX7szwIZib99MHUlxhqDc,3345
+relation_validator-0.3.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+relation_validator-0.3.1.dist-info/entry_points.txt,sha256=vhu9eJmsa8wJzwQAZZqOsQxS2eksZ6qOfLz8qYTSEy4,71
+relation_validator-0.3.1.dist-info/RECORD,,
