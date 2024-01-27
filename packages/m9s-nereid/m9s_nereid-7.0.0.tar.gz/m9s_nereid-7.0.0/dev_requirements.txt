@@ -1,0 +1,11 @@
+# Install development requirements
+
+tox
+coverage
+coverage-badge
+flake8
+
+# Documentation
+sphinx
+
+-r requirements.txt
