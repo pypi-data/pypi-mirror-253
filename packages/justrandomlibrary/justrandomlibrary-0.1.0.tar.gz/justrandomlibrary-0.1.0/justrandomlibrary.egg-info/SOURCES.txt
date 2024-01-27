@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+justrandomlibrary.egg-info/PKG-INFO
+justrandomlibrary.egg-info/SOURCES.txt
+justrandomlibrary.egg-info/dependency_links.txt
+justrandomlibrary.egg-info/top_level.txt
+my_first_package/__init__.py
