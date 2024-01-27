@@ -1,0 +1,5 @@
+translation_processors/__init__.py,sha256=cMw3TZG_uijhW_bLbVGkB3cDHBGElMazHkk870tfubo,181
+translation_processors/post/fix_cr_lf.py,sha256=0VHVKQt3AlC8bQdiK6-xJasGNIpZCTlKvI8UT7z0xG0,458
+harken_translation_processors-0.1.1.dist-info/METADATA,sha256=rxaQbj87ThJfuFvPZFZ8WKbOFkOm4xSwPlsDwaH94DM,809
+harken_translation_processors-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+harken_translation_processors-0.1.1.dist-info/RECORD,,
