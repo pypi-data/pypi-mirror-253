@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: xsocs
+Version: 2024.1.0
+Summary: Xray Strain Orientation Calculation Software
+Home-page: https://gitlab.esrf.fr/kmap/xsocs
+Author: ESRF
+Author-email: silx@esrf.fr
+License: MIT
+Project-URL: Documentation, https://kmap.gitlab-pages.esrf.fr/xsocs/
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: h5py
+Requires-Dist: fabio
+Requires-Dist: silx>=1.0.0
+Requires-Dist: xrayutilities
+Requires-Dist: scipy
+Requires-Dist: setuptools
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: build; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: nbsphinx; extra == "dev"
+Requires-Dist: pillow; extra == "dev"
+Requires-Dist: setuptools; extra == "dev"
+Requires-Dist: Sphinx; extra == "dev"
+Requires-Dist: sphinxcontrib.programoutput; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Provides-Extra: gui
+Requires-Dist: PyOpenGL; extra == "gui"
+Requires-Dist: matplotlib; extra == "gui"
+Requires-Dist: PyQt5; extra == "gui"
+
+X-SOCS
+======
+
+The X-ray Strain Orientation Calculation Software (X-SOCS) is a user-friendly software,
+developed for automatic analysis of 5D sets of data recorded during continuous mapping measurements.
+X-SOCS aims at retrieving strain and tilt maps of nanostructures, films, surfaces or even embedded structures.
+
+`Documentation <http://kmap.gitlab-pages.esrf.fr/xsocs>`_
+
+Installation
+------------
+
+X-SOCS runs on Linux, Windows and macOS with `Python <https://www.python.org/>`_ >=3.7 and can be installed with::
+
+    pip install xsocs[gui]
+
+or with conda::
+
+    conda install -c conda-forge xsocs
+
+See `How to install XSocs <http://kmap.gitlab-pages.esrf.fr/xsocs/install.html>`_ for details.
+
+Using XSOCS
+------------
+
+Once installed, you can run X-SOCS from the console with either::
+
+    xsocs
+
+Or::
+
+    python -m xsocs
+
+See `Using X-Socs documentation <http://kmap.gitlab-pages.esrf.fr/xsocs/using.html>`_ and
+the `video tutorials <http://kmap.gitlab-pages.esrf.fr/xsocs/tutorials.html>`_.
+
+License
+-------
+
+The source code of X-SOCS is licensed under the `MIT license <https://gitlab.esrf.fr/kmap/xsocs/blob/main/LICENSE>`_.
