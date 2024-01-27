@@ -1,0 +1,14 @@
+click
+click-log
+
+[lint]
+ruff
+
+[scrape]
+pandas
+requests
+lxml
+
+[test]
+pytest
+pytest-cov
