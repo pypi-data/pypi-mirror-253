@@ -1,0 +1,303 @@
+{% load form_extras %}
+{% load i18n %}
+
+<style>
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .calendar {
+        position: absolute;
+        border-right-style: solid;
+        border-right-width: thin;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        border-color: #D0D0D0;
+        z-index: 1;
+    }
+    .calendar_column {
+        position: absolute;
+        top: 0px;
+        border-top-style: solid;
+        border-top-width: thin;
+        border-left-style: solid;
+        border-left-width: thin;
+        border-color: #D0D0D0;
+        vertical-align: middle;
+        overflow: hidden;
+        padding: 4px;
+        text-align: center;
+        z-index: 1;
+    }
+    .calendar_row {
+        position: absolute;
+        left: 0px;
+        border-top-style: solid;
+        border-top-width: thin;
+        border-left-style: solid;
+        border-left-width: thin;
+        border-color: #D0D0D0;
+        z-index: 1;
+    }
+    .calendar_row_hour {
+        position: relative;
+        text-align: right;
+        padding: 4px;
+        z-index: 1;
+    }
+    .calendar_row_week {
+        position: absolute;
+        border-top-style: solid;
+        border-top-width: thin;
+        border-color: #D0D0D0;
+        z-index: 1;
+    }
+    .calendar_date_head {
+        position: absolute;
+        border-botton-style: solid;
+        border-botton-width: thin;
+        border-color: #D0D0D0;
+        height: 20px;
+        margin-left: 4px;
+        z-index: 1;
+    }
+    .calendar_date_body {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 4px;
+        z-index: 1;
+    }
+    .calendar_event {
+        position: absolute;
+        border-style: solid;
+        border-width: thin;
+        background: #C0C0C0;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 2px;
+        z-index: 10;
+    }
+</style>
+
+<div id="calendar" class="calendar"></div>
+
+<script>
+
+    class CalendarEvent {
+      constructor(day, hour, minute, duration, label, onclick=null, css=null) {
+        this.day = day;
+        this.hour = hour;
+        this.minute = minute;
+        this.duration = duration;
+        this.label = label;
+        this.onclick = onclick;
+        this.css = css;
+        this.lane = -1;
+      }
+    }
+
+    function drawMonthlyCalendar(column_width, row_height) {
+        document.getElementById('calendar').innerHTML = "";
+        html = "";
+
+        offset_y = 30;
+        offset_x = 0;
+
+        y = offset_y;
+        x = offset_x;
+
+        width = ({{calendar.days|length}} * column_width);
+        height = ({{calendar.weeks|length}} * row_height) + offset_y;
+
+        {% for day in calendar.days %}
+        html += "<div class=\"calendar_column\" style=\"left:" + x + "px; width:" + column_width + "px; height:" + height + "px\">";
+        html += "{{day.label}}";
+        html += "</div>";
+        x += column_width;
+        {% endfor %}
+
+        {% for week in calendar.weeks %}
+        html += "<div class=\"calendar_row_week\" style=\"left:" + offset_x + "px; top:" + y + "px; width:" + width + "px; height:" + row_height + "px\">";
+        html += "</div>";
+        y += row_height;
+        {% endfor %}
+
+        x = offset_x;
+        y = offset_y;
+        h = row_height - 20;
+
+        {% for week in calendar.weeks %}
+
+            x = offset_x;
+
+            {% for date in week.dates %}
+            html += "<div class=\"calendar_date_head\" style=\"left:" + x + "px; top:" + y + "px; width:" + column_width + "px\">";
+            html += "{{date.label}}";
+            html += "</div>";
+            html += "<div class=\"calendar_date_body\" style=\"left:" + x + "px; top:" + y + "px; width:" + column_width + "px; height:" + h + "px\">";
+
+            {% for event in date.events %}
+                {% if event.onclick %}
+                    html += "<a onclick=\"{{event.onclick}}\" style=\"cursor:pointer;\">{{event.label}}</a>";
+                {% else %}
+                    html += "{{event.label}}";
+                {% endif %}
+            {% endfor %}
+
+            html += "</div>";
+            x += column_width;
+            {% endfor %}
+
+            y += row_height;
+
+        {% endfor %}
+
+        document.getElementById('calendar').innerHTML = html;
+        document.getElementById('calendar').style.width = width + "px";
+        document.getElementById('calendar').style.height = height + "px";
+    }
+
+    function drawCalendar(column_width, row_height) {
+        document.getElementById('calendar').innerHTML = "";
+        html = "";
+
+        offset_y = 50;
+        offset_x = 50;
+
+        y = offset_y;
+        x = offset_x;
+
+        width = ({{calendar.days|length}} * column_width) + offset_x;
+        height = ({{calendar.hours|length}} * row_height) + offset_y;
+
+        {% for day in calendar.days %}
+        html += "<div class=\"calendar_column\" style=\"left:" + x + "px; width:" + column_width + "px; height:" + height + "px\">";
+        html += "{{day.label|safe}}";
+        html += "</div>";
+        x += column_width;
+        {% endfor %}
+
+        {% for hour in calendar.hours %}
+        html += "<div class=\"calendar_row\" style=\"top:" + y + "px; width:" + width + "px; height:" + row_height + "px\">";
+        html += "<div class=\"calendar_row_hour\" style=\"width:" + offset_x + "px\">";
+        html += "{{hour.label}}";
+        html += "</div>";
+        html += "</div>";
+        y += row_height;
+        {% endfor %}
+
+        events = [
+        {% for event in calendar.events %}
+            new CalendarEvent(
+                {% spaceless %}
+                {{event.day}},
+                {{event.hour}},
+                {{event.minute}},
+                {{event.duration}},
+                {% if event.label %}
+                "{{event.label}}",
+                {% endif %}
+                {% if event.onclick %}
+                "{{event.onclick}}",
+                {% endif %}
+                {% if event.css %}
+                "{{event.css}}"
+                {% endif %}
+                {% endspaceless %}
+            ),
+        {% endfor %}
+        ];
+
+        days = {{ calendar.days|length }}
+
+        lanes_per_day = []
+
+        for (d = 0; d <= days; d++) {
+
+            // Sort events
+            sorted_events = []
+            for (e = 0; e < events.length; e++) {
+                event = events[e];
+                if (event.day == d) {
+                    for (s = 0; s < sorted_events.length; s++) {
+                        if (sorted_events[s].duration < event.duration) {
+                            sorted_events.splice(s, 0, event);
+                            event = null;
+                            break;
+                        }
+                    }
+                    if (event != null)
+                        sorted_events.push(event);
+                }
+            }
+
+            lanes = [];
+            for (s = 0; s < sorted_events.length; s++) {
+                event = sorted_events[s];
+                event_from = (event.hour*60)+event.minute
+                event_to = event_from + event.duration
+
+                l = 0;
+                while (event != null) {
+                    overlap = false;
+                    if (lanes.length <= l)
+                        lanes.push([]);
+                    for (i = 0; i < lanes[l].length; i++) {
+                        lane_from = (lanes[l][i].hour*60)+lanes[l][i].minute;
+                        lane_to = lane_from + lanes[l][i].duration;
+                        if ((event_from >= lane_from && event_to <= lane_to) ||
+                            (event_from < lane_from && event_to > lane_from) ||
+                            (event_from < lane_to && event_to > lane_to)) {
+                            overlap = true;
+                            break;
+                        }
+                    }
+                    if (overlap) {
+                        l = l + 1;
+                    } else {
+                        lanes[l].push(event);
+                        event.lane = l;
+                        event = null;
+                    }
+                }
+            }
+
+            lanes_per_day.push(lanes.length);
+        }
+
+        for (e = 0; e < events.length; e++) {
+            event = events[e];
+
+            lane_width = column_width / lanes_per_day[event.day];
+            event_width = lane_width - 1;
+            x = (event.day * column_width) + (event.lane * lane_width) + offset_x + 1;
+            y = (event.hour * row_height) + ((event.minute / 60.0) * row_height) + offset_y;
+            duration = (event.duration / 60.0) * row_height;
+
+            event_css = "calendar_event";
+            if (event.css != null)
+                event_css += " " + event.css;
+
+            event_style = "top:" + y + "px; left:" + x + "px; width:" + event_width + "px; height:" + duration + "px";
+            if (event.onclick != null)
+                event_style += "; cursor:pointer"
+
+            html += "<div class=\"" + event_css + "\" style=\"" + event_style + "\"";
+            if (event.onclick != null)
+                html += "onclick=\"" + event.onclick + "\"";
+            html += ">";
+
+            html += event.label + " " + event.lane;
+            html += "</div>";
+        }
+
+        document.getElementById('calendar').innerHTML = html;
+        document.getElementById('calendar').style.width = width + "px";
+        document.getElementById('calendar').style.height = height + "px";
+    }
+</script>
+

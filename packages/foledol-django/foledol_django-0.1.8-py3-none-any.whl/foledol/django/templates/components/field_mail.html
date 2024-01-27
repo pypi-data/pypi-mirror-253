@@ -1,0 +1,28 @@
+<script>
+    function {{field.full_name}}_mailto() {
+        mail = document.getElementById('{{field.full_name}}').value;
+        window.open("mailto:" + mail, '')
+    }
+</script>
+
+<div class="form-group {{class}}">
+    <label for="{{field.full_name}}">{{field.label}}</label>
+    <div class="input-group">
+        <input id="{{field.full_name}}"
+           name="{{field.full_name}}"
+           class="form-control"
+           type="text"
+           value="{{field.value_as_str}}"
+           {% if tabindex %} tabindex="{{tabindex}}"{% endif %}
+           {% if field.disabled %}disabled{% endif %}
+           {% if field.autocomplete %}autocomplete="{{field.autocomplete}}"{% endif %} style="margin-top: 1px"/>
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default" onclick="{{field.full_name}}_mailto();">
+                <span class="glyphicon glyphicon-envelope"></span>
+            </button>
+        </span>
+    </div>
+    {% for error in field.errors %}
+    <div class="red">{{ error }}</div>
+    {% endfor %}
+</div>
