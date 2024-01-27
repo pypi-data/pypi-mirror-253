@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+
+def __main__():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("connector", help="choose a connector: c, cpp, g, gpp")
+    args = parser.parse_args()
+    if args.connector=="c":
+        # from .c import *
+        from gguf_connector import c
+    elif args.connector=="cpp":
+        # from .cpp import *
+        from gguf_connector import cpp
+    elif args.connector=="g":
+        # from .g import *
+        from gguf_connector import g
+    elif args.connector=="gpp":
+        # from .gpp import *
+        from gguf_connector import gpp
+    # print("in __main__ sub-module/function")
+
+# if __name__=="__main__":
+#     import argparse
+#     parser = argparse.ArgumentParser()
+#     parser.add_argument("connector", help="choose a connector: c, cpp, g, gpp")
+#     args = parser.parse_args()
+#     if args.connector=="c":
+#         # from .c import *
+#         from gguf_connector import c
+#     elif args.connector=="cpp":
+#         # from .cpp import *
+#         from gguf_connector import cpp
+#     elif args.connector=="g":
+#         # from .g import *
+#         from gguf_connector import g
+#     elif args.connector=="gpp":
+#         # from .gpp import *
+#         from gguf_connector import gpp
+#     else:
+#         print("Not a valid connector.")
+
+# else: print("Loading into the module...")
