@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: fs-encrypted
+Version: 0.1.4
+Summary: An encrypted filesystem for python using PYFilesystem2
+Home-page: https://github.com/thevgergroup/fs-encrypted
+License: MIT
+Keywords: filesystem,encryption,pyfilesystem2
+Author: patrick o'leary
+Author-email: pjaol@pjaol.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: System :: Filesystems
+Requires-Dist: cryptography (>=41.0.7,<42.0.0)
+Requires-Dist: fs (>=2.4.16,<3.0.0)
+Project-URL: Repository, https://github.com/thevgergroup/fs-encrypted.git
+Description-Content-Type: text/markdown
+
+## FS-Encrypted 
+
+- [FS-Encrypted](#fs-encrypted)
+  - [Introduction](#introduction)
+  - [Installation](#installation)
+  - [Usages](#usages)
+  - [Development](#development)
+
+
+### Introduction
+
+The EncryptedFS is a file system implementation that provides encryption and decryption functionalities for files. It is built using PyFilesystem and AES encryption. 
+This allows minimal modification for existing applications to use
+Example: 
+
+```python
+
+from fs_encrypted.encrypted_fs import EncryptedFS
+import base64
+
+#Generate and Store your keys securely !!!
+key = base64.urlsafe_b64encode(b"Hello I'm a 32bit encoded string") 
+
+# Create a directory called secure_data 
+file_system = EncryptedFS("./secure_data", key)
+
+# create a file called my_secrets.txt and encrypt as it's written to
+with file_system.open("my_secrets.txt", "w") as file : 
+   file.write(b"Top Secret Data!!")
+
+# read and decrypt my_secrets
+with file_system.open("my_secrets.txt", "r") as file : 
+   file.read()
+
+```
+
+### Installation
+
+Use pip or poetry to install
+```
+pip install fs-encrypted
+```
+or 
+```
+poetry add fs-encrypted
+```
+
+### Usages 
+Applications that may require sensitive data storage should use an encrypted file system.
+By providing a layer of abstraction on top of the encryption our hope is to make it easier to store this data.
+
+* PII / PHI 
+  * Print Billing systems 
+  * Insurance services / Identity cards 
+* Data Transfer 
+* Secure distributed configuration
+
+
+Fernet is used as the encryption method (v0.1), this may become a configurable option in future revisions
+
+
+### Development
+
+Clone the fs-encrypted repository https://github.com/thevgergroup/fs-encrypted
+
+Development is done using poetry
+
+Tests are run as 
+```
+poetry run python -m unittest tests/*.py
+```
+
+
+
