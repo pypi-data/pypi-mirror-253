@@ -1,0 +1,3 @@
+[console_scripts]
+quecital=quecital.__main__:cli
+
