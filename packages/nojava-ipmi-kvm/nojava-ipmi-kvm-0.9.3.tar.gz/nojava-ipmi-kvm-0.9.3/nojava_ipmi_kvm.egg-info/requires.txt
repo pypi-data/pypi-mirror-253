@@ -1,0 +1,7 @@
+requests
+yacl
+pyyaml
+
+[GUI]
+PyQt5>=5.12
+PyQtWebEngine>=5.12
