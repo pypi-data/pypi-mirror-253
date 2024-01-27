@@ -1,0 +1,4 @@
+exclude tests/__pycache__/*
+include LICENSE VERSION README.rst
+include requirements/*
+recursive-include tests *
