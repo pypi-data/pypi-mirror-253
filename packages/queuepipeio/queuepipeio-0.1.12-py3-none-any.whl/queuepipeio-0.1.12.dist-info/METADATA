@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: queuepipeio
+Version: 0.1.12
+Summary: A project that provides queue-based I/O functionality
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: zstandard
+Requires-Dist: tqdm
+
+QueuePipeIO and LimitedQueuePipeIO
+==================================
+
+This Python package provides two classes, ``QueuePipeIO`` and
+``LimitedQueuePipeIO``, that represent queue-based I/O objects. These
+classes are ideal for multi-threaded or asynchronous programming where
+data is produced in one thread or coroutine and consumed in another.
+
+Installation
+------------
+
+You can install this package from PyPI:
+
+::
+
+   pip install queuepipeio
+
+Usage
+-----
+
+Here’s a basic example of how to use ``QueuePipeIO`` and
+``LimitedQueuePipeIO``:
+
+.. code:: python
+
+   from queuepipeio import QueuePipeIO, LimitedQueuePipeIO
+
+   # Define MB as a constant
+   MB = 1024 * 1024
+
+   # Create a QueuePipeIO object
+   qpio = QueuePipeIO(chunk_size=8*MB)
+
+   # Write data to the queue
+   qpio.write(b'Hello, world!')
+
+   # Close the writer
+   qpio.close()
+
+   # Read data from the queue
+   data = qpio.read()
+
+   print(data)  # Outputs: b'Hello, world!'
+
+   # Create a LimitedQueuePipeIO object with a memory limit
+   lqpio = LimitedQueuePipeIO(memory_limit=16*MB, chunk_size=8*MB)
+
+   # Write data to the queue
+   lqpio.write(b'Hello, again!')
+
+   # Close the writer
+   lqpio.close()
+
+   # Read data from the queue
+   data = lqpio.read()
+
+   print(data)  # Outputs: b'Hello, again!'
+
+Contributing
+------------
+
+Contributions are welcome! Please feel free to submit a Pull Request.
