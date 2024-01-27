@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: tallyerp
+Version: 0.0.13
+Summary: Tally ERP python
+Home-page: https://citrisys.com
+Author: citrisys
+Author-email: dev@citrisys.com
+Requires: requests
+Requires: loguru
+Requires: xsdata
+Description-Content-Type: text/markdown
+
+# pytallyerp
+
+## Usage
+
+```python
+
+import tallyerp
+gateway = tallyerp.connect("http://localhost:9000")
+gateway.master.createLedger(
+    name='Ledger name', 
+    parent='Sundry Debtor', 
+    openingBalance=1000
+)
+
+```
