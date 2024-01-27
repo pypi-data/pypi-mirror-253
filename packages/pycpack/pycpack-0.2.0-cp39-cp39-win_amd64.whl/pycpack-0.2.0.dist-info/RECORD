@@ -1,0 +1,8 @@
+pycpack/__init__.py,sha256=XzG13nnE4RcN8ONEmDjJXrKWmG9DcPuv_jQXxKW-BE4,29
+pycpack/mymodule.cp39-win_amd64.pyd,sha256=jXu9hGvkTc-_YDKw0-tpTbeJWOb6f_JTSldCCCVn6gY,10752
+pycpack/pyadd.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycpack-0.2.0.dist-info/LICENSE,sha256=3eknKSpqGSCK-LIYYXm80VWN4KWlPimpUMkJtjEiQzc,1091
+pycpack-0.2.0.dist-info/METADATA,sha256=N7va0N185LZbxWMnV8LTr-m5TdJnsklsrXgct6S_vq4,79
+pycpack-0.2.0.dist-info/WHEEL,sha256=2xSj8c4s_gFbWpcImYQptdXS3JLuzC2uK5Om8I_SEKg,100
+pycpack-0.2.0.dist-info/top_level.txt,sha256=XxgjNLUjUY3fUHsJSoEzMOfpsAfy_0Eor0ABE53nnM4,8
+pycpack-0.2.0.dist-info/RECORD,,
