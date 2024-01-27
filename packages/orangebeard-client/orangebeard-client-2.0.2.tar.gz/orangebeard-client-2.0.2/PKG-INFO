@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: orangebeard-client
+Version: 2.0.2
+Summary: A python3 client for Orangebeard
+Author-email: Tom Heintzberger <tom@orangebeard.io>
+Project-URL: Homepage, https://github.com/orangebeard-io/python-client
+Project-URL: Bug Tracker, https://github.com/orangebeard-io/python-client/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytz
+Requires-Dist: aiohttp
+
+<h1 align="center">
+  <a href="https://github.com/orangebeard-io/python-client">
+    <img src="https://raw.githubusercontent.com/orangebeard-io/python-client/master/.github/logo.svg" alt="Orangebeard.io Python Client" height="200">
+  </a>
+  <br>Orangebeard.io Python Client<br>
+</h1>
+
+<h4 align="center">Orangebeard Python client for Python based Orangebeard Listeners.</h4>
+
+
+
+<div align="center">
+  <h4>
+    <a href="https://orangebeard.io">Orangebeard</a> |
+    <a href="#installation">Installation</a>
+  </h4>
+</div>
+
+## Installation
+
+### Install the pip package
+
+Note: this client should be used as a dependency in listener projects
+
+`pip install orangebeard-client`
