@@ -1,0 +1,12 @@
+pysmaz2/__init__.py,sha256=tbTHLyX9gq0C5vqrPpf_4PYLJJttcSMNvu3uux25nV8,214
+pysmaz2/backends/__init__.py,sha256=DJrE7EQD3M578xqmsvHj228_9xMkMe3Na11g3q81dW0,614
+pysmaz2/backends/cffi/__init__.py,sha256=iZCg0DUhGMcbz9YnRfSuRgYR23IsfSVW0DV6Hg3urwQ,1194
+pysmaz2/backends/cffi/_smaz2.pyd,sha256=HQ4pG7j0ZiiPvTNSYR8TEKQd7JFO3LVOK-nnHwTwI3A,19456
+pysmaz2/backends/cffi/build.py,sha256=WawBIdf2qxVHK5xrKivHfASIPYz4jrqgAGE4VXhTaKc,623
+pysmaz2/backends/cython/__init__.py,sha256=uywtIQv0lBELXy3n8NsWlJY54CoQNPsHhyoeSRcnv7Y,148
+pysmaz2/backends/cython/_smaz2.c,sha256=l8h632xHPHE9p2RzUUVB8hXaEklEgqxxNVZoks10NM0,1061631
+pysmaz2/backends/cython/_smaz2.pyd,sha256=oyokVAwf-lVokw6s-w6O3lUvSJq8su6NCpE-lEpO8Zs,155136
+pysmaz2-0.0.1.dist-info/METADATA,sha256=AWPihzJhHR0FHm0VT0MFsqrua-W7Vyu9BnatU5cp-Tc,2027
+pysmaz2-0.0.1.dist-info/WHEEL,sha256=GZFS91_ufm4WrNPBaFVPB9MvOXR6bMZQhPcZRRTN5YM,100
+pysmaz2-0.0.1.dist-info/top_level.txt,sha256=GheFzwPu4uPbWBO98YQ1csgpnAeckYMWBHpEifvXNqo,8
+pysmaz2-0.0.1.dist-info/RECORD,,
