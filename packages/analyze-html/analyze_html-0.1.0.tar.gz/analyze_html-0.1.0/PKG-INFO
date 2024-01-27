@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: analyze-html
+Version: 0.1.0
+Summary: 
+Author: rianaditro
+Author-email: rianaditro@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+## Analyze-HTML
+#### Introduction
+Analyze-HTML is a project that read your html tag and count for appearence
+#### How it working
+ It is using Requests to get the HTML of an URL then using BeautifulSoup4 to parse the HTML tag contained.
+
+### Typer CLI
+There are several upgrade function on Typer CLI
+**generate-html**  
+Return html, to save locally add --save-to-local=True  
+**count-tag-from-local**  
+**count-tag-from-url**  
+
