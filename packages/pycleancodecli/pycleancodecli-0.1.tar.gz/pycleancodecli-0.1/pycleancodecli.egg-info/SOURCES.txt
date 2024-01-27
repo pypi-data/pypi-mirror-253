@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pycleancodecli/__init__.py
+pycleancodecli/cleaner.py
+pycleancodecli/main.py
+pycleancodecli.egg-info/PKG-INFO
+pycleancodecli.egg-info/SOURCES.txt
+pycleancodecli.egg-info/dependency_links.txt
+pycleancodecli.egg-info/entry_points.txt
+pycleancodecli.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cleaner.py

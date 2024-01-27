@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pycleancodecli
+Version: 0.1
+Summary: A tool to clean comment-out code in Python.
+Home-page: https://github.com/ken1009us/pycleancodecli
+Author: Ken Wu
+Author-email: kenwu1009us@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A tool to clean Python code files from comments and unnecessary whitespace.
