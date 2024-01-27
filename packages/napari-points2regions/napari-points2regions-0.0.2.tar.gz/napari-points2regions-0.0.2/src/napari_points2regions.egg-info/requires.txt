@@ -1,0 +1,14 @@
+colorcet
+magicgui
+napari
+numpy
+pandas
+points2regions>=0.0.4
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5
