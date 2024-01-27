@@ -1,0 +1,8 @@
+pycpack-0.2.0.dist-info/WHEEL,sha256=KmZYS4RYyvGoygFJEeJR8Ii5W7MjIii07iuWtOyramc,111
+pycpack-0.2.0.dist-info/top_level.txt,sha256=XxgjNLUjUY3fUHsJSoEzMOfpsAfy_0Eor0ABE53nnM4,8
+pycpack-0.2.0.dist-info/LICENSE,sha256=DSDi4Zx_8Hzx05tXgkmUsVelihS50SgomJq16opxg58,1070
+pycpack-0.2.0.dist-info/RECORD,,
+pycpack-0.2.0.dist-info/METADATA,sha256=ZqCvksPOEwoVHK-81AoRXue_CNAMBpkTpQDymuR0NYY,74
+pycpack/__init__.py,sha256=XzG13nnE4RcN8ONEmDjJXrKWmG9DcPuv_jQXxKW-BE4,29
+pycpack/mymodule.cpython-311-i386-linux-musl.so,sha256=I6j6LQzfFsGLXm9lI_Jv3Vd0QoSuvKKm0ViKCKti3Qw,35408
+pycpack/pyadd.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
