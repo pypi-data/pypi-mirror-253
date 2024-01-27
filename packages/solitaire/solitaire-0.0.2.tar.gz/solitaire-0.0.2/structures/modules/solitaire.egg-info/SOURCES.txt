@@ -1,0 +1,12 @@
+license.txt
+pyproject.toml
+readme.md
+structures/modules/solitaire/__init__.py
+structures/modules/solitaire/status_1.py
+structures/modules/solitaire.egg-info/PKG-INFO
+structures/modules/solitaire.egg-info/SOURCES.txt
+structures/modules/solitaire.egg-info/dependency_links.txt
+structures/modules/solitaire.egg-info/top_level.txt
+structures/modules/solitaire/_clique/__init__.py
+structures/modules/solitaire/_clique/group/__init__.py
+structures/modules/solitaire/_status/status.proc.py
