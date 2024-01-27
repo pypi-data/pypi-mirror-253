@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: finphd
+Version: 0.1.0
+Summary: A Fin PhD Toolbox.
+Author: 昵称有六个字
+Author-email: 1931960436@qq.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.2.0,<3.0.0)
+Requires-Dist: pretty-errors (>=1.2.25,<2.0.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+

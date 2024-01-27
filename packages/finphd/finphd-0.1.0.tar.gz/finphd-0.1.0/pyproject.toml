@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "finphd"
+version = "0.1.0"
+description = "A Fin PhD Toolbox."
+authors = ["昵称有六个字 <1931960436@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tqdm = "^4.66.1"
+pandas = "^2.2.0"
+pretty-errors = "^1.2.25"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
