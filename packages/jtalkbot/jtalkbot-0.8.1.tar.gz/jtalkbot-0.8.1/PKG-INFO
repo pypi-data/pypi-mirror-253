@@ -1,0 +1,196 @@
+Metadata-Version: 2.1
+Name: jtalkbot
+Version: 0.8.1
+Summary: A discord bot talking Japanese.
+Author-email: Masaaki Shibata <mshibata@emptypage.jp>
+License: Copyright © 2020 Masaaki Shibata
+        
+        Permission is hereby granted, free of charge, to any person obtaining a
+        copy of this software and associated documentation files (the
+        “Software”), to deal in the Software without restriction, including
+        without limitation the rights to use, copy, modify, merge, publish,
+        distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so, subject to
+        the following conditions:
+        
+        The above copyright notice and this permission notice shall be included
+        in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+        OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+        CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+        TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+        SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Repository, https://bitbucket.org/emptypage/jtalkbot/
+Keywords: discord
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: discord.py[voice]
+Requires-Dist: python-dotenv
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: setuptools-scm; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+
+# jtalkbot
+
+## A Discord bot talking Japanese
+
+Discord のボイスチャンネルのチャットに書き込まれたテキストを読み上げるボットプログラムです。
+
+
+## 動作環境
+
+以下のプログラム／ライブラリが正常に動作しているシステムが必要です。
+
+- [Python 3.10 以降](https://www.python.org "Welcome to Python.org")
+- [Open JTalk](http://open-jtalk.sourceforge.net "Open JTalk")（`open_jtalk` コマンド）
+- [Opus ライブラリ](https://opus-codec.org "Opus Codec")（[discord.py](https://pypi.org/project/discord.py/ "discord.py · PyPI") の音声機能に必要）
+
+
+### Ubuntu でのインストール例
+
+Ubuntu 22.02 でのインストール例です。
+
+```
+$ sudo apt update
+$ sudo apt install python3.10 python3.10-venv python3.10-dev libffi-dev libopus0 open-jtalk open-jtalk-mecab-naist-jdic hts-voice-nitech-jp-atr503-m001
+```
+
+`open_jtalk` コマンドが `/usr/bin/` に、辞書が `/var/lib/mecab/dic/open-jtalk/naist-jdic/` に、HTS ボイスファイル `nitech_jp_atr503_m001.htsvoice` が `/usr/share/hts-voice/nitech-jp-atr503-m001/` にインストールされます。追加の音声ファイルがある場合はこれに倣うとよいでしょう。
+
+
+### macOS でのインストール例
+
+macOS Sonoma 14.2 でのインストール例です。ここでは [Homebrew](https://brew.sh) を使っています。
+
+```
+% brew update
+% brew install opus open-jtalk
+```
+
+`open_jtalk` コマンドが `/opt/homebrew/bin/` に、辞書が `/opt/homebrew/opt/open-jtalk/dic/` に、HTS ボイスファイル（複数）が `/opt/homebrew/opt/open-jtalk/voice/(m100|mei)/` にインストールされます。追加の音声ファイルがある場合はこれに倣うとよいでしょう。
+
+
+### Docker
+
+ボットをすぐに使える Docker イメージを公開しています。
+
+- [emptypage/jtalkbot - Docker Image | Docker Hub](https://hub.docker.com/r/emptypage/jtalkbot)
+
+ディレクトリ `/srv/jtalkbot` でプログラムを起動します。このディレクトリをローカルディレクトリにマウントすると `.env` ファイル（後述）を置いたりログを確認したりできます。
+
+その他の環境では Open JTalk をソースからビルドする必要があるかもしれません。
+
+
+## インストール
+
+### PyPI からのインストール
+
+```
+$ pip install jtalkbot
+```
+
+
+### Bitbucket リポジトリからのインストール
+
+```
+$ pip install git+https://bitbucket.org/emptypage/jtalkbot.git
+```
+
+
+依存関係が設定されているのでプログラムの実行に必要なモジュールはあわせて自動的にインストールされます。
+
+インストールが終わると、`jtalkbot` コマンドが使えるようになっています。
+
+
+### 開発者用メモ
+
+インストールに `[dev]` オプションを追加すると開発用のモジュール（[build](https://pypi.org/project/build/)、[setuptools-scm](https://pypi.org/project/setuptools-scm/) など）もインストールされます。
+
+```
+$ git clone https://bitbucket.org/emptypage/jtalkbot.git
+$ cd jtalkbot
+$ python3 -m venv venv
+$ source venv/bin/activate
+(venv) $ pip install -e '.[dev]'
+```
+
+
+## 使いかた
+
+### Discord でのボットアカウントの登録
+
+ポットユーザーとして Discord に接続するにはあらかじめ [Discord Developer Portal](https://discord.com/developers/applications) でボットを登録する必要があります。
+
+ボットの登録については下記の資料等をご参照ください。
+
+- discord.py ドキュメント、[Creating a Bot Account](https://discordpy.readthedocs.io/en/stable/discord.html)
+- discord.py ドキュメント、[A Primer to Gateway Intents](https://discordpy.readthedocs.io/en/stable/intents.html)
+- Discord Bot Portal JP、[Discord Botアカウント初期設定ガイド for Developer](https://blog.discordbot.jp/setup-discord-bot-account/)
+
+ボットで明示的に設定する権限（Privileged Gateway Intents）は Messsage Content Intent が必要です。ポータルの設定で有効にしておいてください。また、ボットの設定からは「トークン（token）」を取得できます。この情報はボットを起動させるのに必要なので控えておいてください。
+
+
+### 環境変数
+
+ボットに必要な設定は環境変数から与えます。グローバルに設定したり起動時にコマンドラインで与えてもよいですが、カレントディレクトリに `.env` というファイルを作りこれに以下のように環境変数を記述することができます。
+
+    DISCORD_TOKEN = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    OPEN_JTALK_FLAGS = -r 1.2 -g 5.0
+
+利用できる環境変数は以下の通りです。以前のバージョンであった設定ファイルは廃止しました。
+
+
+#### `DISCORD_TOKEN`
+
+ボットのトークンを指定します。環境変数のうち、`DISCORD_TOKEN` は必須です。Developer Portal でかならず取得しておいてください。
+
+
+#### `OPEN_JTALK_FLAGS`
+
+読み上げ音声の生成に使う `open_jtalk` コマンドに渡すオプション引数を指定できます。これにより使用する音声ファイルや読み上げ速度をカスタマイズすることができます。コマンドラインオプションによっては Discord の音声フォーマットの仕様に合わせる都合上無視されます（サンプリング周波数など）。
+
+### 起動
+
+`jtalkbot` コマンドを起動するとログを表示しながら待機し続けます。
+
+```
+% jtalkbot
+INFO:jtalkbot.__main__:jtalkbot ...
+INFO:jtalkbot.__main__:successfully loaded opus library: /opt/homebrew/lib/libopus.dylib
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: ...).
+```
+
+ボットを停止するときは `Ctrl+C` を押します。
+
+
+### ボットの動作
+
+ボットアカウントが招待されている Discord サーバー（ギルドともいいます）のボイスチャンネルにだれかが接続したとき、同じボイスチャンネルに同時に接続します。接続中は、そのボイスチャンネルのチャットに投稿されたメッセージを読み上げます。ボイスチャンネルからユーザーがいなくなると自身も離脱します。
+
+現時点ではこれだけです。
+
+
+### 参考資料
+
+- [Discord Developer Portal Documentation](https://discord.com/developers/docs/)
+- [discord.py](https://discordpy.readthedocs.io/en/stable/index.html)
+- [Open JTalk](https://open-jtalk.sourceforge.net)
+
+
+### 免責・許諾
+
+MIT License です。`LICENSE` をお読みください。
