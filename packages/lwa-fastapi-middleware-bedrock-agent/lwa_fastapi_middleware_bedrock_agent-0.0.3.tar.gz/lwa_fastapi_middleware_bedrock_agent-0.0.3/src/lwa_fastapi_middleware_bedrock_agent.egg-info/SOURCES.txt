@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/bedrock_agent/__init__.py
+src/bedrock_agent/middleware.py
+src/lwa_fastapi_middleware_bedrock_agent.egg-info/PKG-INFO
+src/lwa_fastapi_middleware_bedrock_agent.egg-info/SOURCES.txt
+src/lwa_fastapi_middleware_bedrock_agent.egg-info/dependency_links.txt
+src/lwa_fastapi_middleware_bedrock_agent.egg-info/top_level.txt
