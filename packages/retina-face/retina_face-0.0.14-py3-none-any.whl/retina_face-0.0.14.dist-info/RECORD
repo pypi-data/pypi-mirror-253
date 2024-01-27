@@ -1,0 +1,15 @@
+retina_face-0.0.14.data/data/README.md,sha256=v4Zi8LAmwnndJIG_yGDWFH5RJyindnvxRqIGEf8ZCVU,9843
+retina_face-0.0.14.data/data/requirements.txt,sha256=mlX-hvPUd_m4QBjZKC5GsxL0GGuPN9ZNiGzDV518XLg,80
+retinaface/RetinaFace.py,sha256=_RwjawUafDEPAhWv7ulWwk-H-Livggm1CMSlypRCkqk,9668
+retinaface/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retinaface/commons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retinaface/commons/logger.py,sha256=2V4c2Vs9jL6ybGHVeV8a8LViiUddnyxDgMHhAFfigd8,1298
+retinaface/commons/postprocess.py,sha256=HWTj466QOVGrL9Pm2x3Iek1XqT0RMzdWwO1wxspD0Fo,7664
+retinaface/commons/preprocess.py,sha256=UfGeEclMTnkoO-mDKpf4LlFycdk-Z-1k-uQRX5ZiuJk,4172
+retinaface/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+retinaface/model/retinaface_model.py,sha256=-xpJFOxSk8Yw_OH9g2Hi2ynQJm0NQAjXTS10Sn315Mk,46197
+retina_face-0.0.14.dist-info/LICENSE,sha256=c1nY3wN2iOn0Nzrt2d0pekZ3AwcqPJsAGxaeyM45VHc,1077
+retina_face-0.0.14.dist-info/METADATA,sha256=e9ES1JM99RGdQF9t1OP8cSwIluXIhH3Tta0mf-XSZIs,10529
+retina_face-0.0.14.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+retina_face-0.0.14.dist-info/top_level.txt,sha256=pfovrQynXTF0QV20p2oj5Lqgoh9AbT3qQ-nkyut5yw0,11
+retina_face-0.0.14.dist-info/RECORD,,
