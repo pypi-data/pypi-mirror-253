@@ -1,0 +1,20 @@
+# noman
+
+A simple package for generating responses using g4f.
+
+
+## First Install
+
+pip install NomanBot
+
+import NomanBot
+
+# Call the response function from NomanBot module
+result = NomanBot.response(user_input)
+
+# Print the result
+print(result)
+
+
+
+>>>>Hello! It looks like there might be a small typo in your greeting. Did you mean to say "Hello, World!"? How can I assist you today?

@@ -1,0 +1,9 @@
+MANIFEST.in
+NomanBot.py
+README.md
+setup.py
+NomanBot.egg-info/PKG-INFO
+NomanBot.egg-info/SOURCES.txt
+NomanBot.egg-info/dependency_links.txt
+NomanBot.egg-info/requires.txt
+NomanBot.egg-info/top_level.txt
