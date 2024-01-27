@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "PoseButcher"
+version = "0.0.1"
+authors = [
+    { name="Max Winokan", email="max@winokan.com"},
+]
+description = "Package for parsing, writing, and modifying molecular structure files"
+readme = "README.md"
+requires-python = ">=3.9"
+requires = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "MPyTools",
+    "MolParse",
+    "ase",
+    "rdkit",
+    "py3Dmol",
+    "IPython",
+    "open3d",
+    "numpy",
+]
+[project.urls]
+"Homepage" = "https://github.com/mwinokan/PoseButcher"
+"Bug Tracker" = "https://github.com/mwinokan/PoseButcher/issues"
+[tool.hatch.build]
+include = [
+  "example.ipynb",
+  "posebutcher/*.py",
+  "test_data/*.sdf",
+  "test_data/2a_hits/*.pdb",
+]
