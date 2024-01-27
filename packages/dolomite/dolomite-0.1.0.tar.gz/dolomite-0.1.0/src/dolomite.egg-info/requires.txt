@@ -1,0 +1,14 @@
+dolomite-base
+dolomite-matrix
+dolomite-ranges
+dolomite-se
+dolomite-sce
+dolomite-mae
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
