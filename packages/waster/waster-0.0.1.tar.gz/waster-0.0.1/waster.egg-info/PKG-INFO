@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: waster
+Version: 0.0.1
+Summary: A simple microservice to test the behaviour of infrastructures.
+Home-page: UNKNOWN
+Author: Leikt Sol'Reihin
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.10.0
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: doc
+License-File: LICENSE
+
+Waster
+======
+
+.. |licence| image:: https://img.shields.io/github/license/Leikt/waster
+   :alt: GitHub License
+.. |pypi-version| image:: https://img.shields.io/pypi/v/waster
+   :alt: PyPI - Version
+.. |rtd-status| image:: https://img.shields.io/readthedocs/waster
+   :alt: Read the Docs
+.. |github-ci| image:: https://img.shields.io/github/actions/workflow/status/Leikt/waster/ci.yml?branch=master
+   :alt: GitHub Actions Workflow Status
+
+|licence| |pypi-version| |rtd-status| |github-ci|
+
+A simple generic microservice useful to test the behaviour of infrastructures regardless of the hosted applications.
+
+Documentation: https://waster.readthedocs.io/en/latest/
+
