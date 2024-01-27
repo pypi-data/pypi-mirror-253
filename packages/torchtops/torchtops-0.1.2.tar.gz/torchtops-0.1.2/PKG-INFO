@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: torchtops
+Version: 0.1.2
+Summary: TOPS profiler of each layers of model
+Home-page: https://github.com/yokosyun/TorchTOPS
+Author: yokosyun
+Author-email: yoko.syun@gmail.com
+License: MIT
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: fvcore
+Requires-Dist: numpy
+Requires-Dist: torch

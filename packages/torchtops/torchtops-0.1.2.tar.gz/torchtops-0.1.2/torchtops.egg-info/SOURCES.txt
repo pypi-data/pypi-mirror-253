@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+torchtops/__init__.py
+torchtops/layer_profiler.py
+torchtops/utils.py
+torchtops.egg-info/PKG-INFO
+torchtops.egg-info/SOURCES.txt
+torchtops.egg-info/dependency_links.txt
+torchtops.egg-info/requires.txt
+torchtops.egg-info/top_level.txt
