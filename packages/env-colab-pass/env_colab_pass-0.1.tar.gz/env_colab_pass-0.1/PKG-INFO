@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: env_colab_pass
+Version: 0.1
+Summary: Python library that check for key value in env and colab userdata. if not found then asks for it using getpass
+Home-page: https://github.com/bkakadiya/env-colab-pass
+Author: Bakulkumar Kakadiya
+Author-email: bakul.kumar@gmail.com
+License: Apache License Version 2.0
+Provides-Extra: google-colab
+License-File: LICENSE
