@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ioka_lib
+Version: 0.1
+Summary: library for ioka api
+Home-page: https://github.com/llunareine/ioka_library
+Author: Aiganym
+Author-email: llunareine@gmail.com
+Requires-Python: >=3.10
+Requires-Dist: requests >=2.31.0
+Requires-Dist: python-dotenv >=1.0.1
+
