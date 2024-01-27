@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pycpack/__init__.py
+pycpack/mymodule.c
+pycpack/pyadd.py
+pycpack.egg-info/PKG-INFO
+pycpack.egg-info/SOURCES.txt
+pycpack.egg-info/dependency_links.txt
+pycpack.egg-info/top_level.txt
