@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: lit-engine
+Version: 0.0.1.dev0
+Summary: A game engine for Literature
+Author-email: Agnivesh Adhikari <agnivesh.adhikari@gmail.com>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# PyLit: Literature in Python
