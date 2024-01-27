@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: databaseconnectors
+Version: 0.0.1
+Summary: A python package for connecting with database.
+Home-page: https://github.com/sujoynitk/mongodbconnectorpkg
+Author: sujoynitk
+Author-email: sujoynitk@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/sujoynitk/mongodbconnectorpkg/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: pymongo
+Requires-Dist: pymongo[srv]
+Requires-Dist: dnspython
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: ensure
+Requires-Dist: flake8
+Requires-Dist: pytest
+Requires-Dist: tox
+Requires-Dist: tox-gh-actions
+Requires-Dist: mypy
+Provides-Extra: testing
+Requires-Dist: pytest >=7.1.3 ; extra == 'testing'
+Requires-Dist: mypy >=0.971 ; extra == 'testing'
+Requires-Dist: flake8 >=5.0.4 ; extra == 'testing'
+Requires-Dist: tox >=3.25.1 ; extra == 'testing'
+Requires-Dist: black >=22.8.0 ; extra == 'testing'
+
+# DatabaseConnector
+Repository for database connector
