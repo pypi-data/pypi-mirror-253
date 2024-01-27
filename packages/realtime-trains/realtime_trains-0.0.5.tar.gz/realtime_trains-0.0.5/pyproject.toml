@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "realtime-trains"
+version = "0.0.5"
+description = "An unofficial Python library for Realtime Trains API"
+authors = [ "Marko B" ]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/mbukovac/realtime-trains"
+Issues = "https://github.com/mbukovac/realtime-trains/issues"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = "^0.25.1"
+pydantic = "^2.5.2"
+python-dateutil = "^2.8.2"
+
+[tool.poetry.group.dev.dependencies]
+icecream = "^2.1.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
