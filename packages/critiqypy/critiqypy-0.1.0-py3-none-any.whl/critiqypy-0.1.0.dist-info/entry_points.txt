@@ -1,0 +1,3 @@
+[console_scripts]
+critiqypy=critiqypy.main:main
+
