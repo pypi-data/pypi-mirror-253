@@ -1,0 +1,11 @@
+autora/doc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autora/doc/_version.py,sha256=hB095avW4HuDZxn8qPHRG1UMzSSonb8ZDAsLxt9hmk8,411
+autora/doc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autora/doc/pipelines/main.py,sha256=kxqZYbsL9UDuddhSgbEBgB3IKYNsaiCpOu2L3VYa2TE,6253
+autora/doc/runtime/predict_hf.py,sha256=b1IY0wirQmq5ubC7m5sTCGnLasbuIOTSoj5AKe2DFaU,3505
+autora/doc/runtime/prompts.py,sha256=LrrVuThGeLoMcUxLZ7QodNtOCi8ydp0OCnYDCVxA05w,4055
+autora_doc-0.0.3.dist-info/METADATA,sha256=5wYH4Dw6rUbXvSM5WEA3GTOJaBmKjxUtxp4gJHz2WTs,7097
+autora_doc-0.0.3.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+autora_doc-0.0.3.dist-info/entry_points.txt,sha256=7a-79K2Bkebd7CM1G_y1EBGUTzNhNStNi_hs0xlBtG4,58
+autora_doc-0.0.3.dist-info/licenses/LICENSE,sha256=JxGd-cKlSdwd3qoUNMeG7zM0sZBYsy-ZWhri0HVxe8I,1084
+autora_doc-0.0.3.dist-info/RECORD,,
