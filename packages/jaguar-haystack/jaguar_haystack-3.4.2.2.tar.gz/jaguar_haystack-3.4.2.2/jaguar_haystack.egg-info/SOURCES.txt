@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.cfg
+setup.py
+jaguar_haystack/LICENSE
+jaguar_haystack/README.md
+jaguar_haystack/__init__.py
+jaguar_haystack/jaguar.py
+jaguar_haystack/retriever.py
+jaguar_haystack.egg-info/PKG-INFO
+jaguar_haystack.egg-info/SOURCES.txt
+jaguar_haystack.egg-info/dependency_links.txt
+jaguar_haystack.egg-info/top_level.txt

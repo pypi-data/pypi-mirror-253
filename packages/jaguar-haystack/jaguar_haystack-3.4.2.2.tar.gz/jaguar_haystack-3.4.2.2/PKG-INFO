@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: jaguar_haystack
+Version: 3.4.2.2
+Summary: Jaguar document store for Haystack framework
+Home-page: http://www.jaguardb.com
+Author: JaguarDB
+License: Apache 2.0
+Requires-Python: >=3.0
