@@ -1,0 +1,3 @@
+[console_scripts]
+triple-quote=triple_quote:main
+
