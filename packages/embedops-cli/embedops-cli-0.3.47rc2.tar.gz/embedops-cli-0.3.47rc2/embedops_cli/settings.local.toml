@@ -1,0 +1,6 @@
+[default]
+#host =  "http://localhost:3000"
+host =  "https://dev-01.embedops.io"
+client_id = "6Sm3VSVQ15B9IxTFKmwrjcPzXaH0oC1P"
+base_url = "https://embedops-dev.us.auth0.com/oauth"
+audience = "https://app-dev.embedops.com"
