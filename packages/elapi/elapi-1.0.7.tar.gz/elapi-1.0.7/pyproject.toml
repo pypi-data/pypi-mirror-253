@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "elapi"
+version = "1.0.7"
+description = """elAPI is a powerful, extensible API interface to eLabFTW built for \
+the University Computing Centre (URZ, FIRE division) at Universität Heidelberg."""
+authors = [
+    "Alexander Haller <alexander.haller@urz.uni-heidelberg.de>",
+    "Mahadi Xion <mahadi.xion@urz.uni-heidelberg.de>",
+]
+maintainers = [
+    "Mahadi Xion <mahadi.xion@urz.uni-heidelberg.de>",
+]
+readme = "README.md"
+homepage = "https://www.urz.uni-heidelberg.de/en/service-catalogue/software-and-applications/elabftw"
+license = "AGPL-3.0-only"
+keywords = ["elabftw", "api"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: AnyIO",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.scripts]
+elapi = "elapi.cli.elapi:app"
+
+[tool.poetry.dependencies]
+python = "^3.9.0"
+dynaconf = "^3.2.0"
+httpx = "^0.24.1"
+httpx-auth = "^0.17.0"
+typer = { extras = ["all"], version = "^0.9.0" }
+pyyaml = "^6.0.1"
+python-dateutil = "^2.8.2"
+tenacity = "^8.2.3"
+
+[tool.poetry.group.dev.dependencies]
+ptpython = "^3.0.23"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
