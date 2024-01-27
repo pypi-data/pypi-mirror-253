@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: powerset-generator
+Version: 0.1.0
+Summary: Generate the power set of a collection
+Project-URL: Documentation, https://jpgoldberg.github.io/powerset-generator/
+Project-URL: Issues, https://github.com/jpgoldberg/powerset-generator/issues
+Project-URL: Source, https://github.com/jpgoldberg/powerset-generator
+Author-email: Jeffrey Goldberg <jeffrey@goldmark.org>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Python Power set generator
+
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v0.json)](https://github.com/charliermarsh/ruff)
+
+```python
+import powerset_generator
+
+for e in powerset_generator.subsets(["one", "two", "three", "three"]):
+    print(e)
+```
+
+produces
+
+```txt
+set()
+{'one'}
+{'three'}
+{'two'}
+{'one', 'three'}
+{'one', 'two'}
+{'three', 'two'}
+{'one', 'three', 'two'}
+```
+
+Note that the empty set, `set()` is included in the output
+and that the function treats the duplicated input element `"three"` as if it appeared only once.
+This is correct behavior the mathematical notion of power set.
+
+See the more complete (perhaps excessively so) [documentation](https://jpgoldberg.github.io/powerset-generator/) for more details.
+
+## Credit
+
+The code for the `subsets()` function is derived heavily from
+[Allen Downey](https://stackoverflow.com/users/661626/allen-downey)'s
+[Stack Overflow answer](https://stackoverflow.com/a/53726866/1304076).
