@@ -1,0 +1,32 @@
+<input type="text" id='{{ table_id }}_search' class="form-control" placeholder="Search..." aria-label="Search">
+<div id="{{ table_id }}"></div>
+
+<script type='text/javascript'>
+    let typingTimer_{{ table_id }}; // Timer identifier
+    const doneTypingInterval_{{ table_id }} = {{ refresh_interval }}; // Time in milliseconds.
+    // The ID of the search bar should be in the following format, {{ table_id }}_search
+    const searchElement_{{ table_id }} = document.getElementById("{{ table_id }}_search");
+
+    // Load initial values when page is loaded, and add event listeners.
+    document.addEventListener("DOMContentLoaded", function() {
+        updateTable("{{ table_id }}", "{{ table_url }}");
+        searchElement_{{ table_id }}.addEventListener("keyup", keyUp_{{ table_id }});
+        searchElement_{{ table_id }}.addEventListener("keydown", keyDown_{{ table_id }});
+    });
+
+    // On keyup event, start the countdown.
+    function keyUp_{{ table_id }}(e) {
+        clearTimeout(typingTimer_{{ table_id }});
+        typingTimer_{{ table_id }} = setTimeout(doneTyping_{{ table_id }}, doneTypingInterval_{{ table_id }});
+    }
+
+    //On keydown, clear the countdown.
+    function keyDown_{{ table_id }}(e) {
+        clearTimeout(typingTimer_{{ table_id }});
+    }
+
+    //User is finished typing.
+    function doneTyping_{{ table_id }}(e) {
+        updateTable("{{ table_id }}", "{{ table_url }}", searchElement_{{ table_id }}.value);
+    }
+</script>
