@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: bibliomancer
+Version: 0.1.0
+Summary: bibliomancer
+License: MIT
+Author: Author 1
+Author-email: author@org.org
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: linkml-runtime (>=1.6.2,<2.0.0)
+Requires-Dist: linkml-transformer (>=0.2.2,<0.3.0)
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Requires-Dist: pmidcite (>=0.0.47,<0.0.48)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: requests-cache (>=1.1.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# bibliomancer
+
+Performs magic on bibliographies
+
+# Acknowledgements
+
+This [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/README.html) project was developed from the [monarch-project-template](https://github.com/monarch-initiative/monarch-project-template) template and will be kept up-to-date using [cruft](https://cruft.github.io/cruft/).
+
