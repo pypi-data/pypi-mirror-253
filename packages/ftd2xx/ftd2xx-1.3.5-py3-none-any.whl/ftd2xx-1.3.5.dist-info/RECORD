@@ -1,0 +1,13 @@
+ftd2xx/__init__.py,sha256=UEiVJmY8kPCXuH4fxIBUvJrZ3VBmOJ1OmH5J4uLRhPE,814
+ftd2xx/_ftd2xx.py,sha256=Vqs5UV6ijdQqUN5UeHA0R55BAmrTW5OvCkjtsrnQLDw,36449
+ftd2xx/_ftd2xx_darwin.py,sha256=LXJiH76tAw-Z7Qg-cbSFm-w7QIPdaRlp2LRpnDUwVHc,95427
+ftd2xx/_ftd2xx_linux.py,sha256=j_K6k5qmnAKBjrufAzrTPzL9GRt_aO8ehWRQW2WDzTs,37524
+ftd2xx/defines.py,sha256=bW2RQb-a5pdzxLocY2UgQydo2kK0HZD3n9yZV1GMkWc,3112
+ftd2xx/ftd2xx.py,sha256=lqV1tjP4zlT256rh9wlncaRKQ4Z8WdpBHRJXxywYu_w,22999
+ftd2xx/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ftd2xx/tests/t_ftd2xx.py,sha256=6smCI1b6CKlaXy8Uta8QIA76pUKPEhlGjsxo6KSsb6Q,4251
+ftd2xx-1.3.5.dist-info/LICENSE,sha256=put5FIYggC87oMAbZ3vDM6BMtHhWY-aGHC-HbMQQRh4,1069
+ftd2xx-1.3.5.dist-info/METADATA,sha256=B8VWKO8Dxl_26FAW1zo-aWdKfoJOJibWPxXim5Uk6xc,3165
+ftd2xx-1.3.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ftd2xx-1.3.5.dist-info/top_level.txt,sha256=_LXPUIkjGEkeREPLt3G46ungsXHYmRL7vcWR2_NjGas,7
+ftd2xx-1.3.5.dist-info/RECORD,,
