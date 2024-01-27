@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: jirascripting
+Version: 0.0.15
+Summary: Methods for interacting with Jira Cloud
+Author-email: David Renton <davidleerenton@gmail.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: requests~=2.31.0
+Requires-Dist: python-dotenv~=0.19.0
