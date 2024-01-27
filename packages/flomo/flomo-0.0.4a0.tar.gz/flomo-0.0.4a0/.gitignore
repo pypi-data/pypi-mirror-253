@@ -1,0 +1,8 @@
+__pycache__/
+.vscode/
+build/
+dist/
+flomo.egg-info/
+
+config.py
+*.ipynb
