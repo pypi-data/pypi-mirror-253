@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyrsakeyutils
+Version: 0.1.0
+Summary: Inspect RSA keys
+License: MIT
+Author: John Cheng
+Author-email: jcheng@telesign.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: rsa (>=4.9,<5.0)
+Description-Content-Type: text/markdown
+
+## Usage
+
+'''
+pytest
+'''
+
+## Dependencies
+
+Depends on Python 3.10.0
+
