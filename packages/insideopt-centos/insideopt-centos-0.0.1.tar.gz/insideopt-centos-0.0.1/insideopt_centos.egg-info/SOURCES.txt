@@ -1,0 +1,27 @@
+AUTHORS.rst
+LICENSE.rst
+MANIFEST.in
+README.rst
+setup.py
+docs/IO License Terms.pdf
+docs/Seeker_Reference_Manual.pdf
+docs/Seeker_User_s_Manual.pdf
+docs/authors.rst
+docs/index.rst
+docs/installation.rst
+docs/readme.rst
+docs/usage.rst
+insideopt_centos.egg-info/PKG-INFO
+insideopt_centos.egg-info/SOURCES.txt
+insideopt_centos.egg-info/dependency_links.txt
+insideopt_centos.egg-info/not-zip-safe
+insideopt_centos.egg-info/top_level.txt
+seekercentos/__init__.py
+seekercentos/libseeker.a
+seekercentos/seekercentos.1.0.0.cpython-36-linux.so
+seekercentos/seekercentos.py
+seekercentos/bin/coll
+seekercentos/bin/coll-linux
+seekercentos/scripts/collect.sh
+seekercentos/scripts/darwin_seekeragg.sh
+seekercentos/scripts/seekeragg.sh
