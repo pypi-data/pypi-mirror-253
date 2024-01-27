@@ -1,0 +1,8 @@
+README.md
+setup.py
+EGAM/__init__.py
+EGAM/main.py
+EGAM.egg-info/PKG-INFO
+EGAM.egg-info/SOURCES.txt
+EGAM.egg-info/dependency_links.txt
+EGAM.egg-info/top_level.txt
