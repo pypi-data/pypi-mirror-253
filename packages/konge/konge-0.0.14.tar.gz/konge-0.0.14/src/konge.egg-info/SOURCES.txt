@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/konge/__init__.py
+src/konge/konge.py
+src/konge.egg-info/PKG-INFO
+src/konge.egg-info/SOURCES.txt
+src/konge.egg-info/dependency_links.txt
+src/konge.egg-info/top_level.txt
