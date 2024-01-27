@@ -1,0 +1,2 @@
+include LICENSE
+include routerfy/examples/routes/hello_world/*

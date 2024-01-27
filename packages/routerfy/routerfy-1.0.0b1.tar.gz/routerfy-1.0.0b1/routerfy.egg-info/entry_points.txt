@@ -1,0 +1,2 @@
+[console_scripts]
+routerfy = routerfy.cli:cli
