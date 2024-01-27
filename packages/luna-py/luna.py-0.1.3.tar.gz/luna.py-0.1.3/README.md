@@ -1,0 +1,36 @@
+# Luna 
+
+## Overview
+Luna is a string templating engine for Sugari Bot, implemented in Rust with PyO3. 
+
+## Installation
+To install Luna, use the following command:
+```bash
+pip install luna.py
+```
+
+## Usage
+You can use Luna with discord.py easily:
+```py
+import discord
+from discord.ext import commands
+from luna import Engine, Adapter
+
+intents = discord.Intents.default()
+intents.message_content = True
+bot = commands.Bot(command_prefix='?', intents=intents)
+
+@bot.command()
+@commands.guild_only() # ctx.author.guild won't be None
+async def hello(ctx: commands.Context) -> None:
+    adapters = [
+        Adapter.from_member(ctx.author),
+        Adapter.from_server(ctx.guild),
+        Adapter.from_channel(ctx.channel)
+    ]
+
+    output = Engine.process("Hello {member(mention)}! Welcome to our server {server}!", adapters)
+    await ctx.send(output)
+
+bot.run('token')
+```
