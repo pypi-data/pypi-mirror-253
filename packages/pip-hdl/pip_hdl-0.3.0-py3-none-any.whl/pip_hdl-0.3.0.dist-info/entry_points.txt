@@ -1,0 +1,3 @@
+[console_scripts]
+pip-hdl=pip_hdl.cli:enter_cli
+
