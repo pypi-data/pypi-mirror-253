@@ -1,0 +1,1 @@
+{"instillUIOrder":0,"properties":{"messages":{"$ref":"https://raw.githubusercontent.com/instill-ai/component/747ec5eaa8fe611c3be91354923afd544eb54b13/schema.json#/$defs/instill_types/chat_messages"}},"required":["messages"],"title":"Output","type":"object"}
