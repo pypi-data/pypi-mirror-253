@@ -1,0 +1,8 @@
+mpi4py
+h5py
+numpy
+pandas
+typing_extensions
+
+[:python_version < "3.11"]
+tomli
