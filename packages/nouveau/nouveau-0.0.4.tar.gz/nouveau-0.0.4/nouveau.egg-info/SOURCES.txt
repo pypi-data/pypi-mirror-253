@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+nouveau/__doc__
+nouveau/__init__.py
+nouveau/morris.csv
+nouveau.egg-info/PKG-INFO
+nouveau.egg-info/SOURCES.txt
+nouveau.egg-info/dependency_links.txt
+nouveau.egg-info/requires.txt
+nouveau.egg-info/top_level.txt
+nouveau.egg-info/zip-safe

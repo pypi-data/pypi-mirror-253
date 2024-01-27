@@ -1,0 +1,4 @@
+include README.md
+include nouveau/__doc__
+include nouveau/morris.csv
+exclude nouveau/jpgs/*
