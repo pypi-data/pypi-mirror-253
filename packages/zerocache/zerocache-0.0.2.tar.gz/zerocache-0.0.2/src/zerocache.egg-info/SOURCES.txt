@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/zerocache/__init__.py
+src/zerocache/client.py
+src/zerocache/decorators.py
+src/zerocache/listener.py
+src/zerocache/server.py
+src/zerocache.egg-info/PKG-INFO
+src/zerocache.egg-info/SOURCES.txt
+src/zerocache.egg-info/dependency_links.txt
+src/zerocache.egg-info/requires.txt
+src/zerocache.egg-info/top_level.txt
+tests/test_decorator.py
+tests/test_manual_integration.py
+tests/test_network_fallback.py
