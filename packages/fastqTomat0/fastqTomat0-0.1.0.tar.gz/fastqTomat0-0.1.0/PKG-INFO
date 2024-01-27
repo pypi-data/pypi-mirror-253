@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fastqTomat0
+Version: 0.1.0
+Summary: Processing and manipulation of single-cell data
+Author: Chris Jackson
+License: MIT
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
