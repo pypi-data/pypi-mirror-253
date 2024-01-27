@@ -1,0 +1,16 @@
+sqlservice/__init__.py,sha256=WPkRXeRmnSdUf1Oq_6e_OaytySq-BwmeFrAdjwYnD9A,290
+sqlservice/async_database.py,sha256=aZedol3G8UVDJykPN83rNBxJIxIaakeJMFQkrl4AD94,10622
+sqlservice/async_session.py,sha256=tFolNwfe4WONDw5lT-wmGbiy2C9ZthyZDPDAFylKjq0,12991
+sqlservice/database.py,sha256=mtjA6vxhkMse9hsWCnMe0vzzcHVOfU4mpYWQGlJQnSw,10194
+sqlservice/database_abc.py,sha256=jJfCQDVKo58mWI-WnSeS8fq7xnXMnDXLVITvMaFL5i4,3478
+sqlservice/database_settings.py,sha256=WwWuuPKsGyJZH5MkUhFS-DaVyHlVaztG4Ozz8bOYH1w,3264
+sqlservice/event.py,sha256=biFyK3o0WZSxNCMkNoDwgBcurP1sS31iEODbjy5rfZA,6965
+sqlservice/model.py,sha256=irvz0p_U3E93ArdOyjgO9cYi6MWgAb3-YtlXnwkgiRA,7431
+sqlservice/session.py,sha256=06pqMpXvcPolu6jpokzt-OgzCMI7pg33OA0ypS-mTRk,16075
+sqlservice/utils.py,sha256=wDUqGXcBlWMR51uJJenOdX-ilXj8M4b2T__R4cuEL0U,1716
+sqlservice-3.0.0.dist-info/AUTHORS.rst,sha256=q_sk0FNK8QLZI4lKe-_BXtrGDsqylzEEq1Rv0JGGww0,268
+sqlservice-3.0.0.dist-info/LICENSE.rst,sha256=G7pXwzzORKANLt8HlOFL0MbcFWmk542DTI9BA7jpYj8,1072
+sqlservice-3.0.0.dist-info/METADATA,sha256=bWJXMCnePWyfsQArvqxSp_1aZwuLH4LZ4qFssmUr8n0,29664
+sqlservice-3.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sqlservice-3.0.0.dist-info/top_level.txt,sha256=ctgc6jAehOzigwQWmZLjU2gf2K1P7rRxqI4_J0IhdX4,11
+sqlservice-3.0.0.dist-info/RECORD,,
