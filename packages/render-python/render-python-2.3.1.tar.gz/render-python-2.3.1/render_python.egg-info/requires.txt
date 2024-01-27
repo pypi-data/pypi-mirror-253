@@ -1,0 +1,7 @@
+decorator
+numpy
+pillow
+requests
+scipy
+six
+sphinxcontrib-napoleon
