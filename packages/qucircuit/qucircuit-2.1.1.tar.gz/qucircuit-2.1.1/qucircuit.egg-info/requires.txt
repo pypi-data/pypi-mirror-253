@@ -1,0 +1,2 @@
+numpy
+qusimulator>=2.0
