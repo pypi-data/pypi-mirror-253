@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+square_matrix_enhanced_plotter.egg-info/PKG-INFO
+square_matrix_enhanced_plotter.egg-info/SOURCES.txt
+square_matrix_enhanced_plotter.egg-info/dependency_links.txt
+square_matrix_enhanced_plotter.egg-info/requires.txt
+square_matrix_enhanced_plotter.egg-info/top_level.txt
+squarematrixenhancedplotter/__init__.py
+squarematrixenhancedplotter/core.py

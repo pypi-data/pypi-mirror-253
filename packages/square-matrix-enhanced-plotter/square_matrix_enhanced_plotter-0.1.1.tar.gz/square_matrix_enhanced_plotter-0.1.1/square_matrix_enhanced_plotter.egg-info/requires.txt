@@ -1,0 +1,4 @@
+matplotlib
+mplcursors
+numpy
+PyQT5
