@@ -1,0 +1,12 @@
+common:
+  base_url: null
+  headers: null
+  ocr_service: null
+  web_base_url: null
+web:
+  browser_name: null
+  cookies: null
+  headless: false
+  maximized: false
+  state_file: null
+  window_size: null
