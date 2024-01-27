@@ -1,0 +1,7 @@
+elasticsearch<7.14,>7
+packaging>=21.0
+sqlalchemy
+
+[opendistro]
+requests_aws4auth
+boto3
