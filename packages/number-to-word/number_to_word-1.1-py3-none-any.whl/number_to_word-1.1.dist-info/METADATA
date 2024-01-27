@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: number-to-word
+Version: 1.1
+Summary: number-to-word is a Python library for converting numbers into their written English or Arabic word equivalents.
+Home-page: https://github.com/adelkhayata/number-to-word
+Author: Adel Khayata
+Author-email: adel@khayata.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# number-to-word
+
+number-to-word is a Python library for converting numbers into their written English or Arabic word equivalents. This library is particularly useful for financial applications, where there is a need to convert numeric values into written text. It also supports currency names.
+
+## Features
+
+- Convert numbers to written words in English or Arabic.
+- Add currency names to the converted results.
+- Lightweight and easy to integrate.
+
+## Installation
+
+You can install number-to-word using pip:
+
+```bash
+pip install number-to-word
+```
+
+## Usage
+
+Here's a simple example of how to use number-to-word:
+
+```python
+from numbertoword import NumberToWord
+
+# Convert a number to words in English
+print(NumberToWord.to_word(123.5, 'SYP', "English"))  # Output: One Hundred Twenty Three Syrian Pounds and Fifty Piasters only.
+
+# Convert a number to words in Arabic
+print(NumberToWord.to_word(123.5, 'SYP', "Arabic"))  # Output: فقط مائة و ثلاثة و عشرون ليرة سورية و خمسون قرشاً لا غير.
+
+```
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+
+## Licensing
+
+This project is licensed under MIT License.
+
+## Contact
+
+For any queries or feedback, please reach out to Adel Khayata.
+
+## Acknowledgements
+
+- Thanks to all the contributors who have helped to shape number-to-word.

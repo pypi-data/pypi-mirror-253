@@ -1,0 +1,10 @@
+numbertoword/__init__.py,sha256=IjzoAnZninGGkYzgebtLtwSNIZRnziWwh0gvaQGkUSk,42
+numbertoword/currencies.py,sha256=G0h2995Qw_sfJ4MYEMRoliqHoLXN8D68paDNAVOfDl4,14600
+numbertoword/currency.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+numbertoword/number_to_word.py,sha256=eX9-7KKVlG2YUX-bwnCRPfHFPXZ76eHJj4B-9x5NrCY,17823
+numbertoword/test.py,sha256=p5CKog24NtFZbJ9T9vQqLEqTzmngKp0fREaV1yxZkc4,95
+number_to_word-1.1.dist-info/LICENSE,sha256=IK4XkmLhpNT6K2nJAaAhbr5xFTvjW9pXn8tsLZxBI-k,1090
+number_to_word-1.1.dist-info/METADATA,sha256=Q2WOt-UCdVEiMqbGFrpED7cMLH0klFj4kPxa9nQk8dI,2396
+number_to_word-1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+number_to_word-1.1.dist-info/top_level.txt,sha256=cFvl5ZBNANeig3ajv0v54ti5mHG1XxiQlzVjf7UmcDc,13
+number_to_word-1.1.dist-info/RECORD,,
