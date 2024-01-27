@@ -1,0 +1,362 @@
+{
+  "Almond": {
+    "code": "A",
+    "comment": "Ansi color data for 'Almond'",
+    "name": "almond",
+    "rgb": [
+      255,
+      231,
+      202
+    ]
+  },
+  "Black": {
+    "code": "BL",
+    "comment": "Ansi color data for 'Black'",
+    "name": "black",
+    "rgb": [
+      0,
+      0,
+      0
+    ]
+  },
+  "Blue": {
+    "code": "B",
+    "comment": "Ansi color data for 'Blue'",
+    "name": "blue",
+    "rgb": [
+      0,
+      0,
+      255
+    ]
+  },
+  "Dark Blue": {
+    "code": "dB",
+    "comment": "Ansi color data for 'Dark Blue'",
+    "name": "dark_blue",
+    "rgb": [
+      0,
+      0,
+      160
+    ]
+  },
+  "Light Blue": {
+    "code": "b",
+    "comment": "Ansi color data for 'Light Blue'",
+    "name": "light_blue",
+    "rgb": [
+      51,
+      153,
+      255
+    ]
+  },
+  "Brown": {
+    "code": "Br",
+    "comment": "Ansi color data for 'Brown'",
+    "name": "brown",
+    "rgb": [
+      102,
+      51,
+      0
+    ]
+  },
+  "Cerulean": {
+    "code": "ce",
+    "comment": "Ansi color data for 'Cerulean'",
+    "name": "cerulean",
+    "rgb": [
+      9,
+      197,
+      246
+    ]
+  },
+  "Charcoal": {
+    "code": "ch",
+    "comment": "Ansi color data for 'Charcoal'",
+    "name": "charcoal",
+    "rgb": [
+      26,
+      26,
+      26
+    ]
+  },
+  "Dark Chocolate": {
+    "code": "dc",
+    "comment": "Ansi color data for 'Dark Chocolate'",
+    "name": "dark_chocolate",
+    "rgb": [
+      13,
+      11,
+      9
+    ]
+  },
+  "Cyan": {
+    "code": "C",
+    "comment": "Ansi color data for 'Cyan'",
+    "name": "cyan",
+    "rgb": [
+      0,
+      153,
+      135
+    ]
+  },
+  "Ice": {
+    "code": "ice",
+    "comment": "Ansi color data for 'Ice'",
+    "name": "ice",
+    "rgb": [
+      113,
+      155,
+      207
+    ]
+  },
+  "Dark Cyan": {
+    "code": "dC",
+    "comment": "Ansi color data for 'Dark Cyan'",
+    "name": "dark_cyan",
+    "rgb": [
+      0,
+      102,
+      102
+    ]
+  },
+  "Light Cyan": {
+    "code": "c",
+    "comment": "Ansi color data for 'Light Cyan'",
+    "name": "light_cyan",
+    "rgb": [
+      0,
+      255,
+      255
+    ]
+  },
+  "Gold": {
+    "code": "Gd",
+    "comment": "Ansi color data for 'Gold'",
+    "name": "gold",
+    "rgb": [
+      204,
+      204,
+      0
+    ]
+  },
+  "Gray": {
+    "code": "Gr",
+    "comment": "Ansi color data for 'Gray'",
+    "name": "gray",
+    "rgb": [
+      160,
+      160,
+      160
+    ]
+  },
+  "Dark Gray": {
+    "code": "dGr",
+    "comment": "Ansi color data for 'Dark Gray'",
+    "name": "dark_gray",
+    "rgb": [
+      56,
+      56,
+      56
+    ]
+  },
+  "Light Gray": {
+    "code": "gr",
+    "comment": "Ansi color data for 'Light Gray'",
+    "name": "light_gray",
+    "rgb": [
+      224,
+      224,
+      224
+    ]
+  },
+  "Green": {
+    "code": "G",
+    "comment": "Ansi color data for 'Green'",
+    "name": "green",
+    "rgb": [
+      0,
+      153,
+      0
+    ]
+  },
+  "Dark Green": {
+    "code": "dG",
+    "comment": "Ansi color data for 'Dark Green'",
+    "name": "dark_green",
+    "rgb": [
+      0,
+      102,
+      0
+    ]
+  },
+  "Light Green": {
+    "code": "g",
+    "comment": "Ansi color data for 'Light Green'",
+    "name": "light_green",
+    "rgb": [
+      102,
+      255,
+      102
+    ]
+  },
+  "Dirty Lime": {
+    "code": "dl",
+    "comment": "Ansi color data for 'Dirty Lime'",
+    "name": "dirty_lime",
+    "rgb": [
+      158,
+      176,
+      160
+    ]
+  },
+  "Magenta": {
+    "code": "M",
+    "comment": "Ansi color data for 'Magenta'",
+    "name": "magenta",
+    "rgb": [
+      204,
+      0,
+      204
+    ]
+  },
+  "Orange": {
+    "code": "O",
+    "comment": "Ansi color data for 'Orange'",
+    "name": "orange",
+    "rgb": [
+      255,
+      128,
+      0
+    ]
+  },
+  "Dark Orange": {
+    "code": "dO",
+    "comment": "Ansi color data for 'Dark Orange'",
+    "name": "dark_orange",
+    "rgb": [
+      129,
+      65,
+      0
+    ]
+  },
+  "Neon Orange": {
+    "comment": "Ansi color data for 'Neon Orange'",
+    "name": "neon_orange",
+    "code": "nO",
+    "rgb": [
+      234,
+      169,
+      56
+    ]
+  },
+  "Pink": {
+    "code": "pi",
+    "comment": "Ansi color data for 'Pink'",
+    "name": "pink",
+    "rgb": [
+      255,
+      102,
+      255
+    ]
+  },
+  "Purple": {
+    "code": "P",
+    "comment": "Ansi color data for 'Purple'",
+    "name": "purple",
+    "rgb": [
+      102,
+      0,
+      204
+    ]
+  },
+  "Dark Purple": {
+    "code": "dP",
+    "comment": "Ansi color data for 'Dark Purple'",
+    "name": "dark_purple",
+    "rgb": [
+      51,
+      0,
+      102
+    ]
+  },
+  "Light Purple": {
+    "code": "p",
+    "comment": "Ansi color data for 'Light Purple'",
+    "name": "light_purple",
+    "rgb": [
+      178,
+      102,
+      255
+    ]
+  },
+  "Red": {
+    "code": "R",
+    "comment": "Ansi color data for 'Red'",
+    "name": "red",
+    "rgb": [
+      204,
+      0,
+      0
+    ]
+  },
+  "Dark Red": {
+    "code": "dR",
+    "comment": "Ansi color data for 'Dark Red'",
+    "name": "dark_red",
+    "rgb": [
+      153,
+      0,
+      0
+    ]
+  },
+  "Light Red": {
+    "code": "r",
+    "comment": "Ansi color data for 'Light Red'",
+    "name": "light_red",
+    "rgb": [
+      255,
+      102,
+      102
+    ]
+  },
+  "Silver": {
+    "code": "S",
+    "comment": "Ansi color data for 'Silver'",
+    "name": "silver",
+    "rgb": [
+      191,
+      191,
+      191
+    ]
+  },
+  "Turquoise": {
+    "code": "T",
+    "comment": "Ansi color data for 'Turquoise'",
+    "name": "turquoise",
+    "rgb": [
+      136,
+      222,
+      172
+    ]
+  },
+  "White": {
+    "code": "W",
+    "comment": "Ansi color data for 'White'",
+    "name": "white",
+    "rgb": [
+      255,
+      255,
+      255
+    ]
+  },
+  "Yellow": {
+    "code": "Y",
+    "comment": "Ansi color data for 'Yellow'",
+    "name": "yellow",
+    "rgb": [
+      255,
+      255,
+      0
+    ]
+  }
+}
