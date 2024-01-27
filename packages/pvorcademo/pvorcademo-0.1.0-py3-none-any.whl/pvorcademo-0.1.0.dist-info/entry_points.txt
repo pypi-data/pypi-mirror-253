@@ -1,0 +1,2 @@
+[console_scripts]
+orca_demo = pvorcademo.orca_demo:main
