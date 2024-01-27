@@ -1,0 +1,8 @@
+[project]
+name = "syntheseus-graph2edits"
+description = "Fork of Graph2Edits for use in the syntheseus library"
+version = "0.2.0"
+dependencies = ["joblib"]
+
+[tool.setuptools.package-dir]
+"graph2edits" = "."
