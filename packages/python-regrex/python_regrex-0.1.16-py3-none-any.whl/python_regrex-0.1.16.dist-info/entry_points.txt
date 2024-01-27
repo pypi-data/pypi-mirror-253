@@ -1,0 +1,3 @@
+[console_scripts]
+regrex=src.app:main
+
