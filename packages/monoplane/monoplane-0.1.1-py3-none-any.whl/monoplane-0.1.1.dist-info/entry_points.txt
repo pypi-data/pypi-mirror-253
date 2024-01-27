@@ -1,0 +1,4 @@
+[console_scripts]
+monoplane=monoplane.cli:cli
+mp=monoplane.cli:cli
+
