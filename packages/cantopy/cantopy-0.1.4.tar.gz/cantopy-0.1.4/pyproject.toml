@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cantopy"
+version = "0.1.4"
+description = "A XenoCanto API wrapper for Python"
+authors = ["RobbeRDG <robbedegroeve@gmail.com>"]
+license = "MIT"
+readme = "readme.md"
+repository = "https://github.com/RobbeRDG/CantoPy"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.0"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
