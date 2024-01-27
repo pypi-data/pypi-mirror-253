@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+PreProPackage.egg-info/PKG-INFO
+PreProPackage.egg-info/SOURCES.txt
+PreProPackage.egg-info/dependency_links.txt
+PreProPackage.egg-info/requires.txt
+PreProPackage.egg-info/top_level.txt
+PreprocessingPackage/__init__.py
+PreprocessingPackage/bgr/__init__.py
+PreprocessingPackage/bgr/class_bgr.py
+PreprocessingPackage/normalization/__init__.py
+PreprocessingPackage/normalization/funct_norma.py

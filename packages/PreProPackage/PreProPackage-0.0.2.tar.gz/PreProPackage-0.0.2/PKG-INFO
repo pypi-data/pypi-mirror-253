@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: PreProPackage
+Version: 0.0.2
+Summary: code for generate preprocessing in gpr
+Home-page: https://github.com/aplatag/testPackagepip
+Author: Aplatag
+License: MIT
+License-File: LICENSE
+
+code generate preprocessing in gpr data, include data syntetic, data field, data in laboratory
