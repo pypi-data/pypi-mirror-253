@@ -1,0 +1,10 @@
+README.md
+setup.py
+shellplus/__init__.py
+shellplus/colors1.py
+shellplus/styles.py
+shellplus.egg-info/PKG-INFO
+shellplus.egg-info/SOURCES.txt
+shellplus.egg-info/dependency_links.txt
+shellplus.egg-info/requires.txt
+shellplus.egg-info/top_level.txt
