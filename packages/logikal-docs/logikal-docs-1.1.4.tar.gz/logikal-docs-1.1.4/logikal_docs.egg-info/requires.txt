@@ -1,0 +1,7 @@
+logikal-utils~=1.0
+packaging~=23.2
+Sphinx==7.1.2
+sphinx-rtd-theme==2.0.0
+
+[jupyter]
+jupyter-sphinx==0.5.3

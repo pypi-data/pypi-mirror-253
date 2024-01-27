@@ -1,0 +1,5 @@
+-e .
+-r core.txt
+-r extras/jupyter.txt
+
+pandas==2.0.3  # 2.1+ requires Python 3.9+
