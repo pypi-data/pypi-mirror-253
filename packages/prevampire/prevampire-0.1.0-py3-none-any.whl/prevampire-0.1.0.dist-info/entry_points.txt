@@ -1,0 +1,2 @@
+[console_scripts]
+prevampire-cli = prevampire.cli:main

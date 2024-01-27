@@ -1,0 +1,10 @@
+prevampire/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prevampire/prevampire.py,sha256=l1uVGUUCZyBp664ruOmeSVvYyBsyAZDU0fC-SylzbOw,17389
+prevampire/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prevampire/tests/test_prevampire.py,sha256=ujj6smOffP4Dm5Pc-4ygan_8lHG4yiFRILDzFFQI0Ag,6329
+prevampire-0.1.0.dist-info/LICENSE,sha256=pT6eMAygvV-RkDCH6fayTKufaB2hcOaLyZzWqcfSbJk,1108
+prevampire-0.1.0.dist-info/METADATA,sha256=Zmpk-9-8LIBzhLRGyJBEExrJAwqfk4sF0J7qMvREhy0,5972
+prevampire-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+prevampire-0.1.0.dist-info/entry_points.txt,sha256=J6V1KVfULxz1399qD_8rPIPyWBIe9cjidHKdfCkaVQs,55
+prevampire-0.1.0.dist-info/top_level.txt,sha256=GXdkB4bPeDLPd7AZl2Il-2mwujm7r8nJffhFjYUwS3o,11
+prevampire-0.1.0.dist-info/RECORD,,
