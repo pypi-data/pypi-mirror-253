@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0","django>=3.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SSubdomains"
+version = "0.0.8_Beta"
+authors = [
+  { name="Salah aldain alhajj", email="contact@salahaldain.com" },
+]
+description = "SSubdomain provides a clean way to manage multiple subdomains in a Django project. User role-based access control makes it easy to restrict parts of a site."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/salah-alhajj/SSubdomains"
+Issues = "https://github.com/salah-alhajj/SSubdomains/issues"
