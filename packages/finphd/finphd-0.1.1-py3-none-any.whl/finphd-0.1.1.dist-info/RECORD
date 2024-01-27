@@ -1,0 +1,10 @@
+finphd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finphd/asset_pricing/__init__.py,sha256=BtmPhaPtx_1Iw7psR80KJuFreFR8MnqW1RvkBF3mZo8,54
+finphd/asset_pricing/test.py,sha256=6AoxqzRg_zZSeahUX96QM2oVRg9aqtHmWUQUtRyOXb0,42
+finphd/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finphd/replication/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finphd/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finphd-0.1.1.dist-info/LICENSE,sha256=Il92t7KnzVIy8gV-TlP11FNoBPWfPkN_S7QPWjG5rPc,1075
+finphd-0.1.1.dist-info/METADATA,sha256=jCG4R9hBlKGGCeHkLHeNxJhXB-bkNVjzixThwSwgeyI,561
+finphd-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+finphd-0.1.1.dist-info/RECORD,,
