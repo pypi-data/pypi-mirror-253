@@ -1,0 +1,4 @@
+include assimpy/LICENSE
+include assimpy/README_PYPI.md
+include assimpy/assimpy_ext.h
+recursive-include assimpy/assimp *
