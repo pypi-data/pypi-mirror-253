@@ -1,0 +1,1 @@
+Fixed errors in the ordering of the Helioprojective Latitude and Longitude axes in the L1 headers.

@@ -1,0 +1,1 @@
+Modify parsing to correctly detect the use of dual nested internal scanning loops, with the outer loop step size set to zero to emulate a DSP map scan.
