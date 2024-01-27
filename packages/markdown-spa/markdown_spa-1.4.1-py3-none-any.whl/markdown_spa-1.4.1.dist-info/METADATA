@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: markdown_spa
+Version: 1.4.1
+Summary: A static site generator for Markdown files.
+Author: MrSpaar
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Requires-Dist: markdown
+Requires-Dist: jinja2
+Requires-Dist: pygments
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: importlib_metadata
+Requires-Dist: colorama; platform_system == 'Windows'
+Project-URL: Documentation, https://mrspaar.github.io/markdown_spa/
+Project-URL: Homepage, https://github.com/MrSpaar/markdown_spa
+Project-URL: Issues, https://github.com/MrSpaar/markdown_spa/issues
+
+[![Documentation](https://img.shields.io/badge/Documentation-grey?&logo=read-the-docs)](https://mrspaar.github.io/markdown_spa/)
+[![PyPi Package](https://img.shields.io/badge/pip%20install-markdown__spa-blue?&logo=pypi)](https://pypi.org/project/markdown_spa/)
+[![GitHub Release](https://img.shields.io/github/v/release/mrspaar/markdown_spa?&logo=github)](https://github.com/mrspaar/markdown_spa/releases)
+[![GitHub License](https://img.shields.io/github/license/MrSpaar/markdown_spa?logo=github)](https://github.com/mrspaar/markdown_spa/blob/master/LICENSE)
+
+[markdown_spa](https://pypi.org/project/markdown_spa) is a Python ([`jinja2`](https://pypi.org/project/Jinja2/) + [`markdown`](https://pypi.org/project/Markdown/)) static site generator:
+
+- [x] Powerful templating
+- [x] SEO optimized
+- [x] No full page reloads
+- [x] SCSS and Tailwind CSS support
+- [x] Extented Markdown syntax
+- [x] Automatic deployment to GitHub Pages
+
+To get started:
+```bash
+# Create a new project
+markdown_spa init my-project
+
+# Start the development server
+markdown_spa watch my-project
+```
+
