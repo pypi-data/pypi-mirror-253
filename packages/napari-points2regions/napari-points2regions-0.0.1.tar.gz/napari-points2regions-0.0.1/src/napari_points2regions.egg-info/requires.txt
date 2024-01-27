@@ -1,0 +1,6 @@
+colorcet
+magicgui
+napari
+numpy
+pandas
+points2regions
