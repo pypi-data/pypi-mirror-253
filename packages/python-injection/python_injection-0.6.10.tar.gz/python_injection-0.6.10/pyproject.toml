@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "python-injection"
+version = "0.6.10"
+description = "Fast and easy dependency injection framework."
+authors = ["remimd"]
+keywords = ["dependencies", "inject", "injection"]
+license = "MIT"
+packages = [{ include = "injection" }]
+readme = "documentation/basic-usage.md"
+repository = "https://github.com/100nm/python-injection"
+
+[tool.poetry.dependencies]
+python = ">=3.10, <4"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+blacksheep = "^2.0.6"
+flake8 = "*"
+isort = "*"
+pydantic = "^2.5.3"
+pytest = "*"
+pytest-asyncio = "*"
+pytest-cov = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
