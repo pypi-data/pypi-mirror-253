@@ -1,0 +1,9 @@
+lenscat/__init__.py,sha256=cBuA0fzelZGkUUKws83DVoAL0gw_gapRttnNTRb3FGw,1382
+lenscat/_version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+lenscat/utils.py,sha256=mZNoJqhlzI9eoDw-GdkvhrQFdlgYHF6ae25kx_lW5-g,3008
+lenscat/data/catalog.csv,sha256=UWpQ0yEUdZF0fLaXM8RP2e1clKvuWDXC3aIUL56n_9w,186181
+lenscat-0.0.1.dist-info/LICENSE,sha256=b9Y-TG3VUL-N69dYK9x60e92Mfr6sMLrDmau4yraHGg,1064
+lenscat-0.0.1.dist-info/METADATA,sha256=AwUf6IDWZDMtq1dWil-XmEm7tQoD3e5JF4LVW98Ppes,6534
+lenscat-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+lenscat-0.0.1.dist-info/top_level.txt,sha256=eorq3sukctuWToj9FdnISiBYPCKv2bfRKt7qMuTHyvk,8
+lenscat-0.0.1.dist-info/RECORD,,
