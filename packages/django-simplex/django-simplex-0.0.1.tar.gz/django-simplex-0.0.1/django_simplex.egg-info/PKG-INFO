@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: django-simplex
+Version: 0.0.1
+Summary: django project development made easier
+Author-email: Ramin-RX7 <rawmin.rx@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/Ramin-RX7/django-simplex
+Project-URL: Bug Tracker, https://github.com/Ramin-RX7/django-simplex/issues
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django==5.0.1

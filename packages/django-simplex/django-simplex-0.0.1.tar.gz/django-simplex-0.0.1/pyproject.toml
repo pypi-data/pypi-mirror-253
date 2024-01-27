@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-simplex"
+version = "0.0.1"
+description = "django project development made easier"
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["django==5.0.1"]
+classifiers = ["Programming Language :: Python :: 3",]
+authors = [{name = "Ramin-RX7", email = "rawmin.rx@gmail.com"},]
+
+[tool.setuptools]
+packages = ["django_simplex"]
+
+[project.urls]
+"Homepage" = "https://github.com/Ramin-RX7/django-simplex"
+"Bug Tracker" = "https://github.com/Ramin-RX7/django-simplex/issues"

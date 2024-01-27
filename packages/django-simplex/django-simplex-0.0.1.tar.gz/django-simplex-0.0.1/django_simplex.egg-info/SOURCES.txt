@@ -1,0 +1,13 @@
+.gitattributes
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+django_simplex/__init__.py
+django_simplex/apps.py
+django_simplex/urls.py
+django_simplex.egg-info/PKG-INFO
+django_simplex.egg-info/SOURCES.txt
+django_simplex.egg-info/dependency_links.txt
+django_simplex.egg-info/requires.txt
+django_simplex.egg-info/top_level.txt
