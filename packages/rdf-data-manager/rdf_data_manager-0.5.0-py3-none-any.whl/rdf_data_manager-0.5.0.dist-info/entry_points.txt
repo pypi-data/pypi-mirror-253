@@ -1,0 +1,3 @@
+[console_scripts]
+rdf-data-manager=rdf_data_manager.__init__:main
+
