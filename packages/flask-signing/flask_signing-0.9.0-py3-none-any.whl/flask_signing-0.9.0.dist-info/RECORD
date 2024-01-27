@@ -1,0 +1,9 @@
+flask_signing/__init__.py,sha256=Ac6S5kPNC8PERas9LNqYFaaWQ1C4Kec5ZieTTxmpwks,24781
+flask_signing/__metadata__.py,sha256=l3fPsTpC8jrzoUetDoSfi9-oYZv3nklZ7rycGMoB4JI,213
+tests/__init__.py,sha256=vwnbFqQ4oSNmlKLUzhjCd3TmvHo4WrQs-__btKhOS18,12354
+tests/performance_tests.py,sha256=U8SbQg2Y0WXmHkaEHYBCVf5e1Ucv_UjzpZDY2xHqyLw,7995
+flask_signing-0.9.0.dist-info/LICENSE,sha256=pzry0jNUfeJOxUjUwTek1WKMGWbyX-lOP8qfDOnM7sA,1503
+flask_signing-0.9.0.dist-info/METADATA,sha256=roUC5ygDb5eG4tag6uucUXWFMqY_N6mwNKBYv8x68rw,4411
+flask_signing-0.9.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+flask_signing-0.9.0.dist-info/top_level.txt,sha256=ZE6BfuPMj9ZaYBqkifVUlDPnknOGOdlGj-xxqadgg7A,20
+flask_signing-0.9.0.dist-info/RECORD,,
