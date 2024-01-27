@@ -1,0 +1,562 @@
+{
+  "#abstract": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Abstract",
+      "url": "https://w3c.github.io/longtasks/#abstract"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Abstract",
+      "url": "https://www.w3.org/TR/longtasks-1/#abstract"
+    }
+  },
+  "#attack-scenarios": {
+    "current": {
+      "number": "7.2",
+      "spec": "Long Tasks API",
+      "text": "Attack Scenarios Considered",
+      "url": "https://w3c.github.io/longtasks/#attack-scenarios"
+    },
+    "snapshot": {
+      "number": "7.2",
+      "spec": "Long Tasks API",
+      "text": "Attack Scenarios Considered",
+      "url": "https://www.w3.org/TR/longtasks-1/#attack-scenarios"
+    }
+  },
+  "#dom-monkey-patches": {
+    "current": {
+      "number": "6.2",
+      "spec": "Long Tasks API",
+      "text": "Monkey-patches to the DOM standard",
+      "url": "https://w3c.github.io/longtasks/#dom-monkey-patches"
+    },
+    "snapshot": {
+      "number": "6.2",
+      "spec": "Long Tasks API",
+      "text": "Monkey-patches to the DOM standard",
+      "url": "https://www.w3.org/TR/longtasks-1/#dom-monkey-patches"
+    }
+  },
+  "#example": {
+    "current": {
+      "number": "1.1",
+      "spec": "Long Tasks API",
+      "text": "Usage Example",
+      "url": "https://w3c.github.io/longtasks/#example"
+    },
+    "snapshot": {
+      "number": "1.1",
+      "spec": "Long Tasks API",
+      "text": "Usage Example",
+      "url": "https://www.w3.org/TR/longtasks-1/#example"
+    }
+  },
+  "#html-monkey-patches": {
+    "current": {
+      "number": "6.3",
+      "spec": "Long Tasks API",
+      "text": "Monkey-patches to the HTML standard",
+      "url": "https://w3c.github.io/longtasks/#html-monkey-patches"
+    },
+    "snapshot": {
+      "number": "6.3",
+      "spec": "Long Tasks API",
+      "text": "Monkey-patches to the HTML standard",
+      "url": "https://www.w3.org/TR/longtasks-1/#html-monkey-patches"
+    }
+  },
+  "#idl-index": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "IDL Index",
+      "url": "https://w3c.github.io/longtasks/#idl-index"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "IDL Index",
+      "url": "https://www.w3.org/TR/longtasks-1/#idl-index"
+    }
+  },
+  "#index": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Index",
+      "url": "https://w3c.github.io/longtasks/#index"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Index",
+      "url": "https://www.w3.org/TR/longtasks-1/#index"
+    }
+  },
+  "#index-defined-elsewhere": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Terms defined by reference",
+      "url": "https://w3c.github.io/longtasks/#index-defined-elsewhere"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Terms defined by reference",
+      "url": "https://www.w3.org/TR/longtasks-1/#index-defined-elsewhere"
+    }
+  },
+  "#index-defined-here": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Terms defined by this specification",
+      "url": "https://w3c.github.io/longtasks/#index-defined-here"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Terms defined by this specification",
+      "url": "https://www.w3.org/TR/longtasks-1/#index-defined-here"
+    }
+  },
+  "#intro": {
+    "current": {
+      "number": "1",
+      "spec": "Long Tasks API",
+      "text": "Introduction",
+      "url": "https://w3c.github.io/longtasks/#intro"
+    },
+    "snapshot": {
+      "number": "1",
+      "spec": "Long Tasks API",
+      "text": "Introduction",
+      "url": "https://www.w3.org/TR/longtasks-1/#intro"
+    }
+  },
+  "#issues-index": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Issues Index",
+      "url": "https://w3c.github.io/longtasks/#issues-index"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Issues Index",
+      "url": "https://www.w3.org/TR/longtasks-1/#issues-index"
+    }
+  },
+  "#loaf-monitoring": {
+    "current": {
+      "number": "5.3.1",
+      "spec": "Long Tasks API",
+      "text": "Long Animation Frame Monitoring {#loaf-monitoring}",
+      "url": "https://w3c.github.io/longtasks/#loaf-monitoring"
+    },
+    "snapshot": {
+      "number": "5.3.1",
+      "spec": "Long Tasks API",
+      "text": "Long Animation Frame Monitoring {#loaf-monitoring}",
+      "url": "https://www.w3.org/TR/longtasks-1/#loaf-monitoring"
+    }
+  },
+  "#loaf-opaque-scripts-sec": {
+    "current": {
+      "number": "7.4",
+      "spec": "Long Tasks API",
+      "text": "PerformanceScriptTiming and opaque scripts",
+      "url": "https://w3c.github.io/longtasks/#loaf-opaque-scripts-sec"
+    },
+    "snapshot": {
+      "number": "7.4",
+      "spec": "Long Tasks API",
+      "text": "PerformanceScriptTiming and opaque scripts",
+      "url": "https://www.w3.org/TR/longtasks-1/#loaf-opaque-scripts-sec"
+    }
+  },
+  "#loaf-processing-model": {
+    "current": {
+      "number": "5.3",
+      "spec": "Long Tasks API",
+      "text": "Report Long Animation Frames",
+      "url": "https://w3c.github.io/longtasks/#loaf-processing-model"
+    },
+    "snapshot": {
+      "number": "5.3",
+      "spec": "Long Tasks API",
+      "text": "Report Long Animation Frames",
+      "url": "https://www.w3.org/TR/longtasks-1/#loaf-processing-model"
+    }
+  },
+  "#loaf-sec-priv": {
+    "current": {
+      "number": "7.3",
+      "spec": "Long Tasks API",
+      "text": "Additional information exposed by the Long Animation Frames API",
+      "url": "https://w3c.github.io/longtasks/#loaf-sec-priv"
+    },
+    "snapshot": {
+      "number": "7.3",
+      "spec": "Long Tasks API",
+      "text": "Additional information exposed by the Long Animation Frames API",
+      "url": "https://www.w3.org/TR/longtasks-1/#loaf-sec-priv"
+    }
+  },
+  "#loaf-vs-longtasks": {
+    "current": {
+      "number": "1.2",
+      "spec": "Long Tasks API",
+      "text": "Long Animation Frames vs. Long Tasks",
+      "url": "https://w3c.github.io/longtasks/#loaf-vs-longtasks"
+    },
+    "snapshot": {
+      "number": "1.2",
+      "spec": "Long Tasks API",
+      "text": "Long Animation Frames vs. Long Tasks",
+      "url": "https://www.w3.org/TR/longtasks-1/#loaf-vs-longtasks"
+    }
+  },
+  "#long-script-monitoring": {
+    "current": {
+      "number": "5.3.2",
+      "spec": "Long Tasks API",
+      "text": "Long Script Monitoring",
+      "url": "https://w3c.github.io/longtasks/#long-script-monitoring"
+    },
+    "snapshot": {
+      "number": "5.3.2",
+      "spec": "Long Tasks API",
+      "text": "Long Script Monitoring",
+      "url": "https://www.w3.org/TR/longtasks-1/#long-script-monitoring"
+    }
+  },
+  "#normative": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Normative References",
+      "url": "https://w3c.github.io/longtasks/#normative"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Normative References",
+      "url": "https://www.w3.org/TR/longtasks-1/#normative"
+    }
+  },
+  "#other-standards": {
+    "current": {
+      "number": "6",
+      "spec": "Long Tasks API",
+      "text": "Additions to existing standards",
+      "url": "https://w3c.github.io/longtasks/#other-standards"
+    },
+    "snapshot": {
+      "number": "6",
+      "spec": "Long Tasks API",
+      "text": "Additions to existing standards",
+      "url": "https://www.w3.org/TR/longtasks-1/#other-standards"
+    }
+  },
+  "#priv-sec": {
+    "current": {
+      "number": "7",
+      "spec": "Long Tasks API",
+      "text": "Security & privacy considerations",
+      "url": "https://w3c.github.io/longtasks/#priv-sec"
+    },
+    "snapshot": {
+      "number": "7",
+      "spec": "Long Tasks API",
+      "text": "Security & privacy considerations",
+      "url": "https://www.w3.org/TR/longtasks-1/#priv-sec"
+    }
+  },
+  "#references": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "References",
+      "url": "https://w3c.github.io/longtasks/#references"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "References",
+      "url": "https://www.w3.org/TR/longtasks-1/#references"
+    }
+  },
+  "#report-long-tasks": {
+    "current": {
+      "number": "5.1",
+      "spec": "Long Tasks API",
+      "text": "Report long tasks",
+      "url": "https://w3c.github.io/longtasks/#report-long-tasks"
+    },
+    "snapshot": {
+      "number": "5.1",
+      "spec": "Long Tasks API",
+      "text": "Report long tasks",
+      "url": "https://www.w3.org/TR/longtasks-1/#report-long-tasks"
+    }
+  },
+  "#sec-PerformanceLongAnimationFrameTiming": {
+    "current": {
+      "number": "4.1",
+      "spec": "Long Tasks API",
+      "text": "PerformanceLongAnimationFrameTiming interface",
+      "url": "https://w3c.github.io/longtasks/#sec-PerformanceLongAnimationFrameTiming"
+    },
+    "snapshot": {
+      "number": "4.1",
+      "spec": "Long Tasks API",
+      "text": "PerformanceLongAnimationFrameTiming interface",
+      "url": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceLongAnimationFrameTiming"
+    }
+  },
+  "#sec-PerformanceLongTaskTiming": {
+    "current": {
+      "number": "3.1",
+      "spec": "Long Tasks API",
+      "text": "PerformanceLongTaskTiming interface",
+      "url": "https://w3c.github.io/longtasks/#sec-PerformanceLongTaskTiming"
+    },
+    "snapshot": {
+      "number": "3.1",
+      "spec": "Long Tasks API",
+      "text": "PerformanceLongTaskTiming interface",
+      "url": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceLongTaskTiming"
+    }
+  },
+  "#sec-PerformanceScriptTiming": {
+    "current": {
+      "number": "4.2",
+      "spec": "Long Tasks API",
+      "text": "PerformanceScriptTiming interface",
+      "url": "https://w3c.github.io/longtasks/#sec-PerformanceScriptTiming"
+    },
+    "snapshot": {
+      "number": "4.2",
+      "spec": "Long Tasks API",
+      "text": "PerformanceScriptTiming interface",
+      "url": "https://www.w3.org/TR/longtasks-1/#sec-PerformanceScriptTiming"
+    }
+  },
+  "#sec-PointingToCulprit": {
+    "current": {
+      "number": "3.3",
+      "spec": "Long Tasks API",
+      "text": "Pointing to the culprit",
+      "url": "https://w3c.github.io/longtasks/#sec-PointingToCulprit"
+    },
+    "snapshot": {
+      "number": "3.3",
+      "spec": "Long Tasks API",
+      "text": "Pointing to the culprit",
+      "url": "https://www.w3.org/TR/longtasks-1/#sec-PointingToCulprit"
+    }
+  },
+  "#sec-TaskAttributionTiming": {
+    "current": {
+      "number": "3.2",
+      "spec": "Long Tasks API",
+      "text": "TaskAttributionTiming interface",
+      "url": "https://w3c.github.io/longtasks/#sec-TaskAttributionTiming"
+    },
+    "snapshot": {
+      "number": "3.2",
+      "spec": "Long Tasks API",
+      "text": "TaskAttributionTiming interface",
+      "url": "https://www.w3.org/TR/longtasks-1/#sec-TaskAttributionTiming"
+    }
+  },
+  "#sec-frame-timing-info": {
+    "current": {
+      "number": "5.2",
+      "spec": "Long Tasks API",
+      "text": "Frame Timing Info",
+      "url": "https://w3c.github.io/longtasks/#sec-frame-timing-info"
+    },
+    "snapshot": {
+      "number": "5.2",
+      "spec": "Long Tasks API",
+      "text": "Frame Timing Info",
+      "url": "https://www.w3.org/TR/longtasks-1/#sec-frame-timing-info"
+    }
+  },
+  "#sec-loaf-timing": {
+    "current": {
+      "number": "4",
+      "spec": "Long Tasks API",
+      "text": "Long Animation Frame Timing",
+      "url": "https://w3c.github.io/longtasks/#sec-loaf-timing"
+    },
+    "snapshot": {
+      "number": "4",
+      "spec": "Long Tasks API",
+      "text": "Long Animation Frame Timing",
+      "url": "https://www.w3.org/TR/longtasks-1/#sec-loaf-timing"
+    }
+  },
+  "#sec-longtask-timing": {
+    "current": {
+      "number": "3",
+      "spec": "Long Tasks API",
+      "text": "Long Task Timing",
+      "url": "https://w3c.github.io/longtasks/#sec-longtask-timing"
+    },
+    "snapshot": {
+      "number": "3",
+      "spec": "Long Tasks API",
+      "text": "Long Task Timing",
+      "url": "https://www.w3.org/TR/longtasks-1/#sec-longtask-timing"
+    }
+  },
+  "#sec-processing-model": {
+    "current": {
+      "number": "5",
+      "spec": "Long Tasks API",
+      "text": "Processing model",
+      "url": "https://w3c.github.io/longtasks/#sec-processing-model"
+    },
+    "snapshot": {
+      "number": "5",
+      "spec": "Long Tasks API",
+      "text": "Processing model",
+      "url": "https://www.w3.org/TR/longtasks-1/#sec-processing-model"
+    }
+  },
+  "#sec-terminology": {
+    "current": {
+      "number": "2",
+      "spec": "Long Tasks API",
+      "text": "Terminology",
+      "url": "https://w3c.github.io/longtasks/#sec-terminology"
+    },
+    "snapshot": {
+      "number": "2",
+      "spec": "Long Tasks API",
+      "text": "Terminology",
+      "url": "https://www.w3.org/TR/longtasks-1/#sec-terminology"
+    }
+  },
+  "#sotd": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Status of this document",
+      "url": "https://w3c.github.io/longtasks/#sotd"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Status of this document",
+      "url": "https://www.w3.org/TR/longtasks-1/#sotd"
+    }
+  },
+  "#title": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Long Tasks API",
+      "url": "https://w3c.github.io/longtasks/#title"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Long Tasks API",
+      "url": "https://www.w3.org/TR/longtasks-1/#title"
+    }
+  },
+  "#toc": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Table of Contents",
+      "url": "https://w3c.github.io/longtasks/#toc"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Table of Contents",
+      "url": "https://www.w3.org/TR/longtasks-1/#toc"
+    }
+  },
+  "#w3c-conformance": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Conformance",
+      "url": "https://w3c.github.io/longtasks/#w3c-conformance"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Conformance",
+      "url": "https://www.w3.org/TR/longtasks-1/#w3c-conformance"
+    }
+  },
+  "#w3c-conformant-algorithms": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Conformant Algorithms",
+      "url": "https://w3c.github.io/longtasks/#w3c-conformant-algorithms"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Conformant Algorithms",
+      "url": "https://www.w3.org/TR/longtasks-1/#w3c-conformant-algorithms"
+    }
+  },
+  "#w3c-conventions": {
+    "current": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Document conventions",
+      "url": "https://w3c.github.io/longtasks/#w3c-conventions"
+    },
+    "snapshot": {
+      "number": "",
+      "spec": "Long Tasks API",
+      "text": "Document conventions",
+      "url": "https://www.w3.org/TR/longtasks-1/#w3c-conventions"
+    }
+  },
+  "#webidl-monkey-patches": {
+    "current": {
+      "number": "6.1",
+      "spec": "Long Tasks API",
+      "text": "Monkey-patches to the WebIDL standard",
+      "url": "https://w3c.github.io/longtasks/#webidl-monkey-patches"
+    },
+    "snapshot": {
+      "number": "6.1",
+      "spec": "Long Tasks API",
+      "text": "Monkey-patches to the WebIDL standard",
+      "url": "https://www.w3.org/TR/longtasks-1/#webidl-monkey-patches"
+    }
+  },
+  "#what-is-exposed": {
+    "current": {
+      "number": "7.1",
+      "spec": "Long Tasks API",
+      "text": "What is Exposed to Observers?",
+      "url": "https://w3c.github.io/longtasks/#what-is-exposed"
+    },
+    "snapshot": {
+      "number": "7.1",
+      "spec": "Long Tasks API",
+      "text": "What is Exposed to Observers?",
+      "url": "https://www.w3.org/TR/longtasks-1/#what-is-exposed"
+    }
+  }
+}
