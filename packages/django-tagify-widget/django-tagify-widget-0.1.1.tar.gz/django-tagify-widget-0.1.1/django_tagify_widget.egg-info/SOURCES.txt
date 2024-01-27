@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+django_tagify_widget.egg-info/PKG-INFO
+django_tagify_widget.egg-info/SOURCES.txt
+django_tagify_widget.egg-info/dependency_links.txt
+django_tagify_widget.egg-info/requires.txt
+django_tagify_widget.egg-info/top_level.txt
+tagify_widget/__init__.py
+tagify_widget/widgets.py
+tagify_widget/static/tagify_widget/vender/tagify/tagify.css
+tagify_widget/static/tagify_widget/vender/tagify/tagify.min.js
+tagify_widget/static/tagify_widget/vender/tagify/tagify.polyfills.min.js
+tagify_widget/templates/tagify_widget/select.html
+tagify_widget/templates/tagify_widget/select_multiple.html
