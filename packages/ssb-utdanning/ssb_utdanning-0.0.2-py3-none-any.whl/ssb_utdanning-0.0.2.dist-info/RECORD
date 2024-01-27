@@ -1,0 +1,11 @@
+ssb_utdanning/__init__.py,sha256=sgypMHIZMSor_VS2arLONCGTkRXT-BHUmcV__Dej74Y,1477
+ssb_utdanning/config.py,sha256=FEDr-isxh2m2BYti6_oq_pCiL2WVljIXYxt4wUNo2DA,684
+ssb_utdanning/format/__init__.py,sha256=EbnuFt9jNNjkWZ0P-rHjel3YoEYW3fim7JiY126oVRs,571
+ssb_utdanning/format/formats.py,sha256=O3ZQNEMPqLits8_1Mb6k9BfEFy3dch7l9DiVN8m24yM,15442
+ssb_utdanning/format/sas_format_parsing.py,sha256=0HeWKZe2tcgX0Xf03v3rvZxoPLf70O-b1OWwviC7ds4,3903
+ssb_utdanning/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ssb_utdanning-0.0.2.dist-info/LICENSE,sha256=np3IfD5m0ZUofn_kVzDZqliozuiO6wrktw3LRPjyEiI,1073
+ssb_utdanning-0.0.2.dist-info/METADATA,sha256=-wWXhj_63ta-Gq7X2zASw64BF_XlnUHIXYQ3e0SUNb4,4359
+ssb_utdanning-0.0.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ssb_utdanning-0.0.2.dist-info/entry_points.txt,sha256=Svu09iRb6ChtKFFPuOAlSwLe9zztVHEPYTyqq638yOE,61
+ssb_utdanning-0.0.2.dist-info/RECORD,,
