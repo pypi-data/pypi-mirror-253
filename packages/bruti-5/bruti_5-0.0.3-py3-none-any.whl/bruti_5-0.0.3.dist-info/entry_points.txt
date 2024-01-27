@@ -1,0 +1,3 @@
+[console_scripts]
+bruti_5 = bruti_5.bruti_5:main
+
