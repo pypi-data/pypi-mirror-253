@@ -1,0 +1,17 @@
+requests>=2.26
+pandas>=2.0
+
+[async]
+aiohttp>=3.8
+
+[dev]
+black
+mypy>=1.4.1
+pre-commit
+pre-commit-hooks
+pyetm[async,excel]
+ruff
+
+[excel]
+xlsxwriter>=3.0
+openpyxl>=3.0
