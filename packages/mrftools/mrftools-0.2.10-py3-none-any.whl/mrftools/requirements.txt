@@ -1,0 +1,19 @@
+numpy>=1.25.2
+scipy>=1.10.1
+h5py>=3.7.0 
+matplotlib>=3.5.1
+nibabel>=4.0.2
+SimpleITK>=2.2.0 
+torch>=1.13.0 
+torchkbnufft @ git+https://github.com/mmuckley/torchkbnufft@20c45a2
+kornia>=0.6.8 
+ismrmrd>=1.12.3 
+fbpca>=1.0 
+tqdm>=4.62.3 
+jsonpickle>=3.0.1 
+twixtools @ git+https://github.com/pehses/twixtools@50b95f4
+ptwt
+
+ipykernel
+sphinx 
+sphinx_rtd_theme
