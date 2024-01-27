@@ -1,0 +1,13 @@
+jaguar_haystack/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jaguar_haystack/README.md,sha256=97KmLXpQ7yXZV_JpEFws8o1m2sGyXsqTgflVKggYs5o,495
+jaguar_haystack/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+jaguar_haystack/jaguar.py,sha256=VBwRiLgAuJNGoATZiNB4teHkojpKRA_PopLwUVodO9s,16776
+jaguar_haystack/retriever.py,sha256=7W2-pEE_M4wWeBQ-tGfR8XB6N8ma0jJd2NIViHpnk8o,8082
+jaguar_haystack-3.4.2.2.data/data/jaguardb/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jaguar_haystack-3.4.2.2.data/data/jaguardb/README.md,sha256=97KmLXpQ7yXZV_JpEFws8o1m2sGyXsqTgflVKggYs5o,495
+jaguar_haystack-3.4.2.2.data/data/jaguardb/jaguar.py,sha256=VBwRiLgAuJNGoATZiNB4teHkojpKRA_PopLwUVodO9s,16776
+jaguar_haystack-3.4.2.2.data/data/jaguardb/retriever.py,sha256=7W2-pEE_M4wWeBQ-tGfR8XB6N8ma0jJd2NIViHpnk8o,8082
+jaguar_haystack-3.4.2.2.dist-info/METADATA,sha256=6Yq8cjgxc5BLQWVROsdzAyoX8pPpQ533pH8Y1i-t5cg,211
+jaguar_haystack-3.4.2.2.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+jaguar_haystack-3.4.2.2.dist-info/top_level.txt,sha256=h6tyi7iCvO57TFA77nfEdQrWwL3hF2ZFL2kV4cTjKxk,16
+jaguar_haystack-3.4.2.2.dist-info/RECORD,,
