@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+Square_Matrix_Enhanced_Plotter.egg-info/PKG-INFO
+Square_Matrix_Enhanced_Plotter.egg-info/SOURCES.txt
+Square_Matrix_Enhanced_Plotter.egg-info/dependency_links.txt
+Square_Matrix_Enhanced_Plotter.egg-info/requires.txt
+Square_Matrix_Enhanced_Plotter.egg-info/top_level.txt
+square_matrix_enhanced_plotter.egg-info/PKG-INFO
+square_matrix_enhanced_plotter.egg-info/SOURCES.txt
+square_matrix_enhanced_plotter.egg-info/dependency_links.txt
+square_matrix_enhanced_plotter.egg-info/requires.txt
+square_matrix_enhanced_plotter.egg-info/top_level.txt
+squarematrixenhancedplotter/__init__.py
+squarematrixenhancedplotter/core.py
