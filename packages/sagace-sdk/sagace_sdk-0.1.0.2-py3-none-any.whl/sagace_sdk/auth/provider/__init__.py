@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+    --------------------------------------------------------------------------------------------------------------------
+
+    Description:
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Obs.:
+
+    Author:           @diego.yosiura
+    Last Update:      12/01/2024 11:51
+    Created:          12/01/2024 11:51
+    Copyright:        (c) Ampere Consultoria Ltda
+    Original Project: sagace-v2-package
+    IDE:              PyCharm
+"""
+from .provider import Provider
+from .request_manager import RequestManager
+from .file_provider import FileProvider

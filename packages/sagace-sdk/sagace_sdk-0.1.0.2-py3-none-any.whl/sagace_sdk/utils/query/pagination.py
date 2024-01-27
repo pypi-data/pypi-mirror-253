@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+"""
+    --------------------------------------------------------------------------------------------------------------------
+
+    Description:
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Obs.:
+
+    Author:           @diego.yosiura
+    Last Update:      12/01/2024 14:29
+    Created:          12/01/2024 14:29
+    Copyright:        (c) Ampere Consultoria Ltda
+    Original Project: sagace-v2-package
+    IDE:              PyCharm
+"""
+
+
+class Pagination(object):
+    page = 1
+    size = 10
+
+    def __init__(self, page: int = 1, size: int = 10):
+        self.page = page
+        self.size = size
