@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PhotoPy
+Version: 0.0.5
+Summary: Biblioteca criada para a alterações e manipulações de imagens
+Author: Augusto Almondes and Rafael Barbosa
+Author-email: augusto7666@gmail.com
+Keywords: python,PhotoPy,Image
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Explore o potencial ilimitado da sua imaginação com o PhotoPy, uma ferramenta poderosa e intuitiva projetada para elevar suas criações visuais a novos patamares. Seja você um entusiasta amador ou um profissional experiente, este pacote oferece uma gama de recursos inovadores para transformar suas fotos em verdadeiras obras de arte.
