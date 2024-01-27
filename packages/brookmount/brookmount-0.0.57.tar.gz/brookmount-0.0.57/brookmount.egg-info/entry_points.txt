@@ -1,0 +1,2 @@
+[console_scripts]
+brookmount = brookmount.sac:sac

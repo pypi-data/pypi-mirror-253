@@ -1,0 +1,1 @@
+print('reyan is smart and cool')
