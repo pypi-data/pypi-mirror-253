@@ -1,0 +1,78 @@
+#! /usr/bin/env python3
+
+# Import dependencies
+import shutil
+import argparse
+
+# Import internal dependencies
+from pyluks import __version__
+from pyluks.luksctl_api import __path__ as luksctl_api_path_list
+from pyluks.luksctl_api.luksctl_run import __prefix__ as environment_prefix
+from pyluks.luksctl_api.luksctl_run import master, write_api_config, write_systemd_unit_file
+from pyluks.luksctl_api.ssl_certificate import generate_self_signed_cert
+
+
+################################################################################
+# VARIABLES
+
+luksctl_api_path = luksctl_api_path_list[0]
+
+
+
+################################################################################
+# COMMAND LINE OPTIONS
+
+def cli_options():
+    parser = argparse.ArgumentParser(description='LUKS storage management script API')
+    parser.add_argument('-V', '--version', action='store_true', dest='version', default=False, help='Print luksctl_api version')
+    parser.add_argument('--daemons', nargs='*', default='', dest='daemons', help='Daemons to be restarted when the volume is opened')
+    parser.add_argument('--node-list', nargs='*', dest='node_list', default='', help='Worker nodes IPs')
+    parser.add_argument('--sudo-path', dest='sudo_path', default='/usr/bin/sudo', help='PATH for the sudo command')
+    parser.add_argument('--env-path', dest='env_path', default='/opt/pyluks', help='Virtualenv path')
+    parser.add_argument('--ssl', action='store_true', dest='ssl', default=False, help='Use ssl self signed certificate')
+    parser.add_argument('--ssl-cert-file', dest='cert_file', default='/etc/luks/gunicorn-cert.pem', help='SSL certificate file')
+    parser.add_argument('--ssl-key-file', dest='key_file', default='/etc/luks/gunicorn-key.pem', help='SSL key file')
+    parser.add_argument('--gunicorn-config', dest='gunicorn_config_file', default='/etc/luks/gunicorn.conf.py', help='Gunicorn config file path')
+    parser.add_argument('--user', dest='user', default='luksctl_api', help='luksctl-api service user')
+    parser.add_argument('--exports', nargs='*', dest='exports_list', default=['/export'], help='Directories exported with nfs')
+
+    return parser.parse_args()
+
+
+
+################################################################################
+# FUNCTIONS
+
+def master_setup(options):
+
+    write_api_config(luks_cryptdev_file='/etc/luks/luks-cryptdev.ini',
+                     daemons=options.daemons,
+                     env_path=options.env_path,
+                     node_list=options.node_list,
+                     exports_list=options.exports_list,
+                     sudo_path=options.sudo_path)
+
+    if options.ssl:
+        generate_self_signed_cert(cert_file=options.cert_file,
+                                  key_file=options.key_file)
+
+    shutil.copy(src=f'{luksctl_api_path}/gunicorn.conf.py',
+                dst=options.gunicorn_config_file)
+
+    write_systemd_unit_file(working_directory=luksctl_api_path,
+                            environment_prefix=environment_prefix,
+                            user=options.user,
+                            group=options.user)
+
+
+
+################################################################################
+# MAIN
+
+if __name__ == "__main__":
+    options = cli_options()
+
+    if options.version:
+        print('pyluks package: ' + __version__)
+    else:
+        master_setup(options)
