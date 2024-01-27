@@ -1,0 +1,11 @@
+README
+setup.py
+pychessboard/__init__.py
+pychessboard/additions.py
+pychessboard/constants.py
+pychessboard/pychessboard.py
+pychessboard.egg-info/PKG-INFO
+pychessboard.egg-info/SOURCES.txt
+pychessboard.egg-info/dependency_links.txt
+pychessboard.egg-info/requires.txt
+pychessboard.egg-info/top_level.txt
