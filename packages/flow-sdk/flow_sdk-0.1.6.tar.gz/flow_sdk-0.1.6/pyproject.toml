@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "flow-sdk"
+version = "0.1.6"
+description = ""
+authors = ["Joseph Shearer <joseph@estuary.dev>", "Johnny Graettinger <johnny@estuary.dev>"]
+readme = "README.md"
+homepage = "https://github.com/estuary/connectors/tree/main/python"
+
+[tool.poetry.dependencies]
+jsonlines = "^4.0.0"
+mypy = "^1.5"
+orjson = "^3.9.7"
+python = "<3.12,>=3.11"
+requests = "^2.31.0"
+types-requests = "^2.31"
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
