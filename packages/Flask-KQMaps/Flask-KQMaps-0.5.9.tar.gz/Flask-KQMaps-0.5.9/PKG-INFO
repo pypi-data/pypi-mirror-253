@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Flask-KQMaps
+Version: 0.5.9
+Summary: Flask Extension for KQWebMap API for Leaflet (aka KQClient for Leaflet API)
+Home-page: https://github.com/sunshinejnjn/flask_kqmaps
+Download-URL: https://github.com/sunshinejnjn/flask_kqmaps/archive/refs/tags/v0.4.tar.gz
+Author: Yi QI
+Author-email: jnjnqy@gmail.com
+License: GNU GPLv3
+Keywords: KQGIS,cangqiong,苍穹,GIS,KQ,leaflet,webgis,kqmaps,flask_kqmaps,flask-kqmaps,flask
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Flask
+License-File: LICENSE.txt
+Requires-Dist: flask
