@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+terminalai/terminalai.egg-info/PKG-INFO
+terminalai/terminalai.egg-info/SOURCES.txt
+terminalai/terminalai.egg-info/dependency_links.txt
+terminalai/terminalai.egg-info/requires.txt
+terminalai/terminalai.egg-info/top_level.txt
