@@ -1,0 +1,2 @@
+[console_scripts]
+illustrate = live_illustrate.__main__:main
