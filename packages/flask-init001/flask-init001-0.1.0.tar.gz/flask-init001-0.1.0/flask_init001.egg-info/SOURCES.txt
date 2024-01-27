@@ -1,0 +1,5 @@
+setup.py
+flask_init001.egg-info/PKG-INFO
+flask_init001.egg-info/SOURCES.txt
+flask_init001.egg-info/dependency_links.txt
+flask_init001.egg-info/top_level.txt
