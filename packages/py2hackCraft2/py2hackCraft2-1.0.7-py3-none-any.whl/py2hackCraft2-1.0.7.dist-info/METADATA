@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: py2hackCraft2
+Version: 1.0.7
+Summary: These are APIs that connect to the hackCraft2 server from Python to manipulate pets.
+Home-page: https://pypi.org/project/py2hackCraft2/
+Author: Masafumi Terazono
+Author-email: masafumi_t@0x48lab.com
+License: MIT
+Keywords: hackCraft2
+Requires-Dist: websocket-client
+
