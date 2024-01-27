@@ -1,0 +1,13 @@
+README.md
+setup.py
+cc_notion/__init__.py
+cc_notion/client.py
+cc_notion/endpoints.py
+cc_notion/errors.py
+cc_notion/helpers.py
+cc_notion/typing.py
+cc_notion.egg-info/PKG-INFO
+cc_notion.egg-info/SOURCES.txt
+cc_notion.egg-info/dependency_links.txt
+cc_notion.egg-info/not-zip-safe
+cc_notion.egg-info/top_level.txt
