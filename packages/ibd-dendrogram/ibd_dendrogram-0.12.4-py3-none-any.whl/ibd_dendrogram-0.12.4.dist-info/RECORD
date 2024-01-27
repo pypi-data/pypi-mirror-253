@@ -1,0 +1,5 @@
+ibd_dendrogram/__init__.py,sha256=73lWvN8Wpd5L2bSBAQW13rn9-6HHpJLwnjXwVInTyFw,129
+ibd_dendrogram/make_distance_matrix.py,sha256=uh2qMF7ZHCWcjqxiKjRFW1xNSERUwaa3VmwpS6PdS28,10208
+ibd_dendrogram-0.12.4.dist-info/METADATA,sha256=4FGFUbbrXXaG59lH99YEfZZ_9rjgZOqCgetjj3UFnpI,1510
+ibd_dendrogram-0.12.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+ibd_dendrogram-0.12.4.dist-info/RECORD,,
