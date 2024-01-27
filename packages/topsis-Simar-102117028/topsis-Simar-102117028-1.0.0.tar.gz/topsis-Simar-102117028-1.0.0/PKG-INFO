@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: topsis-Simar-102117028
+Version: 1.0.0
+Summary: topsis implementation
+Home-page: 
+Author: simarjit Kaur Khangura
+Author-email: skhangura_be21@thapar.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Topsis
+TOPSIS( Technique for order for preference by similarity to Ideal solution ) for MCDM (Multiple criteria decision making) in Python compiled by Simarjit Kaur Khangura, 102117028, TIET, Patiala.
+
+## Installation
+Use the package manager pip to install.
+
+pip install topsis-Simar-102117028
+
+## Usage
+Enter csv filename followed by .csv extentsion, then enter the weights vector with vector values separated by commas, followed by the impacts vector with comma separated signs (+,-) and enter the output file name followed by .csv extension.
+
+topsis-simar-102117028 [InputDataFile as .csv] [Weights as a string] [Impacts as a string] [ResultFileName as .csv]
+
+## License
+Ã‚Â© 2024 Simarjit Kaur Khangura
+
+This repository is licensed under MIT License. See LICENSE for details.

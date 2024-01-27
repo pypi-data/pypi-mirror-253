@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+topsis_Simar_102117028.egg-info/PKG-INFO
+topsis_Simar_102117028.egg-info/SOURCES.txt
+topsis_Simar_102117028.egg-info/dependency_links.txt
+topsis_Simar_102117028.egg-info/top_level.txt
+topsis_simar_102117028.egg-info/PKG-INFO
+topsis_simar_102117028.egg-info/SOURCES.txt
+topsis_simar_102117028.egg-info/dependency_links.txt
+topsis_simar_102117028.egg-info/top_level.txt
