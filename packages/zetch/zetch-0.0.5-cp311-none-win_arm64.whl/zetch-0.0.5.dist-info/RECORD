@@ -1,0 +1,12 @@
+zetch-0.0.5.dist-info/METADATA,sha256=BRDlx5332zduhp9vTCo29eRksuODjrEeALgCmdeVFwc,2720
+zetch-0.0.5.dist-info/WHEEL,sha256=GXLVl7xpvfziudxjkAeqFyii2g0VqMvRLKCKvXtgcb0,95
+zetch-0.0.5.dist-info/entry_points.txt,sha256=ddW50jd9uDESRgEec1XrE47jBEZPP-ryGehn_HAcWi0,38
+zetch-0.0.5.dist-info/license_files/LICENSE.md,sha256=0sEuU501eVe5UKVKVHfDqfh70rPucHvnpNt62vWqzCs,1070
+zetch-0.0.5.dist-info/license_files/LICENSE.zetch.md,sha256=vrAj4IEF1M73NMjM1hedRKKVy5ENFhHaKEosKjCn4YA,34
+zetch/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zetch/rust-toolchain.toml,sha256=5cwFRfIyvegHvZOUwkMzItHNLPQrBgzqsqxzKbyc2qI,31
+zetch/utils.pyi,sha256=TYNbLpjXy618lBOfagmGj9Gz7AQ0avWoCN9k0mh2hpc,186
+zetch/__init__.py,sha256=PqGQsnzCJsHEUS01tU9V77BRxd3TM5a3SZheBNfpfaE,461
+zetch/__init__.pyi,sha256=N0J2pYGzChAC2obMlfjj6pG4rfB96vvLD46NTuLpQJA,1131
+zetch/_rs.cp311-win_arm64.pyd,sha256=7BfwA4zk-c-f3pOmQYBhA9kJm6RG4-ApAavJSEZKf54,7667200
+zetch-0.0.5.dist-info/RECORD,,
