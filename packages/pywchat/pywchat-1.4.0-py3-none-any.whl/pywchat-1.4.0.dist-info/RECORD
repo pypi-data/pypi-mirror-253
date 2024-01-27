@@ -1,0 +1,9 @@
+pywchat/__init__.py,sha256=eRnNpmBvSmrciR1efe-nr74nj-dloRn-o07xUZDbGS0,24
+pywchat/chatapi.py,sha256=06xqmCGRnHMDYg-IDSwrw0F3fG2ty6PGztxnwr5l4AU,325
+pywchat/send.py,sha256=pwWGxKXUfe3mfXVuvwiq-cFxu62tW9kK6sbDiJ3RdZ8,5478
+pywchat/workhandler.py,sha256=Ajn9TnG9OIRfeo94k2LT5rIjbbRcGz10bsW9MhFWDME,12921
+pywchat-1.4.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pywchat-1.4.0.dist-info/METADATA,sha256=AY6izNQuf0BRzUd33clSiCdTbJkZNvZ2stD7rBKSA9Y,10951
+pywchat-1.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pywchat-1.4.0.dist-info/top_level.txt,sha256=mqyyqKIevVLrek_WIlVFR0qfFOxF1EsJP7g4WP4UXzE,8
+pywchat-1.4.0.dist-info/RECORD,,
