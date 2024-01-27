@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: raspberry_sensors
+Version: 2.1.1
+Summary: This package for getting values from sensors mh_z19, DHT, ads1015
+Author-email: Develper <testerlzt@mail.ru>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Keywords: raspberry_sensors,Adafruit-DHT,adafruit-circuitpython-ads1x15,mh-z19,raspberry,raspberry pi,sensors,hardware,IoT,Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Adafruit-DHT
+Requires-Dist: adafruit-circuitpython-ads1x15
+Requires-Dist: mh-z19
+
+# RaspberryPi Sensors Library
+
+This library provides functions to retrieve data from mh_z19, DHT, and ads1015 sensors on a Raspberry Pi. Note that in case of errors, no exceptions are thrown, and the cached sensor value is also returned in case of an error.
+
+## Usage Examples
+
+### Initialization
+
+First, import the library and create an instance of the `Sensors` class.
+
+```python
+from raspberry_sensors import Sensors
+sensors = Sensors()
+```
+
+### Disabling Error Logging
+
+You can disable error logging by passing the `logging_error` parameter equal to `False` when creating an instance of the `Sensors` class.
+
+```python
+sensors = Sensors(logging_error=False)
+```
+
+### Getting Values from DHT Sensor
+
+To get values from the DHT sensor, use the `get_dht` method, passing the sensor type (`_type`) and the GPIO pin number (`gpio`).
+
+```python
+sensors.get_dht(_type=22, gpio=4)
+# _type=22 - DHT22
+# _type=11 - DHT11
+# gpio - GPIO pin
+
+# return data (dict)
+# {"humidity": 36.0, "temperature": 21.0}
+```
+
+### Getting Values from ADS Sensor
+
+To get values from the ADS sensor, use the `get_ads` method, passing the channel you want to get the voltage from (`channel`), whether to get the normal value using interpolation (`interpolate`), and the minimum and maximum values at 0V (`interpolate_min` and `interpolate_max`).
+
+```python
+sensors.get_ads(channel, interpolate=False, interpolate_min=0, interpolate_max=0)
+# channel - the channel that you want to get the voltage from
+# interpolate - getting the normal value using interpolation
+# interpolate_min (use if interpolate True) - minimum value at 0 V
+# interpolate_max (use if interpolate True) - maximum value at 0 V
+
+# return data (float)
+# if interpolate=False - voltage
+# if interpolate=True - the voltage value to which the interpolation formula is applied 
+```
+
+### Getting Values from MH-Z19 Sensor
+
+To get values from the MH-Z19 sensor, use the `get_mhz` method, passing the GPIO pin number (`gpio`) and whether to read using PWM (`pwm`).
+
+```python
+sensors.get_mhz(gpio=12, pwm=False)
+# gpio - GPIO pin
+# pwm - if pwm is True it will be read using pwm otherwise it is default
+
+# return data (dict)
+# {"co2": 5000}
+```
