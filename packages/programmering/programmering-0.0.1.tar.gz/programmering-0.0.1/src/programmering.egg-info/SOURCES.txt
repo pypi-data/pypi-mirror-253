@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/programmering/__init__.py
+src/programmering/programmering.py
+src/programmering.egg-info/PKG-INFO
+src/programmering.egg-info/SOURCES.txt
+src/programmering.egg-info/dependency_links.txt
+src/programmering.egg-info/top_level.txt
