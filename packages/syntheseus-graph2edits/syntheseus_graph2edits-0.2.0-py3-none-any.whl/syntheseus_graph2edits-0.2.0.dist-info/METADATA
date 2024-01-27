@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: syntheseus-graph2edits
+Version: 0.2.0
+Summary: Fork of Graph2Edits for use in the syntheseus library
+License-File: LICENSE
+Requires-Dist: joblib
+
