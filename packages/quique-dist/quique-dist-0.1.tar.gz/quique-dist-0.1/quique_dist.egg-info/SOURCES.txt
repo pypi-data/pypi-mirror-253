@@ -1,0 +1,10 @@
+setup.py
+quique-dist/Binomialdistribution.py
+quique-dist/Gaussiandistribution.py
+quique-dist/Generaldistribution.py
+quique-dist/__init__.py
+quique_dist.egg-info/PKG-INFO
+quique_dist.egg-info/SOURCES.txt
+quique_dist.egg-info/dependency_links.txt
+quique_dist.egg-info/not-zip-safe
+quique_dist.egg-info/top_level.txt
