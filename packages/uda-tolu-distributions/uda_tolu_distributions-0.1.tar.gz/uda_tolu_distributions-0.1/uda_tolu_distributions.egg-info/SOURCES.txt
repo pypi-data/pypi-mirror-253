@@ -1,0 +1,10 @@
+setup.py
+uda_tolu_distributions/Binomialdistribution.py
+uda_tolu_distributions/Gaussiandistribution.py
+uda_tolu_distributions/Generaldistribution.py
+uda_tolu_distributions/__init__.py
+uda_tolu_distributions.egg-info/PKG-INFO
+uda_tolu_distributions.egg-info/SOURCES.txt
+uda_tolu_distributions.egg-info/dependency_links.txt
+uda_tolu_distributions.egg-info/not-zip-safe
+uda_tolu_distributions.egg-info/top_level.txt
