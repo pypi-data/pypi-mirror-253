@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tsxml
+Version: 0.0.2
+Summary: Parse TestStand XML to Python dictionary
+Home-page: https://github.com/KarthikAbiram/tsxml
+License: MIT
+Author: Karthik Abiram
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: xmltodict (>=0.13.0,<0.14.0)
+Project-URL: Repository, https://github.com/KarthikAbiram/tsxml
+Description-Content-Type: text/markdown
+
+# tsxml
+TestStand XML Parser for Python
+
