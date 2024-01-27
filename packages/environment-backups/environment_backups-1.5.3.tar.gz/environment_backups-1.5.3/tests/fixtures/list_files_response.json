@@ -1,0 +1,94 @@
+{
+    "files": [
+        {
+            "fileExtension": "md",
+            "mimeType": "text/markdown",
+            "shared": false,
+            "size": "440",
+            "permissions": [
+                {
+                    "type": "user",
+                    "kind": "drive#permission",
+                    "role": "owner"
+                }
+            ],
+            "id": "1TSiP_St6vCYHSJmBOpb1unT6hBvbDFG-",
+            "name": "README.md",
+            "starred": false
+        },
+        {
+            "mimeType": "application/vnd.google-apps.folder",
+            "shared": false,
+            "permissions": [
+                {
+                    "type": "user",
+                    "kind": "drive#permission",
+                    "role": "owner"
+                }
+            ],
+            "id": "1imWoDMdznTmem-vDSDs67gd7YGbpLEou",
+            "name": "README.md",
+            "starred": false
+        },
+        {
+            "mimeType": "application/vnd.google-apps.folder",
+            "shared": false,
+            "permissions": [
+                {
+                    "type": "user",
+                    "kind": "drive#permission",
+                    "role": "owner"
+                }
+            ],
+            "id": "1gVqodUXEw8y3Y36Fd31AOpmzACzG4TVg",
+            "name": "temp_folder",
+            "starred": false
+        },
+        {
+            "mimeType": "application/vnd.google-apps.presentation",
+            "shared": false,
+            "size": "153801",
+            "permissions": [
+                {
+                    "type": "user",
+                    "kind": "drive#permission",
+                    "role": "owner"
+                }
+            ],
+            "id": "1iO_AmslQI_tfozXYKJC_otCS_MeQkTyzhqRP1EUdm84",
+            "name": "Curso Data Science",
+            "starred": false
+        },
+        {
+            "fileExtension": "zip",
+            "mimeType": "application/zip",
+            "shared": false,
+            "size": "123541",
+            "permissions": [
+                {
+                    "type": "user",
+                    "kind": "drive#permission",
+                    "role": "owner"
+                }
+            ],
+            "id": "1kkeFjbc53W3f3HxtpyGz4_aaUU5v30r7",
+            "name": "emisiones EDA.zip",
+            "starred": false
+        },
+        {
+            "mimeType": "application/vnd.google-apps.presentation",
+            "shared": false,
+            "size": "5114",
+            "permissions": [
+                {
+                    "type": "user",
+                    "kind": "drive#permission",
+                    "role": "owner"
+                }
+            ],
+            "id": "1hj61RIvJc61tz1s333gTHPvTSiP9HQ7q16dmCj_G_3s",
+            "name": "Django with Cookiecutter",
+            "starred": false
+        }
+    ]
+}
