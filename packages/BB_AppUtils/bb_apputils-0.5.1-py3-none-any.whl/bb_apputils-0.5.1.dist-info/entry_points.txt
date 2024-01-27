@@ -1,0 +1,3 @@
+[console_scripts]
+apputils-shell-variables=bblogger._constants:_script
+

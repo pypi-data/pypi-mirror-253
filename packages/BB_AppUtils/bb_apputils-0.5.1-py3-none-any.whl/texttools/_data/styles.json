@@ -1,0 +1,121 @@
+{
+  "_Reset_": {
+    "ansi": [
+      0
+    ],
+    "code": "_",
+    "comment": "Reset all ansi styles and colors",
+    "html": {},
+    "name": "reset"
+  },
+  "Blink": {
+    "ansi": [
+      5
+    ],
+    "code": "Bl",
+    "comment": "Set text to blinking",
+    "html": {
+      "animation": "'blinker 1s linear infinite'"
+    },
+    "name": "blink"
+  },
+  "Bold": {
+    "ansi": [
+      1
+    ],
+    "code": "B",
+    "comment": "Set text to bold",
+    "html": {
+      "font-weight": "bold"
+    },
+    "name": "bold"
+  },
+  "Italic": {
+    "ansi": [
+      3
+    ],
+    "code": "I",
+    "comment": "Set text to italic",
+    "html": {
+      "font-style": "italic"
+    },
+    "name": "italic"
+  },
+  "Remove Blink": {
+    "ansi": [
+      25
+    ],
+    "code": "Bl_",
+    "comment": "Remove the blinking text escape",
+    "html": {
+      "animation": "none"
+    },
+    "name": "remove_blink"
+  },
+  "Remove Bold": {
+    "ansi": [
+      21
+    ],
+    "code": "B_",
+    "comment": "Remove the bold text option",
+    "html": {
+      "font-weight": "normal"
+    },
+    "name": "remove_bold"
+  },
+  "Remove Italic": {
+    "ansi": [
+      23
+    ],
+    "code": "I_",
+    "comment": "Remove the italic text option",
+    "html": {
+      "font-style": "normal"
+    },
+    "name": "remove_italic"
+  },
+  "Remove Strikethrough": {
+    "ansi": [
+      29
+    ],
+    "code": "S_",
+    "comment": "Remove the strike-through text option",
+    "html": {
+      "text-decoration": "none"
+    },
+    "name": "remove_strikethrough"
+  },
+  "Remove Underline": {
+    "ansi": [
+      24
+    ],
+    "code": "U_",
+    "comment": "Remove the underline text option",
+    "html": {
+      "text-decoration": "none"
+    },
+    "name": "remove_underline"
+  },
+  "Strikethrough": {
+    "ansi": [
+      9
+    ],
+    "code": "S",
+    "comment": "Set strikethrough decoration to text",
+    "html": {
+      "text-decoration": "line-through"
+    },
+    "name": "strikethrough"
+  },
+  "Underline": {
+    "ansi": [
+      4
+    ],
+    "code": "U",
+    "comment": "Set underline decoration to text",
+    "html": {
+      "text-decoration": "underline"
+    },
+    "name": "underline"
+  }
+}
