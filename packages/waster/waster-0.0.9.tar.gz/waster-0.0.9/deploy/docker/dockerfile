@@ -1,0 +1,12 @@
+FROM python:3.12-alpine3.18 AS compile-image
+
+ARG WASTER_VERSION=0.0.6
+
+RUN pip install --upgrade pip
+RUN pip install --user waster==${WASTER_VERSION}
+
+FROM python:3.12-alpine3.18 AS build-image
+COPY --from=compile-image /root/.local /root/.local
+
+ENV PATH=/root/.local/bin:$PATH
+ENTRYPOINT ["waster"]

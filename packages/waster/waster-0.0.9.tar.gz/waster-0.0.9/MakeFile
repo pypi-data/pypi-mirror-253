@@ -1,0 +1,13 @@
+default:
+	$(error please pick a target)
+
+test:
+	  coverage run -m pytest discover -q
+
+coverage:
+
+
+upload:
+	rm -rf dist
+	python setup.py sdist
+	python -m twine upload dist/onlywrite-*.tar.gz
