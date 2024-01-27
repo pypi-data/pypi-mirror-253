@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: django-tagify-widget
+Version: 0.1.0
+Summary: Django widgets with tagify.js
+Home-page: https://github.com/zzqyu/django-tagify-widget
+Author: zzqyu
+Author-email: wjdrb0626@naver.com
+License: MIT
+Platform: Any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Framework :: Django
+Classifier: Environment :: Web Environment
+Requires-Python: >=3
+
+UNKNOWN
+
