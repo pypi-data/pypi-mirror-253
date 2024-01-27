@@ -1,0 +1,2 @@
+[console_scripts]
+bsw_code_gen = bsw_code_gen.cli:main
