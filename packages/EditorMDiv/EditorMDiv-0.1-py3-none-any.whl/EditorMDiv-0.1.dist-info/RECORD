@@ -1,0 +1,12 @@
+EditorMDiv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EditorMDiv/__main__.py,sha256=CwgJVbgy-KiE-S0BE7vWFScN27NcFV69gz8dyLBmqHg,412
+EditorMDiv/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EditorMDiv/src/app.py,sha256=pMPGzA1TgaDxl-aWrXHCAcq8hOoAHBYuPGTAVWSANe8,2272
+EditorMDiv/src/arg_handler.py,sha256=Mi7CH3C9T0NdjQU0n7pS0MOIih3n4qnqCOMtBRtbuYw,873
+EditorMDiv/src/file_handler.py,sha256=Q2dcsg9yL9Cde2dYp_40WKydOV1ko82M3CHHlkstSjI,1686
+EditorMDiv/src/utils.py,sha256=IhN8x8-RhJ9eFwfrYD9tnTkbfZczQZ8r2rLxJzY6cfg,672
+EditorMDiv-0.1.dist-info/METADATA,sha256=46vONPTxtI9s_nG9fqrnhgCBkjqxu0TEdfXZVQaUc4I,1477
+EditorMDiv-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+EditorMDiv-0.1.dist-info/entry_points.txt,sha256=0er3iSbIY7kLSR1zbQ1TR0yAEyvlY-RA2cvWJIAtk6s,54
+EditorMDiv-0.1.dist-info/top_level.txt,sha256=u1Nq4r9YGeRDJluK40KGsHYe1PF3wXUSsJCyeLUki0U,11
+EditorMDiv-0.1.dist-info/RECORD,,
