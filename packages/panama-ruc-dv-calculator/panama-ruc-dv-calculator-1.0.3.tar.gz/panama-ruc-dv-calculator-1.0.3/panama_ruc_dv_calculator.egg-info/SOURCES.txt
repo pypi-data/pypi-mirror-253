@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+README_ES.md
+requirements.txt
+setup.py
+panama_ruc_dv_calculator/__init__.py
+panama_ruc_dv_calculator/calculate_dv_digit.py
+panama_ruc_dv_calculator/provincia.py
+panama_ruc_dv_calculator/ruc_finca.py
+panama_ruc_dv_calculator/ruc_juridica.py
+panama_ruc_dv_calculator/ruc_juridica_nt.py
+panama_ruc_dv_calculator/ruc_natural.py
+panama_ruc_dv_calculator/ruc_natural_nt.py
