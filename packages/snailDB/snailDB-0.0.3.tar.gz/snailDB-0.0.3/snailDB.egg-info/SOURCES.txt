@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+snailDB.egg-info/PKG-INFO
+snailDB.egg-info/SOURCES.txt
+snailDB.egg-info/dependency_links.txt
+snailDB.egg-info/requires.txt
+snailDB.egg-info/top_level.txt
+snaildb/__init__.py
+snaildb/snaildb.py
+tests/test_snaildb.py
