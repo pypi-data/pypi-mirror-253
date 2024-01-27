@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+bsw_code_gen/__init__.py
+bsw_code_gen/cli.py
+bsw_code_gen/generator.py
+bsw_code_gen.egg-info/PKG-INFO
+bsw_code_gen.egg-info/SOURCES.txt
+bsw_code_gen.egg-info/dependency_links.txt
+bsw_code_gen.egg-info/entry_points.txt
+bsw_code_gen.egg-info/requires.txt
+bsw_code_gen.egg-info/top_level.txt
