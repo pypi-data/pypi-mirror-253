@@ -1,0 +1,13 @@
+LICENSE,sha256=DUDlTOX1dMev1a4i8mXETQHLpi22hU_hp_2-P9JD7QE,35140
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/operator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/operator/cli.py,sha256=L6H3OFUxmlLHu-TtdAb0I5s-WK0CPo0kIyFB5H9F3JI,10501
+src/operator/git.py,sha256=TZGwnecdHiDrCUNllU-hOoDhniTFXZ7LONwggD0sQ4k,2158
+src/operator/gpg.py,sha256=SnDBupnypydyZWbUL7xxSVmjguKin0i_31dgs0jeeV8,1159
+src/operator/secret.py,sha256=DsEdUHz_AIp2nPzbW-U82MhN9s-GxfT1vV54Ml0vY4w,6063
+src/operator/utils.py,sha256=6aW7r3Wh03z254PTrW04yyBKxzcBpXXjYIrcS2FqSV8,771
+pass_operator-0.2.2.dist-info/LICENSE,sha256=DUDlTOX1dMev1a4i8mXETQHLpi22hU_hp_2-P9JD7QE,35140
+pass_operator-0.2.2.dist-info/METADATA,sha256=jo9mfUj2Q-hLyhAjHlxgYfXcK4IzY-MRYU81UGSKyfM,7575
+pass_operator-0.2.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+pass_operator-0.2.2.dist-info/entry_points.txt,sha256=oXhbXBFFamBgSlGL5xuI8AwMlBURU89N33MjEwfb3WY,54
+pass_operator-0.2.2.dist-info/RECORD,,
