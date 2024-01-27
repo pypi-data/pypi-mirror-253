@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+diff_nurbs.egg-info/PKG-INFO
+diff_nurbs.egg-info/SOURCES.txt
+diff_nurbs.egg-info/dependency_links.txt
+diff_nurbs.egg-info/requires.txt
+diff_nurbs.egg-info/top_level.txt
