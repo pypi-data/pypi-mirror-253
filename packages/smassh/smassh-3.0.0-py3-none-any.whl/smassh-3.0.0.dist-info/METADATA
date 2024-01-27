@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: smassh
+Version: 3.0.0
+Summary: A TUI based typing application
+License: MIT
+Author: kraanzu
+Author-email: kraanzu@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: textual (>=0.47.1,<0.48.0)
