@@ -1,0 +1,14 @@
+renardo/RenardoApp.py,sha256=4iefFj6V-X9UhPWExv-fl2UpR6tvO5J1KkAvfU1ZToY,3277
+renardo/RenardoTUI.py,sha256=gt4mc1U7WSR20zdVI36wwB2NysjMPpbqgJIgd7PJoWQ,6139
+renardo/RenardoTUI.tcss,sha256=cDNIrS0eijknSVAG5QHl1ZJu4J5WvyZ31j0aK6gbgB4,219
+renardo/SCFilesHandling.py,sha256=Bob_mB2ZCUDVn30fCZEG77M3cQrBKQTcTBNVIX0q3Y4,5547
+renardo/SuperColliderInstance.py,sha256=cpDV2FqfsAkL8pCtMXEQsWiW_Z9BMWmLWuylutKvVUE,1726
+renardo/__init__.py,sha256=5taIBWQVnOHUX5xRZ_C-Pj8ESIM73IJ1D6_5QOv-hbI,107
+renardo/__main__.py,sha256=Sp5JWxIzfMrRxeLgvX-mjMdGt0STkr5OrjBGVrreKIY,235
+renardo/boot_supercollider.py,sha256=pWTAQXSlBbzK0byBu41U4na28MJxJJXHTOci6ErL-WE,397
+renardo-0.9.3.dist-info/LICENCE.txt,sha256=zw7jVHpOUaUjBOtyBDH_Wji_lWHYoVN5U9bd_J7bBM4,4
+renardo-0.9.3.dist-info/METADATA,sha256=l49JkCWZiua0NfEKMSEouvXx2EfMwjbkc5IPt_2cTtQ,12755
+renardo-0.9.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+renardo-0.9.3.dist-info/entry_points.txt,sha256=G_ABAKgaKkW0hZCsaO-oEluagWZ6C2BIEUvF14zkA-4,47
+renardo-0.9.3.dist-info/top_level.txt,sha256=D2lCIC7WDGKGLfRachM7m_fIQ_RIRANUXNo4OrqdwRY,8
+renardo-0.9.3.dist-info/RECORD,,

@@ -1,0 +1,21 @@
+/*Screen {
+    align: center;
+}*/
+
+TabbedContent {
+    align: center middle;
+}
+
+Label {
+    margin: 1 1;
+}
+
+Button {
+    margin: 1 1;
+    padding: 0 2;
+    /* border: thick green 20%; */
+}
+
+RadioSet {
+    width: 50%;
+}
