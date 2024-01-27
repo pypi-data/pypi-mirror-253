@@ -1,0 +1,5 @@
+[console_scripts]
+init-static=spacestar.initfolders:create_static_directory
+init-templates=spacestar.initfolders:create_templates_directory
+initfolders=spacestar.initfolders:main
+
