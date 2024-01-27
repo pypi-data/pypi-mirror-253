@@ -1,0 +1,8 @@
+pycpack/__init__.py,sha256=XzG13nnE4RcN8ONEmDjJXrKWmG9DcPuv_jQXxKW-BE4,29
+pycpack/mymodule.cpython-36m-darwin.so,sha256=lUAzud-aZXlXDoxlzF3Ibgbydze47BdX86QN7u-vUIw,34040
+pycpack/pyadd.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycpack-0.2.0.dist-info/LICENSE,sha256=DSDi4Zx_8Hzx05tXgkmUsVelihS50SgomJq16opxg58,1070
+pycpack-0.2.0.dist-info/METADATA,sha256=K0y6RPY07RiIY0oUxz028-eATXg3m6uV3rpW6qMkwdo,154
+pycpack-0.2.0.dist-info/WHEEL,sha256=ye8A2lA8pjGNe7-ueOpggarJAhczq3EZGqnLZzzfQYQ,110
+pycpack-0.2.0.dist-info/top_level.txt,sha256=XxgjNLUjUY3fUHsJSoEzMOfpsAfy_0Eor0ABE53nnM4,8
+pycpack-0.2.0.dist-info/RECORD,,
