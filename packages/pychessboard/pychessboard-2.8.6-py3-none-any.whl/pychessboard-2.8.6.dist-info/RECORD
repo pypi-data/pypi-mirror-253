@@ -1,0 +1,20 @@
+pychessboard/__init__.py,sha256=QdvklsCc50rrBtpnBvTA-wu8zCJyzxjigD1Rtq5X7RE,54
+pychessboard/additions.py,sha256=Ic98Tg2mLTiwLsf0QJdh9qPV0zyMpH2N9c5PaH5SpAw,27961
+pychessboard/constants.py,sha256=LiMtXx3h1dwe7Z7NWJQIKe4BBlAIFfffAq45ON5BD_A,5502
+pychessboard/pychessboard.py,sha256=bC1DgLxeLLzA7aKc_K4D3M-3w81mYJsn5gknB7-hlHI,22543
+pychessboard/assets/images/black bishop.png,sha256=rZMTX-BH0PbB5wIMCJuEMnceFIqCQFtCKj7foGNEqLY,38097
+pychessboard/assets/images/black king.png,sha256=dm0OjRVE4FU4dCgO6uK1aaGNBlM824daxCz_baXW4us,36497
+pychessboard/assets/images/black knight.png,sha256=hYc5ZOuMmvokVhXsggpOxpkN8AvRLqm59lFCTVgefOY,56551
+pychessboard/assets/images/black pawn.png,sha256=7cOjwoVbJtX1Ddm5cdZLTi-4H-sPxzHeIsXITkOmqMc,31304
+pychessboard/assets/images/black queen.png,sha256=EfzeGPMvuOY9kjSnDzvdG-Pir5cXfhHO39MkR14eIYA,40914
+pychessboard/assets/images/black rook.png,sha256=T88iWEIcoUrkCjEUpIzlVgFcefKIqBEjx9nW4xwg3hw,32843
+pychessboard/assets/images/white bishop.png,sha256=UKSeaXluNeTzsQuOEg2U_Allae5i6yrHwz2Y5F0jw1Y,39003
+pychessboard/assets/images/white king.png,sha256=BZQd_EEludyYYpGb4bqI-IPF1bJox2NQ32KFRH4IpFI,36766
+pychessboard/assets/images/white knight.png,sha256=KCTibya-CEcvWuVN_KaIRB4RNRdDfehEVJa7-lxDZsY,58114
+pychessboard/assets/images/white pawn.png,sha256=PBrYw2KFdNJizf9_gpAIObJOFi7oD3FtbL-d6m-F6v0,32452
+pychessboard/assets/images/white queen.png,sha256=_RZQBIjOqdeqQ-bfTjBAyPI1AttzKMrXomDz7l0qL1o,41180
+pychessboard/assets/images/white rook.png,sha256=lSk1WfSwRGe9oG_WXTqOgKtPpk5u48x9d78gLsvfgg8,32936
+pychessboard-2.8.6.dist-info/METADATA,sha256=UIdRP1eCiNAbR_xXvWsgjmmR91UzGVjeFmxq2OLiFB0,372
+pychessboard-2.8.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pychessboard-2.8.6.dist-info/top_level.txt,sha256=RF4cWNy9sHjRezimLTwJXhfGrZcbpcVnVLXKZb0AtnE,13
+pychessboard-2.8.6.dist-info/RECORD,,
