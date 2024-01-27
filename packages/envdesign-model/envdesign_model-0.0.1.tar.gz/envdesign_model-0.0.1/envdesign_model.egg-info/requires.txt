@@ -1,0 +1,9 @@
+numpy
+pandas
+graphing
+optimizn
+
+[dev]
+
+[test]
+pytest
