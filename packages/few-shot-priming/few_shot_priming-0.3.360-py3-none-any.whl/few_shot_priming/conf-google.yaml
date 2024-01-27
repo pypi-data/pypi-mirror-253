@@ -1,0 +1,190 @@
+baseline:
+  api-key: cc362e03e225e86476ac8d0a18460b40L05
+  best-params:
+    batch-size: 8
+    epochs: 1
+    head-size: 30
+    learning-rate: 1e-4
+  model-name: microsoft/deberta-base
+  model-path: /bigwork/nhwpajjy/pre-trained-models/microsoft/deberta-base
+  model-path-fine-tuned: /bigwork/nhwpajjy/pre-trained-models/deberta-base-fine-tuned
+  params:
+    batch-size:
+    - 16
+    epochs:
+    - 15
+    head-size:
+    - 30
+    learning-rate:
+    - 1e-5
+dataset:
+  path-ibmsc-root: data/claim_stance_dataset_v1.csv
+experiment:
+  ibmsc:
+    path-few-shots: experiment/ibmsc-few-shots.csv
+    path-logs: /content/drive/MyDrive/priming-logs/ibmsc-run-time.logs
+    path-results: /content/drive/MyDrive/priming-results/ibmsc-run-time.tsv
+    path-test: experiment/ibmsc-test.csv
+    path-training: experiment/ibmsc-train.csv
+    path-validation: experiment/ibmsc-validation.csv
+  vast:
+    path-few-shots: experiment/vast-few-shots.csv
+    path-logs: /content/drive/MyDrive/priming-logs/vast-validation-time.logs
+    path-results: /content/drive/MyDrive/priming-results/vast-validation-run-time.tsv
+    path-test: experiment/vast-test.csv
+    path-training: experiment/vast-train.csv
+    path-validation: experiment/vast-validation.csv
+openai:
+  key: ''
+pre-trained-models:
+  alpaca:
+    model-name: wxjiao/alpaca-7b
+    tokenizer-name: decapoda-research/llama-7b-hf
+  gpt-j:
+    model-name: EleutherAI/gpt-j-6B
+    model-path: /bigwork/nhwpajjy/pre-trained-models/gptj-16
+    learning-rate:
+      - 2e-5
+      - 5e-5
+      - 1e-3
+      - 1e-5
+      - 1e-6
+  models:
+  - t5-base
+  - bert-base-uncased
+  - gpt2
+  - opt
+  - gpt2-xl
+  path: /bigwork/nhwpajjy/pre-trained-models
+
+seeds: [488, 528, 350, 785, 934]
+ks: [2, 4, 8, 16, 32 ,64]
+
+prompt:
+  batch-size: 16
+  few-shot-size: 16
+  logs: logs/prompt.log
+  model-input-limit: 2048
+  model-name: /bigwork/nhwpajjy/pre-trained-models/opt-30b
+  model-path: /bigwork/nhwpajjy/pre-trained-models/opt-30b
+  model-type: /bigwork/nhwpajjy/pre-trained-models/opt-30b
+  #model-input-limit: 102488
+  #model-name: facebook/opt-350m
+  #model-path: facebook/opt-350m
+  #model-type: facebook/opt-350m
+prompt-fine-tuning:
+  best-params-gpt2:
+    batch-size: 16
+    epochs: 1
+    learning-rate: 2e-5
+  best-params:
+    batch-size: 4
+    epochs: 140
+#    epochs: 1
+    learning-rate: 3e-4
+  few-shot-size: 16
+  model-name: tloen/alpaca-lora-7b
+  model-path: tloen/alpaca-lora-7b
+  model-path-fine-tuned: /tmp/alpaca
+  model-type: tloen/alpaca-lora-7b
+  tokenizer-name: tloen/alpaca-lora-7b
+  path-template: data/alpaca.json
+  params:
+    batch-size:
+    - 4
+    - 8
+    - 16
+    - 64
+    epochs:
+    - 90
+    - 100
+    - 110
+    - 140
+    - 300
+    learning-rate:
+    - 3e-4
+
+
+topic-similarity:
+  path-logs: /content/drive/MyDrive/priming-logs/topic-similarity.log
+  count-of-samples-per-cluster: 10
+  bow:
+    ibmsc-test: null
+    ibmsc-validation: 10
+    vast-test: null
+    vast-validation: null
+  model-path:
+    ibmsc-test: /content/drive/MyDrive/priming-models/ibmsc-test
+    ibmsc-validation: /content/drive/MyDrive/priming-models/ibmsc-validation
+    vast-test: /content/drive/MyDrive/priming-models/vast-test
+    vast-validation: /content/drive/MyDrive/priming-models/vast-validation
+  params:
+    contextual_size: 768
+    n_components: 15
+    num_epochs: 200
+  ctm-similarity-path:
+    ibmsc-test: /content/drive/MyDrive/priming-models/similarities-ibmsc-test-ctm.json
+    ibmsc-validation: /content/drive/MyDrive/priming-models/similarities-ibmsc-validation-ctm.json
+    vast-test: null
+    vast-validation: null
+  sentence-transformer-similarity-path:
+    ibmsc-test: /content/drive/MyDrive/priming-models/similarities-ibmsc-test-sentence-transformer.json
+    ibmsc-validation: /content/drive/MyDrive/priming-models/similarities-ibmsc-validation-sentence-transformer.json
+    vast-test: null
+    vast-validation: null
+  parse-tree-kernel-similarity-path:
+    ibmsc-test: /content/drive/MyDrive/priming-models/similarities-ibmsc-test-parse-tree-kernel.json
+    ibmsc-validation: /bigwork/nhwpajjy/pre-trained-models/similarities-ibmsc-validation-parse-tree-kernel.json
+
+  diverse-examples:
+    ibmsc-test: /content/drive/MyDrive/priming-models/ibmsc-test-diverse-examples.tsv
+    ibmsc-validation: /content/drive/MyDrive/priming-models/ibmsc-validation-diverse-examples.tsv
+    vast-test: /content/drive/MyDrive/priming-models/vast-test-diverse-examples.tsv
+    vast-validation: /content/drive/MyDrive/priming-models/vast-validation-diverse-examples.tsv
+
+  diverse-examples-topics:
+    ibmsc-test: /content/drive/MyDrive/priming-models/ibmsc-test-diverse-examples-topics.tsv
+    ibmsc-validation: /content/drive/MyDrive/priming-models/ibmsc-validation-diverse-examples-topics.tsv
+    vast-test: /content/drive/MyDrive/priming-models/vast-test-diverse-examples-topics.tsv
+    vast-validation: /content/drive/MyDrive/priming-models/vast-validation-diverse-examples-topics.tsv
+
+analyze-k:
+
+  prompting:
+    figure-path: /content/drive/MyDrive/priming-results/prompting-analyze-k.pdf
+    models:
+      opt-30:
+        random: /content/drive/MyDrive/priming-results/ibmsc-prompt-ibmsc-test-opt-30b-analzye-k-12-10-16:12.tsv
+        similar: /content/drive/MyDrive/priming-results/ibmsc-prompt-ibmsc-test-opt-30b-analzye-k-similar-sentence-transformer-12-12-16:24.tsv
+        diverse: /content/drive/MyDrive/priming-results/ibmsc-prompt-ibmsc-test-opt-30b-analzye-k-diverse-None-12-11-19:48.tsv
+
+
+
+
+  prompt-fine-tuning:
+    figure-path: /content/drive/MyDrive/priming-results/prompt-fine-tuning-analyze-k.pdf
+    models:
+      alpaca:
+        random: /content/drive/MyDrive/priming-results/ibmsc-prompt-fine-tuning-ibmsc-test-alpaca-7b-analzye-k-12-10-14:44.tsv
+        similar: /content/drive/MyDrive/priming-results/ibmsc-prompt-fine-tuning-ibmsc-test-alpaca-7b-analzye-k-similar-sentence-transformer.tsv
+        diverse: /content/drive/MyDrive/priming-results/ibmsc-prompt-fine-tuning-ibmsc-test-alpaca-7b-analzye-k-diverse-None-12-10-13:06.tsv
+
+
+
+analyze-topic-count:
+  k: 16
+  prompting:
+    figure-path: /content/drive/MyDrive/priming-results/prompting-analyze-topic-count.pdf
+    models:
+      opt-30:
+        random:
+        similar: /content/drive/MyDrive/priming-results/ibmsc-prompt-ibmsc-test-opt-30b-analyze-topic-count-few-shot-size16-similar-sentence-transformer-11-28-08:42.tsv
+        diverse:
+
+  prompt-fine-tuning:
+    figure-path: /content/drive/MyDrive/priming-results/prompt-fine-tuning-analyze-topic-count.pdf
+    models:
+      alpaca:
+        random: /content/drive/MyDrive/priming-results/ibmsc-prompt-fine-tuning-ibmsc-test-alpaca-7b-analyze-topic-count-few-shot-size16-12-10-12:57.tsv
+        similar: /content/drive/MyDrive/priming-results/ibmsc-prompt-fine-tuning-ibmsc-test-alpaca-7b-analyze-topic-count-few-shot-size16-similar-sentence-transformer.tsv
+        diverse: /content/drive/MyDrive/priming-results/ibmsc-prompt-fine-tuning-ibmsc-test-alpaca-7b-analyze-topic-count-few-shot-size16-diverse-None-12-10-11:07.tsv
