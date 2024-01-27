@@ -1,0 +1,12 @@
+data_path:  /home/patrick/github/data/liftout/training/train/images 
+label_path: /home/patrick/github/data/liftout/training/train/labels 
+save_path: /home/patrick/github/fibsem/fibsem/segmentation/models/autoliftout/xl/base/nc3/earlystop
+checkpoint: null 
+encoder: "resnet50" 
+epochs: 5
+batch_size: 4 
+num_classes: 3 
+lr: 3.0e-4
+wandb: true 
+wandb_project: "autoliftout"
+wandb_entity: "demarcolab"
