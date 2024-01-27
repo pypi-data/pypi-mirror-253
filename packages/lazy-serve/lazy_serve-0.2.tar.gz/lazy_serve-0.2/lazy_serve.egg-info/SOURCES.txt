@@ -1,0 +1,6 @@
+README.md
+setup.py
+lazy_serve.egg-info/PKG-INFO
+lazy_serve.egg-info/SOURCES.txt
+lazy_serve.egg-info/dependency_links.txt
+lazy_serve.egg-info/top_level.txt
