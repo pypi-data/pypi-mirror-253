@@ -1,0 +1,46 @@
+<section id="crc-algorithm-hdl-code-generator-vhdl-verilog-myhdl">
+<h2>CRC algorithm HDL code generator (VHDL, Verilog, MyHDL)</h2>
+<p><a href="https://bues.ch/h/crcgen" rel="nofollow">Homepage</a></p>
+<p><a href="https://bues.ch/cgit/crcgen.git" rel="nofollow">Git repository</a></p>
+<p><a href="https://github.com/mbuesch/crcgen" rel="nofollow">Github repository</a></p>
+<p>This tool generates VHDL, Verilog or MyHDL code for use in FPGAs to calculate CRC (Cyclic Redundancy Check) checksums.</p>
+<p>The generated HDL code is synthesizable and combinatorial. That means the calculation runs in one clock cycle on an FPGA.</p>
+<p>Any combination of CRC algorithm parameters and polynomial coefficients can be selected.</p>
+</section>
+<section id="example-usage">
+<h2>Example usage</h2>
+<p>Display all options:</p>
+<pre><code>crcgen<span class="w"> </span>-h</code></pre>
+<p>Generate Verilog code for CRC-32:</p>
+<pre><code>crcgen<span class="w"> </span>-a<span class="w"> </span>CRC-32<span class="w"> </span>-v</code></pre>
+<p>Generate VHDL code for CRC-32:</p>
+<pre><code>crcgen<span class="w"> </span>-a<span class="w"> </span>CRC-32<span class="w"> </span>-V</code></pre>
+<p>Generate Verilog code for a custom non-standard CRC or any standard algorithm that’s not included in crcgen’s -a list:</p>
+<pre><code>crcgen<span class="w"> </span>-P<span class="w"> </span><span class="s2">&quot;x^8 + x^7 + x^5 + x^4 + x^2 + x + 1&quot;</span><span class="w"> </span>-B16<span class="w"> </span>-R<span class="w"> </span>-v</code></pre>
+</section>
+<section id="online-crcgen">
+<h2>Online crcgen</h2>
+<p>An easy to use online version of crcgen that can be used without installing or downloading anything to your machine is available here:</p>
+<p><a href="https://bues.ch/h/crcgen" rel="nofollow">Online crcgen</a></p>
+</section>
+<section id="license-of-the-generated-hdl-code">
+<h2>License of the generated HDL code</h2>
+<p>The generated code is Public Domain.</p>
+<p>Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS” AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER
+RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
+NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE
+USE OR PERFORMANCE OF THIS SOFTWARE.</p>
+</section>
+<section id="license-of-the-generator">
+<h2>License of the generator</h2>
+<p>Copyright (c) 2019-2023 Michael Büsch &lt;<a href="mailto:m&#37;&#52;&#48;bues&#46;ch">m<span>&#64;</span>bues<span>&#46;</span>ch</a>&gt;</p>
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+</section>
+

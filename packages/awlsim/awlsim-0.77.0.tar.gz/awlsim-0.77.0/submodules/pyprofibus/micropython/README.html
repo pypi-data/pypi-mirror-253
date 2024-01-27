@@ -1,0 +1,59 @@
+<section id="pyprofibus-micropython-support">
+<h2>pyprofibus Micropython support</h2>
+<p>This directory contains scripts and support files for pyprofibus on <a href="https://micropython.org/" rel="nofollow">Micropython</a>.</p>
+</section>
+<section id="installing-pyprofibus-on-a-micropython-device">
+<h2>Installing pyprofibus on a Micropython device</h2>
+<p>Run the install.sh script to build and install pyprofibus to a Micropython device via USB-UART.</p>
+<p>Run <cite>install.sh -h</cite> for more help.</p>
+<p><cite>install.sh</cite> prepares and cross-compiles all pyprofibus files for the target platform to optimize resource usage.</p>
+<section id="example">
+<h3>Example</h3>
+<p>Your device is an ESP32 (xtensawin) connected to the computer as /dev/ttyUSB0.
+Two GSD modules are configured in your pyprofibus .conf file. For example:</p>
+<ul class="simple">
+<li><p>6ES7 138-4CA01-0AA0 PM-E DC24V</p></li>
+<li><p>6ES7 132-4BB30-0AA0  2DO DC24V</p></li>
+</ul>
+<p>The corresponding command to build and install pyprofibus is:</p>
+<pre><code>./micropython/install.sh<span class="w"> </span>--march<span class="w"> </span>xtensawin<span class="w"> </span>--module<span class="w"> </span><span class="s2">&quot;6ES7 138-4CA01-0AA0 PM-E DC24V&quot;</span><span class="w"> </span>--module<span class="w"> </span><span class="s2">&quot;6ES7 132-4BB30-0AA0  2DO DC24V&quot;</span><span class="w"> </span>/dev/ttyUSB0</code></pre>
+</section>
+</section>
+<section id="prerequisites">
+<h2>Prerequisites</h2>
+<p>The following tools have to be available on your Linux compatible system to build pyprofibus for Micropython:</p>
+<ul class="simple">
+<li><p>The latest version of Micropython has to be installed on your device. See <a href="https://micropython.org/download/esp32/" rel="nofollow">these instructions</a> for installing Micropython on an ESP32 device.</p></li>
+<li><p><cite>mpy-cross</cite>: <a href="https://github.com/micropython/micropython" rel="nofollow">Micropython cross compiler</a>.</p></li>
+<li><p><cite>pyboard.py</cite>: Device flashing script <a href="https://github.com/micropython/micropython/blob/master/tools/pyboard.py" rel="nofollow">from Micropython distribution</a> to copy pyprofibus to the device.</p></li>
+<li><p><cite>make</cite>: <a href="https://www.gnu.org/software/make/" rel="nofollow">GNU make</a>.</p></li>
+</ul>
+<p>These tools must be available in your PATH.</p>
+<p>You may pass the parameters <cite>–pyboard</cite> and/or <cite>–mpycross</cite> to <cite>install.sh</cite> to specify the path to your tool installation location.</p>
+</section>
+<section id="resource-usage">
+<h2>Resource usage</h2>
+<p>pyprofibus requires a fair amount of memory to run.</p>
+<p>Currently about 100 kBytes of memory available to the Micropython Garbage Collector are required to run pyprofibus. The more memory is available, the better. Remember that your application code also has to run in addition to pyprofibus.</p>
+<p>You can check the memory available to the GC with the following commands:</p>
+<pre><code><span class="kn">import</span> <span class="nn">micropython</span><span class="w">
+</span><span class="n">micropython</span><span class="o">.</span><span class="n">mem_info</span><span class="p">()</span></code></pre>
+</section>
+<section id="supported-devices">
+<h2>Supported devices</h2>
+<p>pyprofibus has been tested on:</p>
+<ul class="simple">
+<li><p>ESP32 WROOM32</p></li>
+</ul>
+<p>pyprofibus probably runs on other devices, too. The major limiting factor is the memory available to pyprofibus.</p>
+</section>
+<section id="main-py">
+<h2>main.py</h2>
+<p>Please see the file <cite>main.py</cite> and edit it to your needs.</p>
+<p>It is the main file that will be executed after boot. It should start your application and pyprofibus.</p>
+</section>
+<section id="boot-py">
+<h2>boot.py</h2>
+<p>The script <cite>boot.py</cite> sets up a basic environment after Micropython boot. You probably don’t need to edit the default <cite>boot.py</cite> script shipped with pyprofibus.</p>
+</section>
+
