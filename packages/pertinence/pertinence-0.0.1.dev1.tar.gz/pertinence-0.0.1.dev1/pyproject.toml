@@ -1,0 +1,20 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0.0", "wheel"]
+
+[project]
+authors = [{name = "Ikuya Yamada", email = "ikuya@ousia.jp"}]
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+]
+dependencies = []
+description = "A Python library for training neural search models"
+keywords = []
+license = {file = "LICENSE"}
+name = "pertinence"
+readme = "README.md"
+requires-python = ">=3.7"
+version = "0.0.1.dev1"

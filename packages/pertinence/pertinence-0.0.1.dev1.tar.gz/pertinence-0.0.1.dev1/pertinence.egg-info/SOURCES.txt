@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+pertinence/__init__.py
+pertinence.egg-info/PKG-INFO
+pertinence.egg-info/SOURCES.txt
+pertinence.egg-info/dependency_links.txt
+pertinence.egg-info/top_level.txt
