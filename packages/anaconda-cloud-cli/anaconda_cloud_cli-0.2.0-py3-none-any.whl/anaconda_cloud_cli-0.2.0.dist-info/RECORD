@@ -1,0 +1,11 @@
+anaconda_cloud_cli/__init__.py,sha256=XG_kMKqoaPb4-MDb1aTzvt4ZGbomivOQtLa-C5gGOrE,216
+anaconda_cloud_cli/__main__.py,sha256=1Vt7TvXoqN76ZY4N4HU_Eb39XyHosowLfS0i6mAYe-M,77
+anaconda_cloud_cli/_version.py,sha256=H-qsvrxCpdhaQzyddR-yajEqI71hPxLa4KxzpP3uS1g,411
+anaconda_cloud_cli/cli.py,sha256=69TaW_E85DhfMnjd9g99Y9AOZ0j5zPxCjD3iAuL3rWU,3843
+anaconda_cloud_cli/legacy.py,sha256=l2LpfKWWwNDAK1QYoaY61tCN4kTFeVgPXUz8SACkvVk,4665
+anaconda_cloud_cli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anaconda_cloud_cli-0.2.0.dist-info/METADATA,sha256=t8eagFpjnDUewKwtxv5S0M1jHD2uCpRlng-ImNWgCLM,1230
+anaconda_cloud_cli-0.2.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+anaconda_cloud_cli-0.2.0.dist-info/entry_points.txt,sha256=KLSfSgZFJtiREZCrPAWAXp-y5Bf0taAoShtPn2FI9lw,61
+anaconda_cloud_cli-0.2.0.dist-info/licenses/LICENSE,sha256=g3L2ySy-tEx2kEH9Rs2vEpRsSHQ-1xTCkFmw2RdibLg,1544
+anaconda_cloud_cli-0.2.0.dist-info/RECORD,,
