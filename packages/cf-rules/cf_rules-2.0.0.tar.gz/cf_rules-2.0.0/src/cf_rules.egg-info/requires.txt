@@ -1,0 +1,4 @@
+requests>=2.31
+sphinx>=7.2
+sphinx-rtd-theme>=2.0
+sphinx-copybutton>=0.5
