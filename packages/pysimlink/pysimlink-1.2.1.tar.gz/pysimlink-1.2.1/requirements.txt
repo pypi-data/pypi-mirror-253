@@ -1,0 +1,4 @@
+cmake
+numpy
+pybind11
+
