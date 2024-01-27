@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+LICENSES/MIT.txt
+nohands/__init__.py
+nohands/__main__.py
+nohands/demo.py
+nohands.egg-info/PKG-INFO
+nohands.egg-info/SOURCES.txt
+nohands.egg-info/dependency_links.txt
+nohands.egg-info/entry_points.txt
+nohands.egg-info/requires.txt
+nohands.egg-info/top_level.txt
