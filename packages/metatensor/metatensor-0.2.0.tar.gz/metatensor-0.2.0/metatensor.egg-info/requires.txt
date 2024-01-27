@@ -1,0 +1,6 @@
+metatensor-core
+metatensor-operations
+metatensor-learn
+
+[torch]
+metatensor-torch
