@@ -1,0 +1,17 @@
+lib
+bin
+include
+share
+*.cfg
+.DS_Store
+*.so
+*.out
+build
+__pycache__
+Eigen
+.vscode
+pybind11
+*.egg-info
+.pytest_cache
+.pyirc
+actions-runner
