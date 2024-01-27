@@ -1,0 +1,17 @@
+.gitignore
+.mdformat.toml
+.pre-commit-config.yaml
+LICENSE
+README.md
+envreport.py
+example-report.md
+pyproject.toml
+.github/workflows/release.yaml
+envreport.egg-info/PKG-INFO
+envreport.egg-info/SOURCES.txt
+envreport.egg-info/dependency_links.txt
+envreport.egg-info/entry_points.txt
+envreport.egg-info/not-zip-safe
+envreport.egg-info/requires.txt
+envreport.egg-info/top_level.txt
+tests/test_envreport.py

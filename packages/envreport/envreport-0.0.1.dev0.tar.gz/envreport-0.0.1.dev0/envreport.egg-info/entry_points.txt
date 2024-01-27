@@ -1,0 +1,2 @@
+[console_scripts]
+envreport = envreport:main
