@@ -1,0 +1,7 @@
+flask_log_viewer/static/js/ansi_html.js,sha256=1MYIcXRLGLEYcaKsUxKObSvaUuu9tyu9OrVYEzsVZzM,1039
+flask_log_viewer/templates/viewer.html,sha256=WI7zWKFjaQly61DJ3OHpccYUz5DTa6QMoOnzsBPg2PE,2822
+flask_log_viewer/viewer.py,sha256=EuAA-CJr4iFUba5UB18gXaC-PsgpO4CS_f5iHHA1xZM,2366
+flask_log_viewer-0.1.2.dist-info/LICENSE,sha256=zYRbQ30Gdp58PoKxNb2aKcBGJBXyj4gkGXPAdQrZ1-4,1088
+flask_log_viewer-0.1.2.dist-info/METADATA,sha256=jeoTb_9wtuIpN5OzUXBohdnZar0rumI3hib-mXv-5lI,4797
+flask_log_viewer-0.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flask_log_viewer-0.1.2.dist-info/RECORD,,
