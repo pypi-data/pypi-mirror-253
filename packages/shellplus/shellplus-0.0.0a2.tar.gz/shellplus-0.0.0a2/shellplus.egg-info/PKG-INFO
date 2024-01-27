@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: shellplus
+Version: 0.0.0a2
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: rich
