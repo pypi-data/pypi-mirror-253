@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cloudshell-shell-pdu-standard
+Version: 1.0.0
+Summary: QualiSystems Shells PDU Standard Package
+Home-page: https://www.quali.com/
+Author: Quali
+Author-email: info@quali.com
+Requires-Python: ~=3.9
+License-File: LICENSE.htm
+Requires-Dist: cloudshell-shell-standards~=2.0
+Requires-Dist: attrs>=21
+
+QualiSystems Shells PDU Standard Package
