@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: aldegonde
+Version: 0.0.3
+Summary: Classical Cryptography Library
+Author-email: Michel Oosterhof <michel@oosterhof.net>
+License: ISC License
+        
+        Copyright (c) 2024 Michel Oosterhof
+        
+        Permission to use, copy, modify, and/or distribute this software for any
+        purpose with or without fee is hereby granted, provided that the above
+        copyright notice and this permission notice appear in all copies.
+        
+        THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+        REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+        AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+        INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+        LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+        OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+        PERFORMANCE OF THIS SOFTWARE.
+        
+Project-URL: homepage, https://github.com/micheloosterhof/aldegonde
+Project-URL: documentation, https://readthedocs.org
+Project-URL: repository, https://github.com/micheloosterhof/aldegonde
+Project-URL: changelog, https://github.com/me/spam/blob/master/CHANGELOG.md
+Keywords: cryptanalysis,cryptology,cryptography
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+`aldegonde` is a Python library for classical cryptography. It is
+written to accomodate non-standard alphabets (i.e. not just A-Z).
