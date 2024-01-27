@@ -1,0 +1,13 @@
+jirascripting/__init__.py,sha256=ntv_2MmVsObT8h1lFpYEHggOMHOmulRGQ3Uq0wZgoDo,859
+jirascripting/auth_and_headers.py,sha256=4wUfk0fTWSp3RIjuAn6IVdt4-QtbSPLK0k7hKolSFT4,701
+jirascripting/create_fancy_jira_issue.py,sha256=39aWH-Ig62SdVn40JEJhRLB066Vj5QL8Ocz71qJalck,6721
+jirascripting/create_jira_epic.py,sha256=o3L8B4fwNydtlo-m1Vw2P0PIT3eBBLuTXM1SgtVnwPM,2155
+jirascripting/create_jira_issue.py,sha256=BHMkrNI6no4t-MgH3IA6WcnYcmRu9jxDoWlIE6kJkDM,2630
+jirascripting/create_jira_issue_with_parent.py,sha256=CihUg_amP_l-Hvuz6Z3sidAJQIJM-0JcVp7JMlCgll8,2640
+jirascripting/get_assignable_users.py,sha256=qf3jZkGH0j4EZXuczkr1JXd4IhpmNmkR2PMPITZicGE,2455
+jirascripting/helpers.py,sha256=Qyn9_6PxmbnjDXfdd9fPZz2DAiZzenyIEBeG7cga98I,19651
+jirascripting-0.0.15.dist-info/LICENSE,sha256=V2jjNs1HTz4VzlMWs1Ano52yYryHQz8XfgfhtamdLOA,1069
+jirascripting-0.0.15.dist-info/METADATA,sha256=o5GCdloTSXkX04PrQocYrk0unsFFKNJzLg3vvJiQSLA,445
+jirascripting-0.0.15.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jirascripting-0.0.15.dist-info/top_level.txt,sha256=Z_rtl_zI72msn-cn-AvsYwwfFxRp1mjE2I7Z_8neCc8,14
+jirascripting-0.0.15.dist-info/RECORD,,
