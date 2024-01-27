@@ -1,0 +1,13 @@
+aind-data-schema==0.19.0
+aind-metadata-service[client]
+scanimage-tiff-reader==1.4.1.4
+pydantic-settings
+
+[dev]
+black
+coverage
+flake8
+interrogate
+isort
+Sphinx
+furo
