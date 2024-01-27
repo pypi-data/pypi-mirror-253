@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "primod"
+description = "Pre-process iMOD Coupler"
+readme = "README.md"
+authors = [
+    { name = "Julian Hofer", email = "Julian.Hofer@deltares.nl" },
+    { name = "Joeri van Engelen", email = "Joeri.vanEngelen@deltares.nl" },
+    { name = "Huite Bootsma", email = "Huite.Bootsma@deltares.nl" },
+]
+license = { text = "MIT" }
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Hydrology",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "geopandas",
+    "imod",
+    "numpy",
+    "pandas",
+    "ribasim",
+    "tomli-w",
+    "xarray",
+]
+dynamic = ["version"]
+
+[tool.hatch.version]
+path = "primod/__init__.py"
+
+[project.urls]
+Source = "https://github.com/Deltares/imod_coupler/pre-processing"

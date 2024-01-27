@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: primod
+Version: 0.5.0
+Summary: Pre-process iMOD Coupler
+Project-URL: Source, https://github.com/Deltares/imod_coupler/pre-processing
+Author-email: Julian Hofer <Julian.Hofer@deltares.nl>, Joeri van Engelen <Joeri.vanEngelen@deltares.nl>, Huite Bootsma <Huite.Bootsma@deltares.nl>
+License: MIT
+License-File: LICENSE
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Requires-Python: >=3.10
+Requires-Dist: geopandas
+Requires-Dist: imod
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: ribasim
+Requires-Dist: tomli-w
+Requires-Dist: xarray
+Description-Content-Type: text/markdown
+
+# Primod
+
+
+Primod is a pre-processing tool for [iMOD Coupler](https://github.com/Deltares/imod_coupler).
+Its usage is documented in the [iMOD Suite documentation](https://github.com/Deltares/imod_coupler).
