@@ -1,0 +1,4 @@
+rdkit
+scipy
+numpy
+gufe
