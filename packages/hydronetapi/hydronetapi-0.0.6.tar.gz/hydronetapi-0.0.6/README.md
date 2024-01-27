@@ -1,0 +1,39 @@
+## Hydronet API
+
+Summary:
+This API is for use with a Hydronet WMM API implementing the most recent version of the HydroMesh library.
+
+To import the hydronet library:
+```python
+from hydronet import wmm
+```
+
+To establish connection to a modem with an Ethernet interface IP of <ipaddr> (xx.xx.xx.xx):
+```python
+modem = wmm.wmm(<ipaddr>,<BufferSize>,<Port>)
+```
+
+In order to send data from an underwater node to a internet endpoint, the network must be made aware of the endpoint either by an edge node or an underwater node.
+To introduce a new internet UDP endpoint (at <ipaddr>:<port>) to the mesh network from an underwater application (where <dest> is an alias for the internet endpoint understood by HydroMesh):
+```python
+<dest> = modem.establish_connection(<ipaddr>, port>)
+```
+
+The destination field is a one byte value representing an endpoint.
+The range of valid destinations are as follows:
+ - 0x00      : Reserved
+ - 0x01-0x3F : UW endpoints
+ - 0x40-0xFE : Alias destinations
+ - 0xFF      : Reserved
+
+Send data to a destination:
+```python
+modem.send(<data>,<destination>)
+```
+
+Receive data from the LAN modem:
+```python
+<data>,<addr>,<src> = modem.recv(self, <cut_header>=True)
+```
+
+The <src> (source) field is of the same type as the destination, and can therefore be used as a destination for further communication.
