@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+music_embedding/__init__.py
+music_embedding/embedder.py
+music_embedding/interval.py
+music_embedding.egg-info/PKG-INFO
+music_embedding.egg-info/SOURCES.txt
+music_embedding.egg-info/dependency_links.txt
+music_embedding.egg-info/requires.txt
+music_embedding.egg-info/top_level.txt
+tests/test_embedder.py
+tests/test_interval.py
