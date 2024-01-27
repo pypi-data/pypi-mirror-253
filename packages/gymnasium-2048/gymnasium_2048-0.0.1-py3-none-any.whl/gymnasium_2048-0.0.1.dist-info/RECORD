@@ -1,0 +1,17 @@
+gymnasium_2048/__init__.py,sha256=ffM90eg-oyztJArkTtI2kLICHseCAkZHSwljeEcwnmA,166
+gymnasium_2048/agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gymnasium_2048/agents/ntuple/__init__.py,sha256=5KdKBHhr1xhu6yBrGhth0d_1MV6jnh_tmh32IlBY22U,237
+gymnasium_2048/agents/ntuple/factory.py,sha256=8p9SGk51HNFSTe6ah11i7qiFXKi5sV1UMXST9ElMJ7s,2510
+gymnasium_2048/agents/ntuple/network.py,sha256=KluuCd3wc71mu_mmI5NrS2teHaMhH-CJKdjOvgvWLBs,2632
+gymnasium_2048/agents/ntuple/policy.py,sha256=ZnIE6e3sHCcorjnO29UxRtfeIs0X4w9lq6NxIirO8EI,8012
+gymnasium_2048/envs/__init__.py,sha256=AcvI9swbI1tmo3d9dZ4lJglAZfAbEw2M7ZuhjWPwcSw,71
+gymnasium_2048/envs/twenty_forty_eight.py,sha256=tphM-_zpXOEz-lZkkHyMdvKsHnZfL9-3heTJp0WCT_g,12161
+gymnasium_2048/wrappers/__init__.py,sha256=egAp9OlvltNQySIatNH8m1MVAVH5aSOcxeHcXdohANY,215
+gymnasium_2048/wrappers/illegal_reward.py,sha256=d9DWfkT3_mUNHf22Vvk6YiMWWQz9tp8AQZfCVzhyyYo,767
+gymnasium_2048/wrappers/terminate_goal.py,sha256=VgRXTfkeugLK9j3ZzmQN6jAJJXWzXPSqcnRMgxMfIUU,896
+gymnasium_2048/wrappers/terminate_illegal.py,sha256=VPasec2oLGmFzTGvYofUUBg3_jMzEg9G8g0KP75hhEw,768
+gymnasium_2048-0.0.1.dist-info/LICENSE,sha256=6yVyls8JLXPNSO1M95VJS-Vq9mdVebNEVzDUtwbszrQ,1074
+gymnasium_2048-0.0.1.dist-info/METADATA,sha256=u7NwtJqk-39N5vaF-9wbYbawtmzJWa5IzKgLG7Q9xls,7188
+gymnasium_2048-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gymnasium_2048-0.0.1.dist-info/top_level.txt,sha256=La7domSwNUIj6g7W2v9EWkQtJqFHpVjSB20LHdaiYCI,15
+gymnasium_2048-0.0.1.dist-info/RECORD,,
