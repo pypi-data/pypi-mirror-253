@@ -1,0 +1,3 @@
+include README.in
+include fraud_patterns.txt
+include social_prestige.txt

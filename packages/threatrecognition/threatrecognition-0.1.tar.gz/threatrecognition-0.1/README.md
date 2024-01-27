@@ -1,0 +1,19 @@
+# Threat Speech Recognition - Research Project
+This project focuses on implementing a Threat Speech Recognition system using Python and incorporating machine learning concepts. The goal is to develop a system that can identify and classify threatening or harmful speech within audio recordings.
+
+## Installation
+To get started with the Threat Speech Recognition project, clone this repository to your local machine:
+```
+git clone https://github.com/your-username/threat-speech-recognition.git
+```
+Navigate to the project directory:
+```
+cd threat-speech-recognition
+```
+
+
+## Dataset
+The success of the Threat Speech Recognition model depends on the quality and diversity of the dataset. We recommend using a labeled dataset containing both non-threatening and threatening speech samples. Ensure that the dataset is appropriately preprocessed and split into training, validation, and testing sets.
+
+## Contributing
+We welcome contributions to enhance the project. Feel free to open issues, submit pull requests, or provide feedback.

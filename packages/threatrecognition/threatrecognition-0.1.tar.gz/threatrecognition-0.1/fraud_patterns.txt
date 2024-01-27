@@ -1,0 +1,23 @@
+Tell,card number
+What,card number
+Tell,card,pin
+What,card,pin
+Tell,card,cvv
+What,card,cvv
+what,pin
+tell,pin
+what,cvv
+tell,cvv
+You,won,lottery
+Enter,upi pin
+PhonePe Customer care,prize money,upi pin
+account blocked,activate
+card blocked,activate
+sim card block
+otp
+tell,one time password
+what,one time password
+what is,password
+tell,password
+kbc
+click the link

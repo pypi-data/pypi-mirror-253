@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+fraud_patterns.txt
+setup.py
+social_prestige.txt
+threatrecognition/__init__.py
+threatrecognition/main.py
+threatrecognition.egg-info/PKG-INFO
+threatrecognition.egg-info/SOURCES.txt
+threatrecognition.egg-info/dependency_links.txt
+threatrecognition.egg-info/entry_points.txt
+threatrecognition.egg-info/requires.txt
+threatrecognition.egg-info/top_level.txt

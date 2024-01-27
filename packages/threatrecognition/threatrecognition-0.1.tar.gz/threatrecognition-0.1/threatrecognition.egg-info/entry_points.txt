@@ -1,0 +1,2 @@
+[console_scripts]
+threat-recognition = threatrecognition.main:main
