@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ZSync.egg-info/PKG-INFO
+ZSync.egg-info/SOURCES.txt
+ZSync.egg-info/dependency_links.txt
+ZSync.egg-info/entry_points.txt
+ZSync.egg-info/requires.txt
+ZSync.egg-info/top_level.txt
+zsync/CLI.py
+zsync/Config.py
+zsync/SyncEngine.py
+zsync/ZSync.py
+zsync/__init__.py
