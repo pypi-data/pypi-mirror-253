@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "pass-operator"
+version = "v0.2.2"
+description = "A kubernetes operator that syncs and decrypts secrets from pass git repositories"
+authors = ["Emma Doyle <emma@premiscale.com>"]
+maintainers = ["Emma Doyle <emma@premiscale.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+packages = [{include = "src"}]
+include = [
+  "LICENSE"
+]
+keywords = [
+    "python",
+    "kubernetes",
+    "secrets",
+    "operator",
+    "pass"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+kubernetes = "^29.0.0"
+gitpython = "^3.1.31"
+kopf = "^1.36.2"
+python-gnupg = "^0.5.2"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.2"
+poetry = "^1.5.1"
+mypy = "^1.0.1"
+pylint = "^3.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+passoperator = "src.operator.cli:main"
+
+[tool.mypy]
+python_version = "3.10"
+strict_optional = "true"
+ignore_missing_imports = "true"
