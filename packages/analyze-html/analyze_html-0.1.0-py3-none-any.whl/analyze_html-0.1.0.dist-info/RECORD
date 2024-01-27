@@ -1,0 +1,6 @@
+analyze_html/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+analyze_html/cli.py,sha256=PxMqTS9HZaoQdlbcOZZ7i1mJrp11U95UVDEdg1fhjXQ,807
+analyze_html/scrap.py,sha256=-YTBBIar8vcgIGbkkkdsHpYnYFIaGkqSwPkbpd_5imU,552
+analyze_html-0.1.0.dist-info/METADATA,sha256=FXT9Q81tVdI9cKAwlrC838AlvTnXszcVXysy0swuQbM,909
+analyze_html-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+analyze_html-0.1.0.dist-info/RECORD,,
