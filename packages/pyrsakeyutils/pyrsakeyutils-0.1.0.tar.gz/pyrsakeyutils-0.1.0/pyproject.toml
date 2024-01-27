@@ -1,0 +1,39 @@
+[project]
+name = "pyrsakeyutils"
+version = "0.0.1"
+authors = [
+  { name="John Cheng", email="jcheng@telesign.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.10.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "rsa>=4.9",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.4.4"]
+
+[tool.poetry]
+name = "pyrsakeyutils"
+version = "0.1.0"
+description = "Inspect RSA keys"
+authors = ["John Cheng <jcheng@telesign.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rsa = "^4.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
