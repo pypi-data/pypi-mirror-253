@@ -1,0 +1,33 @@
+.\" Manpage for tractor
+.\" Contact dani.behzi@ubuntu.com to correct errors or typos.
+.TH man 1 "16 Jan 2024" "4.4.0" "tractor man page"
+.SH NAME
+tractor \- Setup an onion routing proxy
+.SH SYNOPSIS
+tractor COMMAND
+.SH DESCRIPTION
+This package uses python stem library to provide a connection through the onion proxy and sets up proxy in user session, so you don't have to mess up with TOR on your system anymore.
+.SH COMMANDS
+start [--verbose] \- starts onion routing
+
+stop [--verbose] \- stops onion routing
+
+newid [--verbose] \- gives user a new identity
+
+restart [--verbose] \- stop, then start
+
+killtor [--verbose] \- kill all tor processes by user
+
+set [--verbose] \- setup proxy
+
+unset [--verbose] \- unset proxy
+
+isset \- checks if proxy is set or not
+
+isrunning \- checks if Tractor is running or not
+
+isconnected \- checks if Tractor is connected or not
+
+bridgesfile \- get bridges file address
+.SH AUTHOR
+Danial Behzadi (dani.behzi@ubuntu.com)
