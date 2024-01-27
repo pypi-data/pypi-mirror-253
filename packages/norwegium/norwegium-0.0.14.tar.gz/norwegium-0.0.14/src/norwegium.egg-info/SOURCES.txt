@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/norwegium/__init__.py
+src/norwegium/norwegium.py
+src/norwegium.egg-info/PKG-INFO
+src/norwegium.egg-info/SOURCES.txt
+src/norwegium.egg-info/dependency_links.txt
+src/norwegium.egg-info/top_level.txt
