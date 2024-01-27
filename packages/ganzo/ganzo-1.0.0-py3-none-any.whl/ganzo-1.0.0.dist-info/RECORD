@@ -1,0 +1,15 @@
+ganzo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ganzo/__main__.py,sha256=D5Vlid3eQfjiZf1DegSWycg9ZLRTbnuGbtXhSevquK0,66
+ganzo/cli.py,sha256=UA7-4Ymzw78O51B972oYItlaB9Gn_e-KhHXhJmX24Fo,1694
+ganzo/core.py,sha256=tveyL2z0-1w5d_IcM7x7kox9aZfz7xmtiP9ImFNiJM4,1912
+ganzo/resolvers.py,sha256=qIKaAeU4f3ajyiJ_8DMNh4WquJ8DyTEjV8YX2PwUCGk,1043
+ganzo/sources/__init__.py,sha256=RUaC2BQohFk3n7mMWrLtGC_4BrriEz52ldsYDbZgm6s,310
+ganzo/sources/gcs.py,sha256=9sQCkD9GeX9kbjQSTr4uufnMjuCASXEksqUvRsr9iM8,1517
+ganzo/sources/git.py,sha256=s1r5j9h5rlPyqWXP_AblJVDsml51ezUkVGYRw2VzEMI,1612
+ganzo/sources/local.py,sha256=ztrUaque5l6TRIFSeVymMWKeOfSvtKRhaZ0nXy7Tru0,865
+ganzo-1.0.0.dist-info/LICENSE,sha256=ojyvEamG4ynOG7HI_9SvQapHtz6NafWAYVRaiGuNKoE,1071
+ganzo-1.0.0.dist-info/METADATA,sha256=vrXQfqMDrxm_dji3fCz-cdSIZzoVRiRohA5KckGVXcg,3141
+ganzo-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ganzo-1.0.0.dist-info/entry_points.txt,sha256=YVRgB5TEFJEihpg6C_niwwaMV2gBR6U1OUaystYGzo4,41
+ganzo-1.0.0.dist-info/top_level.txt,sha256=23QYw6FrXVruSPSZq-lz0gPll7MSJqNRP6tsPqTHyME,6
+ganzo-1.0.0.dist-info/RECORD,,
