@@ -1,0 +1,11 @@
+nf_parser/__init__.py,sha256=W6Tt_2WsnK4iqCDwuocYRwjNtPuQtserNaAobKXSNfo,140
+nf_parser/constructs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nf_parser/grammer/nf.lark,sha256=vMKyrShRmRLQhyGZXymsUCSx9X43x5cr6CMLnt8KCes,11917
+nf_parser/parser.py,sha256=9LZcguiAUY2wd2XBWuqZnHNlnxcsIfsXcDVwAK-qgOw,1215
+nf_parser/transformers/__init__.py,sha256=uXXOW5ZShIlFNujCP9yFtcyjn9x1yG6xqtK49O4KZPo,30
+nf_parser/transformers/nextflow.py,sha256=MhYBkieGQhnUu-JyEiJl-EqSfxVPptJBvBAobTYOX1I,6358
+nf_parser/utils.py,sha256=0pyd4oUG5KZqi1VU_jnrmdRfr2f9PB9Pc4ts2c1uwAM,541
+nf_parser-0.0.1.dist-info/LICENSE,sha256=VZUOY1swAt8IpZ-PdniSvGKhQrj7JDs-w5XI6ISsni4,1070
+nf_parser-0.0.1.dist-info/METADATA,sha256=lI9aGWYxv0NR3gRZt2icz49sj293SDetoh5XNsvw9u0,2372
+nf_parser-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+nf_parser-0.0.1.dist-info/RECORD,,
