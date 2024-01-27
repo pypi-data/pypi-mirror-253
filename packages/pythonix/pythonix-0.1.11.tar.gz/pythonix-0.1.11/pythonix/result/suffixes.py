@@ -1,0 +1,23 @@
+import pythonix.result.funcs as f
+from pythonix.suffix_types import EagerSuffix, DelayedSuffix
+
+is_ok = EagerSuffix(f.is_ok)
+is_err = EagerSuffix(f.is_err)
+is_ok_and = DelayedSuffix(f.is_ok_and)
+is_err_and = DelayedSuffix(f.is_err_and)
+unwrap = EagerSuffix(f.unwrap)
+unwrap_err = EagerSuffix(f.unwrap_err)
+unwrap_or = DelayedSuffix(f.unwrap_or)
+unwrap_or_else = DelayedSuffix(f.unwrap_or_else)
+expect = DelayedSuffix(f.expect)
+expect_err = DelayedSuffix(f.expect_err)
+ok = EagerSuffix(f.ok)
+err = EagerSuffix(f.err)
+mapme = DelayedSuffix(f.mapme)
+mapme_or = DelayedSuffix(f.mapme_or)
+mapme_or_else = DelayedSuffix(f.mapme_or_else)
+mapme_err = DelayedSuffix(f.mapme_err)
+and_res = DelayedSuffix(f.and_res)
+and_then = DelayedSuffix(f.and_then)
+or_res = DelayedSuffix(f.or_res)
+or_else = DelayedSuffix(f.or_else)
