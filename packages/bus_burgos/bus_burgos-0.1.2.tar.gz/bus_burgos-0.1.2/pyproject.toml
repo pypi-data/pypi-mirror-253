@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "bus_burgos"
+version = "0.1.2"
+description = "Asynchronous Python client for getting bus stops information in Burgos"
+authors = ["ricveal <ricveal@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ricveal/bus_burgos"
+repository = "https://github.com/ricveal/bus_burgos"
+keywords = ["bus", "burgos", "transit", "api", "async", "client"]
+classifiers = [
+  "Framework :: AsyncIO",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python="^3.12"
+aiohttp = "^3.9.1"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+pytest = "^7.4.4"
+black = "^23.12.1"
+pytest-watch = "^4.2.0"
+pytest-mock = "^3.12.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

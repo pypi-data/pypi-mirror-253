@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: bus_burgos
+Version: 0.1.2
+Summary: Asynchronous Python client for getting bus stops information in Burgos
+Home-page: https://github.com/ricveal/bus_burgos
+License: MIT
+Keywords: bus,burgos,transit,api,async,client
+Author: ricveal
+Author-email: ricveal@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0)
+Project-URL: Repository, https://github.com/ricveal/bus_burgos
+Description-Content-Type: text/markdown
+
+# Python API fetching bus stops information in Burgos
+
+Retrieve the status of the Public Bus Service in Burgos, Spain.
+
+## Authors
+
+- [@ricveal](https://www.github.com/ricveal)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
