@@ -1,0 +1,3 @@
+[console_scripts]
+mothertongues = mtd.cli:cli
+mtd = mtd.cli:cli
