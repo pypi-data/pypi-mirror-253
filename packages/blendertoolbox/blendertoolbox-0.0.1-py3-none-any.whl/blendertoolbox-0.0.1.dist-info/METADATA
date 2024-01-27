@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: blendertoolbox
+Version: 0.0.1
+Summary: A example Python package
+Home-page: https://github.com/HTDerekLiu/BlenderToolbox/
+Author: Hsueh-Ti Derek Liu
+Author-email: shudson@anl.gov
+License: Apache 2.0
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+
