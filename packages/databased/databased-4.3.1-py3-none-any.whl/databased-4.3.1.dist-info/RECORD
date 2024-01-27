@@ -1,0 +1,11 @@
+databased/__init__.py,sha256=IkaZCDHkdR4eBrGfyxF8i-zKZWB-gjVNawd0mnzNaTk,59
+databased/create_shell.py,sha256=xjH9mTQXeWxxBHLmR13N5WBmPMFttqfpIG8aTbFu2w4,1356
+databased/customshell.py,sha256=nPqpzw24GJBtsR7Thi_wRxWGwGfmKRxe04lRPRNR5ek,1522
+databased/databased.py,sha256=hywcrSU8nY6VXgnuQPddUQU_aOgClFhuiLoYd0N7Jag,21506
+databased/dbparsers.py,sha256=grC9o332UKjAXYuEWXqtXyzGhBvXa3ec-WXJyLuEVDc,8302
+databased/dbshell.py,sha256=qP4TfxcQ0gsFTqBmIQgFWDlPhDGhEXeOrvykmN2kPX4,17865
+databased-4.3.1.dist-info/METADATA,sha256=U56HXJ8kXv7HxboBeyZr-9GWRY25-GACKAx15omdovA,23320
+databased-4.3.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+databased-4.3.1.dist-info/entry_points.txt,sha256=cPkBxU_lNkUbIyLXWVh6ke3-8cI_y2ApMoulRmF_V1A,96
+databased-4.3.1.dist-info/licenses/LICENSE.txt,sha256=GA4k0f8zyJsPeXl_v_6h0BQT4BnMtK-NX8QSGL0JbCQ,1086
+databased-4.3.1.dist-info/RECORD,,
