@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Karys_crazy_test
+Version: 0.5.0
+Summary: Python implementation of the Contextual Importance and Utility (CIU) explainable AI method
+Home-page: https://github.com/KaryFramling/py-ciu
+Author: Kary Främling, Vlad Apopei, others
+Author-email: kary.framling@umu.se
+License: MIT
+Keywords: Contextual Importance and Utility,CIU,Explainable AI,Explainable Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: xgboost
+
+Please read the README file
