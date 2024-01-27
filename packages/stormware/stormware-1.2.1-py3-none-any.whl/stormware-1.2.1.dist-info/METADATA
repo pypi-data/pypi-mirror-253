@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: stormware
+Version: 1.2.1
+Summary: API connectors for data analysis and task automation
+Author-email: Logikal GmbH <contact@logikal.io>
+License: Copyright 2023 Logikal GmbH
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+        associated documentation files (the "Software"), to deal in the Software without restriction,
+        including without limitation the rights to use, copy, modify, merge, publish, distribute,
+        sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or
+        substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+        NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+        DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT
+        OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Documentation, https://docs.logikal.io/stormware/
+Project-URL: Release notes, https://github.com/logikal-io/stormware/releases
+Project-URL: Issue tracker, https://github.com/logikal-io/stormware/issues
+Project-URL: Source code, https://github.com/logikal-io/stormware
+Keywords: api,connector
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: ~=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: logikal-utils ~=1.0
+Requires-Dist: pandas[performance] ~=2.0
+Requires-Dist: pandas-stubs ~=2.0
+Requires-Dist: xdg ~=5.1
+Provides-Extra: amazon
+Requires-Dist: boto3 ==1.34.29 ; extra == 'amazon'
+Requires-Dist: boto3-stubs ==1.34.29 ; extra == 'amazon'
+Provides-Extra: facebook
+Requires-Dist: facebook-business ==19.0.0 ; extra == 'facebook'
+Provides-Extra: google
+Requires-Dist: google-api-python-client ==2.115.0 ; extra == 'google'
+Requires-Dist: google-api-python-client-stubs ==1.23.0 ; extra == 'google'
+Requires-Dist: google-auth ==2.27.0 ; extra == 'google'
+Requires-Dist: google-auth-stubs ==0.2.0 ; extra == 'google'
+Requires-Dist: google-cloud-bigquery[pandas] ~=3.14 ; extra == 'google'
+Requires-Dist: google-cloud-secret-manager ==2.17.0 ; extra == 'google'
+Requires-Dist: google-crc32c ==1.5.0 ; extra == 'google'
+
+Stormware
+=========
+API connectors for data analysis and task automation.
+
+Getting Started
+---------------
+You can find the project documentation under `docs.logikal.io/stormware/
+<https://docs.logikal.io/stormware/>`_.
