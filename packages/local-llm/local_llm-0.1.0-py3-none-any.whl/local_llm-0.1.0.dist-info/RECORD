@@ -1,0 +1,9 @@
+local_llm/CTTS.py,sha256=ie8Ih01S77ptkk-ARImiNiVKZhbYQHgNjcLjjCe9rmE,4759
+local_llm/LLM.py,sha256=EN9vhiXxdqxl4yIWe81dArZzZHvPBQ8GDI0lLbxg1Fo,14471
+local_llm/STT.py,sha256=32RVGxpzseGnefu_zrhx_h1B3iE0MDieCoFL1RT0RWA,1975
+local_llm/__init__.py,sha256=NaVn-AkLekToI2scPlM9Dr5Md_vB05uKNO-uOBOPSIA,92
+local_llm-0.1.0.dist-info/LICENSE,sha256=Ggs6WOBFsYnPKRXVaRuZwUvh0PhDrsQRNv5pcMd0BLs,1070
+local_llm-0.1.0.dist-info/METADATA,sha256=SDCaTl3D6zMQS59N2p3PE4ucCOUCf6HIDJyCQoNEle0,4751
+local_llm-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+local_llm-0.1.0.dist-info/top_level.txt,sha256=VLJrp5N7Q7sapzk78Wh3Oj60GeeDLJqo8fWlulThWWc,10
+local_llm-0.1.0.dist-info/RECORD,,
