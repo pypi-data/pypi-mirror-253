@@ -1,0 +1,507 @@
+Metadata-Version: 2.1
+Name: sysnet-persons
+Version: 1.0.4.2
+Summary: SYSNET Persons Registry REST API client
+Home-page: 
+Author-email: Radim Jaeger <info@sysnet.cz>
+License: Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: Homepage, https://github.com/SYSNET-CZ/swagger/tree/main/clients/persons
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# persons
+This is a API to Persons Registry
+
+This Python package is automatically generated by the [Swagger Codegen](https://github.com/swagger-api/swagger-codegen) project:
+
+- API version: 1.0.4
+- Package version: 1.0.4.002
+- Build package: io.swagger.codegen.v3.generators.python.PythonClientCodegen
+
+## Requirements.
+
+Python 3.9+
+
+## Installation & Usage
+### pip install
+
+If the python package is hosted on Github, you can install directly from Github
+
+```sh
+pip install sysnet-persons
+```
+
+Then import the package:
+```python
+import persons 
+```
+
+## Getting Started
+
+Please follow the [installation procedure](#installation--usage) and then run the following:
+
+```python
+from __future__ import print_function
+import time
+import persons
+from persons.rest import ApiException
+from pprint import pprint
+
+# Configure API key authorization: apiKey
+configuration = persons.Configuration()
+configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = persons.AdminsApi(persons.ApiClient(configuration))
+name = 'name_example' # str | Název tagu
+
+try:
+    # odstraní definici tagu  (cruD)
+    api_response = api_instance.delete_tag(name)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling AdminsApi->delete_tag: %s\n" % e)
+
+# Configure API key authorization: apiKey
+configuration = persons.Configuration()
+configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = persons.AdminsApi(persons.ApiClient(configuration))
+
+try:
+    # získá konfiguraci konektoru
+    api_response = api_instance.get_config()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling AdminsApi->get_config: %s\n" % e)
+
+# Configure API key authorization: apiKey
+configuration = persons.Configuration()
+configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = persons.AdminsApi(persons.ApiClient(configuration))
+name = 'name_example' # str | Název tagu
+
+try:
+    # vrací definici tagu (cRud)
+    api_response = api_instance.get_tag(name)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling AdminsApi->get_tag: %s\n" % e)
+
+# Configure API key authorization: apiKey
+configuration = persons.Configuration()
+configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = persons.AdminsApi(persons.ApiClient(configuration))
+tag = 'tag_example' # str | Vyhledání podle tagu (optional)
+search = 'search_example' # str | Textové vyhledávání (optional)
+start = 56 # int | První dokument na stránce (optional)
+page_size = 56 # int | Velikost stránky při stránkovaném výstupu (optional)
+page = 56 # int | Číslo stránky výstupu (optional)
+
+try:
+    # vrací seznam tagů v systému (autocomplete)
+    api_response = api_instance.get_tag_list(tag=tag, search=search, start=start, page_size=page_size, page=page)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling AdminsApi->get_tag_list: %s\n" % e)
+
+# Configure API key authorization: apiKey
+configuration = persons.Configuration()
+configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = persons.AdminsApi(persons.ApiClient(configuration))
+body = persons.TagItemType() # TagItemType |  (optional)
+
+try:
+    # vytvoří nový tag (Crud)
+    api_response = api_instance.post_tag(body=body)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling AdminsApi->post_tag: %s\n" % e)
+
+# Configure API key authorization: apiKey
+configuration = persons.Configuration()
+configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = persons.AdminsApi(persons.ApiClient(configuration))
+body = NULL # object |  (optional)
+
+try:
+    # aktualizuje hlavní konfiguraci konektoru
+    api_response = api_instance.put_config(body=body)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling AdminsApi->put_config: %s\n" % e)
+
+# Configure API key authorization: apiKey
+configuration = persons.Configuration()
+configuration.api_key['X-API-KEY'] = 'YOUR_API_KEY'
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['X-API-KEY'] = 'Bearer'
+
+# create an instance of the API class
+api_instance = persons.AdminsApi(persons.ApiClient(configuration))
+name = 'name_example' # str | Název tagu
+body = persons.TagItemType() # TagItemType |  (optional)
+
+try:
+    # aktualizuje definici tagu (crUd)
+    api_response = api_instance.put_tag(name, body=body)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling AdminsApi->put_tag: %s\n" % e)
+```
+
+## Documentation for API Endpoints
+
+All URIs are relative to *https://service.sysnet.cz/persons/1.0.4*
+
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+*AdminsApi* | [**delete_tag**](docs/AdminsApi.md#delete_tag) | **DELETE** /tag/{name} | odstraní definici tagu  (cruD)
+*AdminsApi* | [**get_config**](docs/AdminsApi.md#get_config) | **GET** /config | získá konfiguraci konektoru
+*AdminsApi* | [**get_tag**](docs/AdminsApi.md#get_tag) | **GET** /tag/{name} | vrací definici tagu (cRud)
+*AdminsApi* | [**get_tag_list**](docs/AdminsApi.md#get_tag_list) | **GET** /tag | vrací seznam tagů v systému (autocomplete)
+*AdminsApi* | [**post_tag**](docs/AdminsApi.md#post_tag) | **POST** /tag | vytvoří nový tag (Crud)
+*AdminsApi* | [**put_config**](docs/AdminsApi.md#put_config) | **PUT** /config | aktualizuje hlavní konfiguraci konektoru
+*AdminsApi* | [**put_tag**](docs/AdminsApi.md#put_tag) | **PUT** /tag/{name} | aktualizuje definici tagu (crUd)
+*CrzpApi* | [**delete_crzp_person**](docs/CrzpApi.md#delete_crzp_person) | **DELETE** /crzp/person/{crzp_id} | Odstraní CRŽP uuid z osoby
+*CrzpApi* | [**get_crzp_person**](docs/CrzpApi.md#get_crzp_person) | **GET** /crzp/person/{crzp_id} | Vrátí subjekt podle CRŽP uuid
+*CrzpApi* | [**get_crzp_person_list**](docs/CrzpApi.md#get_crzp_person_list) | **GET** /crzp/person | Vrátí subjekty s vazbou do CRŽP
+*CrzpApi* | [**post_crzp_person**](docs/CrzpApi.md#post_crzp_person) | **POST** /crzp/person/{crzp_id} | Přiřadí CRŽP uuid osobě
+*CrzpApi* | [**put_crzp_person**](docs/CrzpApi.md#put_crzp_person) | **PUT** /crzp/person/{crzp_id} | Přiřadí CRŽP uuid osobě
+*DevelopersApi* | [**info_api**](docs/DevelopersApi.md#info_api) | **GET** /info | vrací servisní informace
+*DevelopersApi* | [**info_api_head**](docs/DevelopersApi.md#info_api_head) | **HEAD** /info | vrací informaci o dostupnosti služby
+*LinkApi* | [**delete_individual_role**](docs/LinkApi.md#delete_individual_role) | **DELETE** /individual/role/{individual_id} | Odebere roli uživateli
+*LinkApi* | [**delete_person_member**](docs/LinkApi.md#delete_person_member) | **DELETE** /person/member/{person_id} | Odebere člena osobě
+*LinkApi* | [**delete_person_role**](docs/LinkApi.md#delete_person_role) | **DELETE** /person/role/{person_id} | Odebere roli osobě
+*LinkApi* | [**get_individual_roles**](docs/LinkApi.md#get_individual_roles) | **GET** /individual/role/{individual_id} | Získá všechny role pro uživatele
+*LinkApi* | [**get_person_members**](docs/LinkApi.md#get_person_members) | **GET** /person/member/{person_id} | Získá všechny uživatele pro osobu
+*LinkApi* | [**get_person_roles**](docs/LinkApi.md#get_person_roles) | **GET** /person/role/{person_id} | Získá všechny role pro osobu
+*LinkApi* | [**put_individual_role**](docs/LinkApi.md#put_individual_role) | **PUT** /individual/role/{individual_id} | Přiřadí uživateli roli
+*LinkApi* | [**put_person_member**](docs/LinkApi.md#put_person_member) | **PUT** /person/member/{person_id} | Přiřadí uživatela za člena osoby
+*LinkApi* | [**put_person_role**](docs/LinkApi.md#put_person_role) | **PUT** /person/role/{person_id} | Přiřadí osobě roli
+*ManageApi* | [**check_individuals**](docs/ManageApi.md#check_individuals) | **HEAD** /individual/data | Kontroluje existenci kolekce uživatelů
+*ManageApi* | [**check_persons**](docs/ManageApi.md#check_persons) | **HEAD** /person/data | Kontroluje existenci kolekce subjektů
+*ManageApi* | [**check_roles**](docs/ManageApi.md#check_roles) | **HEAD** /role/data | Kontroluje existenci kolekce rolí
+*ManageApi* | [**check_tags**](docs/ManageApi.md#check_tags) | **HEAD** /tag/data | Kontroluje existenci kolekce tagů
+*ManageApi* | [**export_individuals**](docs/ManageApi.md#export_individuals) | **GET** /individual/data | Exportuje všechny uživatele ve formátu BSON
+*ManageApi* | [**export_persons**](docs/ManageApi.md#export_persons) | **GET** /person/data | Exportuje všechny subjekty ve formátu BSON
+*ManageApi* | [**export_roles**](docs/ManageApi.md#export_roles) | **GET** /role/data | Exportuje všechny role ve formátu BSON
+*ManageApi* | [**export_tags**](docs/ManageApi.md#export_tags) | **GET** /tag/data | Exportuje všechny tagy ve formátu BSON
+*ManageApi* | [**import_individuals**](docs/ManageApi.md#import_individuals) | **PUT** /individual/data | Importuje uživatele
+*ManageApi* | [**import_individuals_replace**](docs/ManageApi.md#import_individuals_replace) | **POST** /individual/data | Nahradí všechny uživatele
+*ManageApi* | [**import_persons**](docs/ManageApi.md#import_persons) | **PUT** /person/data | Importuje subjekty
+*ManageApi* | [**import_persons_replace**](docs/ManageApi.md#import_persons_replace) | **POST** /person/data | Nahradí všechny subjekty
+*ManageApi* | [**import_roles**](docs/ManageApi.md#import_roles) | **PUT** /role/data | Importuje role
+*ManageApi* | [**import_roles_replace**](docs/ManageApi.md#import_roles_replace) | **POST** /role/data | Nahradí všechny role
+*ManageApi* | [**import_tags**](docs/ManageApi.md#import_tags) | **PUT** /tag/data | Importuje tagy
+*ManageApi* | [**import_tags_replace**](docs/ManageApi.md#import_tags_replace) | **POST** /tag/data | Nahradí všechny tagy
+*Manage2Api* | [**get_all_individuals**](docs/Manage2Api.md#get_all_individuals) | **GET** /all/individuals | Vrací všechny uživatele pro Admin Portal
+*Manage2Api* | [**get_all_persons**](docs/Manage2Api.md#get_all_persons) | **GET** /all/persons | Vrací všechny subjekty pro Admin Portal
+*Manage2Api* | [**get_all_roles**](docs/Manage2Api.md#get_all_roles) | **GET** /all/roles | Vrací všechny role pro Admin Portal
+*Manage2Api* | [**get_all_tags**](docs/Manage2Api.md#get_all_tags) | **GET** /all/tags | Vrací všechny tagy pro Admin Portal
+*PublicApi* | [**delete_individual**](docs/PublicApi.md#delete_individual) | **DELETE** /individual/{identifier} | odstraní registrační dokument jednotlivce s daným identifikátorem (cruD)
+*PublicApi* | [**delete_person**](docs/PublicApi.md#delete_person) | **DELETE** /person/{identifier} | odstraní registrační dokument subjektu s daným identifikátorem (cruD)
+*PublicApi* | [**delete_role**](docs/PublicApi.md#delete_role) | **DELETE** /role/{identifier} | odstraní roli s daným identifikátorem (cruD)
+*PublicApi* | [**get_context**](docs/PublicApi.md#get_context) | **GET** /context/{identifier} | vrací kontext jednotlivce
+*PublicApi* | [**get_individual**](docs/PublicApi.md#get_individual) | **GET** /individual/{identifier} | vrací registrační dokument jednotlivce s daným identifikátorem (cRud)
+*PublicApi* | [**get_individual_list**](docs/PublicApi.md#get_individual_list) | **GET** /individual | vrací seznam jednotlivců (autocomplete)
+*PublicApi* | [**get_person**](docs/PublicApi.md#get_person) | **GET** /person/{identifier} | vrací registrační dokument subjektu s daným identifikátorem (cRud)
+*PublicApi* | [**get_person_list**](docs/PublicApi.md#get_person_list) | **GET** /person | vrací seznam subjektů (autocomplete)
+*PublicApi* | [**get_role**](docs/PublicApi.md#get_role) | **GET** /role/{identifier} | vrací roli s daným identifikátorem (cRud)
+*PublicApi* | [**get_role_list**](docs/PublicApi.md#get_role_list) | **GET** /role | vrací seznam rolí (autocomplete)
+*PublicApi* | [**get_tag_list**](docs/PublicApi.md#get_tag_list) | **GET** /tag | vrací seznam tagů v systému (autocomplete)
+*PublicApi* | [**post_individual**](docs/PublicApi.md#post_individual) | **POST** /individual | vytvoří nový egistrační záznam jednotlivého uživatele  (Crud)
+*PublicApi* | [**post_person**](docs/PublicApi.md#post_person) | **POST** /person | vytvoří nový registrační záznam subjektu (Crud)
+*PublicApi* | [**post_role**](docs/PublicApi.md#post_role) | **POST** /role | vytvoří novou roli  (Crud)
+*PublicApi* | [**put_individual**](docs/PublicApi.md#put_individual) | **PUT** /individual/{identifier} | aktualizuje registrační dokument jednotlivce s daným identifikátorem (crUd)
+*PublicApi* | [**put_person**](docs/PublicApi.md#put_person) | **PUT** /person/{identifier} | aktualizuje registrační dokument subjektu s daným identifikátorem (crUd)
+*PublicApi* | [**put_role**](docs/PublicApi.md#put_role) | **PUT** /role/{identifier} | aktualizuje roli s daným identifikátorem (crUd)
+*ReferenceApi* | [**delete_reference_person**](docs/ReferenceApi.md#delete_reference_person) | **DELETE** /reference/person/{person_id} | Odstraní referenční strukturu osoby
+*ReferenceApi* | [**get_reference_person**](docs/ReferenceApi.md#get_reference_person) | **GET** /reference/person/{reference_id} | Vrátí subjekt podle referečního uuid
+*ReferenceApi* | [**get_reference_person_list**](docs/ReferenceApi.md#get_reference_person_list) | **GET** /reference/person | Vrátí subjekty s odkazem
+*ReferenceApi* | [**post_reference_person**](docs/ReferenceApi.md#post_reference_person) | **POST** /reference/person/{person_id} | Zapíše referenční strukturu osoby
+*ReferenceApi* | [**put_reference_person**](docs/ReferenceApi.md#put_reference_person) | **PUT** /reference/person/{person_id} | Přepíše referenční strukturu osoby
+*ReferenceApi* | [**sync_crzp_person**](docs/ReferenceApi.md#sync_crzp_person) | **POST** /crzp/synchronize/person/{crzp_id} | Synchronizuje osobu s CRŽP
+*ReferenceApi* | [**sync_person**](docs/ReferenceApi.md#sync_person) | **POST** /synchronize/person/{person_id} | Synchronizuje osobu
+
+## Documentation For Models
+
+ - [BaseListSearchExtensionType](docs/BaseListSearchExtensionType.md)
+ - [BaseListType](docs/BaseListType.md)
+ - [BirthDateType](docs/BirthDateType.md)
+ - [CodeValueType](docs/CodeValueType.md)
+ - [ContactType](docs/ContactType.md)
+ - [ContextType](docs/ContextType.md)
+ - [ContextTypePersons](docs/ContextTypePersons.md)
+ - [ContextTypeRoles](docs/ContextTypeRoles.md)
+ - [DateTimeType](docs/DateTimeType.md)
+ - [DepartmentType](docs/DepartmentType.md)
+ - [DocumentEntry](docs/DocumentEntry.md)
+ - [DocumentEntryList](docs/DocumentEntryList.md)
+ - [DocumentMetadataType](docs/DocumentMetadataType.md)
+ - [ErrorModel](docs/ErrorModel.md)
+ - [GeoPointJtskType](docs/GeoPointJtskType.md)
+ - [GeoPointType](docs/GeoPointType.md)
+ - [IdentifierType](docs/IdentifierType.md)
+ - [IndividualListType](docs/IndividualListType.md)
+ - [IndividualType](docs/IndividualType.md)
+ - [IssuingType](docs/IssuingType.md)
+ - [LocationType](docs/LocationType.md)
+ - [MailAddressType](docs/MailAddressType.md)
+ - [MemberType](docs/MemberType.md)
+ - [PersonLinkType](docs/PersonLinkType.md)
+ - [PersonListItem](docs/PersonListItem.md)
+ - [PersonListType](docs/PersonListType.md)
+ - [PersonType](docs/PersonType.md)
+ - [PersonTypeType](docs/PersonTypeType.md)
+ - [PhoneNumberType](docs/PhoneNumberType.md)
+ - [PidType](docs/PidType.md)
+ - [ReferenceRegistry](docs/ReferenceRegistry.md)
+ - [RoleCategoryType](docs/RoleCategoryType.md)
+ - [RoleListItem](docs/RoleListItem.md)
+ - [RoleListType](docs/RoleListType.md)
+ - [RoleType](docs/RoleType.md)
+ - [TagItemType](docs/TagItemType.md)
+ - [TagListType](docs/TagListType.md)
+ - [TagType](docs/TagType.md)
+
+## Documentation For Authorization
+
+
+## apiKey
+
+- **Type**: API key
+- **API key parameter name**: X-API-KEY
+- **Location**: HTTP header
+
+
+## Author
+
+info@sysnet.cz
