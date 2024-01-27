@@ -1,0 +1,2 @@
+psutil>=5.9.8
+crossplane>=0.5.8
