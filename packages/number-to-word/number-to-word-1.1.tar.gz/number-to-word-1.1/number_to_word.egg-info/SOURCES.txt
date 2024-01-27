@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+number_to_word.egg-info/PKG-INFO
+number_to_word.egg-info/SOURCES.txt
+number_to_word.egg-info/dependency_links.txt
+number_to_word.egg-info/top_level.txt
+numbertoword/__init__.py
+numbertoword/currencies.py
+numbertoword/number_to_word.py
+numbertoword/test.py
