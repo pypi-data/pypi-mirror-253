@@ -1,0 +1,2 @@
+[console_scripts]
+nh = nohands.__main__:main
