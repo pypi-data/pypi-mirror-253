@@ -1,0 +1,100 @@
+{
+    "MSET": {
+        "airfoil_order": "A0",
+        "grid_bounds": [
+            -5.0,
+            5.0,
+            -5.0,
+            5.0
+        ],
+        "airfoil_side_points": 150,
+        "exp_side_points": 0.9,
+        "inlet_pts_left_stream": 41,
+        "outlet_pts_right_stream": 41,
+        "num_streams_top": 17,
+        "num_streams_bot": 23,
+        "max_streams_between": 15,
+        "elliptic_param": 1.3,
+        "stag_pt_aspect_ratio": 2.5,
+        "x_spacing_param": 0.85,
+        "alf0_stream_gen": 0.0,
+        "timeout": 10.0,
+        "verbose": 0,
+        "multi_grid_label": null,
+        "multi_airfoil_grid": {
+            "A0": {
+                "dsLE_dsAvg": 0.35,
+                "dsTE_dsAvg": 0.8,
+                "curvature_exp": 1.3,
+                "U_s_smax_min": 1,
+                "U_s_smax_max": 1,
+                "L_s_smax_min": 1,
+                "L_s_smax_max": 1,
+                "U_local_avg_spac_ratio": 0,
+                "L_local_avg_spac_ratio": 0
+            },
+            "airfoil_order": [
+                "A0"
+            ]
+        },
+        "airfoil_analysis_dir": "C:\\Users\\mlauer2\\AppData\\Local\\Temp",
+        "airfoil_coord_file_name": "default_airfoil",
+        "save_as_mses_settings": null,
+        "load_mses_settings": null
+    },
+    "MSES": {
+        "viscous_flag": 2,
+        "spec_Re": 0,
+        "REYNIN": 15492705.804497035,
+        "MACHIN": 0.7,
+        "spec_P_T_rho": "Specify Pressure, Temperature",
+        "P": 101325.0,
+        "T": 300.0,
+        "rho": 1.1768292682926829,
+        "gam": 1.4,
+        "L": 1.0,
+        "R": 287.05,
+        "spec_alfa_Cl": "Specify Angle of Attack",
+        "ALFAIN": 0.0,
+        "CLIFIN": 0.0,
+        "ISMOM": "S-momentum equation, isentropic @ LE",
+        "IFFBC": "vortex+source+doublet airfoil far-field BCs",
+        "ACRIT": 9.0,
+        "MCRIT": 0.95,
+        "MUCON": 1.05,
+        "timeout": 15.0,
+        "iter": 100,
+        "verbose": 0,
+        "xtrs_label": null,
+        "xtrs": {
+            "A0": {
+                "XTRSupper": 1.0,
+                "XTRSlower": 1.0
+            },
+            "airfoil_order": [
+                "A0"
+            ]
+        },
+        "AD_active": 0,
+        "AD_number": 1,
+        "AD_label": null,
+        "AD": {
+            "1": {
+                "ISDELH": 1,
+                "XCDELH": 0.1,
+                "PTRHIN": 1.1,
+                "ETAH": 0.95,
+                "from_geometry": {}
+            }
+        }
+    },
+    "MPLOT": {
+        "timeout": 15.0,
+        "Mach": 2,
+        "Streamline_Grid": 2,
+        "Grid": 2,
+        "Grid_Zoom": 2,
+        "Output_Field": 2,
+        "CPK": 0
+    }
+}

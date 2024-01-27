@@ -1,0 +1,42 @@
+{
+  "grid": {
+    "icon": "grid_icon.png",
+    "status_tip": "Activate grid",
+    "checkable": false,
+    "function": "on_grid_button_pressed"
+  },
+  "change-background-color": {
+    "icon": "Moon-Icon.png",
+    "status_tip": "Toggle theme",
+    "checkable": true,
+    "checked-by-default": false,
+    "function": "change_background_color_button_toggled"
+  },
+  "draw-point": {
+    "icon": "point.png",
+    "status_tip": "Draw points",
+    "checkable": false,
+    "function": "on_draw_points_pressed"
+  },
+  "stop-optimization": {
+    "icon": "stop.png",
+    "status_tip": "Terminate optimization",
+    "checkable": false,
+    "checked-by-default": false,
+    "function": "on_stop_button_pressed"
+  },
+  "help": {
+    "icon": "help.png",
+    "status_tip": "pymead help",
+    "checkable": false,
+    "checked-by-default": false,
+    "function": "on_help_button_pressed"
+  },
+  "template": {
+    "icon": "picture.png",
+    "status_tip": "A helpful hint",
+    "checkable": true,
+    "checked-by-default": false,
+    "function": "on_button_pressed"
+  }
+}
