@@ -1,0 +1,3 @@
+[console_scripts]
+environment-backups=environment_backups.cli:main
+
