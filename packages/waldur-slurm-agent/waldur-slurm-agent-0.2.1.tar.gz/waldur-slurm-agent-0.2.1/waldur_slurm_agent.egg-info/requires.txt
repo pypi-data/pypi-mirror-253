@@ -1,0 +1,3 @@
+python-waldur-client>=0.2.9
+requests==2.27.1
+PyYAML==6.0.1
