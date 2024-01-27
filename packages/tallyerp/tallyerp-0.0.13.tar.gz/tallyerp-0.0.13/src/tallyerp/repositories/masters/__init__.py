@@ -1,0 +1,1 @@
+from tallyerp.repositories.masters.IBase import MasterRepository
