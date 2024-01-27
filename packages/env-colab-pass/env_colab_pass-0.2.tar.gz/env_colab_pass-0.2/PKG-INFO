@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: env_colab_pass
+Version: 0.2
+Summary: Python library that check for key value in env and colab userdata. if not found then asks for it using getpass
+Home-page: https://github.com/bkakadiya/env-colab-pass
+Author: Bakulkumar Kakadiya
+Author-email: bakul.kumar@gmail.com
+License: Apache License Version 2.0
+Description-Content-Type: text/markdown
+Provides-Extra: google-colab
+License-File: LICENSE
+
+# env-colab-pass
+Python module that check for key value in env and colab userdata. if not found then asks for it using getpass
+
+#Usage 
+
+## Install package
+```
+pip install env-colab-pass
+```
+
+## Import module 
+```
+from env_colab_pass import passutil 
+```
+
+## To get the value of a env variable / colab user data / ask user 
+
+```
+passutil.get_secret_value(key_name)
+```
