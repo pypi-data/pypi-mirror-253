@@ -1,0 +1,11 @@
+gepeto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gepeto/hello.py,sha256=nrjVJDCk7GsP3acmHkfv_aORez4gdaOYeXahNaGYfyc,147
+gepeto/testing.py,sha256=HLuVNjOwfx91cGeiR9KbrDC6JlrIYSGHyXZaiZk0k0w,47
+gepeto/dbs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gepeto/dbs/kb.py,sha256=X3pzeLl129kRfiIDqtCAZkZ4q-LPte9fQXAc-m0Jn6g,58
+gepeto/dbs/pg.py,sha256=bodxXI7AsAfXYDcgWWVn6s8tcicbE5W7wwr7TGAIMgw,60
+gepeto/dbs/vdb.py,sha256=YhL09V0LLW7PZR9pT1l-f_BAm0H7fqAs4Y36cCnmPYs,64
+gepeto-0.0.4.dist-info/METADATA,sha256=KAJMpP13iENAjGJRjMrlKpSkcsd5ZSRfJ_X-EbCZCqY,245
+gepeto-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gepeto-0.0.4.dist-info/top_level.txt,sha256=o7TEimysEFTb0EU0PP19KmH15NsIVXVyCxJTjAjqJT8,7
+gepeto-0.0.4.dist-info/RECORD,,
