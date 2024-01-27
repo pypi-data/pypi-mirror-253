@@ -1,0 +1,16 @@
+tractor/SampleBridges,sha256=4aKhtLurGOJctZHHafQ-OwpNpe5ENeqxK-NIS2EqAZs,852
+tractor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tractor/actions.py,sha256=br7IT5Q1vW3IAQvwSFlnqffgay6dummjhP-lhc7T0JI,4895
+tractor/bridges.py,sha256=6C8OXdiv5Hz0JY83ei6mRMYucb1t6FzzwG_yhb4gDxs,1452
+tractor/checks.py,sha256=HgkB24YRd_SPwWvuuauAcH7OPrY5iI9q490esYKWfh4,2238
+tractor/control.py,sha256=Lw1TKANhghiChqwmUWy0LEluWdxIYh27ErT0qBXx4o4,1500
+tractor/db.py,sha256=Lf_GzKhlcygHswHepv2okOQ2gv6GgB-U-vIO7KPdlFM,1931
+tractor/proxy.py,sha256=BOITsogEVwSfk7KX_9dSByBkuyNGtaq1osS0ST_gCrk,1377
+tractor/tractor.gschema.xml,sha256=_DjSzGi-cQ1YmCNrpxh2dHJ7gwh__i8E78estnFlFyc,1933
+tractor/tractor.py,sha256=jAyz_Kvt2a87CkjkMtR0UAl4p3SDBcVLIxZb__K1ePU,800
+tractor/tractorrc.py,sha256=NT_S4xKs4w82DbxdzK72MHuv2EiFO4IixeEsMYUZJyU,3001
+traxtor-4.4.1.dist-info/entry_points.txt,sha256=4-ue4lHyK9WWC5GkCrtmUj9czZMlGOZ2FF3JNyXjvH0,48
+traxtor-4.4.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+traxtor-4.4.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+traxtor-4.4.1.dist-info/METADATA,sha256=mH91b2ybU4_TxvL5xl1MaqyQBlQ8SObfH5Sn4BSclxE,1909
+traxtor-4.4.1.dist-info/RECORD,,
