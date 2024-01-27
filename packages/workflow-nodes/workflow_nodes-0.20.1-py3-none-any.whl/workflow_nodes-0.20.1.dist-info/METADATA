@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: workflow-nodes
+Version: 0.20.1
+Summary: Collection of tools for use in workflows
+Author: Karlsruhe Institute of Technology
+License: Apache-2.0
+Project-URL: Source, https://gitlab.com/iam-cms/workflows/workflow-nodes
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: <3.13,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click <9.0.0,>=8.0.0
+Requires-Dist: defusedxml <1.0.0
+Requires-Dist: graphviz <1.0.0
+Requires-Dist: kadi-apy <0.37.0,>=0.36.0
+Requires-Dist: matplotlib <4.0.0
+Requires-Dist: openpyxl <4.0.0
+Requires-Dist: pandas <3.0.0
+Requires-Dist: pylatex <2.0.0,>=1.4.2
+Requires-Dist: qrcode <8.0.0
+Requires-Dist: scipy <2.0.0,>=1.5.1
+Requires-Dist: xmlhelpy <0.14.0,>=0.13.0
+Provides-Extra: all
+Requires-Dist: workflow-nodes[ssh] ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: black ==24.1.0 ; extra == 'dev'
+Requires-Dist: build ==1.0.3 ; extra == 'dev'
+Requires-Dist: myst-parser ==2.0.0 ; extra == 'dev'
+Requires-Dist: pre-commit ==3.5.0 ; extra == 'dev'
+Requires-Dist: pylint ==3.0.3 ; extra == 'dev'
+Requires-Dist: Sphinx ==7.1.2 ; extra == 'dev'
+Requires-Dist: sphinx-click ==5.0.1 ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ==2.0.0 ; extra == 'dev'
+Requires-Dist: tox ==4.12.1 ; extra == 'dev'
+Requires-Dist: twine ==4.0.2 ; extra == 'dev'
+Provides-Extra: ssh
+Requires-Dist: paramiko <4.0.0 ; extra == 'ssh'
+Requires-Dist: scp <1.0.0 ; extra == 'ssh'
+
+# workflow-nodes
+
+**workflow-nodes** is a collection of various tools written in Python 3, which
+are also usable inside a *workflow* as nodes. Each node is an executable
+command line tool providing the `--xmlhelp` interface, which can be used to
+obtain a machine readable representation of any command line tool and its
+parameters (see also
+[xmlhelpy](https://gitlab.com/iam-cms/workflows/xmlhelpy)). There are nodes for
+many different tasks, including data conversion, transport and visualization
+tools.
+
+For installation and usage instructions, please see the documentation:
+
+* Stable (reflecting the latest release):
+  https://workflow-nodes.readthedocs.io/en/stable/
+* Latest (reflecting the *develop* branch):
+  https://workflow-nodes.readthedocs.io/en/latest/
