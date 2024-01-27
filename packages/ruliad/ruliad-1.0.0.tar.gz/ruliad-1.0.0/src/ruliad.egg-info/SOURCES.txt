@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+src/ruliad/__init__.py
+src/ruliad.egg-info/PKG-INFO
+src/ruliad.egg-info/SOURCES.txt
+src/ruliad.egg-info/dependency_links.txt
+src/ruliad.egg-info/top_level.txt
