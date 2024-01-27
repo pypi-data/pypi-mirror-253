@@ -1,0 +1,7 @@
+sktransf/__init__.py,sha256=50sAFAo_2Z34F62f0QrKZekCAc1NL1IWURe74Wcq6rc,372
+sktransf/_utils.py,sha256=cRh6-hW6_EKnMgRqDnHjLKH4Rl_bvPivM8euZHQpZbY,1503
+sktransf/logger.py,sha256=CLR5-sEnVyP-iR0bX_Hm9ubolZCE3D2UJun5kNIudrU,2125
+scikit_transformers-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+scikit_transformers-0.1.0.dist-info/METADATA,sha256=w6Np0UNjQ59lohn3Q6Heg4nQ4-5FcqBNd-dRwp9i6xA,2555
+scikit_transformers-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+scikit_transformers-0.1.0.dist-info/RECORD,,
