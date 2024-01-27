@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: VSPEC
+Version: 0.4.0
+Summary: Simulate Observations of Exoplanets in Variable Star Systems
+Author-email: Ted Johnson <ted.johnson@unlv.edu>, Cameron Kelahan <cameron.kelahan@gmail.com>
+Maintainer-email: Ted Johnson <ted.johnson@unlv.edu>
+License: MIT License
+        
+        Copyright (c) 2023 VSPEC-collab
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Documentation, https://vspec.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/VSPEC-collab/VSPEC
+Project-URL: Issues, https://github.com/VSPEC-collab/VSPEC/issues
+Keywords: exoplanet,astronomy,star
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: numpy
+Requires-Dist: astropy
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+Requires-Dist: pathlib
+Requires-Dist: h5py
+Requires-Dist: tinygp
+Requires-Dist: jax
+Requires-Dist: netCDF4
+Requires-Dist: requests
+Requires-Dist: pyyaml
+Requires-Dist: pypsg==0.1.2
+Requires-Dist: vspec-vsm==0.3.5
+Requires-Dist: GridPolator==0.3.2
+Provides-Extra: plot
+Requires-Dist: matplotlib; extra == "plot"
+Requires-Dist: cartopy; extra == "plot"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-timeout; extra == "dev"
+Requires-Dist: pandas; extra == "dev"
+Requires-Dist: pep8; extra == "dev"
+Requires-Dist: furo==2023.9.10; extra == "dev"
+Requires-Dist: imageio; extra == "dev"
+Requires-Dist: numpydoc; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: sphinx-automodapi; extra == "dev"
+Requires-Dist: sphinx-gallery; extra == "dev"
+Requires-Dist: sphinxcontrib-bibtex; extra == "dev"
+Requires-Dist: sphinxcontrib-napoleon; extra == "dev"
+
+.. image:: https://vspec.readthedocs.io/en/latest/_images/vspec_logo.png
+    :width: 400
+    :alt: VSPEC Logo
+    :align: center
+
+|Documentation Status| |MIT license|
+
+.. |Documentation Status| image:: https://readthedocs.org/projects/vspec/badge/?version=latest
+   :target: http://vspec.readthedocs.io/?badge=latest
+
+.. |MIT license| image:: https://img.shields.io/badge/License-MIT-blue.svg
+   :target: https://lbesson.mit-license.org/
+
+.. image:: https://coveralls.io/repos/github/VSPEC-collab/VSPEC/badge.svg?branch=main
+   :target: https://coveralls.io/github/VSPEC-collab/VSPEC?branch=main
+
+
+
+VSPEC: Variable Star PhasE Curve
+================================
+
+VSPEC combines NASA's Planetary Spectrum Generator (PSG) with a custom stellar model
+to produce phase curves of variable host + planet systems.
+
+Documentation
+-------------
+
+VSPEC's documentation is hosted on readthedocs `here <https://vspec.readthedocs.io/en/latest/index.html>`_.
+There you can find a description of the API as well as numerous examples.
+
+How to Cite
+-----------
+
+A JOSS paper describing VSPEC is in the works.
+
+Authors
+-------
+
+VSPEC was written by CRESST II post-baccs Cameron Kelahan and Ted Johnson with support
+from many others. See Authors.md for more info.
+
+VSPEC is currently maintained by Ted Johnson
+
+Questions
+---------
+
+To report bugs, ask questions, and request features please use the Issues page or email the authors.
+
+Contributing
+------------
+
+Please reach out if you are interested in contributing to this project!
