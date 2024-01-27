@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/norway/__init__.py
+src/norway/norway.py
+src/norway.egg-info/PKG-INFO
+src/norway.egg-info/SOURCES.txt
+src/norway.egg-info/dependency_links.txt
+src/norway.egg-info/top_level.txt
