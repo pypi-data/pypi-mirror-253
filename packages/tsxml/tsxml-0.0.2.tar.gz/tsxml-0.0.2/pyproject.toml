@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "tsxml"
+version = "0.0.2"
+description = "Parse TestStand XML to Python dictionary"
+authors = ["Karthik Abiram"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/KarthikAbiram/tsxml"
+packages = [{ include = "*", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+xmltodict = "^0.13.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.6.1"
+flake8 = "^6.1.0"
+pydocstyle = "^6.3.0"
+black = "^24.1.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+pytest-html = "^4.0.2"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.flake8]
+max-line-length = 100
+extend-ignore = "W503"
+
+[tool.pytest.ini_options]
+addopts = [
+        "--verbose",
+        "--cov=..",
+        "--cov-report=html:.pytest_results/coverage_report",
+        "--html=.pytest_results/test_report.html",
+        "--self-contained-html"
+    ]
+markers = [
+        "multiply: tests to validate multiplication",
+        "zerodivision: tests to validate division"
+    ]
