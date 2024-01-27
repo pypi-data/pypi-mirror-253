@@ -1,0 +1,140 @@
+Metadata-Version: 2.1
+Name: psimpy
+Version: 0.2.0
+Summary: Predictive and probabilistic simulation tools.
+Home-page: https://git-ce.rwth-aachen.de/mbd/psimpy
+License: MIT
+Keywords: emulator,simulator,inference,sensitivity,uncertainty
+Author: Hu Zhao
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: SALib (>1.4.5)
+Requires-Dist: beartype (>0.11.0)
+Requires-Dist: numpy (>1.22.3)
+Requires-Dist: rpy2 (>3.5.1)
+Requires-Dist: scipy (>1.10.0)
+Requires-Dist: setuptools (>=69.0.2,<70.0.0)
+Description-Content-Type: text/markdown
+
+
+## Description
+
+`PSimPy` (Predictive and probabilistic simulation with Python) implements
+a Gaussian process emulation-based framework that enables systematic and
+efficient investigation of uncertainties associated with physics-based models
+(i.e. simulators).
+
+## Prerequisites
+
+Before installing and using `PSimPy`, please ensure that you have the following
+prerequisites:\
+(Please note that we will cover number 1 to 3 in our recommended installation
+method: [Installation in a Conda Environment](#installation-in-a-conda-environment-recommended).)
+
+1. **Python 3.9 or later**:\
+    Make sure you have Python installed on your system. You can download the latest
+version of Python from the official website:
+[Python Downloads](https://www.python.org/downloads/)
+2. **R Installed and Added to the PATH Environment Variable**:
+   - Install R from the official [R Project](https://www.r-project.org/) website.
+   - Add R to your system's PATH environment variable. This step is crucial for
+   enabling communication between Python and R.
+3. (Optional) **RobustGaSP - R package**:\
+   The emulator module, `robustgasp.py`, relies on the R package [RobustGaSP](https://cran.r-project.org/web/packages/RobustGaSP/index.html). This has also been initegrated with other PSimPy modules, such as `active_learning.py`. In order to utilize these modules, make sure to install the R package [RobustGaSP](https://cran.r-project.org/web/packages/RobustGaSP/index.html) first.
+4. (Optional) **r.avaflow - Mass Flow Simulation Tool**:\
+`PSimPy` includes a simulator module, `ravaflow3G.py`, that interfaces
+with the open source software [r.avaflow 3G](https://www.landslidemodels.org/r.avaflow/). If you intend to use this module, please refer to the official documentation of [r.avaflow 3G](https://www.landslidemodels.org/r.avaflow/) to for installation guide.
+
+## Installation
+
+`PSimPy` can be easily installed using `pip`.
+
+```bash
+$ pip install psimpy
+```
+
+This command will install the package along with its dependencies.
+
+## Installation in a Conda Environment (Recommended)
+
+We recommond you to install `PSimPy` in a virtual environment such as a `conda`
+environment. In this section, we will ceate a `conda` environment, install prerequisites (number 1 to 3), install python, and lastly, add the conda environment to `Jupyter Notebook`. You may want to first install [Anaconda](https://docs.anaconda.com/free/anaconda/) or [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/) if you haven't. The steps afterwards are as follows:
+
+1. Create a conda environment with Python and R, and activate the environment:
+
+    ```bash
+    $ conda create --name your_env_name python R
+    $ conda activate your_env_name
+    ```
+
+2. Install the R package `RobustGaSP` in the R terminal:
+
+    ```bash
+    $ R
+    ...
+    > install.packages("RobustGaSP",repos="https://cran.r-project.org",version="0.6.4")
+    ```
+
+    Make sure it is successfully installed:
+
+    ```bash
+    > library("RobustGaSP")
+    ```
+3. Next, you need to configure the environment variable `R_HOME` so that `rpy2` knows where to find `R` packages. Find your `R_HOME` using the following command and then quit the R terminal:
+
+    ```bash
+    > R.home()
+    > q()
+    ```
+    Set the environment variable `R_HOME` in your
+    conda environment with
+    ```bash
+    $ conda env config vars set R_HOME=your_R_HOME
+    ```
+    Reactivate your conda environment to make the change take effect by
+    ```bash
+    $ conda deactivate
+    $ conda activate your_env_name
+    ```
+4. Install `PSimPy` using `pip` in your conda environment:
+
+    ```bash
+    $ pip install psimpy
+    ```
+
+Now you should have `PSimPy` and its dependencies successfully installed in your
+conda environment. You can use it in the Python terminal or in your Python IDE.
+
+If you would like to use it with `Jupyter Notebook` (iPython Notebook), there
+is one extra step needed to set your conda environment on your Notebook:
+
+5. Install `ipykernel` and install a kernel that points to your conda environment:
+
+    ```bash
+    $ conda install -c conda-forge ipykernel
+    $ python -m ipykernel install --user --name=your_env_name
+    ```
+
+Now you can start your Notebook, change the kernel to your conda environment,
+and use `PSimPy`.
+
+
+## Documentation
+Detailed documentation of `PSimPy` is hosted at https://mbd.pages.rwth-aachen.de/psimpy/,
+including the API and theory (or reference) of each module. 
+
+
+## Usage
+Usage examples are provided by the [Example Gallery](https://mbd.pages.rwth-aachen.de/psimpy/examples.html).
+
+
+## License
+
+`PSimPy` was created by Hu Zhao at the Chair of Methods for Model-based
+Development in Computational Engineering (RWTH Aachen University, Germany). It
+is licensed under the terms of the MIT license.
