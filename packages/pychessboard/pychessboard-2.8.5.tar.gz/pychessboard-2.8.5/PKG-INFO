@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pychessboard
+Version: 2.8.5
+Summary: a chessboard game
+Home-page: https://github.com/nadernmds/pychessboard
+Author: James gonzalez
+Author-email: nadernmds@gmail.com
+License: UNKNOWN
+Description: This lib will generate a chess game with the simplest code ever
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
