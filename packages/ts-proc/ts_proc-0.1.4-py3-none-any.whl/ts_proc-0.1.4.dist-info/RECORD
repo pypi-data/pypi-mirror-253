@@ -1,0 +1,10 @@
+tsproc/__init__.py,sha256=07q6-ZHDvFRqU5LdesNf0K4bXQLJwIGAGDi_0ccF-mc,110
+tsproc/context.py,sha256=JFlpF51QOFZixIZnOGC8bse7HSJCPIzE7sYmz8iiAWg,238
+tsproc/modules.py,sha256=Aea74bYMRedDLrY5nxePCIPpgQ7QKN1eIQzGsViupNE,950
+tsproc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsproc/tests/test_process.py,sha256=DpaQYBj8-xQzxoNyoHJ0T45AqhIb7a3-sEE_LOcIock,362
+tsproc/tests/tests.py,sha256=AcGHql7LYmjhYsVwWCCQBhAgH3qPqztRAAZ9VXRTIeg,524
+ts_proc-0.1.4.dist-info/LICENSE,sha256=dR6F7whOWy89r8Hp57aImBQQKvFVWAuQCArnw3-jmxA,1072
+ts_proc-0.1.4.dist-info/METADATA,sha256=ovGyuzmLnQmT_hOJIipUTVolnhzvNaH7IcqQ7mbY5Gs,538
+ts_proc-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ts_proc-0.1.4.dist-info/RECORD,,
