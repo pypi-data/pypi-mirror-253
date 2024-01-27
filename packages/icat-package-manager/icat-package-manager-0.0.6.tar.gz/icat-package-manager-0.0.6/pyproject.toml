@@ -1,0 +1,22 @@
+[project]
+name = "icat-package-manager"
+version = "0.0.6"
+description = "A CLI tool for automating installation of ICAT components"
+readme = "README.md"
+license = { text = "Apache License 2.0" }
+authors = [
+    { name = "Will Taylor", email = "william.h.taylor@stfc.ac.uk" }
+]
+dependencies = ["lxml"]
+
+[project.urls]
+Homepage = "https://github.com/WHTaylor/icat-package-manager"
+Repository = "https://github.com/WHTaylor/icat-package-manager"
+
+[project.scripts]
+ipm = "icatpackagemanager.cli:run"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+

@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+icat_package_manager.egg-info/PKG-INFO
+icat_package_manager.egg-info/SOURCES.txt
+icat_package_manager.egg-info/dependency_links.txt
+icat_package_manager.egg-info/entry_points.txt
+icat_package_manager.egg-info/requires.txt
+icat_package_manager.egg-info/top_level.txt
+icatpackagemanager/__init__.py
+icatpackagemanager/__main__.py
+icatpackagemanager/cli.py
+icatpackagemanager/commands.py
+icatpackagemanager/files.py
+icatpackagemanager/repo.py
+icatpackagemanager/utils.py
