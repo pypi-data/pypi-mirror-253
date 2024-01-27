@@ -1,0 +1,11 @@
+README.md
+setup.py
+tbs012024_distributions/Binomialdistribution.py
+tbs012024_distributions/Gaussiandistribution.py
+tbs012024_distributions/Generaldistribution.py
+tbs012024_distributions/__init__.py
+tbs012024_distributions.egg-info/PKG-INFO
+tbs012024_distributions.egg-info/SOURCES.txt
+tbs012024_distributions.egg-info/dependency_links.txt
+tbs012024_distributions.egg-info/not-zip-safe
+tbs012024_distributions.egg-info/top_level.txt
