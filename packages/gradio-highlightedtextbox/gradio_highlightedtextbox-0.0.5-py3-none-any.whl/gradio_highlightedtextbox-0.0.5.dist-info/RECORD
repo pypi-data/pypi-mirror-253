@@ -1,0 +1,10 @@
+gradio_highlightedtextbox/__init__.py,sha256=JRpXRy3Ua_n1V6nvR2yGdzeSi13lKl96rH1xEHOLWTA,86
+gradio_highlightedtextbox/highlightedtextbox.py,sha256=AYjY064Cik0bd-Ec8WRvZY8IZTUpvmdC9BkDDjVscJs,12840
+gradio_highlightedtextbox/highlightedtextbox.pyi,sha256=qDQ7Zs3ne-QEjCPllZ1HKsQ0_GXGHdWaQd8_CWmtnCg,43377
+gradio_highlightedtextbox/templates/component/index.js,sha256=1eqGvDeFmBXF1sFvpDDpQjDK8WXOGNyg_0UGYohqA1A,75672
+gradio_highlightedtextbox/templates/component/style.css,sha256=NK5hSUeEDlW2z3jhAJhOY0Sqhskx_BZUPTfn9quCZ0M,14166
+gradio_highlightedtextbox/templates/example/index.js,sha256=vKgMmbIEBmZxlXWrxChS_uoaen6GfNSP3VK3K94Hzvs,2223
+gradio_highlightedtextbox/templates/example/style.css,sha256=-DHk5asz3SWFNLQlCnYuMN4b4gTf_srMmlu5x_xU_Pw,147
+gradio_highlightedtextbox-0.0.5.dist-info/METADATA,sha256=M5C4zAIbBJL33lWhq4ARLYYDSiv3fw_nyXrva-CTDpQ,13272
+gradio_highlightedtextbox-0.0.5.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+gradio_highlightedtextbox-0.0.5.dist-info/RECORD,,
