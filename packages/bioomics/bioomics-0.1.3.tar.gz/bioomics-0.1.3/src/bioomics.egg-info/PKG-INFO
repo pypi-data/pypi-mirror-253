@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bioomics
+Version: 0.1.3
+Summary: Download, retrieve and process omics data for further bioinformatics
+Author-email: Tiezheng Yuan <tiezhengyuan@hotmail.com>
+Project-URL: Homepage, https://github.com/Tiezhengyuan/bio_omics
+Project-URL: Issues, https://github.com/Tiezhengyuan/bio_omics/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Bio
+Requires-Dist: biosequtils
+Requires-Dist: lxml
+Requires-Dist: redis
+Requires-Dist: sh
+
+# bio_omics
+Download, retrieve and process omics data from public database
