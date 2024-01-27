@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+topsis/__init__.py
+topsis/__main__.py
+topsis_khushi_102103479.egg-info/PKG-INFO
+topsis_khushi_102103479.egg-info/SOURCES.txt
+topsis_khushi_102103479.egg-info/dependency_links.txt
+topsis_khushi_102103479.egg-info/entry_points.txt
+topsis_khushi_102103479.egg-info/top_level.txt
