@@ -1,0 +1,2 @@
+[console_scripts]
+flux-restful-cli = flux_restful_client.client:run_flux_restful_client
