@@ -1,0 +1,10 @@
+setuptools
+pymongo<5,>=3.13.0
+jsonpatch~=1.22
+connexion[swagger-ui]~=2.14
+markdown2~=2.4
+Flask-pyoidc~=3.11
+jwcrypto~=1.5.0
+
+[perun]
+perun.connector~=3.3

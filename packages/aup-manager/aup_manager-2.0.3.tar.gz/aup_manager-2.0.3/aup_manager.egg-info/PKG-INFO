@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aup-manager
+Version: 2.0.3
+Summary: app for management of acceptable use policies with API for approving them
+Home-page: https://gitlab.ics.muni.cz/perun/perun-proxyidp/aup-manager.git
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: pymongo<5,>=3.13.0
+Requires-Dist: jsonpatch~=1.22
+Requires-Dist: connexion[swagger-ui]~=2.14
+Requires-Dist: markdown2~=2.4
+Requires-Dist: Flask-pyoidc~=3.11
+Requires-Dist: jwcrypto~=1.5.0
+Provides-Extra: perun
+Requires-Dist: perun.connector~=3.3; extra == "perun"
