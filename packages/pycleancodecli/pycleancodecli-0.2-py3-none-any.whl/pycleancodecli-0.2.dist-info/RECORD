@@ -1,0 +1,14 @@
+cleaner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cleaner/cleaner.py,sha256=PkHX-8GK4Sv2tMWt5Ca3xk1yjiXylDH_0qqZaIw0SzQ,1880
+cleaner/main.py,sha256=8_azXu2aLStCuZhPTwVAjyqDLD36eOYYL7A3nEUWvCk,603
+pycleancodecli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycleancodecli/cleaner.py,sha256=PkHX-8GK4Sv2tMWt5Ca3xk1yjiXylDH_0qqZaIw0SzQ,1880
+pycleancodecli/main.py,sha256=8_azXu2aLStCuZhPTwVAjyqDLD36eOYYL7A3nEUWvCk,603
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cleaner.py,sha256=PaB_GiCYtsGhRWm9oi6Rd2tt4Cv2cruEuspkAWYP1dA,5094
+pycleancodecli-0.2.dist-info/LICENSE,sha256=a8RMAnxkMyJGAy4IiZPjg2BuJVMhrOBc7H6hMQ9Xgi0,1063
+pycleancodecli-0.2.dist-info/METADATA,sha256=FR78NdmvcK60FRAVpkISKCTpyPvXU3zxmNFQHuIE3CE,1732
+pycleancodecli-0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pycleancodecli-0.2.dist-info/entry_points.txt,sha256=0P-WcMj0VNdEq13ZBHPsQKeqE-s9D2Lwla1JrIjiCcQ,60
+pycleancodecli-0.2.dist-info/top_level.txt,sha256=9Zyk4UoqyvrdDdCX5Zhlz21F8J16nx6gHp1sui21lUI,21
+pycleancodecli-0.2.dist-info/RECORD,,
