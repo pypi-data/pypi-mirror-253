@@ -1,0 +1,18 @@
+from pythonix.suffix_types import EagerSuffix, DelayedSuffix
+
+to_ascii = EagerSuffix(ascii)
+to_bin = EagerSuffix(bin)
+to_bool = EagerSuffix(bool)
+to_bytes = EagerSuffix(bytes)
+to_byte_array = EagerSuffix(bytearray)
+to_chr = EagerSuffix(chr)
+to_complex = DelayedSuffix(complex)
+to_dict = EagerSuffix(dict)
+to_tuple = EagerSuffix(tuple)
+to_float = EagerSuffix(float)
+to_frozenset = EagerSuffix(frozenset)
+to_set = EagerSuffix(set)
+to_int = EagerSuffix(int)
+to_oct = EagerSuffix(oct)
+to_ord = EagerSuffix(ord)
+to_str = EagerSuffix(str)
