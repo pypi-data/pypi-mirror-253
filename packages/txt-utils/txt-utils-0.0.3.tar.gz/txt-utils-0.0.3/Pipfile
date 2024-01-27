@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+txt-utils = {editable = true, path = "."}
+autopep8 = "*"
+pylint = "*"
+pycodestyle = "*"
+isort = "*"
+rope = "*"
+pytest = "*"
+autoflake = "*"
+twine = "*"
+build = "*"
+mypy = "*"
+pandas-stubs = "*"
+types-tqdm = "*"
+
+[packages]
+tqdm = "*"
+pandas = "*"
+ordered-set = ">=4.1.0"
+pronunciation-dictionary = ">=0.0.6"
+
+[requires]
+python_version = "3.11"
