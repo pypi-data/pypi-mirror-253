@@ -1,0 +1,8 @@
+README.md
+setup.py
+bruti_5.egg-info/PKG-INFO
+bruti_5.egg-info/SOURCES.txt
+bruti_5.egg-info/dependency_links.txt
+bruti_5.egg-info/entry_points.txt
+bruti_5.egg-info/requires.txt
+bruti_5.egg-info/top_level.txt
