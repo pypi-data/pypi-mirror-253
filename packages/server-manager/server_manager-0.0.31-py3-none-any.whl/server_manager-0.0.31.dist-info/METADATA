@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: server-manager
+Version: 0.0.31
+Summary: Simple server usage monitor writen with flask
+Project-URL: Homepage, https://gitlab.com/serverman-group/serverman/
+Author-email: Rūdolfs Driķis <drikisr@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: flask-login
+Requires-Dist: flask-wtf
+Requires-Dist: gunicorn
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: psutil
+Requires-Dist: wtforms
+Description-Content-Type: text/markdown
+
+# Server manager
