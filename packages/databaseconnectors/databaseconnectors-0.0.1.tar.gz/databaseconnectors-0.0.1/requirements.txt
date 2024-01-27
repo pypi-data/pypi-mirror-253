@@ -1,0 +1,12 @@
+pymongo
+pymongo[srv]
+dnspython
+pandas
+numpy
+ensure
+flake8
+pytest
+tox 
+tox-gh-actions
+mypy
+-e .
