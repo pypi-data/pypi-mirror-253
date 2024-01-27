@@ -1,0 +1,2 @@
+[console_scripts]
+skrooge = skrooge.cli:cli
