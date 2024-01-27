@@ -1,0 +1,43 @@
+{% extends 'cardroom/includes/felt.html' %}
+
+{% load static %}
+
+{% block title %}Cash Game #{{ object.id }}{% endblock %}
+
+{% block main %}
+<canvas width="800" height="600" id="felt"></canvas>
+<br />
+<button id="j" onclick="join_()">Join</button>
+<input id="j-seat-index" />
+<br />
+<button id="l" onclick="leave()">Leave</button>
+<br />
+<button id="s" onclick="sitOut()">Sit Out</button>
+<br />
+<button id="b" onclick="beBack()">Be Back</button>
+<br />
+<button id="brtr" onclick="buyRebuyTopOffOrRateHole()">Buy/Rebuy/Top Off/Rat Hole</button>
+<input id="brtr-amount" />
+<br />
+<button id="sd" onclick="standPatOrDiscard()">Stand Pat/Discard</button>
+<input id="sd-cards" />
+<br />
+<button id="f" onclick="fold()">Fold</button>
+<br />
+<button id="cc" onclick="checkOrCall()">Check/Call</button>
+<br />
+<button id="pb" onclick="postBringIn()">Post Bring-In</button>
+<br />
+<button id="cbr" onclick="completeBetOrRaise()">Complete/Bet/Raise To</button>
+<input id="cbr-amount" />
+<br />
+<button id="sm" onclick="showHoleCards()">Show/Muck Hole Cards</button>
+<input id="sm-cards" />
+{% endblock %}
+
+{% block scripts %}
+{{ object.pk|json_script:"pk" }}
+{{ settings|json_script:"settings" }}
+{{ data|json_script:"data" }}
+<script src="{% static 'cardroom/cash-game.js' %}"></script>
+{% endblock %}
