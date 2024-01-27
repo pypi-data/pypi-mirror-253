@@ -1,0 +1,2 @@
+[console_scripts]
+dp = DrissionPage.functions.cli:main
