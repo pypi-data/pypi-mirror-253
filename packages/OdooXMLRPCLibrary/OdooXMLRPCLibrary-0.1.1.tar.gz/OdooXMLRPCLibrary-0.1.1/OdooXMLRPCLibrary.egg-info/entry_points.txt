@@ -1,0 +1,4 @@
+[console_scripts]
+create_contact = OdooXMLRPCLibrary.create_contact:main
+create_rental = OdooXMLRPCLibrary.create_rental:main
+
