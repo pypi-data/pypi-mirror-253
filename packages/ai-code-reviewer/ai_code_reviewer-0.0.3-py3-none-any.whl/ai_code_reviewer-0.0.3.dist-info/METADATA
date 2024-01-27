@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ai_code_reviewer
+Version: 0.0.3
+Summary: Useful classes extending langchain library
+Home-page: https://github.com/dimitree54/ai_code_reviewer
+Author: Dmitrii Rashchenko
+Author-email: dimitree54@gmail.com
+License: CC BY-NC-SA 4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: langchain >=0.1.4
+Requires-Dist: pydantic >=2.5.3
+
+# ai_code_reviewer
+Code review logic for https://github.com/ai-code-reviewer-bot/ai_code_reviewer_bot using LangChain and GPT-4
+
+# LICENSE
+You can use code review logic to review code only of non-commercial open-source projects. To use it for commercial code, contact me by email dimitree54@gmail.com
