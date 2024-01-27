@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chrome_extension_python/__init__.py
+chrome_extension_python/package_storage.py
+chrome_extension_python.egg-info/PKG-INFO
+chrome_extension_python.egg-info/SOURCES.txt
+chrome_extension_python.egg-info/dependency_links.txt
+chrome_extension_python.egg-info/top_level.txt
