@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "gitlike-commands"
+version = "0.3.0"
+description = "Makes driver scripts that enable git-like commands so that foo bar will run foo-bar"
+authors = ["Joe Block <jpb@unixorn.net>"]
+homepage = "https://github.com/unixorn/gitlike-commands"
+repository = "https://github.com/unixorn/gitlike-commands"
+readme = "README.md"
+license = "Apache-2.0"
+
+classifiers = [
+    "Topic :: System :: System Shells",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/unixorn/gitlike-commands/issues"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# [tool.poetry.scripts]
+# gitalike-demo = "gitlike_commands:subcommand_driver"
