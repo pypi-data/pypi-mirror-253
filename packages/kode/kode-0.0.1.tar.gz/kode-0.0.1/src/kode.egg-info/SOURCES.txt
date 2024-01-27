@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+src/kode/__init__.py
+src/kode/kode.py
+src/kode.egg-info/PKG-INFO
+src/kode.egg-info/SOURCES.txt
+src/kode.egg-info/dependency_links.txt
+src/kode.egg-info/top_level.txt
