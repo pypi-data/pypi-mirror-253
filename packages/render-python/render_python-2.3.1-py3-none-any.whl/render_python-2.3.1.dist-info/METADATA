@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: render-python
+Version: 2.3.1
+Summary: a python API to interact via python with render databases see https://github.com/saalfeldlab/render
+Home-page: https://github.com/fcollman/render-python
+Author: Forrest Collman, Russel Torres, Eric Perlman, Sharmi Seshamani
+Author-email: forrest.collman@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: decorator
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: requests
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: sphinxcontrib-napoleon
+
+UNKNOWN
+
