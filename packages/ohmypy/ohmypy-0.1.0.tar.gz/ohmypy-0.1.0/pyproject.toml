@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ohmypy"
+version = "0.1.0"
+description = "Customize Python interpreter!"
+authors = ["lebao3105 <bao12345yocoo@gmail.com>"]
+license = "GPLv3+"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+colorama = "^0.4.6"
+requests = "^2.31.0"
+pretty-errors = "^1.2.25"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
