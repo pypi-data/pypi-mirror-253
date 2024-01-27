@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "critiqypy"
+version = "0.1.0"
+description = "Critiqypy is a File Categorizer Tool. It allows you to quickly view all files in a folder, and categorize them into categories you have defined. A straightforward example is looking through photos quickly, selecting some for printing, while discarding others."
+authors = ["Piet J.M. Swinkels"]
+readme = "README.md"
+repository = "https://github.com/WetenSchaap/Critiqypy"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pillow = "^10.2.0"
+pysimplegui = "^4.60.5"
+python-vlc = "^3.0.20123"
+filetype = "^1.2.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+critiqypy = "critiqypy.main:main"
