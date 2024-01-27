@@ -1,0 +1,3 @@
+[console_scripts]
+mail_alias_creator=mail_alias_creator.main:main
+
