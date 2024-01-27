@@ -1,0 +1,14 @@
+example.ipynb,sha256=yEx2Q5eCKP1p1PLoubymFJL6N18RZsJmieGbE4sgugI,153458
+posebutcher/__init__.py,sha256=hESsV0d90rp071vGgEfufLv1YlSoSHi2BwPd_jJoPAo,34
+posebutcher/butcher.py,sha256=t0ui8rNFPvd2ioBwNqbz-yoR9wyD0frdII_GVkPoi4c,17014
+posebutcher/o3d.py,sha256=WO-YDDM0qu5-BM5DXSb8CpfmLA6HD9ukaGu_nLav-h4,7271
+test_data/2a_compounds.sdf,sha256=B_o8xod9QeC5P4b5R1LzbFolbMvoa-_rYG00mJGDTPk,339257
+test_data/2a_fragments.sdf,sha256=4pBO-FyXty5_kh0603oIhr5l5O66r8syUQsccRyMSY8,6327
+test_data/2a_hits/A71EV2A-x0310_0A_bound.pdb,sha256=-PdQ9wp0I9TAwvqDvhGno-TZYOvSOIEonS03H6Z4eJM,115925
+test_data/2a_hits/A71EV2A-x0416_0A_bound.pdb,sha256=E5sRvbjAmQeikwSxDKz4XGyNpuit1oNdlpS3zj24kjQ,111551
+test_data/2a_hits/A71EV2A-x0451_0A_bound.pdb,sha256=C0rl-rRCISqsPPJ1SBxpm2hqKgqtc5h6DS0LHjKv3K0,110012
+test_data/2a_hits/A71EV2A-x0556_0A_bound.pdb,sha256=IH7buDaVLvxQ1Gw9tCNbv7DXqs3_qfQ3fRjILS3sMHo,116330
+test_data/2a_hits/A71EV2A-x0566_0A_bound.pdb,sha256=VhhMqoemaOem99o9Gr4t2D5zd3tPOveNclcU3m2f8O0,115763
+posebutcher-0.0.1.dist-info/METADATA,sha256=ZQleKzV9TtqEfJiCg3mwP_Q8g1fnw27cDpsnKCHT8eI,2198
+posebutcher-0.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+posebutcher-0.0.1.dist-info/RECORD,,
