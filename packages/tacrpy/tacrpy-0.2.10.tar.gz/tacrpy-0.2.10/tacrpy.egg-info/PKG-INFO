@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tacrpy
+Version: 0.2.10
+Summary: Analytická knihovna pro potřeby TA ČR
+Author: david.sulc
+Author-email: sulda.str@gmail.com
+Project-URL: Documentation, https://data.tacr.cz/tacrpy/docs/index.html
+
+Knihovna, která slouží pro práci s daty a vypracování analýz TA ČR.
