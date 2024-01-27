@@ -1,0 +1,3 @@
+[console_scripts]
+run-cmd=run_cmd.__main__:app
+
