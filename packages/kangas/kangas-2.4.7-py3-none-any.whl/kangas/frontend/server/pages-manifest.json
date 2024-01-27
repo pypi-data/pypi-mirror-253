@@ -1,0 +1,17 @@
+{
+  "/api/assetMetadata": "pages/api/assetMetadata.js",
+  "/api/category": "pages/api/category.js",
+  "/api/charts": "pages/api/charts.js",
+  "/api/download": "pages/api/download.js",
+  "/api/embeddings-as-pca": "pages/api/embeddings-as-pca.js",
+  "/api/filter": "pages/api/filter.js",
+  "/api/histogram": "pages/api/histogram.js",
+  "/api/metadata": "pages/api/metadata.js",
+  "/api/status": "pages/api/status.js",
+  "/api/timestamp": "pages/api/timestamp.js",
+  "/_app": "pages/_app.js",
+  "/api/image": "pages/api/image.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
