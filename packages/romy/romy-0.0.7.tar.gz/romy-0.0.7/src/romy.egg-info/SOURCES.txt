@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/usage_example.py
+src/romy/__init__.py
+src/romy/py.typed
+src/romy/romy.py
+src/romy/utils.py
+src/romy.egg-info/PKG-INFO
+src/romy.egg-info/SOURCES.txt
+src/romy.egg-info/dependency_links.txt
+src/romy.egg-info/top_level.txt
