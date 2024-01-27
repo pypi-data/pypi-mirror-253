@@ -1,0 +1,18 @@
+hydra:
+  job:
+    chdir: true
+  run:
+    dir: ../outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}/${analysis.dataset.label}-${analysis.method.label}
+
+
+# This config.yaml file is used by the code when calling --help
+
+defaults:
+  - _self_
+  - override hydra/help: dimet_help
+
+
+figure_path: figures
+table_path: tables
+
+# check https://hydra.cc/docs/patterns/specializing_config/ for more info about this
