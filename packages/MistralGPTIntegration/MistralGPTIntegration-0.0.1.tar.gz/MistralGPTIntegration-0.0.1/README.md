@@ -1,0 +1,77 @@
+[![PyPI version](https://badge.fury.io/py/MistralGPTIntegration.svg)](https://badge.fury.io/py/MistralGPTIntegration)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Downloads](https://static.pepy.tech/badge/MistralGPTIntegration)](https://pepy.tech/project/MistralGPTIntegration)
+
+# MistralGPTIntegration
+
+`MistralGPTIntegration` is a Python package designed to provide GPT-based functionalities using the Mistral AI API. It enables users to quickly obtain comprehensive, context-aware responses from the GPT model.
+
+## Installation
+
+To install `MistralGPTIntegration`, you can use pip:
+
+```bash
+pip install MistralGPTIntegration
+```
+
+## Usage
+
+After installation, `MistralGPTIntegration` can be used in your Python scripts.
+
+Example:
+
+```python
+from mistralgptintegration import MistralGPTIntegration
+
+api_key = "<your_api_key>"
+mistral = MistralGPTIntegration(api_key)
+prompt = "Once upon a time"
+response = mistral.query_gpt(prompt)
+print(response)
+```
+
+- `api_key`: Your Mistral API key.
+- `model_name`: The name of the Mistral model to use. Defaults to `mistral-tiny`.
+- `temperature`: The temperature to use for the model. Defaults to `0.1`.
+- `top_p`: The top_p to use for the model. Defaults to `1.0`.
+- `max_tokens`: The maximum number of tokens to generate. Defaults to `150`.
+
+## Customizing Your Queries
+
+You can customize the behavior of `MistralGPTIntegration` by adjusting the parameters, such as the temperature, top_p, max_tokens, etc., to fit the specific needs of your queries or to tweak the behavior of the Mistral model.
+
+## Output Example
+
+When you query the GPT model, it processes your prompt and returns a response. Here is an example of the output:
+
+```json
+{
+  "id": "chatcmpl-2nZBPOX2WU3DKseoZ2A4TnEgFr2Ve",
+  "object": "chat.completion",
+  "created": 1623792013,
+  "model": "gpt-3.5-turbo",
+  "usage": {
+    "prompt_tokens": 56,
+    "completion_tokens": 31,
+    "total_tokens": 87
+  },
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "in a land far, far away, there lived a kind and just king. He ruled his kingdom with wisdom and courage, beloved by his people. His name was King Arthur."
+      },
+      "finish_reason": "stop",
+      "index": 0
+    }
+  ]
+}
+```
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/chigwell/MistralGPTIntegration/issues).
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
