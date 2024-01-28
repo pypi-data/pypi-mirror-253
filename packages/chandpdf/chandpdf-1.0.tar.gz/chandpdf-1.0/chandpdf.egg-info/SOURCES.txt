@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+chandpdf/__init__.py
+chandpdf/pdf2image.py
+chandpdf/pdf2text.py
+chandpdf.egg-info/PKG-INFO
+chandpdf.egg-info/SOURCES.txt
+chandpdf.egg-info/dependency_links.txt
+chandpdf.egg-info/top_level.txt
