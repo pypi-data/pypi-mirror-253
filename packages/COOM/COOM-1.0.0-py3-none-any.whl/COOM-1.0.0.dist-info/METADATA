@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: COOM
+Version: 1.0.0
+Summary: COOM: Benchmarking Continual Reinforcement Learning on Doom
+Home-page: https://github.com/hyintell/COOM
+Author: Tristan Tomilin
+Author-email: tristan.tomilin@hotmail.com
+License: MIT
+Keywords: continual learning,vizdoom,reinforcement learning,benchmarking
+License-File: LICENSE.txt
+Requires-Dist: gymnasium
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: vizdoom
+Requires-Dist: scipy ==1.11.4
+Provides-Extra: cl
+Requires-Dist: tensorflow ==2.11 ; extra == 'cl'
+Requires-Dist: tensorflow-probability ==0.19 ; extra == 'cl'
+Requires-Dist: wandb ; extra == 'cl'
+Provides-Extra: results
+Requires-Dist: wandb ; extra == 'results'
+Requires-Dist: matplotlib ; extra == 'results'
+Requires-Dist: seaborn ; extra == 'results'
+Requires-Dist: pandas ; extra == 'results'
+
