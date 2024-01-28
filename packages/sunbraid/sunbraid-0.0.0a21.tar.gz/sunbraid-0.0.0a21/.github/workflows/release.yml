@@ -1,0 +1,63 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'sunbraid/static/**/*'
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      # Add steps for any build or test processes you have here
+
+      - name: Bump version and tag
+        id: generate_tag
+        run: |
+          # Fetch all tags
+          git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+
+          # Get the latest tag that matches the pattern
+          LATEST_TAG=$(git tag --list '0.0.0a*' --sort=-v:refname | head -n 1)
+          
+          # Extract the numeric part and increment it
+          NEXT_TAG_SUFFIX=$(echo $LATEST_TAG | sed 's/0.0.0a//' | awk '{print $1 + 1}')
+          NEXT_TAG="0.0.0a$NEXT_TAG_SUFFIX"
+
+          # Set the new tag
+          git tag $NEXT_TAG
+          git push origin $NEXT_TAG
+          echo "VERSION_TAG=$NEXT_TAG" >> $GITHUB_OUTPUT
+
+      - name: Build and Publish
+        run: |
+          pip install setuptools_scm
+          pip install wheel
+          pip install twine
+
+          # Replace with your build and publish commands
+          python setup.py sdist bdist_wheel
+          twine upload dist/*
+        env:
+          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.generate_tag.outputs.VERSION_TAG }}
+          release_name: Release ${{ steps.generate_tag.outputs.VERSION_TAG }}
+          draft: false
+          prerelease: false
