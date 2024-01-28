@@ -1,0 +1,9 @@
+chacha20poly1305_reuseable/__init__.pxd,sha256=UrDMgbV88yROBCxF1vRWpVFdYzQHHTTOmPn0n2pcrmw,2195
+chacha20poly1305_reuseable/__init__.c,sha256=gIKFN3o0bNWtaoZ72R1tAhHsR7ca3ED_L85wZ1k-Ato,614852
+chacha20poly1305_reuseable/__init__.py,sha256=uEGt-Tbl2O8euCEor7iJKc3mrs24MU-XofjNnZOSUDU,8212
+chacha20poly1305_reuseable/__init__.cpython-310-darwin.so,sha256=mpH1UU3cHqL9Sd53ciZvscithioQUpEbG-JdRAoe-Bc,140096
+chacha20poly1305_reuseable/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chacha20poly1305_reuseable-0.12.1.dist-info/RECORD,,
+chacha20poly1305_reuseable-0.12.1.dist-info/LICENSE,sha256=M6CuFNpHyZetxLyHAl39KSpog67DGiLMGYbjyzSG0oY,12880
+chacha20poly1305_reuseable-0.12.1.dist-info/WHEEL,sha256=BAo3DlW1LupKCtoCaEnlIEQzHC3ap5-fNnOwpA0kJnk,107
+chacha20poly1305_reuseable-0.12.1.dist-info/METADATA,sha256=T8KYSlomkhoaveqWokkuIwZn63Jg6pCGBZMmIhgI9Ec,5265
