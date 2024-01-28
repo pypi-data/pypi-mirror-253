@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: umatrix
+Version: 0.1.1
+Summary: ''
+Home-page: https://github.com/syedalimohsinbukhari/Matrices
+Author: Syed Ali Mohsin Bukhari, Astrophysics and Python
+Author-email: syedali.b@outlook.com, astrophysicsandpython@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools ~=68.0.0
+

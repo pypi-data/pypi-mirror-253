@@ -1,0 +1,9 @@
+umatrix/__init__.py,sha256=RX-O5JPqhHgd5dy_lymdrstAUROW-x_w96iVGFBKLWA,173
+umatrix/matrix.py,sha256=NYc9Ms3yNq8gDU0VjOI0IABlshaev9gFs8UBbahqOVI,19030
+umatrix/__backend/__init__.py,sha256=UADnuOAp4HXDnWyGd8IiS0JVDvfUDAYgyXNDTXrRjjg,38
+umatrix/__backend/custom_exceptions_.py,sha256=kLcSQeNWQgwus0gKA1hxQSGMAAgY8f-9dr1vY-cXvwI,1376
+umatrix-0.1.1.dist-info/LICENSE,sha256=Of2f5TTqzQQI-FNXGckFfYhw6g9JdQ0U_CUVnHtMopA,1105
+umatrix-0.1.1.dist-info/METADATA,sha256=GDZ_cJxkNbkmCTVwWnJmW-PSkDjyGf0jrTiMShbibnk,586
+umatrix-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+umatrix-0.1.1.dist-info/top_level.txt,sha256=LIszpc1l8qcGPMJdff6nU5Nf-Y8S4pG9hlwLm7LWqQs,8
+umatrix-0.1.1.dist-info/RECORD,,
