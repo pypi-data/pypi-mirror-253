@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+extraexceptions/__init__.py
+extraexceptions/cognitivebiases.py
+extraexceptions/ignoreexceptions.py
+extraexceptions/logicalfallacies.py
+extraexceptions.egg-info/PKG-INFO
+extraexceptions.egg-info/SOURCES.txt
+extraexceptions.egg-info/dependency_links.txt
+extraexceptions.egg-info/top_level.txt
+test/test_ignore_exc_decorator.py
+test/test_stop_code_option.py
