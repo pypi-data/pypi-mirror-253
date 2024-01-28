@@ -1,0 +1,1 @@
+stache@ https://github.com/clach04/stache.git#egg=package-1.0
