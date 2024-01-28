@@ -1,0 +1,13 @@
+ai_cli/__init__.py,sha256=PlNvehf6w-mqqTP6xSMxS7yIjzExmndoHfeNDn37-VQ,995
+ai_cli/bot/__init__.py,sha256=8w7QPW4x8Tf4_RnZCCEH95cP9HhZTFOT-TcCGzcis40,8336
+ai_cli/bot/bard.py,sha256=qG71BxAYIghMS8F_SvboEi7vWZvM-Xu7k0afGWAqN-Y,890
+ai_cli/bot/bing.py,sha256=4Ig1Ezwy3tHpy_f7JN-qfaj4cmiEKudrAIgXDZHY9zc,3126
+ai_cli/bot/token.py,sha256=HFne8G0iE9QGB_ceeEhg7Zy30pu2ao_09l2qJov60fc,195
+ai_cli/cli.py,sha256=u5W5-MO-n82PCq1cw2k1rAM5hYHtdBmzmfxYRmHhhYE,13233
+ai_cli/git.py,sha256=oTegVxN3bOsewePZRMuTBGR4wgpgkxltqViFnSxuzfE,5567
+ai_cli/setting.py,sha256=TewqOx2xZFHRj1v-5K7TmixxSxKarVP8E4ePo6VkNbE,4493
+py_ai_cli-0.4.0.dist-info/entry_points.txt,sha256=_8-DVIOODMXYNdJCaVYW7bwbn0hKrrd66rP8zGqfVUo,37
+py_ai_cli-0.4.0.dist-info/WHEEL,sha256=B19PGBCYhWaz2p_UjAoRVh767nYQfk14Sn4TpIZ-nfU,87
+py_ai_cli-0.4.0.dist-info/METADATA,sha256=KPYoop2iCa8SPhQ_C3O4MVTjZ0ojb9P98BtOg1DfEZo,4364
+py_ai_cli-0.4.0.dist-info/licenses/LICENSE,sha256=iyi8_6voinKMxI032Qe9df69Ducl_XdJRpEtyjG8YCc,1092
+py_ai_cli-0.4.0.dist-info/RECORD,,
