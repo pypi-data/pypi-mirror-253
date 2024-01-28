@@ -1,0 +1,20 @@
+pytest>=3.3.2
+pytest-cov
+codecov
+# pyOpenSSL 23.0.0 fails with error:
+# TypeError: deprecated() got an unexpected keyword argument 'name'
+# Example failing build: https://ci.appveyor.com/project/denisenkom/pytds/builds/46539355/job/aq6d65ej1oi0i59p
+pyOpenSSL<22.1.0
+pyDes
+ntlm-auth
+pyspnego
+namedlist
+# cryptography 3.4.5 fails build, requires rust compiler
+# see example failure: https://ci.appveyor.com/project/denisenkom/pytds/builds/37803561/job/lln9d25ye5vnljbr
+# requiring older cryptography library to avoid this error
+cryptography < 3.3
+sqlalchemy-pytds==1.0.0
+SQLAlchemy==2.0.22
+mypy
+pytest-mypy
+ruff
