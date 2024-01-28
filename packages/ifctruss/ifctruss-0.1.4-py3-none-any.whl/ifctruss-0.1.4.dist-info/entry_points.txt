@@ -1,0 +1,2 @@
+[nbdev]
+ifctruss = ifctruss._modidx:d
