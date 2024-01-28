@@ -1,0 +1,8 @@
+hugepagination/__init__.py,sha256=l6WvYZH0PqQ9dzvrA_vQYaJaGHVGK0OWSV5WEvYCOBQ,66
+hugepagination/pagination.py,sha256=ltdsOZ4CD-VL5_BME69-gbZnuqkaH7F8t9_Ge9YqSYc,17215
+hugepagination/views.py,sha256=9lEOST4N5_6_xX7G7MFNag9bJhDGnHLUsFFzbbHdLD0,3295
+django_hugepagination-1.0.1.dist-info/LICENSE,sha256=AVviKFjo38UGDPwN18Ry8JgdplTkrwdWN_MUQG026ps,1112
+django_hugepagination-1.0.1.dist-info/METADATA,sha256=Klk9_EwZ1ajY_ftClF1SRA4kyZ3fu5mOiWU_jeywM-E,4224
+django_hugepagination-1.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+django_hugepagination-1.0.1.dist-info/top_level.txt,sha256=yp3ZGm5friTDrrUdqoI1nuJ_v2Dc8zd6ooZjXWKv2dU,15
+django_hugepagination-1.0.1.dist-info/RECORD,,
