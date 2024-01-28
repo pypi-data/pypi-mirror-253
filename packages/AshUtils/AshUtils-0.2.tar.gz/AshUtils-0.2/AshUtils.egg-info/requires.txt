@@ -1,0 +1,2 @@
+django-redis
+AshLogger>=0.4

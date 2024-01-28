@@ -1,0 +1,2 @@
+# import AshUtils.AshUtils
+from .AshUtils import *    # Now it is possible to just import any function of class from package AshUtils. No need for `from AshUtils.AshUtils import FunctionName`. Just do `from AshUtils import FunctionName`.
