@@ -1,0 +1,25 @@
+import setuptools
+
+with open('README.md', 'r') as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name='crdloadserver',
+    version='0.0.1',
+    author='theycallmeloki',
+    author_email='ogmiladyloki@gmail.com',
+    description='Python\'s http.server extended to include a file upload page, and delete file.',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    url='https://github.com/theycallmeloki/crdloadserver',
+    packages=['crdloadserver'],
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+    ],
+    python_requires='>=3.8',
+    entry_points = {
+        'console_scripts': ['crdloadserver=crdloadserver:main'],
+    }
+)
