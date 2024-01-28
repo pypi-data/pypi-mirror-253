@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ecdk
+Version: 0.0.1b1
+Summary: Simple CLI tool to orchestrate ECRS JSSP experiments
+Project-URL: Homepage, https://github.com/kkafar/master-monorepo
+Project-URL: Issues, https://github.com/kkafar/master-monorepo/issues
+Author-email: Kacper Kafara <kacperkafara@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# ECDataKit
+
+**Disclaimer**: This project is in very early development phase.
+
+Data analysis tools & scripts for [ECRS](https://github.com/ecrs-org/ecrs) library.
+
+## Docs
+
+WIP
