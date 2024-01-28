@@ -1,0 +1,2 @@
+[console_scripts]
+aiomygas-cli = aiomygas.__main__:main
