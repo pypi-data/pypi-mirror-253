@@ -1,0 +1,12 @@
+stringthings/__init__.py,sha256=EYKMWGUlhXqkFKtdSK7q1u-lyNN4snOeZr3PMVnPFHo,557
+stringthings/compression.py,sha256=V6aNDV2mjrTWD5vkQb-S0nrsu3Mu9JD_bX0grzZ7ZlA,2635
+stringthings/dates.py,sha256=jtWG2aQ33gDxOAMyf9dioWQpFwvP70o9brDc__CYmYw,20209
+stringthings/errors.py,sha256=eCOCfcJGoZQwGQDoNW-Nboejg7HNqkn9VQJ3o3gWiPo,232
+stringthings/filenames.py,sha256=CH_in_S8aaAAjX-92Vcz5n0Y2xgywviPBhxR5kc5qn4,1592
+stringthings/numbers.py,sha256=ZBWKH-jDDhrUdwhGZT77WSNjDcKs_dlzIRlgs5YPSY4,1659
+stringthings/splits.py,sha256=_03Ozqyrv7tBugkgJkvFCQpYwWFObNjLfA199w1czDc,1944
+stringthings-0.2.5.dist-info/LICENSE,sha256=lUZxHjLkuKKldvGbg67t6QDNSk50YkhwavzM8uV22T4,1077
+stringthings-0.2.5.dist-info/METADATA,sha256=OMtIm2sZnRMpsqxgP3nLlmaUVPL56TdwNOkSdK4O2Mo,3721
+stringthings-0.2.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+stringthings-0.2.5.dist-info/top_level.txt,sha256=_b2j1E4O0m_xgWI_kT6ATJk5lSD8DfEzEg4O5Eb2Yoo,13
+stringthings-0.2.5.dist-info/RECORD,,
