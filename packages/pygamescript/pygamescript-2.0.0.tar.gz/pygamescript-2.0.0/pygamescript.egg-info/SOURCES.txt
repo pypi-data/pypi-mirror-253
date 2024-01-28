@@ -1,0 +1,11 @@
+README.md
+setup.py
+pygamescript/__init__.py
+pygamescript/algo.py
+pygamescript/gamescript.py
+pygamescript/template.py
+pygamescript.egg-info/PKG-INFO
+pygamescript.egg-info/SOURCES.txt
+pygamescript.egg-info/dependency_links.txt
+pygamescript.egg-info/requires.txt
+pygamescript.egg-info/top_level.txt
