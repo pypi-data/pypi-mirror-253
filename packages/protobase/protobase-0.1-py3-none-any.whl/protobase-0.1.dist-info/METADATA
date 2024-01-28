@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: protobase
+Version: 0.1
+Summary: Protobase is a foundational Python library for class creation, enhancing efficiency and reliability, automatic protocol implementation akin to Rust's Traits, and features for immutable object creation.
+License: MIT
+Author: jdavidls
+Author-email: jdavidls@protonmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Protobase
+
+Protobase is a comprehensive Python library designed to serve as a foundational element in class creation, similar to dataclasses and the attrs library. It aims to streamline and optimize the development process by introducing efficient, reliable, and user-friendly structures.
+
+
+- traits (defered auto impl methods)
+- immutability
+- consign
+
+**FUTURE**
+
+- attr realtime type checking (debug mode)
+- annotations ++
+- Validators and codecs (json, bson, etc)
+- schematics generation (openapi & more)
+- Design Patterns (visitor)
+- 
+
+## Features
+
+- **Efficient Attribute Management**: Utilizes `__slots__` to disable dynamic attribute assignment, boosting performance and reducing memory usage.
+- **Automatic Protocol Implementation**: Inherits from Protocol, allowing classes to automatically implement methods, akin to Rust's trait derivation.
+- **Encapsulation of Python's Intricacies**: Simplifies the usage of complex Python features like `__dict__` and `__weakref__`, making them more accessible and less error-prone.
+- **Immutable and Unique Objects**: Provides mechanisms for creating immutable and unique objects (interning), ensuring data integrity and consistency.
+
+## Installation
+
+```bash
+pip install protobase
+```
+
