@@ -1,0 +1,3 @@
+[console_scripts]
+whecho=whecho:whecho.main
+
