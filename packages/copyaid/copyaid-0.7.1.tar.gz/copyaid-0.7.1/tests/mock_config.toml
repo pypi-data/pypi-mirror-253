@@ -1,0 +1,13 @@
+[tasks.fooit]
+request = "../copyaid/config/proofread.toml"
+react = ["echo", "new-act"]
+
+[formats.foobar]
+extensions = [".foobar"]
+copybreak.keywords = ["copybreak", "cbr"]
+copybreak.prefix = "¡¿"
+copybreak.suffix = "?!"
+
+[commands]
+new-act = 'true'
+edit-if-diff = 'diff -qs "$0" "$@" || true'
