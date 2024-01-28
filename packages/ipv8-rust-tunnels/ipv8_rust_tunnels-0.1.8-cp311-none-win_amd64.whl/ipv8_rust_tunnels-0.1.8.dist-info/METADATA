@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ipv8-rust-tunnels
+Version: 0.1.8
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# IPv8-rust-tunnels
+[![](https://img.shields.io/pypi/v/ipv8-rust-tunnels.svg?label=PyPI)](https://pypi.org/project/ipv8-rust-tunnels/) &emsp; ![Unit tests](https://github.com/egbertbouman/ipv8-rust-tunnels/actions/workflows/test.yml/badge.svg)
+
