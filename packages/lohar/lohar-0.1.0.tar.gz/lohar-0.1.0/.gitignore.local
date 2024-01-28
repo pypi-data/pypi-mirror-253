@@ -1,0 +1,13 @@
+.gitignore.local
+
+.tags
+
+.gitstats
+
+.cache
+.idea
+.vimrc
+.nvimrc
+.clangd
+.ycm_extra_conf.py
+compile_commands.json

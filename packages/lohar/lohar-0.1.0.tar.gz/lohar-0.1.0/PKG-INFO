@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lohar
+Version: 0.1.0
+Summary: IT Infrastructure Manager
+Project-URL: Documentation, https://gitlab.com/ambhora/software/lohar
+Project-URL: Issues, https://gitlab.com/ambhora/software/lohar/issues
+Project-URL: Source, https://gitlab.com/ambhora/software/lohar
+Author-email: Jayesh Badwaik <j.badwaik@fz-juelich.de>
+License-Expression: Apache-2.0
+Description-Content-Type: text/markdown
+
+<!--
+- SPDX-License-Identifier: CC-BY-4.0
+- Copyright (C) 2024 Jayesh Badwaik <j.badwaik@fz-juelich.de>
+-->
+
+# lohar : a tool for setting up
+
+

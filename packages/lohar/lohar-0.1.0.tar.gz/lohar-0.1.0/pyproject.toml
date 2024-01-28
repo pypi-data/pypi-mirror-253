@@ -1,0 +1,49 @@
+# --------------------------------------------------------------------------------------------------
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (C) 2024 Jayesh Badwaik <j.badwaik@fz-juelich.de>
+# --------------------------------------------------------------------------------------------------
+[project]
+name = "lohar"
+dynamic = ["version"]
+description = 'IT Infrastructure Manager'
+readme = "readme.md"
+license = "Apache-2.0"
+authors = [
+{ name = "Jayesh Badwaik", email = "j.badwaik@fz-juelich.de" },
+]
+dependencies = [
+]
+
+[project.urls]
+Documentation = "https://gitlab.com/ambhora/software/lohar"
+Issues = "https://gitlab.com/ambhora/software/lohar/issues"
+Source = "https://gitlab.com/ambhora/software/lohar"
+
+[project.scripts]
+lohar = "lohar.cli:main"
+
+# --------------------------------------------------------------------------------------------------
+# Hatch configuration
+# --------------------------------------------------------------------------------------------------
+[tool.hatch.version]
+path = "src/lohar/metadata.py"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lohar"]
+
+[tool.hatch.build.targets.wheel.shared-data]
+"share"="share"
+
+# --------------------------------------------------------------------------------------------------
+# PyTest configuration
+# --------------------------------------------------------------------------------------------------
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+
+[tool.black]
+line-length = 100
