@@ -1,0 +1,3 @@
+[console_scripts]
+del=delete:main
+
