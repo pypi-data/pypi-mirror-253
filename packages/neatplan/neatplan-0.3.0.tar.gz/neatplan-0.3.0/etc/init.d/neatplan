@@ -1,0 +1,56 @@
+#!/sbin/openrc-run
+
+# neatplan by c0m4r
+# https://github.com/c0m4r/neatplan
+# Licnse: GPLv3
+
+neatplan_script="neatplan"
+neatplan_config="/etc/neatplan/default.conf"
+neatplan_runfile="/run/neatplan"
+ipcmd="/sbin/ip"
+
+depend() {
+    need localmount hostname
+    want dev-settle
+    after bootmisc hwdrivers modules
+    provide net
+    keyword -jail -prefix -vserver -docker
+}
+
+start() {
+    ebegin "Starting neatplan"
+    # Invoke neatplan script
+    $neatplan_script --config $neatplan_config >/dev/null
+    # Waiting until tentatives are gone
+    ifaces=$(cat ${neatplan_runfile})
+    eindent
+    for iface in $ifaces ; do
+        echo $iface
+        tentatives=$($ipcmd -6 a s $iface | grep tentative)
+        iters=1
+        until [ ! "$tentatives" ] ; do
+            sleep 0.1
+            tentatives=$($ipcmd -6 a s $iface | grep tentative)
+            iters=$(( iters + 1 ))
+            # Give up after 3 seconds to avoid infinite loop
+            if [ $iters -gt 30 ]; then
+                tentatives=""
+            fi
+        done
+    done
+    eoutdent
+}
+
+stop() {
+    ebegin "Stopping neatplan"
+    ifaces=$(cat ${neatplan_runfile})
+    eindent
+    for iface in $ifaces ; do
+        echo $iface
+        $ipcmd link set $iface down
+    done
+    if [ -e ${neatplan_runfile} ]; then
+        rm -f ${neatplan_runfile}
+    fi
+    eoutdent
+}

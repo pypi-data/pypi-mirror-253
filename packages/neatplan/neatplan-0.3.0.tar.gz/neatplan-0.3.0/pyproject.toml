@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling>=1.21.1"]
+build-backend = "hatchling.build"
+
+[project]
+name = "neatplan"
+version = "0.3.0"
+authors = [
+  { name="c0m4r", email="github@wolfet.pl" },
+]
+description = "nginx-style network configuration"
+license = { text = "GPLv3" }
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Intended Audience :: System Administrators",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Networking",
+    "Topic :: System :: Operating System",
+]
+dependencies = [
+  "crossplane>=0.5.8",
+]
+
+[project.scripts]
+neatplan = "neatplan:main"
+
+[project.urls]
+Homepage = "https://github.com/c0m4r/neatplan"
+Issues = "https://github.com/c0m4r/neatplan/issues"
+Changelog = "https://github.com/c0m4r/neatplan/blob/main/CHANGELOG"
+
+[tool.hatch.version]
+path = "neatplan/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/bin",
+    "/neatplan",
+    "/etc",
+    "/CHANGELOG",
+    "deploy.sh",
+    "neatplan.sh",
+    "requirements.txt",
+]
+
+[tool.hatch.build.targets.wheel]
+include = [
+    "/neatplan/*",
+]
