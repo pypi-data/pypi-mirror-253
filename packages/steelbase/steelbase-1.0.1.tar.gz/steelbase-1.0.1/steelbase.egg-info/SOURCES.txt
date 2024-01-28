@@ -1,0 +1,6 @@
+README.md
+setup.py
+steelbase.egg-info/PKG-INFO
+steelbase.egg-info/SOURCES.txt
+steelbase.egg-info/dependency_links.txt
+steelbase.egg-info/top_level.txt
