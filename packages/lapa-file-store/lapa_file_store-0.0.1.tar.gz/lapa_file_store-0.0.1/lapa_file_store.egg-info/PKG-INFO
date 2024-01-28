@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: lapa-file-store
+Version: 0.0.1
+Summary: oss layer 
+Home-page: https://github.com/adityashetty35/lapa_file_store
+Author: Aaditya sangishetty
+Author-email: adityashetty35@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# lapa_file_store
+
+## about
+
+oss layer for my personal server.
+
+## installation
+
+> pip install lapa_file_store
+
+## configs
+
+1. lapa_file_store\data\config.ini 
+2. lapa_logger\data\config.ini
+
+## env
+
+- python>=3.12.0
+
+## changelog
+
+### v0.0.1
+
+-Base version"# lapa_file_store" 
+
+
