@@ -1,0 +1,16 @@
+copyaid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+copyaid/__main__.py,sha256=NwZNJkJ7Y_G4CEhwGHnHjrDfRxILltiMPzMHiIUisgo,67
+copyaid/cli.py,sha256=RZZyyyOGgnUtVuWLeLqMkVmEENu_JZvWwM3eYnuNUQ8,3413
+copyaid/core.py,sha256=zwOOiUIux_rBjb1z5wKEb-2-cBJloVRnBLTAiTJxi48,11309
+copyaid/diff.py,sha256=TSEnij975Zru7n_CA488nkFvKqqT9qItF01aLK32yRU,5987
+copyaid/task.py,sha256=ED9MjxXyBly0GrV9dpHxPGpz4vsF82jbLQzyfrg6ct8,5337
+copyaid/util.py,sha256=5U9fp-evMy-x-ZOPV82X1iFAPvFgHqPHVvrsz4Kf1fc,1207
+copyaid/config/copyaid.toml,sha256=6S3hakSpNi2LdbbhNyJlN9AwoZuJn5QeZsz0XszbaDk,1897
+copyaid/config/heavy.toml,sha256=Rn_D9T3HeyN0NWDlGWO9APNbvSchG2q8_Ncd81RjyBo,305
+copyaid/config/light.toml,sha256=oX2DCUcwDpaG5Z78FzuNjo77DiD04XzN72tHL8taodI,304
+copyaid/config/proofread.toml,sha256=o40r6Oh1FbGeITN0oskZ-RIsv8X50OJAsv10uNklCzs,305
+copyaid-0.7.1.dist-info/METADATA,sha256=mrYpfonMhhWegTZPrvVZAcXKajcXzT-eoupjXmSY_sA,2022
+copyaid-0.7.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+copyaid-0.7.1.dist-info/entry_points.txt,sha256=4N4oK3-d_FAaQvMSc6ZQlhHK2rPKtRSoRLvxNLfryr8,74
+copyaid-0.7.1.dist-info/licenses/LICENSE,sha256=YStB71q0bHgCZG6BCci4cfNcq74MuMyCQ-5kZdhVRnA,1107
+copyaid-0.7.1.dist-info/RECORD,,
