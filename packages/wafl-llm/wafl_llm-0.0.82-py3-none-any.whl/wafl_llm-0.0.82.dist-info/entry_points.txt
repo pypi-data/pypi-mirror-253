@@ -1,0 +1,2 @@
+[console_scripts]
+wafl_llm = wafl_llm.command_line:main
