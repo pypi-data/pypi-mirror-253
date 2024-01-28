@@ -1,0 +1,7 @@
+include LICENSE
+include crashkit/schema.sql
+graft crashkit/api
+graft crashkit/static
+graft crashkit/templates
+graft tests
+global-exclude *.pyc
