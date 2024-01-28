@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: google-meet-api
+Version: 1.0.0
+Summary: This is a tool to get IP and system information of a specific device
+Home-page: https://github.com/subhomoy-roy-choudhury/Hack_IP
+License: MIT
+Keywords: python,google-meet,api
+Author: Subhomoy Roy Choudhury
+Author-email: subhomoyrchoudhury@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: google-api-python-client (>=2.86.0,<3.0.0)
+Requires-Dist: google-auth-httplib2 (>=0.1.0,<0.2.0)
+Requires-Dist: google-auth-oauthlib (>=1.0.0,<2.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Project-URL: Repository, https://github.com/subhomoy-roy-choudhury/Hack_IP
+Description-Content-Type: text/markdown
+
+# meet-api-python

@@ -1,0 +1,6 @@
+src/meet_api/__init__.py,sha256=G88vax5PXBL9ajjLIYWZswDxlPopCQ9QROTI1AY1hTk,61
+src/meet_api/main.py,sha256=gEKL8mDvFY6DMPoLO0-oHS6RGej4iEgpA7jS2ky9wQ8,7143
+google_meet_api-1.0.0.dist-info/LICENSE,sha256=c-rsxRGB3lhPeDBrTlpb_xJe_fzvF6QOQjj0IU9vsBk,1079
+google_meet_api-1.0.0.dist-info/METADATA,sha256=JlvmIgeGJZ49Sgdnq_9uN4SEn9sgMUqbIOd9i0Vm4tk,1158
+google_meet_api-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+google_meet_api-1.0.0.dist-info/RECORD,,
