@@ -1,0 +1,3 @@
+[console_scripts]
+vhost_master = vhost_master.vhost_master:main
+
