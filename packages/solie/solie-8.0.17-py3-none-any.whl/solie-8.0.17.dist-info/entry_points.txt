@@ -1,0 +1,3 @@
+[console_scripts]
+solie=solie.__main__:main
+
