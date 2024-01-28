@@ -1,0 +1,2 @@
+[console_scripts]
+fractals-cli = fractals_cli.cli:main
