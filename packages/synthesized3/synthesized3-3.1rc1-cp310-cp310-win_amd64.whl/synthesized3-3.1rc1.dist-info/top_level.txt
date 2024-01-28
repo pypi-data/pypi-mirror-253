@@ -1,0 +1,2 @@
+synthesized3
+validate_synthesized3

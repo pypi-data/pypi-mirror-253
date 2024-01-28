@@ -1,0 +1,3 @@
+[console_scripts]
+synth3-validate = validate_synthesized3:validate
+synthesize3 = synthesized3.cmd_line:synthesize
