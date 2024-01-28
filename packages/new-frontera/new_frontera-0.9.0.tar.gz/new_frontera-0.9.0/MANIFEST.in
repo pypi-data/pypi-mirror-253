@@ -1,0 +1,2 @@
+include versioneer.py
+include new_frontera/_version.py
