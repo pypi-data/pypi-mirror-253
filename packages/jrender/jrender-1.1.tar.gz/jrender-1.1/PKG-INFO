@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: jrender
+Version: 1.1
+Summary: 
+License: MIT
+Author: Tomas Bayer
+Author-email: mail@tomas.berlin
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# jrender
+
+[![PyPI - Version](https://img.shields.io/pypi/v/jrender)](https://pypi.org/project/jrender/)
+
+`jrender` is a command-line tool that renders [Jinja template files](https://jinja.palletsprojects.com/) using a
+context built from YAML files and mappings supplied on the command line. It is primarily designed for quickly testing
+template files.
+
+## Installation
+
+Requires Python version 3.9 or higher and pip.
+
+```bash
+pip install jrender
+```
+
+## Example
+
+```bash
+# Create a template file
+> echo "Hello {{name}}" > hello.jinja
+
+# Render the template by supplying values
+> jrender hello.jinja name=World
+
+# Values provided through the command line are always interpreted as strings. For other data types or more complex data
+# structures, provide the context in a YAML file.
+> jrender hello.jinja -f vars.yaml
+```
+
