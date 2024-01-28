@@ -1,0 +1,2 @@
+[console_scripts]
+codemapai = codemapai.__main__:main
