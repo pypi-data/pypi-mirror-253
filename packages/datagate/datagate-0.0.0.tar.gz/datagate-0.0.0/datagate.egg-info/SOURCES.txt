@@ -1,0 +1,6 @@
+pyproject.toml
+datagate/__init__.py
+datagate.egg-info/PKG-INFO
+datagate.egg-info/SOURCES.txt
+datagate.egg-info/dependency_links.txt
+datagate.egg-info/top_level.txt
