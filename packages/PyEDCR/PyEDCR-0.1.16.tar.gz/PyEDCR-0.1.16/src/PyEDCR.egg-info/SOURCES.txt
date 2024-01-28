@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/PyEDCR.egg-info/PKG-INFO
+src/PyEDCR.egg-info/SOURCES.txt
+src/PyEDCR.egg-info/dependency_links.txt
+src/PyEDCR.egg-info/top_level.txt
