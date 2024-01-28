@@ -1,0 +1,25 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_title=_("Authorization failed") %}
+
+{% block content %}
+<section class="action">
+  <div class="text">
+    <p class="text-danger">
+      {{ _("The authorization server could not obtain your identity from the selected provider.") }}
+    </p>
+    {% if error_description %}
+    <p><strong>Error message from {{ provider.display_name }}</br></strong><tt>{{ error_description|e }}</tt></p>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}
+
+{% block navigation %}
+  {% if provider is defined %}
+  <button class="btn w-100" onclick="location.href='{{ authorize_url }}';">
+    <div class="icon"><img src="{{ provider.logo_url }}"/></div>
+    <div class="label"><span>{{ _("Continue with") }} </span>{{ provider.display_name }}</div>
+  </button>
+  {% endif %}
+  <a class="btn w-100" href="{{ return_url }}">{{ _("Other sign in options") }}</a>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "oauthx/base.html.j2" %}
+
+
+{% block content %}
+<section class="action">
+  <div class="text">
+    {% for provider in providers %}
+    <form method="POST" action="{{ begin_login_url }}" class="button button-login button-provider">
+      <div style="display:none">
+        <input type="text" name="client_id" value="{{ client_id }}">
+        <input type="text" name="request_id" value="{{ params.id }}">
+        <input type="text" name="provider" value="{{ provider.name }}">
+        <input type="text" name="next_url" value="{{ next_url }}">
+      </div>
+      <button class="btn h-55 w-100" type="submit">
+        <div class="icon"><img src="{{ provider.logo_url }}"/></div>
+        <div class="label"><span>{{ _("Continue with") }} </span>{{ provider.display_name }}</div>
+      </button>
+    </form>
+    {% endfor %}
+    {% if login_internal_url is defined and login_internal_url %}
+    <a class="button text-primary" href="{{ login_internal_url }}">
+      {{ _("Continue with my work or school account") }}
+    </a>
+    {% endif %}
+    <p class="text-help">
+      <span>
+      {% block help_text %}
+      {% trans %}
+      Select one of the above services to sign in with. If you don't have an account with
+      any of these services, you can select the one of your preference and then create an
+      account at the next screen.
+      {% endtrans %}
+      {% endblock %}
+      </span>
+      {% if login_options_url is defined %}
+      <span><a href="{{ login_options_url }}">{{ _("More sign in options") }}</a></span>
+      {% endif %}
+    </p>
+  </div>
+</section>
+{% endblock %}
+
+{% block navigation %}
+{% if deny_url is defined and deny_url %}
+<a class="btn w-100" href="{{ deny_url }}">{{ _("Cancel") }}</a>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,65 @@
+{
+  "description": "Implementation library for OAuth 2.x/OpenID Connect 1.0 clients and servers.",
+  "author": "Cochise Ruhulessin",
+  "author_email": "cochiseruhulessin@gmail.com",
+  "url": "https://gitlab.com/unimatrixone",
+  "licenses": "Proprietary",
+  "install_requires": [
+    "aiopki>=0.0.2a17",
+    "canonical>=2.0.0a50",
+    "cel-python",
+    "fastapi>=0.104.0",
+    "httpx>=0.25.2",
+    "jinja_markdown",
+    "Jinja2>=3.1.2",
+    "pydantic>2",
+    "python-multipart",
+    "uvicorn"
+  ],
+  "extras_require": {
+    "all": [
+      "aiopki[all]>=0.0.2a6",
+      "aiosqlite>=0.19.0",
+      "httpx",
+      "google.auth",
+      "google-cloud-datastore>=2.13.2",
+      "google-cloud-logging",
+      "google-cloud-storage>=2.7.0",
+      "sqlalchemy>=2.0.23"
+    ],
+    "azure": [
+      "aiopki[azure]>=0.0.2a6"
+    ],
+    "google": [
+      "aiopki[google]>=0.0.2a6",
+      "google-api-python-client>=2.80.0",
+      "google-cloud-datastore>=2.13.2",
+      "google-cloud-logging",
+      "google-cloud-secret-manager>=2.10.0",
+      "google-cloud-storage>=2.7.0"
+    ],
+    "sql": [
+      "aiosqlite>=0.19.0",
+      "sqlalchemy>=2.0.23"
+    ]
+  },
+  "classifiers": [
+     "Development Status :: 4 - Beta",
+     "Intended Audience :: Developers",
+     "Intended Audience :: Financial and Insurance Industry",
+     "Intended Audience :: Healthcare Industry",
+     "License :: Other/Proprietary License",
+     "Operating System :: POSIX",
+     "Operating System :: POSIX :: Linux",
+     "Programming Language :: Python :: 3.11",
+     "Programming Language :: Python :: 3.12",
+     "Programming Language :: Python :: 3 :: Only",
+     "Topic :: Internet",
+     "Topic :: Internet :: WWW/HTTP :: Session",
+     "Topic :: Office/Business",
+     "Topic :: Security",
+     "Topic :: Security :: Cryptography",
+     "Topic :: Software Development :: Libraries",
+     "Topic :: Software Development :: User Interfaces"
+  ]
+}

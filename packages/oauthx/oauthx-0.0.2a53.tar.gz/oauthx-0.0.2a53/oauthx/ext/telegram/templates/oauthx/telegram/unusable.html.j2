@@ -1,0 +1,24 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_title=_("Account in use") %}
+
+
+{% block content %}
+<section class="action">
+  <div class="text text-danger">
+    {% markdown %}{% trans telegram_username=telegram_username %}
+    The Telegram account **@{{ telegram_username }}** can not be confirmed for your
+    account because it is in use by another user.
+    {% endtrans %}{% endmarkdown %}
+  </div>
+  <div class="text strong-primary">
+    {% markdown %}{% trans client_name=client_name, telegram_username=telegram_username %}
+    To proceed to **{{ client_name }}**, sign in as the user that owns
+    **@{{ telegram_username }}** or use a different Telegram account.
+    {% endtrans %}{% endmarkdown %}
+  </div>
+</section>
+{% endblock %}
+
+{% block navigation %}
+  {{ super() }}
+{% endblock %}

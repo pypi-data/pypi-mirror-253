@@ -1,0 +1,11 @@
+include VERSION
+include oauthx/package.json
+include requirements.txt
+include README.md
+include VERSION
+recursive-include oauthx VERSION
+recursive-include oauthx **.html
+recursive-include oauthx **.j2
+recursive-include oauthx **.json
+recursive-include oauthx **.yaml
+recursive-include oauthx **.xml

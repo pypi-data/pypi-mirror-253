@@ -1,0 +1,14 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_title=_("Authorization failure: protocol violation by provider") %}
+
+{% block content %}
+<section class="action">
+  <div class="text">
+    <p>
+      {{ _("You got redirected here from an external identity provider, but some parameters are missing or invalid.") }}
+    </p>
+    <p>{{ _("This is a fatal error from which the server is unable to automatically recover.") }}</p>
+    <p><strong>{{ _("Incident ID") }}</strong></br><tt>{{ exception.id }}</tt></p>
+  </div>
+</section>
+{% endblock %}

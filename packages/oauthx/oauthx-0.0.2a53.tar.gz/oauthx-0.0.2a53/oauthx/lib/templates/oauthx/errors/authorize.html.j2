@@ -1,0 +1,20 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_title=_("Authorization error: invalid request") %}
+
+{% block content %}
+<section class="action">
+  <div class="text">
+    <p class="text-danger">
+      {{ _("The application sent an invalid request. This is most likely a configuration error.") }}
+    </p>
+    <p><strong>{{ _("Error") }}</strong></br><tt>{{ error }}</tt></p>
+    <p><strong>{{ _("Incident ID") }}</strong></br><tt>{{ exception.id }}</tt></p>
+  </div>
+</section>
+{% endblock %}
+
+{% block navigation %}
+  {% if client_name is defined and return_url is defined %}
+  <a class="btn w-100" href="{{ return_url }}">{{ _("Cancel") }}</a>
+  {% endif %}
+{% endblock %}

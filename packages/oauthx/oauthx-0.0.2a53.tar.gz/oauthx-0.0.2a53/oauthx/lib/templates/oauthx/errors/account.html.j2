@@ -1,0 +1,19 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_title=_("Account issues") %}
+
+{% block content %}
+<section class="action">
+  <div class="text">
+    <p class="text-danger">
+      {{ _("There are issues with your account. Please contact support.") }}
+    </p>
+    <p><strong>{{ _("Incident ID") }}</strong></br><tt>{{ exception.id }}</tt></p>
+  </div>
+</section>
+{% endblock %}
+
+{% block navigation %}
+  {% if client_name is defined and return_url is defined %}
+  <a class="btn w-100" href="{{ return_url }}">{{ _("Return to ") }}{{ client_name }}</a>
+  {% endif %}
+{% endblock %}

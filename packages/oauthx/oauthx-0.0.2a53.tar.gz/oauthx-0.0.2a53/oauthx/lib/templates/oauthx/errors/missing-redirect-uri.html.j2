@@ -1,0 +1,14 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_title=_("Authorization failure: client misconfiguration") %}
+
+{% block content %}
+<section class="action">
+  <div class="text">
+    <p>
+      <span>{{ _("The client did not configure any redirection endpoints.") }}</span>
+      <span>{{ _("Without a redirection endpoint, the authorization code flow or implicit flow can not be used.") }}</span>
+    </p>
+    <p><strong>{{ _("Incident ID") }}</strong></br><tt>{{ exception.id }}</tt></p>
+  </div>
+</section>
+{% endblock %}
