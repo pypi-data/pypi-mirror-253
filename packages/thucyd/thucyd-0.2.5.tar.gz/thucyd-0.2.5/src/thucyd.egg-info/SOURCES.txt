@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/thucyd/__init__.py
+src/thucyd.egg-info/PKG-INFO
+src/thucyd.egg-info/SOURCES.txt
+src/thucyd.egg-info/dependency_links.txt
+src/thucyd.egg-info/not-zip-safe
+src/thucyd.egg-info/requires.txt
+src/thucyd.egg-info/top_level.txt
+src/thucyd/eigen/__init__.py
+src/thucyd/eigen/impl.py
