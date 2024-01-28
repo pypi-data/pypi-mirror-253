@@ -1,0 +1,9 @@
+dock_craftsman/__init__.py,sha256=0T_7sdUBK9ldl24a9lje4akdlm9rx-VbxP6E5FPRSdU,113
+dock_craftsman/docker_image_builder.py,sha256=PX_wVb2FaKyRtIPRETbZ950X5_eFB9vIl7HFJcD2uXY,5735
+dock_craftsman/dockerfile_generator.py,sha256=-ea-wvZPyfxf35M7JM8XoEjXl3StOQmTDZ_6EumPHOM,2170
+dock_craftsman/utils.py,sha256=2olbcZmSUgRiGskqD4Dw8y5AhYInZh5e1P7NR52qn3s,242
+dock_craftsman-0.0.1.dist-info/LICENSE,sha256=UaMrcUdsTJsqzCTCe6qpG01RE1uHVntEr84Y-6NkyCA,1078
+dock_craftsman-0.0.1.dist-info/METADATA,sha256=RR3PUEkWD6u_EnhY3gP9al9xQHrutmK-2aT2dI9RUS8,793
+dock_craftsman-0.0.1.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+dock_craftsman-0.0.1.dist-info/top_level.txt,sha256=K4msbXpvMOH1e7CGKoTB389JVwtpJbvFX080FLr_1QM,15
+dock_craftsman-0.0.1.dist-info/RECORD,,
