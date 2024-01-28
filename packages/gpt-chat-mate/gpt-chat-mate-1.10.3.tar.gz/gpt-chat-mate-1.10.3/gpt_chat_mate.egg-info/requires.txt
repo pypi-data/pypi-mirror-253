@@ -1,0 +1,5 @@
+pygments
+openai==0.28
+pyfiglet
+func-timeout
+tiktoken
