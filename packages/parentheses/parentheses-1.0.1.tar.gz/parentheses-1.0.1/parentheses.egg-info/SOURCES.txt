@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+parentheses/__init__.py
+parentheses.egg-info/PKG-INFO
+parentheses.egg-info/SOURCES.txt
+parentheses.egg-info/dependency_links.txt
+parentheses.egg-info/top_level.txt
