@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pepbrowser
+Version: 0.2.0
+Summary: View Python Enhancement Proposals right inside your terminal
+Home-page: https://github.com/wasi-master/pepbrowser
+Author: Wasi Master
+Author-email: arianmollik323@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/wasi-master/pepbrowser/issues
+Project-URL: Source, https://github.com/wasi-master/pepbrowser
+Project-URL: Documentation, https://wasi-master.github.io/pepbrowser
+Project-URL: Say Thanks, https://saythanks.io/to/wasi-master
+Keywords: peps,pep,python enhancement proposals,pepbrowser,pep viewer,pepviewer
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Terminals
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich-rst
+Requires-Dist: requests
+
+# pepbrowser
+ View Python Enhancement Proposals right inside your terminal
+
+## Usage
+
+```sh
+pepbrowser 20
+```
+
+For more information, see the help command
+
+```sh
+pepbrowser --help
+```

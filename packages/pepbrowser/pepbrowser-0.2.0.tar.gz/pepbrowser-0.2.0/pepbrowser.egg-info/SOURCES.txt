@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pepbrowser/__init__.py
+pepbrowser/__main__.py
+pepbrowser/cli.py
+pepbrowser/core.py
+pepbrowser.egg-info/PKG-INFO
+pepbrowser.egg-info/SOURCES.txt
+pepbrowser.egg-info/dependency_links.txt
+pepbrowser.egg-info/entry_points.txt
+pepbrowser.egg-info/not-zip-safe
+pepbrowser.egg-info/requires.txt
+pepbrowser.egg-info/top_level.txt

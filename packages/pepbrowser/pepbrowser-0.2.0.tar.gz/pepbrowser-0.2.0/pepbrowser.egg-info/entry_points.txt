@@ -1,0 +1,5 @@
+[console_scripts]
+pepbrowser = pepbrowser.__main__:main
+
+[pipx.run]
+pepbrowser = pepbrowser.__main__:main
