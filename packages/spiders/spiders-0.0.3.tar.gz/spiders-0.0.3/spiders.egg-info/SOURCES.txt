@@ -1,0 +1,8 @@
+README.md
+setup.py
+spiders/__init__.py
+spiders/containers.py
+spiders.egg-info/PKG-INFO
+spiders.egg-info/SOURCES.txt
+spiders.egg-info/dependency_links.txt
+spiders.egg-info/top_level.txt
