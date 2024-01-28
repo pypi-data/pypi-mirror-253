@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: tsxml
+Version: 0.1.0
+Summary: Parse TestStand XML to Python dictionary
+Home-page: https://github.com/KarthikAbiram/tsxml
+License: MIT
+Author: Karthik Abiram
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: xmltodict (>=0.13.0,<0.14.0)
+Project-URL: Repository, https://github.com/KarthikAbiram/tsxml
+Description-Content-Type: text/markdown
+
+# tsxml
+TestStand XML Parser for Python. Converts the XML string of variable exported using 'GetXML(0,0)' function in TestStand to Python dictionary.
+
+# Install
+Install using pip
+```
+pip install tsxml
+```
+Supports Python >= 3.8
+
+# Usage
+```
+import tsxml
+
+input_xml = """
+<?TS version="2019 (19.0.0.170)"?>
+    <Prop Name='MyContainer' Type='Obj' Flags='0x4'>
+        <Prop Name='MyNumber' Type='Number' Flags='0x0'>
+            <Value>5</Value>
+        </Prop>
+        <Prop Name='MyString' Type='String' Flags='0x0'>
+            <Value>xTLDR.com</Value>
+        </Prop>
+        <Prop Name='MyBoolean' Type='Boolean' Flags='0x0'>
+            <Value>True</Value>
+        </Prop>
+    </Prop>
+"""
+
+result = tsxml.parse(input_xml)
+
+# result = {'MyContainer': {'MyNumber': 5.0, 'MyString': 'xTLDR.com', 'MyBoolean': True}}
+```
+# License
+MIT License
