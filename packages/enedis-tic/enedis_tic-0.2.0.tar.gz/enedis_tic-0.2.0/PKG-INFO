@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: enedis_tic
+Version: 0.2.0
+Summary: Small utility to receive enedis tic frames via serial line.
+Project-URL: Homepage, https://framagit.org/dupin/enedis_tic
+Author-email: Djerem <jeremi+pypi@dupin.fdn.fr>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: pyserial-asyncio
+Description-Content-Type: text/markdown
+
+Enedis TIC
+==========
+
+_Small utility to receive enedis tic frames via serial line._
