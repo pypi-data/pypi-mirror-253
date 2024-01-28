@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: TkLiteUI
+Version: 0.3
+Summary: Basit ve hafif bir Tkinter kullanıcı arayüzü kütüphanesi
+Home-page: https://github.com/ademulkerx/TkLiteUI
+Author: Adem Ulker
+Author-email: ademulker055@gmail.com
+Keywords: tkinter,GUI,user interface
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+
+Bu kütüphane, Tkinter tabanlı basit ve kullanışlı arayüzler oluşturmak için geliştirilmiştir. Kolay kullanımı ve hafif yapısıyla, çeşitli uygulamalarda hızlı arayüz geliştirmeyi sağlar.
