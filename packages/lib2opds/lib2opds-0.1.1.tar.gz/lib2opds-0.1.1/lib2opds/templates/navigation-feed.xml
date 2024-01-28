@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>{{ feed.id }}</id>
+  <link rel="self" href="{{ feed.link_self_href }}" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <link rel="start" href="{{ feed.link_start_href }}" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <link rel="up" href="{{ feed.link_up_href }}" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+
+  <title>{{ feed.get_title() }}</title>
+  <updated>{{ feed.updated }}</updated>
+  <author>
+    <name>lib2opds generator</name>
+    <uri>http://opds-spec.org</uri>
+  </author>
+  {% for entry in feed.entries | sort(attribute="title") %}
+  <entry>
+    {% if entry.kind == "acquisition" %}
+    <title>{{ entry.get_title() }} ({{ entry.publications | count }})</title>
+    {% else %}
+    <title>{{ entry.get_title() }}</title>
+    {% endif %}
+    <link rel="subsection" href="{{ entry.link_self_href }}" type="application/atom+xml;profile=opds-catalog;kind={{ entry.kind }}"/>
+    <updated>{{ entry.updated }}</updated>
+    <id>{{ entry.id }}</id>
+  </entry>
+  {% endfor %}
+</feed>
