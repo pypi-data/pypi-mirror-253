@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "aclustermap"
+version = "0.1.7"
+description = "Convert YAMLized pandas DataFrame to Seaborn clustermap"
+authors = ["Ben Skubi <skubi@ohsu.edu>"]
+license = "MIT"
+readme = "README.md"
+include = ["aclustermap/default_format.yaml"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+seaborn = "^0.13.2"
+PyYAML = "^6.0.1"
+colorcet = "^3.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+aclustermap = "aclustermap.__main__:main"
