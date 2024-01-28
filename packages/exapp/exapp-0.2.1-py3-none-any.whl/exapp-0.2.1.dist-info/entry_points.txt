@@ -1,0 +1,3 @@
+[console_scripts]
+exapp=exapp:main_cli
+
