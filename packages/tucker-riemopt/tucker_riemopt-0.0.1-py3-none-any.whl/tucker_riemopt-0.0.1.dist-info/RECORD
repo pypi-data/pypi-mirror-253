@@ -1,0 +1,16 @@
+tucker_riemopt/__init__.py,sha256=kcuo9tqiMXpMZDc5TyOjL9tYAuTu-dtKNP6j1BSVlNY,439
+tucker_riemopt/backend/__init__.py,sha256=rqk5YRszMbo4PjXoO-gECgFQlVLX_iZm-ikRS2AUXws,8977
+tucker_riemopt/backend/backend.py,sha256=gScGX2DgU8ZDB84tS4IcG6Qp2Hd4WjM2k1FScK7O5fY,8507
+tucker_riemopt/backend/jax_backend.py,sha256=sobXWPYxoDJaLsOHzHrPhQ1afNzJZUOknui1Im60aK8,4157
+tucker_riemopt/backend/pytorch_backend.py,sha256=4q2jlWkmkcCk7FDKgbLUc0328F2G4HbYGgBqkHUI9Lw,12048
+tucker_riemopt/sf_tucker/matrix.py,sha256=cbMwAmSD4FQEQvJ9jGvQUm-ejlxtjBuMbWtunXK3fPQ,3804
+tucker_riemopt/sf_tucker/riemannian.py,sha256=YEq66zBt--Gc9mAv7IUVeWOP3Ym8d8kU4wTmvCtxAAk,7699
+tucker_riemopt/sf_tucker/sf_tucker.py,sha256=qJ2FNJnQSlYcM11Ro74lyylRWLltDzxpaVjEVpMpr9g,17113
+tucker_riemopt/sparse.py,sha256=FN-RjVt-HENsCUhlS6bEjKODgYZkFWmRSWTEs4y-WoA,6574
+tucker_riemopt/tucker/matrix.py,sha256=IIUn6HniVSf3Q0hq9ydns-8EBpJP7hiE3RT-6Yf5WdM,3343
+tucker_riemopt/tucker/riemannian.py,sha256=AGcYGexTx8uEGf5YANkKIfmmKi9s4BVes7MnFt0cKtU,5892
+tucker_riemopt/tucker/tucker.py,sha256=X6uE4eJP9p6o0NFR5fZb0adwV8vdn-JTDDBZwB6XoDc,14718
+tucker_riemopt-0.0.1.dist-info/LICENSE,sha256=qJk1ozH2Jwv58Kc4Urto8xcgZtLz43y6ALk7XODk_fo,1060
+tucker_riemopt-0.0.1.dist-info/METADATA,sha256=agfKcejzJ8VL7B5Qomjo9QV1GGu0Y0CRGCBmiqxDPAQ,2782
+tucker_riemopt-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tucker_riemopt-0.0.1.dist-info/RECORD,,
