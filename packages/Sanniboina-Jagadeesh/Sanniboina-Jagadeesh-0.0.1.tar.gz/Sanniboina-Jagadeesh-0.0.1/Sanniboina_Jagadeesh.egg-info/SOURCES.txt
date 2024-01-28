@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+Jagadeesh/__init__.py
+Jagadeesh/hello.py
+Sanniboina_Jagadeesh.egg-info/PKG-INFO
+Sanniboina_Jagadeesh.egg-info/SOURCES.txt
+Sanniboina_Jagadeesh.egg-info/dependency_links.txt
+Sanniboina_Jagadeesh.egg-info/top_level.txt
