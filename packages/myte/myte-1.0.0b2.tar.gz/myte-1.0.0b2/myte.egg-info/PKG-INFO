@@ -1,0 +1,203 @@
+Metadata-Version: 2.1
+Name: myte
+Version: 1.0.0b2
+Summary: Myte allows users to choose from popular web frameworks like Flask, FastAPI, and Tornado etc when initializing a new project. After entering a project name, the user selects their preferred framework which then generates the basic directory structure and boilerplate code to get started.
+Author: Samuel Doghor
+Author-email: Samuel Doghor <talkto@samdoghor.com>
+License: MIT License
+        
+        Copyright (c) 2023 Samuel Doghor
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/samdoghor/myte
+Project-URL: Issues, https://github.com/samdoghor/myte/issues
+Project-URL: Changelog, https://github.com/samdoghor/myte/blob/main/CHANGELOG.md
+Keywords: Myte,Flask,FastAPI,Tornado,Bottle,Pyramid,CherryPy,Boilerplate,Web framework,Project bootstrapping,Framework
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typer
+Requires-Dist: inquirer
+Requires-Dist: rich
+
+# Myte ✨
+
+> Python web framework boilerplate made easy
+
+Myte allows users to choose from popular web frameworks like Flask, FastAPI, and Tornado when initializing a new project. After entering a project name, the user selects their preferred framework which then generates the basic directory structure and boilerplate code to get started.
+
+- 🚀 Project Bootstrapping
+- 💡 Simplified project setup
+- 🛠️ Framework flexibility
+- 📝 Customizable templates
+- 💻 Cross-OS functionality
+
+## Supported frameworks
+
+| Framework | Status |
+| --------------- | --------------- |
+| [Flask](https://flask.palletsprojects.com/) | ✅ Completed |
+| [FastAPI](https://fastapi.tiangolo.com/) | 🛠️ Undergoing Development |
+| [Tornado](https://www.tornadoweb.org/en/stable/) | ❌ Not started |
+| [Bottle](https://bottlepy.org/) | ❌ Not started  |
+| [Pyramid](https://trypyramid.com/) | ❌ Not started  |
+| [CherryPy](https://docs.cherrypy.dev/en/latest/) | ❌ Not started  |
+
+## Installing
+
+Install and update using [pip](https://pip.pypa.io/en/stable/getting-started/)
+
+```Bash Copy
+pip install myte
+```
+
+or
+
+```Bach Copy
+python3 -m pip install myte
+```
+
+## Usage
+
+Install `Myte` once without a virtual environment so it would be available to bootstrap all your web projects.
+
+### How to start your web project in any of the frameworks
+
+- Create a virtual environment
+- Activate the virtual environment
+- Run the code below
+
+```Bash Copy
+create-myte
+```
+
+### How it looks without an activated virtual environment
+
+```Bash Copy
+$ create-myte
+
+Compatible Note:
+Myte requires at least Python 3.8. However, the tool may still work
+fine in lower versions. If you encounter any error, do well to report
+them here https://cutt.ly/1wSR7LW0
+Thank you
+
+
+Do you want to continue? [y/N]: y
+
+Project Name (myte-project):
+
+
+ ✅ Project name: myte-project
+
+
+[?] Select a framework: Flask
+ > Flask
+   Flask-Restful-API
+
+ ✅ Flask,  selected
+
+
+[?] Select a framework: Simple
+ > Simple
+   Robust
+
+ ✅ Simple,  selected
+
+
+Project setup complete
+
+
+Usage:
+Run the commands below:
+ - cd myte-project
+ -> Your OS is Windows
+ - pip install virtualenv (if not installed)
+ - virtualenv env
+ - source env/scripts/activate
+ - pip install -r requirements.txt
+ - Rename example.env to .env
+ - Go to config.py, decide the database you want to use, uncomment it
+and run the pip instructions there
+ - Go to .env, replace 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' in SECRETKEY with -> og3dOuRYNcnItH2XbYHMYHffbMcBxsS0
+
+```
+
+### How it looks with an activated virtual environment
+
+```Bash Copy
+$ create-myte
+
+Compatible Note:
+Myte requires at least Python 3.8. However, the tool may still work
+fine in lower versions. If you encounter any error, do well to report
+them here https://cutt.ly/1wSR7LW0
+Thank you
+
+
+Do you want to continue? [y/N]: y
+
+Project Name (myte-project):
+
+
+ ✅ Project name: myte-project
+
+
+[?] Select a framework: Flask
+ > Flask
+   Flask-Restful-API
+
+ ✅ Flask,  selected
+
+
+[?] Select a framework: Simple
+ > Simple
+   Robust
+
+ ✅ Simple,  selected
+
+
+Project setup complete
+
+
+Usage:
+Run the commands below:
+ - cd myte-project
+ -> Your OS is Windows
+ - pip install -r requirements.txt
+ - Rename example.env to .env
+ - Go to config.py, decide the database you want to use, uncomment it
+and run the pip instructions there
+ - Go to .env, replace 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' in SECRETKEY with -> og3dOuRYNcnItH2XbYHMYHffbMcBxsS0
+
+```
+
+## Contribution
+
+See [Contributing Guide](CONTRIBUTING.md).
+
+## License
+
+[MIT](LICENSE).
