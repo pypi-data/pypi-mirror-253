@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+jaxampler.egg-info/PKG-INFO
+jaxampler.egg-info/SOURCES.txt
+jaxampler.egg-info/dependency_links.txt
+jaxampler.egg-info/requires.txt
+jaxampler.egg-info/top_level.txt
