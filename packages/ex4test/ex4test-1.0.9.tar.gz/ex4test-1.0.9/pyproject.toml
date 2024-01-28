@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ex4test"
+version = "v1.0.9"
+description = ""
+authors = ["CrystalWindSnake <568166495@qq.com>"]
+license = "mit"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+nicegui = "^1.4.12"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
