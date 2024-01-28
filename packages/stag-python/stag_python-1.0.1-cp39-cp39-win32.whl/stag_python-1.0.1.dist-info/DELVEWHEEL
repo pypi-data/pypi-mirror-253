@@ -1,0 +1,2 @@
+Version: 1.5.2
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-7chfxm3m\\cp39-win32\\build\\venv\\Scripts\\delvewheel', 'repair', '--add-path', '.\\build\\temp.win32-cpython-39\\Release\\opencv\\bin\\Release', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-7chfxm3m\\cp39-win32\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-7chfxm3m\\cp39-win32\\built_wheel\\stag_python-1.0.1-cp39-cp39-win32.whl']
