@@ -1,0 +1,23 @@
+[project]
+name = "prom_metric_tools"
+version = "0.0.2"
+authors = [
+  { name="FCRLab", email="FCRLab800@unime.it" },
+]
+description = "Description coming soon"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pyyaml==6.0.1",
+    "prometheus-api-client==0.4.2",
+    "tqdm==4.66.1",
+]
+
+#[project.urls]
+#Homepage = "https://github.com/pypa/sampleproject"
+#Issues = "https://github.com/pypa/sampleproject/issues"
