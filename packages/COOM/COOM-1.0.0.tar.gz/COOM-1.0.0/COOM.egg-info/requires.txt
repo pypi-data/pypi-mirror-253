@@ -1,0 +1,16 @@
+gymnasium
+numpy
+opencv-python
+vizdoom
+scipy==1.11.4
+
+[cl]
+tensorflow==2.11
+tensorflow-probability==0.19
+wandb
+
+[results]
+wandb
+matplotlib
+seaborn
+pandas

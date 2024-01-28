@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+COOM.egg-info/PKG-INFO
+COOM.egg-info/SOURCES.txt
+COOM.egg-info/dependency_links.txt
+COOM.egg-info/requires.txt
+COOM.egg-info/top_level.txt
