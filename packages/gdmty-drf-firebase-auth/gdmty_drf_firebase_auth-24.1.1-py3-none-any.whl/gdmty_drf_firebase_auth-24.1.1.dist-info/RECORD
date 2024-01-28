@@ -1,0 +1,17 @@
+gdmty_drf_firebase_auth/__init__.py,sha256=WXWuWVOXN_yjXB-j8ZuNMLeC0EYzapyJUG5f1XcdiHc,1614
+gdmty_drf_firebase_auth/admin.py,sha256=9KwcimekTpvC5vgDFc_eVbbDyTOBIhNTyPt_nFYz9aU,856
+gdmty_drf_firebase_auth/apps.py,sha256=umReTOevQEK7sYVZquaF5kDGxULDIZYxaxFQQ0NjL1o,866
+gdmty_drf_firebase_auth/authentication.py,sha256=Niuhp94lHmnEDSsfn_GAv_DNRU7NAKvWdBukc9uNdHI,7977
+gdmty_drf_firebase_auth/models.py,sha256=MtJYI65MnErNxJGOn7XlK5Hi9DqaR5-5NTfPKki6qO0,1709
+gdmty_drf_firebase_auth/settings.py,sha256=xhhwxWcWacuh5pPUAij2chKguBtX4El-PLUw9l-3n4w,2612
+gdmty_drf_firebase_auth/tests.py,sha256=Tbe-SeRskeoRsFr-g27qugjfUFhnU7ZOiFIyVKDXVYE,725
+gdmty_drf_firebase_auth/utils.py,sha256=XLyIKy1yQNS33nvVmfFar2gz9nSENik__DeJkEVVEoA,2115
+gdmty_drf_firebase_auth/views.py,sha256=rDM2JvmLsrJpOUf1kJUdHd-Sg6FLorDJgtjmor2mm6I,690
+gdmty_drf_firebase_auth/migrations/0001_initial.py,sha256=aBCl2EM-06DgtuBX9vv9a6-9np5ccHWkr3gr0kQ6oZY,1088
+gdmty_drf_firebase_auth/migrations/0002_initial.py,sha256=DR7p1qvv-lxZIetIiLB7TDbKpcYxO6EYXIg2mjRfL3Y,675
+gdmty_drf_firebase_auth/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gdmty_drf_firebase_auth-24.1.1.dist-info/LICENSE,sha256=iD8I1x3QDaLcBO-LncV9mbFj4hS4Tw0x7H6lmU69O_8,11351
+gdmty_drf_firebase_auth-24.1.1.dist-info/METADATA,sha256=G4ys1ugAWPf2QePpdv1BKXQvtCEtLluznch6KB4eqkg,19557
+gdmty_drf_firebase_auth-24.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gdmty_drf_firebase_auth-24.1.1.dist-info/top_level.txt,sha256=sk7jhuzlh6-9iXkgZDqthDF68PG49BB0RjiIXRjky5A,24
+gdmty_drf_firebase_auth-24.1.1.dist-info/RECORD,,
