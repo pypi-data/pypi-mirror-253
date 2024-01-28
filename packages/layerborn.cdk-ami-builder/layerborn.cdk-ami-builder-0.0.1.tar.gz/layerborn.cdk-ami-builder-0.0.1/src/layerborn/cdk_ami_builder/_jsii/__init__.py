@@ -1,0 +1,30 @@
+import abc
+import builtins
+import datetime
+import enum
+import typing
+
+import jsii
+import publication
+import typing_extensions
+
+from typeguard import check_type
+
+import aws_cdk._jsii
+import cdk_iam_floyd._jsii
+import constructs._jsii
+import layerborn.cdk_git_tagger._jsii
+import mbonig_state_machine._jsii
+
+__jsii_assembly__ = jsii.JSIIAssembly.load(
+    "@layerborn/cdk-ami-builder",
+    "0.0.1",
+    __name__[0:-6],
+    "cdk-ami-builder@0.0.1.jsii.tgz",
+)
+
+__all__ = [
+    "__jsii_assembly__",
+]
+
+publication.publish()
