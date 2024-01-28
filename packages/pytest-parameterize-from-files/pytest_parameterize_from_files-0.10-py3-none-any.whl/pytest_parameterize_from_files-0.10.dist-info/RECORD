@@ -1,0 +1,7 @@
+pytest_parameterize_from_files/__init__.py,sha256=hLD1QBqNyXXrFZf8RXgCe8X2U0gKYp_qr2csjgsEQwk,131
+pytest_parameterize_from_files/plugin.py,sha256=jN9-BVl7zUqZ6y0-8XVuPtV_iXa8qemnE1pHT66Nrus,9610
+pytest_parameterize_from_files-0.10.dist-info/METADATA,sha256=Vv-a6meoEq2fQv3-fyFD5S1-h5AdQDgcOPIeM6EfJD8,11716
+pytest_parameterize_from_files-0.10.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+pytest_parameterize_from_files-0.10.dist-info/entry_points.txt,sha256=DZKOvl0JjWYsx5BxNA406tehXhoX3YHuDNJywx90cBo,68
+pytest_parameterize_from_files-0.10.dist-info/licenses/LICENSE,sha256=oqcbU6kEl8arA4ea0dSyk6W1hKZ4XkjNHBugCIgfig0,1076
+pytest_parameterize_from_files-0.10.dist-info/RECORD,,
