@@ -1,0 +1,3 @@
+[console_scripts]
+transfer = DataTransfer.main:main
+
