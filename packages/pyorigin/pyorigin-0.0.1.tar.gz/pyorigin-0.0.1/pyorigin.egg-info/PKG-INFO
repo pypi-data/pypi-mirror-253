@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyorigin
+Version: 0.0.1
+Summary: A framework for cross-device communication.
+Author: William Jackson
+Author-email: william@jcksn.io
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet
+
+Origin is a configurable, permission-scoped framework for cross-device communication over the internet.
