@@ -1,0 +1,7 @@
+README.md
+setup.py
+origin/__init__.py
+pyorigin.egg-info/PKG-INFO
+pyorigin.egg-info/SOURCES.txt
+pyorigin.egg-info/dependency_links.txt
+pyorigin.egg-info/top_level.txt
