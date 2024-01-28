@@ -1,0 +1,41 @@
+**Topsis Analysis Package**
+
+**Topsis_TanishqDublish_102117154**
+
+**Overview**
+
+The Topsis_TanishqDublish_102117154 package is a comprehensive Python tool for performing Topsis (Technique for Order of Preference by Similarity to Ideal Solution) analysis on datasets. Topsis is a multi-criteria decision-making method that evaluates and ranks alternatives based on their proximity to an ideal solution.
+
+**Features**
+
+_Efficient Topsis Analysis_: The package efficiently calculates Topsis scores and ranks for decision-making alternatives given a dataset.
+
+_Command-Line Interface_: Use the command-line interface to run Topsis analysis easily with specified parameters.
+
+_Error Handling_: The package includes robust error handling to provide clear feedback on incorrect inputs or missing files.
+
+**INSTALLATION**
+
+_pip install Topsis_TanishqDublish_102117154_
+
+**USAGE**
+
+_topsis <InputDataFile> <Weights> <Impacts> <ResultFileName>_
+
+**Example**
+
+_topsis data.xlsx "1,1,1,2" "+,+,-,+" 101556-result.csv_
+
+**Requirements**
+
+Python 3.x
+
+pandas library
+
+**Contribution**
+
+Contributions are welcome! Feel free to open issues, submit pull requests, or suggest improvements.
+
+**Acknowledgments**
+
+Special thanks to the Topsis analysis community for their valuable contributions.
