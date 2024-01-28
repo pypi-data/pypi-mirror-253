@@ -1,0 +1,9 @@
+xiaomusic-0.1.5.dist-info/METADATA,sha256=lSEyhDyRSUTDB_DdPE-NRvRld9S3k_JRXX_rl-VUAr8,2127
+xiaomusic-0.1.5.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+xiaomusic-0.1.5.dist-info/licenses/LICENSE,sha256=Lgj4mChxirHykqQqaAU93P2ajttPcwCgdNlmegCVj6c,1063
+xiaomusic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xiaomusic/cli.py,sha256=vxKU3cKJnRDKFsIWDLwYP-LHPqsWbXW2f7OMmPMU1ZU,1442
+xiaomusic/config.py,sha256=EVUtS6dxkqa7o08aQ6hT5Gzl6AZ3L18htfsUmy76nd0,3059
+xiaomusic/utils.py,sha256=m4PxjxXonilVUSwRYZSbh0_ejbyghdTDmyV9B8fwEe4,1822
+xiaomusic/xiaomusic.py,sha256=SmjYxT1vY4p-SX6kw-hfYRfOB9WuIuiMEAr2KPlIdsc,16881
+xiaomusic-0.1.5.dist-info/RECORD,,
