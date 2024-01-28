@@ -1,0 +1,6 @@
+llama_index/readers/youtube_transcript/__init__.py,sha256=F7lFBRtOelizZpCK-Z3ehU28C4j29z-WdWIGJXbXyN0,120
+llama_index/readers/youtube_transcript/base.py,sha256=abQEVab1G8NOwUdhX2O-_zbifMmS3dWMwUhiodXjvjc,2369
+llama_index/readers/youtube_transcript/utils.py,sha256=ZrX1znOba6E5fxN5JXQO_Aj0IpXj8wAvuA7ZEN63XFw,544
+flying_delta_readers_youtube_transcript-0.1.0.dist-info/METADATA,sha256=XHAqP_ShQlfU7kDmpXTLPKVoHu_5rTlqFx49h8GFVeY,1895
+flying_delta_readers_youtube_transcript-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flying_delta_readers_youtube_transcript-0.1.0.dist-info/RECORD,,
