@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=f3wT7pTmxZpUskqo8hYRGbH64J6iWfw6cshmtdeWxFA,3048
+LICENSE,sha256=vqnNmIeYDgbPN-rkUjeVVV7xb30ZMvPnglaVoVR04rc,1108
+README.md,sha256=I2VizDRV1S32EXWO28jZCMcvHvF9saA24-cJkHEcXk0,3741
+cppcheck_codequality/__init__.py,sha256=k1_RYHb3qbFOeJzcn5sC9miXzE2nsOYbQv3Wpia92P8,12096
+cppcheck_codequality/__main__.py,sha256=u3ZY7sssxkgZx0qxUdssvxaiRr2CCgGWWXGbITHTBiw,4408
+cppcheck_codequality-1.4.1.dist-info/LICENSE,sha256=vqnNmIeYDgbPN-rkUjeVVV7xb30ZMvPnglaVoVR04rc,1108
+cppcheck_codequality-1.4.1.dist-info/METADATA,sha256=vOoOZ29WT4rrr_nVVypJM7ht_4qFG3yNuP457Svuzr0,4910
+cppcheck_codequality-1.4.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+cppcheck_codequality-1.4.1.dist-info/entry_points.txt,sha256=fDjOFXaibxQ4TMdCmDqcGBieQ1k5WxdR0lYMkT8W_vs,75
+cppcheck_codequality-1.4.1.dist-info/RECORD,,
