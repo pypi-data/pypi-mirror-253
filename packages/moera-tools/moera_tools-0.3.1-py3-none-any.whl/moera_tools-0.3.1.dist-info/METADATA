@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: moera-tools
+Version: 0.3.1
+Summary: Tools for Moera administrators
+Author-email: Shmuel Leib Melamud <balu@moera.org>
+Project-URL: Homepage, https://github.com/MoeraOrg/moera-tools
+Project-URL: Bug Tracker, https://github.com/MoeraOrg/moera-issues/issues
+Project-URL: Overview, https://moera.org
+Keywords: Moera,tools,naming,node,administration,provider
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: moeralib ~=0.14.5
+Requires-Dist: python-dateutil
+Requires-Dist: PyYAML
+Requires-Dist: first
+
+# moera-tools
+Command-line utilities helping to perform many administrative tasks for
+Moera nodes.
+
+The package includes:
+* [moname][1] — get information about names from the Moera naming service.
+* [moctl][2] — manage domains, credentials, and settings.
+
+All tools use a common [configuration file][3].
+
+[1]: https://moera.org/administration/tools/moname.html
+[2]: https://moera.org/administration/tools/moctl.html
+[3]: https://moera.org/administration/tools/config.html

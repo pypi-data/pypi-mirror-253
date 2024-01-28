@@ -1,0 +1,3 @@
+[console_scripts]
+moctl = moctl.moctl:moctl
+moname = moname.moname:moname
