@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: numlib
+Version: 0.3.1
+Summary: basic number theory tools
+Home-page: https://github.com/sj-simmons/numlib
+Download-URL: https://github.com/sj-simmons/numlib/archive/v0.3.1.tar.gz
+Author: Scott Simmons
+Author-email: ssimmons@drury.edu
+License: Apache 2.0
+Project-URL: Upstream Repository, https://gihub.com/sj-simmons/numlib
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+License-File: LICENSE
+
+numlib
+======
+
+Tools for number theory in pure Python.
+
+============
+Installation
+============
+
+First, install numlib:
+
+.. code-block::
+
+    pip3 install numlib --user
+
+or, for newer versions of Python,
+
+.. code-block::
+
+    pip install numlib --user
+
+Then, install `polylib <https://pypi.org/project/polylib/>`_.
+
+To upgrade to the latest version:
+
+.. code-block::
+
+    pip3 install -U numlib --user
+
+
+-----
+Notes
+-----
+
+See the `upstream repository <https://github.com/sj-simmons/numlib>`_ for
+usage notes and examples.
+
