@@ -1,0 +1,8 @@
+title = "DEFAULT FORMATS VALUES"
+
+[format1]
+title = "# "
+topic = '#'
+[format2]
+title = "= "
+topic = '//='
