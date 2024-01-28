@@ -1,0 +1,20 @@
+import enum
+
+class ProtoType(enum.IntEnum):
+    DOUBLE: int
+    FLOAT: int
+    INT64: int
+    UINT64: int
+    INT32: int
+    FIXED64: int
+    FIXED32: int
+    BOOL: int
+    STRING: int
+    MESSAGE: int
+    BYTES: int
+    UINT32: int
+    ENUM: int
+    SFIXED32: int
+    SFIXED64: int
+    SINT32: int
+    SINT64: int
