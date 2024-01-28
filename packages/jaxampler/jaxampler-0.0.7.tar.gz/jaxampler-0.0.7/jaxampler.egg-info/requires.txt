@@ -1,0 +1,10 @@
+jax>=0.4.0
+jaxlib>=0.4.0
+typing_extensions>=4.5.0
+jaxtyping>=0.2.24
+matplotlib>=3.8.0
+setuptools
+tfp-nightly
+tqdm
+twine
+wheel
