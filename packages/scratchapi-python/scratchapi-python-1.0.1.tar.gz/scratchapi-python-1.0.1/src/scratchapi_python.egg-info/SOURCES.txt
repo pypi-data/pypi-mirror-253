@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/scratchapi/__init__.py
+src/scratchapi/exceptions.py
+src/scratchapi/project.py
+src/scratchapi/session.py
+src/scratchapi/user.py
+src/scratchapi_python.egg-info/PKG-INFO
+src/scratchapi_python.egg-info/SOURCES.txt
+src/scratchapi_python.egg-info/dependency_links.txt
+src/scratchapi_python.egg-info/requires.txt
+src/scratchapi_python.egg-info/top_level.txt

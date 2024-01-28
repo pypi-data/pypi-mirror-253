@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scratchapi-python"
+version = "1.0.1"
+authors = [
+  { name="Artcas2" },
+]
+description = "An API for Scratch."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests"
+]
+
+[project.urls]
+"Github" = "https://github.com/Artcas2/scratchapi-python"
