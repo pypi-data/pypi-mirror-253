@@ -1,0 +1,8 @@
+__title__ = "pymisclib"
+__description__ = "Collection of helpful stuff."
+__url__ = "https://rot.regenbogenkraut.de/cd/pymisclib"
+__version__ = "1.5.0"
+__author__ = "Christian Dönges"
+__author_email__ = "cd.pymisclib@platypus-projects.net"
+__license__ = "Apache 2.0"
+__copyright__ = "© Copyright 2012-2024 by Christian Dönges <cd.pymisclib@platypus-projects.net>"
