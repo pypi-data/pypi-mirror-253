@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "instagram-auth"
+version = "0.1.1"
+description = "Instagram Web Auth"
+authors = ["Николай Витальевич Никоноров <nnv@bitt.moe>"]
+readme = "README.md"
+packages = [{include = "instagram_auth"}]
+repository = "https://gitlab.com/bitt_moe/instagram/auth.git"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cffi = "1.16.0"
+pycparser = "2.21"
+pycryptodomex = "3.19.1"
+PyNaCl = "1.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
