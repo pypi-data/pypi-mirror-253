@@ -1,0 +1,17 @@
+AUTHORS.rst
+HISTORY.rst
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+memoria/__init__.py
+memoria/gui.py
+memoria/helper_funcs.py
+memoria/inputs.py
+memoria/tests.py
+memoria_gui.egg-info/PKG-INFO
+memoria_gui.egg-info/SOURCES.txt
+memoria_gui.egg-info/dependency_links.txt
+memoria_gui.egg-info/requires.txt
+memoria_gui.egg-info/top_level.txt
