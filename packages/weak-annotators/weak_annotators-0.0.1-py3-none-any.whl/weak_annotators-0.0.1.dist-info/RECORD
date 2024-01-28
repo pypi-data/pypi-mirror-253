@@ -1,0 +1,15 @@
+weak_annotators/__init__.py,sha256=jQeoGwofhEwCTOcgwV1Q_VOpIO2idJcCG0IRh5qFdpM,294
+weak_annotators/base_extractor.py,sha256=oGXqCW5wevqO-WsOvQoW8Khkg87wXWW81ip9EQAD3Ts,1637
+weak_annotators/flair_extractor.py,sha256=j__3QO_LypBz55trZnXbAshAzJYeytJ8CeKJajQ2D-4,1255
+weak_annotators/medalpaca_extractor.py,sha256=O47BmmLqVmuxzsgx01ecKr0fKEKggQdwsVA4EV4b6uk,8435
+weak_annotators/model_registry.py,sha256=LVKBpTvmhIyg_aeKTITMvQwd0INjG8rzPW6YpH0U2s4,504
+weak_annotators/universal_ner_extractor.py,sha256=oUfF5SSYIe7rEllZogZjCHZzHMxQzWSs8UkfObVhw3U,6781
+weak_annotators/version.py,sha256=QiPTp-H7ivP_GgZPuA6eXbtxS_LJMZtxgi2SVaB2d-s,70
+weak_annotators/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weak_annotators/templates/conversation.py,sha256=qOEXTp0RP_oYoFO4lERnSjpRy3880GcFnaH0FVy74k4,15628
+weak_annotators/utils/__init__.py,sha256=72gZ0td9KmuLRucuJmiWStQH9M_K8ue9FNBW83phBio,125
+weak_annotators/utils/type_utils.py,sha256=rtCe7OnthEaQ6SpURH1I-2YLx3JZ6v1qUoFqTxnwoe0,916
+weak_annotators-0.0.1.dist-info/METADATA,sha256=QvIAvAA0a-UpTTrs60RgP-zVjqBKuDDTvnjrBX8zihQ,2830
+weak_annotators-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+weak_annotators-0.0.1.dist-info/top_level.txt,sha256=U3jIB5IXgGYa0MNpJ-u20JTGkvEfQqfBs_1x7knd6D8,16
+weak_annotators-0.0.1.dist-info/RECORD,,
