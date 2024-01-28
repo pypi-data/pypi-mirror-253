@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kdslibs
+Version: 0.0.33
+Summary: An utility library for ML programming 
+Home-page: https://github.com/kdslibs
+Author: KDS
+Author-email: kdslibs@rediffmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+
