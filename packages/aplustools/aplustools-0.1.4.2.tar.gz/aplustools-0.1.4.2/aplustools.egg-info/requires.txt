@@ -1,0 +1,20 @@
+requests>=2.31.0
+Pillow>=10.1.0
+BeautifulSoup4>=4.12.2
+datetime
+
+[:os_name != "nt"]
+winreg
+
+[data]
+PySide6>=6.5.1.1
+
+[dev]
+pytest
+
+[utils]
+rich>=13.7.0
+pycryptodome>=3.19.0
+
+[web]
+duckduckgo_search>=3.9.6
