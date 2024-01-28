@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+auto_pypi_setup.egg-info/PKG-INFO
+auto_pypi_setup.egg-info/SOURCES.txt
+auto_pypi_setup.egg-info/dependency_links.txt
+auto_pypi_setup.egg-info/entry_points.txt
+auto_pypi_setup.egg-info/requires.txt
+auto_pypi_setup.egg-info/top_level.txt
+autopypi/__init__.py
+autopypi/autopypi.py
