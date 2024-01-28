@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ws2webhook
+Version: 0.1.10
+Summary: Websocket data to webhook
+Home-page: https://github.com/386jp/ws2webhook
+Author: Kyosuke Miyamura
+Author-email: ask@386.jp
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: websocket-client (==1.6.1)
+Project-URL: Repository, https://github.com/386jp/ws2webhook
+Description-Content-Type: text/markdown
+
+# ws2webhook
+

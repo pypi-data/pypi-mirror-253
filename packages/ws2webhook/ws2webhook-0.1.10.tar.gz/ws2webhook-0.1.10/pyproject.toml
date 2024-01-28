@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ws2webhook"
+version = "0.1.10"
+description = "Websocket data to webhook"
+authors = ["Kyosuke Miyamura <ask@386.jp>"]
+readme = "README.md"
+packages = [{include = "ws2webhook"}]
+homepage = "https://github.com/386jp/ws2webhook"
+repository = "https://github.com/386jp/ws2webhook"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+websocket-client = "1.6.1"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ws2webhook = "ws2webhook.cli:main"
