@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fssh"
+version = "1.0.8"
+requires-python = ">=3.8"
+authors = [
+     { name="Michael Goppert", email="goppert@cs.utexas.edu"},
+]
+description = "Fast SSH for UTCS students"
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[project.urls]
+Homepage = "https://github.com/migopp/fssh"
+
+[project.scripts]
+fssh = "fssh.__main__:fssh"
+fssh-setup = "fssh.setup:setup"
