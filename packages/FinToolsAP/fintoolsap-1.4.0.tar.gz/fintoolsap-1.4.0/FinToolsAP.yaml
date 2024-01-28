@@ -1,0 +1,16 @@
+name: FinToolsAP
+channels:
+  - defaults
+dependencies:
+  - pip
+  - pandas
+  - pathlib
+  - sqlalchemy
+  - matplotlib
+  - tqdm
+  - twine
+  - build
+  - pip:
+    - pdoc
+    - wrds
+    - connectorx
