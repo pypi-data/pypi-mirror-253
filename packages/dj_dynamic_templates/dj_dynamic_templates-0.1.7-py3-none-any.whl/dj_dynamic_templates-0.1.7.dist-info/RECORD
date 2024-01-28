@@ -1,0 +1,15 @@
+dj_dynamic_templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_dynamic_templates/admin.py,sha256=kF8yMUBj2Dt_jDPeSGTakXLRpZffyJcR_f4PBcGnkyI,13769
+dj_dynamic_templates/apps.py,sha256=geKgwPUG2oC6gLL7zyC3qWI7aviEcBP9qLzr-MGj9g0,170
+dj_dynamic_templates/forms.py,sha256=C9cLCqTlRyNZ1PTamMDMU29JjgG76rnZK6PyDxWbY0M,519
+dj_dynamic_templates/migrations/0001_initial.py,sha256=gRUZwAKlwSU_rxhncW6__rrPzq02tLoIn0CZZFc1u7c,6909
+dj_dynamic_templates/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_dynamic_templates/models.py,sha256=Csf5zgRtZ8lbeCK6vS5zd9sEC4KaPcAoI-kbhcV_vuk,8793
+dj_dynamic_templates/templates/category_change_form.html,sha256=B0w_iM2wsocK1Dia6hCut3TmAVdKYUuKvSmYXla3o4A,1467
+dj_dynamic_templates/templates/template_change_form.html,sha256=Ni0BVo_gv7lj-EqF5ddqUlisK7UNi8CBAce21aTU8x8,1955
+dj_dynamic_templates/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+dj_dynamic_templates/views.py,sha256=58Qv2oKc4Z4pnGctlinSnYHz9_2Zcl-h4UBMExEaUoY,227
+dj_dynamic_templates-0.1.7.dist-info/LICENSE,sha256=mTsuA5NC_LTZnL5hkr--R3VMzFaskcVM-slegEjIt-M,1070
+dj_dynamic_templates-0.1.7.dist-info/METADATA,sha256=EeHqQCoaR7l7wmYbw8KNpYRAVpckyjDOZyI4U_2vqaY,1243
+dj_dynamic_templates-0.1.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dj_dynamic_templates-0.1.7.dist-info/RECORD,,
