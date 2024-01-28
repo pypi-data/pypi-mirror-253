@@ -1,0 +1,10 @@
+nf_parser/__init__.py,sha256=lgosOw0LLl-NBFvsKuEIzZoGJkbIRXfdnpPnqcG3w_g,148
+nf_parser/nextflow.py,sha256=ioB1P13u5ZD1yEa6dDWyUne_CEQATNhMu_0b7fQ3Oys,12018
+nf_parser/nf.lark,sha256=k1eot6xGlusues_nnrbwYpFfA9AvCvwRzrnx4C6joK4,9636
+nf_parser/parser.py,sha256=g-rlQUoVc_I5mfSZNLAPooTDgTbJSyfHB1JpA9wU28k,1138
+nf_parser/schemas.py,sha256=o6Q7it1nR3erKeQkBe0PVZsLCOM8Evt-iYI51gXlAQU,3853
+nf_parser/utils.py,sha256=ZCgyhNmTRO86BDQwoKxo4HyIRYYHF0uegxqA-HwYBYA,710
+nf_parser-0.0.1b0.dist-info/LICENSE,sha256=VZUOY1swAt8IpZ-PdniSvGKhQrj7JDs-w5XI6ISsni4,1070
+nf_parser-0.0.1b0.dist-info/METADATA,sha256=hI5lc3hAfG1C31RJbsd6he2PsFTvi9pFkyYY1AnidTE,2492
+nf_parser-0.0.1b0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+nf_parser-0.0.1b0.dist-info/RECORD,,
