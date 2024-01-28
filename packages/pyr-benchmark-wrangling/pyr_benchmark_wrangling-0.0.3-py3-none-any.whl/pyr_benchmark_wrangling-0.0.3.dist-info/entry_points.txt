@@ -1,0 +1,6 @@
+[console_scripts]
+bgp = BugsInPy.bgp:main
+diff_utils = diff_utils.diff_utils:main
+lmeasures = BugsInPy.lmeasures:main
+run_custom_patch = BugsInPy.run_custom_patch:main
+sample_bip = BugsInPy.sample_bip:main
