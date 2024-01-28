@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hqdata_api_wrapper
+Version: 0.0.2
+Summary: A Python wrapper for the HQData API
+Home-page: https://hqdata.com
+Author: Marco Capuano
+Author-email: marco.capuano@starux.ch
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+This is a Python package that provides a convenient wrapper for interacting with the HQData API. It allows you to easily run and fetch job/result data from the HQData service.
