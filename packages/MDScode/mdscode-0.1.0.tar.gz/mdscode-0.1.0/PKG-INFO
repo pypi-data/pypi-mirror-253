@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: MDScode
+Version: 0.1.0
+Summary: A package providing python code for the MDS book.
+Home-page: https://github.com/MDS-book/
+License: MIT
+Author: Stefan Sandfeld
+Author-email: mds-book@proton.me
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.8.2,<4.0.0)
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Project-URL: Repository, https://github.com/MDS-book/MDS-code
+Description-Content-Type: text/markdown
+
+# MDS-code
+Python code for the MDS book
+
+
+
