@@ -1,0 +1,10 @@
+setup.py
+anngyan_prob/Binomialdistribution.py
+anngyan_prob/Gaussiandistribution.py
+anngyan_prob/Generaldistribution.py
+anngyan_prob/__init__.py
+anngyan_prob.egg-info/PKG-INFO
+anngyan_prob.egg-info/SOURCES.txt
+anngyan_prob.egg-info/dependency_links.txt
+anngyan_prob.egg-info/not-zip-safe
+anngyan_prob.egg-info/top_level.txt
