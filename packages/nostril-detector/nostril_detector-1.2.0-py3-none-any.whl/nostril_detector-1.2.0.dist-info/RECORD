@@ -1,0 +1,12 @@
+nostril-detector/__init__.py,sha256=0765uh28FiPnEeo99yK9TA1KzTK-DKJU62JS9Vs6hH4,5837
+nostril-detector/__main__.py,sha256=lm_LFNDioUIlZ1hMZQBivZzBB7CoUM_3DvDEGBb2sa0,4562
+nostril-detector/__version__.py,sha256=lQ2kKSDY5nlXmWxpAEE4Y3gc_ovoKGsPVw3sz1j66h0,800
+nostril-detector/ng.py,sha256=PnRB_f_lxMwv4TriyaR02khmvwLuFfR1DjrhvWONm0I,1963
+nostril-detector/ngram_data.pklz,sha256=Gh9aZY-aae8rxynVW79Rj7BxXUpuZgTJ4Mbj9Yp1PdI,5911925
+nostril-detector/nonsense_detector.py,sha256=tsjEX6XgRTYb43x6G8P-jI3J4gWjlguA2QWgQAdLo3c,46823
+nostril_detector-1.2.0.data/scripts/nostril-detector,sha256=wkMRPYMiA7UneLxFsSZtXWMXeySl6vULYlBcioFOJoY,796
+nostril_detector-1.2.0.dist-info/LICENSE,sha256=OfCylvYf7aO5Ud2lb65QpR4NGjcnbxJbpmv-ya_T-FQ,26538
+nostril_detector-1.2.0.dist-info/METADATA,sha256=Fte99SmtAT4gm4--IEvqUmfQaS-19oOJOpcXLHJVtxE,691
+nostril_detector-1.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+nostril_detector-1.2.0.dist-info/top_level.txt,sha256=Yz5iQoLxD-khSW-wL9fRw7nm8yAV1B3YCXnZaRTQAug,17
+nostril_detector-1.2.0.dist-info/RECORD,,
