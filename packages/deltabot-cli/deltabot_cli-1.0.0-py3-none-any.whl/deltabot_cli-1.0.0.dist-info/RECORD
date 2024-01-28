@@ -1,0 +1,12 @@
+deltabot_cli/__init__.py,sha256=WpXdluk3UhXurzoSudUov3IjdLCpHqqnKketYKh4n_w,216
+deltabot_cli/_utils.py,sha256=ex1b7nAHqK_2b0Ss2z7a808-RfcGOYgg-HOcahRtf0c,6550
+deltabot_cli/cli.py,sha256=lkJ_wGNA5fsi1dbtDmZuTXC9uwiU_KYpb_HL3Lm6CYA,10437
+deltabot_cli/client.py,sha256=svKABT9szPT154FKjEYBtzZvdNgZTkXHo9mGQFv9WzY,6945
+deltabot_cli/const.py,sha256=BxVTKuHvU42sGNoUq35Fx34CuZqQ_OsAmqVHpQSiHTQ,3484
+deltabot_cli/events.py,sha256=dnNntcPljZ3_Q6L_dKBBf6i2daGop2LauWhjQYQ2IsI,9851
+deltabot_cli/rpc.py,sha256=nJdHAsBWzVhScBP2rtNIv0VLCn7xd7gvPv09EaHMI8A,4653
+deltabot_cli-1.0.0.dist-info/LICENSE,sha256=-rPda9qyJvHAhjCx3ZF-Efy07F4eAg4sFvg6ChOGPoU,16726
+deltabot_cli-1.0.0.dist-info/METADATA,sha256=QxCvmf0PKNnGcII1axHTdWWf0ppfQp3I2aXSpaa9hcs,2184
+deltabot_cli-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+deltabot_cli-1.0.0.dist-info/top_level.txt,sha256=CCsMlt7vJxhz7akR59y11G1Zc31wmu2gdMQ6vguMcak,13
+deltabot_cli-1.0.0.dist-info/RECORD,,
