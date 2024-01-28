@@ -1,0 +1,6 @@
+pyproject.toml
+nordicdata/__init__.py
+nordicdata.egg-info/PKG-INFO
+nordicdata.egg-info/SOURCES.txt
+nordicdata.egg-info/dependency_links.txt
+nordicdata.egg-info/top_level.txt
