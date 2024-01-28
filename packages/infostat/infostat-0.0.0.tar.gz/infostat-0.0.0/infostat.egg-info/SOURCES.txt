@@ -1,0 +1,6 @@
+pyproject.toml
+infostat/__init__.py
+infostat.egg-info/PKG-INFO
+infostat.egg-info/SOURCES.txt
+infostat.egg-info/dependency_links.txt
+infostat.egg-info/top_level.txt
