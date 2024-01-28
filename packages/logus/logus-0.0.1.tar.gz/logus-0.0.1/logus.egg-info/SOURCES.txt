@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+logus/__init__.py
+logus/logcore.py
+logus/logparams.py
+logus/logtypes.py
+logus/settings.py
+logus/utils.py
+logus.egg-info/PKG-INFO
+logus.egg-info/SOURCES.txt
+logus.egg-info/dependency_links.txt
+logus.egg-info/requires.txt
+logus.egg-info/top_level.txt
