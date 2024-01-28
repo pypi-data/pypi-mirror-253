@@ -1,0 +1,115 @@
+{
+    "hostname": "Woodlands-fw2",
+    "arp_table": {},
+    "content_version": {
+        "version": "8729-8157"
+    },
+    "ip_sec_tunnels": null,
+    "license": null,
+    "nics": {
+        "ethernet1/1": {
+            "status": "up"
+        },
+        "ethernet1/2": {
+            "status": "up"
+        },
+        "ethernet1/3": {
+            "status": "down"
+        },
+        "ethernet1/4": {
+            "status": "down"
+        },
+        "ethernet1/5": {
+            "status": "down"
+        },
+        "loopback": {
+            "status": "up"
+        },
+        "tunnel": {
+            "status": "up"
+        }
+    },
+    "routes": {
+        "cdot.io_10.6.1.0/24_ethernet1/3": {
+            "virtual_router": "cdot.io",
+            "destination": "10.6.1.0/24",
+            "nexthop": "10.6.1.1",
+            "metric": "0",
+            "flags": "A C",
+            "age": null,
+            "interface": "ethernet1/3",
+            "route_table": "unicast"
+        },
+        "cdot.io_10.6.1.1/32_": {
+            "virtual_router": "cdot.io",
+            "destination": "10.6.1.1/32",
+            "nexthop": "0.0.0.0",
+            "metric": "0",
+            "flags": "A H",
+            "age": null,
+            "interface": null,
+            "route_table": "unicast"
+        },
+        "cdot.io_10.10.10.0/24_ethernet1/5": {
+            "virtual_router": "cdot.io",
+            "destination": "10.10.10.0/24",
+            "nexthop": "10.10.10.6",
+            "metric": "0",
+            "flags": "A C",
+            "age": null,
+            "interface": "ethernet1/5",
+            "route_table": "unicast"
+        },
+        "cdot.io_10.10.10.6/32_": {
+            "virtual_router": "cdot.io",
+            "destination": "10.10.10.6/32",
+            "nexthop": "0.0.0.0",
+            "metric": "0",
+            "flags": "A H",
+            "age": null,
+            "interface": null,
+            "route_table": "unicast"
+        },
+        "cdot.io_172.16.6.0/24_ethernet1/4": {
+            "virtual_router": "cdot.io",
+            "destination": "172.16.6.0/24",
+            "nexthop": "172.16.6.1",
+            "metric": "0",
+            "flags": "A C",
+            "age": null,
+            "interface": "ethernet1/4",
+            "route_table": "unicast"
+        },
+        "cdot.io_172.16.6.1/32_": {
+            "virtual_router": "cdot.io",
+            "destination": "172.16.6.1/32",
+            "nexthop": "0.0.0.0",
+            "metric": "0",
+            "flags": "A H",
+            "age": null,
+            "interface": null,
+            "route_table": "unicast"
+        },
+        "cdot.io_172.16.255.6/32_": {
+            "virtual_router": "cdot.io",
+            "destination": "172.16.255.6/32",
+            "nexthop": "0.0.0.0",
+            "metric": "0",
+            "flags": "A H",
+            "age": null,
+            "interface": null,
+            "route_table": "unicast"
+        },
+        "cdot.io_192.168.200.6/32_": {
+            "virtual_router": "cdot.io",
+            "destination": "192.168.200.6/32",
+            "nexthop": "0.0.0.0",
+            "metric": "0",
+            "flags": "A H",
+            "age": null,
+            "interface": null,
+            "route_table": "unicast"
+        }
+    },
+    "session_stats": null
+}
