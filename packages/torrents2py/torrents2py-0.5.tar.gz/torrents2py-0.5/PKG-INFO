@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: torrents2py
+Version: 0.5
+Summary: Torrents2py is a simple Python package for searching and retrieving torrent details from Torrentz2.nz
+Home-page: https://github.com/Gianpi612/torrents2py
+Download-URL: https://github.com/Gianpi612/torrents2py/archive/refs/tags/v_0.5.tar.gz
+Author: Gianpaolo
+License: MIT
+Keywords: scraping,torrents,search engine,website,links
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+License-File: license.txt
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
