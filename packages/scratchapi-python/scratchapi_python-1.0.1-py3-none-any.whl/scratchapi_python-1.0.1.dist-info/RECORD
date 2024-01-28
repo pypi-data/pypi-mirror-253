@@ -1,0 +1,10 @@
+scratchapi/__init__.py,sha256=g5_Z4FEPciS5cDI1GJkDrGFjA05MbUS6QF-MJWVR1dc,69
+scratchapi/exceptions.py,sha256=KzYWlh72zxg6aB0P7OPd3u4TiwZ-bNG17-NnTCgwnrY,179
+scratchapi/project.py,sha256=Je2NSEWJkQrAK-IzNzNn8Mkz8y2CghaBjWib_ycG83c,2596
+scratchapi/session.py,sha256=f4E0rqYDxuCPu1sKys-ATNxgn9PYsSGVqoVfrITh3LE,2934
+scratchapi/user.py,sha256=phK6MP09UxfxpLevdie-FqVdV22E392VpoH_n7zEgkE,4623
+scratchapi_python-1.0.1.dist-info/LICENSE,sha256=m7Ao31jq1VXbZwDctfd7psj4ktc2MOCHlDm-FsjLOR0,1083
+scratchapi_python-1.0.1.dist-info/METADATA,sha256=CVpD9yKpAIfGhmy7MNh74Y-bhoGv58lFUIIrff7fNA4,1930
+scratchapi_python-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+scratchapi_python-1.0.1.dist-info/top_level.txt,sha256=Z8USuKtu7F1kTUrPQUi6irxnSfnGOoqQ8uhFIzxKI8k,11
+scratchapi_python-1.0.1.dist-info/RECORD,,
