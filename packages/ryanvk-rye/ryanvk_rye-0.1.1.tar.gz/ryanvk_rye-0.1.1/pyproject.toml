@@ -1,0 +1,31 @@
+[project]
+name = "ryanvk-rye"
+version = "0.1.1"
+description = ""
+authors = [
+    { name = "GreyElaina", email = "GreyElaina@outlook.com" },
+]
+dependencies = [
+    "typing-extensions; python_version < '3.11'",
+]
+requires-python = ">=3.8"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "ruff>=0.1.3",
+    "ipykernel>=6.27.1",
+    "devtools>=0.12.2",
+    "pytest>=7.4.4",
+    "pytest-mocha>=0.4.0",
+    "pytest-rich>=0.1.1",
+    "attrs>=23.2.0",
+]

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: ryanvk-rye
+Version: 0.1.1
+Author-Email: GreyElaina <GreyElaina@outlook.com>
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: typing-extensions; python_version < "3.11"
