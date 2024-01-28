@@ -1,0 +1,392 @@
+{
+  "ADCO": {
+    "name": "Adresse du compteur"
+  },
+  "OPTARIF": {
+    "name": "Option tarifaire choisie"
+  },
+  "ISOUSC": {
+    "name": "Intensité souscrite",
+    "unit": "A"
+  },
+  "BASE": {
+    "name": "Index option Base",
+    "unit": "Wh"
+  },
+  "HCHC": {
+    "name": "Index Heures Creuses",
+    "unit": "Wh"
+  },
+  "HCHP": {
+    "name": "Index Heures Pleines",
+    "unit": "Wh"
+  },
+  "EJPHN": {
+    "name": "Index EJP Heures Normales",
+    "unit": "Wh"
+  },
+  "EJPHPM": {
+    "name": "Index EJP Heures de Pointe Mobile",
+    "unit": "Wh"
+  },
+  "BBRHCJB": {
+    "name": "Index Tempo Heures Creuses Jours Bleus",
+    "unit": "Wh"
+  },
+  "BBRHPJB": {
+    "name": "Index Tempo Heures Pleines Jours Bleus",
+    "unit": "Wh"
+  },
+  "BBRHCJW": {
+    "name": "Index Tempo Heures Creuses Jours Blancs",
+    "unit": "Wh"
+  },
+  "BBRHPJW": {
+    "name": "Index Tempo Heures Pleines Jours Blancs",
+    "unit": "Wh"
+  },
+  "BBRHCJR": {
+    "name": "Index Tempo Heures Creuses Jours Rouges",
+    "unit": "Wh"
+  },
+  "BBRHPJR": {
+    "name": "Index Tempo Heures Pleines Jours Rouges",
+    "unit": "Wh"
+  },
+  "PEJP": {
+    "name": "Préavis Début EJP (30 min)",
+    "unit": "min"
+  },
+  "PTEC": {
+    "name": "Période Tarifaire en cours"
+  },
+  "DEMAIN": {
+    "name": "Couleur du lendemain"
+  },
+  "IINST": {
+    "name": "Intensité Instantanée",
+    "unit": "A"
+  },
+  "IINST1": {
+    "name": "Intensité Instantanée phases 1",
+    "unit": "A"
+  },
+  "IINST2": {
+    "name": "Intensité Instantanée phases 2",
+    "unit": "A"
+  },
+  "IINST3": {
+    "name": "Intensité Instantanée phases 3",
+    "unit": "A"
+  },
+  "ADPS": {
+    "name": "Avertissement de Dépassement De Puissance Souscrite",
+    "unit": "A"
+  },
+  "IMAX": {
+    "name": "Intensité maximale appelée",
+    "unit": "A"
+  },
+  "IMAX1": {
+    "name": "Intensité maximale appelée phase 1",
+    "unit": "A"
+  },
+  "IMAX2": {
+    "name": "Intensité maximale appelée phase 2",
+    "unit": "A"
+  },
+  "IMAX3": {
+    "name": "Intensité maximale appelée phase 3",
+    "unit": "A"
+  },
+  "PMAX": {
+    "name": "Puissance maximale triphasée atteinte",
+    "unit": "W"
+  },
+  "PAPP": {
+    "name": "Puissance apparente",
+    "unit": "VA"
+  },
+  "HHPHC": {
+    "name": "Horaire Heures Pleines Heures Creuses"
+  },
+  "MOTDETAT": {
+    "name": "Mot d'état du compteur"
+  },
+  "PPOT": {
+    "name": "Présence des potentiels"
+  },
+  "ADIR1": {
+    "name": "Avertissement de Dépassement d'intensité phase 1",
+    "unit": "A"
+  },
+  "ADIR2": {
+    "name": "Avertissement de Dépassement d'intensité phase 2",
+    "unit": "A"
+  },
+  "ADIR3": {
+    "name": "Avertissement de Dépassement d'intensité phase 3",
+    "unit": "A"
+  },
+  "ADSC": {
+    "name": "Adresse Secondaire du Compteur"
+  },
+  "VTIC": {
+    "name": "Version de la TIC"
+  },
+  "DATE": {
+    "name": "Date et heure courante",
+    "unit": "datetime"
+  },
+  "NGTF": {
+    "name": "Nom du calendrier tarifaire fournisseur"
+  },
+  "LTARF": {
+    "name": "Libellé tarif fournisseur en cours"
+  },
+  "EAST": {
+    "name": "Energie active soutirée totale",
+    "unit": "Wh"
+  },
+  "EASF01": {
+    "name": "Energie active soutirée Fournisseur, index 01",
+    "unit": "Wh"
+  },"EASF02": {
+    "name": "Energie active soutirée Fournisseur, index 02",
+    "unit": "Wh"
+  },"EASF03": {
+    "name": "Energie active soutirée Fournisseur, index 03",
+    "unit": "Wh"
+  },"EASF04": {
+    "name": "Energie active soutirée Fournisseur, index 04",
+    "unit": "Wh"
+  },"EASF05": {
+    "name": "Energie active soutirée Fournisseur, index 05",
+    "unit": "Wh"
+  },"EASF06": {
+    "name": "Energie active soutirée Fournisseur, index 06",
+    "unit": "Wh"
+  },"EASF07": {
+    "name": "Energie active soutirée Fournisseur, index 07",
+    "unit": "Wh"
+  },"EASF08": {
+    "name": "Energie active soutirée Fournisseur, index 08",
+    "unit": "Wh"
+  },"EASF09": {
+    "name": "Energie active soutirée Fournisseur, index 09",
+    "unit": "Wh"
+  },"EASF10": {
+    "name": "Energie active soutirée Fournisseur, index 10",
+    "unit": "Wh"
+  },
+  "EASD01": {
+    "name": "Energie active soutirée Distributeur, index 01",
+    "unit": "Wh"
+  },
+  "EASD02": {
+    "name": "Energie active soutirée Distributeur, index 02",
+    "unit": "Wh"
+  },
+  "EASD03": {
+    "name": "Energie active soutirée Distributeur, index 03",
+    "unit": "Wh"
+  },
+  "EASD04": {
+    "name": "Energie active soutirée Distributeur, index 04",
+    "unit": "Wh"
+  },
+  "EAIT": {
+    "name": "Energie active injectée totale",
+    "unit": "Wh"
+  },
+  "ERQ1": {
+    "name": "Energie réactive Q1 totale",
+    "unit": "VArh"
+  },
+  "ERQ2": {
+    "name": "Energie réactive Q2 totale",
+    "unit": "VArh"
+  },
+  "ERQ3": {
+    "name": "Energie réactive Q3 totale",
+    "unit": "VArh"
+  },
+  "ERQ4": {
+    "name": "Energie réactive Q4 totale",
+    "unit": "VArh"
+  },
+  "IRMS1": {
+    "name": "Courant efficace, phase 1",
+    "unit": "A"
+  },
+  "IRMS2": {
+    "name": "Courant efficace, phase 2",
+    "unit": "A"
+  },
+  "IRMS3": {
+    "name": "Courant efficace, phase 3",
+    "unit": "A"
+  },
+  "URMS1": {
+    "name": "Tension efficace, phase 1",
+    "unit": "V"
+  },
+  "URMS2": {
+    "name": "Tension efficace, phase 2",
+    "unit": "V"
+  },
+  "URMS3": {
+    "name": "Tension efficace, phase 3",
+    "unit": "V"
+  },
+  "PREF": {
+    "name": "Puissance app. de référence",
+    "unit": "kVA"
+  },
+  "PCOUP": {
+    "name": "Puissance app. de coupure",
+    "unit": "kVA"
+  },
+  "SINSTS": {
+    "name": "Puissance app. Instantanée soutirée",
+    "unit": "VA"
+  },
+  "SINSTS1": {
+    "name": "Puissance app. Instantanée soutirée phase 1",
+    "unit": "VA"
+  },
+  "SINSTS2": {
+    "name": "Puissance app. Instantanée soutirée phase 2",
+    "unit": "VA"
+  },
+  "SINSTS3": {
+    "name": "Puissance app. Instantanée soutirée phase 3",
+    "unit": "VA"
+  },
+  "SMAXSN": {
+    "name": "Puissance app. max. soutirée n",
+    "unit": "VA"
+  },
+  "SMAXSN1": {
+    "name": "Puissance app. max. soutirée n phase 1",
+    "unit": "VA"
+  },
+  "SMAXSN2": {
+    "name": "Puissance app. max. soutirée n phase 2",
+    "unit": "VA"
+  },
+  "SMAXSN3": {
+    "name": "Puissance app. max. soutirée n phase 3",
+    "unit": "VA"
+  },
+  "SMAXSN-1": {
+    "name": "Puissance app. max. soutirée n-1",
+    "unit": "VA"
+  },
+  "SMAXSN1-1": {
+    "name": "Puissance app. max. soutirée n-1 phase 1",
+    "unit": "VA"
+  },
+  "SMAXSN2-1": {
+    "name": "Puissance app. max. soutirée n-1 phase 2",
+    "unit": "VA"
+  },
+  "SMAXSN1-3": {
+    "name": "Puissance app. max. soutirée n-1 phase 3",
+    "unit": "VA"
+  },
+  "SINSTI": {
+    "name": "Puissance app. Instantanée injectée",
+    "unit": "VA"
+  },
+  "SMAXIN": {
+    "name": "Puissance app. max. injectée n",
+    "unit": "VA"
+  },
+  "SMAXIN-1": {
+    "name": "Puissance app max. injectée n-1",
+    "unit": "VA"
+  },
+  "CCASN": {
+    "name": "Point n de la courbe de charge active soutirée",
+    "unit": "W"
+  },
+  "CCASN-1": {
+    "name": "Point n-1 de la courbe de charge active soutirée",
+    "unit": "W"
+  },
+  "CCAIN": {
+    "name": "Point n de la courbe de charge active injectée",
+    "unit": "W"
+  },
+  "CCAIN-1": {
+    "name": "Point n-1 de la courbe de charge active injectée",
+    "unit": "W"
+  },
+  "UMOY1": {
+    "name": "Tension moy. ph. 1",
+    "unit": "V"
+  },
+  "UMOY2": {
+    "name": "Tension moy. ph. 2",
+    "unit": "V"
+  },
+  "UMOY3": {
+    "name": "Tension moy. ph. 3",
+    "unit": "V"
+  },
+  "STGE": {
+    "name": "Registre de Statuts"
+  },
+  "DPM1": {
+    "name": "Début Pointe Mobile 1",
+    "unit": "datetime"
+  },
+  "FPM1": {
+    "name": "Fin Pointe Mobile 1",
+    "unit": "datetime"
+  },
+  "DPM2": {
+    "name": "Début Pointe Mobile 2",
+    "unit": "datetime"
+  },
+  "FPM2": {
+    "name": "Fin Pointe Mobile 2",
+    "unit": "datetime"
+  },
+  "DPM3": {
+    "name": "Début Pointe Mobile 3",
+    "unit": "datetime"
+  },
+  "FPM3": {
+    "name": "Fin Pointe Mobile 3",
+    "unit": "datetime"
+  },
+  "MSG1": {
+    "name": "Message court"
+  },
+  "MSG2": {
+    "name": "Message Ultra court"
+  },
+  "PRM": {
+    "name": "Point Référence Mesure"
+  },
+  "RELAIS": {
+    "name": "Relais"
+  },
+  "NTARF": {
+    "name": "Numéro de l’index tarifaire en cours"
+  },
+  "NJOURF": {
+    "name": "Numéro du jour en cours calendrier fournisseur"
+  },
+  "NJOURF+1": {
+    "name": "Numéro du prochain jour calendrier fournisseur"
+  },
+  "PJOURF+1": {
+    "name": "Profil du prochain jour calendrier fournisseur"
+  },
+  "PPOINTE": {
+    "name": "Profil du prochain jour de pointe"
+  }
+}
