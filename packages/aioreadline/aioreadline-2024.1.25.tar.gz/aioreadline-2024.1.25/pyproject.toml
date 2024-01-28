@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aioreadline"
+version = "2024.01.25"
+authors = [
+  { name="Mario Kicherer", email="dev@kicherer.org" },
+]
+description = "async-compatible libreadline wrapper"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+keywords = ['readline', 'ctypes']
+license = {file = "LICENSE.txt"}
+
+[project.urls]
+Homepage = "https://github.com/anyc/aioreadline/"
+Issues = "https://github.com/anyc/aioreadline/issues"
+
+[tool.setuptools.packages.find]
+include = ["aioreadline"]

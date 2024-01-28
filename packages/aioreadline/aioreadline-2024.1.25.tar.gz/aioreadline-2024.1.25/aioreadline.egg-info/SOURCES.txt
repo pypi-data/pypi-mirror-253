@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+aioreadline/__init__.py
+aioreadline/aioreadline.py
+aioreadline.egg-info/PKG-INFO
+aioreadline.egg-info/SOURCES.txt
+aioreadline.egg-info/dependency_links.txt
+aioreadline.egg-info/top_level.txt
