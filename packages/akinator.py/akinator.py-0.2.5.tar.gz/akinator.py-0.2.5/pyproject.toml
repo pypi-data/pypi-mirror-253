@@ -1,0 +1,27 @@
+[project]
+name = "akinator.py"
+authors = [
+    {name = "Tom the Bomb"}
+]
+version = "0.2.5"
+license = { file = "LICENSE" }
+description = "Python bindings for akinator-rs"
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.urls]
+documentation = "https://akinatorpy.readthedocs.io/en/latest/"
+homepage = "https://github.com/Tom-the-Bomb/akinator.py"
+repository = "https://github.com/Tom-the-Bomb/akinator.py"
+
+[project.optional-dependencies]
+docs = [
+    "sphinx",
+    "furo",
+    "sphinxext-opengraph",
+    "sphinx-copybutton"
+]
+
+[build-system]
+requires = ["maturin>=0.13,<0.14"]
+build-backend = "maturin"

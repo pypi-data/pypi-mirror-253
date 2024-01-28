@@ -1,0 +1,34 @@
+[package]
+name = "akinator-py"
+authors = ["Tom-the-Bomb"]
+version = "0.2.5"
+edition = "2021"
+license = "MIT"
+readme = "README.md"
+description = "Python bindings for akinator-rs"
+documentation = "https://akinatorpy.readthedocs.io/en/latest/"
+repository = "https://github.com/Tom-the-Bomb/akinator.py"
+homepage = "https://github.com/Tom-the-Bomb/akinator.py"
+keywords = [
+    "akinator",
+    "python",
+    "async",
+    "game",
+    "pyo3",
+]
+categories = [
+    "asynchronous",
+    "api-bindings",
+    "games",
+]
+
+[lib]
+name = "akinator"
+crate-type = ["cdylib"]
+
+[dependencies]
+lazy_static = "1.4"
+pyo3-asyncio = { version = "0.16", features = ["tokio-runtime"] }
+akinator-rs = { git = "https://github.com/Tom-the-Bomb/akinator-rs" }
+tokio = { version = "1.20", features = ["sync", "rt", "rt-multi-thread"] }
+pyo3 = { version = "0.16", features = ["extension-module", "abi3-py37"] }
