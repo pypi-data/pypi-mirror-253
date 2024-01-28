@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mongodbConnector_pZero.egg-info/PKG-INFO
+src/mongodbConnector_pZero.egg-info/SOURCES.txt
+src/mongodbConnector_pZero.egg-info/dependency_links.txt
+src/mongodbConnector_pZero.egg-info/requires.txt
+src/mongodbConnector_pZero.egg-info/top_level.txt
+src/mongodb_connect/__init__.py
+src/mongodb_connect/mongo_crud.py
+src/pipeline/__init__.py
+src/pipeline/predicition_pipeline.py
+src/pipeline/training_pipeline.py
+src/utils/__init__.py
+src/utils/utils.py
