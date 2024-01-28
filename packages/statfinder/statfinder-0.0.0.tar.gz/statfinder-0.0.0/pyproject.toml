@@ -1,0 +1,7 @@
+[project]
+name = "statfinder"
+authors = [
+    {name = "Ruben Selander", email = "ruben.selander@nordicintel.com"},
+]
+version = "0.0.0"
+description = "Coming soon"

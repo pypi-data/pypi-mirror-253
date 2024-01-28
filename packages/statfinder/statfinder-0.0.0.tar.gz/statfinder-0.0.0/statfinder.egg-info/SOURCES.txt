@@ -1,0 +1,6 @@
+pyproject.toml
+statfinder/__init__.py
+statfinder.egg-info/PKG-INFO
+statfinder.egg-info/SOURCES.txt
+statfinder.egg-info/dependency_links.txt
+statfinder.egg-info/top_level.txt
