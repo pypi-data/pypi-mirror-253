@@ -1,0 +1,20 @@
+####
+# Optional meta parameters for configuring the gamma-config tool itself. This file must
+# be named 'XX-meta.yaml'.
+#
+# The configuration here is loaded *and evaluated* in isolation from other configuration
+# files, so you're not able to use expressions that references other configs here or
+# access those values in the config object.
+####
+
+# Extra folders to load. By default we include a relative folders dynamically set
+# by the 'ENVIRONMENT' environment variable. You can specify multiple folders
+# by separating them via space.
+include_folders: !expr env.get('ENVIRONMENT', '').strip().split()
+
+# Custom Jinja2 environment provider
+# j2_env: my_app.my_module:my_env_func
+
+# Accessing config entries via dot (.) is deprecated, but you can enable it
+# by setting the below to True.
+__enable_dot_access__: False
