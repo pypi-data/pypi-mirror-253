@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "shazamio_core"
+version = "0.1.3"
+description = ""
+authors = ["dotX12 <dev@shitposting.team>"]
+readme = "README.md"
+packages = [{include = "shazamio_core"}]
+
+
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "shazamio_core"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
