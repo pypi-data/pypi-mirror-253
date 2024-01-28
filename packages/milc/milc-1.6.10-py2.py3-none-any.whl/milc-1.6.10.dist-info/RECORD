@@ -1,0 +1,17 @@
+milc/__init__.py,sha256=XkFN57v3Y5heuaqVXS0cdvzXKszgKDUXX217hSMfaFU,2135
+milc/_in_argv.py,sha256=WbNfznFX_mKGZUzez9WqwVce5-c9dicdocjxLDWWeJM,670
+milc/_sparkline.py,sha256=UZh46repL1kt2MOyUwQg_5SwyPdUUG43VIIJbw1pcwE,4566
+milc/ansi.py,sha256=5i5h2gh4vX6IWYms-smUA97yV6rOLc775lfNA28edLw,1909
+milc/attrdict.py,sha256=EoISzQ1RnbR2PAXcEUQt9yA4A_LZUziKMZvyLEKes38,1382
+milc/configuration.py,sha256=9boCpKqN3O04gshfm660KxTQr6hoGyOJHnuWbAviOIQ,4870
+milc/emoji.py,sha256=PzddqN6uixYFMoGGkFm1C40_O4uQ6SP92gggnJeSLXs,822
+milc/milc.py,sha256=-m9Uso1qU7baTsT-oz0C9FkW0CEvLyC4A9_-KbcSMXU,30364
+milc/questions.py,sha256=pZ1XuzccRiUZuKnCtGa3--_Vpjes8AHVVE74VfhmVVg,8015
+milc/subcommand/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+milc/subcommand/config.py,sha256=YVjAmZKj4ZSsc7gVak-KMO6NbB0mF0wveZd-kIPCkW8,4152
+milc-1.6.10.data/scripts/milc-color,sha256=859gUOgUdQtv7cSrVxWiq7BngqcdSB_sqgTJA7UiTDo,1320
+milc-1.6.10.dist-info/LICENSE,sha256=MYt12Kg_MyOYTKkWzbsDfwkS89AYEE4s89NOGS-wLHI,1251
+milc-1.6.10.dist-info/METADATA,sha256=ZsVhrx6aBcVCjqlNTnI_2PMTiNdB14AI5IY_IV2ixJA,8260
+milc-1.6.10.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+milc-1.6.10.dist-info/top_level.txt,sha256=6ytiTn9G0uEeDegAdyt1YDNtNtYW4SnYmL8rkiZENUs,5
+milc-1.6.10.dist-info/RECORD,,
