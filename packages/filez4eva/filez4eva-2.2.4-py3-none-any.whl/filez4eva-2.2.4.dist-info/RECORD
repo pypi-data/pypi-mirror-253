@@ -1,0 +1,10 @@
+filez4eva/__init__.py,sha256=bgNjGcMxwjv3j85icb7SpZd39qnTLXSUIDfWXbFn9Y4,168
+filez4eva/__main__.py,sha256=e1F-ODsUw9uMoGeGSjwpYdui948efsHPRTIIwNxKMi8,48
+filez4eva/command/__init__.py,sha256=p1eg-A3lzX2xq7dDnBSha_ZgHeEuwJeM_wnFLybgNAU,237
+filez4eva/command/scan_command.py,sha256=uxxaqk_4zc7f_PnDSRw_7NJbT460X1tkg2CoeQjE574,595
+filez4eva/directory_scanner.py,sha256=WcEKZX6jzL-j7qtnSRGShTfIj8TG6X2WCxuz6TmvEIE,730
+filez4eva/file_mover.py,sha256=o6ocbcjRlYq5zUQY7lbgVxnsg68yNeSlyTKoub4IARI,2411
+filez4eva-2.2.4.dist-info/METADATA,sha256=tLglLK_RHtMPe1qeXS0Mc6B8oEtnNLYGOyGW-sSlaHA,2148
+filez4eva-2.2.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+filez4eva-2.2.4.dist-info/entry_points.txt,sha256=MjPm36NJHBmp8SzBcn2Q6Aby-uoGyXZi_QU-j7Grk-I,57
+filez4eva-2.2.4.dist-info/RECORD,,
