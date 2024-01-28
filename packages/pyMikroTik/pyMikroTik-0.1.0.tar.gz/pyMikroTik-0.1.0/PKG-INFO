@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyMikroTik
+Version: 0.1.0
+Summary: pyMikroTik is a powerful tool for interacting with MikroTik routers
+Author: fialkofskiy
+Author-email: fialkofskiy@gmail.com
+
+pyMikroTik is a powerful tool for interacting with MikroTik routers, 
+providing convenient and flexible device management through SSH connections. 
+Developed in Python, the library offers a straightforward interface for performing various operations, 
+including parameter configuration, monitoring, and task automation.
