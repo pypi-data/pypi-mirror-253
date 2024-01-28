@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+iteriotools/__init__.py
+iteriotools.egg-info/PKG-INFO
+iteriotools.egg-info/SOURCES.txt
+iteriotools.egg-info/dependency_links.txt
+iteriotools.egg-info/requires.txt
+iteriotools.egg-info/top_level.txt
