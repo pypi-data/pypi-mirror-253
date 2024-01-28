@@ -1,0 +1,11 @@
+logus/__init__.py,sha256=Qk-5tnrR_vtGSjLxTDeeDZAfAQJqfrOBvobc85uOiHk,57
+logus/logcore.py,sha256=FoJzaY4un1Fa48wExjGGx9RWXZQKyX2fm8Qv5IQBgXM,2411
+logus/logparams.py,sha256=vC4oXAGbec_xdNv2oCTudzf29xFPYPvNWy-8CGrVOCg,676
+logus/logtypes.py,sha256=j2ucfolX_UrHsvAeWF5g3K_Q0CLysPEPgKVf8JXjqN4,138
+logus/settings.py,sha256=XV0kAToUl71CiLPa9jihzi6gVIIhXWzJVQwPnHWMliU,130
+logus/utils.py,sha256=ZRby6bJJpUj1sFI9DczFFXNjh2jvwd4hwfiYrz4-onE,3385
+logus-0.0.1.dist-info/LICENSE,sha256=Q3ww9AztOQJF0w_D5CdDrsCAKckFd0DXsttwvMiI_L0,1116
+logus-0.0.1.dist-info/METADATA,sha256=0dG6bTJrOmeAzAulBpkuSC-5l0JOgSsyWB1ucIiKoqs,3310
+logus-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+logus-0.0.1.dist-info/top_level.txt,sha256=RywPobhHSPFL19GKo5Bqe7aUs4HytfscVavap84XKfw,6
+logus-0.0.1.dist-info/RECORD,,
