@@ -1,0 +1,10 @@
+gradio_iframe/__init__.py,sha256=nEdg4FsyMa7jxriv0luiH0WsKvVZnl5fYZfUmf3TBTw,54
+gradio_iframe/iframe.py,sha256=JLIJ0Ocxp6542xFJi37JjtWXLzYgVuHpbfKD0n_RFec,3389
+gradio_iframe/iframe.pyi,sha256=P3YTgtHP53CIM5CTEG4AoPxeVpXA0uOyVdLpbmHRcDw,7597
+gradio_iframe/templates/component/index.js,sha256=yF1M-s_lgh7tEt5szhwLSVST2u2Yyjd6poorowybtsU,49353
+gradio_iframe/templates/component/style.css,sha256=Y_cSJb2mbMQHA3RFqe8CKtJv-0ZokXJft39-TD2qFwQ,12655
+gradio_iframe/templates/example/index.js,sha256=s5a0XLzQokCfftu65A-tHn05LaK6UZ5PvcRtc7OaPWU,1692
+gradio_iframe/templates/example/style.css,sha256=EzznrGq1I3G47_ePZ5nVZSyc72-R1WMc2EOS5Tj_tGE,47
+gradio_iframe-0.0.9.dist-info/METADATA,sha256=UN4_S3LLnZ5MNl8BDjOvMoMgS1hAbM8dh-tXF5Ufn6o,3136
+gradio_iframe-0.0.9.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+gradio_iframe-0.0.9.dist-info/RECORD,,
