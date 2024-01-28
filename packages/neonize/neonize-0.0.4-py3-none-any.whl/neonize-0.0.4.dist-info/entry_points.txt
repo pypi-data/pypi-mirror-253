@@ -1,0 +1,4 @@
+[console_scripts]
+build=neonize.goneonize.build:build
+docsbuild=docs.generate:build
+
