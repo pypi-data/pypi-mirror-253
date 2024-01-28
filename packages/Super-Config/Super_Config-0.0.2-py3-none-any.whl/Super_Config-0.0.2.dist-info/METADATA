@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: Super-Config
+Version: 0.0.2
+Summary: Config parsing on steroids.
+Home-page: https://github.com/ajkdrag/superconfig
+Author: ajkdrag
+Author-email: 
+Maintainer: ajkdrag
+Maintainer-email: 
+License: MIT license
+Keywords: superconfig
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pyyaml
+
+Super-Config
+###################################
+
+Config parsing on steroids.
+
+
+Quickstart
+==========
+
+Super-Config is available on PyPI and can be installed with `pip <https://pip.pypa.io>`_.
+
+.. code-block:: console
+
+    $ pip install superconfig
+
+After installing Super-Config you can use it like any other Python module.
+
+Here is a simple example:
+
+.. code-block:: python
+
+    import superconfig
+    # Fill this section in with the common use-case.
+
+The `API Reference <http://superconfig.readthedocs.io>`_ provides API-level documentation.
+
+
+.. _change-log-label:
+
+Change Log
+==========
+
+Version History
+---------------
+
+0.0.1
+    * Project created.
+
+
