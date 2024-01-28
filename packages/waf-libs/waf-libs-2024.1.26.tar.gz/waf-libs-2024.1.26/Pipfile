@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+argparse = "*"
+dnspython = "*"
+mysql-connector-python = ">=8.0"
+psycopg2 = "*"
+pyyaml = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"

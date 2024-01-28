@@ -1,0 +1,8 @@
+dnspython
+mysql-connector-python>=8.0
+psycopg
+pyyaml
+
+[test]
+unittest
+nose
