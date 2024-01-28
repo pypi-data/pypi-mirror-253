@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sunesh_tables1
+Version: v1.0.1
+Summary: Just for learning
+Home-page: https://github.com/SUNESHPANDITA/Learning_PYPI
+Author: Sunesh Pandita
+Author-email: a@a.com
+License: MIT
+Download-URL: https://github.com/SUNESHPANDITA/Learning_PYPI/archive/refs/tags/v1.0.1.tar.gz
+Description: UNKNOWN
+Keywords: Tables
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
