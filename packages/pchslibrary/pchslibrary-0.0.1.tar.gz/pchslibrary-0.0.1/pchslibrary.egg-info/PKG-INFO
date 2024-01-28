@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: pchslibrary
+Version: 0.0.1
+Summary: My library is about defs of my collection
+Author: PCH_125
+Author-email: phanchanhung12055@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: roman
+
+# The provided code contains a collection of functions related to mathematical calculations, string manipulation, and physical formulas. Here's a brief explanation of each function:
+
+1. kiem_tra_so_nguyen_to: Checks if a number is a prime number.
+2. tao_danh_sach_so_nguyen_to: Generates a list of prime numbers up to a given number.
+3. kiem_tra_so_emirp: Checks if a number is an emirp number (a prime number that becomes a different prime number when its digits are reversed).
+4. tao_danh_sach_so_emirp: Generates a list of emirp numbers up to a given number.
+5. so_Fibonacci: Calculates the nth Fibonacci number using memoization.
+6. tao_danh_sach_so_Fibonacci: Generates a list of Fibonacci numbers up to a given number.
+7. tong_uoc_so: Calculates the sum of divisors of a number.
+8. tong_chu_so: Calculates the sum of digits of a number.
+9. kiem_tra_so_hoan_thien: Checks if a number is a perfect number.
+10. tao_danh_sach_so_hoan_thien: Generates a list of perfect numbers up to a given number.
+11. kiem_tra_so_tu_man: Checks if a number is a narcissistic number (a number that is equal to the sum of its own digits each raised to the power of the number of digits).
+12. tao_danh_sach_so_tu_man: Generates a list of narcissistic numbers up to a given number.
+13. cap_so_hua_hon: Checks if a pair of numbers is an amicable pair.
+14. kiem_tra_so_hoan_hao: Checks if a number is a perfect number.
+15. tao_danh_sach_so_hoan_hao: Generates a list of perfect numbers up to a given number.
+16. kiem_tra_so_chinh_phuong: Checks if a number is a perfect square.
+17. tao_danh_sach_so_chinh_phuong: Generates a list of perfect square numbers up to a given number.
+18. cap_so_than_thiet: Checks if a pair of numbers is a friendly pair.
+19. kiem_tra_so_manh_me_1: Checks if a number is a powerful number (a number whose sum of digits is a prime number).
+20. kiem_tra_so_manh_me_2: Checks if a number is a powerful number based on a specific condition.
+21. tao_danh_sach_uoc_so: Generates a list of divisors of a number.
+22. uoc_chung_lon_nhat: Calculates the greatest common divisor of two numbers.
+23. uoc_chung_lon_nhat_cua_danh_sach: Calculates the greatest common divisor of a list of numbers.
+24. boi_chung_nho_nhat: Calculates the least common multiple of two numbers.
+25. boi_chung_nho_nhat_cua_danh_sach: Calculates the least common multiple of a list of numbers.
+26. tao_danh_sach_boi_so: Generates a list of multiples of a number up to 10 times.
+27. kiem_tra_so_song_to: Checks if a number is a prime number and the sum of its digits is also a prime number.
+28. tao_danh_sach_so_song_to: Generates a list of prime numbers that satisfy the given condition.
+29. ho_tro_phan_tich_so_mu: Simplifies the expression of a power.
+30. phan_tich_so_mu: Factorizes a number into its prime factors.
+31. thua_so_nguyen_to_day_du: Factorizes a number into its prime factors and provides additional information.
+32. thua_so_nguyen_to: Factorizes a number into its prime factors.
+33. uoc_chung_nguyen_to_2_so: Calculates the greatest common divisor of two numbers based on their prime factorization.
+34. giai_pt_bac_1v2_nc: Solves linear and quadratic equations using memoization.
+35. giai_phuong_trinh_bac_1: Solves a linear equation.
+36. giai_phuong_trinh_bac_2: Solves a quadratic equation.
+37. giai_phuong_trinh_bac_3: Solves a cubic equation.
+38. giai_phuong_trinh_bac_4: Solves a quartic equation.
+39. giai_phuong_trinh_bac_5: Solves a quintic equation.
+40. giai_phuong_trinh_bac_6: Solves a sextic equation.
+41. giai_phuong_trinh_bac_7: Solves a septic equation.
+42. giai_phuong_trinh_bac_8: Solves an octic equation.
+43. giai_phuong_trinh_bac_9: Solves a nonic equation.
+44. giai_phuong_trinh_bac_10: Solves a decic equation.
+45. danh_sach_khong_trung_lap: Removes duplicate elements from a list.
+46. ki_tu_khong_trung_lap: Removes duplicate characters from a string.
+47. trich_xuat_chu_so_tu_chuoi: Extracts digits from a string.
+48. trich_xuat_so_tu_chuoi: Extracts numbers from a string.
+49. trich_xuat_ki_tu: Extracts non-digit characters from a string.
+50. an_ki_tu: Hides characters in a string.
+51. trich_xuat_cac_so_tu_so: Extracts numbers from a string.
+52. can_bac: Calculates the nth root of a number.
+53. kiem_tra_so_nghich_the: Counts the number of inversions in a list.
+54. pythagore: Applies the Pythagorean theorem to calculate the missing side of a right-angled triangle.
+55. mp_tai_xuong: Simulates a download process.
+56. mp_tinh_toan: Simulates a calculation process.
+57. mp_loading: Simulates a loading process.
+58. mp_christmas_tree: Simulates a Christmas tree.
+59. tinh_toan_vat_ly_8: Performs calculations related to physics formulas.
+60. tinh_toan_tien_dien: Calculates electricity bills based on the difference between two meter readings.
+61. tong_chu_so_lon_nhat_bang_n: Finds the largest number with a specific sum of digits.
+62. chuyen_hoa_caesar: Encodes a string using the Caesar cipher.
+63. ma_hoa_caesar: Encodes a sequence of numbers using the Caesar cipher.
