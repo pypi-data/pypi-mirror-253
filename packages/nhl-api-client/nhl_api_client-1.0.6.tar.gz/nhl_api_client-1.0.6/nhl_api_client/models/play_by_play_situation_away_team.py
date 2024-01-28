@@ -1,0 +1,85 @@
+from typing import Any, Dict, Type, TypeVar
+
+from typing import List
+
+
+from attrs import define as _attrs_define
+from attrs import field as _attrs_field
+
+from ..types import UNSET, Unset
+
+from typing import cast, List
+from ..types import UNSET, Unset
+from typing import Union
+
+
+T = TypeVar("T", bound="PlayByPlaySituationAwayTeam")
+
+
+@_attrs_define
+class PlayByPlaySituationAwayTeam:
+    """
+    Attributes:
+        abbrev (Union[Unset, str]):
+        situation_descriptions (Union[Unset, List[str]]):
+        strength (Union[Unset, int]):
+    """
+
+    abbrev: Union[Unset, str] = UNSET
+    situation_descriptions: Union[Unset, List[str]] = UNSET
+    strength: Union[Unset, int] = UNSET
+    additional_properties: Dict[str, Any] = _attrs_field(init=False, factory=dict)
+
+    def to_dict(self) -> Dict[str, Any]:
+        abbrev = self.abbrev
+        situation_descriptions: Union[Unset, List[str]] = UNSET
+        if not isinstance(self.situation_descriptions, Unset):
+            situation_descriptions = self.situation_descriptions
+
+        strength = self.strength
+
+        field_dict: Dict[str, Any] = {}
+        field_dict.update(self.additional_properties)
+        field_dict.update({})
+        if abbrev is not UNSET:
+            field_dict["abbrev"] = abbrev
+        if situation_descriptions is not UNSET:
+            field_dict["situationDescriptions"] = situation_descriptions
+        if strength is not UNSET:
+            field_dict["strength"] = strength
+
+        return field_dict
+
+    @classmethod
+    def from_dict(cls: Type[T], src_dict: Dict[str, Any]) -> T:
+        d = src_dict.copy()
+        abbrev = d.pop("abbrev", UNSET)
+
+        situation_descriptions = cast(List[str], d.pop("situationDescriptions", UNSET))
+
+        strength = d.pop("strength", UNSET)
+
+        play_by_play_situation_away_team = cls(
+            abbrev=abbrev,
+            situation_descriptions=situation_descriptions,
+            strength=strength,
+        )
+
+        play_by_play_situation_away_team.additional_properties = d
+        return play_by_play_situation_away_team
+
+    @property
+    def additional_keys(self) -> List[str]:
+        return list(self.additional_properties.keys())
+
+    def __getitem__(self, key: str) -> Any:
+        return self.additional_properties[key]
+
+    def __setitem__(self, key: str, value: Any) -> None:
+        self.additional_properties[key] = value
+
+    def __delitem__(self, key: str) -> None:
+        del self.additional_properties[key]
+
+    def __contains__(self, key: str) -> bool:
+        return key in self.additional_properties
