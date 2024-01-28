@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rsgz"
+version = "0.0.19"
+authors = [
+  { name="rsgz", email="2966261184@qq.com"},
+]
+
+description = "在芒果公司期间开发的个人工具库，里面有常见的数据处理，字符串，列表，字典，图片，DNS,IP,文件处理,虾皮电商运费计算！等等"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+        "numpy>=1.21.6",
+        "ffmpy==0.3.0",
+        "dnspython==2.2.1",
+        "bs4==0.0.1",
+        "prettytable==3.5.0",
+    ]
+
+[project.urls]
+"Homepage" = "https://github.com/rsgz"

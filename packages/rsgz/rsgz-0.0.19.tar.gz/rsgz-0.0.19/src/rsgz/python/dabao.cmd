@@ -1,0 +1,2 @@
+python ./dabao.py
+pause
