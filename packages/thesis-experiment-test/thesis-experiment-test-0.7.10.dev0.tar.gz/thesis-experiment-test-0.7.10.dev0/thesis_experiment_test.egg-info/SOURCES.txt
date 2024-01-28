@@ -1,0 +1,11 @@
+README.md
+VERSION.txt
+pyproject.toml
+setup.cfg
+Experiment/Main.py
+Experiment/__init__.py
+thesis_experiment_test.egg-info/PKG-INFO
+thesis_experiment_test.egg-info/SOURCES.txt
+thesis_experiment_test.egg-info/dependency_links.txt
+thesis_experiment_test.egg-info/requires.txt
+thesis_experiment_test.egg-info/top_level.txt
