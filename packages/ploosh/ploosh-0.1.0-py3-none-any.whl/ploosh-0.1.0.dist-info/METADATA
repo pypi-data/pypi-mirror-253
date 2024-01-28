@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ploosh
+Version: 0.1.0
+License: Apache License 2.0
+Platform: Any
+Requires-Python: >=3.6
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: Pyjeb ==0.2.1
+Requires-Dist: pandas ==2.1.4
+Requires-Dist: openpyxl ==3.1.2
+Requires-Dist: sqlalchemy ==1.4.51
+Requires-Dist: pyodbc ==5.0.1
+Requires-Dist: pymysql ==1.1.0
+Requires-Dist: pg8000 ==1.30.3
+Requires-Dist: snowflake-sqlalchemy ==1.5.1
+Requires-Dist: databricks-sql-connector ==2.9.3
+Requires-Dist: sqlalchemy-bigquery ==1.9.0
+Requires-Dist: google-cloud-bigquery-storage ==2.24.0
+
+tests
