@@ -1,0 +1,6 @@
+pyproject.toml
+statchat/__init__.py
+statchat.egg-info/PKG-INFO
+statchat.egg-info/SOURCES.txt
+statchat.egg-info/dependency_links.txt
+statchat.egg-info/top_level.txt
