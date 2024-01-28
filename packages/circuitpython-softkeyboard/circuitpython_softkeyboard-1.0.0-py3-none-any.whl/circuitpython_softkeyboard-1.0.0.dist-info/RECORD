@@ -1,0 +1,11 @@
+softkeyboard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+softkeyboard/default_layout.json,sha256=_l0cwCB9UTBLrb-KpWKTVKlGAFBRWfuAWUkW5gyQj1c,3588
+softkeyboard/default_layout.json.license,sha256=A60EfiuCkmb-ZKZ3v2_8RzT0Ah2GLRSlQlz5libB1V0,93
+softkeyboard/mobile_layout.json,sha256=tygcPDM4PPN0X-1j-C2k34i0zovdsurJf-E7BC5ulWI,2100
+softkeyboard/mobile_layout.json.license,sha256=A60EfiuCkmb-ZKZ3v2_8RzT0Ah2GLRSlQlz5libB1V0,93
+softkeyboard/softkeyboard.py,sha256=mmJ6bmw5oBG6vnFhhTQuZn0KaJ1aKh2Y5fsJhtxwcnE,8331
+circuitpython_softkeyboard-1.0.0.dist-info/LICENSE,sha256=WXKGDMm6rG7GFbJjd5LUEssZrQNDkBPH3_eihx-1lrw,1086
+circuitpython_softkeyboard-1.0.0.dist-info/METADATA,sha256=O-q7noyK7e00AVWgIyVusmkKvSc4fgKDG1tdxcUmoMY,4150
+circuitpython_softkeyboard-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+circuitpython_softkeyboard-1.0.0.dist-info/top_level.txt,sha256=mYFR1KPwFK1V6JWWHN9BQZazAJ_JzXha9EjOFfp-iz8,13
+circuitpython_softkeyboard-1.0.0.dist-info/RECORD,,
