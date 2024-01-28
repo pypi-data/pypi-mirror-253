@@ -1,0 +1,3 @@
+[console_scripts]
+is-propchecker=is_propchecker.main:app
+
