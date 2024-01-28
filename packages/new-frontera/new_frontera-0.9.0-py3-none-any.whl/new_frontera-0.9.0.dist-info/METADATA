@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: new-frontera
+Version: 0.9.0
+Summary: A scalable frontier for web crawlers
+Home-page: https://github.com/ZeroCool940711/new-frontera
+Author: new_frontera developers
+Maintainer: Alejandro Gil
+License: BSD
+Keywords: crawler,frontier,scrapy,web,requests,new_frontera
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: six >=1.8.0
+Requires-Dist: w3lib >=1.15.0
+Requires-Dist: cityhash >=0.1.7
+Provides-Extra: distributed
+Requires-Dist: Twisted ; extra == 'distributed'
+Provides-Extra: graphs
+Requires-Dist: pyparsing ==1.5.7 ; extra == 'graphs'
+Requires-Dist: pydot ==1.0.28 ; extra == 'graphs'
+Requires-Dist: SQLAlchemy ; extra == 'graphs'
+Provides-Extra: hbase
+Requires-Dist: happybase >=1.0.0 ; extra == 'hbase'
+Requires-Dist: thriftpy2 ; extra == 'hbase'
+Provides-Extra: kafka
+Requires-Dist: kafka-python >=1.4.0 ; extra == 'kafka'
+Provides-Extra: logging
+Requires-Dist: colorlog >=2.4.0 ; extra == 'logging'
+Requires-Dist: python-json-logger >=0.1.5 ; extra == 'logging'
+Provides-Extra: redis
+Requires-Dist: redis >=2.10.5 ; extra == 'redis'
+Requires-Dist: hiredis >=0.2 ; extra == 'redis'
+Provides-Extra: s3
+Requires-Dist: boto3 ; extra == 's3'
+Provides-Extra: sql
+Requires-Dist: SQLAlchemy >=1.0.0 ; extra == 'sql'
+Requires-Dist: cachetools ; extra == 'sql'
+Provides-Extra: strategies
+Requires-Dist: beautifulsoup4 ; extra == 'strategies'
+Requires-Dist: publicsuffix ; extra == 'strategies'
+Provides-Extra: tldextract
+Requires-Dist: tldextract >=1.5.1 ; extra == 'tldextract'
+Provides-Extra: zeromq
+Requires-Dist: pyzmq ; extra == 'zeromq'
+Requires-Dist: msgpack-python >=0.4 ; extra == 'zeromq'
+
+# new_frontera
+
+[![pypi](https://img.shields.io/pypi/v/new_frontera)](https://pypi.org/project/new_frontera/)
+[![python versions](https://img.shields.io/pypi/pyversions/new_frontera.svg)](https://pypi.org/project/new_frontera/)
+[![Build Status](https://app.travis-ci.com/ZeroCool940711/new-new_frontera.svg?branch=master)](https://app.travis-ci.com/ZeroCool940711/new-new_frontera)
+[![codecov](https://codecov.io/gh/scrapinghub/new_frontera/branch/master/graph/badge.svg)](https://codecov.io/gh/scrapinghub/new_frontera)
+
+## Overview
+
+new_frontera is a web crawling framework consisting of [crawl frontier](http://nlp.stanford.edu/IR-book/html/htmledition/the-url-frontier-1.html), and distribution/scaling primitives, allowing to build a large scale online web crawler. 
+
+new_frontera takes care of the logic and policies to follow during the crawl. It stores and prioritizes links extracted by 
+the crawler to decide which pages to visit next, and capable of doing it in distributed manner.
+
+## Main features
+
+- Online operation: small requests batches, with parsing done right after fetch.
+- Pluggable backend architecture: low-level backend access logic is separated from crawling strategy.
+- Two run modes: single process and distributed.
+- Built-in SqlAlchemy, Redis and HBase backends.
+- Built-in Apache Kafka and ZeroMQ message buses.
+- Built-in crawling strategies: breadth-first, depth-first, Discovery (with support of robots.txt and sitemaps).
+- Battle tested: our biggest deployment is 60 spiders/strategy workers delivering 50-60M of documents daily for 45 days, without downtime,
+- Transparent data flow, allowing to integrate custom components easily using Kafka.
+- Message bus abstraction, providing a way to implement your own transport (ZeroMQ and Kafka are available out of the box).
+- Optional use of Scrapy for fetching and parsing.
+- 3-clause BSD license, allowing to use in any commercial product.
+- Python 3 support.
+
+## Installation
+
+Development version:
+
+```bash
+$ pip install git+https://github.com/ZeroCool940711/new_frontera.git
+```
+
+or from PyPi:
+
+```bash
+$ pip install new-frontera
+```
+
+## Documentation
+
+- [Main documentation at RTD](http://frontera.readthedocs.org/)
+- [EuroPython 2015 slides](http://www.slideshare.net/sixtyone/fronteraopen-source-large-scale-web-crawling-framework)
+- [BigDataSpain 2015 slides](https://speakerdeck.com/scrapinghub/frontera-open-source-large-scale-web-crawling-framework)
+
+## Community
+
+Join our Google group at https://groups.google.com/a/scrapinghub.com/forum/#!forum/frontera or check GitHub issues and 
+pull requests.
