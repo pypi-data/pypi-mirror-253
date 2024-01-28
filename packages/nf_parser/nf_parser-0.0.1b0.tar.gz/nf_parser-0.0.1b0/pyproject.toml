@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "nf_parser"
+version = "0.0.1-beta"
+description = "parse and inspect nextflow DSL scripts to pythonic structures and more. "
+authors = ["obonyojimmy <cliffjimmy27@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/obonyojimmy/nf-parser"
+repository = "https://github.com/obonyojimmy/nf-parser"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^1.10.2"
+lark = "1.1.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
