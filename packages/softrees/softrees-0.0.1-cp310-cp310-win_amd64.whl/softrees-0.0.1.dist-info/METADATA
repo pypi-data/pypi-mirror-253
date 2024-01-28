@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: softrees
+Version: 0.0.1
+Summary: Module that implement a soft tree ensemble layer
+Author: Martin de La Gorce
+Author-email: martin.delagorce@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: numba
+Requires-Dist: tqdm
+
+# Softrees
+
+Python implementation of differentiable soft oblique regression and classification tree ensembles trainable through greedy construction or gradient descent for end-to-end learning. The method is implemented in pure python with Numba JIT acceleration and as a result is relatively easy to experiment with. The differentiable tree ensemble can be used as a pytorch layer in a larger DNN.
+The tree ensemble can be evaluated more efficiently without Numba bu calling C implementation with avx2 acceleration. 
+
+![Python package](https://github.com/martinResearch/softrees/workflows/Python%20package/badge.svg)
+
+## Installation
+Run 
+```
+pip install git+https://github.com/martinResearch/softrees
+```
+
+## Example
+
+Please look at the test [here](tests/test_soft_tree_ensemble_mnist.py) for a simple example using the MNIST dataset.
+
+## Method 
+The method implemented here is very similar to the method described in [Hazimeh2020] and also uses a finite support sigmoid function in order to avoid exponential complexity w.r.t the tree depth through conditional computation. This implementation extends the method in different directions:
+
+* additional loss that is a smooth upper bound of the number of activated leaves. This encourages sharper soft decisions which help lowering the run-time cost of evaluating soft deep trees.
+* additional tree balancing losses.
+* axis-aligned splits (axis direction randomly chosen at initialization)
+* oblique splits using all the features or a sparse subset randomly chosen at initialization
+* linear leave models using all the features or a sparse subset randomly chosen at initialization
+* possibility to initialize the soft tree ensemble using a greedy construction method that uses soft decisions at each node (implemented for regression only).
+* implementation in numba that exploits conditional computation 
+* vectorized implementation in pytorch that does not exploit conditional computation and thus has a cost that is exponential with the tree depth. Similar to [FASTEL](https://github.com/ShibalIbrahim/FASTEL).
+
+## Design
+We use a *Learner-Model* abstraction [Guillame-Bert2022] where the class used to train the model is a different class from the one used to evaluate it. In contrast scikit-learn uses an *Estimator-Predictor* paradigm where both the training and inference logic are encoded into the same object using the *model.fit* and *model.predict* methods. The advantage of the  *Learner-Model* abstraction is that one does not need to import the training code with potentially large dependencies like pytorch in order to evaluate the model. 
+
+## Potential improvements
+* add the option to use low rank matrices for the leaves linear models
+* add a term in the objective function that tries to keep the set of samples reaching a node in the tree compact or isotropic (minimize variance). This is difficult to implement efficiently as we need to compute a mean over the samples.
+* have an initialization strategy that consists in splitting along the largest principal axis on samples (cannot be used if the tree is a layer).
+* add the option to constrain the leaves features indices to be the union of the parent split nodes features indices assuming that a good features for the split is going to be good features for children leaves linear models.
+* implement oblivious trees.
+* implement tree balancing loss from [Frosst2017]. Note that this loss makes sens only for large sample batches.
+* add the option to have regression coefficients defined not only for leaves but also for all the other nodes of the trees and penalize non zero regression coefficients on all nodes to get some hierarchical smoothing and potentially pruning in a way somewhat similar to [Cai2018]. 
+* add a sparsity inducing loss on oblique splits coefficients to reduce the number of selected features.
+
+
+## Alternatives
+url|Method|Classi-fication|Regre-ssion|Oblique|Axis-Aligned|Linear leaves|Ens-emble|License
+---|------|--------------|----------|-------|------------|---------|---|-------
+[KDercksen/pyblique](https://github.com/KDercksen/pyblique)| OC1 [Murthy1993]| Yes| No | Yes |No | Yes| No | None
+[Bouty92/ModelTree](https://github.com/Bouty92/ModelTree)||No|Yes|Yes| Yes| Yes|No| GPL
+[python-m5p](https://github.com/smarie/python-m5p)|M5 Algorithm [Quinlan1992]|No|Yes|Yes|Yes|Yes|No| BSD-3C
+[ankonzoid/model_tree](https://github.com/ankonzoid/LearningX/tree/master/advanced_ML/model_tree)||Yes|Yes|No| Yes|Yes| No|MIT
+[cerlymarco/linear-tree](https://github.com/cerlymarco/linear-tree)||No|Yes|No|Yes |Yes|Yes| MIT
+[SPORF](https://github.com/neurodata/SPORF)|[Tomita2016]| Yes|No|Yes|No|No|Yes| None
+[XGBoost](https://xgboost.readthedocs.io/en/stable/python/python_api.html#module-xgboost.sklearn)|[Chen2016]| Yes| Yes| No|Yes| ? |Yes| Apache License 2.0 
+[FASTEL](https://github.com/ShibalIbrahim/FASTEL)|[Ibrahim2021]| Yes| yes| Yes| No | No| Yes| MIT
+## References
+[Marton2023] *Learning Axis-Aligned Decision Trees with Gradient Descent*. Sascha Marton, Christian Bartelt, Stefan LÃ¼dtke. [draft paper](https://openreview.net/pdf?id=gwizseh-Iam).
+
+[Ibrahim2021] *Flexible Modeling and Multitask Learning using Differentiable Tree Ensembles*. Shibal Ibrahim, Hussein Hazimeh Rahul Mazumder. [draft paper](https://arxiv.org/pdf/2205.09717.pdf)
+
+[Umlauf2022] *Distributional Adaptive Soft Regression Trees*. Nikolaus Umlauf, Nadja Klein. [paper](https://arxiv.org/pdf/2210.10389.pdf) [code](https://github.com/freezenik/softtrees)
+
+[Karthikeyan2022] *Learning Accurate Decision Trees with Bandit Feedback via Quantized Gradient Descent*. Ajaykrishna Karthikeyan, Naman Jain, Nagarajan Natarajan, Prateek Jain. TMLR 2022. [paper](https://arxiv.org/pdf/2102.07567v2.pdf) [code](https://github.com/microsoft/DGT).
+
+[Agarwal2022] *Hierarchical Shrinkage: improving the accuracy and interpretability of tree-based methods*
+Abhineet Agarwal, Yan Shuo Tan, Omer Ronen, Chandan Singh, Bin Yu. 2022. [paper](https://arxiv.org/abs/2202.00858)
+
+[Guillame-Bert2022] *Yggdrasil Decision Forests: A Fast and Extensible Decision Forests Library*. Mathieu Guillame-Bert, Sebastian Bruch, Richard Stotz, Jan Pfeifer. [paper](https://arxiv.org/abs/2212.02934)
+
+[Chang2021] *NODE-GAM: Neural Generalized Additive Model for Interpretable Deep Learning*. Chun-Hao Chang, Rich Caruana, Anna Goldenberg. International Conference on Learning Representations. 2021. [paper](https://arxiv.org/abs/2106.01613v3) [code](https://github.com/zzzace2000/nodegam).
+
+[Carrizosa2020] *Sparsity in optimal randomized classification trees*. Rafael Blanquero, Emilio Carrizosa, Cristina Molero-RÃ­o, Dolores Romero Morales. European Journal of Operational Research 2020. [paper](https://arxiv.org/abs/2002.09191).
+
+[Hazimeh2020] *The Tree Ensemble Layer: Differentiability meets Conditional Computation*. Hussein Hazimeh, Natalia Ponomareva, Petros Mol, Zhenyu Tan, Rahul Mazumder ICML 2020. [paper](http://proceedings.mlr.press/v119/hazimeh20a/hazimeh20a.pdf) [code](https://github.com/google-research/google-research/tree/master/tf_trees).
+
+[Hehn2020] *End-to-End Learning of Decision Trees and Forests*. Thomas M. Hehn, Julian F. P. Kooij & Fred A. Hamprecht. IJCV 2020. [paper](
+https://link.springer.com/article/10.1007/s11263-019-01237-6). [Code](https://github.com/tomsal/endtoenddecisiontrees)
+
+[Hehn2019] *End-to-end Learning of Deterministic Decision Trees*. Thomas Hehn and Fred Hamprecht. GCPR 2018
+[paper](https://arxiv.org/abs/1712.02743)
+
+[Chen2016] *XGBoost: A Scalable Tree Boosting System*. Tianqi Chen, Carlos Guestrin [paper](https://arxiv.org/abs/1603.02754)
+
+[Tomita2016] *Sparse Projection Oblique Randomer Forests*. Tyler M. Tomita, James Browne, Cencheng Shen, Jaewon Chung, Jesse L. Patsolic, Benjamin Falk, Jason Yim, Carey E. Priebe, Randal Burns, Mauro Maggioni, Joshua T. Vogelstein. Journal of Machine Learninig Research, 2020. [paper](https://arxiv.org/abs/1506.03410)
+
+[Cai2018] *A Tree-Based Multiscale Regression Method*. Haiyan Cai and Qingtang Jiang. Front. Appl. Math. Stat. 2018. [paper](https://www.frontiersin.org/articles/10.3389/fams.2018.00063/full)
+
+[Popov2019] *Neural Oblivious Decision Ensembles for Deep Learning on Tabular Data*. Sergei Popov, Stanislav Morozov and Artem Babenko. International Conference on Learning Representations. 2019. [paper](https://arxiv.org/abs/1909.06312) [code](https://github.com/Qwicen/node)
+
+[Yang2019] *Weighted oblique decision trees*. Bin-Bin Yang, Song-Qing Shen, Wei Gao. 2019
+Nanjing University [paper](https://ojs.aaai.org/index.php/AAAI/article/view/4505)
+
+[Frosst2017] Distilling a Neural Network Into a Soft Decision Tree. [paper](https://arxiv.org/abs/1711.09784). [pytorch implementation](https://github.com/xuyxu/Soft-Decision-Tree/blob/master/SDT.py)(single tree).
+
+[Wickramarachchi2015] *HHCART: An Oblique Decision Tree*.D. C. Wickramarachchi, B. L. Robertson, M. Reale, C. J. Price, J. Brown. [paper](https://arxiv.org/abs/1504.03415)
+
+[Zeileis2008] *Model-Based Recursive Partitioning*. Zeileis A, Hothorn T, Hornik K.  Journal of Computational and Graphical Statistics 2008
+
+[Wang1997] *Induction of model trees for predicting continuous classes*. Y. Wang and I. H. Witten. ECML 1997
+
+[Murthy1993] *OC1: A Randomized Algorithm for Building Oblique Decision Trees*. Sreerama Murthy, Simon Kasif, Steven Salzberg, and Richard Beigel. [paper](https://cis.temple.edu/~beigel/papers/mksb-OC1-aaai.html)
+    
+[Quinlan1992] *Learning with Continuous Classes*. Ross J. Quinlan. Australian Joint Conference on Artificial Intelligence 1992 [paper](https://sci2s.ugr.es/keel/pdf/algorithm/congreso/1992-Quinlan-AI.pdf)
+
+

@@ -1,0 +1,8 @@
+softrees/__init__.py,sha256=3VKvHn97_wnuLdx1rON0pMURa0uZtptfQ5gJLSRAXKE,628
+softrees/runtime/soft_oblique_tree_ensemble_c.cp310-win_amd64.pyd,sha256=i8yM5TAhB21cVk1_5dlapxfI77jpaX0vIlsCH2XcMlE,165888
+softrees/runtime/soft_oblique_tree_ensemble_cython.cp310-win_amd64.pyd,sha256=n8TYL0AEmlG2-khjOrWWDLuTVtP4_genzclQmwhgO9I,161280
+softrees-0.0.1.dist-info/LICENSE,sha256=V8v_82y9NmA8mg1iWFMTnGVplayxIIPlkzQzvEQkOUQ,1096
+softrees-0.0.1.dist-info/METADATA,sha256=dvuo3XzC5J08uyaVbtM7pQA7Fflz9ok_ireGntxSHSw,10058
+softrees-0.0.1.dist-info/WHEEL,sha256=5JPYeYl5ZdvdSkrGS4u21mmpPzpFx42qrXOSIgWf4pg,102
+softrees-0.0.1.dist-info/top_level.txt,sha256=RnuG-HrJzVcvhAsWhUNHzU_QjyDE8lIjXyaa4gGaZzg,9
+softrees-0.0.1.dist-info/RECORD,,
