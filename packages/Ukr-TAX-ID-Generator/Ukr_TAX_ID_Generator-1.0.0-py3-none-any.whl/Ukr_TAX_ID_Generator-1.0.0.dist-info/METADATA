@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Ukr-TAX-ID-Generator
+Version: 1.0.0
+Summary: This package generates Ukraine TAX ID by user birthday
+Home-page: https://github.com/lozik4/UkrTaxIdGenerator
+Author: Serhii Lozytskyi
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE
+
+# UkrTaxIdGenerator
+This module help generate fake Ukrainian Tax Id number
+
+* birthday => **"YYYY-MM-DD"**
+* gender => **0 - Female, or 1 - Male**
+
+
+`tax_id = TaxIdGenerator('1995-06-22', 0).get_tax_id()`
