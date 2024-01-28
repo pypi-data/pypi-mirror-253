@@ -1,0 +1,9 @@
+aio_kavenegar/__init__.py,sha256=r-9GFYP6GtImwVVhYYPyWL3CwsX9ZOcY3CVMZINnzoQ,229
+aio_kavenegar/client.py,sha256=dvt8QEn5v_aZTBum2kkJ4bTU_qWbtcZ-SppjZb6r-2k,4553
+aio_kavenegar/exceptions.py,sha256=DtKfJAehgPM5LoNMXCBHY4zQcIPwEiX6xDTPu27Nm3E,83
+aio_kavenegar/types.py,sha256=Dz43AWbjrAgNvG7xnm9pRCHNXyyNu95WjuoipDfJozw,219
+aio_kavenegar-2.0.0.dist-info/LICENSE.md,sha256=LBAGcFiACZZJZrfiHIkZJCD6KMRe1EE5ohOjN1JEdSQ,1092
+aio_kavenegar-2.0.0.dist-info/METADATA,sha256=hWkp9ij7nntAYpEgjG6vg3Ws90YzLkkdZFBWtyFyz98,720
+aio_kavenegar-2.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+aio_kavenegar-2.0.0.dist-info/top_level.txt,sha256=zcHKiyyqyj5TsVqdSaYyBbTmDv4W2vdAstwuFkPa4_Q,14
+aio_kavenegar-2.0.0.dist-info/RECORD,,
