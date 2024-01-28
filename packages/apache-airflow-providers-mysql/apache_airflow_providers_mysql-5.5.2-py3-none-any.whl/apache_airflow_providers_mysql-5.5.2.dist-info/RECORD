@@ -1,0 +1,16 @@
+airflow/providers/mysql/LICENSE,sha256=ywUBpKZc7Jb96rVt5I3IDbg7dIJAbUSHkuoDcF3jbH4,13569
+airflow/providers/mysql/__init__.py,sha256=A3nw7rd0_tvolTfM6b6_f6C9GtM8AuHwsXqdGKEKofY,1580
+airflow/providers/mysql/get_provider_info.py,sha256=lIIJskLs55UgDZvmGXwAczq_VLqXmKEIhUoQpLUO8fY,3988
+airflow/providers/mysql/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/mysql/hooks/mysql.py,sha256=t2EkCHr_Prv8yKPF1XKOFnbpsTKMkMSkqlHrZkRtYxw,13217
+airflow/providers/mysql/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/mysql/operators/mysql.py,sha256=Vuct5Aa5mf51HH5r7IFC42OR3gtlLY5gNcDBu_gbAFI,2987
+airflow/providers/mysql/transfers/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/mysql/transfers/presto_to_mysql.py,sha256=gGtZIGXLpY2jP8o3xwZ5u8khqcQK3cVSa9P-aev7Qiw,3269
+airflow/providers/mysql/transfers/s3_to_mysql.py,sha256=j2t2pIZkWnPbNiBbhpxTfKXIUu7TnTe66kT3K3OotRw,3870
+airflow/providers/mysql/transfers/trino_to_mysql.py,sha256=wiiuilxSHchJD0W2K838UHH5iUs-R5HNc0zyRDOZDRs,3251
+airflow/providers/mysql/transfers/vertica_to_mysql.py,sha256=NiIFMv0zy4M9Ynrs4InG9nqp6lyvmgDlz7_iDJWxQEI,6308
+apache_airflow_providers_mysql-5.5.2.dist-info/entry_points.txt,sha256=kIbWluJZ1LX9jo9pLkqbnu6DUgYpoGKXzmSvjT5czKM,101
+apache_airflow_providers_mysql-5.5.2.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+apache_airflow_providers_mysql-5.5.2.dist-info/METADATA,sha256=ekUnNTTSwuytO0JcbvakV1h1KI2oymdoA7L0n9Hvvc4,7270
+apache_airflow_providers_mysql-5.5.2.dist-info/RECORD,,
