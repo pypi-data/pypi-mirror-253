@@ -1,0 +1,7 @@
+README.md
+setup.py
+EpicGames_FreeGames_Bot.egg-info/PKG-INFO
+EpicGames_FreeGames_Bot.egg-info/SOURCES.txt
+EpicGames_FreeGames_Bot.egg-info/dependency_links.txt
+EpicGames_FreeGames_Bot.egg-info/requires.txt
+EpicGames_FreeGames_Bot.egg-info/top_level.txt
