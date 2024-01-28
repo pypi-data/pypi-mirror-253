@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: wellsantos-tools
+Version: 1.0.1
+Summary: Simple wrappers for Dependency Injection and Hierarchical Settings
+Home-page: https://github.com/wellts/wellsantos-tools
+Author: Wellington Tadeu dos Santos
+Author-email: wellsantos@wellsantos.com
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic>=2.5.2
+Requires-Dist: pydantic_settings>=2.1.0
+
+
+### wellsantos-tools
+
+Simple wrappers for Dependency Injection and Hierarchical Settings
