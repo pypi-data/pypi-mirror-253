@@ -1,0 +1,11 @@
+LICENSE
+README.md
+bobross
+setup.py
+bobross.egg-info/PKG-INFO
+bobross.egg-info/SOURCES.txt
+bobross.egg-info/dependency_links.txt
+bobross.egg-info/top_level.txt
+libbobross/__init__.py
+libbobross/data/ascii
+libbobross/data/quotes
