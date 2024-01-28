@@ -1,0 +1,13 @@
+Click>=7.0
+pydot>=2.0.0
+
+[dev]
+pytest>=3
+pylint
+black
+mypy
+sphinx
+sphinx-rtd-theme
+sphinx-click
+pylint-pytest
+tox

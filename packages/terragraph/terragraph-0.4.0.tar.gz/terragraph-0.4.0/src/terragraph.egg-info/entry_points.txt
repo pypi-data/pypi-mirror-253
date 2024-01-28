@@ -1,0 +1,2 @@
+[console_scripts]
+terragraph = terragraph.cli:terragraph_cli
