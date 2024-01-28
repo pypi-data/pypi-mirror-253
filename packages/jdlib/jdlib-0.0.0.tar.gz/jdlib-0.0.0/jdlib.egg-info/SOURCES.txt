@@ -1,0 +1,7 @@
+README.md
+setup.py
+jdlib/__init__.py
+jdlib.egg-info/PKG-INFO
+jdlib.egg-info/SOURCES.txt
+jdlib.egg-info/dependency_links.txt
+jdlib.egg-info/top_level.txt
