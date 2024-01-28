@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: xjfx
+Version: 1.1.0
+Summary: Collection of simple utility functions and classes that extend standard library functionality.
+Author-email: Justin Findlay <justin@findlay.space>
+Project-URL: Homepage, https://github.com/jfindlay/xjfx/
+Project-URL: Bug Tracker, https://github.com/jfindlay/xjfx/issues/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+
+# xjfx
+
+Collection of simple utility functions and classes that extend standard library functionality.
+
+## Installation
+
+```
+pip install xjfx
+```
+
+## Development
+
+Check for code lint errors:
+```
+tox run-parallel -m analyze
+```
+Enforce code formatting:
+```
+tox run-parallel -m edit
+```
+Both:
+```
+tox run-parallel -m edit analyze
+```
