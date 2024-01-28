@@ -1,0 +1,3 @@
+[console_scripts]
+skellytracker=skellytracker.__main__:main
+

@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: skellytracker
+Version: 2024.1.1008
+Summary: Top-level package for skellytracker
+Keywords: camera,stream,video,image,opencv,skelly,freemocap,motion capture,synchronization,computer vision
+Author-email: Skelly FreeMoCap <info@freemocap.org>
+Requires-Python: >=3.9,<3.12
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Other Audience
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Multimedia :: Video :: Capture
+Classifier: Topic :: Multimedia :: Video :: Display
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: System :: Hardware
+Classifier: Topic :: System :: Hardware :: Universal Serial Bus (USB)
+Classifier: Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Video (UVC)
+Requires-Dist: opencv-contrib-python==4.8.*
+Requires-Dist: pyside6~=6.6.0
+Requires-Dist: pydantic==1.*
+Requires-Dist: mediapipe~=0.10.0
+Requires-Dist: ultralytics~=8.0.202
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: bumpver ; extra == "dev"
+Requires-Dist: isort ; extra == "dev"
+Requires-Dist: pip-tools ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Project-URL: Homepage, https://github.com/freemocap/skellytracker
+Provides-Extra: dev
+
+# skelly_tracker
+
+Currently, the bare bones of a tracking backend for freemocap.
+
+## Run skelly_tracker
+
+Currently, it is not pip installable. Download it by running `git clone https://github.com/freemocap/skelly_tracker`. 
+
+Change directories to skelly_tracker with `cd skelly_tracker`, and install the requirements with `pip install .`.
+
+Then it can be run with `skelly_tracker`.
+
+## Using skelly_tracker
+
+A GUI should pop up that looks like this: 
+
+<img width="591" alt="Image of skelly_tracker GUI" src="https://github.com/freemocap/skelly_tracker/assets/24758117/8767a7fb-2535-407c-99fb-40295ee5af93">
+
+
+Choose your image in the file dialog and click run to see the image annotated with the tracking information.
+
