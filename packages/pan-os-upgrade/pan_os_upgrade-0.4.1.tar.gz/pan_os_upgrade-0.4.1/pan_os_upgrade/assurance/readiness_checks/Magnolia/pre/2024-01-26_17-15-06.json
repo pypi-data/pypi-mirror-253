@@ -1,0 +1,41 @@
+{
+    "active_support": null,
+    "arp_entry_exist": null,
+    "candidate_config": {
+        "state": true,
+        "reason": "[SUCCESS] "
+    },
+    "certificates_requirements": null,
+    "content_version": {
+        "state": false,
+        "reason": "[FAIL] Installed content DB version (8774-8377) is not the latest one (8802-8532)."
+    },
+    "dynamic_updates": null,
+    "expired_licenses": {
+        "state": true,
+        "reason": "[SUCCESS] "
+    },
+    "free_disk_space": {
+        "state": true,
+        "reason": "[SUCCESS] "
+    },
+    "ha": {
+        "state": false,
+        "reason": "[ERROR] Device is not a member of an HA pair."
+    },
+    "ip_sec_tunnel_status": null,
+    "jobs": null,
+    "ntp_sync": {
+        "state": true,
+        "reason": "[SUCCESS] "
+    },
+    "panorama": {
+        "state": false,
+        "reason": "[ERROR] Device not configured with Panorama."
+    },
+    "planes_clock_sync": {
+        "state": false,
+        "reason": "[FAIL] The data plane clock and management clock are different by 1.0 seconds."
+    },
+    "session_exist": null
+}

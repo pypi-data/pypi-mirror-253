@@ -1,0 +1,314 @@
+2024-01-26 16:29:54,390 - root - INFO - ✅ Panorama: Base image for 11.0.2-h1 is already downloaded
+2024-01-26 16:29:54,393 - root - INFO - 🚀 Panorama: Performing test to see if 11.0.2-h1 is already downloaded...
+2024-01-26 16:29:54,394 - root - INFO - 🔍 Panorama: version 11.0.2-h1 is not on the target device
+2024-01-26 16:29:54,394 - root - INFO - 🚀 Panorama: version 11.0.2-h1 is beginning download
+2024-01-26 16:29:54,394 - panos.updater.SoftwareUpdater - INFO - Device panorama.cdot.io downloading version: 11.0.2-h1
+2024-01-26 16:29:59,284 - root - INFO - 🔧 Panorama: Downloading version 11.0.2-h1 - Elapsed time: 4 seconds
+2024-01-26 16:30:30,865 - root - INFO - 🔧 Panorama: Downloading version 11.0.2-h1 - Elapsed time: 36 seconds
+2024-01-26 16:31:02,448 - root - INFO - ✅ Panorama: 11.0.2-h1 downloaded in 68 seconds
+2024-01-26 16:31:02,451 - root - INFO - ✅ Panorama: Panorama version 11.0.2-h1 has been downloaded.
+2024-01-26 16:31:02,452 - root - INFO - 🚀 Panorama: Performing backup of configuration to local filesystem...
+2024-01-26 16:31:02,787 - root - INFO - ✅ Panorama: Dry run complete, exiting...
+2024-01-26 16:31:02,788 - root - INFO - 🛑 Panorama: Halting script.
+2024-01-26 16:32:08,405 - root - INFO - 📝 Panorama: None 192.168.255.210
+2024-01-26 16:32:08,741 - root - INFO - 📝 Panorama: HA mode: disabled
+2024-01-26 16:32:09,665 - root - INFO - 📝 Panorama: Current version: 11.0.0-h2
+2024-01-26 16:32:09,667 - root - INFO - 📝 Panorama: Target version: 11.0.1
+2024-01-26 16:32:09,668 - root - INFO - ✅ Panorama: Upgrade required from 11.0.0-h2 to 11.0.1
+2024-01-26 16:32:16,619 - root - INFO - ✅ Panorama: version 11.0.1 is available for download
+2024-01-26 16:32:16,620 - root - INFO - ✅ Panorama: Base image for 11.0.1 is already downloaded
+2024-01-26 16:32:16,621 - root - INFO - 🚀 Panorama: Performing test to see if 11.0.1 is already downloaded...
+2024-01-26 16:32:16,621 - root - INFO - ✅ Panorama: version 11.0.1 already on target device.
+2024-01-26 16:32:16,622 - root - INFO - ✅ Panorama: Panorama version 11.0.1 has been downloaded.
+2024-01-26 16:32:16,622 - root - INFO - 🚀 Panorama: Performing backup of configuration to local filesystem...
+2024-01-26 16:32:17,010 - root - INFO - 🚀 Panorama: Not a dry run, continue with upgrade...
+2024-01-26 16:32:17,011 - root - INFO - 🚀 Panorama: Performing upgrade to version 11.0.1...
+2024-01-26 16:32:17,011 - root - INFO - 🚀 Panorama: Attempting upgrade to version 11.0.1 (Attempt 1 of 3)...
+2024-01-26 16:32:17,012 - panos.updater.SoftwareUpdater - INFO - Device panorama.cdot.io installing version: 11.0.1
+2024-01-26 16:38:54,273 - root - INFO - ✅ Panorama: Upgrade completed successfully
+2024-01-26 16:38:54,276 - root - INFO - 🚀 Panorama: Rebooting the standalone target device...
+2024-01-26 16:38:56,509 - root - INFO - 📝 Panorama: Command succeeded with no output
+2024-01-26 16:40:04,382 - root - INFO - 🔧 Panorama: Target device is rebooting...
+2024-01-26 16:41:12,261 - root - INFO - 🔧 Panorama: Target device is rebooting...
+2024-01-26 16:42:20,075 - root - INFO - 🔧 Panorama: Target device is rebooting...
+2024-01-26 16:43:27,895 - root - INFO - 🔧 Panorama: Target device is rebooting...
+2024-01-26 16:44:27,916 - root - INFO - 🔧 Panorama: Target device is rebooting...
+2024-01-26 16:45:27,937 - root - INFO - 🔧 Panorama: Target device is rebooting...
+2024-01-26 16:46:27,959 - root - INFO - 🔧 Panorama: Target device is rebooting...
+2024-01-26 16:47:33,356 - root - INFO - 📝 Panorama: Target device version: 11.0.1
+2024-01-26 16:47:33,358 - root - INFO - ✅ Panorama: Target device rebooted in 519 seconds
+2024-01-26 14:32:40,767 - root - INFO - ✅ panorama.cdot.io: Connection to Panorama established. Firewall connections will be proxied!
+2024-01-26 14:32:41,283 - root - INFO - 📝 Woodlands-fw2: 007954000432462 192.168.255.44
+2024-01-26 14:32:41,285 - root - INFO - 📝 Woodlands-fw1: 007954000432461 192.168.255.43
+2024-01-26 14:32:41,516 - root - INFO - 📝 Woodlands-fw2: HA mode: passive
+2024-01-26 14:32:41,517 - root - INFO - 📝 Woodlands-fw1: HA mode: active
+2024-01-26 14:32:41,768 - root - INFO - 🔍 Woodlands-fw1: Detected active target device in HA pair running the same version as its peer. Added target device to revisit list.
+2024-01-26 14:32:42,270 - root - INFO - 📝 Woodlands-fw2: Current version: 10.2.3
+2024-01-26 14:32:42,270 - root - INFO - 📝 Woodlands-fw2: Target version: 11.1.1
+2024-01-26 14:32:42,270 - root - INFO - ✅ Woodlands-fw2: Upgrade required from 10.2.3 to 11.1.1
+2024-01-26 14:32:46,986 - root - INFO - ✅ Woodlands-fw2: version 11.1.1 is available for download
+2024-01-26 14:32:46,986 - root - ERROR - ❌ Woodlands-fw2: Base image for 11.1.1 is not downloaded
+2024-01-26 14:32:46,986 - root - ERROR - ❌ Woodlands-fw2: Not ready for upgrade to 11.1.1.
+2024-01-26 14:47:09,862 - root - INFO - ✅ panorama.cdot.io: Connection to Panorama established. Firewall connections will be proxied!
+2024-01-26 14:47:10,419 - root - INFO - 📝 Katy-fw1: 007054000242051 192.168.255.41
+2024-01-26 14:47:10,421 - root - INFO - 📝 Katy-fw2: 007054000243915 192.168.255.42
+2024-01-26 14:47:10,728 - root - INFO - 📝 Katy-fw1: HA mode: active
+2024-01-26 14:47:10,752 - root - INFO - 📝 Katy-fw2: HA mode: passive
+2024-01-26 14:47:11,064 - root - INFO - 🔍 Katy-fw1: Detected active target device in HA pair running the same version as its peer. Added target device to revisit list.
+2024-01-26 14:47:11,715 - root - INFO - 📝 Katy-fw2: Current version: 11.0.2-h2
+2024-01-26 14:47:11,715 - root - INFO - 📝 Katy-fw2: Target version: 11.0.2-h2
+2024-01-26 14:47:11,716 - root - ERROR - ❌ Katy-fw2: No upgrade required or downgrade attempt detected.
+2024-01-26 14:47:11,716 - root - ERROR - 🛑 Katy-fw2: Halting script.
+2024-01-26 15:27:26,284 - root - INFO - 📝 Magnolia: 021201109830 192.168.255.2
+2024-01-26 15:27:26,583 - root - INFO - 📝 Magnolia: HA mode: disabled
+2024-01-26 15:27:27,127 - root - INFO - 📝 Magnolia: Current version: 10.1.0
+2024-01-26 15:27:27,128 - root - INFO - 📝 Magnolia: Target version: 10.1.1
+2024-01-26 15:27:27,128 - root - INFO - ✅ Magnolia: Upgrade required from 10.1.0 to 10.1.1
+2024-01-26 15:27:30,716 - root - INFO - ✅ Magnolia: version 10.1.1 is available for download
+2024-01-26 15:27:30,716 - root - INFO - ✅ Magnolia: Base image for 10.1.1 is already downloaded
+2024-01-26 15:27:30,717 - root - INFO - 🚀 Magnolia: Performing test to see if 10.1.1 is already downloaded...
+2024-01-26 15:27:30,717 - root - INFO - 🔍 Magnolia: version 10.1.1 is not on the target device
+2024-01-26 15:27:30,717 - root - INFO - 🚀 Magnolia: version 10.1.1 is beginning download
+2024-01-26 15:27:30,717 - panos.updater.SoftwareUpdater - INFO - Device 021201109830 downloading version: 10.1.1
+2024-01-26 15:27:33,602 - root - INFO - 🔧 Magnolia: Downloading version 10.1.1 - Elapsed time: 2 seconds
+2024-01-26 15:28:05,158 - root - INFO - 🔧 Magnolia: Downloading version 10.1.1 - Elapsed time: 34 seconds
+2024-01-26 15:28:36,763 - root - INFO - ✅ Magnolia: 10.1.1 downloaded in 66 seconds
+2024-01-26 15:28:36,764 - root - INFO - ✅ Magnolia: version 10.1.1 has been downloaded.
+2024-01-26 15:28:36,764 - root - INFO - 🚀 Magnolia: Performing snapshot of network state information...
+2024-01-26 15:28:39,495 - root - INFO - ✅ Magnolia: Network snapshot created successfully
+2024-01-26 15:28:39,499 - root - INFO - 🚀 Magnolia: Performing readiness checks to determine if firewall is ready for upgrade...
+2024-01-26 15:28:48,838 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if there are pending changes on device
+2024-01-26 15:28:48,839 - root - INFO - ✅ Magnolia: Passed Readiness Check: No Expired Licenses
+2024-01-26 15:28:48,839 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if a there is enough space on the `/opt/panrepo` volume for downloading an PanOS image.
+2024-01-26 15:28:48,839 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if NTP is synchronized
+2024-01-26 15:28:48,839 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if the clock is synchronized between dataplane and management plane
+2024-01-26 15:28:48,839 - root - INFO - ✅ Magnolia: Readiness Checks completed
+2024-01-26 15:28:48,841 - root - INFO - 🚀 Magnolia: Performing backup of configuration to local filesystem...
+2024-01-26 15:28:49,196 - root - INFO - 🚀 Magnolia: Not a dry run, continue with upgrade...
+2024-01-26 15:28:49,197 - root - INFO - 🚀 Magnolia: Performing upgrade to version 10.1.1...
+2024-01-26 15:28:49,197 - root - INFO - 🚀 Magnolia: Attempting upgrade to version 10.1.1 (Attempt 1 of 3)...
+2024-01-26 15:28:49,197 - panos.updater.SoftwareUpdater - INFO - Device 021201109830 installing version: 10.1.1
+2024-01-26 15:33:00,236 - root - INFO - ✅ Magnolia: Upgrade completed successfully
+2024-01-26 15:33:00,238 - root - INFO - 🚀 Magnolia: Rebooting the standalone target device...
+2024-01-26 15:33:00,774 - root - INFO - 📝 Magnolia: Command succeeded with no output
+2024-01-26 15:35:15,781 - root - INFO - 🔧 Magnolia: Target device is rebooting...
+2024-01-26 15:36:18,805 - root - INFO - 🔧 Magnolia: Target device is rebooting...
+2024-01-26 15:37:18,819 - root - INFO - 🔧 Magnolia: Target device is rebooting...
+2024-01-26 15:38:21,346 - root - INFO - 📝 Magnolia: Target device version: 10.1.1
+2024-01-26 15:38:21,347 - root - INFO - ✅ Magnolia: Target device rebooted in 321 seconds
+2024-01-26 15:43:40,460 - root - INFO - 📝 Magnolia: 021201109830 192.168.255.2
+2024-01-26 15:43:40,832 - root - INFO - 📝 Magnolia: HA mode: disabled
+2024-01-26 15:43:41,363 - root - INFO - 📝 Magnolia: Current version: 10.1.1
+2024-01-26 15:43:41,363 - root - INFO - 📝 Magnolia: Target version: 10.1.10
+2024-01-26 15:43:41,364 - root - INFO - ✅ Magnolia: Upgrade required from 10.1.1 to 10.1.10
+2024-01-26 15:43:51,906 - root - INFO - ✅ Magnolia: version 10.1.10 is available for download
+2024-01-26 15:43:51,906 - root - INFO - ✅ Magnolia: Base image for 10.1.10 is already downloaded
+2024-01-26 15:43:51,906 - root - INFO - 🚀 Magnolia: Performing test to see if 10.1.10 is already downloaded...
+2024-01-26 15:43:51,907 - root - INFO - 🔍 Magnolia: version 10.1.10 is not on the target device
+2024-01-26 15:43:51,907 - root - INFO - 🚀 Magnolia: version 10.1.10 is beginning download
+2024-01-26 15:43:51,907 - panos.updater.SoftwareUpdater - INFO - Device 021201109830 downloading version: 10.1.10
+2024-01-26 15:43:54,663 - root - INFO - 🔧 Magnolia: Downloading version 10.1.10 - Elapsed time: 2 seconds
+2024-01-26 15:44:26,190 - root - INFO - 🔧 Magnolia: Downloading version 10.1.10 - Elapsed time: 34 seconds
+2024-01-26 15:44:57,812 - root - INFO - 🔧 Magnolia: Download is starting - Elapsed time: 65 seconds
+2024-01-26 15:45:14,909 - root - INFO - 📝 Magnolia: 021201109830 192.168.255.2
+2024-01-26 15:45:15,194 - root - INFO - 📝 Magnolia: HA mode: disabled
+2024-01-26 15:45:15,736 - root - INFO - 📝 Magnolia: Current version: 10.1.1
+2024-01-26 15:45:15,736 - root - INFO - 📝 Magnolia: Target version: 10.1.10-h5
+2024-01-26 15:45:15,736 - root - INFO - ✅ Magnolia: Upgrade required from 10.1.1 to 10.1.10-h5
+2024-01-26 15:45:19,320 - root - INFO - ✅ Magnolia: version 10.1.10-h5 is available for download
+2024-01-26 15:45:19,321 - root - INFO - ✅ Magnolia: Base image for 10.1.10-h5 is already downloaded
+2024-01-26 15:45:19,321 - root - INFO - 🚀 Magnolia: Performing test to see if 10.1.10-h5 is already downloaded...
+2024-01-26 15:45:19,321 - root - INFO - 🔍 Magnolia: version 10.1.10-h5 is not on the target device
+2024-01-26 15:45:19,321 - root - INFO - 🚀 Magnolia: version 10.1.10-h5 is beginning download
+2024-01-26 15:45:19,321 - panos.updater.SoftwareUpdater - INFO - Device 021201109830 downloading version: 10.1.10-h5
+2024-01-26 15:45:22,279 - root - INFO - 🔧 Magnolia: Downloading version 10.1.10-h5 - Elapsed time: 2 seconds
+2024-01-26 15:45:53,776 - root - INFO - 🔧 Magnolia: Downloading version 10.1.10-h5 - Elapsed time: 34 seconds
+2024-01-26 15:46:25,243 - root - INFO - 🔧 Magnolia: Downloading version 10.1.10-h5 - Elapsed time: 65 seconds
+2024-01-26 15:46:56,938 - root - INFO - ✅ Magnolia: 10.1.10-h5 downloaded in 97 seconds
+2024-01-26 15:46:56,939 - root - INFO - ✅ Magnolia: version 10.1.10-h5 has been downloaded.
+2024-01-26 15:46:56,939 - root - INFO - 🚀 Magnolia: Performing snapshot of network state information...
+2024-01-26 15:46:59,284 - root - INFO - ✅ Magnolia: Network snapshot created successfully
+2024-01-26 15:46:59,287 - root - INFO - 🚀 Magnolia: Performing readiness checks to determine if firewall is ready for upgrade...
+2024-01-26 15:47:09,760 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if there are pending changes on device
+2024-01-26 15:47:09,761 - root - INFO - ✅ Magnolia: Passed Readiness Check: No Expired Licenses
+2024-01-26 15:47:09,761 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if a there is enough space on the `/opt/panrepo` volume for downloading an PanOS image.
+2024-01-26 15:47:09,761 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if NTP is synchronized
+2024-01-26 15:47:09,761 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if the clock is synchronized between dataplane and management plane
+2024-01-26 15:47:09,761 - root - INFO - ✅ Magnolia: Readiness Checks completed
+2024-01-26 15:47:09,762 - root - INFO - 🚀 Magnolia: Performing backup of configuration to local filesystem...
+2024-01-26 15:47:10,076 - root - INFO - 🚀 Magnolia: Not a dry run, continue with upgrade...
+2024-01-26 15:47:10,076 - root - INFO - 🚀 Magnolia: Performing upgrade to version 10.1.10-h5...
+2024-01-26 15:47:10,076 - root - INFO - 🚀 Magnolia: Attempting upgrade to version 10.1.10-h5 (Attempt 1 of 3)...
+2024-01-26 15:47:10,076 - panos.updater.SoftwareUpdater - INFO - Device 021201109830 installing version: 10.1.10-h5
+2024-01-26 15:51:35,080 - root - INFO - ✅ Magnolia: Upgrade completed successfully
+2024-01-26 15:51:35,082 - root - INFO - 🚀 Magnolia: Rebooting the standalone target device...
+2024-01-26 15:51:35,668 - root - INFO - 📝 Magnolia: Command succeeded with no output
+2024-01-26 15:52:45,335 - root - INFO - 🔧 Magnolia: Target device is rebooting...
+2024-01-26 15:53:54,976 - root - INFO - 🔧 Magnolia: Target device is rebooting...
+2024-01-26 15:54:56,327 - root - INFO - 🔧 Magnolia: Target device is rebooting...
+2024-01-26 15:55:56,340 - root - INFO - 🔧 Magnolia: Target device is rebooting...
+2024-01-26 15:56:58,102 - root - INFO - 📝 Magnolia: Target device version: 10.1.10-h5
+2024-01-26 15:56:58,103 - root - INFO - ✅ Magnolia: Target device rebooted in 323 seconds
+2024-01-26 16:22:58,602 - root - INFO - 📝 Magnolia: 021201109830 192.168.255.2
+2024-01-26 16:22:58,981 - root - INFO - 📝 Magnolia: HA mode: disabled
+2024-01-26 16:22:59,565 - root - INFO - 📝 Magnolia: Current version: 10.1.10
+2024-01-26 16:22:59,566 - root - INFO - 📝 Magnolia: Target version: 10.1.10-h5
+2024-01-26 16:22:59,567 - root - INFO - ✅ Magnolia: Upgrade required from 10.1.10 to 10.1.10-h5
+2024-01-26 16:23:12,385 - root - INFO - ✅ Magnolia: version 10.1.10-h5 is available for download
+2024-01-26 16:23:12,385 - root - INFO - ✅ Magnolia: Base image for 10.1.10-h5 is already downloaded
+2024-01-26 16:23:12,386 - root - INFO - 🚀 Magnolia: Performing test to see if 10.1.10-h5 is already downloaded...
+2024-01-26 16:23:12,386 - root - INFO - ✅ Magnolia: version 10.1.10-h5 already on target device.
+2024-01-26 16:23:12,386 - root - INFO - ✅ Magnolia: version 10.1.10-h5 has been downloaded.
+2024-01-26 16:23:12,386 - root - INFO - 🚀 Magnolia: Performing snapshot of network state information...
+2024-01-26 16:23:14,715 - root - INFO - ✅ Magnolia: Network snapshot created successfully
+2024-01-26 16:23:14,717 - root - INFO - 🚀 Magnolia: Performing readiness checks to determine if firewall is ready for upgrade...
+2024-01-26 16:23:21,378 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if there are pending changes on device
+2024-01-26 16:23:21,379 - root - INFO - ✅ Magnolia: Passed Readiness Check: No Expired Licenses
+2024-01-26 16:23:21,379 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if a there is enough space on the `/opt/panrepo` volume for downloading an PanOS image.
+2024-01-26 16:23:21,379 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if NTP is synchronized
+2024-01-26 16:23:21,379 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if the clock is synchronized between dataplane and management plane
+2024-01-26 16:23:21,380 - root - INFO - ✅ Magnolia: Readiness Checks completed
+2024-01-26 16:23:21,381 - root - INFO - 🚀 Magnolia: Performing backup of configuration to local filesystem...
+2024-01-26 16:23:21,684 - root - INFO - 🚀 Magnolia: Not a dry run, continue with upgrade...
+2024-01-26 16:23:21,684 - root - INFO - 🚀 Magnolia: Performing upgrade to version 10.1.10-h5...
+2024-01-26 16:23:21,684 - root - INFO - 🚀 Magnolia: Attempting upgrade to version 10.1.10-h5 (Attempt 1 of 3)...
+2024-01-26 16:23:21,684 - panos.updater.SoftwareUpdater - INFO - Device 021201109830 installing version: 10.1.10-h5
+2024-01-26 16:29:08,565 - root - INFO - ✅ Magnolia: Upgrade completed successfully
+2024-01-26 16:29:08,567 - root - INFO - 🚀 Magnolia: Rebooting the standalone target device...
+2024-01-26 16:29:09,104 - root - INFO - 📝 Magnolia: Command succeeded with no output
+2024-01-26 16:30:09,115 - root - INFO - 🔧 Magnolia: Target device is rebooting...
+2024-01-26 16:32:24,125 - root - INFO - 🔧 Magnolia: Target device is rebooting...
+2024-01-26 17:12:39,236 - root - INFO - 📝 Magnolia: 021201109830 192.168.255.2
+2024-01-26 17:12:39,541 - root - INFO - 📝 Magnolia: HA mode: disabled
+2024-01-26 17:12:40,116 - root - INFO - 📝 Magnolia: Current version: 10.1.10-h5
+2024-01-26 17:12:40,117 - root - INFO - 📝 Magnolia: Target version: 10.1.11
+2024-01-26 17:12:40,117 - root - INFO - ✅ Magnolia: Upgrade required from 10.1.10-h5 to 10.1.11
+2024-01-26 17:12:45,791 - root - INFO - ✅ Magnolia: version 10.1.11 is available for download
+2024-01-26 17:12:45,791 - root - INFO - ✅ Magnolia: Base image for 10.1.11 is already downloaded
+2024-01-26 17:12:45,791 - root - INFO - 🚀 Magnolia: Performing test to see if 10.1.11 is already downloaded...
+2024-01-26 17:12:45,791 - root - INFO - 🔍 Magnolia: version 10.1.11 is not on the target device
+2024-01-26 17:12:45,791 - root - INFO - 🚀 Magnolia: version 10.1.11 is beginning download
+2024-01-26 17:12:45,791 - panos.updater.SoftwareUpdater - INFO - Device 021201109830 downloading version: 10.1.11
+2024-01-26 17:12:49,306 - root - INFO - 🔧 Magnolia: Downloading version 10.1.11 - Elapsed time: 3 seconds
+2024-01-26 17:13:22,123 - root - INFO - 🔧 Magnolia: Downloading version 10.1.11 - Elapsed time: 36 seconds
+2024-01-26 17:13:54,419 - root - INFO - 🔧 Magnolia: Downloading version 10.1.11 - Elapsed time: 68 seconds
+2024-01-26 17:14:28,694 - root - INFO - 🔧 Magnolia: Downloading version 10.1.11 - Elapsed time: 102 seconds
+2024-01-26 17:15:00,411 - root - INFO - ✅ Magnolia: 10.1.11 downloaded in 134 seconds
+2024-01-26 17:15:00,416 - root - INFO - ✅ Magnolia: version 10.1.11 has been downloaded.
+2024-01-26 17:15:00,416 - root - INFO - 🚀 Magnolia: Performing snapshot of network state information...
+2024-01-26 17:15:06,024 - root - INFO - ✅ Magnolia: Network snapshot created successfully
+2024-01-26 17:15:06,025 - root - INFO - 🚀 Magnolia: Performing readiness checks to determine if firewall is ready for upgrade...
+2024-01-26 17:15:16,272 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if there are pending changes on device
+2024-01-26 17:15:16,273 - root - INFO - ✅ Magnolia: Passed Readiness Check: No Expired Licenses
+2024-01-26 17:15:16,273 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if a there is enough space on the `/opt/panrepo` volume for downloading an PanOS image.
+2024-01-26 17:15:16,273 - root - INFO - ✅ Magnolia: Passed Readiness Check: Check if NTP is synchronized
+2024-01-26 17:15:16,274 - root - INFO - ✅ Magnolia: Readiness Checks completed
+2024-01-26 17:15:16,275 - root - INFO - 🚀 Magnolia: Performing backup of configuration to local filesystem...
+2024-01-26 17:15:16,701 - root - INFO - 🚀 Magnolia: Not a dry run, continue with upgrade...
+2024-01-26 17:15:16,701 - root - INFO - 🚀 Magnolia: Performing upgrade to version 10.1.11...
+2024-01-26 17:15:16,701 - root - INFO - 🚀 Magnolia: Attempting upgrade to version 10.1.11 (Attempt 1 of 3)...
+2024-01-26 17:15:16,701 - panos.updater.SoftwareUpdater - INFO - Device 021201109830 installing version: 10.1.11
+2024-01-26 17:21:34,649 - root - INFO - ✅ Magnolia: Upgrade completed successfully
+2024-01-26 17:21:34,650 - root - INFO - 🚀 Magnolia: Rebooting the target device...
+2024-01-26 17:21:35,419 - root - INFO - 📝 Magnolia: Command succeeded with no output
+2024-01-26 17:22:43,210 - root - WARNING - 🟧 Magnolia: Retry attempt 1 due to error: URLError: reason: [Errno 60] Operation timed out
+2024-01-26 17:23:51,004 - root - WARNING - 🟧 Magnolia: Retry attempt 2 due to error: URLError: reason: [Errno 60] Operation timed out
+2024-01-26 17:24:54,961 - root - WARNING - 🟧 Magnolia: Retry attempt 3 due to error: URLError: reason: [Errno 61] Connection refused
+2024-01-26 17:25:54,974 - root - WARNING - 🟧 Magnolia: Retry attempt 4 due to error: URLError: reason: [Errno 61] Connection refused
+2024-01-26 17:26:56,652 - root - INFO - 📝 Magnolia: Current device version: 10.1.11
+2024-01-26 17:26:56,653 - root - INFO - ✅ Magnolia: Device rebooted to the target version successfully.
+2024-01-26 17:29:44,401 - root - INFO - ✅ panorama.cdot.io: Connection to Panorama established. Firewall connections will be proxied!
+2024-01-26 17:29:45,015 - root - INFO - 📝 Woodlands-fw1: 007954000432461 192.168.255.43
+2024-01-26 17:29:45,065 - root - INFO - 📝 Woodlands-fw2: 007954000432462 192.168.255.44
+2024-01-26 17:29:45,356 - root - INFO - 📝 Woodlands-fw1: HA mode: active
+2024-01-26 17:29:45,401 - root - INFO - 📝 Woodlands-fw2: HA mode: passive
+2024-01-26 17:29:45,719 - root - INFO - 🔍 Woodlands-fw1: Detected active target device in HA pair running the same version as its peer. Added target device to revisit list.
+2024-01-26 17:29:46,334 - root - INFO - 📝 Woodlands-fw2: Current version: 10.2.3
+2024-01-26 17:29:46,335 - root - INFO - 📝 Woodlands-fw2: Target version: 10.2.3-h2
+2024-01-26 17:29:46,335 - root - INFO - ✅ Woodlands-fw2: Upgrade required from 10.2.3 to 10.2.3-h2
+2024-01-26 17:29:51,481 - root - INFO - ✅ Woodlands-fw2: version 10.2.3-h2 is available for download
+2024-01-26 17:29:51,482 - root - INFO - ✅ Woodlands-fw2: Base image for 10.2.3-h2 is already downloaded
+2024-01-26 17:29:51,482 - root - INFO - 🚀 Woodlands-fw2: Performing test to see if 10.2.3-h2 is already downloaded...
+2024-01-26 17:29:51,482 - root - INFO - 🔍 Woodlands-fw2: version 10.2.3-h2 is not on the target device
+2024-01-26 17:29:51,482 - root - INFO - 🚀 Woodlands-fw2: version 10.2.3-h2 is beginning download
+2024-01-26 17:29:51,482 - panos.updater.SoftwareUpdater - INFO - Device 007954000432462 downloading version: 10.2.3-h2
+2024-01-26 17:29:56,346 - root - INFO - 🔧 Woodlands-fw2: Downloading version 10.2.3-h2 - HA will sync image - Elapsed time: 4 seconds
+2024-01-26 17:30:33,759 - root - INFO - 🔧 Woodlands-fw2: Downloading version 10.2.3-h2 - HA will sync image - Elapsed time: 42 seconds
+2024-01-26 17:31:07,932 - root - INFO - 🔧 Woodlands-fw2: Downloading version 10.2.3-h2 - HA will sync image - Elapsed time: 76 seconds
+2024-01-26 17:31:40,413 - root - INFO - 🔧 Woodlands-fw2: Downloading version 10.2.3-h2 - HA will sync image - Elapsed time: 108 seconds
+2024-01-26 17:32:12,697 - root - INFO - 🔧 Woodlands-fw2: Downloading version 10.2.3-h2 - HA will sync image - Elapsed time: 141 seconds
+2024-01-26 17:32:44,666 - root - INFO - 🔧 Woodlands-fw2: Downloading version 10.2.3-h2 - HA will sync image - Elapsed time: 173 seconds
+2024-01-26 17:33:18,437 - root - INFO - 🔧 Woodlands-fw2: Downloading version 10.2.3-h2 - HA will sync image - Elapsed time: 206 seconds
+2024-01-26 17:33:51,713 - root - INFO - 🔧 Woodlands-fw2: Downloading version 10.2.3-h2 - HA will sync image - Elapsed time: 240 seconds
+2024-01-26 17:34:24,803 - root - INFO - ✅ Woodlands-fw2: 10.2.3-h2 downloaded in 273 seconds
+2024-01-26 17:34:24,803 - root - INFO - ✅ Woodlands-fw2: 10.2.3-h2 has been downloaded and sync'd to HA peer.
+2024-01-26 17:34:24,804 - root - INFO - 🚀 Woodlands-fw2: Performing snapshot of network state information...
+2024-01-26 17:34:27,053 - root - INFO - ✅ Woodlands-fw2: Network snapshot created successfully
+2024-01-26 17:34:27,055 - root - INFO - 🚀 Woodlands-fw2: Performing readiness checks to determine if firewall is ready for upgrade...
+2024-01-26 17:34:37,232 - root - INFO - ✅ Woodlands-fw2: Passed Readiness Check: Check if there are pending changes on device
+2024-01-26 17:34:37,233 - root - INFO - ✅ Woodlands-fw2: Passed Readiness Check: No Expired Licenses
+2024-01-26 17:34:37,233 - root - INFO - ✅ Woodlands-fw2: Passed Readiness Check: Checks HA pair status from the perspective of the current device
+2024-01-26 17:34:37,234 - root - INFO - ✅ Woodlands-fw2: Passed Readiness Check: Check if NTP is synchronized
+2024-01-26 17:34:37,234 - root - INFO - ✅ Woodlands-fw2: Passed Readiness Check: Check connectivity with the Panorama appliance
+2024-01-26 17:34:37,234 - root - INFO - ✅ Woodlands-fw2: Readiness Checks completed
+2024-01-26 17:34:37,236 - root - INFO - 🚀 Woodlands-fw2: Checking if HA peer is in sync...
+2024-01-26 17:34:37,236 - root - INFO - ✅ Woodlands-fw2: HA peer sync test has been completed.
+2024-01-26 17:34:37,236 - root - INFO - 🚀 Woodlands-fw2: Performing backup of configuration to local filesystem...
+2024-01-26 17:34:37,631 - root - INFO - 🚀 Woodlands-fw2: Not a dry run, continue with upgrade...
+2024-01-26 17:34:37,631 - root - INFO - 🚀 Woodlands-fw2: Performing upgrade to version 10.2.3-h2...
+2024-01-26 17:34:37,631 - root - INFO - 🚀 Woodlands-fw2: Attempting upgrade to version 10.2.3-h2 (Attempt 1 of 3)...
+2024-01-26 17:34:37,631 - panos.updater.SoftwareUpdater - INFO - Device 007954000432462 installing version: 10.2.3-h2
+2024-01-26 17:42:19,627 - root - INFO - ✅ Woodlands-fw2: Upgrade completed successfully
+2024-01-26 17:42:19,627 - root - INFO - 🚀 Woodlands-fw2: Rebooting the target device...
+2024-01-26 17:42:20,583 - root - INFO - 📝 Woodlands-fw2: Command succeeded with no output
+2024-01-26 17:43:20,821 - root - WARNING - 🟧 Woodlands-fw2: Retry attempt 1 due to error: 007954000432462 not connected
+2024-01-26 17:44:21,044 - root - WARNING - 🟧 Woodlands-fw2: Retry attempt 2 due to error: 007954000432462 not connected
+2024-01-26 17:45:21,264 - root - WARNING - 🟧 Woodlands-fw2: Retry attempt 3 due to error: 007954000432462 not connected
+2024-01-26 17:46:21,509 - root - WARNING - 🟧 Woodlands-fw2: Retry attempt 4 due to error: 007954000432462 not connected
+2024-01-26 17:47:21,749 - root - WARNING - 🟧 Woodlands-fw2: Retry attempt 5 due to error: 007954000432462 not connected
+2024-01-26 17:48:21,987 - root - WARNING - 🟧 Woodlands-fw2: Retry attempt 6 due to error: 007954000432462 not connected
+2024-01-26 17:49:22,257 - root - WARNING - 🟧 Woodlands-fw2: Retry attempt 7 due to error: 007954000432462 not connected
+2024-01-26 17:50:22,632 - root - WARNING - 🟧 Woodlands-fw2: Retry attempt 8 due to error: 007954000432462 not connected
+2024-01-26 17:51:24,770 - root - INFO - 📝 Woodlands-fw2: Current device version: 10.2.3-h2
+2024-01-26 17:51:24,770 - root - INFO - ✅ Woodlands-fw2: Device rebooted to the target version successfully.
+2024-01-26 17:51:24,771 - root - INFO - 🚀 panorama.cdot.io: Revisiting firewalls that were active in an HA pair and had the same version as their peers.
+2024-01-26 17:51:25,114 - root - INFO - 📝 Woodlands-fw1: 007954000432461 192.168.255.43
+2024-01-26 17:51:25,610 - root - INFO - 📝 Woodlands-fw1: HA mode: active
+2024-01-26 17:51:26,374 - root - ERROR - ❌ Woodlands-fw1: Error suspending active target device HA state: argument of type 'NoneType' is not iterable
+2024-01-26 17:51:26,960 - root - INFO - 📝 Woodlands-fw1: Current version: 10.2.3
+2024-01-26 17:51:26,960 - root - INFO - 📝 Woodlands-fw1: Target version: 10.2.3-h2
+2024-01-26 17:51:26,961 - root - INFO - ✅ Woodlands-fw1: Upgrade required from 10.2.3 to 10.2.3-h2
+2024-01-26 17:51:34,965 - root - INFO - ✅ Woodlands-fw1: version 10.2.3-h2 is available for download
+2024-01-26 17:51:34,965 - root - INFO - ✅ Woodlands-fw1: Base image for 10.2.3-h2 is already downloaded
+2024-01-26 17:51:34,965 - root - INFO - 🚀 Woodlands-fw1: Performing test to see if 10.2.3-h2 is already downloaded...
+2024-01-26 17:51:34,965 - root - INFO - ✅ Woodlands-fw1: version 10.2.3-h2 already on target device.
+2024-01-26 17:51:34,966 - root - INFO - ✅ Woodlands-fw1: 10.2.3-h2 has been downloaded and sync'd to HA peer.
+2024-01-26 17:51:34,966 - root - INFO - 🚀 Woodlands-fw1: Performing snapshot of network state information...
+2024-01-26 17:51:37,412 - root - INFO - ✅ Woodlands-fw1: Network snapshot created successfully
+2024-01-26 17:51:37,414 - root - INFO - 🚀 Woodlands-fw1: Performing readiness checks to determine if firewall is ready for upgrade...
+2024-01-26 17:51:46,699 - root - INFO - ✅ Woodlands-fw1: Passed Readiness Check: Check if there are pending changes on device
+2024-01-26 17:51:46,700 - root - INFO - ✅ Woodlands-fw1: Passed Readiness Check: No Expired Licenses
+2024-01-26 17:51:46,700 - root - INFO - ✅ Woodlands-fw1: Passed Readiness Check: Check if NTP is synchronized
+2024-01-26 17:51:46,700 - root - INFO - ✅ Woodlands-fw1: Passed Readiness Check: Check if the clock is synchronized between dataplane and management plane
+2024-01-26 17:51:46,700 - root - INFO - ✅ Woodlands-fw1: Passed Readiness Check: Check connectivity with the Panorama appliance
+2024-01-26 17:51:46,701 - root - INFO - ✅ Woodlands-fw1: Readiness Checks completed
+2024-01-26 17:51:46,702 - root - INFO - 🚀 Woodlands-fw1: Checking if HA peer is in sync...
+2024-01-26 17:51:46,702 - root - INFO - ✅ Woodlands-fw1: HA peer sync test has been completed.
+2024-01-26 17:51:46,702 - root - INFO - 🚀 Woodlands-fw1: Performing backup of configuration to local filesystem...
+2024-01-26 17:51:47,225 - root - INFO - 🚀 Woodlands-fw1: Not a dry run, continue with upgrade...
+2024-01-26 17:51:47,226 - root - INFO - 🚀 Woodlands-fw1: Performing upgrade to version 10.2.3-h2...
+2024-01-26 17:51:47,226 - root - INFO - 🚀 Woodlands-fw1: Attempting upgrade to version 10.2.3-h2 (Attempt 1 of 3)...
+2024-01-26 17:51:47,226 - panos.updater.SoftwareUpdater - INFO - Device 007954000432461 installing version: 10.2.3-h2
+2024-01-26 17:57:57,437 - root - INFO - ✅ Woodlands-fw1: Upgrade completed successfully
+2024-01-26 17:57:57,438 - root - INFO - 🚀 Woodlands-fw1: Rebooting the target device...
+2024-01-26 17:57:58,091 - root - INFO - 📝 Woodlands-fw1: Command succeeded with no output
+2024-01-26 17:58:58,353 - root - WARNING - 🟧 Woodlands-fw1: Retry attempt 1 due to error: 007954000432461 not connected
+2024-01-26 17:59:58,641 - root - WARNING - 🟧 Woodlands-fw1: Retry attempt 2 due to error: 007954000432461 not connected
+2024-01-26 18:00:58,893 - root - WARNING - 🟧 Woodlands-fw1: Retry attempt 3 due to error: 007954000432461 not connected
+2024-01-26 18:01:59,123 - root - WARNING - 🟧 Woodlands-fw1: Retry attempt 4 due to error: 007954000432461 not connected
+2024-01-26 18:02:59,382 - root - WARNING - 🟧 Woodlands-fw1: Retry attempt 5 due to error: 007954000432461 not connected
+2024-01-26 18:03:59,632 - root - WARNING - 🟧 Woodlands-fw1: Retry attempt 6 due to error: 007954000432461 not connected
+2024-01-26 18:04:59,854 - root - WARNING - 🟧 Woodlands-fw1: Retry attempt 7 due to error: 007954000432461 not connected
+2024-01-26 18:06:01,101 - root - INFO - 📝 Woodlands-fw1: Current device version: 10.2.3-h2
+2024-01-26 18:06:01,102 - root - INFO - ✅ Woodlands-fw1: Device rebooted to the target version successfully.
+2024-01-26 18:06:01,103 - root - INFO - ✅ panorama.cdot.io: Completed revisiting firewalls
