@@ -1,0 +1,2 @@
+[console_scripts]
+report_mon = tar_mak_monaco_report.Task6_report:main
