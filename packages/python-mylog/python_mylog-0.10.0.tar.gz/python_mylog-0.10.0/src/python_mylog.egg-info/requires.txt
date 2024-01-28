@@ -1,0 +1,6 @@
+termcolor>=0.2
+typing_extensions
+
+[dev]
+nox
+python-lemming

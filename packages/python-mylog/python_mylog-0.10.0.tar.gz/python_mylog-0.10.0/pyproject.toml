@@ -1,0 +1,126 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python_mylog"
+description = "My logger library."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "Koviubi56", email = "koviubi56@duck.com" }]
+keywords = ["logger", "log", "logging"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: System :: Logging",
+    "Typing :: Typed",
+]
+dynamic = ["version", "dependencies"]
+
+[project.optional-dependencies]
+dev = ["nox", "python-lemming"]
+
+[project.urls]
+"Release notes" = "https://github.com/koviubi56/mylog/blob/main/CHANGELOG.md"
+Source = "https://github.com/koviubi56/mylog"
+"Bug Tracker" = "https://github.com/koviubi56/mylog/issues"
+
+[tool.setuptools.dynamic]
+version = { attr = "mylog.__version__" }
+dependencies = { file = "requirements.txt" }
+
+[tool.setuptools.package-data]
+mylog = ["py.typed"]
+
+
+[tool.ruff]
+select = ["ALL"]
+ignore = [
+    "ANN101",
+    "ANN102",
+    "COM812",
+    "D105",
+    "D212",
+    "D415",
+    "EM101",
+    "EM102",
+    "FA102",
+    "FBT003",
+    "PLE1205",
+    "TD003",
+    "TRY003",
+]
+fixable = [
+    "F632",
+    "E711",
+    "F901",
+    "E703",
+    "E712",
+    "E713",
+    "E714",
+    "W291",
+    "W292",
+    "W293",
+    "I001",
+    "PT001",
+    "PT003",
+    "PT006",
+    "PT009",
+    "PT023",
+    "Q",
+    "RSE102",
+    "SIM101",
+    "SIM103",
+    "SIM109",
+    "SIM112",
+    "SIM117",
+    "SIM118",
+    "SIM201",
+    "SIM202",
+    "SIM208",
+    "SIM210",
+    "SIM211",
+    "SIM212",
+]
+per-file-ignores = { "tests/*" = [
+    "D",
+    "PLR2004",
+    "S101",
+    "SLF001",
+], "noxfile.py" = [
+    "D",
+], "setup.py" = [
+    "D",
+] }
+line-length = 79
+target-version = "py310"
+
+[tool.ruff.pydocstyle]
+convention = "google"
+ignore-decorators = ["typing.overload"]
+
+[[tool.lemming.formatters]]
+packages = ["ruff"]
+format_command = "{pyexe} -m ruff format {path}"
+check_command = "{pyexe} -m ruff format --check {path}"
+
+[[tool.lemming.formatters]]
+packages = ["ruff"]
+format_command = "{pyexe} -m ruff check --fix . --show-source"
+check_command = "{pyexe} -m ruff check . --show-source"
+
+[[tool.lemming.linters]]
+packages = ["pyroma"]
+command = "{pyexe} -m pyroma {path}"

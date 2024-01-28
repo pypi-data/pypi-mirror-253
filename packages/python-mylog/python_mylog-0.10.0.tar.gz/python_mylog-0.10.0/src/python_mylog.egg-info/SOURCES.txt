@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/mylog/__init__.py
+src/mylog/py.typed
+src/python_mylog.egg-info/PKG-INFO
+src/python_mylog.egg-info/SOURCES.txt
+src/python_mylog.egg-info/dependency_links.txt
+src/python_mylog.egg-info/requires.txt
+src/python_mylog.egg-info/top_level.txt
+tests/test_mylog.py
