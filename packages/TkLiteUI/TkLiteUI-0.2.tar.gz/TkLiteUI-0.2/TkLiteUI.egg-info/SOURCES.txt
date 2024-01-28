@@ -1,0 +1,5 @@
+setup.py
+TkLiteUI.egg-info/PKG-INFO
+TkLiteUI.egg-info/SOURCES.txt
+TkLiteUI.egg-info/dependency_links.txt
+TkLiteUI.egg-info/top_level.txt
