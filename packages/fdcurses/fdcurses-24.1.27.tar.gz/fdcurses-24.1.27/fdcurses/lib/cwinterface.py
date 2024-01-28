@@ -1,0 +1,48 @@
+"""Impliments CW abstraction layer"""
+from xmlrpc.client import ServerProxy, Error
+import socket
+import logging
+
+
+class CW:
+    """An interface to cwdaemon and PyWinkeyerSerial"""
+
+    def __init__(self, servertype: int, host: str, port: int) -> None:
+        self.servertype = servertype
+        self.host = host
+        self.port = port
+
+    def sendcw(self, texttosend):
+        """sends cw to k1el"""
+        logging.info("%s", texttosend)
+        if self.servertype == 2:
+            self._sendcw_xmlrpc(texttosend)
+        if self.servertype == 1:
+            self._sendcw_udp(texttosend)
+
+    def _sendcw_xmlrpc(self, texttosend):
+        """sends cw to xmlrpc"""
+        logging.info("%s", texttosend)
+        with ServerProxy(f"http://{self.host}:{self.port}") as proxy:
+            try:
+                proxy.k1elsendstring(texttosend)
+            except Error as exception:
+                logging.info("http://%s:%s, error: %s", self.host, self.port, exception)
+            except ConnectionRefusedError:
+                logging.info("http://%s:%s, Connection Refused", self.host, self.port)
+
+    def _sendcw_udp(self, texttosend):
+        """send cw to udp port"""
+        logging.info("%s", texttosend)
+        if self.port and self.host:
+            server_address_port = (self.host, self.port)
+            # bufferSize          = 1024
+            udp_client_socket = socket.socket(
+                family=socket.AF_INET, type=socket.SOCK_DGRAM
+            )
+            try:
+                udp_client_socket.sendto(
+                    bytes(texttosend, "utf-8"), server_address_port
+                )
+            except socket.gaierror:
+                pass

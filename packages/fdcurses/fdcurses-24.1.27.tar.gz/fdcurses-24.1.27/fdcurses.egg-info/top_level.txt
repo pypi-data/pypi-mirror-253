@@ -1,0 +1,4 @@
+dist
+fdcurses
+pics
+testing
