@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+pyproject.toml
+requirements.txt
+setup.py
+ryutils.egg-info/PKG-INFO
+ryutils.egg-info/SOURCES.txt
+ryutils.egg-info/dependency_links.txt
+ryutils.egg-info/requires.txt
+ryutils.egg-info/top_level.txt
