@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: unKR
+Version: 0.2.1
+Summary: An Open Source Library for uncertain Knowledge Reasoning
+Home-page: https://github.com/CodeSlogan/unKR
+Author: SEUKGE
+Author-email: slchen@seu.edu.cn
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pytorch_lightning==1.5.10
+Requires-Dist: PyYAML
+Requires-Dist: wandb
+Requires-Dist: IPython
+Requires-Dist: gensim
