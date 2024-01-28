@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: myst-nb-bokeh
+Version: 2024.1.0
+Summary: MyST-NB-Bokeh includes functions for gluing and pasting Bokeh figures in MyST documents.
+Keywords: docutils sphinx bokeh
+Author-Email: Bryan Weber <bryan.w.weber@gmail.com>
+License: BSD-3-Clause
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup
+Project-URL: Homepage, https://github.com/bryanwweber/myst-nb-bokeh
+Project-URL: Documentation, https://myst-nb-bokeh.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/bryanwweber/myst-nb-bokeh
+Project-URL: Tracker, https://github.com/bryanwweber/myst-nb-bokeh/issues
+Requires-Python: >=3.10
+Requires-Dist: IPython>=8.20.0
+Requires-Dist: bokeh>=3.3.4
+Requires-Dist: myst-nb>=1.0.0
+Requires-Dist: sphinx>=7.2.6
+Requires-Dist: sphinx-book-theme>=1.1.0; extra == "docs"
+Provides-Extra: docs
+Description-Content-Type: text/markdown
+
+# MyST-NB-Bokeh
+
+[![PyPI status](https://img.shields.io/pypi/v/myst-nb-bokeh.svg)](https://pypi.org/project/myst-nb-bokeh)
+[![continuous-integration](https://github.com/bryanwweber/MyST-NB-Bokeh/actions/workflows/test.yml/badge.svg)](https://github.com/bryanwweber/MyST-NB-Bokeh/actions/workflows/test.yml)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/bryanwweber/MyST-NB-Bokeh/main.svg)](https://results.pre-commit.ci/latest/github/bryanwweber/MyST-NB-Bokeh/main)
+[![Documentation Status](https://readthedocs.org/projects/myst-nb-bokeh/badge/?version=latest)](https://myst-nb-bokeh.readthedocs.io/en/latest/?badge=latest)
+
+MyST-NB-Bokeh includes functions for gluing and pasting Bokeh figures in MyST-NB documents.
+
+## Install
+
+```shell
+python -m pip install myst-nb-bokeh
+```
+
+## Setup and Development
+
+The repo is set up to use [mise](https://mise.jdx.dev) to install required tools. Once `mise` is installed, changing into this directory should install the correct tools with the right versions. Then run `pdm install` to install development dependencies. Running `pdm test` will run the tests. `pdm docs` will build the docs site.

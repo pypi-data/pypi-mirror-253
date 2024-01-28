@@ -1,0 +1,3 @@
+[myst_nb.mime_renderers]
+bokeh = myst_nb_bokeh:BokehOutputRenderer
+
