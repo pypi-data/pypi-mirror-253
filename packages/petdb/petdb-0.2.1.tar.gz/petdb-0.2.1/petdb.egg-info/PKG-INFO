@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: petdb
+Version: 0.2.1
+Summary: Light weight local document-oriented database.
+Home-page: https://gitlab.com/Tullp/petdb
+Author: Maks Vinnytskyi
+Description-Content-Type: text/markdown
+
+# PetDB
+
+## About
+
+PetDB is a simple and lightweight NOSQL JSON database for pet projects.
+It was designed with the convenient and comfortable API.
+
+## Installation
+
+PetDB can be installed with [pip](http://pypi.python.org/pypi/pip):
+
+```bash
+python -m pip install petdb
+```
+
+You can also download the project source and do:
+
+```bash
+pip install .
+```
+
+## Dependencies
+
+PetDB was created as lightweight package, so there isn't any dependency.
+
+## Usage
+
+To use PetDB, first import the PetDB class from the petdb package and create a PetDB instance.
+By default, it will create folder for storing collections in the current directory, but you can provide any path:
+
+```python
+from petdb import PetDB
+
+db = PetDB(os.path.join(os.getcwd(), "persistent", "storage"))
+```
+
+Next you should select or create collection. You can do it just by attribute access, by index key or use a method:
+
+```python
+users = db.users
+subscriptions = db["subscriptions"]
+payments = db.create_collection("payments")
+```
+
+Now you can manage each collection. PetCollection object commits changes on remove, delete, update, insert.
+There are a lot of methods 
+
+
+## Testing
+
+```bash
+python -m tests.tests
+```
+
+
