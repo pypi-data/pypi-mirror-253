@@ -1,0 +1,17 @@
+pyproject.toml
+readme.md
+structures/modules/solitaire/__init__.py
+structures/modules/solitaire/_clique.py
+structures/modules/solitaire.egg-info/PKG-INFO
+structures/modules/solitaire.egg-info/SOURCES.txt
+structures/modules/solitaire.egg-info/dependency_links.txt
+structures/modules/solitaire.egg-info/entry_points.txt
+structures/modules/solitaire.egg-info/top_level.txt
+structures/modules/solitaire/_license/licenses/gpl-3.0-standalone.html
+structures/modules/solitaire/_status/status.proc.py
+structures/modules/solitaire/_status/checks/1/status_1.py
+structures/modules/solitaire/basin/__init__.py
+structures/modules/solitaire/basin/treasury.py
+structures/modules/solitaire/modules/law_dictionary/__init__.py
+structures/modules/solitaire/modules/law_dictionary/status_1.py
+structures/modules/solitaire/modules/law_dictionary/status_broken_1.py
