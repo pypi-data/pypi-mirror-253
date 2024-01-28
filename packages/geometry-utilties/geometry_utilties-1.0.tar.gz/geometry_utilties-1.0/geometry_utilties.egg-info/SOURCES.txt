@@ -1,0 +1,7 @@
+setup.py
+geometry-utils_JoaoFelipe2312/__init__.py
+geometry-utils_JoaoFelipe2312/geometry-utils.py
+geometry_utilties.egg-info/PKG-INFO
+geometry_utilties.egg-info/SOURCES.txt
+geometry_utilties.egg-info/dependency_links.txt
+geometry_utilties.egg-info/top_level.txt
