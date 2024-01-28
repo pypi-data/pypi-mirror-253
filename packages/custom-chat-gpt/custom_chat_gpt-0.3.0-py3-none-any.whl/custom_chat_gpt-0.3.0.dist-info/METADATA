@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: custom-chat-gpt
+Version: 0.3.0
+Summary: Use chapgpt from your terminal
+Author: RomainEconomics
+Author-email: jouhameau.romain@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: faiss-cpu (>=1.7.4,<2.0.0)
+Requires-Dist: langchain (>=0.1.0,<0.2.0)
+Requires-Dist: langchain-community[faiss] (>=0.0.16,<0.0.17)
+Requires-Dist: langchain-openai (>=0.0.5,<0.0.6)
+Requires-Dist: openai (>=1.0.0,<2.0.0)
+Requires-Dist: rich (>=13.3,<14.0)
+Requires-Dist: tiktoken (<0.6.3)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Requires-Dist: youtube-transcript-api (>=0.6.0,<0.7.0)
+Description-Content-Type: text/markdown
+
+# To install chat-gpt inside your terminal 
+
+```
+pip install custom-chat-gpt
+```
+# Dev commands
+
+```
+poetry init
+poetry add openai rich typer
+poetry shell
+poetry install
+poetry run chat-gpt
+poetry build
+poetry publish
+```
