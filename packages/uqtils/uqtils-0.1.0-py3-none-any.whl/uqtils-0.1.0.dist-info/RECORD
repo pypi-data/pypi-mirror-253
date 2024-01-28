@@ -1,0 +1,10 @@
+uqtils-0.1.0.dist-info/METADATA,sha256=1UUyWVVTQam8TnFHaMtDw7LseZBsIKhjrweaFfSGVUM,42738
+uqtils-0.1.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+uqtils-0.1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+uqtils/__init__.py,sha256=TAvN3QM-2ja4Dj8KJpRi1doyPFepYMu4gyQzmKO7DeY,350
+uqtils/example.py,sha256=XOOZGooQpeneKh8iAsj4JXIcthr5loG0HiKWnBpZqqQ,1888
+uqtils/grad.py,sha256=3nBnqEEPGtkt9697mLYteu3yVh1m20Bq0xUmf1OLeE8,4685
+uqtils/mcmc.py,sha256=qWV3AnHd3x3Aija3laWP8MKrNrbjiMvHIk5-OpN5Wx0,11463
+uqtils/plots.py,sha256=28EI68oz55XiDzY5-t3rrQZtOFZsS_3P7_7VeOzLPso,12020
+uqtils/uq_types.py,sha256=X5CEo4zmIpc74-PdQKR0OyMzi3tF1PoRs8zp_siITzQ,771
+uqtils-0.1.0.dist-info/RECORD,,
