@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: PlvLogger
+Version: 0.151
+Summary: Custom logging library
+Home-page: https://github.com/plv88/MyLogger
+Author: plv88
+Author-email: plv.andrey88@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# my_logger
+
+0.11. Добавили проверку логгера
+0.12 Добавили автоудаление файла с логами через определенное кол-во часов
+0.15 Поменяли логику сохранения файлов, добавили параметры
+when:
+- 'S' - Секунды. Ротация происходит каждые N секунд.
+- 'M' - Минуты. Ротация происходит каждые N минут.
+- 'H' - Часы. Ротация происходит каждые N часов.
+- 'D' - Дни. Ротация происходит каждые N дней. По умолчанию ротация происходит в полночь.
+- 'W0'-'W6' - День недели. Ротация происходит в определенный день недели ('W0' - понедельник, 'W1' - вторник, и так далее
+ до 'W6' - воскресенье). Время ротации также по умолчанию установлено на полночь.
+- 'midnight' - Полночь. Ротация происходит каждую полночь.
