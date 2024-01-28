@@ -1,0 +1,13 @@
+xgpu/renderdoc.py,sha256=zmjuD7daKAj5s2ELlK9rrOoJNwHIvfK4bhC1lQVANa4,12802
+xgpu/_wgpu_native_cffi.pypy39-pp73-darwin.so,sha256=stkDvHxXFRM_U_4sKbT2Mm0NbOjP5hsJzlzatIiHkiE,190848
+xgpu/__init__.py,sha256=g_ByBM-dm_Pa5GsqbtdWgNrJzqUnMOaMmjIenM494oc,96
+xgpu/_build_ext.py,sha256=G4G7T2-Gtuw1NJrsgE-0RVa1MrxsJk6MCA0-D1qC-ck,76545
+xgpu/extensions.py,sha256=ak7YqcyHX4jxHzCpk1yydb9pQjVqRuqmGvJqhx_F8qA,10938
+xgpu/bindings.py,sha256=LwpuioSOgccKNTQnaUPshiwHngNTN5oiZjbxxhuiglY,259085
+xgpu/helpers.py,sha256=2T5kHYUt62gKQBHIwC31v0bZ-HPZMy89pvDNQfI1xhg,4584
+xgpu/libwgpu_native.dylib,sha256=3Hdt9GyNag4rJ8_zubxUOrxz_4OuE43uceyHU-pqi0I,10135713
+xgpu-0.6.1.dist-info/RECORD,,
+xgpu-0.6.1.dist-info/LICENSE,sha256=ywcS5hV1O2Laf_jmWbJ8612MW1bBRAExjRvgJvphtx4,1062
+xgpu-0.6.1.dist-info/WHEEL,sha256=n6dAHPubOjjnFZluAHYQZeSTKzsdPDy5qW15erEfsAU,117
+xgpu-0.6.1.dist-info/top_level.txt,sha256=8YZR9bJi6aEHDR2Y3RHd8Yqh5cQWD0uBOiHZmrVd-Eg,5
+xgpu-0.6.1.dist-info/METADATA,sha256=xXl39m7r-yhiz0jrAL6YREMme1dXe_BCTX49l750aXU,7280
