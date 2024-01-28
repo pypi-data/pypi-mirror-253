@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: prom_metric_tools
+Version: 0.0.2
+Summary: Description coming soon
+Author-email: FCRLab <FCRLab800@unime.it>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml ==6.0.1
+Requires-Dist: prometheus-api-client ==0.4.2
+Requires-Dist: tqdm ==4.66.1
+
