@@ -1,0 +1,10 @@
+README.md
+setup.py
+minicv/Colors.py
+minicv/Images.py
+minicv/__init__.py
+minicv.egg-info/PKG-INFO
+minicv.egg-info/SOURCES.txt
+minicv.egg-info/dependency_links.txt
+minicv.egg-info/requires.txt
+minicv.egg-info/top_level.txt

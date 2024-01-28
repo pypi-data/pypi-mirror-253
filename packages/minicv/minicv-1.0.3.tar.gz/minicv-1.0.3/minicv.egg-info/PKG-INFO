@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: minicv
+Version: 1.0.3
+Summary: High performance CV
+Home-page: https://github.com/NakanoSanku/minicv
+Author: KateTseng
+Author-email: KateTseng.K@outlook.com
+License: MIT
+Project-URL: Documentation, https://github.com/NakanoSanku/minicv/README.md
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Source, https://github.com/NakanoSanku/minicv/
+Project-URL: Tracker, https://github.com/NakanoSanku/minicv/issues
+Keywords: High performance CV
+Requires-Python: >=3
+Requires-Dist: opencv-python
