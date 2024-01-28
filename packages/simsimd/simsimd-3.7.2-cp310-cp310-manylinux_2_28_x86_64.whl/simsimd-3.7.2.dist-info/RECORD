@@ -1,0 +1,8 @@
+simsimd.cpython-310-x86_64-linux-gnu.so,sha256=39PIhD0FoGojC6SB6e-JERy4bEuIucLsmvBviqifiQw,371105
+simsimd./libgomp-a97153a2.so.1.0.0,sha256=LWXTqDp3BiW-9Bh938MaOkMwACpGIVrJLHixAegKjac,253289
+simsimd./libmvec-2-ccc0286b.28.so,sha256=3nFoi0iJRWqxravRfYshPtZpKWcjv9G9MFLWgQG9JqE,181969
+simsimd-3.7.2.dist-info/METADATA,sha256=Yrxm-ve6BVOrLeRJ0shynU7jArEDf1afz9oVSOIplTA,11534
+simsimd-3.7.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+simsimd-3.7.2.dist-info/top_level.txt,sha256=kA2CGlVhy5wNyCLTKLh20j75IM5fnuQ_-4bK53XLl8o,8
+simsimd-3.7.2.dist-info/RECORD,,
+simsimd-3.7.2.dist-info/WHEEL,sha256=zL8QdYpn40L5zyQJMSDc8czZQHX1BqCvPZ3z2rz6kD0,114
