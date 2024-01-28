@@ -1,0 +1,42 @@
+$.get(preceeder + '/settings/settings', (data) => {
+    var settings = JSON.parse(data);
+    console.log(settings);
+
+    setInterval(() => {
+        $.get(preceeder + '/ddata', (dynamic_data) => {
+            var data = JSON.parse(dynamic_data);
+                
+            if(settings.systime)
+            {
+                $('#systime').innerHTML = data.systime;
+            }
+            if(settings.uptime)
+            {
+                $('#uptime').innerHTML = data.uptime;
+            }
+            if(settings.cpu)
+            {
+                $('#clock').innerHTML = options.average_clock_speed + 'GHz';
+                for (let i = 0; i < options.round_clock_speeds.length; i++) {
+                    $(`#clock${i}`).innerHTML = options.round_clock_speeds[i] + " GHz ";
+                    $(`${i}`).innerHTML = options.cpu_core_usage[i] + "%";
+                }
+                var cpu_graph = $('#graph');
+                cpu_graph.src = preceeder + '/graphs/cpu_usage_1.svg?t=' + new Date().getTime();
+            }
+
+            if(settings.memory)
+            {
+                $('#used_mem').innerHTML = data.used_memory;
+                $('#used_swap').innerHTML = data.used_swap;
+                $('#used_mem_precent').innerHTML = data.used_memory_percent + " %";
+                $('#used_swap_precent').innerHTML = data.used_swap_percent + " %";
+                var mem_graph = $('#graph_mem');
+                mem_graph.src = preceeder + '/graphs/memory_usage_1.svg?t=' + new Date().getTime();
+            }
+
+            console.log(data);
+        })
+    }, settings.interval_hw * 1000);
+            
+}); 
