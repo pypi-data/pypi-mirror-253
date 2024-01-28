@@ -1,0 +1,3 @@
+[console_scripts]
+create_contact = OdooXMLRPCLibrary.create_contact:main
+
