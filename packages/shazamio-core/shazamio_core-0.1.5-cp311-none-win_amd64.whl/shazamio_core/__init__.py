@@ -1,0 +1,1 @@
+from .shazamio_core import Geolocation
