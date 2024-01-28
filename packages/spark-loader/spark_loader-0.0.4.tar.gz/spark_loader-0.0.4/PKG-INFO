@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: spark-loader
+Version: 0.0.4
+Summary: loads spark
+Author: Edward Yang
+Author-email: eddiepyang@gmail.com
+Requires-Python: >=3.9.2,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: hydra-core (>=1.1.1)
+Requires-Dist: pyarrow (>=7.0.0)
+Requires-Dist: pyspark (>=3.3.1,<3.4.0)
+Requires-Dist: python-rapidjson (>=1.13,<2.0)
+Requires-Dist: spark-nlp (>=5.2.0,<6.0.0)
+Requires-Dist: structlog (>=23.2.0,<24.0.0)
+Description-Content-Type: text/markdown
+
+Load session prior to running
+```
+from sparknlp.base import  DocumentAssembler, Pipeline
+from sparknlp.annotator import (
+    NerDLModel, NerDLApproach, 
+    GraphExtraction, UniversalSentenceEncoder,
+    Tokenizer, WordEmbeddingsModel
+)
+
+
+# load spark session before this
+
+use = UniversalSentenceEncoder \
+    .pretrained() \
+    .setInputCols("document") \
+    .setOutputCol("use_embeddings")
+
+document_assembler = DocumentAssembler() \
+    .setInputCol("value") \
+    .setOutputCol("document")
+
+tokenizer = Tokenizer() \
+    .setInputCols(["document"]) \
+    .setOutputCol("token")
+
+word_embeddings = WordEmbeddingsModel \
+    .pretrained() \
+    .setInputCols(["document", "token"]) \
+    .setOutputCol("embeddings")
+
+
+ner_tagger = NerDLModel \
+    .pretrained() \
+    .setInputCols(["document", "token", "embeddings"]) \
+    .setOutputCol("ner")
+
+graph_extraction = GraphExtraction() \
+            .setInputCols(["document", "token", "ner"]) \
+            .setOutputCol("graph") \
+            .setRelationshipTypes(["lad-PER", "lad-LOC"]) \
+            .setMergeEntities(True)
+
+graph_pipeline = Pipeline() \
+    .setStages([
+        document_assembler, tokenizer,
+        word_embeddings, ner_tagger,
+        graph_extraction
+    ])
+
+df = sess.read.text('./data/train.dat')
+graph_pipeline.fit(df).transform(df)
+```
+
