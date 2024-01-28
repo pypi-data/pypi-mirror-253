@@ -1,0 +1,8 @@
+iamai/adapter/console/__init__.py,sha256=swdyQBJwRfox9puuWC4coWQoX1lOqFRsLoPGHhxdf28,989
+iamai/adapter/console/config.py,sha256=ODt0ubI3UHRavgdte3bmbNGCfXT9xPdS6W7x8bZeago,294
+iamai/adapter/console/event.py,sha256=xMiw6HbMMS4rCV-fxW5sj49cfoR6N8KriSVOZUZAg4w,2609
+iamai/adapter/console/message.py,sha256=PnVLkBLLndQeXZNYyA5pmprt-tFlX1oyrZOkE0rX9TU,704
+iamai_adapter_console-0.0.3a1.dist-info/METADATA,sha256=UYZ6UFAjWCsy2TBr-zfNIYPeZLbSG4PzymMjGpUZFOs,1141
+iamai_adapter_console-0.0.3a1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+iamai_adapter_console-0.0.3a1.dist-info/licenses/LICENSE,sha256=Nv6u1ubULm-E2y6q2-pQPK8s2BzkOltLaVlPKQ3tkcs,35182
+iamai_adapter_console-0.0.3a1.dist-info/RECORD,,
