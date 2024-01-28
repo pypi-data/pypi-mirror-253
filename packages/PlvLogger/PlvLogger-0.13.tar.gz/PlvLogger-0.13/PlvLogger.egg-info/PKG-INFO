@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: PlvLogger
+Version: 0.13
+Summary: Custom logging library
+Home-page: https://github.com/plv88/MyLogger
+Author: plv88
+Author-email: plv.andrey88@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# my_logger
+
+0.11. Добавили проверку логгера
+0.12 Добавили автоудаление файла с логами через определенное кол-во часов
