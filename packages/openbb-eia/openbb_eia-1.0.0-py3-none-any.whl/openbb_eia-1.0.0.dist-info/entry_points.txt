@@ -1,0 +1,6 @@
+[openbb_core_extension]
+eia=eia.router:router
+
+[openbb_provider_extension]
+eia=eia.provider:provider
+
