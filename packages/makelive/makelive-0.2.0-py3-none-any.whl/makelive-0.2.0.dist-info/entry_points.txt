@@ -1,0 +1,3 @@
+[console_scripts]
+makelive=makelive:main
+
