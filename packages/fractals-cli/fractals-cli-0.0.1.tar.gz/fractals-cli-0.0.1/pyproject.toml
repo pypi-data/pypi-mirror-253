@@ -1,0 +1,39 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fractals-cli"
+version = "0.0.1"
+description = "[Under Construction] Print fractals to the console!"
+readme = "README.md"
+authors = [{ name = "Spiro Metaxas", email = "spirometaxas@outlook.com" }]
+maintainers = [{ name = "Spiro Metaxas", email = "spirometaxas@outlook.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+keywords = ["Fractals"]
+requires-python = ">=3.8"
+
+[project.urls]
+"Homepage" = "https://spirometaxas.com/projects/fractals-cli/"
+"Repository" = "https://github.com/spirometaxas/fractals-cli-py"
+
+[project.scripts]
+"fractals-cli" = "fractals_cli.cli:main"
+
+[tool.setuptools]
+packages = ["fractals_cli"]

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+fractals_cli/__init__.py
+fractals_cli/cli.py
+fractals_cli.egg-info/PKG-INFO
+fractals_cli.egg-info/SOURCES.txt
+fractals_cli.egg-info/dependency_links.txt
+fractals_cli.egg-info/entry_points.txt
+fractals_cli.egg-info/top_level.txt
