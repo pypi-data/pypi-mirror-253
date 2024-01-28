@@ -1,0 +1,6 @@
+[console_scripts]
+foxy-changelog = foxy_changelog.__main__:main
+
+[setuptools_scm.version_scheme]
+calendar-conventional-commit-foxy = foxy_changelog.setuptools_scm.version_scheme:calendar_conventional_commit_foxy
+semver-conventional-commit-foxy = foxy_changelog.setuptools_scm.version_scheme:semver_conventional_commit_foxy
