@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: PyVisionTools
+Version: 0.0.8
+Summary: A collection of tools for image processing
+Home-page: https://github.com/Varenik2/PyVisionTools
+Author: varenikGD
+Author-email: arugula_baklava.0o@icloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+
+# PyVisionTools
+
+PyVisionTools is a Python library for image processing, offering convenient tools to enhance your vision-related projects.
+
+## Installation
+
+You can install PyVisionTools using pip:
+
+```bash
+pip install PyVisionTools
+```
+
+## Features
+
+### ImageProcessor
+- **Resize image**: Easily resize images with 'resize_image' method
+
+```python
+import PyVisionTools
+
+image_url = "http://example.com/your_cool_image.png"
+output_image_path = "resized_image.png"
+new_size = (69, 69)
+
+image_data = PyVisionTools.ImageProcessor.open_image_from_url(image_url)
+image_data, chunks = PyVisionTools.ImageProcessor.decompress_png(image_data)
+PyVisionTools.ImageProcessor.resize_image(image_data, output_image_path, new_size, chunks)
+
+```
+
+## License
+
+This project is licensed under the MIT License
+
+## ImageDraw
+
+You can draw with 'ImageDraw'.
+
+```bash
+python -m PyVisionTools
+Draw
+```
