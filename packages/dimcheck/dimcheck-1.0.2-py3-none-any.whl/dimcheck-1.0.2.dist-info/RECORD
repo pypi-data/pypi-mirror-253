@@ -1,0 +1,12 @@
+dimcheck/__init__.py,sha256=og0nXGBc5yIXn6qJTAs_iMT8kjhzYMDiwGviWy3K0zw,95
+dimcheck/custom.json,sha256=f1IKutgHnjSLlGXrvpvD7TyEOlMdx5ARwCve8-AWI6g,8296
+dimcheck/dimcheck_core.py,sha256=aogvE-UVOERZxG5rrjJFOjwgHcYqc4HNsXXVraAFkl4,54460
+dimcheck/setting.json,sha256=KHLoxII65huXXsb3cun1cH-TdVUyPWb8WBxekLAQTWM,69
+dimcheck/si.json,sha256=f1IKutgHnjSLlGXrvpvD7TyEOlMdx5ARwCve8-AWI6g,8296
+src/__init__.py,sha256=pgAF8_7RS3GMVwBHoE0K0Hzx3KDqf5xdl4jZhRhiGtw,131
+src/dimcheck_core.py,sha256=HLUxD9rYb33X7_z_KRNhM1WlxDV80UDsvcBHFJ3w2rI,53164
+dimcheck-1.0.2.dist-info/LICENSE,sha256=62GgUmqLxiR0vjsuD0VcIidy9z44wJsfUrjH7h8_nhA,11338
+dimcheck-1.0.2.dist-info/METADATA,sha256=j2RfGSvLaUMfUB07SxLcCUueMJYlCNhZQgo8cuKbwwQ,14322
+dimcheck-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dimcheck-1.0.2.dist-info/top_level.txt,sha256=E7LHvLpFAKmcqqrCMJUNxPOZBMd0ImA455P8Gw2N318,9
+dimcheck-1.0.2.dist-info/RECORD,,
