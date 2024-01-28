@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+test.log
+output.csv
+output/
+run.sh
+*local.*
+*.local
+instances/
+data/
+!src/ecdk/data/
+.DS_Store
+bin/
+*.out
+dist/
+
