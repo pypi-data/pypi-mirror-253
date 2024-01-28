@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: YW_jaz
+Version: 0.1.0
+Summary: YWs jaz processing tool
+Author: Yulun Wu
+Author-email: yulunwu8@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# Jaz: calibration and derive Rrs
+
+
+## Background 
+
+Sensors/Modules 
+
+- M0 = M2 (Ed sensor)
+- M1 = M3 (Lw sensor) 
+
+bands_matching.csv: pre-calibrated wavelengths 
+
+## Calibartion: 
+
+first get time_matching.csv
+
+manually fill time_matching.csv and make it time_matching_filled.csv
+
+
+all.csv: intermediate file, the numbers used in regression 
+
+
+
+
+
+calibration201023.csv
+
+
+
+
+
+## Deriving Rrs: 
+
+Select and choose 
+
+
+
+
+
+
