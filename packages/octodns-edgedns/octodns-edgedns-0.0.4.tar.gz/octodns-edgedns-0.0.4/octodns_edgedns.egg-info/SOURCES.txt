@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+octodns_edgedns/__init__.py
+octodns_edgedns.egg-info/PKG-INFO
+octodns_edgedns.egg-info/SOURCES.txt
+octodns_edgedns.egg-info/dependency_links.txt
+octodns_edgedns.egg-info/requires.txt
+octodns_edgedns.egg-info/top_level.txt
+tests/test_octodns_provider_edgedns.py
