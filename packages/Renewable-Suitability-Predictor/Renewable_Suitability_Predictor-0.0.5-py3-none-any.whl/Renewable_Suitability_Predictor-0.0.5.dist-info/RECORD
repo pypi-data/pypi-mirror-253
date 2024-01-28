@@ -1,0 +1,9 @@
+Renewable_Suitability_Predictor/Interface.py,sha256=E-3nVUQQmhBKwe02gByWecDvRuP0rqQUeZOOOlxX8A8,7540
+Renewable_Suitability_Predictor/__init__.py,sha256=M1AxzvJIoKNrg30wEcyL5hSO6j4ee5LDYbUFBHvlt6Y,109
+Renewable_Suitability_Predictor/backend_methods.py,sha256=FiV-MMnEMQ7UdtVFYxZ_NJ2cp8XE5ubXKVrkwRjW_Mo,6067
+Renewable_Suitability_Predictor/solar_dataset.csv,sha256=cKNc2U2fGAsqdjAj24J0p4pWhdg11TRQzbJrUkFh5BE,185222
+Renewable_Suitability_Predictor/wind_dataset.csv,sha256=n8G_JIQ3Lad2RI7JhDGbfhAKYg1sL7oxzp3kslHO-cM,188562
+Renewable_Suitability_Predictor-0.0.5.dist-info/METADATA,sha256=0Avg_aCzb12CugONfn86AXXeNYFrDmYMxVT3JF4dVEM,663
+Renewable_Suitability_Predictor-0.0.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+Renewable_Suitability_Predictor-0.0.5.dist-info/top_level.txt,sha256=rD9M5dLxN3x0GVasMpWrxhRDIWHhprrpWc76hHbGqRs,32
+Renewable_Suitability_Predictor-0.0.5.dist-info/RECORD,,
