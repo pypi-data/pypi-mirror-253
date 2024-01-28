@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+pynumerical/__init__.py
+pynumerical/pynumerical.py
+pynumerical.egg-info/PKG-INFO
+pynumerical.egg-info/SOURCES.txt
+pynumerical.egg-info/dependency_links.txt
+pynumerical.egg-info/requires.txt
+pynumerical.egg-info/top_level.txt
