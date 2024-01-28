@@ -1,0 +1,31 @@
+[project]
+name = "pyexpose"
+version = "0.1.2"
+description = "Python library for creating SSH-based tunnels to expose local services, supporting commond providers like serveo.net and localhost.run. Supports modern Python syntax, asyncio, and context managers for ease of use"
+authors = [
+    { name = "Harishankar Kumar", email = "hari01584@gmail.com" },
+]
+dependencies = [
+    "asyncssh>=2.14.2",
+    "sphinx>=7.1.2",
+    "sphinx-rtd-theme>=2.0.0",
+    "rinohtype>=0.5.4",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+test = "python -m unittest"
+docs = "sh -c 'make -C docs/ clean html && make -C docs/ html'"
