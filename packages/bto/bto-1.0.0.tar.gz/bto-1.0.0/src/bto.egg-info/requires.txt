@@ -1,0 +1,6 @@
+psutil
+requests
+pillow
+rich
+numpy
+pytesseract
