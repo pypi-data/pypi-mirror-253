@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bto"
+version = "0.0.8"
+dependencies = [
+  "psutil",
+  "requests",
+  "pillow",
+  "rich",
+  "numpy",
+  "pytesseract"
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Divinemonk"}
+]
+maintainers = [
+  {name = "Divinemonk"}
+]
+description = "[BTO]: multi-purpose cli tool (one-script-to-rule-them-all)"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["bto", "tool", "handy", "divinemonk", "all-in-one"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[project.urls]
+Homepage = "https://github.com/Divinemonk/bto"
+"Bug Tracker" = "https://github.com/Divinemonk/bto/issues"
+Changelog = "https://github.com/me/spam/blob/m41n/CHANGELOG.md"
+
+
+[project.scripts]
+bto = "bto:main" 
