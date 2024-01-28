@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: aiocmdline
+Version: 2024.1.25
+Summary: Python class to build async-compatible line-oriented command interpreter
+Author-email: Mario Kicherer <dev@kicherer.org>
+License: Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/anyc/aiocmdline/
+Project-URL: Issues, https://github.com/anyc/aiocmdline/issues
+Keywords: cmdline,readline
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: aioreadline
+
+aiocmdline
+==========
+
+Python has a builtin module that provides a line-oriented command interpreter.
+However, the builtin module is difficult to use with async Python code. This
+module provides a ready-to-use class that simplifies the implementation of
+regular and async commands.
+
+Dependencies:
+-------------
+
+ - aioreadline
+
+Example
+-------
+
+```
+class MyCmdline(AIOCmdline):
+	def do_quit(self):
+		self.stop_cmdloop()
+	
+	async def do_sleep(self, arg):
+		await asyncio.sleep(int(arg))
+		print("sleep done")
+
+mycmdline = MyCmdline(prompt="mycmd> ", history=True)
+mycmdline.cmdloop()
+```

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiocmdline"
+version = "2024.01.25"
+authors = [
+  { name="Mario Kicherer", email="dev@kicherer.org" },
+]
+description = "Python class to build async-compatible line-oriented command interpreter"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+keywords = ["cmdline", 'readline']
+license = {file = "LICENSE.txt"}
+dependencies = [
+  'aioreadline',
+  ]
+
+[project.urls]
+Homepage = "https://github.com/anyc/aiocmdline/"
+Issues = "https://github.com/anyc/aiocmdline/issues"
+
+[tool.setuptools.packages.find]
+include = ["aiocmdline"]
