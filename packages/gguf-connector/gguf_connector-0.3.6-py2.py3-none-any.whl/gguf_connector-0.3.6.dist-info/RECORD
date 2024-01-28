@@ -1,0 +1,13 @@
+gguf_connector/__init__.py,sha256=l5ikRt7gge9WyZAHoBzXaIPTvqyEX_BD98Y8LUzNjJc,25
+gguf_connector/__main__.py,sha256=cymSHPLv7K3ixx6anyEG9kyD78yiLUFbrD7pCRvKixQ,1366
+gguf_connector/c.py,sha256=_FLvvbtap5fzp-b-13Ti40BgYmSPHA299iD3FDZi3E0,1842
+gguf_connector/cpp.py,sha256=o8QaYFKY4l-MZmuc5AVFuCZxDAHYfrgNJYYswk6EByA,1859
+gguf_connector/g.py,sha256=tP4G-QLIw8Ecf6d4klue9eOXeF-ka3NisQGPAF3svPg,1107
+gguf_connector/gpp.py,sha256=IGCa--HoemRQJQxLgb9wEMB9aFft5tE5czP93U2AYBI,1160
+gguf_connector/logo.png,sha256=TY-b0DiNReBaCnAt3j4wFo4F3SnWT5_2CnQqWZ1N2Ho,742
+gguf_connector/menu.py,sha256=68wqmn-023pc_wqrtbfY_M6IZgyVCIgKZXNQzdlZ6v8,240
+gguf_connector-0.3.6.dist-info/entry_points.txt,sha256=Fj-v38-XH32ne6ZASxoeL4OCeelmxyGbrPNDn1PWKdY,57
+gguf_connector-0.3.6.dist-info/LICENSE,sha256=Dl7IS8rhKesmjItCjQsVP1HgwuG7Ng-FGec_jIM0uUE,1095
+gguf_connector-0.3.6.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+gguf_connector-0.3.6.dist-info/METADATA,sha256=AqA0HsYXh3Psswt00TUQ47yw4kWd63CCrkgX6epoGl4,2488
+gguf_connector-0.3.6.dist-info/RECORD,,
