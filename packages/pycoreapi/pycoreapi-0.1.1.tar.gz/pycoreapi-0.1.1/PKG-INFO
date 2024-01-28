@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pycoreapi
+Version: 0.1.1
+Summary: CoreAPI is a high-performance RSGI lightweight framework for building API's in python with no requirements
+Home-page: https://github.com/achaayb/CoreAPI
+Author: Ali Chaayb
+Author-email: achaayb.cheri.dev@gmail.com
+License: MIT
+License-File: LICENSE
