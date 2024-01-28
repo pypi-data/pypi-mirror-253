@@ -1,0 +1,3 @@
+[console_scripts]
+paos = paos.paos:main
+paosgui = paos.paosGui:main
