@@ -1,0 +1,11 @@
+pycoreapi/__init__.py,sha256=k_7JdUQOFfKlBCpbjofMewCTqgnLouFArNovirvNumg,34
+pycoreapi/connection.py,sha256=jO5ROE0FhpXu9FlyWDRTYoRCnsloeDakmYetfgpEdVA,1553
+pycoreapi/core.py,sha256=CcNqM6D2jcdl3fJM0bBngIz3ZU_J__fvE2KlGxDSgXE,6960
+pycoreapi/exceptions.py,sha256=y8l8YwEWrD7_4FcNUOrlrWJWsqebkkORX9QC9VunaTg,263
+pycoreapi/request.py,sha256=1D8GdN5tKPyZl_7EVuk5YX6RekE4QsOEMf8Sjdglr2Q,684
+pycoreapi/response.py,sha256=lMRv2hOmGJ8H9NjNUgFpcurK5BVCH1LgNTyO5CeuWHA,1413
+pycoreapi-0.1.0.dist-info/LICENSE,sha256=gCQ81Q-C9_c6wsgQ6dTcRpJWookI5GovL73CTkm_bR8,1067
+pycoreapi-0.1.0.dist-info/METADATA,sha256=vlJ_Qvi-kzePHqgLHXiR5DpWYlkNqQvV4HkJrTlqnGk,339
+pycoreapi-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pycoreapi-0.1.0.dist-info/top_level.txt,sha256=mv_zpzB_UyXX8D71AviBcIioAYG2JFkbXoMPH5wPfuc,10
+pycoreapi-0.1.0.dist-info/RECORD,,
