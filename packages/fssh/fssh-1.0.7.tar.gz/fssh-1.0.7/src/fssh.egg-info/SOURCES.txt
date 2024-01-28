@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/fssh/__init__.py
+src/fssh/__main__.py
+src/fssh/setup.py
+src/fssh.egg-info/PKG-INFO
+src/fssh.egg-info/SOURCES.txt
+src/fssh.egg-info/dependency_links.txt
+src/fssh.egg-info/entry_points.txt
+src/fssh.egg-info/requires.txt
+src/fssh.egg-info/top_level.txt
