@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: PyAnyCAD
+Version: 2024.1.28
+Summary: a library for 3D Graphics/Geometry Developer
+Home-page: http://www.anycad.cn
+Author: AnyCAD
+Author-email: anycad@anycad.cn
+License: AnyCAD License
+Keywords: AnyCAD
+Platform: win64
+
