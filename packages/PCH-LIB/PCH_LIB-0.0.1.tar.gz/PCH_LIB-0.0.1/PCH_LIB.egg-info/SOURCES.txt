@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+PCH_LIB.egg-info/PKG-INFO
+PCH_LIB.egg-info/SOURCES.txt
+PCH_LIB.egg-info/dependency_links.txt
+PCH_LIB.egg-info/requires.txt
+PCH_LIB.egg-info/top_level.txt
