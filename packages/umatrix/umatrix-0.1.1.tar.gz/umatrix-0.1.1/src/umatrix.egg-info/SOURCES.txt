@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/umatrix/__init__.py
+src/umatrix/matrix.py
+src/umatrix.egg-info/PKG-INFO
+src/umatrix.egg-info/SOURCES.txt
+src/umatrix.egg-info/dependency_links.txt
+src/umatrix.egg-info/requires.txt
+src/umatrix.egg-info/top_level.txt
+src/umatrix/__backend/__init__.py
+src/umatrix/__backend/custom_exceptions_.py
+test/test_Matrix.py
