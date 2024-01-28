@@ -1,0 +1,9 @@
+langwatch/__init__.py,sha256=lV2omwpgPTXjCrg3WbrGmDurShJcHylFibaRKdOCCgc,702
+langwatch/langchain.py,sha256=FZWAQm_4YgrvlUgmfioJtqRfnb3Om61ULMMmHE-bHsk,11193
+langwatch/openai.py,sha256=ospYtPNVcWM5b5rUnyRv59AayQyNjNrpYLwzbuhPim8,18831
+langwatch/tracer.py,sha256=d-IBvbt8vS1kvJzL46v4craUNNHoVc05A3lLjWc4FZQ,7511
+langwatch/types.py,sha256=gYcQAlT9Nl58QUxFVHXJhUkPOzhSO-orixuDIwnB0xg,3080
+langwatch/utils.py,sha256=K_fFbb8YMFisiSxlvPStWxR-kKgvA7NenQ_CQG36A18,2589
+langwatch-0.0.8.dist-info/METADATA,sha256=rNoe_ceeOHSJ_ijM07byNbNyProvuqFu7zR0p_C0Ruw,2346
+langwatch-0.0.8.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+langwatch-0.0.8.dist-info/RECORD,,
