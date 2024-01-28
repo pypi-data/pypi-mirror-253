@@ -1,0 +1,24 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* build: add MANIFEST.in and pyproject.toml
+* docs: update README
+* install: adding setup.py
+* test: check range of rotation is sensible
+* test: add a few basic integrity tests for a voxel
+* fix: ensure binimg is a fortran array
+* chore: remove python implementation of 3d
+* fix: add type guards
+* fix: ensure anisotropy is a numpy array
+* chore: spaces to tabs
+* fix: some ccl floating point boundary errors
+* fix: support anisotropy for 5 and 6 sided contacts
+* fix: support 5 and 6 vertex contact situations
+* feat: add support for 3d anisotropy
+* feat: kinda working fast 3d implementation
+* wip: c++ code compiles
+* feat: add 3d cross section computation
+* Initial commit
