@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "hoppr_nexus_bundler"
+version = "0.5.8"
+description = "Plug-in for Hoppr to bundle artifacts into a Nexus Repository"
+authors = ["LMCO Open Source <open.source@lmco.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://hoppr.dev"
+repository = "https://gitlab.com/hoppr/plugins/hoppr-nexus-bundler"
+
+keywords = [
+  "hoppr",
+  "plugin",
+  "nexus",
+]
+
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Information Technology",
+  "Topic :: Communications :: File Sharing",
+  "Topic :: Software Development :: Version Control",
+  "Topic :: System :: Software Distribution"
+]
+
+[[tool.poetry.packages]]
+include = "nexus_bundler"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+hoppr = "^1.10.2"
+semver = "^3.0.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.6.0"
+pylint = "^3.0.0"
+mypy = "^0.961"
+coverage = "^7.0.0"
+pytest = "^8.0.0"
+
+[tool.poetry.plugins."hoppr.plugin"]
+nexus_bundler = "nexus_bundler.bundler:NexusBundlePlugin"
+
+[[tool.mypy.overrides]]
+module = ["test.*", "ruamel"]
+allow_untyped_defs = true
+allow_incomplete_defs = true
+allow_untyped_calls = true
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
