@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pybambu
+Version: 1.0.1
+Summary: A python library to connect to the Bambu Lab X1C over MQTT
+Home-page: https://github.com/greghesp/pybambu
+Author: Greg Hesp
+Author-email: greg.hesp+pybambulab@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Bambu Labs API Client
+
+## About
+
+This package subscribes to the MQTT Server on the Bambu Labs X1C 3D Printer.
+
+> Note:  It is currently not up-to-date.  It's currently being worked on directly in a [HA Custom Component](https://github.com/greghesp/ha-bambulab/tree/main/custom_components/bambu_lab/pybambu), until it is more stable
+
+## Installation
+
+`pip install pybambu`
+
+
+## Available Methods
+
+### Connect to the printer
+```py
+connect()
+```
+
+### Listen for events from the printer
+```py
+subscribe(callback=method)
+```
+
+### Disconnect from the printer
+```py
+disconnect()
+```
