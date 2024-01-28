@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: is-propchecker
+Version: 0.1.0
+Summary: 
+Author: neoskye24
+Author-email: neoskyeai@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+Compliance Checker
