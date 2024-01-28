@@ -1,0 +1,6 @@
+pyproject.toml
+autopath/__init__.py
+autopath.egg-info/PKG-INFO
+autopath.egg-info/SOURCES.txt
+autopath.egg-info/dependency_links.txt
+autopath.egg-info/top_level.txt
