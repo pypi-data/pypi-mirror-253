@@ -1,0 +1,2 @@
+wpilib<2025,>=2024.2.1.2
+typing_extensions<5,>=4.1.0
