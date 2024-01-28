@@ -1,0 +1,19 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.2.5
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: kyori@accelf.net
+author_name: kyori19
+data_format: string
+file_extension: ''
+has_binder: true
+has_settings: false
+kind: frontend
+labextension_name: satysfi-notebook-tweaks
+mimetype: ''
+mimetype_name: ''
+project_short_description: A small tweaks for SATySFi Notebook environment.
+python_name: satysfi_notebook_tweaks
+repository: https://github.com/kyori19/satysfi-notebook-tweaks
+test: true
+viewer_name: ''
+
