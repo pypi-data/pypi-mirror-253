@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: beetimer
+Version: 0.1.1
+Summary: 
+Author: fergus
+Author-email: fergusfettes@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pyminder (>=1.1.1,<2.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# Beetimer
+
+Timer for beeminder. For tasks that expect a number of minutes or hours per day.
+
+```
+pip install beetimer
+beetimer auth <username>
+beetimer config time:minutes   # set default time unit (minutes or hours) (default: minutes)
+```
+
+# Usage
+
+```
+beetimer goals                 # list goals
+```
+
+```
+beetimer start <goal>
+```
+
+```
+beetimer stop <goal>
+> 38 minutes logged for goal: <goal>. commit 38 points to beeminder? [y/n]
+```
+
+or, if hours are the default time unit:
+
+```
+beetimer stop <goal>
+> 0.63 hours logged for goal: <goal>. commit .63 points to beeminder? [y/n]
+```
+
+You can force commit on stop with `--force` or `-f`:
+
+```
+beetimer stop <goal> -f
+> 38 minutes logged for goal: <goal>. committed 38 points to beeminder.
+```
+
