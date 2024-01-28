@@ -1,0 +1,110 @@
+[project]
+name = "iamai"
+version = "0.0.3a3"
+description = "Comprehensive AI Toolkit for Multimodal Learning and Cross-Platform Robotics."
+authors = [{ name = "简律纯", email = "i@jyunko.cn" }]
+license = { text = "MIT" }
+readme = "README.md"
+keywords = [
+    "bot",
+    "red",
+    "kook",
+    "onebot11",
+    "gensokyo",
+    "dingtalk",
+    "console",
+    "apscheduler",
+    "bilibili",
+    "bilibili-live",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: AsyncIO",
+    "Framework :: Robot Framework",
+    "Framework :: Robot Framework :: Library",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Communications :: Chat",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "tomli>=2.0.0,<3.0.0;python_version<'3.11'",
+    "pydantic>=2.0.3,<3.0.0",
+    "aiohttp>=3.9.1",
+    "loguru>=0.7.0,<0.8.0",
+    "typing-extensions>=4.8.0",
+    "watchfiles>=0.21.0",
+    "requests>=2.31.0",
+    "click>=8.1.7",
+]
+
+[project.optional-dependencies]
+onebot11 = ["iamai-adapter-onebot11"]
+bililive = ["iamai-adapter-bililive"]
+dingtalk = ["iamai-adapter-dingtalk"]
+apscheduler = ["iamai-adapter-apscheduler"]
+red = ["iamai-adapter-red"]
+console = ["iamai-adapter-console"]
+kook = ["iamai-adapter-kook"]
+gensokyo = ["iamai-adapter-gensokyo"]
+hot_reload = ["watchfiles"]
+all = [
+    "iamai-adapter-bililive",
+    "iamai-adapter-onebot11",
+    "iamai-adapter-dingtalk",
+    "iamai-adapter-apscheduler",
+    "iamai-adapter-gensokyo",
+    "iamai-adapter-console",
+    "iamai-adapter-red",
+    "iamai-adapter-kook",
+    "watchfiles",
+]
+
+[project.urls]
+Homepage = "https://iamai.is-a.dev"
+Documentation = "https://iamai.is-a.dev"
+Repository = "https://github.com/retrofor/iamai"
+Changelog = "https://iamai.is-a.dev/en/latest/changelog.html#"
+
+[project.scripts]
+iamai = "iamai.cli:iamai"
+
+[tool.black]
+target-version = ["py38", "py39", "py310", "py311"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/README.md", "/iamai"]
+
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "-e iamai-adapter-red @ {root:uri}/packages/iamai-adapter-red",
+    "-e iamai-adapter-bililive @ {root:uri}/packages/iamai-adapter-bililive",
+    "-e iamai-adapter-kook @ {root:uri}/packages/iamai-adapter-kook",
+    "-e iamai-adapter-onebot11 @ {root:uri}/packages/iamai-adapter-onebot11",
+    "-e iamai-adapter-console @ {root:uri}/packages/iamai-adapter-console",
+    "-e iamai-adapter-dingtalk @ {root:uri}/packages/iamai-adapter-dingtalk",
+    "-e iamai-adapter-apscheduler @ {root:uri}/packages/iamai-adapter-apscheduler",
+    "-e iamai-adapter-gensokyo @ {root:uri}/packages/iamai-adapter-gensokyo"
+]
+typing = [ # used only in type check
+    "watchfiles",
+    "trio>=0.22.2", # watchfiles used this lib
+]
+lint = ["black", "ruff", "mypy", "pylint", "pylint-pydantic"]
+docs = [
+    "tomlkit",
+    "sphinx>=7.1.2",
+    "furo>=2023.9.10",
+    "sphinx-autobuild>=2021.3.14",
+    "myst-parser>=2.0.0",
+    "tomli>=2.0.1",
+    "sphinx-design>=0.5.0",
+    "sphinx-intl>=2.1.0",
+]
+test = ["pytest", "pytest-asyncio", "pytest-xdist", "pytest-cov"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
