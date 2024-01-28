@@ -1,0 +1,10 @@
+numpy
+pandas
+umap-learn
+plotly
+tqdm
+PyPDF2
+langchain
+chromadb
+openai
+pydantic
