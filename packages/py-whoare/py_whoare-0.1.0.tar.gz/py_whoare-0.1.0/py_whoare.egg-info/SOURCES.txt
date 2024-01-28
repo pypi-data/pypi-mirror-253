@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+py_whoare/__init__.py
+py_whoare.egg-info/PKG-INFO
+py_whoare.egg-info/SOURCES.txt
+py_whoare.egg-info/dependency_links.txt
+py_whoare.egg-info/requires.txt
+py_whoare.egg-info/top_level.txt
