@@ -1,0 +1,7 @@
+sqlmodel_crud_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlmodel_crud_manager/crud.py,sha256=jhpPCSDWZLgDrnoddqjIkWsgVXbkt1nZh8PiHxguG0k,18209
+sqlmodel_crud_manager/decorator.py,sha256=iq8Dhmzw_ROAtU4opRo5rbutZrGbgBmC0vGnswlBzfA,927
+sqlmodel_crud_manager-0.1.12.dist-info/LICENSE,sha256=ZgUNtn7hRfOUfahmq9OcolBJe8rSOUSSUI3tGoEIVF4,1071
+sqlmodel_crud_manager-0.1.12.dist-info/METADATA,sha256=YLxQfD7um5OGf15A9yZniQniHs94rwH482BrjELM4ow,5073
+sqlmodel_crud_manager-0.1.12.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sqlmodel_crud_manager-0.1.12.dist-info/RECORD,,
