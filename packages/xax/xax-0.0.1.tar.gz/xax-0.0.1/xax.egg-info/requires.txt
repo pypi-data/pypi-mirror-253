@@ -1,0 +1,9 @@
+jax
+jaxtyping
+
+[dev]
+black
+darglint
+mypy
+pytest
+ruff
