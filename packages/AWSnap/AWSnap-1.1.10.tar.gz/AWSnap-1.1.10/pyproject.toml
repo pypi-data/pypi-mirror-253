@@ -1,0 +1,26 @@
+[project]
+name = "AWSnap"
+description = "AWSnap is a tool for managing AWS SSO."
+version = "1.1.10"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+authors = [
+  { name = "Aaron West", email = "aphexlog@gmail.com" },
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.pyright]
+typeCheckingMode = "strict"
+venvPath = "."
+venv = ".venv"
+
+[tool.ruff]
+
+[tool.isort]
+atomic = true
+profile = "black"
+line_length = 88
+skip_gitignore = true

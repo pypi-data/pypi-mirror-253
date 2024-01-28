@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/AWSnap.egg-info/PKG-INFO
+src/AWSnap.egg-info/SOURCES.txt
+src/AWSnap.egg-info/dependency_links.txt
+src/AWSnap.egg-info/top_level.txt
+src/awsnap/__init__.py
+src/awsnap/awsnap.py
+src/awsnap/pipeline/__init__.py
+src/awsnap/pipeline/cloudformation.py
+src/awsnap/pipeline/command_handler.py
+src/awsnap/pipeline/synth.py
