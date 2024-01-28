@@ -1,0 +1,9 @@
+{
+  "/oic/d": {
+    "n": "Redis Queue Worker"
+  },
+  "/oic/con": {
+    "updateTime": 0,
+    "redis_url": "redis://localhost"
+  }
+}
