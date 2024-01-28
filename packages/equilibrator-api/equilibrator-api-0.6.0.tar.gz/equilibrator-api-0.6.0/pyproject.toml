@@ -1,0 +1,99 @@
+[project]
+name = "equilibrator-api"
+description = "Calculation of standard thermodynamic potentials of biochemical reactions"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT License"}
+authors = [
+  {name = "Elad Noor", email = "elad.noor@weizmann.ac.il"},
+  {name = "Moritz E. Beber", email = "midnighter@posteo.net"}
+]
+keywords = [
+    "component contribution",
+    "Gibbs energy",
+    "biochemical reaction",
+    "eQuilibrator"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dynamic = ["version"]
+requires-python = ">=3.9"
+dependencies = [
+    "pyparsing ~=3.1",
+    "python-slugify ~=8.0",
+    "equilibrator-cache ~=0.6.0",
+    "component-contribution ~=0.6.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-raises",
+    "pytest-mock",
+    "pytest-allclose",
+    "cobra",
+    "sbtab"
+]
+development = [
+    "black",
+    "isort",
+    "flake8",
+    "safety",
+    "tox",
+    "twine"
+]
+deployment = [
+    "click",
+    "click-log",
+    "python-dateutil",
+    "requests",
+]
+
+[project.urls]
+repository = "https://gitlab.com/equilibrator/equilibrator-api/"
+documentation = "https://equilibrator.readthedocs.io/en/latest/"
+
+[build-system]
+requires = [ "setuptools>=41", "wheel", "setuptools-git-versioning<2", ]
+build-backend = "setuptools.build_meta"
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[tool.setuptools]
+zip-safe = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"equilibrator_api.data" = ["*.csv"]
+
+[tool.setuptools-git-versioning]
+enabled = true
+
+[tool.black]
+exclude = '''
+(
+    __init__.py
+)
+'''
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+ignore = ["F401"]
