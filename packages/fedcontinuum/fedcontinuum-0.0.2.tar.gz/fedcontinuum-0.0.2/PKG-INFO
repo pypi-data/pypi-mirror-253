@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: fedcontinuum
+Version: 0.0.2
+Summary: FedContinuum: Federated Continual Learning Scenarios Management Tool
+Home-page: https://github.com/ray-ruisun/FedContinuum
+Author: Ray
+Author-email: b6023794@newcastle.ac.uk
+Keywords: distributed machine learning,federated learning,continual learning,federated continual learning
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: loguru
+Requires-Dist: tqdm
+Requires-Dist: pyyaml
+Requires-Dist: wandb
+Requires-Dist: torch
+Requires-Dist: torchvision
+
+<div align="center">
+
+# FedContinuum: Federated Continual Learning Scenarios Management Tool
+
+[![PyPI version](https://badge.fury.io/py/fedcontinuum.svg)](https://badge.fury.io/py/fedcontinuum) [![Python](https://img.shields.io/badge/python-3.10-blue?style=round-square&logo=Python&color=3776AB)](https://www.python.org/) [![PyTorch](https://img.shields.io/badge/pytorch-latest-orange?style=round-square&logo=PyTorch&color=EE4C2C)](https://pytorch.org/)
+
+</div>
+
+## System Environments
+
+### Python Dependent Packages
+
+|      Packagename      | Version |     Note     |
+|:---------------------:|:-------:|:------------:|
+|        loguru         |  0.6.0  | == to latest |
+|         tqdm          | 4.65.0  | == to latest |
+|        pyyaml         |   6.0   | == to latest |
+|         wandb         | 0.14.0  | == to latest |
+|         torch         |  2.0.0  | == to latest |
+|      torchvision      | 0.15.1  | == to latest |
