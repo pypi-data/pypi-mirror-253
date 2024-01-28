@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/tar_mak_monaco_report/Task6_report.py
+src/tar_mak_monaco_report/__init__.py
+src/tar_mak_monaco_report.egg-info/PKG-INFO
+src/tar_mak_monaco_report.egg-info/SOURCES.txt
+src/tar_mak_monaco_report.egg-info/dependency_links.txt
+src/tar_mak_monaco_report.egg-info/entry_points.txt
+src/tar_mak_monaco_report.egg-info/top_level.txt
+tests/test_Task6_report.py
