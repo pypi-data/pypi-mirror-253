@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taurex_emcee"
+version = "0.4.0-rc"
+authors = [
+    {name = "Andrea Bocchieri <andrea.bocchieri@uniroma1.it>"},
+    {name = "Quentin Changeat"},
+    {name = "Lorenzo V. Mugnai"},
+    {name = "Enzo Pascale"},
+]
+description = "taurex-emcee is a plugin for the TauREx 3.1 package that enables automated, parallelized atmospheric retrievals with the emcee sampler."
+license = {text = "BSD 3-Clause"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Unix",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries",
+]
+requires-python = ">3.8"
+dependencies = [
+    "taurex",
+    "emcee",
+    "corner",
+    "arviz",
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/ExObsSim/taurex-emcee"
+"Bug Tracker" = "https://github.com/ExObsSim/taurex-emcee/issues"
+"Source Code" = "https://github.com/ExObsSim/taurex-emcee"
+
+[project.optional-dependencies]
+docs = [
+    "sphinx~=5.0",
+    "sphinxcontrib-napoleon",
+    "sphinxcontrib-jsmath",
+    "nbsphinx~=0.9.3",
+    "sphinx_rtd_theme~=1.0.0",
+]
+
+[project.entry-points."taurex.plugins"]
+emcee = "taurex_emcee"
+
+[tool.setuptools]
+zip-safe = true
+include-package-data = true
+license-files = ["LICENSE"]
+
+[tool.setuptools.packages]
+find = {namespaces = false}

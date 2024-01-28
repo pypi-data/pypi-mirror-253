@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+taurex_emcee/__init__.py
+taurex_emcee/autoemcee.py
+taurex_emcee/emcee_optimizer.py
+taurex_emcee.egg-info/PKG-INFO
+taurex_emcee.egg-info/SOURCES.txt
+taurex_emcee.egg-info/dependency_links.txt
+taurex_emcee.egg-info/entry_points.txt
+taurex_emcee.egg-info/requires.txt
+taurex_emcee.egg-info/top_level.txt
+taurex_emcee.egg-info/zip-safe
