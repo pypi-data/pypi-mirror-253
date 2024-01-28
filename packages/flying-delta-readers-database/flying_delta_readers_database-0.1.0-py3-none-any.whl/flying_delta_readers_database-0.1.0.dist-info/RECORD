@@ -1,0 +1,5 @@
+llama_index/readers/database/__init__.py,sha256=g_zPFTciniVIfRdnRTWpimIJG7LQkfPaSUue2xFQCkM,92
+llama_index/readers/database/base.py,sha256=vfZ7J3tEQ4HMtjfPFNieooGfCpZtc7JgkVp5PdPHa10,3377
+flying_delta_readers_database-0.1.0.dist-info/METADATA,sha256=vtMATg2Z1XvPSo4XQn2MAP29VYUhEef7yYkAnmCXM1U,603
+flying_delta_readers_database-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flying_delta_readers_database-0.1.0.dist-info/RECORD,,
