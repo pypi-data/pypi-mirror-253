@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: equilibrator-assets
+Version: 0.6.0
+Summary: Generate cache assets from MetaNetX content.
+Author-email: Elad Noor <elad.noor@weizmann.ac.il>, "Moritz E. Beber" <midnighter@posteo.net>
+License: MIT License
+Project-URL: repository, https://gitlab.com/equilibrator/equilibrator-assets/
+Project-URL: documentation, https://equilibrator.readthedocs.io/en/latest/
+Keywords: component contribution,Gibbs energy,biochemical reaction,eQuilibrator
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: click-log
+Requires-Dist: numpy
+Requires-Dist: periodictable
+Requires-Dist: python-dateutil
+Requires-Dist: requests
+Requires-Dist: equilibrator-api~=0.6.0
+Requires-Dist: equilibrator-cache~=0.6.0
+Requires-Dist: openbabel-wheel>=3.1.1.19
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-raises; extra == "test"
+Provides-Extra: development
+Requires-Dist: black; extra == "development"
+Requires-Dist: isort; extra == "development"
+Requires-Dist: flake8; extra == "development"
+Requires-Dist: safety; extra == "development"
+Requires-Dist: tox; extra == "development"
+Requires-Dist: twine; extra == "development"
+Requires-Dist: jupyter; extra == "development"
+Requires-Dist: jupyterlab; extra == "development"
+Provides-Extra: deployment
+Requires-Dist: click; extra == "deployment"
+Requires-Dist: click-log; extra == "deployment"
+Requires-Dist: python-dateutil; extra == "deployment"
+Requires-Dist: requests; extra == "deployment"
+Requires-Dist: tqdm; extra == "deployment"
+
+eQuilibrator Assets
+===================
+
+[![pipeline status](https://gitlab.com/equilibrator/equilibrator-assets/badges/master/pipeline.svg)](https://gitlab.com/equilibrator/equilibrator-assets)
+[![codecov](https://codecov.io/gl/equilibrator/equilibrator-assets/branch/master/graph/badge.svg)](https://codecov.io/gl/equilibrator/equilibrator-assets)
+[![Join the chat at https://gitter.im/equilibrator-devs/equilibrator-api](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/equilibrator-devs/equilibrator-api?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+A database application for caching data used by eQuilibrator and related projects.
+Stored data includes compound names, structures, protonation state information,
+reaction and enzyme info, and cross-references to other databases.
+The majority of compounds stored in equilibrator-assets are cross-referenced
+using
+[InChIKey](https://en.wikipedia.org/wiki/International_Chemical_Identifier#InChIKey).
+
+Supported Chemical Databases:
+=============================
+
+* [MetaNetX](https://www.metanetx.org/)
+* [KEGG](https://www.kegg.jp/)
+* [ChEBI](https://www.ebi.ac.uk/chebi/)
+
+External dependencies:
+======================
+
+* [*Marvin* (by ChemAxon)](https://chemaxon.com/products/marvin) - get a license and install it on your system. Make sure that the command `cxcalc` is in the shell PATH as it is called directly using `subprocess.run()`.
