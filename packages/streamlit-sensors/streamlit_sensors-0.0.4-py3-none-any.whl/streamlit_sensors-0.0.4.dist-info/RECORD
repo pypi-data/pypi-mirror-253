@@ -1,0 +1,10 @@
+streamlit_sensors/__init__.py,sha256=8SHovebzX6rtrxw33wnqqltk-EI_6pNDeeoy4k7m4BE,803
+streamlit_sensors/frontend/index.html,sha256=4cPPA1dNXItc4kWHY45ssV8tZQC4Ks7LWyp2cVTOZ0k,637
+streamlit_sensors/frontend/main.js,sha256=pqhuqo-SUnJir11U1YM6_z1ATuU1e1cRJvhTU9uV3kE,3001
+streamlit_sensors/frontend/streamlit-component-lib.js,sha256=LdsY3Moj3IPUPtagiMaoPl31OabzgeZw6v5_iEqf6xY,1121
+streamlit_sensors/frontend/style.css,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+streamlit_sensors-0.0.4.dist-info/LICENSE,sha256=m36PXfqhpxSxXqkwSMJ1ZaxYNh-NCusBTONSn1gNai8,1543
+streamlit_sensors-0.0.4.dist-info/METADATA,sha256=k-VBq3jJKap0AZppwuv1jKThvDV9ySARTf8LBgHJp7c,572
+streamlit_sensors-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+streamlit_sensors-0.0.4.dist-info/top_level.txt,sha256=cHYVtQWeX2oONJGFqrH9TM6C--7j9hEdCenxKujP8mw,18
+streamlit_sensors-0.0.4.dist-info/RECORD,,
