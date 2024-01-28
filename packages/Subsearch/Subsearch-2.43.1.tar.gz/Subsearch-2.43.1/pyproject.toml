@@ -1,0 +1,105 @@
+[build-system]
+    build-backend = "setuptools.build_meta"
+    requires = ["setuptools>=65.5", "wheel"]
+
+[project]
+    authors = [
+        {email = "vagabondHustler.github@gmail.com"},
+        {name = "vagabondHustler"},
+    ]
+    classifiers = [
+        "Intended Audience :: Developers",
+        "Intended Audience :: End Users/Desktop",
+        "Operating System :: Microsoft :: Windows",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Topic :: Multimedia :: Video",
+        "Topic :: Utilities",
+    ]
+    dependencies = [
+        "picologging==0.9.3",
+        "cloudscraper==1.2.71",
+        "num2words==0.5.13",
+        "packaging==23.2",
+        "pillow==10.2.0",
+        "pystray==0.19.5",
+        "requests==2.31.0",
+        "selectolax==0.3.18",
+        "toml==0.10.2",
+    ]
+    description = "Subsearch"
+    dynamic = ["version"]
+    keywords = [
+        "subtitles",
+        "sub",
+        "srt",
+        "tool",
+        "tools",
+        "download",
+        "movies",
+        "shows",
+        "scrape",
+        "opensubtitles",
+        "subscene",
+        "subsearch",
+        "subtitles",
+        "yifysubtitles",
+    ]
+    license = {text = "MIT license"}
+    name = "Subsearch"
+    readme = "README.md"
+    requires-python = ">=3.10"
+
+[project.urls]
+    repository = "https://github.com/vagabondHustler/subsearch"
+
+[project.scripts]
+    subsearch = "subsearch:main"
+
+[tool.setuptools]
+    platforms = ["win32"]
+    zip-safe = false
+
+[tool.setuptools.packages.find]
+    exclude = ["examples*", "subsearch.test*", "tools*"]
+    include = ["subsearch*"]
+    where = ["src"]
+
+[tool.setuptools.dynamic]
+    version = {attr = "subsearch.data.__version__"}
+
+[project.optional-dependencies]
+    build = [
+        "build==1.0.3",
+        "cx_Freeze==6.15.12",
+        "twine==4.0.2",
+        "psutil==5.9.8",
+    ]
+    lint = ["black==23.12.1", "isort==5.13.2"]
+    tests = [
+        "pytest-cov==4.1.0",
+        "pytest==7.4.4",
+        "tox==4.12.1",
+        "python-dotenv==1.0.1",
+    ]
+    tools = ["pyperclip==1.8.2"]
+    type = ["mypy==1.8.0"]
+
+[tool.pytest.ini_options]
+    addopts = "--cov=src/subsearch"
+    filterwarnings = ['ignore::DeprecationWarning']
+    log_cli = true
+    log_cli_level = 'DEBUG'
+    testpaths = ["tests"]
+
+[tool.black]
+    line-length = 120
+
+[tool.isort]
+    profile = "black"
+
+[tool.mypy]
+    check_untyped_defs = true
+    ignore_missing_imports = true
+    mypy_path = "src"
+    warn_no_return = false
