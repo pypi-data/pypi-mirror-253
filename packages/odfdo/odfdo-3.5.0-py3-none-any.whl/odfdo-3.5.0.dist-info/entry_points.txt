@@ -1,0 +1,7 @@
+[console_scripts]
+odfdo-diff=odfdo.scripts.diff:main
+odfdo-folder=odfdo.scripts.folder:main
+odfdo-replace=odfdo.scripts.replace:main
+odfdo-show=odfdo.scripts.show:main
+odfdo-styles=odfdo.scripts.styles:main
+
