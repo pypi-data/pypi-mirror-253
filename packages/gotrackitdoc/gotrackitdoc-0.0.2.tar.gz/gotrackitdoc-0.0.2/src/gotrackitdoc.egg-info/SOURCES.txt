@@ -1,0 +1,10 @@
+README.rst
+pyproject.toml
+src/__init__.py
+src/gotrackitdoc/__init__.py
+src/gotrackitdoc/test.py
+src/gotrackitdoc.egg-info/PKG-INFO
+src/gotrackitdoc.egg-info/SOURCES.txt
+src/gotrackitdoc.egg-info/dependency_links.txt
+src/gotrackitdoc.egg-info/requires.txt
+src/gotrackitdoc.egg-info/top_level.txt
