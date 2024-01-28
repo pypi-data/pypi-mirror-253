@@ -1,0 +1,28 @@
+concurrency:
+  threads: 34
+logging:
+  file_path: logs/upgrade.log
+  level: INFO
+  max_size: 10
+  upgrade_log_count: 10
+readiness_checks:
+  checks: {}
+  customize: false
+  location: assurance/readiness_checks/
+reboot:
+  max_tries: 4
+  retry_interval: 10
+snapshots:
+  customize: true
+  location: assurance/snapshots/
+  state:
+    arp_table: true
+    content_version: true
+    ip_sec_tunnels: false
+    license: false
+    nics: true
+    routes: true
+    session_stats: false
+timeout_settings:
+  command_timeout: 120
+  connection_timeout: 30

@@ -1,0 +1,20 @@
+{
+    "active_support": null,
+    "arp_entry_exist": null,
+    "candidate_config": {
+        "state": true,
+        "reason": "[SUCCESS] "
+    },
+    "certificates_requirements": null,
+    "content_version": null,
+    "dynamic_updates": null,
+    "expired_licenses": null,
+    "free_disk_space": null,
+    "ha": null,
+    "ip_sec_tunnel_status": null,
+    "jobs": null,
+    "ntp_sync": null,
+    "panorama": null,
+    "planes_clock_sync": null,
+    "session_exist": null
+}

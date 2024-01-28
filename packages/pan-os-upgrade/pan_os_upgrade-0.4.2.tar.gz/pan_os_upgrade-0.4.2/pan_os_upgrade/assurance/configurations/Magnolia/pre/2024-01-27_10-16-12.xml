@@ -1,0 +1,2985 @@
+<config version="10.1.0" urldb="paloaltonetworks" detail-version="10.1.11">
+  <devices>
+    <entry name="localhost.localdomain">
+      <network>
+        <virtual-router>
+          <entry name="cdot.io">
+            <ecmp>
+              <algorithm>
+                <ip-modulo />
+              </algorithm>
+            </ecmp>
+            <protocol>
+              <bgp>
+                <enable>no</enable>
+                <routing-options>
+                  <graceful-restart>
+                    <enable>yes</enable>
+                  </graceful-restart>
+                </routing-options>
+              </bgp>
+              <rip>
+                <enable>no</enable>
+              </rip>
+              <ospf>
+                <enable>yes</enable>
+                <area>
+                  <entry name="0.0.0.0">
+                    <type>
+                      <normal />
+                    </type>
+                    <interface>
+                      <entry name="ethernet1/8">
+                        <enable>yes</enable>
+                        <passive>no</passive>
+                        <gr-delay>10</gr-delay>
+                        <metric>10</metric>
+                        <priority>1</priority>
+                        <hello-interval>10</hello-interval>
+                        <dead-counts>4</dead-counts>
+                        <retransmit-interval>5</retransmit-interval>
+                        <transit-delay>1</transit-delay>
+                        <link-type>
+                          <broadcast />
+                        </link-type>
+                      </entry>
+                      <entry name="loopback.8">
+                        <enable>yes</enable>
+                        <passive>yes</passive>
+                        <gr-delay>10</gr-delay>
+                        <metric>10</metric>
+                        <priority>1</priority>
+                        <hello-interval>10</hello-interval>
+                        <dead-counts>4</dead-counts>
+                        <retransmit-interval>5</retransmit-interval>
+                        <transit-delay>1</transit-delay>
+                        <link-type>
+                          <broadcast />
+                        </link-type>
+                      </entry>
+                      <entry name="ethernet1/3">
+                        <enable>yes</enable>
+                        <passive>yes</passive>
+                        <gr-delay>10</gr-delay>
+                        <metric>10</metric>
+                        <priority>1</priority>
+                        <hello-interval>10</hello-interval>
+                        <dead-counts>4</dead-counts>
+                        <retransmit-interval>5</retransmit-interval>
+                        <transit-delay>1</transit-delay>
+                        <link-type>
+                          <broadcast />
+                        </link-type>
+                      </entry>
+                      <entry name="ethernet1/5">
+                        <enable>yes</enable>
+                        <passive>yes</passive>
+                        <gr-delay>10</gr-delay>
+                        <metric>10</metric>
+                        <priority>1</priority>
+                        <hello-interval>10</hello-interval>
+                        <dead-counts>4</dead-counts>
+                        <retransmit-interval>5</retransmit-interval>
+                        <transit-delay>1</transit-delay>
+                        <link-type>
+                          <broadcast />
+                        </link-type>
+                      </entry>
+                    </interface>
+                  </entry>
+                </area>
+                <router-id>172.16.255.2</router-id>
+              </ospf>
+              <ospfv3>
+                <enable>no</enable>
+              </ospfv3>
+            </protocol>
+            <interface>
+              <member>ethernet1/1</member>
+              <member>ethernet1/3</member>
+              <member>ethernet1/5</member>
+              <member>ethernet1/8</member>
+              <member>loopback.8</member>
+            </interface>
+            <routing-table>
+              <ip>
+                <static-route>
+                  <entry name="Management Network">
+                    <nexthop>
+                      <ip-address>10.10.10.1</ip-address>
+                    </nexthop>
+                    <interface>ethernet1/8</interface>
+                    <metric>240</metric>
+                    <admin-dist>240</admin-dist>
+                    <destination>192.168.255.0/24</destination>
+                    <route-table>
+                      <unicast />
+                    </route-table>
+                  </entry>
+                </static-route>
+              </ip>
+            </routing-table>
+          </entry>
+        </virtual-router>
+        <interface>
+          <ethernet>
+            <entry name="ethernet1/1">
+              <layer3>
+                <ndp-proxy>
+                  <enabled>no</enabled>
+                </ndp-proxy>
+                <sdwan-link-settings>
+                  <upstream-nat>
+                    <enable>no</enable>
+                    <static-ip />
+                  </upstream-nat>
+                  <enable>no</enable>
+                </sdwan-link-settings>
+                <lldp>
+                  <enable>no</enable>
+                </lldp>
+                <dhcp-client />
+              </layer3>
+              <comment>DSL</comment>
+            </entry>
+            <entry name="ethernet1/3">
+              <layer3>
+                <ndp-proxy>
+                  <enabled>no</enabled>
+                </ndp-proxy>
+                <sdwan-link-settings>
+                  <upstream-nat>
+                    <enable>no</enable>
+                    <static-ip />
+                  </upstream-nat>
+                  <enable>no</enable>
+                </sdwan-link-settings>
+                <lldp>
+                  <profile>MGMT</profile>
+                  <enable>yes</enable>
+                </lldp>
+                <ip>
+                  <entry name="10.0.0.1/24" />
+                </ip>
+                <interface-management-profile>LAN</interface-management-profile>
+              </layer3>
+              <comment>lan</comment>
+            </entry>
+            <entry name="ethernet1/5">
+              <layer3>
+                <ndp-proxy>
+                  <enabled>no</enabled>
+                </ndp-proxy>
+                <sdwan-link-settings>
+                  <upstream-nat>
+                    <enable>no</enable>
+                    <static-ip />
+                  </upstream-nat>
+                  <enable>no</enable>
+                </sdwan-link-settings>
+                <lldp>
+                  <profile>MGMT</profile>
+                  <enable>yes</enable>
+                </lldp>
+                <ip>
+                  <entry name="10.0.1.1/24" />
+                </ip>
+              </layer3>
+              <comment>iot</comment>
+            </entry>
+            <entry name="ethernet1/8">
+              <layer3>
+                <ndp-proxy>
+                  <enabled>no</enabled>
+                </ndp-proxy>
+                <sdwan-link-settings>
+                  <upstream-nat>
+                    <enable>no</enable>
+                    <static-ip />
+                  </upstream-nat>
+                  <enable>no</enable>
+                </sdwan-link-settings>
+                <lldp>
+                  <profile>MGMT</profile>
+                  <enable>yes</enable>
+                </lldp>
+                <ip>
+                  <entry name="10.10.10.2/24" />
+                </ip>
+              </layer3>
+              <comment>mpls</comment>
+            </entry>
+          </ethernet>
+          <tunnel>
+            <units />
+          </tunnel>
+          <loopback>
+            <units>
+              <entry name="loopback.8">
+                <adjust-tcp-mss>
+                  <enable>no</enable>
+                </adjust-tcp-mss>
+                <comment>OSPF peer</comment>
+                <ip>
+                  <entry name="172.16.255.2/32" />
+                </ip>
+              </entry>
+            </units>
+          </loopback>
+          <vlan>
+            <units />
+          </vlan>
+        </interface>
+        <profiles>
+          <lldp-profile>
+            <entry name="MGMT">
+              <option-tlvs>
+                <management-address>
+                  <enabled>no</enabled>
+                </management-address>
+                <port-description>yes</port-description>
+                <system-name>yes</system-name>
+                <system-description>yes</system-description>
+                <system-capabilities>yes</system-capabilities>
+              </option-tlvs>
+            </entry>
+          </lldp-profile>
+          <interface-management-profile>
+            <entry name="LAN">
+              <permitted-ip>
+                <entry name="10.0.0.0/24" />
+              </permitted-ip>
+              <https>yes</https>
+              <ssh>yes</ssh>
+              <ping>yes</ping>
+            </entry>
+          </interface-management-profile>
+          <monitor-profile>
+            <entry name="default">
+              <interval>3</interval>
+              <threshold>5</threshold>
+              <action>wait-recover</action>
+            </entry>
+          </monitor-profile>
+        </profiles>
+        <dns-proxy>
+          <entry name="cdot.io DNS Proxy">
+            <cache>
+              <max-ttl>
+                <enabled>no</enabled>
+              </max-ttl>
+              <enabled>yes</enabled>
+            </cache>
+            <default>
+              <primary>94.140.14.14</primary>
+              <secondary>94.140.15.15</secondary>
+            </default>
+            <tcp-queries>
+              <enabled>no</enabled>
+            </tcp-queries>
+            <static-entries>
+              <entry name="Austin Firewall">
+                <address>
+                  <member>192.168.255.215</member>
+                </address>
+                <domain>austin.cdot.io</domain>
+              </entry>
+              <entry name="Dallas Firewall">
+                <address>
+                  <member>192.168.255.213</member>
+                </address>
+                <domain>dallas.cdot.io</domain>
+              </entry>
+              <entry name="Houston Firewall">
+                <address>
+                  <member>192.168.255.211</member>
+                </address>
+                <domain>houston.cdot.io</domain>
+              </entry>
+              <entry name="DataCenter Firewall">
+                <address>
+                  <member>192.168.255.1</member>
+                </address>
+                <domain>datacenter.cdot.io</domain>
+              </entry>
+              <entry name="Magnolia Firewall">
+                <address>
+                  <member>192.168.255.2</member>
+                </address>
+                <domain>magnolia.cdot.io</domain>
+              </entry>
+              <entry name="Panorama">
+                <address>
+                  <member>192.168.255.210</member>
+                </address>
+                <domain>panorama.cdot.io</domain>
+              </entry>
+              <entry name="Office Switch">
+                <address>
+                  <member>192.168.255.103</member>
+                </address>
+                <domain>office.cdot.io</domain>
+              </entry>
+              <entry name="Closet Switch">
+                <address>
+                  <member>192.168.255.102</member>
+                </address>
+                <domain>closet.cdot.io</domain>
+              </entry>
+              <entry name="Garage Switch">
+                <address>
+                  <member>192.168.255.101</member>
+                </address>
+                <domain>garage.cdot.io</domain>
+              </entry>
+              <entry name="DataCenter Server 7">
+                <address>
+                  <member>172.16.0.97</member>
+                </address>
+                <domain>datacenter-server7.cdot.io</domain>
+              </entry>
+              <entry name="DataCenter Server 6">
+                <address>
+                  <member>172.16.0.96</member>
+                </address>
+                <domain>datacenter-server6.cdot.io</domain>
+              </entry>
+              <entry name="DataCenter Server 5">
+                <address>
+                  <member>172.16.0.95</member>
+                </address>
+                <domain>datacenter-server5.cdot.io</domain>
+              </entry>
+              <entry name="DataCenter Server 3">
+                <address>
+                  <member>172.16.0.93</member>
+                </address>
+                <domain>datacenter-server3.cdot.io</domain>
+              </entry>
+              <entry name="DataCenter Server 2">
+                <address>
+                  <member>172.16.0.92</member>
+                </address>
+                <domain>datacenter-server2.cdot.io</domain>
+              </entry>
+              <entry name="DataCenter Server 1">
+                <address>
+                  <member>172.16.0.91</member>
+                </address>
+                <domain>datacenter-server1.cdot.io</domain>
+              </entry>
+              <entry name="Ansible Automation Platform">
+                <address>
+                  <member>172.16.0.94</member>
+                </address>
+                <domain>ansible.dmz.cdot.io</domain>
+              </entry>
+              <entry name="Worf">
+                <address>
+                  <member>10.0.0.9</member>
+                </address>
+                <domain>worf.cdot.io</domain>
+              </entry>
+            </static-entries>
+            <interface>
+              <member>ethernet1/3</member>
+            </interface>
+          </entry>
+          <entry name="iot DNS Proxy">
+            <cache>
+              <max-ttl>
+                <enabled>no</enabled>
+              </max-ttl>
+              <enabled>yes</enabled>
+            </cache>
+            <default>
+              <primary>94.140.14.14</primary>
+              <secondary>94.140.15.15</secondary>
+            </default>
+            <tcp-queries>
+              <enabled>no</enabled>
+            </tcp-queries>
+            <interface>
+              <member>ethernet1/5</member>
+            </interface>
+          </entry>
+        </dns-proxy>
+        <dhcp>
+          <interface>
+            <entry name="ethernet1/3">
+              <server>
+                <ip-pool>
+                  <member>10.0.0.100-10.0.0.199</member>
+                </ip-pool>
+                <reserved>
+                  <entry name="10.0.0.9">
+                    <mac>18:c0:4d:33:66:a2</mac>
+                    <description>Worf</description>
+                  </entry>
+                </reserved>
+                <option>
+                  <lease>
+                    <unlimited />
+                  </lease>
+                  <dns-suffix>lan.cdot.io</dns-suffix>
+                  <gateway>10.0.0.1</gateway>
+                  <subnet-mask>255.255.255.0</subnet-mask>
+                  <dns>
+                    <primary>10.0.0.1</primary>
+                  </dns>
+                  <user-defined>
+                    <entry name="domain search">
+                      <hex>
+                        <member>0463646F7402696F0003646D7A0463646F7402696F0005696E6672610463646F7402696F00</member>
+                      </hex>
+                      <code>119</code>
+                      <inherited>no</inherited>
+                    </entry>
+                  </user-defined>
+                </option>
+                <mode>auto</mode>
+              </server>
+            </entry>
+            <entry name="ethernet1/5">
+              <server>
+                <ip-pool>
+                  <member>10.0.1.100-10.0.1.250</member>
+                </ip-pool>
+                <mode>auto</mode>
+                <option>
+                  <dns>
+                    <primary>94.140.14.14</primary>
+                    <secondary>94.140.15.15</secondary>
+                  </dns>
+                  <lease>
+                    <unlimited />
+                  </lease>
+                  <gateway>10.0.1.1</gateway>
+                  <subnet-mask>255.255.255.0</subnet-mask>
+                </option>
+              </server>
+            </entry>
+          </interface>
+        </dhcp>
+        <tunnel>
+          <global-protect-gateway />
+        </tunnel>
+        <lldp>
+          <enable>yes</enable>
+        </lldp>
+        <vlan />
+        <virtual-wire />
+        <ike>
+          <crypto-profiles>
+            <ike-crypto-profiles>
+              <entry name="default">
+                <encryption>
+                  <member>aes-128-cbc</member>
+                  <member>3des</member>
+                </encryption>
+                <hash>
+                  <member>sha1</member>
+                </hash>
+                <dh-group>
+                  <member>group2</member>
+                </dh-group>
+                <lifetime>
+                  <hours>8</hours>
+                </lifetime>
+              </entry>
+              <entry name="Suite-B-GCM-128">
+                <encryption>
+                  <member>aes-128-cbc</member>
+                </encryption>
+                <hash>
+                  <member>sha256</member>
+                </hash>
+                <dh-group>
+                  <member>group19</member>
+                </dh-group>
+                <lifetime>
+                  <hours>8</hours>
+                </lifetime>
+              </entry>
+              <entry name="Suite-B-GCM-256">
+                <encryption>
+                  <member>aes-256-cbc</member>
+                </encryption>
+                <hash>
+                  <member>sha384</member>
+                </hash>
+                <dh-group>
+                  <member>group20</member>
+                </dh-group>
+                <lifetime>
+                  <hours>8</hours>
+                </lifetime>
+              </entry>
+            </ike-crypto-profiles>
+            <ipsec-crypto-profiles>
+              <entry name="default">
+                <esp>
+                  <encryption>
+                    <member>aes-128-cbc</member>
+                    <member>3des</member>
+                  </encryption>
+                  <authentication>
+                    <member>sha1</member>
+                  </authentication>
+                </esp>
+                <dh-group>group2</dh-group>
+                <lifetime>
+                  <hours>1</hours>
+                </lifetime>
+              </entry>
+              <entry name="Suite-B-GCM-128">
+                <esp>
+                  <encryption>
+                    <member>aes-128-gcm</member>
+                  </encryption>
+                  <authentication>
+                    <member>none</member>
+                  </authentication>
+                </esp>
+                <dh-group>group19</dh-group>
+                <lifetime>
+                  <hours>1</hours>
+                </lifetime>
+              </entry>
+              <entry name="Suite-B-GCM-256">
+                <esp>
+                  <encryption>
+                    <member>aes-256-gcm</member>
+                  </encryption>
+                  <authentication>
+                    <member>none</member>
+                  </authentication>
+                </esp>
+                <dh-group>group20</dh-group>
+                <lifetime>
+                  <hours>1</hours>
+                </lifetime>
+              </entry>
+            </ipsec-crypto-profiles>
+            <global-protect-app-crypto-profiles>
+              <entry name="default">
+                <encryption>
+                  <member>aes-128-cbc</member>
+                </encryption>
+                <authentication>
+                  <member>sha1</member>
+                </authentication>
+              </entry>
+            </global-protect-app-crypto-profiles>
+          </crypto-profiles>
+        </ike>
+        <qos>
+          <profile>
+            <entry name="default">
+              <class-bandwidth-type>
+                <mbps>
+                  <class>
+                    <entry name="class1">
+                      <priority>real-time</priority>
+                    </entry>
+                    <entry name="class2">
+                      <priority>high</priority>
+                    </entry>
+                    <entry name="class3">
+                      <priority>high</priority>
+                    </entry>
+                    <entry name="class4">
+                      <priority>medium</priority>
+                    </entry>
+                    <entry name="class5">
+                      <priority>medium</priority>
+                    </entry>
+                    <entry name="class6">
+                      <priority>low</priority>
+                    </entry>
+                    <entry name="class7">
+                      <priority>low</priority>
+                    </entry>
+                    <entry name="class8">
+                      <priority>low</priority>
+                    </entry>
+                  </class>
+                </mbps>
+              </class-bandwidth-type>
+            </entry>
+          </profile>
+        </qos>
+      </network>
+      <deviceconfig>
+        <system>
+          <domain>cdot.io</domain>
+          <login-banner>Managed as code, and manual changes are subject to abrupt removal</login-banner>
+          <timezone>US/Central</timezone>
+          <dns-setting>
+            <servers>
+              <primary>94.140.14.14</primary>
+              <secondary>94.140.15.15</secondary>
+            </servers>
+          </dns-setting>
+          <ntp-servers>
+            <primary-ntp-server>
+              <ntp-server-address>0.north-america.pool.ntp.org</ntp-server-address>
+            </primary-ntp-server>
+            <secondary-ntp-server>
+              <ntp-server-address>1.north-america.pool.ntp.org</ntp-server-address>
+            </secondary-ntp-server>
+          </ntp-servers>
+          <motd-and-banner>
+            <motd-enable>no</motd-enable>
+            <motd-color>color5</motd-color>
+            <banner-header>Configuration managed by code</banner-header>
+            <banner-header-color>color7</banner-header-color>
+            <banner-header-text-color>color18</banner-header-text-color>
+            <banner-header-footer-match>yes</banner-header-footer-match>
+          </motd-and-banner>
+          <hostname>Magnolia</hostname>
+          <ip-address>192.168.255.2</ip-address>
+          <netmask>255.255.255.0</netmask>
+          <update-server>updates.paloaltonetworks.com</update-server>
+          <update-schedule>
+            <threats>
+              <recurring>
+                <weekly>
+                  <day-of-week>wednesday</day-of-week>
+                  <at>01:02</at>
+                  <action>download-only</action>
+                </weekly>
+              </recurring>
+            </threats>
+          </update-schedule>
+          <service>
+            <disable-telnet>yes</disable-telnet>
+            <disable-http>yes</disable-http>
+          </service>
+          <default-gateway>192.168.255.1</default-gateway>
+          <domain-lookup-url>redtail.com</domain-lookup-url>
+          <type>
+            <static />
+          </type>
+          <device-telemetry>
+            <device-health-performance>yes</device-health-performance>
+            <product-usage>yes</product-usage>
+            <threat-prevention>yes</threat-prevention>
+            <region>Americas</region>
+          </device-telemetry>
+          <panorama>
+            <local-panorama />
+          </panorama>
+          <ssl-tls-service-profile>Management</ssl-tls-service-profile>
+        </system>
+        <setting>
+          <logging>
+            <logging-service-forwarding>
+              <logging-service-regions>americas</logging-service-regions>
+              <enable>yes</enable>
+            </logging-service-forwarding>
+            <enhanced-application-logging>
+              <enable>yes</enable>
+            </enhanced-application-logging>
+          </logging>
+          <session>
+            <ipv6-firewalling>no</ipv6-firewalling>
+          </session>
+          <config>
+            <rematch>yes</rematch>
+          </config>
+          <management>
+            <hostname-type-in-syslog>FQDN</hostname-type-in-syslog>
+          </management>
+          <advance-routing>no</advance-routing>
+        </setting>
+        <plugins />
+      </deviceconfig>
+      <vsys>
+        <entry name="vsys1">
+          <zone>
+            <entry name="wan">
+              <network>
+                <log-setting>Cortex CDL</log-setting>
+                <layer3>
+                  <member>ethernet1/1</member>
+                </layer3>
+              </network>
+            </entry>
+            <entry name="lan">
+              <network>
+                <layer3>
+                  <member>ethernet1/3</member>
+                </layer3>
+                <log-setting>Cortex CDL</log-setting>
+              </network>
+            </entry>
+            <entry name="iot">
+              <network>
+                <layer3>
+                  <member>ethernet1/5</member>
+                </layer3>
+                <log-setting>Cortex CDL</log-setting>
+              </network>
+            </entry>
+            <entry name="mpls">
+              <network>
+                <layer3>
+                  <member>loopback.8</member>
+                  <member>ethernet1/8</member>
+                </layer3>
+              </network>
+            </entry>
+          </zone>
+          <import>
+            <network>
+              <interface>
+                <member>loopback.8</member>
+                <member>ethernet1/8</member>
+                <member>ethernet1/3</member>
+              </interface>
+              <virtual-router />
+            </network>
+          </import>
+          <global-protect>
+            <global-protect-gateway />
+            <global-protect-portal />
+          </global-protect>
+          <group-mapping />
+          <redistribution-agent>
+            <entry name="DRA">
+              <serial-number>panorama</serial-number>
+              <user-tags>yes</user-tags>
+              <hip>yes</hip>
+              <quarantine-list>yes</quarantine-list>
+              <ip-user-mappings>yes</ip-user-mappings>
+              <ip-tags>yes</ip-tags>
+            </entry>
+          </redistribution-agent>
+          <application />
+          <application-group />
+          <service>
+            <entry name="EDA">
+              <protocol>
+                <tcp>
+                  <port>5000</port>
+                  <override>
+                    <no />
+                  </override>
+                </tcp>
+              </protocol>
+            </entry>
+            <entry name="Redis">
+              <protocol>
+                <tcp>
+                  <port>6379</port>
+                  <override>
+                    <no />
+                  </override>
+                </tcp>
+              </protocol>
+            </entry>
+          </service>
+          <service-group />
+          <schedule />
+          <rulebase>
+            <security>
+              <rules>
+                <entry name="Uncle Sam Blocklist" uuid="a72bb08e-db9c-4fdf-8436-ea2648f26e47">
+                  <to>
+                    <member>any</member>
+                  </to>
+                  <from>
+                    <member>any</member>
+                  </from>
+                  <source>
+                    <member>A1</member>
+                    <member>CN</member>
+                    <member>panw-torexit-ip-list</member>
+                    <member>RU</member>
+                  </source>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <application>
+                    <member>any</member>
+                  </application>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                  <action>drop</action>
+                  <log-start>yes</log-start>
+                  <log-end>no</log-end>
+                  <description>Screaming in freedom</description>
+                  <log-setting>Cortex CDL</log-setting>
+                </entry>
+                <entry name="Block Quic" uuid="af3dc534-f82e-4929-a731-8e3599675891">
+                  <to>
+                    <member>any</member>
+                  </to>
+                  <from>
+                    <member>any</member>
+                  </from>
+                  <source>
+                    <member>any</member>
+                  </source>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <application>
+                    <member>quic</member>
+                  </application>
+                  <service>
+                    <member>application-default</member>
+                  </service>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                  <action>deny</action>
+                  <log-setting>Cortex CDL</log-setting>
+                </entry>
+                <entry name="LAN InterZone" uuid="3a0bbafd-df9f-449e-abdd-9c638b060c80">
+                  <from>
+                    <member>lan</member>
+                  </from>
+                  <to>
+                    <member>any</member>
+                  </to>
+                  <source>
+                    <member>any</member>
+                  </source>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <application>
+                    <member>any</member>
+                  </application>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <action>allow</action>
+                  <log-setting>Cortex CDL</log-setting>
+                  <log-start>no</log-start>
+                  <log-end>yes</log-end>
+                  <description>Allow the lan network to anywhere</description>
+                  <rule-type>universal</rule-type>
+                  <tag>
+                    <member>Network</member>
+                  </tag>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                </entry>
+                <entry name="IoT InterZone" uuid="8866a38e-7b97-4842-a005-66f43a6cee35">
+                  <from>
+                    <member>iot</member>
+                  </from>
+                  <to>
+                    <member>wan</member>
+                  </to>
+                  <source>
+                    <member>any</member>
+                  </source>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <application>
+                    <member>any</member>
+                  </application>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <action>allow</action>
+                  <log-setting>Cortex CDL</log-setting>
+                  <log-start>no</log-start>
+                  <log-end>yes</log-end>
+                  <description>Allow the iot network to wan networks</description>
+                  <rule-type>universal</rule-type>
+                  <tag>
+                    <member>Network</member>
+                  </tag>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                </entry>
+                <entry name="Ansible Automation Inbound" uuid="2139dd1a-dda9-4845-9429-9746ee7d32d1">
+                  <to>
+                    <member>lan</member>
+                  </to>
+                  <from>
+                    <member>wan</member>
+                  </from>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <application>
+                    <member>any</member>
+                  </application>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                  <action>allow</action>
+                  <log-setting>Cortex CDL</log-setting>
+                  <source>
+                    <member>any</member>
+                  </source>
+                </entry>
+              </rules>
+            </security>
+            <default-security-rules>
+              <rules />
+            </default-security-rules>
+            <application-override>
+              <rules />
+            </application-override>
+            <decryption>
+              <rules />
+            </decryption>
+            <tunnel-inspect>
+              <rules />
+            </tunnel-inspect>
+            <authentication>
+              <rules />
+            </authentication>
+            <nat>
+              <rules>
+                <entry name="LAN Internet" uuid="19b68612-20ee-44d5-a8eb-026df4199c60">
+                  <source-translation>
+                    <dynamic-ip-and-port>
+                      <interface-address>
+                        <interface>ethernet1/1</interface>
+                      </interface-address>
+                    </dynamic-ip-and-port>
+                  </source-translation>
+                  <from>
+                    <member>lan</member>
+                  </from>
+                  <source>
+                    <member>any</member>
+                  </source>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <service>any</service>
+                  <to>
+                    <member>wan</member>
+                  </to>
+                </entry>
+                <entry name="IoT Internet" uuid="e11fcc57-8425-4006-93bf-afcad9ecc1e4">
+                  <source-translation>
+                    <dynamic-ip-and-port>
+                      <interface-address>
+                        <interface>ethernet1/1</interface>
+                      </interface-address>
+                    </dynamic-ip-and-port>
+                  </source-translation>
+                  <from>
+                    <member>iot</member>
+                  </from>
+                  <source>
+                    <member>any</member>
+                  </source>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <service>any</service>
+                  <to>
+                    <member>wan</member>
+                  </to>
+                  <to-interface>ethernet1/1</to-interface>
+                </entry>
+              </rules>
+            </nat>
+            <qos>
+              <rules />
+            </qos>
+            <pbf>
+              <rules />
+            </pbf>
+            <sdwan>
+              <rules />
+            </sdwan>
+            <network-packet-broker>
+              <rules />
+            </network-packet-broker>
+            <dos>
+              <rules />
+            </dos>
+          </rulebase>
+          <address>
+            <entry name="Auth Server">
+              <ip-netmask>172.16.0.2</ip-netmask>
+              <description>Synology NAS playing the role of RADIUS and LDAP</description>
+              <tag>
+                <member>GlobalProtect</member>
+                <member>Auth</member>
+              </tag>
+            </entry>
+            <entry name="Ansible Automation Platform">
+              <ip-netmask>172.16.0.94/32</ip-netmask>
+              <description>Ansible Automation Platform</description>
+              <tag>
+                <member>Automation</member>
+              </tag>
+            </entry>
+            <entry name="datacenter-server6">
+              <ip-netmask>172.16.0.96</ip-netmask>
+              <description>Datacenter server 6</description>
+            </entry>
+            <entry name="houston-server4">
+              <ip-netmask>10.2.1.204</ip-netmask>
+              <tag>
+                <member>Monitoring</member>
+              </tag>
+            </entry>
+            <entry name="houston-server1">
+              <ip-netmask>10.2.1.201</ip-netmask>
+              <tag>
+                <member>Monitoring</member>
+              </tag>
+            </entry>
+            <entry name="houston-server5">
+              <ip-netmask>10.2.1.205</ip-netmask>
+              <tag>
+                <member>Monitoring</member>
+              </tag>
+            </entry>
+            <entry name="houston-server3">
+              <ip-netmask>10.2.1.203</ip-netmask>
+              <tag>
+                <member>Monitoring</member>
+              </tag>
+            </entry>
+            <entry name="houston-server2">
+              <ip-netmask>10.2.1.202</ip-netmask>
+              <tag>
+                <member>Monitoring</member>
+              </tag>
+            </entry>
+          </address>
+          <address-group>
+            <entry name="Decrypted Servers">
+              <static>
+                <member>houston-server1</member>
+                <member>houston-server4</member>
+                <member>houston-server5</member>
+              </static>
+              <tag>
+                <member>Monitoring</member>
+              </tag>
+            </entry>
+          </address-group>
+          <external-list />
+          <region />
+          <application-tag />
+          <application-filter>
+            <entry name="DLP App Exclusion Filter" loc="shared">
+              <tagging loc="shared">
+                <tag loc="shared">
+                  <member loc="shared">[DLP App Exclusion]</member>
+                </tag>
+              </tagging>
+            </entry>
+          </application-filter>
+          <profile-group />
+          <authentication-object />
+          <device-object />
+          <dynamic-user-group />
+          <tag>
+            <entry name="Automation">
+              <color>color29</color>
+              <comments>All things related to Automation</comments>
+            </entry>
+            <entry name="Web Applications">
+              <color>color42</color>
+              <comments>Internal web applications</comments>
+            </entry>
+            <entry name="GlobalProtect">
+              <color>color22</color>
+              <comments>Any portion of the configuration related to GlobalProtect</comments>
+            </entry>
+            <entry name="Monitoring">
+              <color>color21</color>
+              <comments>All things related to monitoring or being monitored</comments>
+            </entry>
+            <entry name="Network">
+              <color>color1</color>
+              <comments>A whole network is targeted in the security rule</comments>
+            </entry>
+            <entry name="Host">
+              <color>color36</color>
+              <comments>A single host is targeted in the security rule</comments>
+            </entry>
+            <entry name="Kubernetes">
+              <color>color2</color>
+              <comments>Tag for all k8s related services</comments>
+            </entry>
+            <entry name="Auth">
+              <color>color7</color>
+              <comments>Tag for all RADIUS, LDAP, and similar services</comments>
+            </entry>
+            <entry name="Management">
+              <color>color24</color>
+              <comments>Management services of web applications</comments>
+            </entry>
+            <entry name="Decrypted">
+              <color>color41</color>
+            </entry>
+          </tag>
+          <application-status />
+          <threats>
+            <vulnerability />
+            <spyware />
+          </threats>
+          <profiles>
+            <virus />
+            <spyware />
+            <vulnerability />
+            <url-filtering />
+            <custom-url-category>
+              <entry name="decryption-bypass" loc="Branch">
+                <list loc="Branch">
+                  <member loc="Branch">test.com</member>
+                </list>
+                <type loc="Branch">URL List</type>
+                <description loc="Branch">EDA detected TLS decryption errors bypass</description>
+              </entry>
+            </custom-url-category>
+            <file-blocking />
+            <data-filtering />
+            <data-objects />
+            <hip-profiles />
+            <dos-protection />
+            <decryption />
+            <wildfire-analysis />
+          </profiles>
+        </entry>
+      </vsys>
+    </entry>
+  </devices>
+  <shared>
+    <ssl-tls-service-profile>
+      <entry name="Management">
+        <protocol-settings>
+          <min-version>tls1-0</min-version>
+          <max-version>tls1-2</max-version>
+        </protocol-settings>
+        <certificate>cdot.io</certificate>
+      </entry>
+    </ssl-tls-service-profile>
+    <server-profile>
+      <radius />
+      <ldap />
+    </server-profile>
+    <authentication-profile />
+    <log-settings>
+      <http>
+        <entry name="EDA HTTP Server Profile">
+          <server>
+            <entry name="dcn-svr-005">
+              <address>172.16.0.95</address>
+              <http-method>POST</http-method>
+              <protocol>HTTP</protocol>
+              <username>admin</username>
+              <tls-version>1.2</tls-version>
+              <port>5000</port>
+              <certificate-profile>None</certificate-profile>
+            </entry>
+          </server>
+          <format>
+            <decryption>
+              <headers>
+                <entry name="Content-Type">
+                  <value>application/json</value>
+                </entry>
+              </headers>
+              <name>decryption-logs-to-eda</name>
+              <url-format>/endpoint</url-format>
+              <payload>{
+  "category": "network",
+  "details": {
+    "action": "$action",
+    "app": "$app",
+    "category_of_app": "$category_of_app",
+    "cert_flags": "$cert_flags",
+    "cert_serial": "$cert_serial",
+    "cert_ver": "$cert_ver",
+    "chain_status": "$chain_status",
+    "dg_hier_level_1": "$dg_hier_level_1",
+    "dg_hier_level_2": "$dg_hier_level_2",
+    "dg_hier_level_3": "$dg_hier_level_3",
+    "cn": "$cn",
+    "dst": "$dst",
+    "dst_category": "$dst_category",
+    "dst_dag": "$dst_dag",
+    "dst_edl": "$dst_edl",
+    "dst_host": "$dst_host",
+    "dst_loc": "$dst_loc",
+    "device_name": "$device_name",
+    "endpoint_id": "$endpoint_id",
+    "error": "$error",
+    "flags": "$flags",
+    "from": "$from",
+    "inbound_if": "$inbound_if",
+    "issuer_cn": "$issuer_cn",
+    "outbound_if": "$outbound_if",
+    "policy_name": "$policy_name",
+    "root_cn": "$root_cn",
+    "root_status": "$root_status",
+    "s_decrypted": "$s_decrypted",
+    "s_encrypted": "$s_encrypted",
+    "subcategory_of_app": "$subcategory_of_app",
+    "subtype": "$subtype",
+    "sni": "$sni",
+    "src": "$src",
+    "srcuser": "$srcuser",
+    "tls_auth": "$tls_auth",
+    "tls_enc": "$tls_enc",
+    "tls_auth": "$tls_auth",
+    "tls_enc": "$tls_enc",
+    "tls_keyxchg": "$tls_keyxchg",
+    "tls_version": "$tls_version",
+    "to": "$to",
+    "vsys_name": "$vsys_name"
+  },
+  "receive_time": "$receive_time",
+  "rule": "$rule",
+  "rule_uuid": "$rule_uuid",
+  "serial": "$serial",
+  "sessionid": "$sessionid",
+  "severity": "informational",
+  "type": "decryption"
+}</payload>
+            </decryption>
+          </format>
+        </entry>
+      </http>
+      <config>
+        <match-list>
+          <entry name="CDL">
+            <filter>All Logs</filter>
+            <description>Send all logs to Cortex</description>
+            <send-to-panorama>yes</send-to-panorama>
+          </entry>
+        </match-list>
+      </config>
+      <system>
+        <match-list>
+          <entry name="CDL">
+            <filter>All Logs</filter>
+            <description>Send all logs to Cortex</description>
+            <send-to-panorama>yes</send-to-panorama>
+          </entry>
+        </match-list>
+      </system>
+      <userid>
+        <match-list>
+          <entry name="CDL">
+            <filter>All Logs</filter>
+            <description>Send all logs to Cortex</description>
+            <send-to-panorama>yes</send-to-panorama>
+          </entry>
+        </match-list>
+      </userid>
+      <iptag>
+        <match-list>
+          <entry name="CDL">
+            <filter>All Logs</filter>
+            <description>Send all logs to Cortex</description>
+            <send-to-panorama>yes</send-to-panorama>
+          </entry>
+        </match-list>
+      </iptag>
+      <hipmatch>
+        <match-list>
+          <entry name="CDL">
+            <filter>All Logs</filter>
+            <description>Send all logs to Cortex</description>
+            <send-to-panorama>yes</send-to-panorama>
+          </entry>
+        </match-list>
+      </hipmatch>
+      <globalprotect>
+        <match-list>
+          <entry name="CDL">
+            <filter>All Logs</filter>
+            <description>Send all logs to Cortex</description>
+            <send-to-panorama>yes</send-to-panorama>
+          </entry>
+        </match-list>
+      </globalprotect>
+      <profiles>
+        <entry name="Cortex CDL" loc="shared">
+          <match-list loc="shared">
+            <entry name="threat-enhanced-app-logging" loc="shared">
+              <log-type loc="shared">threat</log-type>
+              <filter loc="shared">All Logs</filter>
+              <send-to-panorama loc="shared">yes</send-to-panorama>
+              <quarantine loc="shared">no</quarantine>
+            </entry>
+            <entry name="wildfire-enhanced-app-logging" loc="shared">
+              <log-type loc="shared">wildfire</log-type>
+              <filter loc="shared">All Logs</filter>
+              <send-to-panorama loc="shared">yes</send-to-panorama>
+              <quarantine loc="shared">no</quarantine>
+            </entry>
+            <entry name="url-enhanced-app-logging" loc="shared">
+              <log-type loc="shared">url</log-type>
+              <filter loc="shared">All Logs</filter>
+              <send-to-panorama loc="shared">yes</send-to-panorama>
+              <quarantine loc="shared">no</quarantine>
+            </entry>
+            <entry name="data-enhanced-app-logging" loc="shared">
+              <log-type loc="shared">data</log-type>
+              <filter loc="shared">All Logs</filter>
+              <send-to-panorama loc="shared">yes</send-to-panorama>
+              <quarantine loc="shared">no</quarantine>
+            </entry>
+            <entry name="tunnel-enhanced-app-logging" loc="shared">
+              <log-type loc="shared">tunnel</log-type>
+              <filter loc="shared">All Logs</filter>
+              <send-to-panorama loc="shared">yes</send-to-panorama>
+              <quarantine loc="shared">no</quarantine>
+            </entry>
+            <entry name="auth-enhanced-app-logging" loc="shared">
+              <log-type loc="shared">auth</log-type>
+              <filter loc="shared">All Logs</filter>
+              <send-to-panorama loc="shared">yes</send-to-panorama>
+              <quarantine loc="shared">no</quarantine>
+            </entry>
+            <entry name="decryption-enhanced-app-logging" loc="shared">
+              <log-type loc="shared">decryption</log-type>
+              <filter loc="shared">All Logs</filter>
+              <send-to-panorama loc="shared">yes</send-to-panorama>
+              <quarantine loc="shared">no</quarantine>
+            </entry>
+            <entry name="traffic-enhanced-app-logging" loc="shared">
+              <log-type loc="shared">traffic</log-type>
+              <filter loc="shared">All Logs</filter>
+              <send-to-panorama loc="shared">yes</send-to-panorama>
+              <quarantine loc="shared">no</quarantine>
+            </entry>
+          </match-list>
+          <enhanced-application-logging loc="shared">yes</enhanced-application-logging>
+        </entry>
+      </profiles>
+    </log-settings>
+    <admin-role>
+      <entry name="letsencrypt">
+        <description>Used to deploy certs</description>
+        <role>
+          <device>
+            <webui>
+              <dashboard>enable</dashboard>
+              <acc>enable</acc>
+              <monitor>
+                <logs>
+                  <traffic>enable</traffic>
+                  <threat>enable</threat>
+                  <url>enable</url>
+                  <wildfire>enable</wildfire>
+                  <data-filtering>enable</data-filtering>
+                  <hipmatch>enable</hipmatch>
+                  <globalprotect>enable</globalprotect>
+                  <iptag>enable</iptag>
+                  <userid>enable</userid>
+                  <decryption>enable</decryption>
+                  <tunnel>enable</tunnel>
+                  <configuration>enable</configuration>
+                  <system>enable</system>
+                  <alarm>enable</alarm>
+                  <authentication>enable</authentication>
+                </logs>
+                <external-logs>enable</external-logs>
+                <automated-correlation-engine>
+                  <correlation-objects>enable</correlation-objects>
+                  <correlated-events>enable</correlated-events>
+                </automated-correlation-engine>
+                <packet-capture>enable</packet-capture>
+                <app-scope>enable</app-scope>
+                <session-browser>enable</session-browser>
+                <block-ip-list>enable</block-ip-list>
+                <botnet>enable</botnet>
+                <pdf-reports>
+                  <manage-pdf-summary>enable</manage-pdf-summary>
+                  <pdf-summary-reports>enable</pdf-summary-reports>
+                  <user-activity-report>enable</user-activity-report>
+                  <saas-application-usage-report>enable</saas-application-usage-report>
+                  <report-groups>enable</report-groups>
+                  <email-scheduler>enable</email-scheduler>
+                </pdf-reports>
+                <custom-reports>
+                  <application-statistics>enable</application-statistics>
+                  <data-filtering-log>enable</data-filtering-log>
+                  <threat-log>enable</threat-log>
+                  <threat-summary>enable</threat-summary>
+                  <traffic-log>enable</traffic-log>
+                  <traffic-summary>enable</traffic-summary>
+                  <url-log>enable</url-log>
+                  <url-summary>enable</url-summary>
+                  <hipmatch>enable</hipmatch>
+                  <globalprotect>enable</globalprotect>
+                  <wildfire-log>enable</wildfire-log>
+                  <tunnel-log>enable</tunnel-log>
+                  <tunnel-summary>enable</tunnel-summary>
+                  <iptag>enable</iptag>
+                  <userid>enable</userid>
+                  <auth>enable</auth>
+                </custom-reports>
+                <view-custom-reports>enable</view-custom-reports>
+                <application-reports>enable</application-reports>
+                <threat-reports>enable</threat-reports>
+                <url-filtering-reports>enable</url-filtering-reports>
+                <traffic-reports>enable</traffic-reports>
+              </monitor>
+              <policies>
+                <security-rulebase>enable</security-rulebase>
+                <nat-rulebase>enable</nat-rulebase>
+                <qos-rulebase>enable</qos-rulebase>
+                <pbf-rulebase>enable</pbf-rulebase>
+                <ssl-decryption-rulebase>enable</ssl-decryption-rulebase>
+                <network-packet-broker-rulebase>enable</network-packet-broker-rulebase>
+                <tunnel-inspect-rulebase>enable</tunnel-inspect-rulebase>
+                <application-override-rulebase>enable</application-override-rulebase>
+                <authentication-rulebase>enable</authentication-rulebase>
+                <dos-rulebase>enable</dos-rulebase>
+                <sdwan-rulebase>enable</sdwan-rulebase>
+                <rule-hit-count-reset>enable</rule-hit-count-reset>
+              </policies>
+              <objects>
+                <addresses>enable</addresses>
+                <address-groups>enable</address-groups>
+                <regions>enable</regions>
+                <dynamic-user-groups>enable</dynamic-user-groups>
+                <applications>enable</applications>
+                <application-groups>enable</application-groups>
+                <application-filters>enable</application-filters>
+                <services>enable</services>
+                <service-groups>enable</service-groups>
+                <tags>enable</tags>
+                <devices>enable</devices>
+                <global-protect>
+                  <hip-objects>enable</hip-objects>
+                  <hip-profiles>enable</hip-profiles>
+                </global-protect>
+                <dynamic-block-lists>enable</dynamic-block-lists>
+                <custom-objects>
+                  <data-patterns>enable</data-patterns>
+                  <spyware>enable</spyware>
+                  <vulnerability>enable</vulnerability>
+                  <url-category>enable</url-category>
+                </custom-objects>
+                <security-profiles>
+                  <antivirus>enable</antivirus>
+                  <anti-spyware>enable</anti-spyware>
+                  <vulnerability-protection>enable</vulnerability-protection>
+                  <url-filtering>enable</url-filtering>
+                  <file-blocking>enable</file-blocking>
+                  <wildfire-analysis>enable</wildfire-analysis>
+                  <data-filtering>enable</data-filtering>
+                  <dos-protection>enable</dos-protection>
+                </security-profiles>
+                <security-profile-groups>enable</security-profile-groups>
+                <log-forwarding>enable</log-forwarding>
+                <authentication>enable</authentication>
+                <decryption>
+                  <decryption-profile>enable</decryption-profile>
+                </decryption>
+                <sdwan>
+                  <sdwan-profile>enable</sdwan-profile>
+                  <sdwan-saas-quality-profile>enable</sdwan-saas-quality-profile>
+                  <sdwan-dist-profile>enable</sdwan-dist-profile>
+                  <sdwan-error-correction-profile>enable</sdwan-error-correction-profile>
+                </sdwan>
+                <schedules>enable</schedules>
+              </objects>
+              <network>
+                <interfaces>enable</interfaces>
+                <zones>enable</zones>
+                <vlans>enable</vlans>
+                <virtual-wires>enable</virtual-wires>
+                <virtual-routers>enable</virtual-routers>
+                <routing>
+                  <logical-routers>enable</logical-routers>
+                  <routing-profiles>
+                    <bgp>enable</bgp>
+                  </routing-profiles>
+                </routing>
+                <ipsec-tunnels>enable</ipsec-tunnels>
+                <gre-tunnels>enable</gre-tunnels>
+                <dhcp>enable</dhcp>
+                <dns-proxy>enable</dns-proxy>
+                <global-protect>
+                  <portals>enable</portals>
+                  <gateways>enable</gateways>
+                  <mdm>enable</mdm>
+                  <clientless-apps>enable</clientless-apps>
+                  <clientless-app-groups>enable</clientless-app-groups>
+                </global-protect>
+                <qos>enable</qos>
+                <lldp>enable</lldp>
+                <network-profiles>
+                  <gp-app-ipsec-crypto>enable</gp-app-ipsec-crypto>
+                  <ike-gateways>enable</ike-gateways>
+                  <ipsec-crypto>enable</ipsec-crypto>
+                  <ike-crypto>enable</ike-crypto>
+                  <tunnel-monitor>enable</tunnel-monitor>
+                  <interface-mgmt>enable</interface-mgmt>
+                  <zone-protection>enable</zone-protection>
+                  <qos-profile>enable</qos-profile>
+                  <lldp-profile>enable</lldp-profile>
+                </network-profiles>
+                <sdwan-interface-profile>enable</sdwan-interface-profile>
+              </network>
+              <device>
+                <setup>
+                  <management>enable</management>
+                  <operations>enable</operations>
+                  <services>enable</services>
+                  <interfaces>enable</interfaces>
+                  <telemetry>enable</telemetry>
+                  <content-id>enable</content-id>
+                  <wildfire>enable</wildfire>
+                  <session>enable</session>
+                  <hsm>enable</hsm>
+                </setup>
+                <high-availability>enable</high-availability>
+                <config-audit>enable</config-audit>
+                <administrators>read-only</administrators>
+                <admin-roles>read-only</admin-roles>
+                <access-domain>enable</access-domain>
+                <authentication-profile>enable</authentication-profile>
+                <authentication-sequence>enable</authentication-sequence>
+                <user-identification>enable</user-identification>
+                <data-redistribution>enable</data-redistribution>
+                <device-quarantine>enable</device-quarantine>
+                <vm-info-source>enable</vm-info-source>
+                <troubleshooting>enable</troubleshooting>
+                <virtual-systems>enable</virtual-systems>
+                <shared-gateways>enable</shared-gateways>
+                <certificate-management>
+                  <certificates>enable</certificates>
+                  <certificate-profile>enable</certificate-profile>
+                  <ocsp-responder>enable</ocsp-responder>
+                  <ssl-tls-service-profile>enable</ssl-tls-service-profile>
+                  <scep>enable</scep>
+                  <ssl-decryption-exclusion>enable</ssl-decryption-exclusion>
+                  <ssh-service-profile>enable</ssh-service-profile>
+                </certificate-management>
+                <block-pages>enable</block-pages>
+                <log-settings>
+                  <system>enable</system>
+                  <config>enable</config>
+                  <iptag>enable</iptag>
+                  <user-id>enable</user-id>
+                  <hipmatch>enable</hipmatch>
+                  <globalprotect>enable</globalprotect>
+                  <cc-alarm>enable</cc-alarm>
+                  <manage-log>enable</manage-log>
+                </log-settings>
+                <server-profile>
+                  <snmp-trap>enable</snmp-trap>
+                  <syslog>enable</syslog>
+                  <email>enable</email>
+                  <http>enable</http>
+                  <netflow>enable</netflow>
+                  <radius>enable</radius>
+                  <tacplus>enable</tacplus>
+                  <ldap>enable</ldap>
+                  <kerberos>enable</kerberos>
+                  <saml_idp>enable</saml_idp>
+                  <dns>enable</dns>
+                  <mfa>enable</mfa>
+                </server-profile>
+                <local-user-database>
+                  <users>enable</users>
+                  <user-groups>enable</user-groups>
+                </local-user-database>
+                <scheduled-log-export>enable</scheduled-log-export>
+                <software>enable</software>
+                <global-protect-client>enable</global-protect-client>
+                <dynamic-updates>enable</dynamic-updates>
+                <plugins>enable</plugins>
+                <licenses>enable</licenses>
+                <support>enable</support>
+                <master-key>enable</master-key>
+                <policy-recommendations>
+                  <iot>enable</iot>
+                  <saas>enable</saas>
+                </policy-recommendations>
+              </device>
+              <operations>
+                <reboot>enable</reboot>
+                <generate-tech-support-file>enable</generate-tech-support-file>
+                <generate-stats-dump-file>enable</generate-stats-dump-file>
+                <download-core-files>enable</download-core-files>
+              </operations>
+              <privacy>
+                <show-full-ip-addresses>enable</show-full-ip-addresses>
+                <show-user-names-in-logs-and-reports>enable</show-user-names-in-logs-and-reports>
+                <view-pcap-files>enable</view-pcap-files>
+              </privacy>
+              <validate>enable</validate>
+              <save>
+                <partial-save>enable</partial-save>
+                <save-for-other-admins>enable</save-for-other-admins>
+              </save>
+              <commit>
+                <device>enable</device>
+                <commit-for-other-admins>enable</commit-for-other-admins>
+              </commit>
+              <tasks>enable</tasks>
+              <global>
+                <system-alarms>enable</system-alarms>
+              </global>
+            </webui>
+            <xmlapi>
+              <commit>enable</commit>
+              <import>enable</import>
+            </xmlapi>
+            <restapi>
+              <objects>
+                <addresses>enable</addresses>
+                <address-groups>enable</address-groups>
+                <regions>enable</regions>
+                <dynamic-user-groups>enable</dynamic-user-groups>
+                <applications>enable</applications>
+                <application-groups>enable</application-groups>
+                <application-filters>enable</application-filters>
+                <services>enable</services>
+                <service-groups>enable</service-groups>
+                <tags>enable</tags>
+                <devices>enable</devices>
+                <globalprotect-hip-objects>enable</globalprotect-hip-objects>
+                <globalprotect-hip-profiles>enable</globalprotect-hip-profiles>
+                <external-dynamic-lists>enable</external-dynamic-lists>
+                <custom-data-patterns>enable</custom-data-patterns>
+                <custom-spyware-signatures>enable</custom-spyware-signatures>
+                <custom-vulnerability-signatures>enable</custom-vulnerability-signatures>
+                <custom-url-categories>enable</custom-url-categories>
+                <antivirus-security-profiles>enable</antivirus-security-profiles>
+                <anti-spyware-security-profiles>enable</anti-spyware-security-profiles>
+                <vulnerability-protection-security-profiles>enable</vulnerability-protection-security-profiles>
+                <url-filtering-security-profiles>enable</url-filtering-security-profiles>
+                <file-blocking-security-profiles>enable</file-blocking-security-profiles>
+                <wildfire-analysis-security-profiles>enable</wildfire-analysis-security-profiles>
+                <data-filtering-security-profiles>enable</data-filtering-security-profiles>
+                <dos-protection-security-profiles>enable</dos-protection-security-profiles>
+                <security-profile-groups>enable</security-profile-groups>
+                <log-forwarding-profiles>enable</log-forwarding-profiles>
+                <authentication-enforcements>enable</authentication-enforcements>
+                <decryption-profiles>enable</decryption-profiles>
+                <schedules>enable</schedules>
+                <sdwan-path-quality-profiles>enable</sdwan-path-quality-profiles>
+                <sdwan-saas-quality-profiles>enable</sdwan-saas-quality-profiles>
+                <sdwan-traffic-distribution-profiles>enable</sdwan-traffic-distribution-profiles>
+                <sdwan-error-correction-profiles>enable</sdwan-error-correction-profiles>
+              </objects>
+              <policies>
+                <security-rules>enable</security-rules>
+                <nat-rules>enable</nat-rules>
+                <qos-rules>enable</qos-rules>
+                <policy-based-forwarding-rules>enable</policy-based-forwarding-rules>
+                <decryption-rules>enable</decryption-rules>
+                <tunnel-inspection-rules>enable</tunnel-inspection-rules>
+                <application-override-rules>enable</application-override-rules>
+                <authentication-rules>enable</authentication-rules>
+                <dos-rules>enable</dos-rules>
+                <sdwan-rules>enable</sdwan-rules>
+              </policies>
+              <network>
+                <aggregate-ethernet-interfaces>enable</aggregate-ethernet-interfaces>
+                <ethernet-interfaces>enable</ethernet-interfaces>
+                <vlan-interfaces>enable</vlan-interfaces>
+                <loopback-interfaces>enable</loopback-interfaces>
+                <tunnel-interfaces>enable</tunnel-interfaces>
+                <zones>enable</zones>
+                <vlans>enable</vlans>
+                <virtual-wires>enable</virtual-wires>
+                <virtual-routers>enable</virtual-routers>
+                <logical-routers>enable</logical-routers>
+                <bgp-routing-profiles>enable</bgp-routing-profiles>
+                <ipsec-tunnels>enable</ipsec-tunnels>
+                <gre-tunnels>enable</gre-tunnels>
+                <dhcp-servers>enable</dhcp-servers>
+                <dhcp-relays>enable</dhcp-relays>
+                <dns-proxies>enable</dns-proxies>
+                <globalprotect-portals>enable</globalprotect-portals>
+                <globalprotect-gateways>enable</globalprotect-gateways>
+                <globalprotect-mdm-servers>enable</globalprotect-mdm-servers>
+                <globalprotect-clientless-apps>enable</globalprotect-clientless-apps>
+                <globalprotect-clientless-app-groups>enable</globalprotect-clientless-app-groups>
+                <qos-interfaces>enable</qos-interfaces>
+                <lldp>enable</lldp>
+                <globalprotect-ipsec-crypto-network-profiles>enable</globalprotect-ipsec-crypto-network-profiles>
+                <ike-gateway-network-profiles>enable</ike-gateway-network-profiles>
+                <ipsec-crypto-network-profiles>enable</ipsec-crypto-network-profiles>
+                <ike-crypto-network-profiles>enable</ike-crypto-network-profiles>
+                <tunnel-monitor-network-profiles>enable</tunnel-monitor-network-profiles>
+                <interface-management-network-profiles>enable</interface-management-network-profiles>
+                <zone-protection-network-profiles>enable</zone-protection-network-profiles>
+                <qos-network-profiles>enable</qos-network-profiles>
+                <lldp-network-profiles>enable</lldp-network-profiles>
+                <sdwan-interfaces>enable</sdwan-interfaces>
+                <sdwan-interface-profiles>enable</sdwan-interface-profiles>
+              </network>
+              <device>
+                <log-interface-setting>enable</log-interface-setting>
+                <virtual-systems>enable</virtual-systems>
+              </device>
+              <system>
+                <configuration>enable</configuration>
+              </system>
+            </restapi>
+          </device>
+        </role>
+      </entry>
+    </admin-role>
+    <certificate>
+      <entry name="Magnolia_Decryption">
+        <subject-hash>91c08f2c</subject-hash>
+        <issuer-hash>91c08f2c</issuer-hash>
+        <not-valid-before>Nov 19 19:34:46 2023 GMT</not-valid-before>
+        <issuer>issuer=C = US, ST = Texas, CN = magnolia.cdot.io</issuer>
+        <not-valid-after>Nov 18 19:34:46 2024 GMT</not-valid-after>
+        <common-name>magnolia.cdot.io</common-name>
+        <expiry-epoch>1731958486</expiry-epoch>
+        <ca>yes</ca>
+        <subject>subject=C = US, ST = Texas, CN = magnolia.cdot.io</subject>
+        <public-key>-----BEGIN CERTIFICATE-----
+MIIDPTCCAiWgAwIBAgIUU70oQayiZQXAdCB9P3Hy3/1pma0wDQYJKoZIhvcNAQEL
+BQAwODELMAkGA1UEBhMCVVMxDjAMBgNVBAgMBVRleGFzMRkwFwYDVQQDDBBtYWdu
+b2xpYS5jZG90LmlvMB4XDTIzMTExOTE5MzQ0NloXDTI0MTExODE5MzQ0NlowODEL
+MAkGA1UEBhMCVVMxDjAMBgNVBAgMBVRleGFzMRkwFwYDVQQDDBBtYWdub2xpYS5j
+ZG90LmlvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqSTBgmAYUecK
+5N0xeLtdqjIv1lq0vyS1zwT0Wu9txpnuWbsuOi9WA1YzrBjF539lU8SYrCmGr1Dc
+jS+jzKt0W/CsvQdyA1Jq1l/oJkNg0czMdLeze8KTxfleXmwmaZm3KK8y3G8L2JO1
+qXvd/BVDTWgSmCwMstmQ9XGkcQaVZPHHBDM284P3q1PJzdCQ2u+K1FusNe2awj09
+r+L50getnIGsrts7/ARdzw4edA4vLm2znGEyJyPVeonFfpS2j+i+dJ2N4aKvMD/U
+i4zfiHxkyr04LmQFskaLwz+toszQ98SsxC7JhhDXi1Ii2OEGAdEWAJpamLbzwq4h
+WAhI8XBChQIDAQABoz8wPTAMBgNVHRMEBTADAQH/MAsGA1UdDwQEAwICBDAgBgNV
+HREEGTAXgg9ob3VzdG9uLmNkb3QuaW+HBAoAAAEwDQYJKoZIhvcNAQELBQADggEB
+AECKPcMKdJ+0pGPZn5JKuoKSVrg6/QBBVk/Z+j10Mlx94x6rXWbAs+y5WFB6KCmM
+fZD+gGc74tkPwkyJtaOkPG5cH70pM8lvkU+jVeBzb0h8zUN/n/unIW01ELgA5D0k
+4eTyY0TxWFuQpcSB49tjXV7HJFaYJmy15/ZNn3bW90IoguETF8U8RWjBCm4F9yC+
+VKqrAVunjBktBtXzMCrYrM0FgUpu1HY/UlLUfxIbpgc4zeqvgH3dzCTEymNd52Fe
+XrHnfd0WPe68R7i+6XEhI9JxFnbDzJNqBxg2BPHekTha1GMu2/fJDeeFqqjGZsgj
+5H1i8oUZp/+OJh8aQWYkMzg=
+-----END CERTIFICATE-----
+</public-key>
+        <algorithm>RSA</algorithm>
+        <private-key>-AQ==3+rq9ApOBcRP5hfTTVfvP3kWUqs=wfL5Zc+wUAak+B7CnAVY6NdutYWtt67XvF+yGHFGS+v3hQ6NGerTNEn2/C/2TE21K9wzefoqvxmd8WjEHsvF5gTdcincaTY+9nTcXakHqq8nncV8hEOqtuuSBxStQeXAwvU4S2BzDIyXs1/eq9JH7buNcaawQwKG8lXF+wn63graFCQRFTwSvXToarWQHsfmLPd2D0E3TC8sEZSphcz7i+gpsPM60LelOAl3g4XMymlxpTyjcCCRqOhqsmEG/gaaP+22hgXB/UIvr4yqGjo80X/1UsB/eEcqkBwD0nk4vv1XAho1QrnnF/DcICKRFHLYDdkFtMNNHtgzvUCO5K5snG41rZNwSg8hiYRJUSWuYAPwjaonADRjn4cfPKVezUb9HyEE0Je144/eC2ap6n1kBDLTJbQgxrLntwPscKYGXDJWjd1k/2EHYR5vR3w/0MYw3i4Gout646C6HlAp0cimgFjlAm+KXmzMEvJufPK7NN7riM9/T0FIiLntNTT/jVUJVs3jFz2Hr1Z5bhFv54UULQB1P0Ze9PI5+CafVDNgnH3LiQIqgF3PLSYZEiccsUS69q3wfheCz/tfquzERYCL8lSTnZgfVqYXj40L+XsbqTDWflq3AEHKhUQ6YWGwBf0sQGUkN5LewrtZq065idEqJ8LjafPOOg6VHRaSTGma6NQUoQOTTBbawb1s7diKFGoW94AOIuhj13Q66nXlN30h7PeO0FgVqjfeb/lzNBdqNMBm5t7lVQ/2S609BuQzGw/0f37pye/0LnGxYJqUxaBc/aIbVjUkwfT1d8gNIeQ23cpbjLH8PlGER/XWuq2cEiW98XcZafuhtFOMq+RwNp2EVtcxhEwycM/5jDCkUem9irqWTQcGRbRKuomJgBagVUOL05Vrf3lZKkaXm5u0uaLRYRSgVFShYg7hZq+j59VwFsdkgdV7yWajEFpSvMZOn39av6tPjHIyrLGY2QlnNQuwxaGvQCd6DHYm3tR8PS20By/WwbpJCfM8XHjGMyDM+ietkKTrj5+aUUdv4v/a5NPpl2DPAD5u+YMhgefl8WotIM/Gid/QAlBzTuAn2FPjr+LQa2Dwo+6YB+WrbqfBVdpSPBSFfd8ZZwpudC4NNCO0hy+srYjF09dOAqnUvPqVze42hY40F4LVSGO/Ohm0914Vb4o/VHMd4DMnreEsT9CF6NknDClLB6bzxyKQUqVWesmWnzzoBJL4moEc9Cp/pxNSaxSMLymc9IVBCbb0lO883O2WuHAd8McImX3tpvDfvsj3bGNCXNzJHd8jwZcqO7i4F1Qnc8g14/fsyXKCwbQx5Uy3LLoXqL3mNdrhbZcs03Cnq2oyTQT38m3mdC+TRFkVfuBFGUwaORyZ2uYw/d/R1o9gVDhoQdygIQtverfU9HVnO9IaczrHaEnpFkGKBEt6s9pXm9y9zDGTyIpHLR7cDTOwxI2QW0XKKGZL3/HKVdNrjly9PFaHB+WbFIAMCJ+QKO0eG8VwoXrIUyD9bLg+uOmT/EiVBbGAJYaHz6DJgXMyjABFD01By+p636hniT3S1pIxIeMA7bRIhmV3sW8N5SBepqoXz56d8ch6f3xqQ+Dru+sbbKoG0jkys1ZOHrfYujhqtvYETXrv0MXAt44RBRZSRaU1XU3EElI1ycUMhea8pBuG4HF3vGN8Y2m60ZAM76BA+Hgs5zZg8vs1m4boP9DlZpuYFEIOH1UBXeIw8+t51PpI/5CxRVTCFWNugUNfDxvlBfJBDk0Mi3hHW1OrDjE9wnD12f6ydMg8uuDxXV6EPHzZmK1KMB/QAzzNVqcG1oXZSeYvwqK56vGHqNI6cM5TQ1hzERwyTNMet0W9Wa9ESKjCx48OU1FbQnNxgNmJkNslTLYMHz0tHsZ31NciNQmWm4itZ7We/r2dS9dP+5A0SGRP+UvRqzTBlvu1kRbDkCugjUfKmZlzT2t2Mz/QAo+QjXks5s7AOCdM/6BUEBVr405IESk6OjGZVtSOmdVa799gu10SJdZy8NslOQYoRYV+drAREjlc9Eseuswr11FxviMefZcrVvxTyaigRIqQsEU4k7mzA6X1e8AvGytB/JDx22GpnVJEI8qxVN77b/t0YSqk58Jj6TbaAaNesE1CQ3ubvXYsnW8G9Nh0n3ArB48AKBiVmmVCukRjA6One1wNBMVGh3OD504TdyK7D7XBdDk8k2ri9nInqs4zcR9FWWCtRW17gMJMSY07mL8fuyiV</private-key>
+      </entry>
+      <entry name="cdot.io">
+        <subject-hash>da69675f</subject-hash>
+        <issuer-hash>a56dfd78</issuer-hash>
+        <not-valid-before>Nov 19 00:00:00 2023 GMT</not-valid-before>
+        <issuer>/C=AT/O=ZeroSSL/CN=ZeroSSL ECC Domain Secure Site CA</issuer>
+        <not-valid-after>Feb 17 23:59:59 2024 GMT</not-valid-after>
+        <common-name>cdot.io</common-name>
+        <expiry-epoch>1708214399</expiry-epoch>
+        <ca>no</ca>
+        <subject>/CN=cdot.io</subject>
+        <public-key>-----BEGIN CERTIFICATE-----
+MIID/jCCA4SgAwIBAgIRAK0pylUNMpOXYy2PyYpUO60wCgYIKoZIzj0EAwMwSzEL
+MAkGA1UEBhMCQVQxEDAOBgNVBAoTB1plcm9TU0wxKjAoBgNVBAMTIVplcm9TU0wg
+RUNDIERvbWFpbiBTZWN1cmUgU2l0ZSBDQTAeFw0yMzExMTkwMDAwMDBaFw0yNDAy
+MTcyMzU5NTlaMBIxEDAOBgNVBAMTB2Nkb3QuaW8wWTATBgcqhkjOPQIBBggqhkjO
+PQMBBwNCAATprTCxN7teTjAwDnvcJ8/QMm/k6wlBFkAtA3Jtpp+RARWdQTxB+53s
+kEsuURktPvv8EXsuvpWwJAlqz39uq8/go4ICgDCCAnwwHwYDVR0jBBgwFoAUD2vm
+S845R672fpAeefAwkZLIX6MwHQYDVR0OBBYEFNuV8u0WsbjAmGgvv6HoNANtDaSI
+MA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUF
+BwMBBggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgJOMCUwIwYIKwYB
+BQUHAgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECATCBiAYIKwYB
+BQUHAQEEfDB6MEsGCCsGAQUFBzAChj9odHRwOi8vemVyb3NzbC5jcnQuc2VjdGln
+by5jb20vWmVyb1NTTEVDQ0RvbWFpblNlY3VyZVNpdGVDQS5jcnQwKwYIKwYBBQUH
+MAGGH2h0dHA6Ly96ZXJvc3NsLm9jc3Auc2VjdGlnby5jb20wggEGBgorBgEEAdZ5
+AgQCBIH3BIH0APIAdwB2/4g/Crb7lVHCYcz1h7o0tKTNuyncaEIKn+ZnTFo6dAAA
+AYvn82PaAAAEAwBIMEYCIQCc5NgsuaWu5ElD1UnEwag1A0C2dolaM0RJIywt47Ib
+DgIhAJhfjLkZ0h+5B9Qi9k1+3nsAb1U3VeLbV1X92dlAkFCOAHcAO1N3dT4tuYBO
+izBbBv5AO2fYT8P0x70ADS1yb+H61BcAAAGL5/NkYAAABAMASDBGAiEAtIWpzkiw
+XCGyHX6xIcHxkb5iX3Hgixw1SyuL8omF14MCIQCb0m/DIrHkTeB7j4K6oobcV/Og
+zpPM0atkyFaGLAHlHjAdBgNVHREEFjAUggdjZG90LmlvggkqLmNkb3QuaW8wCgYI
+KoZIzj0EAwMDaAAwZQIxAO5/XQQ7GgvdMYVEL15S43Jb2434/lqiHZKqBP9umuy7
+F7PsMfN8EsUKRLRRHbLniQIwHc2cJuPoY7sxkGVih4WQ/UN+j7wTiiG4UqFbuEbO
+PFwFBe0LgIZPtO4OpDrIdc/4
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+MIIDhTCCAwygAwIBAgIQI7dt48G7KxpRlh4I6rdk6DAKBggqhkjOPQQDAzCBiDEL
+MAkGA1UEBhMCVVMxEzARBgNVBAgTCk5ldyBKZXJzZXkxFDASBgNVBAcTC0plcnNl
+eSBDaXR5MR4wHAYDVQQKExVUaGUgVVNFUlRSVVNUIE5ldHdvcmsxLjAsBgNVBAMT
+JVVTRVJUcnVzdCBFQ0MgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMjAwMTMw
+MDAwMDAwWhcNMzAwMTI5MjM1OTU5WjBLMQswCQYDVQQGEwJBVDEQMA4GA1UEChMH
+WmVyb1NTTDEqMCgGA1UEAxMhWmVyb1NTTCBFQ0MgRG9tYWluIFNlY3VyZSBTaXRl
+IENBMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAENkFhFytTJe2qypTk1tpIV+9QuoRk
+gte7BRvWHwYk9qUznYzn8QtVaGOCMBBfjWXsqqivl8q1hs4wAYl03uNOXgFu7iZ7
+zFP6I6T3RB0+TR5fZqathfby47yOCZiAJI4go4IBdTCCAXEwHwYDVR0jBBgwFoAU
+OuEJhtTPGcKWdnRJdtzgNcZjY5owHQYDVR0OBBYEFA9r5kvOOUeu9n6QHnnwMJGS
+yF+jMA4GA1UdDwEB/wQEAwIBhjASBgNVHRMBAf8ECDAGAQH/AgEAMB0GA1UdJQQW
+MBQGCCsGAQUFBwMBBggrBgEFBQcDAjAiBgNVHSAEGzAZMA0GCysGAQQBsjEBAgJO
+MAgGBmeBDAECATBQBgNVHR8ESTBHMEWgQ6BBhj9odHRwOi8vY3JsLnVzZXJ0cnVz
+dC5jb20vVVNFUlRydXN0RUNDQ2VydGlmaWNhdGlvbkF1dGhvcml0eS5jcmwwdgYI
+KwYBBQUHAQEEajBoMD8GCCsGAQUFBzAChjNodHRwOi8vY3J0LnVzZXJ0cnVzdC5j
+b20vVVNFUlRydXN0RUNDQWRkVHJ1c3RDQS5jcnQwJQYIKwYBBQUHMAGGGWh0dHA6
+Ly9vY3NwLnVzZXJ0cnVzdC5jb20wCgYIKoZIzj0EAwMDZwAwZAIwJHBUDwHJQN3I
+VNltVMrICMqYQ3TYP/TXqV9t8mG5cAomG2MwqIsxnL937Gewf6WIAjAlrauksO6N
+UuDdDXyd330druJcZJx0+H5j5cFOYBaGsKdeGW7sCMaR2PsDFKGllas=
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+MIID0zCCArugAwIBAgIQVmcdBOpPmUxvEIFHWdJ1lDANBgkqhkiG9w0BAQwFADB7
+MQswCQYDVQQGEwJHQjEbMBkGA1UECAwSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYD
+VQQHDAdTYWxmb3JkMRowGAYDVQQKDBFDb21vZG8gQ0EgTGltaXRlZDEhMB8GA1UE
+AwwYQUFBIENlcnRpZmljYXRlIFNlcnZpY2VzMB4XDTE5MDMxMjAwMDAwMFoXDTI4
+MTIzMTIzNTk1OVowgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5
+MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBO
+ZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgRUNDIENlcnRpZmljYXRpb24gQXV0
+aG9yaXR5MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEGqxUWqn5aCPnetUkb1PGWthL
+q8bVttHmc3Gu3ZzWDGH926CJA7gFFOxXzu5dP+Ihs8731Ip54KODfi2X0GHE8Znc
+JZFjq38wo7Rw4sehM5zzvy5cU7Ffs30yf4o043l5o4HyMIHvMB8GA1UdIwQYMBaA
+FKARCiM+lvEH7OKvKe+CpX/QMKS0MB0GA1UdDgQWBBQ64QmG1M8ZwpZ2dEl23OA1
+xmNjmjAOBgNVHQ8BAf8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zARBgNVHSAECjAI
+MAYGBFUdIAAwQwYDVR0fBDwwOjA4oDagNIYyaHR0cDovL2NybC5jb21vZG9jYS5j
+b20vQUFBQ2VydGlmaWNhdGVTZXJ2aWNlcy5jcmwwNAYIKwYBBQUHAQEEKDAmMCQG
+CCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wDQYJKoZIhvcNAQEM
+BQADggEBABns652JLCALBIAdGN5CmXKZFjK9Dpx1WywV4ilAbe7/ctvbq5AfjJXy
+ij0IckKJUAfiORVsAYfZFhr1wHUrxeZWEQff2Ji8fJ8ZOd+LygBkc7xGEJuTI42+
+FsMuCIKchjN0djsoTI0DQoWz4rIjQtUfenVqGtF8qmchxDM6OW1TyaLtYiKou+JV
+bJlsQ2uRl9EMC5MCHdK8aXdJ5htN978UeAOwproLtOGFfy/cQjutdAFI3tZs4RmY
+CV4Ks2dH/hzg1cEo70qLRDEmBDeNiXQ2Lu+lIg+DdEmSx/cQwgwp+7e9un/jX9Wf
+8qn0dNW44bOwgeThpWOjzOoEeJBuv/c=
+-----END CERTIFICATE-----
+</public-key>
+        <algorithm>EC</algorithm>
+        <private-key>-AQ==n7wvMz7HmnbFgrsCQw1snkbZuRY=XvXcFOkILAZdXDe37gMx2bTS/Hb6HAEBFQ++jPBphccj0xOIeKmTz3m4ZmyVKmbzILgKWTO5wvh8vv2uHQHgkROruRDCN2J/cnEMiqASzxq2IdlkJzEYGVZ/FNFM9AqIskX6jdEd1hmBHETJwWZResyzSo94NqzHEl0fF8MzGPTBPAxxWNmUitYczdLOoGUEqkKdWP8z4Dqrz2ew1T0f3ObPn5BZCnuw3URlWukvNxvBhV4Kdr+gSiNrDg69u1A/aZIFvjVIPDBDDuOv5uND+bWM4aY+9F/lGJhMXlgUWwj7XrE2ZFgyymWTdE8EiQDc</private-key>
+      </entry>
+    </certificate>
+    <ssl-decrypt>
+      <forward-trust-certificate>
+        <rsa>Magnolia_Decryption</rsa>
+      </forward-trust-certificate>
+      <forward-untrust-certificate>
+        <rsa>Magnolia_Decryption</rsa>
+      </forward-untrust-certificate>
+    </ssl-decrypt>
+    <application />
+    <application-group />
+    <service />
+    <service-group />
+    <botnet>
+      <configuration>
+        <http>
+          <dynamic-dns>
+            <enabled>yes</enabled>
+            <threshold>5</threshold>
+          </dynamic-dns>
+          <malware-sites>
+            <enabled>yes</enabled>
+            <threshold>5</threshold>
+          </malware-sites>
+          <recent-domains>
+            <enabled>yes</enabled>
+            <threshold>5</threshold>
+          </recent-domains>
+          <ip-domains>
+            <enabled>yes</enabled>
+            <threshold>10</threshold>
+          </ip-domains>
+          <executables-from-unknown-sites>
+            <enabled>yes</enabled>
+            <threshold>5</threshold>
+          </executables-from-unknown-sites>
+        </http>
+        <other-applications>
+          <irc>yes</irc>
+        </other-applications>
+        <unknown-applications>
+          <unknown-tcp>
+            <destinations-per-hour>10</destinations-per-hour>
+            <sessions-per-hour>10</sessions-per-hour>
+            <session-length>
+              <maximum-bytes>100</maximum-bytes>
+              <minimum-bytes>50</minimum-bytes>
+            </session-length>
+          </unknown-tcp>
+          <unknown-udp>
+            <destinations-per-hour>10</destinations-per-hour>
+            <sessions-per-hour>10</sessions-per-hour>
+            <session-length>
+              <maximum-bytes>100</maximum-bytes>
+              <minimum-bytes>50</minimum-bytes>
+            </session-length>
+          </unknown-udp>
+        </unknown-applications>
+      </configuration>
+      <report>
+        <topn>100</topn>
+        <scheduled>yes</scheduled>
+      </report>
+    </botnet>
+    <content-preview>
+      <application>
+        <entry id="11539" minver="8.1.0" name="abb-show-remote-system" ori_country="USA" ori_language="English">
+          <category>business-systems</category>
+          <subcategory>ics-protocols</subcategory>
+          <technology>client-server</technology>
+          <description>Control Builder Professional (CB Professional) is a programming tool for creating control solutions when using the AC 800M hardware. This App-ID covers Control Builder's Show Remote System command.</description>
+          <alg>yes</alg>
+          <appident>yes</appident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>no</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <new-appid>yes</new-appid>
+          <references>
+            <entry name="Control Builder">
+              <link>https://new.abb.com/control-systems/system-800xa/800xa-dcs/hardware-controllers-io/control-builder-engineering-software</link>
+            </entry>
+          </references>
+          <risk>1</risk>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11572" minver="8.1.0" name="appetize.io" ori_country="USA" ori_language="English">
+          <category>saas</category>
+          <subcategory>general-business</subcategory>
+          <technology>browser-based</technology>
+          <description>Appetize.io is an online iOS Simulator and Android Emulator that helps run iPhone, iPad, Mobile Safari, APK, mobile apps in the browser. This App-ID covers the traffic for appetize.io application.</description>
+          <appident>yes</appident>
+          <virus-ident>yes</virus-ident>
+          <file-type-ident>yes</file-type-ident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>yes</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <data-ident>yes</data-ident>
+          <cachable>no</cachable>
+          <file-forward>yes</file-forward>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="Appetize.io">
+              <link>https://appetize.io/</link>
+            </entry>
+          </references>
+          <use-applications>
+            <member>ssl</member>
+            <member>web-browsing</member>
+          </use-applications>
+          <implicit-use-applications>
+            <member>ssl</member>
+            <member>web-browsing</member>
+          </implicit-use-applications>
+          <risk>2</risk>
+          <parent-app>amazon-cloud-drive-uploading</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11575" minver="8.1.0" name="chatsonic" ori_country="USA" ori_language="English">
+          <category>saas</category>
+          <subcategory>artificial-intelligence</subcategory>
+          <technology>browser-based</technology>
+          <description>Chatsonic is an AI conversational chatbot that generates human-level responses with machine-level intelligence. This App-ID covers the traffic of chatsonic.</description>
+          <appident>yes</appident>
+          <virus-ident>yes</virus-ident>
+          <file-type-ident>yes</file-type-ident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>yes</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <data-ident>yes</data-ident>
+          <cachable>no</cachable>
+          <file-forward>yes</file-forward>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Generative AI]</member>
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="Chatsonic Home Page">
+              <link>https://writesonic.com/chat</link>
+            </entry>
+          </references>
+          <use-applications>
+            <member>ssl</member>
+            <member>web-browsing</member>
+          </use-applications>
+          <risk>2</risk>
+          <parent-app>web20_parrent_app</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11538" minver="8.1.0" name="gehc-dms-tcp" ori_country="USA" ori_language="English">
+          <category>business-systems</category>
+          <subcategory>medical</subcategory>
+          <technology>client-server</technology>
+          <description>GE Healthcare Centricity DMS server stores patient data and controls the master lists of medications, complications, procedures, etc. This App-ID covers the communication between a GE Centricity workstation and a GE DMS server.</description>
+          <appident>yes</appident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>no</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <new-appid>yes</new-appid>
+          <references>
+            <entry name="Centricity">
+              <link>https://www.gehealthcare.com/products/healthcare-it/centricity-cardio-enterprise</link>
+            </entry>
+          </references>
+          <risk>1</risk>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11567" minver="8.1.0" name="globoplay" ori_country="USA" ori_language="English">
+          <category>media</category>
+          <subcategory>photo-video</subcategory>
+          <technology>browser-based</technology>
+          <description>Globoplay is a Brazilian subscription video on-demand over-the-top streaming service owned by Grupo Globo. This App-ID covers the traffic for Globoplay application.</description>
+          <appident>yes</appident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>no</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Entertainment Video]</member>
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="globoplay">
+              <link>https://globoplay.globo.com/</link>
+            </entry>
+          </references>
+          <use-applications>
+            <member>ssl</member>
+            <member>web-browsing</member>
+          </use-applications>
+          <risk>1</risk>
+          <parent-app>google-base</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11564" minver="8.1.0" name="openai-dalle" ori_country="USA" ori_language="English">
+          <category>saas</category>
+          <subcategory>artificial-intelligence</subcategory>
+          <technology>browser-based</technology>
+          <description>DALL&amp;#xB7;E 2 is an AI system that can create realistic images and art from a description in natural language. This App-ID covers the traffic for Dall-E application.</description>
+          <appident>yes</appident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>yes</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Generative AI]</member>
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="Dall-E">
+              <link>https://openai.com/dall-e-2</link>
+            </entry>
+          </references>
+          <use-applications minver="8.1.0">
+            <member minver="8.1.0">openai-base</member>
+          </use-applications>
+          <tunnel-applications minver="8.1.0">
+            <member minver="8.1.0">openai-dalle-downloading</member>
+            <member minver="8.1.0">openai-dalle-uploading</member>
+          </tunnel-applications>
+          <risk>2</risk>
+          <parent-app>openai-base</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11566" minver="8.1.0" name="openai-dalle-downloading" ori_country="USA" ori_language="English">
+          <category>saas</category>
+          <subcategory>artificial-intelligence</subcategory>
+          <technology>browser-based</technology>
+          <description>DALL&amp;#xB7;E 2 is an AI system that can create realistic images and art from a description in natural language. This App-ID covers the downloading traffic for Dall-E application.</description>
+          <appident>yes</appident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>yes</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Downloading]</member>
+            <member>[Generative AI]</member>
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="Dall-E">
+              <link>https://openai.com/dall-e-2</link>
+            </entry>
+          </references>
+          <use-applications minver="8.1.0">
+            <member minver="8.1.0">openai-dalle</member>
+          </use-applications>
+          <risk>2</risk>
+          <parent-app>openai-dalle</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11565" minver="8.1.0" name="openai-dalle-uploading" ori_country="USA" ori_language="English">
+          <category>saas</category>
+          <subcategory>artificial-intelligence</subcategory>
+          <technology>browser-based</technology>
+          <description>DALL&amp;#xB7;E 2 is an AI system that can create realistic images and art from a description in natural language. This App-ID covers the uploading traffic for Dall-E application.</description>
+          <appident>yes</appident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>yes</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Generative AI]</member>
+            <member>[Uploading]</member>
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="Dall-E">
+              <link>https://openai.com/dall-e-2</link>
+            </entry>
+          </references>
+          <use-applications minver="8.1.0">
+            <member minver="8.1.0">openai-dalle</member>
+          </use-applications>
+          <risk>2</risk>
+          <parent-app>openai-dalle</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11568" minver="8.1.0" name="sennheiser-mobileconnect" ori_country="USA" ori_language="English">
+          <category>media</category>
+          <subcategory>audio-streaming</subcategory>
+          <technology>client-server</technology>
+          <description>Sennheiser MobileConnect is an assistive listening solution that allows you to stream audio content via WiFi live and in superior quality to any mobile device. This App-ID covers the traffic for Sennheiser MobileConnect application.</description>
+          <appident>yes</appident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>no</able-to-transfer-file>
+          <has-known-vulnerability>no</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <references>
+            <entry name="Sennheiser MobileConnect">
+              <link>https://en-us.sennheiser.com/mobileconnect-smartphone-hearing-system-app</link>
+            </entry>
+          </references>
+          <risk>1</risk>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11570" minver="8.1.0" name="siemens-logo-discovery" ori_country="USA" ori_language="English">
+          <category>business-systems</category>
+          <subcategory>ics-protocols</subcategory>
+          <technology>client-server</technology>
+          <description>LOGO! Soft Comfort engineering software is a database, debugging, distribution, help, and webmaster tool that enables users to create, simulate, archive, and print out circuit programs for all LOGO! devices via a PC. This App-ID covers the discovery of PLCs through LOGO! Soft Comfort.</description>
+          <alg>yes</alg>
+          <appident>yes</appident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>no</able-to-transfer-file>
+          <has-known-vulnerability>no</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <new-appid>yes</new-appid>
+          <references>
+            <entry name="LOGO! Software">
+              <link>https://www.siemens.com/global/en/products/automation/systems/industrial/plc/logo/logo-software.html</link>
+            </entry>
+          </references>
+          <risk>1</risk>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11571" minver="8.1.0" name="siemens-logo-soft-comfort" ori_country="USA" ori_language="English">
+          <category>business-systems</category>
+          <subcategory>ics-protocols</subcategory>
+          <technology>client-server</technology>
+          <description>LOGO! Soft Comfort engineering software is a database, debugging, distribution, help, and webmaster tool that enables users to create, simulate, archive, and print out circuit programs for all LOGO! devices via a PC. This App-ID covers the application traffic of LOGO! Soft Comfort.</description>
+          <appident>yes</appident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>no</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <references>
+            <entry name="LOGO! Software">
+              <link>https://www.siemens.com/global/en/products/automation/systems/industrial/plc/logo/logo-software.html</link>
+            </entry>
+          </references>
+          <use-applications>
+            <member>ssl</member>
+          </use-applications>
+          <risk>1</risk>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11573" minver="8.1.0" name="siemens-logo-web-server" ori_country="USA" ori_language="English">
+          <category>business-systems</category>
+          <subcategory>ics-protocols</subcategory>
+          <technology>client-server</technology>
+          <description>LOGO! is a universal logic module made by Siemens that offers solutions for domestic, installation, mechanical, and apparatus engineering applications. This App-ID covers communication traffic with LOGO!'s web server.</description>
+          <appident>yes</appident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>no</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <tag minver="9.1.0">
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="LOGO! System Manual">
+              <link>https://assets.new.siemens.com/siemens/assets/api/uuid:557e34c1-4111-4625-921a-0717d0053571/Manual-LOGO-2020.pdf</link>
+            </entry>
+          </references>
+          <use-applications>
+            <member>ssl</member>
+            <member>web-browsing</member>
+          </use-applications>
+          <risk>1</risk>
+          <parent-app>web20_parrent_app</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11556" minver="8.1.0" name="smash" ori_country="USA" ori_language="English">
+          <category>saas</category>
+          <subcategory>collaboration-productivity</subcategory>
+          <technology>browser-based</technology>
+          <description>Smash is an online file transfer service that gives individuals and businesses of all sizes the flexibility to send and receive large amounts of data for free. This App-ID covers the traffic of Smash.</description>
+          <appident>yes</appident>
+          <virus-ident>yes</virus-ident>
+          <file-type-ident>yes</file-type-ident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>yes</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>yes</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <data-ident>yes</data-ident>
+          <cachable>no</cachable>
+          <file-forward>yes</file-forward>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="Smash Home Page">
+              <link>https://en.fromsmash.com/</link>
+            </entry>
+          </references>
+          <use-applications>
+            <member>ssl</member>
+            <member>web-browsing</member>
+          </use-applications>
+          <implicit-use-applications>
+            <member>ssl</member>
+            <member>web-browsing</member>
+          </implicit-use-applications>
+          <risk>3</risk>
+          <parent-app>web20_parrent_app</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11578" minver="8.1.0" name="abbott-rals-http" ori_country="USA" ori_language="English">
+          <category>business-systems</category>
+          <subcategory>medical</subcategory>
+          <technology>client-server</technology>
+          <description>Abbott RALS is a software platform for data management for point-of-care testing (POCT). RALS is a web-based system that effortlessly connects hospital devices used every day at the point of care. This App-ID covers Abbott RALS web service communication.</description>
+          <appident>yes</appident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>no</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <references>
+            <entry name="Abbott RALS">
+              <link>https://www.rals.com/us/en/home/rals-system.html</link>
+            </entry>
+          </references>
+          <use-applications>
+            <member>web-browsing</member>
+          </use-applications>
+          <risk>1</risk>
+          <parent-app>web20_parrent_app</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11561" minver="8.1.0" name="canva-downloading" ori_country="USA" ori_language="English">
+          <category>saas</category>
+          <subcategory>design</subcategory>
+          <technology>browser-based</technology>
+          <description>Canva is an online design and publishing tool with a mission to empower everyone in the world to design anything and publish anywhere. This App-ID covers the downloading traffic of Canva.</description>
+          <appident>yes</appident>
+          <virus-ident>yes</virus-ident>
+          <file-type-ident>yes</file-type-ident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>yes</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <data-ident>yes</data-ident>
+          <cachable>no</cachable>
+          <file-forward>yes</file-forward>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Downloading]</member>
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="canva">
+              <link>https://about.canva.com/</link>
+            </entry>
+          </references>
+          <use-applications minver="8.1.0">
+            <member minver="8.1.0">canva-base</member>
+          </use-applications>
+          <risk>2</risk>
+          <parent-app>canva-base</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11559" minver="8.1.0" name="canva-base" ori_country="USA" ori_language="English">
+          <ottawa-name>canva</ottawa-name>
+          <category>saas</category>
+          <subcategory>design</subcategory>
+          <technology>browser-based</technology>
+          <description>Canva is an online design and publishing tool with a mission to empower everyone in the world to design anything and publish anywhere. This App-ID covers the traffic of Canva.</description>
+          <appident>yes</appident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>yes</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="canva">
+              <link>https://about.canva.com/</link>
+            </entry>
+          </references>
+          <use-applications>
+            <member>facebook-base</member>
+            <member minver="3.0.0">google-base</member>
+            <member minver="3.1.0">ms-office365-base</member>
+            <member>ssl</member>
+            <member>web-browsing</member>
+          </use-applications>
+          <tunnel-applications minver="8.1.0">
+            <member minver="8.1.0">canva-downloading</member>
+            <member minver="8.1.0">canva-text-to-image</member>
+            <member minver="8.1.0">canva-uploading</member>
+          </tunnel-applications>
+          <risk>2</risk>
+          <application-container>canva</application-container>
+          <parent-app>office365-enterprise-access</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11559" minver="8.1.0" ori_country="USA" ori_language="English" name="canva">
+          <ottawa-name>canva</ottawa-name>
+          <category>saas</category>
+          <subcategory>design</subcategory>
+          <technology>browser-based</technology>
+          <description>Canva is an online design and publishing tool with a mission to empower everyone in the world to design anything and publish anywhere. This App-ID covers the traffic of Canva.</description>
+          <appident>yes</appident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>yes</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="canva">
+              <link>https://about.canva.com/</link>
+            </entry>
+          </references>
+          <use-applications>
+            <member>facebook-base</member>
+            <member minver="3.0.0">google-base</member>
+            <member minver="3.1.0">ms-office365-base</member>
+            <member>ssl</member>
+            <member>web-browsing</member>
+          </use-applications>
+          <tunnel-applications minver="8.1.0">
+            <member minver="8.1.0">canva-downloading</member>
+            <member minver="8.1.0">canva-text-to-image</member>
+            <member minver="8.1.0">canva-uploading</member>
+          </tunnel-applications>
+          <risk>2</risk>
+          <application-container>canva</application-container>
+          <parent-app>office365-enterprise-access</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11562" minver="8.1.0" name="canva-text-to-image" ori_country="USA" ori_language="English">
+          <category>saas</category>
+          <subcategory>design</subcategory>
+          <technology>browser-based</technology>
+          <description>Canva is an online design and publishing tool with a mission to empower everyone in the world to design anything and publish anywhere. This App-ID covers the text-to-image traffic of Canva, which is now part of the Magic Media app.</description>
+          <appident>yes</appident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>no</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Generative AI]</member>
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="canva">
+              <link>https://about.canva.com/</link>
+            </entry>
+          </references>
+          <use-applications minver="8.1.0">
+            <member minver="8.1.0">canva-base</member>
+          </use-applications>
+          <risk>1</risk>
+          <parent-app>canva-base</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11560" minver="8.1.0" name="canva-uploading" ori_country="USA" ori_language="English">
+          <category>saas</category>
+          <subcategory>design</subcategory>
+          <technology>browser-based</technology>
+          <description>Canva is an online design and publishing tool with a mission to empower everyone in the world to design anything and publish anywhere. This App-ID covers the uploading traffic of Canva.</description>
+          <appident>yes</appident>
+          <virus-ident>yes</virus-ident>
+          <file-type-ident>yes</file-type-ident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>yes</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <data-ident>yes</data-ident>
+          <cachable>no</cachable>
+          <file-forward>yes</file-forward>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Uploading]</member>
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="canva">
+              <link>https://about.canva.com/</link>
+            </entry>
+          </references>
+          <use-applications minver="8.1.0">
+            <member minver="8.1.0">canva-base</member>
+          </use-applications>
+          <risk>2</risk>
+          <parent-app>canva-base</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11582" minver="8.1.0" name="controledge-builder" ori_country="USA" ori_language="English">
+          <category>business-systems</category>
+          <subcategory>ics-protocols</subcategory>
+          <technology>client-server</technology>
+          <description>Honeywell ControlEdge Builder is an integrated configuration tool to design, configure, program and maintain ControlEdge controllers. This App-ID covers  Honeywell ControlEdge Builder configuration operations from the ControlEdge Builder software to ControlEdge controllers.</description>
+          <alg>yes</alg>
+          <appident>yes</appident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>no</able-to-transfer-file>
+          <has-known-vulnerability>no</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <new-appid>yes</new-appid>
+          <references>
+            <entry name="Honeywell">
+              <link>https://process.honeywell.com/us/en/initiative/control-edge/controledge-family-controller</link>
+            </entry>
+          </references>
+          <risk>1</risk>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11580" minver="8.1.0" name="controledge-builder-discovery" ori_country="USA" ori_language="English">
+          <category>business-systems</category>
+          <subcategory>ics-protocols</subcategory>
+          <technology>client-server</technology>
+          <description>Honeywell ControlEdge Builder is an integrated configuration tool to design, configure, program and maintain ControlEdge controllers. This App-ID covers  Honeywell ControlEdge Builder discovery messages from ControlEdge Builder software to ControlEdge controllers.</description>
+          <appident>yes</appident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>no</able-to-transfer-file>
+          <has-known-vulnerability>no</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <new-appid>yes</new-appid>
+          <references>
+            <entry name="Honeywell">
+              <link>https://process.honeywell.com/us/en/initiative/control-edge/controledge-family-controller</link>
+            </entry>
+          </references>
+          <risk>1</risk>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11584" minver="8.1.0" name="delta-hmi" ori_country="USA" ori_language="English">
+          <category>business-systems</category>
+          <subcategory>ics-protocols</subcategory>
+          <technology>client-server</technology>
+          <description>Delta's human machine interface (HMI) is a platform which permits interaction between users and automation equipment. The color touchscreen enables intuitive parameter entry and a variety of ways to display variable data, including trend graphs and alarm elements. This App-ID covers communication from a workstation running Delta's DIAView software to a Delta HMI device.</description>
+          <alg>yes</alg>
+          <appident>yes</appident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>no</able-to-transfer-file>
+          <has-known-vulnerability>no</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <new-appid>yes</new-appid>
+          <references>
+            <entry name="Delta HMI">
+              <link>https://www.deltaww.com/en-US/Products/Touch-Panel-HMI-Human-Machine-Interfaces/ALL/</link>
+            </entry>
+          </references>
+          <risk>1</risk>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11579" minver="8.1.0" name="fizz" ori_country="USA" ori_language="English">
+          <category>saas</category>
+          <subcategory>social-networking</subcategory>
+          <technology>client-server</technology>
+          <description>Fizz is a private discussion and news feed for school with features such as direct messages, polls, and images. This App-ID covers the traffic for fizz application.</description>
+          <appident>yes</appident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>yes</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <breaks-decryption>yes</breaks-decryption>
+          <can-disable>yes</can-disable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="fizz">
+              <link>https://fizzsocial.app/index.html</link>
+            </entry>
+          </references>
+          <use-applications>
+            <member minver="3.0.0">google-base</member>
+            <member>ssl</member>
+          </use-applications>
+          <implicit-use-applications>
+            <member>ssl</member>
+          </implicit-use-applications>
+          <risk>2</risk>
+          <parent-app>web20_parrent_app</parent-app>
+          <preview>yes</preview>
+        </entry>
+        <entry id="11583" minver="8.1.0" name="promethean-screenshare" ori_country="USA" ori_language="English">
+          <category>business-systems</category>
+          <subcategory>general-business</subcategory>
+          <technology>client-server</technology>
+          <description>Promethean Screen Share is a sharing solution which allows one or more devices to share their screen onto another. This App-ID covers the traffic for Promethean Screen Share application.</description>
+          <appident>yes</appident>
+          <vulnerability-ident>yes</vulnerability-ident>
+          <evasive-behavior>no</evasive-behavior>
+          <consume-big-bandwidth>no</consume-big-bandwidth>
+          <used-by-malware>no</used-by-malware>
+          <able-to-transfer-file>no</able-to-transfer-file>
+          <has-known-vulnerability>yes</has-known-vulnerability>
+          <tunnel-other-application>no</tunnel-other-application>
+          <prone-to-misuse>no</prone-to-misuse>
+          <pervasive-use>no</pervasive-use>
+          <per-direction-regex>no</per-direction-regex>
+          <deny-action>drop-reset</deny-action>
+          <cachable>no</cachable>
+          <new-appid>yes</new-appid>
+          <is-saas>yes</is-saas>
+          <saas minver="8.1.0">
+            <is-data-breaches>no</is-data-breaches>
+            <is-ip-based-restrictions>no</is-ip-based-restrictions>
+            <is-poor-financial-viability>no</is-poor-financial-viability>
+            <is-poor-terms-of-service>no</is-poor-terms-of-service>
+          </saas>
+          <tag minver="9.1.0">
+            <member>[Web App]</member>
+          </tag>
+          <references>
+            <entry name="Promethean Screen Share">
+              <link>https://support.prometheanworld.com/s/article/1770?language=en_US</link>
+            </entry>
+          </references>
+          <use-applications>
+            <member>ssl</member>
+          </use-applications>
+          <implicit-use-applications>
+            <member>ssl</member>
+          </implicit-use-applications>
+          <risk>1</risk>
+          <parent-app>web20_parrent_app</parent-app>
+          <preview>yes</preview>
+        </entry>
+      </application>
+      <application-type>
+        <category />
+        <technology />
+      </application-type>
+    </content-preview>
+  </shared>
+  <mgt-config>
+    <users>
+      <entry name="letsencrypt-user">
+        <permissions>
+          <role-based>
+            <custom>
+              <profile>letsencrypt</profile>
+            </custom>
+          </role-based>
+        </permissions>
+        <phash>$5$strdhoav$59eoXMGOekxQHaIkfs4gi/T0ud7thCwT6kQHRVS4Gn5</phash>
+      </entry>
+      <entry name="cdot">
+        <permissions>
+          <role-based>
+            <superuser>yes</superuser>
+          </role-based>
+        </permissions>
+        <public-key>c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFDQVFEaSs1dUZtNDhVZkZBcldPY05wdnJ6SlFEeXRwSmJBS3kxVGUxRm1GUFpJZ1JjK2xMMk9SRGZGS21NL1RNRkszQjBJTlZHZ2M0Ry9MYlAwMk83ck5SN21Qa1N2eU5nQ0JGNU5qc2tLcmtYOGdIS2pVaVFmMjZwNFU4VWxOb2lxNFBWZmQ0eEgyTWJmWjR1cFI3bW9OcVhqUUlRWWxtVlNTV2tIeTcrRmhueVBWS0ltcG05VGVvRDhkWkkyQXNveVY2S0s3ampnNFc2SERSUCtIQmxHbmc1RjRqVjdnekwwYURJUmgvZVpRanhERFpsT0g3bFc0bEN3bFZUN0ltTDZMN2M3UHhxTExXa1dUTFM5MHp4OGd5REplckF2WWk2SU5QR2hXM3pzYUdzblk0UVhSOU1ORElSSkx6V1UySHhHck93ZnZjS2tWMm5vcjc3cGl6ZWpETndoWW1wa1pSMnJUWm1nUnpFTnZJUXJaUkhQVGdQeHNRVXU1UDA1VDJHYVVqZk1mOW44WWZnQkplOEorR294SXdYS0w1eGQ5KytNaGtTZHl4MjRHUEI2WHBVT3VUREJacW1iaVR2SUthWFMxeGR1QVZVZlQzREc0Ykpyak1IYUU5UE9wZmNLNW1RWTd1UXdBNmZXRk0rbTVDVTBBYWdjL253Q1R3NW02QlV5MGtISGxaWnJHTUNQbjRtMnpMR1NML1dFTDdFdlNFZ3Q2ZHhIbUc4MzNsRm1jZDNQYnJqWGNuOExJdVJlSEJWUFlieFgwc01ONzRmZ0cybHdGZFFlYTFWSDErOFo4MTkyUHpDNFNZQ1VJa0xTNWxnZFNQeVduNllCZUtpUU9YWjBUU1JOOTYyRW1BVTdGcUNwRVpHblFORkVXcXRVQkVVMU5Eb3hhb3YrTlFpblE9PSBKYWR6aWEK</public-key>
+        <phash>$5$adxpdrnv$5vX2mOYCv1q6bq63GlIOS.g2MmobyfpdnBQ8A06.5vC</phash>
+      </entry>
+      <entry name="automation">
+        <permissions>
+          <role-based>
+            <superuser>yes</superuser>
+          </role-based>
+        </permissions>
+        <phash>$5$lqeeorkb$Wm3HfRJhKYQCxGoGHnwp76ZX4az8R005Auz.KKkHjh1</phash>
+      </entry>
+      <entry name="saute">
+        <permissions>
+          <role-based>
+            <superuser>yes</superuser>
+          </role-based>
+        </permissions>
+        <phash>$5$hygyqoer$4/znhPvw5aSx8ztRTmZdltBAjaZCgRuNNI4xXSnKku.</phash>
+      </entry>
+      <entry name="admin">
+        <phash>$5$aqvhcacj$rAxIASBoVTdUXvMsMbKZeX.sv8D4/ApMAH5twUX3QXD</phash>
+        <permissions>
+          <role-based>
+            <superuser>yes</superuser>
+          </role-based>
+        </permissions>
+      </entry>
+    </users>
+    <password-complexity>
+      <enabled>yes</enabled>
+      <minimum-length>8</minimum-length>
+    </password-complexity>
+  </mgt-config>
+</config>

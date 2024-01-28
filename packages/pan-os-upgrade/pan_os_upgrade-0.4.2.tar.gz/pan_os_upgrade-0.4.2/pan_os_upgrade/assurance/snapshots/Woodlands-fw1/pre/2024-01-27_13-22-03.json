@@ -1,0 +1,55 @@
+{
+    "hostname": "Woodlands-fw1",
+    "arp_table": {},
+    "content_version": {
+        "version": "8729-8157"
+    },
+    "ip_sec_tunnels": null,
+    "license": null,
+    "nics": {
+        "ethernet1/1": {
+            "status": "up"
+        },
+        "ethernet1/2": {
+            "status": "up"
+        },
+        "ethernet1/3": {
+            "status": "down"
+        },
+        "ethernet1/4": {
+            "status": "down"
+        },
+        "ethernet1/5": {
+            "status": "down"
+        },
+        "loopback": {
+            "status": "up"
+        },
+        "tunnel": {
+            "status": "up"
+        }
+    },
+    "routes": {
+        "cdot.io_172.16.255.6/32_": {
+            "virtual_router": "cdot.io",
+            "destination": "172.16.255.6/32",
+            "nexthop": "0.0.0.0",
+            "metric": "0",
+            "flags": "A H",
+            "age": null,
+            "interface": null,
+            "route_table": "unicast"
+        },
+        "cdot.io_192.168.200.6/32_": {
+            "virtual_router": "cdot.io",
+            "destination": "192.168.200.6/32",
+            "nexthop": "0.0.0.0",
+            "metric": "0",
+            "flags": "A H",
+            "age": null,
+            "interface": null,
+            "route_table": "unicast"
+        }
+    },
+    "session_stats": null
+}
