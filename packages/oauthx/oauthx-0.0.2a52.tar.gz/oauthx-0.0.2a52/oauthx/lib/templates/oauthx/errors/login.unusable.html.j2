@@ -1,0 +1,21 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_title=_("Access denied: unusable account") %}
+
+{% block content %}
+<section class="action">
+  <div class="text">
+    {% markdown %}{% trans name=client_name, domain=account_email %}
+    You can't sign in with this account because the domain is not
+    supported by this provider.
+    {% endtrans %}{% endmarkdown %}
+  </div>
+</section>
+{% endblock %}
+
+{% block navigation %}
+  <button class="btn w-100" onclick="location.href='{{ authorize_url }}';">
+    <div class="icon"><img src="{{ provider.logo_url }}"/></div>
+    <div class="label"><span>{{ _("Use a different account") }}</div>
+  </button>
+  <a class="btn w-100" href="{{ return_url }}">{{ _("Other sign in options") }}</a>
+{% endblock %}

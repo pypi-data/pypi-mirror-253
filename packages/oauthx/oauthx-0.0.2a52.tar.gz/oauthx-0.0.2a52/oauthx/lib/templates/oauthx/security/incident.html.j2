@@ -1,0 +1,17 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_title=_("Security incident") %}
+
+{% block content %}
+<section class="action">
+  <div class="text">
+    <p>
+      {{ _("Your behavior indicates malicious usage of our services.") }}
+    </p>
+    <p>
+      {{ _("This prompted an intervention by our automated protection systems.") }}
+      {{ _("Your IP address and any other metadata we could collect is forwarded to our security response team.") }}
+    </p>
+    <p><strong>{{ _("Incident ID") }}:</strong> <tt>{{ incident_id }}</tt></p>
+  </div>
+</section>
+{% endblock %}

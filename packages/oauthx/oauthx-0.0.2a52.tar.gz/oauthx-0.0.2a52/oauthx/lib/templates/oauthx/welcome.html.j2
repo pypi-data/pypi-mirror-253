@@ -1,0 +1,25 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_heading=_("Welcome to WebIAM") %}
+{% set page_title=_("Welcome") %}
+{% if request.is_authenticated() and userinfo is defined and userinfo.given_name %}
+{% set page_title=_("Welcome, %(given_name)s", given_name=userinfo.given_name) %}
+{% endif %}
+
+
+{% block content %}
+<section class="action">
+  <div class="text">
+  </div>
+</section>
+{% endblock %}
+
+{% block navigation %}
+  {% if logout_url is defined and request.is_authenticated() %}
+  <form method="POST" action="{{ logout_url }}">
+    <button class="btn w-100" type="submit">{{ _("Switch account") }}</button>
+  </form>
+  {% endif %}
+  {% if login_url is defined and not request.is_authenticated() %}
+  <a class="btn w-100" href="{{ login_url }}">{{ _("Sign in") }}</a>
+  {% endif %}
+{% endblock %}

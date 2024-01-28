@@ -1,0 +1,28 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_title=_("Unauthorized") %}
+
+{% block content %}
+<section class="action">
+  <div class="text strong-primary">
+    <p class="text-danger">
+      {{ _("You are not allowed to continue using this account.") }}
+    </p>
+    {% markdown %}
+      {% trans client_name=client_name %}
+        **{{ client_name }}** does not allow you to sign in using your current email address.
+      {% endtrans %}
+    {% endmarkdown %}
+  </div>
+</section>
+{% endblock %}
+
+{% block navigation %}
+  {% if logout_url is defined %}
+  <form method="POST" action="{{ logout_url }}">
+    <button class="btn w-100" type="submit">{{ _("Switch account") }}</button>
+  </form>
+  {% endif %}
+  {% if deny_url is defined %}
+  <a class="btn w-100" href="{{ deny_url }}">{{ _("Cancel") }}</a>
+  {% endif %}
+{% endblock %}

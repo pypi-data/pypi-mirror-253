@@ -1,0 +1,15 @@
+{% extends "oauthx/login.upstream.html.j2" %}
+{% set login_internal_url=None %}
+
+{% block help_text %}
+{% trans %}
+Contact your system administrator or IT helpdesk if you don't have
+an account yet.
+{% endtrans %}
+{% endblock %}
+
+{% block navigation %}
+{% if deny_url is defined and deny_url %}
+<a class="btn w-100" href="{{ deny_url }}">{{ _("Cancel") }}</a>
+{% endif %}
+{% endblock %}

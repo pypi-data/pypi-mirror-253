@@ -1,0 +1,22 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_title=_("Account confirmed") %}
+
+
+{% block content %}
+<section class="action">
+  <div class="text strong-primary">
+    {% markdown %}{% trans telegram_username=telegram_username %}
+    Welcome, **@{{ telegram_username }}**. We've succesfully confirmed your Telegram account.
+    {% endtrans %}{% endmarkdown %}
+    {% markdown %}{% trans client_name=client_name%}
+    You can now proceed to **{{ client_name }}**.
+    {% endtrans %}{% endmarkdown %}
+  </div>
+</section>
+{% endblock %}
+
+{% block navigation %}
+  <a class="btn w-100 h-55" href="{{ authorize_url }}">
+    <div class="label">{% trans client_name=client_name %}Proceed to {{ client_name }}{% endtrans %}</div>
+  </a>
+{% endblock %}

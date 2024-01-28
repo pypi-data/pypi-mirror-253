@@ -1,0 +1,10 @@
+{% extends "oauthx/base.html.j2" %}
+
+{% block content %}
+<section class="action">
+  <div class="text">
+    <p>{{ error.error_description }}<br/><a>Meer informatie over deze fout</a></p>
+    <p>Fout 400: <tt>{{ error.error }}</tt></p>
+  </div>
+</section>
+{% endblock %}

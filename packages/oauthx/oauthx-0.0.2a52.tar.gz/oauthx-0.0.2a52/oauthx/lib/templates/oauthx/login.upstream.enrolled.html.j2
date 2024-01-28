@@ -1,0 +1,15 @@
+{% extends "oauthx/login.upstream.html.j2" %}
+
+
+{% block help_text %}
+{% trans %}
+Contact your system administrator or IT helpdesk if you don't have
+an account yet.
+{% endtrans %}
+{% endblock %}
+
+{% block navigation %}
+{% if previous_url is defined and previous_url %}
+<a class="btn w-100" href="{{ previous_url }}">{{ _("Back") }}</a>
+{% endif %}
+{% endblock %}

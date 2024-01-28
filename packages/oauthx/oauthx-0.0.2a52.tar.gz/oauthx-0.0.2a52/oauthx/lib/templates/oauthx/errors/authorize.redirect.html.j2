@@ -1,0 +1,13 @@
+{% extends "oauthx/base.html.j2" %}
+{% set page_title=_("Forbidden redirection URL") %}
+
+{% block content %}
+<section class="action">
+  <div class="text">
+    <p class="text-danger">
+      {{ _("The application does not allow redirection to the requested URL.") }}
+    </p>
+    <p><strong>{{ _("Incident ID") }}</strong></br><tt>{{ exception.id }}</tt></p>
+  </div>
+</section>
+{% endblock %}
