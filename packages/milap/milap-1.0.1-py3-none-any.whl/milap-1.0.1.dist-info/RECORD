@@ -1,0 +1,6 @@
+src/milap/__init__.py,sha256=G88vax5PXBL9ajjLIYWZswDxlPopCQ9QROTI1AY1hTk,61
+src/milap/main.py,sha256=gEKL8mDvFY6DMPoLO0-oHS6RGej4iEgpA7jS2ky9wQ8,7143
+milap-1.0.1.dist-info/LICENSE,sha256=c-rsxRGB3lhPeDBrTlpb_xJe_fzvF6QOQjj0IU9vsBk,1079
+milap-1.0.1.dist-info/METADATA,sha256=MfqlNSV2tr3e0-Wuh_GSGpjPeG8_PMTDMn7WBRW3pQ8,7572
+milap-1.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+milap-1.0.1.dist-info/RECORD,,
