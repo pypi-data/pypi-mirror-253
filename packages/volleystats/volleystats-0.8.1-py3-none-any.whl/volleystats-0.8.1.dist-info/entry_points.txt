@@ -1,0 +1,2 @@
+[console_scripts]
+volleystats = volleystats.main:main
