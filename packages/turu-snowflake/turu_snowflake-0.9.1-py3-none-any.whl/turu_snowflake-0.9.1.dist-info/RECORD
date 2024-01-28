@@ -1,0 +1,16 @@
+turu/snowflake/__init__.py,sha256=jle4jDKGGjlo12pmGP_eXZ2T71jJ7p_QgX9ynmPgcps,860
+turu/snowflake/async_connection.py,sha256=1P552zIPdOCACNO5HGEs40f9pfSaFOrg_ZnNHixRvuM,10022
+turu/snowflake/async_cursor.py,sha256=Kqm-laPzy_PH8YDh0bBC1s8W2oNIb8mPleYD4Lk9xWg,11269
+turu/snowflake/connection.py,sha256=4DhBNhBP1aTVk67PvXwGqbqqAgkkii__Jh3yy1IiBZs,10213
+turu/snowflake/cursor.py,sha256=Hfkqk6cHhuQU00FOnt2se6q9sd7i21ySESnxp5bq0FQ,11160
+turu/snowflake/features.py,sha256=wYlBYM8c2VqbrIgmWSXmy16MyCCTwyuRiitrB_zMdbg,1569
+turu/snowflake/mock_async_connection.py,sha256=p3Gt98U7OYxT2neNw1-GdW4azE5Al9hX5HVwxZmFZo8,4025
+turu/snowflake/mock_async_cursor.py,sha256=IYSqZ1s5ifN3VS80vE6O39znd2MsltQQVK_aq_ySkho,5750
+turu/snowflake/mock_connection.py,sha256=FSG6OtkvZ-hDAvFw_JJ6Kjw5In-DLHI3Dou7CkXS7UE,4087
+turu/snowflake/mock_cursor.py,sha256=ZDOJyfyvd-Nk_cdC4tH7WyirlzCIBWX86ScAyvmNYdQ,5456
+turu/snowflake/record/__init__.py,sha256=q09EUep4MfVB4Nk94xGI_zes9UBqdWdWrlxbBk3drL8,339
+turu/snowflake/record/async_record_cursor.py,sha256=sgHvd1MyvViZ0gJTCJ2tsgq1P-UrAKjT5vUhOLmllRQ,442
+turu/snowflake/record/record_cursor.py,sha256=hd1ejlEe3x7vE93LPizo2hpCxPsc-Gf7q_2WpnoM8FU,426
+turu_snowflake-0.9.1.dist-info/METADATA,sha256=CJ3Rte8CCtLABsQ7ZsNNav_NznD8NQbzudg9tLaDjVI,1544
+turu_snowflake-0.9.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+turu_snowflake-0.9.1.dist-info/RECORD,,
