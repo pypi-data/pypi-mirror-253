@@ -1,0 +1,6 @@
+colorama
+fire
+rtoml
+
+[dev]
+ruff
