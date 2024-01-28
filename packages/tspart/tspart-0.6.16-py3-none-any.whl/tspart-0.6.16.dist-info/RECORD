@@ -1,0 +1,13 @@
+tspart/__init__.py,sha256=6Nf3ELc4_mcskzSMFk8kSGuT8NhfGx5jtUfiwt2pOuU,702
+tspart/_draw.py,sha256=vfiD4oildln1AKG8-7C3YmpO3oeNAWkY2r5IYaIdUI8,4553
+tspart/_files.py,sha256=f-7AVV9WWhFLvt3rkBVs6nuufDOVjOJHbCeGjgDbRTs,2129
+tspart/_helpers.py,sha256=xswXqtu8Kg-6lUPnCSE-2wOknSxg0s0yFgR_aCc_O-E,4145
+tspart/_image.py,sha256=tFHMwuXtUucGJ5-cvYRjKl-2Q4Re7AxKQmZTbuOQ63w,1651
+tspart/neos.py,sha256=vyuEROzvD10C95N5FJcxhNMDghmRtiPeLb8bGyA2jf0,3795
+tspart/studio.py,sha256=vKmxrqBpZGD-YqtVXBshp4RI5UcBGVBducXNwKpiIhM,14701
+tspart/tsp.py,sha256=D7m0SDJLz1jacNUh8H-Xrl-5_bpLS8jyZ1fp4lCkeG4,3022
+tspart/voronoi.py,sha256=QcVPKBNH2XRAivNZKgZ7SLJGiuqc7H_MMH8Me2HArEo,10228
+tspart-0.6.16.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tspart-0.6.16.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+tspart-0.6.16.dist-info/METADATA,sha256=phn0kFcVkUWQnkWLv8fJpw1dSw50sgKBG9VBZ46GdjE,6594
+tspart-0.6.16.dist-info/RECORD,,
