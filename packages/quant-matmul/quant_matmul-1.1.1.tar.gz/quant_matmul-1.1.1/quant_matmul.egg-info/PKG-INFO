@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: quant-matmul
+Version: 1.1.1
+Summary: Quantized MatMul in CUDA with a PyTorch interface
+Home-page: https://github.com/oadirt/quant-matmul
+Author: Tri Dao
+Author-email: tri@tridao.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Quantized matmul in CUDA, with a PyTorch interface
+Original code from FasterTransformer / TensorRT-LLM:
+https://github.com/NVIDIA/TensorRT-LLM/tree/main/cpp/tensorrt_llm/kernels
+
+Adapted to support a different quantization scheme.
