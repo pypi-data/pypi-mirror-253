@@ -1,0 +1,1 @@
+{"show": {"uptime": true, "systime": true, "cpu": true, "memory": true, "disk": true, "partitions": true}, "interval": {"interval_proc": 11000.0, "interval_hw": 3000.0}}
