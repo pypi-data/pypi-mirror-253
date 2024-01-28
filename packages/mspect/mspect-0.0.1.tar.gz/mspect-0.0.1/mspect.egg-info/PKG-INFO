@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mspect
+Version: 0.0.1
+Summary: TODO
+Home-page: https://github.com/FennOmix/mspect
+Author: Wen-Feng Zeng
+Author-email: jalew188@gmail.com
+License: Apache
+Project-URL: GitHub, https://github.com/FennOmix/mspect
+Project-URL: Docs, https://mspect.readthedocs.io/en/latest/
+Project-URL: PyPi, https://pypi.org/project/mspect/
+Keywords: computational proteomics,bioinformatics,software
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: development-stable
+Provides-Extra: development
+Provides-Extra: stable
+
+# mspect
+

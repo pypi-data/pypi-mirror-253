@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+mspect/__init__.py
+mspect.egg-info/PKG-INFO
+mspect.egg-info/SOURCES.txt
+mspect.egg-info/dependency_links.txt
+mspect.egg-info/entry_points.txt
+mspect.egg-info/requires.txt
+mspect.egg-info/top_level.txt
+mspect/__pycache__/__init__.cpython-39.pyc
