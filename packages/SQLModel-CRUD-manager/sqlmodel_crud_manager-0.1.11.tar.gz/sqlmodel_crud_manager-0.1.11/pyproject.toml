@@ -1,0 +1,68 @@
+[tool.poetry]
+name = "SQLModel-CRUD-manager"
+version = "0.1.11"
+description = "The SQLModel CRUD Manager is a Python library that facilitates common Create, Read, Update, and Delete (CRUD) operations on SQLModel entities within a FastAPI application. This library simplifies database interactions and provides an easy-to-use interface for managing SQLModel entities."
+authors = ["Edkar Chachati <chachati28@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/EChachati/SQLModel-CRUD-manager"
+documentation = "https://github.com/EChachati/SQLModel-CRUD-manager/blob/master/README.md"
+packages = [{include = "sqlmodel_crud_manager"}]
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.105.0"
+sqlmodel = "^0.0.14"
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.13"
+ruff = "^0.1.6"
+black = "^23.11.0"
+mypy = "^1.7.1"
+coverage = "^7.3.2"
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+ignore = ["B008", "RUF012"]
+line-length = 88
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "C",   # flake8-comprehensions
+    "B",   # flake8-bugbear
+    "SIM", # flake8-simplify
+    "TCH", # flake8-type-checking
+    "TID", # flake8-tidy-imports
+    "Q",   # flake8-quotes
+    "UP",  # pyupgrade
+    "PT",  # flake8-pytest-style
+    "RUF", # Ruff-specific rules
+]
+
+[tool.ruff.isort]
+known-third-party = []
+
+[tool.ruff.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+check_untyped_defs = false
+explicit_package_bases = true
+warn_unused_ignores = false
+exclude = ["tests"]
