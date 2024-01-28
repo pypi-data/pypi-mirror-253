@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+JsonExtractor.egg-info/PKG-INFO
+JsonExtractor.egg-info/SOURCES.txt
+JsonExtractor.egg-info/dependency_links.txt
+JsonExtractor.egg-info/requires.txt
+JsonExtractor.egg-info/top_level.txt
+json_extractor/__init__.py
+json_extractor/extractor.py
+tests/__init__.py
+tests/test_extractor.py
