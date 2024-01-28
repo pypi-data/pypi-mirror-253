@@ -1,0 +1,14 @@
+simplecrud/__init__.py,sha256=TNTpVstHSluWS50JuPdPUX5MKBEOImuecHY7LWrMl7c,52
+simplecrud/crud.py,sha256=F-1vnzN1S9EwCyfIvqK4KHl8pBb-AcPi4-8kjxIQYz0,4566
+simplecrud/settings.py,sha256=432eZWvvN824lvLrFEeQZwX4Zb54RU-ao5x9RR51sVQ,856
+simplecrud/sync_crud.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplecrud/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplecrud/tests/factories.py,sha256=imcNB8sv2ozc-Jk_3rzf_3DVuZQWbvNzgGByutPhJW4,565
+simplecrud/tests/test_crud.py,sha256=6Qau-d1_Pgnqwu1FaDqt0nKUs59f9B5LX2iS-FqJqqk,12221
+simplecrud/tests/test_settings.py,sha256=Nccj-_gykZGgCb9UOqZkKhSID9A-wGD-FanfEkRbJDQ,1064
+simplecrud/tests/test_utils.py,sha256=vphUdco0ZDX5zBmoikET1d5H86n6_OHmq3lTmdWjGt4,780
+simplecrud/utils.py,sha256=iltjpCc_eDG9fY5I5CaIehb7Q1eKUtGL89OFkS8kb54,1061
+hexfrost_simplecrud-0.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+hexfrost_simplecrud-0.2.0.dist-info/METADATA,sha256=SUQ7bX3R3z2TKykNT-TTvUO1XgqTWE0Cw8RYVt_B0TY,3921
+hexfrost_simplecrud-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hexfrost_simplecrud-0.2.0.dist-info/RECORD,,
