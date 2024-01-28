@@ -1,0 +1,6 @@
+graft docs
+graft files
+#graft autoesp/firmwares
+#graft autoesp/modules
+#include autoesp/firmwares/*
+#include autoesp/modules/*
