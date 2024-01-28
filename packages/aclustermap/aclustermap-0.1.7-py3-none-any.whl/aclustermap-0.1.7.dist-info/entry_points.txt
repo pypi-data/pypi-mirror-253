@@ -1,0 +1,3 @@
+[console_scripts]
+aclustermap=aclustermap.__main__:main
+

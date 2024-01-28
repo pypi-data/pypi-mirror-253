@@ -1,0 +1,9 @@
+aclustermap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aclustermap/__main__.py,sha256=M3SMAQpNbNtSJv7nQRDiyHn049wlaXL1kgGrC2i5c6c,3381
+aclustermap/default_format.yaml,sha256=3Z4ov8AoKagnHd7f72atmYrG9zXriYQCVPT86YOL8PQ,246
+aclustermap/pandas.DataFrame4,sha256=vSVb_qsBayLvNWZSEU8rG8U6XCqcu2xsCFSeRAJCfhE,34
+aclustermap-0.1.7.dist-info/LICENSE,sha256=sb-aWzBtFPu3_OwDVF6qkye5irvO6EyTHVB2CH6WdNQ,1068
+aclustermap-0.1.7.dist-info/METADATA,sha256=nPrmlMG_c3Y1OUgo57R1g5ZC3q6oS3uz2iQrf6RK2N4,3108
+aclustermap-0.1.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+aclustermap-0.1.7.dist-info/entry_points.txt,sha256=DlyBw6cA6uU6V6Y9nTj5XDWlpZxmJAHwVPQ7AoxN8bo,57
+aclustermap-0.1.7.dist-info/RECORD,,

@@ -1,0 +1,15 @@
+format:
+  seaborn:
+    clustermap:
+      cmap: CET_CBL1
+      annot: true
+    set_context:
+      context: notebook
+  pyplot:
+    setp:
+      xticklabels:
+        rotation: 0
+      yticklabels:
+        rotation: 0
+    rcParams:
+      font.size: 12
