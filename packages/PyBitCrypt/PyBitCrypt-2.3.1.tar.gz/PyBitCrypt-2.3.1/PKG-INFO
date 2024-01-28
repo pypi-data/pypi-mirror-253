@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: PyBitCrypt
+Version: 2.3.1
+Summary: A simple encrypting and decrypting module.
+Author: Daniel Drury
+Author-email: daniel-drury@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+PyBitCrypt
+
+This is an encrypting and decrypting module. 
+It uses a key to shift the letters by the key.
+
+Encoding:
+
+from PyBitCrypt import pbc
+
+key = 'SampleKey1!'
+
+text = 'SampleText1!'
+
+encoded = pbc.encrypt(key, text)
+
+
+
+Decoding:
+
+
+
+from PyBitCrypt import pbc
+
+key = 'SampleKey1!'
+
+text = 'SampleText1!'
+
+encoded = pbc.encrypt(key, text)
+
+
+
+
+
+
+Enjoy!

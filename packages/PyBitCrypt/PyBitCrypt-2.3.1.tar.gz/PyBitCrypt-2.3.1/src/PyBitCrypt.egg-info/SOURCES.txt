@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/PyBitCrypt/__init__.py
+src/PyBitCrypt/decrypter.py
+src/PyBitCrypt/encrypter.py
+src/PyBitCrypt/pbc.py
+src/PyBitCrypt.egg-info/PKG-INFO
+src/PyBitCrypt.egg-info/SOURCES.txt
+src/PyBitCrypt.egg-info/dependency_links.txt
+src/PyBitCrypt.egg-info/top_level.txt
