@@ -1,0 +1,2 @@
+[console_scripts]
+lyipc_reload = lyipc.client.command_line:cm_reload
