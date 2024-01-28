@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+src/python_bindings.cpp
+src/sidereal.egg-info/PKG-INFO
+src/sidereal.egg-info/SOURCES.txt
+src/sidereal.egg-info/dependency_links.txt
+src/sidereal.egg-info/top_level.txt
