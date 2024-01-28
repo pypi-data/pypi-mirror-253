@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+autoesp/__init__.py
+autoesp/autoesp.py
+autoesp.egg-info/PKG-INFO
+autoesp.egg-info/SOURCES.txt
+autoesp.egg-info/dependency_links.txt
+autoesp.egg-info/entry_points.txt
+autoesp.egg-info/requires.txt
+autoesp.egg-info/top_level.txt
