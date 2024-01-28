@@ -1,0 +1,11 @@
+spglib/__init__.py,sha256=ZgxtcZzTWXUbU7HtGndzLCYxwMJREsyem413xtYfPOo,2627
+spglib/_spglib.cp310-win_amd64.pyd,sha256=54oHgeAkSMGIAo2qEF2ntTFCi5zkFZE4dfyCXHvq12E,27648
+spglib/_version.py,sha256=YR9dMU3nrqbneFUBurEhHOy9XRsZ0d9m_pQbbwVnSog,427
+spglib/spglib.h,sha256=WMYae3VG5V0ftV0eBW2HgHMX30TIodjQFhye7eHccYk,26052
+spglib/spglib.py,sha256=Jr-F_HkgNQXtLuJSN-huXJpy4r6qoyomaOC2Tc5eJw0,67628
+spglib/symspg.dll,sha256=WwboUROnKj9vK7hKWJpMpdd-6R09rXAGsPaLY1wf3yo,1855488
+spglib-2.3.0.dist-info/METADATA,sha256=NFp-Ki0sBnzgSDvyF6vxoeyNVYp2YtXjKO1EkZ0y7cE,4122
+spglib-2.3.0.dist-info/WHEEL,sha256=Uex0ZbsHmJjqMUVCqTMv5mz7PrhxQxpw5ZEbHnjfKWE,105
+spglib-2.3.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spglib-2.3.0.dist-info/licenses/COPYING,sha256=yvcCcQ1n7DZUQSeetZn3Z5WQzajw1zUuvdRQE_6r6aQ,1495
+spglib-2.3.0.dist-info/RECORD,,
