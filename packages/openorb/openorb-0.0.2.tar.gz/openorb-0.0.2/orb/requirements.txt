@@ -1,0 +1,9 @@
+# requirements.txt
+
+elevenlabs
+numpy
+openai
+pydub
+sounddevice
+soundfile
+yarl

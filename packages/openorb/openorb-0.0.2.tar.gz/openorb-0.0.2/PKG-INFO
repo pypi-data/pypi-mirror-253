@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: openorb
+Version: 0.0.2
+Summary: The orb project
+Home-page: https://github.com/dpshai/orb
+Author: Matthew Freed
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: elevenlabs
+Requires-Dist: numpy
+Requires-Dist: openai
+Requires-Dist: pydub
+Requires-Dist: sounddevice
+Requires-Dist: soundfile
+Requires-Dist: yarl
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: darglint; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: types-requests; extra == "dev"
+
+# orb
+
+Conversational voice agent.
+
+## Install
+
+```bash
+pip install openorb
+```
+
+Test it out using:
+
+```bash
+start-orb
+```

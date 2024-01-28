@@ -1,0 +1,15 @@
+elevenlabs
+numpy
+openai
+pydub
+sounddevice
+soundfile
+yarl
+
+[dev]
+black
+darglint
+mypy
+pytest
+ruff
+types-requests

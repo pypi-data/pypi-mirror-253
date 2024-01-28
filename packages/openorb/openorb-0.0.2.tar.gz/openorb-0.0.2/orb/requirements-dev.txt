@@ -1,0 +1,11 @@
+# requirements-dev.txt
+
+# Development
+black
+darglint
+mypy
+pytest
+ruff
+
+# Types
+types-requests
