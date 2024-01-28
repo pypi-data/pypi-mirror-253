@@ -1,0 +1,13 @@
+whecho/README.md,sha256=gzf-zyYVzYjHkMfmOa5xB4iqkjmktcn-ZRpMF5qwnfk,642
+whecho/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whecho/config.py,sha256=7iSlesfGPFdncGo9nqHIbr10IZZLMOawYL0Bx-_Feco,3372
+whecho/poetry.lock,sha256=tMKIl99xTZrQfvjdP3nvSosTRvEDDhre0Y78KZV0Fgo,2180
+whecho/send_message.py,sha256=jZm4ZZAB_GaYh6J9HW-33SuVuSjtOatwXMBXh85bOLk,624
+whecho/twine_upload.sh,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whecho/utilities.py,sha256=eNwrOefJk_oJu75XCHrFXcSmz2PLWZkvhd8iOXu_K-o,1517
+whecho/whecho.py,sha256=lyzKzVbyrXwvpnky-TTY512KpAT6UzgdKqdo2wdEoh0,892
+whecho-0.0.3.dist-info/entry_points.txt,sha256=rueRrEYN7mTubvf9rO0FYV1PZleMOf_kfHbqenkVO8E,45
+whecho-0.0.3.dist-info/LICENSE,sha256=bKMHQQKx6N2NtHU_rXooHYKkyjj4tPBJLy3-AvAmAjc,1069
+whecho-0.0.3.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+whecho-0.0.3.dist-info/METADATA,sha256=jDKBzqEVhooCSvLQsR7avsJZ-T6NgaOhE2jDbRM-qOw,1583
+whecho-0.0.3.dist-info/RECORD,,
