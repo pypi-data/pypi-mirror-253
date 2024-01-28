@@ -1,0 +1,9 @@
+LICENCE.txt
+README.txt
+setup.py
+format4me/__init__.py
+format4me.egg-info/PKG-INFO
+format4me.egg-info/SOURCES.txt
+format4me.egg-info/dependency_links.txt
+format4me.egg-info/requires.txt
+format4me.egg-info/top_level.txt
