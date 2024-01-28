@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: AutoGitSemVer
+Version: 0.3.2
+Summary: Calculates a semantic version based on git changes.
+Author-email: David Brownell <db@DavidBrownell.com>
+License: Boost Software License 1.0
+Project-URL: Homepage, https://github.com/davidbrownell/AutoGitSemVer
+Project-URL: Documentation, https://github.com/davidbrownell/AutoGitSemVer
+Project-URL: Repository, https://github.com/davidbrownell/AutoGitSemVer
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Common Public License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: System Shells
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+License-File: LICENSE_1_0.txt
+Requires-Dist: dbrownell-Common
+Requires-Dist: GitPython ==3.*
+Requires-Dist: jsonschema ==4.*
+Requires-Dist: rtyaml ==1.*
+Requires-Dist: semantic-version ==2.*
+Provides-Extra: dev
+Requires-Dist: dbrownell-DevTools ; extra == 'dev'
+Provides-Extra: package
+Requires-Dist: build ==1.* ; extra == 'package'
+Requires-Dist: twine ==4.* ; extra == 'package'
+
