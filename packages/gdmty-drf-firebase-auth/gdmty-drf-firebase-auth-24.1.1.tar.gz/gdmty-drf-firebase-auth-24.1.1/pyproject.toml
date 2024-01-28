@@ -1,0 +1,51 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gdmty-drf-firebase-auth"
+version = "24.1.1"
+description = "Custom Django Rest Framework authentication backend than can be used with many firebase projects at same time, and storing as local users."
+readme = "README.md"
+authors = [{ name="Gobierno de Monterrey", email="cesar.benjamin@monterrey.gob.mx" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Framework :: Django",
+    "Framework :: Django :: 4.2",
+]
+keywords = ["django", "firebase", "jwt", "authentication"]
+dependencies = [
+    "django >= 4.2, < 5.0",
+    "firebase-admin",
+    "djangorestframework",
+    "tomli; python_version < '3.11'",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+"Homepage" = "https://github.com/SIGAMty/gdmty-drf-firebase-auth"
+"Bug Tracker" = "https://github.com/SIGAMty/gdmty-drf-firebase-auth/issues"
+
+[tool.bumpver]
+current_version = "24.1.1"
+version_pattern = "MAJOR.MINOR.PATCH[-PYTAGNUM]"
+commit_message = "bump version {old_version} -> {new_version}"
+tag_message = "{new_version}"
+tag_scope = "default"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['version = "{version}"']
+"src/gdmty_drf_firebase_auth/__init__.py" = ["{version}"]

@@ -1,0 +1,13 @@
+django<5.0,>=4.2
+firebase-admin
+djangorestframework
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
