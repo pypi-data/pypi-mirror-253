@@ -1,0 +1,21 @@
+.magnifiable {
+    position: relative;
+    display: inline-block; /* Adjust as needed. */
+    width: 60px;  /* Set to the initial scaled down width */
+    height: 50px; /* Set to the initial scaled down height */
+    overflow: visible; /* Allows the SVG to overlap surrounding elements when scaled */
+
+}
+
+.magnifiable svg,.magnifiable img  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); /* Adjust the scale as needed */
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+}
+
+.magnifiable:hover svg,.magnifiable:hover img {
+    transform: translate(-50%, -50%) scale(6);
+}
