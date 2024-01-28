@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jener
+Version: 1.0.4
+Summary: Japanese Extended Named Entity Recognizer
+Home-page: https://github.com/k141303/JENER
+Author: k141303
+Author-email: kouta.nakayama@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/k141303/JENER
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# JENER
+拡張固有表現階層を対象とした固有表現抽出器
+
+
