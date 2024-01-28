@@ -1,0 +1,9 @@
+README.md
+setup.py
+hack4you/__init__.py
+hack4you/courses.py
+hack4you/utils.py
+hack4you.egg-info/PKG-INFO
+hack4you.egg-info/SOURCES.txt
+hack4you.egg-info/dependency_links.txt
+hack4you.egg-info/top_level.txt
