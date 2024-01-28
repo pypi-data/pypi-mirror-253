@@ -1,0 +1,55 @@
+
+
+
+
+
+
+#
+#	how to publish:
+#
+#		python3 structures/modules/solitaire/_status/status.proc.py
+#		python3 status_E2E/status.proc.py
+#		cp structures/modules/solitaire/module.MD readme.md
+#		(rm -rf dist && python3 -m build --sdist && twine upload dist/*)
+#
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "solitaire"
+version = "1.0.5"
+dependencies = []
+
+# license = { text = "license" }
+# license = { file = "license.txt" }
+license = { text = "GPL 3.0" }
+
+description = "The best documentation framework every written."
+readme = "readme.md"
+
+
+
+[project.urls]
+GitLab = "https://gitlab.com/offline-money/squash-1/solitaire"
+
+[project.scripts]
+#
+#	https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#creating-executable-scripts
+#	from solitaire import clique; clique ()
+#
+solitaire = "solitaire:clique"
+
+[tool.setuptools.packages.find]
+where = [ "structures/modules" ]
+
+#
+#	https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+#
+[tool.setuptools.package-data]
+"*" = [ "*.html" ]
+
+
+
+
