@@ -1,0 +1,13 @@
+azdevops/__init__.py,sha256=_MrDcgw2uWGHFLpcHkdwO8FKsL1DhbUHqyPFxQjCdNE,80
+azdevops/auth.py,sha256=wj7Cy5aPlIHE9spbKSUUmnl95JGgMwKC2c7R2poJOM4,10684
+azdevops/azdev.py,sha256=sgNGao-gvjFv3CG6DPSsEHuYfBMN30RJ3VIYCXGykYc,1157
+azdevops/boards.py,sha256=wvuWvt_q7ym19LWv2fIKaXW-3OLjKKzuGLVIjk0htTs,10661
+azdevops/issue.py,sha256=E4iOpdhQ1op1yaxZAUv-CnGntbUdM4eRMr3HTQQYpOs,1759
+azdevops/pipelines.py,sha256=vT-KM9wx1UiNp0Prbzf4fSeGDWEZ00_SVP9l5RCKdVM,9256
+azdevops/project.py,sha256=XbeGcgvTBunFrO84vIOS_5FoLHlReYRoh-KllNrySqA,3059
+azdevops/search.py,sha256=VY2R39xOvKFc7yuqju9Jp68s6dzuzhG5YaFH86yqwOQ,11358
+goatazdevops-2024.1.27.2216.dist-info/METADATA,sha256=Zx1hw5nKHKDQ-W6Rjs__nTvKFoRxt39ts0jfA-vigvU,454
+goatazdevops-2024.1.27.2216.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+goatazdevops-2024.1.27.2216.dist-info/entry_points.txt,sha256=XFsXd_0TFZ0u94zPBdU22pMYtzx29QQY1gosMtPx8uw,49
+goatazdevops-2024.1.27.2216.dist-info/top_level.txt,sha256=-awcHCddRmE4HDP3t5a8NxnVA7LP75B7ui10MijhxW4,14
+goatazdevops-2024.1.27.2216.dist-info/RECORD,,
