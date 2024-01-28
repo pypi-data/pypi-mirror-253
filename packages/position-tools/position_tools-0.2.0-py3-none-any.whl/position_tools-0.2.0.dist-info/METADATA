@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: position_tools
+Version: 0.2.0
+Home-page: 
+Author: 
+Author-email: 
+License: MIT
+Requires-Dist: numpy >=1.11
+Requires-Dist: scipy
+Requires-Dist: tqdm
+
