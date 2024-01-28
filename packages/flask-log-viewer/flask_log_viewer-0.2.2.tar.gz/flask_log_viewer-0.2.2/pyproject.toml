@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "flask-log-viewer"
+version = "0.2.2"
+description = "Real time log viewer for flask applications"
+authors = ["patrick o'leary <pjaol@pjaol.com>"]
+readme = "README.md"
+homepage = "https://github.com/thevgergroup/flask-log-viewer"
+repository = "https://github.com/thevgergroup/flask-log-viewer.git"
+keywords = ["flask", "log", "viewer", "tail", "logviewer", "log-viewer", "log-tail", "logtail", "log-tailer", "htmx"]
+license = "MIT"
+classifiers= [
+                "Framework :: Flask",
+                "Topic :: System :: Logging",  
+                "Topic :: Internet :: WWW/HTTP :: WSGI :: Application"
+                ]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.1"
+gunicorn = "^21.2.0"
+gevent = "^23.9.1"
+pygtail = "^0.14.0"
+
+
+
+[tool.poetry-dynamic-versioning]
+enable = false
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
