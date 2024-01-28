@@ -1,0 +1,61 @@
+name: pymox tests
+
+on:
+  pull_request:
+  push:
+    branches: main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install Poetry
+        run: python -m pip install poetry
+      - name: Cache Poetry virtualenv
+        uses: actions/cache@v3
+        id: cache
+        with:
+         path: ~/.virtualenvs
+         key: poetry-${{ hashFiles('**/poetry.lock') }}-${{ matrix.python-version }}
+         restore-keys: |
+           poetry-${{ hashFiles('**/poetry.lock') }}-${{ matrix.python-version }}
+
+      - name: Set Poetry config
+        run: |
+         poetry config virtualenvs.in-project false
+         poetry config virtualenvs.path ~/.virtualenvs
+
+      - name: Install Dependencies
+        run: poetry install --with dev
+        if: steps.cache.outputs.cache-hit != 'true'
+
+      - name: Run tests and collect coverage
+        run: poetry run pytest -vv --cov=mox --cov-branch --cov-report=xml test
+
+      - name: Prepare coverage token
+        if: success() && github.repository == 'ivancrneto/pymox'
+        run: cp .github/codecov-token.txt .
+
+      - name: Read file contents
+        id: read_file
+        uses: andstor/file-reader-action@v1
+        with:
+          path: "codecov-token.txt"
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4-beta
+        with:
+          flags: pymox-tests-${{ matrix.python-version }}
+          fail_ci_if_error: true
+          verbose: true
+          token: ${{ steps.read_file.outputs.contents }}

@@ -1,0 +1,10 @@
+recursive-include mox/ *.py
+include COPYING
+include *.md
+include *.rst
+include *.cfg
+include *.sql
+include *.yml
+include *.xml
+include requirements.txt
+include setup.cfg
