@@ -1,0 +1,14 @@
+btrfs_backup_ng/__init__.py,sha256=9zwL-9fX2Qbe8dtYWviggSIdJbGnv9L9sUDUmHNc6cg,74
+btrfs_backup_ng/__main__.py,sha256=6XQsZCN-UnhLz41Ie4Fgn1FLFtKeUeWv9Ji4A8p8PfA,24453
+btrfs_backup_ng/util.py,sha256=QZURdf0FKiS36RedbKTJ2sg0DofT6D2sCrHflRKi-7k,9571
+btrfs_backup_ng/endpoint/__init__.py,sha256=D_jkubtQv_x20xjKZ-MWAdEHyiHS03FBmDejPKnn93M,2414
+btrfs_backup_ng/endpoint/common.py,sha256=Nm7yXRPFMD3-NHWTduzm4eM54udgTuYn5M-TRglAHTk,13764
+btrfs_backup_ng/endpoint/local.py,sha256=QbnlYG_YG9Wdob5F4vlnR7Dx-bdyRa4nZMAzKEbVL2g,1635
+btrfs_backup_ng/endpoint/shell.py,sha256=d0N49OhDjnPdVQ3jXthuMhS-mV08ufrwKtby6Y_2Jn4,599
+btrfs_backup_ng/endpoint/ssh.py,sha256=66ECk_Vyi6xL4ort56jnsn0i1OlanJMcTtLorHhH7C0,5647
+btrfs_backup_ng-0.5.7.dist-info/LICENSE,sha256=fLSCLZ8KFRfAYDccSqrppaV-MSbvojG0hENPvW1_MOc,1227
+btrfs_backup_ng-0.5.7.dist-info/METADATA,sha256=3u-O8hVaTXqhBuOIEOLOD7GQGGAOXULUtB9P-jHgD_o,15623
+btrfs_backup_ng-0.5.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+btrfs_backup_ng-0.5.7.dist-info/entry_points.txt,sha256=vSC1HoJSjbv5P5HnYQiaURnvYcp3xHCCLFq33D0k7CU,66
+btrfs_backup_ng-0.5.7.dist-info/top_level.txt,sha256=fCeRQ-8X89Pn1KwbTJfjuUVr0_ndcMnfFax9bPaAtGc,16
+btrfs_backup_ng-0.5.7.dist-info/RECORD,,
