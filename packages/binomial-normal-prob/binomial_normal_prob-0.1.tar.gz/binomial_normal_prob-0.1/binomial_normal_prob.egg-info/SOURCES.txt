@@ -1,0 +1,11 @@
+setup.py
+binomial_normal_prob/Binomialdistribution.py
+binomial_normal_prob/Gaussiandistribution.py
+binomial_normal_prob/Generaldistribution.py
+binomial_normal_prob/__init__.py
+binomial_normal_prob/test.py
+binomial_normal_prob.egg-info/PKG-INFO
+binomial_normal_prob.egg-info/SOURCES.txt
+binomial_normal_prob.egg-info/dependency_links.txt
+binomial_normal_prob.egg-info/not-zip-safe
+binomial_normal_prob.egg-info/top_level.txt
