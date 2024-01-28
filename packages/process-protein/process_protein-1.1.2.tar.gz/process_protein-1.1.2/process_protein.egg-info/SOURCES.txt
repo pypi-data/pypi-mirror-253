@@ -1,0 +1,5 @@
+setup.py
+process_protein.egg-info/PKG-INFO
+process_protein.egg-info/SOURCES.txt
+process_protein.egg-info/dependency_links.txt
+process_protein.egg-info/top_level.txt
