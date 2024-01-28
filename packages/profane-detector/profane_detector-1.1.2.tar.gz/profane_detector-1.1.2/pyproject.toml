@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "profane_detector"
+version = "1.1.2"
+authors = ["Verso Vuorenmaa <verso.vuorenmaa@luova.club>"]
+description = "A small profane_detector"
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.dev-dependencies]
+# Add your dev dependencies here
+
+[tool.poetry.scripts]
+# Add your scripts here
+
+[tool.poetry.extras]
+# Add your extras here
+
+[tool.poetry.package]
+include = ["profane_detector/swear-words"]
