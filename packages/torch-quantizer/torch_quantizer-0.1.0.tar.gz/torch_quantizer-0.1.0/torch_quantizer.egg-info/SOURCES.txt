@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+torch_quantizer/__init__.py
+torch_quantizer/version.py
+torch_quantizer.egg-info/PKG-INFO
+torch_quantizer.egg-info/SOURCES.txt
+torch_quantizer.egg-info/dependency_links.txt
+torch_quantizer.egg-info/top_level.txt
+torch_quantizer/src/__init__.py
+torch_quantizer/src/benchmark.py
+torch_quantizer/src/converter.py
+torch_quantizer/src/quant_layer.py
+torch_quantizer/src/quant_model.py
+torch_quantizer/src/quant_utils.py
