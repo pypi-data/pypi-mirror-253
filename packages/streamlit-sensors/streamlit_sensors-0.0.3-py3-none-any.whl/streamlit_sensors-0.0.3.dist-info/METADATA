@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: streamlit-sensors
+Version: 0.0.3
+Summary: Get geolocation and heading
+Author: Valentin Vial
+Author-email: valentinvialent@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit >=1.2
+Requires-Dist: jinja2
+
+# streamlit-sensors
+
+Get geolocation and heading
+
+## Installation instructions 
+
+```sh
+pip install streamlit-sensors
+```
+
+## Usage instructions
+
+```python
+import streamlit as st
+
+from streamlit_sensors import streamlit_sensors
+
+value = streamlit_sensors()
+
+st.write(value)
