@@ -1,0 +1,6 @@
+pyproject.toml
+pxscraper/__init__.py
+pxscraper.egg-info/PKG-INFO
+pxscraper.egg-info/SOURCES.txt
+pxscraper.egg-info/dependency_links.txt
+pxscraper.egg-info/top_level.txt
