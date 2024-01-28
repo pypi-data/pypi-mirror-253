@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: profane_detector
+Version: 1.1.2
+Summary: A small profane_detector
+License: MIT
+Author: Verso Vuorenmaa
+Author-email: verso.vuorenmaa@luova.club
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# ProfanityDetector
+A Python library for profanity detection in text, providing a customizable ProfaneDetector class. Easily integrate into your projects to filter or flag content.
+
+## Installing
+
+```bash
+pip install profane-detector
+```
+
+## Usage examples
+
+```python
+from profane_detector import ProfaneDetector
+
+profane_detector = ProfaneDetector()
+
+to_detect = "fuck you!"
+language = "en"
+
+did_detect = profane_detector.detect_api(language, to_detect)
+print(did_detect)
+```
+
