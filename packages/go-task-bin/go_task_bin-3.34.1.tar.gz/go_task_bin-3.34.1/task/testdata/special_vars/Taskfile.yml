@@ -1,0 +1,12 @@
+version: '3'
+
+includes:
+  included:
+    taskfile: ./included
+    dir: ./included
+
+tasks:
+  print-task: echo {{.TASK}}
+  print-root-dir: echo {{.ROOT_DIR}}
+  print-taskfile-dir: echo {{.TASKFILE_DIR}}
+  print-task-version: echo {{.TASK_VERSION}}
