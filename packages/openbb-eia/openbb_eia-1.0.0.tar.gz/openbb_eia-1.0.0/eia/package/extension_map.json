@@ -1,0 +1,8 @@
+{
+    "openbb_core_extension": [
+        "eia@1.0.0"
+    ],
+    "openbb_provider_extension": [
+        "eia@1.0.0"
+    ]
+}
