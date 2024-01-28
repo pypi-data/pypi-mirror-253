@@ -1,0 +1,6 @@
+selenium>=4
+aioredis
+packaging
+webdriver-manager>=3.8
+bubot_core==4.0.0
+bubot_helpers>=4.0.0
