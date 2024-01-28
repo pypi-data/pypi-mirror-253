@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/django_migration_inspector.egg-info/PKG-INFO
+src/django_migration_inspector.egg-info/SOURCES.txt
+src/django_migration_inspector.egg-info/dependency_links.txt
+src/django_migration_inspector.egg-info/requires.txt
+src/django_migration_inspector.egg-info/top_level.txt
+src/inspector/__init__.py
+src/inspector/apps.py
+src/inspector/management/__init__.py
+src/inspector/management/commands/__init__.py
+src/inspector/management/commands/constants.py
+src/inspector/management/commands/inspectmigrations.py
