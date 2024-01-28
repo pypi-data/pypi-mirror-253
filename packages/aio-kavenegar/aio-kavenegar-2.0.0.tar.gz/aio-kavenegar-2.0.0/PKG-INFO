@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aio-kavenegar
+Version: 2.0.0
+Summary: AsyncIO compatible Kavenegar Python library
+Home-page: https://github.com/alirezaja1384/aio-kavenegar
+Author: Alireza Jafari (Original project by Kavenegar Team)
+Author-email: alirezaja1384@gmail.com
+Keywords: kavenegar,sms,asyncio
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Telephony
+License-File: LICENSE.md
+Requires-Dist: requests>=0.10.8
