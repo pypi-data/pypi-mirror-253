@@ -1,0 +1,9 @@
+iamai/adapter/gensokyo/__init__.py,sha256=EBRNoFWdA8g7RhrrME_JQnAduTXELzPP0HupTVCQeqk,11393
+iamai/adapter/gensokyo/config.py,sha256=qiSYkYf3wzIoIW4q0-NUJKjviLsOs6BADpPpehqba70,985
+iamai/adapter/gensokyo/event.py,sha256=AWM3WILuR18haqa51Y1l7YC1WefvJxJ8kwferj_R6x0,10881
+iamai/adapter/gensokyo/exceptions.py,sha256=ohavc0TLu8hIf2JEYAy2HY55VRH8CWQD004L65tWdp4,911
+iamai/adapter/gensokyo/message.py,sha256=zMdxla2Mp3uPFs6b4XokU_EmMT5psTAuYG2Rz4xeeAk,7760
+iamai_adapter_gensokyo-0.0.3a1.dist-info/METADATA,sha256=_hZmZltWyKgwbtvo6LhmYKhUxuyKMq4uqBn0bU-SR14,1156
+iamai_adapter_gensokyo-0.0.3a1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+iamai_adapter_gensokyo-0.0.3a1.dist-info/licenses/LICENSE,sha256=Nv6u1ubULm-E2y6q2-pQPK8s2BzkOltLaVlPKQ3tkcs,35182
+iamai_adapter_gensokyo-0.0.3a1.dist-info/RECORD,,
