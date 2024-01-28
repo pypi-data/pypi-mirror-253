@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: arruda
+Version: 0.1.0
+Summary: Feature transformation for health related data 🍃
+Author: Ana Paula Gomes
+Author-email: apgomes88@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas (>=2.2.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# arruda 🍃
+
+![](static/debret.jpeg)
+
+_Arruda_ means rue in Brazilian Portuguese.
+
+> There's a superstition about a herb called rue.
+It's a kind of talisman that is sold every morning on the streets of Rio de Janeiro.
+All the lower class women and black women use about five packets and consider it
+protection against spells.
+
+DORNELAS, Isabela de Oliveira. “O feto que attenta contra sua vida”: o aborto como terapia nas teses médicas (1830-1890).
+

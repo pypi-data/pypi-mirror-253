@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "arruda"
+version = "0.1.0"
+description = "Feature transformation for health related data 🍃"
+authors = ["Ana Paula Gomes <apgomes88@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+pre-commit = "^3.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
