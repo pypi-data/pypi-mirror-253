@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: train-time
+Version: 0.1.4
+Summary: A Keras callback to estimate remaining training time
+Home-page: https://github.com/2abet/TrainTime
+Author: Akinyemi Arabambi
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: keras
+
+# TrainingTimeKeras
+A simple yet powerful Keras callback to monitor and predict the time remaining in model training.
