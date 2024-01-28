@@ -1,0 +1,2 @@
+[console_scripts]
+lohar = lohar.cli:main
