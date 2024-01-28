@@ -1,0 +1,11 @@
+awsnap/__init__.py,sha256=w7vraH_EGAIU0zMJtDCe3xVqOXaW-30Har4pgsaE5VM,30
+awsnap/awsnap.py,sha256=rPBnd6NkG_8KfWni2TgiQiS4kOgogtv2MGVROKZqKP8,7977
+awsnap/pipeline/__init__.py,sha256=tutaI9DWbXs0v8Fgb1fAaZJK6PBfDkR4wNfzPBhebps,39
+awsnap/pipeline/cloudformation.py,sha256=u8ZYeUn-Xo_nHFLWwq7A_4CCsV8QS7JovaqGJ4eZJcw,6755
+awsnap/pipeline/command_handler.py,sha256=-gjIv1dBj7Fd03kUTVAJTUN8S0JGsAYrAYQao28UsVA,2365
+awsnap/pipeline/synth.py,sha256=jvc8qhZAFmGXagKy0wPlg9CMtaH6JqO9mMSJk6TeSnU,4275
+AWSnap-1.1.10.dist-info/LICENSE,sha256=ewsA_NvGoDYHiq2E0LwPriQKxnFEuGyREUnC2qN8n4U,1062
+AWSnap-1.1.10.dist-info/METADATA,sha256=0qNaIgO1z1DIZ30ZOZM3-WRo_u3I5ggYVF_5J4zGkqw,204
+AWSnap-1.1.10.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+AWSnap-1.1.10.dist-info/top_level.txt,sha256=PEUXBTfrEAUV3HRIWK2sj08Qxfnm80TpOkCZbddmUuI,7
+AWSnap-1.1.10.dist-info/RECORD,,

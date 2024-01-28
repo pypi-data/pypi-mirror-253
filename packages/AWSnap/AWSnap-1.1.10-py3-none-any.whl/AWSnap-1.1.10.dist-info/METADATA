@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: AWSnap
+Version: 1.1.10
+Summary: AWSnap is a tool for managing AWS SSO.
+Author-email: Aaron West <aphexlog@gmail.com>
+License: MIT
+Requires-Python: >=3.8
+License-File: LICENSE
+
