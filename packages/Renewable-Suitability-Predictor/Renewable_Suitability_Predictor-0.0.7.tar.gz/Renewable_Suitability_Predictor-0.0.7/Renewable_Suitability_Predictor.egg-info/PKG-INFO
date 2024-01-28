@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Renewable-Suitability-Predictor
+Version: 0.0.7
+Summary: A quick and simple module for predicting a location's solar or wind renewable suitability using the NREL PSM API
+Author: Phoenix Sheppard
+Author-email: phoenixsheppard28@gmail.com
+Keywords: Machine Learning,Renewable Energy,Solar Energy,Wind Energy
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,11 @@
+setup.py
+Renewable_Suitability_Predictor/Interface.py
+Renewable_Suitability_Predictor/__init__.py
+Renewable_Suitability_Predictor/backend_methods.py
+Renewable_Suitability_Predictor/solar_dataset.csv
+Renewable_Suitability_Predictor/wind_dataset.csv
+Renewable_Suitability_Predictor.egg-info/PKG-INFO
+Renewable_Suitability_Predictor.egg-info/SOURCES.txt
+Renewable_Suitability_Predictor.egg-info/dependency_links.txt
+Renewable_Suitability_Predictor.egg-info/requires.txt
+Renewable_Suitability_Predictor.egg-info/top_level.txt
