@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tinygwas
+Version: 0.2
+Summary: Toy C++ implementation with python wrapper for genome-wide association testing
+Author: Kangcheng Hou
+Author-email: kangchenghou@gmail.com
+Requires-Dist: pybind11
+Requires-Dist: numpy
+
