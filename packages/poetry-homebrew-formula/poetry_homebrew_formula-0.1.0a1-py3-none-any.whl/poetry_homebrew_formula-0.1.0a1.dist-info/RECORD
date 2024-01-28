@@ -1,0 +1,9 @@
+poetry_homebrew_formula/__init__.py,sha256=MOnu-CDT-jGGr_ewHZ2SA18J5rvyHDAI-5apX-ewAG4,26
+poetry_homebrew_formula/plugin.py,sha256=6_2xlq9FYhYBLNURIfcXaY8f57a5-p_AYf2Hpg7gIQ4,4484
+poetry_homebrew_formula/templates/formula.rb.j2,sha256=F8_lQo0KxzUgtRUhuS0XkmhtxT2oxpsv1sh845ZgYJo,745
+poetry_homebrew_formula/types.py,sha256=VqnfdqJjEFxotCqs1lf4HUhzKKo5LvANsq6zOsPeQHo,281
+poetry_homebrew_formula-0.1.0a1.dist-info/LICENSE,sha256=I3t_FDPPmvk1M6k2qsUaK62_tejb9kta72i11XtjS5U,1104
+poetry_homebrew_formula-0.1.0a1.dist-info/METADATA,sha256=j4SsziMEjcmGcT7xXaSyzDgIxx9-JRWrENbXHF_vQbw,3387
+poetry_homebrew_formula-0.1.0a1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+poetry_homebrew_formula-0.1.0a1.dist-info/entry_points.txt,sha256=7PGC-oZxM7uariRm7wBenfEGkcHvD8tZUxkRPbH4jz8,105
+poetry_homebrew_formula-0.1.0a1.dist-info/RECORD,,
