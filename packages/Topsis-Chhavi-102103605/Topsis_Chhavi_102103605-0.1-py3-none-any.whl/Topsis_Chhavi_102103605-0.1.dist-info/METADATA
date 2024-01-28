@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Topsis-Chhavi-102103605
+Version: 0.1
+Summary: This library will help you apply TOPSIS to your datasets for multiple criteria decision making
+Home-page: https://github.com/Chdh11/Topsis-Chhavi-102103605
+Download-URL: https://github.com/Chdh11/Topsis-Chhavi-102103605/archive/refs/tags/v_01.tar.gz
+Author: Chhavi Dhankhar
+Author-email: chhavidhankhar07@gmail.com
+License: MIT
+Keywords: TOPSIS,DECISION-MAKING,RANK
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
+Requires-Dist: pandas
+
