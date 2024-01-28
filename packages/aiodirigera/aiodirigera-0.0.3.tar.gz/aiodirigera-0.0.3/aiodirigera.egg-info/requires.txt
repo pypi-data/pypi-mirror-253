@@ -1,0 +1,15 @@
+aiohttp
+asyncio-throttle
+
+[dev]
+python-dotenv
+build
+
+[test]
+flake8
+pytest==7.4.3
+pytest-asyncio==0.23.2
+pytest-aiohttp==1.0.5
+pytest-httpserver==1.0.8
+pytest-cov==4.1.0
+pylint==3.0.2
