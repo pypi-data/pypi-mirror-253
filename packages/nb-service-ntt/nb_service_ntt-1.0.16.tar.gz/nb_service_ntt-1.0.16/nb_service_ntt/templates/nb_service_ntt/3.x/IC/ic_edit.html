@@ -1,0 +1,65 @@
+{% extends 'nb_service/3.x/obj_edit.html' %}
+{% load static %}
+{% load form_helpers %}
+{% load helpers %}
+
+{% block form %}
+    <div class="panel panel-default">
+        <div class="panel-body">
+            {% render_field form.service %}
+        </div>
+    </div>
+    <div class="field-group my-5">
+        <div class="row mb-2">
+            <h5 class="offset-sm-3">Object Assignment</h5>
+        </div>
+        <div class="row mb-2">
+            <div class="offset-sm-3">
+                <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation" class="nav-item">
+                        <button role="tab" type="button" id="device_tab" data-bs-toggle="tab" aria-controls="device" data-bs-target="#device" class="nav-link {% if not form.initial.site and not form.initial.circuit and not form.initial.application and not form.initial.interface %}active{% endif %}">
+                            Device
+                        </button>
+                    </li>
+		    <li role="presentation" class="nav-item">
+		        <button role="tab" type="button" id="interface_tab" data-bs-toggle="tab" aria-controls="interface" data-bs-target="#interface" class="nav-link {% if form.initial.interface  %}active{% endif %}">
+			    Interface
+			</button>
+		    </li>
+                    <li role="presentation" class="nav-item">
+                        <button role="tab" type="button" id="app_tab" data-bs-toggle="tab" aria-controls="app" data-bs-target="#app" class="nav-link {% if form.initial.application  %}active{% endif %}">
+                            Application
+                        </button>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                        <button role="tab" type="button" id="site_tab" data-bs-toggle="tab" aria-controls="site" data-bs-target="#site" class="nav-link {% if form.initial.site %}active{% endif %}">
+                            Site
+                        </button>
+                    </li>
+		    <li role="presentation" class="nav-item">
+			<button role="tab" type="button" id="circuit_tab" data-bs-toggle="tab" aria-controls="circuit" data-bs-target="#circuit" class="nav-link {% if form.initial.circuit %}active{% endif %}">
+			    Circuit
+			</button>
+		    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content p-0 border-0">
+            <div class="tab-pane {% if not form.initial.site and not form.initial.circuit and not form.initial.application and not form.initial.interface %}active{% endif %}" id="device" role="tabpanel" aria-labeled-by="device_tab">
+                {% render_field form.device %}
+            </div>
+            <div class="tab-pane {% if form.initial.site %}active{% endif %}" id="site" role="tabpanel" aria-labeled-by="site_tab">
+                {% render_field form.site %}
+            </div>
+            <div class="tab-pane {% if form.initial.application %}active{% endif %}" id="app" role="tabpanel" aria-labeled-by="app_tab">
+                {% render_field form.application %}
+            </div>
+	    <div class="tab-pane {% if form.initial.interface %}active{% endif %}" id="interface" role="tabpanel" aria-labeled-by="interface_tab">
+		{% render_field form.interface %} 
+	    </div>
+	    <div class="tab-pane {% if form.initial.circuit %}active{% endif %}" id="circuit" role="tabpanel" aria-labeled-by="circuit_tab">
+		{% render_field form.circuit %}
+	    </div>
+        </div>
+    </div>
+{% endblock %}
