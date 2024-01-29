@@ -1,0 +1,51 @@
+{
+  "status": "done",
+  "assets": {
+    "favicon.ico": {
+      "name": "favicon.ico",
+      "path": "/home/runner/work/kalabash-contacts/kalabash-contacts/kalabash_contacts/static/favicon.ico",
+      "publicPath": "/sitestatic/favicon.ico"
+    },
+    "index.html": {
+      "name": "index.html",
+      "path": "/home/runner/work/kalabash-contacts/kalabash-contacts/kalabash_contacts/static/index.html",
+      "publicPath": "/sitestatic/index.html"
+    },
+    "kalabash_contacts/css/app.35051fc3.css": {
+      "name": "kalabash_contacts/css/app.35051fc3.css",
+      "path": "/home/runner/work/kalabash-contacts/kalabash-contacts/kalabash_contacts/static/kalabash_contacts/css/app.35051fc3.css",
+      "publicPath": "/sitestatic/kalabash_contacts/css/app.35051fc3.css"
+    },
+    "kalabash_contacts/js/app.aa8a43a2.js": {
+      "name": "kalabash_contacts/js/app.aa8a43a2.js",
+      "path": "/home/runner/work/kalabash-contacts/kalabash-contacts/kalabash_contacts/static/kalabash_contacts/js/app.aa8a43a2.js",
+      "publicPath": "/sitestatic/kalabash_contacts/js/app.aa8a43a2.js"
+    },
+    "kalabash_contacts/js/app.aa8a43a2.js.map": {
+      "name": "kalabash_contacts/js/app.aa8a43a2.js.map",
+      "path": "/home/runner/work/kalabash-contacts/kalabash-contacts/kalabash_contacts/static/kalabash_contacts/js/app.aa8a43a2.js.map",
+      "publicPath": "/sitestatic/kalabash_contacts/js/app.aa8a43a2.js.map"
+    },
+    "kalabash_contacts/js/chunk-vendors.deb05c3f.js": {
+      "name": "kalabash_contacts/js/chunk-vendors.deb05c3f.js",
+      "path": "/home/runner/work/kalabash-contacts/kalabash-contacts/kalabash_contacts/static/kalabash_contacts/js/chunk-vendors.deb05c3f.js",
+      "publicPath": "/sitestatic/kalabash_contacts/js/chunk-vendors.deb05c3f.js"
+    },
+    "kalabash_contacts/js/chunk-vendors.deb05c3f.js.map": {
+      "name": "kalabash_contacts/js/chunk-vendors.deb05c3f.js.map",
+      "path": "/home/runner/work/kalabash-contacts/kalabash-contacts/kalabash_contacts/static/kalabash_contacts/js/chunk-vendors.deb05c3f.js.map",
+      "publicPath": "/sitestatic/kalabash_contacts/js/chunk-vendors.deb05c3f.js.map"
+    }
+  },
+  "chunks": {
+    "app": [
+      "kalabash_contacts/js/chunk-vendors.deb05c3f.js",
+      "kalabash_contacts/js/chunk-vendors.deb05c3f.js.map",
+      "kalabash_contacts/css/app.35051fc3.css",
+      "kalabash_contacts/js/app.aa8a43a2.js",
+      "kalabash_contacts/css/app.35051fc3.css.map",
+      "kalabash_contacts/js/app.aa8a43a2.js.map"
+    ]
+  },
+  "publicPath": "/sitestatic/"
+}
