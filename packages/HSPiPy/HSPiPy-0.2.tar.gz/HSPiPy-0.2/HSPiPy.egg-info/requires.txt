@@ -1,0 +1,4 @@
+hspcore
+pandas
+matplotlib
+numpy

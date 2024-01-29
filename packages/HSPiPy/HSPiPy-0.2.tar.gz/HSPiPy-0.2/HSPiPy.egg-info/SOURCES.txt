@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+HSPiPy.egg-info/PKG-INFO
+HSPiPy.egg-info/SOURCES.txt
+HSPiPy.egg-info/dependency_links.txt
+HSPiPy.egg-info/requires.txt
+HSPiPy.egg-info/top_level.txt
+hspipy/__init__.py
+hspipy/src/__init__.py
+hspipy/src/hsp.py

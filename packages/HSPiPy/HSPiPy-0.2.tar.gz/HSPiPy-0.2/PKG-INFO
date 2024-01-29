@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: HSPiPy
+Version: 0.2
+Summary: Hansen Solubility Parameters in Python
+Home-page: https://github.com/Gnpd/HSPiPy
+Download-URL: https://github.com/Gnpd/HSPiPy/archive/refs/tags/v_0.2.tar.gz
+Author: Alejandro Gutierrez
+Author-email: agutierrez@g-npd.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: hspcore
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+# HSPiPy
+Hansen Solubility Parameters in Python.
