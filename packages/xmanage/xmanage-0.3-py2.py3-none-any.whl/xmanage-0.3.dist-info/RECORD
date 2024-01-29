@@ -1,0 +1,16 @@
+xmanage/__init__.py,sha256=GajInJzn5fHnpKa5t9Lk34Pl2HR4o_EqXnksqd8yj0Y,120
+xmanage/utils/__init__.py,sha256=ovNy7LBb84govwu6_6YZ_09y_ZS7q8cGsg7Qoa2mKf8,448
+xmanage/utils/attribute.py,sha256=C9ZCuUM6KOap9jESUKRuC8nqtguvxrcuJTQGvXeJH48,383
+xmanage/utils/systemd/__init__.py,sha256=bXdWfrI3rGjZcVUD6FiDwJEu6qIoYTPFuERlOoWF6iQ,146
+xmanage/utils/systemd/path.py,sha256=h8kfv8M7wufIxEqL0etkzXawwUEdKjUtCD8arhOc-84,5908
+xmanage/utils/systemd/service.py,sha256=spksaVm83-2102jw-yz3l4anGyE0m1qPQAPb7zVQPyU,4180
+xmanage/utils/systemd/unit.py,sha256=yPWEyX7LEk4rFsrrEIKsNbElKOIDJprwnZKhqNnbczM,6514
+xmanage/xsystem/__init__.py,sha256=7F1Ub6JAilwXTF7dMAcC9GKuxDKkj-03CCl5Xz17p9w,915
+xmanage/xsystem/path.py,sha256=l5OCMHKX800mjZ1jP8-hDcyvmfgngYndPa8Ymb-Yg5M,1013
+xmanage-0.3.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+xmanage-0.3.dist-info/METADATA,sha256=IcPf90sKRnpPvn9I3iXP262GCuNchKJ41Q0a9F_lr7I,654
+xmanage-0.3.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+xmanage-0.3.dist-info/entry_points.txt,sha256=tYwxl0lTNZI_a63t0rTWpQnYmqqDuiMLF2YEarsZnnI,46
+xmanage-0.3.dist-info/top_level.txt,sha256=50ofzMpe0_6Fb63xMug3nWrwpcAWnCWLmiG8Gk0ZSts,8
+xmanage-0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+xmanage-0.3.dist-info/RECORD,,
