@@ -1,0 +1,9 @@
+[console_scripts]
+mpfshell = mp.mpfshell:main
+pyboard = mp.micropythonshell:main
+pyboard_pydfu = mp.firmware.pydfu:main
+pyboard_query = mp.pyboard_query:main
+pyboard_update = mp.firmware.update:main
+serial_arg = mp.util_serial_arg:main
+serial_dump = mp.util_serial:main
+serial_list = mp.util_serial_list:main
