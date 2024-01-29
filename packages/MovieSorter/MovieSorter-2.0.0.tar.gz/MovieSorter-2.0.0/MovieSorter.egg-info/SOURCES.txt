@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+MovieSorter.egg-info/PKG-INFO
+MovieSorter.egg-info/SOURCES.txt
+MovieSorter.egg-info/dependency_links.txt
+MovieSorter.egg-info/requires.txt
+MovieSorter.egg-info/top_level.txt
+src/GUI.py
+src/__init__.py
+src/console.py
+src/load_language.py
+src/logic.py
