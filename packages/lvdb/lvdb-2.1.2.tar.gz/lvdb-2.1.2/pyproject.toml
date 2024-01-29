@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lvdb"
+version = "2.1.2"
+authors = [
+  { name="TripIe", email="t9379115@gmail.com" },
+]
+description = "A package to locally shard vector data to conserve memory in memory-limited environments"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
