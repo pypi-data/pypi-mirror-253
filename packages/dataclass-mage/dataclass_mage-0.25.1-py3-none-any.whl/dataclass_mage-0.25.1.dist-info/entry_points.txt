@@ -1,0 +1,2 @@
+[console_scripts]
+wiz = dataclass_mage.wizard_cli.cli:main
