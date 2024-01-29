@@ -1,0 +1,241 @@
+{
+  "state": {
+    "system": {
+      "outdoorTemperature": 8.019531,
+      "systemWaterPressure": 1.6,
+      "outdoorTemperatureAverage24h": 9.707031
+    },
+    "zones": [
+      {
+        "index": 0,
+        "desiredRoomTemperatureSetpointHeating": 0.0,
+        "desiredRoomTemperatureSetpoint": 0.0,
+        "currentRoomTemperature": 21.6,
+        "currentRoomHumidity": 54.0,
+        "currentSpecialFunction": "NONE",
+        "heatingState": "IDLE"
+      }
+    ],
+    "circuits": [
+      {
+        "index": 0,
+        "circuitState": "STANDBY",
+        "currentCircuitFlowTemperature": 19.5,
+        "heatingCircuitFlowSetpoint": 0.0,
+        "calculatedEnergyManagerState": "HEATING_STANDBY"
+      }
+    ],
+    "dhw": [
+      {
+        "index": 255,
+        "currentSpecialFunction": "REGULAR",
+        "currentDhwTemperature": 45.5
+      }
+    ]
+  },
+  "properties": {
+    "system": {
+      "controllerType": "VRC720",
+      "systemScheme": 8,
+      "backupHeaterType": "CONDENSING",
+      "backupHeaterAllowedFor": "DHW_AND_HEATING",
+      "moduleConfigurationVR71": 3,
+      "energyProvidePowerCutBehavior": "DISABLE_HEATPUMP_AND_BACKUP_HEATER"
+    },
+    "zones": [
+      {
+        "index": 0,
+        "isActive": true,
+        "zoneBinding": "CENTRAL_CONTROL",
+        "isCoolingAllowed": false,
+        "associatedCircuitIndex": 0
+      }
+    ],
+    "circuits": [
+      {
+        "index": 0,
+        "mixerCircuitTypeExternal": "HEATING",
+        "heatingCircuitType": "DIRECT_HEATING_CIRCUIT",
+        "isCoolingAllowed": false
+      }
+    ],
+    "dhw": [
+      {
+        "index": 255,
+        "minSetpoint": 35.0,
+        "maxSetpoint": 70.0
+      }
+    ]
+  },
+  "configuration": {
+    "system": {
+      "continuousHeatingStartSetpoint": -26.0,
+      "alternativePoint": -21.0,
+      "heatingCircuitBivalencePoint": 0.0,
+      "dhwBivalencePoint": -7.0,
+      "automaticCoolingOnOff": false,
+      "adaptiveHeatingCurve": true,
+      "dhwMaximumLoadingTime": 60,
+      "dhwHysteresis": 3.0,
+      "dhwFlowSetpointOffset": 25.0,
+      "continuousHeatingRoomSetpoint": 20.0,
+      "hybridControlStrategy": "BIVALENCE_POINT",
+      "maxFlowSetpointHpError": 25.0,
+      "dhwMaximumTemperature": 80.0,
+      "maximumPreheatingTime": 0,
+      "paralellTankLoadingAllowed": false
+    },
+    "zones": [
+      {
+        "index": 0,
+        "general": {
+          "name": "Zone 1"
+        },
+        "heating": {
+          "operationModeHeating": "TIME_CONTROLLED",
+          "setBackTemperature": 16.0,
+          "manualModeSetpointHeating": 19.0,
+          "timeProgramHeating": {
+            "metaInfo": {
+              "minSlotsPerDay": 0,
+              "maxSlotsPerDay": 12,
+              "setpointRequiredPerSlot": true
+            },
+            "monday": [
+              {
+                "startTime": 420,
+                "endTime": 1290,
+                "setpoint": 21.0
+              }
+            ],
+            "tuesday": [
+              {
+                "startTime": 420,
+                "endTime": 1290,
+                "setpoint": 21.0
+              }
+            ],
+            "wednesday": [
+              {
+                "startTime": 420,
+                "endTime": 1290,
+                "setpoint": 21.0
+              }
+            ],
+            "thursday": [
+              {
+                "startTime": 420,
+                "endTime": 1290,
+                "setpoint": 21.0
+              }
+            ],
+            "friday": [
+              {
+                "startTime": 420,
+                "endTime": 1290,
+                "setpoint": 21.0
+              }
+            ],
+            "saturday": [
+              {
+                "startTime": 420,
+                "endTime": 1290,
+                "setpoint": 21.0
+              }
+            ],
+            "sunday": [
+              {
+                "startTime": 420,
+                "endTime": 1290,
+                "setpoint": 21.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "circuits": [
+      {
+        "index": 0,
+        "heatingCurve": 1.051828,
+        "heatingFlowTemperatureMinimumSetpoint": 35.0,
+        "heatingFlowTemperatureMaximumSetpoint": 90.0,
+        "heatDemandLimitedByOutsideTemperature": 19.0,
+        "heatingCircuitFlowSetpointExcessOffset": 0.0,
+        "coolingFlowTemperatureMinimumSetpoint": 20.0,
+        "setBackModeEnabled": false,
+        "roomTemperatureControlMode": "THERMOSTAT_FUNCTION"
+      }
+    ],
+    "dhw": [
+      {
+        "index": 255,
+        "operationModeDhw": "TIME_CONTROLLED",
+        "tappingSetpoint": 50.0,
+        "timeProgramDhw": {
+          "metaInfo": {
+            "minSlotsPerDay": 0,
+            "maxSlotsPerDay": 3,
+            "setpointRequiredPerSlot": false
+          },
+          "monday": [
+            {
+              "startTime": 330,
+              "endTime": 1260
+            }
+          ],
+          "tuesday": [
+            {
+              "startTime": 330,
+              "endTime": 1260
+            }
+          ],
+          "wednesday": [
+            {
+              "startTime": 330,
+              "endTime": 1260
+            }
+          ],
+          "thursday": [
+            {
+              "startTime": 330,
+              "endTime": 1260
+            }
+          ],
+          "friday": [
+            {
+              "startTime": 330,
+              "endTime": 1260
+            }
+          ],
+          "saturday": [
+            {
+              "startTime": 450,
+              "endTime": 1260
+            }
+          ],
+          "sunday": [
+            {
+              "startTime": 450,
+              "endTime": 1260
+            }
+          ]
+        },
+        "timeProgramCirculationPump": {
+          "metaInfo": {
+            "minSlotsPerDay": 0,
+            "maxSlotsPerDay": 3,
+            "setpointRequiredPerSlot": false
+          },
+          "monday": [],
+          "tuesday": [],
+          "wednesday": [],
+          "thursday": [],
+          "friday": [],
+          "saturday": [],
+          "sunday": []
+        }
+      }
+    ]
+  }
+}
