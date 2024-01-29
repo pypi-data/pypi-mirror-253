@@ -1,0 +1,2 @@
+[console_scripts]
+MovieSorter = MovieSorter.GUI:main
