@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/globalparams/__init__.py
+src/globalparams/params.py
+src/globalparams.egg-info/PKG-INFO
+src/globalparams.egg-info/SOURCES.txt
+src/globalparams.egg-info/dependency_links.txt
+src/globalparams.egg-info/requires.txt
+src/globalparams.egg-info/top_level.txt
