@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Topsis-Garv-102117114
+Version: 1.0.4
+Summary: Contains the Topsis package by garv on topsis
+Home-page: https://github.com/ThatSpaceCowboy/Topsis-Garv-102117114
+Download-URL: https://github.com/ThatSpaceCowboy/Topsis-Garv-102117114/archive/refs/tags/1.0.4.tar.gz
+Author: garv grover
+Author-email: garvgrover65@gmail.com
+License: MIT
+Keywords: SOME,MEANINGFULL,KEYWORDS
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
