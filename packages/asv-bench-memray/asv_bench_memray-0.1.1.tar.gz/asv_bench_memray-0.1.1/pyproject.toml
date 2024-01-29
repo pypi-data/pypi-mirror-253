@@ -1,0 +1,90 @@
+[project]
+name = "asv_bench_memray"
+version = "0.1.1"
+description = "A memray benchmark plugin for asv"
+authors = [
+    { name = "Rohit Goswami", email = "rgoswami@ieee.org" },
+]
+maintainers = [
+    { name = "Rohit Goswami", email = "rgoswami@ieee.org" },
+]
+dependencies = [
+    "memray>=1.7.0",
+    "asv_runner>=0.1.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.urls]
+Documentation = "https://haozeke.github.io/asv_bench_memray/"
+Issues = "https://github.com/HaoZeke/asv_bench_memray/issues"
+Source = "https://github.com/HaoZeke/asv_bench_memray"
+
+[project.optional-dependencies]
+lint = [
+    "ruff>=0.0.265",
+    "black>=23.3.0",
+]
+rel = [
+    "tbump",
+    "towncrier",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+extend-ignore = [
+    "E741", # Do not use variables named 'I', 'O', or 'l'
+]
+select = [
+  "E",   # pycodestyle
+  "F",   # pyflakes
+  "UP",  # pyupgrade
+  "I001", # isort
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.towncrier]
+directory = "doc/changelog.d"
+filename = "CHANGELOG.md"
+start_string = "<!-- towncrier release notes start -->\n"
+underlines = ["", "", ""]
+title_format = "## [{version}](https://github.com/HaoZeke/asv_bench_memray/tree/{version}) - {project_date}"
+issue_format = "[#{issue}](https://github.com/HaoZeke/asv_bench_memray/issues/{issue})"
+
+[[tool.towncrier.type]]
+directory = "security"
+name = "Security"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "removed"
+name = "Removed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "deprecated"
+name = "Deprecated"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "added"
+name = "Added"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "changed"
+name = "Changed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "fixed"
+name = "Fixed"
+showcontent = true
