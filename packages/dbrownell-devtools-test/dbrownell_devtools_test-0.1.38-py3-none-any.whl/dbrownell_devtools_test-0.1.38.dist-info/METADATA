@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: dbrownell_devtools_test
+Version: 0.1.38
+Summary: Test package.
+Author-email: David Brownell <db@DavidBrownell.com>
+License: Boost Software License 1.0
+Project-URL: Homepage, https://github.com/davidbrownell/devtools_test
+Project-URL: Documentation, https://github.com/davidbrownell/devtools_test
+Project-URL: Repository, https://github.com/davidbrownell/devtools_test
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Common Public License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: System Shells
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Dist: dbrownell-Common
+Provides-Extra: dev
+Requires-Dist: dbrownell-DevTools ; extra == 'dev'
+Provides-Extra: package
+Requires-Dist: build ==1.* ; extra == 'package'
+Requires-Dist: twine ==4.* ; extra == 'package'
+
