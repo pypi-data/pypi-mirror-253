@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/NBRB_bki_xml_read/_init_.py
+src/NBRB_bki_xml_read/common_tools.py
+src/NBRB_bki_xml_read/individual_read.py
+src/NBRB_bki_xml_read.egg-info/PKG-INFO
+src/NBRB_bki_xml_read.egg-info/SOURCES.txt
+src/NBRB_bki_xml_read.egg-info/dependency_links.txt
+src/NBRB_bki_xml_read.egg-info/requires.txt
+src/NBRB_bki_xml_read.egg-info/top_level.txt
+tests/tests.py

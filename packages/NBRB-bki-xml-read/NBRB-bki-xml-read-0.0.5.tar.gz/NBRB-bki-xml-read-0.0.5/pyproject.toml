@@ -1,0 +1,10 @@
+[project]
+name = "NBRB-bki-xml-read"
+version = "0.0.5"
+authors = [
+  { name="Fedor Kobak", email="kobfedsur@gmail.com" },
+]
+description = "Parsing of xml files returned by National Bank of the Republic of Belarus."
+dependencies = [
+    "xmltodict"
+]
