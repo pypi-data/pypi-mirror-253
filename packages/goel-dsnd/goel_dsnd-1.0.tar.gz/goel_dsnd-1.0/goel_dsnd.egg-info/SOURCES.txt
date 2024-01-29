@@ -1,0 +1,10 @@
+setup.py
+goel_dsnd/Binomialdistribution.py
+goel_dsnd/Gaussiandistribution.py
+goel_dsnd/Generaldistribution.py
+goel_dsnd/__init__.py
+goel_dsnd.egg-info/PKG-INFO
+goel_dsnd.egg-info/SOURCES.txt
+goel_dsnd.egg-info/dependency_links.txt
+goel_dsnd.egg-info/not-zip-safe
+goel_dsnd.egg-info/top_level.txt
