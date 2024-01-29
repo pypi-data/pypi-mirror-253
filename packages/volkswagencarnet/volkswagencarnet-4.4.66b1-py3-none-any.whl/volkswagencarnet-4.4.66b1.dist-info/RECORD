@@ -1,0 +1,14 @@
+volkswagencarnet/__init__.py,sha256=ndlRBXCUPW7GKbbf-RdChs3xD61yE1c6aNxoYBXDBtQ,39
+volkswagencarnet/version.py,sha256=8tjUhnOoWGbThXtnmkxUda0cGmT8GYyi6fdTbXIXiAU,415
+volkswagencarnet/vw_connection.py,sha256=qGIFLaYoGmlo9XTu1WZU2CWt92Lt5Gz8oVtAowDM0O4,44623
+volkswagencarnet/vw_const.py,sha256=Tz8ltfIWzrSt6PzXS6yTvVHygdQmgtF2Me6UhltLCzE,3699
+volkswagencarnet/vw_dashboard.py,sha256=cs8Td0bRA7KwFYSu6hOu1fZz2P5zXvnly2QfSHu9k-g,36011
+volkswagencarnet/vw_exceptions.py,sha256=j1NJPSWw31_P8I7D2wks8OQc1ouaO-ZDPWBWVlCGA-U,132
+volkswagencarnet/vw_timer.py,sha256=VDWBRIZabb5eqmM3wLobQYRJK1PiOrZ2q5FtvZ_Q3Ro,11088
+volkswagencarnet/vw_utilities.py,sha256=dk1Q2xTLqLlWs3v2e7DoINFHxzAiLYEr9d0RnglD3ok,4291
+volkswagencarnet/vw_vehicle.py,sha256=cPrKEMfpYLOjrKAFkqeiYEPGTk4814n9fnleiKUEHz0,106978
+volkswagencarnet-4.4.66b1.dist-info/LICENSE.txt,sha256=5roVEYR3e-kTlq73yMQgO18VDR4w4JiSKdHejEJnT0s,34876
+volkswagencarnet-4.4.66b1.dist-info/METADATA,sha256=sm1xz_R-1oVwsJro792oTLjGcJwUymuzZqfl2nCuyrk,6395
+volkswagencarnet-4.4.66b1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+volkswagencarnet-4.4.66b1.dist-info/top_level.txt,sha256=tUJNf33PP5Ln_Zc9N86ThKbe8BKJmW60ZKABmfZL_18,17
+volkswagencarnet-4.4.66b1.dist-info/RECORD,,
