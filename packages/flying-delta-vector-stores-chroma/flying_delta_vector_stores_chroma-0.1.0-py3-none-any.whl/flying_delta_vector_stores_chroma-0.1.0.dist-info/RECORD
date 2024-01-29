@@ -1,0 +1,5 @@
+llama_index/vector_stores/chroma/__init__.py,sha256=yYChjH0M7ITOFFsxA6biljU_AeZrUEYJ9bMxDwm4H7c,102
+llama_index/vector_stores/chroma/base.py,sha256=hgBLxhiKlf_1GAab1SBzY_NzwGf-7K5IEuwOng7aTs0,10420
+flying_delta_vector_stores_chroma-0.1.0.dist-info/METADATA,sha256=b6ZqFilPb8EjfpUnOO6-jxBEJX3_CivJB4z5FZGZE5g,657
+flying_delta_vector_stores_chroma-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flying_delta_vector_stores_chroma-0.1.0.dist-info/RECORD,,
