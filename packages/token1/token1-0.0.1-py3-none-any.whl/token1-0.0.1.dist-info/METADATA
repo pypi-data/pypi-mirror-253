@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: token1
+Version: 0.0.1
+Summary: It retunrs power of a number
+Project-URL: Homepage, https://github.com/Vidisha-Purohit/power_python_package
+Project-URL: Issues, https://github.com/Vidisha-Purohit/power_python_package/issues
+Author-email: Vidisha Purohit <vidisha10purohit@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# This package's function will return power of a given number
