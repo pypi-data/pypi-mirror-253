@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: Topsis-Nitish-102117203
+Version: 0.0.1
+Summary: Calculates the topsis score
+Home-page: https://github.com/nitish027/Topsis-Nitish-102117203
+Author: Nitish Jolly
+Author-email: nitishjolly16@gmail.com
+License: MIT
+Keywords: topsis,Decision Making,Data Analytics
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# Topsis-Nitish-102117203 0.0.1
+It takes a csv file as an input and also gives csv file as output
+
+## Installation
+```pip install topsis-Nitish-10211703```
+
+## How to use it?
+python data.csv weights impacts output.csv
+
+where :
+
+```data.csv -> file on which topsis to be performed
+
+weights -> list of weights (only numeric columns are considered, rest are ignored)
+
+impacts -> impact list ("+" for columns that are to be maximized, "-" for columns to be minimized, for example ["-","+","+","+"])
+
+output.csv -> file obtained as output
+```
+
+## License
+
+Â© 2024 Nitish Jolly
+
+This repository is licensed under the MIT license. See LICENSE for details.
