@@ -1,0 +1,7 @@
+.ninja_log,sha256=F6V3tzpnWRkGKOi9am-GGUARalVH0X2ysNF_KPI_VKY,233
+build.ninja,sha256=c3Wk3Crymave6w7GBD8HfPYg4aMi0_ZceEjvIRscGmM,1652
+linear_fp16_esimd.cpython-310-x86_64-linux-gnu.so,sha256=kx4ky8veBr3TGnPLJvUvSSsnbJX5k5lQp6Y08ExwfVA,146482480
+bigdl_core_xe_esimd_21-2.5.0b20240128.dist-info/METADATA,sha256=xcuEfyicuui4RaEyaCNpn_arxt0Wp-6cuOLu_m7Gkn8,76
+bigdl_core_xe_esimd_21-2.5.0b20240128.dist-info/WHEEL,sha256=1uWdHyBUW-F7DDUfA5m2-pV0fdKSj7Tdyz9qiUl3SNc,113
+bigdl_core_xe_esimd_21-2.5.0b20240128.dist-info/top_level.txt,sha256=3SZdLObmgtRvzC9c1CRXuqaM5S5ZCRTyUEQFNtQKeF8,18
+bigdl_core_xe_esimd_21-2.5.0b20240128.dist-info/RECORD,,
