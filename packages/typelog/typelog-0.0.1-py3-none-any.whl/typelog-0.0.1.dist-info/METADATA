@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: typelog
+Version: 0.0.1
+Summary: Static typed structured logging
+Author-email: dd84ai <dark.dreamflyer@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2024 dd84ai / https://github.com/darklab8/darklab_py-typelog
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+Project-URL: Homepage, https://github.com/darklab8/py-typelog
+Keywords: logging,structured,typing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: autoflake ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+
+Static typed structured logging
+
+# Description
+
+This project araised from the need to log backend applications, aws lambdas and other stuff in modern cloud ecosystem. Logging systems today are able easily parsing JSON format out of the box.
+Static typing approach brings here consistent way to define key values to final msg, as well as easier following Domain Driven Design, where logs consistently describe what they log. Static typed logging brings easy refactoring to any present logs.
+
+# Features
+
+- Accepts static typed components as optional params
+  - it will not accept `any` options
+  - has shortcut WithFields, to make clone of the logger with default logging fields
+- Easy to turn on/off parameters by environment variables
+  - Ability to define different log levels for different created loggers
+- Easier turning complex objects into structured logging
+  - accepts maps and structs as its params. It will parse them on their own.
+[See folder examples](./examples)
+
+# Python specifics
+
+In order to function with python well, recommendation to turn on
+- [strict mypy](<https://careers.wolt.com/en/blog/tech/professional-grade-mypy-configuration>)
+- or pyright in one of [its mods](<https://github.com/microsoft/pyright/blob/main/docs/configuration.md>)
+
+[Published at pypi](https://pypi.org/project/typelog/)
+
+# Alternative Versions
+
+- [Version in golang](https://github.com/darklab8/go-typelog)

@@ -1,0 +1,11 @@
+typelog/__init__.py,sha256=Qk-5tnrR_vtGSjLxTDeeDZAfAQJqfrOBvobc85uOiHk,57
+typelog/logcore.py,sha256=QqNSQ4J-YYVlk4Pdn2ghn62G_elJP1VADUDe5ywJyyw,2550
+typelog/logparams.py,sha256=LCj3_uKrM9BjVjS4KBTfcy5crQHj39q6xckzqV4VFHc,658
+typelog/settings.py,sha256=ERYIZMFU8LrHToPhbRDsCflaFFS4Fj7RN4RXnwO8MI4,134
+typelog/types.py,sha256=zlxfZh1IkokQ9iQHzNnV_CqMuTvxQuVuOEL12hr3u3o,133
+typelog/utils.py,sha256=TyiOpNTzlVhG0TaIzMy3y5PSjJyV7LItEiOtuq8umSg,3395
+typelog-0.0.1.dist-info/LICENSE,sha256=zBWQPD6Oxv8jSpo9MUt-h5BymUSmkywmNAK13ZPFF4I,1121
+typelog-0.0.1.dist-info/METADATA,sha256=rKRC9SY3ZVOfjv4989tnf0xQRGNdCqKW1Kh30jZTuIg,3379
+typelog-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+typelog-0.0.1.dist-info/top_level.txt,sha256=YyhXgXzoNxhkd37cAFT9_nIiXdTnI_R0POogLpqtaUM,8
+typelog-0.0.1.dist-info/RECORD,,
