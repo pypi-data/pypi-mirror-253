@@ -1,0 +1,2 @@
+[console_scripts]
+bright-tool = bright_tool:run_bright_tool
