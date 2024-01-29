@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+aws_close_account/__init__.py
+aws_close_account/__main__.py
+aws_close_account.egg-info/PKG-INFO
+aws_close_account.egg-info/SOURCES.txt
+aws_close_account.egg-info/dependency_links.txt
+aws_close_account.egg-info/entry_points.txt
+aws_close_account.egg-info/requires.txt
+aws_close_account.egg-info/top_level.txt
