@@ -1,0 +1,16 @@
+setup.py
+person-generate-br/__init__.py
+person-generate-br/altura.py
+person-generate-br/cidade_estado.py
+person-generate-br/cpf.py
+person-generate-br/data_de_nascimento.py
+person-generate-br/nome.py
+person-generate-br/peso.py
+person-generate-br/pessoa_F.py
+person-generate-br/pessoa_M.py
+person-generate-br/telefone.py
+person_generete_br.egg-info/PKG-INFO
+person_generete_br.egg-info/SOURCES.txt
+person_generete_br.egg-info/dependency_links.txt
+person_generete_br.egg-info/requires.txt
+person_generete_br.egg-info/top_level.txt
