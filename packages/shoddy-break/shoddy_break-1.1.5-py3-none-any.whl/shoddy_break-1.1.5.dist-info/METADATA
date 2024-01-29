@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: shoddy-break
+Version: 1.1.5
+Summary: A pygame based art animation library
+Home-page: https://github.com/frost-dream/pygame-arts
+Author: FrostDream
+Author-email: frostdream3k@gmail.com
+Requires-Dist: pygame
+
