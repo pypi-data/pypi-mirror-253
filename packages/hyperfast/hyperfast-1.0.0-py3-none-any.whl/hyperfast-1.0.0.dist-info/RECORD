@@ -1,0 +1,11 @@
+hyperfast/__init__.py,sha256=-5Ck75nUbOIwW2DYxQy0LHYQ5M9yfci9m-QpTKOLXeA,43
+hyperfast/_version.py,sha256=DGJ4pj32xs3_DRJhSzQwCiRNnAQrMgo09USYpyMZsKc,411
+hyperfast/config.py,sha256=bWxIS8aSoBlZapUr8lSHqKaKyWoH0FnvEzFPqCq-xQ8,308
+hyperfast/hyperfast.py,sha256=3elSEfXS4GDboxYztffYvQ1G4Ep-nbI4rETQS4kUNoc,14205
+hyperfast/model.py,sha256=qjj_4bcYS336I9dCidU08DZlcimOt_111_IsYjCU0C8,5680
+hyperfast/utils.py,sha256=fLbII8uGyTAYSmIatnxNk4OU3oYcMBFWVbr_5F0OtpU,11710
+hyperfast-1.0.0.dist-info/LICENSE,sha256=yERCEU9NqbJZPvpDCEXhGgYFsMFiWf65BmYbwL1QT7g,19354
+hyperfast-1.0.0.dist-info/METADATA,sha256=PewhuKLnmfpd2tnX4jRQNnesVlLyLjEWpQDdjspw_wc,3554
+hyperfast-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+hyperfast-1.0.0.dist-info/top_level.txt,sha256=gIeX_SmJg1K3WDgXdv6PtjHTpgcGpqOK0505pGn-cxM,10
+hyperfast-1.0.0.dist-info/RECORD,,
