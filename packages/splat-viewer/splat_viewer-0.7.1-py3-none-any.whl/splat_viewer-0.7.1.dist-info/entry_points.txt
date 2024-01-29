@@ -1,0 +1,7 @@
+[console_scripts]
+debug-tiles = splat_viewer.scripts.debug_tiles:main
+export-workspace = splat_viewer.scripts.export_workspace:main
+label-foreground = splat_viewer.scripts.label_foreground:main
+splat-benchmark = splat_viewer.scripts.splat_benchmark:main
+splat-multi-benchmark = splat_viewer.scripts.splat_multi_benchmark:main
+splat-viewer = splat_viewer.scripts.splat_viewer:main
