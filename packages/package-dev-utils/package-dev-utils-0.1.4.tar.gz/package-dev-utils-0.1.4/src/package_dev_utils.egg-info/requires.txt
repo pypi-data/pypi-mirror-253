@@ -1,0 +1,4 @@
+
+[dev]
+hypothesis<7,>=6.91
+package-dev-tools<1,>=0.3.1
