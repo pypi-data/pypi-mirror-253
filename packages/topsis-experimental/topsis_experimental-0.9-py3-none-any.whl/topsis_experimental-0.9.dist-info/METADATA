@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: topsis-experimental
+Version: 0.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
+topsis_experimental: TOPSIS Analysis Python Package
+
+Overview
+
+topsis_experimental is a Python package that implements the Technique for Order Preference by Similarity to Ideal Solution (TOPSIS) for multi-criteria decision-making (MCDM). It provides a straightforward and efficient way to evaluate and rank a set of alternatives based on conflicting criteria.
+
+Key Features
+
+User-friendly command-line interface for easy execution.
+Supports both numerical and categorical data.
+Handles equal weights and impacts, as well as positive and negative impacts.
+Generates a TOPSIS score for each alternative, indicating its similarity to the ideal solution.
+Provides ranking of alternatives based on their TOPSIS scores.
+Installation
+
+To install topsis_experimental using pip:
+
+```bash
+pip install topsis_experimental
+```
+
+
+
+You can use topsis_experimental from the command line as follows:
+
+```bash
+topsis_experimental input.csv weights impacts output.csv
+```
+
+where:
+
+input.csv: The input CSV file containing the decision matrix (alternatives and criteria).
+weights: Comma-separated list of weights for each criterion (numerical, equal to the number of criteria).
+impacts: Comma-separated list of impacts for each criterion (+ for positive, - for negative).
+output.csv: The output CSV file containing the TOPSIS scores and rankings.
+Example
+
+Assume you have a CSV file data.csv with the following structure:
+
+Fund Name,P1,P2,P3,P4,P5
+M1,0.84,0.71,6.7,42.1,12.59
+M2,0.91,0.83,7.0,31.7,10.11
+...
+And you want to perform TOPSIS with weights 1,1,1,2,1 and all positive impacts (+++-+).
+
+Run the following command:
+
+```bash
+topsis_experimental data.csv "1,1,1,2,1" "+,+,+,-,+" results.csv
+```
+
+This will create a file results.csv with the TOPSIS scores and rankings.
+
+Additional Notes
+
+The weights and impacts must be separated by commas and have the same number of elements as the number of criteria.
+For more advanced usage, see the source code or consider creating a custom Python script.
