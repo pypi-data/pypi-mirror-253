@@ -1,0 +1,10 @@
+pyramid>=1.5
+pyramid_basemodel
+pyramid_mako
+pycountry>=23.12.7
+
+[babel]
+Babel>=1.0
+
+[docs]
+sphinx
