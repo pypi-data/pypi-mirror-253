@@ -1,0 +1,12 @@
+setup.py
+mihoyo_api/__init__.py
+mihoyo_api/bbs.py
+mihoyo_api/geetest.py
+mihoyo_api/genshin.py
+mihoyo_api/test.py
+mihoyo_api/tool.py
+mihoyo_api.egg-info/PKG-INFO
+mihoyo_api.egg-info/SOURCES.txt
+mihoyo_api.egg-info/dependency_links.txt
+mihoyo_api.egg-info/requires.txt
+mihoyo_api.egg-info/top_level.txt
