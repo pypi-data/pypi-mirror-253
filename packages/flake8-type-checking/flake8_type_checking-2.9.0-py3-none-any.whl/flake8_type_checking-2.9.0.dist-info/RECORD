@@ -1,0 +1,11 @@
+flake8_type_checking/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_type_checking/checker.py,sha256=TIu3TmcluTqcTJMnIzJQBb9FagFdYm6mKcHD_XNP4qQ,83838
+flake8_type_checking/constants.py,sha256=FzjUbGKMv5dJmkJ8LNf7O5jsdrN564a-oVDOsEyuHHc,2088
+flake8_type_checking/plugin.py,sha256=G_jQPXUy9XhFKiDYY-J7NiVQkk-JkNqHV5RIm33McQc,6127
+flake8_type_checking/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_type_checking/types.py,sha256=6_9QPq5OBMKM9kNVlZdOF0OMgBVOkeT5yOtH93XwTwo,789
+flake8_type_checking-2.9.0.dist-info/LICENSE,sha256=0P9CSooibvFHPohBKmQ59xQl350f5uNPosi3L2RU6jc,1520
+flake8_type_checking-2.9.0.dist-info/METADATA,sha256=kvafXVlTrjZt53_S6uxoNr5AksYaVpLfJh4uBCcEF-c,16179
+flake8_type_checking-2.9.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flake8_type_checking-2.9.0.dist-info/entry_points.txt,sha256=15PEwFm-UvN11kRGHMxE2GdNeU8sK0Gdm9RMdZN1rPQ,58
+flake8_type_checking-2.9.0.dist-info/RECORD,,
