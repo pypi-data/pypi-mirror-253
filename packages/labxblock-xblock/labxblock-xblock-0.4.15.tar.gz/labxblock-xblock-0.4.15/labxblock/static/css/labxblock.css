@@ -1,0 +1,596 @@
+/* CSS for LabXBlock */
+
+.labfunix_block{
+    min-height: 350px !important;
+    margin-top: 2rem;
+}
+
+.labxblock_block .count {
+    font-weight: bold;
+}
+
+.labxblock_block p {
+    cursor: pointer;
+}
+
+
+
+/* CSS for FeedbackXBlock */
+
+/* Overall block. We limit width, and put a very faint
+   border around it. */
+   .labxblock_block {
+    max-width: 450px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1);
+    padding: 10px
+}
+
+
+
+/* Label for the freeform text input. We want a little
+   space between this and the Likert input.*/
+.labxblock_block .feedback_header_div {
+    margin-top:1em;
+}
+
+/* Fieldset for the Likert radio buttons */
+.labxblock_block .feedback_likert_field {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* The div around everything with a radio button */
+.labxblock_block .feedback_likert_rating {
+    cursor: pointer;
+    border-radius:5px;
+    display:inline-block;
+    text-align:center;
+    padding:0px 10px 0px 10px;
+}
+
+
+
+/* But show it if we are checked... */
+.labxblock_block input[type="radio"]:checked ~ .feedback_icon_active{
+    display: inline-block;
+}
+/* ... while hiding the unchecked icon */
+.labxblock_block input[type="radio"]:checked ~ .feedback_icon_inactive{
+    display: none;
+}
+
+
+.labxblock_block input[type="radio"]:focus ~ .feedback_icon {
+   border-color: #999999;
+}
+
+.labxblock_block input[type="radio"]:hover ~ .feedback_icon {
+   border-color: #999999;
+}
+
+.labxblock_block .feedback_likert_label {
+    cursor: pointer;
+}
+
+.labxblock_block .feedback_freeform_input {
+    margin-bottom: 1em;
+}
+
+.labxblock_block .feedback_freeform_area {
+    height:inherit;
+}
+
+.labxblock_block .feedback_rating_active {
+    color: blue;
+    font-weight: bold;
+    background-color: blanchedalmond;
+}
+
+.labxblock_block .feedback_radio {
+    opacity:0;
+    width:1px;
+    padding:0px;
+    margin:0px;
+    position:absolute;
+}
+
+.labxblock_block .feedback_sr_text{
+    opacity:0;
+    width:1px;
+    height:1px;
+    padding:0px;
+    margin:0px;
+    position:absolute;
+    clip:rect(1px,1px,1px,1px);
+    left:-10000px;
+    overflow:hidden;
+}
+
+.labxblock_block label{
+    display:inline;
+}
+
+.labxblock_block .feedback_likert_field {
+    border-style:none;
+}
+.labxblock_block .feedback_submit_feedback {
+    width:100%;
+}
+
+.lab-content{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.lab-btn{
+   text-align: end;
+}
+/* .lab-button{
+    padding: 8px 16px;
+    background-color: #0086ff;
+    border-radius: 5px;
+    color: white;
+    
+} */
+.text-lab{
+    font-size: 0.875rem;
+    size: 13px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.lab-button:hover{
+    cursor: pointer;
+    background-color: #0B70DF ;
+}
+.ck-editor__editable[role="textbox"] {
+
+    min-height: 200px;
+    max-height: 200px;
+}
+
+
+
+.result-summary{
+    list-style: none;
+    justify-content: space-between;
+    flex-grow: 1;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5aa447;
+    position:relative
+}
+.margin-summary{
+    margin-top: 8px;
+}
+.result-summary:hover{
+    cursor: pointer;
+}
+.icon-result-summary::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border-right: 2px solid #2c3744;
+    border-bottom: 2px solid #2c3744;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    transition: .2s;
+}
+
+.icon-result-summary.active_result::after {
+    display: none;
+}
+
+.detail-lab-result{
+    /* align-self: stretch;
+    flex-grow: 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0.75rem 1rem; 
+    border-left: solid 2px #5aa447;
+    background-color: rgba(90, 164, 71, 0.05);
+    /* border-top-left-radius: 0.375rem; */
+}
+
+.border-radius-top-left{
+    border-top-left-radius: 0.375rem;
+}
+
+.border-radius-bottom-left{
+    border-bottom-left-radius: 0.375rem;
+}
+
+.detail-lab-result-title {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #5aa447;
+    
+}
+
+.detail-lab-result-content {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #2c3744;
+}
+
+.detail-lab-result-content-spc {
+    padding-top: 0 !important;
+}
+
+.result-container{
+    /* padding-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    /* gap: 20px; */
+}
+
+/* .detail-result-item{
+    padding: 10px 10px 0px;
+
+} */
+
+
+
+/* .detail-lab-result > span:first-child {
+    flex-grow: 1;
+    font-size: 1rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5aa447;
+  
+  } */
+.detail-title {
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #576f8a;
+    margin-bottom: -18px;
+}
+.block-title-lab{
+    color: black;
+}
+
+
+.none{
+    display: none;
+}
+/* .ck-focused{
+    border: none !important;
+} */
+
+.student-lab{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.student-lab-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.student-lab-content{
+    padding: 1rem 1rem 2rem;
+    background-color: #f6f6f7;
+    margin-bottom: 2rem;
+    border-radius: 0.375rem;
+}
+
+.result-lab {
+    /* padding-top: 30px; */
+}
+
+.result-lab-title {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.result-lab-sub-title {
+    display: block;
+    font-size: 1rem;
+    font-weight: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.lab-title-block{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    /* gap: 0.5rem; */
+}
+
+/* Notification */
+
+.lab-success{
+    /* align-self: stretch;
+    flex-grow: 0; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    /* padding: 0.75rem; */
+    /* border-radius: 0.375rem; */
+    /* background-color: #f8fcf7; */
+    
+}
+
+#lab-icon-success{
+    color: #5aa447;
+    font-size: 22px;
+}
+
+.text-lab-success{
+
+    /* width: 11.938rem;
+    height: 1.5rem; */
+    /* flex-grow: 0; */
+    /* font-family: Roboto; */
+    font-size: 0.9rem;
+    font-weight: 650;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2c3744;
+}
+
+#lab-notification{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #f8fcf7;
+   padding: 0.75rem;
+   border-radius: 0.375rem;
+   margin-bottom: 2rem;
+}
+
+/* css download at notification block */
+.btn_download_submitted_lab {
+    /* color: #0086ff; */
+    /* line-height: 20px; */
+    /* font-weight: 600; */
+    /* size: 16px; */
+}
+
+.btn_download_submitted_lab a {
+    color: #0086ff;
+    line-height: 150%;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn_download_submitted_lab a:hover {
+    color: #0086ff;
+    line-height: 150%;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+/* input file */
+
+.inputfile{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    font-weight: 700;
+    color: white;
+    background-color: #0086ff;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.625rem 1.25rem;
+    border-radius: 4px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #0B70DF ;
+}
+
+.info-file-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f6f7;
+    padding:0.75rem;
+    border-radius: 0.375rem;
+    margin-bottom: 0.5rem;
+}
+
+.file_upload_icon {
+    margin-right: 0.5rem;
+    color: #576F8A;
+}
+
+.student-file{
+    border: 1px solid #0075b4;
+    padding: 8px 16px;
+    border-radius: 4px;
+
+}
+
+.student-file {
+    text-decoration: none; 
+}
+
+.student-file:hover {
+    text-decoration: none !important;
+}
+
+
+.notify-upload{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-bottom: 1rem;
+}
+
+/* .notify-upload > span:first-child {
+    font-weight: 600;
+} */
+
+.notify-upload > span:last-child {
+   font-size: 1rem;
+   color: #2c3744;
+   
+}
+
+.btn-edit{
+    padding-top: 24px;
+    display: flex;
+    gap:5px;
+    justify-content: end;
+}
+
+.lab-text{
+    font-size: 1rem;
+    color: #2c3744;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.error-message{
+    color : 'red'
+}
+
+#content-student-lab p {
+    margin-bottom: 0;
+}
+
+.lab-title-block span:first-of-type {
+  /* height: 1.875rem; */
+  align-self: stretch;
+  flex-grow: 0;
+  /* font-family: Roboto; */
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2c3744
+}
+
+.lab-date {
+    /* height: 1.5rem; */
+    align-self: stretch;
+    flex-grow: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2c3744;
+    /* padding: 10px 0px; */
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.student-lab-title span:first-of-type{
+    /* UFC - caution */
+    /* height: 1.5rem; */ 
+  flex-grow: 1;
+  /* font-family: Roboto; */
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2c3744;
+}
+
+#student-lab-edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#student-lab-edit:hover{
+    cursor: pointer;
+}
+
+
+.btn-primary-custom {
+    border: none;
+    background-color: #0086ff !important;
+    border-radius: 0.25rem;
+    padding: 10px 20px;
+    color: white;
+  }
+
+.btn-primary-custom span {
+    size: 13px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.btn-primary-custom:hover {
+    background-color: #0b70df !important;
+  }
+
+  .btn-primary-custom-outline {
+    background: none !important;
+    border: 1px solid #0086ff;
+    border-radius: 4px;
+    padding: 8px 20px;
+   
+  }
+
+.btn-primary-custom-outline span {
+    color: #0086ff;
+    line-height: 20px;
+    font-weight: 600;
+    size: 16px;
+}
+  
+.btn-primary-custom-outline:hover {
+    background-color: #eff7ff !important;
+  }
+
+  .bg-none{
+    background:  none !important;
+  }

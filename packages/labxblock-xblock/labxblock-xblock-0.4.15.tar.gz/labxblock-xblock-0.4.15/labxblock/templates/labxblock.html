@@ -1,0 +1,57 @@
+{% load i18n %}
+
+<div class="labfunix_block">
+    <div class="lab-title-block">
+        <span><b>Thực hành Lab</b></span>
+        <span class="lab-text">Bạn hãy nhấn vào nút “Bắt đầu thực hành”, sau đó nhập bài làm vào khung nhập liệu bên dưới và nhấn “Gửi bài” khi hoàn tất.</span>
+        <span class="lab-date-success"></span>
+    </div>
+    <div id="lab-notification" class="none">
+        <div class="lab-success">
+    
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m11.1 13.8-2.15-2.15a.948.948 0 0 0-.7-.275.948.948 0 0 0-.7.275.948.948 0 0 0-.275.7c0 .283.092.517.275.7l2.85 2.85c.2.2.433.3.7.3.267 0 .5-.1.7-.3l5.65-5.65a.948.948 0 0 0 .275-.7.948.948 0 0 0-.275-.7.948.948 0 0 0-.7-.275.948.948 0 0 0-.7.275L11.1 13.8zm1.4 8.2a9.738 9.738 0 0 1-3.9-.788 10.099 10.099 0 0 1-3.175-2.137c-.9-.9-1.612-1.958-2.137-3.175A9.738 9.738 0 0 1 2.5 12c0-1.383.263-2.683.788-3.9a10.099 10.099 0 0 1 2.137-3.175c.9-.9 1.958-1.612 3.175-2.137A9.738 9.738 0 0 1 12.5 2c1.383 0 2.683.263 3.9.788a10.098 10.098 0 0 1 3.175 2.137c.9.9 1.613 1.958 2.137 3.175A9.738 9.738 0 0 1 22.5 12a9.738 9.738 0 0 1-.788 3.9 10.098 10.098 0 0 1-2.137 3.175c-.9.9-1.958 1.613-3.175 2.137a9.738 9.738 0 0 1-3.9.788z" fill="#5AA447"/>
+                </svg>                
+    
+            <span class="text-lab-success">Bạn nộp bài thành công</span>
+        </div>
+
+        <div class="btn_download_submitted_lab"></div>
+        
+    </div>
+        <div  class="lab-btn  " style='text-align:start'>
+            <span   class="btn-primary-custom lab-button none" id="btn-lab-text" onclick="setTimeout(() => {
+                const height = $('#content').prop('scrollHeight')
+                const msgData = {
+                  resize: {
+                    iframeHeight: height,
+                    transition: '0s',
+                  },
+                  type: 'unit.resize',
+                };
+                window.parent.postMessage(msgData, '*');
+              }, 10);">
+                <span class="text-lab">Bắt đầu thực hành</span>
+            </span>
+        </div>
+ 
+
+    <div class="lab-content">
+        <div id="lab"></div>
+        <div class="lab-btn ">
+            <span  class="btn-primary-custom  lab-button none " id="btn-lab-submit" onclick="setTimeout(() => {
+                const height = $('#content').prop('scrollHeight')
+                const msgData = {
+                  resize: {
+                    iframeHeight: height,
+                    transition: '0s',
+                  },
+                  type: 'unit.resize',
+                };
+                window.parent.postMessage(msgData, '*');
+              }, 10);">
+                <span class="text-lab">Nộp bài</span>
+            </span>
+        </div>
+    </div>
+ </div>
