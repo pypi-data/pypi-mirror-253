@@ -1,0 +1,5 @@
+setup.py
+topsis_gurkamal_102116030.egg-info/PKG-INFO
+topsis_gurkamal_102116030.egg-info/SOURCES.txt
+topsis_gurkamal_102116030.egg-info/dependency_links.txt
+topsis_gurkamal_102116030.egg-info/top_level.txt
