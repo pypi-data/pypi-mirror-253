@@ -1,0 +1,7 @@
+__pycache__/
+.aider*
+.autoenv.sh
+.autoenv_leave.sh
+.env
+dist/
+venv
