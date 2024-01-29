@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.cfg
+setup.py
+topsis-102103772/102103762.py
+topsis-102103772/__init__.py
+topsis_102103772.egg-info/PKG-INFO
+topsis_102103772.egg-info/SOURCES.txt
+topsis_102103772.egg-info/dependency_links.txt
+topsis_102103772.egg-info/requires.txt
+topsis_102103772.egg-info/top_level.txt
