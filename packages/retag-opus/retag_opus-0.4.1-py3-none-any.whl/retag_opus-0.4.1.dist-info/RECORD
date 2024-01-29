@@ -1,0 +1,16 @@
+retag_opus/__init__.py,sha256=FjEOpWR4Vm90X178sxCSY9JxipnI2mvS50izhf4q6tc,184
+retag_opus/__main__.py,sha256=e074s5tcnfACeyk68Raj-M5Ao6X7RaFtn8dKbLZFpd0,163
+retag_opus/app.py,sha256=NSSu9T5LqFG75TUAFz-rLBLHJwTShZcrVg3u9JlshJ0,7978
+retag_opus/cli.py,sha256=wFTGc0bfCxRthAbMvz2wz2c7CH-puA_GtW99RJeDBlw,1587
+retag_opus/colors.py,sha256=aB1WDLVBoAC9lnjPQQPoOOaMJF747lBHgAaGoMrbxwU,252
+retag_opus/constants.py,sha256=vd41Sj84-CSJG5M9r8-NvPagRDwFn--3H2g70TC-CMM,4809
+retag_opus/description_parser.py,sha256=ZMfcjrXHztvuf_lfFppEC7q0RUGx5VkmVlQy1cLmK1s,5566
+retag_opus/exceptions.py,sha256=0saZ7JpUuuuTt8jMhLJHG0AHW5LAzHAT0VB2C9SqE3w,159
+retag_opus/music_tags.py,sha256=OAjQXpI0w4QX8VFYWRwDlUx5COuQ-kyVLItYQ5mbn44,25917
+retag_opus/tags_parser.py,sha256=7ZsGuNlToEEJhM_Knxu3mgRAJSoID51XG8jWydOaYkE,4854
+retag_opus/utils.py,sha256=9T-e8V8GqLa-lC0H-UfH6W1DZS-BkXGNIXEjKy-NDlc,3922
+retag_opus-0.4.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+retag_opus-0.4.1.dist-info/METADATA,sha256=XWL5llQ46c9Ul2JTxtRmGULJvXCpTmwhOH0MupziyHo,4635
+retag_opus-0.4.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+retag_opus-0.4.1.dist-info/entry_points.txt,sha256=FjCm5hlWS178Q_fR3oLSIEMCWxwp5-YNYAd8nfBLfQk,44
+retag_opus-0.4.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+retag=retag_opus.app:run
+
