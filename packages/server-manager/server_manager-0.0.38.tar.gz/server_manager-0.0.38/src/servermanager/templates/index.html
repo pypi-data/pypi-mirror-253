@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900">
+        <header class="p-4 bg-white shadow-md dark:bg-gray-800">
+          <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-6 w-6 text-gray-500 dark:text-gray-400"
+              >
+                <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                <line x1="6" x2="6.01" y1="18" y2="18"></line>
+              </svg>
+              <h1 class="ml-2 text-xl font-semibold text-gray-800 dark:text-gray-200">Server Home</h1>
+            </div>
+            <div class="flex items-center space-x-4">
+              <p class="text-gray-600 dark:text-gray-300">
+                Welcome <span class="font-bold"></span>
+              </p>
+            </div>
+          </div>
+        </header>
+        <main class="flex-1 p-4 md:p-8">
+          <div class="container mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 text-slate-100">
+          <a 
+            class="bg-sky-500 hover:bg-sky-700 rounded-md p-5"
+            href="dashboard_settings"
+          >Settings</a>
+          <a 
+            class="bg-sky-500 hover:bg-sky-700 rounded-md p-5"
+            href="dashboard"
+          >Dashboard</a>
+          <a 
+            class="bg-sky-500 hover:bg-sky-700 rounded-md p-5"
+            href="proc"
+          >Processes</a>
+        </main>
+        <footer class="p-4 bg-white shadow-md dark:bg-gray-800">
+          <div class="container mx-auto text-center text-gray-600 dark:text-gray-400">
+            © Serverman. All rights reserved.
+          </div>
+        </footer>
+      </div>
+</body>
+</html>

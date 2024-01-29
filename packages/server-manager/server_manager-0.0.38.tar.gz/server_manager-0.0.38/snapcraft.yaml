@@ -1,0 +1,24 @@
+name: serverman
+summary: a simple server monitoring dashboard
+description: |
+    serverman is a server dashboard written in python using flask,
+    it has simple features like cpu/memory/swap usage metrics,
+    login protected session management,
+    using serverman you can also kill and view processes.
+version: 0.0.38
+base: core22
+confinement: devmode
+parts:
+    serverman:
+        plugin: python
+        source: .
+        stage-packages:
+          - python3-venv
+          - python3.10
+        
+apps:
+    serverman:
+        command: python -m gunicorn servermanager.wsgi:app -b
+        plugs:
+          - home
+          - network

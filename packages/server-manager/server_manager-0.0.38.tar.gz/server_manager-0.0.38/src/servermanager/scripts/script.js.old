@@ -1,0 +1,79 @@
+let config;
+/*
+fetch(preceeder + '/settings/settings')
+        .then(response => response.json())
+        .then(data => {
+        config = data;
+    });
+*/
+async function getSettings() {
+    try {
+        const response = await fetch(preceeder + '/settings/settings');
+        const data = await response.json();
+
+        config = data;
+        console.log(interval);
+
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
+
+getSettings();
+
+if(document.getElementById('db').innerHTML == 'Dashboard')
+{
+    const getData = () => {
+        fetch(preceeder + '/ddata')
+            .then(response => response.json())
+            .then(data => {
+                //console.log(data.systime);
+                if(config.systime)
+                {
+                    document.getElementById('systime').innerHTML = data.systime;
+                }
+                
+                if(config.uptime)
+                {
+                    document.getElementById('uptime').innerHTML = data.uptime;
+                }
+
+                if(config.cpu)
+                {
+                    document.getElementById('clock').innerHTML = data.average_clock_speed + 'GHz';
+                    for (let i = 0; i < data.round_clock_speeds.length; i++) {
+                    //console.log(document.getElementById(`${i}`));
+                    document.getElementById(`clock${i}`).innerHTML = data.round_clock_speeds[i] + " GHz ";
+                    document.getElementById(`${i}`).innerHTML = data.cpu_core_usage[i] + "%";
+                    //update();
+                    }
+                }
+                
+                if(config.memory)
+                {
+                    document.getElementById('used_mem').innerHTML = data.used_memory;
+                document.getElementById('used_swap').innerHTML = data.used_swap;
+                document.getElementById('used_mem_precent').innerHTML = data.used_memory_percent + " %";
+                document.getElementById('used_swap_precent').innerHTML = data.used_swap_percent + " %";
+                }
+            });
+    }
+
+
+
+    getData();
+    setInterval(() => {
+        getData();
+        if (config.cpu) {
+            var cpu_graph = document.getElementById('graph');
+            cpu_graph.src = preceeder + '/graphs/cpu_usage_1.svg?t=' + new Date().getTime();
+        }
+
+        if (config.memory) {
+            var mem_graph = document.getElementById('graph_mem');
+            mem_graph.src = preceeder + '/graphs/memory_usage_1.svg?t=' + new Date().getTime();
+        }
+    }, config.interval_hw * 1000);
+
+}
+    

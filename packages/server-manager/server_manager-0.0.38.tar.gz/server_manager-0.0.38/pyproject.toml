@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "server-manager"
+version = "0.0.38"
+authors = [
+  { name="Rūdolfs Driķis", email="drikisr@gmail.com" },
+]
+description = 'Simple server usage monitor writen with flask'
+readme = 'README.md'
+requires-python = ">=3.8"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: POSIX :: Linux",
+]
+
+dependencies = [
+    'flask',
+    'flask-login',
+    'flask-wtf',
+    'wtforms',
+    'flask-cors',
+    'numpy',
+    'matplotlib',
+    'psutil',
+    'gunicorn'
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/serverman-group/serverman/"
+
+[tool.hatch.build.targets.wheel]
+packages = ['src/servermanager']
+
+[project.scripts]
+serverman = "servermanager.run:__main__"
