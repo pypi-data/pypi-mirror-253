@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+DBfirstoffirst.egg-info/PKG-INFO
+DBfirstoffirst.egg-info/SOURCES.txt
+DBfirstoffirst.egg-info/dependency_links.txt
+DBfirstoffirst.egg-info/not-zip-safe
+DBfirstoffirst.egg-info/top_level.txt
+distributions/Binomialdistribution.py
+distributions/Gaussiandistribution.py
+distributions/Generaldistribution.py
+distributions/__init__.py
