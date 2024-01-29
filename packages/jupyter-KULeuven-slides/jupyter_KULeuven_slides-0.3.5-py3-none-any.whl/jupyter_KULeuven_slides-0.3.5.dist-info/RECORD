@@ -1,0 +1,17 @@
+nbconvert_styles/__init__.py,sha256=MACpMGTeIz6KQ3cXTk1cGCAWBAJHcP4YqK1SVl_6F0Q,1528
+nbconvert_styles/KULeuven/KUL.png,sha256=ZTv9Frdgpk8SKF9jmhufb1Xlk4125jqq_kY8MQGC674,11021
+nbconvert_styles/KULeuven/KULeuven.css,sha256=qUZFgjx6pvvvsAL5yRTChjXu0PJwANeu4_VkgiBl7II,11740
+nbconvert_styles/KULeuven/KULeuven.png,sha256=rb1nKZmG8aN29QTPTCe7uDXqJmMdgyjVz_tEhRXMKTk,6025
+nbconvert_styles/KULeuven/LICENSING,sha256=gc6X8k4Kur443aMmCDQZuWxT-aA0sZcKBry9_RKu9dk,48
+nbconvert_styles/KULeuven/base.html.j2,sha256=wLraqBTdBUhbXN5rDo2l46NifUCPTrhr5FmgD-E--5A,2334
+nbconvert_styles/KULeuven/conf.json,sha256=l99FISkm85XRNzrT8vcJXUFypDadwKS419SSmEoTi3g,432
+nbconvert_styles/KULeuven/index.html.j2,sha256=5sIOoiSCY9-iCV1YekMDk31LXJ8Z5a735T72hKhr_ek,11248
+nbconvert_styles/KULeuven/sedes-sde.png,sha256=bWaezCPG4Pgo_lQRUKV5Xwe9AsuW0S0patGnV5EBbdY,321928
+nbconvert_styles/KULeuven/sedes.png,sha256=PV_rHCRyDfTX2HkWNVxh_wkHfRuPLGiKzOFo-pJ6G1c,338686
+nbconvert_styles/KULeuven/sleutel.png,sha256=fkuMy9ZV0tzGASAubYEVOcgYHcBecFmsQtAZdNp64Ag,227173
+jupyter_KULeuven_slides-0.3.5.dist-info/LICENSE,sha256=V4bpmAWwiE0q1vBtWPCMMnho8l0ZQKpA7KVF9SNfP4k,1065
+jupyter_KULeuven_slides-0.3.5.dist-info/METADATA,sha256=xSJxjcX52K0mogeOM1uiNEG5WENjy69y7X3Z7heemjA,4284
+jupyter_KULeuven_slides-0.3.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jupyter_KULeuven_slides-0.3.5.dist-info/entry_points.txt,sha256=B1k_7I-rOZSEO1qV-crwUirAlX4I3eqCKr59QmwIjM8,67
+jupyter_KULeuven_slides-0.3.5.dist-info/top_level.txt,sha256=RDMaTFIQ47yxcci2lcidfeQ9s87OwfCDzTBe-lyDy-o,17
+jupyter_KULeuven_slides-0.3.5.dist-info/RECORD,,
