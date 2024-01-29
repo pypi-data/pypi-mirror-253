@@ -1,0 +1,3 @@
+[console_scripts]
+cacp=cacp.gui.main:start
+
