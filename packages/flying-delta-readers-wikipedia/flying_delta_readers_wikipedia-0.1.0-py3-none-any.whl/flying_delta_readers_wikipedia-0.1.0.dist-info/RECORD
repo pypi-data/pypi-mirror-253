@@ -1,0 +1,5 @@
+llama_index/readers/wikipedia/__init__.py,sha256=8IuKeFfjKn_gqT9kejzeytADsgMmxmgdMVHP2l9K7Nc,95
+llama_index/readers/wikipedia/base.py,sha256=BQM-2hYwAwh9A2qI2saBIwqGDl58ioLymlpU86aURok,1190
+flying_delta_readers_wikipedia-0.1.0.dist-info/METADATA,sha256=sXDFQ0SCbaBzHfBFZQCdJs-KOVTe0wxJVAtW0xwY4Lc,606
+flying_delta_readers_wikipedia-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flying_delta_readers_wikipedia-0.1.0.dist-info/RECORD,,
