@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: langchain-vision-tools
+Version: 0.0.1
+Summary: Vision tools for langchain
+Author: Lior Strugach
+Author-email: liliyanoffical@gmail.com
+Keywords: python,langchain,tools,agents,ai
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: langchain
+Requires-Dist: openai
+Requires-Dist: deepdanbooru
+Requires-Dist: tensorflow
+Requires-Dist: clip-interrogator
+Requires-Dist: numpy
+Requires-Dist: python-dotenv
+
+Includes a verity of vision based tools for langchain agents integration
