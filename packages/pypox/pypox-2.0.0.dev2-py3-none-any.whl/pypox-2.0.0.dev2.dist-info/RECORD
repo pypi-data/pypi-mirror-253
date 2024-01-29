@@ -1,0 +1,12 @@
+pypox/__init__.py,sha256=9YWH33YBaOSYbon7L0cIkoeScGCEKMtCmfPahH7wrH4,185
+pypox/application.py,sha256=QqyI1fNi645i58qUnDgqxQ37V2fTpxVVhaA4HIwVh_g,2142
+pypox/conventions.py,sha256=-EP9-Do1WFjW2EE4kwA2MWwHhaQqBBiJMJ71Lmxu-7o,9757
+pypox/openapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypox/openapi/main.py,sha256=UKe5aUi4WYQAPNx_gSWafoda1nJax05PyxTtp7fjRn8,14638
+pypox/processor/__init__.py,sha256=O2udsIcrX7_r3nG0lDe1BUtQfuBt-vH6fJr9qgQNwzU,337
+pypox/processor/base.py,sha256=-3-L5995mn9gf1w_k_nQ8O_8VtVjtPrICw4k5wFgmh0,3662
+pypox/processor/pydantic.py,sha256=vXMx60KxZHv07cMHwqzJ5EXyz-1NUl8UaSHi4AKQQfw,747
+pypox/route.py,sha256=OT3_jJJ4SeHaN7MwrSp93-OhNgJzVQOxy_aOPEABftY,1769
+pypox-2.0.0.dev2.dist-info/METADATA,sha256=BnzFKaP3RguZtqZosnJ-ltqIVeOoEjBI9EonnMde-eQ,1408
+pypox-2.0.0.dev2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pypox-2.0.0.dev2.dist-info/RECORD,,
