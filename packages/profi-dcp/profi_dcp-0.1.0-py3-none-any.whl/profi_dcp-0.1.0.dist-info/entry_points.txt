@@ -1,0 +1,2 @@
+[console_scripts]
+profi-dcp = profi_dcp.cli.cli:main
