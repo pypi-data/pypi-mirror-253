@@ -1,0 +1,17 @@
+setup.py
+person_generate_ersr/__init__.py
+person_generate_ersr/altura.py
+person_generate_ersr/cidade_estado.py
+person_generate_ersr/cpf.py
+person_generate_ersr/data_de_nascimento.py
+person_generate_ersr/lista.csv
+person_generate_ersr/nome.py
+person_generate_ersr/peso.py
+person_generate_ersr/pessoa_F.py
+person_generate_ersr/pessoa_M.py
+person_generate_ersr/telefone.py
+person_generate_ersr.egg-info/PKG-INFO
+person_generate_ersr.egg-info/SOURCES.txt
+person_generate_ersr.egg-info/dependency_links.txt
+person_generate_ersr.egg-info/requires.txt
+person_generate_ersr.egg-info/top_level.txt
