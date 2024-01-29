@@ -1,0 +1,2 @@
+[console_scripts]
+easyros = easyros:run

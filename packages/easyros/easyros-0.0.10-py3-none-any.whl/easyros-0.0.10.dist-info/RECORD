@@ -1,0 +1,14 @@
+easyros/__init__.py,sha256=F6IOfgbwBj-sthW1iNMezc6kMkX_VjdQ81LHBzau5YM,1180
+easyros/__version__.py,sha256=xhtRuVdgaWZ2fDhizB-Au_UhBsahUZ1i_xsP_w0pS0M,287
+easyros/github/__init__.py,sha256=PJ2JeEnRWyhEUv-hID-eJLXtIUV73acK0aR7uxHYh-8,110
+easyros/install/__init__.py,sha256=Z1yY7kTdUTMEJsD0I1MY_yUWhBz-CWJ2WZVnk_9bqjI,234
+easyros/install/install.sh,sha256=c1TBRGeb7TcIlj4IyEYcHOx8FVS40C4JcAII3zVihiQ,246
+easyros/rostool/__init__.py,sha256=YfDUUwZaJzQ2r051QiAcCVgCBY-H3Xsc0WnJ6_FB-XQ,223
+easyros/rostool/creat.sh,sha256=tCdXpWG7TwJScUwCHaSNwPWuUJJwaT9XQW5oaWn8hS8,161
+easyros/rostool/evar.py,sha256=CUWp2cU_yxmdg3RiLE8vg0oiGhXNmHvxHrrvtVLUYkM,58
+easyros-0.0.10.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+easyros-0.0.10.dist-info/METADATA,sha256=9XHApY-g5r8395sHaoVH1gUzIgyirOHcNYpwgZtJRjs,1162
+easyros-0.0.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+easyros-0.0.10.dist-info/entry_points.txt,sha256=p24czkIl0i7Beyj6OOagIPEdW8-D9NmaTHwCmugS01k,40
+easyros-0.0.10.dist-info/top_level.txt,sha256=YeF9Bu6LFqq5ppPM_ww6oyrUhzUZk8wNTV0LAu0sJg0,8
+easyros-0.0.10.dist-info/RECORD,,
