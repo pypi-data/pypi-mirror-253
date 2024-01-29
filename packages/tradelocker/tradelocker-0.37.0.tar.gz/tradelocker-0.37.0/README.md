@@ -1,0 +1,98 @@
+# TradeLocker Python API Wrapper
+
+This project provides a Python wrapper for the TradeLocker Algo Trading public API. It simplifies the process of making requests to the API by providing Pythonic interfaces.
+
+Full description of the TradeLocker Algo Trading public API can be found at [TradeLocker API Documentation](https://tradelocker.com/api)
+
+---
+
+## Table of Contents
+1. [Getting Started](#getting-started)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
+
+## Getting Started
+
+To use this Python wrapper, you'll need the username and password that you use to access TradeLocker. If you don't already have access, you need to find a broker that supports TradeLocker and create an account.
+
+## Installation
+
+This package requires Python 3.7 or later. You can install the TradeLocker Python API Wrapper using pip:
+
+### Local pip wheel
+
+```shell
+hatch build
+pip install dist/tradelocker[*].whl
+```
+
+### From PyPi
+
+```shell
+# While still published only on test.pypi.org:
+pip install -i https://test.pypi.org/simple --extra-index-url https://pypi.org/simple/ tradelocker
+
+### From gitlab repo:
+
+```shell
+pip install git+https://gitlab.tradelocker.com/tradelocker-bots/tradelocker-bots.git@tradelocker_api
+```
+
+# After publishing to the main pypi repo:
+# pip3 install tradelocker
+```
+
+### Pushing to PyPi (or TestPyPi)
+```shell
+hatch run test
+hatch version minor
+hatch build
+hatch publish [--repo test]
+```
+
+## Usage
+
+Here's an example of how to use the TradeLocker Python API wrapper:
+
+```python
+from tradelocker import TLAPI
+import time, random
+
+# Initialize the API client with the information you use to login
+tl = TLAPI(environment = "demo", username = "user@email.com", password = "YOUR_PASS", server = "SERVER_NAME")
+
+symbol_name = "BTCUSD" # "RANDOM"
+all_instruments = tl.get_all_instruments()
+if symbol_name == "RANDOM":
+	instrument_id = int(random.choice(all_instruments['tradableInstrumentId']))
+else:
+	instrument_id = tl.get_instrument_id_from_symbol_name(symbol_name)
+price_history = tl.get_price_history(instrument_id, resolution="1D", start_timestamp=0, end_timestamp=0,lookback_period="5D")
+latest_price = tl.get_latest_asking_price(instrument_id)
+order_id = tl.create_order(instrument_id, quantity=0.01, side="buy", type_="market")
+if order_id:
+	print(f"Placed order with id {order_id}, sleeping for 2 seconds.")
+	time.sleep(2)
+	tl.close_position(order_id)
+	print(f"Closed order with id {order_id}.")
+else:
+	print("Failed to place order.")
+```
+
+For more detailed examples, see the `examples` directory.
+
+## Contributing
+
+To contribute to the development of this project:
+
+1. Fork the project.
+2. Create your feature branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -am 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Create a new Merge Request.
+
+## License
+
+This project is licensed under the terms of the MIT license. See [LICENSE](https://github.com/ivosluganovic/tl/blob/main/LICENSE.txt) for more details.
