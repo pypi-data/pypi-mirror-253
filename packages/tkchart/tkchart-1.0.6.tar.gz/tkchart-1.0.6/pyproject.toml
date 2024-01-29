@@ -1,0 +1,18 @@
+[project]
+name = "tkchart"
+version = "1.0.6"
+authors = [
+  { name="Thisal-D"},
+]
+description = "Create Line Charts in tkinter Guis...!"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Thisal-D/tkchart"
+Issues = "https://github.com/Thisal-D/tkchart/issues"
