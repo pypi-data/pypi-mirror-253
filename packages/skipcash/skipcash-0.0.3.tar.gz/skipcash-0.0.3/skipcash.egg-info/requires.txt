@@ -1,0 +1,10 @@
+annotated-types
+certifi
+charset-normalizer
+idna
+pip
+pycountry
+requests
+setuptools
+urllib3
+wheel
