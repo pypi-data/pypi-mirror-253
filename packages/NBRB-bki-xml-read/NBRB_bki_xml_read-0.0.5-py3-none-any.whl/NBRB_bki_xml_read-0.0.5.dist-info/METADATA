@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: NBRB-bki-xml-read
+Version: 0.0.5
+Summary: Parsing of xml files returned by National Bank of the Republic of Belarus.
+Author-email: Fedor Kobak <kobfedsur@gmail.com>
+Requires-Dist: xmltodict
+
