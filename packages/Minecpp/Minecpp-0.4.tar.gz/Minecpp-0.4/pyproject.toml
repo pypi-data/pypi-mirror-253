@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "Minecpp"
+version = "0.4"
+authors = [
+  { name="Sai Krishna Avula", email="avulasaikrishna@iitgn.ac.in" },
+  { name="Shouvick Mondal", email="shouvick.mondal@iitgn.ac.in"}
+]
+description = "A tool to mine a GitHub repository and obtain a dataset containing a list of bug-fix pairs and related information."
+readme = "Readme.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+
+
+[project.urls]
+Homepage = "https://github.com/SET-IITGN/MineCPP"
+Repository = "https://github.com/SET-IITGN/MineCPP.git"
+
+[project.scripts]
+minecpp = "Minecpp.main:main"

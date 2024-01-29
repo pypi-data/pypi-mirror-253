@@ -1,0 +1,3 @@
+include images/*
+include Readme.md
+include pyproject.toml
