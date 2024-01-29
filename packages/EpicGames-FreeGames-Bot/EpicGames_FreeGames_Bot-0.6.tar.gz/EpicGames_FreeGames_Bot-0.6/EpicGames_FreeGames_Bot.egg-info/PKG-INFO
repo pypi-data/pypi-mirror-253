@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: EpicGames-FreeGames-Bot
+Version: 0.6
+Description-Content-Type: text/markdown
+
+# EpicGames-FreeGames-
+
+```python
+def hello():
+ print("hello from bot")
+```
