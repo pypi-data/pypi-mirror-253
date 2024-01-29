@@ -1,0 +1,6 @@
+Django>=4.2
+django-json-widget>=1.1.1
+pillow>=10.2.0
+art-location>=0.0.7
+artd-partner>=0.0.11
+artd-product>=0.0.24
