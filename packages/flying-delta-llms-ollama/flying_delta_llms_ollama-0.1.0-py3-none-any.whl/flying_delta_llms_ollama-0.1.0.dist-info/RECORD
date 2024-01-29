@@ -1,0 +1,5 @@
+llama_index/llms/ollama/__init__.py,sha256=N6RFb4YAphjAhgVNapM2hY8qS4KrZJWxC8NlT8y4m6w,71
+llama_index/llms/ollama/base.py,sha256=O5qc1A81v5BWFKr7oSps-aHrF4-GgxNsyfB1I2o5j84,7530
+flying_delta_llms_ollama-0.1.0.dist-info/METADATA,sha256=JznBrDR6NIdnzfqkkZiyG4hcNcZDdGpR2nfZ5kzplhY,588
+flying_delta_llms_ollama-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flying_delta_llms_ollama-0.1.0.dist-info/RECORD,,
