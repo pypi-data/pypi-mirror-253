@@ -1,0 +1,15 @@
+airgoodies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airgoodies/aws/s3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airgoodies/aws/s3/wrapper.py,sha256=ph5goq8pH0QHoFrCIIZSfe-Be8BJL1tFzScP5pDpNSY,5825
+airgoodies/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airgoodies/common/exception.py,sha256=6vw1TCs9feOHp6CdxYviDK4YS1Y-hUmOp0VbAMobmpA,1178
+airgoodies/common/variables.py,sha256=OIrITUVRMBunH3NXxuikeNgpklCu632zRe1YbAaKkgM,665
+airgoodies/mongo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airgoodies/mongo/connection.py,sha256=DYILO7QPAh2Mw6RtGJbOLlkdN6oPri2EsbGKBoLIaug,1825
+airgoodies/xcom/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airgoodies/xcom/manager.py,sha256=sxmEw2SZ-ajSiTnNbwm9Byqswglox2szxIp-wr5giTQ,2678
+airgoodies-0.0.3.dist-info/LICENSE,sha256=Tt0OrjEnCxqybqxYtwHAJy4UNg8DIpZTWmg6F8TrE_E,1074
+airgoodies-0.0.3.dist-info/METADATA,sha256=4HyKB5vT73kRGHjN_qJtQZhUe35m3bXIgiOcJESfKlg,3394
+airgoodies-0.0.3.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+airgoodies-0.0.3.dist-info/top_level.txt,sha256=dPYHJU9aNSZcDWZLSRWx0HreN2fCyBSIZrfrurPbSH0,11
+airgoodies-0.0.3.dist-info/RECORD,,
