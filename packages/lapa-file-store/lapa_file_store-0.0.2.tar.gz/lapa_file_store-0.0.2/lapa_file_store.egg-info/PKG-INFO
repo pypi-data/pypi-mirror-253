@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: lapa-file-store
+Version: 0.0.2
+Summary: file storage layer for my personal server.
+Home-page: https://github.com/adityashetty35/lapa_file_store
+Author: Aaditya sangishetty, thePmSquare
+Author-email: adityashetty35@gmail.com, thepmsquare@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# lapa_file_store
+
+## about
+
+file storage layer for my personal server.
+
+## installation
+
+> pip install lapa_file_store
+
+## configs
+
+1. lapa_file_store\data\config.ini
+2. square_logger\data\config.ini
+
+## env
+
+- python>=3.12.0
+
+## changelog
+
+### v0.0.2
+
+- change default port to 10100.
+- change default LOCAL_STORAGE_PATH to be relative and LOCAL_STORAGE_PATH.
+- move logger to configuration.py.
+- fix dependencies in setup.py.
+- minor optimisations.
+- add validation for LOCAL_STORAGE_PATH in config.ini.
+- fix logic for upload_file.
+- fix logic for download_file.
+
+### v0.0.1
+
+- Base version
+
+
