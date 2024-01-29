@@ -1,0 +1,13 @@
+rose_pine_jupyterlab/__init__.py,sha256=PCv_cd0CyynfZHMHen5d7GDEUpaxkCA9Nhpc2jk8BDk,605
+rose_pine_jupyterlab/_version.py,sha256=TyDhuvLM0fvlaQq5gFaiWMS7gpmLoH9d2SFoCP1rd3Q,171
+rose_pine_jupyterlab-0.1.4.data/data/share/jupyter/labextensions/rose_pine_jupyterlab/package.json,sha256=amQy5BtnyRyJowE4vk_GNNgWXDs6h5VqdMIA-ccom5s,5617
+rose_pine_jupyterlab-0.1.4.data/data/share/jupyter/labextensions/rose_pine_jupyterlab/static/517.aa7ed00aa2e020ed780c.js,sha256=qn7QCqLgIO14DKF-QRArH6wfZQVOkjmXdCEAL8E4VUg,2256
+rose_pine_jupyterlab-0.1.4.data/data/share/jupyter/labextensions/rose_pine_jupyterlab/static/remoteEntry.87a2355737f64f41319d.js,sha256=h6I1Vzf2T0ExnYam88uN8ogIavzkCrwFwF_AmnVpEaI,6190
+rose_pine_jupyterlab-0.1.4.data/data/share/jupyter/labextensions/rose_pine_jupyterlab/static/style.js,sha256=-CQt0ZTPaCTvrRiLcznxflAbfvIKlOVzjOos-muaXQ8,118
+rose_pine_jupyterlab-0.1.4.data/data/share/jupyter/labextensions/rose_pine_jupyterlab/static/third-party-licenses.json,sha256=MNToQfru1YnHAie-2Virp23yWsc5co3qG0IzrO6SEfw,20
+rose_pine_jupyterlab-0.1.4.data/data/share/jupyter/labextensions/rose_pine_jupyterlab/themes/rose_pine_jupyterlab/index.css,sha256=v1UGrvcW_sEjrdPqSxQysalqU4nseLvRayU6IE-0gvg,15556
+rose_pine_jupyterlab-0.1.4.data/data/share/jupyter/labextensions/rose_pine_jupyterlab/themes/rose_pine_jupyterlab/index.js,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rose_pine_jupyterlab-0.1.4.data/data/share/jupyter/labextensions/rose_pine_jupyterlab/install.json,sha256=CpWePMX-9oNFCNQ9bCu0kX0_7GUCvAEpT0_Wy8SlJEE,201
+rose_pine_jupyterlab-0.1.4.dist-info/METADATA,sha256=SzU3edBN3Tow5-2pfj8uHKSJTkSyRjsD42pHrf2ZHnE,6408
+rose_pine_jupyterlab-0.1.4.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+rose_pine_jupyterlab-0.1.4.dist-info/RECORD,,
