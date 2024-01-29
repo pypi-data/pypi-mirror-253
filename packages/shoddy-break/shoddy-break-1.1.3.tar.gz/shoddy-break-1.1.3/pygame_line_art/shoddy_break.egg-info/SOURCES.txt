@@ -1,0 +1,6 @@
+setup.py
+pygame_line_art/shoddy_break.egg-info/PKG-INFO
+pygame_line_art/shoddy_break.egg-info/SOURCES.txt
+pygame_line_art/shoddy_break.egg-info/dependency_links.txt
+pygame_line_art/shoddy_break.egg-info/requires.txt
+pygame_line_art/shoddy_break.egg-info/top_level.txt
