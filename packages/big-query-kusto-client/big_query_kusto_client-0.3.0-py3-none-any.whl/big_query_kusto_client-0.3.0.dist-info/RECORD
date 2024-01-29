@@ -1,0 +1,5 @@
+big_query_kusto_client/__init__.py,sha256=ryUJ2b2e6yIEfQXoF_EcCGjJ1wElsUnSBUZ4kz52Tcs,54
+big_query_kusto_client/bigquerykustoclient.py,sha256=wQWAFc7cI6u2WrareOw9lbeBfUTusewXmZt9bd1uitc,6471
+big_query_kusto_client-0.3.0.dist-info/METADATA,sha256=29O8wkvKtQxkFg0-3gMfeWv4NiJ9OVOL5JjCQYnL3Q0,2208
+big_query_kusto_client-0.3.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+big_query_kusto_client-0.3.0.dist-info/RECORD,,
