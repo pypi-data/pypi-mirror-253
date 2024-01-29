@@ -1,0 +1,8 @@
+setup.py
+cmr_logger/JSONLogger.py
+cmr_logger/__init__.py
+cmr_logger/cmr_logger.py
+cmr_logger.egg-info/PKG-INFO
+cmr_logger.egg-info/SOURCES.txt
+cmr_logger.egg-info/dependency_links.txt
+cmr_logger.egg-info/top_level.txt
