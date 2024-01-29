@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: cronberry
+Version: 1.0.0
+Summary: Library and CLI for working with multiple cron jobs within a single cron table
+Author-email: Alec Delaney <tekktrik@gmail.com>
+License: MIT
+Keywords: TODO: Add keywords here
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click~=8.1
+Requires-Dist: typing-extensions~=4.0
+Provides-Extra: dev
+Requires-Dist: pre-commit~=3.5; extra == "dev"
+Requires-Dist: pytest~=8.0; extra == "dev"
+Requires-Dist: coverage~=7.4; extra == "dev"
+
+cronberry
+---------
+
+Library and CLI for working with multiple cron jobs within a single cron table
