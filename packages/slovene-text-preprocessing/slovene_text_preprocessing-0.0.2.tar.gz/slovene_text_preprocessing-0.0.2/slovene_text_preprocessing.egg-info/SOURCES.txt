@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+slovene_text_preprocessing/__init__.py
+slovene_text_preprocessing/unify_chars.py
+slovene_text_preprocessing.egg-info/PKG-INFO
+slovene_text_preprocessing.egg-info/SOURCES.txt
+slovene_text_preprocessing.egg-info/dependency_links.txt
+slovene_text_preprocessing.egg-info/top_level.txt
