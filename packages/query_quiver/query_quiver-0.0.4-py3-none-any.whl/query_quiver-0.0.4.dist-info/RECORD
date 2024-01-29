@@ -1,0 +1,13 @@
+query_quiver/__init__.py,sha256=Sc4z8LRVFMwJUoc_DPVUriSXTZ6PO9MaJ80PhRbKyB8,34
+query_quiver/chrome_history.py,sha256=E1RSpngxaq4MbqeRfYIU2T2SeeR6gURWRmY9G4rVFA8,3508
+query_quiver/cli.py,sha256=qlDtZ8-HtoGViip4NaULuCL1DLceSZiPGfoC1zbmx9I,1474
+query_quiver/downloader.py,sha256=286DcgAPfvwb_jSe2NNqHfUSygQiu60cPgqW_UyuUeo,2678
+query_quiver/generator.py,sha256=SmWz4u27gk_OEKsPABAzFhxTxy128cRPAom9wJER1_0,2180
+query_quiver/logger.py,sha256=mj8ZBad6tBdoF-vppSH0_2-axK4_xoa7huFxOO9ZROI,199
+query_quiver/prompt.py,sha256=IbNzBERCt4rGVtx1TL8sH3M6vSqlu0utBoPAGgNY4qo,2175
+query_quiver/types.py,sha256=Lz8evaIagyb2Kwi7faXUhXH0Ghxm5JdnOgj6ngtWPMc,415
+query_quiver-0.0.4.dist-info/LICENSE,sha256=cpdAxRepIB8Mz7oOe1VHzjwWafe74iIO7Am8toiVpWw,1072
+query_quiver-0.0.4.dist-info/METADATA,sha256=tTTNoEbVEazJYm3pnLWJTkzJCwJg1oCp39oVuGVs6GI,2907
+query_quiver-0.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+query_quiver-0.0.4.dist-info/entry_points.txt,sha256=ZDWq-2fcDeGoUURGKg501LohrhuVhj9rDqDVq7TTg7c,52
+query_quiver-0.0.4.dist-info/RECORD,,

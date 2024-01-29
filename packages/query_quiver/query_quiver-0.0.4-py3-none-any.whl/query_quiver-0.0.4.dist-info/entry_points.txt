@@ -1,0 +1,3 @@
+[console_scripts]
+queryquiver=query_quiver.cli:run
+
