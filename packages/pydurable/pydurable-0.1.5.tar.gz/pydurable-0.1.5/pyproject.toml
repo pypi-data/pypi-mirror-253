@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pydurable"
+version = "0.1.5"
+description = ""
+authors = ["Dan Zilberman <dan.zilberman99@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+typer = "^0.9.0"
+
+[tool.poetry.extras]
+cli = ["typer"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+durable = "pydurable.entry_cli:main"
