@@ -1,0 +1,8 @@
+click>=8.1.7
+docstring_inheritance>=2.1.2
+curl_cffi>=0.6.0b7
+lxml>=4.9.3
+
+[dev]
+ruff>=0.1.6
+pytest>=7.4.2
