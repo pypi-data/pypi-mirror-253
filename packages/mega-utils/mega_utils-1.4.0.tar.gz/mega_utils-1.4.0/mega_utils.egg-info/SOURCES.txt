@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mega_utils.egg-info/PKG-INFO
+mega_utils.egg-info/SOURCES.txt
+mega_utils.egg-info/dependency_links.txt
+mega_utils.egg-info/requires.txt
+mega_utils.egg-info/top_level.txt
+source/__init__.py
+source/utils.py
