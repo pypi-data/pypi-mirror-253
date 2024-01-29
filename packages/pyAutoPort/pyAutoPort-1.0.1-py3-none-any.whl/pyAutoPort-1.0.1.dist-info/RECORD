@@ -1,0 +1,9 @@
+pyautoport/__init__.py,sha256=OoGHBuiFfrdgQt6wO-QljaYpFZ6ZCfisqIILcF-sX68,1603
+pyautoport/adb.py,sha256=D9B7GadK2eabUlwdopNdDe8FROTQksI9j1x-SrT10bg,9714
+pyautoport/uart.py,sha256=zn-UqKjYGA4HDmtlcJvhZLwghmQBk8UhxJxyN6RlJ-c,3331
+pyAutoPort-1.0.1.dist-info/LICENSE,sha256=tUV1a83Qr-t3pTmIVfWEkwNGwffEv7p4KCvamqsVNG8,1519
+pyAutoPort-1.0.1.dist-info/METADATA,sha256=7RDmLFxu42jhKzo5t1G9iN3CmoG11JY_PvHwZF3DVrU,2596
+pyAutoPort-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyAutoPort-1.0.1.dist-info/entry_points.txt,sha256=yoAIp2QcaZQlfasJotIP-F8knBmpUfuN6DkJReJhOhg,221
+pyAutoPort-1.0.1.dist-info/top_level.txt,sha256=iKk4rBjJE2gMcN5SQch-kYpO36Q4HTPpB9lFsOEHfVY,11
+pyAutoPort-1.0.1.dist-info/RECORD,,
