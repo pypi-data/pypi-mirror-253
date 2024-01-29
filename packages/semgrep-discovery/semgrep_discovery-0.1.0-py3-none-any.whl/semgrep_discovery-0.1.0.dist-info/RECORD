@@ -1,0 +1,8 @@
+semgrep_discovery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+semgrep_discovery/main.py,sha256=_wJtUUAddiO5sy2Q9akyFbX2ZdBvYNHTh0--ms7Y5Uw,690
+semgrep_discovery/rules/python/dtos.yaml,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+semgrep_discovery/rules/python/routes.yaml,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+semgrep_discovery-0.1.0.dist-info/METADATA,sha256=GivvbHsQMhGFMfoRD2Oz7BmMYbmPYN_EuABg8ajADO0,1111
+semgrep_discovery-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+semgrep_discovery-0.1.0.dist-info/entry_points.txt,sha256=QCXuNAxqPiiugjAUqZ9fSIZfUwV_RMi8geZamVM9DMw,65
+semgrep_discovery-0.1.0.dist-info/RECORD,,
