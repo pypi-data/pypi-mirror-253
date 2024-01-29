@@ -1,0 +1,2 @@
+[console_scripts]
+demotivate = demotivate:main

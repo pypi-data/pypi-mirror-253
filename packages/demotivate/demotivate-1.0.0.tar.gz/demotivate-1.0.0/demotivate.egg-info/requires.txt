@@ -1,0 +1,9 @@
+click~=8.1.7
+
+[dev]
+bandit
+black
+flake8
+isort
+pre_commit~=2.21.0
+pydocstyle

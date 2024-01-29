@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+demotivate.py
+pyproject.toml
+requirements.txt
+.vscode/settings.json
+demotivate.egg-info/PKG-INFO
+demotivate.egg-info/SOURCES.txt
+demotivate.egg-info/dependency_links.txt
+demotivate.egg-info/entry_points.txt
+demotivate.egg-info/requires.txt
+demotivate.egg-info/top_level.txt
+dev/requirements.txt
