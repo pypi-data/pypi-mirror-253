@@ -1,0 +1,1 @@
+from .prescribe_listboard_view import PrescribeListboardView
