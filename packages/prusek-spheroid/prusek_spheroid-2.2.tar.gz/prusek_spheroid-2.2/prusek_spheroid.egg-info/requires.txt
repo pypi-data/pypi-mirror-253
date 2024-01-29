@@ -1,0 +1,10 @@
+numpy
+opencv-python
+scikit-image
+scikit-learn
+shapely
+threadpoolctl
+matplotlib
+rasterio
+pandas
+openpyxl
