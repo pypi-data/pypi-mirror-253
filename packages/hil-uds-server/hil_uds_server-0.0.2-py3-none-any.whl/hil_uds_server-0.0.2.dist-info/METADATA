@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hil-uds-server
+Version: 0.0.2
+Summary: 可配置的uds server, 可用于快速验证
+Author: notmmao
+Author-email: notmmao@gmail.com
+License: Carota HIL License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: hil-core
+Requires-Dist: pyyaml
+Requires-Dist: pydantic
+Requires-Dist: pydantic-yaml
+Requires-Dist: watchdog
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: requests
+
+可配置的uds server, 可用于快速验证
+
