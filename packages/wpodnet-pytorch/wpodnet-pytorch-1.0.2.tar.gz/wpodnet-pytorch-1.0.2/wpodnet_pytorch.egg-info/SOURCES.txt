@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+requirements.txt
+wpodnet/__init__.py
+wpodnet/backend.py
+wpodnet/model.py
+wpodnet/stream.py
+wpodnet_pytorch.egg-info/PKG-INFO
+wpodnet_pytorch.egg-info/SOURCES.txt
+wpodnet_pytorch.egg-info/dependency_links.txt
+wpodnet_pytorch.egg-info/requires.txt
+wpodnet_pytorch.egg-info/top_level.txt
