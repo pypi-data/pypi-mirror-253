@@ -1,0 +1,7 @@
+pycodeview/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycodeview/code_view.py,sha256=dVII38176FuwvoCh-j6bU9xktuhDCOrseg-WsmnsX0o,9185
+pycodeview/syntax_highlighter.py,sha256=KNeWwHgXmNKZXIRXbGFAbbcUP4sejqcOmaa2_s-K-RU,10865
+bb_pycodeview-0.1.0.dist-info/METADATA,sha256=t_KpqdTNf-1uWtcX280Un3-IUh6vifjBJpPRKw9gPZc,1580
+bb_pycodeview-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+bb_pycodeview-0.1.0.dist-info/entry_points.txt,sha256=NNkfKbWKTkxQlAr95uuI-ITDoew4HRbL09ZnftOSmK8,62
+bb_pycodeview-0.1.0.dist-info/RECORD,,
