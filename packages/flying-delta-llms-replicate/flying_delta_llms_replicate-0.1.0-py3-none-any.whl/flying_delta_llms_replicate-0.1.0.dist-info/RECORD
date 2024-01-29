@@ -1,0 +1,5 @@
+llama_index/llms/replicate/__init__.py,sha256=xInAs0fAbxnlEnm1NLSO_9DvnhqSkgFo59ixqYP4ZZU,80
+llama_index/llms/replicate/base.py,sha256=xwTRmWXbwZwGFNMS7e5XEMIl2A6NhKa20zDviY-zzgQ,4621
+flying_delta_llms_replicate-0.1.0.dist-info/METADATA,sha256=9Iac2HIvfJUpq1vQ3r4hVCLNHU3wAUv4AtKkEdyWv5I,597
+flying_delta_llms_replicate-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flying_delta_llms_replicate-0.1.0.dist-info/RECORD,,
