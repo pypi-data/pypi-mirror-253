@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+AYVAZIHA.egg-info/PKG-INFO
+AYVAZIHA.egg-info/SOURCES.txt
+AYVAZIHA.egg-info/dependency_links.txt
+AYVAZIHA.egg-info/requires.txt
+AYVAZIHA.egg-info/top_level.txt
