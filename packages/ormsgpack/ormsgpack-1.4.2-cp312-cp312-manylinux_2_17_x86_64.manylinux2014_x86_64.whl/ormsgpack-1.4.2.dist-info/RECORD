@@ -1,0 +1,9 @@
+ormsgpack-1.4.2.dist-info/METADATA,sha256=uGcfDP5B_MpS_UWqpnD376UU3auwlwnEQ8nrYXrvoc8,42501
+ormsgpack-1.4.2.dist-info/WHEEL,sha256=HNmQDTUQ4euFZ8VZf4LiOFPZ8vJ1wEJcYQU8mheN7i0,129
+ormsgpack-1.4.2.dist-info/license_files/LICENSE-APACHE,sha256=pg7qgXUUUxZo1-AHZXMUSf4U0FnTJJ4LyTs23kX3WfI,10847
+ormsgpack-1.4.2.dist-info/license_files/LICENSE-MIT,sha256=I_GOA9xJ35FiL-KnYXZJdATkbO2KcV2dK2enRGVxzKM,1023
+ormsgpack/__init__.py,sha256=bLwJk8lsJbNbdxmT_rKWBx3QFt_3hDSlEwUe9YVYXig,558
+ormsgpack/__init__.pyi,sha256=ndpjmhiN88lPQVCfS0tAV_Mydkx-MHYDJuJ5hfiSGo4,754
+ormsgpack/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ormsgpack/ormsgpack.cpython-312-x86_64-linux-gnu.so,sha256=VfT8TRiv4KsRGI5bf5oXS6PwCYzKexd5mjS0IZkRrxo,493776
+ormsgpack-1.4.2.dist-info/RECORD,,
