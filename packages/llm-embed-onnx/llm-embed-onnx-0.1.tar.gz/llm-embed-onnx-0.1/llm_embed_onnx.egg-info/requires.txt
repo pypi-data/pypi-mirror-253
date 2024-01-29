@@ -1,0 +1,5 @@
+llm
+onnx-embedding-models==0.0.5
+
+[test]
+pytest
