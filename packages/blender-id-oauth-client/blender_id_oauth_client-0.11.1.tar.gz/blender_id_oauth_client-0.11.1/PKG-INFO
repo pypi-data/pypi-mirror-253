@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: blender-id-oauth-client
+Version: 0.11.1
+Summary: Django app for using Blender ID as OAuth2 authentication service.
+Home-page: https://projects.blender.org/infrastructure/blender-id-oauth-client
+License: GPL-2.0
+Author: Sybren A. Stüvel
+Author-email: sybren@blender.org
+Requires-Python: >=3.8,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Dist: Django (>=3.2,<5)
+Requires-Dist: requests-oauthlib (>=1.0,<2.0)
