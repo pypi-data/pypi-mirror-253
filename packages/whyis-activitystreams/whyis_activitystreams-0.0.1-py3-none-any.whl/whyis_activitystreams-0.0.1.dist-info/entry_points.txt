@@ -1,0 +1,2 @@
+[whyis]
+whyis_activitystreams = whyis_activitystreams:ActivityStreamsPlugin
