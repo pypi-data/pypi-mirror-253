@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+osrs_python_bot/__init__.py
+osrs_python_bot.egg-info/PKG-INFO
+osrs_python_bot.egg-info/SOURCES.txt
+osrs_python_bot.egg-info/dependency_links.txt
+osrs_python_bot.egg-info/requires.txt
+osrs_python_bot.egg-info/top_level.txt
+osrs_python_bot/src/__init__.py
+osrs_python_bot/src/bots/__init__.py
+osrs_python_bot/src/bots/combat.py
+osrs_python_bot/src/bots/herblore.py
+osrs_python_bot/src/bots/magic.py
+osrs_python_bot/src/common/__init__.py
+osrs_python_bot/src/common/bank_manager.py
+osrs_python_bot/src/common/inventory_clicker.py
