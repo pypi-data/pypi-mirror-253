@@ -1,0 +1,8 @@
+LICENSE
+README.rst
+micropg.py
+setup.py
+micropg.egg-info/PKG-INFO
+micropg.egg-info/SOURCES.txt
+micropg.egg-info/dependency_links.txt
+micropg.egg-info/top_level.txt
