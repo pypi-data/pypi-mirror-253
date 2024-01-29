@@ -1,0 +1,3 @@
+[console_scripts]
+opslib=opslib.cli:main
+
