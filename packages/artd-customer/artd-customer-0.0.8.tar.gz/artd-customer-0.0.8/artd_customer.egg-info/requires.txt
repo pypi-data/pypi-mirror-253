@@ -1,0 +1,4 @@
+Django>=4.2
+django-json-widget>=1.1.1
+art-location>=0.0.7
+artd-partner>=0.0.11
