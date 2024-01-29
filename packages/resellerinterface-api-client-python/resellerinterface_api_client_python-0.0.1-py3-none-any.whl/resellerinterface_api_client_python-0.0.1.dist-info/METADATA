@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: resellerinterface-api-client-python
+Version: 0.0.1
+Summary: Python API Client
+Author: ResellerInterface
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx >=0.26.0
+
+# Api Client Python
