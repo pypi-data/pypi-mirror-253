@@ -1,0 +1,25 @@
+[build-system]
+requires = ["scikit-build-core >=0.4.3", "nanobind >=1.3.2", "gymnasium>=0.26.0", "pygame>=2.1.0", "numpy>=1.19"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "racingenv"
+version = "1.2.6"
+description = "A gymnasium 2D racing environment"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Laurenz Levi Spielmann", email = "laurenz-levi.spielmann@tu-dortmund.de"}
+]
+license = {file = "LICENSE"}
+
+[tool.setuptools.packages.find]
+where = "RacingEnv"
+
+[tool.setuptools.package-data]
+Resources = ["*.png", "*.xml"]
+
+[tool.scikit-build]
+minimum-version = "0.4"
+build-dir = "build/{wheel_tag}"
+wheel.py-api = "cp312"
