@@ -1,0 +1,13 @@
+HROCH/__init__.py,sha256=df7Ma4vGjMwUDT6TnKNJZBlpH38DectPcZV1qZM6xlk,466
+HROCH/classifier.py,sha256=lp9e0jP5h3XSpupMJZda3uVDUQPxJ70J2lHNRDleufw,13435
+HROCH/fuzzy.py,sha256=TSbOzqBZYS-9vJsXvGZc8AHSxIAisxyj31Ig_lzSE0o,13404
+HROCH/hroch.bin,sha256=xgu_1PNsjIOHnzaGaJhRVEfj1jEcDdTg2RXX6L29aLQ,459872
+HROCH/hroch.dll,sha256=ZporgOlRRqx1kywCQOcrYKuKRKhmEa5zKSSAK2wyi3Y,735744
+HROCH/hroch.py,sha256=daaE-zUIBgXgmZZmk6dZKkXBzaAcuem3jOnW1qYrKuM,39801
+HROCH/regressor.py,sha256=UYqTn5Xd-qeXLN9vnxBuaPmPGA1YrRrM6061kBMmhNc,9152
+HROCH/version.py,sha256=THdhmCzE0ylHgCToGhMov2IkGcwoUVaaMf5a0Bokog8,21
+HROCH-1.4.7.dist-info/LICENSE,sha256=Thj4CXcsz-w2D_nuyIwk3_D4Jh7cF9pxNpmd0bn-iIw,1061
+HROCH-1.4.7.dist-info/METADATA,sha256=geoP7cJDkMLih1IqP6k93UgaMZBQm6CZKIhUyjUCk0k,3526
+HROCH-1.4.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+HROCH-1.4.7.dist-info/top_level.txt,sha256=IRLGxbtQx8qo_rvjuoNbjNJP5_8ckaIWKrdH_KHSFt0,6
+HROCH-1.4.7.dist-info/RECORD,,
