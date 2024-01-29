@@ -1,0 +1,16 @@
+spider_brew_kit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spider_brew_kit/contants.py,sha256=xfthB8kRaexBcddP23VRF8cnSFp-Sbn6zAMX-Fvp9lU,121
+spider_brew_kit/scrapy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spider_brew_kit/scrapy/middlewares/__init__.py,sha256=BPWcnytboMnueFRUaY0MCBYsJiYoI0ozZx5De0NTHt4,66
+spider_brew_kit/scrapy/middlewares/proxy_connection_close.py,sha256=9TpuZEawpg0LWtjNmuc626OoP0a0O6KycOMKfJXCYH0,862
+spider_brew_kit/scrapy/pipelines/__init__.py,sha256=YicgXUc3f_jWdUQt8sck-GLTqlZsMkd2ajFmURptk9I,41
+spider_brew_kit/scrapy/pipelines/crawl_one_pipeline.py,sha256=TMK0rQR1AjzB9CC-1m6yKMwppvceOsIGSbKqV51NxhM,10339
+spider_brew_kit/scrapy/pipelines/mongo_pipeline.py,sha256=MVPTj4Mo6b5bUM9oV92AQyicFLz2qfR6-dFa1Mvm_YQ,5067
+spider_brew_kit/scrapy/playwright/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spider_brew_kit/scrapy/playwright/request.py,sha256=eZyYZ8zJyuktHLuP53aRnROUcziUx1xOXYvhcsOMHd8,577
+spider_brew_kit/tools/__init__.py,sha256=pcnOrnX5K3e5Eynnl5p-_VrlxQQgMGuiop81L23m2FI,27
+spider_brew_kit/tools/text_encode.py,sha256=4w4w1e5tHwTZCbyinn-YjrPGMW5xr_0klxhRpiLS0aw,612
+spider_brew_kit-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+spider_brew_kit-0.1.5.dist-info/METADATA,sha256=DDztY5Nz3JPloUjZhJ9RtER_cpFH8Y5lxQpBC4Uk9aw,2325
+spider_brew_kit-0.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+spider_brew_kit-0.1.5.dist-info/RECORD,,
