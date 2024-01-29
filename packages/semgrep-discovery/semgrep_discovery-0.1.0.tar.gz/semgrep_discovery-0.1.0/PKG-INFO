@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: semgrep-discovery
+Version: 0.1.0
+Summary: Discovery of sensitive security objects in project code
+License: MIT
+Keywords: security,assets,discovery,scanning,appsec
+Author: Dmitry Marushkin
+Author-email: dmarushkin@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Security
+Requires-Dist: argparse (>=1.4.0,<2.0.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: semgrep (>=1.58.0,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/dmarushkin/semgrep-discovery/issues
+Project-URL: Homepage, https://github.com/dmarushkin/semgrep-discovery
+Description-Content-Type: text/markdown
+
+# Intro
+
+Tool for discovery sensitive objects in code
+
+
+# Install
+
+pip3 install semgrep-discovery
+
+
+# Run
+
+semgrep-discovery --wd ./ --langs python --objects routes,dtos --keywords email,password
+
+
+
+
+
+
