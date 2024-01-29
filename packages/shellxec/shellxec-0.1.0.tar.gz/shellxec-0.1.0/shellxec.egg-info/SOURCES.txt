@@ -1,0 +1,10 @@
+README.md
+setup.py
+shellxec/__init__.py
+shellxec/core.py
+shellxec.egg-info/PKG-INFO
+shellxec.egg-info/SOURCES.txt
+shellxec.egg-info/dependency_links.txt
+shellxec.egg-info/top_level.txt
+test/__init__.py
+test/test_shellxec.py
