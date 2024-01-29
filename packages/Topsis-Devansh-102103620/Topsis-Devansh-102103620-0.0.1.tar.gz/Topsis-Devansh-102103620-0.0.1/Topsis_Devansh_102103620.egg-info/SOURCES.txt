@@ -1,0 +1,10 @@
+README.md
+setup.py
+Topsis_Devansh_102103620.egg-info/PKG-INFO
+Topsis_Devansh_102103620.egg-info/SOURCES.txt
+Topsis_Devansh_102103620.egg-info/dependency_links.txt
+Topsis_Devansh_102103620.egg-info/entry_points.txt
+Topsis_Devansh_102103620.egg-info/requires.txt
+Topsis_Devansh_102103620.egg-info/top_level.txt
+topsis-devansh-102103620/__init__.py
+topsis-devansh-102103620/topsis_102103620.py
