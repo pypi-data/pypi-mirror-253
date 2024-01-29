@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mixport
+Version: 0.1.0
+Summary: CLI tool for transcoding Mixxx recordings
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: ffmpeg-python <1.0,>=0.2
+Requires-Dist: tracklist <1,>=0.0
+
