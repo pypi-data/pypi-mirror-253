@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+tailwind_palette/__init__.py
+tailwind_palette/colors.py
+tailwind_palette/utils.py
+tailwind_palette.egg-info/PKG-INFO
+tailwind_palette.egg-info/SOURCES.txt
+tailwind_palette.egg-info/dependency_links.txt
+tailwind_palette.egg-info/top_level.txt
