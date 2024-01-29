@@ -1,0 +1,22 @@
+QtMPLtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QtMPLtools/matplotlibwidgets.py,sha256=O2ArRlt63ZJ5Tkr8bDi3JmcosMIwodFlkBoRlfUoj-s,5534
+QtMPLtools/mplpolarplugin.py,sha256=im888rY3qDTHHb2UbFFmxCSuHmOM2KXFzMptDCrLWnI,1409
+QtMPLtools/mplrectplugin.py,sha256=axQsqfEZjCiTbkGJoUb3iNeu9dKFojmlYlqRd9uOsCY,1586
+QtMPLtools/mplsurface2Dplugin.py,sha256=Tw3FaXS9EzwkY5y3bZ6W8XHEQcOPChm-8gJLi4jV5yI,1628
+QtMPLtools/mplsurface3Dplugin.py,sha256=aO94llhh-w-WPnc_0QJ74x4BXXQNOyOghLhSzxl0MDs,1715
+QtMPLtools/Test Trial/chamberLogo.jpg,sha256=o19PxtiYZz8v-SGU5PyQ2a8NFC-rg3ScBgDQllA_xVg,84458
+QtMPLtools/Test Trial/farFieldsData.csv,sha256=QeZT6CE5BX4K1yTYc4KcL7yKZpUwdIqa50N-Ga6M6Vs,320234
+QtMPLtools/Test Trial/gui.py,sha256=dLr_o_i_R7_a98XA8TdUD0onwXiEkDgWct1QTdpEhaY,5260
+QtMPLtools/Test Trial/gui.ui,sha256=M8pXU9dg4y1W97QRIOISKFdmHEeUF9L3DX1hV3Wjgco,2128
+QtMPLtools/figures/polar.ico,sha256=sTUpijy5YJZC-rzqiIYLdIM2sfwTLoc6cLuJFNbvv3A,2548
+QtMPLtools/figures/rect.ico,sha256=DpsXYiWQYS4blSEML-SFxH4OgWFlIm6CZBN2DY_oYgk,16417
+QtMPLtools/figures/surface2D.ico,sha256=6biDUKjiqh98ZshDEt3_cnHqiLFDCUjlm7uCpz3FN1o,4158
+QtMPLtools/figures/surface3D.ico,sha256=jK_3IEZgoEjxxBxu7ldh8rFIdbdVxuXKCdSeTRFuoKw,263006
+QtMPLtools/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QtMPLtools/scripts/designer.py,sha256=509uStJLbWbqTTjdb-690_6sIFR8KWzHFjjwuj9BwoA,242
+QtMPLtools-1.0.4.dist-info/LICENSE,sha256=CAvXYSJpejxxMbAF5DzGJI7JKtYTSw4lKhbyxX-2esA,1063
+QtMPLtools-1.0.4.dist-info/METADATA,sha256=mx2NX_Vv3T_DiiJJm1DTvB-qan3neNTz3XScKtjHbUU,1282
+QtMPLtools-1.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+QtMPLtools-1.0.4.dist-info/entry_points.txt,sha256=dIjzz6fYKrt5enCKrkReGmpqkyrajKEd_fb835IBjBY,62
+QtMPLtools-1.0.4.dist-info/top_level.txt,sha256=8rnnd26wjSZo4eEKKciA6s5FhiTrWI9iKPnKnwjuJrM,11
+QtMPLtools-1.0.4.dist-info/RECORD,,
