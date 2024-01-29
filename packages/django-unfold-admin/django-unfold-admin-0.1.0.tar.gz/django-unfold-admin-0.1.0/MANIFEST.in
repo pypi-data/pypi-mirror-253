@@ -1,0 +1,2 @@
+recursive-include unfold/static *
+recursive-include unfold/templates *
