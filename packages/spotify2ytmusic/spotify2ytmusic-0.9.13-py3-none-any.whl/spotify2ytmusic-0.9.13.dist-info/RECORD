@@ -1,0 +1,11 @@
+spotify2ytmusic/__init__.py,sha256=2PCA3GdGoHall8CArMBfeyaUQf0enl7BiPxVl9u9Ngc,42
+spotify2ytmusic/cli.py,sha256=Xujfour0bClkIf_4Dgh0sPpSAbFnd0rmORTpMq8f4W4,17256
+spotify2ytmusic/copy_playlist.py,sha256=4JalB4tnyudr5RGE8I97hyeT1v9NOzOL1vrwp62BZHM,94
+spotify2ytmusic/create_playlist.py,sha256=b0MvuE9Ov0bygy2gWG0E3NUqnn6QG_gE9XaRxUc-OgA,96
+spotify2ytmusic/list_playlists.py,sha256=lDVa6j-oKOuyad0JboAV8dmKObkD_c1LrldUg7n1xpA,95
+spotify2ytmusic/load_liked.py,sha256=y1jy_IJlF6fbmprAUd00CjkzJsZp3dKslukABnMoge0,91
+spotify2ytmusic-0.9.13.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+spotify2ytmusic-0.9.13.dist-info/METADATA,sha256=r690xCdz_5ULYkj8nRXZWpIdFYZE8XTpd36mTKxgKFQ,5824
+spotify2ytmusic-0.9.13.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+spotify2ytmusic-0.9.13.dist-info/entry_points.txt,sha256=xT3JhrCA11EXCIuh62M1WNxyMfxUj-Yqc-bydRMr-o0,455
+spotify2ytmusic-0.9.13.dist-info/RECORD,,
