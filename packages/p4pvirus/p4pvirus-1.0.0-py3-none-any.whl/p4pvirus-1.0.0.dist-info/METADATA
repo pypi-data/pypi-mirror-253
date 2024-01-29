@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: p4pvirus
+Version: 1.0.0
+Summary: Eine kurze Beschreibung deines Projekts
+Author: PH
+Requires-Dist: DOCOPT ==0.6.2
+Requires-Dist: SCIPY ==1.11.4
+Requires-Dist: BOKEH ==3.3.2
+
