@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: database_num_sort
+Version: 0.0.1
+Summary: 整理表中此列的数字是否中断，中断将后面的数字减一 
+Author: yuchu
+Author-email: yuchus@foxmail.com
+Description-Content-Type: text/markdown
+
