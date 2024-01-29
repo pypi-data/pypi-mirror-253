@@ -1,0 +1,12 @@
+README.md
+setup.py
+prusek_spheroid/ContoursClassGUI.py
+prusek_spheroid/Funkce.py
+prusek_spheroid/GUI.py
+prusek_spheroid/GradientDescentGUI.py
+prusek_spheroid/characteristic_functions.py
+prusek_spheroid.egg-info/PKG-INFO
+prusek_spheroid.egg-info/SOURCES.txt
+prusek_spheroid.egg-info/dependency_links.txt
+prusek_spheroid.egg-info/requires.txt
+prusek_spheroid.egg-info/top_level.txt
