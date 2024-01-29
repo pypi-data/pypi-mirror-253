@@ -1,0 +1,12 @@
+semgrep_discovery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+semgrep_discovery/config.py,sha256=yRe2gxZYuJTvIonw7XKbt7mjgOKgdNH1vgl1639GM4U,1428
+semgrep_discovery/main.py,sha256=ZglRnFmlt96PYL8XxK0Y4ZzdqxqZKCwGT6PCEE8z9kQ,765
+semgrep_discovery/result_writer.py,sha256=wAf6yn_Y0Le-r2kdUELP1BrZNaVcyryAo9OwYDlWxYU,628
+semgrep_discovery/rules/java/dtos.yaml,sha256=wnbSdhas0U--AtukkzViEh2HH87bfqNgae8f4N1GqAI,1253
+semgrep_discovery/rules/python/dtos.yaml,sha256=LTCYffGBEHcxwf9799fW6OYC6b2-xqDTZknBxpsDLoo,1157
+semgrep_discovery/rules/python/routes.yaml,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+semgrep_discovery/semgrep_runner.py,sha256=tzmWyd98jrqs0FigwCHlCNWFu_koRKMTBVjoYd0zkiI,4420
+semgrep_discovery-0.2.0.dist-info/METADATA,sha256=ImqQQUuPVQIyad1rUy3Qbv0uu2DKnHMWHQXsddKxjBo,1104
+semgrep_discovery-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+semgrep_discovery-0.2.0.dist-info/entry_points.txt,sha256=QCXuNAxqPiiugjAUqZ9fSIZfUwV_RMi8geZamVM9DMw,65
+semgrep_discovery-0.2.0.dist-info/RECORD,,
