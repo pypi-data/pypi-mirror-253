@@ -1,0 +1,15 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/aboto3/__init__.py
+src/aboto3/aio_client.py
+src/aboto3/aio_page_iterator.py
+src/aboto3/aio_paginator.py
+src/aboto3.egg-info/PKG-INFO
+src/aboto3.egg-info/SOURCES.txt
+src/aboto3.egg-info/dependency_links.txt
+src/aboto3.egg-info/requires.txt
+src/aboto3.egg-info/top_level.txt

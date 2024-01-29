@@ -1,0 +1,11 @@
+boto3
+
+[dev]
+build
+coverage
+moto[ssm]
+nox
+pytest
+pytest-asyncio
+pytest-cov
+twine
