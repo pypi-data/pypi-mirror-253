@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pyaxml/__init__.py
+pyaxml/axml.py
+pyaxml/conf.py
+pyaxml.egg-info/PKG-INFO
+pyaxml.egg-info/SOURCES.txt
+pyaxml.egg-info/dependency_links.txt
+pyaxml.egg-info/requires.txt
+pyaxml.egg-info/top_level.txt
+pyaxml/proto/__init__.py
+pyaxml/proto/axml.proto
+pyaxml/proto/axml_pb2.py
