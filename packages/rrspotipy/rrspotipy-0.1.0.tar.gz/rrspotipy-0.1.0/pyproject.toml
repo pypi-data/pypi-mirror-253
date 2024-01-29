@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "rrspotipy"
+version = "0.1.0"
+description = "Play a playlist"
+authors = ["RadoTheProgrammer <rado@arazakar.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pygame = "^2.5.2"
+audioread = "^3.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
