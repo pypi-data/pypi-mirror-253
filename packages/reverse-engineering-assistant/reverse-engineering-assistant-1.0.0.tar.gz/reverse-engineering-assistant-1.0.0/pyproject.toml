@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reverse-engineering-assistant"
+readme = "README.md"
+version = "1.0.0"
+authors = [
+    {name="サイバーカイダ (cyberkaida)"},
+]
+description = "An AI assistant for reverse engineering tasks"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+]
+dependencies = [
+    "langchain",
+    "llama-cpp-python",
+    "prompt_toolkit",
+    "sentence_transformers",
+    "PyYAML",
+    "pydantic",
+    "rich",
+    "Flask",
+]
+
+[project.scripts]
+revassistant = "reverse_engineering_assistant.assistant:main"
+reva-serve = "reverse_engineering_assistant.assistant_api_server:main"
+reva-server = "reverse_engineering_assistant.assistant_api_server:main"
+

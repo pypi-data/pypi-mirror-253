@@ -1,0 +1,8 @@
+langchain
+llama-cpp-python
+prompt_toolkit
+sentence_transformers
+PyYAML
+pydantic
+rich
+Flask

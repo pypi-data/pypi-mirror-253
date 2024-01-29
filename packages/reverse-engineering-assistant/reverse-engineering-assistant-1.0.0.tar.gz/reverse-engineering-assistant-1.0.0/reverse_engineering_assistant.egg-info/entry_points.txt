@@ -1,0 +1,4 @@
+[console_scripts]
+reva-serve = reverse_engineering_assistant.assistant_api_server:main
+reva-server = reverse_engineering_assistant.assistant_api_server:main
+revassistant = reverse_engineering_assistant.assistant:main
