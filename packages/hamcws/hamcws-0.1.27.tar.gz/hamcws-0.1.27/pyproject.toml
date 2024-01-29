@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "hamcws"
+version = "0.1.27"
+description = "homeassistant friendly wrapper for J River MCWS"
+authors = ["3ll3d00d <mattkhan+hamcws@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "http://github.com/3ll3d00d/hamcws"
+repository = "http://github.com/3ll3d00d/hamcws"
+include = [
+    "LICENSE",
+]
+packages = [
+    { include = "hamcws" }
+]
+
+[tool.poetry.dependencies]
+python = "~3.11"
+aiohttp = "^3.9.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-aiohttp = "*"
+pytest-cov = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
