@@ -1,0 +1,2 @@
+[console_scripts]
+topsis_kartikye_102103708 = topsis:main
