@@ -1,0 +1,8 @@
+Licence.txt
+setup.py
+topsis_Shaurya_102103625/102103625.py
+topsis_Shaurya_102103625/__init__.py
+topsis_Shaurya_102103625.egg-info/PKG-INFO
+topsis_Shaurya_102103625.egg-info/SOURCES.txt
+topsis_Shaurya_102103625.egg-info/dependency_links.txt
+topsis_Shaurya_102103625.egg-info/top_level.txt
