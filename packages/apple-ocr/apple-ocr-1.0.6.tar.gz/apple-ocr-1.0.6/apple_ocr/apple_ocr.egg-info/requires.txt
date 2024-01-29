@@ -1,0 +1,7 @@
+torch
+numpy
+pandas
+Pillow
+scikit-learn
+plotly
+pyobjc
