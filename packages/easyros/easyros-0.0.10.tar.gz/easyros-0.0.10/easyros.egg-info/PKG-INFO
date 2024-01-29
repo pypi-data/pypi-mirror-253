@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: easyros
+Version: 0.0.10
+Summary: ros的安装与开发工具
+Home-page: https://github.com/yourmoln/easyros
+Author: yourmoln
+Author-email: yourmoln@outlook.com
+License: Apache 2.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# easyros
+ros的安装与开发工具
+
+## 使用环境
+Ubuntun 20.04.6 LTS
+## 使用指令
+```
+pip install easyros
+easyros
+```
+
+## 功能
+自动安装ros(包换源)  
+github链接转镜像  
+自动创造工作空间  
+
+
+## 其它
+因为ROS的环境安装过于复杂，所以我直接调用了鱼香的安装脚本 `https://github.com/fishros/install`  
+

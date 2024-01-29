@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+easyros/__init__.py
+easyros/__version__.py
+easyros.egg-info/PKG-INFO
+easyros.egg-info/SOURCES.txt
+easyros.egg-info/dependency_links.txt
+easyros.egg-info/entry_points.txt
+easyros.egg-info/not-zip-safe
+easyros.egg-info/top_level.txt
+easyros/github/__init__.py
+easyros/install/__init__.py
+easyros/install/install.sh
+easyros/rostool/__init__.py
+easyros/rostool/creat.sh
+easyros/rostool/evar.py
