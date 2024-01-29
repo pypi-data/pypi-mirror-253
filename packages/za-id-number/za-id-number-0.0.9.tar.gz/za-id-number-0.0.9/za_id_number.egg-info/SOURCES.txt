@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tests/test_generated_identities.py
+tests/test_luhn.py
+tests/test_south_african_identity_number.py
+tests/test_validation.py
+za_id_number/__init__.py
+za_id_number/constants.py
+za_id_number/za_id_number.py
+za_id_number.egg-info/PKG-INFO
+za_id_number.egg-info/SOURCES.txt
+za_id_number.egg-info/dependency_links.txt
+za_id_number.egg-info/requires.txt
+za_id_number.egg-info/top_level.txt

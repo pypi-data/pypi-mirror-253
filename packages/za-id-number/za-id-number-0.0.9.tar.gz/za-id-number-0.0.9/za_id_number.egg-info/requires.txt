@@ -1,0 +1,11 @@
+luhn>=0.2.0
+
+[dev]
+bandit
+black
+flake8
+pytest
+pytest-cov
+codecov
+pytest-runner
+python-dateutil
