@@ -1,0 +1,3 @@
+[flake8.extension]
+ITI01 = flake8_iteritems.checker:IteritemsChecker
+

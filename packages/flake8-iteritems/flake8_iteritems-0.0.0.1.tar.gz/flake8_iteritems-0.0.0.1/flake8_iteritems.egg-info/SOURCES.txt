@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+.github/workflows/ci.yaml
+flake8_iteritems/__init__.py
+flake8_iteritems/checker.py
+flake8_iteritems/version.py
+flake8_iteritems.egg-info/PKG-INFO
+flake8_iteritems.egg-info/SOURCES.txt
+flake8_iteritems.egg-info/dependency_links.txt
+flake8_iteritems.egg-info/entry_points.txt
+flake8_iteritems.egg-info/not-zip-safe
+flake8_iteritems.egg-info/requires.txt
+flake8_iteritems.egg-info/top_level.txt
+test/test_flake8.py
