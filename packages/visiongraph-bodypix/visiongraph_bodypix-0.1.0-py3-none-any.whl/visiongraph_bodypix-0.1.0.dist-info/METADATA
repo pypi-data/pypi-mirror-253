@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: visiongraph-bodypix
+Version: 0.1.0
+Summary: A body pix implementation for visiongraph.
+Home-page: https://github.com/cansik/visiongraph-bodypix
+Author: Florian Bruggisser
+Author-email: github@broox.ch
+License: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: visiongraph[openvino] ~=0.1.53
+
+# visiongraph-bodypix
+A body pix implementation for visiongraph.
