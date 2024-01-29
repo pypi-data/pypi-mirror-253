@@ -1,0 +1,7 @@
+src/rpc_over_redis.py,sha256=kjLhNZcMDSy7pMKTYOqJKs6t1wIMjs7u-Cg9vaeVmvM,13166
+src/rpc_types.py,sha256=5kuRWKO5JrcVsuLJ0CR_GhUgo-rOqzD_5MjQQ9i8QSc,2015
+rpc_over_redis-0.0.3.dist-info/LICENSE,sha256=kLsmrc-kZDvu4IUfKDDkYLr_sNRaYti5oWgrTqB2uzg,1080
+rpc_over_redis-0.0.3.dist-info/METADATA,sha256=EtxoEVljrGb8gwQkm7lwb60gtcSyIN_P__jlAVDXo8c,596
+rpc_over_redis-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+rpc_over_redis-0.0.3.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+rpc_over_redis-0.0.3.dist-info/RECORD,,
