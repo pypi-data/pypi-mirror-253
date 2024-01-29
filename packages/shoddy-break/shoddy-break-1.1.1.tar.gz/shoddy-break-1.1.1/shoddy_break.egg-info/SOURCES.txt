@@ -1,0 +1,8 @@
+setup.py
+pygame_line_art/__init__.py
+pygame_line_art/screen.py
+shoddy_break.egg-info/PKG-INFO
+shoddy_break.egg-info/SOURCES.txt
+shoddy_break.egg-info/dependency_links.txt
+shoddy_break.egg-info/requires.txt
+shoddy_break.egg-info/top_level.txt
