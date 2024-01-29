@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: weightbridge
+Version: 0.0.3
+Summary: Library to map (deep learning) model weights between different model implementations.
+Home-page: https://github.com/fferflo/weightbridge
+Author: Florian Fervers
+Author-email: florian.fervers@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+License-File: LICENSE
