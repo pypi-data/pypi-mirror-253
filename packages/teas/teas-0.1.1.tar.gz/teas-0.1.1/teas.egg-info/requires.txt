@@ -1,0 +1,4 @@
+jdaviz==3.1
+reproject>=0.9.1
+chardet
+asdf==2.13.0

@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+teas/__init__.py
+teas/data_products.py
+teas/helpers.py
+teas/spectra.py
+teas.egg-info/PKG-INFO
+teas.egg-info/SOURCES.txt
+teas.egg-info/dependency_links.txt
+teas.egg-info/requires.txt
+teas.egg-info/top_level.txt
