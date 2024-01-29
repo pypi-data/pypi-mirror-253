@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.rst
+minipg.py
+setup.py
+minipg.egg-info/PKG-INFO
+minipg.egg-info/SOURCES.txt
+minipg.egg-info/dependency_links.txt
+minipg.egg-info/top_level.txt
