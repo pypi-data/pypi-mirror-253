@@ -1,0 +1,64 @@
+{% extends "auth/routes.base.html.j2" %}
+{% from "bootstrap/utils.html" import flashed_messages %}
+
+
+
+{% block html_attribs %}
+lang="{{ session.locale }}"
+{% endblock html_attribs %}
+
+
+
+{% block navbar %}
+{# Hide the NavBar on the login page #}
+{% endblock %}
+
+{% block pagemenu %}
+{# Hide Pagemenu and avoid errors in login page #}
+{% endblock pagemenu %}
+
+{% block content -%}
+<div class="mt-5">
+  <div class="col-md-3 mx-auto align-middle">
+    {% if 'CASUAL_UI_APP_LOGO' in config %}
+    <img src="{{ config['CASUAL_UI_APP_LOGO'] }}" alt="Casual Logo"
+      style="display: block; margin: 0 auto; padding-bottom: 15px;" height="110px">
+    {% else %}
+    <p class="display-1">
+      {{ config.get('CASUAL_NAME', 'Casual') }}
+    </p>
+    {% endif %}
+    <h1 class="page-header">
+      {{ _('Login') }}
+    </h1>
+    {% block messages %}
+    <!-- Position it: -->
+    <!-- - `.toast-container` for spacing between toasts -->
+    <!-- - `.position-absolute`, `bottom-0` & `end-0` to position the toasts in the lower right corner -->
+    <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
+    <div class="toast-container position-absolute bottom-0 end-0 p-3">
+      {{ messages or get_flashed_messages(with_categories=True) | flash_messages }}
+    </div>
+    {% endblock messages %}
+
+    {{ form | render_form(extra_classes="",
+    button_map={'submit': 'dark btn-block'}) }}
+
+    {% if config['CASUAL_AUTH_LOGIN_FORGOTTEN'] %}
+    <p class="pt-3">
+      {{ _('I have forgoten my password.') }}
+      <a href="{{ url_for('auth.reset_password') }}">
+        {{ _('Reset my password') }}
+      </a>
+    </p>
+    {% endif %}
+    {% if config['CASUAL_AUTH_REGISTRATION'] %}
+    <p class="pt-3">
+      <a href="{{ url_for('auth.registration') }}">
+        {{ _('Register') }}
+      </a>
+    </p>
+    {% endif %}
+  </div>
+</div>
+{%- endblock %}
