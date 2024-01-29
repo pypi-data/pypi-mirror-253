@@ -1,0 +1,3 @@
+[console_scripts]
+MovieSorter = src.console:main
+MovieSorterGUI = src.GUI:main
