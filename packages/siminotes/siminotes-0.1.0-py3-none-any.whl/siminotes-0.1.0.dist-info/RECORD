@@ -1,0 +1,11 @@
+siminotes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+siminotes/__main__.py,sha256=d-SEUjteBBJV7iO7fRITSynzutD_Vw_VA_vszwINEaM,3226
+siminotes/collect_files.py,sha256=2BlixPQDuy4KKWuk8IG5U_sRNNSvG0OVZzZW9OlrODU,1620
+siminotes/embedding.py,sha256=Nhd1v7ytZ6AkUjYBTRQKAHCLA3Oy5GrJ0pgdliSj5Wc,696
+siminotes/utils.py,sha256=-QtcdhHMk6OwNiDiy_934eEqk0XRSmQ4_0pynO1V8M4,979
+siminotes-0.1.0.dist-info/LICENSE.md,sha256=aXbrPmxr-FFsqFg26CU6djfWFtEfNoXHUOR6MAjCwNw,1070
+siminotes-0.1.0.dist-info/METADATA,sha256=xV-J7simWT7mWapzKuwYcvnnrCAMXBUtuGDWhJDiOAM,5587
+siminotes-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+siminotes-0.1.0.dist-info/entry_points.txt,sha256=_itZzHIPOlrccBjjJGRJOhf7a0kGnEDLQNV4J8lHXzg,54
+siminotes-0.1.0.dist-info/top_level.txt,sha256=5Z1Ux00y2wqYqXCGiseASgVkw5Tfa4Rg2ItAT53aZ2o,10
+siminotes-0.1.0.dist-info/RECORD,,
