@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: globalparams
+Version: 1.0.0
+Summary: parameters loader signelton
+Home-page: https://github.com/ohadmen/paramspy
+Author: Ohad Menashe
+Author-email: ohad.men@gmail.com
+License: UNKNOWN
+Keywords: parameters,storage
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# paramspy
+container for loading and saving parameters
+
+## Usage exmpaple
+
+
+## deploy example
+```
+python setup.py sdist
+twine upload -r paramspy dist/*
+```
+
+
+
+
+
