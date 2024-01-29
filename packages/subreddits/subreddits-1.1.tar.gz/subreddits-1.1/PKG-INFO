@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: subreddits
+Version: 1.1
+Summary: Backup or Clean Reddit Account
+Home-page: https://github.com/tsaklidis/subreddits
+Author: Stefanos I. Tsaklidis
+Author-email: stefanos@tsaklidis.gr
+License: MIT
+Download-URL: https://github.com/tsaklidis/subreddits/archive/refs/tags/SBR-1.1.tar.gz
+Description: UNKNOWN
+Keywords: reddit,backup,export,clean,subreddits
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Communications
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
