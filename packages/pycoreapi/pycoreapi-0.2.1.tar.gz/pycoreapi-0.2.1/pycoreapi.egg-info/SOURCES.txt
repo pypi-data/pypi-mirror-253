@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+pycoreapi/__init__.py
+pycoreapi/connection.py
+pycoreapi/core.py
+pycoreapi/exceptions.py
+pycoreapi/request.py
+pycoreapi/response.py
+pycoreapi/utils.py
+pycoreapi/validators.py
+pycoreapi.egg-info/PKG-INFO
+pycoreapi.egg-info/SOURCES.txt
+pycoreapi.egg-info/dependency_links.txt
+pycoreapi.egg-info/requires.txt
+pycoreapi.egg-info/top_level.txt
