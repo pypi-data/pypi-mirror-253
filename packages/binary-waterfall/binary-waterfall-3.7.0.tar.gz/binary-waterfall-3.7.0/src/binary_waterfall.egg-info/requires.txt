@@ -1,0 +1,6 @@
+pyyaml
+Pillow
+PyQt5
+pydub
+moviepy
+proglog

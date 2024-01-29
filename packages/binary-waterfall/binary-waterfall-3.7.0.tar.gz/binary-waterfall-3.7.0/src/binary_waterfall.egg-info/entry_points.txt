@@ -1,0 +1,2 @@
+[console_scripts]
+binary-waterfall = binary_waterfall:run
