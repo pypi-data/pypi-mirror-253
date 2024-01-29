@@ -1,0 +1,33 @@
+# Topsis Python Package
+Made by Nishtha Kumari 
+## About
+Topsis (Technique for Order of Preference by Similarity to Ideal Solution) is a multi-criteria decision-making method used to identify the best alternative from a set of options.
+## Installation
+ Use package manager pip install the package 
+ ```sh
+ pip install Topsis-Nishtha-102103604 
+ ```
+## Usage
+- Command-line Input: `python <program.py> <InputDataFile> <Weights> <Impacts> <ResultFileName>`. 
+- Input-File type: Only Excel file will be required as input file.
+- The second to last columns of the data file MUST contain NUMERIC values.
+-  Impacts are either '+' or '-' 
+- Weights and Impacts should be enclosed in double quotes and separated by commas.
+- Output: 'Topsis Score' column and a 'Rank' column to the data and saves the results to a CSV file specified in the command-line arguments.
+## Example
+
+**Command-Line-Input**
+```sh
+ python 102103604.py 102103604-data.csv “1,1,1,1,1” “+,+,-,+,-” 102103604-result.csv
+```
+
+
+
+
+
+
+
+
+
+
+
