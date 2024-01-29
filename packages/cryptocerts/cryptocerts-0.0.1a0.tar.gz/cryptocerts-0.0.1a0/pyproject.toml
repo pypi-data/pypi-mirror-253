@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "cryptocerts"
+version = "0.0.1a"
+authors = [
+  { name="Alexander Freyr", email="alex@alexfreyr.com" },
+]
+description = "Collections of objects for the cryptography package"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "cryptography",
+]
+
+license = { file = "LICENSE" }
+keywords = ["cryptography", "x509", "certificates", "validate"]
+
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
