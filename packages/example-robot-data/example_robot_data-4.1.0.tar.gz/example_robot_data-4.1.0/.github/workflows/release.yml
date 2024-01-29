@@ -1,0 +1,78 @@
+name: Release on PyPI
+
+on:
+  push:
+    tags:
+      - "v*"
+    branches:
+      - cmeel
+  pull_request_target:
+    branches:
+      - cmeel
+
+env:
+  CMEEL_LOG_LEVEL: DEBUG
+
+jobs:
+  wheel:
+    name: Build wheel for python ${{ matrix.python-version }}
+    runs-on: "ubuntu-latest"
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -U pip
+      - run: python -m pip wheel -vw wh .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: "artifact-${{ matrix.python-version }}"
+          path: wh/example_robot_data*.whl
+
+  sdist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+      - name: setup
+        run: |
+          python -m pip install -U pip
+          python -m pip install build cmeel[build] pin[build]
+      - name: build sdist
+        run: python -m build -nso dist .
+      - uses: actions/upload-artifact@v4
+        with:
+          path: dist
+
+  release:
+    needs: ["wheel", "sdist"]
+    if: ${{ startsWith(github.ref, 'refs/tags/v') }}
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      id-token: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - run: curl https://github.com/nim65s.gpg | gpg --import
+      - name: validate signature
+        run: >
+          git verify-tag --raw ${{ github.ref_name }} 2>&1
+          | grep -q 'VALIDSIG 9B1A79065D2F2B806C8A5A1C7D2ACDAF4653CF28'
+      - uses: actions/download-artifact@v4
+      - run: mkdir dist && mv artifact*/* dist
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          skip-existing: true
