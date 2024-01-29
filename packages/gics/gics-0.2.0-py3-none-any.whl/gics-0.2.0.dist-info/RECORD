@@ -1,0 +1,11 @@
+gics/__init__.py,sha256=F9Lghzf0qTC4YrPbY8bw4ap8UJUrvKsFkM5jK3kUYZI,27
+gics/definitions/__init__.py,sha256=C_JnTzfwgZ-gRU9AiQtwvxHCp-brwoZ1X0Swa1VfBYQ,194
+gics/definitions/d_20140228.py,sha256=QiN27PZ3p6XBHWKztjuHxIA06qfH4mA9hdQabrRo5Wc,53840
+gics/definitions/d_20160901.py,sha256=LwLiL7XE7sU_GBEAEAhnbDzqsLqGH-7eFfBt55P3BHg,50492
+gics/definitions/d_20180929.py,sha256=Fl22HUZbgPId4OHciiilGBXlXju9iXe0W5DMVIunKRM,51361
+gics/gics.py,sha256=4J61yZen6j8XlniGC_IuRB1iHs20ed5pg6zcT4Tg7HE,8149
+gics/map.py,sha256=53zsIbgYbKkxtbNWSpMXhekJua9BWf4whbUchNvmzWc,367
+gics-0.2.0.dist-info/LICENSE,sha256=sRtCDAjLfsD3RwkfnPBzqg59-cQXGVL_27mFSbadmgo,1066
+gics-0.2.0.dist-info/METADATA,sha256=kuZk3aWz7Ml6ER1NkRPfDUmspvGsd3zVbfaqwNPjBXo,10412
+gics-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gics-0.2.0.dist-info/RECORD,,
