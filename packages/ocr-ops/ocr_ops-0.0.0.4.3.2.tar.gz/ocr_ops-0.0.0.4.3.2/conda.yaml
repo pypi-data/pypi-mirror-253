@@ -1,0 +1,12 @@
+name: ocr_ops_env
+channels:
+  - defaults
+dependencies:
+  - python=3.11.7
+  - pip:
+      - algo-ops
+      - easyocr
+      - pytesseract
+      - pyspellchecker
+      - shapely
+      - Pillow==9.5.0
