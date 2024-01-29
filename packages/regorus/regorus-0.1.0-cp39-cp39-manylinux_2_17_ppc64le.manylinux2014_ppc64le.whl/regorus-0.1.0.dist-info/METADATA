@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: regorus
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Python bindings for Regorus - a fast, lightweight Rego interpreter written in Rust
+Keywords: interpreter,opa,policy-as-code,rego
+Requires-Python: >=3.8
+Project-URL: Source Code, https://github.com/microsoft/regorus/bindings/python
