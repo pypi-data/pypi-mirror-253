@@ -1,0 +1,12 @@
+taichu_storage/__init__.py,sha256=GurFUWniMaRFsA-KtrQKnax_GEJ7B59Lmz6A2zLv2Xw,1905
+taichu_storage/boto3_client.py,sha256=ioG4PZsmC1fD5ovWxhwMGKWCGnSO2LpM1vJJ6-Pm0K8,6807
+taichu_storage/boto_client.py,sha256=tF1S72Dif7QoRmqpPiDd8NhDqnIQWlucMhsGxD6XSrk,3794
+taichu_storage/command.py,sha256=xyJRkRiLR3EyqEDTOF2yQVWHKhJkk-wUZc6fU862buU,1405
+taichu_storage/copy.py,sha256=eKULsiC7jbQCwRGb_lVPOHLor5p9-sJXiWFxij_mLWM,1829
+taichu_storage/minio_client.py,sha256=2CvK0heHjXpOS7PA7B8OroFLveF2VwbI0TnMKjair_g,2697
+taichu_storage/obs_client.py,sha256=ZN-24ac3dvZNiccdyITBpKJqccgUhGsOPwprIkUeNik,10266
+taichu_storage-1.0.18.dist-info/METADATA,sha256=9_j1rH_qJZV94kZ1x2tM22YbWp-nkQELubZeJEa1Y-s,455
+taichu_storage-1.0.18.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+taichu_storage-1.0.18.dist-info/entry_points.txt,sha256=iVDOjQaSq9mNDLON_eMEt3k67AFsaqg2YjLccPz4rZw,51
+taichu_storage-1.0.18.dist-info/top_level.txt,sha256=BQA-7odoMQ7ySyeDdr6JWt99oALdNxLp5lSn1_p35qY,15
+taichu_storage-1.0.18.dist-info/RECORD,,
