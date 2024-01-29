@@ -1,0 +1,7 @@
+setup.py
+python_dd/dd.py
+python_dd.egg-info/PKG-INFO
+python_dd.egg-info/SOURCES.txt
+python_dd.egg-info/dependency_links.txt
+python_dd.egg-info/top_level.txt
+tests/test_dd_primitive.py
