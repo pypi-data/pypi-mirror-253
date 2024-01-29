@@ -1,0 +1,81 @@
+[project]
+name = "pyavcontrol"
+version = "0.1.0"
+requires-python = ">=3.10"
+description = "Python Control of Audio/Visual Equipment via RS232/IP"
+readme = "README.md"
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python",
+  "License :: OSI Approved :: MIT License",
+]
+authors = [ { name="Ryan Snodgrass", email="rsnodgrass@gmail.com" } ]
+
+[tool.poetry]
+name = "pyavcontrol"
+version = "0.1.0"
+description = "Python Control of Audio/Visual Equipment via RS232/IP"
+readme = "README.md"
+license = "LICENSE"
+authors = [ "Ryan Snodgrass <rsnodgrass@gmail.com>" ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyserial = "^3.5"
+pyserial-asyncio = "^0.6"
+ratelimit = "^2.2.1"
+pyyaml = "^6.0.1"
+
+[tool.poetry.group.dev.dependencies]
+coloredlogs = "^15.0.1"
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.optional-dependencies]
+test = [    # pip install .[test]
+    "coloredlogs",
+    "pre-commit"
+]
+doc = [
+    "sphinx",
+]
+
+[tool.isort]
+profile = "black"
+force_to_top = [ "logging" ]
+balanced_wrapping = true
+
+[tool.black]
+line-length = 88
+
+#[tool.brunette]
+#line-length = 88
+#single-quotes = true
+
+[tool.pycln]
+all = true
+
+[tool.refurb]
+quiet = true
+ignore = [ "FURB184" ]
+
+[tool.pylint.format]
+max-line-length = "88"
+
+[tool.pylint.FORMAT]
+expected-line-ending-format = "LF"
+
+[tool.pylint.CODE_STYLE]
+max-line-length-suggestions = 90
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
