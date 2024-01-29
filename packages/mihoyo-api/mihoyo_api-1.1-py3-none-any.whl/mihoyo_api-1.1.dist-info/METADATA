@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mihoyo-api
+Version: 1.1
+Summary: 简化mihoyo的api调用方式
+Author: yuchu
+Author-email: yuchus@foxmail.com
+Requires-Dist: requests >=2.18.1
+Requires-Dist: cryptography >=38.0.3
+Requires-Dist: rsa >=4.4.1
+
