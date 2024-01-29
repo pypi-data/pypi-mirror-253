@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: s1_store
+Version: 0.0.1
+Summary: A package used to support the image storage and has the upload, retreive , Delete and update function
+Author: CIA LABS
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# S1 CLIENT
+
+A package used to support the image storage and has the upload, retreive , Delete and update function that provide the client to use these functionality...

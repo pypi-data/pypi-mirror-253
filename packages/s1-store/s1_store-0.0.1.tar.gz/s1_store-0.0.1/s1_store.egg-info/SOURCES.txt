@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+s1_store/__init__.py
+s1_store/main.py
+s1_store.egg-info/PKG-INFO
+s1_store.egg-info/SOURCES.txt
+s1_store.egg-info/dependency_links.txt
+s1_store.egg-info/top_level.txt
