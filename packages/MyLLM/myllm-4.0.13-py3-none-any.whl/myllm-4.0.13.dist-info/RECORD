@@ -1,0 +1,13 @@
+myllm/__init__.py,sha256=6de-9sBvFRRG70oh3Z9uK9AG1IuDOa1A4e31e_PDTd8,96
+myllm/config.py,sha256=UKEKkDg4prEna4RqhNCxQ_YDzE4G7T6_3kWQtUXB99c,772
+myllm/default_settings.toml,sha256=YW17o3x6QRgs66Cbe1CItXEqM7_v9e5tB9cZSAS4lAc,1922
+myllm/main.py,sha256=7D9BgTsylumfALuuQ-IhFeIa0oRiX7mvCpKLP7RdH8g,4305
+myllm/provider/__init__.py,sha256=dv_C7kF-CNuKu6vl3XoBCHsWZ-N6jhYvSzYE2xMtqno,180
+myllm/provider/bard.py,sha256=9V8GdBYyX9st0GclrcDs8z4uA97L9J_Q06DKmNUTXqY,2092
+myllm/provider/client.py,sha256=S6e0wbPszIvpeHZ8PNYZESegjXD40z-Y-uZ1ie-lxUU,3089
+myllm/provider/g4f.py,sha256=ooLGEcqUE5rNNxkfV-RcSwkNSUOAUD3Jqf0gD6nVTb0,1798
+myllm/provider/openai.py,sha256=015DfBYde7nosQPa5iKeEw1R18aFwmyPiOTz5zKnP-k,1770
+myllm-4.0.13.dist-info/LICENSE,sha256=Ym-WJCFdWfn0XKn-qLQI-u5nxBJX6F2kl-hPeRJp1fI,1064
+myllm-4.0.13.dist-info/METADATA,sha256=WfvlEGnc3gwVxw6ECf4cQ-dlAbds0hG5WS8WpjA6Myg,3625
+myllm-4.0.13.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+myllm-4.0.13.dist-info/RECORD,,
