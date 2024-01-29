@@ -1,0 +1,5 @@
+networkx>=3.0.0
+Faker>=19.0.0
+
+[draw]
+matplotlib>=3.7.0
