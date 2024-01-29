@@ -1,0 +1,17 @@
+typelog/__init__.py,sha256=Qk-5tnrR_vtGSjLxTDeeDZAfAQJqfrOBvobc85uOiHk,57
+typelog/logcore.py,sha256=QqNSQ4J-YYVlk4Pdn2ghn62G_elJP1VADUDe5ywJyyw,2550
+typelog/logparams.py,sha256=LCj3_uKrM9BjVjS4KBTfcy5crQHj39q6xckzqV4VFHc,658
+typelog/settings.py,sha256=ERYIZMFU8LrHToPhbRDsCflaFFS4Fj7RN4RXnwO8MI4,134
+typelog/types.py,sha256=zlxfZh1IkokQ9iQHzNnV_CqMuTvxQuVuOEL12hr3u3o,133
+typelog/utils.py,sha256=V0ORCLDVPO-rPwWQGKX3QZZSCijZLPGue4dpdMPeNjg,3530
+typelog-stubs/__init__.pyi,sha256=cqb0Bfq3BDI4QTA3JiEQbt5SPPfnLTgvrdPxrS-x0zQ,71
+typelog-stubs/logcore.pyi,sha256=TFRUsOnt34nWPDPlefGxoWY-N13WX-MIFhDZJx-a8wM,969
+typelog-stubs/logparams.pyi,sha256=43E1PeANEMlR4a-7sFzVSEn502NMI6t1AkWeuPvPfos,250
+typelog-stubs/settings.pyi,sha256=hRLgjH3SHyYzWQn4efK-UEoKLM8bF6I2jB97H2NkfUk,30
+typelog-stubs/types.pyi,sha256=DSMmMQcmBHUFdakHGh6BuaJpCtLBtrM9D2vpbeinoVU,120
+typelog-stubs/utils.pyi,sha256=yiDgMRRdAmhZtcy9S2RvYQOyrJkgj-mYe5HyPlyxnWI,714
+typelog-0.1.1.dist-info/LICENSE,sha256=zBWQPD6Oxv8jSpo9MUt-h5BymUSmkywmNAK13ZPFF4I,1121
+typelog-0.1.1.dist-info/METADATA,sha256=QsF8F6GvOrqHldEBeelvyhr7VvZeLTYG836_jJ-jnzA,3379
+typelog-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+typelog-0.1.1.dist-info/top_level.txt,sha256=VMloS1ZbQGdM42sfx0C_UbiDHmGfXYhC5wgb1gbZWVI,22
+typelog-0.1.1.dist-info/RECORD,,
