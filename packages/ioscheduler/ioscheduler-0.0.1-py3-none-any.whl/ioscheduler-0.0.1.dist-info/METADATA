@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ioscheduler
+Version: 0.0.1
+Summary: Python module that helps to organize input / output operations and async processes
+Author: Ivashka (Ivan Rakov)
+Author-email: <ivashka.2.r@gmail.com>
+Keywords: python,io,input,output,asyncio,threading,ioscheduler,scheduler
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ioscheduler
+Python module that helps to organize input / output operations and async processes
