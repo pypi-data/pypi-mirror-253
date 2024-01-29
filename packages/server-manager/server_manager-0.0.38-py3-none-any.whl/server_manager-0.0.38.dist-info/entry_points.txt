@@ -1,0 +1,2 @@
+[console_scripts]
+serverman = servermanager.run:__main__
