@@ -1,0 +1,3 @@
+[console_scripts]
+markdown_spa=markdown_spa:main
+

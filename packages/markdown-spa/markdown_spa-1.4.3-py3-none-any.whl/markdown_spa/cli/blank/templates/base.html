@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Markdown SPA - {{ meta.name }}</title>
+    <meta name="description" content="{{ meta.description }}">    
+    <link rel="stylesheet" href="/{{ assets_path }}/style.css" />
+</head>
+<body>
+    <nav>        
+        {{ nav }}
+    </nav>
+
+    <div id="content">
+        <h1>{{ meta.name }}</h1>
+
+        {{+ page_content -}}
+    </div>
+
+    <script src="/{{ assets_path }}/markdown_spa.js"></script>
+</body>
+</html>
