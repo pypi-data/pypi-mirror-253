@@ -1,0 +1,9 @@
+wheel
+numpy
+pygame>=2.5
+mypy
+
+[dev]
+pytest
+pytest-cov
+coveralls
