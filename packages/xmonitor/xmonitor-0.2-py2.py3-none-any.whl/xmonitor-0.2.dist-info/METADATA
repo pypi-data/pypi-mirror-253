@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: xmonitor
+Version: 0.2
+Summary: Monitor tool and log file management.
+Home-page: https://github.com/bondbox/xmonitor
+Author: Mingzhe Zou
+Author-email: zoumingzhe@outlook.com
+License: GPLv2
+Project-URL: Source Code, https://github.com/bondbox/xmonitor
+Project-URL: Bug Tracker, https://github.com/bondbox/issues
+Project-URL: Documentation, https://github.com/bondbox/xmonitor
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: xarg-python >=1.3
+Requires-Dist: xmanual >=0.5
+Requires-Dist: xmanage >=0.3
+Requires-Dist: tabulate
+Requires-Dist: glances
+Requires-Dist: bottle
+
+xmonitor
+========
