@@ -1,0 +1,165 @@
+Metadata-Version: 2.1
+Name: diadem
+Version: 1.0.0
+Summary: Diadem extends Idem's capabilities, focusing on organizing, parametrizing, and visualizing SLS files across multi-cloud environments.
+Home-page: https://gitlab.com/akm0d/diadem
+Author: Tyler Levy Conde
+Author-email: yonstib@gmail.com
+License: Apache Software License 2.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: idem
+Requires-Dist: networkx
+Requires-Dist: pop
+Requires-Dist: pop-config>=12.0.1
+Provides-Extra: full
+Requires-Dist: scipy; extra == "full"
+Requires-Dist: matplotlib; extra == "full"
+Provides-Extra: visualize
+Requires-Dist: matplotlib; extra == "visualize"
+Requires-Dist: scipy; extra == "visualize"
+
+======
+diadem
+======
+
+.. image:: https://img.shields.io/badge/made%20with-pop-teal
+   :alt: Made with pop, a Python implementation of Plugin Oriented Programming
+   :target: https://pop.readthedocs.io/
+
+.. image:: https://img.shields.io/badge/made%20with-python-yellow
+   :alt: Made with Python
+   :target: https://www.python.org/
+
+Diadem is a Python-based tool designed to streamline cloud resource management by organizing, parametrizing, and visualizing SLS files across various cloud platforms, enhancing both efficiency and security.
+
+About
+=====
+
+Diadem offers a comprehensive solution for managing extensive cloud resources.
+Built on POP, it integrates seamlessly with Idem, providing a user-friendly interface for handling complex cloud infrastructures.
+Its visualization capabilities offer clear insights into resource dependencies, making it an essential tool for modern cloud environments.
+
+What is POP?
+------------
+
+This project is built with `pop <https://pop.readthedocs.io/>`__, a Python-based
+implementation of *Plugin Oriented Programming (POP)*. POP seeks to bring
+together concepts and wisdom from the history of computing in new ways to solve
+modern computing problems.
+
+For more information:
+
+* `Intro to Plugin Oriented Programming (POP) <https://pop-book.readthedocs.io/en/latest/>`__
+* `pop-awesome <https://gitlab.com/vmware/pop/pop-awesome>`__
+* `pop-create <https://gitlab.com/vmware/pop/pop-create/>`__
+
+Getting Started
+===============
+
+Prerequisites
+-------------
+
+* Python 3.10+
+* git *(if installing from source, or contributing to the project)*
+
+Installation
+------------
+
+.. note::
+
+   If wanting to contribute to the project, and setup your local development
+   environment, see the ``CONTRIBUTING.rst`` document in the source repository
+   for this project.
+
+If wanting to use ``diadem``, you can do so by either
+installing from PyPI or from source.
+
+Install from PyPI
++++++++++++++++++
+
+Install diadem with only the "compile" functionality:
+
+.. code-block:: bash
+
+   pip install diadem
+
+Install diadem with matplotlib for data visualizations with matplotlib and networkx:
+
+.. code-block:: bash
+
+   pip install diadem[visualize]
+
+Install from source
++++++++++++++++++++
+
+.. code-block:: bash
+
+   # clone repo
+   git clone git@gitlab.com:Akm0d/diadem.git
+   cd diadem
+
+   # Setup venv
+   python3 -m virtualenv .venv
+   source .venv/bin/activate
+   pip install -e .
+
+Usage
+=====
+
+Diadem simplifies the management of cloud resources.
+Use it to enumerate resources, organize SLS files, and visualize cloud infrastructure, ensuring efficient and secure cloud operations.
+
+Examples
+--------
+
+Enumerate cloud resources with idem describe:
+
+.. code-block:: bash
+
+   idem describe "aws.*" > aws.sls
+   idem describe "gitlab.*" > gitlab.sls
+
+Parametrize sls files by creating arg-bind relationships and an SLS tree:
+
+.. code-block:: bash
+
+   idem compile aws.sls gitlab.sls --tree /srv/idem
+
+This reads aws.sls and gitlab.sls into memory onto idem's unified SLS tree.
+It then uses diadem to create param files based on similarities between the resource states.
+The new parameterized SLS files and param files are then put into the /srv/idem directory.
+
+Visualize relationships between resources using matplotlib:
+
+.. code-block:: bash
+
+   idem view /srv/idem
+
+Run idem state on the newly crafted sls/param trees:
+
+.. code-block:: bash
+
+   idem state --tree /srv/idem
+
+Roadmap
+=======
+
+Reference the `open issues <https://gitlab.com/akm0d/diadem/issues>`__ for a list of
+proposed features (and known issues).
+
+Acknowledgements
+================
+
+* `Img Shields <https://shields.io>`__ for making repository badges easy.

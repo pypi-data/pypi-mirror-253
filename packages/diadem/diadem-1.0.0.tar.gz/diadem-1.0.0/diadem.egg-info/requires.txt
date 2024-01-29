@@ -1,0 +1,12 @@
+idem
+networkx
+pop
+pop-config>=12.0.1
+
+[full]
+scipy
+matplotlib
+
+[visualize]
+matplotlib
+scipy
