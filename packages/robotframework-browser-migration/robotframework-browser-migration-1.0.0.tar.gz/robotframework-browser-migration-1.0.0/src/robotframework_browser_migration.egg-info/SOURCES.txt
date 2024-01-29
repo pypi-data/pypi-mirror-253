@@ -1,0 +1,14 @@
+Readme.rst
+pyproject.toml
+setup.py
+src/SeleniumLibraryToBrowser/__init__.py
+src/SeleniumLibraryToBrowser/errors.py
+src/SeleniumLibraryToBrowser/keys.py
+src/SeleniumStats/__init__.py
+src/SeleniumStats/__main__.py
+src/robotframework_browser_migration.egg-info/PKG-INFO
+src/robotframework_browser_migration.egg-info/SOURCES.txt
+src/robotframework_browser_migration.egg-info/dependency_links.txt
+src/robotframework_browser_migration.egg-info/entry_points.txt
+src/robotframework_browser_migration.egg-info/requires.txt
+src/robotframework_browser_migration.egg-info/top_level.txt

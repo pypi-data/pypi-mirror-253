@@ -1,0 +1,2 @@
+[console_scripts]
+SeleniumStats = SeleniumStats.__main__:main
