@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[project]
+name = "transfer_learning_vision_classifiers"
+authors = [
+  { name="Jonathan Edge", email="j.edge@zoho.com" },
+]
+description = "A simple package for creating computer vision classifiers based on transfer learning."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["version", "dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/jme45/transfer_learning_vision_classifiers"
+Issues = "https://github.com/jme45/transfer_learning_vision_classifiers/issues"
+
+[tool]
+
+[tool.hatch.version]
+path = "src/transfer_learning_vision_classifiers/__about__.py"
