@@ -1,0 +1,3 @@
+[console_scripts]
+callgg=callgg.__init__:__init__
+
