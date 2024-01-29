@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: connected_things
+Version: 0.0.1
+Summary: connected things file uploader
+Home-page: https://github.com/con-things/pip_package
+Author: Andrew Tocchi
+Author-email: andrew@connected-things.com
+License: apache 2,0 license
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: boto3
+Requires-Dist: requests
+
