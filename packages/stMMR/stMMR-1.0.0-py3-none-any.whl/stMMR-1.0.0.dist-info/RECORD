@@ -1,0 +1,11 @@
+stMMR/__init__.py,sha256=aPcZXbNQ2xd-hYDOutIBcS8tIZaBwrHQH54_Xxi0lCs,201
+stMMR/layers.py,sha256=EZBL_vyJGC9h00aXhGNJwMH9pWaRhnd-JRIdJ-HDGLk,4399
+stMMR/models.py,sha256=-U5cW0W0-Vz4QMz8xjI4ztJtq9YDEEr-we9g20QGoYM,1534
+stMMR/process.py,sha256=qb3kP0nLzRQi9sjxyOOhAks_zciHtOOAGV4U-Zlnwnk,3835
+stMMR/train_model.py,sha256=wQ-PfVxtDv2dC7wxADiEtgiNGEdnKo_mFbbbfFLnHXo,5548
+stMMR/utils.py,sha256=tDGSe6mmT6MtBPgSEgym6sYR23Si9UsDJBYbmCE9cJQ,7313
+stMMR-1.0.0.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+stMMR-1.0.0.dist-info/METADATA,sha256=9dODU8gCYUJlgiFeWgxl-CY1gmNh4bg8lIbjEEx5Kr0,232
+stMMR-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+stMMR-1.0.0.dist-info/top_level.txt,sha256=DxuVTwi5AZGOJkTCwrh3fEdJurmiedYOl8R4sibDLrw,6
+stMMR-1.0.0.dist-info/RECORD,,
