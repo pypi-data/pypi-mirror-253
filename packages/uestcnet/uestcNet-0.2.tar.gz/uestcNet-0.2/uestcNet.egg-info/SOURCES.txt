@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+uestcNet.egg-info/PKG-INFO
+uestcNet.egg-info/SOURCES.txt
+uestcNet.egg-info/dependency_links.txt
+uestcNet.egg-info/requires.txt
+uestcNet.egg-info/top_level.txt
