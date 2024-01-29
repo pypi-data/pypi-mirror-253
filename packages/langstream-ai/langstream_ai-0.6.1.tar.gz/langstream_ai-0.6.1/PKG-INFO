@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: langstream-ai
+Version: 0.6.1
+Summary: LangStream user API
+Home-page: https://langstream.ai
+License: Apache-2.0
+Keywords: streaming,ai,llm
+Author: LangStream
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: fastavro (>=1.9.2,<2.0.0)
+Requires-Dist: grpcio (>=1.60.0,<2.0.0)
+Requires-Dist: protobuf (>=4.25.1,<5.0.0)
+Project-URL: Bug Tracker, https://github.com/LangStream/langstream/issues
+Project-URL: Documentation, https://docs.langstream.ai
+Project-URL: Repository, https://github.com/LangStream/langstream
+Description-Content-Type: text/markdown
+
+# LangStream
+
+This package contains helper classes to build LangStream agents.
+
+## Generate new poetry.lock
+
+```
+poetry lock  
+```
