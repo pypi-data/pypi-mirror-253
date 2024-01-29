@@ -1,0 +1,33 @@
+{% extends "main/admin.base.html.j2" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block appcontent %}
+<table class="{{ config['CASUAL_THEME_DEFAULT_TABLE'] }}">
+  <thead>
+    <tr>
+      <th></th>
+      <th>{{ _('Title') }}</th>
+      <th class="loop-index">{{ _('Start Date') }}</th>
+      <th class="loop-index">{{ _('End Date') }}</th>
+      <th>{{ _('Locale') }}</th>
+      <th>{{ _('Author') }}</th>
+      <th class="d-print-none">{{ _('Actions') }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for notification in notifications %}
+    <tr class="{{ 'text-danger' if notification.expired }}">
+      <td class="loop-index">{{ la('bell') if notification.visible else la('bell-slash') }}</td>
+      <td>{{ notification.body.splitlines()[0].replace('#', '', 5) }}</td>
+      <td class="loop-index">{{ notification.start_date | date }}</td>
+      <td class="loop-index">{{ notification.end_date | date }}</td>
+      <td class="loop-index">{{ notification.flag }}</td>
+      <td class="loop-index">{{ notification.author.name or notification.author.username }}</td>
+
+      {% include "main/admin.notification.menu.html.j2" %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

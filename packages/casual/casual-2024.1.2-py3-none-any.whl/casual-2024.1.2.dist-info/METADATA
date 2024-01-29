@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: casual
+Version: 2024.1.2
+Summary: Casual Framework
+Home-page: https://github.com/hfilimonescu/casual
+License: MIT
+Author: Horia Filimonescu
+Author-email: horia.filimonescu+github@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Werkzeug (==2.3.6)
+Requires-Dist: alchemical (>=0.7.1,<0.8.0)
+Requires-Dist: apifairy (>=1.3.0,<2.0.0)
+Requires-Dist: bleach (>=6.0.0,<7.0.0)
+Requires-Dist: celery (>=5.3.4,<6.0.0)
+Requires-Dist: email-validator (>=2.0.0.post2,<3.0.0)
+Requires-Dist: flask (>=2.1.2,<3.0.0)
+Requires-Dist: flask-babel (>=3.1.0,<4.0.0)
+Requires-Dist: flask-bs4 (>=5.3.1.0,<6.0.0.0)
+Requires-Dist: flask-debugtoolbar (>=0.13.1,<0.14.0)
+Requires-Dist: flask-login (>=0.6.2,<0.7.0)
+Requires-Dist: flask-mail (>=0.9.1,<0.10.0)
+Requires-Dist: flask-marshmallow (>=0.15.0,<0.16.0)
+Requires-Dist: flask-menu (>=1.0.0,<2.0.0)
+Requires-Dist: flask-migrate (>=4.0.4,<5.0.0)
+Requires-Dist: markdown (>=3.4.4,<4.0.0)
+Requires-Dist: marshmallow (>=3.20.1,<4.0.0)
+Requires-Dist: marshmallow-sqlalchemy (>=0.29.0,<0.30.0)
+Requires-Dist: pycountry (>=22.3.5,<23.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: redis (>=5.0.0,<6.0.0)
+Requires-Dist: sqlalchemy-continuum (>=1.4.0,<2.0.0)
+Project-URL: Repository, https://github.com/hfilimonescu/casual
+Description-Content-Type: text/markdown
+
+# Casual
+
+## Installation
+
+1. Create a virtual environment and activate it.
+
+       ❯ python3 -m venv venv
+       ❯ . ./venv/bin/activate
+
+2. Create the initial env files to run Casual.
+
+       ❯ flask core init -d
+
+3. Check and modify the three new files `dev_casual.conf`, `.env`, and `.flaskenv`.
+
+   The most important one is `dev_casual.conf` where you should check the following keys:
+  - `SECRET_KEY`
+  - `ALCHEMICAL_DATABASE_URL`
+  - `CASUAL_ADMINS` before you go to the next step!.
+  - `MAIL_*` you will need this to safely create the user accounts and communicate with the users.
+  - `CASUAL_*` in general.
+
+4. Create the DB Migrations infrastructure, the first migration, and apply it.
+   
+       ❯ flask db init
+       ❯ flask db migrate
+       ❯ flask db upgrade
+
+5. Create the Admin Accounts according to the `CASUAL_ADMIN` key in the conf file (see step 3).
+   
+       ❯ flask auth create-admins
+
+6. Now you can run the development server and conform that you can log in + change the password from the default value of `Casual` to a more secure one.
+
+   Each admin account will be forced to change the password on the first successful login.

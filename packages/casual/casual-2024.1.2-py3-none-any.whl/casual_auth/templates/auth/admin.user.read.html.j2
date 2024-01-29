@@ -1,0 +1,16 @@
+{% extends "auth/admin.user.base.html.j2" %}
+
+
+{% block appcontent %}
+{{ field('Username', user.username) }}
+{{ field('Email', user.email) }}
+{{ field('ID', user.id) }}
+{{ field('Active', yn(user.active)) }}
+{{ field('Name', user.name) }}
+{{ field('Email Confirmed', yn(user.confirmed)) }}
+{{ field('Force Password Change', yn(user.force_pwd_change, True)) }}
+{{ field('Type', kbd(user.type)) }}
+{{ field('Failed Login Attempts', kbd(user.failed_logins or '0')) }}
+{{ field('Locale', kbd(user.locale) ~ config['CASUAL_LANGUAGES'][user.locale]) }}
+{{ field('Roles', '<br />'.join(user.roles)) }}
+{% endblock %}

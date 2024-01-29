@@ -1,0 +1,57 @@
+{% from 'theme/comps.icons.html.j2' import la %}
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+  <div class="container-fluid">
+    <a href="{{ url_for(config.get('CASUAL_MAIN_VIEW')) }}"
+      class="navbar-brand mb-0 h1 {{ 'centered-brand' if config.get('CASUAL_UI_LOGO_CENTER') }}">
+      {% if 'CASUAL_UI_APP_LOGO' in config %}
+      <img src="{{ config.get('CASUAL_UI_APP_LOGO', 'logo.png') }}" alt="{{ config.get('CASUAL_NAME', 'Casual') }}"
+        height="24px">
+      {% else %}
+      {{ config.get('CASUAL_NAME', 'Casual') }}
+      {% endif %}
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        {%- for item in current_menu.children -%}
+        {%- if item.visible -%}
+        <li class="nav-item">
+          <a href="{{ item.url }}" class="nav-link {{ 'active' if item.active }} mr-1">
+            {{ la(icon) if icon }}
+            {{ item.text }}
+          </a>
+        </li>
+        {%- endif -%}
+        {%- endfor -%}
+      </ul>
+
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        {% if current_user.is_authenticated %}
+        <li class="nav-item dropdown">
+          {% set items_ = [(_('About Casual'), 'main.about', True, 'info-square')] %}
+
+          {% for item in current_menu.submenu('auth').children %}
+          {%- if item.visible -%}
+          {% do items_.append((item.text, item._endpoint, item.divided, item.icon)) %}
+          {%- endif -%}
+          {% endfor %}
+
+          {{ dropdown(text=current_user.name, items=items_, right=True) }}
+        </li>
+        {% else %}
+        <li>
+          {# {{ link(_('Login'), url_for('auth.login')) }} #}
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>
