@@ -1,0 +1,23 @@
+name: CI
+on: [push]
+
+jobs:
+  testsuite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Prepare
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -qq restic
+          sudo restic self-update
+          pip install -e .'[dev]'
+
+      - name: Testsuite
+        run: |
+          pytest --runslow -vv --color=yes
