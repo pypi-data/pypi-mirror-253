@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Topsis-Dhruv_102117061
+Version: 1.0.4
+Summary: Contains the Topsis package by dhruv on topsis
+Home-page: https://github.com/Dhruv-os-23/Topsis-Dhruv-102117061
+Download-URL: https://github.com/Dhruv-os-23/Topsis-Dhruv-102117061/archive/refs/tags/1.0.4.tar.gz
+Author: dhruv lotiya 
+Author-email: dhruv.lotia@gmail.com
+License: MIT
+Keywords: SOME,MEANINGFULL,KEYWORDS
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
