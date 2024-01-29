@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: person-generete-br
+Version: 1.0.0
+Summary: Pacote de geração de dados de pessoas
+Author: Erlanny
+Author-email: erlannyrodrigues@gmail.com
+Keywords: python,person,generate,brasil
+Classifier: Development Status :: 3 - Alpha
+
+Pacote de geração de dados de pessoas, tais como nome, cpf, data de nascimento, peso, altura, telefone, cidade e estado.
