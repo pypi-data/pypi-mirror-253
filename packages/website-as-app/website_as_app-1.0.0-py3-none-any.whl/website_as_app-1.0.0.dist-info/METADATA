@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: website-as-app
+Version: 1.0.0
+Summary: ['Website As App v1.0.0 * Copyright 2023-2024 by Marcin Orlowski.', 'Opens any web site as standalone desktop app.', 'https://github.com/MarcinOrlowski/website-as-app/']
+Home-page: https://github.com/MarcinOrlowski/website-as-app/
+Author: Marcin Orlowski
+Author-email: mail@marcinOrlowski.com
+License: MIT License
+Project-URL: Bug Tracker, https://github.com/MarcinOrlowski/website-as-app//issues/
+Project-URL: Documentation, https://github.com/MarcinOrlowski/website-as-app/
+Project-URL: Source Code, https://github.com/MarcinOrlowski/website-as-app/
+Keywords: webapp desktop app
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: argparse >=1.4.0
+Requires-Dist: PySide6
+Requires-Dist: PyQtWebEngine
+
+![WebApp](docs/logo.png)
+
+# WebApp
+
+Run any website as standalone desktop application
+
+[master](https://github.com/MarcinOrlowski/website-as-app/tree/master) branch:
+[![Unit tests](https://github.com/MarcinOrlowski/website-as-app/actions/workflows/unittests.yml/badge.svg?branch=master)](https://github.com/MarcinOrlowski/website-as-app/actions/workflows/unittests.yml)
+[![codecov](https://codecov.io/gh/MarcinOrlowski/website-as-app/branch/master/graph/badge.svg?token=3THKJKSQ1G)](https://codecov.io/gh/MarcinOrlowski/website-as-app)
+[![Code lint](https://github.com/MarcinOrlowski/website-as-app/actions/workflows/linter.yml/badge.svg?branch=master)](https://github.com/MarcinOrlowski/website-as-app/actions/workflows/linter.yml)
+[![MD Lint](https://github.com/MarcinOrlowski/website-as-app/actions/workflows/markdown.yml/badge.svg?branch=master)](https://github.com/MarcinOrlowski/website-as-app/actions/workflows/markdown.yml)
+---
+
+Small Python script opening any web page in dedicated window, using embedded QT WebEngine. There are
+no visible browser's UI etc, so the that can be useful to turn any website into standalone desktop
+application. This is useful if you, as me, would like to have a website run as standalone app,
+independently of your main browser which can be beneficial as it gives you separate entry in
+window manager or task switcher etc.
+
+> **IMPORTANT:** This tool is **NOT** turning websites into OFFLINE apps! It's about separating
+> each of your key websites i.e. from each other, or gazzilions of your browser's tabs. But you
+> still MUST be connected to the Internet for the apps (websites) to work as previously.
+
+## Installation
+
+Use `pip` to install the script:
+
+```bash
+$ pip install website-as-app
+```
+
+Once app is running, please use `--help` to see all available options, as i.e. custom icon,
+window title etc.
+
+## Usage
+
+```bash
+$ webapp "https://github.com"
+```
+
+Available options:
+
+```bash
+webapp -h
+usage: webapp [--profile PROFILE] [--name NAME] [--icon ICON] [--zoom ZOOM] [--no-tray] url
+
+Open any website in standalone window (like it's an app)
+
+positional arguments:
+url                   The URL to open
+
+options:
+--profile PROFILE     Profile name (for cookies isolation etc). Default: "default"
+--name NAME, -n NAME  Application name (shown as window title)
+--geometry GEOMETRY   Initial window geometry (in format "WIDTHxHEIGHT+X+Y")
+--icon ICON, -i ICON  Full path to image file to be used as app icon
+--zoom ZOOM, -z ZOOM  Initial WebBrowserView zoom factor. Default: 1.0
+--no-tray             Disables system tray support (closing window terminates app)
+```
+
+The most important option is `--profile` which allows you to isolate cookies and app settings
+per instance. Any instance using the same profile will have access to the same cookies and
+settings. This is useful if you want to run multiple instances of the same app, but with
+different accounts. By default `default` profile is used and it's recommended to use different
+profile per each app instance.
+
+## Current limitations
+
+* Due to security based limitations of embedded `QWebBrowerView` you will not be able
+  to save any file to your local storage nor filesystem.
+* Website's Javascript code cannot write to system clipboard so you migth need to manually
+  select given portion of the site and copy using function from context menu as any buttons
+  on the page that is using JS to write to the host's clipboard will not currently work.
+
+## License ##
+
+* Written and copyrighted &copy;2023-2024 by Marcin Orlowski <mail (#) marcinorlowski (.) com>
+* ResponseBuilder is open-sourced software licensed under
+  the [MIT license](http://opensource.org/licenses/MIT)

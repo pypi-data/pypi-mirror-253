@@ -1,0 +1,13 @@
+websiteapp/__init__.py,sha256=K3teBdhHpLqsKjn6aiBRapuh89n6aXP0P00Zi8r0wCQ,405
+websiteapp/about.py,sha256=o_9YLIZ6K_ljM1l1yfxov14a6ueG9JGXHdVCi_njmXk,2994
+websiteapp/const.py,sha256=bPvOiQs2CT8V8oFeq-KF6pcjPWkaUmbXicxrI_s-Ge0,907
+websiteapp/utils.py,sha256=Sqdyz3i2vd3CxKA2_5vw3BYcqDrdNOcQz8sGghT13ZI,4475
+websiteapp/webapp.py,sha256=jr0DY8oT-gnY9E4utb-wFcvzRyVIJ9DZSQylARJxA3o,5464
+websiteapp/icons/default.png,sha256=l6He2OikhjF5hjazH77GZ8Sul6U6LWKNS_6UegLotZc,192458
+websiteapp/icons/logo.png,sha256=xLgJ1K5o-ie6L-iLyRSwJ-5Q6VUaiP-5Lro9YfnecEo,75775
+website_as_app-1.0.0.dist-info/LICENSE.md,sha256=DHzOIoPYQaKg3vzoyEOSsrx4oYUSXQePRfcJEQ6KgcU,1106
+website_as_app-1.0.0.dist-info/METADATA,sha256=pkWOG9nv-9nQtnJY-gWWi0Ye8-B6DQBqaNWwvQsTOhE,4621
+website_as_app-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+website_as_app-1.0.0.dist-info/entry_points.txt,sha256=wDaHueZVjGzrXZKduPhHjZtYQi6eoXj8UBO7nSlyFeA,96
+website_as_app-1.0.0.dist-info/top_level.txt,sha256=sIuGI3fNulZizRCK8JBjKOZgVY3bpkymo8eLrBLdnqA,11
+website_as_app-1.0.0.dist-info/RECORD,,
