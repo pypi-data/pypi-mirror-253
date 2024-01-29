@@ -1,0 +1,9 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartthings-basic-rest"
+version = "0.1.0"
+description = "SmartThings Plug API"
+license = { text = "MIT" }
