@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: spanking
+Version: 1.0
+Home-page: https://github.com/rishiraj/spanking
+Author: Rishiraj Acharya
+Author-email: heyrishiraj@gmail.com
+License: Apache 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# spanking
+
+```
+from spanking import FunctionBuilder
+
+fb = FunctionBuilder()
+fb.create('classifier', 'Given a food name, classify it into Non-veg, Veg or Vegan.')
+fb.classifier("Broccoli Salad")
+```
