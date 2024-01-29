@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: contb
+Version: 0.0.3
+Summary: Pacote de teste
+Author: crisly
+Author-email: crislymaria21@gmail.com
+Keywords: python,contablib
+Classifier: Development Status :: 3 - Alpha
+
+Biblioteca Python para manipulações de serviços de contabilidade.
