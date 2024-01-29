@@ -1,0 +1,4 @@
+pypinyin
+opencv-python
+requests
+configparser
