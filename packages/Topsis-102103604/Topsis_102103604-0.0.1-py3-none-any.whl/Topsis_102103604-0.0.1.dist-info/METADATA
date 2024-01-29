@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: Topsis---102103604
+Version: 0.0.1
+Summary: Topsis Package by Nishtha Kumari
+Author: Nishtha Kumari
+Author-email: <nishtha5055@gmail.com>
+Keywords: python,topsis
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: sys
+Requires-Dist: openpyxl
+
+
+# Topsis Python Package
+
+Made by Nishtha Kumari 
+
+## About
+
+Topsis (Technique for Order of Preference by Similarity to Ideal Solution) is a multi-criteria decision-making method used to identify the best alternative from a set of options.
+
+## Installation
+
+ Use package manager pip install the package 
+
+ ```sh
+
+ pip install Topsis-Nishtha-102103604 
+
+ ```
+
+## Usage
+
+- Command-line Input: `python <program.py> <InputDataFile> <Weights> <Impacts> <ResultFileName>`. 
+
+- Input-File type: Only Excel file will be required as input file.
+
+- The second to last columns of the data file MUST contain NUMERIC values.
+
+-  Impacts are either '+' or '-' 
+
+- Weights and Impacts should be enclosed in double quotes and separated by commas.
+
+- Output: 'Topsis Score' column and a 'Rank' column to the data and saves the results to a CSV file specified in the command-line arguments.
+
+## Example
+
+
+
+**Command-Line-Input**
+
+```sh
+
+ python 102103604.py 102103604-data.csv “1,1,1,1,1” “+,+,-,+,-” 102103604-result.csv
+
+```
+
+**Input-File**
+
+| Fund Name |   P1  |   P2  |   P3  |   P4  |   P5  |
+
+|-----------|-------|-------|-------|-------|-------|
+
+|    M1     |  0.84 |  0.71 |   6.7 |  42.1 | 12.59 |
+
+|    M2     |  0.91 |  0.83 |     7 |  31.7 | 10.11 |
+
+|    M3     |  0.79 |  0.62 |   4.8 |  46.7 | 13.23 |
+
+|    M4     |  0.78 |  0.61 |   6.4 |  42.4 | 12.55 |
+
+|    M5     |  0.94 |  0.88 |   3.6 |  62.2 | 16.91 |
+
+|    M6     |  0.88 |  0.77 |   6.5 |  51.5 | 14.91 |
+
+|    M7     |  0.66 |  0.44 |   5.3 |  48.9 | 13.83 |
+
+|    M8     |  0.93 |  0.86 |   3.4 |    37 | 10.55 |
+
+
+
+**Output**
+
+| Fund Name |   P1  |   P2  |   P3  |   P4  |   P5  | Topsis Score | Rank |
+
+|-----------|-------|-------|-------|-------|-------|--------------|------|
+
+|    M1     |  0.84 |  0.71 |   6.7 |  42.1 | 12.59 |  0.4363076702|   6  |
+
+|    M2     |  0.91 |  0.83 |     7 |  31.7 | 10.11 |  0.4869678966|   5  |
+
+|    M3     |  0.79 |  0.62 |   4.8 |  46.7 | 13.23 |  0.5608227174|   3  |
+
+|    M4     |  0.78 |  0.61 |   6.4 |  42.4 | 12.55 |  0.5080439175|   4  |
+
+|    M5     |  0.94 |  0.88 |   3.6 |  62.2 | 16.91 |  0.3581141848|   7  |
+
+|    M6     |  0.88 |  0.77 |   6.5 |  51.5 | 14.91 |  0.2618518681|   8  |
+
+|    M7     |  0.66 |  0.44 |   5.3 |  48.9 | 13.83 |  0.5926104682|   1  |
+
+|    M8     |  0.93 |  0.86 |   3.4 |    37 | 10.55 |  0.5915013233|   2  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
