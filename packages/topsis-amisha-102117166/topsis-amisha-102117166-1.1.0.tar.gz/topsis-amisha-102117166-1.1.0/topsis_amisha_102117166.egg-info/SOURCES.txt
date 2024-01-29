@@ -1,0 +1,9 @@
+README.md
+setup.py
+topsis/__init__.py
+topsis/__main__.py
+topsis_amisha_102117166.egg-info/PKG-INFO
+topsis_amisha_102117166.egg-info/SOURCES.txt
+topsis_amisha_102117166.egg-info/dependency_links.txt
+topsis_amisha_102117166.egg-info/entry_points.txt
+topsis_amisha_102117166.egg-info/top_level.txt
