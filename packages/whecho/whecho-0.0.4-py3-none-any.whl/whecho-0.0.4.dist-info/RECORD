@@ -1,0 +1,11 @@
+whecho/README.md,sha256=qp9SzDed0l5vxgg6zOI98YEIqj5Pg_1C8fargGGdI7E,864
+whecho/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whecho/_config.py,sha256=CcT_3lTapVmlIQ1nMqzixnoSAlkd9JklAWN3PEdguwM,3475
+whecho/_send_message.py,sha256=sxbMIGnQYprB2aBiYJF1YSfl28q8TIO9sXxbSpX-hmc,793
+whecho/_utilities.py,sha256=VVsYLS8FTK1Ib_7QjWPtgK9iY8MYs2gQmZaxHtyfArs,1604
+whecho/whecho.py,sha256=LAkGAdReDLyZIyNAH43BhCqj3wxOl-q0SunbL6Zy4x4,921
+whecho-0.0.4.dist-info/entry_points.txt,sha256=rueRrEYN7mTubvf9rO0FYV1PZleMOf_kfHbqenkVO8E,45
+whecho-0.0.4.dist-info/LICENSE,sha256=bKMHQQKx6N2NtHU_rXooHYKkyjj4tPBJLy3-AvAmAjc,1069
+whecho-0.0.4.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+whecho-0.0.4.dist-info/METADATA,sha256=nSuC3X-118Uts-9iGOIjMdX1-pL58sbqM2bAb0LMyKU,1747
+whecho-0.0.4.dist-info/RECORD,,
