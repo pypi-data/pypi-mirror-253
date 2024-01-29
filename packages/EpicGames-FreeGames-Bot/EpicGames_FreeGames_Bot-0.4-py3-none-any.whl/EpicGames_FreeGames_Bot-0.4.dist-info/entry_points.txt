@@ -1,0 +1,2 @@
+[console_scripts]
+EpicGames_FreeGames_Bot = EpicGames_FreeGames_Bot:hello
