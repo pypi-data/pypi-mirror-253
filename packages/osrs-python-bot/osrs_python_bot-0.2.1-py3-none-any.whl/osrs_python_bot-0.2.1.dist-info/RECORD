@@ -1,0 +1,14 @@
+osrs_python_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osrs_python_bot/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osrs_python_bot/src/bots/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osrs_python_bot/src/bots/combat.py,sha256=H8kWrSutnj2htIuc-ae_a9p13sdSMnuLBsJa3vNrdN0,986
+osrs_python_bot/src/bots/herblore.py,sha256=uGAyaHdH0yayQS1ANixCnYbx-1SEy3OZX0SRUMHlSzc,12212
+osrs_python_bot/src/bots/magic.py,sha256=CnGKxmi9r4nmV5fpkqdk1xzE87W1Ivo1sr0iA4drKWA,766
+osrs_python_bot/src/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osrs_python_bot/src/common/bank_manager.py,sha256=2FVSSqnldlkUK1UDbIvxW_IUjQvfFkj2Intpa0zn5xQ,2406
+osrs_python_bot/src/common/inventory_clicker.py,sha256=Ido0hCHxDq_7zmkWX4s6Fnv431E9BtlWsqQK7xjFrCU,6461
+osrs_python_bot-0.2.1.dist-info/LICENSE,sha256=gxcIIki3QXCO6cs3KlV-fPvU3km5LBKmL_vwpQ-NZZo,1066
+osrs_python_bot-0.2.1.dist-info/METADATA,sha256=KsE3OCYTtFASfOO5YRZZyJpU0EpDbKDtzfxouYEASSI,5071
+osrs_python_bot-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+osrs_python_bot-0.2.1.dist-info/top_level.txt,sha256=Darr4IyU8zh8M_k5GlHnNTwTIwkqCZNB3l5OpynRAso,16
+osrs_python_bot-0.2.1.dist-info/RECORD,,
