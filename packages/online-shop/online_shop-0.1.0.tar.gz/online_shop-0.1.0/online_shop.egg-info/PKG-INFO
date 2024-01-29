@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: online_shop
+Version: 0.1.0
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: Django==4.2.7
+Requires-Dist: daphne==4.0.0
+Requires-Dist: psycopg2==2.9.9
+Requires-Dist: djangorestframework
+Requires-Dist: djangorestframework-simplejwt==5.3.1
+Requires-Dist: pillow==10.1.0
+Requires-Dist: django-extensions==3.2.3
+Requires-Dist: channels==4.0.0
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system.
+
+## Built With
+
+- Django
+- Django Rest Framework
+- Django Channels
+- Docker
+
+## Preparation
+
+Follow these steps to set up the project:
+
+1. Create a virtual environment:
+
+   ```sh
+   python -m venv venv
+   ```
+
+2. Activate the virtual environment:
+
+   ```sh
+   .\venv\Scripts\activate.bat
+   ```
+
+3. Run docker
+
+   ```sh
+   docker-compose up -d
+   ```
+
+4. Install online shop:
+
+   ```sh
+   py -m build
+   ```
+ 
+5. Install online shop:
+
+   ```sh
+   python -m online_shop.manage runserver
+   ```
+
+
+## Tests
+
+   ```sh
+   cd online_shop
+   ```
+
+   ```sh
+   pip install -r requirements/requirements.txt
+   ```
+
+   ```sh
+   python manage.py test
+   ```
+
+## Authors
+
+Paweł Kwieciński
