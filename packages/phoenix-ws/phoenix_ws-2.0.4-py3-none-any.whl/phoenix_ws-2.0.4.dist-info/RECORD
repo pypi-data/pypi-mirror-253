@@ -1,0 +1,12 @@
+phoenix/__init__.py,sha256=oasy9uNQVDyCYqbHfnoL_3I4ElyhrHJwqty5QINMaCk,2134
+phoenix/__main__.py,sha256=dRNak9HDV0Q1V6NohzJeWEKJoEbfgzkGCvsyXdvRox0,56
+phoenix/build.py,sha256=d1pj_G1Zb1mfJz6zj027JNaTLgGi8FZxdP4RpOqqBTU,5419
+phoenix/minify.py,sha256=LyCY-4-oSXrLnqdiLEjYubrycFWEnHcGGYdphzxDT74,30908
+phoenix/ppm.py,sha256=I4aqgnDDMBd4xkwOIhLv7Sm1SMywI2UzxkW_m4hSbqo,4816
+phoenix/serve.py,sha256=yJiddv5937hpuhLM8hjOiEtqg9S_rXUxi7HcFPFKIXk,15335
+phoenix_ws-2.0.4.dist-info/METADATA,sha256=OCk6YUv1_yv4ouGmvG67JMfjiLZR-PbHXLkzkOr04y0,2542
+phoenix_ws-2.0.4.dist-info/UNLICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+phoenix_ws-2.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+phoenix_ws-2.0.4.dist-info/entry_points.txt,sha256=celGsIYuqHusWD7dJSrMywtDwqw5bOz7ft-Tc7Crfow,50
+phoenix_ws-2.0.4.dist-info/top_level.txt,sha256=YUQ4u_dLAihYLYE0sQ6dVKq3lRI2jEeYcl2G9KS2wYA,8
+phoenix_ws-2.0.4.dist-info/RECORD,,
