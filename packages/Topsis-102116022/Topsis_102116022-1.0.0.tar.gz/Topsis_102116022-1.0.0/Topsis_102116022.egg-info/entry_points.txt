@@ -1,0 +1,3 @@
+[console_scripts]
+topsis = Topsis_Kunal_102116022.topsis:main
+
