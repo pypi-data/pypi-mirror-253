@@ -1,0 +1,8 @@
+bs4
+requests
+selenium
+
+[doc]
+sphinx>=7.0.1
+sphinx-rtd-theme
+sphinx-autodocgen

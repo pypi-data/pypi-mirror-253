@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/Baltoslav.egg-info/PKG-INFO
+src/Baltoslav.egg-info/SOURCES.txt
+src/Baltoslav.egg-info/dependency_links.txt
+src/Baltoslav.egg-info/requires.txt
+src/Baltoslav.egg-info/top_level.txt
+src/baltoslav/__init__.py
+src/baltoslav/ai.py
+src/baltoslav/game.py
