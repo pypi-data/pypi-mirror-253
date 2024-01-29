@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Topsis-Devansh-102103620
+Version: 0.0.1
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy
+Requires-Dist: pandas
+
