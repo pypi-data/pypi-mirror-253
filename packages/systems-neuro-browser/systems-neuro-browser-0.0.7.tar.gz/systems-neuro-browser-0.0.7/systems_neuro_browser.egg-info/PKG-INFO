@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: systems-neuro-browser
+Version: 0.0.7
+Home-page: https://github.com/dattalab/SNUB
+Author: Caleb Weinreb
+Author-email: calebsw@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: PyQt5
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+Requires-Dist: cmapy
+Requires-Dist: interlap
+Requires-Dist: numba
+Requires-Dist: vispy
+Requires-Dist: imageio
+Requires-Dist: imageio-ffmpeg
+Requires-Dist: umap-learn
+Requires-Dist: rastermap==0.1.3
+Requires-Dist: ipykernel
+Requires-Dist: pyqtgraph
+Requires-Dist: networkx
+Requires-Dist: opencv-python-headless
+Requires-Dist: vidio>=0.0.3
+Requires-Dist: pytest
+Requires-Dist: pytest-qt
+Requires-Dist: pynwb
+Requires-Dist: ndx-pose
+Requires-Dist: ndx-photometry
+Requires-Dist: ndx-depth-moseq
+Requires-Dist: pandas
+Requires-Dist: dandi
