@@ -1,0 +1,17 @@
+GPUtil>=1.4.0
+dask>=2022.1.0
+distributed>=2022.2.0
+ipython
+jupyter
+matplotlib
+numpy
+pandas
+pmdarima
+prettytable
+prophet
+pyyaml>=5.4.1
+scikit-learn>=0.24.0
+seaborn
+statsmodels
+xgboost>=2.0
+xlrd
