@@ -1,0 +1,8 @@
+toml>=0.10
+klayout>=0.27.3
+numpy>=1.0
+networkx>=2.5
+scipy>=1.5
+liberty-parser>=0.0.19
+pysmt>=0.9
+z3-solver>=4.8

@@ -1,0 +1,58 @@
+# SPDX-FileCopyrightText: 2023 Thomas Kramer
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+[project]
+name = "lclayout"
+version = "0.0.18"
+description='CMOS standard-cell layout generator.'
+readme = {file = "README.md", content-type="text/markdown"}
+license = {text = "OHL-S v2.0"}
+
+requires-python = ">=3.7"
+
+keywords= ["cmos", "cell", "layout", "generator", "klayout", "vlsi", "asic"]
+
+authors = [ 
+  {name = "T. Kramer", email = "code@tkramer.ch"}
+]
+
+
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Topic :: Scientific/Engineering',
+    'Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)',
+    'Programming Language :: Python :: 3'
+]
+
+dependencies = [
+  'toml>=0.10',
+  'klayout>=0.27.3', # GPLv3
+  'numpy>=1.0',  # BSD
+  'networkx>=2.5',  # BSD
+  'scipy>=1.5',  # BSD
+  'liberty-parser>=0.0.19',  # GPLv3
+  'pysmt>=0.9',  # Apache-2.0
+  'z3-solver>=4.8' 
+]
+
+[project.scripts]
+lclayout = "lclayout.standalone:main"
+
+[project.urls]
+'Homepage' = 'https://codeberg.org/librecell/lclayout'
+'Repository' = 'https://codeberg.org/librecell/lclayout'
+'Issue Tracker' = 'https://codeberg.org/librecell/lclayout/issues'
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Data files to be included
+[tool.setuptools.package-data]
+lctime = ["examples/*"]
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=43.0.0"]
+build-backend = "setuptools.build_meta"
