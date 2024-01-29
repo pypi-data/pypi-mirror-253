@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fontparser"
+version = "0.1.1"
+authors = [
+  { name="duoduo", email="duoduoqaq520@gmail.com" },
+]
+description = "font file parser library in Python"
+readme = "README.md"
+requires-python = ">=3.10.2"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy",
+  "opencv-python",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fontparse"]
+
+[project.urls]
+Homepage = "https://github.com/duoduo6666/font-parser"
+Issues = "https://github.com/duoduo6666/font-parser/issues"
+GitHub = "https://github.com/duoduo6666/font-parser"
+GitLab = "https://gitlab.duo-duo.top/root/fontparser"
