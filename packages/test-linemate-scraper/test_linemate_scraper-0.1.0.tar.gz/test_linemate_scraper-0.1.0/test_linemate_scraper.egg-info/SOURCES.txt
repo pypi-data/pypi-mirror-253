@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+test_linemate_scraper/__init__.py
+test_linemate_scraper/scraper.py
+test_linemate_scraper.egg-info/PKG-INFO
+test_linemate_scraper.egg-info/SOURCES.txt
+test_linemate_scraper.egg-info/dependency_links.txt
+test_linemate_scraper.egg-info/requires.txt
+test_linemate_scraper.egg-info/top_level.txt
