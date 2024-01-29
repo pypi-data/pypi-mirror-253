@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "start-end-logging"
+version = "0.1.2"
+description = "A very simple logging library that logs the start and end of a process step and, in particular, indicates the elapsed time."
+authors = ["Johannes Lieberherr <johannes.lieberherr@ttools.ch>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=2.7,<4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
