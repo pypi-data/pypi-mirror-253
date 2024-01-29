@@ -1,0 +1,7 @@
+id: f2d39b1e-253a-4c2c-901c-c8685f2de55c
+label: 'eurostat'
+category: PROTOCOL
+factory: eurostat
+signatures:
+  - python: |
+      return 'eurostat' == node.path.scheme
