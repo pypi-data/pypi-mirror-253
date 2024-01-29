@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/xpt2046_circuitpython/__init__.py
+src/xpt2046_circuitpython/exceptions.py
+src/xpt2046_circuitpython/xpt2046.py
+src/xpt2046_circuitpython.egg-info/PKG-INFO
+src/xpt2046_circuitpython.egg-info/SOURCES.txt
+src/xpt2046_circuitpython.egg-info/dependency_links.txt
+src/xpt2046_circuitpython.egg-info/top_level.txt
