@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+rpc_over_redis/core.py
+rpc_over_redis/rpc_types.py
+rpc_over_redis.egg-info/PKG-INFO
+rpc_over_redis.egg-info/SOURCES.txt
+rpc_over_redis.egg-info/dependency_links.txt
+rpc_over_redis.egg-info/requires.txt
+rpc_over_redis.egg-info/top_level.txt
