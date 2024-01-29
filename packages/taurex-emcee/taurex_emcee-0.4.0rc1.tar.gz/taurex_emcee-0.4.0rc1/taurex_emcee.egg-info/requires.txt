@@ -1,0 +1,11 @@
+taurex
+emcee
+corner
+arviz
+
+[docs]
+sphinx~=5.0
+sphinxcontrib-napoleon
+sphinxcontrib-jsmath
+nbsphinx~=0.9.3
+sphinx_rtd_theme~=1.0.0
