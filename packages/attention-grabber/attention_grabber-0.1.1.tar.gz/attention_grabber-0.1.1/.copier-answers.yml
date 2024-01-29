@@ -1,0 +1,20 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.2.5
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: natemacfadden@gmail.com
+author_name: Nate MacFadden
+data_format: string
+file_extension: ''
+has_binder: true
+has_settings: true
+kind: frontend
+labextension_name: attention-grabber
+mimetype: ''
+mimetype_name: ''
+project_short_description: Flashes your screen when cells are finished, until you
+    click on the notebook again.
+python_name: attention_grabber
+repository: https://github.com/natemacfadden/jupyterlab_attention-grabber
+test: true
+viewer_name: ''
+
