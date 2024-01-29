@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "query_quiver"
+version = "0.0.4"                                                                          # This is a placeholder and will be overwritten by poetry-dynamic-versioning
+description = "Support brainstorming for technical blog using your Google Chrome history."
+authors = ["marutaku <satouredstone@gmail.com>"]
+packages = [{ include = "query_quiver" }]
+homepage = "https://github.com/marutaku"
+repository = "https://github.com/marutaku/QueryQuiver"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.6.1"
+tiktoken = "^0.5.2"
+fire = "^0.5.0"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.8.0"
+pyproject-flake8 = "^0.0.1-alpha.5"
+black = "^22.6.0"
+isort = "^5.10.1"
+types-beautifulsoup4 = "^4.12.0.7"
+types-requests = "^2.31.0.10"
+pytest = "^7.4.3"
+pytest-mock = "^3.12.0"
+pdoc = "^14.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+style = "pep440"
+
+[tool.flake8]
+max-line-length = 124
+exclude = [".git", "__pycache__", ".venv"]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.poetry.scripts]
+queryquiver = "query_quiver.cli:run"
+
+[[tool.mypy.overrides]]
+module = ["fire"]
+ignore_missing_imports = true
