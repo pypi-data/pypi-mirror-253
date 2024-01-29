@@ -1,0 +1,17 @@
+SQLAlchemy>2.0.0
+alembic>1.9.0
+pandas>2.0.0
+numpy
+packaging
+python-dotenv
+
+[build]
+build
+twine
+
+[dev]
+black
+bumpver
+isort
+mypy
+pytest

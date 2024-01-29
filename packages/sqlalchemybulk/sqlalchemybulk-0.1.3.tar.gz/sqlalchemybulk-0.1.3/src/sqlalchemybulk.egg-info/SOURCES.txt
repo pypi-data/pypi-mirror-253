@@ -1,0 +1,16 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+src/sqlalchemybulk/__init__.py
+src/sqlalchemybulk/crud.py
+src/sqlalchemybulk/crud_helper_funcs.py
+src/sqlalchemybulk/helper_functions.py
+src/sqlalchemybulk/init_or_update_db.py
+src/sqlalchemybulk/manager.py
+src/sqlalchemybulk.egg-info/PKG-INFO
+src/sqlalchemybulk.egg-info/SOURCES.txt
+src/sqlalchemybulk.egg-info/dependency_links.txt
+src/sqlalchemybulk.egg-info/requires.txt
+src/sqlalchemybulk.egg-info/top_level.txt
+tests/test_create_empty_db.py
