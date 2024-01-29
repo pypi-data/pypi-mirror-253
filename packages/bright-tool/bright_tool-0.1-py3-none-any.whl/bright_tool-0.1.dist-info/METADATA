@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bright-tool
+Version: 0.1
+Summary: Control Screen Brightness via fingertips.
+Author: Arnab Kumar Roy
+Author-email: <arnabroy770@gmail.com>
+Keywords: python,video,brightness,controlling
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: mediapipe
+Requires-Dist: screen-brightness-control
+
+A package that allows to control the screen brightness using the fingertips.
