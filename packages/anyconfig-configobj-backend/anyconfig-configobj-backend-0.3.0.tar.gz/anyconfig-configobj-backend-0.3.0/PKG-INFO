@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: anyconfig-configobj-backend
+Version: 0.3.0
+Summary: Backend module for python-anyconfig to load and dump configobj data
+Home-page: https://github.com/ssato/python-anyconfig-configobj-backend
+Author: Satoru SATOH
+Author-email: satoru.satoh@gmail.com
+Maintainer: Satoru SATOH
+Maintainer-email: satoru.satoh@gmail.com
+License: MIT
+Project-URL: CI: Github Actions, https://github.com/ssato/python-anyconfig-configobj-backend/actions
+Project-URL: Download, https://pypi.python.org/pypi/anyconfig-configobj-backend
+Project-URL: Download RPMs, https://copr.fedoraproject.org/coprs/ssato/python-anyconfig/
+Project-URL: Bug Tracker, https://github.com/ssato/python-anyconfig-configobj-backend/issues
+Project-URL: Source, https://github.com/ssato/python-anyconfig-configobj-backend
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.MIT
+
+
+This is a backend parser module for python-anyconfig to support to load and
+dump configobj files using configobj.
+
+- Author: Satoru SATOH <ssato@redhat.com>
+- License: MIT
+
+SEE ALSO:
+
+- python-anyconfig: https://github.com/ssato/python-anyconfig
+- configobj: https://configobj.readthedocs.io
