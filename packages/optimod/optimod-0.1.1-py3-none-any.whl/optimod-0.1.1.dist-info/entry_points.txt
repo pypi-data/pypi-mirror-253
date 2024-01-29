@@ -1,0 +1,3 @@
+[console_scripts]
+optimod=optimod:main
+
