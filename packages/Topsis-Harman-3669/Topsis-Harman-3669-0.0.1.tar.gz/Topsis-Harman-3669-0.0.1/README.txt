@@ -1,0 +1,1 @@
+This library will normalize your matrix and calculate its topsis score and rank them by metric-> highest topsis score will get the 1st rank and then lower scores will get next rank.
