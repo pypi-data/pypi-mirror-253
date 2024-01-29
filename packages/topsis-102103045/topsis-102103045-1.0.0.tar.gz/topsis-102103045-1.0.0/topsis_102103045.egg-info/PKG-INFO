@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: topsis-102103045
+Version: 1.0.0
+Summary: Topsis analysis
+Home-page: https://github.com/abhimanyu-mehta26/topsis
+Author: Abhimanyu Mehta
+Author-email: abhimanyumehta@email.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Topsis
+Calculate topsis score and save the result in csv file.
