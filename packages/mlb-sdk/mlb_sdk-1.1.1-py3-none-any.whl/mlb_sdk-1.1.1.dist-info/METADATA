@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mlb-sdk
+Version: 1.1.1
+Summary: Python wrapper for MLB APIs
+Author: Ryan Schreiber
+Author-email: ryanschreiber86@gmail.com
+Project-URL: Documentation, https://github.com/mlb-sdk/python-mlb-sdk/
+Project-URL: Source, https://github.com/mlb-sdk/python-mlb-sdk/
+Project-URL: Tracker, https://github.com/mlb-sdk/python-mlb-sdk/issues
+Keywords: mlb major league baseball sdk mlb-sdk sports professional
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# MLB SDK
+
+This library is intended to make it easier to use the MLB APIs (Stats API, DSP, etc). It does not provide access to the underlying APIs, you need to come with your own credentials provided by the league.
+
+## Copyright Notice
+This package and its author are not affiliated with MLB or any MLB team. This API wrapper interfaces with MLB's Stats API. Use of MLB data is subject to the notice posted at http://gdx.mlb.com/components/copyright.txt.
