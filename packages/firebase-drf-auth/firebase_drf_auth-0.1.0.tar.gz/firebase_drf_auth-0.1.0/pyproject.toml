@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "firebase-drf-auth"
+version = "0.1.0"
+description = ""
+authors = ["sazonov-src <sazonov89vit@gmail.com>"]
+readme = "README.md"
+packages = [{include = "drf_firebase_auth"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+firebase-admin = "^6.4.0"
+djangorestframework = "^3.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
