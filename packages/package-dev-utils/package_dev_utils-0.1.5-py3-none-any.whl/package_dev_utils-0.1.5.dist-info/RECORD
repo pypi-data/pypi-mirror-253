@@ -1,0 +1,10 @@
+package_dev_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_dev_utils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_dev_utils/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_dev_utils/tests/args/__init__.py,sha256=78fjf9fFe_mF-hK2HvnoTwb1k2vZ8G-I8Cshcoycvn0,70
+package_dev_utils/tests/args/args.py,sha256=YZLCKcE92-WmBwXTh6k9ZqcluK4tr5rrjmdYbxBR-uY,1394
+package_dev_utils-0.1.5.dist-info/LICENSE,sha256=ENpNaBSvIV7ifD7iNz_-lBhImbiYowqPzBc5V5R8IhM,1070
+package_dev_utils-0.1.5.dist-info/METADATA,sha256=sn__ByV4JroSoqPejfPxNPzhuks9KdfDWUbpaCpF-70,1162
+package_dev_utils-0.1.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+package_dev_utils-0.1.5.dist-info/top_level.txt,sha256=4TusxFpclV-vgDF5spmqGVhJhszypwiTz1JTTpw07nQ,18
+package_dev_utils-0.1.5.dist-info/RECORD,,
