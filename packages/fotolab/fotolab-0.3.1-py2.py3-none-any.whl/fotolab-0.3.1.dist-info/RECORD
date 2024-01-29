@@ -1,0 +1,11 @@
+fotolab/__init__.py,sha256=uk9m1rjztcV3hT_QxZf_bomBxVpPyquD6wdidSQGDPk,764
+fotolab/__main__.py,sha256=aboOURPs_snOXTEWYR0q8oq1UTY9e-NxCd1j33V0wHI,833
+fotolab/border.py,sha256=pt0egjVRWV6ZS_CLvUdgMWX2aXhYCO9_7_UAaEISVtM,2108
+fotolab/cli.py,sha256=EquHxB7hanS82YZFxBwMkKjtzKQTF2nuNzMzhVUONXg,3561
+fotolab/env.py,sha256=l1e39BJduaAqkg2cmrpInDE9pXXODLsmoWmhrhFf9Sc,1285
+fotolab/watermark.py,sha256=35QCGqNdjDlRWmXfgLy06VqtMac5XaHDHUmJ0nq8lXA,4642
+fotolab-0.3.1.dist-info/entry_points.txt,sha256=mvw7AY_yZkIyjAxPtHNed9X99NZeLnMxEeAfEJUbrCM,44
+fotolab-0.3.1.dist-info/LICENSE.md,sha256=tGtFDwxWTjuR9syrJoSv1Hiffd2u8Tu8cYClfrXS_YU,31956
+fotolab-0.3.1.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+fotolab-0.3.1.dist-info/METADATA,sha256=1ZdULKyO-waX5GMnLwDmmDbw7NyuEfJgItmcYfT-VlA,5157
+fotolab-0.3.1.dist-info/RECORD,,
