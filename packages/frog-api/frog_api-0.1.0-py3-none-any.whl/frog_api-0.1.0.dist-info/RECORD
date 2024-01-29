@@ -1,0 +1,11 @@
+frog-api/__init__.py,sha256=i5yezNOZB3Z52g28NlW7FEo8ZqrC5brpdx4-LrU3m6g,18
+frog-api/frog.py,sha256=Xz_GkSaluW0Mjbj34mIpVhwjeRWQfc1_s_fZBV4V-wU,24926
+frog-api/tool.py,sha256=SFsrjqNALGBautZrcBKaYL-RnviL5ds2-XK2feJjhDg,337
+src/__init__.py,sha256=i5yezNOZB3Z52g28NlW7FEo8ZqrC5brpdx4-LrU3m6g,18
+src/frog.py,sha256=Xz_GkSaluW0Mjbj34mIpVhwjeRWQfc1_s_fZBV4V-wU,24926
+src/tool.py,sha256=SFsrjqNALGBautZrcBKaYL-RnviL5ds2-XK2feJjhDg,337
+frog_api-0.1.0.dist-info/METADATA,sha256=VixcCx3HQXbg7hKjzUXNWZoyyMG2yNajE5NYI359GuM,652
+frog_api-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+frog_api-0.1.0.dist-info/entry_points.txt,sha256=OEaqsy6XbsP2hM911TRsl9xGxuK8f56H7yEZhI7mZ4Q,39
+frog_api-0.1.0.dist-info/top_level.txt,sha256=7NiDgeTUqdjt1wVZfKedqblE0PlQKXBsTuh2mTfgPUg,9
+frog_api-0.1.0.dist-info/RECORD,,
