@@ -1,0 +1,6 @@
+[workspace]
+
+members = ["yari-py", "yari-sys"]
+
+[profile.release]
+lto = "fat"

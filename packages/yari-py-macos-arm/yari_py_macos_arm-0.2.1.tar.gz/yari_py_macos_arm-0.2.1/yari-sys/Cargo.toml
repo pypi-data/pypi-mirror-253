@@ -1,0 +1,25 @@
+[package]
+name = "yari-sys"
+version = "0.2.1"
+authors = ["Matej Kastak <matej.kastak@avast.com>"]
+description = "YARA Interactive debugger."
+edition = "2021"
+license = "MIT"
+include = ["LICENSE-THIRD-PARTY"]
+
+[dependencies]
+log = "0.4.20"
+nom = "7.1.3"
+regex = "1.10.3"
+thiserror = "1.0.40"
+lazy_static = "1.4.0"
+
+[build-dependencies]
+bindgen = "0.64.0"
+
+[features]
+all_modules = []
+avast = ["all_modules"]
+
+[dev-dependencies]
+env_logger = "0.10.0"
