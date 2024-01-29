@@ -1,0 +1,9 @@
+grateful_logging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grateful_logging/__main__.py,sha256=Qo4QAhKTji2D80am4IBXl0zMJOkKIPq_0tL5VXhYVVM,78
+grateful_logging/cli.py,sha256=ZTYxwZfvyGz5_V3r0a2UU_o9RyMUzkBXt-WhoiJ4lyk,715
+grateful_logging/configure.py,sha256=OfQgA0cii4UU3WfVMCqZvIw0rRn09uWIn5UPtyy3CUg,639
+grateful_logging-0.0.5.dist-info/LICENSE,sha256=YYjDdF8bDFO4zpfXTYBfgVjbbM_ynlPEe37MDZY7uGs,1066
+grateful_logging-0.0.5.dist-info/METADATA,sha256=u9UVvRrOhfvMFUoXLMuY3zYgXUuCIQYGiro-KPgtHGQ,235
+grateful_logging-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+grateful_logging-0.0.5.dist-info/top_level.txt,sha256=d3bU4mG4YCmYm-G5q743tl7nHLmvgcPE_oDXRgY0nT8,17
+grateful_logging-0.0.5.dist-info/RECORD,,
