@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+siminotes/__init__.py
+siminotes/__main__.py
+siminotes/collect_files.py
+siminotes/embedding.py
+siminotes/utils.py
+siminotes.egg-info/PKG-INFO
+siminotes.egg-info/SOURCES.txt
+siminotes.egg-info/dependency_links.txt
+siminotes.egg-info/entry_points.txt
+siminotes.egg-info/requires.txt
+siminotes.egg-info/top_level.txt
