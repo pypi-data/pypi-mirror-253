@@ -1,0 +1,9 @@
+diceutils-0.1.1.dist-info/METADATA,sha256=uGtC4sChJuQPw4YZlA7Vt5yNpKYCInIbBbBLgxRRX0U,279
+diceutils-0.1.1.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+diceutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+diceutils/cards.py,sha256=7v2BQQOHde-HbQhVy-C4lH-ZfFrE6MSuOuivCl1xEUM,2988
+diceutils/charactors.py,sha256=A3AATghWEE9M2YHjNXdYXi15qyZX2zp0D0zRf-0f-CA,1163
+diceutils/dicer.py,sha256=efKsS5xaeBdsk82_xwtiTcMv7fWNllrbLYczn2v943w,10351
+diceutils/parser.py,sha256=oQIlF9mfTGnKUkqsJ1VeAfP3t4jWj1fEzc5XycmyhDA,7708
+diceutils/utils.py,sha256=REZOHxbqK9wgE6POefr31yC1mgGIsEwHwU6TGuXM0Fc,2339
+diceutils-0.1.1.dist-info/RECORD,,
