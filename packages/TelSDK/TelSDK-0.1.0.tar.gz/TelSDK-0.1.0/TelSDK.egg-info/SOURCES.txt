@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+TelSDK.egg-info/PKG-INFO
+TelSDK.egg-info/SOURCES.txt
+TelSDK.egg-info/dependency_links.txt
+TelSDK.egg-info/requires.txt
+TelSDK.egg-info/top_level.txt
+TelegramSDK/TelegramSDK.py
+TelegramSDK/__init__.py
+TelegramSDK/telegram.py
+TelegramSDK/util.py
