@@ -1,0 +1,2 @@
+[gui_scripts]
+autohell = autohell:main
