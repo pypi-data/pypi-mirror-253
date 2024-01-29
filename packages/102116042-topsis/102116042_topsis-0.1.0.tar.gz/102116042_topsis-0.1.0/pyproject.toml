@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "102116042-topsis"
+version = "0.1.0"
+description = "Topsis Package"
+authors = ["Shreya Sharma"]
+license = "n"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
