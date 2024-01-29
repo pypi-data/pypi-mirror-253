@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "arflow"
+version = "0.2.0"
+description = ""
+authors = ["Yiqin Zhao <yiqinzhao@outlook.com>"]
+readme = "README.md"
+packages = [{include = "arflow"}]
+license = "GPL-3.0"
+homepage = "https://cake.wpi.edu/ARFlow/"
+repository = "https://github.com/cake-lab/ARFlow"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.13"
+rerun-sdk = "^0.12.1"
+grpcio = "^1.60.0"
+grpcio-tools = "^1.60.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+serve = "arflow.main:serve"
+example_simple_server = "examples.simple_server:main"
+example_simple_replay = "examples.simple_replay:main"
