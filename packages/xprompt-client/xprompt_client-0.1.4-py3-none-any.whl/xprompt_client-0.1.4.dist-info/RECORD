@@ -1,0 +1,15 @@
+xprompt/__init__.py,sha256=FZtuyUV9i_i9AR25ODfH1xkLUkSoP16B1JMPpc_vFdM,802
+xprompt/admin_client.py,sha256=tBqH1Remz5iAPxBoiENWngWqudE7h3vwKge6Wbqp2Gc,581
+xprompt/client_prompt_parser.py,sha256=YzhIvHjAJBvlasd5sYik4-QQZKvV9d2-f6h_sDVlg1k,1941
+xprompt/client_services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xprompt/client_services/dummy_parser.py,sha256=mpHSOSZb6sXIybztRscibpXv0KMzQ2Ww4u9zgyvV17o,281
+xprompt/client_services/llamahub_connectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xprompt/client_services/llamahub_connectors/google_docs.py,sha256=Dgx_hqKrDCo7Wsn29kraEuRDH_XJB9xVGWt4PM5dxCI,836
+xprompt/constants.py,sha256=T5h2j4qJF_BxDHPRybT6DYSHYzJy8IZhzQX4t1XLm9g,384
+xprompt/data_client.py,sha256=zrQhwCrDbfZIIK8Xp0rGknSwK4ymS6LsacaFtv5PRG8,679
+xprompt/openai_client.py,sha256=oqh0eKoUtCY2GwQfj-dhu8vtX1eiYxpVYblceV6fRJM,2502
+xprompt/schemas.py,sha256=symfxRwaLNXa_CjIYs-_SksbLW20q9AGRl-Sx2S8WJA,130
+xprompt/utils.py,sha256=yhYm7tQkqUVG1pqhV7WDJAs30aWuuDM1_va-8SGVPLw,2494
+xprompt_client-0.1.4.dist-info/METADATA,sha256=7v6IlVGEJnFZTxH-uXNLf5yy9aJYDR5uitsW8i9Dm-8,1252
+xprompt_client-0.1.4.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+xprompt_client-0.1.4.dist-info/RECORD,,
