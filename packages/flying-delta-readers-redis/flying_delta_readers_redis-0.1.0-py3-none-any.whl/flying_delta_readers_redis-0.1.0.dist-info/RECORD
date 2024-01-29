@@ -1,0 +1,5 @@
+llama_index/readers/redis/__init__.py,sha256=H0ObG1Vs0Z1U0ktMw_lHSD_26Q5YZ46Up-kSVfPQWqs,16
+llama_index/readers/redis/utils.py,sha256=m4jOnv8PN2tLU-ZunZsXMDkdpU0bdpvyyIVtlpWSO4Y,3406
+flying_delta_readers_redis-0.1.0.dist-info/METADATA,sha256=ivO2ktb9nYx5YQRXee5GsOJDZhJ5beoQpo18W5sQRgY,632
+flying_delta_readers_redis-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flying_delta_readers_redis-0.1.0.dist-info/RECORD,,
