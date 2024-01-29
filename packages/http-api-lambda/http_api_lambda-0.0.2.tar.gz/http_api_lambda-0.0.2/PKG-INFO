@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: http_api_lambda
+Version: 0.0.2
+Summary: Framework for building HTTP APIs on AWS Lambda
+Project-URL: Github, https://github.com/fbrombeer/http-api-lambda
+Author: Franz Brombeer
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: pydantic==2.5.2
+Description-Content-Type: text/markdown
+
+## HTTP-API-LAMBDA
