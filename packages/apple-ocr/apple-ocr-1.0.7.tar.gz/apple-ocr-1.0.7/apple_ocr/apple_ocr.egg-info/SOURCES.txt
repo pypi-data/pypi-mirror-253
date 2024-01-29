@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+apple_ocr/apple_ocr.egg-info/PKG-INFO
+apple_ocr/apple_ocr.egg-info/SOURCES.txt
+apple_ocr/apple_ocr.egg-info/dependency_links.txt
+apple_ocr/apple_ocr.egg-info/requires.txt
+apple_ocr/apple_ocr.egg-info/top_level.txt
