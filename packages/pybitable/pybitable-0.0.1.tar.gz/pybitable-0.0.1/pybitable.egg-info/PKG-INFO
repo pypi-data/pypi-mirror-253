@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pybitable
+Version: 0.0.1
+Summary: A Python wrapper around Lark bitable to sql.
+Home-page: https://github.com/lloydzhou/pybitable
+Author: lloydzhou
+Author-email: lloydzhou@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: sqlalchemy
+
+# pybitable
+
+```
+from pybitable import Connection, ConnectionPool
+
+db_url = 'bitable+pybitable://<app_id>:<app_secret>@open.feishu.cn/<app_token>'
+
+conn_pool = ConnectionPool(
+    maxsize=10,
+    connection_factory=lambda: Connection(db_url),
+)
+
+with conn_pool.connect() as connection:
+    print('connect', connection)
+    cursor = connection.cursor()
+    result = cursor.execute('select * from tbl2w2QJgo6YCthm')
+    cursor.close()
+```
+
+
+
+
