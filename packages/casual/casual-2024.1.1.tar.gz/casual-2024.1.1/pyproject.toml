@@ -1,0 +1,164 @@
+[tool.poetry]
+name = "casual"
+version = "2024.1.1"
+description = "Casual Framework"
+authors = ["Horia Filimonescu <horia.filimonescu+github@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/hfilimonescu/casual"
+include = [
+    "src/casual",
+    "src/casual_admin",
+    "src/casual_auth",
+    "src/casual_basis",
+    "src/casual_error",
+    "src/casual_main",
+    "src/casual_theme",
+]
+packages = [
+    { include = "casual", from = "src" },
+    { include = "casual_admin", from = "src" },
+    { include = "casual_auth", from = "src" },
+    { include = "casual_basis", from = "src" },
+    { include = "casual_error", from = "src" },
+    { include = "casual_main", from = "src" },
+    { include = "casual_theme", from = "src" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Environment :: Console",
+    "Framework :: Flask",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+alchemical = "^0.7.1"
+apifairy = "^1.3.0"
+bleach = "^6.0.0"
+celery = "^5.3.4"
+email-validator = "^2.0.0.post2"
+flask = "^2.1.2"
+flask-babel = "^3.1.0"
+flask-bs4 = "^5.3.1.0"
+flask-debugtoolbar = "^0.13.1"
+flask-login = "^0.6.2"
+flask-mail = "^0.9.1"
+flask-marshmallow = "^0.15.0"
+flask-menu = "^1.0.0"
+flask-migrate = "^4.0.4"
+markdown = "^3.4.4"
+marshmallow = "^3.20.1"
+marshmallow-sqlalchemy = "^0.29.0"
+pycountry = "^22.3.5"
+python-dotenv = "^1.0.0"
+redis = "^5.0.0"
+sqlalchemy-continuum = "^1.4.0"
+Werkzeug = "2.3.6"
+
+[tool.poetry.plugins."flask.commands"]
+core = "casual.cli:casual"
+auth = "casual_auth.cli:auth"
+
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+# Same as Black.
+line-length = 104
+indent-width = 4
+
+# Assume Python 3.8
+target-version = "py38"
+
+[tool.ruff.lint]
+# Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`)  codes by default.
+# Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
+# McCabe complexity (`C901`) by default.
+select = ["E4", "E7", "E9", "F"]
+ignore = []
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+# Enable auto-formatting of code examples in docstrings. Markdown,
+# reStructuredText code/literal blocks and doctests are all supported.
+#
+# This is currently disabled by default, but it is planned for this
+# to be opt-out in the future.
+docstring-code-format = false
+
+# Set the line length limit used when formatting code snippets in
+# docstrings.
+#
+# This only has an effect when the `docstring-code-format` setting is
+# enabled.
+docstring-code-line-length = "dynamic"
+
+[tool.mypy]
+allow_redefinition = true
+disallow_any_generics = false
+disallow_subclassing_any = true
+disallow_untyped_calls = false
+disallow_untyped_defs = true
+implicit_reexport = true
+no_implicit_optional = true
+show_error_codes = true
+strict = true
+strict_equality = true
+strict_optional = false
+warn_redundant_casts = true
+warn_return_any = false
+warn_unused_configs = true
+warn_unused_ignores = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

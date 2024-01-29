@@ -1,0 +1,33 @@
+{% extends 'admin.base.html.j2' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block appcontent %}
+  <table class="table table-hover table-sm">
+    <thead class="">
+        <th class="loop-index">{{_('Version')}}</th>
+        <th class="">{{_('Package')}}</th>
+        <th>{{_('Details')}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for package in packages %}
+      <tr>
+        <td class="font-monospace">{{ package.version }}</td>
+        <td class="font-monospace fw-bold">{{ package.name }}</td>
+        <td class="small">{{ package.description }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script language="JavaScript">
+  function toggle(source, checkboxes_name) {
+    checkboxes = document.getElementsByName(checkboxes_name);
+    for (var i in checkboxes) checkboxes[i].checked = source.checked;
+  }
+</script>
+{% endblock scripts %}

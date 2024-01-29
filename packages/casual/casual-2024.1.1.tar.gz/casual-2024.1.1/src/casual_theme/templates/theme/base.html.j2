@@ -1,0 +1,93 @@
+{% extends 'bootstrap/base.html' %}
+
+{% from 'bootstrap/pagination.html' import render_pagination %}
+
+{% from 'theme/comps.buttons.html.j2' import btn_a, btn_m, link %}
+{% from 'theme/comps.text.html.j2' import b, i, s, kbd, badge, label, header %}
+{% from 'theme/comps.icons.html.j2' import la %}
+{% from 'theme/comps.fields.html.j2' import field, yn %}
+{% from 'theme/comps.dropdowns.html.j2' import dropdown, separator with context %}
+{% from 'theme/comps.cards.html.j2' import card %}
+{% from 'theme/comps.badges.html.j2' import badge, pill %}
+
+
+{% block html_attribs %}
+lang="{{ session.locale }}"
+{% endblock html_attribs %}
+
+
+{% block title %}
+{{ config['CASUAL_NAME'] }}
+{% endblock title %}
+
+
+{% block navbar %}
+{% include 'theme/_topmenu.html.j2' %}
+{% endblock %}
+
+{% block content %}
+<div class="d-flex" id="wrapper">
+
+  {% block messages %}
+  <!-- Position it: -->
+  <!-- - `.toast-container` for spacing between toasts -->
+  <!-- - `.position-absolute`, `bottom-0` & `end-0` to position the toasts in the lower right corner -->
+  <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
+  <div class="toast-container position-absolute bottom-0 end-0 p-3">
+    {{ messages or get_flashed_messages(with_categories=True) | flash_messages }}
+  </div>
+  {% endblock messages %}
+
+  {% block sidemenu %}
+  {% include 'theme/_sidemenu.html.j2' %}
+  {% endblock sidemenu %}
+
+  <div id="page-content-wrapper">
+
+    <div class="container-fluid">
+      <div class="pagemenu border border-bottom border-top-0 rounded-bottom bg-light d-print-none">
+        {%- block pagemenu -%}
+        {%- include 'theme/_pagemenu.html.j2' -%}
+        {%- endblock -%}
+      </div>
+
+      {% block pageheader %}
+      {{ header(current_menu.active_item.text or _('Page Title'),
+      icon=current_menu.active_item.icon or None) }}
+      {% endblock %}
+
+      {% block appcontent %}{% endblock %}
+    </div>
+  </div>
+</div>
+{% endblock content %}
+
+
+{% block scripts %}
+{{ super() }}
+<script src="//unpkg.com/metismenujs@1.2.1/dist/metismenujs.min.js"></script>
+<script src="{{ url_for('theme.static', filename='basic.js') }}"></script>
+<script>
+  //   Format the date in local format with JS internal tools.
+  //   This is meant as a replacement of moment.js
+
+  var options = { dateStyle: "medium" };
+  var dateList = document.getElementsByClassName('date-conversion');
+
+  for (let index = 0; index < dateList.length; index++) {
+    let dateStr = dateList[index].innerText;
+    let dateObj = new Date(Date.parse(dateStr));
+
+    dateList[index].innerText = dateObj.toLocaleDateString("{{ session.locale }}", options);
+  }
+</script>
+{% endblock scripts %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/metismenujs/dist/metismenujs.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link href="{{ url_for('theme.static', filename='main.css') }}" rel="stylesheet">
+<link href="{{ url_for('theme.static', filename='simple-sidebar.css') }}" rel="stylesheet">
+<link href="{{ url_for('theme.static', filename='app.css') }}" rel="stylesheet">
+{% endblock styles %}

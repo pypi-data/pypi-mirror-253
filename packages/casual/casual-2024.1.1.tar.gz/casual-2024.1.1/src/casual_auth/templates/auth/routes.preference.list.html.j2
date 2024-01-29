@@ -1,0 +1,29 @@
+{% extends "auth/routes.base.html.j2" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block appcontent %}
+  <table class="table ">
+    <thead>
+      <tr>
+        <th class="col-md-3">{{ _('Name') }}</th>
+        <th class="col-md-3">{{ _('DB Value') }}</th>
+        <th class="col-md-3">{{ _('Session Value') }}</th>
+        <th class="d-print-none">{{ _('Actions') }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for preference in preferences | sort(attribute='name') %}
+        <tr>
+          <th>{{ preference.name }}</th>
+          <td>{{ preference.value }}</td>
+          <td>{{ session['preferences'][preference.name] }}</td>
+          <td class="d-print-none loop-index">
+            {% include "auth/routes.preference.menu.html.j2" %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+
+
