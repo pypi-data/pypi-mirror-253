@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+bright-tool/HandTrackingModule.py
+bright-tool/__init__.py
+bright_tool.egg-info/PKG-INFO
+bright_tool.egg-info/SOURCES.txt
+bright_tool.egg-info/dependency_links.txt
+bright_tool.egg-info/entry_points.txt
+bright_tool.egg-info/requires.txt
+bright_tool.egg-info/top_level.txt
