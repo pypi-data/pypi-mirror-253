@@ -1,0 +1,11 @@
+self_rewarding_lm_pytorch/__init__.py,sha256=Te7OlApl3HywvqteoClbTOATR9KVS74fp19gPcjefZg,250
+self_rewarding_lm_pytorch/dpo.py,sha256=waNsGUK3yJGUT2W_EMo-3M43Wb4b0ux1t351jrL8rig,12161
+self_rewarding_lm_pytorch/mocks.py,sha256=LkZt2_lYF7V4oQPxJKhD7PeWpvQDqWRSkOXy5qvpKo4,633
+self_rewarding_lm_pytorch/sampling_utils.py,sha256=9C8hBl6laRx_cT1PEEdJEQtaRaulaVIIRzSPEoG-h08,3493
+self_rewarding_lm_pytorch/self_rewarding_lm_pytorch.py,sha256=-Xt34SRCauYDzKl35hAIfgA6cNYAO6TxhLNAHc_uUrA,24524
+self_rewarding_lm_pytorch/spin.py,sha256=MyBWOXYYbSOE7rt6uRn6fyJIJLQ7RU1VYMlNTo-3xH0,8891
+self_rewarding_lm_pytorch-0.0.11.dist-info/LICENSE,sha256=E7RGS7kpJIStk5za_-4DVhWEAamf65EU0CNML25mq4c,1066
+self_rewarding_lm_pytorch-0.0.11.dist-info/METADATA,sha256=hjTkrN1SqdCHO7Ecl0mhfF36QlIY_p6DWv72qvr57jo,926
+self_rewarding_lm_pytorch-0.0.11.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+self_rewarding_lm_pytorch-0.0.11.dist-info/top_level.txt,sha256=CTUfWLzWGWz9Yol3yrmY7d0ylezpAfWVNr94QTasRc8,26
+self_rewarding_lm_pytorch-0.0.11.dist-info/RECORD,,
