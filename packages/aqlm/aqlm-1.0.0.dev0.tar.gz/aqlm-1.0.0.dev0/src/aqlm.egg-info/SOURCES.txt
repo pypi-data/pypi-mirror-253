@@ -1,0 +1,7 @@
+pyproject.toml
+setup.cfg
+src/aqlm.egg-info/PKG-INFO
+src/aqlm.egg-info/SOURCES.txt
+src/aqlm.egg-info/dependency_links.txt
+src/aqlm.egg-info/requires.txt
+src/aqlm.egg-info/top_level.txt
