@@ -1,0 +1,15 @@
+color.py,sha256=BndcW8Xjbi-RSDZJVAEHx1C9p4WjVH1GKV3go9_UODY,2837
+instream.py,sha256=Zqqz-mE-5wO_LYGLB0q4UP13pT-6zWzSsVstgZWVsdI,11630
+outstream.py,sha256=HP7ygtv25quTSv-QT2OorEKn82nWz3EakvS9SVTiuPc,2259
+picture.py,sha256=lBdOU0Jelgw5lFWOQ-XQWweUeEAhDKWYzNni5hAtMOM,5062
+stdarray.py,sha256=QDJ6jgpMgp8Jbw8nYxBLEy_dFYdb4cBCW9AI3b3NA_I,5227
+stdaudio.py,sha256=OJvU97_IBXiGkNQdwpssNncLrLcinEdped60Am7dFTE,6248
+stddraw.py,sha256=BIUF4qJE6G0FcD6a7mAsWeqCBQU8185-IegAqTGRD4g,27073
+stdio.py,sha256=qYUxSRtVFd_ha_4qQ2XwXaZa7qlrACSmOqIa3IoAFNk,10307
+stdrandom.py,sha256=iXMHYXy6-UllqNTIx6aZWxJg2QP604R4LFte_8f6vYU,4195
+stdstats.py,sha256=JbE7pIPzaYGYxqjVPyODyoag0iPtedhvB0h9Y8YmA24,3225
+su_stdlibs_python-0.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+su_stdlibs_python-0.0.1.dist-info/METADATA,sha256=HOkyCyXyVeHRL6fyAe0VjVb42khgvgbu4DgZa4UEAaM,6010
+su_stdlibs_python-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+su_stdlibs_python-0.0.1.dist-info/top_level.txt,sha256=kWqCNfek56JjR3t6VPifKjHTviZZSOG0HNNm1V05CKc,84
+su_stdlibs_python-0.0.1.dist-info/RECORD,,
