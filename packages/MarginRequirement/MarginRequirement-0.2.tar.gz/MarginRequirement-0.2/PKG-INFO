@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: MarginRequirement
+Version: 0.2
+License: MIT
+Requires-Dist: requests==2.31.0

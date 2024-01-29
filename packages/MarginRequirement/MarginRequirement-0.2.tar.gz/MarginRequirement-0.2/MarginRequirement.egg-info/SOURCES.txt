@@ -1,0 +1,8 @@
+setup.py
+MarginRequirement/__init__.py
+MarginRequirement/main.py
+MarginRequirement.egg-info/PKG-INFO
+MarginRequirement.egg-info/SOURCES.txt
+MarginRequirement.egg-info/dependency_links.txt
+MarginRequirement.egg-info/requires.txt
+MarginRequirement.egg-info/top_level.txt
