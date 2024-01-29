@@ -1,0 +1,308 @@
+@import "code";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+html {
+    --primary-color: #03a9f4;
+    --background-color: #fff;
+	--alternative-background-color: #f5f1f1;
+
+    font-size: 1.05em;
+    scroll-behavior: smooth;
+    font-family: roboto, sans-serif;
+    background-color: var(--background-color);
+
+    @media (prefers-color-scheme: dark) {
+        --background-color: #1d1e22;
+		--alternative-background-color: #333232;
+
+        color: white;
+    
+        a {
+            color: var(--primary-color);
+            &:visited { color: #87ceeb; }
+        }
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        padding-left: 240px;
+
+        @media (max-width: 700px) {
+            padding-left: 0;
+        }
+    }
+
+    *::-webkit-scrollbar {
+        height: 4px;
+        width: 4px;
+
+        &-track {
+            background-color: var(--alternative-background-color);
+        }
+
+        &-thumb {
+            background-color: #979393;
+            &:active {background-color: #555 }
+        }
+    }
+}
+
+#loader.active {
+    height: 2px;
+    position: fixed;
+    background-color: var(--primary-color);
+    animation: loader .8s forwards;
+
+    @keyframes loader {
+        0% { width: 0; }
+        99% { width: 100%; }
+        100% { opacity: 0; }
+    }
+}
+
+#error {
+    opacity: 0;
+    &.active { opacity: 1 }
+    transition: opacity 0.3s ease-in-out;
+
+    z-index: 1;
+    top: 20px;
+    right: 20px;
+    width: 144px;
+    position: absolute;
+    text-align: center;
+    font-family: Inconsolata, monospace;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--alternative-background-color);
+
+    @media (max-width: 700px) {
+        top: 4px;
+        right: 40px;
+        width: auto;
+    }
+}
+
+nav {
+    --nav-color: black;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+
+    @media (prefers-color-scheme: dark) {
+        --nav-color: #fff;
+        --box-shadow-color: rgba(0, 0, 0, 0.3);
+
+        svg path {
+            fill: #fff;
+        }
+    }
+
+    left: 0;
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    background-color: var(--alternative-background-color);
+    box-shadow: inset -10px 0 10px -10px var(--box-shadow-color);
+
+    #header {
+        display: block;
+        padding: 10px 0;
+        font-size: 1.4em;
+        font-weight: bold;
+        text-align: center;
+        background-color: var(--primary-color);
+
+        a {
+            color: var(--nav-color);
+            text-decoration: none;
+        }
+        
+        label {
+            padding: 2px;
+            transition: background-color 0.1s ease-in-out;
+
+            &, input { display: none; }
+            &:hover { background-color: rgba(0,0,0,0.1) }
+        }
+    }
+
+    > ul {
+        padding: 0;
+        margin: 20px 0 0 20px;
+        > li { list-style-type: none }
+    }
+
+    li {
+        margin-top: 5px;
+        list-style: square;
+
+        a, a:visited {
+            color: var(--nav-color);
+            text-decoration: none;
+            transition: color 0.1s ease-in-out;
+            &:hover { color: var(--primary-color) }
+        }
+    }
+
+    @media (max-width: 700px) {
+        height: auto;
+        width: 100%;
+
+        #header {
+            height: 25px;
+            display: flex;
+            place-items: center;
+            padding: 10px 10px;
+            justify-content: space-between;
+
+            label {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+
+                svg {
+                    scale: 0.2;
+                    margin-left: -40px;
+                    margin-top: -40px;
+                }
+            }
+        }
+
+        > ul { display: none }
+        &:has(input:checked) > ul {
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+#content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 800px;
+    text-align: justify;
+
+    > :first-child {
+        margin-top: 0;
+        padding-top: 35px;
+
+        @media (max-width: 700px) {
+            padding-top: 65px;
+        }
+    }
+}
+
+h2.anchor {
+    cursor: pointer;
+
+    &:hover::before {
+        content: '#';
+        color: #aaa;
+        position: absolute;
+        margin-left: -20px;
+        padding-right: 20px;
+    }
+}
+
+ul:has(input) {
+    padding-left: 20px;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 3px;
+    margin: 10px auto;
+}
+
+p {
+    ~ ul {
+        margin-top: 0;
+    }
+
+    &:has(+ul) {
+        margin-bottom: 5px;
+    }
+}
+
+blockquote {
+    width: calc(100% - 35px);
+
+	padding: 10px 15px;
+	margin-left: 0;
+	border-left: 5px solid;
+	background-color: var(--alternative-background-color);
+
+    p {
+        margin: 0;
+    }
+
+	p.quote::before {
+		display: block;
+		margin: 0 0 -5px 0;
+		font-size: 1.05em;
+        font-weight: bold;
+        height: 30px;
+	}
+
+    &:has(p.quote-NOTE) {
+        border-color: var(--primary-color);
+
+        p::before {
+            content: '📝 Note ';
+            color: var(--primary-color);
+        }
+    }
+
+    &:has(p.quote-WARNING) {
+        border-color: #cd5c5c;
+
+        p::before {
+            content: '⚠️ Warning ';
+            color: #cd5c5c;
+        }
+    }
+
+    &:has(p.quote-TIP) {
+        border-color: #90ee90;
+
+        p::before {
+            content: '💡 Tip ';
+            color: #90ee90;
+        }
+    }
+}
+
+table:not(.codehilitetable) {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+        --table-border-color: #ddd;
+        @media (prefers-color-scheme: dark) {
+            --table-border-color: #444;
+        }
+        
+        border: 1px solid var(--table-border-color);
+    }
+    
+    tr:nth-child(even) {
+        background: var(--alternative-background-color);
+    }
+    
+    td, th {
+        padding: 10px;
+        text-align: left;
+    }
+
+    @media (max-width: 400px) {
+        display: block;
+        overflow-x: scroll;
+    }
+}
