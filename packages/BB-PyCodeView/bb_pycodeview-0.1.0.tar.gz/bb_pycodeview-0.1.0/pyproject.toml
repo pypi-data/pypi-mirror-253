@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "BB-PyCodeView"
+version = "0.1.0"
+description = "View highlighted python code"
+authors = ["Erik Beebe <beebeapps_debugging@tuta.io>"]
+readme = "README.md"
+packages = [{ include = "pycodeview" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+bb-apputils = "^0.5.2"
+
+[tool.poetry.scripts]
+code-view = "pycodeview.code_view:_view_code_"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
