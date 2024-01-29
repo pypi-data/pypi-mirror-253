@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fontparser
+Version: 0.1
+Summary: font file parser library in Python
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: duoduo <duoduoqaq520@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10.2
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Description-Content-Type: text/markdown
+
+# font-parser
+一个用于解析PCF字体文件的Python库
+
+## Use
+```Python
+from fontparse import PCF
+font = PCF("./unifont-15.1.04-l.pcf") # your PCF file
+font.printGlyph(font.encodeChar("a"), " ", "*")
+```
