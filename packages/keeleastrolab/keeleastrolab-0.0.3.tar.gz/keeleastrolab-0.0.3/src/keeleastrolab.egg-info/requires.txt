@@ -1,0 +1,7 @@
+rawpy
+exifread
+astropy
+astrometry
+photutils
+rawpy
+exifread
