@@ -1,0 +1,5 @@
+pandas
+Pillow
+textwrap3
+gtts
+moviepy

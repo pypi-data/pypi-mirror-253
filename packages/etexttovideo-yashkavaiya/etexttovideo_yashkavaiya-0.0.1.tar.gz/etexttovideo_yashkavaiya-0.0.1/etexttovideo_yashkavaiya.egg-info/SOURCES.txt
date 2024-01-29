@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+etexttovideo_yashkavaiya.egg-info/PKG-INFO
+etexttovideo_yashkavaiya.egg-info/SOURCES.txt
+etexttovideo_yashkavaiya.egg-info/dependency_links.txt
+etexttovideo_yashkavaiya.egg-info/requires.txt
+etexttovideo_yashkavaiya.egg-info/top_level.txt
