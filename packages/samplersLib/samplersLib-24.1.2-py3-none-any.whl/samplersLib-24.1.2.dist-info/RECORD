@@ -1,0 +1,9 @@
+samplersLib/__init__.py,sha256=m9t5YlELD-mxkstI4KTf0_fgIx1woYMZU29BBXfvD9o,78
+samplersLib/_common.py,sha256=Zos3l2YTeS9tT3Bg9eElDyhkrIEyCszQqplKHlQ14P8,817
+samplersLib/kernels.py,sha256=WbS_2AoMpNmAA9IvgA4_DdtfL-7grx9zDzTSspjUjv4,14116
+samplersLib/samplers.py,sha256=NSxudiHG6zVXOwWHdTn6NpjqhIqrTGnR9g7qhMpU_mc,21136
+samplersLib-24.1.2.dist-info/LICENSE,sha256=f_4ZVFh8d9-6HPjrmy6nQ2cfpuY_nnovJYEZ1C4U7v4,27030
+samplersLib-24.1.2.dist-info/METADATA,sha256=_F4_tMMZNj-xtAb3gnKM8rrNd3nQFwwACuGDUdkT7lU,1896
+samplersLib-24.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+samplersLib-24.1.2.dist-info/top_level.txt,sha256=ofxNWW8zthqEDYBR2Ci3QwBPxKIHA-K6P_spbw716ng,12
+samplersLib-24.1.2.dist-info/RECORD,,
