@@ -1,0 +1,32 @@
+[project]
+name = "xpt2046_circuitpython"
+version = "1.0.0"
+description = "A simple XPT2046 chip reader designed for use with CircuitPython."
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["xpt", "xpt2046", "circuitpython", "spi", "pi", "tft"]
+authors = [
+  {name = "humeman", email = "camden@humeman.com" }
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/humeman/xpt2046-circuitpython"
+"Bug Reports" = "https://github.com/humeman/xpt2046-circuitpython/issues"
+"Source" = "https://github.com/humeman/xpt2046-circuitpython"
+"Docs" = "https://github.com/humeman/xpt2046-circuitpython/blob/main/docs"
+"Teck Tips" = "https://tecktip.today"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
