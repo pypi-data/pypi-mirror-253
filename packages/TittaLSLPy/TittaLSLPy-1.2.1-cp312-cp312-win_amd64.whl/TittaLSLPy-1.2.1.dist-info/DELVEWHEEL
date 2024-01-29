@@ -1,0 +1,2 @@
+Version: 1.5.2
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-dzpj0jie\\cp312-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-dzpj0jie\\cp312-win_amd64\\repaired_wheel', '--add-path', '.\\SDK_wrapper\\TittaMex\\64\\Windows;.\\LSL_streamer\\TittaLSLMex\\+TittaLSL\\+detail', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-dzpj0jie\\cp312-win_amd64\\built_wheel\\TittaLSLPy-1.2.1-cp312-cp312-win_amd64.whl']
