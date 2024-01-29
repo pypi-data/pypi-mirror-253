@@ -1,0 +1,1 @@
+# This package's function will return power of a given number
