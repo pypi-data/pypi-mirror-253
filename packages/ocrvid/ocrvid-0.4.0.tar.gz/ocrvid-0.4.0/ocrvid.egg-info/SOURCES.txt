@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+ocrvid/__init__.py
+ocrvid/__main__.py
+ocrvid/cli.py
+ocrvid/config.py
+ocrvid/ocr.py
+ocrvid/video.py
+ocrvid.egg-info/PKG-INFO
+ocrvid.egg-info/SOURCES.txt
+ocrvid.egg-info/dependency_links.txt
+ocrvid.egg-info/entry_points.txt
+ocrvid.egg-info/requires.txt
+ocrvid.egg-info/top_level.txt
+tests/test_cli.py
