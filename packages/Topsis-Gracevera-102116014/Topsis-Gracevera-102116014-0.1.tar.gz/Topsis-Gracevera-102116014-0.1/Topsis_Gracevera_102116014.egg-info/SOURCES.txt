@@ -1,0 +1,10 @@
+setup.py
+Topsis_Gracevera_102116014.egg-info/PKG-INFO
+Topsis_Gracevera_102116014.egg-info/SOURCES.txt
+Topsis_Gracevera_102116014.egg-info/dependency_links.txt
+Topsis_Gracevera_102116014.egg-info/entry_points.txt
+Topsis_Gracevera_102116014.egg-info/requires.txt
+Topsis_Gracevera_102116014.egg-info/top_level.txt
+scripts/102116014.py
+scripts/__init__.py
+topsis_package/__init__.py
