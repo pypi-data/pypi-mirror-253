@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Topsis-Satyajeet/102117170.py
+Topsis-Satyajeet/__init__.py
+Topsis_Satyajeet_102117170.egg-info/PKG-INFO
+Topsis_Satyajeet_102117170.egg-info/SOURCES.txt
+Topsis_Satyajeet_102117170.egg-info/dependency_links.txt
+Topsis_Satyajeet_102117170.egg-info/requires.txt
+Topsis_Satyajeet_102117170.egg-info/top_level.txt
