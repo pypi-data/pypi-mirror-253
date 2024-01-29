@@ -1,0 +1,12 @@
+apngasm_python/_apngasm_python.abi3.so,sha256=TLVor8j3j8EIYd3Tmn0G53Z1WFa6Acb81NIF0VJBTjQ,923280
+apngasm_python/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apngasm_python/__init__.py,sha256=mLecy3VK7P-TE1kmpgc1CmV1wBQ60saf3EItOknxw8E,66
+apngasm_python/apngasm.py,sha256=G9TBhHTIfn_o11U1S6YP-0eOiwkTNlE4i1A6uA2qvI8,20579
+apngasm_python/__init__.pyi,sha256=Y25n44pyE3vp92MiABKrcK3IWRyQ1JG1rZ4Ufqy2nC0,17
+apngasm_python/apngasm.pyi,sha256=EEEw6BS1GvkYHsVJ1ekWLIFACSIgAEWMehBclpngbCU,3301
+apngasm_python/_apngasm_python/__init__.pyi,sha256=FBrPRSke38BvuIgYr_guMPjlQifygJJrbJkMLGFuTok,25422
+apngasm_python-1.2.2.dist-info/WHEEL,sha256=uLHZac_99coeIIV80vfu3kSm7CBpUOFfrfWDr3vEJME,145
+apngasm_python-1.2.2.dist-info/LICENSE,sha256=IMF9i4xIpgCADf0U-V1cuf9HBmqWQd3qtI3FSuyW4zE,26526
+apngasm_python-1.2.2.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apngasm_python-1.2.2.dist-info/RECORD,,
+apngasm_python-1.2.2.dist-info/METADATA,sha256=ns7cj6hB2FbFc23QLu7J6xlGvwqIRanmrJqf9_hK8pE,36449
