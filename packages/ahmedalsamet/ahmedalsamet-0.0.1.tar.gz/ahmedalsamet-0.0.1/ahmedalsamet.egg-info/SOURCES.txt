@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+ahmedalsamet/__init__.py
+ahmedalsamet.egg-info/PKG-INFO
+ahmedalsamet.egg-info/SOURCES.txt
+ahmedalsamet.egg-info/dependency_links.txt
+ahmedalsamet.egg-info/top_level.txt

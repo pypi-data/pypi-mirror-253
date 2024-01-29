@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ahmedalsamet
+Version: 0.0.1
+Summary: Good window show
+Home-page: 
+Author: Ahmed Alsamet
+Author-email: ahmdalsamt10@gmail.com
+License: MIT
+Keywords: windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This library print my name in new window using python Tkinter
+
+Change Log
+==========
+
+0.0.1 (28/01/2024)
+------------------
+- First Release
