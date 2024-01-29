@@ -1,0 +1,9 @@
+# this is the fix for abandoned tensorboard_logger, scipy 1.6+ needs python 3.7
+scipy~=1.5.4
+numpy~=1.19.5
+protobuf~=3.14.0
+pillow~=8.1.0
+six >=1.13.0, ==1.*
+# end of fix
+tensorboard >=2.2.1, ==2.*
+tensorboard_logger>=0.1.0
