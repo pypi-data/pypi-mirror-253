@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: ragcore
+Version: 0.0.1
+Summary: A library to build Retrieval Augmentation Applications with only a few lines of code.
+Home-page: 
+Author: David Kirchhoff
+Author-email: david.kirchhoff@mail.utoronto.ca
+Project-URL: Bug Reports, https://github.com/daved01/ragcore/issues
+Project-URL: Funding, https://github.com/sponsors/daved01
+Project-URL: Say Thanks!, https://www.paypal.com/donate/?hosted_button_id=23YUGLRRTNDMS
+Project-URL: Source, https://github.com/daved01/ragcore
+Keywords: retrieval augmented generation,rag,development,artificial intelligence,large language models
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiofiles==23.1.0
+Requires-Dist: chromadb==0.4.22
+Requires-Dist: fastapi==0.99.1
+Requires-Dist: Jinja2==3.1.2
+Requires-Dist: langchain==0.1.1
+Requires-Dist: langchain-community==0.0.13
+Requires-Dist: openai==1.7.2
+Requires-Dist: pypdf==3.15.0
+Requires-Dist: tiktoken==0.4.0
+Requires-Dist: uvicorn==0.23.2
+
+# RAG Core
+
+<p align="center">
+  <a href="https://www.python.org/downloads/release/python-310/"><img src="https://img.shields.io/badge/python-3.10-green.svg" alt="Python 3.10"></a>
+  <a href="https://www.python.org/downloads/release/python-311/"><img src="https://img.shields.io/badge/python-3.11-green.svg" alt="Python 3.11"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
+  <img src="https://github.com/daved01/ragcore/actions/workflows/code-check-main.yml/badge.svg" alt="example workflow">
+</p>
+
+A RAG library with a CLI interface.
+
+# Quick start
+
+To install, run
+
+```bash
+pip install ragcore
+```
+
+or clone and build form source
+
+```bash
+git clone ...
+cd ...
+..
+```
+
+# Usage
+
+RAG Core has ...
+
+# Extend
