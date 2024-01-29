@@ -1,0 +1,16 @@
+numpy>=1.20.0
+mdanalysis>=2.0.0
+
+[docs]
+ipython
+MDAnalysisTests
+mdanalysis-sphinx-theme
+nbsphinx
+ipywidgets
+nglview
+
+[tests]
+pytest
+pytest-cov
+ipython
+MDAnalysisTests
