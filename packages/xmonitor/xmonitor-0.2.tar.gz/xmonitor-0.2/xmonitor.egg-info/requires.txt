@@ -1,0 +1,6 @@
+xarg-python>=1.3
+xmanual>=0.5
+xmanage>=0.3
+tabulate
+glances
+bottle
