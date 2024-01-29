@@ -1,0 +1,16 @@
+.mantine-Menu-dropdown {
+    border: 0.0625rem solid #373A40;
+}
+
+.mantine-Tabs-tabsList {
+    gap: 12px;
+}
+
+.mantine-TextInput-input[data-with-icon] {
+    padding-left: 2.25rem;
+}
+
+.mantine-Title-root.mantine-Text-root {
+    font-family:  "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif";
+    font-size: 2rem;
+}
