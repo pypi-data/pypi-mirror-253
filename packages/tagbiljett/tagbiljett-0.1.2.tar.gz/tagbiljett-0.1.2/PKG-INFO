@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: tagbiljett
+Version: 0.1.2
+Summary: A command-line tool for querying SJ ticket prices
+Author-email: Jonas Windhager <jonas@windhager.io>
+License: MIT License
+        
+        Copyright (c) 2024 Jonas Windhager
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: pandas
+Requires-Dist: requests
+
+# tagbiljett
+
+A command-line tool for querying SJ ticket prices
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install tagbiljett.
+
+```bash
+pip install tagbiljett
+```
+
+## Usage
+
+```
+> tagbiljett --help
+
+Usage: tagbiljett [OPTIONS] %Y-%m-%dT%H:%M FROM TO
+
+  Query current SJ ticket prices for a given journey
+
+Options:
+  -a, --arrival %Y-%m-%dT%H:%M  Arrival date and time.
+  -n, --changes INTEGER         Exact number of changes.
+  -h, --help                    Show this message and exit.
+```
+
+```
+> ./cron.sh trains.csv prices.txt
+```
+
+Using the container:
+```
+> docker run ghcr.io/jwindhager/tagbiljett --help
+
+Usage: tagbiljett [OPTIONS] %Y-%m-%dT%H:%M FROM TO
+
+  Query current SJ ticket prices for a given journey
+
+Options:
+  -a, --arrival %Y-%m-%dT%H:%M  Arrival date and time.
+  -n, --changes INTEGER         Exact number of changes.
+  -h, --help                    Show this message and exit.
+```
+
+```
+> docker run -v trains.csv:/usr/src/app/trains.csv -v tagbiljett-data:/usr/src/app/data --entrypoint /bin/bash ghcr.io/jwindhager/tagbiljett cron.sh trains.csv data/prices.txt
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+## License
+
+[MIT](https://github.com/jwindhager/tagbiljett/blob/main/LICENSE)
