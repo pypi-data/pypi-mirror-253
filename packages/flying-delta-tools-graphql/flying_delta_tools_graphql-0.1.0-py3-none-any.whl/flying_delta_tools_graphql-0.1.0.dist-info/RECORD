@@ -1,0 +1,5 @@
+llama_index/tools/graphql/__init__.py,sha256=XJweooRjsQ0hSgmaPQdWMuNmb26dCKlQvsmuKhqVlNA,107
+llama_index/tools/graphql/base.py,sha256=RcYkLnO54APyL9PQajRizBaWrvzq_NETVHfGrxOH0d8,1184
+flying_delta_tools_graphql-0.1.0.dist-info/METADATA,sha256=z-QtFVxs6FMW0CLgQHldctVO8rL0L6lEMqvmq7c0J4s,1933
+flying_delta_tools_graphql-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flying_delta_tools_graphql-0.1.0.dist-info/RECORD,,
