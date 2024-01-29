@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "nonebot-plugin-enatfrp"
+version = "0.1.6"
+description = "SakuraFrp管理插件"
+authors = ["eya46 <61458340+eya46@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "nonebot_plugin_enatfrp" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+nonebot2 = {version = ">=2.1.0", extras = ["httpx"]}
+nonebot-plugin-alconna = ">=0.35.0,<=0.40.0"
+
+[tool.poetry.group.dev.dependencies]
+pyyaml = "^6.0.1"
+openapi-pydantic = "^0.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+select = ["E", "W", "F", "UP", "C", "T", "PYI", "PT", "Q"]
+ignore = ["E402", "C901", "UP037", "PYI021", "PYI053"]
+
+line-length = 121
+target-version = "py38"
