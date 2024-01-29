@@ -1,0 +1,8 @@
+shellxec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shellxec/core.py,sha256=worZoF_VehROG6RsW5K8eQyv-v1NzyZZpAepjwbKXbM,2114
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_shellxec.py,sha256=dUav2qHkflFzazYgB41JUIGhxqsuG2EuDBJyxIEXsY0,1929
+shellxec-0.1.0.dist-info/METADATA,sha256=yJFONiSSLJrvwFXSKTM0EQ0Sp3YWF482XwXQS4Gald4,2419
+shellxec-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+shellxec-0.1.0.dist-info/top_level.txt,sha256=moFfzsJbDSM2KauaJcQgwfds63NdViqhi2QPL-Xb0wE,14
+shellxec-0.1.0.dist-info/RECORD,,
