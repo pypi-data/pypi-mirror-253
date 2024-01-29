@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: jupyter-interactive
+Version: 0.1.0
+Summary: Initialise a Jupyter notebook with useful extensions and reasonable defaults
+License: CC0-1.0
+Author: kxmh42
+Author-email: kxmh42@users.noreply.github.com
+Requires-Python: >=3.7.1,<3.12
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: coconut (>=3.0.2,<4.0.0)
+Requires-Dist: ipympl (>=0.9.3,<0.10.0)
+Requires-Dist: ipython-autoimport (>=0.4,<0.5)
+Requires-Dist: itables (>=1.5.3,<2.0.0)
+Requires-Dist: matplotlib-inline (>=0.1.6,<0.2.0)
+Requires-Dist: numpy (>=1.20,<2.0) ; python_version < "3.8"
+Requires-Dist: numpy (>=1.22,<2.0) ; python_version >= "3.8"
+Requires-Dist: pandas (>=1.3)
+Requires-Dist: plotly (>=5.15.0,<6.0.0)
+Requires-Dist: polars (>=0.18.2,<0.19.0)
+Requires-Dist: rpy2 (>=3.5.12)
+Requires-Dist: tensorflow (<2.12) ; python_version < "3.8"
+Requires-Dist: tensorflow (>=2.12,<3.0) ; python_version >= "3.8"
+Requires-Dist: torch (>=1.13,<2.0)
+Description-Content-Type: text/markdown
+
+# jupyter-interactive
+
+Initialise a Jupyter notebook with useful extensions and reasonable defaults.
+
+## Usage
+
+    %load_ext jupyter_interactive
+
+## Features
+
+- Enable [autoimport](https://github.com/anntzer/ipython-autoimport) of missing
+  modules.
+- Enable the
+  [`%autoreload`](https://ipython.org/ipython-doc/3/config/extensions/autoreload.html)
+  keyword to reload all modules in the current session.
+- Enable the `%%R` and `%%coconut` magic to execute specific cells using
+  [R](https://rpy2.github.io/) and
+  [Coconut](https://coconut-lang.org/).
+- Configure plot output formatting:
+    - Display Matplotlib plots as interactive, resizable widgets (using
+      [`ipympl`](https://matplotlib.org/ipympl/)).
+    - Display Matplotlib plots at a higher resolution.
+    - Zoom in and out of Plotly figures using the mosue scroll wheel and/or
+      two-finger scrolling.
+    - Download Plotly figures at their currently rendered size.
+    - Ensure that dragging Plotly figures results in panning (rather than
+      zooming).
+- Configure the output formatting of dataframes:
+    - Display dataframes as interactive HTML tables (using
+      [`itables`](https://mwouts.github.io/itables/quick_start.html)).
+    - Increase the table size limit to 8 MiB.
+    - Adjust default colours for better contrast.
+    - Display cell contents in a monospace font.
+    - Extend the range of available table lengths.
+    - Make Polars dataframes output Markdown when printed.
+    - Show all dataframe columns, even if there are many of them.
+- Try to make results reproducible by setting the seed for the built-in
+  `random` module, NumPy, and, if available, PyTorch and Tensorflow.
+

@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "jupyter-interactive"
+version = "0.1.0"
+description = "Initialise a Jupyter notebook with useful extensions and reasonable defaults"
+authors = ["kxmh42 <kxmh42@users.noreply.github.com>"]
+license = "CC0-1.0"
+readme = "README.md"
+packages = [{include = "jupyter_interactive"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<3.12"
+ipython-autoimport = "^0.4"
+itables = "^1.5.3"
+matplotlib-inline = "^0.1.6"
+numpy = [
+    {version = "^1.20", python = "<3.8"},
+    {version = "^1.22", python = ">=3.8"},
+]
+pandas = ">=1.3"
+polars = "^0.18.2"
+rpy2 = ">=3.5.12"
+coconut = "^3.0.2"
+ipympl = "^0.9.3"
+plotly = "^5.15.0"
+torch = {version = "^1.13", optional = true}
+tensorflow = [
+    {version = "<2.12", optional = true, python = "<3.8"},
+    {version = "^2.12", optional = true, python = ">=3.8"},
+]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
