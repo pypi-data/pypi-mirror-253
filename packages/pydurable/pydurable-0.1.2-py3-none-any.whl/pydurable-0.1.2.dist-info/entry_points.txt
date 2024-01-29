@@ -1,0 +1,3 @@
+[console_scripts]
+durable=pydurable.cli:main
+
