@@ -1,0 +1,14 @@
+numpy
+
+[dev]
+black
+pytest
+coverage
+sphinx<=7.2.6
+sphinx_rtd_theme
+recommonmark
+sphinx-autodoc-typehints
+sphinx-copybutton
+sphinx-prompt
+sphinx-notfound-page
+sphinx-autodoc-annotation
