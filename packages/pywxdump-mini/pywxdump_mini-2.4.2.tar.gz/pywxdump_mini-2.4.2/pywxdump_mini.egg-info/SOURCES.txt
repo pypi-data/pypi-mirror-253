@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pywxdump_mini/__init__.py
+pywxdump_mini/simplify_wx_info.py
+pywxdump_mini.egg-info/PKG-INFO
+pywxdump_mini.egg-info/SOURCES.txt
+pywxdump_mini.egg-info/dependency_links.txt
+pywxdump_mini.egg-info/entry_points.txt
+pywxdump_mini.egg-info/requires.txt
+pywxdump_mini.egg-info/top_level.txt

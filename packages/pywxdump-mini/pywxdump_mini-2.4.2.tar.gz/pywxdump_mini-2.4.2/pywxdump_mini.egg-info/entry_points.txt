@@ -1,0 +1,2 @@
+[console_scripts]
+wxinfo = pywxdump_mini.simplify_wx_info:read_info
