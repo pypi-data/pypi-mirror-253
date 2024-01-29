@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: nvidia-transfer-learning-client
+Version: 5.2.1.dev0
+Summary: NVIDIA's package for using NVTL-REST-API via NVTL-Client.
+Author: Varun Praveen
+Author-email: vpraveen@nvidia.com
+License: NVIDIA Proprietary Software
+Keywords: nvidia,nvtl,api
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Environment :: Console
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+License-File: LICENSE
+Requires-Dist: click >=8.0.4
+Requires-Dist: requests >=2.27.1
+Requires-Dist: configparser >=6.0.0
+

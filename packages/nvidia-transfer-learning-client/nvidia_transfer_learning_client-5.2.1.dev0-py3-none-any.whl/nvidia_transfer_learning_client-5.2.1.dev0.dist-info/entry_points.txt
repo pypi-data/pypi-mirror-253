@@ -1,0 +1,3 @@
+[console_scripts]
+nvtl = nvtl_cli.nvtl:cli
+tao-client = nvtl_cli.nvtl:cli
