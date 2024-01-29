@@ -1,0 +1,212 @@
+Metadata-Version: 2.1
+Name: mldev
+Version: 0.5.0.dev1
+Summary: mldev is a tool for running reproducible experiments
+Home-page: https://gitlab.com/mlrep/mldev.git
+Author: MLREP team
+Author-email: dev@mlrep.org
+License: Apache 2.0 license
+Keywords: data-science developer-tools reproducibility collaboration ai
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Requires-Dist: simpleeval
+Requires-Dist: sh (==1.*,>=1.13.1)
+Requires-Dist: pyyaml (>=5.3.1) ; python_version == "3.6"
+Requires-Dist: pyyaml (>=6.0.1) ; python_version >= "3.7"
+Provides-Extra: all
+Requires-Dist: markdown-it-py (>=1.1.0) ; extra == 'all'
+Requires-Dist: requests (>=2.22.0) ; extra == 'all'
+Requires-Dist: dill (>=0.3.3) ; extra == 'all'
+Requires-Dist: sh (==1.*,>=1.13.1) ; extra == 'all'
+Requires-Dist: protobuf (~=3.14.0) ; extra == 'all'
+Requires-Dist: PySocks (~=1.7.1) ; extra == 'all'
+Requires-Dist: scipy (~=1.5.4) ; extra == 'all'
+Requires-Dist: six ; extra == 'all'
+Requires-Dist: pyTelegramBotAPI (~=3.7.1) ; extra == 'all'
+Requires-Dist: numpy (~=1.19.5) ; extra == 'all'
+Requires-Dist: pillow (~=8.1.0) ; extra == 'all'
+Requires-Dist: future ; extra == 'all'
+Requires-Dist: ruamel.yaml (==0.17.33) ; extra == 'all'
+Requires-Dist: six (==1.*,>=1.13.0) ; extra == 'all'
+Requires-Dist: protobuf ; extra == 'all'
+Requires-Dist: tensorboard (==2.*,>=2.2.1) ; extra == 'all'
+Requires-Dist: pathspec (==0.9.0) ; extra == 'all'
+Requires-Dist: pydrive2 (~=1.4.13) ; extra == 'all'
+Requires-Dist: dvc (==1.6.6) ; extra == 'all'
+Requires-Dist: matplotlib ; extra == 'all'
+Requires-Dist: simpleeval ; extra == 'all'
+Requires-Dist: scipy ; extra == 'all'
+Requires-Dist: flask (>=1.1.2) ; extra == 'all'
+Requires-Dist: numpy ; extra == 'all'
+Requires-Dist: deepdiff (==5.7.0) ; extra == 'all'
+Requires-Dist: ipython (>=7.16.1) ; extra == 'all'
+Requires-Dist: tensorboard-logger (>=0.1.0) ; extra == 'all'
+Requires-Dist: nbformat (>=5.1.3) ; extra == 'all'
+Requires-Dist: pillow ; extra == 'all'
+Requires-Dist: GitPython (==3.1.18) ; extra == 'all'
+Requires-Dist: pillow (~=8.1.0) ; (python_version == "3.6") and extra == 'all'
+Requires-Dist: pyyaml (>=5.3.1) ; (python_version == "3.6") and extra == 'all'
+Requires-Dist: scipy (~=1.5.4) ; (python_version == "3.6") and extra == 'all'
+Requires-Dist: numpy (~=1.19.5) ; (python_version == "3.6") and extra == 'all'
+Requires-Dist: six (==1.*,>=1.13.0) ; (python_version == "3.6") and extra == 'all'
+Requires-Dist: matplotlib (~=3.3.4) ; (python_version == "3.6") and extra == 'all'
+Requires-Dist: protobuf (~=3.14.0) ; (python_version == "3.6") and extra == 'all'
+Requires-Dist: pyyaml (>=6.0.1) ; (python_version >= "3.7") and extra == 'all'
+Provides-Extra: base
+Requires-Dist: simpleeval ; extra == 'base'
+Requires-Dist: sh (==1.*,>=1.13.1) ; extra == 'base'
+Requires-Dist: pyyaml (>=5.3.1) ; (python_version == "3.6") and extra == 'base'
+Requires-Dist: pyyaml (>=6.0.1) ; (python_version >= "3.7") and extra == 'base'
+Provides-Extra: bot
+Requires-Dist: simpleeval ; extra == 'bot'
+Requires-Dist: sh (==1.*,>=1.13.1) ; extra == 'bot'
+Requires-Dist: PySocks (~=1.7.1) ; extra == 'bot'
+Requires-Dist: pyTelegramBotAPI (~=3.7.1) ; extra == 'bot'
+Requires-Dist: requests (>=2.22.0) ; extra == 'bot'
+Requires-Dist: six (==1.*,>=1.13.0) ; extra == 'bot'
+Requires-Dist: pyyaml (>=5.3.1) ; (python_version == "3.6") and extra == 'bot'
+Requires-Dist: pyyaml (>=6.0.1) ; (python_version >= "3.7") and extra == 'bot'
+Provides-Extra: collab
+Requires-Dist: simpleeval ; extra == 'collab'
+Requires-Dist: sh (==1.*,>=1.13.1) ; extra == 'collab'
+Requires-Dist: deepdiff (==5.7.0) ; extra == 'collab'
+Requires-Dist: GitPython (==3.1.18) ; extra == 'collab'
+Requires-Dist: ruamel.yaml (==0.17.33) ; extra == 'collab'
+Requires-Dist: pyyaml (>=5.3.1) ; (python_version == "3.6") and extra == 'collab'
+Requires-Dist: pyyaml (>=6.0.1) ; (python_version >= "3.7") and extra == 'collab'
+Provides-Extra: controller
+Requires-Dist: simpleeval ; extra == 'controller'
+Requires-Dist: sh (==1.*,>=1.13.1) ; extra == 'controller'
+Requires-Dist: flask (>=1.1.2) ; extra == 'controller'
+Requires-Dist: pyyaml (>=5.3.1) ; (python_version == "3.6") and extra == 'controller'
+Requires-Dist: pyyaml (>=6.0.1) ; (python_version >= "3.7") and extra == 'controller'
+Provides-Extra: dvc
+Requires-Dist: simpleeval ; extra == 'dvc'
+Requires-Dist: sh (==1.*,>=1.13.1) ; extra == 'dvc'
+Requires-Dist: future ; extra == 'dvc'
+Requires-Dist: pydrive2 (~=1.4.13) ; extra == 'dvc'
+Requires-Dist: dvc (==1.6.6) ; extra == 'dvc'
+Requires-Dist: pathspec (==0.9.0) ; extra == 'dvc'
+Requires-Dist: pyyaml (>=5.3.1) ; (python_version == "3.6") and extra == 'dvc'
+Requires-Dist: pyyaml (>=6.0.1) ; (python_version >= "3.7") and extra == 'dvc'
+Provides-Extra: jupyter
+Requires-Dist: simpleeval ; extra == 'jupyter'
+Requires-Dist: sh (==1.*,>=1.13.1) ; extra == 'jupyter'
+Requires-Dist: scipy ; extra == 'jupyter'
+Requires-Dist: numpy ; extra == 'jupyter'
+Requires-Dist: protobuf ; extra == 'jupyter'
+Requires-Dist: pillow ; extra == 'jupyter'
+Requires-Dist: six ; extra == 'jupyter'
+Requires-Dist: ipython (>=7.16.1) ; extra == 'jupyter'
+Requires-Dist: nbformat (>=5.1.3) ; extra == 'jupyter'
+Requires-Dist: markdown-it-py (>=1.1.0) ; extra == 'jupyter'
+Requires-Dist: dill (>=0.3.3) ; extra == 'jupyter'
+Requires-Dist: matplotlib ; extra == 'jupyter'
+Requires-Dist: pyyaml (>=5.3.1) ; (python_version == "3.6") and extra == 'jupyter'
+Requires-Dist: scipy (~=1.5.4) ; (python_version == "3.6") and extra == 'jupyter'
+Requires-Dist: numpy (~=1.19.5) ; (python_version == "3.6") and extra == 'jupyter'
+Requires-Dist: protobuf (~=3.14.0) ; (python_version == "3.6") and extra == 'jupyter'
+Requires-Dist: pillow (~=8.1.0) ; (python_version == "3.6") and extra == 'jupyter'
+Requires-Dist: six (==1.*,>=1.13.0) ; (python_version == "3.6") and extra == 'jupyter'
+Requires-Dist: matplotlib (~=3.3.4) ; (python_version == "3.6") and extra == 'jupyter'
+Requires-Dist: pyyaml (>=6.0.1) ; (python_version >= "3.7") and extra == 'jupyter'
+Provides-Extra: tensorboard
+Requires-Dist: simpleeval ; extra == 'tensorboard'
+Requires-Dist: sh (==1.*,>=1.13.1) ; extra == 'tensorboard'
+Requires-Dist: scipy (~=1.5.4) ; extra == 'tensorboard'
+Requires-Dist: numpy (~=1.19.5) ; extra == 'tensorboard'
+Requires-Dist: protobuf (~=3.14.0) ; extra == 'tensorboard'
+Requires-Dist: pillow (~=8.1.0) ; extra == 'tensorboard'
+Requires-Dist: six (==1.*,>=1.13.0) ; extra == 'tensorboard'
+Requires-Dist: tensorboard (==2.*,>=2.2.1) ; extra == 'tensorboard'
+Requires-Dist: tensorboard-logger (>=0.1.0) ; extra == 'tensorboard'
+Requires-Dist: pyyaml (>=5.3.1) ; (python_version == "3.6") and extra == 'tensorboard'
+Requires-Dist: pyyaml (>=6.0.1) ; (python_version >= "3.7") and extra == 'tensorboard'
+
+
+MLDev software
+==============
+
+This repository contains the MLDev software, that facilitates running data science experiments, 
+help in results presentation and eases paper preparation for students, data scientists and researchers.
+
+The MLDev software provides the following features to help with automating machine learning experiments:
+
+
+* Configure stages and parameters of a data science experiment separately from your code
+* Conduct a repeatable experiment in Google Colab or PaperSpace
+* Keep versions of your code, results and intermediate files on Google Drive (other repos coming soon)
+* Use a variety of pre-built templates to get started
+
+MLDev also provides some services that run alongside your experiment code:
+You can have the notifications via Telegram about the exeptions while training your model
+
+
+* Keep updated on current experiment state using TensorBoard (even on Colab)
+* Deploy and demo your model with a model controller (feature in progress) 
+
+Install mldev
+=============
+
+MLDev comes with a couple of extensions (extras), see the homepage for details. 
+
+- base
+- dvc
+- tensorboard
+- controller
+- bot
+- jupyter
+- collab
+
+Install using ``install_mldev.sh`` script
+-----------------------------------------
+
+Get the latest version of our install file to your local machine and run it.
+
+``$ curl https://gitlab.com/mlrep/mldev/-/raw/develop/install_mldev.sh -o install_mldev.sh`` 
+
+``$ chmod +x ./install_mldev.sh``
+
+``$ ./install_mldev.sh``
+
+You may be asked for ``root`` privileges if there are system packages to be installed.
+
+Wait a couple of minutes until installation will complete, congrats!
+
+
+Install from PyPI
+-----------------
+
+Use ``pip`` to install MLDev package from PyPI. This will not install any system dependencies.
+
+Useful for including MLDev into ``requirements.txt`` in your experiments.
+
+``$ python3 -m pip install mldev[base]``
+
+
+
+Contacts
+========
+
+You can reach developers at the `Telegram user group <https://t.me/mldev_betatest>`_
+
+Homepage https://gitlab.com/mlrep/mldev
+
+See the project page at the Open Data Science website https://ods.ai/projects/mldev
+
+License
+=======
+
+The software is licensed under Apache 2.0 license
+
+

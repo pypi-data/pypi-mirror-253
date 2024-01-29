@@ -1,0 +1,3 @@
+[console_scripts]
+mldev = mldev.main:do_main
+
