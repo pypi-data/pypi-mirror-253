@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+todo-jira = mkdocs_todo_jira.plugin:TODOJira
