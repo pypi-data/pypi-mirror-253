@@ -1,0 +1,12 @@
+musicbrainzngs
+parsedatetime
+python-dateutil
+pylast
+rich
+typer[all]
+opencv-python
+
+[test]
+scrobble
+pytest
+pytest-cov
