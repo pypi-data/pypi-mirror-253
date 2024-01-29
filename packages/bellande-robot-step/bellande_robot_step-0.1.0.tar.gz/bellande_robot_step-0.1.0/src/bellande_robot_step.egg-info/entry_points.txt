@@ -1,0 +1,10 @@
+[console_scripts]
+bellande_step_10d = bellande_robot_step.bellande_robot_step_10d:bellande_step_10d
+bellande_step_2d = bellande_robot_step.bellande_robot_step_2d:bellande_step_2d
+bellande_step_3d = bellande_robot_step.bellande_robot_step_3d:bellande_step_3d
+bellande_step_4d = bellande_robot_step.bellande_robot_step_4d:bellande_step_4d
+bellande_step_5d = bellande_robot_step.bellande_robot_step_5d:bellande_step_5d
+bellande_step_6d = bellande_robot_step.bellande_robot_step_6d:bellande_step_6d
+bellande_step_7d = bellande_robot_step.bellande_robot_step_7d:bellande_step_7d
+bellande_step_8d = bellande_robot_step.bellande_robot_step_8d:bellande_step_8d
+bellande_step_9d = bellande_robot_step.bellande_robot_step_9d:bellande_step_9d
