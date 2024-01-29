@@ -1,0 +1,5 @@
+llama_index/vector_stores/timescalevector/__init__.py,sha256=Zy6kvFfMHBEXliEdY4zIIzArXUxb_3P5Y5WDEwa1i6E,117
+llama_index/vector_stores/timescalevector/base.py,sha256=rv2wUu_rWJP-RQX94IfH-0N_1xJBreTn1FcX8iRsDdI,8380
+flying_delta_vector_stores_timescalevector-0.1.0.dist-info/METADATA,sha256=Dzfr9VZh4m0N2VGPIP9q_t955kAXm7vLnmZYLRx0CaI,691
+flying_delta_vector_stores_timescalevector-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flying_delta_vector_stores_timescalevector-0.1.0.dist-info/RECORD,,
