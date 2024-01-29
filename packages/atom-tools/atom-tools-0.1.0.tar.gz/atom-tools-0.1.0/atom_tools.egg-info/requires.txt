@@ -1,0 +1,12 @@
+cleo>=1.0.0
+jmespath>=1.0.0
+
+[dev]
+black
+coverage
+flake8
+isort
+pre-commit
+pylint
+pytest
+tox
