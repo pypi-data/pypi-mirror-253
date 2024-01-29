@@ -1,0 +1,3 @@
+[console_scripts]
+clone-data=clone_data:clone_submodule
+
