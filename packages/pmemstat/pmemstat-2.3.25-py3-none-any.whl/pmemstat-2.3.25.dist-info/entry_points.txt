@@ -1,0 +1,2 @@
+[console_scripts]
+pmemstat = pmemstat.pmemstat:run
