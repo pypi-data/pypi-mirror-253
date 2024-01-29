@@ -1,0 +1,16 @@
+ppieces/__init__.py,sha256=ThnCuF3X7rsQSd5PAea_jfYA70ZmhLvkFcLBxBPwZnY,22
+ppieces/main.py,sha256=4pCJ3FsHw77fKPXp3iX002SqVmr_L6_LmuK7yiqahYY,2030
+ppieces/templates/main.py,sha256=Gl6CyW6zhXZBR-QJly1M4GrhVDZDR8Lv7WRfad3b08g,79
+ppieces/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ppieces/utils/cli.py,sha256=Mq5nqQrnJ8VdadkaBvxDEIt8a5ZaM3BLiLskMJHqRpY,1779
+ppieces/utils/commands.py,sha256=7NU4UbWBHUA_G79Z6y8fm-gPmZggTfjajbuwU9wbuJM,6012
+ppieces/utils/constants.py,sha256=BE9kwYeKstcl6vj-J4-TB-FzsSFe4MRQIUrsyv8gInI,215
+ppieces/utils/copy.py,sha256=syXOmqF7qfPoPeYKbdNEgU7FcpUNy7B2idl6z-80bNg,1552
+ppieces/utils/flows.py,sha256=_tZklLv_4z05FPTfjlsMkp1d3EWv3DT3yVuli0lcWIM,2206
+ppieces/utils/prompts.py,sha256=oLvB-ONjbRNa79TB_liUcIO0A8TK908zVpDvaaU4dVw,1340
+ppieces-0.3.5.dist-info/LICENSE,sha256=DMj434VYPl0gLjNNxOH7mZi6AgjkWTONg8j9SmrOPTY,1069
+ppieces-0.3.5.dist-info/METADATA,sha256=pFXMsxcvEdVw3ZiTyUomTiyJ2-8F3gbG7lFLpvi47bc,5292
+ppieces-0.3.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ppieces-0.3.5.dist-info/entry_points.txt,sha256=2XTp7ZCtN9EleBOW0sYMdf8fMYNSkFRbxcw3EFXCgdQ,46
+ppieces-0.3.5.dist-info/top_level.txt,sha256=cOhvJ9wLt4_me-Ov7F2YAG3wv5iWaVNrovp6xTZeZFg,8
+ppieces-0.3.5.dist-info/RECORD,,
