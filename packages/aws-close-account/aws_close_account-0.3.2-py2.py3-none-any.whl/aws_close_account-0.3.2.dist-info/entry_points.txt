@@ -1,0 +1,3 @@
+[console_scripts]
+aws-close-account = aws_close_account.__main__:main
+aws_close_account = aws_close_account.__main__:main
