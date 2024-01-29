@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+datasendnetwork.egg-info/PKG-INFO
+datasendnetwork.egg-info/SOURCES.txt
+datasendnetwork.egg-info/dependency_links.txt
+datasendnetwork.egg-info/requires.txt
+datasendnetwork.egg-info/top_level.txt
