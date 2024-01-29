@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: person-generete-br
+Version: 0.0.2
+Summary: Pacote de teste
+Author: Erlanny
+Author-email: erlannyrodrigues@gmail.com
+Keywords: python,primeiro pacote
+Classifier: Development Status :: 3 - Alpha
+Requires-Dist: numpy
+Requires-Dist: string
+Requires-Dist: pycep
+Requires-Dist: datetime
+Requires-Dist: random
+Requires-Dist: csv
+
+Pacote de teste para o curso de Python
