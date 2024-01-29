@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+core.py
+setup.py
+HistoBoxPlot.egg-info/PKG-INFO
+HistoBoxPlot.egg-info/SOURCES.txt
+HistoBoxPlot.egg-info/dependency_links.txt
+HistoBoxPlot.egg-info/requires.txt
+HistoBoxPlot.egg-info/top_level.txt
+src/__init__.py
