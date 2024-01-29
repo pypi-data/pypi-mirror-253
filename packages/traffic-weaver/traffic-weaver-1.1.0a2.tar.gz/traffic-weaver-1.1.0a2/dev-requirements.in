@@ -1,0 +1,10 @@
+matplotlib
+sphinx
+sphinx-rtd-theme
+pytest
+pytest-cov
+pytest-mock
+twine
+pre-commit
+coverage-badge
+urllib3==1.26.6
