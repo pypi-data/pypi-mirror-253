@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: codemapai
+Version: 0.3.0
+Summary: A diagram generator that creates ASCII diagrams of projects using generative AI
+Author: Ricky Ho, Oliver Wu, Temin Ghong, Andy Huang
+Author-email: horicky78@gmail.com, oliverwu@umich.edu, tghong@umich.edu, huandy@umich.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
