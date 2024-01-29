@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pymeili
+Version: 1.0.1
+Summary: a module to beautify your python plot or terminal text.
+Home-page: 
+Author: VVVictorZhou
+Author-email: vichouro@gmail.com
+License: MIT
+Keywords: beautify
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+### INTRODUCTION
+> pymeili.為美麗而生 [remake edition]
+
+pymeili is a module to beautify your python plot or terminal text with more simple way. the design idea is from Navigraph aeronautical chart.
+
+### IMPORTANT
+If you encounter the FileNotFound error when using this module, you need to manually install font-packages: https://dwl.freefontsfamily.com/download/futura/; 
+moving the font file to installed module folder, for instance: `C:\Users\Username\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymeili\resources`
+
+If you encounter the ModuleNotFoundError when using this module, you need to manually install the module in the lastest version:
+`pip install matplotlib`
+`pip install numpy`
+`pip install seaborn`
+`pip install pathlib`
+`pip install pathlib2`
+`pip install metpy`
+`pip install cartopy`
+`pip install basemap`
+Also, some modules do not support the previous version of python, make sure you are using the version 3.7 or above.
+
+
+### USAGE
+---
+#### Beautify Your Plot
+
+First of all, you need to import the package:
+
+```python
+from pymeili import beautifyplot as bplt
+```    
+Then, you can use the function `beautifyplot` to beautify your plot. Unlike `matplotlib.pyplot`, you don't need to create a figure and axes object. When you begin to plot, set the figsize to initialize your canvas by using `initplot` function. For instance:
+
+
+### CHANGE LOG
+---
+
+#### 1.0.01 (01/02/2024)
+- First Release
