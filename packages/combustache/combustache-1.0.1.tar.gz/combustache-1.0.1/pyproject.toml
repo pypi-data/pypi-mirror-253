@@ -1,0 +1,27 @@
+[project]
+name = 'combustache'
+readme = 'README.md'
+description = 'Mustache v1.4 implementation with lambdas.'
+license = { file = 'LICENSE' }
+dependencies = []
+dynamic = ['version']
+
+[project.urls]
+Homepage = 'https://github.com/sakhezech/combustache'
+
+[project.scripts]
+combustache = 'combustache.__main__:cli'
+
+[tool.ruff]
+line-length = 79
+[tool.ruff.format]
+quote-style = 'single'
+[tool.ruff.lint]
+extend-select = ['I', 'E501']
+
+[tool.hatch.version]
+path = 'src/combustache/__version__.py'
+
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
