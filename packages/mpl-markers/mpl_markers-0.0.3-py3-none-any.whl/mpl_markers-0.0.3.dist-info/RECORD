@@ -1,0 +1,11 @@
+mpl_markers/__init__.py,sha256=pSNb_cB-sJNxyHEt8CVxbmIhLzHsn4sw-a5Smhrf4MU,23
+mpl_markers/artists.py,sha256=ZEGPS5e0f5S7Ja43VCPBo83RFmilKZFhMjnb9a1DIJk,26609
+mpl_markers/interactive.py,sha256=U-7Yka8x6AIL4TXkd8x8aUAOqxgQ_OZH80nnKv2MDEo,3904
+mpl_markers/markers.py,sha256=Sdz5O6g6kGaEJhZQ78WVFhrFUbORFtpKxO9EctCG0Qw,24019
+mpl_markers/utils.py,sha256=GLT7us4StFr7rqA2pdbTlziTaV_FpLh7M5Ebr3RwY7k,3485
+mpl_markers/style/default.json,sha256=j9GBOlpHBB3ITA9hd5Yk36xSRe88JR6UN4MCEHdSuMs,936
+mpl_markers-0.0.3.dist-info/LICENSE.txt,sha256=svML326VJWqtI58nUarnpGke1GRZsBY3tWUORevVQ6k,1058
+mpl_markers-0.0.3.dist-info/METADATA,sha256=XDRERrEqdp_tBu8N1Xxgcn3BXRZWupInx2DGZK6_trk,1754
+mpl_markers-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mpl_markers-0.0.3.dist-info/top_level.txt,sha256=hH9MD4AtdqjfvV36XJBqd2yxKlioTCIJwyMi24tTlis,12
+mpl_markers-0.0.3.dist-info/RECORD,,
