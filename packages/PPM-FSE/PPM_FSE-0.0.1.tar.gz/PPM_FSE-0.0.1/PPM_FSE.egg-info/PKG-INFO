@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PPM_FSE
+Version: 0.0.1
+Summary: Automated Generation of Diverse Programming Problems for Benchmarking Code Generation Models
+Author: Ning
+Author-email: fengxiaoning1746@link.tyut.edu.cn
+License: apache 2.0
+License-File: LICENSE
