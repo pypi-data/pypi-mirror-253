@@ -1,0 +1,8 @@
+python-dotenv
+loguru
+pymysql
+psycopg2-binary
+redis
+sshtunnel
+django
+django-stubs
