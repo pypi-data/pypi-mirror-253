@@ -1,0 +1,7 @@
+numpy
+networkx
+pandas
+textwrap3
+prompt-toolkit
+openpyxl
+xlcalculator
