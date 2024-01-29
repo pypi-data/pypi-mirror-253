@@ -1,0 +1,9 @@
+jan_scraper/__init__.py,sha256=wLvnTyHZqMuP_UPRf7wGuLd8LI1DNuTUVcQcw-Q8Qew,548
+jan_scraper/__main__.py,sha256=MS2wrM_gSQo4kaxvta_DU5mnK4Vx6XxumAMX0UW6hRQ,421
+jan_scraper/formatter.py,sha256=pYXWOmv5e9W8BtwT9pD5N8ipGIOUL0gKId09J4zbE1E,552
+jan_scraper/scraper.py,sha256=bV5qR7hPtMw-kvMUowTmickWbr-rNBw4Smx6K0rKaBg,15007
+jan_scraper-0.0.3b0.dist-info/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+jan_scraper-0.0.3b0.dist-info/METADATA,sha256=1ID2j62tAtTQ9QSh_i6xCSXKzToLgxMte_UW0DoSS3Q,49894
+jan_scraper-0.0.3b0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jan_scraper-0.0.3b0.dist-info/top_level.txt,sha256=H21ONIGvOrnQvL07zsFequcZaUgCK3TkWUMvnvvZOm0,12
+jan_scraper-0.0.3b0.dist-info/RECORD,,
