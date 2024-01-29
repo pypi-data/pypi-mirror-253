@@ -1,0 +1,5 @@
+[console_scripts]
+jp=justpath.show:typer_app
+justpath=justpath.show:typer_app
+pathit=justpath.show:typer_app
+
