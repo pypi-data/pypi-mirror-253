@@ -1,0 +1,14 @@
+[console_scripts]
+cardscraper = cardscraper.__main__:cli
+
+[cardscraper.deck]
+default = cardscraper.default:get_deck
+
+[cardscraper.model]
+default = cardscraper.default:get_model
+
+[cardscraper.package]
+default = cardscraper.default:get_package
+
+[cardscraper.scraping]
+default = cardscraper.default:get_notes

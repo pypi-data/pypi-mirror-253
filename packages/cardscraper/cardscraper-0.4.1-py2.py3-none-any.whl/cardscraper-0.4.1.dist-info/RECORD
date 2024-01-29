@@ -1,0 +1,16 @@
+cardscraper/__init__.py,sha256=hRXu1-R0gD8yA9nHsb6gN7cMX6NyVurmDlOFBlHzizk,853
+cardscraper/__main__.py,sha256=VRmrcf514det0rQZrqwITbKxxmRPNok-NvGpNBpL-N8,2441
+cardscraper/__version__.py,sha256=qBs4HqYsPn6yUHWEuCN4rGUC05gABbl800d8LBd8h9w,22
+cardscraper/config.py,sha256=7BL3j7iFELe0CIzOfgyChyPi4ZAeHJHwaHJlyW8pcLg,5435
+cardscraper/generate.py,sha256=AvahOOwgyJrp_UnR9oe25IcQ14Pc3_GDYrsimV4cDW0,3945
+cardscraper/template.py,sha256=RZxi6zpHkQubT8KNcaBEvZ4STdwde3axfcy-OpjjbHs,870
+cardscraper/default/__init__.py,sha256=kfgQYdlMEVtD-x4XpeqsCVPyv0hB00Kzd46eiiRzPCA,281
+cardscraper/default/deck.py,sha256=erv2PklyDyCx1iKtn6Wbb7FtHJARxfmq3pdUO8kuVXE,389
+cardscraper/default/model.py,sha256=k4ki3j4iigfSZiyD9BoeoskZPUmyqDLplT68FVRz6k4,1086
+cardscraper/default/package.py,sha256=QFDbr9cQOtLvgAYk-72WqSp3FhpTmr63Bufzjki2htQ,738
+cardscraper/default/scraping.py,sha256=9o80HBKoUYXzUCVGwvR4LY2DmHWQEF5ROsrZLg4Lero,5445
+cardscraper-0.4.1.dist-info/METADATA,sha256=hzclwtcp-xIHjF_lltZq2OXM-8YOMbkmEtkO7eP4bRM,6761
+cardscraper-0.4.1.dist-info/WHEEL,sha256=ccEkY-EGGllEs7ySpwBlD8G4u70wR77CNej8Q6tzIqA,105
+cardscraper-0.4.1.dist-info/entry_points.txt,sha256=w6R8yGmOGAcDyffUBuNXDfTYrCQHbMdgVxtkn1qJKS0,306
+cardscraper-0.4.1.dist-info/licenses/LICENSE,sha256=nQZJEArlfrmk4_bhii7kwFA0kSMPsV5rG_kR9KRh5mA,1066
+cardscraper-0.4.1.dist-info/RECORD,,
