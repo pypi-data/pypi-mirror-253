@@ -1,0 +1,14 @@
+setup.py
+app/Phasor/__init__.py
+app/PhasorMath.egg-info/PKG-INFO
+app/PhasorMath.egg-info/SOURCES.txt
+app/PhasorMath.egg-info/dependency_links.txt
+app/PhasorMath.egg-info/requires.txt
+app/PhasorMath.egg-info/top_level.txt
+app/Phasor/src/__init__.py
+app/Phasor/src/conversions.py
+app/Phasor/src/phasor.py
+app/Phasor/src/plot.py
+app/Phasor/src/sc.py
+app/Phasor/tests/__init__.py
+app/Phasor/tests/test_phasor.py
