@@ -1,0 +1,7 @@
+asv_bench_memray/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asv_bench_memray/benchmarks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asv_bench_memray/benchmarks/raymem.py,sha256=eZJkRjfcv-Bfoexi_wUV6JY9tINrsNPBRLo2ZXw4o6s,1342
+asv_bench_memray-0.1.1.dist-info/METADATA,sha256=T4eCXPq918-di6PE4OiMgVlIDz85ow4rn76AuO7p40k,3303
+asv_bench_memray-0.1.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+asv_bench_memray-0.1.1.dist-info/licenses/LICENSE,sha256=6tmTGnxPnNO7G5HqBCBKv1cZW2aRBVJk__XCc8tmJ1M,1133
+asv_bench_memray-0.1.1.dist-info/RECORD,,
