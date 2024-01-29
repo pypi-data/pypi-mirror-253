@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "seasonwatch"
+version = "0.3.0"
+description = "A script to let you know when there are new seasons of your TV shows"
+readme = "README.md"
+authors = ["Simon <gevhaz@tutanota.com>"]
+license = "GPL-3.0"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyYAML = "^6.0"
+colorama = "^0.4.5"
+python-dateutil = "^2.8.2"
+PyGObject = "^3.42.1"
+apsw = "^3.38.5"
+prettytable = "^3.7.0"
+requests = "^2.31.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+mypy = "^0.961"
+types-PyYAML = "^6.0.8"
+types-python-dateutil = "^2.8.18"
+
+[tool.poetry.scripts]
+seasonwatch = 'seasonwatch.app:main'
+
+[tool.poetry.group.dev-dependencies.dependencies]
+types-requests = "^2.31.0.10"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.mypy.overrides]]
+module = [
+    "imdb",
+    "imdb.parser.http",
+    "colorama",
+    "gi",
+    "gi.repository",
+    "discogs_client"
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+# TODO: Remove once apsw type annotation is fixed:
+# https://github.com/rogerbinns/apsw/issues/438
+module = "apsw"
+follow_imports = "skip"
+follow_imports_for_stubs = true
+
+[tool.isort]
+profile = "black"
