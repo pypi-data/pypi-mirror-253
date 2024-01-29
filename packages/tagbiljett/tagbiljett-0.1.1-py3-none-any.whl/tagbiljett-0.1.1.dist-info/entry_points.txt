@@ -1,0 +1,2 @@
+[console_scripts]
+tagbiljett = tagbiljett.__main__:cli
