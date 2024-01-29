@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/verup/__init__.py
+src/verup/main.py
+src/verup.egg-info/PKG-INFO
+src/verup.egg-info/SOURCES.txt
+src/verup.egg-info/dependency_links.txt
+src/verup.egg-info/entry_points.txt
+src/verup.egg-info/requires.txt
+src/verup.egg-info/top_level.txt
