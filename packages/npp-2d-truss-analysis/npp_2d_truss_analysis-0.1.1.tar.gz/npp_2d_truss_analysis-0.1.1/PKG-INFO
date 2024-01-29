@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: npp_2d_truss_analysis
+Version: 0.1.1
+Summary: A package for truss analysis with inclined roller support
+Home-page: https://github.com/npapnet/TrussAnalysis2D
+Author: N. Papadakis
+Author-email: npapnet@gmail.com
+Project-URL: Source, https://github.com/npapnet/TrussAnalysis2D
+Project-URL: Documentation, https://npapnet.github.io/TrussAnalysis2D/
+Project-URL: PyPI, https://pypi.org/project/npp_2d_truss_analysis/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Truss Analysis
+
+This is a package for 2d Truss Analysis.
+
+This is modified by Eduardo Pereira's Matlab Code
