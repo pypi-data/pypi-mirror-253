@@ -1,0 +1,6 @@
+torch
+torchvision
+torchmetrics
+pytest
+numpy
+transfer-learning-vision-classifiers
