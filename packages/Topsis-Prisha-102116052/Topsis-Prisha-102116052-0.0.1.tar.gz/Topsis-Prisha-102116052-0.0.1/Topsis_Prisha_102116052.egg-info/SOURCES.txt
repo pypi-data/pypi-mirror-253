@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Topsis_Prisha_102116052.egg-info/PKG-INFO
+Topsis_Prisha_102116052.egg-info/SOURCES.txt
+Topsis_Prisha_102116052.egg-info/dependency_links.txt
+Topsis_Prisha_102116052.egg-info/requires.txt
+Topsis_Prisha_102116052.egg-info/top_level.txt
+topsis/__init__.py
+topsis/topsis.py

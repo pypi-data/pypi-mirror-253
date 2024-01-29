@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: Topsis-Prisha-102116052
+Version: 0.0.1
+Summary: TOPSIS Application
+Home-page: UNKNOWN
+Author: Prisha Sawhney
+Author-email: psawhney_be21@thapar.edu
+License: UNKNOWN
+Keywords: python,topsis
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# Topsis-Prisha-102116052
+
+_for: **Project-1 (UCS654)**_
+_submitted by: **Prisha Sawhney**_
+_Roll no: **102116052**_
+_Group: **3CS10**_
+
+
+Topsis-Prisha-102116052 is a Python library for dealing with Multiple Criteria Decision Making(MCDM) problems by using Technique for Order of Preference by Similarity to Ideal Solution(TOPSIS).
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Topsis-Prisha-102116052.
+
+```bash
+pip install Topsis-Prisha-102116052
+```
+
+## Usage
+
+Enter csv filename followed by _.csv_ extentsion, then enter the _weights_ vector with vector values separated by commas, followed by the _impacts_ vector with comma separated signs _(+,-)_
+```bash
+topsis sample.csv "1,1,1,1" "+,-,+,+"
+```
+or vectors can be entered without " "
+```bash
+topsis sample.csv 1,1,1,1 +,-,+,+
+```
+But the second representation does not provide for inadvertent spaces between vector values. So, if the input string contains spaces, make sure to enclose it between double quotes _(" ")_.
+
+To view usage __help__, use
+```
+topsis /h
+```
+## Example
+
+#### sample.csv
+
+A csv file showing data for different mobile handsets having varying features.
+
+| Model  | Storage space(in gb) | Camera(in MP)| Price(in $)  | Looks(out of 5) |
+| :----: |:--------------------:|:------------:|:------------:|:---------------:|
+| M1 | 16 | 12 | 250 | 5 |
+| M2 | 16 | 8  | 200 | 3 |
+| M3 | 32 | 16 | 300 | 4 |
+| M4 | 32 | 8  | 275 | 4 |
+| M5 | 16 | 16 | 225 | 2 |
+
+weights vector = [ 0.25 , 0.25 , 0.25 , 0.25 ]
+
+impacts vector = [ + , + , - , + ]
+
+### input:
+
+```python
+topsis sample.csv "0.25,0.25,0.25,0.25" "+,+,-,+"
+```
+
+### output:
+```
+      TOPSIS RESULTS
+-----------------------------
+
+    P-Score  Rank
+1  0.534277     3
+2  0.308368     5
+3  0.691632     1
+4  0.534737     2
+5  0.401046     4
+
+``` 
+
+
