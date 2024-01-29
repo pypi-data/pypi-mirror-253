@@ -1,0 +1,7 @@
+Flask>=0.11.1
+
+[tests]
+pytest-black<0.3.10,>=0.3.0
+pytest-invenio>=1.4.0
+mock>=2.0.0
+Sphinx>=1.8.0
