@@ -1,0 +1,17 @@
+artd_customer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artd_customer/admin.py,sha256=FxS88xZP-dWeT96sthBwnbr5A1KfPLYklDcJhpa0P-4,1781
+artd_customer/apps.py,sha256=hgLVGBIfKk0IoXlWZ_Ab-ncfTZu_kSAVu7o3UluQWPc,250
+artd_customer/models.py,sha256=I7a-EcFQZxj_XQ9GZFW3Uc-gR3685KKH1rJYuAayRNY,5877
+artd_customer/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+artd_customer/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+artd_customer/migrations/0001_initial.py,sha256=uegXFlyhaO0s2LPv1iX57o2oCfNM9KuVqXUi3xNbzNU,15034
+artd_customer/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artd_packages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+artd_packages/asgi.py,sha256=ii9woSMypAS64MyLHGzz9Br__0b-Zwy4eUuCi3cq-D0,403
+artd_packages/settings.py,sha256=-nZXIzNr3_ffOmlRI5C2Q28SNQ52OIttyNgI03izPg4,3304
+artd_packages/urls.py,sha256=u40JuQRf93nqoTaAaz9O9zAMLKCExzHQG-xc-_oO2mY,769
+artd_packages/wsgi.py,sha256=RlpyK3ApS7u8uEPa3YbEJWfn05OlpLR_iwZZ-623BQU,403
+artd_customer-0.0.8.dist-info/METADATA,sha256=sbi_TnIdmlPLx9U68yKGTJVA5n3A0-wpmGGOvtaxH-c,1555
+artd_customer-0.0.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+artd_customer-0.0.8.dist-info/top_level.txt,sha256=E-b1ZlS0yrHKu-nfzplcjqMSJxReTJOhX-qXY8ag4dQ,28
+artd_customer-0.0.8.dist-info/RECORD,,
