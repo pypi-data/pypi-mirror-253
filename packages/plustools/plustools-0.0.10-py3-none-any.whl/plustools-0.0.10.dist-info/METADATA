@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: plustools
+Version: 0.0.10
+Summary: Tools to facilitate the Automation of Aspen Plus through Python
+Author: Albert Lenk
+Author-email: albert.lenk@outlook.de
+Keywords: python,aspen plus,process simulation,automation
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: itertools
+Requires-Dist: os
+Requires-Dist: win32com
+
+N/A
