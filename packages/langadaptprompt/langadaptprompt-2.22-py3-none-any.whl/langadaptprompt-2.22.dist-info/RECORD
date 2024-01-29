@@ -1,0 +1,12 @@
+langadaptprompt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langadaptprompt/constants.py,sha256=ilg4e_d_eOVAUPxA9yopUkhM32CxkyPjKD0WQQ2b3AE,319
+langadaptprompt/paraphraser.py,sha256=bo1FXdyuZBmVAi-wdkaBnHBVpAtFrn8rLJsytZYhGnA,2125
+langadaptprompt/promptbuilder.py,sha256=QwgZm7wJSUrWhX3eRxUR9mxi0AZllLIvj7HTNP9hXrM,10912
+langadaptprompt/selfprompter.py,sha256=a68ac1qgEboWJWZnflWQG4RJo46OGw7kA5oe_xkPsqo,2180
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/dialogue.py,sha256=Uv-JAw5oEJJmwp_PtyjFZbJ7EVWo88zXd0hiKzCXLmQ,5385
+langadaptprompt-2.22.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+langadaptprompt-2.22.dist-info/METADATA,sha256=gb8TG8SjiEPf8NBp_yfmEPYmFtMGJWFNdXmOMI3faag,746
+langadaptprompt-2.22.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+langadaptprompt-2.22.dist-info/top_level.txt,sha256=mqBlbq2jaSGioTlfi3BN1ZLtrEgAx4GZAZzwWTMw3Nw,21
+langadaptprompt-2.22.dist-info/RECORD,,
