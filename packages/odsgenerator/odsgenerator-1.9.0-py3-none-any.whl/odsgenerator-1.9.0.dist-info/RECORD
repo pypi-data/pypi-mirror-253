@@ -1,0 +1,8 @@
+odsgenerator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odsgenerator/cli.py,sha256=hm7PDTO1phKR6IcmiJd-lmEJ79WtbQywJ539k20pKkg,1821
+odsgenerator/odsgenerator.py,sha256=2rDwOKwQ3DTnGMm8ZKsY9paV8Pe1D0ESX6buAagY2oE,31521
+odsgenerator-1.9.0.dist-info/LICENSE.txt,sha256=3AfjlfRjUR5yGXso-6cn14aUvEBAR0UiuFwQz-9pKSo,1084
+odsgenerator-1.9.0.dist-info/METADATA,sha256=ZKL8NAZt3COJXV7YiZhZ3gXD1-D6hUIG_O4Zlb7kzfk,4072
+odsgenerator-1.9.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+odsgenerator-1.9.0.dist-info/entry_points.txt,sha256=_AqIzKjvFNZMJZL27YPqkfWyuuBxDgbOKKzKuaDPayU,54
+odsgenerator-1.9.0.dist-info/RECORD,,
