@@ -1,0 +1,2 @@
+[console_scripts]
+build-ffi = setup_util.build_ffi:main

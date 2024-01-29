@@ -1,0 +1,10 @@
+pygo_tools/__init__.py,sha256=a4Vmlo8wVsbUBJWHMW1fUD3u4dMNOXcvSYbEgv2nPtA,52
+pygo_tools/build_ffi.py,sha256=SB0-ZFvfnhS-hnoBAUm-TCFN8lbSim6mPJP-Bz0CPxw,911
+pygo_tools/config.py,sha256=kbgdyC0BuubQUMvHPsn3GyAYhua70vb8z0aVv9XnWmY,1189
+pygo_tools/setup.py,sha256=mgcwlagn5IlbDCDZIac744h-Wxi-ON55fVWNqvUTVeM,1762
+pygo_tools-0.1.1.dist-info/LICENSE,sha256=vM5JYpilv1bZGM2u9G50uOeRoj8rpFoNJd1mEYqvQNc,1934
+pygo_tools-0.1.1.dist-info/METADATA,sha256=v0VCQdBILXfPJCACBaGyWS7cvwm1X8mEsOOMvzjWXqU,4539
+pygo_tools-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pygo_tools-0.1.1.dist-info/entry_points.txt,sha256=slRVzNjGjpjkkoExiMlIVvwkRJfaylvo91_XilPAz-Y,56
+pygo_tools-0.1.1.dist-info/top_level.txt,sha256=WnIJpvB_nd299qwf4_uMcqnt4vOsfvbCSCo_NZOS6oM,11
+pygo_tools-0.1.1.dist-info/RECORD,,
