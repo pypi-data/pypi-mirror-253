@@ -1,0 +1,25 @@
+LICENSE
+README.md
+setup.py
+src/QtMPLtools/__init__.py
+src/QtMPLtools/matplotlibwidgets.py
+src/QtMPLtools/mplpolarplugin.py
+src/QtMPLtools/mplrectplugin.py
+src/QtMPLtools/mplsurface2Dplugin.py
+src/QtMPLtools/mplsurface3Dplugin.py
+src/QtMPLtools.egg-info/PKG-INFO
+src/QtMPLtools.egg-info/SOURCES.txt
+src/QtMPLtools.egg-info/dependency_links.txt
+src/QtMPLtools.egg-info/entry_points.txt
+src/QtMPLtools.egg-info/requires.txt
+src/QtMPLtools.egg-info/top_level.txt
+src/QtMPLtools/Test Trial/chamberLogo.jpg
+src/QtMPLtools/Test Trial/farFieldsData.csv
+src/QtMPLtools/Test Trial/gui.py
+src/QtMPLtools/Test Trial/gui.ui
+src/QtMPLtools/figures/polar.ico
+src/QtMPLtools/figures/rect.ico
+src/QtMPLtools/figures/surface2D.ico
+src/QtMPLtools/figures/surface3D.ico
+src/QtMPLtools/scripts/__init__.py
+src/QtMPLtools/scripts/designer.py
