@@ -1,0 +1,12 @@
+pycodeview/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycodeview/_data/Monoid.ttf,sha256=V1saRB7bs3q8pi20GAe4LUBxvZ4flU9DZ8atsTGffv4,74668
+pycodeview/_data/ShareTechMono.ttf,sha256=kRqF9WxE6KcSRYUT5pcqPilu6ahOcHVEYtA94_NgnCs,42756
+pycodeview/_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycodeview/_data/template.html,sha256=dKgaJNP3qakfr7q4PmjCPCWcS4kDQsfoAtYZHPm3U_w,853
+pycodeview/code_view.py,sha256=3jioDud_Wdul4CJrUFzx1c1AqyXRvGkNmQY1oNitel8,10122
+pycodeview/style.py,sha256=YcaheqqR4rgidByoLUXesi4NpaGLAD9hik0r9P1xwwQ,647
+pycodeview/syntax_highlighter.py,sha256=nIZsvZHh1vctpAtd-lObOo013WMy7AtymycrY6xTTCk,10834
+bb_pycodeview-0.1.1.dist-info/METADATA,sha256=ughvtD32dNZStkFUsI1RGviijhiG7q-qhdpacGUHvqY,1924
+bb_pycodeview-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+bb_pycodeview-0.1.1.dist-info/entry_points.txt,sha256=NNkfKbWKTkxQlAr95uuI-ITDoew4HRbL09ZnftOSmK8,62
+bb_pycodeview-0.1.1.dist-info/RECORD,,
