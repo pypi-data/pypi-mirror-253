@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/Sky-Red/__init__.py
+src/Sky-Red/prime.py
+src/Sky-Red/setup.py
+src/Sky_Red.egg-info/PKG-INFO
+src/Sky_Red.egg-info/SOURCES.txt
+src/Sky_Red.egg-info/dependency_links.txt
+src/Sky_Red.egg-info/top_level.txt

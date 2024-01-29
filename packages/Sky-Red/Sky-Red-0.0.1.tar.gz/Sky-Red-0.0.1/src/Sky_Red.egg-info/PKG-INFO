@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Sky-Red
+Version: 0.0.1
+Summary: Python package to find prime numbers, factors, permutations of numbers and more
+Author-email: Rishit Logar <logarrishit@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Prime Finder is a python package in order to save prime numbers, factors, permutations and more.
+
+See the source package to know more details and functions which can be used according to your needs.
