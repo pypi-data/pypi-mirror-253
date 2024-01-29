@@ -1,0 +1,3 @@
+[console_scripts]
+durable=cli:main
+
