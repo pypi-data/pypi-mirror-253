@@ -1,0 +1,8 @@
+setup.py
+shoddy-break/__init__.py
+shoddy-break/screen.py
+shoddy-break/shoddy_break.egg-info/PKG-INFO
+shoddy-break/shoddy_break.egg-info/SOURCES.txt
+shoddy-break/shoddy_break.egg-info/dependency_links.txt
+shoddy-break/shoddy_break.egg-info/requires.txt
+shoddy-break/shoddy_break.egg-info/top_level.txt
