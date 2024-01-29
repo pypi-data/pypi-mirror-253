@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: EpicGames-FreeGames-Bot
+Version: 0.5
+Requires-Dist: selenium
+Requires-Dist: beautifulsoup4
+
