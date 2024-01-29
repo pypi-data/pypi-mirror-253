@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: stMMR
+Version: 1.0.0
+Summary: stMMR: Multi-Modal Feature Representation in Spatial Transcriptomics with Similarity Contrastive Learning
+License: MIT
+License-File: LICENSE
+Requires-Dist: requests

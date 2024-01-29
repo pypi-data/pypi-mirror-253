@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+stMMR/__init__.py
+stMMR/layers.py
+stMMR/models.py
+stMMR/process.py
+stMMR/train_model.py
+stMMR/utils.py
+stMMR.egg-info/PKG-INFO
+stMMR.egg-info/SOURCES.txt
+stMMR.egg-info/dependency_links.txt
+stMMR.egg-info/not-zip-safe
+stMMR.egg-info/requires.txt
+stMMR.egg-info/top_level.txt
