@@ -1,0 +1,10 @@
+vbpaper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vbpaper/__main__.py,sha256=2tdENPAfpgNJ5sr7TZPyj7PiVkS4qSv-2IdBXCE-SlA,49
+vbpaper/functions.py,sha256=Iu6U3baDRyd-cjS4cNO-_SF_it1DCO6m-P2sDhGq5QM,1892
+vbpaper/main.py,sha256=ta3hWHRyovs4rf6AHSL0tipNikJxmT_yn56cTtad154,292
+vbpaper/render.py,sha256=5NirT37vcDwRA1QRh5JS_7Y2cjMnGUp2It6e-ERoOlI,980
+vbpaper/start.py,sha256=qw7Z0LFgN_N56SRJrAsLLzJfWbdLWUeemzAo_DPOJ2U,407
+vbpaper-0.1.2.dist-info/METADATA,sha256=loQO0K2lXYuI50y9J4o5ZxorMrs8NNMM1YqPQIRUcvA,291
+vbpaper-0.1.2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+vbpaper-0.1.2.dist-info/entry_points.txt,sha256=sUJ9vV1TTfHugcWVU9j67mOt2sEotBjjJR1myrHEeI0,45
+vbpaper-0.1.2.dist-info/RECORD,,
