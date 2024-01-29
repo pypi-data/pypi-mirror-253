@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Contablidad
+Version: 0.1.0
+Summary: Biblioteca
+Author: crisly
+Author-email: crislymaria21@gmail.com
+Keywords: python,contablidad
+Classifier: Development Status :: 3 - Alpha
+
+Biblioteca Python para manipulações de serviços de contabilidade.
