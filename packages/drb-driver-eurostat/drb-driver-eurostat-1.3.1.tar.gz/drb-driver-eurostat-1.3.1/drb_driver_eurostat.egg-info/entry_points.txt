@@ -1,0 +1,5 @@
+[drb.driver]
+eurostat = drb.drivers.eurostat:DrbEurostatFactory
+
+[drb.topic]
+eurostat = drb.topics.eurostat
