@@ -1,0 +1,12 @@
+{% extends 'templates/header/mail.html' %}
+{% block target %}
+    {{ super() }}
+    <div>
+        <p>Bonjour {{ first_name }},</p>
+        <p>Merci pour l'intérêt porté à ___</p>
+        <p>Pour compléter votre inscription, confirmez votre compte en vous rendant à cette adresse</p>
+        <p>{{ url }}</p>
+        <p>Cette étape accomplie, vous pourrez accéder aux services de ___</p>
+        <p>Il vous reste ___ pour compléter votre inscription</p>
+    </div>
+{% endblock %}
