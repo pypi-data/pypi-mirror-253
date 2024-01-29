@@ -1,0 +1,8 @@
+setup.py
+whatsapp_msg_spammer/__init__.py
+whatsapp_msg_spammer/__main__.py
+whatsapp_msg_spammer.egg-info/PKG-INFO
+whatsapp_msg_spammer.egg-info/SOURCES.txt
+whatsapp_msg_spammer.egg-info/dependency_links.txt
+whatsapp_msg_spammer.egg-info/entry_points.txt
+whatsapp_msg_spammer.egg-info/top_level.txt
