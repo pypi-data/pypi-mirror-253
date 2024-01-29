@@ -1,0 +1,61 @@
+<!-- Calculation Info -->
+<!-- DISABLE PREFECT
+<div class="container p-4">
+
+    <h3>Prefect Cloud:</h3>
+    
+    This block would query Prefect cloud using logic like...  
+
+        if calculation.flow_run_view:
+            name = calculation.prefect_flow_run_name # and link to calculation.prefect_cloud_link
+            id = calculation.run_id
+            state = calculation.prefect_state
+            # and then a button that links to calculation.prefect_cloud_link
+        else:
+            message = "This workflow run was ran locally and not through Prefect Cloud"
+
+    These queries are slow AND state should be dynamically updated -- Therefore this should be
+    done on the front-end. I don't yet know the Javascript needed for this, but I would use
+    a prefect api key from the User and use it to query their prefect cloud here.
+
+    For now, I simply leave the next two columns empty to prevent the slow-down.
+    
+    <a>Linking to Prefect Cloud has not been implemented yet.</a>
+
+</div>
+-->
+<div class="container p-4">
+    <h3>Calculation Information:</h3>
+    <ul>
+        <li>
+            <b>Computer system:</b> {{ calculation.computer_system }}
+        </li>
+        <li>
+            <b>File location:</b> {{ calculation.directory }}
+        </li>
+        <li>
+            <b>Workflow name:</b> {{ calculation.workflow_name }}
+        </li>
+        <li>
+            <b>Workflow version:</b> {{ calculation.workflow_version }}
+        </li>
+        <li>
+            <b>Run ID:</b> {{ calculation.run_id }}
+        </li>
+        <li>
+            <b>Total calculation time (s):</b> {{ calculation.total_time |floatformat:-2 }}
+        </li>
+        <li>
+            <b>Total queue time (s):</b> {{ calculation.queue_time | floatformat:-2 }}
+        </li>
+        <li>
+            <b>Started at:</b> {{ calculation.started_at }}
+        </li>
+        <li>
+            <b>Finished at:</b> {{ calculation.finished_at }}
+        </li>
+        <li>
+            <b>Error corrections:</b> {{ calculation.corrections }}
+        </li>
+    </ul>
+</div>
