@@ -1,0 +1,15 @@
+.gitignore
+.pre-commit-config.yaml
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/build-and-publish.yml
+tagbiljett/__init__.py
+tagbiljett/__main__.py
+tagbiljett/tagbiljett.py
+tagbiljett.egg-info/PKG-INFO
+tagbiljett.egg-info/SOURCES.txt
+tagbiljett.egg-info/dependency_links.txt
+tagbiljett.egg-info/entry_points.txt
+tagbiljett.egg-info/requires.txt
+tagbiljett.egg-info/top_level.txt
