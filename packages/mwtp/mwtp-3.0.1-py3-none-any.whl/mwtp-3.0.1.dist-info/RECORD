@@ -1,0 +1,16 @@
+mwtp/__init__.py,sha256=prgXIMVMUAplUtg9RzwAsrEYnPPfqP8unoAsK9UVvJk,185
+mwtp/_alias_record.py,sha256=iv4qGtDsFWB-TSsBnQnVyYrGaAHXbRLJw4w2v_Y5Fnw,730
+mwtp/_namespace_data.py,sha256=XPhSmCqNDG1zWCASxLMSoPUPWI0nQjYBzu6QHTHDnFw,440
+mwtp/_namespace_id_map.py,sha256=O0IkhetWeZO_c3wQOgdOA9ejD4odnsVRA1oN0t_DLhc,1172
+mwtp/_php_to_upper_map.py,sha256=D4_uHDa-Wq_AAXuSFawxMpkaZnwJ7WmLnx6fdPMyw8M,5105
+mwtp/_title_like.py,sha256=RZM4kZ0PQsDCBTLHIimTvaE5DzuzeTQfz9_Q2mgIFuo,7821
+mwtp/exceptions.py,sha256=QdzkM1dJksoSS1Gk9GOu1j5YMsRvq6Qmbl4iok1n4_o,2370
+mwtp/namespace.py,sha256=Gc1M5y4_b9aximoAqLnEB18pfl5qrCmdCfF4buRpLw0,507
+mwtp/parser.py,sha256=K5pfKPqE32OTW2afiD1px8z9J0Mtco6DvX_Bug-RPwU,9441
+mwtp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mwtp/title.py,sha256=XXZaQHUukJ1F-5uMAmHHMfzbX_aBIYQ3xXoa3NimTRg,7844
+mwtp-3.0.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+mwtp-3.0.1.dist-info/METADATA,sha256=GHwhqr_mVJkmqIg_OEUQP6oSjyuQgH-jexcGjoaetdU,3429
+mwtp-3.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mwtp-3.0.1.dist-info/top_level.txt,sha256=XYJ6e7lxbmfzYORuOn6cOOYMvgcFmdVTDIBYWI5EzEM,5
+mwtp-3.0.1.dist-info/RECORD,,
