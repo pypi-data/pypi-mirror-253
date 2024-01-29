@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+strmetrics/__init__.py
+strmetrics/levenshtein.py
+strmetrics/levenshtein_normalized.py
+strmetrics.egg-info/PKG-INFO
+strmetrics.egg-info/SOURCES.txt
+strmetrics.egg-info/dependency_links.txt
+strmetrics.egg-info/top_level.txt

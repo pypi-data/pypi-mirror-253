@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: strmetrics
+Version: 0.0.1
+Summary: A Python package offering a suite of string distance metrics, including normalized Levenshtein distance and more, for efficient text comparison and analysis.
+Home-page: https://github.com/vmouchakis/string-metrics
+Author: Vasilis Mouchakis
+Author-email: vmouchakis@gmail.com
+License: Apache License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
