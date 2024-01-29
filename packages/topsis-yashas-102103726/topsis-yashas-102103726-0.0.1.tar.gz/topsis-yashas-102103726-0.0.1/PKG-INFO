@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: topsis-yashas-102103726
+Version: 0.0.1
+Summary: This is a Python Package implementing TOPSIS used for multi-criteria decision analysis method
+Home-page: https://github.com/Yashaskirnapure
+Author: Yashas Kirnapure
+Author-email: yashas.kirnapure@gmail.com
+License: MIT
+Keywords: topsis,mcda,UCS654,TIET
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# topsis-yashas-102103726
+topsis-yashas-102103726 is a Python library for dealing with Multiple Criteria Decision Making(MCDM) problems by using Technique for Order of Preference by Similarity to Ideal Solution(TOPSIS).
+## Installation
+Use pip package manager to install topsis-yashas-102013726. 
+
+        pip install topsis-yashas-102103726
+## Usage
+Enter csv filename followed by .csv extentsion, then enter the weights vector with vector values separated by commas, followed by the impacts vector with comma separated signs (+,-) and the output csv file name. 
+
+        topsis-yashas-102103726 sample.csv "1,1,1,1" "+,-,+,+ output.csv"
+
+### Notes
+
+* The first column and first row are removed by the library before processing, in attempt to remove indices and headers.
+* Make sure the csv does not contain categorical values.
+
+## License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
