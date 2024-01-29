@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+FileActions/JsonActions.py
+FileActions/__init__.py
+InnoFileManager.egg-info/PKG-INFO
+InnoFileManager.egg-info/SOURCES.txt
+InnoFileManager.egg-info/dependency_links.txt
+InnoFileManager.egg-info/not-zip-safe
+InnoFileManager.egg-info/top_level.txt
