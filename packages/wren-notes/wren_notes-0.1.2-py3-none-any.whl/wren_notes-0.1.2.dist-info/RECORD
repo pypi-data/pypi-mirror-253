@@ -1,0 +1,11 @@
+wren/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wren/cli.py,sha256=8ys42T3MsRjpRYjTHf2DCHVZNYbZzq7CqeEY0V2n6yg,2942
+wren/core.py,sha256=Z6fiWeyGcYfMLuNO9ee7JKb94t6kQGIYIh2sKHrMxCM,6649
+wren/http.py,sha256=Z4HpqFzpAFH36CFQ394Kjc3Yvo-gcXufoEqGGKAEI7Q,2054
+wren/telegram.py,sha256=FKzWdH3OJultDc-1Li0BSqxfYGeKhah5wb8twc-8zFk,4697
+wren_notes-0.1.2.dist-info/LICENSE,sha256=ySanzt1MeR4rwVmegVx_zrA11PKy9-BPt7wD8DtbdIY,1069
+wren_notes-0.1.2.dist-info/METADATA,sha256=FQstj0E6lNtOEzAqCEGLgGw1zlAkIi-7TQUqPOON3o0,1072
+wren_notes-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+wren_notes-0.1.2.dist-info/entry_points.txt,sha256=N2dWUoEaCTjhkM88wbys_WP3CF2bxigjqqmwkWQzwz8,39
+wren_notes-0.1.2.dist-info/top_level.txt,sha256=YsfJiMVKnABPQX1X4NTTt5WjX11HhwrZCBEfI5O9Pj0,5
+wren_notes-0.1.2.dist-info/RECORD,,
