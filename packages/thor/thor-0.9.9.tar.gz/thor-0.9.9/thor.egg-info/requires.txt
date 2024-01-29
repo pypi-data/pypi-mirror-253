@@ -1,0 +1,11 @@
+
+[dev]
+mypy
+black
+pylint
+pytest
+pytest-parallel
+py
+pytest-md
+validate-pyproject
+build
