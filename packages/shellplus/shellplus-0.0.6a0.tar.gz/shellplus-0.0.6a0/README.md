@@ -1,0 +1,28 @@
+# ShellPlus
+
+ShellPlus is a Python package designed to streamline terminal text formatting, providing predefined styles and colors for efficient coding with colors and formatting in the terminal.
+
+## Installation
+
+You can install ShellPlus using pip3:
+
+```bash
+pip3 install shellplus
+```
+
+Example usage:
+
+```python
+from shellplus import styles, colors1 as colors
+
+# Print a warning message
+styles.print('This is a warning message.', 'warn')
+
+# Print a soft error message
+styles.print('This is a soft error message.', 'serr')
+
+# Print a colorful message using 'gum pink'
+colors.print('This is a colorful message.', 'gum pink')
+
+# Print a differently colorful message using 'salmon'
+colors.print('This is a differently colorful message.', 'salmon')
