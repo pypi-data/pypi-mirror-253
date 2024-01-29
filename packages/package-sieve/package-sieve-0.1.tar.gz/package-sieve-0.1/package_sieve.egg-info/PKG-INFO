@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: package-sieve
+Version: 0.1
+Summary: Collector of absolute 3rd party packages from existing projects
+Home-page: https://github.com/FluffyDietEngine/wall-e
+Author: Santhosh Solomon
+Author-email: solomon.santhosh@gmail.com
+License: Apache License 2.0
+Keywords: package-sieve,wall-e,ci,automation,linter,stale-package-remover
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Wall-E aka package-sieve
+Collector of absolute 3rd party packages from existing projects
+
+![package-sieve](assets/img.jpg)
+
+## Background
+This project aims to generate `requirements.txt` file for existing repositories where you have an old file which is filled with dependencies of dependencies. 
+
+## Function
+Wall-E uses `ast` module of python to parse nodes of any python script. Once the modules are retrieved, `pkg_resources` helps to find the right project name and version of the application installed. 
+
+## Install
+
+```console
+pip3 install package-sieve 
+```
+
+## Usage 
+```console
+package-sieve --project_folder /absolute/path/to/folder --exclude venv,__pycache__,__init__.py
+```
+> NOTE:  
+If you get this error `ModuleNotFoundError: No module named 'pkg_resources'`
+Just run `pip3 install setuptools` 

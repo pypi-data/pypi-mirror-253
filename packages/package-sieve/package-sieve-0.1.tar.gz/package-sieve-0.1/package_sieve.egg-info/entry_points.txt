@@ -1,0 +1,2 @@
+[console_scripts]
+package-sieve = src.wall_e:main
