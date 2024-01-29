@@ -1,0 +1,3 @@
+[flake8.extension]
+STC01 = flake8_sortcmp.checker:SortcmpChecker
+

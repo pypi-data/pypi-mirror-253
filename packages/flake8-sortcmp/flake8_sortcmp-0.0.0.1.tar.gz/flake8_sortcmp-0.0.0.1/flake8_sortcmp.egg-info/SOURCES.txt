@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+.github/workflows/ci.yaml
+flake8_sortcmp/__init__.py
+flake8_sortcmp/checker.py
+flake8_sortcmp/version.py
+flake8_sortcmp.egg-info/PKG-INFO
+flake8_sortcmp.egg-info/SOURCES.txt
+flake8_sortcmp.egg-info/dependency_links.txt
+flake8_sortcmp.egg-info/entry_points.txt
+flake8_sortcmp.egg-info/not-zip-safe
+flake8_sortcmp.egg-info/requires.txt
+flake8_sortcmp.egg-info/top_level.txt
+test/test_flake8.py
