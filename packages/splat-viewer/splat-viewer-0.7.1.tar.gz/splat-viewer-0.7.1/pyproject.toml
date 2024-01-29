@@ -1,0 +1,56 @@
+[project]
+name = "splat-viewer"  
+version = "0.7.1"  
+description = "A viewer for gaussian-splatting reconstructions"  
+readme = "README.md" 
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+
+maintainers = [
+  {name = "Oliver Batchelor", email = "oliver.batchelor@canterbury.ac.nz" } 
+]
+
+dependencies = [
+  "beartype", 
+  "taichi-nightly>=1.8.0", 
+  "taichi-splatting >= 0.7.0",
+  "tqdm", 
+  "tensordict",
+  "plyfile",
+  "pyside6",
+  "natsort",
+  "opencv_python",
+  "pyrender"
+
+]
+
+[options]
+dependency_links = ["https://pypi.taichi.graphics/simple/"]
+
+[project.urls] 
+"Homepage" = "https://github.com/uc-vision/splat-viewer"
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project.scripts]  # Optional
+splat-viewer = "splat_viewer.scripts.splat_viewer:main"
+splat-benchmark = "splat_viewer.scripts.splat_benchmark:main"
+splat-multi-benchmark = "splat_viewer.scripts.splat_multi_benchmark:main"
+
+debug-tiles = "splat_viewer.scripts.debug_tiles:main"
+label-foreground = "splat_viewer.scripts.label_foreground:main"
+export-workspace = "splat_viewer.scripts.export_workspace:main"
+
+
+[tool.ruff]
+indent-width = 2
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    # disable "UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor"
+    "ignore::UserWarning"  
+]
+

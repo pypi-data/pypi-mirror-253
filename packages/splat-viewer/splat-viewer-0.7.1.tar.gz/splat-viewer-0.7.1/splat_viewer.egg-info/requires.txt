@@ -1,0 +1,10 @@
+beartype
+taichi-nightly>=1.8.0
+taichi-splatting>=0.7.0
+tqdm
+tensordict
+plyfile
+pyside6
+natsort
+opencv_python
+pyrender
