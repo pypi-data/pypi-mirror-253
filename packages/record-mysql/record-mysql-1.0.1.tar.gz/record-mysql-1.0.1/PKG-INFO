@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: record-mysql
+Version: 1.0.1
+Summary: Provides abstract classes meant to represent record data as Define Node types
+Home-page: https://ouroboroscoding.com/record-mysql
+Author: Chris Nasr - Ouroboros Coding Inc.
+Author-email: chris@ouroboroscoding.com
+License: MIT
+Project-URL: Documentation, https://ouroboroscoding.com/record-mysql
+Project-URL: Source, https://github.com/ouroboroscoding/record-mysql-python
+Project-URL: Tracker, https://github.com/ouroboroscoding/record-mysql-python/issues
+Keywords: data,define,database,db,sql,nosql
+Platform: UNKNOWN
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# record-mysql-python
+Provides MySQL / MariaDB support for Define Record structures
+
+
