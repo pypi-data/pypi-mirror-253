@@ -1,0 +1,2 @@
+[console_scripts]
+your-package-gui = your_package.GUI:main

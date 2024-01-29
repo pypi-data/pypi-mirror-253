@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/MovieSorter.egg-info/PKG-INFO
+src/MovieSorter.egg-info/SOURCES.txt
+src/MovieSorter.egg-info/dependency_links.txt
+src/MovieSorter.egg-info/entry_points.txt
+src/MovieSorter.egg-info/requires.txt
+src/MovieSorter.egg-info/top_level.txt
