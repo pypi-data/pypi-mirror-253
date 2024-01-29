@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/TOPSIS_Mayank_102103037/__init__.py
+src/TOPSIS_Mayank_102103037/main.py
+src/topsis_3037.egg-info/PKG-INFO
+src/topsis_3037.egg-info/SOURCES.txt
+src/topsis_3037.egg-info/dependency_links.txt
+src/topsis_3037.egg-info/top_level.txt
