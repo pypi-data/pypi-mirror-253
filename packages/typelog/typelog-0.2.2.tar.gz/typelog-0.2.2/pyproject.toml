@@ -1,0 +1,28 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "typelog"
+version = "0.2.2"
+description = "Static typed structured logging"
+readme = "README.md"
+authors = [{ name = "dd84ai", email = "dark.dreamflyer@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["logging", "structured", "typing"]
+dependencies = [
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["black", "flake8", "isort", "autoflake", "mypy"]
+
+[project.urls]
+Homepage = "https://github.com/darklab8/py-typelog"
