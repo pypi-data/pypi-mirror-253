@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+HROCH/__init__.py
+HROCH/classifier.py
+HROCH/fuzzy.py
+HROCH/hroch.bin
+HROCH/hroch.dll
+HROCH/hroch.py
+HROCH/regressor.py
+HROCH/version.py
+HROCH.egg-info/PKG-INFO
+HROCH.egg-info/SOURCES.txt
+HROCH.egg-info/dependency_links.txt
+HROCH.egg-info/requires.txt
+HROCH.egg-info/top_level.txt
