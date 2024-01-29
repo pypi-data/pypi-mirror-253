@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyzctrl
+Version: 0.1.0
+Summary: Simple API to interact with select ZControl® devices.
+Project-URL: Homepage, https://github.com/soaresbrun0/pyzctrl
+Project-URL: Issues, https://github.com/soaresbrun0/zcontrol/pyzctrl
+Author-email: Bruno Soares <soaresbruno@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: zcontrol,zoeller
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: logging
+Requires-Dist: requests
+Requires-Dist: urllib-parse
+Requires-Dist: xmltodict
+Description-Content-Type: text/markdown
+
+# PyZCtrl
+
+Unnoficial API to interact with select ZControl® devices.
