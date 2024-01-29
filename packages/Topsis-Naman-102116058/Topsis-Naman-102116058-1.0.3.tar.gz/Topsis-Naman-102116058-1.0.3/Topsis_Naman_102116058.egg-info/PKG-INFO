@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Topsis-Naman-102116058
+Version: 1.0.3
+Summary: Implementation of Topsis
+Author: Naman Bhargava
+Author-email: nambhargava03@gmail.com
+License: MIT License
+Project-URL: Project Link, https://github.com/bravo003/Topsis-Naman-102116058
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
