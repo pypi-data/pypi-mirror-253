@@ -1,0 +1,13 @@
+README.md
+license.txt
+setup.cfg
+setup.py
+test/test.py
+torrents2py/__init__.py
+torrents2py/main.py
+torrents2py/utils.py
+torrents2py.egg-info/PKG-INFO
+torrents2py.egg-info/SOURCES.txt
+torrents2py.egg-info/dependency_links.txt
+torrents2py.egg-info/requires.txt
+torrents2py.egg-info/top_level.txt
