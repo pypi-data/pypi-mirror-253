@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: PhasorMath
+Version: 0.0.2
+Summary: A basic python package for phasor calculation and phasor represention
+Home-page: UNKNOWN
+Author: Hansana Prabashwara
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: plotly
+Requires-Dist: pandas
+
+# PhasorMath
+
+
+
+## Introduction
+
+PhasorMath is a Python package designed to perform fundamental calculations with phasors, visualize phasors, and calculate symmetrical components for unbalanced three-phase systems.
+
+
+
+## Key Features:
+
+
+
+1.  **Phasor Calculations:** Simplify the manipulation of phasors with comprehensive set of functions, allowing basic arithmetic operations, conversion between polar and rectangular forms, and more.
+
+2.  **Visualization Tools:** Plot phasors, visualize unbalanced three-phase systems, and observe symmetrical components with interactive plots.
+
+3.  **Symmetrical Components:** Tackle unbalanced three-phase systems with Phasor's symmetrical component calculation capabilities.
+
+
+
+## Installation
+
+
+
+Simply execute the following command in your terminal. Make sure your python version is 3.8:
+
+```
+
+pip install PhasorMath
+
+```
+
+
+
+## Documentation
+
+
+
+https://hansanaprabashwara.github.io/PhasorMath/
+
+
+
+## Compatibility
+
+
+
+This package is compatible with Python 3.8
+
