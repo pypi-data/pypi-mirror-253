@@ -1,0 +1,5 @@
+[console_scripts]
+bias=xdatbus.bash01_bias:main
+plot_fes=xdatbus.fmtd04_plot_fes:main
+xdc_aggregate=xdatbus.f01_xdc_aggregate:main
+
