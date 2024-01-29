@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: python-dd
+Version: 0.0.14
+Summary: The missing `dd` function in python.
+Home-page: https://github.com/bedus-creation/python_dd
+Author: Bedram Tamang
+Author-email: tmgbedu@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# Python `dd`
+The missing `dd` function in python.
+
+## Uses
+``
