@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "vbpaper"
+version = "0.1.0"
+description = ""
+authors = ["vaibhavblayer <vaibhavblayer@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+vbpaper = "vbpaper.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
