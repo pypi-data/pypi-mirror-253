@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: Topsis-Joyy-102117024
+Version: 0.0.8
+Summary: TOPSIS Implementation
+Author: Joyy Goswami
+Author-email: joyy14102002@gmail.com
+Keywords: topsis,decision-analysis,similarity,decision-making,multi-criteria-decision
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution)
+
+
+## Description
+
+### Topsis-Joyy-102117024
+
+For: Assignment-1(UCS654) Submitted-by: **Joyy Goswami* Roll no: *102117024* Group: *3CS-1**
+
+Topsis-Joyy-102117024 is a Python package for dealing with Multiple Criteria Decision Making(MCDM) problems by using TOPSIS
+
+## Installation
+
+Use the package manager *pip* to install Topsis-Joyy-102117024
+
+pip install Topsis-Joyy-102117024
+
+## Usage
+
+Enter csv filename followed by .csv extension, then enter the weights vector with vector values separated by commas, followed by the impacts vector with comma-separated signs (+,-)
+
+bash
+python sample.py sample.csv "1,1,1,1,2" "+,+,-,+,+" sample-result.csv
+
+
+## Example
+
+### sample.csv
+
+A csv file showing data for different mobile handsets having varying features
+
+| Model | Storage space (in GB) | Camera (in MP) | Price (in $) | Looks (out of 5) |
+|-------|------------------------|-----------------|---------------|------------------|
+| M1    | 16                     | 12              | 250           | 5                |
+| M2    | 16                     | 8               | 200           | 3                |
+| M3    | 32                     | 16              | 300           | 4                |
+| M4    | 32                     | 8               | 275           | 4                |
+| M5    | 16                     | 16              | 225           | 2                |
+
+weights vector = [1, 1, 1, 1]
+impacts vector = [+,+,-,+]
+
+### Input:
+
+python sample.csv "1,1,1,1" "+,+,-,+" sample-result.csv
+
+### Output:
+
+|   Topsis-score   | Rank |
+|-------------|------|
+| 0.534277    | 3    |
+| 0.308368    | 5    |
+| 0.691632    | 1    |
+| 0.534737    | 2    |
+| 0.401046    | 4    |
