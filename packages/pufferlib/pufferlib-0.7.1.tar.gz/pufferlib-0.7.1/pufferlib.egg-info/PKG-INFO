@@ -1,0 +1,182 @@
+Metadata-Version: 2.1
+Name: pufferlib
+Version: 0.7.1
+Summary: PufferAI LibraryPufferAI's library of RL tools and utilities
+Home-page: https://github.com/PufferAI/PufferLib
+Author: Joseph Suarez
+Author-email: jsuarez@mit.edu
+License: MIT
+Keywords: Puffer,AI,RL
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy==1.23.3
+Requires-Dist: opencv-python==3.4.17.63
+Requires-Dist: cython==3.0.0
+Provides-Extra: docs
+Requires-Dist: sphinx==5.0.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme==0.5.1; extra == "docs"
+Requires-Dist: sphinxcontrib-youtube==1.0.1; extra == "docs"
+Requires-Dist: sphinx-rtd-theme==0.5.1; extra == "docs"
+Requires-Dist: sphinx-design==0.4.1; extra == "docs"
+Requires-Dist: furo==2023.3.27; extra == "docs"
+Provides-Extra: rllib
+Requires-Dist: ray[all]==2.0.0; extra == "rllib"
+Requires-Dist: setproctitle==1.1.10; extra == "rllib"
+Requires-Dist: service-identity==21.1.0; extra == "rllib"
+Requires-Dist: pydantic==1.9; extra == "rllib"
+Provides-Extra: cleanrl
+Requires-Dist: tensorboard==2.11.2; extra == "cleanrl"
+Requires-Dist: torch; extra == "cleanrl"
+Requires-Dist: wandb==0.13.7; extra == "cleanrl"
+Requires-Dist: psutil==5.9.5; extra == "cleanrl"
+Requires-Dist: tyro; extra == "cleanrl"
+Provides-Extra: compatible-environments
+Requires-Dist: atari; extra == "compatible-environments"
+Requires-Dist: box2d; extra == "compatible-environments"
+Requires-Dist: bsuite; extra == "compatible-environments"
+Requires-Dist: butterfly; extra == "compatible-environments"
+Requires-Dist: classic_control; extra == "compatible-environments"
+Requires-Dist: crafter; extra == "compatible-environments"
+Requires-Dist: dm_control; extra == "compatible-environments"
+Requires-Dist: dm_lab; extra == "compatible-environments"
+Requires-Dist: griddly; extra == "compatible-environments"
+Requires-Dist: microrts; extra == "compatible-environments"
+Requires-Dist: minigrid; extra == "compatible-environments"
+Requires-Dist: minihack; extra == "compatible-environments"
+Requires-Dist: nethack; extra == "compatible-environments"
+Requires-Dist: nmmo; extra == "compatible-environments"
+Requires-Dist: pokemon_red; extra == "compatible-environments"
+Requires-Dist: procgen; extra == "compatible-environments"
+Provides-Extra: atari
+Requires-Dist: gymnasium==0.29.1; extra == "atari"
+Requires-Dist: gym==0.23; extra == "atari"
+Requires-Dist: pettingzoo==1.24.1; extra == "atari"
+Requires-Dist: shimmy[gym-v21]; extra == "atari"
+Requires-Dist: gymnasium[accept-rom-license,atari]; extra == "atari"
+Requires-Dist: stable_baselines3==2.1.0; extra == "atari"
+Provides-Extra: box2d
+Requires-Dist: gymnasium==0.29.1; extra == "box2d"
+Requires-Dist: gym==0.23; extra == "box2d"
+Requires-Dist: pettingzoo==1.24.1; extra == "box2d"
+Requires-Dist: shimmy[gym-v21]; extra == "box2d"
+Requires-Dist: swig==4.1.1; extra == "box2d"
+Requires-Dist: gymnasium[box2d]; extra == "box2d"
+Provides-Extra: bsuite
+Requires-Dist: gymnasium==0.29.1; extra == "bsuite"
+Requires-Dist: gym==0.23; extra == "bsuite"
+Requires-Dist: pettingzoo==1.24.1; extra == "bsuite"
+Requires-Dist: shimmy[gym-v21]; extra == "bsuite"
+Requires-Dist: bsuite==0.3.5; extra == "bsuite"
+Provides-Extra: butterfly
+Requires-Dist: gymnasium==0.29.1; extra == "butterfly"
+Requires-Dist: gym==0.23; extra == "butterfly"
+Requires-Dist: pettingzoo==1.24.1; extra == "butterfly"
+Requires-Dist: shimmy[gym-v21]; extra == "butterfly"
+Requires-Dist: pettingzoo[butterfly]; extra == "butterfly"
+Provides-Extra: classic-control
+Requires-Dist: gymnasium==0.29.1; extra == "classic-control"
+Requires-Dist: gym==0.23; extra == "classic-control"
+Requires-Dist: pettingzoo==1.24.1; extra == "classic-control"
+Requires-Dist: shimmy[gym-v21]; extra == "classic-control"
+Provides-Extra: crafter
+Requires-Dist: gymnasium==0.29.1; extra == "crafter"
+Requires-Dist: gym==0.23; extra == "crafter"
+Requires-Dist: pettingzoo==1.24.1; extra == "crafter"
+Requires-Dist: shimmy[gym-v21]; extra == "crafter"
+Requires-Dist: crafter==1.8.2; extra == "crafter"
+Provides-Extra: dm-control
+Requires-Dist: gymnasium==0.29.1; extra == "dm-control"
+Requires-Dist: gym==0.23; extra == "dm-control"
+Requires-Dist: pettingzoo==1.24.1; extra == "dm-control"
+Requires-Dist: shimmy[gym-v21]; extra == "dm-control"
+Requires-Dist: dm_control==1.0.11; extra == "dm-control"
+Provides-Extra: dm-lab
+Requires-Dist: gymnasium==0.29.1; extra == "dm-lab"
+Requires-Dist: gym==0.23; extra == "dm-lab"
+Requires-Dist: pettingzoo==1.24.1; extra == "dm-lab"
+Requires-Dist: shimmy[gym-v21]; extra == "dm-lab"
+Requires-Dist: gym_deepmindlab==0.1.2; extra == "dm-lab"
+Requires-Dist: dm_env==1.6; extra == "dm-lab"
+Provides-Extra: griddly
+Requires-Dist: gymnasium==0.29.1; extra == "griddly"
+Requires-Dist: gym==0.23; extra == "griddly"
+Requires-Dist: pettingzoo==1.24.1; extra == "griddly"
+Requires-Dist: shimmy[gym-v21]; extra == "griddly"
+Requires-Dist: imageio==2.23.0; extra == "griddly"
+Requires-Dist: griddly==1.4.2; extra == "griddly"
+Provides-Extra: microrts
+Requires-Dist: gymnasium==0.29.1; extra == "microrts"
+Requires-Dist: gym==0.23; extra == "microrts"
+Requires-Dist: pettingzoo==1.24.1; extra == "microrts"
+Requires-Dist: shimmy[gym-v21]; extra == "microrts"
+Requires-Dist: ffmpeg==1.4; extra == "microrts"
+Requires-Dist: gym_microrts==0.3.2; extra == "microrts"
+Provides-Extra: minigrid
+Requires-Dist: gymnasium==0.29.1; extra == "minigrid"
+Requires-Dist: gym==0.23; extra == "minigrid"
+Requires-Dist: pettingzoo==1.24.1; extra == "minigrid"
+Requires-Dist: shimmy[gym-v21]; extra == "minigrid"
+Requires-Dist: minigrid==2.3.1; extra == "minigrid"
+Provides-Extra: minihack
+Requires-Dist: gymnasium==0.29.1; extra == "minihack"
+Requires-Dist: gym==0.23; extra == "minihack"
+Requires-Dist: pettingzoo==1.24.1; extra == "minihack"
+Requires-Dist: shimmy[gym-v21]; extra == "minihack"
+Requires-Dist: minihack==0.1.5; extra == "minihack"
+Provides-Extra: nethack
+Requires-Dist: gymnasium==0.29.1; extra == "nethack"
+Requires-Dist: gym==0.23; extra == "nethack"
+Requires-Dist: pettingzoo==1.24.1; extra == "nethack"
+Requires-Dist: shimmy[gym-v21]; extra == "nethack"
+Requires-Dist: nle==0.9.0; extra == "nethack"
+Provides-Extra: nmmo
+Requires-Dist: gymnasium==0.29.1; extra == "nmmo"
+Requires-Dist: gym==0.23; extra == "nmmo"
+Requires-Dist: pettingzoo==1.24.1; extra == "nmmo"
+Requires-Dist: shimmy[gym-v21]; extra == "nmmo"
+Requires-Dist: nmmo>=2.0; extra == "nmmo"
+Provides-Extra: pokemon-red
+Requires-Dist: gymnasium==0.29.1; extra == "pokemon-red"
+Requires-Dist: gym==0.23; extra == "pokemon-red"
+Requires-Dist: pettingzoo==1.24.1; extra == "pokemon-red"
+Requires-Dist: shimmy[gym-v21]; extra == "pokemon-red"
+Requires-Dist: einops==0.6.1; extra == "pokemon-red"
+Requires-Dist: matplotlib; extra == "pokemon-red"
+Requires-Dist: scikit-image==0.21.0; extra == "pokemon-red"
+Requires-Dist: pyboy<2.0.0; extra == "pokemon-red"
+Requires-Dist: hnswlib==0.7.0; extra == "pokemon-red"
+Requires-Dist: mediapy; extra == "pokemon-red"
+Requires-Dist: pandas==2.0.2; extra == "pokemon-red"
+Provides-Extra: procgen
+Requires-Dist: gymnasium==0.29.1; extra == "procgen"
+Requires-Dist: gym==0.23; extra == "procgen"
+Requires-Dist: pettingzoo==1.24.1; extra == "procgen"
+Requires-Dist: shimmy[gym-v21]; extra == "procgen"
+Requires-Dist: procgen-mirror==0.10.7; extra == "procgen"
+Provides-Extra: avalon
+Requires-Dist: avalon-rl==1.0.0; extra == "avalon"
+Requires-Dist: gymnasium==0.29.1; extra == "avalon"
+Requires-Dist: pettingzoo==1.24.1; extra == "avalon"
+Provides-Extra: magent
+Requires-Dist: magent==0.2.4; extra == "magent"
+Requires-Dist: pettingzoo==1.19.0; extra == "magent"
+Requires-Dist: gymnasium==0.29.1; extra == "magent"
+Requires-Dist: gym==0.23; extra == "magent"
+Provides-Extra: minerl
+Requires-Dist: gym==0.17.0; extra == "minerl"
+Requires-Dist: minerl==0.4.4; extra == "minerl"
+Requires-Dist: requests==2.31.0; extra == "minerl"
+Requires-Dist: gymnasium==0.29.1; extra == "minerl"
+Requires-Dist: pettingzoo==1.24.1; extra == "minerl"
+Provides-Extra: open-spiel
+Requires-Dist: open_spiel==1.3; extra == "open-spiel"
+Requires-Dist: pettingzoo==1.19.0; extra == "open-spiel"
+Requires-Dist: gymnasium==0.29.1; extra == "open-spiel"
+Requires-Dist: gym==0.23; extra == "open-spiel"
+Requires-Dist: shimmy[gym-v21]; extra == "open-spiel"
