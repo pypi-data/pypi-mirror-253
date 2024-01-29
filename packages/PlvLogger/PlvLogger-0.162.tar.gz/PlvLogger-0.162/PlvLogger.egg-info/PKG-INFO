@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: PlvLogger
+Version: 0.162
+Summary: Custom logging library
+Home-page: https://github.com/plv88/MyLogger
+Author: plv88
+Author-email: plv.andrey88@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+## PlvLogger: Простая библиотека логирования для Python
+
+PlvLogger - это простая библиотека логирования для Python, разработанная для обеспечения простой настройки и конфигурации логирования в файлы с возможностью их ротации.
+
+### Установка
+
+Вы можете установить PlvLogger с помощью pip:
+
+```bash
+pip install PlvLogger
+```
+
+### Использование
+from PlvLogger import Logger
+
+
+# Создание экземпляра логгера
+
+logger = Logger(logger_name="my_logger", type_log="w", when="D")
+
+
+# Логирование сообщения с предупреждением
+
+logger.logger.warning("Это сообщение с предупреждением")
+
+
+# Логирование информационного сообщения
+
+logger.logger.info("Это информационное сообщение")
+
+Дополнительные параметры для ротации логов:
+
+'S': Ротация логов каждые N секунд.
+'M': Ротация логов каждые N минут.
+'H': Ротация логов каждые N часов.
+'D': Ротация логов каждые N дней. По умолчанию ротация происходит в полночь.
+'W0'-'W6': Ротация логов в определенный день недели ('W0' - понедельник, 'W1' - вторник, и так далее до 'W6' - воскресенье). Время ротации также по умолчанию установлено на полночь.
+
+
+### Пример
+
+# Создание экземпляра логгера с ротацией логов каждые 2 часа
+
+logger = Logger(logger_name="my_logger", type_log="w", when="H", interval=2)
+
