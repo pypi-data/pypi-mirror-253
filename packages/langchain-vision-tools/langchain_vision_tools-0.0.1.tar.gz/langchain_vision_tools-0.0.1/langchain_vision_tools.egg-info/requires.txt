@@ -1,0 +1,7 @@
+langchain
+openai
+deepdanbooru
+tensorflow
+clip-interrogator
+numpy
+python-dotenv

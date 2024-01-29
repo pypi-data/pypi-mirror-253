@@ -1,0 +1,6 @@
+setup.py
+langchain_vision_tools.egg-info/PKG-INFO
+langchain_vision_tools.egg-info/SOURCES.txt
+langchain_vision_tools.egg-info/dependency_links.txt
+langchain_vision_tools.egg-info/requires.txt
+langchain_vision_tools.egg-info/top_level.txt
