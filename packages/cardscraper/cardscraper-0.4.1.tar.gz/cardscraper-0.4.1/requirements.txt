@@ -1,0 +1,6 @@
+ruff
+pytest
+genanki
+pyyaml
+beautifulsoup4
+requests

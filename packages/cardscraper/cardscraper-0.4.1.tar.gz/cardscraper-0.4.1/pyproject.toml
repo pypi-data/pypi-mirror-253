@@ -1,0 +1,36 @@
+[project]
+name = 'cardscraper'
+readme = 'README.md'
+description = 'A tool for generating Anki cards by web scraping'
+license = { file = "LICENSE" }
+dynamic = ['version']
+dependencies = ['genanki', 'pyyaml', 'beautifulsoup4', 'requests']
+
+[project.urls]
+Homepage = 'https://github.com/sakhezech/cardscraper'
+
+[project.scripts]
+cardscraper = 'cardscraper.__main__:cli'
+
+[project.entry-points.'cardscraper.model']
+default = 'cardscraper.default:get_model'
+[project.entry-points.'cardscraper.scraping']
+default = 'cardscraper.default:get_notes'
+[project.entry-points.'cardscraper.deck']
+default = 'cardscraper.default:get_deck'
+[project.entry-points.'cardscraper.package']
+default = 'cardscraper.default:get_package'
+
+[tool.ruff]
+line-length = 79
+[tool.ruff.format]
+quote-style = 'single'
+[tool.ruff.lint]
+extend-select = ['I', 'E501']
+
+[tool.hatch.version]
+path = 'src/cardscraper/__version__.py'
+
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'

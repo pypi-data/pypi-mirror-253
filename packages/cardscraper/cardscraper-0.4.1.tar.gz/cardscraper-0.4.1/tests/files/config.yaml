@@ -1,0 +1,49 @@
+package:
+  name: test_package.apkg
+  output: output/
+  media: media/
+  pattern: "**/*.txt"
+
+deck:
+  name: Deck
+  id: 123
+
+model:
+  name: Model
+  id: 456
+  css: |
+    .question, .answer {
+        text-align: center;
+    }
+    .question {
+        font-size: 5rem;
+        font-weight: 700;
+    }
+    .answer {
+        font-size: 3rem;
+    }
+  templates:
+    - name: Front
+      qfmt: |
+        <div class='question'>
+        {{Question}}
+        </div>
+      afmt: |
+        {{FrontSide}}
+        <hr id='answer'>
+        <div class='answer'>
+        {{Answer}}
+        </div>
+
+scraping:
+  urls: []
+  queries:
+    - name: Country
+      query: .country
+      many: true
+      children:
+        - name: Question
+          query: .country-info
+          regex: (Area .*)$
+        - name: Answer
+          query: .country-name
