@@ -1,0 +1,8 @@
+pykeboola/__init__.py,sha256=xOiGQ43hExfj_hf8CiwFGYYNi5G2b5CGeC8l8hYnaMA,35
+pykeboola/client.py,sha256=kWGfZPOZHa5pxkxGKxfxnMQcJW5TnDPrzoqLsGhEXh8,388
+pykeboola/jobs.py,sha256=X5iMVN5fHm3E2yypShvG4AQnyHDEFneZRtTFYvuDkt4,1746
+pykeboola-0.0.1.dist-info/LICENSE,sha256=f3C1EXRIeV5DsbIab4ImHp2lKciu5UEjO5yZyz2MRKM,1072
+pykeboola-0.0.1.dist-info/METADATA,sha256=o4IT-IWGQJ3iTayB4vlPHUwZQ1IdbVjmzXtCqlAhT9c,1017
+pykeboola-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pykeboola-0.0.1.dist-info/top_level.txt,sha256=9tn66y2BKBs_Uc-Y3TcguJ23S0rc54bp_IkSsyui8NM,10
+pykeboola-0.0.1.dist-info/RECORD,,
