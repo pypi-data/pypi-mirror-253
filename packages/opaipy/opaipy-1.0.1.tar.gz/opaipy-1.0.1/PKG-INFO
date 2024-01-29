@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: opaipy
+Version: 1.0.1
+Summary: twitter bot
+Home-page: https://github.com/kaioman/opaipy.git
+Author: unchainworks
+Author-email: kajin0318@gmail.com
+License: BSD-3-Clause
+Keywords: twitter,bot
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: LibHanger
+Requires-Dist: Scrapinger
+Requires-Dist: decorator
+Requires-Dist: twython
+
+# onapy
