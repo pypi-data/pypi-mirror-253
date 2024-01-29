@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rpc-over-redis
+Version: 0.0.1
+Summary: Remote Procedure Call over Redis on Python
+Author: Mark Smirnov
+Author-email: Mark Smirnov <mark@mark99.ru>
+License: MIT License
+Project-URL: Source code, https://github.com/mark99i/rpc-over-redis
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: redis ==5.0.1
+Requires-Dist: pydantic ==2.5.2
+
+TODO
