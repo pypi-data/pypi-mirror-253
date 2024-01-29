@@ -1,0 +1,7 @@
+django_telegram_logging/__init__.py,sha256=8FCL0RXz1ghLldJEL8njCMBCknt7QTzUOMKJLi6iIFc,321
+django_telegram_logging/apps.py,sha256=4eeeMKSJRmjmw6mnHDQayN7Hg-pKlNAqcXvYZ1T2b6k,119
+django_telegram_logging/handler.py,sha256=2mqBZQg__7eUQBrh6izPtcU9oxsN8jzDgvh2uX56kbs,2055
+django_telegram_logging-1.0.2.dist-info/METADATA,sha256=J0dShoJA19gwzS1YUWdrdGA2kA-W-zJXuyMES7EjiCk,2238
+django_telegram_logging-1.0.2.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+django_telegram_logging-1.0.2.dist-info/top_level.txt,sha256=3BGYxkhrnhLKNc_1Csw1VLVbCp0fdsIqVqWSexorfkk,24
+django_telegram_logging-1.0.2.dist-info/RECORD,,
