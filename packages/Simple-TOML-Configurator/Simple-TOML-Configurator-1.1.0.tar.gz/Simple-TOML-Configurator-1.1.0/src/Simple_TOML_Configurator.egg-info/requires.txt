@@ -1,0 +1,6 @@
+tomlkit>=0.12.1
+
+[dev]
+pytest
+pytest-cov
+pytest-mock
