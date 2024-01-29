@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+TITLE.txt
+lh-agpl3-LICENSE.txt
+setup.py
+bin/usgAcctManage.cs
+bisos/__init__.py
+bisos.usgAcct.egg-info/PKG-INFO
+bisos.usgAcct.egg-info/SOURCES.txt
+bisos.usgAcct.egg-info/dependency_links.txt
+bisos.usgAcct.egg-info/namespace_packages.txt
+bisos.usgAcct.egg-info/not-zip-safe
+bisos.usgAcct.egg-info/requires.txt
+bisos.usgAcct.egg-info/top_level.txt
+bisos/usgAcct/__init__.py
+bisos/usgAcct/usgAcct.py
+bisos/usgAcct/usgAcctPkgThis.py
