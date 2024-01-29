@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: rootpay-sdk
+Version: 0.0.3
+Summary: A package to interact with root-pay.app API
+Home-page: https://github.com/muzonff/root-pay_sdk
+Author: Touka
+Author-email: touka.touka@icloud.com
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Dist: httpx>=0.26.0
+
+A package to interact with root-pay (update later)
