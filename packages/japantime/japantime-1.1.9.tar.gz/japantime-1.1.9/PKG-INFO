@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: japantime
+Version: 1.1.9
+Author: inu
+License: MIT
+Description-Content-Type: text/markdown
+
+# japantime
+
+日付や時刻を表示する際に文字列フォーマットの煩わしさから逃れることができる。
+
+## install
+
+```terminal
+pip install japantime
+```
+
+## usage
+
+```python
+import jtime
+
+print(jtime.wareki(1923))
+>>> ('大正', 12)
+
+print(jtime.eto(1945))
+>>>('酉', 'とり')
+
+import time
+a = time.time()
+time.sleep(3)
+b = time.time()
+
+print(jtime.time_lapse(b-a))
+>>>'0時間0分3秒'
+
+print(jtime.time_lapse(b-a, mode='s'))
+>>>'0:0:3'
+
+print(jtime.time_lapse(b-a, mode='e'))
+>>>'0h0m3s'
+
+# クラスJTimeは以下のメソッドを持つ
+"""
+    JTime.year() : yyyy年
+    JTime.month() : m月
+    JTime.day() : d日
+    JTime.hour() : h時
+    JTime.min() : m分
+    JTime.sec() : s秒
+    JTime.youbi() : 曜日
+    JTime.wareki() : 元号n年
+    JTime.eto() : (干支, えと)
+    JTime.ymdhms() : yyyy年m月d日h時m分s秒
+    JTime.ymd() : yyyy年m月d日
+    JTime.ym() : yyyy年m月
+    JTime.md() : m月d日
+    JTime.hms() : h時m分s秒
+    JTime.hm() : h時m分
+    JTime.ms() : m分s秒
+"""
+
+# 半角表示
+a = jtime.JTime()
+print(a.year())
+>>>'2024年'
+
+# 全角表示
+b = jtime.JTime(mode='z')
+print(b.year())
+>>>'２０２４年'
+
+# 漢数字表示
+c = jtime.JTime(mode='k')
+print(c.year())
+>>>'二〇二四年'
+
+```
