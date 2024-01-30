@@ -1,0 +1,76 @@
+# -*- coding: UTF-8 -*-
+#===============================================================================
+#                                                                              #
+#                       OOOOOOOOO---------------OOOOOOOOO                      #
+#                       OOOOO-----------------------OOOOO                      #
+#                       OOO-------------------NNNN----OOO                      #
+#                       O--------------------NNNNNN-----O                      #
+#                       O----------NN--------NNN-NNN----O                      #
+#                       ---------NNNNNNN-----NNN--NNN----                      #
+#                       ---------NNNNNNNNN---NNN---NNNNNN                      #
+#                       NNNNNN---NNN---NNNNNNNNN---------                      #
+#                       ----NNN--NNN-----NNNNNN----------                      #
+#                       O----NNN-NNN--------NN----------O                      #
+#                       O-----NNNNNN--------------------O                      #
+#                       OOO----NNNN-------------------OOO                      #
+#                       OOOOO-----------------------OOOOO                      #
+#                       OOOOOOOOO---------------OOOOOOOOO                      #
+#                                                                              #
+#                                Nanohmics, Inc.                               #
+#                                                                              #
+#===============================================================================
+# Build and distribution configuration
+[build-system]
+requires = [
+  "partis-pyproj ~= 0.1.3rc3"]
+
+build-backend = "partis.pyproj.backend"
+
+#===============================================================================
+# Package meta-data
+[project]
+name = "nohm"
+version = "1.0.0"
+description = "Namespace package for Nanohmics Inc"
+readme = "README.rst"
+license = { file = "LICENSE.rst" }
+
+#===============================================================================
+# Package dependencies
+requires-python = ">= 3.7.2"
+
+dependencies = []
+
+[[project.authors]]
+name = "Nanohmics Inc"
+email = ""
+
+#===============================================================================
+[tool.pyproj.dist]
+ignore = [
+  '**/__pycache__',
+  '**/*.py[cod]',
+  '*.egg-info',
+  '**/.git',
+  '**/.github',
+  '**/.gitignore',
+  '**/.gitmodules' ]
+
+#===============================================================================
+[tool.pyproj.dist.source]
+ignore = [
+  '**/*.so' ]
+
+copy = [
+  'src',
+  'LICENSE.rst',
+  'pyproject.toml',
+  'README.rst']
+
+#===============================================================================
+# binary distribution installed paths
+[[tool.pyproj.dist.binary.purelib.copy]]
+src = 'src/nohm'
+dst = 'nohm'
+include = [
+  '**/*.py']
