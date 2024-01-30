@@ -1,0 +1,7 @@
+README.md
+setup.py
+Gpt_Client/__init__.py
+Gpt_Client.egg-info/PKG-INFO
+Gpt_Client.egg-info/SOURCES.txt
+Gpt_Client.egg-info/dependency_links.txt
+Gpt_Client.egg-info/top_level.txt
