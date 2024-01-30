@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: fluidsim
+Version: 0.8.0rc0
+Summary: Framework for studying fluid dynamics with simulations.
+Keywords: Fluid dynamics research
+Author-Email: pierre.augier <pierre.augier@univ-grenoble-alpes.fr>
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Source, https://foss.heptapod.net/fluiddyn/fluidsim
+Project-URL: Documentation, https://fluidsim.readthedocs.io
+Project-URL: Git mirror, https://github.com/fluiddyn/fluidsim
+Requires-Python: >=3.9
+Requires-Dist: fluidsim-core>=0.8.0rc0
+Requires-Dist: h5py
+Requires-Dist: h5netcdf
+Requires-Dist: transonic>=0.6.0
+Requires-Dist: xarray
+Requires-Dist: rich
+Requires-Dist: matplotlib>=3.3
+Requires-Dist: scipy
+Requires-Dist: pyfftw>=0.10.4; extra == "fft"
+Requires-Dist: fluidfft>=0.2.7; extra == "fft"
+Requires-Dist: mpi4py; extra == "mpi"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: coverage; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-allclose; extra == "test"
+Requires-Dist: pytest-mock; extra == "test"
+Requires-Dist: ipython; extra == "test"
+Requires-Dist: pymech; extra == "test"
+Provides-Extra: fft
+Provides-Extra: mpi
+Provides-Extra: test
