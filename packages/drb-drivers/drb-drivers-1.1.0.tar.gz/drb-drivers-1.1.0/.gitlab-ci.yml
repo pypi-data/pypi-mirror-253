@@ -1,0 +1,43 @@
+stages:
+  - test
+  - deploy
+
+test_release:
+  stage: test
+  tags:
+    - docker
+  services:
+    - name: pypiserver/pypiserver:latest
+      alias: local-pypi
+      command: ['run', '-P', '.','-a', '.']
+  image: python:3.11
+  before_script:
+    - pip install setuptools wheel build twine
+    - python -m build
+    - python -m twine upload --repository-url http://local-pypi:8080  --non-interactive dist/*
+    - rm -fr dist *.egg-info
+  script:
+    - pip install --trusted-host local-pypi --extra-index-url http://local-pypi:8080 drb-drivers[container]
+    - res=$(pip list |grep -c drb-driver-)
+    - if [ $res -ne "2" ]; then exit 1; fi
+    - pip install --trusted-host local-pypi --extra-index-url http://local-pypi:8080 drb-drivers[formatting]
+    - res=$(pip list |grep -c drb-driver-)
+    - if [ $res -ne "10" ]; then exit 1; fi
+    - pip install --trusted-host local-pypi --extra-index-url http://local-pypi:8080 drb-drivers[protocol]
+    - res=$(pip list |grep -c drb-driver-)
+    - if [ $res -ne "23" ]; then exit 1; fi
+
+release:
+  tags:
+    - docker
+    - pypi
+  image: python:3.8
+  stage: deploy
+  before_script:
+    - pip install setuptools wheel build twine
+    - python -m build
+  script:
+    - pip install dist/drb-drivers-$CI_COMMIT_TAG.tar.gz
+    - python -m twine upload dist/*
+  only:
+    - tags

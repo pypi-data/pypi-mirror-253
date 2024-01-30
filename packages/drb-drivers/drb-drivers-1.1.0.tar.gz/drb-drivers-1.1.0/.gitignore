@@ -1,0 +1,7 @@
+.eggs
+.idea
+*.egg-info
+dist
+venv
+build
+_version.py
