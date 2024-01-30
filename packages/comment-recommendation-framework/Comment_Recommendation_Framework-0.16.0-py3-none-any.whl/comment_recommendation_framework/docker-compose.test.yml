@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  neo4j:
+    image: neo4j:latest
+    environment:
+      - NEO4J_AUTH=neo4j/test
+
+
+  tests:
+    build: .
+    depends_on:
+      - neo4j
+    command: './wait-for-it.sh -t 60 neo4j:7687 -- python -m unittest discover -s ./RecommendationSystem/.'
