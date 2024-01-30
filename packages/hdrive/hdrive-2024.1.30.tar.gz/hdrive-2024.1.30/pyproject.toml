@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "hdrive"
+version = "2024.1.30"
+description = "一个基于 JSON 的键-值存储类。与操作 Python 字典类似，但每次修改后都会自动保存到硬盘"
+
+readme = "README.md"
+authors = [{name = "lcctoor.com", email = "lcctoor@outlook.com"}]
