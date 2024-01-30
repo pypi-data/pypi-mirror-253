@@ -1,0 +1,14 @@
+matplotlib
+pytorch-lamb
+tensorboardX
+fastprogress
+scikit-learn
+spacy
+seqeval
+transformers==4.22.*
+pandas
+python-box
+more-itertools
+onnx
+onnxruntime
+onnxruntime-tools
