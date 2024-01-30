@@ -1,0 +1,10 @@
+setup.py
+binormal_probability/Binomialdistribution.py
+binormal_probability/Gaussiandistribution.py
+binormal_probability/Generaldistribution.py
+binormal_probability/__init__.py
+binormal_probability.egg-info/PKG-INFO
+binormal_probability.egg-info/SOURCES.txt
+binormal_probability.egg-info/dependency_links.txt
+binormal_probability.egg-info/not-zip-safe
+binormal_probability.egg-info/top_level.txt
