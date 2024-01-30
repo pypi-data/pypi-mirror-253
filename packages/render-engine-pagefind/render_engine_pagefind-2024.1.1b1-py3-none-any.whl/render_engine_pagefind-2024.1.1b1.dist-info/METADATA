@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: render-engine-pagefind
+Version: 2024.1.1b1
+Summary: PageFind theme and plugin that adds page find to your site.
+Project-URL: homepage, https://github.com/kjaymiller/render_engine_pagefind
+Project-URL: repository, https://github.com/kjaymiller/render_engine_pagefind
+Project-URL: documentation, https://github.io/kjaymiller/render_engine_pagefind
+Description-Content-Type: text/markdown
+Requires-Dist: jinja2
+Requires-Dist: render-engine >=2023.10.2b2
+Provides-Extra: dev
+Requires-Dist: axe-playwright-python ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: playwright ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-playwright ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+
+# PageFind
+
+PageFind theme and plugin that adds page find to your site.
+
+## How to use this theme
+
+1. Install the theme
+
+   ```python
+   pip install render_engine_pagefind
+   ```
+
+2. Import the theme into your project
+
+   ```python
+   from render_engine import Site
+   from render_engine_pagefind import PageFind
+
+   app = Site()
+   app.register_theme(PageFind)
+   ```
