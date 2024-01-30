@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+gribscan/__init__.py
+gribscan/aeccodec.py
+gribscan/gribscan.py
+gribscan/gridutils.py
+gribscan/magician.py
+gribscan/rawgribcodec.py
+gribscan/tools.py
+gribscan.egg-info/PKG-INFO
+gribscan.egg-info/SOURCES.txt
+gribscan.egg-info/dependency_links.txt
+gribscan.egg-info/entry_points.txt
+gribscan.egg-info/requires.txt
+gribscan.egg-info/top_level.txt
