@@ -1,0 +1,123 @@
+[build-system]
+requires = [
+    "hatchling>=1.3.1",
+    "hatch-jupyter-builder",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "rayban"
+description = "A scalable ray dashboard built with perspective"
+version = "0.1.0"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+authors = [
+    { name = "Tim Paine", email = "t.paine154@gmail.com" },
+]
+keywords = [
+    "perspective",
+    "ray",
+    "dataviz",
+    "data visualization",
+    "cluster",
+    "cluster visualization",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Jupyter",
+    "Framework :: Jupyter :: JupyterLab",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "fastapi",
+    "perspective-python",
+    "pydantic<2",
+    "ray>=2.5",
+]
+
+[project.optional-dependencies]
+develop = [
+    # Test deps
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "pytest-sugar",
+    # Other deps
+    "bump2version>=1.0.0",
+    "check-manifest",
+    "hatchling",
+    "hatch-jupyter-builder",
+    "isort",
+    "ruff",
+]
+
+test = [
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "pytest-sugar",
+]
+
+[project.urls]
+repository = "https://github.com/perspective-community/perspective-ray-dashboard"
+homepage = "https://github.com/perspective-community/perspective-ray-dashboard"
+
+[tool.check-manifest]
+ignore = [
+    "perspective_ray_dashboard/static/*",
+	"js/**",
+]
+
+[tool.hatch.build]
+artifacts = [
+    "perspective_ray_dashboard/static/index.js"
+]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    ".github",
+    ".ruff_cache",
+    "docs",
+]
+
+[tool.hatch.build.hooks.jupyter-builder]
+build-function = "hatch_jupyter_builder.npm_builder"
+ensured-targets = [
+    "perspective_ray_dashboard/static/index.js",
+]
+skip-if-exists = [
+    "perspective_ray_dashboard/static/index.js",
+]
+dependencies = [
+    "hatch-jupyter-builder>=0.5.0",
+]
+
+[tool.hatch.build.hooks.jupyter-builder.build-kwargs]
+path = "js"
+build_cmd = "build"
+npm = "yarn"
+
+[tool.isort]
+combine_as_imports = true
+include_trailing_comma = true
+line_length = 120
+profile = "black"
+
+default_section = "THIRDPARTY"
+sections = "FUTURE,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+
+known_first_party = "perspective_ray_dashboard"
+
+[tool.ruff]
+line-length = 150
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
