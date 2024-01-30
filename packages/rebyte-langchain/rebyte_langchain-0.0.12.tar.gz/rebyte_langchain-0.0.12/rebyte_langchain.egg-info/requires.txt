@@ -1,0 +1,11 @@
+requests>=2.20
+typing_extensions
+aiohttp
+rebyte>=0.0.4
+langchain>=0.0.240
+
+[dev]
+black~=21.6b0
+pytest==6.*
+pytest-asyncio
+pytest-mock
