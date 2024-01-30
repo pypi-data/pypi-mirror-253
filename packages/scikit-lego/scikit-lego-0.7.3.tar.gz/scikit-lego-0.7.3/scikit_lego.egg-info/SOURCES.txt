@@ -1,0 +1,11 @@
+LICENSE
+pyproject.toml
+readme.md
+setup.py
+scikit_lego.egg-info/PKG-INFO
+scikit_lego.egg-info/SOURCES.txt
+scikit_lego.egg-info/dependency_links.txt
+scikit_lego.egg-info/requires.txt
+scikit_lego.egg-info/top_level.txt
+tests/test_datasets.py
+tests/test_notinstalled.py
