@@ -1,0 +1,9 @@
+tidydev/__init__.py,sha256=erWs1UYJo5-rHAYxITCxuiqv8vjrXiKyur3kjbFxqT0,1118
+tidydev/__main__.py,sha256=UySd89MnosouHhfaS4TzShybXEkXk7hmkbKRquKTquc,1570
+tidydev/__version__.py,sha256=I7BbB18nTgH1Y80DPLzu3pVOYhVHjBOYRzRX6HiNOFs,159
+tidydev/analyze.py,sha256=SljUFGGgloqlpzPKVbmoK4_Yqkqqio7EgH4-_EFrLEU,4725
+tidydev-1.1.0.dist-info/METADATA,sha256=B-DEt-XX5SDaa8cqEJ1-b6ZSJW0BD3Otwnj3o8blqU4,1328
+tidydev-1.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tidydev-1.1.0.dist-info/entry_points.txt,sha256=42nokXA7cChVcm65ms-jNmqSKwKVye83ip8ajiZ_zPk,50
+tidydev-1.1.0.dist-info/top_level.txt,sha256=wVh8U8P4-VbFCEZNlIFvmPKFyoGLR2LfoyFm70V4n4k,8
+tidydev-1.1.0.dist-info/RECORD,,

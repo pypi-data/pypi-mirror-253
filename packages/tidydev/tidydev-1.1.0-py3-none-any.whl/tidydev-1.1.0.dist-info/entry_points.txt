@@ -1,0 +1,2 @@
+[console_scripts]
+tidydev = tidydev.__main__:main
