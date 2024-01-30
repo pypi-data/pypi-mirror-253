@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: libpyles
+Version: 1.0.0
+Summary: Pacote de teste
+Author: PedroVitor
+Author-email: pedro.passos@ufpi.edu.br
+Keywords: python,files,Pyl3s,Pyl3sLib
+
+Biblioteca Python para manipulações de arquivos.
