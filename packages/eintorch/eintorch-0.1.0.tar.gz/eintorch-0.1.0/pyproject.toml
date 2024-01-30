@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "eintorch"
+version = "0.1.0"
+description = "An alternative interface for torchdim"
+authors = ["Jakub Bachurski <kbachurski@gmail.com>"]
+readme = "README.md"
+packages = [{include = "eintorch", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+functorch = "^2.0.0"
+numpy = "^1.26.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+setuptools = "^69.0.3"
+ipython = "^8.0"
+black = "^24.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+ignore = ["E501", "E741"]
+
+[tool.mypy]
+check_untyped_defs = true
