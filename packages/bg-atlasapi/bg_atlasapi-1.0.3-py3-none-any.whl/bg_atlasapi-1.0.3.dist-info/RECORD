@@ -1,0 +1,17 @@
+bg_atlasapi/__init__.py,sha256=GUBLICxsBYdbPtsNkoRBbL-LT-pPxtV3802IPihTvAQ,359
+bg_atlasapi/bg_atlas.py,sha256=fSiX0O9oPF6JA6FaffFKZY693Znr_jSJ-owfPlspScc,7253
+bg_atlasapi/cli.py,sha256=cf4u8visLmzzX2YT938LEC7vwAMnJ30XkAcENfpgHpM,2243
+bg_atlasapi/config.py,sha256=l2kXuuokqamkcypC3PhW8dFqxC8hctbNvxfDLKNueV0,3800
+bg_atlasapi/core.py,sha256=cH9mDc1ffRd-DTD17mbQub-wQiPp2fLixTCKkEi1nA8,10773
+bg_atlasapi/descriptors.py,sha256=HYJUV2hdGtNeMEWWg_9SY6fwI8LtIxpcLuQOvyM2bWc,1545
+bg_atlasapi/list_atlases.py,sha256=UvgxP9GShK0yuddastWCzIjvFMChNbWErWpVUbsuUWY,4408
+bg_atlasapi/structure_class.py,sha256=9s9kY5QnvOYMBtguZ-QxssqnDgiyAAU-T1z8u9I57xU,2039
+bg_atlasapi/structure_tree_util.py,sha256=EQwk1_zkF2P_STZNO7rh2UNl5KOnaL0tToELRnkiSpU,1748
+bg_atlasapi/update_atlases.py,sha256=uLAFs1nxJfkcpXmY546yurOhsGQDe4-_wqYT_lqcWFM,2277
+bg_atlasapi/utils.py,sha256=kBlHAzIS3ih4vzb-rm7cDPFO-VMi7C__FAW4DkOFveg,8018
+bg_atlasapi-1.0.3.dist-info/LICENSE,sha256=9AX47U0570uojyTY4CAOqyDK6j7MDfew1zMhqv4JHXE,1510
+bg_atlasapi-1.0.3.dist-info/METADATA,sha256=OePdGAC1IeI2I3_3OW852K_KXYXAVnFE1wHSKNsOgcg,12944
+bg_atlasapi-1.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bg_atlasapi-1.0.3.dist-info/entry_points.txt,sha256=ocRCh1FQAUwI0QCBB7i4rxs9KbxqptNeT0DsSOgwL4o,54
+bg_atlasapi-1.0.3.dist-info/top_level.txt,sha256=LSk2ooWh4jI7MAX424-2wH-ruZtGOOZq_PwWwSEIMr0,12
+bg_atlasapi-1.0.3.dist-info/RECORD,,
