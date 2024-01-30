@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: texasholdem1598
+Version: 1.0.11
+Summary: A package for playing texas holdem poker
+Home-page: https://github.com/mitchr1598/texasholdem
+Author: mitchr1598
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: playingcards1598
+
+# texasholdem
+
+A library for Texas Holdem poker
