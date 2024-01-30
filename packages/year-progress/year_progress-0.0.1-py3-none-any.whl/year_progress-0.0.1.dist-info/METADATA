@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: year-progress
+Version: 0.0.1
+Summary: Year progress.
+Home-page: https://github.com/DuelitDev/YearProgress/
+Author: DuelitDev
+Author-email: jyoon07dev@gmail.com
+Maintainer: DuelitDev
+Maintainer-email: jyoon07dev@gmail.com
+Keywords: year,progress
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# Year Progress
+
+# Install
+`pip install year_progress`
+
+# Example
+```python
+import year_progress
+
+
+print(f"Year progress: {year_progress.year_progress()}")
+# 7.9087298028203605
+```
+
+# Author
+- [DuelitDev](https://github.com/DuelitDev)
+
+# License
+[CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
