@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+clarifai_datautils/__init__.py
+clarifai_datautils/errors.py
+clarifai_datautils.egg-info/PKG-INFO
+clarifai_datautils.egg-info/SOURCES.txt
+clarifai_datautils.egg-info/dependency_links.txt
+clarifai_datautils.egg-info/requires.txt
+clarifai_datautils.egg-info/top_level.txt
+clarifai_datautils/constants/annotations.py
+clarifai_datautils/image/__init__.py
+clarifai_datautils/image/annotation_conversion/__init__.py
+clarifai_datautils/image/annotation_conversion/annotations.py
+clarifai_datautils/image/annotation_conversion/base.py
+clarifai_datautils/image/annotation_conversion/features.py
+clarifai_datautils/image/annotation_conversion/loaders.py
