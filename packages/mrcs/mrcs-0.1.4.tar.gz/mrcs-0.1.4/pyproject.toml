@@ -1,0 +1,25 @@
+[project]
+name = "mrcs"
+version = "0.1.4"
+dynamic = ["dependencies"]
+authors = [
+  { name="GEOEGII555", email="geoegii2001555@gmail.com" },
+]
+description = "A library to create bots for MRCS (custom msgroom server)"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/GEOEGII555/mrcs.py"
+"Bug Tracker" = "https://github.com/GEOEGII555/mrcs.py/issues"
+
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

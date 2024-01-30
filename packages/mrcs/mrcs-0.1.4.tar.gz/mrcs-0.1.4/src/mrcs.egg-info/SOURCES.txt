@@ -1,0 +1,25 @@
+.gitignore
+README.md
+pyproject.toml
+requirements.txt
+.github/workflows/python-publish.yml
+documentation/Client.md
+documentation/Constants.md
+documentation/Getting started.md
+documentation/Moving between mrcs.py and w96msgroom.py.md
+documentation/PrefixBot.md
+documentation/User.md
+src/mrcs/__init__.py
+src/mrcs/client.py
+src/mrcs/constants.py
+src/mrcs/prefix_bot.py
+src/mrcs/user.py
+src/mrcs.egg-info/PKG-INFO
+src/mrcs.egg-info/SOURCES.txt
+src/mrcs.egg-info/dependency_links.txt
+src/mrcs.egg-info/requires.txt
+src/mrcs.egg-info/top_level.txt
+tests/0-do-nothing.py
+tests/1-ping-bot.py
+tests/2-UNSAFE-eval-bot.py
+tests/3-prefix-bot.py
