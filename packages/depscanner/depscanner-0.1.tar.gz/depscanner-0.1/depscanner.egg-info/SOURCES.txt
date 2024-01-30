@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+depscanner/__init__.py
+depscanner/depscanner.py
+depscanner.egg-info/PKG-INFO
+depscanner.egg-info/SOURCES.txt
+depscanner.egg-info/dependency_links.txt
+depscanner.egg-info/requires.txt
+depscanner.egg-info/top_level.txt
+tests/test.py

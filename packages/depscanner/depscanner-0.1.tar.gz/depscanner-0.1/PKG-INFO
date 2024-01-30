@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: depscanner
+Version: 0.1
+Summary: Python Dependency Scanner
+Author: nickdecodes
+Author-email: nickdecodes@163.com
+Keywords: depscanner,python,dependency
+Requires-Python: >=3.6
+License-File: LICENSE
