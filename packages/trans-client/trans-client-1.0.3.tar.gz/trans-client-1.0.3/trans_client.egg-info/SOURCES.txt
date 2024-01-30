@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+tclient.py
+trans_client.egg-info/PKG-INFO
+trans_client.egg-info/SOURCES.txt
+trans_client.egg-info/dependency_links.txt
+trans_client.egg-info/entry_points.txt
+trans_client.egg-info/top_level.txt
