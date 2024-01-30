@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>小爱音箱操控面板</title>
+    <script src="/static/jquery-3.7.1.min.js"></script>
+    <script src="/static/app.js"></script>
+    <style>
+      button {
+          margin: 10px;
+          width: 100px;
+          height: 50px;
+          border: none; /* 无边框 */
+          color: white; /* 白色文字 */
+          text-align: center; /* 文字居中 */
+          text-decoration: none; /* 无下划线 */
+          display: inline-block; /* 行内块元素 */
+          border-radius: 10px; /* 圆角 */
+          background-color: #008CBA; /* 蓝色 */
+      }
+      input {
+          margin: 10px;
+          width: 200px;
+          height: 40px;
+      }
+    </style>
+</head>
+<body>
+    <h2>小爱音箱操控面板</h2>
+    <hr>
+    <div id="cmds">
+    </div>
+    <hr>
+    <div>
+      <input id="music-name" type="text" placeholder="请输入歌曲名称"></input>
+      <button id="play">播放</button>
+    </div>
+</body>
+</html>
