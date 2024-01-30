@@ -1,0 +1,3 @@
+[console_scripts]
+pltocr=plt_ocr.model:main
+

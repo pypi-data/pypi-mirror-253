@@ -1,0 +1,8 @@
+plt_ocr/model.ckpt,sha256=zudh3rLqBXOlHSsX_fwIkHrKiU27CFr_kdUsx6b2VPE,9595134
+plt_ocr/model.py,sha256=k3reiuEOcpeKK84193pTBj_1BNNoDPJF45JbqQChbnI,3243
+plt_ocr/util.py,sha256=ACiKXUkFPBLpO942CUPSZDG4VgnIPsIoiOeTA3Fgz_8,315
+plt_ocr/version.py,sha256=USmFFtj1DPILn5gfI-OIEV0Wf168AY0DjJ1CsWcW7GE,19
+plt_ocr-0.0.20.dist-info/METADATA,sha256=WZkbLnEetjw-AHQSBHgjrjo9NndkkijPSXW-c3GGons,1302
+plt_ocr-0.0.20.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+plt_ocr-0.0.20.dist-info/entry_points.txt,sha256=TK5xZ-BZfMcyi2njtEvZeWKx6MtVW5ps3kMWeZD54Yo,45
+plt_ocr-0.0.20.dist-info/RECORD,,
