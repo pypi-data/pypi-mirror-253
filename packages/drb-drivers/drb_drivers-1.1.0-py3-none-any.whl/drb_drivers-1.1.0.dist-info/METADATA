@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: drb-drivers
+Version: 1.1.0
+Summary: Data Request Broker drivers package
+Author-email: GAEL Systems <drb-python@gael.fr>
+License: LGPLv3
+Project-URL: Documentation, http://drb-python.gitlab.io/impl/drivers
+Project-URL: Repository, https://gitlab.com/drb-python/impl/drivers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Environment :: Plugins
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: drb ~=2.2.1
+Provides-Extra: all
+Requires-Dist: drb-drivers[protocol] ; extra == 'all'
+Requires-Dist: drb-drivers[container] ; extra == 'all'
+Requires-Dist: drb-drivers[java] ; extra == 'all'
+Requires-Dist: drb-drivers[formatting] ; extra == 'all'
+Provides-Extra: container
+Requires-Dist: drb-drivers[zip] ; extra == 'container'
+Requires-Dist: drb-drivers[tar] ; extra == 'container'
+Provides-Extra: csv
+Requires-Dist: drb-driver-csv ~=1.1.0 ; extra == 'csv'
+Provides-Extra: discodata
+Requires-Dist: drb-driver-discodata ~=1.4.1 ; extra == 'discodata'
+Provides-Extra: era5
+Requires-Dist: drb-driver-era5 ~=1.3.0 ; extra == 'era5'
+Provides-Extra: eurostat
+Requires-Dist: drb-driver-eurostat ~=1.3.1 ; extra == 'eurostat'
+Provides-Extra: formatting
+Requires-Dist: drb-drivers[grib] ; extra == 'formatting'
+Requires-Dist: drb-drivers[zarr] ; extra == 'formatting'
+Requires-Dist: drb-drivers[yaml] ; extra == 'formatting'
+Requires-Dist: drb-drivers[json] ; extra == 'formatting'
+Requires-Dist: drb-drivers[netcdf] ; extra == 'formatting'
+Requires-Dist: drb-drivers[litto3d] ; extra == 'formatting'
+Requires-Dist: drb-drivers[image] ; extra == 'formatting'
+Requires-Dist: drb-drivers[csv] ; extra == 'formatting'
+Provides-Extra: ftp
+Requires-Dist: drb-driver-ftp ~=1.3.0 ; extra == 'ftp'
+Provides-Extra: grib
+Requires-Dist: drb-driver-grib ~=1.3.0 ; extra == 'grib'
+Provides-Extra: http
+Requires-Dist: drb-driver-http ~=1.3.2 ; extra == 'http'
+Provides-Extra: image
+Requires-Dist: drb-driver-image ~=1.3.0 ; extra == 'image'
+Provides-Extra: java
+Requires-Dist: drb-driver-java ==1.4.0 ; extra == 'java'
+Provides-Extra: json
+Requires-Dist: drb-driver-json ~=1.3.0 ; extra == 'json'
+Provides-Extra: litto3d
+Requires-Dist: drb-driver-litto3d ~=1.3.0 ; extra == 'litto3d'
+Provides-Extra: netcdf
+Requires-Dist: drb-driver-netcdf ~=1.3.0 ; extra == 'netcdf'
+Provides-Extra: odata
+Requires-Dist: drb-driver-odata ~=1.3.3 ; extra == 'odata'
+Provides-Extra: protocol
+Requires-Dist: drb-drivers[http] ; extra == 'protocol'
+Requires-Dist: drb-drivers[wxs] ; extra == 'protocol'
+Requires-Dist: drb-drivers[wcs] ; extra == 'protocol'
+Requires-Dist: drb-drivers[wmts] ; extra == 'protocol'
+Requires-Dist: drb-drivers[wms] ; extra == 'protocol'
+Requires-Dist: drb-drivers[webdav] ; extra == 'protocol'
+Requires-Dist: drb-drivers[odata] ; extra == 'protocol'
+Requires-Dist: drb-drivers[swift] ; extra == 'protocol'
+Requires-Dist: drb-drivers[eurostat] ; extra == 'protocol'
+Requires-Dist: drb-drivers[era5] ; extra == 'protocol'
+Requires-Dist: drb-drivers[discodata] ; extra == 'protocol'
+Requires-Dist: drb-drivers[ftp] ; extra == 'protocol'
+Requires-Dist: drb-drivers[s3] ; extra == 'protocol'
+Provides-Extra: s3
+Requires-Dist: drb-driver-s3 ~=1.3.2 ; extra == 's3'
+Provides-Extra: swift
+Requires-Dist: drb-driver-swift ~=1.3.0 ; extra == 'swift'
+Provides-Extra: tar
+Requires-Dist: drb-driver-tar ~=1.3.1 ; extra == 'tar'
+Provides-Extra: wcs
+Requires-Dist: drb-driver-wcs ~=1.3.0 ; extra == 'wcs'
+Provides-Extra: webdav
+Requires-Dist: drb-driver-webdav ~=1.3.0 ; extra == 'webdav'
+Provides-Extra: wms
+Requires-Dist: drb-driver-wms ~=1.3.0 ; extra == 'wms'
+Provides-Extra: wmts
+Requires-Dist: drb-driver-wmts ~=1.3.0 ; extra == 'wmts'
+Provides-Extra: wxs
+Requires-Dist: drb-driver-wxs ~=1.3.0 ; extra == 'wxs'
+Provides-Extra: yaml
+Requires-Dist: drb-driver-yaml ~=1.3.0 ; extra == 'yaml'
+Provides-Extra: zarr
+Requires-Dist: drb-driver-zarr ~=1.3.0 ; extra == 'zarr'
+Provides-Extra: zip
+Requires-Dist: drb-driver-zip ~=1.3.1 ; extra == 'zip'
+
+# drivers
+
+# DRB Drivers
+**_drb-drivers_** is a Python plugin for **DRB**, to help the installations
+of drb drivers.
+
+## Installation
+```shell
+pip install drb-drivers[OPTIONAL]
+```
+
+## Driver
+Here the list of all the drivers downloadable with this project.
+
+| name      | category   | package              |
+|:----------|:-----------|:---------------------|
+| java      | NONE       | drb-driver-java      |
+| grib      | FORMATTING | drb-driver-grib      |
+| zarr      | FORMATTING | drb-driver-zarr      |
+| yaml      | FORMATTING | drb-driver-yaml      |
+| json      | FORMATTING | drb-driver-json      |
+| netcdf    | FORMATTING | drb-driver-netcdf    |
+| litto3d   | FORMATTING | drb-driver-litto3d   |
+| image     | FORMATTING | drb-driver-image     |
+| csv       | FORMATTING | drb-driver-csv       |
+| zip       | CONTAINER  | drb-driver-zip       |
+| tar       | CONTAINER  | drb-driver-tar       |
+| wxs       | PROTOCOL   | drb-driver-wxs       |
+| wcs       | PROTOCOL   | drb-driver-wcs       |
+| wmts      | PROTOCOL   | drb-driver-wmts      |
+| wms       | PROTOCOL   | drb-driver-wms       |
+| webdav    | PROTOCOL   | drb-driver-webdav    |
+| odata     | PROTOCOL   | drb-driver-odata     |
+| swift     | PROTOCOL   | drb-driver-swift     |
+| http      | PROTOCOL   | drb-driver-http      |
+| eurostat  | PROTOCOL   | drb-driver-eurostat  |
+| era5      | PROTOCOL   | drb-driver-era5      |
+| discodata | PROTOCOL   | drb-driver-discodata |
+| s3        | PROTOCOL   | drb-driver-s3        |
+| ftp       | PROTOCOL   | drb-driver-ftp       |
+
+You can download a driver with his name like:
+```shell
+pip install drb-drivers[http]
+```
+to only download the driver http
+
+To download all the formatting drivers:
+```shell
+pip install drb-drivers[formatting]
+```
+
+To download all the drivers:
+```shell
+pip install drb-drivers[all]
+```
