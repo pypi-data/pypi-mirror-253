@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: gravitas
+Version: 0.2.6
+Summary: Gravity field modeling for astrodynamics
+Author-email: Liam Robinson <liamers127@gmail.com>
+Project-URL: Homepage, https://example.com
+Project-URL: Repository, https://github.com/liamrobinson1/gravitas
+Project-URL: Documentation, https://yourprojectdocs.com
+Requires-Python: >=3.9
+
