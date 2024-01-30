@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ticguide/__init__.py
+ticguide/cli.py
+ticguide/pipeline.py
+ticguide/version.py
+ticguide.egg-info/PKG-INFO
+ticguide.egg-info/SOURCES.txt
+ticguide.egg-info/dependency_links.txt
+ticguide.egg-info/entry_points.txt
+ticguide.egg-info/requires.txt
+ticguide.egg-info/top_level.txt
