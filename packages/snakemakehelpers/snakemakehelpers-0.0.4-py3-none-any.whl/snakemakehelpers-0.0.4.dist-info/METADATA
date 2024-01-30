@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: snakemakehelpers
+Version: 0.0.4
+Summary: A bundle of snakemake helper functions.
+Project-URL: Homepage, https://github.com/nsiccha/snakemakehelpers
+Project-URL: Bug Tracker, https://github.com/nsiccha/snakemakehelpers/issues
+Author-email: Nikolas Siccha <nikolassiccha@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: inquirerpy
+Requires-Dist: pandas
+Requires-Dist: snakemake
+Description-Content-Type: text/markdown
+
+# snakemakehelpers
+
+Meant to work with [poetry](https://python-poetry.org/) and [snakemake](https://snakemake.readthedocs.io/en/stable/).
+
+## Installation
+
+Add to an initialized (via `poetry init`) poetry project from PyPI via `poetry add snakemakehelpers`. 
+
+## usage
+
+Run `poetry run snakemake-interact` from a directory with a snakefile to interact with snakemake.
+
+Current options to interact are:
+
+* Process latest snakemake log file:
+
+    Searches the `.snakemake/log` directory for log files and parses the most recent one.
+* Select target(s) to make (poetry run snakemake -Fn):
+
+    Generates a list of possible output files via `poetry run snakemake -Fn`, from which the user can choose one or more to make.
+* Make target(s) ( poetry run snakemake ... -c):
+
+    Makes user provided targets. 
+* Inspect selected snakemake log file (...):
+
+    Inspects the selected log file using `less`. 
+* Select a different snakemake log file:
+
+    Select another log file from `.snakemake/log` to process.
+* Print internal state of this program

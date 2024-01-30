@@ -1,0 +1,2 @@
+[console_scripts]
+snakemake-interact = snakemakehelpers:interact
