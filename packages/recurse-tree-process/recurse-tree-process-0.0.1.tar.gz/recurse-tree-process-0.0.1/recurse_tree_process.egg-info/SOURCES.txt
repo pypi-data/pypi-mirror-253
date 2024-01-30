@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+recurse_tree_process.egg-info/PKG-INFO
+recurse_tree_process.egg-info/SOURCES.txt
+recurse_tree_process.egg-info/dependency_links.txt
+recurse_tree_process.egg-info/top_level.txt
+tree_utils/__init__.py
+tree_utils/fs_recursion.py
+tree_utils/tree_recursion.py
