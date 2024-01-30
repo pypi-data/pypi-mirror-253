@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: django_task_blocker
+Version: 0.1.3.2
+Summary: Blocking the re-launch of a task until it is completed, or until the lock timeout is completed.
+License: MIT
+Author: itzero-ru
+Author-email: paw100d@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Django (>=3.1,<4.0)
+Description-Content-Type: text/markdown
+
+# Celery Task
+```
+@app.task
+@block_task(timeout_limit=180)
+def task_example():
+    result = example_function()
+    return result
+```
