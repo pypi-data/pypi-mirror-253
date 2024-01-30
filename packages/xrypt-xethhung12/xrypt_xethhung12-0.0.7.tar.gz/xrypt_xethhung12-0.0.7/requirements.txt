@@ -1,0 +1,5 @@
+build
+twine
+xh-py-project-versioning
+Crypto
+cryptography
