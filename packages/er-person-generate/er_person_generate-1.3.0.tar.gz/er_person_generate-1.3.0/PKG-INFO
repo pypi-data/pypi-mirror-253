@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: er_person_generate
+Version: 1.3.0
+Summary: Pacote de geração de dados de pessoas
+Author: Erlanny
+Author-email: erlannyrodrigues@gmail.com
+Keywords: python,person,generate,brasil
+Classifier: Development Status :: 3 - Alpha
+Requires-Dist: numpy
+Requires-Dist: faker
+
+Pacote de geração de dados de pessoas, tais como nome, cpf, data de nascimento, peso, altura, telefone, cidade e estado. Para mais informações acesse: https://github.com/lannyily/person-generate
