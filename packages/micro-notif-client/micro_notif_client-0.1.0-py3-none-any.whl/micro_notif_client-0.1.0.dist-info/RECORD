@@ -1,0 +1,11 @@
+micro_notif/__init__.py,sha256=V40JVw429MFgVANWoegGsXqiGeGrn_I5Q7iXwY8daB4,58
+micro_notif/v1/__init__.py,sha256=zNAKME4x7tGXuFHpzH-LD5jXMIxJDAxac_SkDOtnT4Q,86
+micro_notif/v1/clients.py,sha256=2QdKKWVWuKRvng35ew688Ffg-wR-KaYPk4H4s18Dtzw,1517
+micro_notif/v1/connection.py,sha256=qXCWMIZXgLrLIgGQ-cN6whX9eTACmTJOh8uMzPd8lXE,776
+micro_notif/v1/types.py,sha256=ow3DcaXhDuGM_6m6Z2XivKouVF60llU4rk9Hz9YI_hA,91
+micro_notif/v1/utils.py,sha256=3IKV3sSSeuhXWRQPLb8FNAl4R9U-hspBTLbl9tb2Cc4,625
+micro_notif_client-0.1.0.dist-info/LICENSE,sha256=mZ3GpnFD6SldGmdo9KxuURoH1Jz6PvkNWyy2Lb_amHU,1071
+micro_notif_client-0.1.0.dist-info/METADATA,sha256=kXYMMZCgG1L0PFeowbXyTVjFDn1ifpO7utLwHeh24Lk,461
+micro_notif_client-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+micro_notif_client-0.1.0.dist-info/top_level.txt,sha256=n3BDWs9Fz8wS7Dc9LouaHPrFahuMj8YBvm6qC7lS33Y,12
+micro_notif_client-0.1.0.dist-info/RECORD,,
