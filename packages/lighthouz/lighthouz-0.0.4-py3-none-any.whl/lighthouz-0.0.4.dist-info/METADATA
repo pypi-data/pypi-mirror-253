@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: lighthouz
+Version: 0.0.4
+Summary: Lighthouz AI Python SDK
+Author-email: "Lighthouz AI, Inc" <srijan@lighthouz.ai>
+License: MIT
+Project-URL: Homepage, https://www.lighthouz.ai
+Project-URL: Documentation, https://www.lighthouz.ai/docs
+Project-URL: Source, https://github.com/Lighthouz-AI/lighthouz_sdk
+Project-URL: Issues, https://github.com/Lighthouz-AI/lighthouz_sdk/issues
+Keywords: lighthouz,python,sdk,api,development,evaluation
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: marshmallow
+
+## Installation
+```pip install lighthouz```
+
+
+## Documentation
+
+Please refer to the [SDK docs](https://lighthouz.ai/docs/) for how to use.
