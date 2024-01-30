@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Contablibi
+Version: 0.0.4
+Summary: Pacote de teste
+Author: crisly, erik
+Author-email: eriklustosa8@gmail.com
+Keywords: python,contablib
+Classifier: Development Status :: 3 - Alpha
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: fpdf
+
+Biblioteca Python para manipulações de serviços de contabilidade.
