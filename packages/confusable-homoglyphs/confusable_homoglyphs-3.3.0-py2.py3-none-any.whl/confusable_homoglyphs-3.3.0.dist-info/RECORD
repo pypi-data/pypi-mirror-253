@@ -1,0 +1,15 @@
+confusable_homoglyphs/__init__.py,sha256=2I7fWrKnbnbL6Y7uGxevQHvIEXJArYxMrtsnpU-3PdM,183
+confusable_homoglyphs/_version.py,sha256=gqw2-6opMx6Vk3YtgRHg4TiDOyivX9a_RM_t7D8fNm4,471
+confusable_homoglyphs/categories.json,sha256=eG2mb1VBt6q-yUjTj8T3tPi_LzF8ssYtb456UWajKvA,47595
+confusable_homoglyphs/categories.py,sha256=xeSX-Isuhr6coT_7DiPtRkc73k-__zh_F-FTwr50Hjo,2375
+confusable_homoglyphs/cli.py,sha256=RMBoL0227SyJkKeilaNjSeg7so5xgI_bj6QbohfVHlo,3358
+confusable_homoglyphs/confusables.json,sha256=IeiP-6wi8O7D-2QBriCJkNgVJeiN9h6DjqUryLQMHIM,901494
+confusable_homoglyphs/confusables.py,sha256=dU7ZOIbS2l8mD_2MD-QaJwBxZ-j4lbvSctC8DK6m1Qo,6252
+confusable_homoglyphs/utils.py,sha256=4j8JdNFt-dZQl4lp4KWxjtV5nthL09Em0sVO7ZyCJHQ,1049
+confusable_homoglyphs-3.3.0.dist-info/AUTHORS.rst,sha256=DmOIZaIUChnUW2DvLpKN5ZtyUuUdY3Cz_hEcfg9-83c,304
+confusable_homoglyphs-3.3.0.dist-info/LICENSE,sha256=NbwEo69fs2jNYnqD3pPWrSG6XlHDVVFTGBRYFz2d8nY,1104
+confusable_homoglyphs-3.3.0.dist-info/METADATA,sha256=XHeWofXBFSlx45LNhuBlvDVAt5459_CcfPozobObS7k,5779
+confusable_homoglyphs-3.3.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+confusable_homoglyphs-3.3.0.dist-info/entry_points.txt,sha256=F8u9yfHscWHsjA1ARsz-miHTBz8KjqJnKhY-sxEijU8,72
+confusable_homoglyphs-3.3.0.dist-info/top_level.txt,sha256=ozrGYViJigAq-RKQPR-PGpUT5ktbD6a6ux984ue7sYE,22
+confusable_homoglyphs-3.3.0.dist-info/RECORD,,
