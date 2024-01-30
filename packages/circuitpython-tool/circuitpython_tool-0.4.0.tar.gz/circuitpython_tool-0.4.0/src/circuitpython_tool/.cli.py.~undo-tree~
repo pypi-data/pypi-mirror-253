@@ -1,0 +1,396 @@
+(undo-tree-save-format-version . 1)
+"fb1ed7a11670e4d7018e83777debbd4d1863bb1d"
+[nil nil nil nil (26039 65057 283286 395000) 0 nil]
+([nil nil ((551 . 657) (#("
+    BoardParam,
+    ConfigStorageParam,
+    FakeDeviceParam,
+    LocaleParam,
+    label_or_query_argument,
+" 0 108 (fontified t)) . 551) (t 26039 64892 448713 787000)) nil (26039 65077 758510 260000) 0 nil] [nil nil ((10404 . 10405) (t 26039 64892 448713 787000)) ((#("2" 0 1 (fontified t)) . 10404) (undo-tree-id0 . -1)) (26039 65057 283128 99000) 0 nil])
+([nil nil ((551 . 659) ("BoardParam, ConfigStorageParam, FakeDeviceParam,
+                     LocaleParam, label_or_query_argument" . 551) (t 26039 65064 222900 545000)) nil (26039 65077 758660 656000) 0 nil])
+nil
+([nil nil ((1 . 2) (t 26039 65064 438903 295000)) nil (26039 65231 690164 593000) 0 nil] [nil nil ((10404 . 10406) (t 26039 65064 438903 295000)) ((#("2e" 0 2 (fontified t)) . 10404)) (26039 65077 758506 726000) 0 nil])
+([nil nil ((1 . 15)) nil (26039 65231 690164 269000) 0 nil])
+nil
+([nil nil ((10419 . 10420)) nil (26039 65231 690164 145000) 0 nil])
+([nil nil ((15 . 16)) nil (26039 65231 690164 22000) 0 nil])
+([nil nil ((16 . 37)) nil (26039 65231 690163 763000) 0 nil])
+([nil nil ((37 . 52)) nil (26039 65231 690163 555000) 0 nil])
+([nil nil ((10444 . 10457)) nil (26039 65231 690163 345000) 0 nil])
+([nil nil ((10483 . 10496)) nil (26039 65231 690163 31000) 0 nil])
+([nil nil ((#("b" 0 1 (fontified t)) . -10495) (undo-tree-id16 . -1) 10496) nil (26039 65231 690162 862000) 0 nil])
+([nil nil ((10495 . 10506)) nil (26039 65231 690162 507000) 0 nil])
+([nil nil ((#("y" 0 1 (fontified t)) . -10502) (undo-tree-id12 . -1) (#("s" 0 1 (fontified t)) . -10503) (undo-tree-id13 . -1) (#("y" 0 1 (fontified t)) . -10504) (undo-tree-id14 . -1) (#("n" 0 1 (fontified t)) . -10505) (undo-tree-id15 . -1) 10506) nil (26039 65231 690161 984000) 0 nil])
+([nil nil ((10502 . 10506)) nil (26039 65231 690160 886000) 0 nil])
+([nil nil ((10506 . 10513)) nil (26039 65231 690160 353000) 0 nil])
+([nil nil ((#("p" 0 1 (fontified t)) . -10512) (undo-tree-id11 . -1) 10513) nil (26039 65231 690159 991000) 0 nil])
+([nil nil ((10512 . 10520)) nil (26039 65231 690159 527000) 0 nil])
+([nil nil ((10520 . 10525)) nil (26039 65231 690159 288000) 0 nil])
+([nil nil ((10525 . 10534)) nil (26039 65231 690158 985000) 0 nil])
+([nil nil ((10534 . 10542)) nil (26039 65231 690158 789000) 0 nil])
+([nil nil ((#("body():" 0 4 (face font-lock-function-name-face fontified t) 4 7 (fontified t)) . 10535)) nil (26039 65231 690158 519000) 0 nil])
+([nil nil ((10535 . 10547)) nil (26039 65231 690158 316000) 0 nil])
+([nil nil ((#(")" 0 1 (fontified t)) . -10545) (undo-tree-id9 . -1) (#("(" 0 1 (fontified t)) . -10546) (undo-tree-id10 . -1) 10547) nil (26039 65231 690158 51000) 0 nil])
+([nil nil ((10545 . 10548)) nil (26039 65231 690157 276000) 0 nil])
+([nil nil ((#("    try:" 0 4 (fontified t) 4 7 (face font-lock-keyword-face fontified t) 7 8 (fontified t)) . 10549) (undo-tree-id8 . -8)) nil (26039 65231 690156 911000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . -10548) (undo-tree-id6 . -1) (undo-tree-id7 . -1) 10549) nil (26039 65231 690156 254000) 0 nil])
+([nil nil ((10947 . 10963) (#("                " 0 16 (fontified nil)) . 10946) (undo-tree-id5 . -16) (10945 . 10963)) nil (26039 65231 690155 524000) 0 nil])
+([nil nil ((#("    " 0 4 (fontified t)) . -10959) (undo-tree-id4 . -4) 10963) nil (26039 65231 690155 15000) 0 nil])
+([nil nil ((#("    " 0 4 (fontified t)) . -10955) (undo-tree-id3 . -4) 10959) nil (26039 65231 690154 497000) 0 nil])
+([nil nil ((#("    " 0 4 (fontified t)) . -10951) (undo-tree-id2 . -4) 10955) nil (26039 65231 690153 929000) 0 nil])
+([nil nil ((10951 . 10955)) nil (26039 65231 690153 199000) 0 nil])
+([nil nil ((#(" " 0 1 (fontified t)) . -10954) (undo-tree-id1 . -1) 10955) nil (26039 65231 690152 719000) 0 nil])
+([nil nil ((10954 . 10955)) nil (26039 65231 690145 685000) 0 nil])
+([nil nil ((10955 . 10964)) nil (26039 65231 690145 422000) 0 nil])
+([nil nil ((10964 . 10983)) nil (26039 65231 690145 167000) 0 nil])
+([nil nil ((10983 . 10987)) nil (26039 65231 690144 817000) 0 nil])
+([nil nil ((10722 . 10729)) nil (26039 65231 690142 33000) 0 nil])
+([nil nil ((16 . 10519) (#("from .async_iter import time_batched
+import logging
+from collections.abc import Callable, Iterable
+from functools import wraps
+from os import execlp
+from pathlib import Path
+from sys import exit
+from typing import Concatenate, ParamSpec, TypeVar
+from urllib.request import urlopen
+
+import rich_click as click
+from rich import get_console, print, progress, traceback
+from rich.logging import RichHandler
+from rich.table import Table
+
+from . import VERSION, completion, fake_device, fs
+from .config import Config, ConfigStorage, DeviceLabel
+from .device import Device
+from .params import (
+    BoardParam,
+    ConfigStorageParam,
+    FakeDeviceParam,
+    LocaleParam,
+    label_or_query_argument,
+)
+from .query import Query
+from .shared_state import SharedState
+from .uf2 import Board
+
+# These can be removed in python 3.12
+#
+# Type variables for return value and function parameters.
+R = TypeVar(\"R\")
+P = ParamSpec(\"P\")
+
+traceback.install(show_locals=True)
+logging.basicConfig(
+    level=\"NOTSET\",
+    format=\"%(message)s\",
+    datefmt=\"[%X]\",
+    handlers=[
+        RichHandler(rich_tracebacks=True, markup=True, omit_repeated_times=False)
+    ],
+)
+logger = logging.getLogger(__name__)
+
+
+def _render_device(self: Device) -> Table:
+    table = Table(\"Property\", \"Value\")
+    table.add_row(\"Vendor\", self.vendor)
+    table.add_row(\"Model\", self.model)
+    table.add_row(\"Serial\", self.serial)
+    table.add_row(\"Partition Path\", str(self.partition_path))
+    table.add_row(\"Serial Path\", str(self.serial_path))
+    table.add_row(\"Mountpoint\", str(self.get_mountpoint()))
+    return table
+
+
+setattr(Device, \"__rich__\", _render_device)
+
+
+def get_query(device_labels: dict[str, DeviceLabel], arg: str) -> Query:
+    \"\"\"Extract query from a string specifying either a device label or a query.
+
+    Raises ValueError if the string matched neither.\"\"\"
+    for k, v in device_labels.items():
+        if arg == k:
+            return v.query
+    return Query.parse(arg)
+
+
+pass_shared_state = click.make_pass_decorator(SharedState, ensure=True)
+\"\"\"Decorator for passing SharedState to a function.\"\"\"
+
+
+def pass_config_storage(
+    f: Callable[Concatenate[ConfigStorage, P], R]
+) -> Callable[P, R]:
+    \"\"\"Decorator for passing ConfigStorage to a function.\"\"\"
+
+    @pass_shared_state
+    @wraps(f)
+    def inner(state: SharedState, /, *args: P.args, **kwargs: P.kwargs) -> R:
+        return f(state.config_storage, *args, **kwargs)
+
+    return inner
+
+
+def pass_read_only_config(f: Callable[Concatenate[Config, P], R]) -> Callable[P, R]:
+    \"\"\"Decorator for supplying a function with a read-only snapshot of our current Config.\"\"\"
+
+    @pass_config_storage
+    @wraps(f)
+    def inner(config_storage: ConfigStorage, /, *args: P.args, **kwargs: P.kwargs) -> R:
+        with config_storage.open() as config:
+            return f(config, *args, **kwargs)
+
+    return inner
+
+
+@click.version_option(VERSION, \"--version\", \"-v\")
+@click.group(
+    context_settings=dict(
+        help_option_names=[\"-h\", \"--help\"], auto_envvar_prefix=\"CIRCUITPYTHON_TOOL\"
+    ),
+    epilog=f\"Version: {VERSION}\",
+)
+@click.option(
+    \"--config\",
+    \"-c\",
+    \"config_path\",
+    type=ConfigStorageParam(),
+    default=ConfigStorage(),
+    expose_value=False,
+    show_envvar=True,
+    # Force evaluation of this paramter early so that later parameters can
+    # assume the config has already been found.
+    is_eager=True,
+    help=\"Path to configuration TOML file for device labels and source trees.\",
+)
+@click.option(
+    \"--log-level\",
+    \"-l\",
+    type=click.Choice([\"DEBUG\", \"INFO\", \"WARNING\", \"ERROR\"]),
+    default=\"INFO\",
+    show_envvar=True,
+    help=\"Only display logs at or above ths level.\",
+)
+@click.option(
+    \"--fake-device-config\",
+    \"-f\",
+    type=FakeDeviceParam(),
+    expose_value=False,
+    show_envvar=True,
+    # Force evaluation of this paramter early so that later parameters can
+    # assume the config has already been found.
+    is_eager=True,
+    help=\"Path to TOML configuration file for fake devices. For use in tests and demos.\",
+)
+def main(log_level: str) -> None:
+    \"\"\"Tool for interfacing with CircuitPython devices.\"\"\"
+    root_logger = logging.getLogger()
+    root_logger.setLevel(log_level)
+
+
+@main.command()
+@label_or_query_argument(\"query\", default=Query.any())
+@click.option(
+    \"-s\",
+    \"--save\",
+    \"fake_device_save_path\",
+    type=click.Path(dir_okay=False, path_type=Path),
+    help=\"If set, save devices to a TOML file for later recall using the --fake-devices flag.\",
+)
+@pass_read_only_config
+@pass_shared_state
+def devices(
+    state: SharedState, config: Config, query: Query, fake_device_save_path: Path | None
+) -> None:
+    \"\"\"List all connected CircuitPython devices.
+
+    If QUERY is specified, only devices matching that query are listed.\"\"\"
+    devices = query.matching_devices(state.all_devices())
+    if devices:
+        print(\"Connected CircuitPython devices:\", devices_table(devices))
+    else:
+        print(\":person_shrugging: [blue]No[/] connected CircuitPython devices found.\")
+
+    if fake_device_save_path:
+        logging.info(f\"Saving device list to {str(fake_device_save_path)}\")
+        fake_device_save_path.write_text(fake_device.to_toml(devices))
+
+
+@main.group()
+def label() -> None:
+    \"\"\"Manage device labels.\"\"\"
+    pass
+
+
+@label.command(\"list\")
+@pass_read_only_config
+def label_list(config: Config) -> None:
+    \"\"\"List all device labels.\"\"\"
+    labels = config.device_labels
+    if not labels:
+        print(\":person_shrugging: [blue]No[/] existing labels found.\")
+        return
+    table = Table(\"Label\", \"Query\")
+    for name, label in config.device_labels.items():
+        table.add_row(name, label.query.as_str())
+    print(table)
+
+
+@label.command(\"add\")
+@click.argument(\"key\", required=True, shell_complete=completion.device_label)
+@label_or_query_argument(\"query\")
+@click.option(
+    \"--force\",
+    \"-f\",
+    is_flag=True,
+    help=\"Add the new label even if a label with the same name already exists.\"
+    \"The new QUERY value will override the previous stored value.\",
+)
+@pass_config_storage
+def label_add(
+    config_storage: ConfigStorage, key: str, query: Query, force: bool
+) -> None:
+    \"\"\"Add a new device label.
+
+    Creates a new device label with the name KEY, referencing the given QUERY.
+    \"\"\"
+    with config_storage.open() as config:
+        labels = config.device_labels
+        old_label = labels.get(key)
+        if old_label:
+            if force:
+                logger.info(f\"Label [blue]{key}[/] already exists. Proceeding anyway.\")
+            else:
+                print(
+                    f\":thumbs_down: Label [red]{key}[/] already exists: \",
+                    old_label.query.as_str(),
+                )
+                exit(1)
+
+        label = DeviceLabel(query)
+        labels[key] = label
+    print(
+        f\":thumbs_up: Label [blue]{key}[/] added [green]successfully[/]: {label.query.as_str()}\"
+    )
+
+
+@label.command(\"remove\")
+@click.confirmation_option(
+    \"--yes\", \"-y\", prompt=\"Are you sure you want to delete this label?\"
+)
+@click.argument(\"label_name\", shell_complete=completion.device_label)
+@click.option(
+    \"--force\",
+    \"-f\",
+    is_flag=True,
+    help=\"Return success even if there was no matching label to remove.\",
+)
+@pass_config_storage
+def label_remove(config_storage: ConfigStorage, label_name: str, force: bool) -> None:
+    \"\"\"Delete a device label.\"\"\"
+    with config_storage.open() as config:
+        label = config.device_labels.get(label_name)
+        if label:
+            logger.debug(f\"Found label [blue]{label_name}[/]: {label}\")
+            del config.device_labels[label_name]
+        elif force:
+            logger.info(f\"Label [blue]{label_name}[/] not found. Proceeding anyway.\")
+        else:
+            print(f\":thumbs_down: Label [red]{label_name}[/] does not exist.\")
+            exit(1)
+    print(f\":thumbs_up: Label [blue]{label_name}[/] [green]successfully[/] deleted.\")
+
+
+def get_source_dir(source_dir: Path | None) -> Path:
+    source_dir = source_dir or fs.guess_source_dir(Path.cwd())
+    if source_dir is None:
+        print(
+            \":thumbs_down: [red]Failed[/red] to guess source directory. \"
+            \"Either change the current directory, \"
+            \"or explicitly specify the directory using [blue]--dir[/].\"
+        )
+        exit(1)
+    return source_dir
+
+
+@main.command
+@click.option(
+    \"--dir\",
+    \"-d\",
+    \"source_dir\",
+    type=click.Path(exists=True, file_okay=False, path_type=Path),
+    required=False,
+    help=\"Path containing source code to upload. \"
+    \"If not specified, the source directory is guessed by searching the current directory and \"
+    \"its descendants for user code (e.g. code.py).\",
+)
+@label_or_query_argument(\"query\", required=True)
+def upload(source_dir: Path | None, query: Query) -> None:
+    \"\"\"Upload code to device.\"\"\"
+    source_dir = get_source_dir(source_dir)
+    print(f\"Source directory: {source_dir}\")
+    device = distinct_device(query)
+    mountpoint = device.mount_if_needed()
+    print(\"Uploading to device: \", device)
+    fs.upload([source_dir], mountpoint)
+    print(\":thumbs_up: Upload [green]succeeded.\")
+
+
+@main.command
+@click.option(
+    \"--dir\",
+    \"-d\",
+    \"source_dir\",
+    type=click.Path(exists=True, file_okay=False, path_type=Path),
+    required=False,
+    help=\"Path containing source code to upload. \"
+    \"If not specified, the source directory is guessed by searching the current directory and \"
+    \"its descendants for user code (e.g. code.py).\",
+)
+@label_or_query_argument(\"query\")
+def watch(source_dir: Path | None, query: Query) -> None:
+    \"\"\"Continuously upload code to device in response to source file changes.
+
+    The contents of the source tree TREE_NAME will be copied onto the device
+    with the label LABEL_NAME.
+
+    This command will always perform at least one upload. Then this command
+    waits for filesystem events from all paths and descendant paths of the
+    source tree. Currently this command will only properly track file
+    modifications. Creation of new files and folders requires you to rerun this
+    command in order to monitor them.
+    \"\"\"
+    source_dir = get_source_dir(source_dir)
+    print(f\"Source directory: {source_dir}\")
+    device = distinct_device(query)
+    print(\"Target device: \")
+    print(device)
+    # Always do at least one upload at the start.
+    source_dirs = [source_dir]
+    fs.upload(source_dirs, device.mount_if_needed())
+
+    events = time_batched(fs.watch_all2(source_dirs), delay = lambda: asyncio.sleep(0.5))" 0 4 (face font-lock-keyword-face fontified t) 4 6 (fontified t) 6 17 (fontified t) 17 23 (face font-lock-keyword-face fontified t) 23 36 (fontified t) 36 37 (fontified t) 37 43 (face font-lock-keyword-face fontified t) 43 52 (fontified t) 52 56 (face font-lock-keyword-face fontified t) 56 73 (fontified t) 73 79 (face font-lock-keyword-face fontified t) 79 99 (fontified t) 99 103 (face font-lock-keyword-face fontified t) 103 114 (fontified t) 114 120 (face font-lock-keyword-face fontified t) 120 127 (fontified t) 127 131 (face font-lock-keyword-face fontified t) 131 135 (fontified t) 135 141 (face font-lock-keyword-face fontified t) 141 149 (fontified t) 149 153 (face font-lock-keyword-face fontified t) 153 162 (fontified t) 162 168 (face font-lock-keyword-face fontified t) 168 174 (fontified t) 174 178 (face font-lock-keyword-face fontified t) 178 183 (fontified t) 183 189 (face font-lock-keyword-face fontified t) 189 190 (fontified t) 190 194 (face font-lock-constant-face fontified t) 194 195 (fontified t) 195 199 (face font-lock-keyword-face fontified t) 199 207 (fontified t) 207 213 (face font-lock-keyword-face fontified t) 213 246 (fontified t) 246 250 (face font-lock-keyword-face fontified t) 250 266 (fontified t) 266 272 (face font-lock-keyword-face fontified t) 272 282 (fontified t) 282 288 (face font-lock-keyword-face fontified t) 288 300 (fontified t) 300 302 (face font-lock-keyword-face fontified t) 302 309 (fontified t) 309 313 (face font-lock-keyword-face fontified t) 313 319 (fontified t) 319 325 (face font-lock-keyword-face fontified t) 325 339 (fontified t) 339 344 (face font-lock-builtin-face fontified t) 344 366 (fontified t) 366 370 (face font-lock-keyword-face fontified t) 370 384 (fontified t) 384 390 (face font-lock-keyword-face fontified t) 390 403 (fontified t) 403 407 (face font-lock-keyword-face fontified t) 407 419 (fontified t) 419 425 (face font-lock-keyword-face fontified t) 425 433 (fontified t) 433 437 (face font-lock-keyword-face fontified t) 437 440 (fontified t) 440 446 (face font-lock-keyword-face fontified t) 446 484 (fontified t) 484 488 (face font-lock-keyword-face fontified t) 488 497 (fontified t) 497 503 (face font-lock-keyword-face fontified t) 503 539 (fontified t) 539 543 (face font-lock-keyword-face fontified t) 543 552 (fontified t) 552 558 (face font-lock-keyword-face fontified t) 558 566 (fontified t) 566 570 (face font-lock-keyword-face fontified t) 570 579 (fontified t) 579 585 (face font-lock-keyword-face fontified t) 585 587 (fontified t) 587 695 (fontified t) 695 697 (fontified t) 697 701 (face font-lock-keyword-face fontified t) 701 709 (fontified t) 709 715 (face font-lock-keyword-face fontified t) 715 722 (fontified t) 722 726 (face font-lock-keyword-face fontified t) 726 741 (fontified t) 741 747 (face font-lock-keyword-face fontified t) 747 760 (fontified t) 760 764 (face font-lock-keyword-face fontified t) 764 770 (fontified t) 770 776 (face font-lock-keyword-face fontified t) 776 784 (fontified t) 784 786 (face font-lock-comment-delimiter-face fontified t) 786 822 (face font-lock-comment-face fontified t) 822 823 (face font-lock-comment-delimiter-face fontified t) 823 824 (face font-lock-comment-face fontified t) 824 826 (face font-lock-comment-delimiter-face fontified t) 826 883 (face font-lock-comment-face fontified t) 883 884 (face font-lock-variable-name-face fontified t) 884 885 (fontified t) 885 886 (face font-lock-operator-face fontified t) 886 895 (fontified t) 895 898 (face font-lock-string-face fontified t) 898 900 (fontified t) 900 901 (face font-lock-variable-name-face fontified t) 901 902 (fontified t) 902 903 (face font-lock-operator-face fontified t) 903 914 (fontified t) 914 917 (face font-lock-string-face fontified t) 917 949 (fontified t) 949 950 (face font-lock-operator-face fontified t) 950 954 (face font-lock-constant-face fontified t) 954 986 (fontified t) 986 987 (face font-lock-operator-face fontified t) 987 995 (face font-lock-string-face fontified t) 995 1001 (fontified t) 1001 1007 (face font-lock-builtin-face fontified t) 1007 1008 (face font-lock-operator-face fontified t) 1008 1021 (face font-lock-string-face fontified t) 1021 1034 (fontified t) 1034 1035 (face font-lock-operator-face fontified t) 1035 1041 (face font-lock-string-face fontified t) 1041 1055 (fontified t) 1055 1056 (face font-lock-operator-face fontified t) 1056 1093 (fontified t) 1093 1094 (face font-lock-operator-face fontified t) 1094 1098 (face font-lock-constant-face fontified t) 1098 1106 (fontified t) 1106 1107 (face font-lock-operator-face fontified t) 1107 1111 (face font-lock-constant-face fontified t) 1111 1132 (fontified t) 1132 1133 (face font-lock-operator-face fontified t) 1133 1138 (face font-lock-constant-face fontified t) 1138 1149 (fontified t) 1149 1155 (face font-lock-variable-name-face fontified t) 1155 1156 (fontified t) 1156 1157 (face font-lock-operator-face fontified t) 1157 1176 (fontified t) 1176 1184 (face font-lock-builtin-face fontified t) 1184 1188 (fontified t) 1188 1191 (face font-lock-keyword-face fontified t) 1191 1192 (fontified t) 1192 1206 (face font-lock-function-name-face fontified t) 1206 1207 (fontified t) 1207 1211 (face font-lock-keyword-face fontified t) 1211 1221 (fontified t) 1221 1222 (face font-lock-operator-face fontified t) 1222 1223 (face font-lock-operator-face fontified t) 1223 1235 (fontified t) 1235 1240 (face font-lock-variable-name-face fontified t) 1240 1241 (fontified t) 1241 1242 (face font-lock-operator-face fontified t) 1242 1249 (fontified t) 1249 1259 (face font-lock-string-face fontified t) 1259 1261 (fontified t) 1261 1268 (face font-lock-string-face fontified t) 1268 1288 (fontified t) 1288 1296 (face font-lock-string-face fontified t) 1296 1298 (fontified t) 1298 1302 (face font-lock-keyword-face fontified t) 1302 1329 (fontified t) 1329 1336 (face font-lock-string-face fontified t) 1336 1338 (fontified t) 1338 1342 (face font-lock-keyword-face fontified t) 1342 1368 (fontified t) 1368 1376 (face font-lock-string-face fontified t) 1376 1378 (fontified t) 1378 1382 (face font-lock-keyword-face fontified t) 1382 1409 (fontified t) 1409 1425 (face font-lock-string-face fontified t) 1425 1427 (fontified t) 1427 1430 (face font-lock-builtin-face fontified t) 1430 1431 (fontified t) 1431 1435 (face font-lock-keyword-face fontified t) 1435 1471 (fontified t) 1471 1484 (face font-lock-string-face fontified t) 1484 1486 (fontified t) 1486 1489 (face font-lock-builtin-face fontified t) 1489 1490 (fontified t) 1490 1494 (face font-lock-keyword-face fontified t) 1494 1527 (fontified t) 1527 1537 (face font-lock-string-face fontified t) 1537 1539 (fontified t face font-lock-string-face) 1539 1541 (fontified t) 1541 1544 (fontified t face font-lock-builtin-face) 1544 1545 (fontified t) 1545 1549 (fontified t face font-lock-keyword-face) 1549 1569 (fontified t) 1573 1579 (face font-lock-keyword-face) 1588 1595 (face font-lock-builtin-face) 1604 1614 (face font-lock-string-face) 1634 1637 (face font-lock-keyword-face) 1638 1647 (face font-lock-function-name-face) 1663 1667 (face font-lock-builtin-face) 1668 1671 (face font-lock-builtin-face) 1692 1695 (face font-lock-builtin-face) 1697 1698 (face font-lock-operator-face) 1698 1699 (face font-lock-operator-face) 1711 1713 (face font-lock-doc-face) 1713 1714 (syntax-table (15) face font-lock-doc-face) 1714 1840 (face font-lock-doc-face) 1840 1841 (syntax-table (15) face font-lock-doc-face) 1841 1843 (face font-lock-doc-face) 1848 1851 (face font-lock-keyword-face) 1857 1859 (face font-lock-keyword-face) 1891 1893 (face font-lock-keyword-face) 1898 1900 (face font-lock-operator-face) 1916 1922 (face font-lock-keyword-face) 1935 1941 (face font-lock-keyword-face) 1961 1978 (face font-lock-variable-name-face) 1979 1980 (face font-lock-operator-face) 2026 2027 (face font-lock-operator-face) 2027 2031 (face font-lock-constant-face) 2033 2035 (face font-lock-doc-face) 2035 2036 (syntax-table (15) face font-lock-doc-face) 2036 2084 (face font-lock-doc-face) 2084 2085 (syntax-table (15) face font-lock-doc-face) 2085 2087 (face font-lock-doc-face) 2090 2093 (face font-lock-keyword-face) 2094 2113 (face font-lock-function-name-face) 2167 2168 (face font-lock-operator-face) 2168 2169 (face font-lock-operator-face) 2190 2192 (face font-lock-doc-face) 2192 2193 (syntax-table (15) face font-lock-doc-face) 2193 2243 (face font-lock-doc-face) 2243 2244 (syntax-table (15) face font-lock-doc-face) 2244 2246 (face font-lock-doc-face) 2252 2270 (face font-lock-type-face) 2275 2281 (face font-lock-type-face) 2289 2292 (face font-lock-keyword-face) 2293 2298 (face font-lock-function-name-face) 2319 2320 (face font-lock-operator-face) 2322 2323 (face font-lock-operator-face) 2337 2339 (face font-lock-operator-face) 2357 2358 (face font-lock-operator-face) 2358 2359 (face font-lock-operator-face) 2371 2377 (face font-lock-keyword-face) 2402 2403 (face font-lock-operator-face) 2409 2411 (face font-lock-operator-face) 2424 2430 (face font-lock-keyword-face) 2439 2442 (face font-lock-keyword-face) 2443 2464 (face font-lock-function-name-face) 2505 2506 (face font-lock-operator-face) 2506 2507 (face font-lock-operator-face) 2528 2530 (face font-lock-doc-face) 2530 2531 (syntax-table (15) face font-lock-doc-face) 2531 2614 (face font-lock-doc-face) 2614 2615 (syntax-table (15) face font-lock-doc-face) 2615 2617 (face font-lock-doc-face) 2623 2643 (face font-lock-type-face) 2648 2654 (face font-lock-type-face) 2662 2665 (face font-lock-keyword-face) 2666 2671 (face font-lock-function-name-face) 2703 2704 (face font-lock-operator-face) 2706 2707 (face font-lock-operator-face) 2721 2723 (face font-lock-operator-face) 2741 2742 (face font-lock-operator-face) 2742 2743 (face font-lock-operator-face) 2755 2759 (face font-lock-keyword-face) 2775 2779 (face font-lock-builtin-face) 2782 2784 (face font-lock-keyword-face) 2805 2811 (face font-lock-keyword-face) 2822 2823 (face font-lock-operator-face) 2829 2831 (face font-lock-operator-face) 2844 2850 (face font-lock-keyword-face) 2859 2880 (face font-lock-type-face) 2890 2901 (face font-lock-string-face) 2903 2907 (face font-lock-string-face) 2909 2921 (face font-lock-type-face) 2943 2944 (face font-lock-operator-face) 2944 2948 (face font-lock-builtin-face) 2975 2976 (face font-lock-operator-face) 2977 2981 (face font-lock-string-face) 2983 2991 (face font-lock-string-face) 3012 3013 (face font-lock-operator-face) 3013 3033 (face font-lock-string-face) 3051 3052 (face font-lock-operator-face) 3053 3063 (face font-lock-string-face) 3063 3069 (face nil) 3069 3072 (face nil) 3072 3073 (face font-lock-string-face) 3077 3090 (face font-lock-type-face) 3096 3106 (face font-lock-string-face) 3112 3116 (face font-lock-string-face) 3122 3135 (face font-lock-string-face) 3141 3145 (face font-lock-builtin-face) 3145 3146 (face font-lock-operator-face) 3179 3180 (face font-lock-operator-face) 3213 3214 (face font-lock-operator-face) 3214 3219 (face font-lock-constant-face) 3236 3237 (face font-lock-operator-face) 3237 3241 (face font-lock-constant-face) 3247 3249 (face font-lock-comment-delimiter-face) 3249 3318 (face font-lock-comment-face) 3322 3324 (face font-lock-comment-delimiter-face) 3324 3366 (face font-lock-comment-face) 3378 3379 (face font-lock-operator-face) 3379 3383 (face font-lock-constant-face) 3389 3393 (face font-lock-builtin-face) 3393 3394 (face font-lock-operator-face) 3394 3463 (face font-lock-string-face) 3467 3480 (face font-lock-type-face) 3486 3499 (face font-lock-string-face) 3505 3509 (face font-lock-string-face) 3515 3519 (face font-lock-builtin-face) 3519 3520 (face font-lock-operator-face) 3534 3541 (face font-lock-string-face) 3543 3549 (face font-lock-string-face) 3551 3560 (face font-lock-string-face) 3562 3569 (face font-lock-string-face) 3584 3585 (face font-lock-operator-face) 3585 3591 (face font-lock-string-face) 3608 3609 (face font-lock-operator-face) 3609 3613 (face font-lock-constant-face) 3619 3623 (face font-lock-builtin-face) 3623 3624 (face font-lock-operator-face) 3624 3666 (face font-lock-string-face) 3670 3683 (face font-lock-type-face) 3689 3711 (face font-lock-string-face) 3717 3721 (face font-lock-string-face) 3727 3731 (face font-lock-builtin-face) 3731 3732 (face font-lock-operator-face) 3767 3768 (face font-lock-operator-face) 3768 3773 (face font-lock-constant-face) 3790 3791 (face font-lock-operator-face) 3791 3795 (face font-lock-constant-face) 3801 3803 (face font-lock-comment-delimiter-face) 3803 3872 (face font-lock-comment-face) 3876 3878 (face font-lock-comment-delimiter-face) 3878 3920 (face font-lock-comment-face) 3932 3933 (face font-lock-operator-face) 3933 3937 (face font-lock-constant-face) 3943 3947 (face font-lock-builtin-face) 3947 3948 (face font-lock-operator-face) 3948 4027 (face font-lock-string-face) 4031 4034 (face font-lock-keyword-face) 4035 4039 (face font-lock-function-name-face) 4051 4054 (face font-lock-builtin-face) 4056 4057 (face font-lock-operator-face) 4057 4058 (face font-lock-operator-face) 4059 4063 (face font-lock-constant-face) 4069 4071 (face font-lock-doc-face) 4071 4072 (syntax-table (15) face font-lock-doc-face) 4072 4120 (face font-lock-doc-face) 4120 4121 (syntax-table (15) face font-lock-doc-face) 4121 4123 (face font-lock-doc-face) 4128 4139 (face font-lock-variable-name-face) 4140 4141 (face font-lock-operator-face) 4200 4213 (face font-lock-type-face) 4216 4240 (face font-lock-type-face) 4241 4248 (face font-lock-string-face) 4257 4258 (face font-lock-operator-face) 4264 4267 (face font-lock-builtin-face) 4271 4284 (face font-lock-type-face) 4290 4294 (face font-lock-string-face) 4300 4308 (face font-lock-string-face) 4314 4337 (face font-lock-string-face) 4343 4347 (face font-lock-builtin-face) 4347 4348 (face font-lock-operator-face) 4367 4368 (face font-lock-operator-face) 4368 4373 (face font-lock-constant-face) 4384 4385 (face font-lock-operator-face) 4396 4400 (face font-lock-builtin-face) 4400 4401 (face font-lock-operator-face) 4401 4486 (face font-lock-string-face) 4490 4512 (face font-lock-type-face) 4513 4531 (face font-lock-type-face) 4532 4535 (face font-lock-keyword-face) 4536 4543 (face font-lock-function-name-face) 4627 4628 (face font-lock-operator-face) 4629 4633 (face font-lock-constant-face) 4636 4637 (face font-lock-operator-face) 4637 4638 (face font-lock-operator-face) 4639 4643 (face font-lock-constant-face) 4649 4651 (face font-lock-doc-face) 4651 4652 (syntax-table (15) face font-lock-doc-face) 4652 4766 (face font-lock-doc-face) 4766 4767 (syntax-table (15) face font-lock-doc-face) 4767 4769 (face font-lock-doc-face) 4774 4781 (face font-lock-variable-name-face) 4782 4783 (face font-lock-operator-face) 4832 4834 (face font-lock-keyword-face) 4852 4857 (face font-lock-builtin-face) 4858 4892 (face font-lock-string-face) 4922 4926 (face font-lock-keyword-face) 4936 4941 (face font-lock-builtin-face) 4942 5013 (face font-lock-string-face) 5020 5022 (face font-lock-keyword-face) 5068 5091 (face font-lock-string-face) 5091 5092 (face nil) 5092 5095 (face font-lock-builtin-face) 5095 5119 (face nil) 5119 5120 (face font-lock-string-face) 5195 5206 (face font-lock-type-face) 5209 5212 (face font-lock-keyword-face) 5213 5218 (face font-lock-function-name-face) 5221 5222 (face font-lock-operator-face) 5222 5223 (face font-lock-operator-face) 5224 5228 (face font-lock-constant-face) 5234 5236 (face font-lock-doc-face) 5236 5237 (syntax-table (15) face font-lock-doc-face) 5237 5258 (face font-lock-doc-face) 5258 5259 (syntax-table (15) face font-lock-doc-face) 5259 5261 (face font-lock-doc-face) 5266 5270 (face font-lock-keyword-face) 5273 5287 (face font-lock-type-face) 5288 5294 (face font-lock-string-face) 5296 5318 (face font-lock-type-face) 5319 5322 (face font-lock-keyword-face) 5323 5333 (face font-lock-function-name-face) 5350 5351 (face font-lock-operator-face) 5351 5352 (face font-lock-operator-face) 5353 5357 (face font-lock-constant-face) 5363 5365 (face font-lock-doc-face) 5365 5366 (syntax-table (15) face font-lock-doc-face) 5366 5389 (face font-lock-doc-face) 5389 5390 (syntax-table (15) face font-lock-doc-face) 5390 5392 (face font-lock-doc-face) 5397 5403 (face font-lock-variable-name-face) 5404 5405 (face font-lock-operator-face) 5431 5433 (face font-lock-keyword-face) 5434 5437 (face font-lock-keyword-face) 5454 5459 (face font-lock-builtin-face) 5460 5515 (face font-lock-string-face) 5525 5531 (face font-lock-keyword-face) 5536 5541 (face font-lock-variable-name-face) 5542 5543 (face font-lock-operator-face) 5550 5557 (face font-lock-string-face) 5559 5566 (face font-lock-string-face) 5572 5575 (face font-lock-keyword-face) 5588 5590 (face font-lock-keyword-face) 5675 5680 (face font-lock-builtin-face) 5690 5704 (face font-lock-type-face) 5705 5710 (face font-lock-string-face) 5712 5727 (face font-lock-type-face) 5728 5733 (face font-lock-string-face) 5743 5744 (face font-lock-operator-face) 5744 5748 (face font-lock-constant-face) 5764 5765 (face font-lock-operator-face) 5790 5814 (face font-lock-type-face) 5815 5822 (face font-lock-string-face) 5824 5837 (face font-lock-type-face) 5843 5852 (face font-lock-string-face) 5858 5862 (face font-lock-string-face) 5875 5876 (face font-lock-operator-face) 5876 5880 (face font-lock-constant-face) 5886 5890 (face font-lock-builtin-face) 5890 5891 (face font-lock-operator-face) 5891 5961 (face font-lock-string-face) 5966 6028 (face font-lock-string-face) 6032 6052 (face font-lock-type-face) 6053 6056 (face font-lock-keyword-face) 6057 6066 (face font-lock-function-name-face) 6108 6111 (face font-lock-builtin-face) 6134 6138 (face font-lock-builtin-face) 6141 6142 (face font-lock-operator-face) 6142 6143 (face font-lock-operator-face) 6144 6148 (face font-lock-constant-face) 6154 6156 (face font-lock-doc-face) 6156 6157 (syntax-table (15) face font-lock-doc-face) 6157 6265 (face font-lock-doc-face) 6265 6266 (syntax-table (15) face font-lock-doc-face) 6266 6268 (face font-lock-doc-face) 6273 6277 (face font-lock-keyword-face) 6293 6297 (face font-lock-builtin-face) 6300 6302 (face font-lock-keyword-face) 6319 6325 (face font-lock-variable-name-face) 6326 6327 (face font-lock-operator-face) 6357 6366 (face font-lock-variable-name-face) 6367 6368 (face font-lock-operator-face) 6393 6395 (face font-lock-keyword-face) 6419 6421 (face font-lock-keyword-face) 6458 6471 (face font-lock-string-face) 6471 6476 (face nil) 6476 6515 (face font-lock-string-face) 6529 6533 (face font-lock-keyword-face) 6551 6556 (face font-lock-builtin-face) 6579 6605 (face font-lock-string-face) 6605 6610 (face nil) 6610 6631 (face font-lock-string-face) 6713 6717 (face font-lock-constant-face) 6730 6735 (face font-lock-variable-name-face) 6736 6737 (face font-lock-operator-face) 6765 6771 (face font-lock-variable-name-face) 6777 6778 (face font-lock-operator-face) 6789 6794 (face font-lock-builtin-face) 6805 6830 (face font-lock-string-face) 6830 6835 (face nil) 6835 6869 (face font-lock-string-face) 6869 6891 (face nil) 6891 6892 (face font-lock-string-face) 6901 6915 (face font-lock-type-face) 6916 6924 (face font-lock-string-face) 6926 6952 (face font-lock-type-face) 6958 6965 (face font-lock-string-face) 6967 6971 (face font-lock-string-face) 6979 6980 (face font-lock-operator-face) 6980 7025 (face font-lock-string-face) 7028 7043 (face font-lock-type-face) 7044 7056 (face font-lock-string-face) 7072 7073 (face font-lock-operator-face) 7098 7111 (face font-lock-type-face) 7117 7126 (face font-lock-string-face) 7132 7136 (face font-lock-string-face) 7149 7150 (face font-lock-operator-face) 7150 7154 (face font-lock-constant-face) 7160 7164 (face font-lock-builtin-face) 7164 7165 (face font-lock-operator-face) 7165 7228 (face font-lock-string-face) 7232 7252 (face font-lock-type-face) 7253 7256 (face font-lock-keyword-face) 7257 7269 (face font-lock-function-name-face) 7313 7316 (face font-lock-builtin-face) 7325 7329 (face font-lock-builtin-face) 7331 7332 (face font-lock-operator-face) 7332 7333 (face font-lock-operator-face) 7334 7338 (face font-lock-constant-face) 7344 7346 (face font-lock-doc-face) 7346 7347 (syntax-table (15) face font-lock-doc-face) 7347 7369 (face font-lock-doc-face) 7369 7370 (syntax-table (15) face font-lock-doc-face) 7370 7372 (face font-lock-doc-face) 7377 7381 (face font-lock-keyword-face) 7397 7401 (face font-lock-builtin-face) 7404 7406 (face font-lock-keyword-face) 7423 7428 (face font-lock-variable-name-face) 7429 7430 (face font-lock-operator-face) 7476 7478 (face font-lock-keyword-face) 7512 7531 (face font-lock-string-face) 7531 7543 (face nil) 7543 7548 (face font-lock-string-face) 7548 7555 (face nil) 7555 7556 (face font-lock-string-face) 7570 7573 (face font-lock-keyword-face) 7615 7619 (face font-lock-keyword-face) 7652 7665 (face font-lock-string-face) 7665 7677 (face nil) 7677 7711 (face font-lock-string-face) 7721 7725 (face font-lock-keyword-face) 7739 7744 (face font-lock-builtin-face) 7746 7772 (face font-lock-string-face) 7772 7784 (face nil) 7784 7804 (face font-lock-string-face) 7818 7822 (face font-lock-constant-face) 7830 7835 (face font-lock-builtin-face) 7837 7862 (face font-lock-string-face) 7862 7874 (face nil) 7874 7910 (face font-lock-string-face) 7914 7917 (face font-lock-keyword-face) 7918 7932 (face font-lock-function-name-face) 7950 7951 (face font-lock-operator-face) 7952 7956 (face font-lock-constant-face) 7958 7959 (face font-lock-operator-face) 7959 7960 (face font-lock-operator-face) 7971 7981 (face font-lock-variable-name-face) 7982 7983 (face font-lock-operator-face) 7995 7997 (face font-lock-keyword-face) 8034 8036 (face font-lock-keyword-face) 8048 8050 (face font-lock-keyword-face) 8051 8055 (face font-lock-constant-face) 8065 8070 (face font-lock-builtin-face) 8084 8145 (face font-lock-string-face) 8158 8197 (face font-lock-string-face) 8210 8269 (face font-lock-string-face) 8288 8292 (face font-lock-constant-face) 8300 8306 (face font-lock-keyword-face) 8320 8333 (face font-lock-type-face) 8334 8347 (face font-lock-type-face) 8353 8360 (face font-lock-string-face) 8366 8370 (face font-lock-string-face) 8376 8388 (face font-lock-string-face) 8394 8398 (face font-lock-builtin-face) 8398 8399 (face font-lock-operator-face) 8416 8417 (face font-lock-operator-face) 8417 8421 (face font-lock-constant-face) 8432 8433 (face font-lock-operator-face) 8433 8438 (face font-lock-constant-face) 8449 8450 (face font-lock-operator-face) 8469 8470 (face font-lock-operator-face) 8470 8475 (face font-lock-constant-face) 8481 8485 (face font-lock-builtin-face) 8485 8486 (face font-lock-operator-face) 8486 8527 (face font-lock-string-face) 8532 8623 (face font-lock-string-face) 8628 8675 (face font-lock-string-face) 8679 8703 (face font-lock-type-face) 8704 8711 (face font-lock-string-face) 8721 8722 (face font-lock-operator-face) 8722 8726 (face font-lock-constant-face) 8728 8731 (face font-lock-keyword-face) 8732 8738 (face font-lock-function-name-face) 8756 8757 (face font-lock-operator-face) 8758 8762 (face font-lock-constant-face) 8778 8779 (face font-lock-operator-face) 8779 8780 (face font-lock-operator-face) 8781 8785 (face font-lock-constant-face) 8791 8793 (face font-lock-doc-face) 8793 8794 (syntax-table (15) face font-lock-doc-face) 8794 8816 (face font-lock-doc-face) 8816 8817 (syntax-table (15) face font-lock-doc-face) 8817 8819 (face font-lock-doc-face) 8824 8834 (face font-lock-variable-name-face) 8835 8836 (face font-lock-operator-face) 8868 8873 (face font-lock-builtin-face) 8875 8894 (face font-lock-string-face) 8894 8906 (face nil) 8906 8907 (face font-lock-string-face) 8913 8919 (face font-lock-variable-name-face) 8920 8921 (face font-lock-operator-face) 8949 8959 (face font-lock-variable-name-face) 8960 8961 (face font-lock-operator-face) 8991 8996 (face font-lock-builtin-face) 8997 9020 (face font-lock-string-face) 9074 9079 (face font-lock-builtin-face) 9080 9118 (face font-lock-string-face) 9122 9135 (face font-lock-type-face) 9136 9149 (face font-lock-type-face) 9155 9162 (face font-lock-string-face) 9168 9172 (face font-lock-string-face) 9178 9190 (face font-lock-string-face) 9196 9200 (face font-lock-builtin-face) 9200 9201 (face font-lock-operator-face) 9218 9219 (face font-lock-operator-face) 9219 9223 (face font-lock-constant-face) 9234 9235 (face font-lock-operator-face) 9235 9240 (face font-lock-constant-face) 9251 9252 (face font-lock-operator-face) 9271 9272 (face font-lock-operator-face) 9272 9277 (face font-lock-constant-face) 9283 9287 (face font-lock-builtin-face) 9287 9288 (face font-lock-operator-face) 9288 9329 (face font-lock-string-face) 9334 9425 (face font-lock-string-face) 9430 9477 (face font-lock-string-face) 9481 9505 (face font-lock-type-face) 9506 9513 (face font-lock-string-face) 9515 9518 (face font-lock-keyword-face) 9519 9524 (face font-lock-function-name-face) 9542 9543 (face font-lock-operator-face) 9544 9548 (face font-lock-constant-face) 9564 9565 (face font-lock-operator-face) 9565 9566 (face font-lock-operator-face) 9567 9571 (face font-lock-constant-face) 9577 9579 (face font-lock-doc-face) 9579 9580 (syntax-table (15) face font-lock-doc-face) 9580 9652 (face font-lock-doc-face) 9652 9729 (face font-lock-doc-face fontified t) 9729 10104 (face font-lock-doc-face fontified t) 10104 10105 (face font-lock-doc-face fontified t syntax-table (15)) 10105 10107 (face font-lock-doc-face fontified t) 10107 10112 (fontified t) 10112 10122 (face font-lock-variable-name-face fontified t) 10122 10123 (fontified t) 10123 10124 (face font-lock-operator-face fontified t) 10124 10156 (fontified t) 10156 10161 (face font-lock-builtin-face fontified t) 10161 10163 (fontified t) 10163 10182 (face font-lock-string-face fontified t) 10182 10194 (face nil fontified t) 10194 10195 (face font-lock-string-face fontified t) 10195 10201 (fontified t) 10201 10207 (face font-lock-variable-name-face fontified t) 10207 10208 (fontified t) 10208 10209 (face font-lock-operator-face fontified t) 10209 10237 (fontified t) 10237 10242 (face font-lock-builtin-face fontified t) 10242 10243 (fontified t) 10243 10260 (face font-lock-string-face fontified t) 10260 10266 (fontified t) 10266 10271 (face font-lock-builtin-face fontified t) 10271 10284 (fontified t) 10284 10286 (face font-lock-comment-delimiter-face fontified t) 10286 10330 (face font-lock-comment-face fontified t) 10330 10334 (fontified t) 10334 10345 (face font-lock-variable-name-face fontified t) 10345 10346 (fontified t) 10346 10347 (face font-lock-operator-face fontified t) 10347 10415 (fontified t) 10415 10419 (fontified t) 10419 10425 (face font-lock-variable-name-face fontified t) 10425 10426 (fontified t) 10426 10427 (face font-lock-operator-face fontified t) 10427 10444 (fontified t) 10444 10469 (fontified t) 10469 10475 (fontified t) 10475 10476 (face font-lock-operator-face fontified t) 10476 10477 (fontified t) 10477 10483 (face font-lock-keyword-face fontified t) 10483 10485 (fontified t) 10485 10504 (fontified t)) . 16) (undo-tree-id17 . -9479) (undo-tree-id18 . -10453) (undo-tree-id19 . -9892) (undo-tree-id20 . -10453) (undo-tree-id21 . -10453) (undo-tree-id22 . -10467) (undo-tree-id23 . -9652) (undo-tree-id24 . -9525) (undo-tree-id25 . -10414) (undo-tree-id26 . -10444) (undo-tree-id27 . -10444) 10824 (t 26039 65231 721032 907000)) nil (26039 65241 249098 585000) 0 nil])
+([nil nil ((10992 . 10994) (t 26039 65232 877047 623000)) nil (26039 65241 249083 378000) 0 nil])
+([nil nil ((#(":" 0 1 (fontified t)) . -10546) (undo-tree-id58 . -1) (undo-tree-id59 . -1) (undo-tree-id60 . -1) (undo-tree-id61 . -1) (undo-tree-id62 . -1) (undo-tree-id63 . -1) (undo-tree-id64 . -1) (undo-tree-id65 . -1) 10547 (t 26039 65242 473169 786000)) nil (26039 65252 354100 430000) 0 nil])
+([nil nil ((10546 . 10555)) nil (26039 65252 354097 485000) 0 nil])
+([nil nil ((#("n" 0 1 (fontified t)) . -10550) (undo-tree-id28 . -1) (undo-tree-id29 . -1) (undo-tree-id30 . -1) (undo-tree-id31 . -1) (undo-tree-id32 . -1) (undo-tree-id33 . -1) (undo-tree-id34 . -1) (undo-tree-id35 . -1) (undo-tree-id36 . -1) (undo-tree-id37 . -1) (#("o" 0 1 (fontified t)) . -10551) (undo-tree-id38 . -1) (undo-tree-id39 . -1) (undo-tree-id40 . -1) (undo-tree-id41 . -1) (undo-tree-id42 . -1) (undo-tree-id43 . -1) (undo-tree-id44 . -1) (undo-tree-id45 . -1) (#("n" 0 1 (fontified t)) . -10552) (undo-tree-id46 . -1) (undo-tree-id47 . -1) (undo-tree-id48 . -1) (undo-tree-id49 . -1) (undo-tree-id50 . -1) (undo-tree-id51 . -1) (#("e" 0 1 (fontified t)) . -10553) (undo-tree-id52 . -1) (undo-tree-id53 . -1) (undo-tree-id54 . -1) (undo-tree-id55 . -1) (#(":" 0 1 (fontified t)) . -10554) (undo-tree-id56 . -1) (undo-tree-id57 . -1) 10555) nil (26039 65252 354096 251000) 0 nil])
+([nil nil ((10550 . 10555)) nil (26039 65252 354078 120000) 0 nil])
+([nil nil ((603 . 711) (#("BoardParam, ConfigStorageParam, FakeDeviceParam,
+                     LocaleParam, label_or_query_argument" 0 106 (fontified nil)) . 603) (t 26039 65262 5418 438000) (603 . 709) (#("
+    BoardParam,
+    ConfigStorageParam,
+    FakeDeviceParam,
+    LocaleParam,
+    label_or_query_argument,
+" 0 108 (fontified t)) . 603) 10555 (t 26039 65253 561310 943000)) nil (26039 65285 249947 161000) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . -10518) (undo-tree-id66 . -1) 10519 (t 26039 65263 249434 275000)) nil (26039 65285 249944 606000) 0 nil])
+([nil nil ((10519 . 10520) 10518 (t 26039 65285 253714 391000)) nil (26039 65292 382983 152000) 0 nil])
+([nil current ((#("2" 0 1 (fontified t)) . -10469) (undo-tree-id69 . -1) (undo-tree-id70 . -1) (undo-tree-id71 . -1) (undo-tree-id72 . -1) (undo-tree-id73 . -1) (undo-tree-id74 . -1) (undo-tree-id75 . -1) (undo-tree-id76 . -1) (undo-tree-id77 . -1) (undo-tree-id78 . -1) (undo-tree-id79 . -1) (undo-tree-id80 . -1) 10470 (t 26039 65286 437729 464000)) nil (26039 65312 965854 698000) 0 nil] [nil nil ((#("2" 0 1 (fontified t)) . -10469) (undo-tree-id67 . -1) (undo-tree-id68 . -1) 10470 (t 26039 65286 437729 464000)) ((10469 . 10470)) (26039 65292 382839 396000) 0 nil])
+nil
+nil
