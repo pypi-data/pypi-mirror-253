@@ -1,0 +1,187 @@
+# Общая библиотека контроля доступа для микросервисов
+
+## Подключение
+settings.py:
+
+```python
+INSTALLED_APPS = [
+    # другие приложение
+    'testapp.core',
+    'librbac',                         # для management команд rbac
+    'librbac.contrib.migrations',      # для поддержки миграций
+]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'oidc_auth.authentication.JSONWebTokenAuthentication',
+    ),
+}
+
+OIDC_AUTH = {
+    # URL сервиса аутентификации, необходимо указать своё значение
+    'OIDC_ENDPOINT': 'http://testserver/oauth',
+    
+    # функция преобразующая токен в объект пользователя. Указать как есть.
+    'OIDC_RESOLVE_USER_FUNCTION': 'librbac.oidc.auth.get_user_from_token',
+    
+    # Заголовок в котором хранится токен. Указать как есть.
+    'JWT_AUTH_HEADER_PREFIX': 'Bearer',
+
+    # The Claims Options can now be defined by a static string.
+    # ref: https://docs.authlib.org/en/latest/jose/jwt.html#jwt-payload-claims-validation
+    # The old OIDC_AUDIENCES option is removed in favor of this new option.
+    # `aud` is only required, when you set it as an essential claim.
+    'OIDC_CLAIMS_OPTIONS': {
+        'iss': {
+            'essential': True,
+        }
+    },
+}
+
+RBAC_BACKEND = 'librbac.backends.remote.RemoteBackend'
+"""Путь до бэкенда RBAC"""
+
+
+RBAC_PERMISSION_TOPIC = 'test.rbac.permission'
+"""Наименование топика в который публикуются события связанные с разрешениями."""
+```    
+
+
+testapp/&#95;&#95;init__.py:
+```python
+from typing import TYPE_CHECKING
+
+from explicit.contrib.messagebus.event_registry import Registry
+
+
+if TYPE_CHECKING:
+    from explicit.messagebus.messagebus import MessageBus  # noqa
+
+
+default_app_config = f'{__package__}.apps.AppConfig'
+
+
+bus: 'MessageBus'
+
+event_registry = Registry()
+```
+
+
+
+testapp/apps.py:
+```python
+from django.apps.config import AppConfig as AppConfigBase
+
+from librbac.events import PermissionPushed
+from librbac.utils.management import is_in_management_command
+
+
+class AppConfig(AppConfigBase):
+
+    name = __package__
+
+    def _bootstrap(self):
+        """Предоставление общей шины ядра."""
+        from explicit.messagebus.messagebus import MessageBus
+        from testapp import core
+        from .unit_of_work import UnitOfWork
+        uow = UnitOfWork()
+        dependencies = dict(uow=uow)
+        messagebus = MessageBus(**dependencies)
+        core.bus = messagebus
+
+    def _register_event_handlers(self):
+        ...
+
+    def _configure_rbac(self):
+        from librbac import config
+        from librbac.manager import rbac
+        from testapp import core
+        from testapp.core import event_registry as registry
+        from testapp.core.adapters import messaging
+
+        class Config(config.IConfig):
+            bus = core.bus
+            adapter = messaging.adapter
+            event_registry = registry
+
+        config.rbac_config = Config()
+
+        # не пушим разрешения в шину при старте. Этим занимается management команда.
+        rbac.init()
+
+
+    def ready(self):
+        self._bootstrap()
+        self._register_events()
+        self._configure_rbac()
+```
+
+testapp/permissions.py
+```python
+from librbac.types import Permission
+from librbac.types import PermissionGroup
+
+
+PERM_NAMESPACE_TEST = 'test'
+
+PERM_RESOURCE__PERSON = 'person'
+PERM__PERSON__READ = Permission(
+    # (namespace, resource, action, scope)
+    PERM_NAMESPACE_TEST, PERM_RESOURCE__PERSON, 'read'
+)
+PERM__PERSON__WRITE = Permission(
+    PERM_NAMESPACE_TEST, PERM_RESOURCE__PERSON, 'write'
+)
+# Описание разрешений
+# -----------------------------------------------------------------------------
+permissions = (
+    (PERM__PERSON__READ, 'Просмотр ФЛ'),
+    (PERM__PERSON__WRITE, 'Редактирование ФЛ'),
+)
+
+dependencies = {
+    PERM__PERSON__WRITE: {
+        PERM__PERSON__READ,
+    },
+}
+# -----------------------------------------------------------------------------
+# Описание связей разделов и групп разрешений
+partitions = {
+    'Администрирование': (
+        PermissionGroup(PERM_NAMESPACE_TEST, PERM_RESOURCE__PERSON),
+    ),
+}
+# -----------------------------------------------------------------------------
+```
+
+
+testapp/views.py
+```python
+from rest_framework.viewsets import ModelViewSet
+
+from librbac.drf.viewsets import RBACMixin
+
+from .permissions import PERM__PERSON__READ
+from .permissions import PERM__PERSON__WRITE
+
+
+class PersonViewSet(RBACMixin, ModelViewSet):
+    
+    # сопоставление действий с разрешениями
+    perm_map = dict(
+        create=(PERM__PERSON__WRITE,),
+        partial_update=(PERM__PERSON__WRITE,),
+        destroy=(PERM__PERSON__WRITE,),
+        retrieve=(PERM__PERSON__READ,),
+        list=(PERM__PERSON__READ,),
+    )
+
+    ...
+```
+
+## Миграции разрешений
+[Описание](./src/librbac/contrib/migrations/README.md) в модуле миграций
+
+## Запуск тестов
+    $ tox
