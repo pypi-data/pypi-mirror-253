@@ -1,0 +1,21 @@
+---
+files:
+  -
+    url: https://s3.amazonaws.com/justfix-data/rentstab_counts_from_doffer_2022.csv
+    dest: rentstab_counts_from_doffer_2022.csv
+sql:
+  - rentstab_v2.sql
+schema:
+  table_name: rentstab_v2
+  fields:
+    ucbbl: char(10)
+    uc2018: integer
+    pdfsoa2018: text
+    uc2019: integer
+    pdfsoa2019: text
+    uc2020: integer
+    pdfsoa2020: text
+    uc2021: integer
+    pdfsoa2021: text
+    uc2022: integer
+    pdfsoa2022: text
