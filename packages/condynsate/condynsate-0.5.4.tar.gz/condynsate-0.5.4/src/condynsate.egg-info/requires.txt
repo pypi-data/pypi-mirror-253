@@ -1,0 +1,8 @@
+control
+matplotlib
+meshcat
+notebook
+numpy
+pybullet
+pynput
+sympy
