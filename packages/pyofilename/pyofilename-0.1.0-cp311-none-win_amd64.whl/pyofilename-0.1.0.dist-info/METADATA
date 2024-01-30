@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyofilename
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: Windows-proof safe file name generator.
+Keywords: file,filename
+Author: ilotoki0804 <ilotoki0804@gmail.com>
+Author-email: ilotoki0804 <ilotoki0804@gmail.com>
+License: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# pyofilename
+
+Windows와 macOS, Linux에서 안전한 파일명을 만듭니다.
+
+순수 파이썬 구현을 보고 싶다면 [이 링크](https://github.com/ilotoki0804/pyfilename)를 참고하세요.
+
+Rust에서 사용하기 위한 구현을 보고 싶다면 [이 링크](https://docs.rs/rsfilename/latest/rsfilename)를 참고하세요.
+
+이 패키지는 파이썬에서 사용할 수 있는 Rust 바인딩입니다.
+
+```python
+import pyofilename as pf
+
+to_safe_name("hello?.txt", "fullwidth")
+```
+
