@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dompap"
+version = "0.0.2"
+dependencies = [
+    "numpy>=1.24",
+    "sympy>=1.12",
+    "matplotlib>=3.6",
+    "pandas>=1.5",
+    "numba>=0.58",
+    "toml>=0.10"
+]
+requires-python = ">= 3.11"
+description = "Simulations of point-like particles in any dimension with any pair potential"
+keywords = ["molecular dynamics", "particle simulation", "Lennard-Jones", "soft sphere", "harmonic repulsive"]
+authors = [{name="Ulf R. Pedersen", email="urp@ruc.dk"}]
+maintainers = [{name="Ulf R. Pedersen", email="urp@ruc.dk"}]
+readme = {file = "README.md", content-type = "text/markdown"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/urpedersen/dompap"
+Repository = "https://github.com/urpedersen/dompap"
+Issues = "https://github.com/urpedersen/dompap/issues"
