@@ -1,0 +1,5 @@
+earthkit-data
+plotly
+numpy
+xarray
+pyyaml
