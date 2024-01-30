@@ -1,0 +1,14 @@
+space: '{{dayahead_model_space}}'
+externalId: BidMethod
+description: A description of the Bid method used in the calculation.
+name: BidMethod
+version: '{{dayaheadbid_BidMethod_version}}'
+properties:
+  name:
+    container:
+      space: '{{dayahead_model_space}}'
+      externalId: BidMethod
+      type: container
+    containerPropertyIdentifier: name
+    name: name
+    description: Name for the BidMethod
