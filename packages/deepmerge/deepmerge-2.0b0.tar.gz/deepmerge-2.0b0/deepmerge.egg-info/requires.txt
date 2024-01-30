@@ -1,0 +1,12 @@
+
+[:python_version <= "3.9"]
+typing_extensions
+
+[dev]
+validate-pyproject[all]
+pyupgrade
+black
+mypy
+pytest
+build
+twine
