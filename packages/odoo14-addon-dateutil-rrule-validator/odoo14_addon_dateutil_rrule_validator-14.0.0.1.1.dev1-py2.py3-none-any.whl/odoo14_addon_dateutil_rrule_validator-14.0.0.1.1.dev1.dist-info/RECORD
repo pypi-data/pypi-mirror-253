@@ -1,0 +1,8 @@
+odoo/addons/dateutil_rrule_validator/__init__.py,sha256=Z0H-7tnW3JmMNtRFk_MxwVzutPYWpm0Ljnk9Fb4hEoc,45
+odoo/addons/dateutil_rrule_validator/__manifest__.py,sha256=xK2dwrp0I5WV2qPDY9XlG_nTzxKARUikqIaliEsZikA,603
+odoo/addons/dateutil_rrule_validator/models/__init__.py,sha256=qNisSWibaQws7OvjfeG4S3GCoIam9dAmDhnDAcmKUm8,58
+odoo/addons/dateutil_rrule_validator/models/calendar_recurrence.py,sha256=vD9qN9nX8euqky6BZzxJiLEJ66Y8Ygb8SW6GAskFTfo,741
+odoo14_addon_dateutil_rrule_validator-14.0.0.1.1.dev1.dist-info/METADATA,sha256=qtFMkb4p_9HPl18NbySZ8V0upNQVhZEwGTX527p-BQQ,412
+odoo14_addon_dateutil_rrule_validator-14.0.0.1.1.dev1.dist-info/WHEEL,sha256=iYlv5fX357PQyRT2o6tw1bN-YcKFFHKqB_LwHO5wP-g,110
+odoo14_addon_dateutil_rrule_validator-14.0.0.1.1.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_dateutil_rrule_validator-14.0.0.1.1.dev1.dist-info/RECORD,,

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: odoo14-addon-dateutil-rrule-validator
+Version: 14.0.0.1.1.dev1
+Summary: RRule Validator
+Home-page: https://coopdevs.org
+Author: Coopdevs
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Python: >=3.6
+Requires-Dist: odoo <14.1dev,>=14.0a
+
+
+Long description of module's purpose
+
+
