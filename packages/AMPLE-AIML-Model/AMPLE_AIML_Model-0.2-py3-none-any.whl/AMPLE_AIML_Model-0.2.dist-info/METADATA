@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: AMPLE_AIML_Model
+Version: 0.2
+Requires-Dist: tensorflow
+Requires-Dist: keras-preprocessing
+Requires-Dist: gensim
+Requires-Dist: pyspellchecker
+Requires-Dist: sentencepiece
+Requires-Dist: nltk
+Requires-Dist: scikit-learn
+Requires-Dist: symspellpy
+Requires-Dist: setuptools >=42
+
