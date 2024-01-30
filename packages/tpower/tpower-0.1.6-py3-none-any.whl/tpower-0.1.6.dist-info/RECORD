@@ -1,0 +1,14 @@
+gpm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpm/api.py,sha256=gLaVju18MY85CJDt2w3PdpLHM5IJZ1V1K_h9LpzUARM,3287
+gpm/core.py,sha256=_s55FQROKQSE6jC1bJqv_m_BZeJG8NgjMcTKc59GKF4,13899
+gpm/data.py,sha256=WVMQbSVu5zFCN66Cde9w92RV4SReVPQOnQL5rSjm1VU,4849
+gpm/dates.py,sha256=n2G09cnMde6ixykVnTlbnYGXPSkIrvJTQnkrRPYsgBI,4614
+gpm/old.py,sha256=IK80HZ6r-Tt0nlE6bpdCglNcHUabAdVYFmam2j4oDhE,2704
+prmte/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prmte/api.py,sha256=wi0NkygJCxBnjoNo0_G-rWOWnnfM3LE4RYVbIxIW50o,4530
+prmte/core.py,sha256=btETJJxBSurDteYzUIgpkI4vKt-S2lypHbDvwy3OnNA,4381
+prmte/data.py,sha256=sVO6c0tvZ5pvQGVxhHtPjuPbWgatk87a-SRSrwgj5L4,2087
+tpower-0.1.6.dist-info/METADATA,sha256=Qt7SklV8t7N4GxQSBeewVpYWMD0mFcjUPYAA_rxEVWA,530
+tpower-0.1.6.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+tpower-0.1.6.dist-info/top_level.txt,sha256=wDlkpZEhDXTfGhJusxg5w659ZQ7sK9R-TQ0wrmFpOdw,10
+tpower-0.1.6.dist-info/RECORD,,
