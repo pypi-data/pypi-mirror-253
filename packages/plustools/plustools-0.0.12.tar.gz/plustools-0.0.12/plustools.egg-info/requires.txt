@@ -1,0 +1,4 @@
+pandas
+itertools
+os
+pywin32
