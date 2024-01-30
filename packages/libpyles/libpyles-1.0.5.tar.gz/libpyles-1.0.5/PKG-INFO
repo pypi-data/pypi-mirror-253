@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: libpyles
+Version: 1.0.5
+Summary: Pacote para mnipulação de arquivos
+Author: PedroVitor
+Author-email: pedro.passos@ufpi.edu.br
+Keywords: python,files,Pyl3s,Pyl3sLib
+
+Pacote para mnipulação de arquivos, diretorios e conversão
