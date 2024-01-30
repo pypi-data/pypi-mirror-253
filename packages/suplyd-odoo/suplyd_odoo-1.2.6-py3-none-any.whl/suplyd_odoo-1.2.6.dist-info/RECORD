@@ -1,0 +1,10 @@
+sup-odoo/__init__.py,sha256=5C6cgIizHuRKxa6IoxRVR_9Cg5V50OQgQvhev-uxWZU,395
+sup-odoo/__main__.py,sha256=vf2EJ5ZJRHQH45NRb8fIEfy05hsX1RNoczDg2Ed8-Fk,1728
+sup-odoo/docker-compose.yaml,sha256=g6DuC6c7aV0_tpBCF93sKY1YX11QxEb7175DsgABrKI,464
+suplyd_odoo-1.2.6.data/scripts/__init__.py,sha256=5C6cgIizHuRKxa6IoxRVR_9Cg5V50OQgQvhev-uxWZU,395
+suplyd_odoo-1.2.6.data/scripts/__main__.py,sha256=vf2EJ5ZJRHQH45NRb8fIEfy05hsX1RNoczDg2Ed8-Fk,1728
+suplyd_odoo-1.2.6.data/scripts/docker-compose.yaml,sha256=g6DuC6c7aV0_tpBCF93sKY1YX11QxEb7175DsgABrKI,464
+suplyd_odoo-1.2.6.dist-info/METADATA,sha256=roXb4kDf4oR1ssJxuQYnmhD8bvsjTyd1OdnId84Kw3Q,494
+suplyd_odoo-1.2.6.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+suplyd_odoo-1.2.6.dist-info/top_level.txt,sha256=THsq55sw5y6rlsG9nual-8jA1XA26YdN8Qcm30ods2A,9
+suplyd_odoo-1.2.6.dist-info/RECORD,,
