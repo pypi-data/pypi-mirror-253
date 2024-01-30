@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/balena/__init__.py
+src/balena/embeddings.py
+src/balena/hci.py
+src/balena_cpu.egg-info/PKG-INFO
+src/balena_cpu.egg-info/SOURCES.txt
+src/balena_cpu.egg-info/dependency_links.txt
+src/balena_cpu.egg-info/top_level.txt
