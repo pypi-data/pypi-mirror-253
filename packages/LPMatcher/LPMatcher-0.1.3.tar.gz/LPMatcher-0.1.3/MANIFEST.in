@@ -1,0 +1,19 @@
+# contain everything
+include *
+
+# exclude some files and directory 
+# exclude some_directory/
+exclude *.txt *.toml
+
+include pyproject.toml
+
+# Include the README
+# include *.md
+
+# Include the license file
+# include LICENSE
+
+
+# Include the static file or data file
+# recursive-inculde src/Sanic-Admin/test *.*
+# recursive-include src/Sanic-Admin/admin *.*
