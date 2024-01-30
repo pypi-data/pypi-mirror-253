@@ -1,0 +1,14 @@
+matplotlib
+pandas
+plotext==5.2.8
+pyaml
+rich
+sqlalchemy==1.4.0
+textual-plotext==0.2.1
+textual==0.41.0
+
+[all]
+asana==5.0.0
+
+[asana]
+asana==5.0.0
