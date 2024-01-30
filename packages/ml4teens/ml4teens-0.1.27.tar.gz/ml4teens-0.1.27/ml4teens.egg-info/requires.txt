@@ -1,0 +1,17 @@
+Pillow
+face_recognition
+ipycanvas==0.11
+ipyevents
+ipython
+ipywidgets
+jupyter_ui_poll
+numpy
+openai
+opencv-python
+pandas>=1.3.4
+requests
+tensorflow-probability==0.22.1
+torch
+transformers
+typing-extensions!=4.7.0,>=4.6.0
+ultralytics
