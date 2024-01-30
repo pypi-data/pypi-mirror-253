@@ -1,0 +1,2 @@
+[console_scripts]
+psrx = psrx_class.main_script:main
