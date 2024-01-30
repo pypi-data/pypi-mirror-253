@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ovos-utils
+Version: 0.1.0a13
+Summary: collection of simple utilities for use across the mycroft ecosystem
+Home-page: https://github.com/OpenVoiceOS/ovos_utils
+Author: jarbasAI
+Author-email: jarbasai@mailfence.com
+License: Apache
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: combo-lock (~=0.2)
+Requires-Dist: json-database (~=0.7)
+Requires-Dist: kthread (~=0.2)
+Requires-Dist: orjson
+Requires-Dist: pexpect (~=4.9)
+Requires-Dist: pyee
+Requires-Dist: requests (~=2.26)
+Requires-Dist: rich-click (~=1.7)
+Requires-Dist: rich (~=13.7)
+Requires-Dist: watchdog
+Provides-Extra: extras
+Requires-Dist: ovos-bus-client (>=0.0.8a1) ; extra == 'extras'
+Requires-Dist: ovos-config (>=0.0.12) ; extra == 'extras'
+Requires-Dist: ovos-workshop (>=0.0.13a22) ; extra == 'extras'
+Requires-Dist: ovos-plugin-manager (>=0.0.25a2) ; extra == 'extras'
+Requires-Dist: rapidfuzz (~=3.6) ; extra == 'extras'
+
+UNKNOWN
+
