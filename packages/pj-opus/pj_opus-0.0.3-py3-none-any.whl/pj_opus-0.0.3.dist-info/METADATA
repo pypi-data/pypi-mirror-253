@@ -1,0 +1,208 @@
+Metadata-Version: 2.1
+Name: pj-opus
+Version: 0.0.3
+Summary: Opus: An auto-launcher for ray clusters on clouds
+Author: AST
+Author-email: zhuzhihao@pjlab.org.cn
+License: Apache 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: wheel
+Requires-Dist: click >=7.0
+Requires-Dist: pytest ==7.4.3
+Requires-Dist: prettytable
+Requires-Dist: schema ==0.7.5
+Requires-Dist: jinja2
+Requires-Dist: pyyaml !=5.4.*,>3.13
+Requires-Dist: ray[default]
+Requires-Dist: pydantic <2.0,>=1.10.8
+Requires-Dist: pendulum ==2.1.2
+Requires-Dist: requests ==2.31.0
+Requires-Dist: paramiko ==3.3.1
+Requires-Dist: colorama
+Requires-Dist: kubernetes >=20.13.0
+Requires-Dist: portforward
+
+[English](./README-en.md) | 
+[简体中文](./README.md)
+
+# Opus
+用于统一部署和管理分布式计算框架和作业的 CLI 工具。
+
+## 背景
+分布式训练是当今的一个常见需求，然而用户在面临各种分布式计算框架（如 Ray、MPI 等）和云环境（如 Kubernetes、Slurm、AWS 等）时，需要适应不同的训练作业提交方式，这可能存在不便之处。
+
+为此，我们设计了一款通用型工具 opus，作为部署和管理多种分布式计算框架及作业的统一方式，提供更简单、流畅的使用体验。
+
+## 安装
+- From [pypi](https://pypi.org/project/pj-opus/)
+```bash
+pip install pj-opus
+```
+- From [source](https://gitlab.pjlab.org.cn/ast/opus.git)
+```bash
+git clone https://gitlab.pjlab.org.cn/ast/opus.git
+cd opus
+pip install .
+```
+
+## 预备工作
+### 配置跨 clouds SSH 免密登录
+Opus 支持基于 Slurm 的 Ray 框架和 Ray 作业。为了方便进行跨 Slurm 集群的数据传输和作业提交，需提前[配置 SSH 免密登录](http://sdoc.pjlab.org.cn/doc/#/danji/sjcs/03%E5%92%8C%E5%85%B6%E4%BB%96%E5%8D%95%E6%9C%BA%E4%BC%A0%E8%BE%93%E6%95%B0%E6%8D%AE?id=_21-%e9%85%8d%e7%bd%ae%e9%9b%86%e7%be%a4%e5%85%ac%e9%92%a5)。
+
+由于当前仅支持 S 到 T Slurm 集群的 SSH 登录，这意味着在跨 Slurm 集群的使用场景中，我们将把 S-slurm 集群的管理节点视为控制节点，来操作用户在 S 和 T Slurm 集群上使用 opus 纳管的所有分布式计算框架和训练作业。
+
+### 设置 cloud 配置文件
+在配置完 SSH 免密登录后，需在控制节点的 `~/.opus/` 目录下添加一个 yaml 文件，命名为 `opus_conf.yaml`，用来记录用户所属 clouds 的名称、类型及登录节点，例如：
+
+```yaml
+# 这个 yaml 文件的路径必须是 `~/.opus/opus_conf.yaml`
+clouds:
+  s-slurm:                    # cloud name
+    type: slurm               # cloud type
+    env:
+      NFS_SHARE_DIR: /mnt/petrelfs/share_data
+      CONDA_ENV_FILE: llm-uniscale-20230517
+  t-slurm:                    # cloud name
+    type: slurm               # cloud type
+    loginNode: 10.140.60.210  # login node
+    env:
+      NFS_SHARE_DIR: /mnt/petrelfs/share_data
+      CONDA_ENV_FILE: llm-uniscale-20230517
+  pai:
+    type: kubernetes          # cloud type
+    authConfig: ~/.kube/dsw-quota19u2olgqct6-config  # k8s kubeconfig
+    group: quota19u2olgqct6   # k8s namespace
+    env:
+      NFS_SHARE_DIR: /cpfs01/shared/public
+      CONDA_ENV_FILE: llm-opus-20240106
+```
+
+## 如何使用
+### 查看用户所属 clouds 的信息
+```bash
+>> opus cloud list
+NAME     TYPE   GROUP   NODE(IDLE/TOTAL)  
+s-slurm  slurm  llmit   14/102            
+t-slurm  slurm  llmit2  10/345 
+```
+
+### 启动一个 framework
+- 参考 [framework 配置模板](./examples/ray-2nodes-gpu.yaml) 在一个 YAML 文件中定义 framework 的配置
+  
+  <font color=CadetBlue>
+  注意：在定义 framework 配置文件时，我们建议用户启用一个名为 `RAY_TMPDIR` 的环境变量，以更改 Ray 的 temp dir 路径，例如可以设为 `/tmp/$USER`。这是由于未引入环境变量时 Ray 的默认 temp dir 路径是 `/tmp/ray`，其中有一个文件 `/tmp/ray/ray_current_cluster` 里面会存当前机器节点所连接 Ray 集群的 gcs address，Ray 集群在启动各节点时都会去访问这个文件并根据地址是否相同来决定是否覆写它。对于基于 Slurm 的 Ray 集群而言，当 Slurm 集群上的不同用户在相同机器节点上前后启动过 gcs address 不同的 Ray 集群时，上述文件的默认路径就会引发写权限冲突问题。
+  </font>
+
+- 通过 CLI 选项 `--cloud` 来设置启动 framework 的目标 cloud 的名称和分区，中间用 `:` 隔开
+- 使用命令 `opus framework launch` 来启动 framework
+```bash
+>> opus framework launch --cloud t-slurm:llmit2 ./examples/ray-2nodes-gpu.yaml
+```
+
+### 查看 frameworks 列表
+```bash
+>> opus framework list [OPTIONS]
+
+Options:
+  -s/--status: 通过 framework 状态对列表结果进行筛选
+  -cp/--cloud-providers: 通过 cloud 类型对列表结果进行筛选
+
+Note:
+  可以通过 `opus framework list --help` 查看支持的所有筛选项名称，大小写不敏感。当需要输入多个筛选项查询时，每个筛选项都需以它对应的 CLI 选项名开头，参考下述示例：
+
+>> opus framework list -s up -s STOPPED -cp slurm
+```
+
+### 提交一个 job
+- 使用命令 `opus job submit`
+- 通过 CLI 选项 `-f/--framework-id`（必填）来选择提交 job 的目标 framework 的 ID
+- 然后输入 job 的启动命令字符串，即可一键提交 job
+```bash
+>> opus job submit -f 1 'cd ~/rl3m && bash ./projects/internlm2/7b/run_rlhf_7b_1dp.sh'
+```
+- 为了方便分辨提交的历史 jobs，可以通过 CLI 选项 `-j/--jobname`（可选）为 job 定义 jobname
+```bash
+>> opus job submit -f 1 'cd ~/rl3m && bash ./projects/internlm2/7b/run_rlhf_7b_1dp.sh' -j rl3m_internlm2_7b
+```
+- 对于常用的 job 配置，可以参考 [job 配置模板](./examples/rl3m_internlm2_7b.yaml) 在一个 YAML 文件中保存 job 的配置，以便复用
+```bash
+>> opus job submit -f 1 ./examples/rl3m_internlm2_7b.yaml
+```
+- 此后，如果用户需要修改上述 job 的原始配置，可以通过 CLI 选项或参数进行自定义。例如：
+```bash
+# 替换 job 的原始启动命令，并为其指定新的 jobname
+# 注意：YAML 文件路径必须在新的 job 启动命令字符串之前输入
+>> opus job submit -f 1 ./examples/rl3m_internlm2_7b.yaml -j rl3m_internlm2_7b_batch_size_256 'cd ~/rl3m && bash ./projects/internlm2/7b/run_rlhf_7b_1dp.sh --batch_size 256'
+```
+
+### 查看 jobs 列表
+```bash
+>> opus job list [OPTIONS]
+
+Options:
+  -s/--status: 通过 job 状态对列表结果进行筛选
+  -f/--framework-id: 通过 framework ID 对列表结果进行筛选
+
+>> opus job list -s running -s PENDING -f 1
+```
+
+### 获取 jobs 的日志
+```bash
+# 在终端实时打印日志
+>> opus logs {JOB_ID}
+# 下载日志到本地，输出相应的日志文件路径
+>> opus logs {JOB_ID(s)} --download 
+```
+
+### 终止 jobs
+```bash
+>> opus job stop {JOB_ID(s)}
+```
+
+### 终止 frameworks
+```bash
+>> opus framework stop {FRAMEWORK_ID(s)}
+```
+
+### 删除 jobs 记录
+- 用户可通过 job ID(s) 或选项 `--all` 指定要删除的 jobs，默认情况下只会删除其中已结束的 jobs 的记录
+```bash
+>> opus job delete {JOB_ID(s)}
+>> opus job delete --all
+```
+- 如果用户希望在删除 jobs 记录的同时强制终止其中未结束的 jobs，需指定选项 `--force`
+```bash
+>> opus job delete {JOB_ID(s)} --force
+>> opus job delete --all --force
+```
+
+### 删除 frameworks 记录
+- 用户可通过 framework ID(s) 或选项 `--all` 指定要删除的 frameworks，默认情况下只会删除其中已关停的 frameworks 的记录
+```bash
+>> opus framework delete {FRAMEWORK_ID(s)}
+>> opus framework delete --all
+```
+- 如果用户希望在删除 frameworks 记录的同时强制关闭其中未停止的 frameworks，需指定选项 `--force`
+```bash
+>> opus framework delete {FRAMEWORK_ID(s)} --force
+>> opus framework delete --all --force
+```
+
+### 一键启停：启动 Ray -> 提交 job -> job 结束后自动关停 Ray
+opus 也支持通过一个命令贯通整个启动 Ray -> 提交 job -> job 结束后自动关停 Ray 的流程，用户只需以下步骤：
+- 定义一个[新的 yaml 文件](./examples/rl3m_internlm2_7b_rayjob_2nodes.yaml)，在 `frameworkSpec` 字段下填入 [framework 配置模板](./examples/ray-2nodes-gpu.yaml)，在 `jobSpec` 字段下填入 [job 配置模板](./examples/rl3m_internlm2_7b.yaml)
+- 使用命令 `opus rayjob submit`:
+```bash
+>> opus rayjob submit ./examples/rl3m_internlm2_7b_rayjob_2nodes.yaml --cloud s-slurm:llmit
+>> opus rayjob submit ./examples/rl3m_internlm2_7b_rayjob_2nodes.yaml --cloud s-slurm:llmit -n rl3m_internlm2_7b_batch_size_256 'cd ~/rl3m && bash ./projects/internlm2/7b/run_rlhf_7b_1dp.sh --batch_size 256'
+```
+- 对于 `rayjob` 这个对象的历史记录，用户可以通过命令 `opus rayjob list` 进行查看，并通过命令 `opus rayjob delete` 进行删除  
+
+### 其他信息
+```bash
+# 查看 opus CLI 的使用帮助信息
+opus -h/--help
+# 查看 opus CLI 的版本信息
+opus -v/--version
+```

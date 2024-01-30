@@ -1,0 +1,2 @@
+[console_scripts]
+opus = opus.cli:cli

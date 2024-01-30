@@ -1,0 +1,123 @@
+#!/bin/bash
+#SBATCH --partition={{ PARTITION_OPTION }}
+#SBATCH --job-name={{ JOB_NAME }}
+#SBATCH --output={{ OUT_PUT_PATH }}
+#SBATCH --nodes={{ NUM_NODES }}
+#SBATCH --exclusive
+#SBATCH --ntasks-per-node=1
+
+set -e
+
+# Load modules or your own conda environment here
+# module load pytorch/v1.4.0-gpu
+# conda activate ${CONDA_ENV}
+# <<< setup ray env >>>
+{{ SETUP_COMMAND }}
+which python
+# <<< setup ray env end >>>
+
+{% for key, value in LOAD_ENV.items() %}export {{ key }}="{{ value }}"
+{% endfor %}
+
+# Getting the node names
+nodes=$(scontrol show hostnames "$SLURM_JOB_NODELIST")
+nodes_array=($nodes)
+
+head_node=${nodes_array[0]}
+ip=$(srun --nodes=1 --ntasks=1 -w "$head_node" hostname --ip-address)
+echo "Head_Node_IP: $ip"
+
+# CHECK NODE HEALTH
+unhealthy_nodes=()
+if [ {{ NUM_ACCELS_OF_HEAD }} -gt 0 ]; then
+    num_gpus=$(srun --nodes=1 --ntasks=1 -w "$head_node" python -c "import torch; print(torch.cuda.device_count())")
+    if [ $num_gpus -lt {{ NUM_ACCELS_OF_HEAD }} ]; then
+        echo "The number of available GPUs on the head node $head_node is less than required."
+        unhealthy_nodes+=("$head_node")
+    fi
+fi
+
+worker_num=$((SLURM_JOB_NUM_NODES - 1)) #number of nodes other than the head node
+for ((i = 1; i <= worker_num; i++)); do
+  node_i=${nodes_array[$i]}
+  echo "CHECKING NODE $i at $node_i"
+  if [ {{ NUM_ACCELS_PER_WORKER }} -gt 0 ]; then
+      num_gpus=$(srun --nodes=1 --ntasks=1 -w "$node_i" python -c "import torch; print(torch.cuda.device_count())")
+      if [ $num_gpus -lt {{ NUM_ACCELS_PER_WORKER }} ]; then
+          echo "The number of available GPUs on the worker node $node_i is less than required."
+          unhealthy_nodes+=("$node_i")
+      fi
+  fi
+done
+
+{% raw %}
+if [ ${#unhealthy_nodes[@]} -gt 0 ]; then {% endraw %}
+  echo "The node healthy check finished: UNHEALTH"
+  echo "UNHEALTHY_NODES: ${unhealthy_nodes[@]}"
+  exit 1
+fi
+echo "The node healthy check finished: ALL_HEALTH"
+
+# if we detect a space character in the head node IP, we'll
+# convert it to an ipv4 address. This step is optional.
+{% raw %}
+if [[ "$ip" == *" "* ]]; then
+  IFS=' ' read -ra ADDR <<< "$ip"
+  if [[ ${#ADDR[0]} -gt 16 ]]; then
+    ip=${ADDR[1]}
+  else
+    ip=${ADDR[0]}
+  fi
+  echo "IPV6 address detected. We split the IPV4 address as $ip"
+fi
+{% endraw %}
+
+port=6379
+ip_head=$ip:$port
+export ip_head
+echo "IP Head: $ip_head"
+
+function getfreeport()
+{
+    CHECK="do while"
+    while [[ ! -z $CHECK ]]; do
+        port=$(( ( RANDOM % 40000 )  + 20000 ))
+        CHECK=$(netstat -tuln | awk '{print $4}' | grep -q ":$port$")
+    done
+    echo $port
+}
+
+dashboard_agent_grpc_port=$(getfreeport)
+echo "Dashboard agent GRPC Port: " $dashboard_agent_grpc_port
+
+echo "STARTING HEAD at $head_node"
+srun --nodes=1 --ntasks=1 -w "$head_node" \
+    --cpus-per-task="{{ NUM_CPUS_OF_HEAD }}" --gpus-per-task="{{ NUM_ACCELS_OF_HEAD }}" --mem="{{ MEM_OF_HEAD }}" \
+    ray start --head --node-ip-address="$ip" --port=$port \
+        --dashboard-agent-grpc-port $dashboard_agent_grpc_port \
+        --include-dashboard true --dashboard-host $ip --dashboard-port 8265 \
+        --num-cpus {{ RAY_HEAD_NUM_CPUS }} \
+        --num-gpus {{ RAY_HEAD_NUM_GPUS }} \
+        --resources {{ RAY_HEAD_CUSTOM_RESOURCES }} \
+        --metrics-export-port=8080 --block &
+
+# Wait for the head node to start
+sleep 30
+
+worker_num=$((SLURM_JOB_NUM_NODES - 1)) #number of nodes other than the head node
+for ((i = 1; i <= worker_num; i++)); do
+  node_i=${nodes_array[$i]}
+  echo "STARTING WORKER $i at $node_i"
+  srun --nodes=1 --ntasks=1 -w "$node_i" \
+      --cpus-per-task="{{ NUM_CPUS_PER_WORKER }}" --gpus-per-task="{{ NUM_ACCELS_PER_WORKER }}" --mem="{{ MEM_PER_WORKER }}" \
+      ray start --address "$ip_head" \
+          --num-cpus {{ RAY_WORKER_NUM_CPUS }} \
+          --num-gpus {{ RAY_WORKER_NUM_GPUS }} \
+          --resources {{ RAY_WORKER_CUSTOM_RESOURCES }} \
+          --metrics-export-port=8080 --block &
+  sleep 5
+done
+
+# ===== Call your code below =====
+echo "End starting"
+sleep infinity
