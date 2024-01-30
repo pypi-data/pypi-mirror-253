@@ -1,0 +1,11 @@
+mosaik-api<=3.0.3
+
+[dev]
+flake8
+pytest
+coverage
+black==22.3.0
+setuptools
+twine
+wheel
+palaestrai~=3.5.0
