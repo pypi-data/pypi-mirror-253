@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pastel-gateway-sdk
+Version: 0.1.1
+Summary: Pastel Network Gateway SDK
+Home-page: https://github.com/pastelnetwork/gateway-sdk-py.git
+Author: Pastel Network Team
+Author-email: team@pastel.network
+Keywords: Pastel Network Gateway SDK
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3 <2.1.0,>=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: aiohttp >=3.0.0
+Requires-Dist: aiohttp-retry >=2.8.3
+Requires-Dist: pydantic >=2
+Requires-Dist: typing-extensions >=4.7.1
+
+    Pastel Network’s Gateway provides Web3 developers with easy, robust, and reliable access to the Pastel Network 
+    and its underlying protocols via a lightweight, centralized service.
+    For more information on Pastel Network, review our documentation  https://docs.pastel.network/introduction/pastel-overview.
+    
