@@ -1,0 +1,108 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rws-knmi-lib"
+dynamic = ["version", "readme"]
+description = "Library voor communicatie met KNMI weer data."
+keywords = ["rws-knmi-lib"]
+authors = [
+    {name = "RWS Datalab", email = "datalab.codebase@rws.nl"},
+]
+classifiers = [
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "Natural Language :: English",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "License :: OSI Approved :: Apache Software License",
+        "Operating System :: OS Independent",
+]
+dependencies = [
+    "mpu",
+    "pandas",
+    "requests",
+    "types-requests",
+]
+requires-python = ">=3.6"
+
+[project.urls]
+homepage = "https://gitlab.com/rwsdatalab/public/codebase/tools/rws-knmi-lib"
+repository = "https://gitlab.com/rwsdatalab/public/codebase/tools/rws-knmi-lib"
+changelog = "https://gitlab.com/rwsdatalab/public/codebase/tools/rws-knmi-lib/blob/main/CHANGELOG.rst"
+
+[project.optional-dependencies]
+dev = [
+    "bandit",
+    "black",
+    "flake8",
+    "flake8-bugbear",
+    "flake8-comprehensions",
+    "flake8-docstrings",
+    "flake8-polyfill",
+    "isort",
+    "mypy",
+    "pre-commit",
+    "pylint",
+    "pytest",
+    "pytest-cov",
+    "radon",
+    "rstcheck[sphinx]",
+    "safety",
+    "sh",
+]
+doc = [
+    "pydata-sphinx-theme",
+    "sphinx",
+    "sphinx-autodoc-typehints",
+]
+
+[tool.setuptools]
+include-package-data = false
+license-files = ["LICENSE"]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rws_knmi_lib", "rws_knmi_lib.*"]
+
+[tool.setuptools.package-data]
+"rws_knmi_lib" = ["py.typed"]
+
+[tool.setuptools.dynamic]
+version = {attr = "rws_knmi_lib.__version__"}
+readme = {file = ["README.rst"]}
+
+[tool.isort]
+profile = "black"
+known_first_party = ["rws_knmi_lib"]
+skip_glob = ".venv/**,tests/**,doc/**"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pylint]
+extension-pkg-whitelist = ""
+fail-under = 8.0
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov --cov-report xml --cov-report term --cov-report html"
+
+[tool.coverage.run]
+branch = true
+source = ["rws_knmi_lib"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310", "py311"]

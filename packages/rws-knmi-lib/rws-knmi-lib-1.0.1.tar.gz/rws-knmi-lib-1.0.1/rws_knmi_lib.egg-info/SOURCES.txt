@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+rws_knmi_lib/__init__.py
+rws_knmi_lib/knmi_downloader.py
+rws_knmi_lib.egg-info/PKG-INFO
+rws_knmi_lib.egg-info/SOURCES.txt
+rws_knmi_lib.egg-info/dependency_links.txt
+rws_knmi_lib.egg-info/not-zip-safe
+rws_knmi_lib.egg-info/requires.txt
+rws_knmi_lib.egg-info/top_level.txt
+tests/test_rws_knmi_lib.py
