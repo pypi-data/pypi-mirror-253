@@ -1,0 +1,11 @@
+cccd/DataDescription.py,sha256=APaZ8WHyes8LnJlkVYKxrYsKC5bIbMh8CzhRqtsAOeo,930
+cccd/DataSet.py,sha256=O2iIJhQJk9Kov-5aH-O4Ofv0Fi0TqQWYkxGwlcnUKBM,1984
+cccd/__init__.py,sha256=KI2lSRhzUGplJcjON_5m4Dwvdfw4VuJG5S4Q7fKDL7I,189
+cccd/common.py,sha256=3zzb7_HD5Ap8EKjQqLOo3D0nl1uchrdLgYcbZgjTKTk,1292
+cccd/format.py,sha256=HmCPwCDwbHZLS3roAMaSRRFlUUV5Hq63_RdADf7VKFk,2655
+cccd/metadata.py,sha256=PVYP4QtzGxFxTylBeIHMY0760KSplBZgK10Y1Eg-Reg,576
+cccd-0.1.1.dist-info/LICENSE,sha256=ImOe7wNkbUmynrwTxI75SUKJ3t_MgAcTw84Vq9W3GVc,1074
+cccd-0.1.1.dist-info/METADATA,sha256=aKdN_KQ9me5q23h1kaXkfQLToMadma4FBZCnT22nqoU,4534
+cccd-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cccd-0.1.1.dist-info/top_level.txt,sha256=zAvkbdm4JyRc8dzldhSPrHDeJ5Q57B_v9Y7ASWDP_M4,5
+cccd-0.1.1.dist-info/RECORD,,
