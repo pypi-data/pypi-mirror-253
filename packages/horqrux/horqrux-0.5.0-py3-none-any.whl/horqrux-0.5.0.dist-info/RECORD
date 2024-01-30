@@ -1,0 +1,12 @@
+horqrux/__init__.py,sha256=EJyPMzU6TCBcqFBr1pOatnz8C6ZSBsF-3UAwyzHkzeo,329
+horqrux/abstract.py,sha256=_LpnGXWmL0O262syt5kihA8SVcebf2WbwvmG_IoOUBs,4000
+horqrux/adjoint.py,sha256=WCUmgQPDNDA4zUewjLzjMqtaxt6TveIFEwvD3OMq-aM,1911
+horqrux/apply.py,sha256=dAyOVdK_8yIwAEgeKA32GSU-T6n5zqnm0ueTI4GnFLE,3251
+horqrux/matrices.py,sha256=GmaJ4uBdPrWU0_uVBe0G0ddd_OzDCrKIFM2XUzE8Hgo,1359
+horqrux/parametric.py,sha256=Asjj_6ooKY6kxIHo-LccgRg0gTwWPJMk6FAOzqnrbHc,2497
+horqrux/primitive.py,sha256=sT88JvrNkrbgd3MN8gpL976AvbyV-AeU-fzZjNdgbPk,5755
+horqrux/utils.py,sha256=QQoy-hDGu6oOe708ykcFdN2fEd-ZHITCVex7ELgy-4M,4195
+horqrux-0.5.0.dist-info/METADATA,sha256=ELVNW8fjdoiB5B-ePoCSUAPqNK5a9thOf8wOAvwUwV4,1161
+horqrux-0.5.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+horqrux-0.5.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+horqrux-0.5.0.dist-info/RECORD,,
