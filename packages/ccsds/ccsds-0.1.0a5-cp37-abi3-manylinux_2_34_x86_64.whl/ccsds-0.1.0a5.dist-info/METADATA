@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ccsds
+Version: 0.1.0a5
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: pytest ; extra == 'test'
+Provides-Extra: test
+License-File: LICENSE.txt
+Summary: CCSDS spacecraft data stream decoding
+Keywords: ccsds,spacepacket,framing,cadu
+Author: Bruce Flynn <brucef@ssec.wisc.edu>
+Author-email: Bruce Flynn <brucef@ssec.wisc.edu>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/bmflynn/ccsdspy
+
+# ccsds Python bindings
+
+[![Actions Status](https://img.shields.io/github/actions/workflow/status/bmflynn/ccsdspy/CI.yml?branch=main&logo=github&style=flat-square)](https://github.com/bmflynn/ccsdspy/actions)
+
+`ccsdspy` provides Python bindnigs for the [ccsds](https://github.com/bmflynn/ccsds-rs)
+Rust bindings using [pyo3](https://pyo3.rs).
+
+
+
