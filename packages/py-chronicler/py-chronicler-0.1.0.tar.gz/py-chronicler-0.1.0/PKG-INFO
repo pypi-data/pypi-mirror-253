@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: py-chronicler
+Version: 0.1.0
+Summary: Chronicler is a Python tool that automates documentation in development projects. Utilizing Git and language processing technologies, it offers an intuitive interface for tracking changes and generating detailed documentation, seamlessly integrating with version control workflows. It's perfect for developers and teams aiming to boost productivity and maintain clear, current project documentation, thereby simplifying project management.
+Home-page: https://github.com/jasuca/chronicler
+Author: Jacob Sunol
+Author-email: contact@jasuca.com
+Keywords: development,automation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: GitPython==3.1.41
+Requires-Dist: langchain==0.1.4
+Requires-Dist: langchain-community==0.0.16
+Requires-Dist: langchain-openai==0.0.5
+Requires-Dist: click==8.1.7
+Requires-Dist: pytest==8.0.0
+
+
+# Chronicler
+
+Chronicler is an innovative Python tool designed to streamline and automate the documentation process for development projects. Leveraging the power of Git and various language processing technologies, it provides an intuitive interface for tracking changes, generating comprehensive documentation, and ensuring seamless integration with existing version control workflows. Ideal for developers and teams looking to enhance their productivity and maintain clear, up-to-date documentation, Chronicler simplifies the complexities of project management and documentation.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.6 or higher
+- Git
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/jasuca/chronicler.git
+cd chronicler
+```
+
+Set up a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use 'venv\Scripts\activate'
+```
+
+Install the package in editable mode:
+
+```bash
+pip install --editable .
+```
+
+This command will install the package and its dependencies, allowing you to make changes to the code and see them reflected immediately.
+
+### Running Locally
+
+With the virtual environment activated and the package installed in editable mode, you can run Chronicler directly from the command line:
+
+```bash
+chronicler
+```
+
+## Contributing
+
+We welcome contributions to the Chronicler project! If you have suggestions for improvements or want to contribute code, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -am 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/py_chronicler.egg-info/PKG-INFO
+src/py_chronicler.egg-info/SOURCES.txt
+src/py_chronicler.egg-info/dependency_links.txt
+src/py_chronicler.egg-info/entry_points.txt
+src/py_chronicler.egg-info/requires.txt
+src/py_chronicler.egg-info/top_level.txt
