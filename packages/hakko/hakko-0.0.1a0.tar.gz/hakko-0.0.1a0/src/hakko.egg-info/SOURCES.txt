@@ -1,0 +1,5 @@
+setup.py
+src/hakko.egg-info/PKG-INFO
+src/hakko.egg-info/SOURCES.txt
+src/hakko.egg-info/dependency_links.txt
+src/hakko.egg-info/top_level.txt
