@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ultralytics-tools/__init__.py
+ultralytics-tools/__version__.py
+ultralytics-tools/core.py
+ultralytics-tools/yolov8s.pt
+ultralytics_tools.egg-info/PKG-INFO
+ultralytics_tools.egg-info/SOURCES.txt
+ultralytics_tools.egg-info/dependency_links.txt
+ultralytics_tools.egg-info/top_level.txt
