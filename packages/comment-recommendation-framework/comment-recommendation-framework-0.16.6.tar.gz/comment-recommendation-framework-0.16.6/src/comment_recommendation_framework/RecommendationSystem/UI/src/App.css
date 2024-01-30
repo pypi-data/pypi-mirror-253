@@ -1,0 +1,49 @@
+body {
+  width: 600px;
+  height: 400px;
+}
+
+.App {
+  background: #edf0f6;
+  padding: 0.5rem;
+  width: 600px;
+  height: 400px;
+  text-align: center;
+}
+
+#selection-button {
+  position: absolute;
+  top: 65%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  background-color: #edf0f6;
+}
+
+#search-icon {
+  background-color: #edf0f6;
+}
+
+
+#suggestion-list {
+  margin: 30px;
+}
+
+#extension-logo {
+  display: block;
+  padding-left: 250px;
+}
+
+#no-selection-hint {
+  text-align: center;
+  width: 600px;
+  height: 400px;
+  padding-top: 125px;
+}
+
+#Loading-Screen {
+  width: 600px;
+  height: 400px;
+}
+#outlined-multiline-static {
+  width: 600px;
+}

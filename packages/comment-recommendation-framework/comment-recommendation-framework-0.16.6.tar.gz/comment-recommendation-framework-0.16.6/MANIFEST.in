@@ -1,0 +1,8 @@
+# MANIFEST.in
+
+include src/comment_recommendation_framework/RecommendationSystem/UI/*
+include src/comment_recommendation_framework/RecommendationSystem/UI/public/*
+include src/comment_recommendation_framework/RecommendationSystem/UI/src/*
+include src/comment_recommendation_framework/RecommendationSystem/UI/src/components/*
+include src/comment_recommendation_framework/RecommendationSystem/UI/package.json
+include src/comment_recommendation_framework/wait-for-it.sh
