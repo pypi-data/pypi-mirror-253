@@ -1,0 +1,2 @@
+[console_scripts]
+catmux_create_session = catmux.catmux_create_session:main
