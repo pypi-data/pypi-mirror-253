@@ -1,0 +1,7 @@
+README.md
+setup.py
+Mshpy.egg-info/PKG-INFO
+Mshpy.egg-info/SOURCES.txt
+Mshpy.egg-info/dependency_links.txt
+Mshpy.egg-info/requires.txt
+Mshpy.egg-info/top_level.txt
