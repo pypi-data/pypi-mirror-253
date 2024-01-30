@@ -1,0 +1,64 @@
+#!/bin/sh
+
+set -e
+
+if [ $# -lt 1 ]
+then
+    $0 coverage
+    $0 typecheck
+    $0 qa
+    exit 0
+fi
+
+root=$(readlink -f "$(dirname "$0")")
+
+# print deprecation warnings etc.
+export PYTHONDEVMODE=1
+
+# ignore known warnings from third party libraries
+export PYTHONWARNINGS='default,ignore:::itypes'
+
+SUBCMD=$1
+shift 1
+
+case $SUBCMD in
+    "tests")
+        cd "$root"
+        python -m unittest tests/*.py $@
+        cd -
+        ;;
+    "coverage")
+        cd "$root"
+        python3-coverage run -m unittest tests/*.py
+        python3-coverage report
+        cd -
+        ;;
+    "quick")
+        cd "$root"
+        ftp_proxy=http://invalid.org python -m unittest tests/*.py $@
+        cd -
+        ;;
+    "qa")
+        cd "$root"
+        flake8 confusable_homoglyphs
+        isort --check-only --diff confusable_homoglyphs
+        if which doc8
+        then
+            doc8 docs
+        fi
+        cd -
+        ;;
+    "typecheck")
+        cd "$root"
+        mypy .
+        cd -
+        ;;
+    "static")
+        cd "$root"
+        bandit --recursive --number=3 -lll -iii .
+        cd -
+        ;;
+    *)
+        echo "No such subcommand $SUBCMD"
+        ;;
+esac
