@@ -1,0 +1,13 @@
+gaussbean/__init__.py,sha256=bXbvloPhcITcywnBVHUG3Q8ofarhCo3J29HZtzNse4M,113
+gaussbean/calc.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gaussbean/dataset/__init__.py,sha256=Y14deySgw4mxRWFCmJ8yZxQy398FkOSOGzCyTQupN_E,221
+gaussbean/dataset/datasetprettier.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gaussbean/dataset/datasetsize.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gaussbean/single/__init__.py,sha256=Z316iFWvKHv3JQvgxjmWFnmT5bhXVgnVmLnVp0WbigM,407
+gaussbean/single/singleprettier.py,sha256=lKyAO2j2IhGQAl6UwICAh056Imwk60JX-pErrMaTaPQ,10998
+gaussbean/single/singlesize.py,sha256=84wPqYpiDHvuHoiIWfm6R10GNcynvpr4nCxm-WgomZA,9695
+gaussbean-0.0.1.dist-info/LICENSE.txt,sha256=-IR62NDEwuJzXviAozDwnO7nRISyUh93rk_JHotGz30,35152
+gaussbean-0.0.1.dist-info/METADATA,sha256=hQx5sIP7IItVxalnnqAR0uw4Cfn9d0ncGwcVxLFeIvU,213
+gaussbean-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+gaussbean-0.0.1.dist-info/top_level.txt,sha256=qLFjDXwVjHdUW9wOCCAhFsvHcUVnw-9zikPYOFVAcSw,10
+gaussbean-0.0.1.dist-info/RECORD,,
