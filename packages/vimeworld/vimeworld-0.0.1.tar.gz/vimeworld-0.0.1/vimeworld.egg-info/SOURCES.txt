@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+vimeworld/__init__.py
+vimeworld/client.py
+vimeworld/guilds.py
+vimeworld/users.py
+vimeworld.egg-info/PKG-INFO
+vimeworld.egg-info/SOURCES.txt
+vimeworld.egg-info/dependency_links.txt
+vimeworld.egg-info/requires.txt
+vimeworld.egg-info/top_level.txt
