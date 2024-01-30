@@ -1,0 +1,2 @@
+parsel==1.6.0
+xblock[django]
