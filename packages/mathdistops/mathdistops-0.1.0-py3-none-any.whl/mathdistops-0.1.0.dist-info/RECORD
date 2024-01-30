@@ -1,0 +1,9 @@
+mathdistops/__init__.py,sha256=plHFTudaUdaB0JhVg_HWW9k5_wrhX-yRUpEcfuIx19o,263
+mathdistops/pexp.py,sha256=Yua6zyxpd2WyZytJsBxk3sSqB2056zX3LZowfBz0YoU,3464
+mathdistops/pnorm.py,sha256=I4Zp2wvvqqG9TeKUJuDThxFRkS9Qd6jIJiU5SNTs8Sg,3359
+mathdistops/qexp.py,sha256=RonxvczMGLDGk9wtUyDpHtLQF8j8_iv2GBOzsTNMCLA,3947
+mathdistops/qnorm.py,sha256=zl5nIVABT9uJlK20eJR6WC0jZA_23UlUd-UbeXIMpXE,3466
+mathdistops-0.1.0.dist-info/LICENSE,sha256=Q5zXPPGUk4wawR83W21pde5SLXoD921CO3_HA5h81ME,1132
+mathdistops-0.1.0.dist-info/METADATA,sha256=Yl0rleOdSrE95Gyji_nDqheFL1n0f7coMVUVUM-kRYQ,6948
+mathdistops-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mathdistops-0.1.0.dist-info/RECORD,,
