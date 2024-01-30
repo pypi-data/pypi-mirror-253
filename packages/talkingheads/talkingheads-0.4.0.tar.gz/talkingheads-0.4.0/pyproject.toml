@@ -1,0 +1,29 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [
+  { name="Ugur Sahin", email="ugorsahin@tutanota.de"},
+]
+name = "talkingheads"
+description = "A Headless Chrome interface to communicate with Google Bard, HuggingChat and OpenAI ChatGPT"
+readme = "README.md"
+requires-python = ">=3.8"
+version = "0.4.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+   'selenium>=4.10.0',
+   'undetected-chromedriver>=3.5.3',
+   'pandas>=2.0.0',
+   'easydict'
+]
+
+[project.urls]
+Source = "https://github.com/ugorsahin/TalkingHeads"
