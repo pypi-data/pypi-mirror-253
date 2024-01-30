@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "patcherex2"
+version = "0.1.7"
+requires-python = ">=3.8"
+readme = "README.md"
+dependencies = [
+    "angr",
+    "pyelftools",
+    "lief",
+    "keystone-engine",
+    "intelhex",
+    "requests",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+extend-select = ["I", "N", "UP", "B"]
