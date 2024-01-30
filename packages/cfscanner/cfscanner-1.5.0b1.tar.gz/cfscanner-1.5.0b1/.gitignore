@@ -1,0 +1,13 @@
+
+log/
+venv/
+__pycache__
+*.egg-info/
+_version.py
+.vscode/
+.xray-configs
+result/
+dist/
+.tmp/
+
+test.py
