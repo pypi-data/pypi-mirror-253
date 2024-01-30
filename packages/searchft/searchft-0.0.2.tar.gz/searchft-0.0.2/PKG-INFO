@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: searchft
+Version: 0.0.2
+Summary: Projeto final da disciplina de Programação Orientada a Objetos II
+Author: liedson
+Author-email: fabricoliedson@gamil.com
+Keywords: python,web,search
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DescriÃ§Ã£o
+A `SearchForThis` Ã© uma biblioteca que efetua pesquisas em motores de busca na web.
+
+# Funcionalidades
+* Realizar buscas por conteÃºdos desejados
+* Acessar links retornados
+
+# Biblioteca
+### InstalaÃ§Ã£o
+```python
+pip install searchft
+```
+
+### ImportaÃ§Ã£o
+```python
+import searchft
+```
+### Formas de utilizaÃ§Ã£o
+```python
+search = searchft.Searchft
+```
+`Ou`
+```python
+from searchft import Searchft
+``` 
+
+### Acessando mÃ©todos
+Uma das formas de acessar os mÃ©todos da classe, Ã© a seguinte:
+```python
+Searchft.method()
+```
+Onde `method`, Ã© o nome mÃ©todo que vocÃª deseja utilizar.
+
+### Realizando buscas:
+Use o mÃ©todo `buscar` da classe, da seguinte forma:
+```python
+resultado = Search.buscar(conteÃºdo_da_busca, size)
+```
+A variÃ¡vel size, armazena a quantidade de links que vocÃª deseja buscar. O conteÃºdo da busca deve ser uma string.
+
+### Visitando links
+Use o mÃ©todo `visitarLink`, da seguinte forma:
+```python
+Searchft.visitarLink(link)
+```
+O link deve ser uma string.
+
+# Exemplos de uso
+
+### Buscar
+<img src="exemplo-busca.png">
+<img src="terminal-busca.png">
+
+### VisitarLink
+<img src="exemplo-visitarlink.png">
+<img src="python-org.png">
