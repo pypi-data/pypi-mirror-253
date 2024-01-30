@@ -1,0 +1,10 @@
+affine
+h5py
+numpy
+rasterio
+
+[dev]
+matplotlib
+
+[test]
+coverage
