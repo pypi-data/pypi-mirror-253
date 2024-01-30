@@ -1,0 +1,13 @@
+prune marearts_anpr
+
+# Exclude Python source files and .dat files from the package
+recursive-exclude marearts_anpr *.py
+recursive-exclude marearts_anpr *.c
+recursive-exclude marearts_anpr/data *.dat
+global-exclude *.py
+global-exclude *.c
+recursive-include marearts_anpr *.so
+
+
+# Include the README file
+include README.md
