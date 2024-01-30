@@ -1,0 +1,2 @@
+[psychopy.experiment.components]
+AprilTagComponent = psychopy_eyetracker_pupil_labs:AprilTagComponent
