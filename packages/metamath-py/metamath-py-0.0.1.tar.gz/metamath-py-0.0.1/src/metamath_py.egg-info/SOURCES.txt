@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/database.py
+src/obvious.py
+src/parse.py
+src/proof.py
+src/scratch.py
+src/theory.py
+src/training_data.py
+src/metamath_py.egg-info/PKG-INFO
+src/metamath_py.egg-info/SOURCES.txt
+src/metamath_py.egg-info/dependency_links.txt
+src/metamath_py.egg-info/top_level.txt
+tests/tests.py
