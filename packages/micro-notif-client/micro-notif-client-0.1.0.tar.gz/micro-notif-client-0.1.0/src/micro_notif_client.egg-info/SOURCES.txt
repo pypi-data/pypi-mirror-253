@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/micro_notif/__init__.py
+src/micro_notif/v1/__init__.py
+src/micro_notif/v1/clients.py
+src/micro_notif/v1/connection.py
+src/micro_notif/v1/types.py
+src/micro_notif/v1/utils.py
+src/micro_notif_client.egg-info/PKG-INFO
+src/micro_notif_client.egg-info/SOURCES.txt
+src/micro_notif_client.egg-info/dependency_links.txt
+src/micro_notif_client.egg-info/requires.txt
+src/micro_notif_client.egg-info/top_level.txt
