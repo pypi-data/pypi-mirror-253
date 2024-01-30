@@ -1,0 +1,8 @@
+infisical_python-2.1.5.dist-info/METADATA,sha256=SgpnGihQTyNRMQbKjxexPeuFiaZeGvVBmH7qyhMMYIs,1999
+infisical_python-2.1.5.dist-info/WHEEL,sha256=PodSfjW8QVCXDuokf0w4llzgeZgWSdXlTm1uwt-zgaA,108
+infisical_python-2.1.5.dist-info/license_files/LICENSE,sha256=MbsLZDzxFnWTXEtr2RbtLD8XQ8ttf3Q-MjdROaTydRQ,1053
+infisical_client/__init__.py,sha256=8_T2zXfc4C0ooNXtKCBlWOiQrprgkS5ZH-y9VxVWM1E,866
+infisical_client/infisical_client.py,sha256=AwgDQLJFmqNd41vu-Mr-Ih3k54BiQ9ZwiWl3SnIAFCM,3643
+infisical_client/schemas.py,sha256=chqux1UdLHMcVLYQ2af5ROR0hU-9yyKBHrkD0_Gdf-Y,40201
+infisical_client/infisical_py.cpython-310-darwin.so,sha256=3wOLtqlDGmTal4iO-VKp-WFTF-yDyPY2XREe5P0K9g0,6046400
+infisical_python-2.1.5.dist-info/RECORD,,
