@@ -1,0 +1,10 @@
+pixiv_down/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pixiv_down/commands.py,sha256=ueD8oWesG_JGz0bXggD6-vUwhKXRKNNp0yxut4piS5s,16735
+pixiv_down/crawler.py,sha256=TVvqExFlmrWdWLffMwQwmrHceQfKI6sK5Mmv3DKUXys,25159
+pixiv_down/utils.py,sha256=uwH6dQ3B-UgnYqhODzhDi5eGNnhu6z-VrhXl8PzT1Qc,2687
+pixiv_down-0.1.6.dist-info/LICENSE,sha256=4Bh5YCBc9ZOqME_6rqbrWdzzgJnwEC1Ehvbn_nRGe1w,1064
+pixiv_down-0.1.6.dist-info/METADATA,sha256=TDw0tn8_vi-H-MHKz6yWCcGly-5Vk-9DQ3FcvJ5C2bk,2744
+pixiv_down-0.1.6.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+pixiv_down-0.1.6.dist-info/entry_points.txt,sha256=fNew2JQ-CVzrnqyhVMWYB0iCs-6MFF-r45aNB76HTSk,50
+pixiv_down-0.1.6.dist-info/top_level.txt,sha256=u3r2r_hdwIipwA0Ehy9OU_n2DuKfRhceDr0V68ZA6VA,11
+pixiv_down-0.1.6.dist-info/RECORD,,
