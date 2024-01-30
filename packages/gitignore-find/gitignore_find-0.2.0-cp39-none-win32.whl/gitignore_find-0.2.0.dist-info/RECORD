@@ -1,0 +1,5 @@
+gitignore_find-0.2.0.dist-info/METADATA,sha256=3FmdDLmrX8Xs9DOk8Rv9xuomdX05UZlVjo3wjGfpcgA,263
+gitignore_find-0.2.0.dist-info/WHEEL,sha256=r4Te48OdXB4bdfpHUw4V5gHpGacxTrI9wQ9WUHbsGok,90
+gitignore_find/__init__.py,sha256=IwYnZvQQAEP7F16P-h7RKVW5BJ0Kb1btnABKWUoWuC0,139
+gitignore_find/gitignore_find.cp39-win32.pyd,sha256=MayEeQX1U5DfOEs2GKf6FjtXeG843-rDcFqxdm_PN-0,1527296
+gitignore_find-0.2.0.dist-info/RECORD,,
