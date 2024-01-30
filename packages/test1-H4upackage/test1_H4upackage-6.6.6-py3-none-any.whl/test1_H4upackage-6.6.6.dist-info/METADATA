@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: test1_H4upackage
+Version: 6.6.6
+Summary: A test of project uploading (Hack4u courses)
+Home-page: https://hack4u.io
+Author: Luis González
+Description-Content-Type: text/markdown
+
+# Hacku4 Library (name)
+what it is
+
+## The information available 
+(in this case the courses)
+
+## Installation
+pip3 install packagename
+
+## Basic usage
+### functionality 1 
+
+```python
+for i in range (x):
+    print(the function code)
+```
+### functionality 2
+```python
+The rest of the code involved with the another functionality
+```
