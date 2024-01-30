@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+st_gsheets_connection.egg-info/PKG-INFO
+st_gsheets_connection.egg-info/SOURCES.txt
+st_gsheets_connection.egg-info/dependency_links.txt
+st_gsheets_connection.egg-info/requires.txt
+st_gsheets_connection.egg-info/top_level.txt
+streamlit_gsheets/__init__.py
+streamlit_gsheets/gsheets_connection.py
+tests/test_public_sheet.py
