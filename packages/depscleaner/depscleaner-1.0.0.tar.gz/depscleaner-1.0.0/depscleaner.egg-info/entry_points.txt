@@ -1,0 +1,2 @@
+[console_scripts]
+depscleaner = depscleaner.__main__:main

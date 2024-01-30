@@ -1,0 +1,7 @@
+README.md
+setup.py
+depscleaner.egg-info/PKG-INFO
+depscleaner.egg-info/SOURCES.txt
+depscleaner.egg-info/dependency_links.txt
+depscleaner.egg-info/entry_points.txt
+depscleaner.egg-info/top_level.txt
