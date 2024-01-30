@@ -1,0 +1,5 @@
+gitignore_find-0.2.0.dist-info/METADATA,sha256=3FmdDLmrX8Xs9DOk8Rv9xuomdX05UZlVjo3wjGfpcgA,263
+gitignore_find-0.2.0.dist-info/WHEEL,sha256=0fa2JhH_zJhq27aOGUB2_wT1-Mb05Zo3fhbEi8jrf2Q,134
+gitignore_find/__init__.py,sha256=IwYnZvQQAEP7F16P-h7RKVW5BJ0Kb1btnABKWUoWuC0,139
+gitignore_find/gitignore_find.pypy39-pp73-arm-linux-gnu.so,sha256=iEmLA2BD3_209MvOikSE_KDCfxDZaCeVCS0Wse0xPM4,6117064
+gitignore_find-0.2.0.dist-info/RECORD,,
