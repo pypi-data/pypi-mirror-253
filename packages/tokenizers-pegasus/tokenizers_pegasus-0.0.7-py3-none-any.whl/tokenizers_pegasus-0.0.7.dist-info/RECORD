@@ -1,0 +1,7 @@
+tokenizers_pegasus/__init__.py,sha256=W6th8p6PsarMfoiPOwciINjrEwkLlCSxtYEFnJKFsiQ,116
+tokenizers_pegasus/data_utils.py,sha256=4xg5vbncJEd7jav3ZuaAK7TNFHptm2S-nUAb0rVYKnk,9790
+tokenizers_pegasus/tokenizers_pegasus.py,sha256=jfpQ7E8aYlscjrxAAfIYvn-kX3eN6Qg16H9PcSy6NhM,25494
+tokenizers_pegasus-0.0.7.dist-info/METADATA,sha256=Z_wpC-Tt60adYcJ2ou9zcYCXvhnbamXg1gnwu_KC1pA,768
+tokenizers_pegasus-0.0.7.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+tokenizers_pegasus-0.0.7.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+tokenizers_pegasus-0.0.7.dist-info/RECORD,,

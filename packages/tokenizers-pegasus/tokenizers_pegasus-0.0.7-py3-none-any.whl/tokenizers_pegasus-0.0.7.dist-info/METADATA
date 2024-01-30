@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tokenizers_pegasus
+Version: 0.0.7
+Summary: pegasus tokenizers 
+Project-URL: Homepage, https://github.com/Qiliang/pegasus
+Project-URL: Issues, https://github.com/Qiliang/pegasus/issues
+Author-email: xiaoql <xiaoql@hollycrm.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: jieba
+Requires-Dist: numpy
+Requires-Dist: rouge
+Requires-Dist: six
+Description-Content-Type: text/markdown
+
+### tokenizers for pegasus
+
+```shell
+pip install tokenizers-pegasus  -i https://pypi.org/simple --no-cache-dir
+
+pip install tokenizers-pegasus=={version} -i https://pypi.org/simple --no-cache-dir
+```
