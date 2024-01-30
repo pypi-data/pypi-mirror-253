@@ -1,0 +1,2 @@
+[nbdev]
+whisperspeech = whisperspeech._modidx:d
