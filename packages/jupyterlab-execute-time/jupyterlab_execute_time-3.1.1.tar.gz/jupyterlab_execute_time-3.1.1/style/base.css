@@ -1,0 +1,55 @@
+/* Transition to highlight a cell change */
+@keyframes executeHighlight {
+  from {
+    background-color: var(--md-blue-100, #9fccff);
+  }
+  to {
+    background-color: var(--jp-cell-editor-background);
+  }
+}
+
+.execute-time {
+  background-color: var(--jp-cell-editor-background);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2px;
+  font-family: var(--jp-code-font-family, monospace);
+  font-size: 86%;
+  border-top: 1px solid var(--jp-cell-editor-border-color, #cfcfcf);
+  padding: 0 2px;
+}
+
+.execute-time.execute-time-contrast-low {
+  color: var(--jp-ui-font-color3);
+}
+
+.execute-time.execute-time-contrast-high {
+  color: var(--jp-ui-font-color1);
+}
+
+.execute-time.execute-time-positioning-left {
+  flex-direction: row;
+}
+
+.execute-time.execute-time-positioning-right {
+  flex-direction: row-reverse;
+}
+
+.execute-time.execute-time-positioning-hover {
+  display: none;
+}
+
+.jp-Cell-inputWrapper:hover .execute-time.execute-time-positioning-hover {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -1.25em;
+  border: 1px solid var(--jp-cell-editor-border-color, #cfcfcf);
+  border-width: 0 1px 1px 1px;
+  height: 1.25em;
+  z-index: 3;
+}
+
+.execute-time.execute-time-hidden {
+  display: none;
+}
