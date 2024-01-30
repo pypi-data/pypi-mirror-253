@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+abalytics/__init__.py
+abalytics/analysis.py
+abalytics/significance_tests.py
+abalytics.egg-info/PKG-INFO
+abalytics.egg-info/SOURCES.txt
+abalytics.egg-info/dependency_links.txt
+abalytics.egg-info/requires.txt
+abalytics.egg-info/top_level.txt
