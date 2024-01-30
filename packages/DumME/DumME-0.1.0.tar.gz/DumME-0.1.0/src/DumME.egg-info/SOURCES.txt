@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/DumME.egg-info/PKG-INFO
+src/DumME.egg-info/SOURCES.txt
+src/DumME.egg-info/dependency_links.txt
+src/DumME.egg-info/requires.txt
+src/DumME.egg-info/top_level.txt
+src/dumme/__init__.py
+src/dumme/dumme.py
+src/dumme/utils.py
+src/dumme/viz.py
+tests/test_data_generator.py
+tests/test_dumme.py
+tests/test_parse_input.py
+tests/test_sklearn_compatibility.py
