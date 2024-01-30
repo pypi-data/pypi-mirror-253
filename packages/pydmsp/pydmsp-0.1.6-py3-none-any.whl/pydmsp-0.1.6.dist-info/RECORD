@@ -1,0 +1,14 @@
+pydmsp/__init__.py,sha256=Yx_Zd1LOu8hU_hPJ3cbJrNMmsN4V5-T5fRS9T1LwqEI,220
+pydmsp/_dmspexeptions.py,sha256=t1Wbpex9-bx4CwwWlBGv-xI58RxjaFQ3ACBZaHA0r1M,2169
+pydmsp/_from_gz.py,sha256=YFJpYd3W1MQjhYbZAgZLZ7dW631a_guFIdhOQkWovm0,3523
+pydmsp/_make_dataset.py,sha256=-kT4QKcPlJ-1jq8-kyX7_PCbw_4A53yhwRVq1U1X7-k,14828
+pydmsp/_tables_E.py,sha256=LxJoaTNXEwflpFpJZP-rd0AlA94mdWZu0XQabnJsLFk,349
+pydmsp/_tables_G.py,sha256=oEYqOBIS_AOtdpHwIDSRzSvJJms4w1RzFABFWle0TfM,6393
+pydmsp/_transform_dataset.py,sha256=EZidsmd4DZLFp4bYm5dqwV56h5jP68QfOnt0RxvAYRA,17144
+pydmsp/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydmsp/tests/test00.py,sha256=Tg4nx5q0_lcDPSIc-yh38aG-FcWGPQhzijor_NG16ZY,694
+pydmsp/tests/test01.py,sha256=1eEk-Opbgf7cqa-s-3YTLE7-SVPHnG52uV6xM474dvE,1529
+pydmsp-0.1.6.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+pydmsp-0.1.6.dist-info/METADATA,sha256=_Bu9FRwbZPHzZuLAAR2HmHDF4Aadd7gUWMEMI37sr4c,2143
+pydmsp-0.1.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pydmsp-0.1.6.dist-info/RECORD,,
