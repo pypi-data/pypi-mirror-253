@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: not_evil_calculator_spaceylad
+Version: 0.0.7
+Summary: A library created to chain another library.
+Project-URL: Homepage, https://github.com/SpaceyLad
+Project-URL: Issues, https://github.com/SpaceyLad
+Author-email: Stian Kvålshagen <stikvaa@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: not-so-evil-package-spaceylad>=0.0.6
+Description-Content-Type: text/markdown
+
+# Chained evil library
+This library is created to learn and experiment with chained library importing.
