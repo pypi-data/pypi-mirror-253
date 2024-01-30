@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/cccd/DataDescription.py
+src/cccd/DataSet.py
+src/cccd/__init__.py
+src/cccd/common.py
+src/cccd/format.py
+src/cccd/metadata.py
+src/cccd.egg-info/PKG-INFO
+src/cccd.egg-info/SOURCES.txt
+src/cccd.egg-info/dependency_links.txt
+src/cccd.egg-info/requires.txt
+src/cccd.egg-info/top_level.txt
