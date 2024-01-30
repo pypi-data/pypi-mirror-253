@@ -1,0 +1,138 @@
+apiVersion: ray.io/v1alpha1
+kind: RayCluster
+metadata:
+  name: {{ RAY_CLUSTER_NAME }}
+  namespace: {{ NAMESPACE }}
+spec:
+  headGroupSpec:
+    rayStartParams:
+      block: "true"
+      dashboard-host: 0.0.0.0
+      resources: '"{{ RAY_HEAD_CUSTOM_RESOURCES }}"'
+    serviceType: ClusterIP
+    template:
+      spec:
+        affinity:
+          nodeAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution:
+              nodeSelectorTerms:
+              - matchExpressions:
+                - key: {{ NAMESPACE }}
+                  operator: In
+                  values:
+                  - "true"
+                - key: node-role.kubernetes.io/pai-control-plane
+                  operator: DoesNotExist
+        containers:
+        - command: {{ SETUP_COMMAND }}
+          {% if LOAD_ENV -%}
+          env: 
+          {% for key, value in LOAD_ENV.items() -%}
+          - name: {{ key }}
+            value: "{{ value }}" 
+          {% endfor -%}
+          {% else -%}
+          env: []
+          {% endif -%}
+          image: {{ IMAGE }}
+          imagePullPolicy: IfNotPresent
+          name: ray-head
+          resources:
+            limits:
+              cpu: {{ NUM_CPUS_OF_HEAD }}
+              memory: {{ MEM_OF_HEAD }}
+              nvidia.com/gpu: {{ NUM_ACCELS_OF_HEAD }}
+            requests:
+              cpu: {{ NUM_CPUS_OF_HEAD }}
+              memory: {{ MEM_OF_HEAD }}
+              nvidia.com/gpu: {{ NUM_ACCELS_OF_HEAD }}
+          securityContext:
+            runAsUser: 0
+          volumeMounts:
+          {% for item in WORKDIR -%}
+          - mountPath: {{ item.hostPath }}
+            name: data-{{ loop.index }}
+          {% endfor -%}
+          - mountPath: /dev/shm
+            name: dshm
+        imagePullSecrets: []
+        nodeSelector: {}
+        tolerations: []
+        volumes:
+        {% for item in WORKDIR -%}
+        - hostPath: 
+            path: {{ item.hostPath }}
+            type: DirectoryOrCreate
+          name: data-{{ loop.index }}
+        {% endfor -%}
+        - emptyDir:
+            medium: Memory
+            sizeLimit: 100Gi
+          name: dshm
+  workerGroupSpecs:
+  - groupName: workergroup
+    maxReplicas: 2147483647
+    minReplicas: 1
+    rayStartParams:
+      block: "true"
+      resources: '"{{ RAY_WORKER_CUSTOM_RESOURCES }}"'
+    replicas: {{ NUM_WORKER_NODES }}
+    template:
+      spec:
+        affinity:
+          nodeAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution:
+              nodeSelectorTerms:
+              - matchExpressions:
+                - key: {{ NAMESPACE }}
+                  operator: In
+                  values:
+                  - "true"
+                - key: node-role.kubernetes.io/pai-control-plane
+                  operator: DoesNotExist
+        containers:
+        - command: {{ SETUP_COMMAND }}
+          {% if LOAD_ENV -%}
+          env: 
+          {% for key, value in LOAD_ENV.items() -%}
+          - name: {{ key }}
+            value: "{{ value }}"
+          {% endfor -%}
+          {% else -%}
+          env: []
+          {% endif -%}
+          image: {{ IMAGE }}
+          imagePullPolicy: IfNotPresent
+          name: ray-worker
+          resources:
+            limits:
+              cpu: {{ NUM_CPUS_PER_WORKER }}
+              memory: {{ MEM_PER_WORKER }}
+              nvidia.com/gpu: {{ NUM_ACCELS_PER_WORKER }}
+            requests:
+              cpu: {{ NUM_CPUS_PER_WORKER }}
+              memory: {{ MEM_PER_WORKER }}
+              nvidia.com/gpu: {{ NUM_ACCELS_PER_WORKER }}
+          securityContext:
+            runAsUser: 0
+          volumeMounts:
+          {% for item in WORKDIR -%}
+          - mountPath: {{ item.hostPath }}
+            name: data-{{ loop.index }}
+          {% endfor -%}
+          - mountPath: /dev/shm
+            name: dshm
+        imagePullSecrets: []
+        nodeSelector: {}
+        tolerations: []
+        volumes:
+        {% for item in WORKDIR -%}
+        - hostPath: 
+            path: {{ item.hostPath }}
+            type: DirectoryOrCreate
+          name: data-{{ loop.index }}
+        {% endfor -%}
+        - emptyDir:
+            medium: Memory
+            sizeLimit: 100Gi
+          name: dshm
