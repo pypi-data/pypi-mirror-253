@@ -1,0 +1,11 @@
+aiohttp
+cryptography>=38.0.3
+requests
+google-auth
+protobuf
+
+[asyncpg]
+asyncpg>=0.29.0
+
+[pg8000]
+pg8000>=1.30.4
