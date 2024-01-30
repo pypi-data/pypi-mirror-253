@@ -1,0 +1,1 @@
+from psifospoll import STVElection
