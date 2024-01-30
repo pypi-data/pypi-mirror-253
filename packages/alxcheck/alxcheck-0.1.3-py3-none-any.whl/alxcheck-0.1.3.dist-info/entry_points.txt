@@ -1,0 +1,2 @@
+[console_scripts]
+alxcheck = alxcheck.main:main
