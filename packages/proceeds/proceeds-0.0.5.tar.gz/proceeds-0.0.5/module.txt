@@ -1,0 +1,65 @@
+
+<body>
+	<header>
+		<address>proceeds</address>
+	</header>
+
+	<code>
+		pip install proceeds
+	</code>
+
+	<code>
+		import proceeds
+		proceeds.abundantly ({
+			"build": [{
+				"kind": "header",
+				"fields": {
+					"name": "candidate"
+				}
+			},{
+				"kind": "company",
+				"fields": {
+					"name": "company 4",
+					"descriptions": [],
+					"statuses": [{
+						"names": [ "status 2" ],
+						"places": [ "place 1", "place 2" ],
+						"dates": [ "Year Month Day of Month", "Year Month Day of Month" ],
+						"feats": [
+							"feat 1",
+							"feat 2",
+							"feat 3"
+						]
+					},{
+						"names": [ "status 1" ],
+						"places": [],
+						"dates": [],
+						"feats": []
+					}]
+				}
+			},{
+				"kind": "company",
+				"fields": {
+					"name": "company 4",
+					"descriptions": [],
+					"statuses": [{
+						"names": [ "status 2" ],
+						"places": [ "place 1", "place 2" ],
+						"dates": [ "Year Month Day of Month", "Year Month Day of Month" ],
+						"feats": [
+							"feat 1",
+							"feat 2",
+							"feat 3"
+						]
+					}]
+				}
+			},{
+				"kind": "academics",
+				"fields": {
+					"name": "academics 1",
+				}
+			}]
+		})
+	</code>
+	
+</body>
