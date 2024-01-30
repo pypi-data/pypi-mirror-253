@@ -1,0 +1,5 @@
+setup.py
+src/henshou.egg-info/PKG-INFO
+src/henshou.egg-info/SOURCES.txt
+src/henshou.egg-info/dependency_links.txt
+src/henshou.egg-info/top_level.txt
