@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "Yet-another-pypi-test"
+version = "0.005.0"
+description = "Test PyPI packaging"
+authors = ["Volk Dmitry <volk.dmitry@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
