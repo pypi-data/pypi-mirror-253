@@ -1,0 +1,7 @@
+audb
+sphinx-apipages
+sphinx ==5.3.0
+sphinx_audeering_theme
+sphinx-autodoc-typehints
+sphinx-copybutton
+toml

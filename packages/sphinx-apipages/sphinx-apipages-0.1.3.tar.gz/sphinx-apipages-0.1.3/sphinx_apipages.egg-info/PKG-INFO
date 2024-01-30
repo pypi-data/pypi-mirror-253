@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: sphinx-apipages
+Version: 0.1.3
+Summary: Sphinx extension for API documentation with sub-pages
+Author-email: Hagen Wierstorf <hwierstorf@audeering.com>
+License: MIT License
+        
+        Copyright (c) 2023- audEERING GmbH and Contributors
+        
+        Authors:
+            Hagen Wierstorf
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: repository, https://github.com/audeering/sphinx-apipages/
+Project-URL: documentation, https://audeering.github.io/audb/
+Keywords: documentation,sphinx,autosummary,autodoc,split,api
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: sphinx
+
+===============
+sphinx-apipages
+===============
+
+**sphinx-apipages** is a sphinx_ extension
+for API documentation.
+It uses the autosummary_ and autodoc_ directives,
+and creates sub-pages
+for each function and class.
+
+Have a look at the installation_ and usage_ instructions.
+
+
+.. _autodoc: https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
+.. _autosummary: https://www.sphinx-doc.org/en/master/usage/extensions/autosummary.html
+.. _installation: https://audeering.github.io/sphinx-apipages/install.html
+.. _sphinx: https://www.sphinx-doc.org/en/master/
+.. _usage: https://audeering.github.io/sphinx-apipages/usage.html
