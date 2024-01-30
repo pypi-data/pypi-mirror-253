@@ -1,0 +1,42 @@
+
+
+
+
+
+******
+
+Bravo!  You have received a Mercantilism Diploma in "XY_Steroids" from   
+the Simulated Parallel Universe Computer Science Fantasy Orbital Convergence University 
+International Air and Water Embassy Naturalization Department of the Tangerine Planet 🍊 
+(the planet that is one ellipse closer to the Sun than Earth's ellipse).
+
+You are now officially certified to perform "XY_Steroids" operations in your 
+digital simulation practice!
+
+Encore! Encore! Encore! Encore!
+
+******
+
+# ♂️ XY_Steroids
+---
+
+## ⚕️ prescription
+```
+These digital science fantasy fictional simulation XY steroids are intended to provided 
+equality to digital science fantasy fictional simulation lifeforms who would like to 
+self identify as biological males with XY gender chromosomes, but feel like at present they 
+don't have the agility necessary.
+
+Once taken please consider your digital science fantasy fictional simulation    
+lifeforms to be possess the "XY Steroids Certified Agile Official Lifeform" certification.
+
+This simulation has no effect on the fertility of digital science fantasy fictional 
+simulation lifeforms.
+```
+
+---
+
+## 💉 the procedure
+`pip install XY_steroids`
+
+
