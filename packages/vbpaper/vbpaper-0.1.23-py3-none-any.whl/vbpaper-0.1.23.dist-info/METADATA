@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: vbpaper
+Version: 0.1.23
+Summary: This is the final version for mac os Screen shots to pdf. It basically usefull for making test paper or assignment paper for students.
+Author: vaibhavblayer
+Author-email: vaibhavblayer@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
