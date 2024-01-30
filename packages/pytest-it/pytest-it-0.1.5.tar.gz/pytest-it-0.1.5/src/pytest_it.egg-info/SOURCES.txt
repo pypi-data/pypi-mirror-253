@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+src/pytest_it/__init__.py
+src/pytest_it/plugin.py
+src/pytest_it.egg-info/PKG-INFO
+src/pytest_it.egg-info/SOURCES.txt
+src/pytest_it.egg-info/dependency_links.txt
+src/pytest_it.egg-info/entry_points.txt
+src/pytest_it.egg-info/not-zip-safe
+src/pytest_it.egg-info/top_level.txt
+tests/test_pytest_it.py
