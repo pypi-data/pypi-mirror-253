@@ -1,0 +1,11 @@
+pyproject.toml
+readme.md
+structures/modules/XY_Steroids/__init__.py
+structures/modules/XY_Steroids/status_1.py
+structures/modules/XY_Steroids.egg-info/PKG-INFO
+structures/modules/XY_Steroids.egg-info/SOURCES.txt
+structures/modules/XY_Steroids.egg-info/dependency_links.txt
+structures/modules/XY_Steroids.egg-info/top_level.txt
+structures/modules/XY_Steroids/_clique/__init__.py
+structures/modules/XY_Steroids/_clique/group/__init__.py
+structures/modules/XY_Steroids/_status/status.proc.py
