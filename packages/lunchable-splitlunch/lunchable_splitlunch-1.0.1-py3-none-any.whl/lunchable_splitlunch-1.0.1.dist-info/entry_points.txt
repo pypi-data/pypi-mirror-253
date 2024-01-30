@@ -1,0 +1,5 @@
+[console_scripts]
+splitlunch = lunchable_splitlunch.cli:splitlunch
+
+[lunchable.cli]
+splitlunch = lunchable_splitlunch.cli:splitlunch
