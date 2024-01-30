@@ -1,0 +1,110 @@
+% !TeX root = \VAR{ name | replace('\\', '') }
+
+\input{./packages/xjenza-preamble.tex}
+
+% Front matter
+\title{
+	\BLOCK{- if title is defined -}
+		\VAR{title}
+	\BLOCK{- else -}
+		A very interesting scientific publication
+	\BLOCK{- endif -}
+}
+\doi{TO-BE-ASSIGNED}
+\articleType{Research Article} % Research Article, Review Article, Research Note, News Article...
+\author{
+	\BLOCK{- for author in authors  -}
+	\VAR{- (author.name.split(" ")) | map('first') | list | join('. ') -}. \VAR{ author.surname -}
+		\VAR{- '$^{' + ((authors|map(attribute='affiliation')|list|unique|list).index(author.affiliation)+1)|string + ('*' if author.is_corresponding else '') + '}$' -}
+		\BLOCK{- if loop.index < loop.length - 1 }, \BLOCK{elif loop.index == loop.length - 1 } and \BLOCK{ endif -}
+	\BLOCK{- endfor -}
+}
+\authorAnnotation{\BLOCK{- for item in authors|map(attribute='affiliation')|list|unique  -}
+	$^\VAR{ loop.index }$ \VAR{ item }\BLOCK{- if not loop.last -}\\\BLOCK{- endif -}
+	\BLOCK{- endfor -}}
+\correspondanceName{
+	\BLOCK{- for corresponder in authors|selectattr("is_corresponding") -}
+		\BLOCK{- for first_names in corresponder.name.split()[:-1] -}
+			\VAR{- first_names[0] + '. ' -}
+		\BLOCK{- endfor -}
+		\VAR{- corresponder.surname -}
+	\BLOCK{- endfor -}
+}
+\correspondanceMail{
+	\BLOCK{- for corresponder in authors|selectattr("is_corresponding") -}
+		\VAR{- corresponder.email -}
+	\BLOCK{- endfor -}
+}
+
+% This goes in the header, in case the full title is too long
+\shortTitle{\BLOCK{ if short_title is defined }\VAR{short_title}\BLOCK{ endif }}
+
+\selfCitation{\BLOCK{ if authors is defined }\VAR{authors[0].surname}, \VAR{authors[0].name[0]} et al.\BLOCK{ else }Borg, J. et al.\BLOCK{ endif } (\VAR{year}). \newblock {\em Xjenza Online}, \pageref{firstpage}--\pageref{lastPage}.}
+
+% Bibliography file
+\addbibresource{references.bib}
+
+% Insert additional packages here
+\usepackage{lipsum}
+
+%%%%% Do not edit %%%%%
+\def\firstpage{1}
+\newcounter{pagna}
+\setcounter{pagna}{\firstpage}
+\setcounter{page}{\firstpage}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\label{firstpage}
+
+\abstrac{\BLOCK{ if abstract is defined }\VAR{abstract}\BLOCK{ else }\lipsum[1-3]\BLOCK{ endif }}
+
+\keywords{\BLOCK{ for keyword in keywords }\VAR{keyword}\BLOCK{ if not loop.last }, \BLOCK{ endif }\BLOCK{ endfor }.}
+
+\maketitle
+
+\BLOCK{ block content } \VAR{content} \BLOCK{ endblock }
+
+\section{Introduction}
+\lipsum[4-6]
+
+\subsection{Citations}
+Here, we refer to \textcite{smit54,colu92}. We can also use parentheses to cite \parencite{phil99}.
+
+\section{Figures and Tables}
+In \cref{fig:mcsLogo}, we can see a the MCS logo, which occupies 30\% of the width of a column. Notice we use the \verb|\cref{}| command to get a clickable link.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.3\linewidth]{packages/logo}
+	\caption{MCS Logo}
+	\label{fig:mcsLogo}
+\end{figure}
+
+If we have a large figure or table, and we want to break out of the two-column layout, occupying the whole page, we could instead make use a starred environment (\verb|\begin{figure*}...\end{figure*}| instead of \verb|\begin{figure}...\end{figure}|). For instance,
+\cref{tab:aSampleTable} does this.
+\begin{table*}[ht]
+	\centering
+	\renewcommand\arraystretch{1.3} % This adds more vertical spacing
+	\begin{tabular}{l|c p{3cm}}
+		Column 1          & Column 2     & Column 3                   \\
+		\hline
+		Left-aligned text & Centred text & A column no wider than 3cm \\
+		x                 & y            & z
+	\end{tabular}
+	\caption{A sample table}
+	\label{tab:aSampleTable}
+\end{table*}
+\LaTeX{} tables are not the easiest thing to work with, if you want you can use a spreadsheet software and then paste a table into a tool like \url{https://www.tablesgenerator.com/}, which will generate a table you can copy and paste into a \LaTeX{} document.
+
+% List all citations
+\nocite{*}
+\printbibliography
+
+% Balance columns on last page
+\balance
+
+% For header on first page
+\label{lastPage}
+\end{document}
