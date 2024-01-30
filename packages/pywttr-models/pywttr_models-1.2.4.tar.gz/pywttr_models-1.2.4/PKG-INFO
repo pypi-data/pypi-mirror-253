@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pywttr-models
+Version: 1.2.4
+Summary: Pydantic models and other stuff for pywttr and aiopywttr
+Home-page: https://github.com/monosans/pywttr-models
+License: MIT
+Keywords: forecast,weather
+Author: monosans
+Author-email: hsyqixco@protonmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pydantic :: 1
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: pydantic (>=1.9,<3)
+Requires-Dist: typing-extensions (>=4.4,<5.0)
+Project-URL: Repository, https://github.com/monosans/pywttr-models
+Description-Content-Type: text/markdown
+
+# pywttr-models
+
+[![CI](https://github.com/monosans/pywttr-models/actions/workflows/ci.yml/badge.svg)](https://github.com/monosans/pywttr-models/actions/workflows/ci.yml)
+[![Downloads](https://static.pepy.tech/badge/pywttr-models)](https://pepy.tech/project/pywttr-models)
+
+[Pydantic](https://github.com/pydantic/pydantic) models and other stuff for [pywttr](https://github.com/monosans/pywttr) and [aiopywttr](https://github.com/monosans/aiopywttr).
+
+## License
+
+[MIT](https://github.com/monosans/pywttr-models/blob/main/LICENSE)
+
