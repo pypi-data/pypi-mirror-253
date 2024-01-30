@@ -1,0 +1,7 @@
+README.md
+setup.py
+BuscaFacil.egg-info/PKG-INFO
+BuscaFacil.egg-info/SOURCES.txt
+BuscaFacil.egg-info/dependency_links.txt
+BuscaFacil.egg-info/requires.txt
+BuscaFacil.egg-info/top_level.txt
