@@ -1,0 +1,17 @@
+numpy
+scipy
+matplotlib
+astropy
+peakutils
+tqdm
+h5py
+astro-sedpy>=0.3
+dust_extinction
+
+[docs]
+sphinx
+sphinx-astropy
+
+[test]
+pytest>=5.1
+flake8
