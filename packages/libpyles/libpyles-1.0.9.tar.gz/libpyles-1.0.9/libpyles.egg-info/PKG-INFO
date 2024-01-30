@@ -1,0 +1,371 @@
+Metadata-Version: 2.1
+Name: libpyles
+Version: 1.0.9
+Summary: Pacote para mnipulação de arquivos
+Author: PedroVitor
+Author-email: pedro.passos@ufpi.edu.br
+Keywords: python,files,Pyl3s,Pyl3sLib, libpyles
+Description-Content-Type: text/markdown
+
+
+# libpyles
+========================================================
+
+### Atraves desse pacote, o usuário poderá fazer a manipulação de arquivos de maneira mais simples e otimizada, além de poder criar, mover, excluir e copiar diretórios. E mais algumas funções extras de conversão de arquivos de texto.
+
+## Instalação
+Para instalar o pacote, basta executar o comando abaixo:
+<pre><code>pip install libpyles</code></pre>
+
+## Funções da biblioteca
+
+=======================================================
+
+### def criar_arquivo_txt(nome)<br>
+### def abrir_arquivo_txt(nome)<br>
+### def escrever_arquivo_txt(nome)<br>
+### def criar_arquivo_bin(nome)<br>
+### def abrir_arquivo_bin(nome)<br>
+### def escrever_arquivo_bin(nome)<br>
+### def listar_diretorio(diretorio, extensao)<br>
+### def diretorio_atual()<br>
+### def criar_diretorio(nome_dir)<br>
+### def copiar_diretorio_completo(src, dst)<br>
+### def mover_diretorio_completo(src, dst)<br>
+### def deletar_arquivo(nome_arquivo)<br>
+### def deletar_diretorio(nome_diretorio)<br>
+### def tamanho_diretorio_kb(caminho)<br>
+### def tamanho_arquivo_kb(caminho, nome_arq)<br>
+### def palavra_chave(arquivo, palavra)<br>
+### def contar_palavras_mais_frequentes(nome_arquivo)<br>
+### def contar_caracteres(arquivo)<br>
+### def txt_pdf(arquivo, nome_arquivo)<br>
+### def pdf_to_txt(arquivo, arquivo_txt)<br>
+### def txt_bin(arquivo, nome_arquivo_bin)<br>
+### def bin_to_txt(nome_arquivo_bin, nome_arquivo_txt)<br>
+
+=======================================================
+
+## Importação
+
+<pre><code>import libpyles</code></pre>
+
+=======================================================
+
+## Uso de cada função
+
+=======================================================
+
+>Será utilizado uma abreviação para fácil entendimento. Nesse sentido, será utilizado o __lp__ (import libpyles as lp).
+
+<pre><code>
+
+lp.criar_arquivo_txt(nome) 
+
+""" 
+    A variável 'nome' é apenas o nome do arquivo sem a extensão(.txt) e entre aspas simples, por exemplo 'teste'. 
+    Saída: É criado um arquivo .txt se ele não existir no diretório atual, caso contrário, ela apenas lê e exibe o arquivo .txt. Além disso é retornado True ou False para ser utilizado dependendo da ocasião do uso. 
+    Exemplo:
+        if lp.criar_arquivo_txt('teste') is True:
+            print('Arquivo criado!!')
+        else:
+            print('Arquivo já existente!!')
+"""
+
+lp.abrir_arquivo_txt(nome)
+
+"""
+    A variável 'nome' é apenas o nome do arquivo sem a extensão(.txt) e entre aspas simples, por exemplo 'teste'.
+    Saída: Abrir um arquivo .txt, se ele existir no diretório. Além disso é retornado True ou False para ser utilizado dependendo da ocasião do uso.
+    Exemplo:
+        if lp.abrir_arquivo_txt('teste') is True:
+            print('Arquivo lido!!')
+        else:
+            print('Arquivo não existe!!')
+"""
+
+lp.escrever_arquivo_txt(nome)
+
+"""
+    A variável 'nome' é apenas o nome do arquivo sem a extensão(.txt) e entre aspas simples, por exemplo 'teste'.
+    Saída: Escrever em um arquivo .txt, se ele existir. Além disso é retornado True ou False para ser utilizado dependendo da ocasião do uso.
+    Exemplo:
+        if lp.escrever_arquivo_txt('teste') is True:
+            print('Arquivo modificado!!')
+        else:
+            print('Arquivo não existe!!')
+"""
+lp.criar_arquivo_bin(nome) 
+
+""" 
+    A variável 'nome' é apenas o nome do arquivo sem a extensão(.bin) e entre aspas simples, por exemplo 'teste'. 
+    Saída: É criado um arquivo .bin se ele não existir no diretório atual, caso contrário, ela apenas lê e exibe o arquivo .bin. Além disso é retornado True ou False para ser utilizado dependendo da ocasião do uso. 
+    Exemplo:
+        if lp.criar_arquivo_bin('teste') is True:
+            print('Arquivo criado!!')
+        else:
+            print('Arquivo já existente!!')
+"""
+
+lp.abrir_arquivo_bin(nome)
+
+"""
+    A variável 'nome' é apenas o nome do arquivo sem a extensão(.bin) e entre aspas simples, por exemplo 'teste'.
+    Saída: Abrir um arquivo .bin, se ele existir no diretório. Além disso é retornado True ou False para ser utilizado dependendo da ocasião do uso.
+    Exemplo:
+        if lp.abrir_arquivo_bin('teste') is True:
+            print('Arquivo lido!!')
+        else:
+            print('Arquivo não existe!!')
+"""
+
+lp.escrever_arquivo_bin(nome)
+
+"""
+    A variável 'nome' é apenas o nome do arquivo sem a extensão(.bin) e entre aspas simples, por exemplo 'teste'.
+    Saída: Escrever em um arquivo .bin, se ele existir. Além disso é retornado True ou False para ser utilizado dependendo da ocasião do uso.
+    Exemplo:
+        if lp.escrever_arquivo_bin('teste') is True:
+            print('Arquivo modificado!!')
+        else:
+            print('Arquivo não existe!!')
+"""
+
+lp.listar_diretorio(diretorio, extensao)
+
+"""
+    diretorio == r'seu caminho do diretorio'
+    extensao == '' (caso queira exibir todos os arquivos)
+                '.extensao' (caso queira filtrar por extensão, apenas colocar a extensão do arquivo)
+    Saída: Lista o caminho de todos os subdiretórios e arquivos existentes em um diretório passado no parâmetro
+    Exemplo:
+        lp.listar_diretorio(r'C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles', '')
+
+        '
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\build\README.md
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\dist\README.md
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\libpyles\README.md
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\libpyles.egg-info\README.md
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\build\setup.py
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\dist\setup.py
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\libpyles\setup.py
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\libpyles.egg-info\setup.py
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\build\teste.py
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\dist\teste.py
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\libpyles\teste.py
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\libpyles.egg-info\teste.py
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\libpyles\__pycache__\libpyles.py
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles\libpyles\__pycache__\__init__.py
+        '
+"""
+
+lp.diretorio_atual()
+
+"""
+
+    Saída: Lista o caminho do diretório atual.
+    Exemplo:
+        print(lp.diretorio_atual())
+        '
+            C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles
+        '
+
+"""
+
+lp.criar_diretorio(nome_dir)
+
+"""
+
+    nome_dir == 'nome do diretorio que queira criar'
+    A função cria um novo diretório no diretório atual que se encontra o código.
+    Saída: Cria um novo diretório no diretório atual que se encontra o código.
+    Exemplo:
+        lp.criar_diretorio('teste')
+
+"""
+
+lp.copiar_diretorio_completo(src, dst)
+
+"""
+    src == 'diretório que queira copiar os arquivos'
+    dst == 'diretório que queira colar os arquivos'
+    Saída: Copia todo o conteúdo (arquivos) de um diretório de origem para um diretório de destino. Além disso é retornado True ou False para ser utilizado dependendo da ocasião do uso.
+    Exemplo:
+        if lp.copiar_diretorio_completo(r'C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles', r'C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\teste') is True:
+            print('Diretório copiado!!')
+        else:
+            print('Diretório não existe!!')
+"""
+
+lp.mover_diretorio_completo(src, dst)
+
+"""
+    src == 'diretório que queira mover os arquivos'
+    dst == 'diretório que queira colar os arquivos'
+    Saída: Move todo o conteúdo (arquivos) de um diretório de origem para um diretório de destino. Além disso é retornado True ou False para ser utilizado dependendo da ocasião do uso.
+    Exemplo:
+        if lp.mover_diretorio_completo(r'C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles', r'C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\teste') is True:
+            print('Diretório movido!!')
+        else:
+            print('Diretório não existe!!')
+"""
+
+lp.deletar_arquivo(nome_arquivo)
+
+"""
+    nome_arquivo == 'nome do arquivo que queira excluir no diretório atual'
+    Saída: True se o arquivo for removido com sucesso, False se o arquivo não for encontrado ou ocorrer um erro durante a remoção.
+    Exemplo:
+        if lp.deletar_arquivo('teste') is True:
+            print('Arquivo deletado com sucesso')
+        else:
+            print('Arquivo não encontrado')
+
+"""
+
+lp.deletar_diretorio(nome_diretorio)
+
+"""
+    nome_diretorio == 'nome do diretorio que queira excluir no diretório atual ou outro diretório'
+    Saída: True se o diretório for removido com sucesso, False se o diretório não for encontrado ou ocorrer um erro durante a remoção.
+    Exemplo:
+        if lp.deletar_diretorio('teste') is True ou lp.deletar_diretorio(r'C:\Users\nyddo\OneDrive\Área de Trabalho\Faculdade\POOII\libpyles') is True:
+            print('Arquivo deletado com sucesso')
+        else:
+            print('Arquivo não encontrado')
+
+"""
+
+lp.tamanho_diretorio_kb(caminho)
+
+"""
+    caminho == 'caminho do diretorio que queira saber o tamanho em kb, a quantidade de subdiretórios e arquivos'
+    Saída: Tamanho total (em kilobytes) de um diretório, incluindo todos os seus arquivos e subdiretórios.
+    Exemplo:
+        total_size_kb, total_arq, total_dir = tamanho_diretorio_kb(diretorio_atual())
+        print(f"Total: {total_size_kb} KB")
+        print(f"Arq: {total_arq}")
+        print(f"Dir: {total_dir}")
+
+        '
+            Total: 79.0101306674951 KB
+            Arq: 45
+            Dir: 14
+        '
+"""
+
+lp.tamanho_arquivo_kb(caminho, nome_arq)
+
+"""
+    caminho == 'caminho do diretorio'
+    nome_arq == 'nome do arquivo que queira saber o tamanho'
+    Saída: Tamanho de um arquivo em kilobytes
+    Exemplo:
+        print(lp.tamanho_arquivo_kb(diretorio_atual(), 'teste'))
+        '
+            0.3916015625
+        '
+"""
+
+lp.palavra_chave(arquivo, palavra)
+
+"""
+    arquivo == 'arquivo que queira encontrar a palavra'
+    palavra == 'palavra-chave que queira buscar no arquivo .txt'
+    Saída: Uma tupla contendo duas informações:
+            - Uma lista de tuplas, onde cada tupla contém o número da linha e o conteúdo da linha onde a palavra-chave foi encontrada.
+            - O número total de ocorrências da palavra-chave no arquivo.
+    Exemplo:
+        print(lp.palavra_chave('teste.txt', 'teste'))
+        '
+            ([(1, 'teste'), (2, 'teste'), (3, 'teste'), (4, 'teste'), (5, 'teste'), (6, 'teste'), (7, 'teste'), (8, 'teste'), (9, 'teste'), (10, 'teste'), (11, 'teste'), (12, 'teste'), (13, 'teste'), (14, 'teste'), (15, 'teste'), (16, 'teste'), (17, 'teste'), (18, 'teste'), (19, 'teste'), (20, 'testeteste'), (21, 'teste'), (22, 'teste'), (23, 'teste'), (24, 'teste'), (25, 'teste'), (26, 'teste'), (27, 'teste'), (28, 'teste'), (29, 'testeteste'), (30, 'teste'), (31, 'teste'), (32, 'teste'), (33, 'teste'), (34, 'teste'), (35, 'teste'), (36, 'teste'), (37, 'teste'), (38, 'testeteste'), (39, 'teste'), (40, 'teste'), (41, 'teste'), (42, 'teste'), (43, 'teste'), (44, 'teste'), (45, 'teste'), (46, 'teste'), (47, 'testeteste'), (48, 'teste'), (49, 'teste'), (50, 'teste'), (51, 'teste'), (52, 'teste'), (53, 'teste'), (54, 'teste'), (55, 'teste'), (56, 'teste')], 56)
+        '
+
+"""
+
+lp.contar_palavras_mais_frequentes(nome_arquivo)
+
+"""
+    nome_arquivo == 'arquivo que queira encontrar as palavras mais frequentes'
+    Saída: Uma lista contendo tuplas representando as 10 palavras mais frequentes no arquivo, juntamente com suas contagens.
+    Exemplo:
+        palavras_mais_frequentes = contar_palavras_mais_frequentes('teste.txt')
+        print("As 10 palavras mais frequentes:")
+        for palavra, frequencia in palavras_mais_frequentes:
+        print(f"{palavra}: {frequencia}")
+        '
+            tricolor: 7
+            amado: 7
+            clube: 7
+            és: 6
+            oh: 6
+            bem: 6
+            as: 6
+            tuas: 6
+            glórias: 6
+            vêm: 6
+        '
+"""
+
+lp.contar_caracteres(arquivo)
+
+"""
+    arquivo == 'arquivo que queira contar os caracteres'
+    Saída: O número total de caracteres no arquivo.
+    Exemplo:
+        print(lp.contar_caracteres('teste.txt'))
+        '
+            355
+    	'
+
+"""
+
+lp.txt_pdf(arquivo, nome_arquivo)
+
+"""
+    arquivo == 'arquivo .txt que queira converter em pdf'
+    nome_arquivo == 'nome do arquivo de saida'
+    Saída: Cria um arquivo PDF a partir do arquivo de texto fornecido.
+    Exemplo:
+        lp.txt_pdf('teste.txt', 'testepdf')
+
+"""
+
+lp.pdf_to_txt(arquivo, arquivo_txt)
+
+"""
+    arquivo == 'arquivo .pdf que queira converter em txt'
+    arquivo_txt == 'nome do arquivo de saida'
+    Saída: Cria um arquivo de texto contendo o texto extraído do arquivo PDF
+    Exemplo:
+        lp.pdf_to_txt('teste.pdf', 'testetxt')
+"""
+
+lp.txt_bin(arquivo, nome_arquivo_bin)
+
+"""
+    arquivo == 'arquivo .txt que queira converter em bin'
+    nome_arquivo_bin == 'nome do arquivo de saida'
+    Saída: True se o arquivo de texto existe e a conversão foi bem-sucedida, False caso contrário.
+    Exemplo: 
+        if lp.txt_bin('teste.txt', 'teste') is True:
+            print('Arquivo transformado')
+        else:
+            print('Algo deu errado')
+"""
+
+lp.bin_to_txt(nome_arquivo_bin, nome_arquivo_txt)
+
+"""
+    nome_arquivo_bin == 'arquivo .bin que queira converter em txt'
+    nome_arquivo_txt == 'nome do arquivo de saida'
+    Saída: True se o arquivo binário existe e a conversão foi bem-sucedida, False caso contrário.
+    Exemplo:
+        if lp.bin_to_txt('teste.bin', 'teste') is True:
+            print('Arquivo transformado')
+        else:
+            print('Algo deu errado')
+"""
+
+</code></pre>
+
