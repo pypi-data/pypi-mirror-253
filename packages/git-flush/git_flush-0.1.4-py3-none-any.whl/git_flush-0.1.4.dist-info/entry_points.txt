@@ -1,0 +1,3 @@
+[console_scripts]
+git-flush=git_flush.main:app
+
