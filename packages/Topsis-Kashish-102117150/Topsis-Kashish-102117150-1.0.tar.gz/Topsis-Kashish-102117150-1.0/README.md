@@ -1,0 +1,46 @@
+# Topsis Implementation
+This package is used for topsis implementation, published by Kashish, roll number- 102117150, group- 3CS6.
+## Overview
+This Python package implements the Topsis (Technique for Order Preference by Similarity to Ideal Solution) algorithm. Topsis is a multi-criteria decision-making (MCDM) method that helps in choosing the best alternative from a set of alternatives based on their performance on multiple criteria.
+
+## Installation
+To install the package, use the following command:
+pip install topsis-Kashish-102117150
+
+## Data
+Fund Name,P1,P2,P3,P4,P5
+M1,0.79,0.62,4.8,66.6,18.2
+M2,0.69,0.48,5,46.9,13.27
+M3,0.77,0.59,3.3,43.9,12.14
+M4,0.82,0.67,3.2,67,17.92
+M5,0.65,0.42,5.9,34.9,10.47
+M6,0.8,0.64,4.8,66.8,18.26
+M7,0.75,0.56,3.9,31.7,9.23
+M8,0.83,0.69,4.1,55.9,15.38
+
+## Usage
+In the terminal,
+python 102117150.py 102117150-data.csv "1,1,1,1,1" "+,-,+,-,+" 102117150-result.csv
+where,
+input_data.csv: The input CSV file containing the decision matrix. You can use the file 102117150-data.csv .
+"1,1,1,1,1": Comma-separated weights for each criterion.
+"+,-,+,-,+": Comma-separated impacts for each criterion (either '+' or '-').
+output_result.csv: The desired name for the output CSV file containing Topsis scores and ranks. You can see the results in file- 102117150-result-1.csv for the respective weights and impacts.
+
+## Result
+Fund Name,P1,P2,P3,P4,P5,Topsis Score,Rank
+M1,0.79,0.62,4.8,66.6,18.2,0.7879309024122741,6
+M2,0.69,0.48,5.0,46.9,13.27,0.4602057102586321,1
+M3,0.77,0.59,3.3,43.9,12.14,0.3424774958156483,8
+M4,0.82,0.67,3.2,67.0,17.92,0.6236353942759449,4
+M5,0.65,0.42,5.9,34.9,10.47,0.3924844873537729,2
+M6,0.8,0.64,4.8,66.8,18.26,0.7998958662123036,5
+M7,0.75,0.56,3.9,31.7,9.23,0.23219941041702397,3
+M8,0.83,0.69,4.1,55.9,15.38,0.6259888691115867,7
+
+
+```bash
+pip install topsis-Kashish-102117150
+
+
+
