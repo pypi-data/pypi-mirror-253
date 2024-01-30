@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: libop
+Version: 20
+Summary: original programmer
+Author-email: Bart Thate <objx@proton.me>
+License: Public Domain
+Project-URL: home, https://pypi.org/project/libop
+Project-URL: bugs, https://github.com/botlibx/libop/issues
+Project-URL: source, https://github.com/botlibx/libop
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: Public Domain
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
+
+NAME
+
+::
+
+   LIBOP - original programmer.
+
+
+DESCRIPTION
+
+::
+
+   LIBOP is a python3 library providing all the tools to create a
+   unix command line program, such as disk perisistence for
+   configuration files, event handler to handle the client/server
+   connection, code to introspect modules for commands, a parser to
+   parse commandline options and values, etc.
+
+
+SYNOPSIS
+
+::
+
+   >>> from op import Object
+   >>> o = Object()
+   >>> o.a = "b"
+   >>> write(o, "test")
+   >>> oo = Object()
+   >>> read(oo, "test")
+   >>> oo
+   {"a": "b"}  
+
+
+INSTALL
+
+::
+
+   $ pip install libop
+
+
+AUTHOR
+
+::
+
+   libbot <libbotx@gmail.com>
+
+
+COPYRIGHT
+
+::
+
+   LIBOP is placed in the Public Domain.
