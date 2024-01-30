@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "static-marks-utils"
+version = "0.1.1"
+description = "Static Marks Utils and Types"
+authors = ["Teddy Xinyuan Chen <45612704+tddschn@users.noreply.github.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/tddschn/static-marks-utils"
+repository = "https://github.com/tddschn/static-marks-utils"
+classifiers = ["Topic :: Utilities"]
+keywords = ["static-marks"]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/tddschn/static-marks-utils/issues"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
