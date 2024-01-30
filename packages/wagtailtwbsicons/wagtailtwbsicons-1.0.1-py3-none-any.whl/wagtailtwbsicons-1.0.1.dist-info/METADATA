@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: wagtailtwbsicons
+Version: 1.0.1
+Summary: A wagtail package to add Twitter s Bootstrap Icons to administration
+Home-page: https://gitlab.com/oliviermialon/wagtailtwbsicons
+Author: Olivier Mialon
+Author-email: olivier.mialon92@gmail.com
+License: MIT
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django >=3.2
+Requires-Dist: wagtail >=3.0
+
+# wagtailtwbsicons
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A wagtail package to add [Twitter's Bootstrap Icons](https://github.com/twbs/icons) to administration icons list.
+
+Currently using Bootstrap Icons v1.11.3, works with Wagtail > 3 (use 1.0.0 for older wagtail versions)
+
+## Install
+
+```
+pip install wagtailtwbsicons
+```
+
+## Usage
+
+- Add wagtailtwbsicons to INSTALLED_APPS in your project settings
+```
+INSTALLED_APPS = [
+    ...
+    'wagtailtwbsicons',
+    ...     
+]
+```
+- Have a look to [the available list of icons](https://icons.getbootstrap.com/#icons) and use the last class provided for web font in [the regular Wagtail way](https://docs.wagtail.org/en/latest/topics/streamfield.html#block-icons) (ex: for [person-square icon](https://icons.getbootstrap.com/icons/person-square/), the website provide to use "bi bi-person-square" class, so we need to use "bi-person-square")
+```
+class PersonBlock(blocks.StructBlock):
+    first_name = blocks.CharBlock()
+    ...
+    class Meta:
+        icon = 'bi-person-square'
+```
+
+### Using wagtailtwbsicons as an optionnal dependency
+```
+from django.apps import apps
+
+class PersonBlock(blocks.StructBlock):
+    first_name = blocks.CharBlock()
+    ...
+    class Meta:
+        if apps.is_installed('wagtailtwbsicons'):
+            icon = 'bi-person-square'
+```
