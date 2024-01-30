@@ -1,0 +1,14 @@
+slowblood/__init__.py,sha256=oFU7dnVUr13VwwOkpVKPv9wrbwpw7bgzMeG2eogn9Ms,997
+slowblood/lib_dataset.py,sha256=W47fkn1tfqcOoV-QokjMLCjTZ_sHdJW2pFDpwnJjo_k,4957
+slowblood/lib_llm_inference.py,sha256=3B-T2kBnNy_-Xegu17HpgGb8ishlZJ1pHDpDnKghpoU,2016
+slowblood/lib_model.py,sha256=cgGU798tGlyh-yiX4gv9MFqrMdSVQjtCKZD4GMGVUbA,991
+slowblood/lib_pdf.py,sha256=8MxM6Yc6QjN7MwHToHIX4kEoXp4uYZlHZUmYsJjIXFs,1197
+slowblood/lib_prompts.py,sha256=y4G3O-Y6fRCAexrnanSEDur-9Ho-x9Z91L_ga7BWO5k,984
+slowblood/lib_runpod.py,sha256=sH8SD0jAcZVahMJQZn9YfG2tfWtn2DUdOfM-HIwfvbs,592
+slowblood/lib_settings.py,sha256=rUrVtXPGkNU6JPUipOT_IXJur8R3RnLQ0chRhgxs9QE,1877
+slowblood/lib_tokenizer.py,sha256=cQ-T2FcWPMbv9yrnpW1QDVherksJLaacc19x3E45psE,2544
+slowblood/lib_toolkit.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slowblood-0.1.1.dist-info/METADATA,sha256=wahpmxi15k-So6WwJeI_BmrCvwysiHevDX1x2_RKfpQ,2576
+slowblood-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+slowblood-0.1.1.dist-info/top_level.txt,sha256=xGLbhS6eV4JG_ROsJNVn38opqJnSofgzu5nXueZmwoc,10
+slowblood-0.1.1.dist-info/RECORD,,
