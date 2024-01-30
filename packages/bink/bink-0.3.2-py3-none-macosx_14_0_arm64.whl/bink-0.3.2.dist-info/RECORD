@@ -1,0 +1,13 @@
+bink/__init__.py,sha256=x-mbT8w-to-TWQcp6jnYoS6GLPWsYcGLs2qbZqIPUbo,1847
+bink/choices.py,sha256=-wr_GHfbhYJoUx4sGz6GuP_mEJ12TrO6Q9moZUkMBOg,1543
+bink/story.py,sha256=z2TfPX1FAbRwRmD_vQXwPzommUvow7QUJRwfIywgWBM,4292
+bink/tags.py,sha256=McmFKmVadj5Hvsrx8h5aifFSsxSJrSPWSy41BKSVg9E,1448
+bink/native/arm64/libbink.dylib,sha256=pcV0_T4gdNwxGzw-aApD7n1VMK0Pr7m2c5TDGFXf_x4,1060746
+bink/native/arm64/libbink.so,sha256=wT9Wp4gohsCuS-AVUyfi2fRBhXDjHjJfEbarTcZXD3Y,4702904
+bink/native/x86_64/bink.dll,sha256=Vf24JlfIBPeaY680HocaFtQr-A56vLcnN3yEtzdRKXs,896000
+bink/native/x86_64/libbink.so,sha256=fLZCihCgkU1kqMJjwWhqJ63TD0kEMVups6bnTjrKTBM,4573256
+bink-0.3.2.dist-info/LICENSE,sha256=L0SDlipZfqs6i0zHCBD176wYwkKGDF_SBQTxivnZCGE,11350
+bink-0.3.2.dist-info/METADATA,sha256=c5mlgnnMmYqgd6Wy5-QahNXlMkCEg8tZnRpsXsg4yrs,684
+bink-0.3.2.dist-info/WHEEL,sha256=ec0YTu_DiW0g7qacdM0UzoCgy5uoV1ZDJeIcjbckHqw,107
+bink-0.3.2.dist-info/top_level.txt,sha256=axqEKOprDaaFds4xdTNMTFpaHqGUQFEjDe4fDupAr2Q,5
+bink-0.3.2.dist-info/RECORD,,
