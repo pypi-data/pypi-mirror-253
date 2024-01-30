@@ -1,0 +1,52 @@
+function initializeDateInputs({$el, single=false, format='YYYY-MM-DD', timePicker=false}){
+    const value = $el.val();
+    let locale = {% include "backoffice/masters/includes/daterange_locale.html" %}
+    locale.format = format;
+
+    if(value){
+        $el.val(moment(value).format(format));
+    }
+
+    $el.daterangepicker({
+        buttonClasses: ' btn',
+        applyClass: 'btn-primary',
+        cancelClass: 'btn-secondary',
+        locale: 'pt',
+        autoApply: true,
+        singleDatePicker: single,
+        showDropdowns: true,
+        locale: locale,
+        timePicker: timePicker,
+    });
+}
+
+
+function triggerInitializeDates() {
+    const datetimeFormat = 'YYYY-MM-DD HH:mm';
+
+    const $datepickers = $('.date_picker');
+    const $datetimepickers = $('.datetime_picker');
+    const $datepickersRange = $('.daterange_picker');
+    const $datetimepickersRange = $('.datetimerange_picker');
+
+    $datepickers.each(function(){
+        initializeDateInputs({$el: $(this), single: true});
+    });
+
+    $datetimepickers.each(function(){
+        initializeDateInputs({$el: $(this), single: true, format: datetimeFormat, timePicker: true});
+    });
+
+    $datepickersRange.each(function(){
+        initializeDateInputs({$el: $(this)});
+    });
+
+    $datetimepickersRange.each(function(){
+        initializeDateInputs({$el: $(this), format: datetimeFormat, timePicker: true});
+    });
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    triggerInitializeDates();
+});
