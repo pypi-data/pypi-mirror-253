@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: iss-libs
+Version: 0.0.7
+Home-page: https://github.com/postersom/iss-libs
+Author: Somsak Binyaranee
+Author-email: poster.som@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ISS Libs
+![Release](https://img.shields.io/github/v/release/postersom/libs)
+![Download](https://img.shields.io/github/downloads/postersom/libs/total)
+
+
+☤ Quick Start
+---------------
+
+To install iss_libs, simply run the following at your prompt:
+
+```bash
+  # from pypi
+  pip3 install iss-libs
+
+```
+☤ Contributions
+---------------
+- Somsak Binyaranee (@postersom) - Tests / CI / Uploads to Pypi
+
+☤ License
+---------------
+ 
+ISS Libs is released under the **MIT** license. Please see the
+[LICENSE](https://github.com/postersom/libs/blob/master/LICENSE>)
+file for more details.
