@@ -1,0 +1,12 @@
+data_objects/__init__.py,sha256=XXH04Isaxp7EPO2wWfUva1E1Q7im5aCQT848bV9vYhc,366
+data_objects/customer.py,sha256=WYGyI6XERBp1U_eV-L84nAJfL3MWeDYBKkU8Uqoyq6c,295
+data_objects/geometry_with_attributes_table.py,sha256=TacJ1Yl6zdJOptL1vm359xaXWE3rWoK1pHcFdJRDD4g,980
+data_objects/order.py,sha256=IBbNEH7ZTtZDuZQf5YsMqJCTtrXCbFRg8jJQlepqJQQ,340
+data_objects/product.py,sha256=LQmvLieAZLcAiy_R6V6znZd-btgaM6U7fuldFs8mMh0,1479
+data_objects/resolution.py,sha256=u2gt-ERnzprJWbipeiJ9dq8i4p981x2_skNDB5oaarE,350
+data_objects/task_graph.py,sha256=akArIUl-gMMMU3q02S6Uqa1M9fbSWFW3Z-QlxyOWbW4,380
+data_objects/task_info.py,sha256=EFmsP4WuXF4XOZF8dzXJ9oUI9WP1i7tkKN02hqJ4HqM,150
+terranova_dataclasses_library-0.1.0.dist-info/METADATA,sha256=i4zZABdzDcSG_XYuLaKdZjxiDFH-RAvoFBsP-2_NM8I,216
+terranova_dataclasses_library-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+terranova_dataclasses_library-0.1.0.dist-info/top_level.txt,sha256=-jAHLKPuS-sVvamwnc_9ZoIChsAKL8kXhXK_uduQR_w,13
+terranova_dataclasses_library-0.1.0.dist-info/RECORD,,

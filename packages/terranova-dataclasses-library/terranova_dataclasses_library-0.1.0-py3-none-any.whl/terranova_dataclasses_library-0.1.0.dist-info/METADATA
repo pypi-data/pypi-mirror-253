@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: terranova-dataclasses-library
+Version: 0.1.0
+Summary: library that contains all of terra-nova processing dataclasses
+Author: gaia team
+Requires-Dist: dataclasses-json
+Requires-Dist: gdal
+
