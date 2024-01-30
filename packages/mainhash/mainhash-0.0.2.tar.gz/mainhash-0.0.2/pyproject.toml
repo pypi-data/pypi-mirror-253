@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mainhash"
+version = "0.0.2"
+description = ""
+authors = ["MainPlay TG <xbox.roman6666666666@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/MainPlay-TG/MainHash.py"
+packages = [
+    { include = "MainHash", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+mainshortcuts = "^1.5.7"
+
+[tool.poetry.scripts]
+MainHash-gen = "MainHash.script:gen"
+MainHash-check = "MainHash.script:check"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
