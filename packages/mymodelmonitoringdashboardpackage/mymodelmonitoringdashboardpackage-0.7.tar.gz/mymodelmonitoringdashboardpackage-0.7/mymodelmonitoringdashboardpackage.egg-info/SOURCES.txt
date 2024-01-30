@@ -1,0 +1,7 @@
+setup.py
+mymodelmonitoringdashboardpackage.egg-info/PKG-INFO
+mymodelmonitoringdashboardpackage.egg-info/SOURCES.txt
+mymodelmonitoringdashboardpackage.egg-info/dependency_links.txt
+mymodelmonitoringdashboardpackage.egg-info/entry_points.txt
+mymodelmonitoringdashboardpackage.egg-info/requires.txt
+mymodelmonitoringdashboardpackage.egg-info/top_level.txt
