@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: e3-aws
+Version: 22.3.0
+Summary: E3 Cloud Formation Extension
+Author: AdaCore's Production Team
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: pyyaml
+Requires-Dist: troposphere
+Requires-Dist: e3-core
+Requires-Dist: docker ; platform_system == "Linux"
+Provides-Extra: test
+Requires-Dist: awscli ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: mock ; extra == 'test'
+Requires-Dist: requests-mock ; extra == 'test'
+Requires-Dist: httpretty ; extra == 'test'
+Requires-Dist: flask ; extra == 'test'
+Requires-Dist: moto[dynamodb,sts] ; extra == 'test'
+
