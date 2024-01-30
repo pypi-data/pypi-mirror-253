@@ -1,0 +1,11 @@
+kafka_client/__init__.py,sha256=dsNrI_VsXpUa2kHt4ZU5AzidBtnR8zeCUrT1nuDinmk,1500
+kafka_client/__version__.py,sha256=FBeN5tbWV0BpBmjJ3d3pzaNRlEg_Blp421Tbg8X3cAI,18
+kafka_client/consumer.py,sha256=MhcOIjRQ5CalL43E-VzI-VEeQh6hj2WwiOM4v6T3FLE,4602
+kafka_client/handler.py,sha256=CZTRXqv5ScvSYixt5CxUPh4jIlTJfXOrMmrvpagVcNA,306
+kafka_client/kafka_client_exception.py,sha256=WLOV9nvCUMKMtJLDgxurFRnU8UuUEz5knc91p4Nlr1M,110
+kafka_client/manager.py,sha256=ODqfuAbhXbDak4EnIxtVLDonWbeJVZFpeqc0AJEYGI8,3686
+kafka_client/message.py,sha256=I7va02nvXhD6KRoiL86x7R27o98TfsfA-5f9B4sgbkQ,206
+kafka_client/producer.py,sha256=bkdCvrh6b7bJdJHWrJu8q-PAw9u8zBxwcL2k29HO89A,1194
+kafka_client_new-0.4.dev2.dist-info/METADATA,sha256=6_6oSqDl1CMEKJYqI7N3CvSt7zr5RSlmM5diICZNOJI,2587
+kafka_client_new-0.4.dev2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+kafka_client_new-0.4.dev2.dist-info/RECORD,,
