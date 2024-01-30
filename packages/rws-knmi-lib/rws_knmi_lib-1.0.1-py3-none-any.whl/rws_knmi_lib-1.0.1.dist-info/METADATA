@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: rws-knmi-lib
+Version: 1.0.1
+Summary: Library voor communicatie met KNMI weer data.
+Author-email: RWS Datalab <datalab.codebase@rws.nl>
+Project-URL: homepage, https://gitlab.com/rwsdatalab/public/codebase/tools/rws-knmi-lib
+Project-URL: repository, https://gitlab.com/rwsdatalab/public/codebase/tools/rws-knmi-lib
+Project-URL: changelog, https://gitlab.com/rwsdatalab/public/codebase/tools/rws-knmi-lib/blob/main/CHANGELOG.rst
+Keywords: rws-knmi-lib
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: mpu
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: types-requests
+Provides-Extra: dev
+Requires-Dist: bandit ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-comprehensions ; extra == 'dev'
+Requires-Dist: flake8-docstrings ; extra == 'dev'
+Requires-Dist: flake8-polyfill ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: radon ; extra == 'dev'
+Requires-Dist: rstcheck[sphinx] ; extra == 'dev'
+Requires-Dist: safety ; extra == 'dev'
+Requires-Dist: sh ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: pydata-sphinx-theme ; extra == 'doc'
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'doc'
+
+############
+RWS KNMI Lib
+############
+
+.. begin-inclusion-intro-marker-do-not-remove
+
+Library to download KNMI weather data aggregated on a daily level or on an hourly level.
+
+.. end-inclusion-intro-marker-do-not-remove
+
+.. begin-inclusion-usage-marker-do-not-remove
+
+How to use
+----------
+
+In order to download data on a daily level, use the following code below.
+
+.. code:: python
+
+    from rws_knmi_lib.knmi_downloader import import_daily_data
+
+    # Returns dataframe containing information on all KNMI stations.
+    df_daily = import_daily_data(start="20220501", end="20220505")
+
+    # Returns dataframe containing only information from the nearest KNMI station.
+    df_daily_nearest = import_daily_data(start="20220501", end="20220505",
+                                         coord=(52.460770, 4.625110))
+
+An example for obtaining hourly aggregated daily looks like this:
+
+.. code:: python
+
+    from rws_knmi_lib.knmi_downloader import import_hourly_data
+
+    # Returns dataframe containing information on all KNMI stations.
+    df_hourly = import_hourly_data(start="20220501", end="20220505")
+
+    # Returns dataframe containing only information from the nearest KNMI station.
+    df_hourly_nearest = import_hourly_data(start="20220501", end="20220505",
+                                           coord=(52.460770, 4.625110))
+
+.. end-inclusion-usage-marker-do-not-remove
+
+.. begin-inclusion-installation-marker-do-not-remove
+
+Installation
+------------
+
+To install rws-knmi-lib, do:
+
+.. code-block:: console
+
+    git clone https://gitlab.com/rwsdatalab/public/codebase/tools/rws-knmi-lib
+    cd rws-knmi-lib
+    pip install .
+
+Run tests (including coverage) with:
+
+.. code-block:: console
+
+    pip install .[dev]
+    pytest
+
+.. end-inclusion-installation-marker-do-not-remove
+
+
+Documentation
+-------------
+
+Find the full documentation at https://rwsdatalab.gitlab.io/public/codebase/tools/rws-knmi-lib
+
+.. begin-inclusion-license-marker-do-not-remove
+
+License
+-------
+
+Copyright 2022-2024 Rijkswaterstaat
+
+Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+
+
+.. end-inclusion-license-marker-do-not-remove
