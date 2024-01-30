@@ -1,0 +1,39 @@
+# Plate OCR
+A Mobilenet based, single IL car plate OCR
+
+## Installation
+Currently plt-ocr is intended to use on CPU machine (GPU support is coming soon).
+To install plt-ocr on a CPU run:
+
+```
+pip3 install plt-ocr
+pip3 install torch --index-url https://download.pytorch.org/whl/cpu
+```
+
+## Usage
+### Command line
+If you have a car plate image named `plate.jpg`
+
+![](https://i.imgur.com/5a9unqv.jpg)
+
+You can run `pltocr car.jpg` and get
+
+```json
+{"prediction": "70660202", "confidence": 0.9978833775525012}
+```
+
+### Python
+```python
+import json
+from PIL import Image
+from plt_ocr.model import OCR
+
+img = Image.open(plate_path)
+model = OCR()
+result = model(img)
+print(json.dumps(result.__dict__))
+```
+
+## Related
+- [Detecty](https://pypi.org/project/detecty/) is a Mobilenet based single car plate detection model that works well with plt-ocr.
+- [cars.vardale.org](https://cars.vardale.org) is a website that uses both detecty and plt-ocr.
