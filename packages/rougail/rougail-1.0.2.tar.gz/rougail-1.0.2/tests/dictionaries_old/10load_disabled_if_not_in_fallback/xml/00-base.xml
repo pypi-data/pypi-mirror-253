@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <file filelist="afilllist">/tmp/file1</file>
+    </service>
+  </services>
+  <variables>
+    <family name="general">
+      <variable name="condition" type="string" description="No change">
+        <value>no</value>
+      </variable>
+      <variable name="disable_variable" type="string" description="No change">
+        <value>no</value>
+      </variable>
+    </family>
+  </variables>
+  <constraints>
+    <condition name="disabled_if_not_in" source="unknown" optional="True">
+      <param>no</param>
+      <target type="variable">disable_variable</target>
+      <target type="filelist">afilllist</target>
+    </condition>
+  </constraints>
+</rougail>

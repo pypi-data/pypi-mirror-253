@@ -1,0 +1,45 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    description: "G\xE9n\xE9ral"
+    variables:
+    - variable:
+      - name: condition
+        type: string
+        description: No change
+        value:
+        - text: non
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: non
+      - name: mode_conteneur_actif2
+        type: string
+        description: No change
+        value:
+        - text: non
+  - name: general2
+    description: "G\xE9n\xE9ral2"
+    variables:
+    - variable:
+      - name: mode_conteneur_actif3
+        type: string
+        description: No change
+        hidden: true
+        value:
+        - text: non
+constraints:
+- condition:
+  - name: hidden_if_in
+    source: condition
+    param:
+    - text: oui
+    target:
+    - type: variable
+      text: mode_conteneur_actif
+    - type: variable
+      text: mode_conteneur_actif2
+    - type: family
+      text: general2

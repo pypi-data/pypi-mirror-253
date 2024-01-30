@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="var1" multi="True">
+      <value>no</value>
+      <value>yes</value>
+      <value>maybe</value>
+    </variable>
+    <variable name="var2" multi="True"/>
+  </variables>
+  <constraints>
+    <fill name="calc_value">
+      <param type="variable">var1</param>
+      <target>var2</target>
+    </fill>
+  </constraints>
+</rougail>

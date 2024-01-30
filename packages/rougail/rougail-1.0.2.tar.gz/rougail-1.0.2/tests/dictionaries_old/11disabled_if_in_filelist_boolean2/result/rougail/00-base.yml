@@ -1,0 +1,5 @@
+general:
+  condition:
+    type: boolean
+    default: false
+version: '1.0'

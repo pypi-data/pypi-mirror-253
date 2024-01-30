@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general" hidden="True" redefine="True"/>
+  </variables>
+</rougail>

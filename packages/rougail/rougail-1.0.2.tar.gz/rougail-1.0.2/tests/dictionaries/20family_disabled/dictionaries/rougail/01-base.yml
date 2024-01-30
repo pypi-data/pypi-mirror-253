@@ -1,0 +1,4 @@
+version: '1.0'
+general:
+  redefine: true
+  disabled: true

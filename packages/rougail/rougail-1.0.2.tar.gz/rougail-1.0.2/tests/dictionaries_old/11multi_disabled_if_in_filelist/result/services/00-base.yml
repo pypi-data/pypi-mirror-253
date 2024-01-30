@@ -1,0 +1,7 @@
+test.service:
+  files:
+    /tmp/file1:
+      disabled:
+        type: jinja
+        jinja: '{% if __activer_clam == "non" %}true{% else %}false{% endif %}'
+version: '1.0'

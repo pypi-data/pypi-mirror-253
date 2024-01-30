@@ -1,0 +1,34 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: oui
+      - name: mode_conteneur_actif1
+        type: string
+        description: No change
+        value:
+        - text: non
+      - name: mode_conteneur_actif2
+        type: string
+        description: No change
+        value:
+        - text: non
+      - name: mode_conteneur_actif3
+        type: string
+        description: No change
+        value:
+        - text: oui
+constraints:
+- check:
+  - name: valid_differ
+    param:
+    - type: variable
+      text: mode_conteneur_actif1
+    target:
+    - text: mode_conteneur_actif3

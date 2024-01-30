@@ -1,0 +1,16 @@
+proxy_authentifie:
+  description: proxy authentifié
+  toto1:
+    type: port
+    description: Port d'écoute du proxy
+    mode: advanced
+    mandatory: false
+    default:
+      type: jinja
+      jinja: '{{ null | calc_multi_condition }}'
+  toto2:
+    type: port
+    description: Port d'écoute du proxy NTLM
+    mode: advanced
+    default: '3127'
+version: '1.0'

@@ -1,0 +1,22 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+  mode_conteneur_actif1:
+    description: No change
+    type: leadership
+    mode_conteneur_actif1:
+      type: string
+      description: No change
+      multi: true
+      default:
+      - non
+      hidden:
+        type: jinja
+        jinja: '{% if __condition == "oui" %}true{% else %}false{% endif %}'
+    mode_conteneur_actif2:
+      type: string
+      description: No change
+      default: non
+version: '1.0'

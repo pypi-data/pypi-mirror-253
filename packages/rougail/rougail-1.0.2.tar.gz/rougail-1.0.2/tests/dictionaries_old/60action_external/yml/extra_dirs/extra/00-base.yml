@@ -1,0 +1,24 @@
+version: '0.10'
+variables:
+- family:
+  - name: test
+    variables:
+    - variable:
+      - name: delay
+        type: number
+        description: "d\xE9lai en minutes avant lancement"
+        value:
+        - text: 0
+      - name: calc_url
+        type: web_address
+        description: domain
+        hidden: true
+        value:
+        - text: 0
+constraints:
+- fill:
+  - name: calc_val
+    param:
+    - text: http://localhost/
+    target:
+    - text: extra.test.calc_url

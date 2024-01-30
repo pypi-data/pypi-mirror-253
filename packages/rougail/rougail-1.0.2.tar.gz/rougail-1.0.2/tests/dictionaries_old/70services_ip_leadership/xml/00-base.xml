@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="ntp">
+      <ip netmask="nut_monitor_netmask">nut_monitor_host</ip>
+    </service>
+  </services>
+  <variables>
+    <family name="general" description="général">
+      <family name="nut_monitor_netmask" description="nut_monitor_netmask" leadership="True">
+        <variable name="nut_monitor_netmask" type="netmask" mandatory="True" multi="True">
+          <value>255.255.255.0</value>
+        </variable>
+        <variable name="nut_monitor_host" type="network" mandatory="True">
+          <value>192.168.1.0</value>
+        </variable>
+      </family>
+    </family>
+  </variables>
+  <constraints/>
+</rougail>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <override/>
+    </service>
+    <service name="test2">
+      <override engine="jinja"/>
+    </service>
+  </services>
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="No change">
+        <value>non</value>
+      </variable>
+    </family>
+  </variables>
+</rougail>

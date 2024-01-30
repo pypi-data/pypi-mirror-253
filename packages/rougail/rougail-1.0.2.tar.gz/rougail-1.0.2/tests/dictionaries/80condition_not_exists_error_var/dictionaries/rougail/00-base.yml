@@ -1,0 +1,6 @@
+general:
+  condition:
+    type: string
+    description: No change
+    default: non
+version: '1.0'

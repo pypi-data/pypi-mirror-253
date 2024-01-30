@@ -1,0 +1,14 @@
+---
+version: '1.0'
+general:
+  var:
+    type: choice
+    description: New variable
+    default: 9
+    choices:
+      type: jinja
+      return_type: 'number'
+      jinja: |
+        {% for n in trange(0, 10) %}
+        {{ n }}
+        {% endfor %}

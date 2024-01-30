@@ -1,0 +1,10 @@
+test.service:
+  certificates:
+    certificate:
+      authority: authority
+      owner: example
+      disabled:
+        type: jinja
+        jinja: '{% if rougail.server_name == "example.net" %}true{% else %}false{%
+          endif %}'
+version: '1.0'

@@ -1,0 +1,4 @@
+general:
+  hidden: true
+  redefine: true
+version: '1.0'

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="nut">
+      <ip netmask="nut_monitor_netmask">nut_monitor_host</ip>
+    </service>
+  </services>
+  <variables>
+    <variable name="nut_monitor_netmask" type="netmask" mandatory="True">
+      <value>255.255.255.0</value>
+    </variable>
+    <variable name="nut_monitor_host" type="network" mandatory="True">
+      <value>192.168.0.0</value>
+    </variable>
+  </variables>
+</rougail>

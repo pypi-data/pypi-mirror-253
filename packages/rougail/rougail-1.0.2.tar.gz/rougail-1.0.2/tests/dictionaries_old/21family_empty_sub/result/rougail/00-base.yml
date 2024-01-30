@@ -1,0 +1,8 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+general1:
+  general2: {}
+version: '1.0'

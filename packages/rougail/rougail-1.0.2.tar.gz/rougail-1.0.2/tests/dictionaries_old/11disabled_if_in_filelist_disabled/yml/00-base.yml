@@ -1,0 +1,40 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - filelist: afilllist
+      text: /etc/file
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: condition
+        type: string
+        description: No change
+        value:
+        - text: oui
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: non
+      - name: mode_conteneur_actif2
+        type: string
+        description: No change
+        value:
+        - text: non
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: condition
+    param:
+    - text: oui
+    target:
+    - type: variable
+      text: mode_conteneur_actif
+    - type: variable
+      text: mode_conteneur_actif2
+    - type: filelist
+      text: afilllist

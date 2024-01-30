@@ -1,0 +1,6 @@
+example:
+  description:
+    type: string
+    provider: example
+    mandatory: false
+version: '1.0'

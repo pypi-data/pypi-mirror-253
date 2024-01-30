@@ -1,0 +1,24 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: bool
+        type: boolean
+      - name: multi1
+        type: boolean
+        multi: true
+      - name: multi2
+        type: boolean
+        multi: true
+constraints:
+- fill:
+  - name: '{% if bool %}True,False{% else %}False{% endif %}'
+    type: jinja
+    target:
+    - text: multi1
+  - name: '{% if not bool %}True,False{% else %}False{% endif %}'
+    type: jinja
+    target:
+    - text: multi2

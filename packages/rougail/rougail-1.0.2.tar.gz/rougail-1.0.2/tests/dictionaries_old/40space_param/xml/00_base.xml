@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services/>
+  <variables>
+    <family name="proxy_authentifie" description="proxy authentifié">
+      <variable name="toto1" type="port" description="Port d'écoute du proxy" mode="expert">
+            </variable>
+      <variable name="toto2" type="port" description="Port d'écoute du proxy NTLM" mode="expert">
+        <value>3127</value>
+      </variable>
+    </family>
+  </variables>
+  <constraints>
+    <fill name="calc_multi_condition">
+      <param type="space"/>
+      <target>toto1</target>
+    </fill>
+  </constraints>
+</rougail>

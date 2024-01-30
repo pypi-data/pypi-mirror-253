@@ -1,0 +1,20 @@
+#attr
+%for %%lead in %%leader
+leader: %%lead
+%if %%hasattr(%%lead, 'follower1')
+follower1: %%lead.follower1
+%end if
+%if %%hasattr(%%lead, 'follower2')
+follower2: %%lead.follower2
+%end if
+%end for
+#key
+%for %%lead in %%leader
+leader: %%lead
+%if 'follower1' in %%lead
+follower1: %%lead['follower1']
+%end if
+%if 'follower2' in %%lead
+follower2: %%lead['follower2']
+%end if
+%end for

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <file owner_type='variable' owner="owner" group_type='variable' group="group">/etc/file</file>
+      <file owner_type='variable' owner="owner" group_type='variable' group="group" engine="jinja">/etc/file2</file>
+    </service>
+  </services>
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="Description">
+        <value>non</value>
+      </variable>
+      <variable name="owner" type="unix_user">
+        <value>nobody</value>
+      </variable>
+      <variable name="group" type="unix_user">
+        <value>nobody</value>
+      </variable>
+    </family>
+  </variables>
+</rougail>

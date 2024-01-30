@@ -1,0 +1,5 @@
+test.service:
+  files:
+    /etc/file:
+      mode: wrong_mode
+version: '1.0'

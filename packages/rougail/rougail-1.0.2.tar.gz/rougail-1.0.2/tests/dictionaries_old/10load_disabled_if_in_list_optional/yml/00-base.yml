@@ -1,0 +1,15 @@
+version: '0.10'
+variables:
+- variable:
+  - name: condition
+    type: boolean
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: condition
+    param:
+    - text: true
+    target:
+    - type: filelist
+      optional: true
+      text: unknown

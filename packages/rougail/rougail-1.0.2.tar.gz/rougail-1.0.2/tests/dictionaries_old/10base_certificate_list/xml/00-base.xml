@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <certificate authority="authority" owner="example" certificatelist="certlist">certificate</certificate>
+    </service>
+  </services>
+  <variables>
+    <variable name="server_name" type="domainname">
+      <value>example.net</value>
+    </variable>
+  </variables>
+  <constraints>
+    <condition name="disabled_if_in" source="server_name">
+      <param>example1.net</param>
+      <target type="certificatelist">certlist</target>
+    </condition>
+  </constraints>
+</rougail>

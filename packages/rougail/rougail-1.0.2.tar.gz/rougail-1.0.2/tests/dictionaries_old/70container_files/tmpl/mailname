@@ -1,0 +1,6 @@
+%if %%varExists('mode_conteneur_actif')
+%%mode_conteneur_actif
+%end if
+%if %%varExists('mode_conteneur_actif3')
+%%mode_conteneur_actif3
+%end if

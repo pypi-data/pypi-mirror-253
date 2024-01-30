@@ -1,0 +1,49 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: non
+  - name: general2
+    hidden: true
+    variables:
+    - variable:
+      - name: mode_conteneur_actif2
+        type: string
+        description: No change
+        value:
+        - text: non
+      - name: mode_conteneur_actif3
+        type: choice
+        description: No change
+        choice:
+        - type: string
+          text: a
+        - type: string
+          text: b
+        - type: string
+          text: c
+        value:
+        - type: string
+          text: a
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: mode_conteneur_actif3
+    param:
+    - text: d
+    target:
+    - type: variable
+      text: mode_conteneur_actif
+  - name: disabled_if_not_in
+    source: mode_conteneur_actif3
+    param:
+    - text: d
+    target:
+    - type: variable
+      text: mode_conteneur_actif2

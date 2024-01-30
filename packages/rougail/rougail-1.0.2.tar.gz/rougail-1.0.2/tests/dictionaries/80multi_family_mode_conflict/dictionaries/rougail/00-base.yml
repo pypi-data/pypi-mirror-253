@@ -1,0 +1,6 @@
+base:
+  mode: advanced
+  subfamily:
+    variable:
+      mode: basic
+version: '1.0'

@@ -1,0 +1,12 @@
+general:
+  varname:
+    type: string
+    description: No change
+    default: val1
+dyn:
+  type: dynamic
+  variable: rougail.general.varname
+  vardyn:
+    type: string
+    description: No change
+version: '1.0'

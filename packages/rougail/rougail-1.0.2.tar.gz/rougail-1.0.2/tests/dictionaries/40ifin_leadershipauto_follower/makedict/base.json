@@ -1,0 +1,15 @@
+{
+    "rougail.general.mode_conteneur_actif": "non",
+    "rougail.general.condition": "oui",
+    "rougail.general.leader.leader": [
+        {
+            "rougail.general.leader.leader": "a",
+            "rougail.general.leader.follower2": null
+        },
+        {
+            "rougail.general.leader.leader": "b",
+            "rougail.general.leader.follower1": null,
+            "rougail.general.leader.follower2": null
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <file>/etc/mailname</file>
+    </service>
+  </services>
+  <variables>
+    <family name="general" description="général">
+      <variable name="mode_conteneur_actif" type="string" description="No change" hidden="True">
+        <value>oui</value>
+      </variable>
+    </family>
+  </variables>
+</rougail>

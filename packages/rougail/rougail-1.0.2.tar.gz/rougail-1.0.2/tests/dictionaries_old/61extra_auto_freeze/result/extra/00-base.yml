@@ -1,0 +1,5 @@
+ejabberd:
+  mode:
+    type: string
+    default: pre
+version: '1.0'

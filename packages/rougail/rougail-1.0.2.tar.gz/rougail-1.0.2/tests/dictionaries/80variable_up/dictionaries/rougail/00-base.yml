@@ -1,0 +1,12 @@
+general:
+  variableAccent:
+    type: string
+    description: No change
+    default: non
+Other:
+  mode_conteneur_actif3:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+version: '1.0'

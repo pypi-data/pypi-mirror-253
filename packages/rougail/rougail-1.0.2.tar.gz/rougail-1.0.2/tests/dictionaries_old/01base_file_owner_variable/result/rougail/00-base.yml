@@ -1,0 +1,12 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: Description
+    default: non
+  owner:
+    type: unix_user
+    default: nobody
+  group:
+    type: unix_user
+    default: nobody
+version: '1.0'

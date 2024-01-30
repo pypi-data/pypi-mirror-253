@@ -1,0 +1,5 @@
+test.service:
+  files:
+    rougail.general.file_name:
+      type: variable
+version: '1.0'

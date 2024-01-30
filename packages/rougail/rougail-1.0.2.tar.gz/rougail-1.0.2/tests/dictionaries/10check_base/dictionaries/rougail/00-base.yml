@@ -1,0 +1,13 @@
+version: '1.0'
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: b
+  int:
+    type: number
+    description: No change
+    params:
+      min_number: 0
+      max_number: 100
+    mandatory: false

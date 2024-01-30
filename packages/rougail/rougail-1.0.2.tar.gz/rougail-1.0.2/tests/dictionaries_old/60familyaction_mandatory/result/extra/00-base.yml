@@ -1,0 +1,10 @@
+test:
+  delay:
+    type: number
+    description: délai en minutes avant lancement
+    default: 0
+  day:
+    type: number
+    description: day avant lancement
+    mandatory: true
+version: '1.0'

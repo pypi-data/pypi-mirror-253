@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="ejabberd">
+      <variable name="description" type="string">
+        <value>Exportation de la base de ejabberd</value>
+      </variable>
+      <variable name="day" type="choice" mandatory="True">
+        <choice>none</choice>
+        <choice>daily</choice>
+        <choice>weekly</choice>
+        <choice>monthly</choice>
+        <value>none</value>
+      </variable>
+      <variable name="mode" type="choice" mandatory="True">
+        <value>pre</value>
+        <choice>pre</choice>
+        <choice>post</choice>
+      </variable>
+    </family>
+  </variables>
+</rougail>

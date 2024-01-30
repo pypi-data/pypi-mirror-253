@@ -1,0 +1,8 @@
+{
+    "rougail.general.mode_conteneur_actif": "oui",
+    "services.test_service.files.mailname_new.name": "/etc/mailname",
+    "services.test_service.files.mailname_new.source": "mailname.new",
+    "services.test_service.files.mailname_new.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

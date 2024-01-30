@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test" disabled="True">
+        </service>
+  </services>
+  <variables>
+    <variable name="condition">
+      <value>no</value>
+    </variable>
+  </variables>
+</rougail>

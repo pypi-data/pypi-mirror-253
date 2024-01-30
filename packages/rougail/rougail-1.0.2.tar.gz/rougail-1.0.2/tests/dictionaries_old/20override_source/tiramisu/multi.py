@@ -1,0 +1,54 @@
+from importlib.machinery import SourceFileLoader as _SourceFileLoader
+from importlib.util import spec_from_loader as _spec_from_loader, module_from_spec as _module_from_spec
+class func:
+    pass
+
+def _load_functions(path):
+    global _SourceFileLoader, _spec_from_loader, _module_from_spec, func
+    loader = _SourceFileLoader('func', path)
+    spec = _spec_from_loader(loader.name, loader)
+    func_ = _module_from_spec(spec)
+    loader.exec_module(func_)
+    for function in dir(func_):
+        if function.startswith('_'):
+            continue
+        setattr(func, function, getattr(func_, function))
+_load_functions('tests/dictionaries/../eosfunc/test.py')
+try:
+    from tiramisu4 import *
+    from tiramisu4.setting import ALLOWED_LEADER_PROPERTIES
+except:
+    from tiramisu import *
+    from tiramisu.setting import ALLOWED_LEADER_PROPERTIES
+ALLOWED_LEADER_PROPERTIES.add("basic")
+ALLOWED_LEADER_PROPERTIES.add("normal")
+ALLOWED_LEADER_PROPERTIES.add("expert")
+option_2 = StrOption(name="mode_conteneur_actif", doc="No change", default="non", properties=frozenset({"mandatory", "normal"}))
+optiondescription_1 = OptionDescription(name="general", doc="general", children=[option_2], properties=frozenset({"normal"}))
+optiondescription_16 = OptionDescription(name="rougail", doc="Rougail", children=[optiondescription_1], properties=frozenset({"normal"}))
+option_8 = BoolOption(name="activate", doc="activate", default=True)
+optiondescription_7 = OptionDescription(name="test2_service", doc="test2.service", children=[option_8])
+optiondescription_7.impl_set_information('name', "test.service")
+optiondescription_7.impl_set_information('source', "test2.service")
+optiondescription_6 = OptionDescription(name="overrides", doc="overrides", children=[optiondescription_7])
+option_5 = BoolOption(name="activate", doc="activate", default=True)
+option_9 = BoolOption(name="manage", doc="manage", default=True)
+optiondescription_18 = OptionDescription(name="test_service", doc="test.service", children=[optiondescription_6, option_5, option_9])
+optiondescription_18.impl_set_information('type', "service")
+optiondescription_17 = OptionDescription(name="services", doc="services", children=[optiondescription_18], properties=frozenset({"hidden"}))
+optiondescription_15 = OptionDescription(name="1", doc="1", children=[optiondescription_16, optiondescription_17])
+option_4 = StrOption(name="mode_conteneur_actif", doc="No change", default="non", properties=frozenset({"mandatory", "normal"}))
+optiondescription_3 = OptionDescription(name="general", doc="general", children=[option_4], properties=frozenset({"normal"}))
+optiondescription_20 = OptionDescription(name="rougail", doc="Rougail", children=[optiondescription_3], properties=frozenset({"normal"}))
+option_13 = BoolOption(name="activate", doc="activate", default=True)
+optiondescription_12 = OptionDescription(name="test2_service", doc="test2.service", children=[option_13])
+optiondescription_12.impl_set_information('name', "test.service")
+optiondescription_12.impl_set_information('source', "test2.service")
+optiondescription_11 = OptionDescription(name="overrides", doc="overrides", children=[optiondescription_12])
+option_10 = BoolOption(name="activate", doc="activate", default=True)
+option_14 = BoolOption(name="manage", doc="manage", default=True)
+optiondescription_22 = OptionDescription(name="test_service", doc="test.service", children=[optiondescription_11, option_10, option_14])
+optiondescription_22.impl_set_information('type', "service")
+optiondescription_21 = OptionDescription(name="services", doc="services", children=[optiondescription_22], properties=frozenset({"hidden"}))
+optiondescription_19 = OptionDescription(name="2", doc="2", children=[optiondescription_20, optiondescription_21])
+option_0 = OptionDescription(name="baseoption", doc="baseoption", children=[optiondescription_15, optiondescription_19])

@@ -1,0 +1,10 @@
+{
+    "services.tata_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.tata_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

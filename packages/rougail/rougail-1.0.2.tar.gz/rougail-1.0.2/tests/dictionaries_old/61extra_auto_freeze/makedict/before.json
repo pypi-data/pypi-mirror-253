@@ -1,0 +1,14 @@
+{
+    "rougail.general.server_deployed": {
+        "owner": "default",
+        "value": true
+    },
+    "rougail.general.activer_ejabberd": {
+        "owner": "default",
+        "value": "non"
+    },
+    "extra.ejabberd.mode": {
+        "owner": "default",
+        "value": "pre"
+    }
+}

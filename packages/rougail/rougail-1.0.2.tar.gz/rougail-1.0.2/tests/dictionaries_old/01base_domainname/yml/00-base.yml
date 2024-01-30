@@ -1,0 +1,11 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: domain
+        type: domainname
+        description: Description
+        value:
+        - text: my.domain.name

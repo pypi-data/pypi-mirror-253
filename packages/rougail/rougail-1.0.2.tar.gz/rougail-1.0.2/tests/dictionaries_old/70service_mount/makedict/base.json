@@ -1,0 +1,5 @@
+{
+    "rougail.general.mode_conteneur_actif": "oui",
+    "services.testsrv_mount.activate": true,
+    "services.testsrv_mount.manage": true
+}

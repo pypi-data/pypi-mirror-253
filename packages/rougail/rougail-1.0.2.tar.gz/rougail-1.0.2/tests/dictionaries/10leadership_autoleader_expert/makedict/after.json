@@ -1,0 +1,15 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "rougail.leadermode.leader.leader": {
+        "owner": "default",
+        "value": ["valfill"]
+    },
+    "rougail.leadermode.leader.follower1": {"owner": ["default"],
+                                            "value": [null]},
+    "rougail.leadermode.leader.follower2": {"owner": ["default"],
+                                            "value": [null]}
+
+}

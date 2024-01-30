@@ -1,0 +1,18 @@
+general:
+  condition:
+    type: string
+    description: No change
+    default: non
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+    disabled:
+      type: jinja
+      jinja: '{% if __activer_client_ldap == "non" %}false{% else %}true{% endif %}'
+  mode_conteneur_actif2:
+    type: string
+    description: No change
+    default: non
+    disabled: true
+version: '1.0'

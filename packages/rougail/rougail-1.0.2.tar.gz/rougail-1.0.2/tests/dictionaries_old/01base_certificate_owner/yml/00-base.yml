@@ -1,0 +1,14 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    certificate:
+    - authority: authority
+      owner: example
+      text: certificate
+variables:
+- variable:
+  - name: server_name
+    type: domainname
+    value:
+    - text: example.net

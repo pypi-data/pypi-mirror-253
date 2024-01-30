@@ -1,0 +1,20 @@
+version: '1.0'
+general:
+  variable:
+    type: string
+    description: No change
+    mandatory: false
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default:
+      type: jinja
+      jinja: '{{ information }}
+
+        '
+      params:
+        information:
+          type: information
+          information: test_information
+          variable: rougail.general.variable
+    mandatory: false

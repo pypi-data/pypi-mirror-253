@@ -1,0 +1,6 @@
+general:
+  mode_conteneur_actif:
+    redefine: true
+    test:
+    - null
+version: '1.0'

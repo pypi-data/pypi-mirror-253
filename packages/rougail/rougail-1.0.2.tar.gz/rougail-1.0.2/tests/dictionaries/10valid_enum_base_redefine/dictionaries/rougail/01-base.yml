@@ -1,0 +1,10 @@
+---
+version: '1.0'
+enumfam:
+  enumvar:
+    redefine: true
+    validators: null
+    default: c
+    choices:
+      - a
+      - c

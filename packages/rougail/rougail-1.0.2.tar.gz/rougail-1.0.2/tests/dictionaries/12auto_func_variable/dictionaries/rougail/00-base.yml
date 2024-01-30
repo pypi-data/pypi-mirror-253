@@ -1,0 +1,14 @@
+version: '1.0'
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    hidden: true
+    default:
+      type: variable
+      variable: rougail.general.mode_conteneur_actif1
+    mandatory: false
+  mode_conteneur_actif1:
+    type: string
+    description: No change
+    default: non

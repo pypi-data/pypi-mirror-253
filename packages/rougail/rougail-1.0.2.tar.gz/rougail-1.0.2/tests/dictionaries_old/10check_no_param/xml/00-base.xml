@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="No change">
+        <value>b</value>
+      </variable>
+      <variable name="int" type="number" description="No change"/>
+    </family>
+  </variables>
+  <constraints>
+    <check name="valid_lower">
+      <target>int</target>
+    </check>
+  </constraints>
+</rougail>

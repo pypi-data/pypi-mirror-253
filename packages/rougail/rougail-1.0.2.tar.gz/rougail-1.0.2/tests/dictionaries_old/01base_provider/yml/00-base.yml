@@ -1,0 +1,18 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: float
+        type: float
+        description: Description
+        provider: float
+        value:
+        - text: 0.527
+      - name: float_multi
+        type: float
+        description: Description
+        multi: true
+        value:
+        - text: 0.527

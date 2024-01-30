@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <file filelist="afilllist">/tmp/file1</file>
+    </service>
+  </services>
+  <variables>
+    <family name="general">
+      <variable name="condition" type="string" description="No change">
+        <value>oui</value>
+      </variable>
+      <variable name="mode_conteneur_actif" type="string" description="No change" hidden="True">
+        <value>non</value>
+      </variable>
+      <variable name="mode_conteneur_actif2" type="string" description="No change" hidden="True">
+        <value>non</value>
+      </variable>
+    </family>
+  </variables>
+  <constraints>
+    <condition name="disabled_if_in" source="condition">
+      <param>oui</param>
+      <param>maybe</param>
+      <target type="variable">mode_conteneur_actif</target>
+      <target type="variable">mode_conteneur_actif2</target>
+      <target type="filelist">afilllist</target>
+    </condition>
+  </constraints>
+</rougail>

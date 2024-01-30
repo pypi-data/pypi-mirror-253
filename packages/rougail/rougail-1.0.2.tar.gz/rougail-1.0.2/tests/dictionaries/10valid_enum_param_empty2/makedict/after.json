@@ -1,0 +1,10 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "rougail.enumfam.enumvar": {
+        "owner": "default",
+        "value": null
+    }
+}

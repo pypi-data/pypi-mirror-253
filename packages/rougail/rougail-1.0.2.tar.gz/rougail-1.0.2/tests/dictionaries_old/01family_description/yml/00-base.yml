@@ -1,0 +1,10 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    description: Other description
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        value:
+        - text: non

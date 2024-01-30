@@ -1,0 +1,8 @@
+external:
+  description:
+    type: string
+    default:
+      type: jinja
+      jinja: '{{ "non" | calc_multi_condition(condition_1=__extra.ejabberd.day, match="none",
+        mismatch="daily") }}'
+version: '1.0'

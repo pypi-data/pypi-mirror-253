@@ -1,0 +1,31 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: b
+      - name: int2
+        type: number
+        description: No change
+        value:
+        - text: 100
+      - name: int
+        type: number
+        description: No change
+constraints:
+- check:
+  - name: valid_lower
+    param:
+    - name: mini
+      type: number
+      text: 0
+    - name: maxi
+      type: variable
+      text: int2
+    target:
+    - text: int

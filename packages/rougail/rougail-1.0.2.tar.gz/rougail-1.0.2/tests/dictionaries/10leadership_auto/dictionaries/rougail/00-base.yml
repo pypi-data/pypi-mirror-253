@@ -1,0 +1,38 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+  leader:
+    description: leader
+    type: leadership
+    leader:
+      type: string
+      description: leader
+      multi: true
+      mandatory: false
+    follower1:
+      type: string
+      description: follower1
+      hidden: true
+      default:
+        type: jinja
+        jinja: '{{ "valfill" | calc_val }}'
+      mandatory: false
+    follower2:
+      type: string
+      description: follower2
+      hidden: true
+      default:
+        type: jinja
+        jinja: '{{ rougail.general.leader.follower1 | calc_val }}'
+      mandatory: false
+    follower3:
+      type: string
+      description: follower3
+      hidden: true
+      default:
+        type: jinja
+        jinja: '{{ rougail.general.leader.leader | calc_val }}'
+      mandatory: false
+version: '1.0'

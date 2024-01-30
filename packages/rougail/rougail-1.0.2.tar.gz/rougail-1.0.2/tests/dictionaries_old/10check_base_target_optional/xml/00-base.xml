@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="my_variable" type="string"/>
+  </variables>
+  <constraints>
+    <check name="valid_entier">
+      <param name="mini" type="number">0</param>
+      <param name="maxi" type="number">100</param>
+      <target optional="True">int</target>
+    </check>
+  </constraints>
+</rougail>

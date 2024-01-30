@@ -1,0 +1,19 @@
+server_deployed:
+  type: boolean
+general:
+  description: général
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+  autosavevar:
+    type: string
+    description: autosave variable
+    hidden: true
+    auto_save: true
+    mandatory: false
+    default:
+      type: jinja
+      jinja: '{{ "oui" | calc_val }}'
+version: '1.0'

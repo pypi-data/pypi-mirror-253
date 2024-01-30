@@ -1,0 +1,10 @@
+general:
+  mode_conteneur_actif:
+    redefine: true
+    exists: true
+    default: oui
+  mode_conteneur_actif1:
+    redefine: true
+    exists: true
+    default: oui
+version: '1.0'

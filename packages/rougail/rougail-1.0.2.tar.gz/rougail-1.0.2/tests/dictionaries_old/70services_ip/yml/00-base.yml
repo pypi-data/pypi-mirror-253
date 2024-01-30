@@ -1,0 +1,13 @@
+version: '0.10'
+services:
+- service:
+  - name: nut
+    ip:
+    - text: nut_monitor_host
+variables:
+- variable:
+  - name: nut_monitor_host
+    type: ip
+    mandatory: true
+    value:
+    - text: 192.168.0.1

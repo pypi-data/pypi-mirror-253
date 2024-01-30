@@ -1,0 +1,5 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    hidden: true

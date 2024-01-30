@@ -1,0 +1,5 @@
+test.service:
+  files:
+    /etc/mailname:
+      source: mailname.new
+version: '1.0'

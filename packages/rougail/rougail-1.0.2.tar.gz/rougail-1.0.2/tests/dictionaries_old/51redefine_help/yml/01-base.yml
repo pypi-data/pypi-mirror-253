@@ -1,0 +1,13 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    help: redefine help family ok
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        redefine: true
+        hidden: true
+        help: redefine help ok
+        value:
+        - text: non

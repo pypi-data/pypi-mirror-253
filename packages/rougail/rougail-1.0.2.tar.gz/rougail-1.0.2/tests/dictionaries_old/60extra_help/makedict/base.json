@@ -1,0 +1,12 @@
+{
+    "rougail.general.mode_conteneur_actif": "non",
+    "rougail.general.activer_ejabberd": "non",
+    "extra.ejabberd.description": "Exportation de la base de ejabberd",
+    "extra.ejabberd.day": null,
+    "extra.ejabberd.mode": "pre",
+    "services.test_service.files.mailname.name": "/etc/mailname",
+    "services.test_service.files.mailname.source": "mailname",
+    "services.test_service.files.mailname.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

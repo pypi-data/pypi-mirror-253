@@ -1,0 +1,33 @@
+---
+version: '1.0'
+my_family:
+  _type: family
+  _description: This is a great family
+  _help: This is a great family
+  _mode: advanced
+  _hidden: true
+  _disabled: true
+  type:
+    type: family
+    my_variable:
+      type: variable
+  description:
+    description: This is a other great family
+    my_variable:
+      type: variable
+  help:
+    help: This is a other great family
+    my_variable:
+      type: variable
+  mode:
+    mode: advanced
+    my_variable:
+      type: variable
+  hidden:
+    hidden: true
+    my_variable:
+      type: variable
+  disabled:
+    disabled: true
+    my_variable:
+      type: variable

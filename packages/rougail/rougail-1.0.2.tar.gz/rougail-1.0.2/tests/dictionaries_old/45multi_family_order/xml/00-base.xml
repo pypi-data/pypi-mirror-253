@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="variable1"/>
+    <family name="base">
+      <variable name="variable2"/>
+      <family name="subfamily">
+        <variable name="variable3"/>
+      </family>
+      <variable name="variable4"/>
+    </family>
+  </variables>
+</rougail>

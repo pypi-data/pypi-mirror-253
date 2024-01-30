@@ -1,0 +1,10 @@
+{
+    "rougail.server_deployed": {
+        "owner": "default",
+        "value": false
+    },
+    "rougail.my_var": {
+        "owner": "default",
+        "value": "yes"
+    }
+}

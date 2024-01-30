@@ -1,0 +1,13 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    disabled: true
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        disabled: true
+        value:
+        - text: non

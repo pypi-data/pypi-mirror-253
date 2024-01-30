@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="bool" type="boolean"/>
+    <variable name="int1" type="number"/>
+    <variable name="int2" type="number"/>
+  </variables>
+  <constraints>
+    <fill name="{%set bool1 = bool %}{% if bool1 %}1{% else %}2{% endif %}" type="jinja">
+      <target>int1</target>
+    </fill>
+    <fill name="{%set bool1 = bool %}{% if not bool1 %}3{% else %}4{% endif %}" type="jinja">
+      <target>int2</target>
+    </fill>
+  </constraints>
+</rougail>

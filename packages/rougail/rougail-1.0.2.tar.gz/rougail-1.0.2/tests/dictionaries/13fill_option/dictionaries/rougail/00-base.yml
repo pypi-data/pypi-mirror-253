@@ -1,0 +1,22 @@
+version: '1.0'
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default:
+      params:
+        __information.rougail.general.od.variable.test_information:
+          type: information
+          information: test_information
+          variable: rougail.general.od.variable
+      type: jinja
+      jinja: '{{ __information.rougail.general.od.variable.test_information | calc_val
+        }}
+
+        '
+    mandatory: false
+  od:
+    variable:
+      type: string
+      description: No change
+      mandatory: false

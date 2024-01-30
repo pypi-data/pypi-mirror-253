@@ -1,0 +1,31 @@
+---
+version: '1.0'
+general:
+  condition:
+    type: string
+    description: No change
+    default: non
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+    disabled:
+      type: jinja
+      params:
+        activer_client_ldap:
+          type: variable
+          variable: rougail.general.activer_client_ldap
+          optional: true
+      jinja: |
+        {% if activer_client_ldap is not defined %}
+        activer_client_ldap is undefined
+        {% elif activer_client_ldap == "non" %}
+        false
+        {% else %}
+        activer_client_ldap is oui
+        {% endif %}
+  mode_conteneur_actif2:
+    type: string
+    description: No change
+    default: non
+    disabled: true

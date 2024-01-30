@@ -1,0 +1,7 @@
+condition:
+  default: 'yes'
+nut_monitor_host:
+  type: network_cidr
+  mandatory: true
+  default: 192.168.0.0/24
+version: '1.0'

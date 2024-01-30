@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test" manage="False">
+      <file>/tmp/test</file>
+    </service>
+  </services>
+  <variables>
+    <variable name="var" type="string">
+      <value>mailname</value>
+    </variable>
+  </variables>
+</rougail>

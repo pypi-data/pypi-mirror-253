@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general" description="général">
+      <variable name="mode_conteneur_actif" type="string" description="No change" hidden="True">
+        <value>oui</value>
+      </variable>
+      <family name="nut_monitor_netmask" description="Masque de l'IP du réseau de l'esclave" leadership="True">
+        <variable name="nut_monitor_netmask" type="netmask" description="Masque de l'IP du réseau de l'esclave" multi="True"/>
+        <variable name="nut_monitor_host" type="network" description="Adresse IP du réseau de l'esclave" mandatory="True">
+          <value>192.168.0.0</value>
+        </variable>
+      </family>
+    </family>
+  </variables>
+  <constraints/>
+</rougail>

@@ -1,0 +1,5 @@
+{
+    "rougail.condition": "no",
+    "services.test_service.activate": false,
+    "services.test_service.manage": true
+}

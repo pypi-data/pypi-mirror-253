@@ -1,0 +1,6 @@
+version: '0.10'
+variables:
+- variable:
+  - name: condition
+    redefine: true
+    remove_condition: true

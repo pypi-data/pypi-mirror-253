@@ -1,0 +1,7 @@
+version: '1.0'
+ejabberd:
+  type: dynamic
+  variable: rougail.general.varname
+  mode:
+    type: string
+    mandatory: false

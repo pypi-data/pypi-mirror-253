@@ -1,0 +1,9 @@
+{
+    "rougail.general.varname": [
+        "val1",
+        "val2"
+    ],
+    "rougail.val1_dyn.vardyn": "val",
+    "rougail.val2_dyn.vardyn": "val",
+    "rougail.new.newvar": "val"
+}

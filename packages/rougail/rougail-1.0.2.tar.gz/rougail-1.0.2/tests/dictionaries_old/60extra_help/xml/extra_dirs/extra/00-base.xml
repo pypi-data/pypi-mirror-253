@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="ejabberd">
+      <variable name="description" type="string">
+        <value>Exportation de la base de ejabberd</value>
+      </variable>
+      <variable name="day" type="choice" help="Test help" mandatory="True">
+        <choice>none</choice>
+        <choice>daily</choice>
+        <choice>weekly</choice>
+        <choice>monthly</choice>
+        <value>none</value>
+      </variable>
+      <variable name="mode" type="choice" mandatory="True">
+        <value>pre</value>
+        <choice>pre</choice>
+        <choice>post</choice>
+      </variable>
+    </family>
+  </variables>
+  <constraints>
+    <fill name="calc_multi_condition">
+      <param>non</param>
+      <param type="variable" name="condition_1" propertyerror="False">activer_ejabberd</param>
+      <param name="match">none</param>
+      <param name="mismatch">daily</param>
+      <target>extra.ejabberd.day</target>
+    </fill>
+  </constraints>
+</rougail>

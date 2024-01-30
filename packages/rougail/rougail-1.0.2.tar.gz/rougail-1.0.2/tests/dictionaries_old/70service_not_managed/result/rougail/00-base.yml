@@ -1,0 +1,4 @@
+var:
+  type: string
+  default: mailname
+version: '1.0'

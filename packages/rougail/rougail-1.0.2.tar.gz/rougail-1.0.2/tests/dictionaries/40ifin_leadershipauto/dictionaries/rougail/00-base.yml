@@ -1,0 +1,40 @@
+version: '1.0'
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+  condition:
+    type: string
+    description: condition
+    default: oui
+  leader:
+    description: leader
+    type: leadership
+    leader:
+      type: string
+      description: leader
+      multi: true
+      default:
+      - a
+    follower1:
+      type: string
+      description: follower1
+      hidden: true
+      disabled:
+        type: jinja
+        jinja: '{% if rougail.general.condition == "oui" %}
+
+          condition is oui
+
+          {% endif %}
+
+          '
+      default:
+        type: jinja
+        jinja: '{{ "valfill" | calc_val }}'
+      mandatory: false
+    follower2:
+      type: string
+      description: follower2
+      mandatory: false

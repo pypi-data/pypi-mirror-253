@@ -1,0 +1,33 @@
+version: '1.0'
+general:
+  mode: advanced
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+leadermode:
+  leader:
+    description: leader
+    type: leadership
+    leader:
+      type: string
+      description: leader
+      multi: true
+      hidden:
+        type: jinja
+        jinja: '{% if rougail.general.mode_conteneur_actif == "non" %}
+
+          rougail.general.mode_conteneur_actif is non
+
+          {% endif %}
+
+          '
+      mandatory: false
+    follower1:
+      type: string
+      description: follower1
+      mandatory: false
+    follower2:
+      type: string
+      description: follower2
+      mandatory: false

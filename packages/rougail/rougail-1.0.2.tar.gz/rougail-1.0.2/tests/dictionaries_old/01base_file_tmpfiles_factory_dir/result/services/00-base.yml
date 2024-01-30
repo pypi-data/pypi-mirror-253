@@ -1,0 +1,6 @@
+test.service:
+  files:
+    /etc/file: {}
+    /etc/file2:
+      engine: jinja
+version: '1.0'

@@ -1,0 +1,46 @@
+version: '0.10'
+variables:
+- family:
+  - name: ejabberd
+    variables:
+    - variable:
+      - name: description
+        type: string
+        value:
+        - text: Exportation de la base de ejabberd
+      - name: day
+        type: choice
+        mandatory: true
+        choice:
+        - text: none
+        - text: daily
+        - text: weekly
+        - text: monthly
+        value:
+        - text: none
+      - name: mode
+        type: choice
+        mandatory: true
+        choice:
+        - text: pre
+        - text: post
+        value:
+        - text: pre
+      - name: var1
+        type: string
+        mandatory: true
+constraints:
+- fill:
+  - name: calc_multi_condition
+    param:
+    - text: non
+    - type: variable
+      name: condition_1
+      propertyerror: false
+      text: activer_ejabberd
+    - name: match
+      text: none
+    - name: mismatch
+      text: daily
+    target:
+    - text: extra.ejabberd.day

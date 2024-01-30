@@ -1,0 +1,18 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - text: /etc/systemd-makefs@dev-disk-by\x2dpartlabel
+    - engine: jinja
+      text: /etc/systemd-makefs@dev-disk-by\x2dpartlabel2
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: Description
+        value:
+        - text: non

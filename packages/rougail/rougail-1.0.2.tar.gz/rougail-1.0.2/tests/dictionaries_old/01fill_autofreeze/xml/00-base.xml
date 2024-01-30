@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="my_var1" type="string" auto_freeze="True">
+      <value>no</value>
+    </variable>
+    <variable name="my_var2">
+      <value>no</value>
+    </variable>
+    <variable name="server_deployed" type="boolean">
+      <value>False</value>
+    </variable>
+  </variables>
+  <constraints>
+    <fill name="calc_val">
+      <param type="variable">my_var2</param>
+      <target>my_var1</target>
+    </fill>
+  </constraints>
+</rougail>

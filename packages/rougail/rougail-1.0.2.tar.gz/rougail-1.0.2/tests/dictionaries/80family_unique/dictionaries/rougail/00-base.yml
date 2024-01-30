@@ -1,0 +1,4 @@
+general:
+  general:
+    my_variable: {}
+version: '1.0'

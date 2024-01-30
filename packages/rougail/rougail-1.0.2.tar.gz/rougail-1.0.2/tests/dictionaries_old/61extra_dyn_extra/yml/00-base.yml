@@ -1,0 +1,13 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    description: "g\xE9n\xE9ral"
+    variables:
+    - variable:
+      - name: varname
+        type: string
+        description: No change
+        multi: true
+        value:
+        - text: a

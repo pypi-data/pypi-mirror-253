@@ -1,0 +1,21 @@
+---
+version: '1.0'
+varname:
+  multi: true
+  default:
+    - val1
+    - val2
+my_dyn_family_:
+  type: dynamic
+  variable: rougail.varname
+  description: 'Describe '
+  my_dyn_var:
+    type: string
+    mandatory: false
+    default:
+      type: suffix
+all_dyn_var:
+  mandatory: false
+  default:
+    type: variable
+    variable: rougail.my_dyn_family_val1.my_dyn_var

@@ -1,0 +1,7 @@
+file_name:
+  type: filename
+  default: /etc/mailname
+var:
+  type: string
+  default: mailname
+version: '1.0'

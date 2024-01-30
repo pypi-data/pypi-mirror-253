@@ -1,0 +1,11 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: general
+        type: string
+        description: description
+        value:
+        - text: non

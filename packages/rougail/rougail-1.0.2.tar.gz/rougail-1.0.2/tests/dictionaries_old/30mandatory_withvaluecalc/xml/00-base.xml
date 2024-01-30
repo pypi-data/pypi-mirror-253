@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="No change"/>
+    </family>
+  </variables>
+  <constraints>
+    <fill name="calc_val">
+      <param>value</param>
+      <target>mode_conteneur_actif</target>
+    </fill>
+  </constraints>
+</rougail>

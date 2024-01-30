@@ -1,0 +1,11 @@
+version: '0.10'
+variables:
+- family:
+  - name: base
+    mode: expert
+    variables:
+    - family:
+      - name: subfamily
+        variables:
+        - variable:
+          - name: variable

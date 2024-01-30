@@ -1,0 +1,36 @@
+%if 'test' in %%extra.ejabberd.new_name.description
+contain test
+%end if
+%%len(%%extra.ejabberd.new_name.description)
+%if 'a' in %%extra.ejabberd.new_name.description
+contain a
+%end if
+%for %%description in %%extra.ejabberd.new_name.description
+leader: %%description
+follower: %%description.mode
+%if %%description <= %%description.mode
+infeq
+%end if
+%if %%description >= %%description.mode
+supeq
+%end if
+%if %%description < %%description.mode
+inf
+%end if
+%if %%description > %%description.mode
+sup
+%end if
+%if %%description == %%description.mode
+eq
+%end if
+%if %%description != %%description.mode
+diff
+%end if
+%set %%var = %%description + %%description.mode
+%%var
+%set %%var = %%description.mode + %%description
+%%var
+%end for
+leader2: %%extra.ejabberd.new_name.description[0].description
+follower2: %%extra.ejabberd.new_name.description[0].mode
+index: %%extra.ejabberd.new_name.description.index('test')

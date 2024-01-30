@@ -1,0 +1,14 @@
+general:
+  float:
+    type: float
+    description: Description
+    provider: float
+    hidden: true
+    default: 0.527
+  float_multi:
+    type: float
+    description: Description
+    multi: true
+    default:
+    - 0.527
+version: '1.0'

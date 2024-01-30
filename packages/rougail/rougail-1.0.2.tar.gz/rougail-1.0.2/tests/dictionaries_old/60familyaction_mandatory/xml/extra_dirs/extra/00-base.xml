@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="test">
+      <variable name="delay" type="number" description="délai en minutes avant lancement">
+        <value>0</value>
+      </variable>
+      <variable name="day" type="number" description="day avant lancement" mandatory="True"/>
+    </family>
+  </variables>
+</rougail>

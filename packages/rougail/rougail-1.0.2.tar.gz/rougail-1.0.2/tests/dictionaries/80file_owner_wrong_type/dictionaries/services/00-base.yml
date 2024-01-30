@@ -1,0 +1,7 @@
+test.service:
+  files:
+    /etc/file:
+      owner:
+        name: rougail.general.owner
+        type: variable
+version: '1.0'

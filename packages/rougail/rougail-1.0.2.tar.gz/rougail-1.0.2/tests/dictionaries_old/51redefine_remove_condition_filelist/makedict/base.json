@@ -1,0 +1,11 @@
+{
+    "rougail.general.mode_conteneur_actif": "non",
+    "rougail.general.condition": "non",
+    "rougail.general.mode_conteneur_actif1": "non",
+    "rougail.general.mode_conteneur_actif2": "non",
+    "services.test_service.files.file.name": "/etc/file",
+    "services.test_service.files.file.source": "file",
+    "services.test_service.files.file.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

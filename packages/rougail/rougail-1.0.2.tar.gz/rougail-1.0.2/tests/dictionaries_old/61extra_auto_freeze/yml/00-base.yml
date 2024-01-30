@@ -1,0 +1,16 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    description: "g\xE9n\xE9ral"
+    variables:
+    - variable:
+      - name: server_deployed
+        type: boolean
+        description: No change
+      - name: activer_ejabberd
+        type: string
+        description: No change
+        hidden: true
+        value:
+        - text: non

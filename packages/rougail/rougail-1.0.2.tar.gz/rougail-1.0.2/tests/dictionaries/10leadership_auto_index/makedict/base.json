@@ -1,0 +1,16 @@
+{
+    "rougail.leader.leader": [
+        {
+            "rougail.leader.leader": "a",
+            "rougail.leader.follower1": 0
+        },
+        {
+            "rougail.leader.leader": "b",
+            "rougail.leader.follower1": 1
+        },
+        {
+            "rougail.leader.leader": "c",
+            "rougail.leader.follower1": 2
+        }
+    ]
+}

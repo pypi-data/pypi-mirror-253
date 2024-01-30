@@ -1,0 +1,26 @@
+{
+    "rougail.var": {
+        "owner": "default",
+        "value": "mailname"
+    },
+    "services.test_service.files.test.name": {
+        "owner": "default",
+        "value": "/tmp/test"
+    },
+    "services.test_service.files.test.source": {
+        "owner": "default",
+        "value": "test"
+    },
+    "services.test_service.files.test.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.manage": {
+        "owner": "default",
+        "value": false
+    }
+}

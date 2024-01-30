@@ -1,0 +1,18 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        multi: true
+constraints:
+- fill:
+  - name: calc_val
+    param:
+    - type: information
+      text: test_information
+    target:
+    - text: mode_conteneur_actif

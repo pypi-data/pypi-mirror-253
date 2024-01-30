@@ -1,0 +1,12 @@
+version: '0.10'
+variables:
+- variable:
+  - name: my_var
+    type: string
+constraints:
+- fill:
+  - name: calc_multi_condition
+    param:
+    - text: non
+    target:
+    - text: extra.my_var

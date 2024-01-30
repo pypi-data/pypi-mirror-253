@@ -1,0 +1,5 @@
+{
+    "rougail.general.mode_conteneur_actif": "non",
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

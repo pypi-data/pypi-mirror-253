@@ -1,0 +1,9 @@
+{
+    "rougail.general.source_var": "file",
+    "rougail.general.mode_conteneur_actif": "non",
+    "services.test_service.files.source_var.name": "/etc/file",
+    "services.test_service.files.source_var.source": "file",
+    "services.test_service.files.source_var.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

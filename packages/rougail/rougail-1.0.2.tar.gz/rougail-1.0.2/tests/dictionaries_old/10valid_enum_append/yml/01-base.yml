@@ -1,0 +1,14 @@
+version: '0.10'
+variables:
+- family:
+  - name: enumfam
+    variables:
+    - variable:
+      - name: enumvar
+        redefine: true
+        value:
+        - type: string
+          text: c
+        choice:
+        - type: string
+          text: c

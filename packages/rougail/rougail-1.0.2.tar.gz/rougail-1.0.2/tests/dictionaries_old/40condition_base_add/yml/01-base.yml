@@ -1,0 +1,22 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: condition
+        redefine: true
+        remove_condition: true
+constraints:
+- condition:
+  - optional: true
+    name: disabled_if_in
+    source: condition
+    param:
+    - text: oui
+    target:
+    - type: variable
+      text: mode_conteneur_actif1
+    - type: variable
+      optional: true
+      text: mode_conteneur_actif2

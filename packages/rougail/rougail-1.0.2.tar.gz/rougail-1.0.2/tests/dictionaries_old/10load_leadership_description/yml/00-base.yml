@@ -1,0 +1,43 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: non
+  - name: general1
+    variables:
+    - family:
+      - name: leader
+        description: other description
+        leadership: true
+        variables:
+        - variable:
+          - name: leader
+            type: string
+            description: leader
+            multi: true
+          - name: follower1
+            type: string
+            description: follower1
+          - name: follower2
+            type: string
+            description: follower2
+constraints:
+- fill:
+  - name: calc_val
+    param:
+    - name: valeur
+      text: valfill
+    target:
+    - text: follower1
+  - name: calc_val
+    param:
+    - type: variable
+      text: follower1
+    target:
+    - text: follower2

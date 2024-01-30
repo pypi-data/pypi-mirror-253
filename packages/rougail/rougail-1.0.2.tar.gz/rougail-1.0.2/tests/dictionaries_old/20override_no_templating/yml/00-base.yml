@@ -1,0 +1,16 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    override:
+    - engine: none
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: non

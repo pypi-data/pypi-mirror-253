@@ -1,0 +1,6 @@
+version: '0.10'
+variables:
+- variable:
+  - name: my_variable
+    type: boolean
+    mandatory: false

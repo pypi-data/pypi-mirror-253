@@ -1,0 +1,14 @@
+{
+    "rougail.general.mode_conteneur_actif": "non",
+    "services.test_service.files.file.name": "/etc/file",
+    "services.test_service.files.file.source": "file",
+    "services.test_service.files.file.activate": true,
+    "services.test_service.files.file2.name": "/etc/file2",
+    "services.test_service.files.file2.source": "file2",
+    "services.test_service.files.file2.activate": true,
+    "services.test_service.files.incfile.name": "/etc/dir/incfile",
+    "services.test_service.files.incfile.source": "incfile",
+    "services.test_service.files.incfile.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

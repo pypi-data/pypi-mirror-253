@@ -1,0 +1,8 @@
+test.service:
+  files:
+    /tmp/file:
+      disabled:
+        type: jinja
+        jinja: '{% if rougail.general.condition == "statique" %}false{% else %}true{%
+          endif %}'
+version: '1.0'

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <file source="mailname.new" redefine="True">/etc/mailname</file>
+    </service>
+  </services>
+</rougail>

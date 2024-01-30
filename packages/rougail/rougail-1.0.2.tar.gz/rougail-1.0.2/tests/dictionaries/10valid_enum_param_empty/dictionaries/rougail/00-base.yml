@@ -1,0 +1,12 @@
+---
+version: '1.0'
+enumfam:
+  mode: advanced
+  enumvar:
+    type: choice
+    description: multi
+    help: bla bla bla
+    default: null
+    mandatory: false
+    choices:
+      - null

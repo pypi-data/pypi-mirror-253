@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <file source="source_var" source_type="variable">/etc/file</file>
+    </service>
+  </services>
+  <variables>
+    <family name="general">
+      <variable name="source_var" type="string" description="Description">
+        <value>file</value>
+      </variable>
+      <variable name="mode_conteneur_actif" type="string" description="Description">
+        <value>non</value>
+      </variable>
+    </family>
+  </variables>
+</rougail>

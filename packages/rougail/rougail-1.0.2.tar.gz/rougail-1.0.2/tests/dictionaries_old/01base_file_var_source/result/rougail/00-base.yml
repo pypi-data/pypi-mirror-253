@@ -1,0 +1,10 @@
+general:
+  source_var:
+    type: string
+    description: Description
+    default: file
+  mode_conteneur_actif:
+    type: string
+    description: Description
+    default: non
+version: '1.0'

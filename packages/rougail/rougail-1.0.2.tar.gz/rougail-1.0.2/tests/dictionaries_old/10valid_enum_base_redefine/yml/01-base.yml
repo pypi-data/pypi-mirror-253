@@ -1,0 +1,18 @@
+version: '0.10'
+variables:
+- family:
+  - name: enumfam
+    mode: expert
+    variables:
+    - variable:
+      - name: enumvar
+        redefine: true
+        remove_check: true
+        remove_choice: true
+        value:
+        - text: c
+        choice:
+        - type: string
+          text: a
+        - type: string
+          text: c

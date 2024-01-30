@@ -1,0 +1,8 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - source: mailname.new
+      redefine: true
+      text: /etc/mailname

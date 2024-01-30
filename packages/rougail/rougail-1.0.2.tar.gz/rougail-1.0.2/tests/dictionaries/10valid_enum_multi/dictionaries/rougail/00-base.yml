@@ -1,0 +1,16 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+  multi:
+    type: choice
+    description: multi
+    multi: true
+    default:
+    - a
+    choices:
+    - a
+    - b
+    - c
+version: '1.0'

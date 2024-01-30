@@ -1,0 +1,13 @@
+file_name:
+  type: filename
+  multi: true
+  default:
+  - /etc/mailname
+  - /etc/mailname2
+file_name2:
+  type: filename
+  multi: true
+  default:
+  - /etc/mailname3
+  - /etc/mailname4
+version: '1.0'

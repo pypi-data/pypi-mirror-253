@@ -1,0 +1,39 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    mode: expert
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: non
+  - name: leadermode
+    variables:
+    - family:
+      - name: other
+        description: other
+        leadership: true
+        variables:
+        - variable:
+          - name: leader
+            type: string
+            description: leader
+            multi: true
+          - name: follower1
+            type: string
+            description: follower1
+          - name: follower2
+            type: string
+            description: follower2
+constraints:
+- condition:
+  - name: hidden_if_in
+    source: mode_conteneur_actif
+    param:
+    - text: non
+    target:
+    - type: variable
+      text: leader

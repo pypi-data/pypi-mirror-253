@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="number" description="No change" hidden="True"/>
+      <variable name="mode_conteneur_actif1" type="string" description="No change">
+        <value>non</value>
+      </variable>
+    </family>
+  </variables>
+  <constraints>
+    <fill name="calc_val">
+      <param type="number">3</param>
+      <target>mode_conteneur_actif</target>
+    </fill>
+  </constraints>
+</rougail>

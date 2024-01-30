@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="nut">
+      <ip>nut_monitor_host</ip>
+      <ip>nut_monitor_host2</ip>
+    </service>
+  </services>
+  <variables>
+    <variable name="nut_monitor_host" type="ip" mandatory="True">
+      <value>192.168.0.1</value>
+    </variable>
+    <variable name="nut_monitor_host2" type="ip" mandatory="True">
+      <value>192.168.0.2</value>
+    </variable>
+  </variables>
+</rougail>

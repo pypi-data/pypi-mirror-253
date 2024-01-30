@@ -1,0 +1,8 @@
+test:
+  replicationtype:
+    description: replicationType
+    disabled:
+      type: jinja
+      jinja: '{% if rougail.test.replicationtype == "leader-leader" %}true{% else
+        %}false{% endif %}'
+version: '1.0'

@@ -1,0 +1,6 @@
+test.service:
+  certificates:
+    certificate:
+      authority: authority
+      owner: example
+version: '1.0'

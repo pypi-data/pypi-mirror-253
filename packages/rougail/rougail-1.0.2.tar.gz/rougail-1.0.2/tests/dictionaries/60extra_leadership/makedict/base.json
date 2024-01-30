@@ -1,0 +1,10 @@
+{
+    "rougail.general.mode_conteneur_actif": "non",
+    "rougail.general.activer_ejabberd": "non",
+    "extra.ejabberd.leadership.description": [
+        {
+            "extra.ejabberd.leadership.description": "test",
+            "extra.ejabberd.leadership.mode": "pre"
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+my_variable:
+  redefine: true
+  test:
+    - test1
+version: '1.0'

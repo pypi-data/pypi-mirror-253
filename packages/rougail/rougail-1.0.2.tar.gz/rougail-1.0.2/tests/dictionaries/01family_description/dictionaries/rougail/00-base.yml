@@ -1,0 +1,5 @@
+general:
+  description: Other description
+  mode_conteneur_actif:
+    default: non
+version: '1.0'

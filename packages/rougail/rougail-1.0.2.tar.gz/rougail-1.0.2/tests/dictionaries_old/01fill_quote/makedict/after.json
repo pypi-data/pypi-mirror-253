@@ -1,0 +1,18 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "quote'"
+    },
+    "rougail.general.mode_conteneur_actif1": {
+        "owner": "default",
+        "value": "quote\""
+    },
+    "rougail.general.mode_conteneur_actif2": {
+        "owner": "default",
+        "value": "quote\"'"
+    },
+    "rougail.general.mode_conteneur_actif3": {
+        "owner": "default",
+        "value": "quote\"\\'"
+    }
+}

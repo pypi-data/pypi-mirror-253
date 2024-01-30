@@ -1,0 +1,35 @@
+%if 'test' in %%extra.ejabberd.leadership.description
+contain test
+%end if
+%%len(%%extra.ejabberd.leadership.description)
+%if 'a' in %%extra.ejabberd.leadership.description
+contain a
+%end if
+%for %%description in %%extra.ejabberd.leadership.description
+leader: %%description
+follower: %%description.mode
+%if %%description <= %%description.mode
+infeq
+%end if
+%if %%description >= %%description.mode
+supeq
+%end if
+%if %%description < %%description.mode
+inf
+%end if
+%if %%description > %%description.mode
+sup
+%end if
+%if %%description == %%description.mode
+eq
+%end if
+%if %%description != %%description.mode
+diff
+%end if
+%set %%var = %%description + %%description.mode
+%%var
+%set %%var = %%description.mode + %%description
+%%var
+%end for
+leader2: %%extra.ejabberd.leadership.description[0]
+follower2: %%extra.ejabberd.leadership.description[0].mode

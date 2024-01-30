@@ -1,0 +1,14 @@
+{
+    "rougail.general.condition": {
+        "owner": "default",
+        "value": "tous"
+    },
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "aucun"
+    },
+    "rougail.general.mode_conteneur_actif2": {
+        "owner": "default",
+        "value": "non"
+    }
+}

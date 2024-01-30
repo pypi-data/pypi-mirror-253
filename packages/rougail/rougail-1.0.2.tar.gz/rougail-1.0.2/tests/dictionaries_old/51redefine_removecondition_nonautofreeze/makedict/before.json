@@ -1,0 +1,22 @@
+{
+    "rougail.my_var": {
+        "owner": "default",
+        "value": "no"
+    },
+    "rougail.condition": {
+        "owner": "default",
+        "value": "no"
+    },
+    "rougail.my_var1": {
+        "owner": "default",
+        "value": "no"
+    },
+    "rougail.my_var2": {
+        "owner": "default",
+        "value": "no"
+    },
+    "rougail.server_deployed": {
+        "owner": "default",
+        "value": false
+    }
+}

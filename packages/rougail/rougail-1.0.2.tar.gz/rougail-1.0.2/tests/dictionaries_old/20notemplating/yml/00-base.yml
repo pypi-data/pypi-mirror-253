@@ -1,0 +1,17 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - engine: none
+      text: /etc/file
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: non

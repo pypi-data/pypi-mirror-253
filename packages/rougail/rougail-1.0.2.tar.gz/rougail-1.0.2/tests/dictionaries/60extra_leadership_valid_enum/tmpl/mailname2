@@ -1,0 +1,33 @@
+{% if 'test' in extra.ejabberd.description.description -%}
+contain test
+{% endif -%}
+{{ extra.ejabberd.description.description|length }}
+{% if 'a' in extra.ejabberd.description.description -%}
+contain a
+{% endif -%}
+{% for description in extra.ejabberd.description.description -%}
+leader: {{ description }}
+follower: {{ description.mode }}
+{% if description <= description.mode -%}
+infeq
+{% endif -%}
+{% if description >= description.mode -%}
+supeq
+{% endif -%}
+{% if description < description.mode -%}
+inf
+{% endif -%}
+{% if description > description.mode -%}
+sup
+{% endif -%}
+{% if description == description.mode -%}
+eq
+{% endif -%}
+{% if description != description.mode -%}
+diff
+{% endif -%}
+{{ description + description.mode }}
+{{ description.mode + description }}
+{% endfor -%}
+leader2: {{ extra.ejabberd.description.description[0] }}
+follower2: {{ extra.ejabberd.description.description[0].mode }}

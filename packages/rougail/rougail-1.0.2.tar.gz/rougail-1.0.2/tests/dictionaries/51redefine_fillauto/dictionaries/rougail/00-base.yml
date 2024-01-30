@@ -1,0 +1,9 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default:
+      type: jinja
+      jinja: '{{ "oui" | calc_val }}'
+    mandatory: false
+version: '1.0'

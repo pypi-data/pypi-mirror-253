@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="float" type="float" description="Description">
+        <value>0.527</value>
+      </variable>
+      <variable name="float_multi" type="float" description="Description" multi="True">
+        <value>0.527</value>
+      </variable>
+    </family>
+  </variables>
+</rougail>

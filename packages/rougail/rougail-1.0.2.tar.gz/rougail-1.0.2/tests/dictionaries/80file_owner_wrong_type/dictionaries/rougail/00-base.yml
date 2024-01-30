@@ -1,0 +1,5 @@
+general:
+  owner:
+    type: string
+    default: nobody
+version: '1.0'

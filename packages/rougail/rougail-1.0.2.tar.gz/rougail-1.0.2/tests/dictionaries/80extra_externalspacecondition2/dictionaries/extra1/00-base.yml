@@ -1,0 +1,5 @@
+external:
+  description:
+    type: string
+    default: test
+version: '1.0'

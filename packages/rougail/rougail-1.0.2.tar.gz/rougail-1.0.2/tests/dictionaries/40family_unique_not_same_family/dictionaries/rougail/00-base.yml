@@ -1,0 +1,5 @@
+general:
+  general:
+    my_variable:
+      mandatory: false
+version: '1.0'

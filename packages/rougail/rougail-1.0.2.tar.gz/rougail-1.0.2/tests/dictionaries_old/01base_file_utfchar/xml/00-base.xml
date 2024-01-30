@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <file>/etc/systemd-makefs@dev-disk-by\x2dpartlabel</file>
+      <file engine="jinja">/etc/systemd-makefs@dev-disk-by\x2dpartlabel2</file>
+    </service>
+  </services>
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="Description">
+        <value>non</value>
+      </variable>
+    </family>
+  </variables>
+</rougail>

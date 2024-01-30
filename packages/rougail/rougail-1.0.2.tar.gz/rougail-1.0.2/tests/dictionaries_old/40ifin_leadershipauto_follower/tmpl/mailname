@@ -1,0 +1,9 @@
+%for %%lead in %%leader
+leader: %%lead
+%if %%hasattr(%%lead, 'follower1')
+follower1: %%lead.follower1
+%end if
+%if %%hasattr(%%lead, 'follower2')
+follower2: %%lead.follower2
+%end if
+%end for

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general1">
+      <family name="leader">
+        <variable name="follower3" type="string" description="follower3"/>
+      </family>
+    </family>
+  </variables>
+  <constraints/>
+</rougail>

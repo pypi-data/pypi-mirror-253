@@ -1,0 +1,5 @@
+float:
+  type: float
+  description: Description
+  mandatory: false
+version: '1.0'

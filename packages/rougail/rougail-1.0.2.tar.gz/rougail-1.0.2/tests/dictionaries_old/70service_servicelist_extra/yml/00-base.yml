@@ -1,0 +1,5 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    servicelist: test

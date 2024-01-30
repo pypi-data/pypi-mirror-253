@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general" mode="expert">
+      <variable name="mode_conteneur_actif" type="string" description="No change">
+        <value>non</value>
+      </variable>
+    </family>
+    <family name="leadermode">
+      <family name="other" description="other" leadership="True">
+        <variable name="leader" type="string" description="leader" multi="True"/>
+        <variable name="follower1" type="string" description="follower1"/>
+        <variable name="follower2" type="string" description="follower2"/>
+      </family>
+    </family>
+  </variables>
+  <constraints>
+    <condition name="hidden_if_in" source="mode_conteneur_actif">
+      <param>non</param>
+      <target type="variable">leader</target>
+    </condition>
+  </constraints>
+</rougail>

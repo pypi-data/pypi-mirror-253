@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general" redefine="True" help="redefine help family ok">
+      <variable name="mode_conteneur_actif" redefine="True" hidden="True" help="redefine help ok">
+        <value>non</value>
+      </variable>
+    </family>
+  </variables>
+</rougail>

@@ -1,0 +1,21 @@
+{
+    "rougail.general.varname": {
+        "owner": "default",
+        "value": [
+            "val1",
+            "val2"
+        ]
+    },
+    "rougail.dynval1.vardynval1": {
+        "owner": "default",
+        "value": "val1"
+    },
+    "rougail.dynval2.vardynval2": {
+        "owner": "default",
+        "value": "val2"
+    },
+    "rougail.new.newvar": {
+        "owner": "default",
+        "value": null
+    }
+}

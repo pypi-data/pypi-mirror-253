@@ -1,0 +1,5 @@
+general:
+  mode_conteneur_actif:
+    type: unknown
+    description: Description
+version: '1.0'

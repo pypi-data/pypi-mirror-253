@@ -1,0 +1,6 @@
+test:
+  delay:
+    type: number
+    description: délai en minutes avant lancement
+    default: 0
+version: '1.0'

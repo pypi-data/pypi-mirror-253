@@ -1,0 +1,4 @@
+{
+    "services.tata_service.activate": true,
+    "services.tata_service.manage": true
+}

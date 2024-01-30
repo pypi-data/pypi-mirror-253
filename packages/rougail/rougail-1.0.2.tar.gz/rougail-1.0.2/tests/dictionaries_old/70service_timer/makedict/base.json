@@ -1,0 +1,6 @@
+{
+    "services.testsrv_service.activate": true,
+    "services.testsrv_service.manage": true,
+    "services.testsrv_timer.activate": true,
+    "services.testsrv_timer.manage": true
+}

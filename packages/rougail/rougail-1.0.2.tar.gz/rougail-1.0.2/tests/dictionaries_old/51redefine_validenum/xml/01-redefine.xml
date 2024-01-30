@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" redefine="True" remove_check="True" remove_choice="True">
+        <choice type="string">a</choice>
+        <choice type="string">b</choice>
+        <value type="string">a</value>
+      </variable>
+    </family>
+  </variables>
+  <constraints/>
+</rougail>

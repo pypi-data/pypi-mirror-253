@@ -1,0 +1,10 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        test: '|test1|test2'
+        value:
+        - text: non

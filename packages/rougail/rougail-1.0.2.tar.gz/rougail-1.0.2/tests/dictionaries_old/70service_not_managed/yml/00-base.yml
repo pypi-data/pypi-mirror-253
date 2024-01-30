@@ -1,0 +1,13 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    manage: false
+    file:
+    - text: /tmp/test
+variables:
+- variable:
+  - name: var
+    type: string
+    value:
+    - text: mailname

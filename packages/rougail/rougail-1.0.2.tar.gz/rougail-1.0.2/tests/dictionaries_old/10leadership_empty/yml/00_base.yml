@@ -1,0 +1,8 @@
+version: '0.10'
+services:
+- service:
+  - name: tata
+variables:
+- family:
+  - name: empty_leader
+    leadership: true

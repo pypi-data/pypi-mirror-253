@@ -1,0 +1,17 @@
+{
+    "rougail.general.mode_conteneur_actif": "non",
+    "rougail.general.owner": "nobody",
+    "rougail.general.group": "nobody",
+    "services.test_service.files.file.group": "nobody",
+    "services.test_service.files.file.name": "/etc/file",
+    "services.test_service.files.file.owner": "nobody",
+    "services.test_service.files.file.source": "file",
+    "services.test_service.files.file.activate": true,
+    "services.test_service.files.file2.group": "nobody",
+    "services.test_service.files.file2.name": "/etc/file2",
+    "services.test_service.files.file2.owner": "nobody",
+    "services.test_service.files.file2.source": "file2",
+    "services.test_service.files.file2.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

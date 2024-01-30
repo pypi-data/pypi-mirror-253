@@ -1,0 +1,15 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    mandatory: false
+    default:
+      type: jinja
+      jinja: '{{ __information.rougail.general.mode_conteneur_actif.test_information
+        | calc_val }}'
+      params:
+        __information.rougail.general.mode_conteneur_actif.test_information:
+          type: information
+          information: test_information
+          variable: rougail.general.mode_conteneur_actif
+version: '1.0'

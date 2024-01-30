@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="choice" description="No change">
+        <value type="string">a</value>
+        <choice type="variable">var</choice>
+      </variable>
+      <variable name="var" type="string" description="New variable" multi="True">
+        <value>a</value>
+        <value>b</value>
+        <value>c</value>
+      </variable>
+    </family>
+  </variables>
+  <constraints/>
+</rougail>

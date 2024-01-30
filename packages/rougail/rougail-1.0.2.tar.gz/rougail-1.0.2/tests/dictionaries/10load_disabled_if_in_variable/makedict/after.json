@@ -1,0 +1,10 @@
+{
+    "rougail.general.condition": {
+        "owner": "default",
+        "value": "tous"
+    },
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "tous"
+    }
+}

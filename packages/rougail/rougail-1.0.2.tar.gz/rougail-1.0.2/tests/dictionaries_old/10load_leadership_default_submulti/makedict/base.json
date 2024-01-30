@@ -1,0 +1,17 @@
+{
+    "rougail.general.mode_conteneur_actif": [
+        "non"
+    ],
+    "rougail.general.leader.leader": [
+        {
+            "rougail.general.leader.leader": "leader",
+            "rougail.general.leader.follower1": [
+                "value"
+            ],
+            "rougail.general.leader.follower2": [
+                "value1",
+                "value2"
+            ]
+        }
+    ]
+}

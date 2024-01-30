@@ -1,0 +1,29 @@
+version: '0.10'
+services:
+- service:
+  - name: ntp
+    ip:
+    - netmask: nut_monitor_netmask
+      text: nut_monitor_host
+variables:
+- family:
+  - name: general
+    description: "g\xE9n\xE9ral"
+    variables:
+    - family:
+      - name: nut_monitor_netmask
+        description: nut_monitor_netmask
+        leadership: true
+        variables:
+        - variable:
+          - name: nut_monitor_netmask
+            type: netmask
+            mandatory: true
+            multi: true
+            value:
+            - text: 255.255.255.0
+          - name: nut_monitor_host
+            type: network
+            mandatory: true
+            value:
+            - text: 192.168.1.0

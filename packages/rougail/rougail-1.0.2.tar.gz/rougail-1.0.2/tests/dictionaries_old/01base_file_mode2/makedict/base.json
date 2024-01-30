@@ -1,0 +1,7 @@
+{
+    "services.test_service.files.file.name": "/etc/file",
+    "services.test_service.files.file.source": "file",
+    "services.test_service.files.file.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

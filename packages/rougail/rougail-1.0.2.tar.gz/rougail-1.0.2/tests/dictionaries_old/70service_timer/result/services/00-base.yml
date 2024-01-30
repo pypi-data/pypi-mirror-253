@@ -1,0 +1,3 @@
+testsrv.service: {}
+testsrv.timer: {}
+version: '1.0'

@@ -1,0 +1,19 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - file_type: variable
+      source: mailname
+      variable: var
+      text: file_name
+variables:
+- variable:
+  - name: file_name
+    type: filename
+    value:
+    - text: /etc/mailname
+  - name: var
+    type: string
+    value:
+    - text: mailname

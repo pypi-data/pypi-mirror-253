@@ -1,0 +1,25 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - filelist: afilllist
+      text: /tmp/file1
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: condition
+        type: boolean
+        value:
+        - text: false
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: condition
+    param:
+    - text: true
+    target:
+    - type: filelist
+      text: afilllist

@@ -1,0 +1,15 @@
+version: '1.0'
+bool:
+  type: boolean
+int1:
+  type: number
+  default:
+    type: jinja
+    jinja: '{%set bool1 = rougail.bool %}{% if bool1 %}1{% else %}2{% endif %}'
+  mandatory: false
+int2:
+  type: number
+  default:
+    type: jinja
+    jinja: '{%set bool1 = rougail.bool %}{% if not bool1 %}3{% else %}4{% endif %}'
+  mandatory: false

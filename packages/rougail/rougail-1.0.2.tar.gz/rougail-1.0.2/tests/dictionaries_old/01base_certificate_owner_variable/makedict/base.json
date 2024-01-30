@@ -1,0 +1,10 @@
+{
+    "rougail.owner": "example",
+    "rougail.server_name": "example.net",
+    "services.test_service.certificates.certificate.domain": "example.net",
+    "services.test_service.certificates.certificate.name": "certificate",
+    "services.test_service.certificates.certificate.owner": "example",
+    "services.test_service.certificates.certificate.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

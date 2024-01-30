@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="No change">
+        <value>oui</value>
+      </variable>
+      <variable name="mode_conteneur_actif1" type="string" description="No change">
+        <value>non</value>
+      </variable>
+    </family>
+  </variables>
+  <constraints>
+    <check name='{% if rougail.general.mode_conteneur_actif == rougail.general.mode_conteneur_actif1 %}the value must be different than "{{ rougail.general.mode_conteneur_actif }}"{% endif %}' type="jinja">
+      <target>mode_conteneur_actif</target>
+    </check>
+  </constraints>
+</rougail>

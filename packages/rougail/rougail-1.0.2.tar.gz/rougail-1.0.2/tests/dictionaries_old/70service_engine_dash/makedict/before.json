@@ -1,0 +1,14 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "oui"
+    },
+    "services.test_srv_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_srv_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

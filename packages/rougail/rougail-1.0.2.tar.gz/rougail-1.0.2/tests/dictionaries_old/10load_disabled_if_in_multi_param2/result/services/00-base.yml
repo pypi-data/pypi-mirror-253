@@ -1,0 +1,8 @@
+test.service:
+  files:
+    /tmp/file1:
+      disabled:
+        type: jinja
+        jinja: '{% if rougail.general.condition == "yes" or rougail.general.condition
+          == "maybe" %}true{% else %}false{% endif %}'
+version: '1.0'

@@ -1,0 +1,7 @@
+my_var:
+  type: string
+  mandatory: false
+  default:
+    type: jinja
+    jinja: '{{ "non" | calc_multi_condition }}'
+version: '1.0'

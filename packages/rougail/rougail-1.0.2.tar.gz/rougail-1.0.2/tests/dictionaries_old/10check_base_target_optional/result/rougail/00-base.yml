@@ -1,0 +1,4 @@
+my_variable:
+  type: string
+  mandatory: false
+version: '1.0'

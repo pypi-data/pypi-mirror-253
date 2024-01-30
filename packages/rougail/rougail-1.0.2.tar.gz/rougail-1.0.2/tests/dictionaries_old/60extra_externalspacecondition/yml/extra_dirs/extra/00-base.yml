@@ -1,0 +1,28 @@
+version: '0.10'
+variables:
+- family:
+  - name: ejabberd
+    variables:
+    - variable:
+      - name: description
+        type: string
+        value:
+        - text: Exportation de la base de ejabberd
+      - name: day
+        type: choice
+        mandatory: true
+        choice:
+        - text: none
+        - text: daily
+        - text: weekly
+        - text: monthly
+        value:
+        - text: none
+      - name: mode
+        type: choice
+        mandatory: true
+        value:
+        - text: pre
+        choice:
+        - text: pre
+        - text: post

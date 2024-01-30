@@ -1,0 +1,8 @@
+general:
+  mode_conteneur_actif:
+    test:
+    - null
+    - test1
+    - test2
+    default: non
+version: '1.0'

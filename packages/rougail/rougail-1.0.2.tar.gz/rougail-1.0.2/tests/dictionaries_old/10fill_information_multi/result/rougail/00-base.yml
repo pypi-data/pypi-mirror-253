@@ -1,0 +1,14 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    multi: true
+    mandatory: false
+    default:
+      type: jinja
+      jinja: '{{ __information.test_information | calc_val }}'
+      params:
+        __information.test_information:
+          type: information
+          information: test_information
+version: '1.0'

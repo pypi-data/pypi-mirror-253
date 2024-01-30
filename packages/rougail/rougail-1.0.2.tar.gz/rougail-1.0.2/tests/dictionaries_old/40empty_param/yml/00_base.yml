@@ -1,0 +1,24 @@
+version: '0.10'
+variables:
+- family:
+  - name: proxy_authentifie
+    description: "proxy authentifi\xE9"
+    variables:
+    - variable:
+      - name: toto1
+        type: port
+        description: "Port d'\xE9coute du proxy"
+        mode: expert
+      - name: toto2
+        type: port
+        description: "Port d'\xE9coute du proxy NTLM"
+        mode: expert
+        value:
+        - text: 3127
+constraints:
+- fill:
+  - name: calc_multi_condition
+    param:
+    - type: nil
+    target:
+    - text: toto1

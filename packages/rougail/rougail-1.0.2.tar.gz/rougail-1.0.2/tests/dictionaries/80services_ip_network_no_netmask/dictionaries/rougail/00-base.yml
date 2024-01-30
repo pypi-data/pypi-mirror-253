@@ -1,0 +1,4 @@
+nut_monitor_host:
+  type: network
+  mandatory: true
+version: '1.0'

@@ -1,0 +1,18 @@
+{
+    "services.testsrv_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.testsrv_service.manage": {
+        "owner": "default",
+        "value": true
+    },
+    "services.testsrv_timer.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.testsrv_timer.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="my_var1">
+      <value>no</value>
+    </variable>
+    <variable name="my_var2">
+      <value>no</value>
+    </variable>
+    <variable name="my_var3">
+      <value>no</value>
+    </variable>
+  </variables>
+  <constraints>
+    <condition name="disabled_if_in" source="my_var1">
+      <param>no</param>
+      <target type="variable">my_var2</target>
+    </condition>
+    <condition name="disabled_if_in" source="my_var2">
+      <param>no</param>
+      <target type="variable">my_var3</target>
+    </condition>
+  </constraints>
+</rougail>

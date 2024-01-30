@@ -1,0 +1,4 @@
+test.service:
+  files:
+    /etc/mailname: {}
+version: '1.0'

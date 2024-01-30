@@ -1,0 +1,29 @@
+---
+version: '1.0'
+general:
+  mode: advanced
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+enumfam:
+  mode: advanced
+  enumvar:
+    type: choice
+    description: enumvar
+    help: bla bla bla
+    default: 1
+    choices:
+      - 1
+      - 2
+      - 3
+  test_variable:
+    type: number
+    description: test variable
+    mandatory: false
+    hidden:
+      type: jinja
+      jinja: |
+        {% if rougail.enumfam.enumvar == "4" %}
+        rougail.enumfam.enumvar is 4
+        {% endif %}

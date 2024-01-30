@@ -1,0 +1,14 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "a"
+    },
+    "rougail.general.var": {
+        "owner": "default",
+        "value": [
+            "a",
+            "b",
+            "c"
+        ]
+    }
+}

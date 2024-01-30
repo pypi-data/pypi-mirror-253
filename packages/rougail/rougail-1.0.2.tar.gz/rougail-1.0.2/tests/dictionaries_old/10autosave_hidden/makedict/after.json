@@ -1,0 +1,14 @@
+{
+    "rougail.server_deployed": {
+        "owner": "default",
+        "value": true
+    },
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "rougail.general.autosavevar": {
+        "owner": "forced",
+        "value": "oui"
+    }
+}

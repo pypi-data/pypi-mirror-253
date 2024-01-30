@@ -1,0 +1,11 @@
+version: '0.10'
+variables:
+- family:
+  - name: ejabberd
+    variables:
+    - variable:
+      - name: mode
+        type: string
+        auto_freeze: true
+        value:
+        - text: pre

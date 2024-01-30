@@ -1,0 +1,9 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    mode: basic
+    default: non
+general2:
+  help: family
+version: '1.0'

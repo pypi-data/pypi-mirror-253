@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general" description="Général">
+      <variable name="condition" type="string" description="No change">
+        <value>non</value>
+      </variable>
+      <variable name="mode_conteneur_actif" type="string" description="No change">
+        <value>non</value>
+      </variable>
+      <variable name="mode_conteneur_actif2" type="string" description="No change">
+        <value>non</value>
+      </variable>
+    </family>
+    <family name="general2" description="Général2">
+      <variable name="mode_conteneur_actif3" type="string" description="No change" hidden="True">
+        <value>non</value>
+      </variable>
+    </family>
+  </variables>
+  <constraints>
+    <condition name="hidden_if_in" source="condition">
+      <param>oui</param>
+      <target type="variable">mode_conteneur_actif</target>
+      <target type="variable">mode_conteneur_actif2</target>
+      <target type="family">general2</target>
+    </condition>
+  </constraints>
+</rougail>

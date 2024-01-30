@@ -1,0 +1,31 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: condition
+        type: string
+        value:
+        - text: 'no'
+      - name: variable1
+        type: string
+      - name: variable2
+        type: string
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: condition
+    param:
+    - text: 'no'
+    target:
+    - type: variable
+      text: variable1
+  fill:
+  - name: calc_val
+    param:
+    - type: variable
+      propertyerror: false
+      text: variable1
+    target:
+    - text: variable2

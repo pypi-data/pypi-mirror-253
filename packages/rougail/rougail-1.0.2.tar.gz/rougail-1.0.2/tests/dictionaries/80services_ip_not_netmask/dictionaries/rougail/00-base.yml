@@ -1,0 +1,7 @@
+nut_monitor_host:
+  type: network
+  mandatory: true
+nut_monitor_netmask:
+  type: ip
+  mandatory: true
+version: '1.0'

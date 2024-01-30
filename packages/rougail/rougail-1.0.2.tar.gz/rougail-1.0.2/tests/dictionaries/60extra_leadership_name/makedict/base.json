@@ -1,0 +1,10 @@
+{
+    "rougail.general.mode_conteneur_actif": "non",
+    "rougail.general.activer_ejabberd": "non",
+    "extra.ejabberd.new_name.description": [
+        {
+            "extra.ejabberd.new_name.description": "test",
+            "extra.ejabberd.new_name.mode": "pre"
+        }
+    ]
+}

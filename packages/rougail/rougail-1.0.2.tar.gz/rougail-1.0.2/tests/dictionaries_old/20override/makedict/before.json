@@ -1,0 +1,30 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "services.test_service.overrides.test_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.manage": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test2_service.overrides.test2_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test2_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test2_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

@@ -1,0 +1,7 @@
+test.service:
+  files:
+    /etc/file: {}
+  disabled:
+    type: jinja
+    jinja: '{% if rougail.condition == "no" %}true{% else %}false{% endif %}'
+version: '1.0'

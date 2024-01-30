@@ -1,0 +1,27 @@
+version: '0.10'
+variables:
+- variable:
+  - name: server_deployed
+    type: boolean
+    value:
+    - text: false
+  - name: my_var
+    type: string
+    auto_freeze: true
+    value:
+    - text: 'no'
+constraints:
+- fill:
+  - name: calc_val
+    param:
+    - text: 'yes'
+    target:
+    - text: my_var
+  condition:
+  - name: hidden_if_in
+    source: server_deployed
+    param:
+    - text: true
+    target:
+    - type: variable
+      text: my_var

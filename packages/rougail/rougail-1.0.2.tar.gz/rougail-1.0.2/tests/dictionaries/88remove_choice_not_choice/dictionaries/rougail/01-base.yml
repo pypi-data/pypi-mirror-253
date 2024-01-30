@@ -1,0 +1,4 @@
+enumvar:
+  redefine: true
+  choices: null
+version: '1.0'

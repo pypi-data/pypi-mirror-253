@@ -1,0 +1,27 @@
+version: '0.10'
+services:
+- service:
+  - name: nut
+    ip:
+    - iplist: example
+      text: nut_monitor_host
+variables:
+- variable:
+  - name: condition
+    value:
+    - text: 'no'
+  - name: nut_monitor_host
+    type: network_cidr
+    mandatory: true
+    value:
+    - text: 192.168.0.0/24
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: condition
+    param:
+    - text: 'yes'
+    target:
+    - type: iplist
+      text: example
+    - text: nut_monitor_host

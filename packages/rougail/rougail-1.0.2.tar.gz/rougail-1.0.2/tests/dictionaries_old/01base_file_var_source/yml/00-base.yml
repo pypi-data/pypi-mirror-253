@@ -1,0 +1,23 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - source: source_var
+      source_type: variable
+      text: /etc/file
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: source_var
+        type: string
+        description: Description
+        value:
+        - text: file
+      - name: mode_conteneur_actif
+        type: string
+        description: Description
+        value:
+        - text: non

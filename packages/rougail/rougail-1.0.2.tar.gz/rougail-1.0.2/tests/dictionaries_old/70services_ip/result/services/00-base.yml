@@ -1,0 +1,4 @@
+nut.service:
+  ip:
+    rougail.nut_monitor_host: {}
+version: '1.0'

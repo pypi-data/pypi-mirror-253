@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="server_deployed" type="boolean">
+      <value>False</value>
+    </variable>
+    <variable name="my_var" type="string" auto_freeze="True">
+      <value>no</value>
+    </variable>
+  </variables>
+  <constraints>
+    <fill name="calc_val">
+      <param>yes</param>
+      <target>my_var</target>
+    </fill>
+    <condition name="hidden_if_in" source="server_deployed">
+      <param>True</param>
+      <target type="variable">my_var</target>
+    </condition>
+  </constraints>
+</rougail>

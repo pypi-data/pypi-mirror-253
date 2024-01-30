@@ -1,0 +1,24 @@
+general:
+  mode: advanced
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+enumfam:
+  mode: advanced
+  enumvar:
+    type: choice
+    description: enumvar
+    help: bla bla bla
+    default: 1
+    choices:
+    - 1
+    - 2
+    - 3
+  test_variable:
+    type: number
+    description: test variable
+    hidden:
+      type: jinja
+      jinja: '{% if __condition == "4" %}true{% else %}false{% endif %}'
+version: '1.0'

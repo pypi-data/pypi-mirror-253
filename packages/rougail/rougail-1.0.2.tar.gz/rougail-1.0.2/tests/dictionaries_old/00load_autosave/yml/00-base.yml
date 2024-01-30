@@ -1,0 +1,16 @@
+version: '0.10'
+variables:
+- variable:
+  - name: server_deployed
+    type: boolean
+- family:
+  - name: general
+    description: "g\xE9n\xE9ral"
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        auto_save: true
+        value:
+        - text: non

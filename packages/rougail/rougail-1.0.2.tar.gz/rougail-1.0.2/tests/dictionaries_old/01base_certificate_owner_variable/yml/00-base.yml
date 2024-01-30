@@ -1,0 +1,19 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    certificate:
+    - authority: authority
+      owner: owner
+      owner_type: variable
+      text: certificate
+variables:
+- variable:
+  - name: owner
+    type: unix_user
+    value:
+    - text: example
+  - name: server_name
+    type: domainname
+    value:
+    - text: example.net

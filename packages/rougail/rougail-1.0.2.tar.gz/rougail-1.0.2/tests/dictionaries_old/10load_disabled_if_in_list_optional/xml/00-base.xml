@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="condition" type="boolean"/>
+  </variables>
+  <constraints>
+    <condition name="disabled_if_in" source="condition">
+      <param>True</param>
+      <target type="filelist" optional="True">unknown</target>
+    </condition>
+  </constraints>
+</rougail>

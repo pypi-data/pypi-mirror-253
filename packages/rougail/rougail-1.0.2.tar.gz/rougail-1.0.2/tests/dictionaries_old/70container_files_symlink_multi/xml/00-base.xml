@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <file file_type="variable" source="mailname">file_name</file>
+      <file file_type="variable" source="mailname2" engine="jinja">file_name2</file>
+    </service>
+  </services>
+  <variables>
+    <variable name="file_name" type="filename" multi="True">
+      <value>/etc/mailname</value>
+      <value>/etc/mailname2</value>
+    </variable>
+    <variable name="file_name2" type="filename" multi="True">
+      <value>/etc/mailname3</value>
+      <value>/etc/mailname4</value>
+    </variable>
+  </variables>
+</rougail>

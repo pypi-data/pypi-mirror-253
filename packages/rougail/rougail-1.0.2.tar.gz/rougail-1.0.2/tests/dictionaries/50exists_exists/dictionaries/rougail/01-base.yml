@@ -1,0 +1,7 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: New description
+    exists: false
+    default: oui
+version: '1.0'

@@ -1,0 +1,23 @@
+general:
+  varname:
+    type: string
+    description: No change
+    multi: true
+    default:
+    - val1
+    - val2
+dyn:
+  type: dynamic
+  variable: rougail.general.varname
+  vardyn:
+    type: string
+    description: No change
+    default: val
+new:
+  newvar:
+    type: string
+    description: No change
+  hidden:
+    type: jinja
+    jinja: '{% if __vardynval1 == "non" %}true{% else %}false{% endif %}'
+version: '1.0'

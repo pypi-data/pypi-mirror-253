@@ -1,0 +1,12 @@
+{
+    "rougail.general.float": {
+        "owner": "default",
+        "value": 0.527
+    },
+    "rougail.general.float_multi": {
+        "owner": "default",
+        "value": [
+            0.527
+        ]
+    }
+}

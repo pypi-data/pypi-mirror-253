@@ -1,0 +1,10 @@
+general:
+  mode_conteneur_actif:
+    type: choice
+    description: No change
+    default: b
+    choices:
+    - a
+    - b
+    - c
+version: '1.0'

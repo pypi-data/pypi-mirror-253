@@ -1,0 +1,11 @@
+{
+    "rougail.general.mode_conteneur_actif": "non",
+    "services.test_service.files.systemd_makefs@dev_disk_by\\x2dpartlabel.name": "/etc/systemd-makefs@dev-disk-by\\x2dpartlabel",
+    "services.test_service.files.systemd_makefs@dev_disk_by\\x2dpartlabel.source": "systemd-makefs@dev-disk-by\\x2dpartlabel",
+    "services.test_service.files.systemd_makefs@dev_disk_by\\x2dpartlabel.activate": true,
+    "services.test_service.files.systemd_makefs@dev_disk_by\\x2dpartlabel2.name": "/etc/systemd-makefs@dev-disk-by\\x2dpartlabel2",
+    "services.test_service.files.systemd_makefs@dev_disk_by\\x2dpartlabel2.source": "systemd-makefs@dev-disk-by\\x2dpartlabel2",
+    "services.test_service.files.systemd_makefs@dev_disk_by\\x2dpartlabel2.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

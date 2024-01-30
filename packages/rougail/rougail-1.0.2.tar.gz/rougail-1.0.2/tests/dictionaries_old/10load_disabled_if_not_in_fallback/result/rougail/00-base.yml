@@ -1,0 +1,13 @@
+general:
+  condition:
+    type: string
+    description: No change
+    default: 'no'
+  disable_variable:
+    type: string
+    description: No change
+    default: 'no'
+    disabled:
+      type: jinja
+      jinja: '{% if __unknown == "no" %}false{% else %}true{% endif %}'
+version: '1.0'

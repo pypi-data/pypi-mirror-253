@@ -1,0 +1,48 @@
+from importlib.machinery import SourceFileLoader as _SourceFileLoader
+from importlib.util import spec_from_loader as _spec_from_loader, module_from_spec as _module_from_spec
+class func:
+    pass
+
+def _load_functions(path):
+    global _SourceFileLoader, _spec_from_loader, _module_from_spec, func
+    loader = _SourceFileLoader('func', path)
+    spec = _spec_from_loader(loader.name, loader)
+    func_ = _module_from_spec(spec)
+    loader.exec_module(func_)
+    for function in dir(func_):
+        if function.startswith('_'):
+            continue
+        setattr(func, function, getattr(func_, function))
+_load_functions('tests/dictionaries/../eosfunc/test.py')
+try:
+    from tiramisu4 import *
+    from tiramisu4.setting import ALLOWED_LEADER_PROPERTIES
+except:
+    from tiramisu import *
+    from tiramisu.setting import ALLOWED_LEADER_PROPERTIES
+ALLOWED_LEADER_PROPERTIES.add("basic")
+ALLOWED_LEADER_PROPERTIES.add("normal")
+ALLOWED_LEADER_PROPERTIES.add("expert")
+option_2 = StrOption(name="mode_conteneur_actif", doc="No change", default="non", properties=frozenset({"mandatory", "normal"}))
+option_3 = StrOption(name="activer_ejabberd", doc="No change", default="non", properties=frozenset({"force_default_on_freeze", "frozen", "hidden", "mandatory", "normal"}))
+option_4 = StrOption(name="module_instancie", doc="No change", default="non", properties=frozenset({"force_default_on_freeze", "frozen", "hidden", "mandatory", "normal"}))
+optiondescription_1 = OptionDescription(name="general", doc="général", children=[option_2, option_3, option_4], properties=frozenset({"normal"}))
+optiondescription_18 = OptionDescription(name="rougail", doc="Rougail", children=[optiondescription_1], properties=frozenset({"normal"}))
+option_6 = StrOption(name="description", doc="description", default="Exportation de la base de ejabberd", properties=frozenset({"mandatory", "normal"}))
+option_7 = ChoiceOption(name="day", doc="day", values=('none', 'daily', 'weekly', 'monthly'), default="none", properties=frozenset({"mandatory", "normal"}))
+option_8 = ChoiceOption(name="mode", doc="mode", values=('pre', 'post'), default="pre", properties=frozenset({"mandatory", "normal"}))
+optiondescription_5 = OptionDescription(name="ejabberd", doc="ejabberd", children=[option_6, option_7, option_8], properties=frozenset({"normal"}))
+optiondescription_19 = OptionDescription(name="extra", doc="extra", children=[optiondescription_5], properties=frozenset({"normal"}))
+optiondescription_17 = OptionDescription(name="1", doc="1", children=[optiondescription_18, optiondescription_19])
+option_10 = StrOption(name="mode_conteneur_actif", doc="No change", default="non", properties=frozenset({"mandatory", "normal"}))
+option_11 = StrOption(name="activer_ejabberd", doc="No change", default="non", properties=frozenset({"force_default_on_freeze", "frozen", "hidden", "mandatory", "normal"}))
+option_12 = StrOption(name="module_instancie", doc="No change", default="non", properties=frozenset({"force_default_on_freeze", "frozen", "hidden", "mandatory", "normal"}))
+optiondescription_9 = OptionDescription(name="general", doc="général", children=[option_10, option_11, option_12], properties=frozenset({"normal"}))
+optiondescription_21 = OptionDescription(name="rougail", doc="Rougail", children=[optiondescription_9], properties=frozenset({"normal"}))
+option_14 = StrOption(name="description", doc="description", default="Exportation de la base de ejabberd", properties=frozenset({"mandatory", "normal"}))
+option_15 = ChoiceOption(name="day", doc="day", values=('none', 'daily', 'weekly', 'monthly'), default="none", properties=frozenset({"mandatory", "normal"}))
+option_16 = ChoiceOption(name="mode", doc="mode", values=('pre', 'post'), default="pre", properties=frozenset({"mandatory", "normal"}))
+optiondescription_13 = OptionDescription(name="ejabberd", doc="ejabberd", children=[option_14, option_15, option_16], properties=frozenset({"normal"}))
+optiondescription_22 = OptionDescription(name="extra", doc="extra", children=[optiondescription_13], properties=frozenset({"normal"}))
+optiondescription_20 = OptionDescription(name="2", doc="2", children=[optiondescription_21, optiondescription_22])
+option_0 = OptionDescription(name="baseoption", doc="baseoption", children=[optiondescription_17, optiondescription_20])

@@ -1,0 +1,7 @@
+general:
+  condition:
+    redefine: true
+    hidden: false
+    disabled: false
+    mandatory: false
+version: '1.0'

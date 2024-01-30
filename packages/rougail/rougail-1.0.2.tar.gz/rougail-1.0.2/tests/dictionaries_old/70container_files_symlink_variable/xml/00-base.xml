@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <file file_type="variable" source="mailname" variable="var">file_name</file>
+    </service>
+  </services>
+  <variables>
+    <variable name="file_name" type="filename">
+      <value>/etc/mailname</value>
+    </variable>
+    <variable name="var" type="string">
+      <value>mailname</value>
+    </variable>
+  </variables>
+</rougail>

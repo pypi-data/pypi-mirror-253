@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="my_var" auto_freeze="True">
+      <value>no</value>
+    </variable>
+    <variable name="condition">
+      <value>no</value>
+    </variable>
+    <variable name="my_var1" hidden="True">
+      <value>no</value>
+    </variable>
+    <variable name="my_var2">
+      <value>no</value>
+    </variable>
+    <variable name="server_deployed" type="boolean" hidden="True">
+      <value>False</value>
+    </variable>
+  </variables>
+  <constraints>
+    <condition name="disabled_if_in" source="condition">
+      <param>yes</param>
+      <target type="variable">my_var1</target>
+      <target type="variable">my_var2</target>
+    </condition>
+  </constraints>
+</rougail>

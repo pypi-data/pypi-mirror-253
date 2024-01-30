@@ -1,0 +1,22 @@
+general:
+  description: général
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    hidden: true
+    default: oui
+  nut_monitor_netmask:
+    description: Masque de l'IP du réseau de l'esclave
+    type: leadership
+    nut_monitor_netmask:
+      type: netmask
+      description: Masque de l'IP du réseau de l'esclave
+      multi: true
+    nut_monitor_host:
+      type: network
+      description: Adresse IP du réseau de l'esclave
+      mandatory: true
+      default:
+      - 192.168.0.0
+      - 192.168.1.0
+version: '1.0'

@@ -1,0 +1,11 @@
+variable1:
+  mandatory: false
+base:
+  variable2:
+    mandatory: false
+  subfamily:
+    variable3:
+      mandatory: false
+  variable4:
+    mandatory: false
+version: '1.0'

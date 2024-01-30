@@ -1,0 +1,22 @@
+version: '0.10'
+variables:
+- variable:
+  - name: my_var1
+    auto_freeze: true
+    value:
+    - text: 'no'
+  - name: my_var2
+    value:
+    - text: 'no'
+  - name: server_deployed
+    type: boolean
+    value:
+    - text: false
+constraints:
+- fill:
+  - name: calc_val
+    param:
+    - type: variable
+      text: my_var2
+    target:
+    - text: my_var1

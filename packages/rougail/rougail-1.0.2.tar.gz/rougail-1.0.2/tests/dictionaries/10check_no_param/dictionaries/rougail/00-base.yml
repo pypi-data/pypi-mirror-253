@@ -1,0 +1,13 @@
+version: '1.0'
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: b
+  int:
+    type: number
+    description: No change
+    validators:
+    - type: jinja
+      jinja: '{{ rougail.general.int | valid_lower }}'
+    mandatory: false

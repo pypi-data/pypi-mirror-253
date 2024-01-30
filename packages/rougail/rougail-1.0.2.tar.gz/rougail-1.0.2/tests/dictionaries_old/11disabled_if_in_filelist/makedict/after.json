@@ -1,0 +1,34 @@
+{
+    "rougail.general.condition": {
+        "owner": "default",
+        "value": "non"
+    },
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "rougail.general.mode_conteneur_actif2": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.files.file.name": {
+        "owner": "default",
+        "value": "/etc/file"
+    },
+    "services.test_service.files.file.source": {
+        "owner": "default",
+        "value": "file"
+    },
+    "services.test_service.files.file.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

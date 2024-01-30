@@ -1,0 +1,10 @@
+general:
+  description: général
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+  without_type:
+    default: non
+version: '1.0'

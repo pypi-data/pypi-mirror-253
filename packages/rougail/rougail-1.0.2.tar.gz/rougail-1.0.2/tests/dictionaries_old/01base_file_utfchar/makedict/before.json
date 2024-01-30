@@ -1,0 +1,38 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "services.test_service.files.systemd_makefs@dev_disk_by\\x2dpartlabel.name": {
+        "owner": "default",
+        "value": "/etc/systemd-makefs@dev-disk-by\\x2dpartlabel"
+    },
+    "services.test_service.files.systemd_makefs@dev_disk_by\\x2dpartlabel.source": {
+        "owner": "default",
+        "value": "systemd-makefs@dev-disk-by\\x2dpartlabel"
+    },
+    "services.test_service.files.systemd_makefs@dev_disk_by\\x2dpartlabel.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.files.systemd_makefs@dev_disk_by\\x2dpartlabel2.name": {
+        "owner": "default",
+        "value": "/etc/systemd-makefs@dev-disk-by\\x2dpartlabel2"
+    },
+    "services.test_service.files.systemd_makefs@dev_disk_by\\x2dpartlabel2.source": {
+        "owner": "default",
+        "value": "systemd-makefs@dev-disk-by\\x2dpartlabel2"
+    },
+    "services.test_service.files.systemd_makefs@dev_disk_by\\x2dpartlabel2.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

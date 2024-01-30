@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="example">
+      <variable name="description" type="string" provider="example"/>
+    </family>
+  </variables>
+</rougail>

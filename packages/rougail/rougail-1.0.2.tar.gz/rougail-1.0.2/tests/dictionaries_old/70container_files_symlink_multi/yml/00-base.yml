@@ -1,0 +1,26 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - file_type: variable
+      source: mailname
+      text: file_name
+    - file_type: variable
+      source: mailname2
+      engine: jinja
+      text: file_name2
+variables:
+- variable:
+  - name: file_name
+    type: filename
+    multi: true
+    value:
+    - text: /etc/mailname
+    - text: /etc/mailname2
+  - name: file_name2
+    type: filename
+    multi: true
+    value:
+    - text: /etc/mailname3
+    - text: /etc/mailname4

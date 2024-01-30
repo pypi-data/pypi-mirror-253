@@ -1,0 +1,26 @@
+{
+    "rougail.general.condition": {
+        "owner": "default",
+        "value": false
+    },
+    "services.test_service.files.file1.name": {
+        "owner": "default",
+        "value": "/tmp/file1"
+    },
+    "services.test_service.files.file1.source": {
+        "owner": "default",
+        "value": "file1"
+    },
+    "services.test_service.files.file1.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

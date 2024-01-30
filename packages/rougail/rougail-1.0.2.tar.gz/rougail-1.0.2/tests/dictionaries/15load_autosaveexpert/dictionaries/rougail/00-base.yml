@@ -1,0 +1,11 @@
+server_deployed:
+  type: boolean
+general:
+  description: général
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    auto_save: true
+    mode: advanced
+    default: non
+version: '1.0'

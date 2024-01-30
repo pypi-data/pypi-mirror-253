@@ -1,0 +1,56 @@
+from importlib.machinery import SourceFileLoader as _SourceFileLoader
+from importlib.util import spec_from_loader as _spec_from_loader, module_from_spec as _module_from_spec
+class func:
+    pass
+
+def _load_functions(path):
+    global _SourceFileLoader, _spec_from_loader, _module_from_spec, func
+    loader = _SourceFileLoader('func', path)
+    spec = _spec_from_loader(loader.name, loader)
+    func_ = _module_from_spec(spec)
+    loader.exec_module(func_)
+    for function in dir(func_):
+        if function.startswith('_'):
+            continue
+        setattr(func, function, getattr(func_, function))
+_load_functions('tests/dictionaries/../eosfunc/test.py')
+try:
+    from tiramisu4 import *
+    from tiramisu4.setting import ALLOWED_LEADER_PROPERTIES
+except:
+    from tiramisu import *
+    from tiramisu.setting import ALLOWED_LEADER_PROPERTIES
+ALLOWED_LEADER_PROPERTIES.add("basic")
+ALLOWED_LEADER_PROPERTIES.add("normal")
+ALLOWED_LEADER_PROPERTIES.add("expert")
+option_1 = StrOption(name="my_var", doc="my_var", default="rougail", properties=frozenset({"mandatory", "normal"}))
+optiondescription_20 = OptionDescription(name="rougail", doc="Rougail", children=[option_1], properties=frozenset({"normal"}))
+option_2 = StrOption(name="my_var", doc="my_var", default=Calculation(func.calc_multi_condition, Params((ParamValue("non")))), properties=frozenset({"normal"}))
+optiondescription_21 = OptionDescription(name="extra", doc="extra", children=[option_2], properties=frozenset({"normal"}))
+option_9 = FilenameOption(name="name", doc="name", default="/etc/file")
+option_10 = StrOption(name="source", doc="source", default="file")
+option_8 = BoolOption(name="activate", doc="activate", default=True)
+optiondescription_7 = OptionDescription(name="file", doc="file", children=[option_9, option_10, option_8])
+optiondescription_6 = OptionDescription(name="files", doc="files", children=[optiondescription_7])
+option_5 = BoolOption(name="activate", doc="activate", default=True)
+option_11 = BoolOption(name="manage", doc="manage", default=True)
+optiondescription_23 = OptionDescription(name="test_service", doc="test.service", children=[optiondescription_6, option_5, option_11])
+optiondescription_23.impl_set_information('type', "service")
+optiondescription_22 = OptionDescription(name="services", doc="services", children=[optiondescription_23], properties=frozenset({"hidden"}))
+optiondescription_19 = OptionDescription(name="1", doc="1", children=[optiondescription_20, optiondescription_21, optiondescription_22])
+option_3 = StrOption(name="my_var", doc="my_var", default="rougail", properties=frozenset({"mandatory", "normal"}))
+optiondescription_25 = OptionDescription(name="rougail", doc="Rougail", children=[option_3], properties=frozenset({"normal"}))
+option_4 = StrOption(name="my_var", doc="my_var", default=Calculation(func.calc_multi_condition, Params((ParamValue("non")))), properties=frozenset({"normal"}))
+optiondescription_26 = OptionDescription(name="extra", doc="extra", children=[option_4], properties=frozenset({"normal"}))
+option_16 = FilenameOption(name="name", doc="name", default="/etc/file")
+option_17 = StrOption(name="source", doc="source", default="file")
+option_15 = BoolOption(name="activate", doc="activate", default=True)
+optiondescription_14 = OptionDescription(name="file", doc="file", children=[option_16, option_17, option_15])
+optiondescription_13 = OptionDescription(name="files", doc="files", children=[optiondescription_14])
+option_12 = BoolOption(name="activate", doc="activate", default=True)
+option_18 = BoolOption(name="manage", doc="manage", default=True)
+optiondescription_28 = OptionDescription(name="test_service", doc="test.service", children=[optiondescription_13, option_12, option_18])
+optiondescription_28.impl_set_information('type', "service")
+optiondescription_27 = OptionDescription(name="services", doc="services", children=[optiondescription_28], properties=frozenset({"hidden"}))
+optiondescription_24 = OptionDescription(name="2", doc="2", children=[optiondescription_25, optiondescription_26, optiondescription_27])
+option_0 = OptionDescription(name="baseoption", doc="baseoption", children=[optiondescription_19, optiondescription_24])

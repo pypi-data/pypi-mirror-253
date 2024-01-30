@@ -1,0 +1,9 @@
+general:
+  var:
+    type: choice
+    description: New variable
+    default: 9
+    choices:
+    - type: jinja
+      jinja: '{{ 0 | trange(10) }}'
+version: '1.0'

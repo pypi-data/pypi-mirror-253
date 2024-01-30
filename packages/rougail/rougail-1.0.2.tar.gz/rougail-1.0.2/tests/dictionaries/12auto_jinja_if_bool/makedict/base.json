@@ -1,0 +1,10 @@
+{
+    "rougail.general.bool": true,
+    "rougail.general.multi1": [
+        true,
+        false
+    ],
+    "rougail.general.multi2": [
+        false
+    ]
+}

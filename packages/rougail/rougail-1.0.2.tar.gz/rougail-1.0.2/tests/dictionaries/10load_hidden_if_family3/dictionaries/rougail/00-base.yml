@@ -1,0 +1,28 @@
+version: '1.0'
+condition1:
+  type: boolean
+  default: false
+condition2:
+  type: boolean
+  default: false
+general:
+  hidden:
+    type: jinja
+    jinja: '{% if not rougail.condition1 %}
+
+      condition1 is no
+
+      {% endif %}
+
+      '
+  my_variable:
+    hidden:
+      type: jinja
+      jinja: '{% if rougail.condition2 %}
+
+        condition is yes
+
+        {% endif %}
+
+        '
+    mandatory: false

@@ -1,0 +1,50 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "services.test_service.files.file.name": {
+        "owner": "default",
+        "value": "/etc/file"
+    },
+    "services.test_service.files.file.source": {
+        "owner": "default",
+        "value": "file"
+    },
+    "services.test_service.files.file.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.files.file2.name": {
+        "owner": "default",
+        "value": "/etc/file2"
+    },
+    "services.test_service.files.file2.source": {
+        "owner": "default",
+        "value": "file2"
+    },
+    "services.test_service.files.file2.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.files.incfile.name": {
+        "owner": "default",
+        "value": "/etc/dir/incfile"
+    },
+    "services.test_service.files.incfile.source": {
+        "owner": "default",
+        "value": "incfile"
+    },
+    "services.test_service.files.incfile.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

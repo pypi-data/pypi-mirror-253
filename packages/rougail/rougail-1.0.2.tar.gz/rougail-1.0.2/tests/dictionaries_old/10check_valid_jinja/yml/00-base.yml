@@ -1,0 +1,24 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: oui
+      - name: mode_conteneur_actif1
+        type: string
+        description: No change
+        value:
+        - text: non
+constraints:
+- check:
+  - name: '{% if rougail.general.mode_conteneur_actif == rougail.general.mode_conteneur_actif1
+      %}the value must be different than "{{ rougail.general.mode_conteneur_actif
+      }}"{% endif %}'
+    type: jinja
+    target:
+    - text: mode_conteneur_actif

@@ -1,0 +1,22 @@
+{
+    "rougail.leader.leader": {
+        "owner": "default",
+        "value": [
+            "a",
+            "b",
+            "c"
+        ]
+    },
+    "rougail.leader.follower1": {
+        "owner": [
+            "default",
+            "default",
+            "default"
+        ],
+        "value": [
+            0,
+            1,
+            2
+        ]
+    }
+}

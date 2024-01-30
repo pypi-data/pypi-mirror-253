@@ -1,0 +1,37 @@
+version: '1.0'
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    hidden: true
+    default:
+      type: jinja
+      jinja: '{% if __mode_conteneur_actif4 is defined %}
+
+        {{ __mode_conteneur_actif4 }}
+
+        {% elif __mode_conteneur_actif3 is defined %}
+
+        {{ __mode_conteneur_actif3 }}
+
+        {% else %}
+
+        {{ rougail.general.mode_conteneur_actif1 }}
+
+        {% endif %}
+
+        '
+      params:
+        __mode_conteneur_actif4:
+          type: variable
+          variable: rougail.general.mode_conteneur_actif4
+          optional: true
+        __mode_conteneur_actif3:
+          type: variable
+          variable: rougail.general.mode_conteneur_actif3
+          optional: true
+    mandatory: false
+  mode_conteneur_actif1:
+    type: string
+    description: No change
+    default: non

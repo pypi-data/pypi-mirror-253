@@ -1,0 +1,41 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: non
+      - name: condition
+        type: string
+        description: condition
+        value:
+        - text: oui
+    - family:
+      - name: leader
+        description: leader
+        leadership: true
+        variables:
+        - variable:
+          - name: leader
+            type: string
+            description: leader
+            multi: true
+          - name: follower1
+            type: string
+            description: follower1
+          - name: follower2
+            type: string
+            description: follower2
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: condition
+    param:
+    - text: oui
+    target:
+    - type: variable
+      text: follower1

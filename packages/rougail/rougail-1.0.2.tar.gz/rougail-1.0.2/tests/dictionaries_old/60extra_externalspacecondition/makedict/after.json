@@ -1,0 +1,30 @@
+{
+    "rougail.general.my_var": {
+        "owner": "forced",
+        "value": "no"
+    },
+    "rougail.general.my_var1": {
+        "owner": "default",
+        "value": "no"
+    },
+    "rougail.general.server_deployed": {
+        "owner": "default",
+        "value": false
+    },
+    "extra.ejabberd.description": {
+        "owner": "default",
+        "value": "Exportation de la base de ejabberd"
+    },
+    "extra.ejabberd.day": {
+        "owner": "default",
+        "value": "none"
+    },
+    "extra.ejabberd.mode": {
+        "owner": "default",
+        "value": "pre"
+    },
+    "extra1.external.description": {
+        "owner": "default",
+        "value": "test"
+    }
+}

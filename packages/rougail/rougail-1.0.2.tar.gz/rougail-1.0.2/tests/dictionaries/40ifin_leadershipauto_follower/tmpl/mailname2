@@ -1,0 +1,9 @@
+{% for lead in leader -%}
+leader: {{ lead }}
+{% if lead.follower1 is defined -%}
+follower1: {{ lead.follower1 if lead.follower1 }}
+{% endif -%}
+{% if lead.follower2 is defined -%}
+follower2: {{ lead.follower2 if lead.follower2 }}
+{% endif -%}
+{% endfor -%}

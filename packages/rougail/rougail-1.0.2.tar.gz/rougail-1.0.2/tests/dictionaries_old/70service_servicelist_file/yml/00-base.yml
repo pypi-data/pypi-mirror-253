@@ -1,0 +1,26 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    servicelist: test
+    file:
+    - text: /etc/file
+variables:
+- variable:
+  - name: condition
+    value:
+    - text: 'no'
+  - name: nut_monitor_host
+    type: ip
+    mandatory: true
+    value:
+    - text: 192.168.0.1
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: condition
+    param:
+    - text: 'no'
+    target:
+    - type: servicelist
+      text: test

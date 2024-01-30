@@ -1,0 +1,29 @@
+---
+version: '1.0'
+general:
+  condition:
+    type: string
+    description: No change
+    default: non
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+    disabled:
+      type: jinja
+      jinja: |
+        {% if not rougail.general.condition %}
+        if not rougail.general.condition
+        {% endif %}
+  mode_conteneur_actif2:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+    disabled:
+      type: jinja
+      jinja: |
+        {% if not rougail.general.condition %}
+        if not rougail.general.condition
+        {% endif %}

@@ -1,0 +1,17 @@
+general:
+  mode: advanced
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+enumfam:
+  mode: advanced
+  enumvar:
+    mandatory: false
+    type: choice
+    default: c
+    choices:
+    - a
+    - b
+    - c
+version: '1.0'

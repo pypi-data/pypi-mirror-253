@@ -1,0 +1,18 @@
+{
+    "rougail.general.mode_conteneur_actif": "non",
+    "rougail.general.activer_ejabberd": "non",
+    "extra.ejabberd.description.description": [
+        {
+            "extra.ejabberd.description.description": "test",
+            "extra.ejabberd.description.mode": "pre"
+        }
+    ],
+    "services.test_service.files.mailname.name": "/etc/mailname",
+    "services.test_service.files.mailname.source": "mailname",
+    "services.test_service.files.mailname.activate": true,
+    "services.test_service.files.mailname2.name": "/etc/mailname2",
+    "services.test_service.files.mailname2.source": "mailname2",
+    "services.test_service.files.mailname2.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

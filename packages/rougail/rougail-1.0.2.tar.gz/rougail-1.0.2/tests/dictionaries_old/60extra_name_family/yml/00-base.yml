@@ -1,0 +1,18 @@
+version: '0.10'
+variables:
+- family:
+  - name: extra
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        hidden: true
+        value:
+        - text: non
+      - name: activer_ejabberd
+        type: string
+        description: No change
+        hidden: true
+        value:
+        - text: non

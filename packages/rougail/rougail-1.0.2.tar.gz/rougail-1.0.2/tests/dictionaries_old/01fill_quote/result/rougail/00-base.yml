@@ -1,0 +1,30 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    mandatory: false
+    default:
+      type: jinja
+      jinja: '{{ "quote''" | calc_val }}'
+  mode_conteneur_actif1:
+    type: string
+    description: No change
+    mandatory: false
+    default:
+      type: jinja
+      jinja: '{{ "quote\"" | calc_val }}'
+  mode_conteneur_actif2:
+    type: string
+    description: No change
+    mandatory: false
+    default:
+      type: jinja
+      jinja: '{{ "quote\"''" | calc_val }}'
+  mode_conteneur_actif3:
+    type: string
+    description: No change
+    mandatory: false
+    default:
+      type: jinja
+      jinja: '{{ "quote\"\\''" | calc_val }}'
+version: '1.0'

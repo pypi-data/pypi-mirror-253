@@ -1,0 +1,18 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+general2:
+  hidden: true
+  mode_conteneur_actif2:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+  disabled:
+    type: jinja
+    jinja: '{% if rougail.general.mode_conteneur_actif == "oui" %}true{% else %}false{%
+      endif %}'
+version: '1.0'

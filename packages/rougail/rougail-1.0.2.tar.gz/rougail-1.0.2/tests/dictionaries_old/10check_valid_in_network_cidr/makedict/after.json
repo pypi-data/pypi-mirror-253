@@ -1,0 +1,14 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "oui"
+    },
+    "rougail.general.adresse_ip_eth0": {
+        "owner": "default",
+        "value": null
+    },
+    "rougail.general.adresse_ip": {
+        "owner": "default",
+        "value": null
+    }
+}

@@ -1,0 +1,10 @@
+test.service:
+  files:
+    /etc/file:
+      owner: nobody
+      group: nobody
+    /etc/file2:
+      owner: nobody
+      group: nobody
+      engine: jinja
+version: '1.0'

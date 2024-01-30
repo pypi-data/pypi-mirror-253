@@ -1,0 +1,16 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        redefine: true
+        exists: true
+        value:
+        - text: oui
+      - name: mode_conteneur_actif1
+        redefine: true
+        exists: true
+        value:
+        - text: oui

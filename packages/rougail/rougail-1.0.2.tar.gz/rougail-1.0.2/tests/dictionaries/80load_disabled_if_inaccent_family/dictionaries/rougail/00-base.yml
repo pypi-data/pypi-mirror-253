@@ -1,0 +1,32 @@
+Général:
+  condition:
+    type: string
+    description: No change
+    default: non
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+    disabled:
+      type: jinja
+      jinja: '{% if rougail.Général.condition == "oui" %}true{% else %}false{% endif
+        %}'
+  mode_conteneur_actif2:
+    type: string
+    description: No change
+    default: non
+    disabled:
+      type: jinja
+      jinja: '{% if rougail.Général.condition == "oui" %}true{% else %}false{% endif
+        %}'
+Général2:
+  mode_conteneur_actif3:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+  disabled:
+    type: jinja
+    jinja: '{% if rougail.Général.condition == "oui" %}true{% else %}false{% endif
+      %}'
+version: '1.0'

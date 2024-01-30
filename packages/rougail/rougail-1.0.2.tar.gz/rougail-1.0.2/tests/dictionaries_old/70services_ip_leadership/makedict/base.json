@@ -1,0 +1,17 @@
+{
+    "rougail.general.nut_monitor_netmask.nut_monitor_netmask": [
+        {
+            "rougail.general.nut_monitor_netmask.nut_monitor_netmask": "255.255.255.0",
+            "rougail.general.nut_monitor_netmask.nut_monitor_host": "192.168.1.0"
+        }
+    ],
+    "services.ntp_service.ip.nut_monitor_host.name": [
+        "192.168.1.0"
+    ],
+    "services.ntp_service.ip.nut_monitor_host.netmask": [
+        "255.255.255.0"
+    ],
+    "services.ntp_service.ip.nut_monitor_host.activate": true,
+    "services.ntp_service.activate": true,
+    "services.ntp_service.manage": true
+}

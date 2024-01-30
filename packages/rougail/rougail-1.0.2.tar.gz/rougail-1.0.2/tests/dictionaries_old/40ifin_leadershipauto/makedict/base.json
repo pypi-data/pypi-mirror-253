@@ -1,0 +1,15 @@
+{
+    "rougail.general.mode_conteneur_actif": "non",
+    "rougail.general.condition": "oui",
+    "rougail.general.leader.leader": [
+        {
+            "rougail.general.leader.leader": "a",
+            "rougail.general.leader.follower2": null
+        }
+    ],
+    "services.test_service.files.mailname.name": "/etc/mailname",
+    "services.test_service.files.mailname.source": "mailname",
+    "services.test_service.files.mailname.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

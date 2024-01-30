@@ -1,0 +1,7 @@
+general:
+  mode_conteneur_actif:
+    type: "boolean"
+    test:
+      - false
+    default: true
+version: '1.0'

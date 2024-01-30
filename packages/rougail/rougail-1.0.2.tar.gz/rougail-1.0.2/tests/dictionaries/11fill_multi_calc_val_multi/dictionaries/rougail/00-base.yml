@@ -1,0 +1,19 @@
+var1:
+  multi: true
+  default:
+  - 'no'
+  - 'yes'
+  - maybe
+var2:
+  multi: true
+  default:
+    type: jinja
+    jinja: '{% for val in calc_value(rougail.var1) %}
+
+      {{ val }}
+
+      {% endfor %}
+
+      '
+  mandatory: false
+version: '1.0'

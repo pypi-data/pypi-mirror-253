@@ -1,0 +1,19 @@
+version: '0.10'
+variables:
+- variable:
+  - name: bool
+    type: boolean
+  - name: int1
+    type: number
+  - name: int2
+    type: number
+constraints:
+- fill:
+  - name: '{%set bool1 = bool %}{% if bool1 %}1{% else %}2{% endif %}'
+    type: jinja
+    target:
+    - text: int1
+  - name: '{%set bool1 = bool %}{% if not bool1 %}3{% else %}4{% endif %}'
+    type: jinja
+    target:
+    - text: int2

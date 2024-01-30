@@ -1,0 +1,14 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "rougail.general.activer_ejabberd": {
+        "owner": "default",
+        "value": "non"
+    },
+    "extra.extra": {
+        "owner": "default",
+        "value": null
+    }
+}

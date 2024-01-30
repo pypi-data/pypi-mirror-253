@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <file>/etc/mailname</file>
+      <file engine="jinja">/etc/mailname2</file>
+    </service>
+  </services>
+  <variables>
+    <family name="general" description="général">
+      <variable name="mode_conteneur_actif" type="string" description="No change" hidden="True">
+        <value>non</value>
+      </variable>
+      <variable name="activer_ejabberd" type="string" description="No change" hidden="True">
+        <value>non</value>
+      </variable>
+    </family>
+  </variables>
+</rougail>

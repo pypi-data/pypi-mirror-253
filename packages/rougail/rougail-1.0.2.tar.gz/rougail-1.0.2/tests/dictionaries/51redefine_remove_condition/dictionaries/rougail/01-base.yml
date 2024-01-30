@@ -1,0 +1,9 @@
+---
+version: '1.0'
+general:
+  mode_conteneur_actif1:
+    redefine: true
+    disabled: false
+  mode_conteneur_actif2:
+    redefine: true
+    disabled: false

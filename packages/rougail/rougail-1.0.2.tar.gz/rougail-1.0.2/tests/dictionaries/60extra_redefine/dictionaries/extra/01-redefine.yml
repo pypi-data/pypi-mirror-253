@@ -1,0 +1,5 @@
+ejabberd:
+  description:
+    redefine: true
+    hidden: true
+version: '1.0'

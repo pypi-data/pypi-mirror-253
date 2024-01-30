@@ -1,0 +1,10 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "b"
+    },
+    "rougail.general.int": {
+        "owner": "default",
+        "value": null
+    }
+}

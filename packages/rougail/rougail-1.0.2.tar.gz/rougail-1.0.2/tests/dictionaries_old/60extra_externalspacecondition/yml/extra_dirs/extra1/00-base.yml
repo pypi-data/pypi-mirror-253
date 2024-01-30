@@ -1,0 +1,19 @@
+version: '0.10'
+variables:
+- family:
+  - name: external
+    variables:
+    - variable:
+      - name: description
+        type: string
+        value:
+        - text: test
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: extra.ejabberd.description
+    param:
+    - text: non
+    target:
+    - type: family
+      text: extra1.external

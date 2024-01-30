@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="No change">
+        <value>non</value>
+      </variable>
+      <family name="leader" description="leader" leadership="True">
+        <variable name="leader" type="string" description="leader" multi="True"/>
+        <variable name="follower1" type="choice" description="follower1">
+          <choice type="string">a</choice>
+          <choice type="string">b</choice>
+          <choice type="string">c</choice>
+          <value type="string">a</value>
+        </variable>
+        <variable name="follower2" type="string" description="follower2"/>
+      </family>
+    </family>
+  </variables>
+  <constraints/>
+</rougail>

@@ -1,0 +1,33 @@
+version: '0.10'
+variables:
+- variable:
+  - name: my_var
+    auto_freeze: true
+    value:
+    - text: 'no'
+  - name: condition
+    value:
+    - text: 'no'
+  - name: my_var1
+    hidden: true
+    value:
+    - text: 'no'
+  - name: my_var2
+    value:
+    - text: 'no'
+  - name: server_deployed
+    type: boolean
+    hidden: true
+    value:
+    - text: false
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: condition
+    param:
+    - text: 'yes'
+    target:
+    - type: variable
+      text: my_var1
+    - type: variable
+      text: my_var2

@@ -1,0 +1,14 @@
+# Backup and swap files
+*~
+*#
+*.swp
+__pycache__
+.coverage
+commitizen
+coverage.sh
+dist
+export.sh
+found_id.sh
+jinja_caches
+publish
+tests/custom.py

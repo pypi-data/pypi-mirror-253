@@ -1,0 +1,6 @@
+test.service:
+  files:
+    /etc/systemd-makefs@dev-disk-by\x2dpartlabel: {}
+    /etc/systemd-makefs@dev-disk-by\x2dpartlabel2:
+      engine: jinja
+version: '1.0'

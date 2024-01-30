@@ -1,0 +1,26 @@
+general:
+  mode: advanced
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+leadermode:
+  leader:
+    description: leader
+    type: leadership
+    leader:
+      type: string
+      description: leader
+      multi: true
+      mode: advanced
+      default:
+        type: jinja
+        jinja: '{{ "valfill" | calc_list }}'
+    follower1:
+      type: string
+      description: follower1
+      mode: normal
+    follower2:
+      type: string
+      description: follower2
+version: '1.0'

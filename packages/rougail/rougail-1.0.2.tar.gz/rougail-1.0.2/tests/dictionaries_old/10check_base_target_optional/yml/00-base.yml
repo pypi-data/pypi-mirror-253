@@ -1,0 +1,17 @@
+version: '0.10'
+variables:
+- variable:
+  - name: my_variable
+constraints:
+- check:
+  - name: valid_entier
+    param:
+    - name: mini
+      type: number
+      text: 0
+    - name: maxi
+      type: number
+      text: 100
+    target:
+    - optional: true
+      text: int

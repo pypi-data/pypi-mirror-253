@@ -1,0 +1,10 @@
+---
+version: '1.0'
+general:
+  redefine: true
+  help: redefine help family ok
+  mode_conteneur_actif:
+    redefine: true
+    hidden: true
+    help: redefine help ok
+    default: non

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test" servicelist="test"/>
+  </services>
+  <variables>
+    <variable name="condition1">
+      <value>no</value>
+    </variable>
+    <variable name="condition2">
+      <value>no</value>
+    </variable>
+  </variables>
+  <constraints>
+    <condition name="disabled_if_in" source="condition1">
+      <param>no</param>
+      <target>condition2</target>
+    </condition>
+    <condition name="disabled_if_in" source="condition2">
+      <param>yes</param>
+      <target type="servicelist">test</target>
+    </condition>
+  </constraints>
+</rougail>

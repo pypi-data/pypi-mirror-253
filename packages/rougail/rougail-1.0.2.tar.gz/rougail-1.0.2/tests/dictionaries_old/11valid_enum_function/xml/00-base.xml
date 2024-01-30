@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="var" type="choice" description="New variable">
+        <value type="number">9</value>
+        <choice type="function" name="trange">
+          <param type="number">0</param>
+          <param type="number">10</param>
+        </choice>
+      </variable>
+    </family>
+  </variables>
+  <constraints/>
+</rougail>

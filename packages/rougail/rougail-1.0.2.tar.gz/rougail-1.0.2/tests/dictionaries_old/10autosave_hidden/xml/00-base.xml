@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="server_deployed" type="boolean"/>
+    <family name="general" description="général">
+      <variable name="mode_conteneur_actif" type="string" description="No change" hidden="True">
+        <value>non</value>
+      </variable>
+      <variable name="autosavevar" type="string" description="autosave variable" hidden="True" auto_save="True"/>
+    </family>
+  </variables>
+  <constraints>
+    <fill name="calc_val">
+      <param>oui</param>
+      <target>autosavevar</target>
+    </fill>
+  </constraints>
+</rougail>

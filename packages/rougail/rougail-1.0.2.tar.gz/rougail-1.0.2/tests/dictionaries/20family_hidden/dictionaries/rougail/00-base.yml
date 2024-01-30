@@ -1,0 +1,7 @@
+---
+version: '1.0'
+general:
+  mode_conteneur_actif:
+    description: No change
+    hidden: true
+    default: non

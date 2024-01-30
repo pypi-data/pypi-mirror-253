@@ -1,0 +1,10 @@
+{
+    "rougail.my_var": {
+        "owner": "default",
+        "value": "rougail"
+    },
+    "extra.my_var": {
+        "owner": "default",
+        "value": null
+    }
+}

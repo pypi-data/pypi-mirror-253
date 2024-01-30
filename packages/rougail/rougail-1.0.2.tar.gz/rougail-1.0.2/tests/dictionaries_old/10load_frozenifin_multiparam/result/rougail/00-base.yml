@@ -1,0 +1,26 @@
+general:
+  condition:
+    type: choice
+    description: No change
+    default: tous
+    choices:
+    - tous
+    - authentifié
+    - aucun
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+    hidden:
+      type: jinja
+      jinja: '{% if rougail.general.condition == "tous" or rougail.general.condition
+        == "authentifié" %}true{% else %}false{% endif %}'
+  mode_conteneur_actif2:
+    type: string
+    description: No change
+    default: non
+    hidden:
+      type: jinja
+      jinja: '{% if rougail.general.condition == "tous" or rougail.general.condition
+        == "authentifié" %}true{% else %}false{% endif %}'
+version: '1.0'

@@ -1,0 +1,29 @@
+ejabberd:
+  description:
+    type: string
+    default: Exportation de la base de ejabberd
+  day:
+    type: choice
+    mandatory: true
+    default:
+      type: jinja
+      jinja: '{{ "non" | calc_multi_condition(condition_1=__activer_ejabberd, match="none",
+        mismatch="daily") }}'
+      params:
+        __activer_ejabberd:
+          type: variable
+          variable: rougail.extra.activer_ejabberd
+          propertyerror: false
+    choices:
+    - none
+    - daily
+    - weekly
+    - monthly
+  mode:
+    type: choice
+    mandatory: true
+    default: pre
+    choices:
+    - pre
+    - post
+version: '1.0'

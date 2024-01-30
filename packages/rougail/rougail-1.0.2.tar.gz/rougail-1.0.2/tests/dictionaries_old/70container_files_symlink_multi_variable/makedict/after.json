@@ -1,0 +1,75 @@
+{
+    "rougail.file_name": {
+        "owner": "default",
+        "value": [
+            "/etc/mailname",
+            "/etc/mailname2"
+        ]
+    },
+    "rougail.file_name2": {
+        "owner": "default",
+        "value": [
+            "/etc/mailname3",
+            "/etc/mailname4"
+        ]
+    },
+    "rougail.var": {
+        "owner": "default",
+        "value": [
+            "mailname",
+            "mailname2"
+        ]
+    },
+    "services.test_service.files.mailname.name": {
+        "owner": "default",
+        "value": [
+            "/etc/mailname",
+            "/etc/mailname2"
+        ]
+    },
+    "services.test_service.files.mailname.source": {
+        "owner": "default",
+        "value": "mailname"
+    },
+    "services.test_service.files.mailname.variable": {
+        "owner": "default",
+        "value": [
+            "mailname",
+            "mailname2"
+        ]
+    },
+    "services.test_service.files.mailname.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.files.mailname2.name": {
+        "owner": "default",
+        "value": [
+            "/etc/mailname3",
+            "/etc/mailname4"
+        ]
+    },
+    "services.test_service.files.mailname2.source": {
+        "owner": "default",
+        "value": "mailname2"
+    },
+    "services.test_service.files.mailname2.variable": {
+        "owner": "default",
+        "value": [
+            "mailname",
+            "mailname2"
+        ]
+    },
+    "services.test_service.files.mailname2.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

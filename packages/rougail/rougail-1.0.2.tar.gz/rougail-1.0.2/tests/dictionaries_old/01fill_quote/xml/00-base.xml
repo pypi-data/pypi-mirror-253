@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="No change"/>
+      <variable name="mode_conteneur_actif1" type="string" description="No change"/>
+      <variable name="mode_conteneur_actif2" type="string" description="No change"/>
+      <variable name="mode_conteneur_actif3" type="string" description="No change"/>
+    </family>
+  </variables>
+  <constraints>
+    <fill name="calc_val">
+      <param>quote'</param>
+      <target>mode_conteneur_actif</target>
+    </fill>
+    <fill name="calc_val">
+      <param>quote"</param>
+      <target>mode_conteneur_actif1</target>
+    </fill>
+    <fill name="calc_val">
+      <param>quote"'</param>
+      <target>mode_conteneur_actif2</target>
+    </fill>
+    <fill name="calc_val">
+      <param>quote"\'</param>
+      <target>mode_conteneur_actif3</target>
+    </fill>
+  </constraints>
+</rougail>

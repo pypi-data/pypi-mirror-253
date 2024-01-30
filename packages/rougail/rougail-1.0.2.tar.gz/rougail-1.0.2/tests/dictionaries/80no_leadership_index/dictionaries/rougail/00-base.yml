@@ -1,0 +1,8 @@
+my_variable:
+  default:
+    type: jinja
+    jinja: '{{ __index | calc_val }}'
+    params:
+      __index:
+        type: index
+version: '1.0'

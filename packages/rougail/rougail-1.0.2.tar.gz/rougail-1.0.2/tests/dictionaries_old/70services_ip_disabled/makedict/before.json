@@ -1,0 +1,14 @@
+{
+    "services.nut_service.ip.nut_monitor_host.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.nut_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.nut_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

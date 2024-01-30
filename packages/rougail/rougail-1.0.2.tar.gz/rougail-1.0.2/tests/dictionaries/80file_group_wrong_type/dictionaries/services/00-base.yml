@@ -1,0 +1,7 @@
+test.service:
+  files:
+    /etc/file:
+      group:
+        name: rougail.group
+        type: variable
+version: '1.0'

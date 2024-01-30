@@ -1,0 +1,15 @@
+---
+version: '1.0'
+source_variable_1:
+  multi: true
+  default: val1
+source_variable_2:
+  multi: true
+  default: val2
+my_variable:
+  type: choice
+  choices:
+    - type: variable
+      variable: rougail.source_variable_1
+    - type: variable
+      variable: rougail.source_variable_2

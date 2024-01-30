@@ -1,0 +1,24 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    certificate:
+    - authority: authority
+      owner: example
+      certificatelist: certlist
+      text: certificate
+variables:
+- variable:
+  - name: server_name
+    type: domainname
+    value:
+    - text: example.net
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: server_name
+    param:
+    - text: example.net
+    target:
+    - type: certificatelist
+      text: certlist

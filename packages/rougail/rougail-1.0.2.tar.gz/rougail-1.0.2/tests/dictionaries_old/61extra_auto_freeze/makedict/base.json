@@ -1,0 +1,5 @@
+{
+    "rougail.general.server_deployed": true,
+    "rougail.general.activer_ejabberd": "non",
+    "extra.ejabberd.mode": "pre"
+}

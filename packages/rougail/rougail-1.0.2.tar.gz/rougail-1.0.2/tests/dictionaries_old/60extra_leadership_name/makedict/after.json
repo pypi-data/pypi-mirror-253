@@ -1,0 +1,56 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "rougail.general.activer_ejabberd": {
+        "owner": "default",
+        "value": "non"
+    },
+    "extra.ejabberd.new_name.description": {
+        "owner": "default",
+        "value": [
+            "test"
+        ]
+    },
+    "extra.ejabberd.new_name.mode": {
+        "owner": [
+            "default"
+        ],
+        "value": [
+            "pre"
+        ]
+    },
+    "services.test_service.files.mailname.name": {
+        "owner": "default",
+        "value": "/etc/mailname"
+    },
+    "services.test_service.files.mailname.source": {
+        "owner": "default",
+        "value": "mailname"
+    },
+    "services.test_service.files.mailname.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.files.mailname2.name": {
+        "owner": "default",
+        "value": "/etc/mailname2"
+    },
+    "services.test_service.files.mailname2.source": {
+        "owner": "default",
+        "value": "mailname2"
+    },
+    "services.test_service.files.mailname2.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

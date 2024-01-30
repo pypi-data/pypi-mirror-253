@@ -1,0 +1,28 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+    disabled:
+      type: jinja
+      jinja: '{% if rougail.general2.mode_conteneur_actif3 == "d" %}true{% else %}false{%
+        endif %}'
+general2:
+  hidden: true
+  mode_conteneur_actif2:
+    type: string
+    description: No change
+    default: non
+    disabled:
+      type: jinja
+      jinja: '{% if rougail.general2.mode_conteneur_actif3 == "d" %}false{% else %}true{%
+        endif %}'
+  mode_conteneur_actif3:
+    type: choice
+    description: No change
+    default: a
+    choices:
+    - a
+    - b
+    - c
+version: '1.0'

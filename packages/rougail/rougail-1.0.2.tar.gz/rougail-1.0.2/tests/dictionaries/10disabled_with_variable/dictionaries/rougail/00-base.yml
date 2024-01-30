@@ -1,0 +1,8 @@
+version: '1.0'
+condition:
+  type: boolean
+variable:
+  disabled:
+    type: variable
+    variable: rougail.condition
+  mandatory: false

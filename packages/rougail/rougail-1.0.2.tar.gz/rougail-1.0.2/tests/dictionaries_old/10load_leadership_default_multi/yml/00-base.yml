@@ -1,0 +1,30 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: leader
+        multi: true
+        value:
+        - text: non
+    - family:
+      - name: leader
+        description: leader
+        leadership: true
+        variables:
+        - variable:
+          - name: leader
+            type: string
+            description: leader
+            multi: true
+          - name: follower1
+            type: string
+            description: follower1
+            value:
+            - text: value
+          - name: follower2
+            type: string
+            description: follower2

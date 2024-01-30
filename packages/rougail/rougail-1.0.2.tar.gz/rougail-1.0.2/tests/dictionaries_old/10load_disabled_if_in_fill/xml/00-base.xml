@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="condition" type="string">
+        <value>no</value>
+      </variable>
+      <variable name="variable1" type="string"/>
+      <variable name="variable2" type="string"/>
+    </family>
+  </variables>
+  <constraints>
+    <condition name="disabled_if_in" source="condition">
+      <param>no</param>
+      <target type="variable">variable1</target>
+    </condition>
+    <fill name="calc_val">
+      <param type="variable" propertyerror="False">variable1</param>
+      <target>variable2</target>
+    </fill>
+  </constraints>
+</rougail>

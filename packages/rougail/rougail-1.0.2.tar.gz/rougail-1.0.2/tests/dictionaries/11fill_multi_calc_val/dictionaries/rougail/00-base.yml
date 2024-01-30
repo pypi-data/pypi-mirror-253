@@ -1,0 +1,15 @@
+version: '1.0'
+var1:
+  default: 'no'
+var2:
+  multi: true
+  default:
+    type: jinja
+    jinja: '{% for val in calc_value(rougail.var1, multi=true) %}
+
+      {{ val }}
+
+      {% endfor %}
+
+      '
+  mandatory: false

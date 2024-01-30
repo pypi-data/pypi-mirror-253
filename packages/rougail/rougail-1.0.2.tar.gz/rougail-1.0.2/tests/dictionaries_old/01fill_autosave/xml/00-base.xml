@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="server_deployed" type="boolean"/>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="No change" auto_save="True">
+        <value>non</value>
+      </variable>
+      <variable name="mode_conteneur_actif1" type="string" description="No change">
+        <value>non</value>
+      </variable>
+    </family>
+  </variables>
+  <constraints>
+    <fill name="calc_val">
+      <param type="variable">mode_conteneur_actif1</param>
+      <target>mode_conteneur_actif</target>
+    </fill>
+  </constraints>
+</rougail>

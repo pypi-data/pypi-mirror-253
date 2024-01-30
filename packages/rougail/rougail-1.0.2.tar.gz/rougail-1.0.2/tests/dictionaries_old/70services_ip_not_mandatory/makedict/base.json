@@ -1,0 +1,7 @@
+{
+    "rougail.nut_monitor_host": null,
+    "services.nut_service.ip.nut_monitor_host.name": null,
+    "services.nut_service.ip.nut_monitor_host.activate": true,
+    "services.nut_service.activate": true,
+    "services.nut_service.manage": true
+}

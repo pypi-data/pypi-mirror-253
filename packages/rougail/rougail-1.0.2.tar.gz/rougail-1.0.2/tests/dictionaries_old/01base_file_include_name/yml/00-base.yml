@@ -1,0 +1,20 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - text: /etc/file
+    - engine: jinja
+      text: /etc/file2
+    - included: name
+      text: /etc/dir/incfile
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: Description
+        value:
+        - text: non

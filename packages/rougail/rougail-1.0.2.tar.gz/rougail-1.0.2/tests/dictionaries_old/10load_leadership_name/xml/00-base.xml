@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="No change">
+        <value>non</value>
+      </variable>
+    </family>
+    <family name="general1">
+      <family name="other_name" description="other_name" leadership="True">
+        <variable name="leader" type="string" description="leader" multi="True"/>
+        <variable name="follower1" type="string" description="follower1"/>
+        <variable name="follower2" type="string" description="follower2"/>
+      </family>
+    </family>
+  </variables>
+  <constraints>
+    <fill name="calc_val">
+      <param name="valeur">valfill</param>
+      <target>follower1</target>
+    </fill>
+    <fill name="calc_val">
+      <param type="variable">follower1</param>
+      <target>follower2</target>
+    </fill>
+  </constraints>
+</rougail>

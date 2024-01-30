@@ -1,0 +1,18 @@
+test.service:
+  files:
+    /etc/file:
+      owner:
+        name: rougail.general.owner
+        type: variable
+      group:
+        name: rougail.general.group
+        type: variable
+    /etc/file2:
+      owner:
+        name: rougail.general.owner
+        type: variable
+      group:
+        name: rougail.general.group
+        type: variable
+      engine: jinja
+version: '1.0'

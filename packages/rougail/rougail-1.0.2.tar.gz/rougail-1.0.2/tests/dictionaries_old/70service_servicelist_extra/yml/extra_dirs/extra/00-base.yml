@@ -1,0 +1,15 @@
+version: '0.10'
+variables:
+- variable:
+  - name: condition
+    value:
+    - text: 'no'
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: extra.condition
+    param:
+    - text: 'yes'
+    target:
+    - type: servicelist
+      text: test

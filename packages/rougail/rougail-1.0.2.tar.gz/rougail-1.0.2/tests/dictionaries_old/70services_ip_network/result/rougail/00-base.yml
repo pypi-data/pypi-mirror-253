@@ -1,0 +1,9 @@
+nut_monitor_netmask:
+  type: netmask
+  mandatory: true
+  default: 255.255.255.0
+nut_monitor_host:
+  type: network
+  mandatory: true
+  default: 192.168.0.0
+version: '1.0'

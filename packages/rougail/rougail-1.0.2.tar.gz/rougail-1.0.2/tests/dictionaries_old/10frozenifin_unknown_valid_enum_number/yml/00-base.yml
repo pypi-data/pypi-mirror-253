@@ -1,0 +1,42 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    mode: expert
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: non
+  - name: enumfam
+    mode: expert
+    variables:
+    - variable:
+      - name: enumvar
+        type: choice
+        description: enumvar
+        help: bla bla bla
+        choice:
+        - type: number
+          text: 1
+        - type: number
+          text: 2
+        - type: number
+          text: 3
+        value:
+        - type: number
+          text: 1
+      - name: test_variable
+        type: number
+        description: test variable
+constraints:
+- condition:
+  - name: hidden_if_in
+    source: enumvar
+    param:
+    - text: 4
+    target:
+    - type: variable
+      text: test_variable

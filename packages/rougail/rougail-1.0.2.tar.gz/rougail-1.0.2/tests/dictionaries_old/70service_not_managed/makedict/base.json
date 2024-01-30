@@ -1,0 +1,8 @@
+{
+    "rougail.var": "mailname",
+    "services.test_service.files.test.name": "/tmp/test",
+    "services.test_service.files.test.source": "test",
+    "services.test_service.files.test.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": false
+}

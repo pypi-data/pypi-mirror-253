@@ -1,0 +1,29 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: b
+  int:
+    type: number
+    description: No change
+    validators:
+    - type: jinja
+      jinja: '{{ rougail.general.int | valid_differ(rougail.general.int2) }}'
+      params:
+        rougail.general.int2:
+          type: variable
+          variable: rougail.general.int2
+          optional: true
+    - type: jinja
+      jinja: '{{ rougail.general.int | valid_differ(__int3) }}'
+      params:
+        __int3:
+          type: variable
+          variable: rougail.general.int3
+          optional: true
+    mandatory: false
+  int2:
+    type: number
+    description: No change
+    mandatory: false
+version: '1.0'

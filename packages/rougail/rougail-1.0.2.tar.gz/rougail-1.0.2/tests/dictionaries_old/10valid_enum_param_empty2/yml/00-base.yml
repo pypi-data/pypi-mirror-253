@@ -1,0 +1,24 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    mode: expert
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: non
+  - name: enumfam
+    mode: expert
+    variables:
+    - variable:
+      - name: enumvar
+        type: choice
+        description: multi
+        help: bla bla bla
+        choice:
+        - type: nil
+        value:
+        - type: nil

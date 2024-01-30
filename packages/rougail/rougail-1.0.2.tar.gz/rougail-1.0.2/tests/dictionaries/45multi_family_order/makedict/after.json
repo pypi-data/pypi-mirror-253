@@ -1,0 +1,18 @@
+{
+    "rougail.variable1": {
+        "owner": "default",
+        "value": null
+    },
+    "rougail.base.variable2": {
+        "owner": "default",
+        "value": null
+    },
+    "rougail.base.subfamily.variable3": {
+        "owner": "default",
+        "value": null
+    },
+    "rougail.base.variable4": {
+        "owner": "default",
+        "value": null
+    }
+}

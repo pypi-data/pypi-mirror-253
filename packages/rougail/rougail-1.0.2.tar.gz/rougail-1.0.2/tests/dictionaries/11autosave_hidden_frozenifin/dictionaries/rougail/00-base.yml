@@ -1,0 +1,27 @@
+version: '1.0'
+server_deployed:
+  type: boolean
+general:
+  description: général
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+  autosavevar:
+    type: string
+    description: autosave variable
+    auto_save: true
+    hidden:
+      type: jinja
+      jinja: '{% if rougail.general.mode_conteneur_actif == "oui" %}
+
+        mode_conteneur_actif is oui
+
+        {% endif %}
+
+        '
+    default:
+      type: jinja
+      jinja: '{{ "oui" | calc_val }}'
+    mandatory: false

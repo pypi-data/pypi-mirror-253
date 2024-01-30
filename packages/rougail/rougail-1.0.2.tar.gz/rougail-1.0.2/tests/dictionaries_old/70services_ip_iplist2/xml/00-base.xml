@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="nut">
+      <ip iplist="example">nut_monitor_host</ip>
+    </service>
+  </services>
+  <variables>
+    <variable name="condition">
+      <value>yes</value>
+    </variable>
+    <variable name="nut_monitor_host" type="network_cidr" mandatory="True">
+      <value>192.168.0.0/24</value>
+    </variable>
+  </variables>
+  <constraints>
+    <condition name="disabled_if_in" source="condition">
+      <param>yes</param>
+      <target type="iplist">example</target>
+    </condition>
+  </constraints>
+</rougail>

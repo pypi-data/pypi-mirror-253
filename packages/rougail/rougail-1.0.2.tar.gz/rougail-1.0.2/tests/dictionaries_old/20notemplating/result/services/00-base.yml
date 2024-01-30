@@ -1,0 +1,5 @@
+test.service:
+  files:
+    /etc/file:
+      engine: none
+version: '1.0'

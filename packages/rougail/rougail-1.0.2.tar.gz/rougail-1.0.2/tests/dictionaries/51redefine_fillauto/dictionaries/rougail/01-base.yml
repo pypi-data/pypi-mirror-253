@@ -1,0 +1,8 @@
+general:
+  mode_conteneur_actif:
+    redefine: true
+    hidden: true
+    default:
+      type: jinja
+      jinja: '{{ "non" | concat }}'
+version: '1.0'

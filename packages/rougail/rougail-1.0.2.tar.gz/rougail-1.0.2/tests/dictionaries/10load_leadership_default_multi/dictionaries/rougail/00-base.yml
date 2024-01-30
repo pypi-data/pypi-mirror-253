@@ -1,0 +1,24 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: leader
+    multi: true
+    default:
+    - non
+  leader:
+    description: leader
+    type: leadership
+    leader:
+      type: string
+      description: leader
+      multi: true
+      mandatory: false
+    follower1:
+      type: string
+      description: follower1
+      default: value
+    follower2:
+      type: string
+      description: follower2
+      mandatory: false
+version: '1.0'

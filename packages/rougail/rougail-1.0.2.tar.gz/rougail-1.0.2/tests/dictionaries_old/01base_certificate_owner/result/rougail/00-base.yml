@@ -1,0 +1,4 @@
+server_name:
+  type: domainname
+  default: example.net
+version: '1.0'

@@ -1,0 +1,5 @@
+ntp.service:
+  ip:
+    rougail.general.nut_monitor_netmask.nut_monitor_host:
+      netmask: rougail.general.nut_monitor_netmask.nut_monitor_netmask
+version: '1.0'

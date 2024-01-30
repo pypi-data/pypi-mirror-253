@@ -1,0 +1,23 @@
+general:
+  condition:
+    type: string
+    default: 'no'
+  variable1:
+    type: string
+    mandatory: false
+    disabled:
+      type: jinja
+      jinja: '{% if rougail.general.condition == "no" %}true{% else %}false{% endif
+        %}'
+  variable2:
+    type: string
+    mandatory: false
+    default:
+      type: jinja
+      jinja: '{{ rougail.general.variable1 | calc_val }}'
+      params:
+        rougail.general.variable1:
+          type: variable
+          variable: rougail.general.variable1
+          propertyerror: false
+version: '1.0'

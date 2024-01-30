@@ -1,0 +1,35 @@
+version: '0.10'
+variables:
+- variable:
+  - name: server_deployed
+    type: boolean
+- family:
+  - name: general
+    description: "g\xE9n\xE9ral"
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        hidden: true
+        value:
+        - text: non
+      - name: autosavevar
+        type: string
+        description: autosave variable
+        auto_save: true
+constraints:
+- fill:
+  - name: calc_val
+    param:
+    - text: oui
+    target:
+    - text: autosavevar
+  condition:
+  - name: hidden_if_in
+    source: mode_conteneur_actif
+    param:
+    - text: oui
+    target:
+    - type: variable
+      text: autosavevar

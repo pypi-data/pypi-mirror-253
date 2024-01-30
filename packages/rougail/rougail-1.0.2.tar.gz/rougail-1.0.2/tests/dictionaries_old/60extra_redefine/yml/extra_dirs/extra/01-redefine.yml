@@ -1,0 +1,9 @@
+version: '0.10'
+variables:
+- family:
+  - name: ejabberd
+    variables:
+    - variable:
+      - name: description
+        redefine: true
+        hidden: true

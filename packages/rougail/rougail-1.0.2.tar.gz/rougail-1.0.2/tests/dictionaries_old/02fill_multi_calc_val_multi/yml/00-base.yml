@@ -1,0 +1,19 @@
+version: '0.10'
+variables:
+- variable:
+  - name: var1
+    multi: true
+    value:
+    - text: 'no'
+    - text: 'yes'
+    - text: maybe
+  - name: var2
+    multi: true
+constraints:
+- fill:
+  - name: calc_value
+    param:
+    - type: variable
+      text: var1
+    target:
+    - text: var2

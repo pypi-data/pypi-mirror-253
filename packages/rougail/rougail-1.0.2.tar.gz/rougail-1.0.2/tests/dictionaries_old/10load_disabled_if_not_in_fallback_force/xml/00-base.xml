@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="condition" type="string" description="No change">
+        <value>non</value>
+      </variable>
+      <variable name="mode_conteneur_actif" type="string" description="No change">
+        <value>non</value>
+      </variable>
+      <variable name="mode_conteneur_actif2" type="string" description="No change">
+        <value>non</value>
+      </variable>
+    </family>
+  </variables>
+  <constraints>
+    <condition name="disabled_if_not_in" source="unknown" apply_on_fallback="True" optional="True">
+      <param>oui</param>
+      <target type="variable">mode_conteneur_actif</target>
+      <target type="variable">mode_conteneur_actif2</target>
+      <target type="filelist">afilllist</target>
+    </condition>
+    <condition name="disabled_if_not_in" source="activer_client_ldap" optional="True">
+      <param>non</param>
+      <target type="variable">mode_conteneur_actif</target>
+    </condition>
+  </constraints>
+</rougail>

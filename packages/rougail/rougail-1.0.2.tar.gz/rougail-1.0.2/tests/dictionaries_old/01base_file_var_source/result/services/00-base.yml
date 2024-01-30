@@ -1,0 +1,7 @@
+test.service:
+  files:
+    /etc/file:
+      source:
+        name: rougail.general.source_var
+        type: variable
+version: '1.0'

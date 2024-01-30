@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="ejabberd">
+      <family name="description" description="description" leadership="True">
+        <variable name="description" type="string" multi="True">
+          <value>test</value>
+        </variable>
+        <variable name="mode" type="choice">
+          <choice>pre</choice>
+          <choice>post</choice>
+          <value>pre</value>
+        </variable>
+      </family>
+    </family>
+  </variables>
+</rougail>

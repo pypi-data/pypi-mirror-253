@@ -1,0 +1,9 @@
+version: '0.10'
+variables:
+- family:
+  - name: example
+    variables:
+    - variable:
+      - name: description
+        type: string
+        provider: example

@@ -1,0 +1,34 @@
+{
+    "rougail.file_name": {
+        "owner": "default",
+        "value": "/etc/mailname"
+    },
+    "rougail.var": {
+        "owner": "default",
+        "value": "mailname"
+    },
+    "services.test_service.files.mailname.name": {
+        "owner": "default",
+        "value": "/etc/mailname"
+    },
+    "services.test_service.files.mailname.source": {
+        "owner": "default",
+        "value": "mailname"
+    },
+    "services.test_service.files.mailname.variable": {
+        "owner": "default",
+        "value": "mailname"
+    },
+    "services.test_service.files.mailname.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

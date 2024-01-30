@@ -1,0 +1,26 @@
+{
+    "rougail.condition": {
+        "owner": "default",
+        "value": "yes"
+    },
+    "rougail.nut_monitor_host": {
+        "owner": "default",
+        "value": "192.168.0.0/24"
+    },
+    "services.nut_service.ip.nut_monitor_host.name": {
+        "owner": "default",
+        "value": "192.168.0.0/24"
+    },
+    "services.nut_service.ip.nut_monitor_host.activate": {
+        "owner": "default",
+        "value": false
+    },
+    "services.nut_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.nut_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

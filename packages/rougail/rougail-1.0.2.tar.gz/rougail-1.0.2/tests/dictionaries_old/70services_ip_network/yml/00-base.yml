@@ -1,0 +1,19 @@
+version: '0.10'
+services:
+- service:
+  - name: nut
+    ip:
+    - netmask: nut_monitor_netmask
+      text: nut_monitor_host
+variables:
+- variable:
+  - name: nut_monitor_netmask
+    type: netmask
+    mandatory: true
+    value:
+    - text: 255.255.255.0
+  - name: nut_monitor_host
+    type: network
+    mandatory: true
+    value:
+    - text: 192.168.0.0

@@ -1,0 +1,40 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - filelist: afilllist
+      text: /tmp/file1
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        hidden: true
+        value:
+        - text: non
+      - name: condition
+        type: string
+        description: No change
+        value:
+        - text: non
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: activer_clam
+    optional: true
+    param:
+    - text: non
+    target:
+    - type: filelist
+      text: afilllist
+  - name: disabled_if_in
+    source: condition
+    param:
+    - text: non
+    target:
+    - type: filelist
+      text: afilllist

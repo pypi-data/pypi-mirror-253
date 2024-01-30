@@ -1,0 +1,13 @@
+version: '1.0'
+variable:
+  default:
+    type: jinja
+    jinja: '{{ param1 }}_{{ param2 }}_{{ param3 }}_{{ param4 }}
+
+      '
+    params:
+      param1: string
+      param2: 1
+      param3: true
+      param4: null
+  mandatory: false

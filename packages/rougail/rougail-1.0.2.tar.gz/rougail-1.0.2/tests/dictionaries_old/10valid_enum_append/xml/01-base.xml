@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="enumfam">
+      <variable name="enumvar" redefine="True">
+        <value type="string">c</value>
+        <choice type="string">c</choice>
+      </variable>
+    </family>
+  </variables>
+  <constraints/>
+</rougail>
+

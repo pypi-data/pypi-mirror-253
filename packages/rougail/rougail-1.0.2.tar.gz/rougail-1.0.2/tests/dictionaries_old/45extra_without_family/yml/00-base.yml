@@ -1,0 +1,11 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - text: /etc/file
+variables:
+- variable:
+  - name: my_var
+    value:
+    - text: rougail

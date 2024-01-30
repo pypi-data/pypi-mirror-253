@@ -1,0 +1,14 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "extra.test.delay": {
+        "owner": "default",
+        "value": 0
+    },
+    "extra.test.day": {
+        "owner": "default",
+        "value": null
+    }
+}

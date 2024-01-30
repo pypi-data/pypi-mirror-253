@@ -1,0 +1,33 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: b
+      - name: int
+        type: number
+        description: No change
+      - name: int2
+        type: number
+        description: No change
+constraints:
+- check:
+  - name: valid_differ
+    param:
+    - type: variable
+      optional: true
+      text: int2
+    target:
+    - text: int
+  - name: valid_differ
+    param:
+    - type: variable
+      optional: true
+      text: int3
+    target:
+    - text: int

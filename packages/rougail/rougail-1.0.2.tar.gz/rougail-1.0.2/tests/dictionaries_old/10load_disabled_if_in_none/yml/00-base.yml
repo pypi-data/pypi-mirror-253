@@ -1,0 +1,34 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: condition
+        type: string
+        description: No change
+        value:
+        - text: non
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        hidden: true
+        value:
+        - text: non
+      - name: mode_conteneur_actif2
+        type: string
+        description: No change
+        hidden: true
+        value:
+        - text: non
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: condition
+    param:
+    - type: nil
+    target:
+    - type: variable
+      text: mode_conteneur_actif
+    - type: variable
+      text: mode_conteneur_actif2

@@ -1,0 +1,4 @@
+test.service:
+  files:
+    /etc/file: {}
+version: '1.0'

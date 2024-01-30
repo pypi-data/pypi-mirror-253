@@ -1,0 +1,11 @@
+version: '1.0'
+general1:
+  leader:
+    description: leader
+    type: leadership
+    leader:
+      type: string
+      description: leader
+      multi: true
+    follower1:
+      type: family

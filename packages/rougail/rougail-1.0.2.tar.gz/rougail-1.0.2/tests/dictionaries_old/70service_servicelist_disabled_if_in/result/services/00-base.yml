@@ -1,0 +1,5 @@
+test.service:
+  disabled:
+    type: jinja
+    jinja: '{% if rougail.condition2 == "yes" %}true{% else %}false{% endif %}'
+version: '1.0'

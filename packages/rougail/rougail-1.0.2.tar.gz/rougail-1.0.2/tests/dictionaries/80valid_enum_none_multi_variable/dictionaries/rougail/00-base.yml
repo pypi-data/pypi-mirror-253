@@ -1,0 +1,13 @@
+general:
+  mode_conteneur_actif:
+    type: choice
+    description: No change
+    default: a
+    choices:
+    - type: variable
+      variable: rougail.general.var
+  var:
+    type: string
+    description: New variable
+    default: a
+version: '1.0'

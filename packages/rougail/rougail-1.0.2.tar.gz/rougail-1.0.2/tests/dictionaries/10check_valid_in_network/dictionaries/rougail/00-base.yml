@@ -1,0 +1,31 @@
+---
+version: '1.0'
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: oui
+  adresse_ip_eth0:
+    type: ip
+    params:
+      private_only: true
+      warnings_only: true
+    description: Adresse IP de la carte
+    mandatory: true
+    mode: basic
+  adresse_netmask_eth0:
+    type: netmask
+    description: Masque de sous réseau de la carte
+    mandatory: true
+    mode: basic
+  adresse_ip:
+    type: ip
+    params:
+      private_only: true
+      warnings_only: true
+    description: IP
+    mandatory: true
+    mode: basic
+    validators:
+      - type: jinja
+        jinja: '{{ rougail.general.adresse_ip | valid_in_network(rougail.general.adresse_ip_eth0, rougail.general.adresse_netmask_eth0) }}'

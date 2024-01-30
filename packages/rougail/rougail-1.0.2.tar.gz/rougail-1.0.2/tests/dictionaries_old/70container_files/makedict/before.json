@@ -1,0 +1,38 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "oui"
+    },
+    "services.test_service.files.mailname.name": {
+        "owner": "default",
+        "value": "/etc/mailname"
+    },
+    "services.test_service.files.mailname.source": {
+        "owner": "default",
+        "value": "mailname"
+    },
+    "services.test_service.files.mailname.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.files.rougail_conf.name": {
+        "owner": "default",
+        "value": "/rougail.conf"
+    },
+    "services.test_service.files.rougail_conf.source": {
+        "owner": "default",
+        "value": "rougail.conf"
+    },
+    "services.test_service.files.rougail_conf.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

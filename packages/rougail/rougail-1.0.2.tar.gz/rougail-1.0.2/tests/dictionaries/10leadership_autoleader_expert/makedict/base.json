@@ -1,0 +1,8 @@
+{
+    "rougail.general.mode_conteneur_actif": "non",
+    "rougail.leadermode.leader.leader": [],
+    "rougail.leadermode.leader.leader": [{"rougail.leadermode.leader.follower1": null,
+                                          "rougail.leadermode.leader.follower2": null,
+                                          "rougail.leadermode.leader.leader": "valfill"}]
+
+}

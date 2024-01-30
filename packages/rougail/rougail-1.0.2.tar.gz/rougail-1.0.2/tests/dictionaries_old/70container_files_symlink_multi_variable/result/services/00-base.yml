@@ -1,0 +1,12 @@
+test.service:
+  files:
+    rougail.file_name:
+      source: mailname
+      variable: rougail.var
+      type: variable
+    rougail.file_name2:
+      source: mailname2
+      variable: rougail.var
+      engine: jinja
+      type: variable
+version: '1.0'

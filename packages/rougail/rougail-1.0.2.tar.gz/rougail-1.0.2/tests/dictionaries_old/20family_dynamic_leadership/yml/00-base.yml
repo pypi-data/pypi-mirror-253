@@ -1,0 +1,35 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: varname
+        type: string
+        description: No change
+        multi: true
+        value:
+        - text: val1
+        - text: val2
+  - name: dyn
+    dynamic: varname
+    variables:
+    - variable:
+      - name: vardyn
+        type: string
+        description: No change
+    - family:
+      - name: leadership
+        leadership: true
+        variables:
+        - variable:
+          - name: leader
+            type: string
+            description: leader
+            multi: true
+          - name: follower1
+            type: string
+            description: follower1
+          - name: follower2
+            type: string
+            description: follower2

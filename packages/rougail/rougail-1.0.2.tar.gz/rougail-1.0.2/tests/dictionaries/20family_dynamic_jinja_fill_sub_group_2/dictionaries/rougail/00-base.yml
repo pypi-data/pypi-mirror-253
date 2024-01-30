@@ -1,0 +1,21 @@
+---
+version: '1.0'
+general:
+  varname:
+    type: string
+    multi: true
+    default:
+      - val1
+      - val2
+"dyn{{ suffix }}":
+  type: dynamic
+  variable: rougail.general.varname
+  grp:
+    vardyn:
+new:
+  newvar:
+    type: string
+    mandatory: false
+    default:
+      type: jinja
+      jinja: '{{ rougail.dynval1.grp.vardyn }}'

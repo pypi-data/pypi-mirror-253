@@ -1,0 +1,22 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - owner: nobody
+      group: nobody
+      text: /etc/file
+    - owner: nobody
+      group: nobody
+      engine: jinja
+      text: /etc/file2
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: Description
+        value:
+        - text: non

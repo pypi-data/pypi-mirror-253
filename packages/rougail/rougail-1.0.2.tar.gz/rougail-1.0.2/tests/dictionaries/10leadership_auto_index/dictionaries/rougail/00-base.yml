@@ -1,0 +1,15 @@
+version: '1.0'
+leader:
+  description: leader
+  type: leadership
+  leader:
+    multi: true
+    default:
+    - a
+    - b
+    - c
+  follower1:
+    type: number
+    default:
+      type: index
+    mandatory: false

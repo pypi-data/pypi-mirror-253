@@ -1,0 +1,4 @@
+test.service:
+  override:
+    source: test2.service
+version: '1.0'

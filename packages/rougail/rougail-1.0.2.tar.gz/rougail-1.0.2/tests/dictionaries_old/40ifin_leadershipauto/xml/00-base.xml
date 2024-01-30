@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <file>/etc/mailname</file>
+    </service>
+  </services>
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="No change">
+        <value>non</value>
+      </variable>
+      <variable name="condition" type="string" description="condition">
+        <value>oui</value>
+      </variable>
+      <family name="leader" description="leader" leadership="True">
+        <variable name="leader" type="string" description="leader" multi="True">
+          <value>a</value>
+        </variable>
+        <variable name="follower1" type="string" description="follower1" hidden="True"/>
+        <variable name="follower2" type="string" description="follower2"/>
+      </family>
+    </family>
+  </variables>
+  <constraints>
+    <fill name="calc_val">
+      <param name="valeur">valfill</param>
+      <target>follower1</target>
+    </fill>
+    <condition name="disabled_if_in" source="condition">
+      <param>oui</param>
+      <target type="variable">follower1</target>
+    </condition>
+  </constraints>
+</rougail>

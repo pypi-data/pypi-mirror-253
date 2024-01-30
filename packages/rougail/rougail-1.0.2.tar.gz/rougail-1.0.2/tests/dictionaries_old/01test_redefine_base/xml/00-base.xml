@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="my_variable" type="string"/>
+  </variables>
+</rougail>

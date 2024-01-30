@@ -1,0 +1,5 @@
+general-1:
+  leader:
+    redefine: true
+    mandatory: true
+version: '1.0'

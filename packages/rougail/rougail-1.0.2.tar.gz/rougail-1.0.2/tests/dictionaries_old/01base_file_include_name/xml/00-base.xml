@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <file>/etc/file</file>
+      <file engine="jinja">/etc/file2</file>
+      <file included="name">/etc/dir/incfile</file>
+    </service>
+  </services>
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="Description">
+        <value>non</value>
+      </variable>
+    </family>
+  </variables>
+</rougail>

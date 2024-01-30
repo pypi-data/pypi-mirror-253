@@ -1,0 +1,19 @@
+leader:
+  description: leader
+  type: leadership
+  leader:
+    multi: true
+    default:
+    - a
+    - b
+    - c
+  follower1:
+    type: number
+    default:
+      type: jinja
+      jinja: '{{ __index | calc_val }}'
+      params:
+        __index:
+          type: index
+    mandatory: false
+version: '1.0'

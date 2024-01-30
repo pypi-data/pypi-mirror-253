@@ -1,0 +1,23 @@
+version: '0.10'
+variables:
+- variable:
+  - name: condition
+    type: boolean
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: my_variable
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: condition
+    param:
+    - text: true
+    target:
+    - type: family
+      optional: true
+      text: general
+    - type: family
+      optional: true
+      text: general2

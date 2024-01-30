@@ -1,0 +1,7 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - mode: 755
+      text: /etc/file

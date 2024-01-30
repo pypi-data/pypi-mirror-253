@@ -1,0 +1,20 @@
+version: '0.10'
+variables:
+- family:
+  - name: ejabberd
+    variables:
+    - family:
+      - name: new_name
+        description: new_name
+        leadership: true
+        variables:
+        - variable:
+          - name: description
+            type: string
+            multi: true
+            value:
+            - text: test
+          - name: mode
+            type: string
+            value:
+            - text: pre

@@ -1,0 +1,22 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "rougail.general.activer_ejabberd": {
+        "owner": "default",
+        "value": "non"
+    },
+    "extra.ejabberd.description": {
+        "owner": "default",
+        "value": "Exportation de la base de ejabberd"
+    },
+    "extra.ejabberd.day": {
+        "owner": "default",
+        "value": null
+    },
+    "extra.ejabberd.mode": {
+        "owner": "default",
+        "value": "pre"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "rougail.server_name": {
+        "owner": "default",
+        "value": "example.net"
+    },
+    "services.test_service.certificates.certificate.domain": {
+        "owner": "default",
+        "value": "example.net"
+    },
+    "services.test_service.certificates.certificate.name": {
+        "owner": "default",
+        "value": "certificate"
+    },
+    "services.test_service.certificates.certificate.owner": {
+        "owner": "default",
+        "value": "example"
+    },
+    "services.test_service.certificates.certificate.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "oui"
+    },
+    "rougail.general.nut_monitor_netmask.nut_monitor_netmask": {
+        "owner": "default",
+        "value": []
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "rougail.general.condition": "no",
+    "rougail.general.disable_variable": "no",
+    "services.test_service.files.file1.name": "/tmp/file1",
+    "services.test_service.files.file1.source": "file1",
+    "services.test_service.files.file1.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

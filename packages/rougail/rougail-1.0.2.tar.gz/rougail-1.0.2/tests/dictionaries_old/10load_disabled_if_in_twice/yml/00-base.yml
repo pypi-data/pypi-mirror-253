@@ -1,0 +1,28 @@
+version: '0.10'
+variables:
+- variable:
+  - name: my_var1
+    value:
+    - text: 'no'
+  - name: my_var2
+    value:
+    - text: 'no'
+  - name: my_var3
+    value:
+    - text: 'no'
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: my_var1
+    param:
+    - text: 'no'
+    target:
+    - type: variable
+      text: my_var2
+  - name: disabled_if_in
+    source: my_var2
+    param:
+    - text: 'no'
+    target:
+    - type: variable
+      text: my_var3

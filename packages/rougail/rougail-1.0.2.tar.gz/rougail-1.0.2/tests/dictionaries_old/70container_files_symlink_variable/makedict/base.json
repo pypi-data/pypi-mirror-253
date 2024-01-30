@@ -1,0 +1,10 @@
+{
+    "rougail.file_name": "/etc/mailname",
+    "rougail.var": "mailname",
+    "services.test_service.files.mailname.name": "/etc/mailname",
+    "services.test_service.files.mailname.source": "mailname",
+    "services.test_service.files.mailname.variable": "mailname",
+    "services.test_service.files.mailname.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

@@ -1,0 +1,7 @@
+test.service:
+  ip:
+    rougail.nut_monitor_host: {}
+  disabled:
+    type: jinja
+    jinja: '{% if rougail.condition == "no" %}true{% else %}false{% endif %}'
+version: '1.0'

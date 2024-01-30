@@ -1,0 +1,2 @@
+variable
+ <https://en.wikipedia.org/wiki/Variable_(computer_science)>`_

@@ -1,0 +1,7 @@
+%import os
+%set %%confdir = '/etc/dir/'
+%set %%files = %%os.listdir(%%rougail_destination_dir + %%confdir)
+%%files.sort()%slurp
+%for %%file in %%files
+include %%{confdir}%%file
+%end for

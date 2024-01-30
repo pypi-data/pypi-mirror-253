@@ -1,0 +1,7 @@
+test.service:
+  files:
+    rougail.file_name:
+      source: mailname
+      variable: rougail.var
+      type: variable
+version: '1.0'

@@ -1,0 +1,34 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: varname
+        type: string
+        description: No change
+        multi: true
+        value:
+        - text: val1
+        - text: val2
+  - name: dyn
+    dynamic: varname
+    variables:
+    - variable:
+      - name: vardyn
+        type: string
+        description: No change
+        value:
+        - text: val
+  - name: new
+    variables:
+    - variable:
+      - name: newvar
+        type: string
+        description: No change
+constraints:
+- fill:
+  - name: '{{ vardynval1 }}'
+    type: jinja
+    target:
+    - text: newvar

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="test">
+      <variable name="delay" type="number" description="délai en minutes avant lancement">
+        <value>0</value>
+      </variable>
+      <variable name="calc_url" type="web_address" description="domain" hidden="True">
+        <value>0</value>
+      </variable>
+    </family>
+  </variables>
+  <constraints>
+    <fill name="calc_val">
+      <param>http://localhost/</param>
+      <target>extra.test.calc_url</target>
+    </fill>
+  </constraints>
+</rougail>

@@ -1,0 +1,19 @@
+{
+    "rougail.general.bool": {
+        "owner": "default",
+        "value": true
+    },
+    "rougail.general.multi1": {
+        "owner": "default",
+        "value": [
+            true,
+            false
+        ]
+    },
+    "rougail.general.multi2": {
+        "owner": "default",
+        "value": [
+            false
+        ]
+    }
+}

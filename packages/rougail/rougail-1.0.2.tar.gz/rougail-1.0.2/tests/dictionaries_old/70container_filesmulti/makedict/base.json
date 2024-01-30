@@ -1,0 +1,11 @@
+{
+    "rougail.general.mode_conteneur_actif": "oui",
+    "services.test_service.files.mailname.name": "/etc/mailname",
+    "services.test_service.files.mailname.source": "mailname",
+    "services.test_service.files.mailname.activate": true,
+    "services.test_service.files.mailname2.name": "/etc/mailname2",
+    "services.test_service.files.mailname2.source": "mailname2",
+    "services.test_service.files.mailname2.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

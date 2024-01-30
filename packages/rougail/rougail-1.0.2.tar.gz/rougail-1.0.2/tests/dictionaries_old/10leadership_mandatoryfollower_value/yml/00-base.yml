@@ -1,0 +1,29 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    description: "g\xE9n\xE9ral"
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        hidden: true
+        value:
+        - text: oui
+    - family:
+      - name: nut_monitor_netmask
+        description: "Masque de l'IP du r\xE9seau de l'esclave"
+        leadership: true
+        variables:
+        - variable:
+          - name: nut_monitor_netmask
+            type: netmask
+            description: "Masque de l'IP du r\xE9seau de l'esclave"
+            multi: true
+          - name: nut_monitor_host
+            type: network
+            description: "Adresse IP du r\xE9seau de l'esclave"
+            mandatory: true
+            value:
+            - text: 192.168.0.0

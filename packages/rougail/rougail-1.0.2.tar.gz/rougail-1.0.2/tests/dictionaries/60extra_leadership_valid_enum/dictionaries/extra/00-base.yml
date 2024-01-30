@@ -1,0 +1,16 @@
+ejabberd:
+  description:
+    type: leadership
+    _description: description
+    description:
+      type: string
+      multi: true
+      default:
+      - test
+    mode:
+      type: choice
+      default: pre
+      choices:
+      - pre
+      - post
+version: '1.0'

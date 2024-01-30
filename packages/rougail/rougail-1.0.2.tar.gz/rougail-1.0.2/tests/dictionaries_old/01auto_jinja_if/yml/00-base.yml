@@ -1,0 +1,29 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        hidden: true
+      - name: mode_conteneur_actif1
+        type: string
+        description: No change
+        value:
+        - text: non
+      - name: mode_conteneur_actif2
+        type: string
+        description: No change
+        hidden: true
+constraints:
+- fill:
+  - name: '{% if mode_conteneur_actif1 == ''non'' %}non{% else %}oui{% endif %}'
+    type: jinja
+    target:
+    - text: mode_conteneur_actif
+  - name: '{% if mode_conteneur_actif1 == "non" %}oui{% else %}non{% endif %}'
+    type: jinja
+    target:
+    - text: mode_conteneur_actif2

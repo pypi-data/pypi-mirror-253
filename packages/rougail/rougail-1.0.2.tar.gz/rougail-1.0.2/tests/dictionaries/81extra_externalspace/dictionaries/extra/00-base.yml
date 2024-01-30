@@ -1,0 +1,21 @@
+ejabberd:
+  description:
+    type: string
+    default: Exportation de la base de ejabberd
+  day:
+    type: choice
+    mandatory: true
+    default: none
+    choices:
+    - none
+    - daily
+    - weekly
+    - monthly
+  mode:
+    type: choice
+    mandatory: true
+    default: pre
+    choices:
+    - pre
+    - post
+version: '1.0'

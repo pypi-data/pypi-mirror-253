@@ -1,0 +1,30 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: oui
+      - name: adresse_ip_eth0
+        type: cidr
+        description: Adresse IP de la carte
+        mandatory: true
+        mode: basic
+      - name: adresse_ip
+        type: local_ip
+        description: IP
+        mandatory: true
+        mode: basic
+constraints:
+- check:
+  - name: valid_in_network
+    level: warning
+    param:
+    - type: variable
+      text: adresse_ip_eth0
+    target:
+    - text: adresse_ip

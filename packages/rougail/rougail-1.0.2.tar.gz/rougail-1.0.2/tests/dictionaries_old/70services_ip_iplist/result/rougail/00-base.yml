@@ -1,0 +1,10 @@
+condition:
+  default: 'no'
+nut_monitor_host:
+  type: network_cidr
+  mandatory: true
+  default: 192.168.0.0/24
+  disabled:
+    type: jinja
+    jinja: '{% if rougail.condition == "yes" %}true{% else %}false{% endif %}'
+version: '1.0'

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="No change" hidden="True"/>
+      <variable name="mode_conteneur_actif1" type="string" description="No change">
+        <value>non</value>
+      </variable>
+      <variable name="mode_conteneur_actif2" type="string" description="No change" hidden="True"/>
+    </family>
+  </variables>
+  <constraints>
+    <fill name="{% if mode_conteneur_actif1 == 'non' %}non{% else %}oui{% endif %}" type="jinja">
+      <target>mode_conteneur_actif</target>
+    </fill>
+    <fill name='{% if mode_conteneur_actif1 == "non" %}oui{% else %}non{% endif %}' type="jinja">
+      <target>mode_conteneur_actif2</target>
+    </fill>
+  </constraints>
+</rougail>

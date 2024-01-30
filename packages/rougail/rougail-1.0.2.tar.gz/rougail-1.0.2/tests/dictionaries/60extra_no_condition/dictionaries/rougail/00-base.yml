@@ -1,0 +1,17 @@
+general:
+  description: général
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+  activer_ejabberd:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+  module_instancie:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+version: '1.0'

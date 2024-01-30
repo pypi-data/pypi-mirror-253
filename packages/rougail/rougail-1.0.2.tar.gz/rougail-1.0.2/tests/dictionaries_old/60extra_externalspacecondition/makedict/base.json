@@ -1,0 +1,9 @@
+{
+    "rougail.general.my_var": "no",
+    "rougail.general.my_var1": "no",
+    "rougail.general.server_deployed": false,
+    "extra.ejabberd.description": "Exportation de la base de ejabberd",
+    "extra.ejabberd.day": "none",
+    "extra.ejabberd.mode": "pre",
+    "extra1.external.description": "test"
+}

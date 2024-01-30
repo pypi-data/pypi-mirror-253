@@ -1,0 +1,8 @@
+test.service:
+  files:
+    /etc/file: {}
+    /etc/file2:
+      engine: jinja
+    /etc/dir/incfile:
+      included: content
+version: '1.0'

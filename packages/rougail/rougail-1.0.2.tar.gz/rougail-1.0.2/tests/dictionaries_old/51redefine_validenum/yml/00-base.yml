@@ -1,0 +1,20 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: choice
+        description: Redefine description
+        hidden: true
+        choice:
+        - type: string
+          text: a
+        - type: string
+          text: b
+        - type: string
+          text: c
+        value:
+        - type: string
+          text: a

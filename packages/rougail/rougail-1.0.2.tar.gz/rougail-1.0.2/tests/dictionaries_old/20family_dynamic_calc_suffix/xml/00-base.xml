@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="varname" type="string" description="No change" multi="True">
+        <value>val1</value>
+        <value>val2</value>
+      </variable>
+    </family>
+    <family name="dyn" dynamic="varname">
+      <variable name="vardyn" type="string" description="No change">
+        <value>val</value>
+      </variable>
+    </family>
+    <family name="new">
+      <variable name="newvar" type="string" description="No change"/>
+    </family>
+  </variables>
+  <constraints>
+    <fill name="calc_val">
+      <param type="suffix"/>
+      <target>vardyn</target>
+    </fill>
+  </constraints>
+</rougail>

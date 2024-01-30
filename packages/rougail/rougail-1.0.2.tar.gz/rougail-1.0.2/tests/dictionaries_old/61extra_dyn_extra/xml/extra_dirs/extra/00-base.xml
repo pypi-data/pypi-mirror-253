@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general" description="général">
+      <variable name="varname" type="string" description="No change" multi="True">
+        <value>a</value>
+      </variable>
+    </family>
+    <family name="ejabberd" dynamic="extra.general.varname">
+      <variable name="mode" type="string"/>
+    </family>
+  </variables>
+</rougail>

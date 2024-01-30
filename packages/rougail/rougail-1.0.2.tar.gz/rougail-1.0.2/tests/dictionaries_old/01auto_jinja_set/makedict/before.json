@@ -1,0 +1,14 @@
+{
+    "rougail.bool": {
+        "owner": "default",
+        "value": true
+    },
+    "rougail.int1": {
+        "owner": "default",
+        "value": 1
+    },
+    "rougail.int2": {
+        "owner": "default",
+        "value": 4
+    }
+}

@@ -1,0 +1,9 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: b
+    validators:
+    - type: jinja
+      jinja: '{{ rougail.general.mode_conteneur_actif | valid_differ(__int3) }}'
+version: '1.0'

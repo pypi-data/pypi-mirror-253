@@ -1,0 +1,9 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: Redefine description
+    hidden: true
+    multi: true
+    default:
+    - quote'"
+version: '1.0'

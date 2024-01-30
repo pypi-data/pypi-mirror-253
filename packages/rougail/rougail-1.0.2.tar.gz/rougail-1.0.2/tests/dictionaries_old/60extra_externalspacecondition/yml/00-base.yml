@@ -1,0 +1,20 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    description: "g\xE9n\xE9ral"
+    variables:
+    - variable:
+      - name: my_var
+        auto_freeze: true
+        value:
+        - text: 'no'
+      - name: my_var1
+        hidden: true
+        value:
+        - text: 'no'
+      - name: server_deployed
+        type: boolean
+        hidden: true
+        value:
+        - text: false

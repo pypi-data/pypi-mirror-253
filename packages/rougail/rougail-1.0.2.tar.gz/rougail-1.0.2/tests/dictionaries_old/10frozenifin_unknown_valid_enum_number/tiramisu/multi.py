@@ -1,0 +1,42 @@
+from importlib.machinery import SourceFileLoader as _SourceFileLoader
+from importlib.util import spec_from_loader as _spec_from_loader, module_from_spec as _module_from_spec
+class func:
+    pass
+
+def _load_functions(path):
+    global _SourceFileLoader, _spec_from_loader, _module_from_spec, func
+    loader = _SourceFileLoader('func', path)
+    spec = _spec_from_loader(loader.name, loader)
+    func_ = _module_from_spec(spec)
+    loader.exec_module(func_)
+    for function in dir(func_):
+        if function.startswith('_'):
+            continue
+        setattr(func, function, getattr(func_, function))
+_load_functions('tests/dictionaries/../eosfunc/test.py')
+try:
+    from tiramisu4 import *
+    from tiramisu4.setting import ALLOWED_LEADER_PROPERTIES
+except:
+    from tiramisu import *
+    from tiramisu.setting import ALLOWED_LEADER_PROPERTIES
+ALLOWED_LEADER_PROPERTIES.add("basic")
+ALLOWED_LEADER_PROPERTIES.add("normal")
+ALLOWED_LEADER_PROPERTIES.add("expert")
+option_2 = StrOption(name="mode_conteneur_actif", doc="No change", default="non", properties=frozenset({"expert", "mandatory"}))
+optiondescription_1 = OptionDescription(name="general", doc="general", children=[option_2], properties=frozenset({"expert"}))
+option_4 = ChoiceOption(name="enumvar", doc="enumvar", values=(1, 2, 3), default=1, properties=frozenset({"expert", "mandatory"}))
+option_4.impl_set_information('help', "bla bla bla")
+option_5 = IntOption(name="test_variable", doc="test variable", properties=frozenset({"expert"}))
+optiondescription_3 = OptionDescription(name="enumfam", doc="enumfam", children=[option_4, option_5], properties=frozenset({"expert"}))
+optiondescription_12 = OptionDescription(name="rougail", doc="Rougail", children=[optiondescription_1, optiondescription_3], properties=frozenset({"expert"}))
+optiondescription_11 = OptionDescription(name="1", doc="1", children=[optiondescription_12])
+option_7 = StrOption(name="mode_conteneur_actif", doc="No change", default="non", properties=frozenset({"expert", "mandatory"}))
+optiondescription_6 = OptionDescription(name="general", doc="general", children=[option_7], properties=frozenset({"expert"}))
+option_9 = ChoiceOption(name="enumvar", doc="enumvar", values=(1, 2, 3), default=1, properties=frozenset({"expert", "mandatory"}))
+option_9.impl_set_information('help', "bla bla bla")
+option_10 = IntOption(name="test_variable", doc="test variable", properties=frozenset({"expert"}))
+optiondescription_8 = OptionDescription(name="enumfam", doc="enumfam", children=[option_9, option_10], properties=frozenset({"expert"}))
+optiondescription_14 = OptionDescription(name="rougail", doc="Rougail", children=[optiondescription_6, optiondescription_8], properties=frozenset({"expert"}))
+optiondescription_13 = OptionDescription(name="2", doc="2", children=[optiondescription_14])
+option_0 = OptionDescription(name="baseoption", doc="baseoption", children=[optiondescription_11, optiondescription_13])

@@ -1,0 +1,24 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "rougail.general.activer_ejabberd": {
+        "owner": "default",
+        "value": "non"
+    },
+    "extra.ejabberd.new_name.description": {
+        "owner": "default",
+        "value": [
+            "test"
+        ]
+    },
+    "extra.ejabberd.new_name.mode": {
+        "owner": [
+            "default"
+        ],
+        "value": [
+            "pre"
+        ]
+    }
+}

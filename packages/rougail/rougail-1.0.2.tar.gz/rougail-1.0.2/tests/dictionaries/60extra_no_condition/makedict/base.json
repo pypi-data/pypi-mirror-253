@@ -1,0 +1,8 @@
+{
+    "rougail.general.mode_conteneur_actif": "non",
+    "rougail.general.activer_ejabberd": "non",
+    "rougail.general.module_instancie": "non",
+    "extra.ejabberd.description": "Exportation de la base de ejabberd",
+    "extra.ejabberd.day": "none",
+    "extra.ejabberd.mode": "pre"
+}

@@ -1,0 +1,37 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "rougail.general.condition": {
+        "owner": "default",
+        "value": "oui"
+    },
+    "rougail.general.leader.leader": {
+        "owner": "default",
+        "value": [
+            "a",
+            "b"
+        ]
+    },
+    "rougail.general.leader.follower1": {
+        "owner": [
+            "error",
+            "default"
+        ],
+        "value": [
+            "cannot access to option \"follower1\" because has property \"disabled\" (the value of \"leader\" is \"a\")",
+            null
+        ]
+    },
+    "rougail.general.leader.follower2": {
+        "owner": [
+            "default",
+            "default"
+        ],
+        "value": [
+            null,
+            null
+        ]
+    }
+}

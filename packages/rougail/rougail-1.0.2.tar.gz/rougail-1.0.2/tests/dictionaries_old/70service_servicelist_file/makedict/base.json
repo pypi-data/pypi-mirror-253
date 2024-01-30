@@ -1,0 +1,9 @@
+{
+    "rougail.condition": "no",
+    "rougail.nut_monitor_host": "192.168.0.1",
+    "services.test_service.files.file.name": "/etc/file",
+    "services.test_service.files.file.source": "file",
+    "services.test_service.files.file.activate": false,
+    "services.test_service.activate": false,
+    "services.test_service.manage": true
+}

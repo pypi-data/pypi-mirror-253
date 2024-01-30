@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="external">
+      <variable name="description" type="string">
+        <value>test</value>
+      </variable>
+    </family>
+  </variables>
+  <constraints>
+    <condition name="disabled_if_in" source="extra.ejabberd.description">
+      <param>non</param>
+      <target type="family">extra1.external</target>
+    </condition>
+  </constraints>
+</rougail>

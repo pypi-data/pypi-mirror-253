@@ -1,0 +1,7 @@
+version: '1.0'
+general:
+  mode: level1
+  my_variable:
+    mode: level2
+  my_variable1:
+    mode: level1

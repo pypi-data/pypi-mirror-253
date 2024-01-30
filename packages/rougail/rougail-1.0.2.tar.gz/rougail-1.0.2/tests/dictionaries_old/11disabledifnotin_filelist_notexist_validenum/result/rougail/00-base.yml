@@ -1,0 +1,19 @@
+general:
+  condition:
+    type: choice
+    description: No change
+    default: non
+    choices:
+    - non
+    - statique
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+  mode_conteneur_actif2:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+version: '1.0'

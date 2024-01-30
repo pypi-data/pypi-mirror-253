@@ -1,0 +1,13 @@
+{
+    "rougail.general.condition": "non",
+    "rougail.general.mode_conteneur_actif": "non",
+    "rougail.general.mode_conteneur_actif2": "non",
+    "services.test_service.files.file1.name": "/tmp/file1",
+    "services.test_service.files.file1.source": "file1",
+    "services.test_service.files.file1.activate": true,
+    "services.test_service.files.file2.name": "/tmp/file2",
+    "services.test_service.files.file2.source": "file2",
+    "services.test_service.files.file2.activate": true,
+    "services.test_service.activate": true,
+    "services.test_service.manage": true
+}

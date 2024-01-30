@@ -1,0 +1,17 @@
+version: '0.10'
+services:
+- service:
+  - name: testsrv
+    target: test
+variables:
+- family:
+  - name: general
+    description: "g\xE9n\xE9ral"
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        hidden: true
+        value:
+        - text: oui

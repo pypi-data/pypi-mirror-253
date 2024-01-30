@@ -1,0 +1,30 @@
+{
+    "rougail.nut_monitor_netmask": {
+        "owner": "default",
+        "value": "255.255.255.0"
+    },
+    "rougail.nut_monitor_host": {
+        "owner": "default",
+        "value": "192.168.0.0"
+    },
+    "services.nut_service.ip.nut_monitor_host.name": {
+        "owner": "default",
+        "value": "192.168.0.0"
+    },
+    "services.nut_service.ip.nut_monitor_host.netmask": {
+        "owner": "default",
+        "value": "255.255.255.0"
+    },
+    "services.nut_service.ip.nut_monitor_host.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.nut_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.nut_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

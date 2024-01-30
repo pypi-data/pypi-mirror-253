@@ -1,0 +1,69 @@
+{
+    "rougail.general.mode_conteneur_actif": {
+        "owner": "default",
+        "value": "non"
+    },
+    "rougail.general.condition": {
+        "owner": "default",
+        "value": "oui"
+    },
+    "rougail.general.leader.leader": {
+        "owner": "default",
+        "value": [
+            "a",
+            "b"
+        ]
+    },
+    "rougail.general.leader.follower1": {
+        "owner": [
+            "error",
+            "default"
+        ],
+        "value": [
+            "cannot access to option \"follower1\" because has property \"disabled\" (the value of \"leader\" is \"a\")",
+            null
+        ]
+    },
+    "rougail.general.leader.follower2": {
+        "owner": [
+            "default",
+            "default"
+        ],
+        "value": [
+            null,
+            null
+        ]
+    },
+    "services.test_service.files.mailname.name": {
+        "owner": "default",
+        "value": "/etc/mailname"
+    },
+    "services.test_service.files.mailname.source": {
+        "owner": "default",
+        "value": "mailname"
+    },
+    "services.test_service.files.mailname.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.files.mailname2.name": {
+        "owner": "default",
+        "value": "/etc/mailname2"
+    },
+    "services.test_service.files.mailname2.source": {
+        "owner": "default",
+        "value": "mailname2"
+    },
+    "services.test_service.files.mailname2.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.activate": {
+        "owner": "default",
+        "value": true
+    },
+    "services.test_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

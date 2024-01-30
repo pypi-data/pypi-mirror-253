@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="ejabberd">
+      <variable name="mode" type="string" auto_freeze="True">
+        <value>pre</value>
+      </variable>
+    </family>
+  </variables>
+</rougail>

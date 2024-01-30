@@ -1,0 +1,9 @@
+general:
+  mode_conteneur_actif:
+    redefine: true
+    validators: null
+    default: a
+    choices:
+    - a
+    - b
+version: '1.0'

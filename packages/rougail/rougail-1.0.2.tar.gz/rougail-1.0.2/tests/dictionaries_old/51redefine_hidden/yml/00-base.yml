@@ -1,0 +1,11 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: Redefine hidden
+        value:
+        - text: non

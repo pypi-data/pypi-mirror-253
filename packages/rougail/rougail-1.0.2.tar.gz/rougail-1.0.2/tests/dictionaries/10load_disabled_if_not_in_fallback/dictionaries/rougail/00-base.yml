@@ -1,0 +1,22 @@
+---
+version: '1.0'
+general:
+  condition:
+    type: string
+    description: No change
+    default: 'no'
+  disable_variable:
+    type: string
+    description: No change
+    default: 'no'
+    disabled:
+      type: jinja
+      params:
+        unknown:
+          type: 'variable'
+          variable: rougail.general.unknown
+          optional: true
+      jinja: |
+        {% if unknown is defined and unknown != "no" %}
+        unknown is defined !
+        {% endif %}

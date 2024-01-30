@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif" type="string" description="No change">
+        <value>oui</value>
+      </variable>
+      <variable name="adresse_ip_eth0" type="local_ip" description="Adresse IP de la carte" mandatory="True" mode="basic"/>
+      <variable name="adresse_netmask_eth0" type="netmask" description="Masque de sous réseau de la carte" mandatory="True" mode="basic"/>
+      <variable name="adresse_ip" type="local_ip" description="IP" mandatory="True" mode="basic"/>
+    </family>
+  </variables>
+  <constraints>
+    <check name="valid_in_network" level="warning">
+      <param type="variable">adresse_ip_eth0</param>
+      <param type="variable">adresse_netmask_eth0</param>
+      <target>adresse_ip</target>
+    </check>
+  </constraints>
+</rougail>

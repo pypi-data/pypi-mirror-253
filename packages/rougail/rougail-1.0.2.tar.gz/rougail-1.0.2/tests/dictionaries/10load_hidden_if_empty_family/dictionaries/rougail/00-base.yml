@@ -1,0 +1,37 @@
+---
+version: '1.0'
+general:
+  description: Général
+  condition:
+    type: string
+    description: No change
+    default: non
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+    hidden:
+      type: jinja
+      jinja: |
+        {% if rougail.general.condition == "oui" %}
+        condition is oui
+        {% endif %}
+  mode_conteneur_actif2:
+    type: string
+    description: No change
+    default: non
+    hidden:
+      type: jinja
+      jinja: |
+        {% if rougail.general.condition == "oui" %}
+        condition is oui
+        {% endif %}
+general2:
+  description: Général2
+  type: family
+  hidden:
+    type: jinja
+    jinja: |
+      {% if rougail.general.condition == "oui" %}
+      condition is oui
+      {% endif %}

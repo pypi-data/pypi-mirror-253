@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="my_var" type="string"/>
+  </variables>
+  <constraints>
+    <fill name="calc_multi_condition">
+      <param>non</param>
+      <target>extra.my_var</target>
+    </fill>
+  </constraints>
+</rougail>

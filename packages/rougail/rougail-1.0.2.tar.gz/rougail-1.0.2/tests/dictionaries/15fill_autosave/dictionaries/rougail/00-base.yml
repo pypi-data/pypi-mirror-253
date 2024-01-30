@@ -1,0 +1,16 @@
+server_deployed:
+  type: boolean
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    auto_save: true
+    default:
+      type: jinja
+      jinja: '{{ rougail.general.mode_conteneur_actif1 | calc_val }}'
+    mandatory: false
+  mode_conteneur_actif1:
+    type: string
+    description: No change
+    default: non
+version: '1.0'

@@ -1,0 +1,12 @@
+general:
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default:
+      type: jinja
+      jinja: '{{ rougail.general.mode_conteneur_actif1 | calc_val }}'
+  mode_conteneur_actif1:
+    type: string
+    description: No change
+    default: non
+version: '1.0'

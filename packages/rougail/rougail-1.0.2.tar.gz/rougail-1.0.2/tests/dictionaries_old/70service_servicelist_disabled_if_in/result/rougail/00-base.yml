@@ -1,0 +1,8 @@
+condition1:
+  default: 'no'
+condition2:
+  default: 'no'
+  disabled:
+    type: jinja
+    jinja: '{% if rougail.condition1 == "no" %}true{% else %}false{% endif %}'
+version: '1.0'

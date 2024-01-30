@@ -1,0 +1,14 @@
+{
+    "rougail.condition1": {
+        "owner": "default",
+        "value": "no"
+    },
+    "services.test_service.activate": {
+        "owner": "default",
+        "value": false
+    },
+    "services.test_service.manage": {
+        "owner": "default",
+        "value": true
+    }
+}

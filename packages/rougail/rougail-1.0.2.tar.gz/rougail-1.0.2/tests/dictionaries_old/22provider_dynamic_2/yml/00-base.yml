@@ -1,0 +1,22 @@
+version: '0.10'
+variables:
+- variable:
+  - name: varname
+    type: string
+    description: No change
+    multi: true
+    value:
+    - text: val1
+    - text: val2
+- family:
+  - name: general
+    variables:
+    - family:
+      - name: dyn
+        dynamic: varname
+        variables:
+        - variable:
+          - name: vardyn
+            type: string
+            description: No change
+            provider: dyn

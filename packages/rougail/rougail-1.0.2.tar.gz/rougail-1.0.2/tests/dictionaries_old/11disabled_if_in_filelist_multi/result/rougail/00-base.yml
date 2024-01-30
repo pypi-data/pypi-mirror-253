@@ -1,0 +1,22 @@
+general:
+  condition:
+    type: string
+    description: No change
+    default: non
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+    disabled:
+      type: jinja
+      jinja: '{% if rougail.general.condition == "oui" %}true{% else %}false{% endif
+        %}'
+  mode_conteneur_actif2:
+    type: string
+    description: No change
+    default: non
+    disabled:
+      type: jinja
+      jinja: '{% if rougail.general.condition == "oui" %}true{% else %}false{% endif
+        %}'
+version: '1.0'

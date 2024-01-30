@@ -1,0 +1,16 @@
+general:
+  bool:
+    type: boolean
+  multi1:
+    type: boolean
+    multi: true
+    default:
+      type: jinja
+      jinja: '{% if rougail.general.bool %}True,False{% else %}False{% endif %}'
+  multi2:
+    type: boolean
+    multi: true
+    default:
+      type: jinja
+      jinja: '{% if not rougail.general.bool %}True,False{% else %}False{% endif %}'
+version: '1.0'

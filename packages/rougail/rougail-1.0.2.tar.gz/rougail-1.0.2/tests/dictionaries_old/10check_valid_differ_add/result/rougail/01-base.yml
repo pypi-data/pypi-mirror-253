@@ -1,0 +1,11 @@
+general:
+  mode_conteneur_actif3:
+    redefine: true
+    validators:
+    - type: jinja
+      jinja: '{{ rougail.general.mode_conteneur_actif3 | valid_differ(__mode_conteneur_actif1)
+        }}'
+    - type: jinja
+      jinja: '{{ rougail.general.mode_conteneur_actif3 | valid_differ(__mode_conteneur_actif2)
+        }}'
+version: '1.0'

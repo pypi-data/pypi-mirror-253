@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="enumfam" mode="expert">
+      <variable name="enumvar" type="choice" description="multi" help="bla bla bla">
+        <choice type="nil"/>
+        <value type="nil"/>
+      </variable>
+    </family>
+  </variables>
+  <constraints/>
+</rougail>

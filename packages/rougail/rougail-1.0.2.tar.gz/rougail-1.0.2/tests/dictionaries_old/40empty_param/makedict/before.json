@@ -1,0 +1,10 @@
+{
+    "rougail.proxy_authentifie.toto1": {
+        "owner": "default",
+        "value": null
+    },
+    "rougail.proxy_authentifie.toto2": {
+        "owner": "default",
+        "value": "3127"
+    }
+}

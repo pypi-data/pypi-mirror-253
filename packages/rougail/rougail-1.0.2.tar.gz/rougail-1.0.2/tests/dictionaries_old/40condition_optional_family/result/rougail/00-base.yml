@@ -1,0 +1,9 @@
+condition:
+  type: boolean
+general:
+  my_variable:
+    mandatory: false
+  disabled:
+    type: jinja
+    jinja: '{% if rougail.condition == true %}true{% else %}false{% endif %}'
+version: '1.0'

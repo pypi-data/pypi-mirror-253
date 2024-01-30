@@ -1,0 +1,15 @@
+version: '0.10'
+variables:
+- family:
+  - name: test
+    variables:
+    - variable:
+      - name: delay
+        type: number
+        description: "d\xE9lai en minutes avant lancement"
+        value:
+        - text: 0
+      - name: day
+        type: number
+        description: day avant lancement
+        mandatory: true

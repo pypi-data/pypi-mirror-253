@@ -1,0 +1,46 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    file:
+    - filelist: pouet
+      text: /etc/file
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        type: string
+        description: No change
+        value:
+        - text: non
+      - name: condition
+        type: string
+        description: No change
+        value:
+        - text: non
+      - name: mode_conteneur_actif1
+        type: string
+        description: No change
+        hidden: true
+        value:
+        - text: non
+      - name: mode_conteneur_actif2
+        type: string
+        description: No change
+        value:
+        - text: non
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: condition
+    param:
+    - text: oui
+    target:
+    - type: variable
+      text: mode_conteneur_actif1
+    - type: variable
+      text: mode_conteneur_actif2
+    - type: filelist
+      text: pouet

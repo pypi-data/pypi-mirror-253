@@ -1,0 +1,20 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: var
+        type: choice
+        description: New variable
+        value:
+        - type: number
+          text: 9
+        choice:
+        - type: function
+          name: trange
+          param:
+          - type: number
+            text: 0
+          - type: number
+            text: 10

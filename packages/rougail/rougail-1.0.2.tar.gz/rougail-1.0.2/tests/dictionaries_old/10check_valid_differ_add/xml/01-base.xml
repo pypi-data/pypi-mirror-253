@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="mode_conteneur_actif3" redefine="True"/>
+    </family>
+  </variables>
+  <constraints>
+    <check name="valid_differ">
+      <param type="variable">mode_conteneur_actif1</param>
+      <target>mode_conteneur_actif3</target>
+    </check>
+    <check name="valid_differ">
+      <param type="variable">mode_conteneur_actif2</param>
+      <target>mode_conteneur_actif3</target>
+    </check>
+  </constraints>
+</rougail>

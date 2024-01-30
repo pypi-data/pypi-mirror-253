@@ -1,0 +1,34 @@
+general:
+  mode: advanced
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    default: non
+leadermode:
+  leader:
+    description: leader
+    hidden: true
+    type: leadership
+    leader:
+      type: string
+      description: leader
+      multi: true
+      default:
+        type: jinja
+        jinja: '{% for var in calc_list() %}
+
+          {{ var }}
+
+          {% endfor %}
+
+          '
+      mandatory: false
+    follower1:
+      type: string
+      description: follower1
+      mandatory: false
+    follower2:
+      type: string
+      description: follower2
+      mandatory: false
+version: '1.0'

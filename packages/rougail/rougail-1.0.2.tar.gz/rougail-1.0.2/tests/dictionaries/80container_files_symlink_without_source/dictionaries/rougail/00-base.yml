@@ -1,0 +1,11 @@
+general:
+  description: général
+  mode_conteneur_actif:
+    type: string
+    description: No change
+    hidden: true
+    default: oui
+  file_name:
+    type: string
+    default: /etc/mailname
+version: '1.0'

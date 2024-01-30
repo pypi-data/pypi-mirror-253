@@ -1,0 +1,7 @@
+general1:
+  leadership:
+    follower3:
+      type: string
+      description: follower3
+      mandatory: false
+version: '1.0'

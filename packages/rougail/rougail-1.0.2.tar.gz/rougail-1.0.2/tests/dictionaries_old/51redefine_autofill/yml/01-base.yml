@@ -1,0 +1,17 @@
+version: '0.10'
+variables:
+- family:
+  - name: general
+    variables:
+    - variable:
+      - name: mode_conteneur_actif
+        redefine: true
+        hidden: false
+constraints:
+- fill:
+  - name: concat
+    param:
+    - name: valeur
+      text: non
+    target:
+    - text: mode_conteneur_actif

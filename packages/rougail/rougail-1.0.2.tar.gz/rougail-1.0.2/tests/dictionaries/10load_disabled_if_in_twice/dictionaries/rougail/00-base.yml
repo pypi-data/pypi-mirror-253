@@ -1,0 +1,34 @@
+---
+version: '1.0'
+my_var1:
+  default: 'no'
+my_var2:
+  default: 'no'
+  disabled:
+    type: jinja
+    params:
+      my_var1:
+        type: variable
+        variable: rougail.my_var1
+        propertyerror: false
+    jinja: |
+      {% if my_var1 is not defined %}
+      my_var1 is undefined!
+      {% elif my_var1 == "no" %}
+      my_var1 is no
+      {% endif %}
+my_var3:
+  default: 'no'
+  disabled:
+    params:
+      my_var2:
+        type: variable
+        variable: rougail.my_var2
+        propertyerror: false
+    type: jinja
+    jinja: |
+      {% if my_var2 is not defined %}
+      my_var2 is undefined!
+      {% elif my_var2 == "no" %}
+      my_var2 is no
+      {% endif %}

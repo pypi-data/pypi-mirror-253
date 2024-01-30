@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general" mode="expert">
+      <variable name="mode_conteneur_actif" type="string" description="No change">
+        <value>non</value>
+      </variable>
+    </family>
+    <family name="enumfam" mode="expert">
+      <variable name="enumvar" type="choice" description="multi" help="bla bla bla">
+        <choice type="string">quote'</choice>
+        <choice type="string">quote"</choice>
+        <choice type="string">quote"'</choice>
+        <value type="string">quote'</value>
+      </variable>
+    </family>
+  </variables>
+  <constraints/>
+</rougail>

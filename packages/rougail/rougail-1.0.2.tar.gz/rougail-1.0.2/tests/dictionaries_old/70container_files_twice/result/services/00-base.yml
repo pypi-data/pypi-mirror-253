@@ -1,0 +1,6 @@
+test.service:
+  files:
+    /etc/mailname: {}
+    /etc/eole/mailname: {}
+    /rougail.conf: {}
+version: '1.0'

@@ -1,0 +1,8 @@
+---
+version: '1.0'
+general:
+  mode_conteneur_actif:
+    description: New description
+    exists: false
+    redefine: true
+    default: non

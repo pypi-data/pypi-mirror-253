@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <variable name="condition" type="boolean"/>
+    <family name="general">
+      <variable name="my_variable"/>
+    </family>
+  </variables>
+  <constraints>
+    <condition name="disabled_if_in" source="condition">
+      <param>True</param>
+      <target type="family" optional="True">general</target>
+      <target type="family" optional="True">general2</target>
+    </condition>
+  </constraints>
+</rougail>

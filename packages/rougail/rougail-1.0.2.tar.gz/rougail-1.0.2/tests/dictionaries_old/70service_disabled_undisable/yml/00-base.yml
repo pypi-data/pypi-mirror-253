@@ -1,0 +1,11 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    disabled: true
+    undisable: true
+variables:
+- variable:
+  - name: condition
+    value:
+    - text: 'no'

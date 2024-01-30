@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <variables>
+    <family name="general">
+      <variable name="bool" type="boolean"/>
+      <variable name="multi1" type="boolean" multi="True"/>
+      <variable name="multi2" type="boolean" multi="True"/>
+    </family>
+  </variables>
+  <constraints>
+    <fill name="{% if rougail.general.bool %}True,False{% else %}False{% endif %}" type="jinja">
+      <target>multi1</target>
+    </fill>
+    <fill name="{% if not rougail.general.bool %}True,False{% else %}False{% endif %}" type="jinja">
+      <target>multi2</target>
+    </fill>
+  </constraints>
+</rougail>

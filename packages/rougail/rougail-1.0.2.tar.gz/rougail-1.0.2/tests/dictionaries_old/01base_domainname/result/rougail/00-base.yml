@@ -1,0 +1,6 @@
+general:
+  domain:
+    type: domainname
+    description: Description
+    default: my.domain.name
+version: '1.0'

@@ -1,0 +1,7 @@
+nut_monitor_host:
+  type: ip
+  mandatory: true
+  default:
+  - 192.168.0.1
+  - 192.168.0.2
+version: '1.0'

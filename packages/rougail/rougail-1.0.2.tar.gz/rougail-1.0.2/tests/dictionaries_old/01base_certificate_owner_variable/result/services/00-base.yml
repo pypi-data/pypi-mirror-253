@@ -1,0 +1,8 @@
+test.service:
+  certificates:
+    certificate:
+      authority: authority
+      owner:
+        name: rougail.owner
+        type: variable
+version: '1.0'

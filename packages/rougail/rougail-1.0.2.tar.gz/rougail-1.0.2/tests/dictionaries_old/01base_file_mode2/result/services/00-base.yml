@@ -1,0 +1,5 @@
+test.service:
+  files:
+    /etc/file:
+      mode: 1755
+version: '1.0'

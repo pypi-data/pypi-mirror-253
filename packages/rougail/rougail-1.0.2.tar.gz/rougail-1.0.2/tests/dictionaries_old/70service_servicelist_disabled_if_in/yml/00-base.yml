@@ -1,0 +1,28 @@
+version: '0.10'
+services:
+- service:
+  - name: test
+    servicelist: test
+variables:
+- variable:
+  - name: condition1
+    value:
+    - text: 'no'
+  - name: condition2
+    value:
+    - text: 'no'
+constraints:
+- condition:
+  - name: disabled_if_in
+    source: condition1
+    param:
+    - text: 'no'
+    target:
+    - text: condition2
+  - name: disabled_if_in
+    source: condition2
+    param:
+    - text: 'yes'
+    target:
+    - type: servicelist
+      text: test

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rougail version="0.10">
+  <services>
+    <service name="test">
+      <certificate authority="authority" owner="owner" owner_type="variable">certificate</certificate>
+    </service>
+  </services>
+  <variables>
+    <variable name="owner" type="unix_user">
+      <value>example</value>
+    </variable>
+    <variable name="server_name" type="domainname">
+      <value>example.net</value>
+    </variable>
+  </variables>
+</rougail>

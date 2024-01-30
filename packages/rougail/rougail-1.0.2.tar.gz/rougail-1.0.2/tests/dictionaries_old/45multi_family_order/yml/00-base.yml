@@ -1,0 +1,16 @@
+version: '0.10'
+variables:
+- variable:
+  - name: variable1
+- family:
+  - name: base
+    variables:
+    - variable:
+      - name: variable2
+    - family:
+      - name: subfamily
+        variables:
+        - variable:
+          - name: variable3
+    - variable:
+      - name: variable4

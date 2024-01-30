@@ -1,0 +1,13 @@
+var1:
+  multi: true
+  default:
+  - 'no'
+  - 'yes'
+  - maybe
+var2:
+  multi: true
+  mandatory: false
+  default:
+    type: jinja
+    jinja: '{{ rougail.var1 | calc_value }}'
+version: '1.0'

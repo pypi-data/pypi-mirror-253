@@ -1,0 +1,8 @@
+general:
+  description: général
+  activer_ejabberd:
+    type: string
+    description: No change
+    hidden: true
+    default: non
+version: '1.0'

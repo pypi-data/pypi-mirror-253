@@ -1,0 +1,6 @@
+test.service:
+  files:
+    /etc/mailname: {}
+    /etc/mailname2:
+      engine: jinja
+version: '1.0'
