@@ -1,0 +1,13 @@
+cachepot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cachepot/constants.py,sha256=xW1v4DtAwGGtAt7FyWlvUh9-xyW-gqVCQfopqfPXC7Q,541
+cachepot/encoders.py,sha256=aUsI-hWIO0zFoe7BtLnn12nxdvEPNjvKXCSVqLuTxws,599
+cachepot/routing.py,sha256=y-TqWRTNB1Iv3frcVGr0sykNID60Wdhavvzc1sHYmkQ,38915
+cachepot/storages/__init__.py,sha256=HfNRyFvxAgXmjZrmg6NZ9uswkkkBz8Cat34H-QenqpQ,119
+cachepot/storages/abstract.py,sha256=8RN0Go18kpCPjxI6gkuLANwdai25lhDRmNwzhTj994c,402
+cachepot/storages/dummy.py,sha256=dm3MGJAd9945h6DEW0hXII8n1IznFTDIwoeFeUyCgl8,307
+cachepot/storages/redis.py,sha256=I2v8pqevCQL0nMuYdmaKh7O-LjPp8utHJhm8FJkqMxw,575
+cachepot/utils.py,sha256=wVIR788RaMSuqZAjZLXcaTeVQazP9bbzkqIdEGNI4s4,7091
+fastapi_cachepot-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fastapi_cachepot-0.0.1.dist-info/METADATA,sha256=J1N8gLFBnId-8jLMUrgqzLaystTFQELrjHVko6K6BDY,687
+fastapi_cachepot-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+fastapi_cachepot-0.0.1.dist-info/RECORD,,
