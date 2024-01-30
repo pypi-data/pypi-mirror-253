@@ -1,0 +1,10 @@
+README.md
+setup.py
+tests/__init__.py
+tests/test_mysql.py
+xrx_mysql_utils/__init__.py
+xrx_mysql_utils.egg-info/PKG-INFO
+xrx_mysql_utils.egg-info/SOURCES.txt
+xrx_mysql_utils.egg-info/dependency_links.txt
+xrx_mysql_utils.egg-info/requires.txt
+xrx_mysql_utils.egg-info/top_level.txt
