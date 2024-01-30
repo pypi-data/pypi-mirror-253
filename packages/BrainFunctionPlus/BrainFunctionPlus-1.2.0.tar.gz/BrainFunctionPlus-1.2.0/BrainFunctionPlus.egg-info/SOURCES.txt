@@ -1,0 +1,5 @@
+setup.py
+BrainFunctionPlus.egg-info/PKG-INFO
+BrainFunctionPlus.egg-info/SOURCES.txt
+BrainFunctionPlus.egg-info/dependency_links.txt
+BrainFunctionPlus.egg-info/top_level.txt
