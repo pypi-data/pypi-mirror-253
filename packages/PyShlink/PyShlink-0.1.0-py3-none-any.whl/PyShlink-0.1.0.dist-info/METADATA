@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PyShlink
+Version: 0.1.0
+Summary: Library to extract information from Shlink
+Home-page: https://github.com/STIV-Cloud-Gaming-Hosting/PyShlink
+Author: Victor Díaz, Gonzalo Moyano
+Author-email: vmdcortes@gmail.com, gonzalomhenriquez13@gmail.com
+Keywords: python,shlink,api
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: requests ==2.31.0
+Requires-Dist: typing-extensions ==4.8.0
+
+This library has been created to facilitate the extraction of information from Shlink in a simple manner. It also allows for the seamless addition of new functions to extract different types of information. Feel free to add or delete words to enhance the description.
