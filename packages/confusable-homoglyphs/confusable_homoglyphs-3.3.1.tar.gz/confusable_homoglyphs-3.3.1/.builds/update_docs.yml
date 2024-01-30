@@ -1,0 +1,17 @@
+image: debian/testing
+oauth: "git.sr.ht/REPOSITORIES:RW git.sr.ht/PROFILE:RO"
+secrets:
+  - bf5ede6a-3d89-41c3-91d1-e527e6edfd1d
+packages:
+  - hut
+  - pandoc
+  - curl
+sources:
+  - https://git.sr.ht/~valhalla/confusable_homoglyphs
+tasks:
+  - update-readme: |
+      cd confusable_homoglyphs
+      pandoc -o README.html README.rst
+      hut git update --readme README.html
+  - trigger-rtd: |
+      curl -X POST -d @/home/build/RTD_confusable-homoglyphs_token https://readthedocs.org/api/v2/webhook/confusable-homoglyphs/258903/
