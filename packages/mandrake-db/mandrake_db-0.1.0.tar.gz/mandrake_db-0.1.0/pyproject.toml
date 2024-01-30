@@ -1,0 +1,117 @@
+[tool.poetry]
+name = "mandrake-db"
+version = "0.1.0"
+license = "GPL-3.0-or-later"
+description = "A lightweight multiple database adapter"
+authors = ["vintem <marcus@vintem.tech>"]
+homepage = "https://vintem.tech/libs/python/mandrake-db"
+repository = "https://gitlab.com/vintem.tech/libs/python/mandrake-db"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+toolz = "^0.12.1"
+motor = "^3.3.2"
+pymongo = "^4.6.1"
+pydantic = { version = "^2.5.3", extras = ["dotenv"] }
+pysondb = "^1.6.7"
+
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.12.2"
+jupyterlab = "^4.0.11"
+ipykernel = "^6.29.0"
+ruff = "^0.1.14"
+mypy = "^1.8.0"
+
+[tool.ruff.lint]
+# See a list of all rules: https://docs.astral.sh/ruff/rules/#rules
+select = [
+    "F",    # Pyflakes              https://docs.astral.sh/ruff/rules/#pyflakes-f
+    "E",    # Error                 https://docs.astral.sh/ruff/rules/#error-e
+    "W",    # Warning               https://docs.astral.sh/ruff/rules/#warning-w
+    "B",    # flake8-bugbear        https://docs.astral.sh/ruff/rules/#flake8-bugbear-b
+    "A",    # flake8-builtins       https://docs.astral.sh/ruff/rules/#flake8-builtins-a
+    "COM",  # flake8-commas         https://docs.astral.sh/ruff/rules/#flake8-commas-com
+    "I001", # isort                 https://docs.astral.sh/ruff/rules/#isort-i
+    "C4",   # flake8-comprehensions https://docs.astral.sh/ruff/rules/#flake8-comprehensions-c4
+    "T10",  # flake8-debugger       https://docs.astral.sh/ruff/rules/#flake8-debugger-t10
+    "T20",  # flake8-print          https://docs.astral.sh/ruff/rules/#flake8-print-t20
+    "PT",   # flake8-pytest-style   https://docs.astral.sh/ruff/rules/#flake8-pytest-style-pt
+    "RET",  # flake8-return         https://docs.astral.sh/ruff/rules/#flake8-return-ret
+]
+ignore = [
+    #"COM812", # missing-trailing-commas (uncomment to avoid ruff confict warning)
+]
+
+[tool.ruff.lint.pycodestyle]
+max-line-length = 88
+max-doc-length = 88
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.ruff.format]
+quote-style = "double" # or "single"
+indent-style = "space" # or "tab"
+
+[tool.mypy]
+python_version = "3.12"
+pretty = true
+allow_redefinition = false
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+follow_imports = "normal"
+implicit_reexport = false
+namespace_packages = true
+show_column_numbers = true
+strict_equality = true
+strict_optional = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_unused_ignores = false
+plugins = ["pydantic.mypy"]
+
+[tool.pydantic-mypy]
+init_typed = true
+warn_untyped_fields = true
+
+[[tool.mypy.overrides]]
+module = ["toolz.*"]
+ignore_missing_imports = true
+
+[tool.taskipy.tasks]
+
+test = "pytest -n auto --tb=long"
+test-no-warnings = "pytest -n auto --disable-warnings --tb=long"
+test-cov = "pytest -n auto --cov-report term-missing --disable-warnings --tb=long"
+serve-cov = "python -m http.server 3000 --directory cov_html"
+
+build = "docker compose build"
+down = "docker compose down"
+clear = "docker compose down -v --remove-orphans"
+# Run DBs:
+mongo = "docker compose run --service-ports mongo-db"
+postgres = "docker compose run --service-ports postgres-db"
+
+run-all = "task mongo && task postgres"
+
+
+formatter = "ruff format mandrake_db/ tests/"
+linter-check = "ruff check mandrake_db/ tests/"
+linter-fix = "ruff mandrake_db/ tests/ --fix"
+mypy = "mypy mandrake_db/ tests/"
+pre-commit = "task formatter && task linter-fix && task mypy && task test"
+
+jupyter-kernel-name = "python -m ipykernel install --user --name=mandrake-db --display-name=mandrake-db"
+jupyterlab = "task jupyter-kernel-name && poetry run jupyter lab> jupyterlog 2>&1 &"
+judo = "task jupyter-kernel-name && jupyter lab --ip 0.0.0.0 --port 8888 --no-browser --allow-root --IdentityProvider.token=JupyterInDocker > jupyterlog 2>&1 &"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
