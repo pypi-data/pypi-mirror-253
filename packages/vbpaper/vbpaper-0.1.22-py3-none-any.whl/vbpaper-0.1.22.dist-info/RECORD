@@ -1,0 +1,13 @@
+vbpaper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vbpaper/__main__.py,sha256=2tdENPAfpgNJ5sr7TZPyj7PiVkS4qSv-2IdBXCE-SlA,49
+vbpaper/functions.py,sha256=WsXp6mSmpRbpG7Cg9oeqZ-tEy7T4PUUmGIyHwTgJak8,4452
+vbpaper/main.py,sha256=v6tARd8GS76xGBarMLspnEA2tzwaz6d8NZISBioMtts,457
+vbpaper/normalize.py,sha256=l6qEhPYYSGgsiHXKdGZjMgJedagOYwXavMB1M9w8rk4,302
+vbpaper/rename.py,sha256=Nq9pLCgJT6itd2LCMNvXYpiZjMcMQO6qemxVFFiaUnY,284
+vbpaper/render.py,sha256=VwhJrT67vayVvg1IwVYkpCFIS7dkPlYLkA-VztkOAaM,831
+vbpaper/resize.py,sha256=c7X-IPVSFYOq-vGnZTzQZZFmzk3yUi2MdQMB0TElP6A,477
+vbpaper/start.py,sha256=WjkQoH0FkRA54b-nQbuSCT5NE8P7FWxm-O9KiP2znD4,290
+vbpaper-0.1.22.dist-info/METADATA,sha256=stjZjkZU0H_XJ6dSZvKLl9Hqh6-Rq0dEmoOz5oSJJXc,426
+vbpaper-0.1.22.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+vbpaper-0.1.22.dist-info/entry_points.txt,sha256=sUJ9vV1TTfHugcWVU9j67mOt2sEotBjjJR1myrHEeI0,45
+vbpaper-0.1.22.dist-info/RECORD,,
