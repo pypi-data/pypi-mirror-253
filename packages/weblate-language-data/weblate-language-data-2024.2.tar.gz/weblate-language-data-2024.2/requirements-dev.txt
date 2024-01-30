@@ -1,0 +1,3 @@
+-r requirements-lint.txt
+-r requirements-test.txt
+black==24.1.1
