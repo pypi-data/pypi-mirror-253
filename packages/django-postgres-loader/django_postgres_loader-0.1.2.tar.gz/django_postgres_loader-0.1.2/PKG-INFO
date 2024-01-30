@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: django_postgres_loader
+Version: 0.1.2
+Home-page: https://github.com/jcayers20/django-postgres-loader
+Download-URL: https://github.com/jcayers20/django-postgres-loader/archive/refs/tags/0.1.2.tar.gz
+Author: Jacob Ayers
+Author-email: jcayers20@gmail.com
+License: MIT
+Keywords: django,postgres,PostgreSQL,ETL,load
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
+Requires-Dist: Django>=2.2.28
