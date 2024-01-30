@@ -1,0 +1,194 @@
+from __future__ import annotations
+import typing as t
+from collections.abc import Collection
+import functools
+from ..core import Utils, exceptions, Narg, none
+
+AccessTypes = t.NewType('AccessTypes', list[str])
+PermissionCode = t.NewType('PermissionCode', str)
+
+
+class SynapsePermissions(type):
+    @property
+    @functools.cache
+    def ALL(cls) -> list[SynapsePermission]:
+        return Utils.unique(cls.ENTITY_PERMISSIONS + cls.TEAM_PERMISSIONS, key='code')
+
+    @property
+    @functools.cache
+    def ENTITY_PERMISSIONS(cls) -> list[SynapsePermission]:
+        # These are rank ordered. DO NOT CHANGE THE ORDER.
+        return [
+            cls.NO_PERMISSION,
+            cls.CAN_VIEW,
+            cls.CAN_DOWNLOAD,
+            cls.CAN_EDIT,
+            cls.CAN_EDIT_AND_DELETE,
+            cls.ADMIN
+        ]
+
+    @property
+    @functools.cache
+    def TEAM_PERMISSIONS(cls) -> list[SynapsePermission]:
+        # These are rank ordered. DO NOT CHANGE THE ORDER.
+        return [
+            cls.NO_PERMISSION,
+            cls.TEAM_MANAGER
+        ]
+
+    @property
+    @functools.cache
+    def NO_PERMISSION(cls) -> SynapsePermission:
+        return SynapsePermission('NO_PERMISSION', 'No Permission', [])
+
+    @property
+    @functools.cache
+    def ADMIN(cls) -> SynapsePermission:
+        return SynapsePermission('ADMIN',
+                                 'Administrator',
+                                 ['UPDATE',
+                                  'DELETE',
+                                  'CHANGE_PERMISSIONS',
+                                  'CHANGE_SETTINGS',
+                                  'CREATE',
+                                  'DOWNLOAD',
+                                  'READ',
+                                  'MODERATE'])
+
+    @property
+    @functools.cache
+    def CAN_EDIT_AND_DELETE(cls) -> SynapsePermission:
+        return SynapsePermission('CAN_EDIT_AND_DELETE',
+                                 'Can Edit and Delete',
+                                 ['DOWNLOAD',
+                                  'UPDATE',
+                                  'CREATE',
+                                  'DELETE',
+                                  'READ'])
+
+    @property
+    @functools.cache
+    def CAN_EDIT(cls) -> SynapsePermission:
+        return SynapsePermission('CAN_EDIT',
+                                 'Can Edit',
+                                 ['DOWNLOAD',
+                                  'UPDATE',
+                                  'CREATE',
+                                  'READ'])
+
+    @property
+    @functools.cache
+    def CAN_DOWNLOAD(cls) -> SynapsePermission:
+        return SynapsePermission('CAN_DOWNLOAD',
+                                 'Can Download',
+                                 ['DOWNLOAD',
+                                  'READ'])
+
+    @property
+    @functools.cache
+    def CAN_VIEW(cls) -> SynapsePermission:
+        return SynapsePermission('CAN_VIEW',
+                                 'Can View',
+                                 ['READ'])
+
+    @property
+    @functools.cache
+    def TEAM_MANAGER(cls) -> SynapsePermission:
+        return SynapsePermission('TEAM_MANAGER',
+                                 'Team Manager',
+                                 ['SEND_MESSAGE',
+                                  'READ',
+                                  'UPDATE',
+                                  'TEAM_MEMBERSHIP_UPDATE',
+                                  'DELETE'])
+
+
+class SynapsePermission(object, metaclass=SynapsePermissions):
+
+    def __init__(self, code: PermissionCode, name: str, access_types: AccessTypes) -> None:
+        self._code = code
+        self._name = name
+        self._access_types = sorted(access_types)
+
+    def __repr__(self):
+        return 'SynapsePermission({0}, {1})'.format(self.code, self.name)
+
+    def __eq__(self, other):
+        if not isinstance(other, SynapsePermission):
+            return NotImplemented
+        return self.equals(other)
+
+    def __lt__(self, other):
+        if not isinstance(other, SynapsePermission):
+            return NotImplemented
+        permissions = None
+        for permission_set in [SynapsePermission.ENTITY_PERMISSIONS, SynapsePermission.TEAM_PERMISSIONS]:
+            if self in permission_set and other in permission_set:
+                permissions = permission_set
+                break
+        if not permissions:
+            raise ValueError('Self and other must belong to the same permission set.')
+
+        self_rank = permissions.index(self)
+        other_rank = permissions.index(other)
+        return self_rank < other_rank
+
+    @property
+    def code(self) -> PermissionCode:
+        return self._code
+
+    @property
+    def name(self) -> str:
+        return self._name
+
+    @property
+    def access_types(self) -> AccessTypes:
+        return self._access_types
+
+    @property
+    def none(self):
+        """Returns True if self is a SynapsePermission.NO_PERMISSION"""
+        return self.equals(SynapsePermission.NO_PERMISSION)
+
+    def equals(self, other: SynapsePermission | AccessTypes | PermissionCode) -> bool:
+        """Gets if self and other are the same permission."""
+        return self.are_equal(self, other)
+
+    @classmethod
+    def are_equal(cls,
+                  a: SynapsePermission | AccessTypes | PermissionCode,
+                  b: SynapsePermission | AccessTypes | PermissionCode) -> bool:
+        """Gets if two permissions are the same."""
+        if a is None or b is None:
+            return False
+        a_perm = cls.get(a, None)
+        b_perm = cls.get(b, None)
+        if not (a_perm and b_perm):
+            return False
+        else:
+            return a_perm.code == b_perm.code and a_perm.access_types == b_perm.access_types
+
+    @classmethod
+    def get(cls,
+            value: SynapsePermission | PermissionCode | AccessTypes | None,
+            default: SynapsePermission | None = none) -> SynapsePermission:
+        """Gets a SynapsePermission"""
+        permission = None
+        if isinstance(value, SynapsePermission):
+            permission = Utils.find(cls.ALL, lambda p: p.code == value.code and p.access_types == value.access_types)
+        elif isinstance(value, str):
+            _value = value.upper()
+            permission = Utils.find(cls.ALL, key='code', value=_value)
+        elif isinstance(value, Collection):
+            _value = sorted(Utils.map(value, str.upper))
+            permission = Utils.find(cls.ALL, key='access_types', value=_value)
+        elif value is not None:
+            raise ValueError('Invalid value: {0}'.find(value))
+
+        if permission is None:
+            if Narg.is_narg(default):
+                raise exceptions.NotFoundError('Could not find SynapsePermission with: {0}'.format(value))
+            else:
+                return default
+        else:
+            return permission
