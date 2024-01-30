@@ -1,0 +1,3 @@
+[console_scripts]
+kv-to-kube=kv_to_kube:cli
+
