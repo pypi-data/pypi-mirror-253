@@ -1,0 +1,89 @@
+[tool.poetry]
+name = "djangoheads"
+version = "v1.2.1"
+description = "Djangoheads is a comprehensive project that includes the most efficient and user-friendly tools for Django development."
+authors = ["Chukavin Arkadiy <chuark@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/djangoheads/djangoheads"
+repository = "https://github.com/djangoheads/djangoheads"
+documentation = "https://github.com/djangoheads/djangoheads"
+keywords = ["django", "development", "framework"]
+include = [{ path = "djangoheads", format = "sdist" }]
+classifiers = [
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Operating System :: OS Independent",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Typing :: Typed",
+    "Development Status :: 1 - Planning",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.5.0"
+django = "^4.2.3"
+nox = "^2023.4.22"
+pytest-django = "^4.7.0"
+django-redis = "^5.4.0"
+celery = "^5.3.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+exclude = [
+    ".git",
+    "__pycache__",
+    ".venv/*",
+    "*.pyc",
+    ".mypy_cache",
+    ".pytest_cache",
+    "setup.py",
+]
+line-length = 120
+indent-width = 4
+force-exclude = true
+show-fixes = true
+show-source = true
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["I", "ANN", "D", "F", "E", "W", "N", "C90", "PL", "T20", "SLF", "SIM", "TID", "TCH", "PERF", "FURB"]
+ignore = ["D100", "D104", "D107", "D401", "F403", "N805", "ANN101", "ANN102", "ANN401", "PLR"]
+fixable = ["ALL"]
+unfixable = []
+dummy-variable-rgx = "(?x)(^venv/ | ^venv\\.py$)"
+
+[tool.ruff.format]
+line-ending = "auto"
+indent-style = "space"
+quote-style = "double"
+skip-magic-trailing-comma = false
+docstring-code-format = true
+docstring-code-line-length = 40
+
+[tool.mypy]
+python_version = "3.8"
+ignore_missing_imports = true
+strict = true
+plugins = ["mypy_django_plugin.main"]
+
+[tool.django-stubs]
+django_settings_module = "test_django_project.settings"
