@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "h5py_stubs"
+version = "0.1.0"
+description = "Type stubs for H5py"
+authors = ["Matteo Bouvier <m.bouvier@vidium-solutions.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    {include = "h5py-stubs"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.3"
+h5py = "^3.10.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
