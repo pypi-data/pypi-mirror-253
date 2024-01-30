@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: cell-perturb
+Version: 0.0.1rc0
+Summary: Impart in silico perturbations to observed cell states in AnnData.
+Home-page: https://github.com/mvinyard/cell-perturb
+Author: Michael E. Vinyard
+Author-email: mvinyard.ai@gmail.com
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ABCParse
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: adata_query
+Requires-Dist: anndata
+Requires-Dist: sklearn
+
+# cell-perturb
+Impart in silico perturbations to observed cell states in AnnData
