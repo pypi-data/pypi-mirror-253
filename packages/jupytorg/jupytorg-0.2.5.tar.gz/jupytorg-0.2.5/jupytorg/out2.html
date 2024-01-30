@@ -1,0 +1,1292 @@
+<h1 id="how-to-use-this-document">How to use this document</h1>
+<h2 id="what-is-org-mode">What is org-mode</h2>
+<p>This is org-mode document. Org-mode is a markup language which allows
+to write text documents containing executable code blocks.</p>
+<p>Org-mode can do much more than this and you can find out more <a
+href="https://orgmode.org">here.</a></p>
+<p>Org-mode works in emacs (the best editor in the world).</p>
+<h2 id="code-blocks">Code blocks</h2>
+<p>You can do two things with code blocks (besides simply reading
+them):</p>
+<ol>
+<li><p>execute: this can be done using the <code>C-c C-c</code> (Ctrl-c
+Ctrl-c) keybinding. The stdout of the code will be appended below the
+code block itself</p></li>
+<li><p>tangle: tangling a code block means creating a separate file that
+contains the code which can thus be compiled and run as usual. If you
+hit <code>C-c C-v C-t</code> (this call the emacs function
+<code>org-babel-tangle</code>) all the code blocks in this file will be
+tangled. If, instead, you only want to tangle a single code blocks, go
+to that block and hit <code>C-u C-c C-v C-t</code></p></li>
+</ol>
+<h2 id="compiling-and-running-a-tangled-code-block">Compiling and
+running a tangled code block</h2>
+<p>Once you have tangled a code block, you can compile and run it like
+any other code. For the code blocks of this document to work, you have
+to use the following compile command:</p>
+<div class="sourceCode" id="cb1" data-org-language="sh"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">gcc</span> <span class="at">-fopenmp</span> <span class="at">-I.</span> aux.c code_block.c <span class="at">-o</span> code_block</span></code></pre></div>
+<p>And then you can run it by launching the <code>code_block</code>
+executable</p>
+<div class="sourceCode" id="cb2" data-org-language="sh"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./code_block</span></span></code></pre></div>
+<h2 id="some-other-useful-tricks">Some other useful tricks</h2>
+<ul>
+<li><p><strong>Set an environment variable</strong>: in order to set an
+environment variable within emacs you have to hit
+<code>M-x setenv</code> then write the name of the variable, hit enter,
+write its value and hit enter again</p></li>
+<li><p><strong>Refresh images in an org-mode document</strong>: if
+images don't show up, use the command <code>M-x
+ org-redisplay-inline-images</code></p></li>
+<li><p><strong>Show this document as a presentation</strong>: to show
+this document as a sequence of slides, you must install the emacs
+<code>org-tree-slide</code> package. Then open the document and execute
+the command <code>M-x
+ org-tree-slide-mode</code>. You can mode forward and backward using the
+<code>&gt;</code> and <code>&lt;</code> keys. The setup code at the
+bottom of this file should automagically install this package upon
+opening</p></li>
+<li><p><strong>Export and org-mode document</strong>: Org-mode lets you
+export org-mode documents in various formats such as pdf or html. Just
+hit <code>C-c C-e</code> and follow the instructions.</p></li>
+<li><p>When you open this document, the code block at the bottom (in the
+Setup section) is supposed to be executed automatically to setup your
+environment. If this does not happen (it may be the case in older emacs
+version), just go there and hit <code>C-c C-c</code> to execute it
+manually. Also, the two code blocks named <code>auxc</code> and
+<code>auxh</code> are supposed to be tangled automatically. If this does
+not happen, do it manually.</p></li>
+</ul>
+<h1 id="introduction">Introduction</h1>
+<h2 id="parallel-computer-architectures">Parallel computer
+architectures</h2>
+<p><img src="figures/par_arch.png" width="700" /></p>
+<p>Roughly speaking, parallel computers can be classified into two
+types:</p>
+<ol>
+<li><p><strong>Shared memory</strong>: all the CPUs share one (logical)
+memory, i.e., all processes can access the same addressing space
+regardless of the CPU they are running on. This makes it simple to
+communicate data from one process to another</p></li>
+<li><p><strong>Distributed memory</strong>: the computer is actually
+formed of multiple node, each having one or more CPUs and its own
+memory. Nodes are connected through a network. A process running on one
+node can only access data on the local memory; therefore, if it needs
+data that is on another node, a message must be exchanged through the
+network</p></li>
+</ol>
+<h2 id="shared-memory-smp-vs-numa">Shared memory: SMP vs NUMA</h2>
+<p>One "logical memory" does not necessarily mean that only one physical
+memory exists. If multiple memory modules exist, access to data may
+non-uniform</p>
+<ul>
+<li>Symmetric Multi-Processor (SMP): all CPUs can access to all data
+with the same bandwidth and latency</li>
+<li>Non-Uniform Memory Access (NUMA): all CPUs can access to all data
+but bandwidth and latency depends on where the data is placed</li>
+</ul>
+<p><img src="figures/numa.png" width="300" /></p>
+<p>Both types of shared-memory architectures can be programmed using the
+same tools and technologies. When performance is a concern, though,
+special care must be taken for NUMA machines (we will not cover in this
+course)</p>
+<h2 id="multicore-processors-why">Multicore processors: why?</h2>
+<p>Until the early 00's all processors had only one core (in fact we did
+not use the word "core" at all). Then why have multicore processors
+become ubiquitous? Energy consumption is the reason why:</p>
+<p><span
+class="math inline"><em>P</em> = <em>C</em><em>V</em><sup>2</sup><em>f</em></span></p>
+<p>however there is a linear dependence between <span
+class="math inline"><em>f</em></span> and <span
+class="math inline"><em>V</em></span>, therefore <span
+class="math inline"><em>P</em></span> grows as the cube of $f$!!!</p>
+<p>Because the performance of single-core processors could only be
+improved by increasing the frequency, this trend became
+unsustainable.</p>
+<p>Multicore processors design relies on <strong>Thread Level
+Parallelism</strong> to improve performance. This means that more
+transistors are used to assemble multiple execution units (i.e., cores)
+on a single chip. This improves performance with only a linear increase
+in the energy consumption: the capacitance <span
+class="math inline"><em>C</em></span> grows because of the increased
+number of transistors.</p>
+<p>In fact, it is also possible to produce faster processors which
+consume less energy!!! Consider a quad-core processor with frequency
+<span class="math inline">0.6<em>f</em></span>: it will be 2.4 times
+faster and consume roughly 15\% less energy</p>
+<h2 id="multicore-processors-why-1">Multicore processors: why?</h2>
+<p><img src="figures/procs_history.png" width="900" /></p>
+<h2 id="multicore-architecture">Multicore architecture</h2>
+<p>Multicore computer: what does it look like?</p>
+<p>The <code>hwloc</code> library is designed to retrieve all the
+details of the architecture. For example, on my computer, I can run the
+<code>lstopo</code> program from <code>hwloc</code> to retrieve the
+architecture:</p>
+<div class="sourceCode" id="cb3" data-org-language="sh" data-tangle="no"
+data-results="file" data-file="./figures/arch.png"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> plafrim lstopo <span class="at">--of</span> png </span></code></pre></div>
+<h2 id="how-to-program-multicore-computers">How to program multicore
+computers?</h2>
+<p>Many options exist, but they are not all simple, portable, efficient
+etc.</p>
+<p>Examples:</p>
+<ul>
+<li><p><strong>pThreads</strong> (POSIX Threads): difficult to use and
+debug, not fully portable</p></li>
+<li><p><strong>Intel TBB/OneAPI</strong>: proprietary</p></li>
+<li><p><strong>Cilk</strong>: limited support and portability</p></li>
+<li><p><strong>OpenMP</strong>: extremely portable, efficient,
+relatively easy to use. huge community and support</p></li>
+</ul>
+<h1 id="the-openmp-standard">The OpenMP standard</h1>
+<h2 id="basic-ideas-and-components">Basic ideas and components</h2>
+<p><img src="figures/openmp_logo.png" width="500" /></p>
+<p><strong>OpenMP</strong> (Open specifications for MultiProcessing) is
+an Application Program Interface (API) to explicitly direct
+multi-threaded, shared memory parallelism.</p>
+<ul>
+<li><p>First standard 1.0 was published in 1997</p></li>
+<li><p>Latest standard is 5.2 published in November 2021</p>
+<ul>
+<li><p>Full specs are at this <a
+href="https://www.openmp.org/wp-content/uploads/OpenMP-API-Specification-5-2.pdf">URL</a></p></li>
+<li><p>Examples and exercises are at this <a
+href="https://www.openmp.org/wp-content/uploads/openmp-examples-5.2.1.pdf">URL</a></p></li>
+</ul></li>
+<li><p>Many resources at <a
+href="https://www.openmp.org">https://www.openmp.org</a></p></li>
+</ul>
+<p>The OpenMP standard is developed by an advisory board that includes
+many members from academia (UTK, LBNL, ANL, NASA,…) and industry (Intel,
+AMD, NEC, Fujitsu, NVIDIA,…)</p>
+<h2 id="basic-ideas-and-components-1">Basic ideas and components</h2>
+<p><img src="figures/openmp_logo.png" width="500" /></p>
+<ul>
+<li>OpenMP is Comprised of three primary API components:
+<ol>
+<li><strong>Language directives</strong></li>
+<li><strong>Runtime library routines</strong></li>
+<li><strong>Environment variables</strong></li>
+</ol></li>
+<li>Portable:
+<ul>
+<li>Specifications for C/C++ and Fortran</li>
+<li>Already available on many systems (including Linux, Win, IBM, SGI
+etc.)</li>
+</ul></li>
+</ul>
+<h2 id="disclaimer">Disclaimer</h2>
+<p><img src="figures/openmp_logo.png" width="500" /></p>
+<p>This course does not cover the whole OpenMP standard. The OpenMP
+manual is over 600 pages as of today (v5.2)</p>
+<p>Only a subset of constructs and clauses will be presented.</p>
+<p>Tons of tutorials can be found online but better be used with
+moderation.</p>
+<h2 id="fork-join-execution-model">Fork-join execution model</h2>
+<p>OpenMP is based on a fork-join execution model:</p>
+<p><img src="figures/forkjoin.png" width="700" /></p>
+<ul>
+<li><p>Execution is started by a single thread called master
+thread</p></li>
+<li><p>when a parallel region is encountered, the master thread spawns a
+set of threads</p></li>
+<li><p>the set of instructions enclosed in a parallel region is
+executed</p></li>
+<li><p>at the end of the parallel region all the threads synchronize and
+terminate leaving only the master</p></li>
+</ul>
+<h1 id="parallel-region">Parallel region</h1>
+<h2 id="parallel-region-directive-syntax">Parallel region directive
+syntax</h2>
+<pre class="example"><code>#pragma omp parallel [clause]
+                     if (scalar or logical expression)
+                     private(list)
+                     firstprivate(list)
+                     shared(list)
+                     default(private | shared | none)
+                     reduction(operator:list)
+                     num_threads(scalar integer expression)
+{
+  /* Structured code block */
+}
+</code></pre>
+<ul>
+<li><p>The <strong>master</strong> is a member of the team and has
+thread number 0</p></li>
+<li><p>Starting from the beginning of the region, the code is duplicated
+and all threads will execute that code.</p></li>
+<li><p>There is an <strong>implied barrier</strong> at the end of a
+parallel section.</p></li>
+<li><p>If any thread terminates within a parallel region, all threads in
+the team will terminate.</p></li>
+</ul>
+<h2 id="a-simple-hello-world-example-in-openmp">A simple hello world
+example in OpenMP</h2>
+<p>Just a simple hello world with multiple threads:</p>
+<ul>
+<li><p>start with serial execution</p></li>
+<li><p>open a parallel region where:</p>
+<ul>
+<li>each thread prints a message</li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb5" data-org-language="C"
+data-tangle="hello_world.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">&quot;Hello world!</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">);</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h2 id="a-slightly-more-complex-hello-world-example-in-openmp">A
+slightly more complex hello world example in OpenMP</h2>
+<p>Just a simple hello world with multiple threads:</p>
+<ul>
+<li><p>start with serial execution</p></li>
+<li><p>open a parallel region where:</p>
+<ul>
+<li>each thread reads its identifier and the total number of threads
+using, respectively, the <code>omp_get_thread_num()</code> and
+<code>omp_get_num_threads()</code></li>
+<li>prints a message</li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb6" data-org-language="C"
+data-tangle="hello_world_ids.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">&quot;Hello world from thread </span><span class="sc">%2d</span><span class="st"> in a pool of </span><span class="sc">%2d</span><span class="st">.</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span> omp_get_thread_num<span class="op">(),</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>         omp_get_num_threads<span class="op">());</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h2 id="parallel-region-how-many-threads">Parallel region: how many
+threads?</h2>
+<p>How many threads do we have in the parallel regions of a code? The
+number of threads depends on:</p>
+<ul>
+<li><p>Evaluation of the <code>if</code> clause (one or many)</p></li>
+<li><p>Setting of the <code>num_threads</code> clause</p></li>
+<li><p>Use of the <code>omp_set_num_threads()</code> library
+function</p></li>
+<li><p>Setting of the <code>OMP_NUM_THREADS</code> environment
+variable</p></li>
+<li><p>Implementation default - usually the number of CPUs on a node,
+though it could be dynamic</p></li>
+</ul>
+<h2 id="parallel-region-how-many-threads-1">Parallel region: how many
+threads?</h2>
+<p>Complete example</p>
+<div class="sourceCode" id="cb7" data-org-language="C"
+data-tangle="num_threads.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> iam<span class="op">,</span> nth<span class="op">,</span> n<span class="op">=</span><span class="dv">5</span><span class="op">;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">&quot;Region 1 thread </span><span class="sc">%2d</span><span class="st"> / </span><span class="sc">%2d</span><span class="st">.</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span> omp_get_thread_num<span class="op">(),</span> omp_get_num_threads<span class="op">());</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>omp_set_num_threads<span class="op">(</span>n<span class="op">);</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">&quot;Region 2 thread </span><span class="sc">%2d</span><span class="st"> / </span><span class="sc">%2d</span><span class="st">.</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span> omp_get_thread_num<span class="op">(),</span> omp_get_num_threads<span class="op">());</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel num_threads(2)</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">&quot;Region 3 thread </span><span class="sc">%2d</span><span class="st"> / </span><span class="sc">%2d</span><span class="st">.</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span> omp_get_thread_num<span class="op">(),</span> omp_get_num_threads<span class="op">());</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel if(n&lt;5)</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">&quot;Region 4 thread </span><span class="sc">%2d</span><span class="st"> / </span><span class="sc">%2d</span><span class="st">.</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span> omp_get_thread_num<span class="op">(),</span> omp_get_num_threads<span class="op">());</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<h2 id="hello-world-with-a-bug">Hello world with a bug</h2>
+<p>Here is a minor variant of the hello world program…with a bug</p>
+<div class="sourceCode" id="cb8" data-org-language="C"
+data-tangle="hello_world_bug.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> iam<span class="op">,</span> nth<span class="op">;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  iam <span class="op">=</span> omp_get_thread_num<span class="op">();</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  nth <span class="op">=</span> omp_get_num_threads<span class="op">();</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  do_stuff<span class="op">(</span><span class="dv">1</span><span class="op">);</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">&quot;Hello world from thread </span><span class="sc">%d</span><span class="st"> in a pool of </span><span class="sc">%2d</span><span class="st">.</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span> iam<span class="op">,</span> nth<span class="op">);</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h2 id="data-sharing-12">Data sharing 1/2</h2>
+<ul>
+<li><p>Most variables are shared by default</p></li>
+<li><p>Global variables include:</p>
+<ul>
+<li>Fortran: COMMON blocks, SAVE and MODULE variables</li>
+<li>C: File scope variables, static</li>
+</ul></li>
+<li><p>Private variables include:</p>
+<ul>
+<li>Loop index variables (in !$OMP DO) constructs</li>
+<li>Stack variables in subroutines called from parallel regions</li>
+</ul></li>
+<li><p>Fortran: Automatic variables within a statement block</p></li>
+<li><p>The OpenMP Data Scope Attribute Clauses are used to explicitly
+define how variables should be scoped. They include:</p>
+<ul>
+<li><code>private</code></li>
+<li><code>firstprivate</code></li>
+<li><code>shared</code></li>
+<li><code>default</code></li>
+<li><code>reduction</code></li>
+</ul></li>
+</ul>
+<h2 id="data-sharing-22">Data sharing 2/2</h2>
+<ul>
+<li><p><code>private(list)</code>: a new object of the same type is
+created for each thread (uninitialized!)</p></li>
+<li><p><code>firstprivate(list)</code>: Listed variables are initialized
+according to the value of their original objects prior to entry into the
+parallel or work-sharing construct.</p></li>
+<li><p><code>lastprivate(list)</code>: The value copied back into the
+original variable object is obtained from the last (sequentially)
+iteration or section of the enclosing construct.</p></li>
+<li><p><code>shared(list)</code>: only one object exists in memory and
+all the threads access it</p></li>
+<li><p><code>default(shared|private|none)</code>: sets the default
+scoping</p></li>
+<li><p><code>reduction(operator:list)</code>: performs a reduction on
+the variables that appear in its list.</p></li>
+</ul>
+<h2 id="hello-world-bugfix">Hello world bugfix</h2>
+<p>Let's fix the bug: by declaring <code>iam</code> private, each thread
+will have its own copy of this variable</p>
+<div class="sourceCode" id="cb9" data-org-language="C"
+data-tangle="hello_world_bugfix.c"><pre
+class="sourceCode c"><code class="sourceCode c"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> iam<span class="op">,</span> nth<span class="op">;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel private(iam)</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  iam <span class="op">=</span> omp_get_thread_num<span class="op">();</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  nth <span class="op">=</span> omp_get_num_threads<span class="op">();</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  do_stuff<span class="op">(</span><span class="dv">1</span><span class="op">);</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">&quot;Hello world from thread </span><span class="sc">%d</span><span class="st"> in a pool of </span><span class="sc">%2d</span><span class="st">.</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span> iam<span class="op">,</span> nth<span class="op">);</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h1 id="work-distribution-and-sharing">Work distribution and
+sharing</h1>
+<h2 id="dependencies">Dependencies</h2>
+<h3 id="dependencies-1">Dependencies</h3>
+<p>The interest of parallel programming is not to execute the same
+workload multiple times but to distribute the workload to the available
+processes so that execution time can be reduced. This implies that
+multiple instructions will be executed <strong>concurrently</strong>
+(or, equivalently, <strong>in parallel</strong>).</p>
+<p>Two successive statements S1 and S2 can be executed concurrently if
+they are <strong>independent</strong>. According to the
+<strong>Bernstein conditions</strong> there exist three types of
+dependencies:</p>
+<ul>
+<li><p><strong>Read-After-Write</strong> or <strong>true
+dependency</strong> or <strong>flow dependency</strong>: if
+<code>Input(S2)</code> overlaps with <code>Output(S1)</code></p></li>
+<li><p><strong>Write-After-Read</strong> or
+<strong>anti-dependency</strong>: if <code>Output(S2)</code> overlaps
+with <code>Input(S1)</code></p></li>
+<li><p><strong>Write-After-Write</strong> or <strong>output
+dependency</strong>: if <code>Output(S2)</code> overlaps with
+<code>Output(S1)</code></p></li>
+</ul>
+<h3 id="dependencies-2">Dependencies</h3>
+<p>Example. Are these two statements independent?</p>
+<div class="sourceCode" id="cb10" data-org-language="C"
+data-tangle="no"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> b<span class="op">+</span>c<span class="op">;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>e <span class="op">=</span> d<span class="op">+</span>a<span class="op">;</span></span></code></pre></div>
+<p>What kind of dependency is there? RAW. Here is a more convoluted
+example</p>
+<div class="sourceCode" id="cb11" data-org-language="C"
+data-tangle="no"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">1</span><span class="op">;</span> i<span class="op">&lt;</span>n<span class="op">;</span> i<span class="op">++)</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  x<span class="op">[</span>i<span class="op">]</span> <span class="op">+=</span> x<span class="op">[</span>i<span class="op">-</span><span class="dv">1</span><span class="op">];</span></span></code></pre></div>
+<h3 id="dependencies-3">Dependencies</h3>
+<p>Example. Are these two statements independent?</p>
+<div class="sourceCode" id="cb12" data-org-language="C"
+data-tangle="no"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> b<span class="op">+</span>c<span class="op">;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> c<span class="op">*</span><span class="dv">2</span><span class="op">;</span></span></code></pre></div>
+<p>What kind of dependency is there? WAR. Note that WAR dependencies can
+be sometimes removed!</p>
+<div class="sourceCode" id="cb13" data-org-language="C"
+data-tangle="no"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> b<span class="op">;</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> d<span class="op">+</span>c<span class="op">;</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> c<span class="op">*</span><span class="dv">2</span><span class="op">;</span></span></code></pre></div>
+<p>Now the second and third statement have become independent. Here is a
+more convoluted example</p>
+<div class="sourceCode" id="cb14" data-org-language="C"
+data-tangle="no"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>n<span class="op">-</span><span class="dv">1</span><span class="op">;</span> i<span class="op">++)</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  x<span class="op">[</span>i<span class="op">]</span> <span class="op">+=</span> x<span class="op">[</span>i<span class="op">+</span><span class="dv">1</span><span class="op">];</span></span></code></pre></div>
+<h3 id="dependencies-4">Dependencies</h3>
+<p>Example. Are these two statements independent?</p>
+<div class="sourceCode" id="cb15" data-org-language="C"
+data-tangle="no"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> a<span class="op">+</span>b<span class="op">;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="dv">2</span><span class="op">;</span></span></code></pre></div>
+<p>What kind of dependency is there? WAW. Here is a more convoluted
+example</p>
+<div class="sourceCode" id="cb16" data-org-language="C"
+data-tangle="no"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>n<span class="op">;</span> i<span class="op">++)</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  c <span class="op">+=</span> x<span class="op">[</span>i<span class="op">];</span></span></code></pre></div>
+<h2 id="master">Master</h2>
+<p>The <code>master</code> directive identifies a code block which is
+only executed by the master thread</p>
+<div class="sourceCode" id="cb17" data-org-language="C"
+data-tangle="master.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> iam<span class="op">;</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel private(iam)</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    iam <span class="op">=</span> omp_get_thread_num<span class="op">();</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp master</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">{</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>      do_stuff<span class="op">(</span><span class="dv">0</span><span class="er">.1</span><span class="op">);</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>      printf<span class="op">(</span><span class="st">&quot; ---&gt; This is only done by: </span><span class="sc">%2d\n</span><span class="st">&quot;</span><span class="op">,</span>iam<span class="op">);</span></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;      This is also done by: </span><span class="sc">%2d</span><span class="st">.</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span>iam<span class="op">);</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span></code></pre></div>
+<h2 id="single">Single</h2>
+<p>The <code>single</code> directive identifies a code block which is
+only executed by one (any) thread</p>
+<div class="sourceCode" id="cb18" data-org-language="C"
+data-tangle="single.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> iam<span class="op">;</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel private(iam)</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    iam <span class="op">=</span> omp_get_thread_num<span class="op">();</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp single</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">{</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>      do_stuff<span class="op">(</span><span class="dv">0</span><span class="er">.1</span><span class="op">);</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>      printf<span class="op">(</span><span class="st">&quot; ---&gt; This is only done by: </span><span class="sc">%2d\n</span><span class="st">&quot;</span><span class="op">,</span>iam<span class="op">);</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;      This is also done by: </span><span class="sc">%2d</span><span class="st">.</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span>iam<span class="op">);</span></span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span></code></pre></div>
+<h2 id="single-vs-master">Single vs master</h2>
+<p>One obvious difference between <code>single</code> and
+<code>master</code> is that with <code>master</code> only the thread
+with id 0 can execute the code block. This has a risk: you have to make
+sure that the master thread passes by that code block otherwise it will
+never be executed.</p>
+<p>Can you spot any other difference from executing the two code blocks
+above? There is an <strong>implied barrier</strong> at the end of the
+<code>single</code> block. It can be removed using the
+<code>nowait</code> clause</p>
+<div class="sourceCode" id="cb19" data-org-language="C"
+data-tangle="single_nowait.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> iam<span class="op">;</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel private(iam)</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>    iam <span class="op">=</span> omp_get_thread_num<span class="op">();</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp single nowait</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">{</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>      do_stuff<span class="op">(</span><span class="dv">0</span><span class="er">.1</span><span class="op">);</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>      printf<span class="op">(</span><span class="st">&quot; ---&gt; This is only done by: </span><span class="sc">%2d\n</span><span class="st">&quot;</span><span class="op">,</span>iam<span class="op">);</span></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;      This is also done by: </span><span class="sc">%2d</span><span class="st">.</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span>iam<span class="op">);</span></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span></code></pre></div>
+<h2 id="parallel-loops">Parallel loops</h2>
+<h3 id="parallel">Parallel</h3>
+<p>In the code below, all the iterations in the loop are
+<strong>independent</strong>. This means that they can be executed
+<strong>concurrently</strong>. However the code below is wrong because
+it does not produce the same result as in sequential</p>
+<div class="sourceCode" id="cb20" data-org-language="C"
+data-tangle="loops.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> i<span class="op">,</span> n<span class="op">=</span><span class="dv">4</span><span class="op">;</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> a<span class="op">[</span>n<span class="op">],</span> b<span class="op">[</span>n<span class="op">],</span> c<span class="op">[</span>n<span class="op">];</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel private(i)</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> <span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>n<span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;Thread </span><span class="sc">%2d</span><span class="st"> does iteration </span><span class="sc">%2d\n</span><span class="st">&quot;</span><span class="op">,</span>omp_get_thread_num<span class="op">(),</span>i<span class="op">);</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>    a<span class="op">[</span>i<span class="op">]</span> <span class="op">+=</span> b<span class="op">[</span>i<span class="op">]+</span>c<span class="op">[</span>i<span class="op">];</span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h3 id="parallel-1">Parallel</h3>
+<p>OpenMP provides a construct that automatically parallelizes loops by
+executing chunks of iterations concurrently. Note that the loop index
+<code>i</code> is implicitly <code>private</code>.</p>
+<div class="sourceCode" id="cb21" data-org-language="C"
+data-tangle="loops.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> i<span class="op">,</span> n<span class="op">=</span><span class="dv">4</span><span class="op">;</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> a<span class="op">[</span>n<span class="op">],</span> b<span class="op">[</span>n<span class="op">],</span> c<span class="op">[</span>n<span class="op">];</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp for</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> <span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>n<span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;Thread </span><span class="sc">%2d</span><span class="st"> does iteration </span><span class="sc">%2d\n</span><span class="st">&quot;</span><span class="op">,</span>omp_get_thread_num<span class="op">(),</span>i<span class="op">);</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>    a<span class="op">[</span>i<span class="op">]</span> <span class="op">+=</span> b<span class="op">[</span>i<span class="op">]+</span>c<span class="op">[</span>i<span class="op">];</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h3 id="schedule">Schedule</h3>
+<p>The <code>schedule</code> clause in the <code>for</code> construct
+specifies how the iterations of the loop are assigned to threads:</p>
+<ul>
+<li><p><code>static</code>: loop iterations are divided into pieces of
+size chunk and then statically assigned to threads in a round-robin
+fashion</p></li>
+<li><p><code>dynamic</code>: loop iterations are divided into pieces of
+size chunk, and dynamically scheduled among the threads; when a thread
+finishes one chunk, it is dynamically assigned another</p></li>
+<li><p><code>guided</code>: for a chunk size of 1, the size of each
+chunk is proportional to the number of unassigned iterations divided by
+the number of threads, decreasing to 1. For a chunk size with value k
+(greater than 1), the size of each chunk is determined in the same way
+with the restriction that the chunks do not contain fewer than k
+iterations</p></li>
+<li><p><code>runtime</code>: The scheduling decision is deferred until
+runtime by the environment variable OMP SCHEDULE</p></li>
+</ul>
+<h3 id="schedule-1">Schedule</h3>
+<p>Let's see how <code>schedule</code> works:</p>
+<div class="sourceCode" id="scheds" data-org-language="C"
+data-tangle="scheds.c" data-results="file" data-file="res.data"><pre
+class="sourceCode c"><code class="sourceCode c"><span id="scheds-1"><a href="#scheds-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> i<span class="op">;</span></span>
+<span id="scheds-2"><a href="#scheds-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel for num_threads(4) schedule(guided,25)</span></span>
+<span id="scheds-3"><a href="#scheds-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span><span class="dv">400</span><span class="op">;</span> i<span class="op">++)</span></span>
+<span id="scheds-4"><a href="#scheds-4" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">&quot;</span><span class="sc">%3d</span><span class="st">  </span><span class="sc">%2d\n</span><span class="st">&quot;</span><span class="op">,</span>i<span class="op">,</span>omp_get_thread_num<span class="op">());</span></span></code></pre></div>
+<pre class="gnuplot" data-var="data=scheds" data-results="file"
+data-file="./figures/scheds.png"><code>reset
+set term png size 700, 400
+set xlabel &quot;iterations&quot;
+set ylabel &quot;thread&quot;
+set yrange [-0.5:3.5]
+set ytics 0,1,3
+set grid ytics lt 1 lc &#39;gray80&#39;
+plot &quot;res.data&quot; with points pt 6 title &#39;Iteration&#39;
+
+set output
+
+</code></pre>
+<h3 id="collapse">Collapse</h3>
+<p>The <code>collapse</code> clause allows for combining multiple loops
+into a single one and for parallelizing its iterations. The number of
+loops to collapse can be provided as an option</p>
+<div class="sourceCode" id="cb23" data-org-language="C"
+data-tangle="collapse.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> i<span class="op">,</span> j<span class="op">;</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel for private(i,j) collapse(2)</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span><span class="dv">2</span><span class="op">;</span> i<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> <span class="op">(</span>j<span class="op">=</span><span class="dv">0</span><span class="op">;</span> j<span class="op">&lt;</span><span class="dv">4</span><span class="op">;</span> j<span class="op">++)</span> <span class="op">{</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>printf<span class="op">(</span><span class="st">&quot;Thread </span><span class="sc">%2d</span><span class="st"> does iteration i:</span><span class="sc">%2d</span><span class="st"> j:</span><span class="sc">%2d\n</span><span class="st">&quot;</span><span class="op">,</span>omp_get_thread_num<span class="op">(),</span>i<span class="op">,</span>j<span class="op">);</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h1 id="threads-synchronization">Threads synchronization</h1>
+<h2 id="barriers">Barriers</h2>
+<h3 id="barrier">Barrier</h3>
+<p>A barrier is simply a waiting point: all threads must wait for all
+the others to reach a barrier point before moving on. Example</p>
+<div class="sourceCode" id="cb24" data-org-language="C"
+data-tangle="barrier.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> iam<span class="op">;</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">double</span> t<span class="op">=</span>secs<span class="op">();</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel private(iam)</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>    iam <span class="op">=</span> omp_get_thread_num<span class="op">();</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span><span class="op">(</span>iam<span class="op">==</span><span class="dv">0</span><span class="op">){</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>  do_stuff<span class="op">(</span><span class="dv">0</span><span class="er">.5</span><span class="op">);</span> <span class="co">// 0.5 seconds</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>  do_stuff<span class="op">(</span><span class="dv">0</span><span class="er">.3</span><span class="op">);</span> <span class="co">// 0.3 seconds</span></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp barrier</span></span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;Thread </span><span class="sc">%2d</span><span class="st"> reached this point at time </span><span class="sc">%f</span><span class="st">.</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span>iam<span class="op">,</span>secs<span class="op">()-</span>t<span class="op">);</span></span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span></code></pre></div>
+<h3 id="barrier-1">Barrier</h3>
+<p>Improper use of barriers can cause <strong>deadlocks</strong>: if not
+all threads pass by the barrier, those who do will be waiting
+forever…</p>
+<div class="sourceCode" id="cb25" data-org-language="C"
+data-tangle="barrier_deadlock.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> iam<span class="op">;</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">double</span> t<span class="op">=</span>secs<span class="op">();</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel private(iam)</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>    iam <span class="op">=</span> omp_get_thread_num<span class="op">();</span></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span><span class="op">(</span>iam<span class="op">==</span><span class="dv">0</span><span class="op">){</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>  do_stuff<span class="op">(</span><span class="dv">0</span><span class="er">.5</span><span class="op">);</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>  do_stuff<span class="op">(</span><span class="dv">0</span><span class="er">.3</span><span class="op">);</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>      <span class="pp">#pragma omp barrier</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;Thread </span><span class="sc">%2d</span><span class="st"> reached this point at time </span><span class="sc">%f</span><span class="st">.</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span>iam<span class="op">,</span>secs<span class="op">()-</span>t<span class="op">);</span></span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span></code></pre></div>
+<h2 id="critical-sections">Critical sections</h2>
+<h3 id="critical">Critical</h3>
+<p>The <code>critical</code> directive identifies a code block which is
+executed in <strong>mutual exclusion</strong> by all threads, i.e., one
+at a time.</p>
+<div class="sourceCode" id="cb26" data-org-language="C"
+data-tangle="critical.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> iam<span class="op">;</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">double</span> t<span class="op">=</span>secs<span class="op">();</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel private(iam)</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    iam <span class="op">=</span> omp_get_thread_num<span class="op">();</span></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp critical</span></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">{</span></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>      do_stuff<span class="op">(</span><span class="dv">0</span><span class="er">.1</span><span class="op">);</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>      printf<span class="op">(</span><span class="st">&quot;This is done by </span><span class="sc">%2d</span><span class="st">  at time </span><span class="sc">%f\n</span><span class="st">&quot;</span><span class="op">,</span>iam<span class="op">,</span> secs<span class="op">()-</span>t<span class="op">);</span></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span></code></pre></div>
+<h3 id="critical-scope">Critical scope</h3>
+<p>Critical sections can have names. The name argument is used to
+identify the critical construct. For any critical construct for which
+name is not specified, the effect is as if an identical (unspecified)
+name was specified. It is not possible to have two or more threads in
+different critical regions that have the same name!</p>
+<div class="sourceCode" id="cb27" data-org-language="C"
+data-tangle="critical_names.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> iam<span class="op">;</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">double</span> t<span class="op">=</span>secs<span class="op">();</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel private(iam)</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>    iam <span class="op">=</span> omp_get_thread_num<span class="op">();</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp critical (toto)</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">{</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>      do_stuff<span class="op">(</span><span class="dv">0</span><span class="er">.1</span><span class="op">);</span></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>      printf<span class="op">(</span><span class="st">&quot;First  is done by </span><span class="sc">%2d</span><span class="st">  at time </span><span class="sc">%f\n</span><span class="st">&quot;</span><span class="op">,</span>iam<span class="op">,</span> secs<span class="op">()-</span>t<span class="op">);</span></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp critical (titi)</span></span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>    <span class="op">{</span></span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>      do_stuff<span class="op">(</span><span class="dv">0</span><span class="er">.1</span><span class="op">);</span></span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>      printf<span class="op">(</span><span class="st">&quot;Second is done by </span><span class="sc">%2d</span><span class="st">  at time </span><span class="sc">%f\n</span><span class="st">&quot;</span><span class="op">,</span>iam<span class="op">,</span> secs<span class="op">()-</span>t<span class="op">);</span></span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span></code></pre></div>
+<h2 id="atomic-instructions">Atomic instructions</h2>
+<h3 id="atomic">Atomic</h3>
+<p>The atomic construct ensures that a specific storage location is
+accessed atomically so that possible simultaneous reads and writes by
+multiple threads do not result in indeterminate values. Five types of
+atomic constructs exist: <code>read</code>, <code>write</code>,
+<code>update</code>, <code>capture</code> and <code>compare</code></p>
+<ul>
+<li><code>read</code>: atomically read a memory location, i.e.,
+<code>x</code> can not change while being read</li>
+</ul>
+<div class="sourceCode" id="cb28" data-org-language="C"
+data-tangle="no"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> x<span class="op">,</span> v<span class="op">;</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>    <span class="pp">#pragma atomic read</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>    v <span class="op">=</span> x<span class="op">;</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span></code></pre></div>
+<h3 id="atomic-1">Atomic</h3>
+<ul>
+<li><p><code>write</code>: atomically write a memory location</p></li>
+<li><p><code>update</code>: atomically update (i.e. read-modify-write) a
+memory location</p></li>
+</ul>
+<p>So what's the interest of atomic? take this example: we could
+certainly use <code>critical</code> to protect the update of
+<code>x[]</code> but this would prevent calls to
+<code>compute_one</code> to be executed concurrently. With
+<code>atomic</code> only the update of <code>x[]</code> is
+serialized.</p>
+<div class="sourceCode" id="cb29" data-org-language="C"
+data-tangle="atomic_update.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>  <span class="dt">double</span> t_start<span class="op">=</span>secs<span class="op">(),</span> t_end<span class="op">;</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> i<span class="op">,</span> n<span class="op">=</span><span class="dv">100</span><span class="op">,</span> m<span class="op">=</span><span class="dv">5</span><span class="op">,</span> tot<span class="op">=</span><span class="dv">0</span><span class="op">,</span> x<span class="op">[</span><span class="dv">5</span><span class="op">]={</span><span class="dv">0</span><span class="op">,</span><span class="dv">0</span><span class="op">,</span><span class="dv">0</span><span class="op">,</span><span class="dv">0</span><span class="op">,</span><span class="dv">0</span><span class="op">};</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel for</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>n<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp atomic update</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>      x<span class="op">[</span>rnd_int<span class="op">()%</span>m<span class="op">]</span> <span class="op">+=</span> compute_one<span class="op">(</span><span class="dv">0</span><span class="er">.01</span><span class="op">);</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>  t_end <span class="op">=</span> secs<span class="op">()-</span>t_start<span class="op">;</span></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>m<span class="op">;</span> i<span class="op">++)</span></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>    tot <span class="op">+=</span> x<span class="op">[</span>i<span class="op">];</span></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">&quot;</span><span class="sc">\n</span><span class="st">Tot:</span><span class="sc">%10d</span><span class="st">   time:</span><span class="sc">%f\n</span><span class="st">&quot;</span><span class="op">,</span>tot<span class="op">,</span> t_end<span class="op">);</span></span></code></pre></div>
+<h3 id="atomic-2">Atomic</h3>
+<ul>
+<li><code>capture</code>: atomically update a memory location and
+capture its initial or final value</li>
+</ul>
+<div class="sourceCode" id="cb30" data-org-language="C"
+data-tangle="no"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> x<span class="op">,</span> v<span class="op">,</span> y<span class="op">,</span> w<span class="op">;</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">/* Capture initial value */</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>    <span class="pp">#pragma atomic capture</span></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>    v <span class="op">=</span> x<span class="op">++;</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">/* Capture final value */</span></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>    <span class="pp">#pragma atomic capture</span></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>    w <span class="op">=</span> <span class="op">++</span>y<span class="op">;</span></span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span></code></pre></div>
+<h3 id="atomic-3">Atomic</h3>
+<ul>
+<li><code>compare</code>: atomically and conditionally update a memory
+location</li>
+</ul>
+<div class="sourceCode" id="cb31" data-org-language="C"
+data-tangle="atomic_compare.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> i<span class="op">,</span> n<span class="op">=</span><span class="dv">1000</span><span class="op">,</span> min<span class="op">=</span><span class="dv">99999999</span><span class="op">;</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> x<span class="op">[</span>n<span class="op">];</span>  </span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>rand_fill<span class="op">(</span>x<span class="op">,</span> n<span class="op">);</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel for</span></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>n<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>  <span class="pp">#pragma omp atomic compare</span></span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="op">(</span>x<span class="op">[</span>i<span class="op">]</span> <span class="op">&lt;</span> min<span class="op">)</span> <span class="op">{</span> min <span class="op">=</span> x<span class="op">[</span>i<span class="op">];</span> <span class="op">}</span></span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>printf<span class="op">(</span><span class="st">&quot;Min is </span><span class="sc">%d\n</span><span class="st">&quot;</span><span class="op">,</span>min<span class="op">);</span></span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<h2 id="reductions">Reductions</h2>
+<h3 id="reductions-1">Reductions</h3>
+<p>Assume this simple code that computes the sum of all the elements of
+an array</p>
+<div class="sourceCode" id="cb32" data-org-language="C"
+data-tangle="no"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> i<span class="op">,</span> sum<span class="op">,</span> n<span class="op">=</span><span class="dv">1000</span><span class="op">;</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> x<span class="op">[</span>n<span class="op">];</span>  </span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>rand_fill<span class="op">(</span>x<span class="op">,</span> n<span class="op">);</span> sum<span class="op">=</span><span class="dv">0</span><span class="op">;</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>n<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>   sum <span class="op">+=</span> x<span class="op">[</span>i<span class="op">];</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>printf<span class="op">(</span><span class="st">&quot;Sum is </span><span class="sc">%d\n</span><span class="st">&quot;</span><span class="op">,</span>sum<span class="op">);</span></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<p>The iterations of this loop are clearly dependent because of the
+updates on <code>sum</code>. We could actually use a critical section or
+an atomic update but we would loose all performance.</p>
+<h3 id="reductions-2">Reductions</h3>
+<p><strong>Reductions</strong> allow us to take advantage of
+associativity and commutativity of some operators (+ in this case):</p>
+<div class="sourceCode" id="cb33" data-org-language="C"
+data-tangle="reduction.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> i<span class="op">,</span> sum<span class="op">,</span> n<span class="op">=</span><span class="dv">1000</span><span class="op">;</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> x<span class="op">[</span>n<span class="op">];</span>  </span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>    rand_fill<span class="op">(</span>x<span class="op">,</span> n<span class="op">);</span> sum<span class="op">=</span><span class="dv">0</span><span class="op">;</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel reduction(+:sum)</span></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>    <span class="op">{</span></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp for </span></span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>      <span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>n<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>        sum <span class="op">+=</span> x<span class="op">[</span>i<span class="op">];</span></span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>      <span class="op">}</span></span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>      printf<span class="op">(</span><span class="st">&quot;Partial Sum on </span><span class="sc">%d</span><span class="st"> is </span><span class="sc">%d\n</span><span class="st">&quot;</span><span class="op">,</span>omp_get_thread_num<span class="op">(),</span>sum<span class="op">);</span></span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;Sum is </span><span class="sc">%d\n</span><span class="st">&quot;</span><span class="op">,</span>sum<span class="op">);</span></span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<p>The reduction clause specifies an operator and one or more list
+items. For each list item, a private copy is created in each implicit
+task, and is initialized appropriately for the operator. After the end
+of the region, the original list item is updated with the values of the
+private copies using the specified operator.</p>
+<h3 id="reductions-3">Reductions</h3>
+<p>For the <code>C</code> language, predefined reduction operators are
+(note that : in the table below is actually a | )</p>
+<table>
+<thead>
+<tr class="header">
+<th>Operator</th>
+<th>Initializer</th>
+<th>Combiner</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>+</td>
+<td>omp<sub>priv</sub>=0</td>
+<td>omp<sub>out</sub> += omp<sub>in</sub></td>
+</tr>
+<tr class="even">
+<td>*</td>
+<td>omp<sub>priv</sub>=1</td>
+<td>omp<sub>out</sub> *= omp<sub>in</sub></td>
+</tr>
+<tr class="odd">
+<td>~</td>
+<td>omp<sub>priv</sub>=~0</td>
+<td>omp<sub>out</sub> ~= omp<sub>in</sub></td>
+</tr>
+<tr class="even">
+<td>:</td>
+<td>omp<sub>priv</sub>=0</td>
+<td>omp<sub>out</sub> := omp<sub>in</sub></td>
+</tr>
+<tr class="odd">
+<td>^</td>
+<td>omp<sub>priv</sub>=0</td>
+<td>omp<sub>out</sub> ^= omp<sub>in</sub></td>
+</tr>
+<tr class="even">
+<td>&amp;&amp;</td>
+<td>omp<sub>priv</sub>=1</td>
+<td>omp<sub>out</sub> = omp<sub>in</sub> &amp;&amp;
+omp<sub>out</sub></td>
+</tr>
+<tr class="odd">
+<td>::</td>
+<td>omp<sub>priv</sub>=0</td>
+<td>omp<sub>out</sub> = omp<sub>in</sub> :: omp<sub>out</sub></td>
+</tr>
+<tr class="even">
+<td>max</td>
+<td>omp<sub>priv</sub>=minval</td>
+<td>omp<sub>out</sub> = max(omp<sub>in</sub>,omp<sub>out</sub>)</td>
+</tr>
+<tr class="odd">
+<td>min</td>
+<td>omp<sub>priv</sub>=maxval</td>
+<td>omp<sub>out</sub> = min(omp<sub>in</sub>,omp<sub>out</sub>)</td>
+</tr>
+</tbody>
+</table>
+<h1 id="tasks">Tasks</h1>
+<h2 id="task">Task</h2>
+<p>The OpenMP <code>task</code> construct simply identifies a block of
+code which is ready to be executed and whose execution is
+<strong>deferred</strong>. Once the task is created, it can be executed
+<strong>by any thread, at any time</strong>. This means that we can not
+make any assumptions on when a task is executed and by which thread and
+in which order all the created tasks are executed.</p>
+<div class="sourceCode" id="cb34" data-org-language="C"
+data-tangle="tasks_simple.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a> <span class="pp">#pragma omp parallel</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a> <span class="op">{</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp single</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>   <span class="op">{</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a> <span class="pp">#pragma omp task</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>     printf<span class="op">(</span><span class="st">&quot;Thead </span><span class="sc">%2d</span><span class="st"> does task 1</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span>omp_get_thread_num<span class="op">());</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a> <span class="pp">#pragma omp task</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>     printf<span class="op">(</span><span class="st">&quot;Thead </span><span class="sc">%2d</span><span class="st"> does task 2</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span>omp_get_thread_num<span class="op">());</span></span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a> <span class="pp">#pragma omp task</span></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>     printf<span class="op">(</span><span class="st">&quot;Thead </span><span class="sc">%2d</span><span class="st"> does task 3</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span>omp_get_thread_num<span class="op">());</span></span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a> <span class="pp">#pragma omp task</span></span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>     printf<span class="op">(</span><span class="st">&quot;Thead </span><span class="sc">%2d</span><span class="st"> does task 4</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span>omp_get_thread_num<span class="op">());</span></span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a>   <span class="op">}</span></span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a> <span class="op">}</span></span></code></pre></div>
+<p>Why do we need the <code>master</code> construct in the code
+above?</p>
+<h2 id="task-data">Task data</h2>
+<p>A slightly more complex example, with a bug:</p>
+<div class="sourceCode" id="cb35" data-org-language="C"
+data-tangle="no"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> i<span class="op">;</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>printf<span class="op">(</span><span class="st">&quot;Hello </span><span class="sc">%p\n</span><span class="st">&quot;</span><span class="op">,&amp;</span>i<span class="op">);</span></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel private(i)</span></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp master</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span><span class="dv">6</span><span class="op">;</span> i<span class="op">++)</span></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>      <span class="op">{</span></span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task</span></span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>        printf<span class="op">(</span><span class="st">&quot;Thread  </span><span class="sc">%d</span><span class="st">   iteration: </span><span class="sc">%d\n</span><span class="st">&quot;</span><span class="op">,</span> omp_get_thread_num<span class="op">(),</span> i<span class="op">);</span></span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>      <span class="op">}</span></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p>What went wrong?</p>
+<h2 id="task-data-1">Task data</h2>
+<p>The value of shared variables accessed within a task might change
+between the creation of the task and its actual execution. Some clauses
+can be used to define the scope of variables within tasks:</p>
+<ul>
+<li><p><code>shared(x)</code> means that when the task is executed x is
+the same variable (the same memory location) as when the task was
+created</p></li>
+<li><p><code>firstprivate(x)</code> means that x is private to the task,
+i.e., when the task is created, a brand new variable x is created as
+well and its value is set to be the same as the value of x in the
+enclosing context at the moment when the task is created. This new copy
+is destroyed when the task is finished</p></li>
+<li><p><code>private(x)</code> means that x is private to the task,
+i.e., when the task is created, a brand new variable x is created as
+well. This new copy is destroyed when the task is finished</p></li>
+</ul>
+<p>If a variable is <code>private</code> in the parallel region it is
+implicitly <code>firstprivate</code> in the included tasks</p>
+<h2 id="task-data-2">Task data</h2>
+<p>A slightly more complex example, with a bugfix:</p>
+<div class="sourceCode" id="cb36" data-org-language="C"
+data-tangle="tasks_loop.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> i<span class="op">;</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>printf<span class="op">(</span><span class="st">&quot;Hello </span><span class="sc">%p\n</span><span class="st">&quot;</span><span class="op">,&amp;</span>i<span class="op">);</span></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp master</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span><span class="dv">6</span><span class="op">;</span> i<span class="op">++)</span></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>      <span class="op">{</span></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task firstprivate(i)</span></span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a>        printf<span class="op">(</span><span class="st">&quot;Thread  </span><span class="sc">%d</span><span class="st">   iteration: </span><span class="sc">%d\n</span><span class="st">&quot;</span><span class="op">,</span> omp_get_thread_num<span class="op">(),</span> i<span class="op">);</span></span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>      <span class="op">}</span></span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h2 id="task-if">Task if</h2>
+<p>Creating and handling tasks has a cost. Therefore, it is not always
+worth creating a task, for example, if the task has only little work to
+do. The <code>if</code> clause can be used to choose whether to create a
+task or immediately run the code block</p>
+<div class="sourceCode" id="cb37" data-org-language="C"
+data-tangle="tasks_if.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="dt">double</span> w<span class="op">=</span><span class="dv">0</span><span class="er">.5</span><span class="op">;</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp master</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;Thread  </span><span class="sc">%d</span><span class="st"> executes this first task</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span> omp_get_thread_num<span class="op">());</span></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task if(w&gt;0.4)</span></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">{</span></span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>      do_stuff<span class="op">(</span>w<span class="op">);</span></span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>      printf<span class="op">(</span><span class="st">&quot;Thread  </span><span class="sc">%d</span><span class="st"> executes this second task</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span> omp_get_thread_num<span class="op">());</span></span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h2 id="taskwait">Taskwait</h2>
+<p>So how can we be sure that some tasks are actually executed? The
+<code>taskwait</code> directive ensures that all the previously
+submitted tasks have been executed. Note that this does not include
+descendants, i.e., tasks that have been generated by other tasks.</p>
+<div class="sourceCode" id="cb38" data-org-language="C"
+data-tangle="taskwait.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> x<span class="op">,</span> y<span class="op">,</span> z<span class="op">;</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp master</span></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task</span></span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> compute_one<span class="op">(</span><span class="dv">0</span><span class="er">.2</span><span class="op">);</span></span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task</span></span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> compute_one<span class="op">(</span><span class="dv">0</span><span class="er">.2</span><span class="op">);</span></span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp taskwait</span></span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a>    z <span class="op">=</span> x<span class="op">+</span>y<span class="op">;</span></span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;z is </span><span class="sc">%d\n</span><span class="st">&quot;</span><span class="op">,</span> z<span class="op">);</span></span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h2 id="task-dependencies">Task dependencies</h2>
+<p>It is possible to define an execution order by specifying task
+<strong>dependencies</strong>. This is done through the
+<code>depend</code> clause and the Bernstein conditions:</p>
+<ul>
+<li><p>The <code>in</code> dependence-type. The generated task will be a
+dependent task of all previously generated sibling tasks that reference
+at least one of the list items in an <code>out</code> or
+<code>inout</code> dependence-type list.</p></li>
+<li><p>The <code>out</code> and <code>inout</code> dependence-types. The
+generated task will be a dependent task of all previously generated
+sibling tasks that reference at least one of the list items in an
+<code>in</code>, <code>out</code>, or <code>inout</code> dependence-type
+list.</p></li>
+</ul>
+<h2 id="task-dependencies-1">Task dependencies</h2>
+<p>Example:</p>
+<div class="sourceCode" id="cb39" data-org-language="C"
+data-tangle="task_dep.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> a<span class="op">,</span> b<span class="op">,</span> c<span class="op">,</span> x<span class="op">,</span> y<span class="op">;</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="dt">double</span> t<span class="op">=</span>secs<span class="op">();</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp master</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task depend(out:a)</span></span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> f_a<span class="op">();</span></span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task depend(out:b)</span></span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> f_b<span class="op">();</span></span>
+<span id="cb39-12"><a href="#cb39-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-13"><a href="#cb39-13" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task depend(out:c)</span></span>
+<span id="cb39-14"><a href="#cb39-14" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> f_c<span class="op">();</span></span>
+<span id="cb39-15"><a href="#cb39-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-16"><a href="#cb39-16" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task depend(in:b,c) depend(out:x)</span></span>
+<span id="cb39-17"><a href="#cb39-17" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> f_x<span class="op">(</span>b<span class="op">,</span> c<span class="op">);</span></span>
+<span id="cb39-18"><a href="#cb39-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-19"><a href="#cb39-19" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task depend(in:a,x) depend(out:y)</span></span>
+<span id="cb39-20"><a href="#cb39-20" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> f_y<span class="op">(</span>a<span class="op">,</span> x<span class="op">);</span></span>
+<span id="cb39-21"><a href="#cb39-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-22"><a href="#cb39-22" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp taskwait</span></span>
+<span id="cb39-23"><a href="#cb39-23" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;y: </span><span class="sc">%d</span><span class="st"> (correct value is 9) and time is </span><span class="sc">%f\n</span><span class="st">&quot;</span><span class="op">,</span>y<span class="op">,</span>secs<span class="op">()-</span>t<span class="op">);</span></span>
+<span id="cb39-24"><a href="#cb39-24" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb39-25"><a href="#cb39-25" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p>Can you draw the dependency graph?</p>
+<h2 id="task-priorities">Task priorities</h2>
+<p>Assuming only two threads are available and all functions take one
+second, the following two schedulings are possible.</p>
+<p><img src="figures/sched.png" width="600" /></p>
+<h2 id="task-priorities-1">Task priorities</h2>
+<p>The <code>priority</code> clause can be used to give the OpenMP
+scheduler a hint on the importance of a task</p>
+<div class="sourceCode" id="cb40" data-org-language="C"
+data-tangle="task_prio.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> a<span class="op">,</span> b<span class="op">,</span> c<span class="op">,</span> x<span class="op">,</span> y<span class="op">;</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="dt">double</span> t<span class="op">=</span>secs<span class="op">();</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp master</span></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task depend(out:b) priority(2)</span></span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> f_b<span class="op">();</span></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task depend(out:c) priority(2)</span></span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> f_c<span class="op">();</span></span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task depend(out:a)</span></span>
+<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a>    a <span class="op">=</span> f_a<span class="op">();</span></span>
+<span id="cb40-15"><a href="#cb40-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-16"><a href="#cb40-16" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task depend(in:b,c) depend(out:x)</span></span>
+<span id="cb40-17"><a href="#cb40-17" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> f_x<span class="op">(</span>b<span class="op">,</span> c<span class="op">);</span></span>
+<span id="cb40-18"><a href="#cb40-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-19"><a href="#cb40-19" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task depend(in:a,x) depend(out:y)</span></span>
+<span id="cb40-20"><a href="#cb40-20" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> f_y<span class="op">(</span>a<span class="op">,</span> x<span class="op">);</span></span>
+<span id="cb40-21"><a href="#cb40-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-22"><a href="#cb40-22" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp taskwait</span></span>
+<span id="cb40-23"><a href="#cb40-23" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;y: </span><span class="sc">%d</span><span class="st"> (correct value is 9) and time is </span><span class="sc">%f\n</span><span class="st">&quot;</span><span class="op">,</span>y<span class="op">,</span>secs<span class="op">()-</span>t<span class="op">);</span></span>
+<span id="cb40-24"><a href="#cb40-24" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb40-25"><a href="#cb40-25" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h2 id="task-dependencies-and-pointers">Task dependencies and
+pointers</h2>
+<p>When using pointers to specify dependencies, you should dereference
+it to make sure the dependence is inferred from the pointed data rather
+than the pointer variable.</p>
+<div class="sourceCode" id="cb41" data-org-language="C"
+data-tangle="task_ptrs.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> x<span class="op">[</span><span class="dv">2</span><span class="op">]={</span><span class="dv">0</span><span class="op">,</span><span class="dv">0</span><span class="op">};</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> <span class="op">*</span>p<span class="op">=</span>x<span class="op">;</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="dt">double</span> t<span class="op">=</span>secs<span class="op">();</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp master</span></span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>  <span class="op">{</span></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task firstprivate(p) depend(out:*p)</span></span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">*</span>p <span class="op">=</span> compute_one<span class="op">(</span><span class="fl">1.0</span><span class="op">);</span></span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a>    p<span class="op">+=</span><span class="dv">1</span><span class="op">;</span></span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp task firstprivate(p) depend(out:*p)</span></span>
+<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a>    <span class="op">*</span>p <span class="op">=</span> compute_one<span class="op">(</span><span class="fl">1.0</span><span class="op">);</span></span>
+<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp taskwait</span></span>
+<span id="cb41-17"><a href="#cb41-17" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;x: {</span><span class="sc">%d</span><span class="st">,</span><span class="sc">%d</span><span class="st">} (correct value is {1,1}) and time is </span><span class="sc">%f\n</span><span class="st">&quot;</span><span class="op">,</span>x<span class="op">[</span><span class="dv">0</span><span class="op">],</span>x<span class="op">[</span><span class="dv">1</span><span class="op">],</span>secs<span class="op">()-</span>t<span class="op">);</span></span>
+<span id="cb41-18"><a href="#cb41-18" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h1 id="locks">Locks</h1>
+<h2 id="locks-1">Locks</h2>
+<p>A lock is a data of type <code>omp_lock_t</code> which can be used to
+prevent simultaneous access to shared resources according to the
+schema</p>
+<ul>
+<li><p>acquire (or set or lock) the lock</p></li>
+<li><p>access data</p></li>
+<li><p>release (on unset or unlock) the lock</p></li>
+</ul>
+<p>Acquisition of the lock is exclusive in the sense that only one
+threads can hold the lock at a given time. A lock can be in one of the
+following states:</p>
+<ul>
+<li><p><strong>uninitialized</strong>: the lock is not active and cannot
+be acquired/released by any thread;</p></li>
+<li><p><strong>unlocked</strong>: the lock has been initialized and can
+be acquired by any thread;</p></li>
+<li><p><strong>locked</strong>: the lock has been acquired by one thread
+and cannot be acquired by any other thread until the owner releases
+it.</p></li>
+</ul>
+<h2 id="locks-2">Locks</h2>
+<p>Transitions through states can be achieved with the following
+routines</p>
+<ul>
+<li><p><code>omp_init_lock</code>: initializes a lock</p></li>
+<li><p><code>omp_destroy_lock</code>: uninitializes a lock</p></li>
+<li><p><code>omp_set_lock</code>: waits until a lock is available, and
+then sets it</p></li>
+<li><p><code>omp_unset_lock</code>: unsets a lock</p></li>
+<li><p><code>omp_test_lock</code>: tests a lock, and sets it if it is
+available</p></li>
+</ul>
+<h2 id="locks-3">Locks</h2>
+<p>Example</p>
+<div class="sourceCode" id="cb42" data-org-language="C"
+data-tangle="locks_set.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>omp_lock_t lock<span class="op">;</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>omp_init_lock<span class="op">(&amp;</span>lock<span class="op">);</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>  omp_set_lock<span class="op">(&amp;</span>lock<span class="op">);</span></span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">&quot;</span><span class="sc">%d</span><span class="st">: It&#39;s my turn to use the resource</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span>omp_get_thread_num<span class="op">());</span></span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>  use_resource<span class="op">();</span></span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>  omp_unset_lock<span class="op">(&amp;</span>lock<span class="op">);</span></span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a>omp_destroy_lock<span class="op">(&amp;</span>lock<span class="op">);</span></span></code></pre></div>
+<h2 id="locks-4">Locks</h2>
+<p>Example with test lock</p>
+<div class="sourceCode" id="cb43" data-org-language="C"
+data-tangle="locks_test.c"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>omp_lock_t lock<span class="op">;</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>omp_init_lock<span class="op">(&amp;</span>lock<span class="op">);</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span><span class="op">(!</span>omp_test_lock<span class="op">(&amp;</span>lock<span class="op">)){</span></span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">/* if lock is already locked, I do some other useful stuff */</span></span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;</span><span class="sc">%d</span><span class="st">: lock is busy, I do some stuff</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span>omp_get_thread_num<span class="op">());</span></span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>    do_stuff<span class="op">(</span><span class="dv">0</span><span class="er">.5</span><span class="op">);</span></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">&quot;</span><span class="sc">%d</span><span class="st">: It&#39;s my turn to use the resource</span><span class="sc">\n</span><span class="st">&quot;</span><span class="op">,</span>omp_get_thread_num<span class="op">());</span></span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>  use_resource<span class="op">();</span></span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>  omp_unset_lock<span class="op">(&amp;</span>lock<span class="op">);</span></span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a>omp_destroy_lock<span class="op">(&amp;</span>lock<span class="op">);</span></span></code></pre></div>
+<h1 id="mistakes-to-avoid">Mistakes to avoid</h1>
+<h2 id="add-useless-loops">Add useless loops</h2>
+<p>Do not create a new loop just for the purpose of parallelizing it</p>
+<div class="sourceCode" id="cb44" data-org-language="C"><pre
+class="sourceCode c"><code class="sourceCode c"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  nth <span class="op">=</span> omp_get_num_threads<span class="op">();</span></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp for</span></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>nth<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>    do_stuff<span class="op">();</span></span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p>This is exactly the same as</p>
+<div class="sourceCode" id="cb45" data-org-language="C"><pre
+class="sourceCode c"><code class="sourceCode c"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>  do_stuff<span class="op">();</span></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<h2 id="use-tasks-with-caution">Use tasks with caution</h2>
+<p><img src="figures/rambo.jpg" width="500" /></p>
+<p>Tasks have a <strong>relatively high overhead</strong> and should be
+used with caution.</p>
+<ul>
+<li>creating a task for a few operations is probably a very bad
+idea</li>
+<li>try to combine as many operations as possible into a single task as
+long as this does not reduce parallelism</li>
+</ul>
+<h2 id="minimize-critical-sections">Minimize critical sections</h2>
+<p>Critical sections serialize the work of processes.</p>
+<div class="sourceCode" id="cb46" data-org-language="C"><pre
+class="sourceCode c"><code class="sourceCode c"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp parallel for</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>n<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#pragma omp critical</span></span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>    do_stuff<span class="op">();</span></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span></code></pre></div>
+<p>The code above is completely sequential. The execution time will be
+the same as without the parallelization but the iterations will be done
+in a different order.</p>
+<ul>
+<li>separate what really needs to be in the critical section from what
+can be done in parallel</li>
+<li>sometimes atomic instructions can be used instead of critical</li>
+</ul>
+<h2 id="dont-forget-the-parallel-section">Don't forget the parallel
+section</h2>
+<p>Stupid to say but there is no parallelism if you don't put a parallel
+section somewhere. Just don't forget.</p>
+<p>Conversely, if you can merge multiple parallel sections into a single
+one, it might be good to do so in order to reduce overhead</p>
+<h1 id="aux-code">Aux code</h1>
+<div class="sourceCode" id="auxc" data-org-language="C"
+data-tangle="aux.c" data-main="no"><pre
+class="sourceCode c"><code class="sourceCode c"><span id="auxc-1"><a href="#auxc-1" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> seed<span class="op">=-</span><span class="dv">1</span><span class="op">;</span></span>
+<span id="auxc-2"><a href="#auxc-2" aria-hidden="true" tabindex="-1"></a>  <span class="pp">#pragma omp threadprivate(seed)</span></span>
+<span id="auxc-3"><a href="#auxc-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-4"><a href="#auxc-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> rnd_int<span class="op">()</span> <span class="op">{</span></span>
+<span id="auxc-5"><a href="#auxc-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">// &amp; 0x7fffffff is equivalent to modulo with RNG_MOD = 2^31</span></span>
+<span id="auxc-6"><a href="#auxc-6" aria-hidden="true" tabindex="-1"></a><span class="pp">#if defined(_OPENMP)</span></span>
+<span id="auxc-7"><a href="#auxc-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span><span class="op">(</span>seed<span class="op">==-</span><span class="dv">1</span><span class="op">)</span> seed <span class="op">=</span> omp_get_thread_num<span class="op">()+</span><span class="dv">1</span><span class="op">;</span></span>
+<span id="auxc-8"><a href="#auxc-8" aria-hidden="true" tabindex="-1"></a><span class="pp">#else</span></span>
+<span id="auxc-9"><a href="#auxc-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span><span class="op">(</span>seed<span class="op">==-</span><span class="dv">1</span><span class="op">)</span> seed <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="auxc-10"><a href="#auxc-10" aria-hidden="true" tabindex="-1"></a><span class="pp">#endif</span></span>
+<span id="auxc-11"><a href="#auxc-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">(</span>seed <span class="op">=</span> <span class="op">(</span>seed <span class="op">*</span> <span class="dv">1103515245</span> <span class="op">+</span> <span class="dv">12345</span><span class="op">)</span> <span class="op">&amp;</span> <span class="bn">0x7fffffff</span><span class="op">);</span></span>
+<span id="auxc-12"><a href="#auxc-12" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="auxc-13"><a href="#auxc-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-14"><a href="#auxc-14" aria-hidden="true" tabindex="-1"></a>  <span class="dt">void</span> rand_fill<span class="op">(</span><span class="dt">int</span> <span class="op">*</span>x<span class="op">,</span> <span class="dt">int</span> n<span class="op">){</span></span>
+<span id="auxc-15"><a href="#auxc-15" aria-hidden="true" tabindex="-1"></a>    <span class="dt">int</span> i<span class="op">;</span></span>
+<span id="auxc-16"><a href="#auxc-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>n<span class="op">;</span> i<span class="op">++){</span></span>
+<span id="auxc-17"><a href="#auxc-17" aria-hidden="true" tabindex="-1"></a>      x<span class="op">[</span>i<span class="op">]=</span>rnd_int<span class="op">()%</span>n<span class="op">-</span>n<span class="op">/</span><span class="dv">2</span><span class="op">;</span></span>
+<span id="auxc-18"><a href="#auxc-18" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="auxc-19"><a href="#auxc-19" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="auxc-20"><a href="#auxc-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-21"><a href="#auxc-21" aria-hidden="true" tabindex="-1"></a>  <span class="dt">long</span> usecs <span class="op">(){</span></span>
+<span id="auxc-22"><a href="#auxc-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> timeval t<span class="op">;</span></span>
+<span id="auxc-23"><a href="#auxc-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-24"><a href="#auxc-24" aria-hidden="true" tabindex="-1"></a>    gettimeofday<span class="op">(&amp;</span>t<span class="op">,</span>NULL<span class="op">);</span></span>
+<span id="auxc-25"><a href="#auxc-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> t<span class="op">.</span>tv_sec<span class="op">*</span><span class="dv">1000000</span><span class="op">+</span>t<span class="op">.</span>tv_usec<span class="op">;</span></span>
+<span id="auxc-26"><a href="#auxc-26" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="auxc-27"><a href="#auxc-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-28"><a href="#auxc-28" aria-hidden="true" tabindex="-1"></a>  <span class="dt">double</span> secs <span class="op">(){</span></span>
+<span id="auxc-29"><a href="#auxc-29" aria-hidden="true" tabindex="-1"></a>    <span class="kw">struct</span> timeval t<span class="op">;</span></span>
+<span id="auxc-30"><a href="#auxc-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-31"><a href="#auxc-31" aria-hidden="true" tabindex="-1"></a>    gettimeofday<span class="op">(&amp;</span>t<span class="op">,</span>NULL<span class="op">);</span></span>
+<span id="auxc-32"><a href="#auxc-32" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">((</span><span class="dt">double</span><span class="op">)(</span>t<span class="op">.</span>tv_sec<span class="op">*</span><span class="dv">1000000</span><span class="op">+</span>t<span class="op">.</span>tv_usec<span class="op">))/</span><span class="fl">1000000.0</span><span class="op">;</span></span>
+<span id="auxc-33"><a href="#auxc-33" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="auxc-34"><a href="#auxc-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-35"><a href="#auxc-35" aria-hidden="true" tabindex="-1"></a>  <span class="dt">void</span> do_stuff<span class="op">(</span><span class="dt">double</span> sec<span class="op">){</span></span>
+<span id="auxc-36"><a href="#auxc-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-37"><a href="#auxc-37" aria-hidden="true" tabindex="-1"></a>    <span class="dt">long</span> s<span class="op">,</span> e<span class="op">;</span></span>
+<span id="auxc-38"><a href="#auxc-38" aria-hidden="true" tabindex="-1"></a>    s<span class="op">=</span><span class="dv">0</span><span class="op">;</span> e<span class="op">=</span><span class="dv">0</span><span class="op">;</span></span>
+<span id="auxc-39"><a href="#auxc-39" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> usecs<span class="op">();</span></span>
+<span id="auxc-40"><a href="#auxc-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span><span class="op">(((</span><span class="dt">double</span><span class="op">)</span> e<span class="op">-</span>s<span class="op">)/</span><span class="dv">1000000</span> <span class="op">&lt;</span> sec<span class="op">)</span></span>
+<span id="auxc-41"><a href="#auxc-41" aria-hidden="true" tabindex="-1"></a>      <span class="op">{</span></span>
+<span id="auxc-42"><a href="#auxc-42" aria-hidden="true" tabindex="-1"></a>        e <span class="op">=</span> usecs<span class="op">();</span></span>
+<span id="auxc-43"><a href="#auxc-43" aria-hidden="true" tabindex="-1"></a>      <span class="op">}</span></span>
+<span id="auxc-44"><a href="#auxc-44" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span><span class="op">;</span></span>
+<span id="auxc-45"><a href="#auxc-45" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="auxc-46"><a href="#auxc-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-47"><a href="#auxc-47" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> compute_one<span class="op">(</span><span class="dt">double</span> sec<span class="op">){</span></span>
+<span id="auxc-48"><a href="#auxc-48" aria-hidden="true" tabindex="-1"></a>    do_stuff<span class="op">(</span>sec<span class="op">);</span></span>
+<span id="auxc-49"><a href="#auxc-49" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="auxc-50"><a href="#auxc-50" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="auxc-51"><a href="#auxc-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-52"><a href="#auxc-52" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> f_a<span class="op">(){</span></span>
+<span id="auxc-53"><a href="#auxc-53" aria-hidden="true" tabindex="-1"></a>    do_stuff<span class="op">(</span><span class="fl">1.0</span><span class="op">);</span></span>
+<span id="auxc-54"><a href="#auxc-54" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="auxc-55"><a href="#auxc-55" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="auxc-56"><a href="#auxc-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-57"><a href="#auxc-57" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> f_b<span class="op">(){</span></span>
+<span id="auxc-58"><a href="#auxc-58" aria-hidden="true" tabindex="-1"></a>    do_stuff<span class="op">(</span><span class="fl">1.0</span><span class="op">);</span></span>
+<span id="auxc-59"><a href="#auxc-59" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">2</span><span class="op">;</span></span>
+<span id="auxc-60"><a href="#auxc-60" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="auxc-61"><a href="#auxc-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-62"><a href="#auxc-62" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> f_c<span class="op">(){</span></span>
+<span id="auxc-63"><a href="#auxc-63" aria-hidden="true" tabindex="-1"></a>    do_stuff<span class="op">(</span><span class="fl">1.0</span><span class="op">);</span></span>
+<span id="auxc-64"><a href="#auxc-64" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">3</span><span class="op">;</span></span>
+<span id="auxc-65"><a href="#auxc-65" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="auxc-66"><a href="#auxc-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-67"><a href="#auxc-67" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> f_x<span class="op">(</span><span class="dt">int</span> b<span class="op">,</span> <span class="dt">int</span> c<span class="op">){</span></span>
+<span id="auxc-68"><a href="#auxc-68" aria-hidden="true" tabindex="-1"></a>    do_stuff<span class="op">(</span><span class="fl">1.0</span><span class="op">);</span></span>
+<span id="auxc-69"><a href="#auxc-69" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> b<span class="op">+</span>c<span class="op">+</span><span class="dv">1</span><span class="op">;</span></span>
+<span id="auxc-70"><a href="#auxc-70" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="auxc-71"><a href="#auxc-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-72"><a href="#auxc-72" aria-hidden="true" tabindex="-1"></a>  <span class="dt">int</span> f_y<span class="op">(</span><span class="dt">int</span> a<span class="op">,</span> <span class="dt">int</span> x<span class="op">){</span></span>
+<span id="auxc-73"><a href="#auxc-73" aria-hidden="true" tabindex="-1"></a>    do_stuff<span class="op">(</span><span class="fl">1.0</span><span class="op">);</span></span>
+<span id="auxc-74"><a href="#auxc-74" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a<span class="op">+</span>x<span class="op">+</span><span class="dv">2</span><span class="op">;</span></span>
+<span id="auxc-75"><a href="#auxc-75" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="auxc-76"><a href="#auxc-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxc-77"><a href="#auxc-77" aria-hidden="true" tabindex="-1"></a>  <span class="dt">void</span> use_resource<span class="op">(){</span></span>
+<span id="auxc-78"><a href="#auxc-78" aria-hidden="true" tabindex="-1"></a>    do_stuff<span class="op">(</span><span class="fl">1.0</span><span class="op">);</span></span>
+<span id="auxc-79"><a href="#auxc-79" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span><span class="op">;</span></span>
+<span id="auxc-80"><a href="#auxc-80" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="auxc-81"><a href="#auxc-81" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<div class="sourceCode" id="auxh" data-org-language="C"
+data-tangle="aux.h" data-main="no"
+data-includes="&lt;omp.h&gt; &lt;stdio.h&gt; &lt;unistd.h&gt; &lt;sys/time.h&gt; &lt;stdlib.h&gt;"><pre
+class="sourceCode c"><code class="sourceCode c"><span id="auxh-1"><a href="#auxh-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="auxh-2"><a href="#auxh-2" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> rnd_int<span class="op">();</span></span>
+<span id="auxh-3"><a href="#auxh-3" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> rand_fill<span class="op">(</span><span class="dt">int</span> <span class="op">*</span>x<span class="op">,</span> <span class="dt">int</span> n<span class="op">);</span></span>
+<span id="auxh-4"><a href="#auxh-4" aria-hidden="true" tabindex="-1"></a><span class="dt">long</span> usecs <span class="op">();</span></span>
+<span id="auxh-5"><a href="#auxh-5" aria-hidden="true" tabindex="-1"></a><span class="dt">double</span> secs <span class="op">();</span></span>
+<span id="auxh-6"><a href="#auxh-6" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> do_stuff<span class="op">(</span><span class="dt">double</span> sec<span class="op">);</span></span>
+<span id="auxh-7"><a href="#auxh-7" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> compute_one<span class="op">(</span><span class="dt">double</span> sec<span class="op">);</span></span>
+<span id="auxh-8"><a href="#auxh-8" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> f_a<span class="op">();</span></span>
+<span id="auxh-9"><a href="#auxh-9" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> f_b<span class="op">();</span></span>
+<span id="auxh-10"><a href="#auxh-10" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> f_c<span class="op">();</span></span>
+<span id="auxh-11"><a href="#auxh-11" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> f_x<span class="op">(</span><span class="dt">int</span> b<span class="op">,</span> <span class="dt">int</span> c<span class="op">);</span></span>
+<span id="auxh-12"><a href="#auxh-12" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> f_y<span class="op">(</span><span class="dt">int</span> a<span class="op">,</span> <span class="dt">int</span> x<span class="op">);</span></span>
+<span id="auxh-13"><a href="#auxh-13" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> use_resource<span class="op">();</span></span></code></pre></div>

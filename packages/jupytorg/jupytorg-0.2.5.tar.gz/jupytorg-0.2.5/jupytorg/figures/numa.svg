@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="186.20833mm"
+   height="104.18751mm"
+   viewBox="0 0 186.20833 104.18751"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="numa.svg"
+   inkscape:export-filename="/home/abuttari/Documents/APO Documents/Teaching/hpc-courses/OpenMP/figures/numa.png"
+   inkscape:export-xdpi="250"
+   inkscape:export-ydpi="250"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.1474186"
+     inkscape:cx="338.5861"
+     inkscape:cy="195.65657"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="0"
+     inkscape:window-y="34"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid824"
+       originx="-15.374998"
+       originy="-47.124999" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-15.374997,-47.125)">
+    <g
+       id="g1313">
+      <rect
+         style="fill:#a2142f;fill-opacity:0.198146;stroke:#a2142f;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect848-3-6"
+         width="18.520834"
+         height="18.520834"
+         x="19.294081"
+         y="119.61217"
+         ry="2.6458359" />
+      <text
+         xml:space="preserve"
+         style="font-size:7.64903px;line-height:82.05;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#a2142f;stroke-width:0.956128"
+         x="20.89613"
+         y="131.65694"
+         id="text3866-8-6"><tspan
+           sodipodi:role="line"
+           id="tspan3864-0-2"
+           style="fill:#a2142f;stroke-width:0.956128"
+           x="20.89613"
+           y="131.65694">CPU</tspan></text>
+    </g>
+    <g
+       id="g1318"
+       transform="translate(-0.77324777,2.0961619)">
+      <rect
+         style="fill:#0072bd;fill-opacity:0.198146;stroke:#0072bd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect848-2-6"
+         width="18.520834"
+         height="18.520834"
+         x="40.460747"
+         y="98.445503"
+         ry="2.6458359" />
+      <text
+         xml:space="preserve"
+         style="font-size:7.64903px;line-height:82.05;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#0072bd;stroke-width:0.956128"
+         x="40.7033"
+         y="110.49401"
+         id="text3866-43-4"><tspan
+           sodipodi:role="line"
+           id="tspan3864-7-8"
+           style="fill:#0072bd;stroke-width:0.956128"
+           x="40.7033"
+           y="110.49401">MEM</tspan></text>
+    </g>
+    <g
+       id="g1303"
+       transform="translate(-1.3229177,1.3229164)">
+      <rect
+         style="fill:#a2142f;fill-opacity:0.198146;stroke:#a2142f;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect848-6"
+         width="18.520834"
+         height="18.520834"
+         x="19.84375"
+         y="48.947918"
+         ry="2.6458359" />
+      <text
+         xml:space="preserve"
+         style="font-size:7.64903px;line-height:82.05;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#a2142f;stroke-width:0.956128"
+         x="21.445799"
+         y="60.992687"
+         id="text3866-3"><tspan
+           sodipodi:role="line"
+           id="tspan3864-79"
+           style="fill:#a2142f;stroke-width:0.956128"
+           x="21.445799"
+           y="60.992687">CPU</tspan></text>
+    </g>
+    <g
+       id="g1308"
+       transform="translate(-1.3229189,1.3229075)">
+      <rect
+         style="fill:#0072bd;fill-opacity:0.198146;stroke:#0072bd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect848-2-4"
+         width="18.520834"
+         height="18.520834"
+         x="41.010418"
+         y="70.114594"
+         ry="2.6458359" />
+      <text
+         xml:space="preserve"
+         style="font-size:7.64903px;line-height:82.05;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#0072bd;stroke-width:0.956128"
+         x="41.252972"
+         y="82.163101"
+         id="text3866-43-9"><tspan
+           sodipodi:role="line"
+           id="tspan3864-7-17"
+           style="fill:#0072bd;stroke-width:0.956128"
+           x="41.252972"
+           y="82.163101">MEM</tspan></text>
+    </g>
+    <g
+       id="g1328"
+       transform="translate(-3.1955119,2.0961568)">
+      <rect
+         style="fill:#0072bd;fill-opacity:0.198146;stroke:#0072bd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect848-2-7"
+         width="18.520834"
+         height="18.520834"
+         x="71.987175"
+         y="98.445511"
+         ry="2.6458359" />
+      <text
+         xml:space="preserve"
+         style="font-size:7.64903px;line-height:82.05;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#0072bd;stroke-width:0.956128"
+         x="72.229729"
+         y="110.49402"
+         id="text3866-43-5"><tspan
+           sodipodi:role="line"
+           id="tspan3864-7-1"
+           style="fill:#0072bd;stroke-width:0.956128"
+           x="72.229729"
+           y="110.49402">MEM</tspan></text>
+    </g>
+    <g
+       id="g1323"
+       transform="translate(-3.1955093,2.096167)">
+      <text
+         xml:space="preserve"
+         style="font-size:7.64903px;line-height:82.05;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#a2142f;stroke-width:0.956128"
+         x="94.75589"
+         y="131.65694"
+         id="text3866-4-0"><tspan
+           sodipodi:role="line"
+           id="tspan3864-3-2"
+           style="fill:#a2142f;stroke-width:0.956128"
+           x="94.75589"
+           y="131.65694">CPU</tspan></text>
+      <rect
+         style="fill:#a2142f;fill-opacity:0.198146;stroke:#a2142f;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect848-8-2"
+         width="18.520834"
+         height="18.520834"
+         x="93.153839"
+         y="119.61217"
+         ry="2.6458359" />
+    </g>
+    <g
+       id="g1333"
+       transform="translate(-2.6458267,1.3229075)">
+      <rect
+         style="fill:#0072bd;fill-opacity:0.198146;stroke:#0072bd;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect848-2-9"
+         width="18.520834"
+         height="18.520834"
+         x="71.437492"
+         y="70.114594"
+         ry="2.6458359" />
+      <text
+         xml:space="preserve"
+         style="font-size:7.64903px;line-height:82.05;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#0072bd;stroke-width:0.956128"
+         x="71.680046"
+         y="82.163101"
+         id="text3866-43-7"><tspan
+           sodipodi:role="line"
+           id="tspan3864-7-5"
+           style="fill:#0072bd;stroke-width:0.956128"
+           x="71.680046"
+           y="82.163101">MEM</tspan></text>
+    </g>
+    <g
+       id="g1338"
+       transform="translate(-2.6458318,1.3229177)">
+      <rect
+         style="fill:#a2142f;fill-opacity:0.198146;stroke:#a2142f;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect848-7-1"
+         width="18.520834"
+         height="18.520834"
+         x="92.604164"
+         y="48.947918"
+         ry="2.6458359" />
+      <text
+         xml:space="preserve"
+         style="font-size:7.64903px;line-height:82.05;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#a2142f;stroke-width:0.956128"
+         x="94.206215"
+         y="60.992687"
+         id="text3866-9-0"><tspan
+           sodipodi:role="line"
+           id="tspan3864-9-2"
+           style="fill:#a2142f;stroke-width:0.956128"
+           x="94.206215"
+           y="60.992687">CPU</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0072bd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 36.268421,68.018423 4.192324,4.192324"
+       id="path1702"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g1303"
+       inkscape:connection-end="#g1308" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0072bd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 48.947916,89.958335 0,10.583335"
+       id="path1704"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g1308"
+       inkscape:connection-end="#g1318" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0072bd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 40.1986,117.98383 -2.894786,2.707"
+       id="path1706"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g1318"
+       inkscape:connection-end="#g1313" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0072bd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 58.208333,109.80208 10.58333,0"
+       id="path1708"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g1318"
+       inkscape:connection-end="#g1328" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0072bd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 86.539252,118.28926 4.192323,4.19232"
+       id="path1710"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g1328"
+       inkscape:connection-end="#g1323" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0072bd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 78.052082,89.958335 -10e-7,10.583335"
+       id="path1712"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g1333"
+       inkscape:connection-end="#g1328" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0072bd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 86.539254,72.210747 4.192324,-4.192323"
+       id="path1714"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g1333"
+       inkscape:connection-end="#g1338" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0072bd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 68.791666,80.697918 H 58.208333"
+       id="path1716"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g1333"
+       inkscape:connection-end="#g1308" />
+  </g>
+</svg>
