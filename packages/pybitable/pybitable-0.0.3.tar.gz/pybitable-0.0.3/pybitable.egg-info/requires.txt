@@ -1,0 +1,7 @@
+pep249
+pyparsing
+mo_sql_parsing
+ca-lark-sdk
+
+[sqlalchemy]
+sqlalchemy
