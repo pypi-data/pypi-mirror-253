@@ -1,0 +1,12 @@
+LICENSE,sha256=54IJE24eQeNxcXADcjIaElIkKZULf8nTBAdMN--IU48,1066
+loss_landscape_anim/__init__.py,sha256=RBnDoORf2sbAVWcOVkfS8KoI_QQsqDCyugndArvGRKQ,372
+loss_landscape_anim/_plot.py,sha256=pdJE0G4aYM-52jLMqmLVmdKbLJbh8qPGwniOu37V6UI,8729
+loss_landscape_anim/datamodule.py,sha256=2tWgsT9YtZ3J75pKs_wXHJcjRdNgBvaJKdbzX3lysas,3591
+loss_landscape_anim/loss_landscape.py,sha256=wvwKHaNLzT80_LdQB8xbh1KC1NNbEaj8M74Zmm3sObY,11163
+loss_landscape_anim/main.py,sha256=aDa7noLsiRGQcZad16J6U6jXTKn_QzHcnKR91eMbKcA,6302
+loss_landscape_anim/model.py,sha256=0NR9p9tWJ_ljwdpl2Ie-4mF7O20J3aBjAttqUB-E0fc,10599
+loss_landscape_anim/sample_data/spirals.p,sha256=dHxrgUTdavxpqzj9zBTqBcTrg_S-d05K0KUQbHzdAo8,36487
+loss_landscape_anim-0.1.10.dist-info/LICENSE,sha256=54IJE24eQeNxcXADcjIaElIkKZULf8nTBAdMN--IU48,1066
+loss_landscape_anim-0.1.10.dist-info/METADATA,sha256=3DeAsdLgVb2Y5Eyhh9t3gZ-fS6MUUipV0WRaXQJ4kkk,9417
+loss_landscape_anim-0.1.10.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+loss_landscape_anim-0.1.10.dist-info/RECORD,,
