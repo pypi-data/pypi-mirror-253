@@ -1,0 +1,9 @@
+Dear {{ user.name or user.username }},
+
+
+Your confirmation link is: {{ url_for('auth.confirm', token='token', _external=True) }}
+
+
+Regards,
+
+The Casual admin

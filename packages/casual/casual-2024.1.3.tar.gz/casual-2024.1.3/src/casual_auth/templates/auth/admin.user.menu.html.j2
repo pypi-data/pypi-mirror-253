@@ -1,0 +1,13 @@
+<div class="btn-group-sm">
+  {% if current_menu.active_item.children %}
+    {% for item in current_menu.active_item.children %}
+      {% if item.itemmenu is defined and item.itemmenu() and not user.is_admin %}
+        {{  btn_a(text=item.text,
+                  icon=item.icon,
+                  type=item.type,
+                  url=url_for(item._endpoint,
+                              username=user.username)) }}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</div>

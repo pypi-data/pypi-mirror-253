@@ -1,0 +1,22 @@
+{% extends "main/routes.base.html.j2" %}
+
+
+{% block appcontent %}
+  {% if notifications %}
+    {% for notification in notifications | sort(attribute='start_date') %}
+      {{ card(text=notification.body_html,
+              footer=notification.author.name or notification.author.username,
+              design='light'
+         )
+      }}
+    {% endfor %}
+  {% endif %}
+
+  <div class="card w-auto p-2 mt-2 text-center">
+    {% trans number=(notifications | count) -%}
+      You have {{ number }} notification.
+    {%- pluralize -%}
+      You have {{ number }} notifications.
+    {%- endtrans %}
+  </div>
+{% endblock %}

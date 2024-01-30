@@ -1,0 +1,12 @@
+{% extends "base.html.j2" %}
+
+{% block pageheader %}
+  {{ header(_("Email Confirmation")) }}
+{% endblock pageheader %}
+
+{% block appcontent %}
+    You have not confirmed your email address yet.
+
+    If the token expired you can resend the email using this 
+    {{ link('link',url_for('auth.send_confirmation')) }}.
+{% endblock appcontent %}

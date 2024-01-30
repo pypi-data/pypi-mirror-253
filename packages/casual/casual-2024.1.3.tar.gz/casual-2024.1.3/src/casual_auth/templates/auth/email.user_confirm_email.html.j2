@@ -1,0 +1,13 @@
+<p>
+  Dear {{ user.name or user.username }},
+</p>
+
+<p>
+  Open this <a href="{{ url_for('auth.confirm', token='token', _external=True) }}">
+    confirmation link</a>.
+</p>
+
+<p>
+  Regards,<br>
+  The <code>Casual</code> admin
+</p>

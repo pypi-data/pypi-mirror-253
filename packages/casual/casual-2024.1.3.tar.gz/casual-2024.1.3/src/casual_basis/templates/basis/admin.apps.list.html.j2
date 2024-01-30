@@ -1,0 +1,24 @@
+{% extends 'admin.base.html.j2' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block appcontent %}
+<table class="table table-hover table-sm">
+  <thead class="">
+    <tr>
+      <th class="loop-index">{{_('Module')}}</th>
+      <th class="loop-index">{{_('Version')}}</th>
+      <th>{{_('Details')}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for app in casual_apps %}
+    <tr>
+      <td class="font-monospace font-weight-bold">{{ app }}</td>
+      <td class="font-monospace loop-index">{{ badge(casual_apps[app]['version'] ) }}</td>
+      <td class="small">{{ casual_apps[app]['descr'] or '' }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
