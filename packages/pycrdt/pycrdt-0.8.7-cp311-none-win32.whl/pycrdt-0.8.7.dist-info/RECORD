@@ -1,0 +1,14 @@
+pycrdt-0.8.7.dist-info/METADATA,sha256=HqfFd7YKf62DjF5iGm0J0dVlDiVy1RyVOnI80-oD9Mg,1884
+pycrdt-0.8.7.dist-info/WHEEL,sha256=AdEMp8VnH4sMTae6TXI2SCHbIbXmNrJpmlUiP0yE2S0,91
+pycrdt-0.8.7.dist-info/license_files/LICENSE,sha256=-uIz47KBJpIuEvvMUTwpg6OAiJJuqYajA4bW7QJ9o18,1102
+pycrdt/array.py,sha256=aZsalR_TBr2WmtyP2NlAumN6mJ3Hgx9kUYqUF7hHAT0,8107
+pycrdt/base.py,sha256=LSuAzXw4OOATuMzUpgrphuj0EkBpZcbHbjpoHBtdfVo,5301
+pycrdt/doc.py,sha256=EBErXf_7I7h8T6kEIfb58WOpoqkq4X6cbDgg55Km9Ak,3284
+pycrdt/map.py,sha256=HElZtfijB05ZJpeeXqUJHbBXszGmhqZyr4NJplpDC9M,5785
+pycrdt/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycrdt/text.py,sha256=XuJPDmn2UzKajmrRPDeZsB82jpbqBK5CBLOA1o5I9TI,5108
+pycrdt/transaction.py,sha256=OEfV9r7MZqqkiixLwuAfiBmAd9-E83gxUw36JUEI9ks,1305
+pycrdt/_pycrdt.pyi,sha256=_51vMcuvwWZPlpJ6WmkEqQCvHPbbF8F_MeqTaNXiCUo,6635
+pycrdt/__init__.py,sha256=6BxltWa513ZUqy77akUOUV64-5gZtLYipcZbe78qeDc,424
+pycrdt/_pycrdt.cp311-win32.pyd,sha256=OgMpL8Umzk6DT-LKiFbcCUnwI8Qs7Sju4S_Hzb10Hi8,935936
+pycrdt-0.8.7.dist-info/RECORD,,
