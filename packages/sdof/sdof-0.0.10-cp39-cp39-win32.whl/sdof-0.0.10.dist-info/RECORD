@@ -1,0 +1,12 @@
+sdof/__init__.py,sha256=elqdHmgBjwIFjGj-WDJCVkJqS63TfHHSzwISCqUwbx0,15111
+sdof/__main__.py,sha256=iM9ZFxelp7iHKr87DcyvAJwgZxRp1cY2atwmogqq8vA,1825
+sdof/_integrate.cp39-win32.pyd,sha256=hQPo-Vf7bujEgiqcN0a1K3IVNsx1B0BP74BJPb1kOpA,13824
+sdof/_integrate.cp39-win_amd64.pyd,sha256=AZSm73Xm7x4r-pkKZN3YUWdrurDq2icpkYmUjjMZwQw,13824
+sdof/_spectrum.cp39-win32.pyd,sha256=I5bm0pIl_KjLlQxObrWqCaoKVPZw-kcg0ODq4RMD39A,15360
+sdof/_spectrum.cp39-win_amd64.pyd,sha256=zMOHhYIZfHzC9F8Y74n2dBqzWQcAb_vCx3nZBotbzEA,15360
+sdof-0.0.10.dist-info/LICENSE.txt,sha256=NI1marhR_DVg5FwR3w6mjmz4Xaypn0JaimCC6i7oXbk,1305
+sdof-0.0.10.dist-info/METADATA,sha256=CzO7nm-KbP_9jFU7hYX6qrckByd6GYUp7fvVgZpCZ6A,10531
+sdof-0.0.10.dist-info/WHEEL,sha256=ox_whmEWdOvRyK6TeOPzEmRk4K2lM8LLVKChtBzmjZU,96
+sdof-0.0.10.dist-info/entry_points.txt,sha256=Xc3TpxJX7c2Rkfm-tVRL-z2v6ODy2cdRhkAMMIZx4wk,44
+sdof-0.0.10.dist-info/top_level.txt,sha256=RsD_gxJk1oF9Gm1rlecqyuLRD1J56U0IU3-iJVsB-SU,5
+sdof-0.0.10.dist-info/RECORD,,
