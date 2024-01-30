@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: unimog
+Version: 0.1.0
+Summary: Elegant service objects for Python.
+License: MIT
+Keywords: service object,organize,action,business logic
+Author: Hannes Moser
+Author-email: box@hannesmoser.at
+Requires-Python: >=3.11,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+
+# unimog
+
+> Elegant service objects for Python.
+
+Composable business logic and uniform error handling for business logic actions.
+A single action does one thing, and multiple actions can be organized in groups.
+Groups and Actions can be arbitrarily nested and form complex DAGs (directed
+acyclic graph).
+
+Service objects are useful to represent complex business logic in an easy to
+digest form.
+
+## Usage
+
+```bash
+pip install unimog
+```
+
+### Action
+
+```python
+import gzip
+
+from unimog import Action
+
+
+class CompressText(Action):
+    def perform(self):
+        compressed_text = gzip.compress(self.context.input)
+        return {"compressed_text": compressed_text}
+
+result = CompressText()(input="Hello, World!")
+result.is_success() # True
+result.compressed_text # b'\x1f\x8b\x08\x00r\x92\xb7e…
+```
+
+### Organizer
+
+```python
+import gzip
+
+from unimog import Action, Organizer
+
+
+class CompressText(Action):
+    def perform(self):
+        compressed_text = gzip.compress(self.context.input)
+        return {"compressed_text": compressed_text}
+
+    
+class DecompressText(Action):
+    def perform(self):
+        text = gzip.decompress(self.context.data)
+        return {"text": text}
+
+CompressAndDecompressText = Organizer(CompressText, DecompressText)
+
+result = CompressAndDecompressText(input="Hello, World!")
+result.is_success() # True
+result.text # "Hello, World!"
+```
+
+## Contributing
+
+### Tests
+
+```bash
+python -m pytest
+```
+
