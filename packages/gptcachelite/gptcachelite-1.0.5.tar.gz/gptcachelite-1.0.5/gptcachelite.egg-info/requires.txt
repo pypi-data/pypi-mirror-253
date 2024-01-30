@@ -1,0 +1,4 @@
+openai
+vlite2
+python-dotenv
+mistralai
