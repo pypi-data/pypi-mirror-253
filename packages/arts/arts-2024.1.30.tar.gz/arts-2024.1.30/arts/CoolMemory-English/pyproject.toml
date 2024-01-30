@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "CoolMemoryEnglish"
+version = "1.0.0.2"
+description = "CoolMemory-English 是一个免费的记单词软件，它在传统的记单词方式（听、说、读、写）之外提供了一种新的方式：敲"
+keywords = ["英语", "单词", "English", "CoolMemory-English", "CoolMemoryEnglish"]
+
+readme = "README.md"
+authors = [{name = "lcctoor.com", email = "lcctoor@outlook.com"}]
+
+[project.urls]
+HomePage = "https://github.com/lcctoor/arts/tree/main/arts/CoolMemory-English"
