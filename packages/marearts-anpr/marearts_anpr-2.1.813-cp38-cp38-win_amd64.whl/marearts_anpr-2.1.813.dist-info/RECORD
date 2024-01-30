@@ -1,0 +1,8 @@
+marearts_anpr/__init__.py,sha256=qQx_4gZde-rjJ9KvHXQVnqJsLN7-b51kyKEdNw26uk8,261
+marearts_anpr/marearts_anpr.c,sha256=Jt0IyqIg7vzamXO3ZChtWMM1jxXftS5KHuprm39nTX8,2622093
+marearts_anpr/marearts_anpr.cp38-win_amd64.pyd,sha256=4-Z9m8zjHZRAeMA8y2XimuwD89X11007MyySdr6wPv4,448512
+marearts_anpr/version.py,sha256=oTIX_qRtruCsNjrjQvVey553Feic2xzwumbHDEvPigs,23
+marearts_anpr-2.1.813.dist-info/METADATA,sha256=p_S9n7LFeF50_mjcxjYny8NFbJPkVJjVLCQHXRltnS4,4213
+marearts_anpr-2.1.813.dist-info/WHEEL,sha256=KplWMgwSZbeAOumvxNxIrVbNPnn_LVzfBH7l38jDCVM,100
+marearts_anpr-2.1.813.dist-info/top_level.txt,sha256=DX3y7nst7V7YBYS7dHQIIZxROhrheWGRsl2aCOLErEA,14
+marearts_anpr-2.1.813.dist-info/RECORD,,
