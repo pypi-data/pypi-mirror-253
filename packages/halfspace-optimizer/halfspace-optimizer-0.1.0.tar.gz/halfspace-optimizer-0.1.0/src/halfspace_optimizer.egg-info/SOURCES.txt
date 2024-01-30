@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/halfspace/__init__.py
+src/halfspace/convex_term.py
+src/halfspace/model.py
+src/halfspace/utils.py
+src/halfspace_optimizer.egg-info/PKG-INFO
+src/halfspace_optimizer.egg-info/SOURCES.txt
+src/halfspace_optimizer.egg-info/dependency_links.txt
+src/halfspace_optimizer.egg-info/requires.txt
+src/halfspace_optimizer.egg-info/top_level.txt
+tests/test_convex_term.py
+tests/test_model.py
+tests/test_utils.py
