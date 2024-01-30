@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fkir/__init__.py
+fkir.egg-info/PKG-INFO
+fkir.egg-info/SOURCES.txt
+fkir.egg-info/dependency_links.txt
+fkir.egg-info/requires.txt
+fkir.egg-info/top_level.txt
+fkir/ir/__init__.py
+fkir/ir/base.py
+fkir/ir/graph.py
+fkir/ir/node.py
+fkir/ir/var.py
+fkir/match/__init__.py
+fkir/match/pattern.py
