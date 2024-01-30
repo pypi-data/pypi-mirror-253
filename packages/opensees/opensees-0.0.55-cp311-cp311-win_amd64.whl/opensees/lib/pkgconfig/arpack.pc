@@ -1,0 +1,12 @@
+prefix=C:/Users/BRACE2/cmp/OpenSeesRT/build/lib.win-amd64-cpython-311/opensees
+exec_prefix=${prefix}
+libdir=C:/Users/BRACE2/cmp/OpenSeesRT/build/lib.win-amd64-cpython-311/opensees/lib
+includedir=C:/Users/BRACE2/cmp/OpenSeesRT/build/lib.win-amd64-cpython-311/opensees/include/arpack
+
+Name: OpenSeesNumPack
+Description: Collection of Fortran77 subroutines designed to solve large scale eigenvalue problems
+Version: 3.9.0
+URL: https://github.com/opencollab/arpack-ng/
+Libs: -L${libdir} -larpack
+Libs.private: -lmkl_intel_ilp64_dll -liomp5md -lmkl_intel_thread_dll -lmkl_core_dll
+Cflags: -I${includedir}
