@@ -1,0 +1,1 @@
+from exceptions.base_capture_component_exceptions import NoCameraAvailable
