@@ -1,0 +1,12 @@
+dataverk_airflow/__init__.py,sha256=pI2awIi1_7ZpRRm-qPxAtUMl5fDm70mrlVwbCS6hUCk,381
+dataverk_airflow/bucket_read.py,sha256=WHH0W6ItALhGGA-AgLtzFBoo1SAEtIMp8MiD--Ypiw4,825
+dataverk_airflow/git_clone.py,sha256=2ZLr9WOSi8PKm98aXISPHW1CBXvCAPQ1vCfXGUuroNQ,1099
+dataverk_airflow/kubernetes_operator.py,sha256=sLsPxHNfaAJXIL4cYp1hdcq_t6TDDMZY9gRqVgeWG0g,8866
+dataverk_airflow/notebook_operator.py,sha256=FOv8ii77njEQGGl_T0RirR-l_ExzQG0IcKz1ELv3-ng,4013
+dataverk_airflow/notifications.py,sha256=UuDko57rdd_mBAV4UR5hTBbvX-SiC2WEuCTbRXZ_BGM,1058
+dataverk_airflow/python_operator.py,sha256=NJhDGWcih2S5mwp9G2sZv1j57vwsCOkQTT8wxTgTwbA,3842
+dataverk_airflow/quarto_operator.py,sha256=qpln_U10YTFYnw8uZkjs4aq1xOPOIrjDZ45ETxIE3MM,5497
+dataverk_airflow-1.4.5.dist-info/LICENSE,sha256=C6qQ2U02T8MONw2s2VKhqgdiqqiWH4o_as4CQa81qaQ,1061
+dataverk_airflow-1.4.5.dist-info/METADATA,sha256=j51k_c4MYMyubYSGPv9-bMzmyacmJ8ZqUGM3bZURR0Y,9295
+dataverk_airflow-1.4.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dataverk_airflow-1.4.5.dist-info/RECORD,,
