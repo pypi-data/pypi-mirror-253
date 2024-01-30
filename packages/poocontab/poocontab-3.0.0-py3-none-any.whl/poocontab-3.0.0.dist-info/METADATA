@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: poocontab
+Version: 3.0.0
+Summary: Pacote de teste
+Author: crisly
+Author-email: crislymaria21@gmail.com
+Keywords: python,cont
+Classifier: Development Status :: 3 - Alpha
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: fpdf
+
+Biblioteca Python para manipulações de serviços de contabilidade.
