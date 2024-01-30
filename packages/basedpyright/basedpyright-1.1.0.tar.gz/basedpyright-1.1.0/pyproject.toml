@@ -1,0 +1,366 @@
+[tool.pyprojectx]
+main = [
+    "pdm==2.11.2",
+]
+
+[tool.pdm]
+package-type = "library"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23",
+    "pylint>=3.0.0a7",
+    "ruff>=0.0.290",
+]
+
+[tool.pdm.version]
+source = "call"
+getter = "get_version:get_version"
+
+[tool.black]
+target-version = [
+    "py38",
+]
+skip-magic-trailing-comma = true
+preview = true
+force-exclude = "pw|pyright\\-internal"
+
+[tool.pylint.MASTER]
+fail-on = "I"
+bad-names = [
+    "foo",
+    "bar",
+    "baz",
+    "retval",
+]
+load-plugins = [
+    "pylint.extensions.bad_builtin",
+    "pylint.extensions.broad_try_caluse",
+    "pylint.extensions.check_elif",
+    "pylint.extensions.code_style",
+    "pylint.extensions.comparetozero",
+    "pylint.extensions.comparison_placement",
+    "pylint.extensions.confusing_elif",
+    "pylint.extensions.consider_refactoring_into_while_condition",
+    "pylint.extensions.consider_ternary_expression",
+    "pylint.extensions.dict_init_mutate",
+    "pylint.extensions.docparams",
+    "pylint.extensions.docstyle",
+    "pylint.extensions.dunder",
+    "pylint.extensions.empty_comment",
+    "pylint.extensions.emptystring",
+    "pylint.extensions.eq_without_hash",
+    "pylint.extensions.for_any_all",
+    "pylint.extensions.magic_value",
+    "pylint.extensions.no_self_use",
+    "pylint.extensions.overlapping_exceptions",
+    "pylint.extensions.private_import",
+    "pylint.extensions.redefined_loop_name",
+    "pylint.extensions.redefined_variable_type",
+    "pylint.extensions.set_membership",
+    "pylint.extensions.typing",
+    "pylint.extensions.while_used",
+]
+
+[tool.pylint."MESSAGE CONTROL"]
+disable = [
+    "R",
+    "C",
+    "E",
+    "F",
+    "W",
+    "I",
+]
+enable = [
+    "useless-suppression",
+    "possibly-unused-variable",
+    "disallowed-name",
+    "access-member-before-definition",
+    "assigning-non-slot",
+    "assignment-from-no-return",
+    "assignment-from-none",
+    "bad-except-order",
+    "bad-exception-cause",
+    "bad-reversed-sequence",
+    "bad-super-call",
+    "catching-non-exception",
+    "class-variable-slots-conflict",
+    "dict-iter-missing-items",
+    "inconsistent-mro",
+    "init-is-generator",
+    "invalid-bool-returned",
+    "invalid-bytes-returned",
+    "invalid-character-carriage-return",
+    "invalid-class-object",
+    "invalid-enum-extension",
+    "invalid-envvar-value",
+    "invalid-format-returned",
+    "invalid-getnewargs-ex-returned",
+    "invalid-getnewargs-returned",
+    "invalid-index-returned",
+    "invalid-length-hint-returned",
+    "invalid-length-returned",
+    "invalid-metaclass",
+    "invalid-repr-returned",
+    "invalid-sequence-index",
+    "invalid-slice-index",
+    "invalid-slice-step",
+    "invalid-slots",
+    "invalid-slots-object",
+    "invalid-star-assignment-target",
+    "invalid-str-returned",
+    "invalid-unary-operand-type",
+    "invalid-unicode-codec",
+    "logging-format-truncated",
+    "logging-unsupported-format",
+    "method-hidden",
+    "misplaced-format-function",
+    "missing-kwoa",
+    "modified-iterating-dict",
+    "modified-iterating-set",
+    "non-iterator-returned",
+    "nonlocal-and-global",
+    "not-a-mapping",
+    "not-async-context-manager",
+    "not-callable",
+    "not-context-manager",
+    "potential-index-error",
+    "raising-non-exception",
+    "redundant-keyword-arg",
+    "relative-beyond-top-level",
+    "singledispatch-method",
+    "singledispatchmethod-function",
+    "star-needs-assignment-target",
+    "unhashable-member",
+    "unpacking-non-sequence",
+    "unsupported-assignment-operation",
+    "unsupported-binary-operation",
+    "unsupported-delete-operation",
+    "abstract-method",
+    "anomalous-unicode-escape-in-string",
+    "arguments-out-of-order",
+    "arguments-renamed",
+    "attribute-defined-outside-init",
+    "bad-builtin",
+    "bad-indentation",
+    "bad-staticmethod-argument",
+    "bad-thread-instantiation",
+    "comparison-with-callable",
+    "confusing-with-statement",
+    "cyclic-import",
+    "deprecated-argument",
+    "deprecated-class",
+    "deprecated-decorator",
+    "deprecated-method",
+    "deprecated-module",
+    "differing-param-doc",
+    "differing-type-doc",
+    "global-variable-undefined",
+    "invalid-format-index",
+    "invalid-overridden-method",
+    "method-cache-max-size-none",
+    "missing-any-param-doc",
+    "missing-format-attribute",
+    "missing-param-doc",
+    "missing-parentheses-for-call-in-test",
+    "missing-raises-doc",
+    "missing-return-doc",
+    "missing-return-type-doc",
+    "missing-timeout",
+    "missing-yield-doc",
+    "missing-yield-type-doc",
+    "modified-iterating-list",
+    "multiple-constructor-doc",
+    "nan-comparison",
+    "non-ascii-file-name",
+    "non-parent-init-called",
+    "non-str-assignment-to-dunder-name",
+    "overlapping-except",
+    "overridden-final-method",
+    "preferred-module",
+    "raising-format-tuple",
+    "redeclared-assigned-name",
+    "redefined-outer-name",
+    "redefined-slots-in-subclass",
+    "redundant-returns-doc",
+    "redundant-unittest-assert",
+    "redundant-yields-doc",
+    "self-cls-assignment",
+    "shallow-copy-environ",
+    "signature-differs",
+    "super-init-not-called",
+    "unbalanced-dict-unpacking",
+    "unbalanced-tuple-unpacking",
+    "undefined-loop-variable",
+    "unnecessary-ellipsis",
+    "unreachable",
+    "unused-private-member",
+    "unused-wildcard-import",
+    "useless-param-doc",
+    "useless-parent-delegation",
+    "useless-type-doc",
+    "using-constant-test",
+    "using-final-decorator-in-unsupported-version",
+    "while-used",
+    "wrong-exception-operation",
+    "bad-file-encoding",
+    "bad-mcs-classmethod-argument",
+    "bad-mcs-method-argument",
+    "dict-init-mutate",
+    "invalid-characters-in-docstring",
+    "mixed-line-endings",
+    "superfluous-parens",
+    "unexpected-line-ending-format",
+    "use-implicit-booleaness-not-comparison",
+    "chained-comparison",
+    "condition-evals-to-constant",
+    "confusing-consecutive-elif",
+    "consider-swap-variables",
+    "consider-using-augmented-assign",
+    "consider-using-join",
+    "consider-using-max-builtin",
+    "consider-using-min-builtin",
+    "consider-using-namedtuple-or-dataclass",
+    "consider-using-tuple",
+    "simplifiable-condition",
+    "simplify-boolean-expression",
+    "stop-iteration-return",
+    "use-set-for-membership",
+    "useless-return",
+]
+
+[tool.pylint.REPORTS]
+reports = "no"
+output-format = "colorized"
+score = "no"
+
+[tool.pylint.FORMAT]
+max-line-length = 200
+
+[tool.basedpyright]
+ignore = [
+    "pw",
+    "basedpyright/dist",
+    "packages",
+]
+pythonVersion = "3.8"
+pythonPlatform = "All"
+include = [
+    "basedpyright",
+    "get_version.py",
+    "pdm_build.py",
+]
+exclude = [
+    "pw",
+    "basedpyright/dist",
+    "packages",
+]
+typeCheckingMode = "all"
+reportImplicitStringConcatenation = false
+
+[tool.ruff]
+unsafe-fixes = true
+extend-select = [
+    "ALL",
+]
+ignore = [
+    "ANN",
+    "COM",
+    "EM",
+    "FIX",
+    "PLR0913",
+    "PLR0912",
+    "PLR0915",
+    "PLR2004",
+    "PLR1722",
+    "PLW2901",
+    "PLE0605",
+    "PLR0911",
+    "PLW0603",
+    "PLC0105",
+    "PLC0414",
+    "RUF013",
+    "RUF016",
+    "TRY002",
+    "TRY003",
+    "D10",
+    "D203",
+    "D204",
+    "D205",
+    "D209",
+    "D210",
+    "D212",
+    "D213",
+    "D400",
+    "D401",
+    "D403",
+    "D404",
+    "D405",
+    "D406",
+    "D415",
+    "D418",
+    "PT013",
+    "TD002",
+    "E701",
+    "CPY001",
+    "C901",
+]
+target-version = "py38"
+respect-gitignore = true
+line-length = 100
+preview = true
+extend-exclude = [
+    "pw",
+    "packages/pyright-internal/typeshed-fallback",
+    "packages/pyright-internal/src/tests/samples",
+]
+
+[tool.ruff.pycodestyle]
+ignore-overlong-task-comments = true
+
+[tool.ruff.per-file-ignores]
+"*.pyi" = [
+    "A001",
+    "A002",
+    "N",
+]
+"tests/**/*.py" = [
+    "S101",
+]
+
+[tool.ruff.isort]
+combine-as-imports = true
+required-imports = [
+    "from __future__ import annotations",
+]
+
+[project]
+name = "basedpyright"
+description = "static type checking for Python (but based)"
+dynamic = []
+authors = [
+    { name = "detachhead", email = "detachhead@users.noreply.github.com" },
+]
+dependencies = [
+    "nodejs-bin>=18.4.0a4",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+version = "1.1.0"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+repository = "https://github.com/detachhead/basedpyright"
+
+[project.scripts]
+basedpyright = "basedpyright.pyright:main"
+basedpyright-langserver = "basedpyright.langserver:main"
+
+[build-system]
+requires = [
+    "pdm-backend",
+    "nodejs-bin>=18.4.0a4",
+]
+build-backend = "pdm.backend"
