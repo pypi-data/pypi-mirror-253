@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mymodelmonitoringdashboardpackage
+Version: 0.6
+Summary: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: streamlit
+Requires-Dist: pandas
+
+UNKNOWN
+
