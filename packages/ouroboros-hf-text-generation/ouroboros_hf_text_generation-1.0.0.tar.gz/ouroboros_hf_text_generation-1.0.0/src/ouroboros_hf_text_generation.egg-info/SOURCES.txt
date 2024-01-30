@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/logical_print.py
+src/ouroboros_text_gen_utils.py
+src/ouroboros_hf_text_generation.egg-info/PKG-INFO
+src/ouroboros_hf_text_generation.egg-info/SOURCES.txt
+src/ouroboros_hf_text_generation.egg-info/dependency_links.txt
+src/ouroboros_hf_text_generation.egg-info/requires.txt
+src/ouroboros_hf_text_generation.egg-info/top_level.txt
