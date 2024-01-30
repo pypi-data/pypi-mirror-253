@@ -1,0 +1,120 @@
+{% extends "hub/base.j2" %}
+{% load i18n static include_static %}
+
+{% block title %}{{ _('Dashboard') }}{% endblock %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link rel="stylesheet" type="text/css" href="{% static 'oidc_hub/css/dashboard.css' %}">
+{% endblock %}
+
+{% block extrahead %}
+  {{ block.super }}
+  <script type="text/javascript" src="{% static 'oidc_hub/js/dashboard.js' %}"></script>
+{% endblock %}
+
+{% block breadcrumbs %}
+  <div class="breadcrumbs">
+    <a href="{% url 'hub:dashboard' %}">{% translate 'Dashboard' %}</a>
+  </div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <div class="actions">
+      <div class="checked">
+        {% if request.user.is_superuser %}
+        <form id="selection" action="{% url 'hub:dashboard' %}" method="post">
+          {% csrf_token %}
+        </form>
+        <select form="selection" name="action">
+          <option value="" disabled selected>Action</option>
+          <option value="delete">{{ _('Delete selection') }}</option>
+        </select>
+        <button type="submit" form="selection" disabled>
+          {% include_static 'oidc_hub/imgs/check.svg' %}
+        </button>
+        {% endif %}  
+      </div>
+      <div>
+        {% if request.user.is_superuser or request.user.is_staff %}
+          <button id="add-invitation">
+            {{ _('Invite member') }}
+          </button>
+        {% endif %}
+        <div id="modal-invitation" class="modal">
+          <div class="modal-content">
+            {% include_static 'oidc_hub/imgs/rectangle-xmark.svg' %}
+            <h2>{{ _('Invite member') }}</h2>
+            {% if form.errors and not form.non_field_errors %}
+            <p class="errornote">
+            {% blocktranslate count counter=form.errors.items|length %}Please correct the error below.{% plural %}Please correct the errors below.{% endblocktranslate %}
+            </p>
+            {% endif %}
+            {% if form.non_field_errors %}
+            {% for error in form.non_field_errors %}
+            <p class="errornote">{{ error }}</p>
+            {% endfor %}
+            {% endif %}
+            <form action="{% url 'hub:invitations' %}" method="post" id="invitation-form">
+              {% csrf_token %}
+              <input type="hidden" name="sender" value="{{ request.user.id }}">
+              <div class="form-row">
+                {{ invitation_form.recipient_email.errors }}
+                {{ invitation_form.recipient_email.label_tag }} {{ invitation_form.recipient_email }}
+              </div>
+              <div class="submit-row" style="display: flex; flex-direction: column;">
+                <input type="submit" value="{% translate 'Send invitation' %}">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    {# @TODO: improve mobile display #}
+    <table class="users-list">
+      <thead>
+        {% if request.user.is_staff or request.user.is_superuser %}
+        <th><input type="checkbox" id="check-all"></th>
+        {% endif %}
+        <th>{{ _('Account') }}</th>
+        <th>{{ _('Role') }}</th>
+        <th>{{ _('Activity') }}</th>
+      </thead>
+      <tbody>
+        {% for user in users %}
+          <tr>
+            {% if request.user.is_staff or request.user.is_superuser %}
+            <td><input type="checkbox" value="{{ user.id }}" name="checked_ids" form="selection"></td>
+            {% endif %}
+            <td class="account">
+                <div class="username">
+                  {% if request.user.is_superuser or user == request.user %}
+                      <a href="{% url 'hub:edit_user' user.id %}">{{ user.username }}</a>
+                  {% else %}
+                      {{ user.username }}
+                  {% endif %}
+                  {% if user == request.user %}<span class="badge-success">{{ _("It's you") }}</span>{% endif %}
+                </div>
+                {% if request.user.is_superuser or request.user.is_staff %}
+                <div class="email">{{ user.email }}</div>
+                {% endif %}
+            </td>
+            <td class="role">
+              {% if user.is_staff %}
+                  {{ _('Administrator') }}
+              {% else %}
+                  {{ _('Member') }}
+              {% endif %}
+                  
+            </td>
+            <td class="activity">
+              <p><b>{{ _("User created") }}:</b> {{ user.date_joined }}</p>
+              <p><b>{{ _("Last activity") }}:</b> {{ user.last_login }}</p>
+            </td>
+          </tr>
+        {% endfor %}  
+      </tbody>
+    </table>
+</div>
+{% endblock %}

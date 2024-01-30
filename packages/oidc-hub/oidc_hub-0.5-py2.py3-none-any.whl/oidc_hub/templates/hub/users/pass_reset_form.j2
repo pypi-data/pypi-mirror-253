@@ -1,0 +1,4 @@
+<form id="send-reset-link" action="{% url 'hub:pass_reset' %}" method="post">
+  {% csrf_token %}
+  {{ form.email }}
+</form>

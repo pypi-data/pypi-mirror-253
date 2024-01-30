@@ -1,0 +1,317 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-29 19:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: project/settings.py:134
+msgid "French"
+msgstr ""
+
+#: project/settings.py:135
+msgid "English"
+msgstr ""
+
+#: oidc_hub/forms.py:22
+msgid "Delete"
+msgstr ""
+
+#: oidc_hub/forms.py:45
+msgid "The following user id(s) are invalid: {}"
+msgstr ""
+
+#: oidc_hub/forms.py:57
+msgid "Unspecified action"
+msgstr ""
+
+#: oidc_hub/forms.py:61
+msgid "At least one user should be selected"
+msgstr ""
+
+#: oidc_hub/forms.py:68
+msgid "At least one administrator must remain"
+msgstr ""
+
+#: oidc_hub/forms.py:80
+msgid "Password"
+msgstr ""
+
+#: oidc_hub/models.py:12
+msgid "Sender"
+msgstr ""
+
+#: oidc_hub/models.py:13
+msgid "Email address"
+msgstr ""
+
+#: oidc_hub/models.py:14
+msgid "Token"
+msgstr ""
+
+#: oidc_hub/templates/hub/base.j2:4 oidc_hub/templates/hub/base.j2:11
+#: oidc_hub/templates/hub/pass/change.j2:7
+#: oidc_hub/templates/hub/pass/reset.j2:5
+#: oidc_hub/templates/hub/pass/reset_done.j2:4
+#: oidc_hub/templates/hub/pass/reset_done.j2:11
+msgid "Research Data Management"
+msgstr ""
+
+#: oidc_hub/templates/hub/base.j2:18
+#: oidc_hub/templates/hub/pass/reset_done.j2:18
+msgid "Welcome,"
+msgstr ""
+
+#: oidc_hub/templates/hub/base.j2:23
+#: oidc_hub/templates/hub/pass/reset_done.j2:23
+msgid "View site"
+msgstr ""
+
+#: oidc_hub/templates/hub/base.j2:28
+#: oidc_hub/templates/hub/pass/reset_done.j2:28
+msgid "Documentation"
+msgstr ""
+
+#: oidc_hub/templates/hub/base.j2:32
+#: oidc_hub/templates/hub/pass/reset_done.j2:32
+msgid "Change password"
+msgstr ""
+
+#: oidc_hub/templates/hub/base.j2:36
+#: oidc_hub/templates/hub/pass/reset_done.j2:36
+msgid "Log out"
+msgstr ""
+
+#: oidc_hub/templates/hub/base.j2:46 oidc_hub/templates/hub/dashboard.j2:4
+#: oidc_hub/templates/hub/dashboard.j2:18
+#: oidc_hub/templates/hub/pass/change.j2:15
+#: oidc_hub/templates/hub/pass/change_done.j2:6
+#: oidc_hub/templates/hub/pass/reset_done.j2:47
+#: oidc_hub/templates/hub/signout.j2:8 oidc_hub/templates/hub/users/edit.j2:4
+#: oidc_hub/templates/hub/users/edit.j2:8
+msgid "Dashboard"
+msgstr ""
+
+#: oidc_hub/templates/hub/dashboard.j2:32
+msgid "Delete selection"
+msgstr ""
+
+#: oidc_hub/templates/hub/dashboard.j2:42
+#: oidc_hub/templates/hub/dashboard.j2:48
+msgid "Invite member"
+msgstr ""
+
+#: oidc_hub/templates/hub/dashboard.j2:51
+#: oidc_hub/templates/hub/pass/change.j2:27 oidc_hub/templates/hub/signin.j2:16
+#: oidc_hub/templates/hub/signup.j2:16 oidc_hub/templates/hub/users/edit.j2:21
+msgid "Please correct the error below."
+msgid_plural "Please correct the errors below."
+msgstr[0] ""
+msgstr[1] ""
+
+#: oidc_hub/templates/hub/dashboard.j2:67
+msgid "Send invitation"
+msgstr ""
+
+#: oidc_hub/templates/hub/dashboard.j2:80
+msgid "Account"
+msgstr ""
+
+#: oidc_hub/templates/hub/dashboard.j2:81
+msgid "Role"
+msgstr ""
+
+#: oidc_hub/templates/hub/dashboard.j2:82
+msgid "Activity"
+msgstr ""
+
+#: oidc_hub/templates/hub/dashboard.j2:97
+#: oidc_hub/templates/hub/partials/users_list.j2:13
+msgid "It's you"
+msgstr ""
+
+#: oidc_hub/templates/hub/dashboard.j2:105
+#: oidc_hub/templates/hub/partials/users_list.j2:18
+msgid "Administrator"
+msgstr ""
+
+#: oidc_hub/templates/hub/dashboard.j2:107
+#: oidc_hub/templates/hub/partials/users_list.j2:18
+msgid "Member"
+msgstr ""
+
+#: oidc_hub/templates/hub/dashboard.j2:112
+#: oidc_hub/templates/hub/partials/users_list.j2:21
+msgid "User created"
+msgstr ""
+
+#: oidc_hub/templates/hub/dashboard.j2:113
+#: oidc_hub/templates/hub/partials/users_list.j2:22
+msgid "Last activity"
+msgstr ""
+
+#: oidc_hub/templates/hub/emails/invitation.j2:16
+msgid "Sign up"
+msgstr ""
+
+#: oidc_hub/templates/hub/pass/change.j2:32
+msgid ""
+"Please enter your old password, for security’s sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+
+#: oidc_hub/templates/hub/pass/change.j2:60
+msgid "Change my password"
+msgstr ""
+
+#: oidc_hub/templates/hub/pass/change_done.j2:7
+msgid "Password change"
+msgstr ""
+
+#: oidc_hub/templates/hub/pass/reset.j2:13
+#: oidc_hub/templates/hub/pass/reset_done.j2:50
+#: oidc_hub/templates/hub/signin.j2:51
+msgid "Log in"
+msgstr ""
+
+#: oidc_hub/templates/hub/pass/reset.j2:14
+#: oidc_hub/templates/hub/pass/reset_done.j2:48
+#: oidc_hub/templates/hub/pass/reset_done.j2:51
+msgid "Password reset"
+msgstr ""
+
+#: oidc_hub/templates/hub/pass/reset.j2:20
+msgid ""
+"Forgotten your password? Enter your email address below, and we’ll email "
+"instructions for setting a new one."
+msgstr ""
+
+#: oidc_hub/templates/hub/pass/reset.j2:26
+msgid "Email address:"
+msgstr ""
+
+#: oidc_hub/templates/hub/pass/reset.j2:29
+msgid "Reset my password"
+msgstr ""
+
+#: oidc_hub/templates/hub/pass/reset_email.j2:2
+#, python-format
+msgid ""
+"You're receiving this email because a password reset was requested for your "
+"user account at %(site_name)s."
+msgstr ""
+
+#: oidc_hub/templates/hub/pass/reset_email.j2:4
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+
+#: oidc_hub/templates/hub/pass/reset_email.j2:9
+msgid "Thanks for using our site!"
+msgstr ""
+
+#: oidc_hub/templates/hub/pass/reset_email.j2:11
+#, python-format
+msgid "The %(site_name)s team"
+msgstr ""
+
+#: oidc_hub/templates/hub/signin.j2:4 oidc_hub/templates/hub/signup.j2:4
+msgid "Django site admin"
+msgstr ""
+
+#: oidc_hub/templates/hub/signin.j2:7
+msgid "Authentication"
+msgstr ""
+
+#: oidc_hub/templates/hub/signin.j2:31
+#, python-format
+msgid ""
+"You are authenticated as %(username)s, but are not authorized to access this "
+"page. Would you like to login to a different account?"
+msgstr ""
+
+#: oidc_hub/templates/hub/signin.j2:56
+msgid "Forgotten your password or username?"
+msgstr ""
+
+#: oidc_hub/templates/hub/signout.j2:4 oidc_hub/templates/hub/signout.j2:10
+msgid "Logged out"
+msgstr ""
+
+#: oidc_hub/templates/hub/signout.j2:18
+msgid "Thanks for spending some quality time with us today."
+msgstr ""
+
+#: oidc_hub/templates/hub/signout.j2:20
+msgid "Log in again"
+msgstr ""
+
+#: oidc_hub/templates/hub/signup.j2:7
+msgid "Registration"
+msgstr ""
+
+#: oidc_hub/templates/hub/signup.j2:42
+msgid "Create account"
+msgstr ""
+
+#: oidc_hub/templates/hub/users/edit.j2:10
+msgid "Update"
+msgstr ""
+
+#: oidc_hub/templates/hub/users/edit.j2:42
+msgid "Save changes"
+msgstr ""
+
+#: oidc_hub/views.py:46
+msgid "Permission denied"
+msgstr ""
+
+#: oidc_hub/views.py:70
+msgid "The following users have been deleted: {}"
+msgstr ""
+
+#: oidc_hub/views.py:102
+msgid "send a reset link"
+msgstr ""
+
+#: oidc_hub/views.py:118
+msgid ""
+"Raw passwords are not stored, so there is no way to see this user’s "
+"password, but you can {} instead."
+msgstr ""
+
+#: oidc_hub/views.py:129
+msgid "change your password"
+msgstr ""
+
+#: oidc_hub/views.py:132
+msgid ""
+"Raw passwords are not stored, so there is no way to display your password, "
+"but you can {}."
+msgstr ""
+
+#: oidc_hub/views.py:216
+msgid ""
+"We've sent a mail with instructions to reset this user's password. It should "
+"be received shortly."
+msgstr ""
+
+#: oidc_hub/views.py:256
+msgid "{} sent you an invitation"
+msgstr ""
+
+#: oidc_hub/views.py:279
+msgid "An invitation has been sent to {}"
+msgstr ""

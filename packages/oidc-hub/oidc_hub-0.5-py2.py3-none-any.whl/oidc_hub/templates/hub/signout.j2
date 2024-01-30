@@ -1,0 +1,22 @@
+{% extends "hub/base.j2" %}
+{% load i18n %}
+
+{% block title %}{{ _('Logged out') }}{% endblock %}
+
+{% block breadcrumbs %}
+  <div class="breadcrumbs">
+    <a href="{% url 'hub:dashboard' %}">{% translate 'Dashboard' %}</a>
+    &rsaquo;
+    <a href="{% url 'hub:signout' %}">{% translate 'Logged out' %}</a>
+  </div>
+{% endblock %}
+
+{% block nav-sidebar %}{% endblock %}
+
+{% block content %}
+
+<p>{% translate "Thanks for spending some quality time with us today." %}</p>
+
+<p><a href="{% url 'hub:signin' %}">{% translate 'Log in again' %}</a></p>
+
+{% endblock %}
