@@ -1,0 +1,10 @@
+pyshv>=0.5.0
+prompt_toolkit
+pyxdg
+
+[lint]
+black
+isort
+mypy
+pydocstyle
+pylint
