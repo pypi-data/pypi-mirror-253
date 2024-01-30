@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "nanovicky"
+version = "0.1.0"
+description = ""
+authors = ["adechauveron <a.dechauveron@ivsoftware.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9.18"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+opencv-python = "^4.8.1.78"
+pillow = "^10.0.1"
+flask = "^3.0.0"
+flask-cors = "^4.0.0"
+opencv-contrib-python = "^4.8.1.78"
+
+[tool.poetry.group.raspi.dependencies]
+picamera2 = "^0.3.12"
+
+[tool.poetry.group.raspi]
+optional = true
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
