@@ -1,0 +1,11 @@
+gribtoarrow/__init__.py,sha256=_7EPpfsunbtPCxPLSJFOtxj97nZQxA7Gs9BOpyYWEiU,59
+gribtoarrow/eccodes/libeccodes.so,sha256=90k_pys7ZDL-4ohKa_RkvUQ_f-BWClREE6MrO9KHleY,13643920
+gribtoarrow/eccodes/libeccodes_memfs.so,sha256=Do8_5TQMjJ-2FCX4pjijkFZvh3Cx5XGHIUfKYmTzCSo,28278832
+gribtoarrow/gribtoarrow.cpython-311-x86_64-linux-gnu.so,sha256=daufC41kibsbtnQMehYXDEn0lT2qIYB00bm4jVpAkJE,581112
+gribtoarrow/lib/libaec.so,sha256=5uJ29dbIjcESiwEUTbkbnrPLDpUgnTLohpK6tMnNWD8,49064
+gribtoarrow/lib/libeccodes_memfs.so,sha256=Do8_5TQMjJ-2FCX4pjijkFZvh3Cx5XGHIUfKYmTzCSo,28278832
+gribtoarrow/lib/libsz.so,sha256=43B_1zCclWoGpibAV7ANAOJ8O441K2IGBhlkU5AS8II,53656
+gribtoarrow.cpython-311-x86_64-linux-gnu.so,sha256=daufC41kibsbtnQMehYXDEn0lT2qIYB00bm4jVpAkJE,581112
+gribtoarrow-0.1.9.dist-info/METADATA,sha256=kNPhmHr9wZNvkAT4HqxtBCQrOQLSdHhyPlM9cNvmias,13011
+gribtoarrow-0.1.9.dist-info/WHEEL,sha256=rE-7fmwA-JzMEVA_FcdPBXU_VmXdYT4zcbZXh4s4GkI,110
+gribtoarrow-0.1.9.dist-info/RECORD,,
