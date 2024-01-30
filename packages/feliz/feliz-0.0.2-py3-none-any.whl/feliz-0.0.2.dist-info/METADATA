@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: feliz
+Version: 0.0.2
+Summary: A framework designed to assist in using Flask
+Home-page: https://github.com/zenith3092/feliz
+Author: Vincent Wu, Linga Chen, Brian Yin
+Author-email: zenith3092@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flask (==2.3.2)
+Requires-Dist: flask-cors (==3.0.10)
+Requires-Dist: flask-jwt-extended (==4.5.2)
+Requires-Dist: bcrypt (==4.0.1)
+Requires-Dist: pyyaml (==5.1)
+
+# feliz
+A framework designed to assist in using Flask
