@@ -1,0 +1,229 @@
+{
+   "0": {
+      "fname": "C:/Users/PQ177701/PycharmProjects/fitspy/examples/data/2D_maps/ordered_map.txt  X=1757.0  Y=65.7",
+      "range_min": 55.589844,
+      "range_max": 958.501953,
+      "norm_mode": null,
+      "norm_position_ref": null,
+      "peaks": [
+         287,
+         311,
+         572,
+         349,
+         154,
+         121,
+         16,
+         81,
+         45,
+         415,
+         380,
+         443,
+         220,
+         541,
+         189,
+         484,
+         514,
+         264,
+         464,
+         244
+      ],
+      "peaks_params": {
+         "distance": 20,
+         "prominence": null,
+         "width": null,
+         "height": null,
+         "threshold": null
+      },
+      "models_labels": [
+         "1",
+         "2",
+         "3",
+         "4",
+         "5",
+         "6",
+         "7"
+      ],
+      "fit_method": "Leastsq",
+      "fit_negative": false,
+      "max_ite": 200,
+      "baseline_history": [],
+      "models": {
+         "0": {
+            "Lorentzian": {
+               "ampli": {
+                  "value": 907.3578496123441,
+                  "min": 0,
+                  "max": Infinity,
+                  "vary": true,
+                  "expr": null
+               },
+               "x0": {
+                  "value": 520.4119517391798,
+                  "min": 499.828125,
+                  "max": 539.828125,
+                  "vary": true,
+                  "expr": null
+               },
+               "fwhm": {
+                  "value": 10.512765475693907,
+                  "min": 0,
+                  "max": 200,
+                  "vary": true,
+                  "expr": null
+               }
+            }
+         },
+         "1": {
+            "Lorentzian": {
+               "ampli": {
+                  "value": 73.22512149166724,
+                  "min": 0,
+                  "max": Infinity,
+                  "vary": true,
+                  "expr": null
+               },
+               "x0": {
+                  "value": 596.6332220236228,
+                  "min": 596.632813,
+                  "max": 636.632813,
+                  "vary": true,
+                  "expr": null
+               },
+               "fwhm": {
+                  "value": 199.99999997066413,
+                  "min": 0,
+                  "max": 200,
+                  "vary": true,
+                  "expr": null
+               }
+            }
+         },
+         "2": {
+            "Lorentzian": {
+               "ampli": {
+                  "value": 79.051735,
+                  "min": 0,
+                  "max": Infinity,
+                  "vary": true,
+                  "expr": null
+               },
+               "x0": {
+                  "value": 308.078125,
+                  "min": 288.078125,
+                  "max": 328.078125,
+                  "vary": true,
+                  "expr": null
+               },
+               "fwhm": {
+                  "value": 1.6699219999999997,
+                  "min": 0,
+                  "max": 200,
+                  "vary": true,
+                  "expr": null
+               }
+            }
+         },
+         "3": {
+            "Lorentzian": {
+               "ampli": {
+                  "value": 85.327492,
+                  "min": 0,
+                  "max": Infinity,
+                  "vary": true,
+                  "expr": null
+               },
+               "x0": {
+                  "value": 955.513672,
+                  "min": 935.513672,
+                  "max": 975.513672,
+                  "vary": true,
+                  "expr": null
+               },
+               "fwhm": {
+                  "value": 1.6699219999999997,
+                  "min": 0,
+                  "max": 200,
+                  "vary": true,
+                  "expr": null
+               }
+            }
+         },
+         "4": {
+            "Lorentzian": {
+               "ampli": {
+                  "value": 60.59145,
+                  "min": 0,
+                  "max": Infinity,
+                  "vary": true,
+                  "expr": null
+               },
+               "x0": {
+                  "value": 130.277344,
+                  "min": 110.277344,
+                  "max": 150.277344,
+                  "vary": true,
+                  "expr": null
+               },
+               "fwhm": {
+                  "value": 1.6699219999999997,
+                  "min": 0,
+                  "max": 200,
+                  "vary": true,
+                  "expr": null
+               }
+            }
+         },
+         "5": {
+            "Lorentzian": {
+               "ampli": {
+                  "value": 61.082203,
+                  "min": 0,
+                  "max": Infinity,
+                  "vary": true,
+                  "expr": null
+               },
+               "x0": {
+                  "value": 189.457031,
+                  "min": 169.457031,
+                  "max": 209.457031,
+                  "vary": true,
+                  "expr": null
+               },
+               "fwhm": {
+                  "value": 1.6699219999999997,
+                  "min": 0,
+                  "max": 200,
+                  "vary": true,
+                  "expr": null
+               }
+            }
+         },
+         "6": {
+            "Lorentzian": {
+               "ampli": {
+                  "value": 69.292946,
+                  "min": 0,
+                  "max": Infinity,
+                  "vary": true,
+                  "expr": null
+               },
+               "x0": {
+                  "value": 254.673828,
+                  "min": 234.673828,
+                  "max": 274.67382799999996,
+                  "vary": true,
+                  "expr": null
+               },
+               "fwhm": {
+                  "value": 1.6699219999999997,
+                  "min": 0,
+                  "max": 200,
+                  "vary": true,
+                  "expr": null
+               }
+            }
+         }
+      },
+      "bkg_model": {}
+   }
+}

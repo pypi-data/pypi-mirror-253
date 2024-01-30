@@ -1,0 +1,69 @@
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 35
+    # data points      = 574
+    # variables        = 33
+    chi-square         = 316694.326
+    reduced chi-square = 585.386925
+    Akaike info crit   = 3689.69812
+    Bayesian info crit = 3833.33489
+    R-squared          = 0.97369552
+##  Warning: uncertainties could not be estimated:
+    m01_ampli:  at initial value
+    m01_fwhm:   at initial value
+    m01_x0:     at initial value
+    m02_ampli:  at initial value
+    m02_x0:     at initial value
+    m03_x0:     at initial value
+    m04_ampli:  at initial value
+    m04_fwhm:   at initial value
+    m04_x0:     at initial value
+    m05_ampli:  at initial value
+    m05_x0:     at initial value
+    m06_ampli:  at initial value
+    m06_fwhm:   at initial value
+    m06_x0:     at initial value
+    m07_x0:     at initial value
+    m08_ampli:  at initial value
+    m08_fwhm:   at initial value
+    m08_x0:     at initial value
+    m09_ampli:  at initial value
+    m09_fwhm:   at initial value
+    m09_x0:     at initial value
+    m10_ampli:  at initial value
+    m10_fwhm:   at initial value
+    m10_x0:     at initial value
+[[Variables]]
+    m01_ampli:  582.866604 (init = 582.8669)
+    m01_fwhm:   26.9074004 (init = 26.90737)
+    m01_x0:     302.492748 (init = 302.4927)
+    m02_ampli:  288.306312 (init = 288.3055)
+    m02_fwhm:   106.983116 (init = 106.9805)
+    m02_x0:     501.258000 (init = 501.258)
+    m03_ampli:  192.362399 (init = 192.3604)
+    m03_fwhm:   11.9175746 (init = 11.91825)
+    m03_x0:     618.530600 (init = 618.5306)
+    m04_ampli:  500.334335 (init = 500.3343)
+    m04_fwhm:   6.34133665 (init = 6.341371)
+    m04_x0:     685.642008 (init = 685.642)
+    m05_ampli:  173.598124 (init = 173.5977)
+    m05_fwhm:   6.53135279 (init = 6.531471)
+    m05_x0:     651.079742 (init = 651.0797)
+    m06_ampli:  1919.32860 (init = 1919.33)
+    m06_fwhm:   2.66274746 (init = 2.662744)
+    m06_x0:     342.944849 (init = 342.9448)
+    m07_ampli:  115.545496 (init = 115.5426)
+    m07_fwhm:   17.3815533 (init = 17.38226)
+    m07_x0:     384.347008 (init = 384.3474)
+    m08_ampli:  112.702205 (init = 112.7022)
+    m08_fwhm:   13.9091232 (init = 13.90924)
+    m08_x0:     250.344303 (init = 250.3443)
+    m09_ampli:  125.234873 (init = 125.235)
+    m09_fwhm:   36.9930228 (init = 36.99312)
+    m09_x0:     137.466848 (init = 137.4669)
+    m10_ampli:  128.008748 (init = 128.0088)
+    m10_fwhm:   5.40151463 (init = 5.401523)
+    m10_x0:     81.3052456 (init = 81.30525)
+    m11_ampli:  50.8536566 (init = 50.84695)
+    m11_fwhm:   35.0212902 (init = 35.0364)
+    m11_x0:     413.654206 (init = 413.6587)

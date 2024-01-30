@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+scipy
+lmfit
+parse
+dill
+
+[:platform_system == "Windows"]
+pywin32

@@ -1,0 +1,66 @@
+{
+   "0": {
+      "fname": "C:/Users/PQ177701/PycharmProjects/fitspy/examples/data/spectra_2/InP-3_75A-P05.txt",
+      "range_min": 55.9141,
+      "range_max": 957.299,
+      "norm_mode": null,
+      "norm_position_ref": null,
+      "peaks": [
+         175,
+         151,
+         394,
+         287,
+         347,
+         266,
+         371,
+         309,
+         47,
+         200,
+         242,
+         119,
+         222,
+         421,
+         16,
+         554,
+         533,
+         491,
+         463,
+         512,
+         442,
+         68,
+         98
+      ],
+      "peaks_params": {
+         "distance": 20,
+         "prominence": 0,
+         "width": 0,
+         "height": 0,
+         "threshold": 0
+      },
+      "models_labels": [],
+      "fit_method": "leastsq",
+      "fit_negative": false,
+      "max_ite": 200,
+      "baseline_history": [
+         [
+            "Linear",
+            2,
+            [
+               [
+                  67.36363683773513,
+                  405.94108799129657,
+                  950.0506504141731
+               ],
+               [
+                  35.92199515345823,
+                  331.8134559074786,
+                  240.9952847849575
+               ]
+            ],
+            0
+         ]
+      ],
+      "models": {},
+      "bkg_model": {}
+   }
+}

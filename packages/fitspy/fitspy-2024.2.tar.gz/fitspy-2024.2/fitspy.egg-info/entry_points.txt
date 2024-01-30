@@ -1,0 +1,2 @@
+[console_scripts]
+fitspy = fitspy.app.gui:fitspy_launcher

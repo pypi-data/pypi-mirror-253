@@ -1,0 +1,65 @@
+{
+   "0": {
+      "fname": "C:\\Users\\PQ177701\\PycharmProjects\\fitspy\\examples\\data\\spectra_2\\InP-1_42-P21.txt",
+      "range_min": null,
+      "range_max": null,
+      "norm_mode": null,
+      "norm_position_ref": 685,
+      "peaks": [
+         175,
+         151,
+         394,
+         275,
+         297,
+         349,
+         372,
+         200,
+         252,
+         232,
+         48,
+         118,
+         318,
+         15,
+         551,
+         417,
+         518,
+         481,
+         453,
+         571,
+         78,
+         98
+      ],
+      "peaks_params": {
+         "distance": 20,
+         "prominence": 0,
+         "width": 0,
+         "height": 0,
+         "threshold": 0
+      },
+      "models_labels": [],
+      "fit_method": "Leastsq",
+      "fit_negative": false,
+      "max_ite": 200,
+      "baseline": {
+         "points": [
+            [
+               118.74666486003487,
+               485.7682919239578,
+               779.385593735168
+            ],
+            [
+               1139.4118718015075,
+               912.782301494736,
+               1153.8775890551312
+            ]
+         ],
+         "mode": "Linear",
+         "order_max": 2,
+         "distance": 100,
+         "sigma": 0,
+         "attached": true,
+         "is_subtracted": false
+      },
+      "models": {}
+   }
+}

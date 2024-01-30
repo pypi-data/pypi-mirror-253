@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitting &mdash; Fitspy 2024.2 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/plot_directive.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Workflow" href="workflow.html" />
+    <link rel="prev" title="Peak models" href="peak_models.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Fitspy
+              <img src="../_static/logo_black.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2024.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input_data.html">Input data files formats</a></li>
+<li class="toctree-l1"><a class="reference internal" href="baseline.html">Baselines and Background models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="peak_models.html">Peak models</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Fitting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#fitting-parameters">Fitting parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#constraints-settings">Constraints settings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="workflow.html">Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">GUI description</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Release Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../release_notes/release_notes.html">Release Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developers Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev_guide/dev_notes.html">Developers Notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/modules.html">fitspy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Fitspy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Fitting</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/user_guide/fitting.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="fitting">
+<h1>Fitting<a class="headerlink" href="#fitting" title="Permalink to this heading"></a></h1>
+<p>The fitting processing is performed using the methods provided by the <a class="reference external" href="https://lmfit.github.io//lmfit-py/">lmfit</a> package.</p>
+<section id="fitting-parameters">
+<h2>Fitting parameters<a class="headerlink" href="#fitting-parameters" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Fitting algorithm</strong>: in the GUI, the pre-selected fitting algorithms are <code class="code docutils literal notranslate"><span class="pre">Leastsq</span></code>, <code class="code docutils literal notranslate"><span class="pre">Least_squares</span></code>, <code class="code docutils literal notranslate"><span class="pre">Nelder-Mead</span></code>, <code class="code docutils literal notranslate"><span class="pre">SLSQP</span></code> which correspond in <strong>`lmfit`</strong> to the <em>‘leastsq’, ‘least_squares’, ‘nelder’</em> and <em>‘slsqp’</em> fitting algorithms (resp.). In python script, all the allowed <strong>`lmfit`</strong> fitting algorithms can be used via the <code class="code docutils literal notranslate"><span class="pre">fit_method</span></code> argument passed to <a class="reference internal" href="../api/fitspy.spectrum.html#fitspy.spectrum.Spectrum.fit" title="fitspy.spectrum.Spectrum.fit"><code class="xref py py-func docutils literal notranslate"><span class="pre">fit()</span></code></a>.</p></li>
+<li><p><strong>Convergence criterion</strong>: the convergence criterion is most often associated with a threshold to be reached on the calculated residual during the minimization procedure (gradient descent). Since each fitting method used by <strong>`lmfit`</strong> has its own way of specifying this criterion, it is not provided as an option in the GUI. However, in scripting mode, the tolerance criterion can be passed through the <code class="code docutils literal notranslate"><span class="pre">fit_kws</span></code> in the <code class="code docutils literal notranslate"><span class="pre">kwargs</span></code> arguments of the <a class="reference internal" href="../api/fitspy.spectrum.html#fitspy.spectrum.Spectrum.fit" title="fitspy.spectrum.Spectrum.fit"><code class="xref py py-func docutils literal notranslate"><span class="pre">fit()</span></code></a> function in a format compatible with the fit method.</p></li>
+<li><p><strong>Maximum number of iterations</strong>: this number, which corresponds to the maximum number of call of the gradient descent process, is set by default to 200. It can be beneficial, when fitting numerous spectra, to decrease this value to save computation time, ensuring it does not significantly compromise the quality of the fits. Sometimes, just a few dozen iterations are indeed sufficient. In the GUI, when the maximum number is reached without meeting the convergence criterion, the fit result is labeled as ‘non-converged’ and is displayed with an orange banner in the files selector widget. In case of convergence, the banner turns green.</p></li>
+<li><p><strong>Weighting</strong>: the presence of negative values in the profiles to be fitted, resulting notably from baseline or background removal, can adversely affect the quality of results. To mitigate the impact of these negative values during the fit, a weight of ‘0’ can be assigned to them. This is achieved through the <strong>‘fit negative values : Off’</strong> option in the GUI or by the  <code class="code docutils literal notranslate"><span class="pre">fit_negative</span></code> parameter passed to <a class="reference internal" href="../api/fitspy.spectrum.html#fitspy.spectrum.Spectrum.fit" title="fitspy.spectrum.Spectrum.fit"><code class="xref py py-func docutils literal notranslate"><span class="pre">fit()</span></code></a>.</p></li>
+<li><p><strong>Multithreading</strong>: in the GUI, the default mode is <strong>‘Number of CPU : auto’</strong> which adapts automatically the number of CPU to the number of profiles to be processed and the CPU capability of the machine (by utilizing up to half of the available CPU resources).</p></li>
+<li><p><strong>Parameters values initialization</strong>: also named <strong>Guess init</strong>, the initial values assigned to the models parameters are crucial in the subsequent process of minimizing residuals through gradient descent. When poorly adapted to the profiles to be fitted, they can lead to inappropriate results (local minima), or even prevent the gradient descent. This is why the predefined models in Fitspy have their own methods for evaluating such initial values. The use of <strong>user-defined models</strong> without these methods and where all parameters are initialized to 1, can thus lead to bad convergence.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is possible that repeated actions of fits on a ‘converged profile’ may lead to small variations.</p>
+</div>
+</section>
+<section id="constraints-settings">
+<h2>Constraints settings<a class="headerlink" href="#constraints-settings" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Model parameters fixing</strong>: Each parameters can be set to free (default) or not during the fit processing. Fixing the parameters is achieved in the GUI by activating the boxes located to the right of each parameter.</p></li>
+<li><p><strong>Model parameters bounding</strong>: To each parameter, a range can be assigned for the fit processing. For the <code class="code docutils literal notranslate"><span class="pre">peaks</span> <span class="pre">models</span></code> parameters, these ranges are defined at certain default values. In the GUI, these ranges can be adjusted through the <code class="code docutils literal notranslate"><span class="pre">Parameters</span></code> widget by activating the  <code class="code docutils literal notranslate"><span class="pre">show</span> <span class="pre">bounds</span></code> box.</p></li>
+<li><p><strong>Model parameters coupling</strong>: Similarly, in the <code class="code docutils literal notranslate"><span class="pre">Parameters</span></code> widget, constraints can be associated with each parameter, by activating the <code class="code docutils literal notranslate"><span class="pre">show</span> <span class="pre">expressions</span></code> box and providing the constraints as explained <a class="reference external" href="gui.html#fitting">here</a>.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="peak_models.html" class="btn btn-neutral float-left" title="Peak models" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="workflow.html" class="btn btn-neutral float-right" title="Workflow" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2024, The Fitspy development team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+from pathlib import Path
+import shutil
+from lmfit.models import (ConstantModel, LinearModel, ParabolicModel,
+                          ExponentialModel)
+
+from fitspy.utils import load_models_from_txt, load_models_from_py
+from fitspy.models import (gaussian, lorentzian, gaussian_asym, lorentzian_asym,
+                           pseudovoigt)
+
+VERSION = "2024.2"
+
+FITSPY_DIR = Path.home() / "Fitspy"
+SETTINGS_FNAME = FITSPY_DIR / "settings.json"
+
+PEAK_MODELS = {"Gaussian": gaussian,
+               "Lorentzian": lorentzian,
+               "PseudoVoigt": pseudovoigt,
+               "GaussianAsym": gaussian_asym,
+               "LorentzianAsym": lorentzian_asym}
+
+PEAK_PARAMS = ['x0', 'ampli', 'fwhm', 'fwhm_l', 'fwhm_r', 'alpha']
+
+BKG_MODELS = {'None': None,
+              'Constant': ConstantModel,
+              'Linear': LinearModel,
+              'Parabolic': ParabolicModel,
+              'Exponential': ExponentialModel}
+
+MODELS_NAMES = list(PEAK_MODELS.keys()) + list(BKG_MODELS.keys())
+
+# create FITSPY_DIR if not exists
+Path.mkdir(FITSPY_DIR, exist_ok=True)
+
+# move and rename old settings file
+fname = Path.home() / '.fitspy.json'
+if fname.exists():
+    shutil.move(fname, SETTINGS_FNAME)
+
+# add users models from '.txt' file
+load_models_from_txt(FITSPY_DIR / "peak_models.txt", PEAK_MODELS)
+load_models_from_txt(FITSPY_DIR / "bkg_models.txt", BKG_MODELS)
+
+# add users models from '.py' file
+load_models_from_py(FITSPY_DIR / "peak_models.py")
+load_models_from_py(FITSPY_DIR / "bkg_models.py")

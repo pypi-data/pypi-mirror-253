@@ -1,0 +1,91 @@
+{
+   "0": {
+      "fname": "C:/Users/PQ177701/PycharmProjects/fitspy/examples/data/spectra_1/Sample2_InCell_C_p10%_206R_10sx5_25C.txt",
+      "range_min": 55.552734,
+      "range_max": 958.46875,
+      "norm_mode": null,
+      "norm_position_ref": null,
+      "peaks": [
+         52,
+         92,
+         200,
+         251,
+         333,
+         158,
+         119,
+         222,
+         353,
+         376,
+         17,
+         272,
+         398,
+         303,
+         515,
+         420,
+         493,
+         445,
+         548,
+         466,
+         568
+      ],
+      "peaks_params": {
+         "distance": 20,
+         "prominence": 0,
+         "width": 0,
+         "height": 0,
+         "threshold": 0
+      },
+      "models_labels": [
+         "1"
+      ],
+      "fit_method": "Leastsq",
+      "fit_negative": false,
+      "max_ite": 200,
+      "baseline_history": [],
+      "models": {
+         "0": {
+            "Lorentzian": {
+               "ampli": {
+                  "value": 8181.546436913335,
+                  "min": 0,
+                  "max": Infinity,
+                  "vary": true,
+                  "expr": null
+               },
+               "x0": {
+                  "value": 591.270934265722,
+                  "min": 571.732422,
+                  "max": 611.732422,
+                  "vary": true,
+                  "expr": null
+               },
+               "fwhm": {
+                  "value": 14.531480484835823,
+                  "min": 0,
+                  "max": 200,
+                  "vary": true,
+                  "expr": null
+               }
+            }
+         }
+      },
+      "bkg_model": {
+         "Linear": {
+            "slope": {
+               "value": -4.573821895399302,
+               "min": -Infinity,
+               "max": Infinity,
+               "vary": true,
+               "expr": null
+            },
+            "intercept": {
+               "value": 4305.557699787311,
+               "min": -Infinity,
+               "max": Infinity,
+               "vary": true,
+               "expr": null
+            }
+         }
+      }
+   }
+}

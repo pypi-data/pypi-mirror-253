@@ -1,0 +1,32 @@
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 1086
+    # data points      = 575
+    # variables        = 15
+    chi-square         = 177288.231
+    reduced chi-square = 316.586127
+    Akaike info crit   = 3325.41819
+    Bayesian info crit = 3390.73374
+    R-squared          = 0.96726042
+##  Warning: uncertainties could not be estimated:
+    m02_fwhm:   at boundary
+    m02_x0:     at boundary
+    m03_x0:     at boundary
+    m04_x0:     at boundary
+    m05_x0:     at boundary
+[[Variables]]
+    m01_ampli:  979.037681 (init = 950.0121)
+    m01_fwhm:   9.89024830 (init = 1.669922)
+    m01_x0:     519.919492 (init = 519.8281)
+    m02_ampli:  50.9799193 (init = 79.05173)
+    m02_fwhm:   200.000000 (init = 1.669922)
+    m02_x0:     288.078125 (init = 308.0781)
+    m03_ampli:  40.4007749 (init = 82.18438)
+    m03_fwhm:   155.074406 (init = 1.669922)
+    m03_x0:     636.632813 (init = 616.6328)
+    m04_ampli:  75.4196914 (init = 85.32749)
+    m04_fwhm:   102.764627 (init = 1.669922)
+    m04_x0:     975.513605 (init = 955.5137)
+    m05_ampli:  113.003276 (init = 91.14588)
+    m05_fwhm:   24.2339057 (init = 1.669922)
+    m05_x0:     537.445313 (init = 557.4453)
