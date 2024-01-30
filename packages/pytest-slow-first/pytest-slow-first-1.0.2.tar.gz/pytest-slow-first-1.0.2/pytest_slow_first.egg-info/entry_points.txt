@@ -1,0 +1,2 @@
+[pytest11]
+slow-first = pytest_slow_first
