@@ -1,0 +1,182 @@
+[build-system]
+build-backend = "pdm.backend"
+requires = [
+    "pdm-backend",
+]
+
+[project]
+authors = [
+    { name = "Christian Gebbe", email = "" },
+]
+dependencies = [
+    "pandas",
+    "deepdiff",
+    "fsspec",
+    "BearDataClass",
+    "SQLalchemy",
+]
+description = ""
+name = "cachephant"
+readme = "README.md"
+requires-python = ">=3.11"
+version = "0.2.1"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/cgebbe/cachephant"
+
+[tool.commitizen]
+name = "cz_customize"
+tag_format = "$version"
+update_changelog_on_bump = true
+version_provider = "pep621"
+version_scheme = "pep440"
+
+[tool.commitizen.customize]
+bump_pattern = "^(feat|fix|ci|build|perf|refactor|chore|style|test|docs)"
+schema_pattern = "^(build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert|bump|)(\\(\\S+\\))?\\:?\\s.*"
+
+[tool.commitizen.customize.bump_map]
+feat = "MINOR"
+fix = "PATCH"
+ci = "PATCH"
+build = "PATCH"
+perf = "PATCH"
+refactor = "PATCH"
+chore = "PATCH"
+style = "PATCH"
+test = "PATCH"
+docs = "PATCH"
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = [
+    "assertpy",
+    "toolz",
+    "beardataclass",
+    "fsspec.*",
+    "deepdiff",
+    "sqlalchemy",
+]
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+excludes = [
+    "**/*_test.py",
+]
+
+[tool.pdm.dev-dependencies]
+bump = [
+    "commitizen",
+]
+check = [
+    "mypy",
+    "pandas-stubs",
+    "sqlalchemy-stubs",
+]
+dev = [
+    "ipython<8",
+    "ipykernel",
+    "pudb",
+    "pytest-pudb",
+]
+lint = [
+    "pre-commit",
+]
+sqlalchemy2-stubs = []
+test = [
+    "pytest",
+]
+
+[tool.pdm.scripts]
+check = "mypy src"
+lint = "pre-commit run --all-files"
+test = "pytest -vv src"
+
+[tool.pdm.scripts.all]
+composite = [
+    "lint",
+    "check",
+    "test",
+]
+
+[tool.pdm.scripts.dotenv]
+shell = "sed 's/=.*/=/' .env > .env.example"
+
+[tool.pdm.scripts.publish]
+cmd = "pdm publish -v -r pypi -u __token__ -P ${PYPI_TOKEN}"
+env_file = ".env"
+
+[tool.ruff]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+exclude = [
+    "tests/",
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+fixable = [
+    "ALL",
+]
+ignore = [
+    "D",
+    "ANN",
+    "TD",
+    "FIX",
+    "PD901",
+    "S301",
+]
+indent-width = 4
+line-length = 88
+select = [
+    "ALL",
+]
+unfixable = []
+
+[tool.ruff.format]
+indent-style = "space"
+line-ending = "auto"
+quote-style = "double"
+skip-magic-trailing-comma = false
+
+[tool.ruff.lint]
+fixable = [
+    "ALL",
+]
+ignore = [
+    "D",
+    "ANN",
+    "T201",
+    "T203",
+    "TD",
+    "FIX",
+    "S101",
+    "PD901",
+    "G004",
+]
+select = [
+    "ALL",
+]
+unfixable = []
