@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/ssebowa.egg-info/PKG-INFO
+src/ssebowa.egg-info/SOURCES.txt
+src/ssebowa.egg-info/dependency_links.txt
+src/ssebowa.egg-info/requires.txt
+src/ssebowa.egg-info/top_level.txt
