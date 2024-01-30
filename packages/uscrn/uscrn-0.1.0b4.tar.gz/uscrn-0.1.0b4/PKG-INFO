@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: uscrn
+Version: 0.1.0b4
+Summary: Load `U.S. Climate Reference Network <https://www.ncei.noaa.gov/access/crn/>`__ (USCRN) data.
+Author-email: zmoon <zachary.moon@noaa.gov>
+Requires-Python: ~=3.9
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: joblib
+Requires-Dist: numpy >=1.21
+Requires-Dist: pandas >=2,<3
+Requires-Dist: PyYAML
+Requires-Dist: requests
+Requires-Dist: xarray
+Requires-Dist: ipython ; extra == "dev"
+Requires-Dist: jupyterlab ; extra == "doc"
+Requires-Dist: matplotlib ; extra == "doc"
+Requires-Dist: myst-nb ; extra == "doc"
+Requires-Dist: myst-parser ; extra == "doc"
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: sphinx-book-theme ; extra == "doc"
+Requires-Dist: sphinx-click ; extra == "doc"
+Requires-Dist: sphinx-copybutton ; extra == "doc"
+Requires-Dist: fastparquet ; extra == "test"
+Requires-Dist: mypy ; extra == "test"
+Requires-Dist: netCDF4 ; extra == "test"
+Requires-Dist: pandas-stubs ; extra == "test"
+Requires-Dist: pyarrow ; extra == "test"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Project-URL: Home, https://github.com/zmoon/uscrn
+Project-URL: Source, https://github.com/zmoon/uscrn
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+# uscrn
+
+Easily load [U.S. Climate Reference Network](https://www.ncei.noaa.gov/access/crn/) (USCRN) data.
+
+[![Version on PyPI](https://img.shields.io/pypi/v/uscrn.svg)](https://pypi.org/project/uscrn/)
+[![CI status](https://github.com/zmoon/uscrn/actions/workflows/ci.yml/badge.svg)](https://github.com/zmoon/uscrn/actions/workflows/ci.yml)
+[![Documentation status](https://readthedocs.org/projects/uscrn/badge/?version=latest)](https://uscrn.readthedocs.io/en/latest/)
+[![Test coverage](https://codecov.io/gh/zmoon/uscrn/branch/main/graph/badge.svg)](https://app.codecov.io/gh/zmoon/uscrn)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/zmoon/uscrn/main.svg)](https://results.pre-commit.ci/latest/github/zmoon/uscrn/main)
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
+With `uscrn`, fetching and loading years of [data](https://www.ncei.noaa.gov/access/crn/qcdatasets.html) for all USCRN sites[^a] takes just one line of code[^b].
+
+Example:
+
+```python
+import uscrn
+
+df = uscrn.get_data(2019, "hourly", n_jobs=6)  # pandas.DataFrame
+
+ds = uscrn.to_xarray(df)  # xarray.Dataset, with soil depth dimension if applicable (hourly, daily)
+```
+
+Both `df` (pandas) and `ds` (xarray) include dataset and variable metadata.
+For `df`, these are in `df.attrs` and can be preserved by
+writing to Parquet with the PyArrow engine with pandas v2.1+.
+
+```python
+df.to_parquet("uscrn_2019_hourly.parquet", engine="pyarrow")
+```
+
+Conda install example[^c]:
+
+```sh
+conda create -n crn -c conda-forge python=3.10 joblib numpy pandas pyyaml requests xarray pyarrow netcdf4
+conda activate crn
+pip install --no-deps uscrn
+```
+
+[^a]: Use `uscrn.load_meta()` to load the site metadata table.
+[^b]: Not counting the `import` statement...
+[^c]: `uscrn` is not yet on conda-forge.
+
