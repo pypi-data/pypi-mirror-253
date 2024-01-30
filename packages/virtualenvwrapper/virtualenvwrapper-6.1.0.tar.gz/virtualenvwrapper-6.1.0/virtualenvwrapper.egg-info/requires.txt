@@ -1,0 +1,11 @@
+virtualenv
+virtualenv-clone
+stevedore
+
+[build]
+build
+twine
+check-python-versions
+
+[linter]
+flake8

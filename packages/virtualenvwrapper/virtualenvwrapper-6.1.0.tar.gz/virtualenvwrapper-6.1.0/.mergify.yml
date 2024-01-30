@@ -1,0 +1,98 @@
+pull_request_rules:
+
+  - name: Add CI label
+    conditions:
+      - or:
+          - "title~=^tox:"
+          - "title~=^ci:"
+          - "files~=tox.ini"
+          - "files~=tests"
+    actions:
+      label:
+        add:
+          - ci
+
+  - name: Add Mergify label
+    conditions:
+      - or:
+          - "title~=^mergify:"
+          - "files~=.mergify.yml$"
+    actions:
+      label:
+        add:
+          - mergify
+
+  - name: Add Documentation label
+    conditions:
+      - or:
+          - "title~=^docs:"
+          - "files~=docs"
+          - "files~=.rst$"
+          - "files~=.readthedocs.yaml$"
+    actions:
+      label:
+        add:
+          - documentation
+
+  - name: automatic approval for Dependabot pull requests
+    conditions:
+      - author=dependabot[bot]
+    actions:
+      review:
+        type: APPROVE
+        message: Automatically approving dependabot
+
+  - name: Add breaking-change label
+    # https://docs.openstack.org/pbr/latest/user/features.html
+    conditions:
+      - "body~=Sem-Ver: api-break"
+    actions:
+      label:
+        add:
+          - "breaking change"
+
+  - name: Add feature label
+    # https://docs.openstack.org/pbr/latest/user/features.html
+    conditions:
+      - "body~=Sem-Ver: feature"
+    actions:
+      label:
+        add:
+          - feature
+
+  - name: Add automatic-merge label
+    conditions:
+      - or:
+        - "author=dhellmann"
+        - "author=jasonamyers"
+      - "label!=mergify"
+    actions:
+      label:
+        add:
+          - automatic-merge
+
+  - name: Automatic merge on approval
+    conditions:
+      - and:
+        - "check-success=docs"
+        - "check-success=style (style)"
+        - "check-success=style (pkglint)"
+        - "check-success=Test macOS (3.8)"
+        - "check-success=Test macOS (3.9)"
+        - "check-success=Test macOS (3.10)"
+        - "check-success=Test macOS (3.11)"
+        - "check-success=Test macOS (3.12)"
+        - "check-success=Test Ubuntu (3.8)"
+        - "check-success=Test Ubuntu (3.9)"
+        - "check-success=Test Ubuntu (3.10)"
+        - "check-success=Test Ubuntu (3.11)"
+        - "check-success=Test Ubuntu (3.12)"
+        - "check-success=Test Zsh"
+        - "-draft"
+        - or:
+          - "#approved-reviews-by>=1"
+          - "author=dhellmann"
+          - "author=jasonamyers"
+    actions:
+      merge:
+        method: merge
