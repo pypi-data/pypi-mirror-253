@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ml_loggers
+Version: 1.1.0
+Summary: A collection of loggers for machine learning experiments.
+Project-URL: Homepage, https://github.com/serhez/ml-loggers
+Project-URL: Issues, https://github.com/serhez/ml-loggers/issues
+Author-email: Sergio Hernandez Gutierrez <contact.sergiohernandez@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: hydra-core
+Requires-Dist: numpy
+Requires-Dist: termcolor
+Requires-Dist: wandb
+Description-Content-Type: text/markdown
+
+# ML Loggers
+This package offers a collection of loggers well suited for machine learning experiments.
+
+## Built-in loggers
+At this moment, the supported loggers are:
+- File logger (`file_logger`): records logs to a file.
+- Console logger (`console_logger`): records logs to the console.
+- Weights & Biases logger (`wandb_logger`): sends logs to a W&B project; requires an API key.
+- Multi-logger (`multi_logger`): aggregates any/all of the above loggers to record the same messages through multiple channels.
+
+## Customized loggers
+You can extend the base class `Logger` in order to create a custom logger to suit your own needs.
