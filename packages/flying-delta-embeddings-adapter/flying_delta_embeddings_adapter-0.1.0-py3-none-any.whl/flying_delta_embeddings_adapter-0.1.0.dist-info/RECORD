@@ -1,0 +1,6 @@
+llama_index/embeddings/adapter/__init__.py,sha256=iU7J-MChs0UvuWiGFuZrneBtKBGa1TYxIsgMyimtf7g,108
+llama_index/embeddings/adapter/base.py,sha256=jMVK301zy1XUzX0tmGRcjEPTjEzq6mYybhFBJPE2iy4,4258
+llama_index/embeddings/adapter/utils.py,sha256=hd6e4MepHALpRNnKU14Ft0qntNszCjnd88ua6TKIFcE,5487
+flying_delta_embeddings_adapter-0.1.0.dist-info/METADATA,sha256=acF5ZrEjQ6ZfSATXaK6plltVb2HT-McAKaWMqh2lCl4,647
+flying_delta_embeddings_adapter-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flying_delta_embeddings_adapter-0.1.0.dist-info/RECORD,,
