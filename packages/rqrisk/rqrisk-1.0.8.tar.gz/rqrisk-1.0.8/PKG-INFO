@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: rqrisk
+Version: 1.0.8
+Summary: risk calc
+Home-page: https://www.ricequant.com/
+Author: Ricequant
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE.txt
