@@ -1,0 +1,10 @@
+setup.py
+picswaifu/__init__.py
+picswaifu/api_types.py
+picswaifu/errors.py
+picswaifu/utils.py
+picswaifu.egg-info/PKG-INFO
+picswaifu.egg-info/SOURCES.txt
+picswaifu.egg-info/dependency_links.txt
+picswaifu.egg-info/requires.txt
+picswaifu.egg-info/top_level.txt
