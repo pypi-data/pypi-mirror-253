@@ -1,0 +1,2 @@
+Version: 1.5.2
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-s86q4c2r\\cp37-win32\\build\\venv\\Scripts\\delvewheel', 'repair', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-s86q4c2r\\cp37-win32\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-s86q4c2r\\cp37-win32\\built_wheel\\pypqc-0.0.6.1.post1-py3-none-win32.whl']
