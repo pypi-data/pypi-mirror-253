@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: sleepness
+Version: 0.0.2
+Summary: When you require an sleepness session, use **sleepness**.
+Author: Tolo Palmer
+License: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: PyAutoGUI ==0.9.54
+Requires-Dist: tqdm ==4.66.1
+Provides-Extra: testing
+Requires-Dist: pytest ==7.2.0 ; extra == 'testing'
+
+Sleepless
+=========
+
+When you require an sleepless session, use **sleepless**.
