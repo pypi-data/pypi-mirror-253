@@ -1,0 +1,9 @@
+pclib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pclib/optim/__init__.py,sha256=u-b4JEC4WNmdnybE56XaSTzCPjme-ygxBa-Sz8gjm6k,100
+pclib/optim/eval.py,sha256=Vqi7__aoiQgMGgKx2LQuyvs0y3NMbcL84RMrmuFkdC4,1951
+pclib/optim/train.py,sha256=Ayla_dd06WacOGGNh6C8g9quu_RhzvH0YY3nx1qQy5Q,15738
+pclib-1.0.0b1.dist-info/LICENSE,sha256=Hj3oR2Q0NSReDd4KzcEegS3JvXkozTYEbB5YqMiH0zc,1088
+pclib-1.0.0b1.dist-info/METADATA,sha256=u1XP5JNm_4Xrok2WcIPvZVYoX8OXR0ucTXdVprv9zRc,1310
+pclib-1.0.0b1.dist-info/WHEEL,sha256=5sUXSg9e4bi7lTLOHcm6QEYwO5TIF1TNbTSVFVjcJcc,92
+pclib-1.0.0b1.dist-info/top_level.txt,sha256=94PGWvIMlnfGDzsB7FlQUucwPtwKf2BhsPlZ_hgbhQM,6
+pclib-1.0.0b1.dist-info/RECORD,,
