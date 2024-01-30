@@ -1,0 +1,27 @@
+{
+  "manifest_version":3,
+  "name": "Comment Search",
+  "version": "0.1",
+  "description": "User-Interface to interact with the Comment-Centric Comment Recommendation API",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "author": "<AUTHOR_NAME>",
+   "action": {
+    "default_popup": "index.html"
+  }
+}
