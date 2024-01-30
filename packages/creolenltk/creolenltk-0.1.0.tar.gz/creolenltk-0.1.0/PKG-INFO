@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: creolenltk
+Version: 0.1.0
+Summary: A Python library for Creole text preprocessing
+Home-page: https://github.com/jcblanc2/CreoleNLTK.git
+Author: John Clayton
+Author-email: jclaytonblanc@gmail.com
+Keywords: python,nlp,creole,natural language processing,text preprocessing
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+A Python library designed for preprocessing Creole text. The library includes various functions and tools to clean, tokenize, and prepare text data for natural language processing (NLP) tasks. Dependencies include BeautifulSoup4 and NLTK.
