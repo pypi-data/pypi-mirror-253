@@ -1,0 +1,8 @@
+setup.py
+spotify_login/__init__.py
+spotify_login/package.py
+spotify_login.egg-info/PKG-INFO
+spotify_login.egg-info/SOURCES.txt
+spotify_login.egg-info/dependency_links.txt
+spotify_login.egg-info/requires.txt
+spotify_login.egg-info/top_level.txt
