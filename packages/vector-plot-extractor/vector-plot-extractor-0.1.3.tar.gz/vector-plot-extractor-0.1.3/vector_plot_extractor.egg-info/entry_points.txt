@@ -1,0 +1,2 @@
+[console_scripts]
+vpextract = vpextractor:vpextract
