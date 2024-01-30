@@ -1,0 +1,28 @@
+[project]
+name = "nicolasflamel.mwc-pay"
+version = "0.0.7"
+authors = [
+	{name="Nicolas Flamel"}
+]
+description = "Python SDK for MWC Pay"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent"
+]
+keywords = [
+	"MWC Pay",
+	"MWC",
+	"MimbleWimble Coin",
+	"Mimblewimble",
+	"Payment Processor",
+	"Cryptocurrency",
+	"Crypto"
+]
+
+[project.urls]
+Homepage = "https://github.com/NicolasFlamel1/MWC-Pay-Python-SDK"
+Issues = "https://github.com/NicolasFlamel1/MWC-Pay-Python-SDK/issues"

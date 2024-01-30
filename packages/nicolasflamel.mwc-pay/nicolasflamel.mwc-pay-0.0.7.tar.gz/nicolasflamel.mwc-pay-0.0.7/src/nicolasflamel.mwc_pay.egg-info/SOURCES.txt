@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/nicolasflamel/__init__.py
+src/nicolasflamel/mwc_pay.py
+src/nicolasflamel.mwc_pay.egg-info/PKG-INFO
+src/nicolasflamel.mwc_pay.egg-info/SOURCES.txt
+src/nicolasflamel.mwc_pay.egg-info/dependency_links.txt
+src/nicolasflamel.mwc_pay.egg-info/top_level.txt
