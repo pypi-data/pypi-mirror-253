@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: libobj
+Version: 570
+Summary: object library
+Author-email: libbot <libbotx@gmail.com>
+License: Public Domain
+Project-URL: home, https://pypi.org/project/libobj
+Project-URL: bugs, https://github.com/botlibx/libobj/issues
+Project-URL: source, https://github.com/botlibx/libobj
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: Public Domain
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
+
+NAME
+
+::
+
+   LIBOBJ - object library
+
+
+DESCRIPTION
+
+::
+
+   LIBOBJ is a python3 library providing all the tools to program with
+   objects. It has a obj package with a core Object that provides a
+   clean namespace (without methods) that allows for saving to/from
+   disk. LIBOBJ uses this to provide an object store to store objects
+   and have them query-able with iterators over collection of objects.
+   Saving takes place in a time stamped, full qualified name of the
+   type in the pathname, that allows for easy reconstruction of
+   objects. A object broker is also there so you can cache objects
+   and have them servicable on a id string.
+
+   LIBOBJ is Public Domain.
+
+
+SYNOPSIS
+
+::
+
+   >>> from obj import Object, read, write
+   >>> o = Object()
+   >>> o.a = "b"
+   >>> write(o, "test")
+   >>> oo = Object()
+   >>> read(oo, "test")
+   >>> oo
+   {"a": "b"}  
+
+
+INSTALL
+
+::
+
+   $ pip install libobj
+
+
+AUTHOR
+
+::
+
+   libbot <libbotx@gmail.com>
+
+
+COPYRIGHT
+
+::
+
+   LIBOBJ is placed in the Public Domain.
