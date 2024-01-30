@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+spanking/__init__.py
+spanking/llm.py
+spanking/main.py
+spanking.egg-info/PKG-INFO
+spanking.egg-info/SOURCES.txt
+spanking.egg-info/dependency_links.txt
+spanking.egg-info/entry_points.txt
+spanking.egg-info/top_level.txt
