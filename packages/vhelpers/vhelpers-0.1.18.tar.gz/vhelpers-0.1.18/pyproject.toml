@@ -1,0 +1,87 @@
+[tool.poetry]
+name = "vhelpers"
+version = "0.1.18"
+description = "Often used functions in vladimirs-git projects"
+authors = ["Vladimir Prusakov <vladimir.prusakovs@gmail.com>"]
+readme = "README.rst"
+license = "MIT"
+homepage = "https://github.com/vladimirs-git/vhelpers"
+repository = "https://github.com/vladimirs-git/vhelpers"
+keywords = []
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Natural Language :: English",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tomli = "^2.0.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.2"
+
+
+[tool.poetry.group.dev.dependencies]
+dictdiffer = "^0.9.0"
+mypy = "^1.6.1"
+pygments = "^2.16.1"
+pylint = "^3.0.1"
+pytest = "^7.4.2"
+pytest-cov = "^4.1.0"
+restructuredtext-lint = "^1.4.0"
+ruff = "^0.1.8"
+tabulate = "^0.9.0"
+
+[tool.poetry.extras]
+test = ["pytest"]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/vladimirs-git/vhelpers/issues"
+"Download URL" = "https://github.com/vladimirs-git/vhelpers/archive/refs/tags/0.1.18.tar.gz"
+
+[tool.setuptools.package-data]
+vhelpers = ["py.typed"]
+
+[tool.pylint]
+max-line-length = 100
+disable = "fixme"
+
+[tool.pylint.message_control]
+enable = ["too-many-arguments", "too-many-locals"]
+max-args = 6
+max-locals = 16
+
+[tool.mypy]
+python_version = "3.8"
+
+[tool.ruff]
+exclude = [
+    ".git",
+    ".idea",
+    ".mypy_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".venv",
+    "_notes",
+    "dist",
+    "demo",
+    "temp",
+    "tmp",
+    "venv",
+]
+line-length = 100
+indent-width = 4
+target-version = "py38"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false  # arguments on separate lines
+line-ending = "auto"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
