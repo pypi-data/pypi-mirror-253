@@ -1,0 +1,10 @@
+README.md
+setup.py
+tests/__init__.py
+tests/test_text_functions.py
+xrx_text_utils/__init__.py
+xrx_text_utils/text_functions.py
+xrx_text_utils.egg-info/PKG-INFO
+xrx_text_utils.egg-info/SOURCES.txt
+xrx_text_utils.egg-info/dependency_links.txt
+xrx_text_utils.egg-info/top_level.txt
