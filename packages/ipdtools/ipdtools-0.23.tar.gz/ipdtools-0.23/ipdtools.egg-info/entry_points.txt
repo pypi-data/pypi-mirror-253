@@ -1,0 +1,2 @@
+[console_scripts]
+ipdtools = ipdtools.launchers.ipdtools_launcher:main
