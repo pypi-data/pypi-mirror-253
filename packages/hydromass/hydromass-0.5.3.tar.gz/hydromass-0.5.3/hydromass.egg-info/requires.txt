@@ -1,0 +1,9 @@
+numpy
+scipy
+astropy
+matplotlib
+pymc
+pytensor
+pyproffit
+numpyro
+corner
