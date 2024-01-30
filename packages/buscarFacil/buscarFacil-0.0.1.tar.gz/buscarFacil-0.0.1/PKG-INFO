@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: buscarFacil
+Version: 0.0.1
+Summary: Busca produtos na web
+Author: Alison
+Keywords: python,busca,web,produto,preço,mercado livre,magazine luiza
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+Realiza uma busca por produtos nos sites, filtrando por nome e valor máximo.
