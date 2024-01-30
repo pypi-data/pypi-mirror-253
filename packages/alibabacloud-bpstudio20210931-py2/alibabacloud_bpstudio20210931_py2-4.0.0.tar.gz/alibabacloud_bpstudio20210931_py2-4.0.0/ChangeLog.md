@@ -1,0 +1,21 @@
+2024-01-10 Version: 3.1.0
+- Generated python2 2021-09-31 for BPStudio.
+
+2023-07-06 Version: 3.0.0
+- Fix bug asyncExecute Error.
+
+2023-06-20 Version: 2.0.0
+- Fix bug asyncExecute Error.
+
+2023-05-22 Version: 1.0.3
+- Fix bug asyncExecute Error.
+
+2023-03-31 Version: 1.0.2
+- Add Remark.
+
+2023-03-14 Version: 1.0.1
+- Add Remark.
+
+2022-10-21 Version: 1.0.0
+- Add Remark.
+
