@@ -1,0 +1,11 @@
+torchgating/__init__.py,sha256=H3jUEz4b0NtxaEwIDspveiKktavPJ4qtORzKgp5LXvg,1304
+torchgating/run.py,sha256=4WvKRGMq3w9xlPRGNuXyTjxBqk_FL3KMjlg-5YkuJzA,8115
+torchgating/torchgating.py,sha256=UNDHhCIwYUFH4s7_2Lpg-tzkODO5r3iTw9z_MH9PouI,10262
+torchgating/utils.py,sha256=h1sJ5mVDcblIFgkQU10vXF04udbDFB5vv1FK02neWRE,2600
+torchgating/version.py,sha256=tC8o4q8apit6Wf4dZGT8eDKdiI_qioPP18CwGH60Fsc,50
+torchgating-0.1.3b0.dist-info/LICENSE,sha256=HFAl7G8M4Ea9wHm1XRPS5I9AaXMIm5y9wPRsoo1gdRQ,1067
+torchgating-0.1.3b0.dist-info/METADATA,sha256=NZTyt_zEkXcLEhwx--9gTDCqGtB7vZwQrSmZ6OB7wwA,8700
+torchgating-0.1.3b0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+torchgating-0.1.3b0.dist-info/entry_points.txt,sha256=UY_wY5xC26MxUOVc8qOGVD-zV-tCBoUq-NjdF9du3ko,53
+torchgating-0.1.3b0.dist-info/top_level.txt,sha256=eCJF-vZSH7mWPqBegDvtU3GYsOuXqP5UEsJYauUuRr4,12
+torchgating-0.1.3b0.dist-info/RECORD,,
