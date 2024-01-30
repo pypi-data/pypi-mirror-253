@@ -1,0 +1,3 @@
+[flake8.extension]
+LG01 = flake8_logger.checker:LoggerChecker
+

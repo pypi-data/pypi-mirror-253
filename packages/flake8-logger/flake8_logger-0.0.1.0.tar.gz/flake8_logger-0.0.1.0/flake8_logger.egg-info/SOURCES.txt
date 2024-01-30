@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+.github/workflows/ci.yaml
+flake8_logger/__init__.py
+flake8_logger/checker.py
+flake8_logger/version.py
+flake8_logger.egg-info/PKG-INFO
+flake8_logger.egg-info/SOURCES.txt
+flake8_logger.egg-info/dependency_links.txt
+flake8_logger.egg-info/entry_points.txt
+flake8_logger.egg-info/not-zip-safe
+flake8_logger.egg-info/requires.txt
+flake8_logger.egg-info/top_level.txt
+test/test_flake8.py
