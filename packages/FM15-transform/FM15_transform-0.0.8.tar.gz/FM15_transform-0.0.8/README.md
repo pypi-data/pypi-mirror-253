@@ -1,0 +1,45 @@
+# FM15_transform
+
+FM15_transform provides functionality to transform raw FM15 (METAR) TAC messages
+into their corresponding bufr4 translations as well as extraction of geojson records
+of the individual observations formatted for use by a WIS2 node.
+
+## Installation
+
+### Requirements
+- Python 3.7 and above
+- [ecCodes](https://confluence.ecmwf.int/display/ECC)
+
+### Dependencies
+
+Dependencies are listed in requirements.txt. Dependencies are automatically installed during FM15_transform installation.
+
+### Environment Variable Configuration
+
+The cfunits library contains UDUNITS-2. Per the documentation on cfunits found here
+
+### pip
+
+Install latest stable version from [PyPI](https://pypi.org/project/FM15_transform).
+
+```bash
+pip3 install FM15_transform
+```
+
+## Transform FM15 files from the command line
+
+```bash
+#   basic cli command to transform TAC file of metar(s) and print resulting geojson records
+#   both month and year as int values
+transform-file example_metars.txt month year
+```
+
+## Releasing
+
+```bash
+#   upload to PyPI
+#   make sure to update version number in pyproject.toml using vim or another IDE
+rm -fr dist *.egg-info
+python3 -m build
+twine upload dist/*
+```
