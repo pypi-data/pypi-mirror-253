@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+simpleloggy/simpleloggy.py
+simpleloggy.egg-info/PKG-INFO
+simpleloggy.egg-info/SOURCES.txt
+simpleloggy.egg-info/dependency_links.txt
+simpleloggy.egg-info/not-zip-safe
+simpleloggy.egg-info/top_level.txt
