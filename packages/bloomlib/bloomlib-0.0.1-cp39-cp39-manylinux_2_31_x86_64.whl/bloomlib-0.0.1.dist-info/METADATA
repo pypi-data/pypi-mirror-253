@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bloomlib
+Version: 0.0.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Home-Page: https://www.mikehuls.com
+Author: Mike Huls
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+Library that offers all types of Bloom filters, implemented in Rust
