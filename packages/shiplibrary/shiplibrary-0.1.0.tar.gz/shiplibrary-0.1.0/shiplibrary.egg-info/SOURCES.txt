@@ -1,0 +1,10 @@
+license.txt
+pyproject.toml
+setup.py
+shiplibrary/__init__.py
+shiplibrary/module_test.py
+shiplibrary.egg-info/PKG-INFO
+shiplibrary.egg-info/SOURCES.txt
+shiplibrary.egg-info/dependency_links.txt
+shiplibrary.egg-info/requires.txt
+shiplibrary.egg-info/top_level.txt
