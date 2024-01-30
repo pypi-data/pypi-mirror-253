@@ -1,0 +1,150 @@
+Metadata-Version: 2.1
+Name: certbot_dns_nicru
+Version: 1.0.2
+Summary: This plugin for certbot, configures a DNS TXT record to respond to a dns-01 challenge using the nic.ru Remote REST API.
+Home-page: https://github.com/shizacat/certbot-dns-nicru
+Author: Alexey Matveev
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: acme >=0.29.0
+Requires-Dist: certbot >=0.34.0
+Requires-Dist: setuptools
+Requires-Dist: requests
+Requires-Dist: zope.interface
+Requires-Dist: sh-nic-api >=1.0.3
+
+# certbot-dns-nicru
+
+NICru DNS Authenticator plugin for Certbot
+
+This plugin automates the process of completing a ``dns-01`` challenge by
+creating, and subsequently removing, TXT records using the nic.ru Remote API.
+
+# Installation
+
+```bash
+pip install certbot-dns-nicru
+```
+
+
+# Named Arguments
+
+To start using DNS authentication for nicru, pass the following arguments on
+certbot's command line:
+
+|||
+|--|--|
+|``--authenticator dns-nicru`` | nicru config INI file. (Required) |
+|``--dns-nicru-propagation-seconds <second>`` | waiting time for DNS to propagate before asking |
+
+
+# Credentials
+
+An example ``credentials.ini`` file:
+
+```ini
+dns_nicru_client_id = application-id
+dns_nicru_client_secret = application-token
+dns_nicru_username = 0001110/NIC-D
+dns_nicru_password = password
+
+dns_nicru_scope = .+:.+/zones/example.com(/.+)?
+
+dns_nicru_service = DNS_SERVICE_NAME
+dns_nicru_zone = example.com
+```
+
+Where:
+- application-id, application-token - credentials for oath 2.0, they were got after [registration](https://www.nic.ru/manager/oauth.cgi?step=oauth.app_register) application.
+- nicru_username, nicru_passoword - credentials for access to nic.ru
+- nicru_service - the name of service, it can be taken from page: https://www.nic.ru/manager/services.cgi?step=srv.my_dns
+
+The path to this file can be provided interactively or using the
+``--dns-nicru-credentials`` command-line argument. Certbot
+records the path to this file for use during renewal, but does not store the
+file's contents.
+
+**CAUTION:** You should protect these API credentials as you would the
+password to your ispconfig account. Users who can read this file can use these
+credentials to issue arbitrary API calls on your behalf. Users who can cause
+Certbot to run using these credentials can complete a ``dns-01`` challenge to
+acquire new certificates or revoke existing certificates for associated
+domains, even if those domains aren't being managed by this server.
+
+Certbot will emit a warning if it detects that the credentials file can be
+accessed by other users on your system. The warning reads "Unsafe permissions
+on credentials configuration file", followed by the path to the credentials
+file. This warning will be emitted each time Certbot uses the credentials file,
+including for renewal, and cannot be silenced except by addressing the issue
+(e.g., by using a command like ``chmod 600`` to restrict access to the file).
+
+
+## Examples
+
+To acquire a single certificate for both ``example.com`` and
+``*.example.com``, waiting 900 seconds for DNS propagation:
+
+```bash
+certbot certonly \
+    --authenticator dns-nicru \
+    --dns-nicru-credentials /etc/letsencrypt/.secrets/domain.tld.ini \
+    --dns-nicru-propagation-seconds 300 \
+    --server https://acme-v02.api.letsencrypt.org/directory \
+    --agree-tos \
+    --rsa-key-size 4096 \
+    -d 'example.com' \
+    -d '*.example.com'
+```
+
+# Docker
+
+
+In order to create a docker container with a certbot-dns-ispconfig installation,
+create an empty directory with the following ``Dockerfile``:
+
+```docker
+FROM certbot/certbot
+RUN pip install certbot-dns-nicru
+```
+
+Proceed to build the image:
+```bash
+docker build -t certbot/dns-nicru .
+```
+
+Once that's finished, the application can be run as follows:
+```
+docker run --rm \
+    -v /var/lib/letsencrypt:/var/lib/letsencrypt \
+    -v /etc/letsencrypt:/etc/letsencrypt \
+    --cap-drop=all \
+    certbot/dns-nicru certonly \
+    --authenticator dns-nicru \
+    --dns-nicru-propagation-seconds 300 \
+    --dns-nicru-credentials /etc/letsencrypt/.secrets/domain.tld.ini \
+    --no-self-upgrade \
+    --keep-until-expiring --non-interactive --expand \
+    --server https://acme-v02.api.letsencrypt.org/directory \
+    -d example.com -d '*.example.com'
+```
+
+It is suggested to secure the folder as follows:
+```bash
+chown root:root /etc/letsencrypt/.secrets
+chmod 600 /etc/letsencrypt/.secrets
+```
