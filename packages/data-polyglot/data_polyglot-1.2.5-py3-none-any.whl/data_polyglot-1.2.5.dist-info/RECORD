@@ -1,0 +1,10 @@
+data_polyglot/__init__.py,sha256=Z16qaTJD3C4ODAwhvumWg09K84k101VaPNnMHrjO2u8,179
+data_polyglot/constants.py,sha256=gyHPLxV3FJyApa74n3zu01k53KCJ8CkW-9ssbIMwUtc,190
+data_polyglot/serializable.py,sha256=8EOwm2pDtP3RHdI92GY6vWYnwVDvF8Z3-HbcQrXPHTA,17441
+data_polyglot/table_data.py,sha256=sxjy3M1ekB6Qq7KA45nQdfg0UGr_zmo0OJQU4Akbsfc,6364
+data_polyglot/storage/local_storage.py,sha256=wuPYrhBD52WnzkLOi4ajLRXp5833L9_NOZggyZxpqxg,6276
+data_polyglot/storage/storage.py,sha256=yJcP_2IrfikiiTFJPnJwOUSMOzNkNidBpz4SNO9tCfA,387
+data_polyglot-1.2.5.dist-info/METADATA,sha256=Ix1w-qLI4H-8kfQwNwSZoNrV0QkxgtFK0FLTkpmcijQ,8271
+data_polyglot-1.2.5.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+data_polyglot-1.2.5.dist-info/licenses/LICENSE,sha256=UzEU0TabT9kRBnJLDgD__ZXDWGX7DvMDf4UEB1z0s2o,11343
+data_polyglot-1.2.5.dist-info/RECORD,,
