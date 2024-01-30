@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: recurse-tree-process
+Version: 0.0.1
+Summary: A functional util for generic recursive tree processing
+Author: Markus Peitl
+Author-email: office@markuspeitl.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# A Functional util for recursive tree processing
+
