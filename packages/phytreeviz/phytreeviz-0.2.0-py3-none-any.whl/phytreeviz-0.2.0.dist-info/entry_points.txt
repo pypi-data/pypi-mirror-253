@@ -1,0 +1,3 @@
+[console_scripts]
+phytreeviz=phytreeviz.scripts:cli.main
+

@@ -1,0 +1,13 @@
+phytreeviz/__init__.py,sha256=HpI7vSbmpgapH5V9AnW3uintn9NJL64nvO9fcKpzzZE,453
+phytreeviz/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phytreeviz/scripts/cli.py,sha256=IFZNjh4j704d97Z-Wn7kekRyo8uuZtGQ-1avvS9m3Po,4716
+phytreeviz/treeviz.py,sha256=W8g-FqTFjp_YMbUKbK-BkwNCK_Qp9SIxbqPxCDR7NWY,48280
+phytreeviz/utils/__init__.py,sha256=z9AqwPLNFiJRnUZ-yd9ZTBfJUymi-7gU_8tPwQYFdrg,835
+phytreeviz/utils/example_data/large_example.nwk,sha256=StyRSMWooPofVf_jqjVpBGc-36MxHnB4XRemJQwr01I,7286
+phytreeviz/utils/example_data/medium_example.nwk,sha256=a15Ms6Qn8F080QZvSERoIbxQBKpzVJgoaUOCpos4PM8,806
+phytreeviz/utils/example_data/small_example.nwk,sha256=CeJEm_9N2KTmcETIibXl42ReRXvhVsN1bTg-zl6sDgQ,235
+phytreeviz-0.2.0.dist-info/LICENSE,sha256=zPEuCZKVleQ-cyg2kEN1-w2sHzddeLgCTkd73nqsX24,1062
+phytreeviz-0.2.0.dist-info/METADATA,sha256=EzaF5PUUHN_x6TPNDUdEbEzxnVVMQbEoDi1Z-lkGc98,7561
+phytreeviz-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+phytreeviz-0.2.0.dist-info/entry_points.txt,sha256=QBKpltYNWeNdCuYtQ8BI1cd6MAnFGeSaM1JRpvrdhw8,58
+phytreeviz-0.2.0.dist-info/RECORD,,
