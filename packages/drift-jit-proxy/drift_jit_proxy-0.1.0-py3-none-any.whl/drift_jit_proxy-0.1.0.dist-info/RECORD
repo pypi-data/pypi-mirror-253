@@ -1,0 +1,8 @@
+jit_proxy/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+jit_proxy/jit_proxy_client.py,sha256=Bofb6pdSu9i7rC-yyU2MWHNQk2ILsThJLDKD_Dn7uDk,5727
+jit_proxy/jitter/base_jitter.py,sha256=YVDpaXc9krsgb3_k6GdImVe-fv6fQkgmfqjWMkfiyiM,7551
+jit_proxy/jitter/jitter_shotgun.py,sha256=cxxf6nPS9_g4P-At-IeJuVPKgT2ZOK7gK2q3M_BQSCc,4079
+jit_proxy/jitter/jitter_sniper.py,sha256=j2YW4IKPOG5hcB3YgacpAjaJnZhqDlc1DJfsSK6w33Q,13072
+drift_jit_proxy-0.1.0.dist-info/METADATA,sha256=76ZgFKYQ-_JeSGndoP453UO0m7U-TZK8i-liu7tg2s0,2457
+drift_jit_proxy-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+drift_jit_proxy-0.1.0.dist-info/RECORD,,
