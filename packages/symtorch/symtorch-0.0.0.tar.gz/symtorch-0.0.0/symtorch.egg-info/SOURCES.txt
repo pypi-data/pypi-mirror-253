@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+symtorch.py
+symtorch.egg-info/PKG-INFO
+symtorch.egg-info/SOURCES.txt
+symtorch.egg-info/dependency_links.txt
+symtorch.egg-info/requires.txt
+symtorch.egg-info/top_level.txt

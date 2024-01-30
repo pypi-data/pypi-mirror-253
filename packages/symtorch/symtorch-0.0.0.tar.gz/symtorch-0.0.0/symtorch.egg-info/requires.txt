@@ -1,0 +1,14 @@
+torch
+sympy
+numpy
+
+[dev]
+notebook
+pytest
+pytest-cov
+bumpver
+ruff
+
+[publish]
+build
+twine
