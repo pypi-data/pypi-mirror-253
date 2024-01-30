@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "chatgpt-command"
+version = "0.1.0"
+description = ""
+authors = ["Juan Gonzalez <jrg2156@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tiktoken = "^0.5.2"
+openai = "^1.10.0"
+psutil = "^5.9.8"
+
+[tool.poetry.scripts]
+chatgpt = "chatgpt_command:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
