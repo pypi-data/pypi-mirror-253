@@ -1,0 +1,6 @@
+README.md
+setup.py
+tarushi_topsis.egg-info/PKG-INFO
+tarushi_topsis.egg-info/SOURCES.txt
+tarushi_topsis.egg-info/dependency_links.txt
+tarushi_topsis.egg-info/top_level.txt
