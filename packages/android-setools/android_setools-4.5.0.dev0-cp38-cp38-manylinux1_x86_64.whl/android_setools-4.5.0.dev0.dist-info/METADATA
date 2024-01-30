@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: android-setools
+Version: 4.5.0.dev0
+Summary: Android SELinux policy analysis tools.
+Home-page: https://github.com/mkomet/setools
+Author: Meir Komet
+Author-email: mskomet1@gmail.com
+License: GPLv2+, LGPLv2.1+
+Keywords: SELinux SETools policy analysis tools seinfo sesearch sediff sedta seinfoflow apol
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Requires-Dist: setuptools
+Requires-Dist: PyQt5
+Requires-Dist: networkx >=2.0
+Provides-Extra: analysis
+Requires-Dist: networkx >=2.0 ; extra == 'analysis'
+Provides-Extra: test
+Requires-Dist: tox ; extra == 'test'
+
+UNKNOWN
+
+

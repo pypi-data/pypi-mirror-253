@@ -1,0 +1,125 @@
+.\" Copyright (c) 2016 Tresys Technology, LLC.  All rights reserved.
+.TH sesearch 1 2016-02-20 "SELinux Project" "SETools: SELinux Policy Analysis Tools"
+
+.SH NAME
+sesearch \- SELinux policy query tool
+
+.SH SYNOPSIS
+\fBsesearch\fR [OPTIONS] [OPTIONS] [EXPRESSION] [POLICY]
+
+.SH DESCRIPTION
+\fBsesearch\fR allows the user to search the rules in a SELinux policy.
+
+.SH POLICY
+.PP
+A single file containing a binary policy. This file is usually named by version on Linux systems, for example, \fIpolicy.30\fR. This file is usually named \fIsepolicy\fR on Android systems.
+If no policy file is provided, \fBsesearch\fR will search for the policy running on the current
+system. If no policy can be found, \fBsesearch\fR will print an error message and exit.
+
+.SH EXPRESSIONS
+The user may specify an expression containing values for a given field(s) in a rule.
+If no expression is specified or if none of the specified fields apply to a given rule type,
+all rules of that type are considered to match the expression.
+
+.SS Type Enforcement Rule Types
+.IP "-A"
+Find allow and allowxperm rules.
+.IP "--allow"
+Find allow rules.
+.IP "--auditallow"
+Find auditallow rules.
+.IP "--dontaudit"
+Find dontaudit rules.
+.IP "--allowxperm"
+Find allowxperm rules.
+.IP "--auditallowxperm"
+Find auditallowxperm rules.
+.IP "--dontauditxperm"
+Find dontauditxperm rules.
+.IP "-T, --type_transition"
+Find type_transition rules.
+.IP "--type_member"
+Find type_member rules.
+.IP "--type_change"
+Find type_change rules.
+
+.SS RBAC Rule Types
+.IP "--role_allow"
+Find role allow rules.
+.IP "--role_transition"
+Find role_transition rules.
+.IP "Note: TE/MLS rule searches cannot be mixed with RBAC rule searches"
+
+.SS MLS Rule Types
+.IP "--range_transition"
+Find range_transition rules.
+
+.SS Rule Fields
+.IP "-s NAME, --source NAME"
+Find rules with NAME as their source type/role.
+.IP "-t NAME, --target NAME"
+Find rules with NAME as their target type/role.
+.IP "-D NAME, --default NAME"
+Find rules with NAME as their default type/role/level.
+.IP "-c NAME, --class NAME"
+Find rules with NAME as their object class.
+.IP "-p P1[,P2,...] --perm P1[,P2...]"
+Find rules with at least one of the specified permissions.
+Multiple permissions may be specified as a comma-separated list.
+.IP "-b BOOL[,B2,...], --bool BOOL[,B2,...]"
+Find conditional rules with the named Boolean in their conditional expression.
+Multiple Booleans may be specified as a comma-separated list.
+This option will include rules in both the true and false lists of the conditional.
+
+.SS Search Options
+The following additional options modify how the search is performed.
+.IP "-ds"
+A matching rule must have the specified source attribute/type/role explicitly, instead of matching by attribute contents.
+.IP "-dt"
+A matching rule must have the specified target attribute/type/role explicitly, instead of matching by attribute contents.
+.IP "-eb"
+A matching rule must have all specified Booleans, instead of matching any of the specified Boolean.
+.IP "-ep"
+A matching rule must have exactly the specified permissions, instead of matching any of the specified permission.
+.IP "-ex"
+A matching rule must have exactly the specified extended permissions, instead of matching any listed extended permission.
+.IP "-Sp"
+A matching rule must have permissions where are a superset of the specified permissions, instead of matching any of the permissions.
+.IP "-rs"
+Use regular expression for matching the source type/role.
+.IP "-rt"
+Use regular expression for matching the target type/role.
+.IP "-rc"
+Use regular expression for matching the object class.
+.IP "-rd"
+Use regular expression for matching the default type/role.
+.IP "-rb"
+Use regular expression for matching Booleans.
+
+.SH OPTIONS
+.IP "-h, --help"
+Print help information and exit.
+.IP "--version"
+Print version information and exit.
+.IP "-v, --verbose"
+Print additional informational messages.
+.IP "--debug"
+Enable debugging output.
+
+.SH EXAMPLE
+.nf
+List allow (and allowxperm) rules for accessing files labeled container_file_t from domains with attribute container_domain
+# sesearch -A -s container_domain -t container_file_t -c file
+List allow and dontaudit rules for accessing chr_files labeled container_file_t, that are controlled by boolean container_use_devices
+# sesearch -A --dontaudit -t container_file_t -c chr_file -b container_use_devices
+List dontaudit rules assigned via application_domain_type attribute (rules concerning specific types with that attribute are excluded)
+# sesearch --dontaudit -s application_domain_type -ds
+
+.SH AUTHOR
+Chris PeBenito <pebenito@ieee.org>
+
+.SH BUGS
+Please report bugs via the SETools bug tracker, https://github.com/SELinuxProject/setools/issues
+
+.SH SEE ALSO
+apol(1), sediff(1), sedta(1), seinfo(1), seinfoflow(1)
