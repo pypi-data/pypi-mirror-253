@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "not_so_evil_package_spaceylad"
+version = "0.0.6"
+authors = [
+  { name="Stian Kvålshagen", email="stikvaa@gmail.com" },
+]
+description = "A small library created to experiment with evil libraries"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/SpaceyLad"
+Issues = "https://github.com/SpaceyLad"
