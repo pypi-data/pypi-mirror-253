@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+import os
+import subprocess
+from sys import platform
+
+
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def run_cmd(cmd):
+    try:
+        output = subprocess.check_output(
+            cmd.split(" "), stderr=subprocess.STDOUT
+        ).decode()
+    except subprocess.CalledProcessError as e:
+        output = e.output.decode()
+        raise RuntimeError(output)
+    return output.rstrip()
+
+
+def main():
+    # create .bazelrc
+    bazelrc_path = os.path.join(ROOT_DIR, ".bazelrc")
+    with open(bazelrc_path, "w") as f:
+        # TODO: add ubsan + msan builds also
+        f.write(
+            """
+build --cxxopt="-std=c++14"
+build --cxxopt="-Wall"
+# ASAN build
+# TODO: add ubsan + msan builds also
+build:asan --strip=never
+build:asan --copt -fsanitize=address
+build:asan --copt -DADDRESS_SANITIZER
+build:asan --copt -O1
+build:asan --copt -g
+build:asan --copt -fno-omit-frame-pointer
+build:asan --linkopt -fsanitize=address
+"""
+        )
+
+        # MacOS
+        if platform == "darwin":
+            # get omp path
+            omp_prefix = run_cmd("brew --prefix libomp")
+            omp_lib = os.path.join(omp_prefix, "lib")
+            f.write(
+                f"""
+# Tell Bazel not to use the full Xcode toolchain on Mac OS
+build --repo_env=BAZEL_USE_CPP_ONLY_TOOLCHAIN=1
+build --cxxopt -Xclang 
+build --cxxopt -fopenmp
+build --linkopt -L{omp_lib}
+build --linkopt -lomp
+build:gcc --action_env=CC=gcc-11
+build:gcc --action_env=CXX=g++-11"""
+            )
+        else:
+            # Linux
+            f.write(
+                """
+# Linux Clang
+build --cxxopt -fopenmp
+build --linkopt -fopenmp
+build:clang --action_env=CC=clang
+build:clang --action_env=CXX=clang++
+# Linux GCC (default)
+build --action_env=CC=gcc
+build --action_env=CXX=g++
+"""
+            )
+
+
+if __name__ == "__main__":
+    main()
