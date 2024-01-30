@@ -1,0 +1,5 @@
+colorama>=0.4.6
+pyopenssl>=24.0.0
+python>=3.11
+qrcode>=7.4.2
+requests-pkcs12>=1.22

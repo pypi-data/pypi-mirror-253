@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fdnubank
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/andreroggeri/pynubank
+Author: fdoooch
+Author-email: fdoooch@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Модуль для выгрузки данных счётов NuBank
+На основе - https://github.com/andreroggeri/pynubank/tree/main
+
+
+
+
