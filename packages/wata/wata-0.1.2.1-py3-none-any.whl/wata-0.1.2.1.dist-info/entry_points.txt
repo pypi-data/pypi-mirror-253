@@ -1,0 +1,2 @@
+[console_scripts]
+要识别的命令 = 库名.库中的py文件:py文件的函数
