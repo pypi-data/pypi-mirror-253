@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "snakemakehelpers"
+version = "0.0.4"
+authors = [
+  { name="Nikolas Siccha", email="nikolassiccha@gmail.com" },
+]
+dependencies = ["snakemake", "pandas", "InquirerPy"]
+description = "A bundle of snakemake helper functions."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/nsiccha/snakemakehelpers"
+"Bug Tracker" = "https://github.com/nsiccha/snakemakehelpers/issues"
+
+[project.scripts]
+snakemake-interact = "snakemakehelpers:interact"
