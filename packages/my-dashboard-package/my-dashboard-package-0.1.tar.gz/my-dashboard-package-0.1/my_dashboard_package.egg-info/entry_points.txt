@@ -1,0 +1,2 @@
+[console_scripts]
+my_dashboard_app = main:main
