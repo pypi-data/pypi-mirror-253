@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: OhlcvAnalyser
+Version: 0.0.4.1
+Summary: OhlcvAnalyser
+Home-page: https://github.com/jackmappotion/OhlcvAnalyser
+Author: jackmappotion
+Author-email: jackmappotion@gmail.com
+Description-Content-Type: text/markdown
+
+# OhlcvAnalyser
+General **[open high low close volume]** analyser
+
+
+
+## Current Repository Structure
+
+```
+OhlcvAnalyser
+├── __init__.py
+├── MultiOhlcvAnalyser.py
+├── SingleOhlcvAnalyser.py
+├── analyser
+│   ├── __init__.py
+│   ├── CoefficientAnalyser.py
+│   ├── PriceAnalyser.py
+│   ├── ProfitAnalyser.py
+│   └── VarianceAnalyser.py
+└── utils
+    ├── __init__.py
+    └── date.py
+
+3 directories, 10 files
+```
