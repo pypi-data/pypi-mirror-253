@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: jinsh
+Version: 0.2
+Summary: tool
+Author: Walter
+Author-email: jinshuhaicc@gmail.com
+License: MIT-0
+Requires-Dist: pillow==10.2.0
+Requires-Dist: oracledb==2.0.1
+Requires-Dist: json5==0.9.14
