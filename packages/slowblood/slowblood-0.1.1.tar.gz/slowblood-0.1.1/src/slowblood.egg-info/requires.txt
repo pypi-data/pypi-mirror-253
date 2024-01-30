@@ -1,0 +1,11 @@
+bitsandbytes
+datasets
+huggingface_hub
+langchain
+peft
+pypandoc
+pypdfium2
+pytesseract
+runpod
+text-generation
+torch

@@ -1,0 +1,4 @@
+graft src/slowblood
+include pyproject.toml
+include setup.cfg
+global-exclude *.py[cod]
