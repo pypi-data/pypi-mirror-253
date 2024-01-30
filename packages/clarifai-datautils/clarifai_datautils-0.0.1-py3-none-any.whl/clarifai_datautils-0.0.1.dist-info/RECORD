@@ -1,0 +1,14 @@
+clarifai_datautils/__init__.py,sha256=8Q3vXtMO9SR0De_wtP4jgPqBHiYMG-NCvYJh3NKBN7w,120
+clarifai_datautils/errors.py,sha256=ghaYmrMOVg6v_DaH6CnBQXg2B-HWiD_s3JgDC3kLVvY,99
+clarifai_datautils/constants/annotations.py,sha256=Eh3YG17uqAXn_7plsZFYNQjI0wQvVDI2r97j7djwONY,1383
+clarifai_datautils/image/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clarifai_datautils/image/annotation_conversion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clarifai_datautils/image/annotation_conversion/annotations.py,sha256=jQbTzbdY1ZgB0WTk-B_cR6oBMpSeq63h46--VQ0csXo,6155
+clarifai_datautils/image/annotation_conversion/base.py,sha256=ySUF3CH8rxOrDFfMuJrtPbu8wSfpGsY0OuhEa_UATYk,858
+clarifai_datautils/image/annotation_conversion/features.py,sha256=a2CvH7EtMmGNMLQyin2XunKBHhjsOhGsWcMrdJAyU18,1303
+clarifai_datautils/image/annotation_conversion/loaders.py,sha256=RXM3lRKclbs3dVsWMeaAodarkwbhEbNOrWy_9qcXBq0,7889
+clarifai_datautils-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+clarifai_datautils-0.0.1.dist-info/METADATA,sha256=Jm8r4Fj_zw2nsoNYJCjQDDdLR8wTiPTtebl1SRvDG1E,3656
+clarifai_datautils-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+clarifai_datautils-0.0.1.dist-info/top_level.txt,sha256=M4PPkXZ2sRhUJQaqJQbzQd32zu08hw3GYYPHf4FNOsU,19
+clarifai_datautils-0.0.1.dist-info/RECORD,,
