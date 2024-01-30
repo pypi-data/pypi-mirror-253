@@ -1,0 +1,4 @@
+uuid
+threading
+asyncio
+websocket-client
