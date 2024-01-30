@@ -1,0 +1,9 @@
+halfspace/__init__.py,sha256=CNI6_-yzGG5ZmwFpLaHUIT_VqCPtWRwXchfKgtntQcY,131
+halfspace/convex_term.py,sha256=HbiJ4unjD2r9fZmaD6jmH2FPGGrHVHUZ5GBrAAF4MJA,6065
+halfspace/model.py,sha256=YKOiBz4WT6PsQA4d8xcRwrWxe1r3ZW2UymiSdyDE2rs,20731
+halfspace/utils.py,sha256=aXMIUq30PrCM4nojSwSdCWBigKfjuD5ioD7ub9ewNlY,2950
+halfspace_optimizer-0.1.0.dist-info/LICENSE,sha256=DMPeqjsOnPmgoOJ8tNxe7yEm8DOqfDhLoIbNX88TCCs,1071
+halfspace_optimizer-0.1.0.dist-info/METADATA,sha256=nKq5gYl3JhO_zBSxZrQpN429yJuUU5FEyJuPs1MtO8I,7599
+halfspace_optimizer-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+halfspace_optimizer-0.1.0.dist-info/top_level.txt,sha256=YP4uHK02h0e1S504AzlmCpTR8DqT5GJdVEpRqTn94yk,10
+halfspace_optimizer-0.1.0.dist-info/RECORD,,
