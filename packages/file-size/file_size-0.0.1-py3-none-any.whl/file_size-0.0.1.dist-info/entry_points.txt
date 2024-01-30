@@ -1,0 +1,2 @@
+[console_scripts]
+file_size = file_size.size:file_size
