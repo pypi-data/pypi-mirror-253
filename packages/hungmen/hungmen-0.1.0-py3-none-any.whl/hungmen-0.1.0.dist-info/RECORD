@@ -1,0 +1,9 @@
+hungmen/__init__.py,sha256=-UBV_Sh8GfuSJJQoOy9UEECeHIqZw0dGhqETKV2mjyc,140
+hungmen/console.py,sha256=Gi6I9NAapOS3u-axZ_u0X-tzeGyxk-_JAKh1rc9voEY,517
+hungmen/data/hung_men.json,sha256=QjM0qlsy70svmsBnjiz_WW58PQcs0rb7CjkG3KUKa94,543
+hungmen/data/words.txt,sha256=xYaLAIF6fhQOfwORyLg_dAN0SIwCV5VdWeYdcHluvBs,2818545
+hungmen/hangman.py,sha256=doBEXuLyTR97oQjJbvGI7gOK98xcVDn8Meh_TltVv9s,2938
+hungmen-0.1.0.dist-info/METADATA,sha256=8LsnZXi1lIsmp5ojv6Y1Ek3C0OijSfaP4TyXS_log38,239
+hungmen-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+hungmen-0.1.0.dist-info/entry_points.txt,sha256=mbX3WybJDNnhCVXoJY90LK__55IfkX5Dw8U9IBnWgUU,48
+hungmen-0.1.0.dist-info/RECORD,,
