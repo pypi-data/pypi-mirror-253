@@ -1,0 +1,3 @@
+/charts/*/templates/*.yaml
+/charts/*/templates/**/*.yaml
+/charts/*/README.md
