@@ -1,0 +1,361 @@
+syntax = "proto3";
+
+package proxima.dashvector.proto;
+
+option cc_generic_services = true;
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_package = "com.damo.proxima.dashvector.proto";
+
+enum FieldType {
+  BOOL = 0;
+  STRING = 1;
+  INT = 2;
+  FLOAT = 3;
+}
+
+message FieldValue {
+  oneof value_oneof {
+    bool bool_value = 1;
+    string string_value = 2;
+    int32 int_value = 3;
+    float float_value = 4;
+  };
+};
+
+enum Status {
+  INITIALIZED = 0;
+  SERVING = 1;
+  DROPPING = 2;
+  ERROR = 3;
+}
+
+message CollectionInfo {
+  enum DataType {
+    FLOAT = 0;
+    INT = 1;
+  }
+
+  enum Metric {
+    euclidean = 0;
+    dotproduct = 1;
+    cosine = 2;
+  }
+
+  string name = 1;
+  uint32 dimension = 2;
+  DataType dtype = 3;
+  Metric metric = 4;
+  map<string, FieldType> fields_schema = 5;
+  Status status = 6;
+  map<string, Status> partitions = 7;
+}
+
+message CreateCollectionRequest {
+  string name = 1;
+  uint32 dimension = 2;
+  CollectionInfo.DataType dtype = 3;
+  CollectionInfo.Metric metric = 4;
+  map<string, FieldType> fields_schema = 5;
+  map<string, string> extra_params = 6;
+}
+
+message CreateCollectionResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+}
+
+message DeleteCollectionRequest {
+  string name = 1;
+}
+
+message DeleteCollectionResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+}
+
+message DescribeCollectionRequest {
+  string name = 1;
+}
+
+message DescribeCollectionResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+  CollectionInfo output = 4;
+}
+
+message ListCollectionsRequest {
+}
+
+message ListCollectionsResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+  repeated string output = 4;
+}
+
+message StatsCollectionRequest {
+  // collection_name in metadata
+}
+
+message PartitionStats {
+  uint64 total_doc_count = 1;
+}
+
+message StatsCollectionResponse {
+  message CollectionStats {
+    uint64 total_doc_count = 1;
+    float index_completeness = 2;
+    map<string, PartitionStats> partitions = 3;
+  }
+
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+  CollectionStats output = 4;
+}
+
+
+
+message CreatePartitionRequest {
+  // collection_name in metadata
+  string name = 1;
+}
+
+message CreatePartitionResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+}
+
+message DeletePartitionRequest {
+  // collection_name in metadata
+  string name = 1;
+}
+
+message DeletePartitionResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+}
+
+message DescribePartitionRequest {
+  // collection_name in metadata
+  string name = 1;
+}
+
+message DescribePartitionResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+  // partition status
+  Status output = 4;
+}
+
+message StatsPartitionRequest {
+  // collection_name in metadata
+  string name = 1;
+}
+
+message StatsPartitionResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+  PartitionStats output = 4;
+}
+
+message ListPartitionsRequest {
+  // collection_name in metadata
+}
+
+message ListPartitionsResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+  repeated string output = 4;
+}
+
+message Vector {
+  message FloatVector {
+    repeated float values = 1;
+  }
+
+  oneof value_oneof {
+    bytes byte_vector = 1;
+    FloatVector float_vector = 2;
+  }
+}
+
+message Doc {
+  string id = 1;
+  Vector vector = 2;
+  map<string, FieldValue> fields = 3;
+  float score = 4;
+  // optional
+  map<uint32, float> sparse_vector = 5;
+}
+
+message DocOpResult {
+  enum DocOp {
+    insert = 0;
+    update = 1;
+    upsert = 2;
+    delete = 3;
+  }
+  DocOp doc_op = 1;
+  string id = 2;
+  int32 code = 3;
+  string message = 4;
+}
+
+message InsertDocRequest {
+  // collection_name in metadata
+  repeated Doc docs = 1;
+  string partition = 2;
+}
+
+message InsertDocResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+  repeated DocOpResult output = 4;
+}
+
+message UpdateDocRequest {
+  // collection_name in metadata
+  repeated Doc docs = 1;
+  string partition = 2;
+}
+
+message UpdateDocResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+  repeated DocOpResult output = 4;
+}
+
+message UpsertDocRequest {
+  // collection_name in metadata
+  repeated Doc docs = 1;
+  string partition = 2;
+}
+
+message UpsertDocResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+  repeated DocOpResult output = 4;
+}
+
+message DeleteDocRequest {
+  // collection_name in metadata
+  repeated string ids = 1;
+  bool delete_all = 2;
+  string filter = 3;
+  string partition = 4;
+}
+
+message DeleteDocResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+  repeated DocOpResult output = 4;
+}
+
+message QueryDocRequest {
+  // collection_name in metadata
+  Vector vector = 1;
+  int32 topk = 2;
+  string filter = 3;
+  bool include_vector = 4;
+  string partition = 5;
+  repeated string output_fields = 6;
+  map<uint32, float> sparse_vector = 7;
+  string id = 8;
+}
+
+message QueryDocResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+  repeated Doc output = 4;
+}
+
+message FetchDocRequest {
+  // collection_name in metadata
+  repeated string ids = 1;
+  string partition = 2;
+}
+
+message FetchDocResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+  map<string, Doc> output = 4;
+}
+
+message GetVersionRequest {
+}
+
+message GetVersionResponse {
+  string request_id = 1;
+  int32 code = 2;
+  string message = 3;
+  string version = 4;
+}
+
+service DashVectorService {
+  // Create a collection
+  rpc create_collection(CreateCollectionRequest) returns (CreateCollectionResponse);
+
+  // Delete a collection
+  rpc delete_collection(DeleteCollectionRequest) returns (DeleteCollectionResponse);
+
+  // Get information of a collection
+  rpc describe_collection(DescribeCollectionRequest) returns (DescribeCollectionResponse);
+
+  // Get all collection information
+  rpc list_collections(ListCollectionsRequest) returns (ListCollectionsResponse);
+
+  // Get collection statistics
+  rpc stats_collection(StatsCollectionRequest) returns (StatsCollectionResponse);
+
+  // Create a partition
+  rpc create_partition(CreatePartitionRequest) returns (CreatePartitionResponse);
+
+  // Delete a partition
+  rpc delete_partition(DeletePartitionRequest) returns (DeletePartitionResponse);
+
+  // Get information of a partition
+  rpc describe_partition(DescribePartitionRequest) returns (DescribePartitionResponse);
+
+  // Get partition statistics
+  rpc stats_partition(StatsPartitionRequest) returns (StatsPartitionResponse);
+
+  // List partitions
+  rpc list_partitions(ListPartitionsRequest) returns (ListPartitionsResponse);
+
+  // Insert records
+  rpc insert_doc(InsertDocRequest) returns (InsertDocResponse);
+
+  // Update records
+  rpc update_doc(UpdateDocRequest) returns (UpdateDocResponse);
+
+  // Upsert records
+  rpc upsert_doc(UpsertDocRequest) returns (UpsertDocResponse);
+
+  // Delete records
+  rpc delete_doc(DeleteDocRequest) returns (DeleteDocResponse);
+
+  // Knn query docs
+  rpc query_doc(QueryDocRequest) returns (QueryDocResponse);
+
+  // Fetch docs
+  rpc fetch_doc(FetchDocRequest) returns (FetchDocResponse);
+
+  // Get server version
+  rpc get_version(GetVersionRequest) returns (GetVersionResponse);
+}
