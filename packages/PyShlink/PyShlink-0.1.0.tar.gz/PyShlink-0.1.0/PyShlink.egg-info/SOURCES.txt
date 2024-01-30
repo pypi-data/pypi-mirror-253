@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+PyShlink.egg-info/PKG-INFO
+PyShlink.egg-info/SOURCES.txt
+PyShlink.egg-info/dependency_links.txt
+PyShlink.egg-info/requires.txt
+PyShlink.egg-info/top_level.txt
+shlink/__init__.py
+shlink/request.py
+shlink/shlink.py
