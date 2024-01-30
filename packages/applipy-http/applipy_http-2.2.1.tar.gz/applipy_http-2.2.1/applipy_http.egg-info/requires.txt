@@ -1,0 +1,3 @@
+applipy<3.0.0,>=2.0.0
+aiohttp~=3.8
+aiohttp_cors~=0.7
