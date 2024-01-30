@@ -1,0 +1,2 @@
+[console_scripts]
+md-footer = md_footer:MDFooter
