@@ -1,0 +1,14 @@
+sendou/__init__.py,sha256=d4CT9_YTxqlKTY2b8I6vjssJyv1_SejDqoihRIQhA-Y,49
+sendou/client.py,sha256=QULmAwmKLCYjeow5c__z0pH4qcaETtn47I64oBQqcSk,2804
+sendou/models/__init__.py,sha256=AL4pAeM_9BEPcEwYLLSWW7Vc9MMwKNea3wA9shi9-nc,329
+sendou/models/badge.py,sha256=B-ui2dt6JsXGHgCnHOnPIkjwpvasR0osiR7LqHz6xbg,295
+sendou/models/plusServer.py,sha256=ImCTYx8eHLtRY5j9zouoFjc0xUIjxWUAXz6bqEq90Q0,101
+sendou/models/stageMapList.py,sha256=4Dsd8WKjJ4MmW0ha5KcHTEH3K7OC-VcDn5N5VluuLck,475
+sendou/models/tournament/__init__.py,sha256=wsglWbak1jQhRDTLMbLHXVUw0CT50BtNOu3KN6IMn-A,194
+sendou/models/tournament/match.py,sha256=yKkZX2Cl5MqSyKr188bEplNh0ldh-L0eHSQWTAFGjPY,1655
+sendou/models/tournament/team.py,sha256=6aEiPoKt0_Ofn5VYf3SwNx1hsNhWzF1vrbnh7qbHuS4,1389
+sendou/models/tournament/tournament.py,sha256=rWCrMjA-vwXjrAvXvqhQ-DmbET4Oa1EXh0p1-ydXdOE,734
+sendou/models/user.py,sha256=zFHIj6Iaqd6pIhM7Xfn0kX1oN_B2Hs4oKxNfTPmdBiA,1625
+sendou_py-0.2.2.dist-info/METADATA,sha256=QR-aAiSn0lj5a2awTNhI9h1NNkgHD-DxbuoddSwzJ_E,1491
+sendou_py-0.2.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+sendou_py-0.2.2.dist-info/RECORD,,
