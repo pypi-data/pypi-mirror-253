@@ -1,0 +1,15 @@
+person_generate/__init__.py,sha256=-5-QlNUTSAA-PAiCPtWlNxMGNEtwKgfrZ6gJ-VU4Eg4,281
+person_generate/altura.py,sha256=QGSH04aRSSPJVwRm9cb9ZvxQMe8fu_XL9ijH1fMEkUY,411
+person_generate/cidade_estado.py,sha256=GDKKxTfLk3OR8nyLA6QW8buCEFvWXd0sDG0OaIgw-mc,621
+person_generate/cpf.py,sha256=IevJryJEgVjhv_K0jp12DQVeGDr3PnBXI5srGb18__M,1129
+person_generate/data_de_nascimento.py,sha256=Fwszf1aqYFyPiqi3ZkQM1z_GTegtFyvs93noLL4syZA,915
+person_generate/lista.csv,sha256=sd69tboCWlbZk4vvS-MLbyaKcfNpru2N_7v42JOSel0,60097
+person_generate/nome.py,sha256=qzqtC7EH40mfsvWgrMfS-D2U-5Za_DUm9fozcCCct2g,1176
+person_generate/peso.py,sha256=8i6SAnMwuwiVAP5gWE9U5oybz2LpDmKWwTmIbcKoPpc,285
+person_generate/pessoa_F.py,sha256=Y4--o1bSOm_LUGCVHQJ15AbSYaFMiHBHkjejsXBVEjo,6661
+person_generate/pessoa_M.py,sha256=YA-zQaTFroYjK7RTfGgXNrt8WaEci0jHVkO6FHHGvxo,6700
+person_generate/telefone.py,sha256=HMLi-q3WARzP9IjVW61KPkeigPNqxa10H8RHTEsCFW4,1295
+person_generate-0.4.0.dist-info/METADATA,sha256=iFkzZ8cQlV88Gu6ZCbRxfpL0GITco0yiMo6amc2Fo2s,405
+person_generate-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+person_generate-0.4.0.dist-info/top_level.txt,sha256=hf4LekXHjQv0_9CVS6DulgYhuBC4dhHiq1sTWs8N16U,16
+person_generate-0.4.0.dist-info/RECORD,,
