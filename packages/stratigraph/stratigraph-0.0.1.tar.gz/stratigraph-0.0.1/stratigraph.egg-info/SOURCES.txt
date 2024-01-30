@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+stratigraph_logo.png
+stratigraph/__init__.py
+stratigraph/stratigraph.py
+stratigraph/stratigraph_old_functions.py
+stratigraph.egg-info/PKG-INFO
+stratigraph.egg-info/SOURCES.txt
+stratigraph.egg-info/dependency_links.txt
+stratigraph.egg-info/top_level.txt
