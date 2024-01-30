@@ -1,0 +1,15 @@
+numpy
+torch
+
+[docs]
+sphinx
+sphinx_rtd_theme
+ase
+
+[full]
+ase
+numba
+matplotlib
+tqdm
+graphviz
+h5py
