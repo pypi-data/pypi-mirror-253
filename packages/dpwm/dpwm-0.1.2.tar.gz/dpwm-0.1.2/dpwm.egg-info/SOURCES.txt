@@ -1,0 +1,7 @@
+setup.py
+dpwm/__init__.py
+dpwm.egg-info/PKG-INFO
+dpwm.egg-info/SOURCES.txt
+dpwm.egg-info/dependency_links.txt
+dpwm.egg-info/requires.txt
+dpwm.egg-info/top_level.txt
