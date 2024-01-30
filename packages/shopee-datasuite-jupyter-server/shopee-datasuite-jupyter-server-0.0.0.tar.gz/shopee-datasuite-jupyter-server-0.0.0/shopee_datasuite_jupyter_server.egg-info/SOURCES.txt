@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopee_datasuite_jupyter_server.egg-info/PKG-INFO
+shopee_datasuite_jupyter_server.egg-info/SOURCES.txt
+shopee_datasuite_jupyter_server.egg-info/dependency_links.txt
+shopee_datasuite_jupyter_server.egg-info/top_level.txt
