@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: micro-notif-client
+Version: 0.2.0
+Summary: A minimal python client for micro-notif
+Author: Alirzea Jafari
+Author-email: alirzeaja1384@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aio-pika >=9.3.0
+
+# micro-notif-client
+A minimal python client for [micro-notif](https://github.com/alirezaja1384/micro-notif).
