@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: marearts-anpr
+Version: 2.1.810
+Summary: ANPR (Automatic Number Plate Recognition) SDK by MareArts
+Home-page: https://github.com/MareArts/MareArts-ANPR.git
+Author: marearts
+Author-email: hello@marearts.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography ==41.0.5
+Requires-Dist: opencv-python-headless ==4.8.1.78
+Requires-Dist: Pillow ==10.1.0
+Requires-Dist: numpy ==1.23.0
+Requires-Dist: requests ==2.31.0
+Requires-Dist: PyYAML ==6.0.1
+Requires-Dist: attrdict ==2.0.1
+Requires-Dist: onnxruntime ==1.13.1
+Requires-Dist: python-dateutil
+Requires-Dist: tqdm
+
+# README.md
+# MareArts ANPR SDK
+This package provides an Automatic Number Plate Recognition (ANPR) SDK.
+
