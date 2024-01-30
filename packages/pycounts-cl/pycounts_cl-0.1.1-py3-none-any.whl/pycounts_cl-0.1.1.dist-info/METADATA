@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pycounts_cl
+Version: 0.1.1
+Summary: 524 Assignment 1
+License: MIT
+Author: Chun Li
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.8.2,<4.0.0)
+Requires-Dist: numpy (==1.21.5) ; python_version >= "3.7" and python_version < "3.11"
+Description-Content-Type: text/markdown
+
+# pycounts_cl
+
+524 Assignment 1
+
+## Installation
+
+```bash
+$ pip install pycounts_cl
+```
+
+## Usage
+
+- Can count the number of characters from a given text file
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`pycounts_cl` was created by Chun Li. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`pycounts_cl` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
