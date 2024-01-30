@@ -1,0 +1,2 @@
+[aiidalab_qe.properties]
+xps = qeapp_xps:xps
