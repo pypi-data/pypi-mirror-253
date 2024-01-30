@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+fs_node_hash/__init__.py
+fs_node_hash/chunk_map.py
+fs_node_hash/dir_hashing.py
+fs_node_hash/file_hashing.py
+fs_node_hash/fs_node_hashing.py
+fs_node_hash/hash_buffer.py
+fs_node_hash/track_hash_in_dict.py
+fs_node_hash/util.py
+fs_node_hash.egg-info/PKG-INFO
+fs_node_hash.egg-info/SOURCES.txt
+fs_node_hash.egg-info/dependency_links.txt
+fs_node_hash.egg-info/requires.txt
+fs_node_hash.egg-info/top_level.txt
