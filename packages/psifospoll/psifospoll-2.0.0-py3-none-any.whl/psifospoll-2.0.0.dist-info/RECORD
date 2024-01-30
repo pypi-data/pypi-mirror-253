@@ -1,0 +1,16 @@
+psifospoll/__init__.py,sha256=xRPJb5P1P6aiAvXfMOi7LVT-v65y3-4nhinsx8cs9dQ,57
+psifospoll/psifospoll.py,sha256=7_XIFVc756uSAaJLrBJSYbbSVNb68dA9sLSk3R6cDMQ,35
+psifospoll/elections/STVElection.py,sha256=Vc8khRO7FtUAb-pWGVJDIK6Y-lZ7dTeVY-5aDTvro8o,1570
+psifospoll/elections/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psifospoll/elections/election.py,sha256=f9dDUf8E0mQcBvvnNE3N7LVgjOtVFvQoBwxRJ0iLY-I,25
+psifospoll/elections/tallies/STVtally.py,sha256=OdCTdqFOlaC2cZoeOHi5UPBcMZgjVJ562kTuMTpPplY,3795
+psifospoll/elections/tallies/STVutils.py,sha256=-RyUSdfs8XvmYPEQIGmYA_DxL26Ea76daR09_jkTaUM,1161
+psifospoll/elections/tallies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psifospoll/elections/tallies/tally.py,sha256=T_STR0MMqM8wwOybUl7jNy2-MW6WHIvYJJcy-UDNA7Y,22
+psifospoll/elections/tallies/ballots/STVballot.py,sha256=bUX_j9NC8lmi_aJP2y5T7rC8VKYtkgTIc2bz3NzRviM,205
+psifospoll/elections/tallies/ballots/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psifospoll/elections/tallies/ballots/ballot.py,sha256=rFsIk34bx5Gftav7zbYU6h1uS8ar5eOaM1gVAsBmcd0,23
+psifospoll-2.0.0.dist-info/METADATA,sha256=xxn8dyrVDqLyJCaybpelMaPoZY4VHk2xjGxfR56fZb0,3044
+psifospoll-2.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+psifospoll-2.0.0.dist-info/top_level.txt,sha256=JbHUAgZmSZdB8ZoM9wqPIOF_ZHsdHM1-8aRRMZLk70I,11
+psifospoll-2.0.0.dist-info/RECORD,,

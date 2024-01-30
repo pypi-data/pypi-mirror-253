@@ -1,0 +1,2 @@
+class Ballot:
+    pass
