@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ion-python
+Version: 1.4.0
+Summary: Python Binding for ion-kit
+Author-email: Takuro Iizuka <t_iizuka@fixstars.com>
+Project-URL: Documentation, https://sensing-dev.github.io/doc/
+Project-URL: Repository, https://github.com/fixstars/ion-kit
+Project-URL: Changelog, https://sensing-dev.github.io/doc/blog/index.html
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy >=1.24
+
+# ionpy - Python binding for ion-kit
+
+```
+pip3 install "git+https://github.com/fixstars/ion-kit.git#egg=ionpy&subdirectory=python"
+```
+
+## Test
+
+```
+LD_LIBRARY_PATH=<path-to-ion-libs> PYTHONPATH=. pytest ./tests/
+```
