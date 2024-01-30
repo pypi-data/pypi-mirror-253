@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aiy-projects-python
+Version: 1.4
+Summary: AIY Python API
+Home-page: https://aiyprojects.withgoogle.com/
+Author: AIY Team
+Author-email: support-aiyprojects@google.com
+License: Apache 2
+Project-URL: GitHub: issues, https://github.com/viraniac/aiyprojects-raspbian/issues
+Project-URL: GitHub: repo, https://github.com/viraniac/aiyprojects-raspbian
+Requires-Python: >=3.5.3
+License-File: LICENSE
+Requires-Dist: gpiozero
+Requires-Dist: protobuf>=3.6.1
+Requires-Dist: picamera
+Requires-Dist: Pillow
+Requires-Dist: RPi.GPIO
+
+A set of Python APIs designed for the AIY Voice Kit and AIY Vision Kit, which help you build intelligent systems that can understand what they hear and see.

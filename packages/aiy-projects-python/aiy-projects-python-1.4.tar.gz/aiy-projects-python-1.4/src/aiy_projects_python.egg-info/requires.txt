@@ -1,0 +1,5 @@
+gpiozero
+protobuf>=3.6.1
+picamera
+Pillow
+RPi.GPIO
