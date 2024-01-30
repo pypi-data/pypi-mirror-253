@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: interface-region-imaging-spectrograph
+Version: 0.0.0
+Summary: A Python library for analyzing solar observations from the Interface Region Imaging Spectrograph (IRIS).
+Author-email: "Roy T. Smart" <roytsmart@gmail.com>
+Project-URL: Homepage, https://github.com/sun-data/interface-region-imaging-spectrograph
+Project-URL: Documentation, https://interface-region-imaging-spectrograp.readthedocs.io/en/latest
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: astropy
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Provides-Extra: doc
+Requires-Dist: pytest; extra == "doc"
+Requires-Dist: matplotlib; extra == "doc"
+Requires-Dist: graphviz; extra == "doc"
+Requires-Dist: sphinx-autodoc-typehints; extra == "doc"
+Requires-Dist: sphinxcontrib-bibtex; extra == "doc"
+Requires-Dist: pydata-sphinx-theme; extra == "doc"
+Requires-Dist: ipykernel; extra == "doc"
+Requires-Dist: jupyter-sphinx; extra == "doc"
+Requires-Dist: sphinx-favicon; extra == "doc"
+
+# interface-region-imaging-spectrograph
+A Python library for downloading and analyzing images from the Interface Region Imaging Spectrograph (IRIS), a NASA small explorer satellite.
