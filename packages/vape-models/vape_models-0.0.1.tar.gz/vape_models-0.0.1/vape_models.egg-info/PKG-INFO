@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: vape-models
+Version: 0.0.1
+Summary: vapeuniverse module microservice models
+Home-page: https://github.com/vapeuniverse/vape_models
+Download-URL: https://github.com/vapeuniverse/vape_clients/archive/0.0.1.zip
+Author: nChurn
+Author-email: wapeuniverse@gmail.com
+Requires-Dist: pydantic
+
+Библиотека, предоставляющая базовые модели для основных сущностей проекта
