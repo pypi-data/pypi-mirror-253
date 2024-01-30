@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tpower
+Version: 0.1.5
+Summary: Python package by T-Power.
+Home-page: https://github.com/toesca-dev/tpower/
+Author: Matías Galetovic Streeter
+Author-email: matias.galetovic@toesca.com
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: numpy
+
