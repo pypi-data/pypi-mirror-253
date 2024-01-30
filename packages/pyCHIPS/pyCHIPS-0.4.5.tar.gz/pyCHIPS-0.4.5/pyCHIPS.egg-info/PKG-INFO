@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: pyCHIPS
+Version: 0.4.5
+Summary: CHIPS: Coronal Hole Identification using Probabilistic Scheme
+Home-page: https://github.com/shibaji7/pyCHIPS
+Author: Shibaji Chakraborty
+Author-email: shibaji7@vt.edu
+Maintainer: Shibaji Chakraborty
+Maintainer-email: shibaji7@vt.edu
+License: MIT License
+Description: Identify coronal holes and coronal hole boundaries using probabilistic schemes
+Keywords: python,coronal hole,coronal hole boundary,coronal hole identification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
