@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+allianceauth_loki_logging/__init__.py
+allianceauth_loki_logging/formatters.py
+allianceauth_loki_logging/handlers.py
+allianceauth_loki_logging.egg-info/PKG-INFO
+allianceauth_loki_logging.egg-info/SOURCES.txt
+allianceauth_loki_logging.egg-info/dependency_links.txt
+allianceauth_loki_logging.egg-info/requires.txt
+allianceauth_loki_logging.egg-info/top_level.txt
