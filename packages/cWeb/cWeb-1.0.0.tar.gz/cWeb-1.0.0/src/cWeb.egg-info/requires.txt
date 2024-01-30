@@ -1,0 +1,19 @@
+typer[all]
+gradio
+pydantic
+playwright
+fastapi
+
+[:python_version < "3.10"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
+
+[webapp]
+gradio
+
+[webservice]
+fastapi
