@@ -1,0 +1,5 @@
+setup.py
+data_platform_models.egg-info/PKG-INFO
+data_platform_models.egg-info/SOURCES.txt
+data_platform_models.egg-info/dependency_links.txt
+data_platform_models.egg-info/top_level.txt
