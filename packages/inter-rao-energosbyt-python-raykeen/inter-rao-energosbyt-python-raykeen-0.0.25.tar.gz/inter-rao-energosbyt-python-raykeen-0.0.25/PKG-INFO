@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: inter-rao-energosbyt-python-raykeen
+Version: 0.0.25
+Summary: Inter RAO API bindings for python
+Home-page: https://github.com/Raykeen/inter-rao-energosbyt-python-raykeen
+Author: Alexander Ryazanov, Andrey Osipov
+Author-email: alryaz@xavux.com, andrayosipov@gmail.com
+Project-URL: Bug Tracker, https://github.com/Raykeen/inter-rao-energosbyt-python-raykeen/issues
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+Inter RAO Energosbyt Python
+===========================
+Библиотека для работы с ЕЛК ЖКХ компании Интер РАО.
+
+Библиотека подвергается частым изменениям, так как находится в стадии постоянной разработки.
