@@ -1,0 +1,1 @@
+isort_vertical_alignment_plugin
