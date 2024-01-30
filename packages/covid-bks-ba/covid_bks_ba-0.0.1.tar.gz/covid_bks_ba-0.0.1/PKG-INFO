@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: covid_bks_ba
+Version: 0.0.1
+Summary: Covid death prediction with finit classification
+Project-URL: Homepage, https://git.jaalmoes.com
+Project-URL: Bug Tracker, https://git.jaalmoes.com
+Author-email: Jan Aalmoes <jan.aalmoes@protonmail.com>
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: aia-fairness
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn

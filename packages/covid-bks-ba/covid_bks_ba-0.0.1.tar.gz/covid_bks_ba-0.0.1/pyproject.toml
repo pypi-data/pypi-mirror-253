@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "covid_bks_ba"
+version = "0.0.1"
+authors = [
+  { name="Jan Aalmoes", email="jan.aalmoes@protonmail.com" },
+]
+description = "Covid death prediction with finit classification"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+dependencies = ["aia_fairness","numpy", "pandas", "scikit-learn", "matplotlib"]
+
+[project.urls]
+"Homepage" = "https://git.jaalmoes.com"
+"Bug Tracker" = "https://git.jaalmoes.com"
+
