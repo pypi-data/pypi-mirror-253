@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: xpell
+Version: 0.1.1
+Requires-Dist: uuid
+Requires-Dist: asyncio
+Requires-Dist: websocket-client
