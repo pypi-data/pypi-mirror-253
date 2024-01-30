@@ -1,0 +1,4 @@
+[sqlalchemy.dialects]
+bitable = pybitable.dialect:BITableDialect
+bitable.pybitable = pybitable.dialect:BITableDialect
+
