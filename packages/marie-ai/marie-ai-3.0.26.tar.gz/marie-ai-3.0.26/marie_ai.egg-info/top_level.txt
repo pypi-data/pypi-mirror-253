@@ -1,0 +1,8 @@
+hubble
+marie
+marie (copy)
+marie_cli
+marie_server
+marie_server (copy)
+tests
+tools
