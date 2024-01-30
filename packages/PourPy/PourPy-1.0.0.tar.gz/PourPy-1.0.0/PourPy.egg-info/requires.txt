@@ -1,0 +1,11 @@
+argparse
+pytest
+bokeh
+matplotlib
+shapely
+nbsphinx
+sphinx-autoapi
+sphinx_rtd_theme
+
+[:python_version < "3.11"]
+tomli
