@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: chloris_app_sdk
+Version: 1.0.0
+Summary: A package created with a setuptools tutorial.  See article link for more details.
+Home-page: https://app.chloris.earth/docs/index.html
+License: MIT
+Description-Content-Type: text/markdown
+
+# The Chloris Platform Python SDK
+
+The Chloris Platform Python SDK (_chloris-app-sdk_) is a Python package that provides a convenient interface to the Chloris Platform API. It is designed to be used by both humans and machines, but if you are a human you may find it easier to use the [Chloris Platform](https://app.chloris.earth/) web interface. Note that the API is only available for use with premium organizations, please contact us if you are interested in using the API.
+
+See the [API documentation](https://app.chloris.earth/docs/index.html) for more information about the Chloris Platform API.
+
+## Installation
+
+The Chloris Platform Python SDK is available on [PyPI](https://pypi.org/project/chloris_app_sdk/), so you can install it with `pip install chloris_app_sdk`:
+
+```bash
+pip install chloris_app_sdk
+```
+
+## Usage
+
+
+### Authentication
+
+See the [API documentation](https://app.chloris.earth/docs/index.html) for more information about authentication.
+
