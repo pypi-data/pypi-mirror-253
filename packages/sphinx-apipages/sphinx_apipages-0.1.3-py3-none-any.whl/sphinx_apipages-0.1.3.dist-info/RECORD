@@ -1,0 +1,17 @@
+docs/changelog.rst,sha256=vYs-i1VREFuYfrPybMcoic9HFFfteNEtk4cKs54ewxE,30
+docs/conf.py,sha256=ZVoAcAskS7GlBk6EVmZbKzIeQVFITNcSgVX3Lsd5TJg,1437
+docs/contributing.rst,sha256=h9XHQ0lx_ySKgXQmwqhJQLPD7VElHdyu1ruKfYWvrYA,33
+docs/index.rst,sha256=Dih0ZVnB27QKWq_z_yc_L_KMQQvMEx-0hDOxl0p8evA,487
+docs/install.rst,sha256=A4u7pHOXE9U2_y6A9lmFWWxi2nmIKe63zFEpJgUUWw0,308
+docs/requirements.txt,sha256=iDPulpg6UU7PQ0cdPF-uchDSZlq4gh9BABxT_tND3EA,107
+docs/usage.rst,sha256=XBelBn3JxxDcFE3McFLn10NkUOuL9iY909si-Zyj94s,2293
+docs/api-src/audb.rst,sha256=GHu4rEdeItVHTidTxX489qkkEzYrx5KyYzEJwKXB-6s,660
+sphinx_apipages/__init__.py,sha256=ZKoSvlnNodSxdiVCWuCXHAe2BYXstuBOD7uZnH7fnUk,3022
+sphinx_apipages/templates/autosummary/base.rst,sha256=4TLrDf9iFl6zJI71EvlliTM7Xgkvx1AwljX41RnRp8Q,103
+sphinx_apipages/templates/autosummary/class.rst,sha256=QZ-6Q8_o5XRII3IeqravqA4PBbyAauSBTNWMro0cU9w,549
+sphinx_apipages/templates/autosummary/function.rst,sha256=VVRyhozdIER7QXTN5qKJ61Z_KHY3nWcnjZqljP6J4gA,112
+sphinx_apipages-0.1.3.dist-info/LICENSE,sha256=XBnUj7QTf17HFVrtwXdGWjjraA938AwG9JgGXtPalGM,1119
+sphinx_apipages-0.1.3.dist-info/METADATA,sha256=RbUc4mvjqfwoWcUJgWozM5OSZjlO1RY9LzC2-p-ZMlU,2846
+sphinx_apipages-0.1.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sphinx_apipages-0.1.3.dist-info/top_level.txt,sha256=eQqRh3H6VcA6MVutd26DNdnnO-LCZigiG0XMu4V9Pyo,21
+sphinx_apipages-0.1.3.dist-info/RECORD,,
