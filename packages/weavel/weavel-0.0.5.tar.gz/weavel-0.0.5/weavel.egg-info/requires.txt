@@ -1,0 +1,13 @@
+httpx[http2]
+pydantic>=2.4.2
+typer[all]
+cryptography
+pyyaml
+InquirerPy
+python-dotenv
+websockets
+termcolor
+watchdog
+readerwriterlock
+pendulum
+httpx[http2]
