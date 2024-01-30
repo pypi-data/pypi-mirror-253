@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PylesLib/__init__.py
+PylesLib/pyleslib.py
+PylesLib.egg-info/PKG-INFO
+PylesLib.egg-info/SOURCES.txt
+PylesLib.egg-info/dependency_links.txt
+PylesLib.egg-info/requires.txt
+PylesLib.egg-info/top_level.txt

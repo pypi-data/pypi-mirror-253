@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: PylesLib
+Version: 0.0.2
+Summary: Pacote de teste
+Author: MarcoAndre
+Author-email: marcosofc04@gmail.com
+Keywords: python,files,Pyles,PylesLib
+License-File: LICENSE
+
+Biblioteca Python para manipulações de arquivos.
