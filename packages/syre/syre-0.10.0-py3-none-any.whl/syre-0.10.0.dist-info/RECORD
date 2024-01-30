@@ -1,0 +1,13 @@
+syre/__about__.py,sha256=8uB66BOqLoS-6U2PrBTZnoK7RZVlnNBpql519oNb6o8,133
+syre/__init__.py,sha256=jHn_ppbredqCMdQ_d1gdJJjz5LMxx5lByVR04AX29Ug,304
+syre/common.py,sha256=PUamKPIQ9jUj_MpzejZYJ9EBtRwo_gLo3zpqvPeIpc0,222
+syre/database.py,sha256=_qCGRjsIz4e45mJ76KKNprKOpjeMsrKN6u-lQ8Qiyc8,13573
+syre/filter.py,sha256=RTjCdmiIj2iEosyjR9x6Awx9bM_G8rTyrMG58AYbiGI,4295
+syre/resources.py,sha256=0-wJys-duBViSDkb-FpDaTpWEFvoKSOiT9R58h49qIo,8526
+syre/types.py,sha256=l0Dd98usEbqcfyT7L7hB3-loSAXvKEsAMgMwqYLzmjs,306
+syre/bin/syre-local-database-x86_64-apple-darwin,sha256=LtvQ1v1j0wjKWLvBCcHrepMQX3_JbwcSLH7HDxaeBvo,6630400
+syre-0.10.0.dist-info/METADATA,sha256=-Q9HKUJpFVi1ca5mqfeJ1jo08aOHV4t4RpIukeeV1rw,1136
+syre-0.10.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+syre-0.10.0.dist-info/licenses/LICENSE-APACHE,sha256=7dM9rCrkDKWM2D3mK-vlnHkzVwPcSIR8JtujbdRY9-k,11343
+syre-0.10.0.dist-info/licenses/LICENSE-MIT,sha256=E4sg10tX4siR-RQQ8a8sJn3AdxZ7MjJjOJAX-6XUugQ,1071
+syre-0.10.0.dist-info/RECORD,,
