@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lottokit
+Version: 0.1
+Summary: Lotto Kit Package
+Author: nickdecodes
+Author-email: nickdecodes@163.com
+Keywords: lottokit,lottery
+Requires-Python: >=3.6
+License-File: LICENSE
