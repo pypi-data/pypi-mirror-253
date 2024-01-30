@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cloudframework
+Version: 1.0.13
+Summary: CloudFramework for Appengine using python language.
+Home-page: https://github.com/CloudFramework-io/appengine-python-core-3.9
+Author: CloudFramework Team
+Author-email: tools@cloudframework.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This framework has been created to make easier the API creation and backend logic to deploy over GCP Appengine Serverless solution. You are free to use Native python or other libraries when you want. We hope you enjoy it :).
