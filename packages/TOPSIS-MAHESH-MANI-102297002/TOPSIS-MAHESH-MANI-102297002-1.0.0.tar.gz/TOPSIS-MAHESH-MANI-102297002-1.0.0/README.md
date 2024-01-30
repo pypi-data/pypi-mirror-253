@@ -1,0 +1,56 @@
+# TOPSIS-Python
+
+Submitted By: **MAHESH MANI 102297002**
+
+***
+
+## What is TOPSIS?
+
+**T**echnique for **O**rder **P**reference by **S**imilarity to **I**deal
+**S**olution (TOPSIS) originated in the 1980s as a multi-criteria decision-making method. TOPSIS chooses the alternative of the shortest Euclidean distance from the ideal solution and greatest distance from the negative-ideal solution. More details can be found on [Wikipedia](https://en.wikipedia.org/wiki/TOPSIS).
+
+## How to use this package:
+
+The TOPSIS-MAHESH-MANI-102297002 package can be run as shown in the following example:
+
+### In Command Prompt to run the code:
+```bash
+topsis data.csv "1,1,1,1" "+,+,-,+" out.csv
+```
+
+## Sample dataset
+
+```csv
+Name    P1     P2    P3     P4    P5
+M1      0.86   0.74  4.8    61.8  17.05
+M2      0.83   0.69  6.6    48.5  14.16
+M3      0.62   0.38  3.3    33    9.33
+M4      0.83   0.69  6.4    45.5  13.36
+M5      0.95   0.9   6.8    45    13.41
+M6      0.61   0.37  3.6    36    10.15
+M7      0.9    0.81  4.5    62.5  17.18
+M8      0.89   0.79  4.7    38.9  11.32
+```
+
+## Output
+
+```csv
+Name  P1    P2    P3   P4    P5     Topsis Score       Rank
+M1    0.86  0.74  4.8  61.8  17.05  0.7003233012352760  3
+M2    0.83  0.69  6.6  48.5  14.16  0.6562533743146750  6
+M3    0.62  0.38  3.3  33.0  9.33   0.0135325373752343  8
+M4    0.83  0.69  6.4  45.5  13.36  0.6089902720065850  4
+M5    0.95  0.9   6.8  45.0  13.41  0.7157691264417760  2
+M6    0.61  0.37  3.6  36.0  10.15  0.07412480075376210 1
+M7    0.9   0.81  4.5  62.5  17.18  0.711919899272116   7
+M8    0.89  0.79  4.7  38.9  11.32  0.49267086270406500 5
+```
+
+## Explanation:
+
+- **Name:** Identifies the alternatives.
+- **P1, P2, P3, P4, P5:** Represents the performance values for each criterion.
+- **Topsis Score:** The calculated TOPSIS score for each alternative.
+- **Rank:** The ranking of each alternative based on the TOPSIS score.
+
+Simply run the provided command in the Command Prompt, replacing the input data file name, weights, impacts, and result file name with your specific values. The output will be a new CSV file containing the results of the TOPSIS analysis.
