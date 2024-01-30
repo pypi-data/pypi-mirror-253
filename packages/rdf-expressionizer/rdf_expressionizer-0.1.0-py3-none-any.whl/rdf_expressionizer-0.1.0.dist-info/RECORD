@@ -1,0 +1,15 @@
+rdf_expressionizer/__init__.py,sha256=PTOZTwcsY0R3tNwy5ZCSBg-h851Dlmputsw7ne60r9A,246
+rdf_expressionizer/cli.py,sha256=Z5yxClDlx4yG1QDL3WskTBzzC1H9m1qAD2UYjWvXwn0,3332
+rdf_expressionizer/main.py,sha256=mqUWP8fZkpDyRdUaQigfVGAi6x_PWqc44RKIC5bvI0o,6919
+rdf_expressionizer/mappings/__init__.py,sha256=G3ai5U9hFDuPilVIlheT_xf7EqpbLyQDwHEVlHTrjVY,114
+rdf_expressionizer/mappings/bfo_xbfo_mappings.csv,sha256=HNVmvyLJOvucfz22ZP-8hTo98dALw6Ov5kBfZbRTmfg,1600
+rdf_expressionizer/ontology/bfo_bridge.owl,sha256=Bw6qY5sp4OkmCwNElpCLSIfYGrQ4IBfbi-CfE0cDaUM,27657
+rdf_expressionizer/ontology/cob-augmented-tidy.owl,sha256=SZK_o3VtfTYN_JYYIqliKCSjUx0UhAatUqia_BJjZJE,69479
+rdf_expressionizer/ontology/ro-rewired-tidy.owl,sha256=lo98sTANpMGUQ0zrRBm1f5eICx_zt02Bau5LsRrcxEM,1098827
+rdf_expressionizer/ontology/xbfo.owl,sha256=XI75RFQlQfWULhZstXI0PfXko_f1VzCNtZHBotRR3K4,9431
+rdf_expressionizer/ontology/xbfo_template.csv,sha256=yXDvPe7zaDvOWFnzFXTh3vfJfTr87i41JrhtdeVrxKM,1885
+rdf_expressionizer-0.1.0.dist-info/LICENSE,sha256=aBDq7QKNBPkZwOYhThnImk0gQcsevNzRn1Yn99Sfj2o,1502
+rdf_expressionizer-0.1.0.dist-info/METADATA,sha256=Otmeg-4Qro_BXpz6V7PgIUMw987WZoVYmoMlxm8Rhng,4537
+rdf_expressionizer-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+rdf_expressionizer-0.1.0.dist-info/entry_points.txt,sha256=m3qWEPxE9m8KhBF3ua9yl5BXVMd5nVHzCQKHpiEOMc4,66
+rdf_expressionizer-0.1.0.dist-info/RECORD,,
