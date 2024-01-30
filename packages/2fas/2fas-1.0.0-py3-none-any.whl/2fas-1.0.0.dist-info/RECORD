@@ -1,0 +1,11 @@
+twofas/__about__.py,sha256=G0YqUkHshRE23kZYrSevyMagWsMVhuj4LjQ4HfmchXo,68
+twofas/__init__.py,sha256=Cp3sCv2TZ0rMxcJcxeUCNx0HpTzLHFkdPpeMWB5n6mE,79
+twofas/cli.py,sha256=-TDDgauuJjewXDrl1-FmzkXiiqm28ogdqt4PIuGG2YY,13583
+twofas/cli_settings.py,sha256=trRpHyvX7QeCIxb_7t76iaJE3LLJZvzv99Xbnsjgj1k,3243
+twofas/cli_support.py,sha256=w7evEME6BxZHKGQSLiNLR1R-nOiseKFdU-MhkHILR04,3442
+twofas/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+2fas-1.0.0.dist-info/METADATA,sha256=jK6ZEQ1JVIlh-yB3bQRGqlU2QS2Ya7xoT2vaWl4oogE,2615
+2fas-1.0.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+2fas-1.0.0.dist-info/entry_points.txt,sha256=negTVqjaIuOyGp8thLEJFL6Wk2p6-UUunWSUA6phVB4,40
+2fas-1.0.0.dist-info/licenses/LICENSE,sha256=vZFItjo49KYGXUHjBEQCtLtb_ohz0Pw86zCPlqMviMA,1062
+2fas-1.0.0.dist-info/RECORD,,
