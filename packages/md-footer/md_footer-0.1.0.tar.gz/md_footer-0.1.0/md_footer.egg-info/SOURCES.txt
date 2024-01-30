@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+md_footer/__init__.py
+md_footer/main.py
+md_footer.egg-info/PKG-INFO
+md_footer.egg-info/SOURCES.txt
+md_footer.egg-info/dependency_links.txt
+md_footer.egg-info/entry_points.txt
+md_footer.egg-info/top_level.txt
