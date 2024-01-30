@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: modelisation
+Version: 0.0.3
+Summary: Modéliser des points expérimentaux
+Home-page: https://urlz.fr/pu0X
+Author: LAURENT Stéphane
+License: UNKNOWN
+Keywords: modelisation physique chimie lycée linéaire affine linear regression physical chemistry modeling
+Platform: UNKNOWN
+Classifier: Topic :: Education
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib (>=3.8.0)
+Requires-Dist: numpy (>=1.26.0)
+Requires-Dist: scipy (>=1.11.0)
+Requires-Dist: addcopyfighandler (>=3.0.0)
+
+README.md
+
