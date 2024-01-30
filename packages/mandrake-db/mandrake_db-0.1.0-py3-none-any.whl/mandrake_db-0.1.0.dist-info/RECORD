@@ -1,0 +1,14 @@
+mandrake_db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mandrake_db/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mandrake_db/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mandrake_db/config/environment.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mandrake_db/core/crud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mandrake_db/core/crud/json_db.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mandrake_db/core/crud/mongo_db.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mandrake_db/core/models/__init__.py,sha256=AkoYWA2TdkOUKo46AnN0xKSLZlqRAECp5tK02R_6TLI,531
+mandrake_db/core/query_builders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mandrake_db/core/query_builders/json_db.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mandrake_db/core/query_builders/mongo_db.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mandrake_db-0.1.0.dist-info/METADATA,sha256=k-LUXwtjQI1qt7W9zk5XWnqzj6WgLjGkUG8mXas9wjU,860
+mandrake_db-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mandrake_db-0.1.0.dist-info/RECORD,,

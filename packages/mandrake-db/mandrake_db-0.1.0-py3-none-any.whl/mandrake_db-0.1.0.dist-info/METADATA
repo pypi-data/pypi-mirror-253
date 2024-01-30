@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mandrake-db
+Version: 0.1.0
+Summary: A lightweight multiple database adapter
+Home-page: https://vintem.tech/libs/python/mandrake-db
+License: GPL-3.0-or-later
+Author: vintem
+Author-email: marcus@vintem.tech
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: motor (>=3.3.2,<4.0.0)
+Requires-Dist: pydantic[dotenv] (>=2.5.3,<3.0.0)
+Requires-Dist: pymongo (>=4.6.1,<5.0.0)
+Requires-Dist: pysondb (>=1.6.7,<2.0.0)
+Requires-Dist: toolz (>=0.12.1,<0.13.0)
+Project-URL: Repository, https://gitlab.com/vintem.tech/libs/python/mandrake-db
+Description-Content-Type: text/markdown
+
+# Mandrake Database Adapter | mandrake-db
+
+A lightweight multiple database adapter
+
