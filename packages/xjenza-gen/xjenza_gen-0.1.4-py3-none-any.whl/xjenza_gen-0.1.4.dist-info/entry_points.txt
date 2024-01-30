@@ -1,0 +1,3 @@
+[console_scripts]
+xjenza-gen=xjenza_gen.main:app
+
