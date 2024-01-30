@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: libpyl3s
+Version: 1.0.0
+Summary: Pacote de teste
+Author: PedroVitor
+Author-email: pedro.passos@ufpi.edu.br
+Keywords: python,files,Pyl3s,Pyl3sLib
+Requires-Dist: PyPDF2
+Requires-Dist: fpdf
+
+Biblioteca Python para manipulações de arquivos.
