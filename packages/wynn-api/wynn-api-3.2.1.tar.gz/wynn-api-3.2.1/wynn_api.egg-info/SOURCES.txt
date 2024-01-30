@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+wynn_api/__init__.py
+wynn_api.egg-info/PKG-INFO
+wynn_api.egg-info/SOURCES.txt
+wynn_api.egg-info/dependency_links.txt
+wynn_api.egg-info/top_level.txt

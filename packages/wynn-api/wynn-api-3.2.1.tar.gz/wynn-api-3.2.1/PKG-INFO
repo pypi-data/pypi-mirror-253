@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: wynn-api
+Version: 3.2.1
+Summary: A simple Python API Wrapper for the Wynncraft API
+Home-page: https://github.com/Pix3lRift/wynn-api/tree/py-v3#readme
+Author: PixelRift <amogus.my.to>
+License: Apache-2.0
+Project-URL: Source, https://github.com/Pix3lRift/wynn-api/tree/py-v3
+Project-URL: Wynncraft Developers dc server, https://discord.gg/CtMKp3hG66
+Project-URL: Node.js version, https://www.npmjs.com/package/wynn-api-node
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+## About
+A simple API wrapper for the [Wynncraft API](https://documentation.wynncraft.com/)
+
+- Dictionary-oriented
+- Flexible and powerful
+- 100% coverage of the V3 Wynncraft API
+## Installation
+
+**Python 3.5 or newer is required.**
+
+
+```sh
+pip install wynn-api
+```
+
+## Example Usage
+```js
+import wynn_api as WynnAPI
+
+salted = WynnAPI.getPlayer("Salted")
+```
+
+```js
+print(WynnAPI.getPlayer("Salted")["globalData"]["chestsFound"])
+```
+
+```js
+pfinderSet = WynnAPI.searchItem('Morph')
+print(pfinderSet)
+```
+
+## Links
+
+- [Github](https://github.com/Pix3lRift/wynn-api/tree/py-v3)
+- [Wynncraft Developers discord server](https://discord.gg/CtMKp3hG66)
+- [pypi](https://pypi.org/project/wynn-api)
+- [npm](https://www.npmjs.com/package/wynn-api-node)
