@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: checkarchivedataset
+Version: 0.1.0
+Summary: check archive dataset
+Home-page: 
+Author: lily
+Author-email: 2239041944@qq.com
+License: MIT
+
+Function:
+Check whether the dataset archived in a folder conforms to specifications.
+
+Usage:
+>>> from checkarchivedataset import check_archive_dataset
+>>> archive_dir = './test'
+>>> check_archive_dataset(archive_dir)
