@@ -1,0 +1,12 @@
+cachephant-0.2.0.dist-info/METADATA,sha256=_LBJj8tshu2OjbABZ6_7haX5R_jCJyGZWHiSA0Enuds,2298
+cachephant-0.2.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+cachephant/__init__.py,sha256=FP5oAXxSzj0J3Aao1ZaUXRYqDhG-pGm2i8lhzVmNKGk,139
+cachephant/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cachephant/adapters/db_sqlalchemy.py,sha256=Wmc1_RBG9JW33FA9S2Gojpf7E6BDnHjXkCnxNcmB5Xg,3009
+cachephant/adapters/evictor.py,sha256=oI87MAwXrSyQbispJq_FlXh-vAyugA_ZaugFseHvOWU,605
+cachephant/adapters/filesystem.py,sha256=0bmvwZyL_5GMGTWKQP4vAmc_CsFA2uDggiBEgkgsJco,1862
+cachephant/adapters/hasher.py,sha256=Nj7gvsaIEi7d12XqvmbnrjRBKRWblCLcFFEYg_ZKX24,1267
+cachephant/cache.py,sha256=9dPFl_1gf_e-1naMCmt56a8KKf3KUuS267gtJvM7W-g,1634
+cachephant/composite.py,sha256=Tog9bntlBewpjdLo-aLdVvkvGcaKK1ZsjGRVq-XCwK8,442
+cachephant/interfaces.py,sha256=z6zPk9fkWJWO_qNM8a1Gfm2sQhBQIaojK9zm9KIjCyg,1591
+cachephant-0.2.0.dist-info/RECORD,,
