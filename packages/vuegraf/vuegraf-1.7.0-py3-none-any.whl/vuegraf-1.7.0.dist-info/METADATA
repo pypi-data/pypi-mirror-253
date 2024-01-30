@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vuegraf
+Version: 1.7.0
+Summary: Populate metrics from your Emporia Vue energy monitoring devices into an InfluxDB
+Home-page: https://github.com/jertel/vuegraf
+Author: Jason Ertel
+License: MIT
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: influxdb >=5.3.1
+Requires-Dist: influxdb-client >=1.33.0
+Requires-Dist: pyemvue >=0.16.0
+Requires-Dist: argparse >=1.4.0
+
