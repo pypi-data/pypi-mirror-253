@@ -1,0 +1,16 @@
+nubank/__init__.py,sha256=oH9ng31PZcT_3XnYvrFHy5ejYt4K7scymm2CY4Ig2Ow,141
+nubank/auth_mode.py,sha256=-GjcIv5C8WJQjTLHGk-EaUCZ-xASVmbozU_-rUvMPLs,754
+nubank/cli.py,sha256=69xD9wMZZmYilx-MDjzHyDtM7_el7xoypfT-AEkJkd0,1640
+nubank/exception.py,sha256=LCSbimWt1D3DDDWGYwXXXmhHNA5-5J5ctXgvEpu-oMI,784
+nubank/nubank.py,sha256=U-cS8g_zIC_yDlCJqOwRA23jExt2hyay4chy8qBhErk,14902
+nubank/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nubank/utils/certificate_generator.py,sha256=7Co-HTVCQkJCWBrdoN-JMqB2ON0mGvhh0mgfs6JW1ig,3276
+nubank/utils/discovery.py,sha256=KjNBbzH6b4VBdFk2lv-Evu7M-FRGMHCHVNk_OV-wPq0,1087
+nubank/utils/graphql.py,sha256=pX_mwFjRnJt-xjxhiNGjMF__H2JAHEfL8Dpoo8FS2K8,573
+nubank/utils/http.py,sha256=4w8ujUamG_CSwgRWGSbWBwc1JY46S4yRiTO85V_wRnM,1610
+nubank/utils/parsing.py,sha256=hm5VHEI0T-nBXsO1rWtDkM_NTsUpsCtlY84WEQGATpw,1577
+fdnubank-0.0.3.dist-info/METADATA,sha256=H4AETvJu_n2xNlo7ysVWcogj7l_0ylnjQt1cBspiyIU,607
+fdnubank-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fdnubank-0.0.3.dist-info/entry_points.txt,sha256=x80_R37hWs--LwqA5kV8rWRhIGseH7Fz53t81fNwAis,48
+fdnubank-0.0.3.dist-info/top_level.txt,sha256=yedcbrcIc6fwl6LnghUTOlba7zYwe85fbkBjbOxj-_4,7
+fdnubank-0.0.3.dist-info/RECORD,,
