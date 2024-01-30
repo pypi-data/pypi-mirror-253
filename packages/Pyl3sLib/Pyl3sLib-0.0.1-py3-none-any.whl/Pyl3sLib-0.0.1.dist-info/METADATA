@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Pyl3sLib
+Version: 0.0.1
+Summary: Pacote de teste
+Author: MarcoAndre
+Author-email: marcosofc04@gmail.com
+Keywords: python,files,Pyl3s,Pyl3sLib
+License-File: LICENSE
+Requires-Dist: PyPDF2
+Requires-Dist: fpdf
+
+Biblioteca Python para manipulações de arquivos.
