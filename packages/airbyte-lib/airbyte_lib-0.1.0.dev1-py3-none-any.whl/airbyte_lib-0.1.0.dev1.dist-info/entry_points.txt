@@ -1,0 +1,4 @@
+[console_scripts]
+airbyte-lib-validate-source=airbyte_lib.validate:run
+generate-docs=docs:run
+
