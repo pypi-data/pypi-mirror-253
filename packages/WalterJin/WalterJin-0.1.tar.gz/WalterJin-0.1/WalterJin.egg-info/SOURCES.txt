@@ -1,0 +1,6 @@
+setup.py
+WalterJin.egg-info/PKG-INFO
+WalterJin.egg-info/SOURCES.txt
+WalterJin.egg-info/dependency_links.txt
+WalterJin.egg-info/requires.txt
+WalterJin.egg-info/top_level.txt
