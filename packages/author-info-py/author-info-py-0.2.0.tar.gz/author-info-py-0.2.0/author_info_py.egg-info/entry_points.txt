@@ -1,0 +1,2 @@
+[console_scripts]
+author-info-py = author_info_py.cli2:main

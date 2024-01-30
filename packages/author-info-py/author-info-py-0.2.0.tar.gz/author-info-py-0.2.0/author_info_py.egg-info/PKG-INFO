@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: author-info-py
+Version: 0.2.0
+Summary: Пакет для добавления информации об авторе в файлы Python.
+Author: Nemtyrev Aleksey
+Author-email: art.net82@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
