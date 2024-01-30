@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: Topsis-Yash-102103812
+Version: 1.1.3
+Summary: A simple Python package for math operations and geometry calculations
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
