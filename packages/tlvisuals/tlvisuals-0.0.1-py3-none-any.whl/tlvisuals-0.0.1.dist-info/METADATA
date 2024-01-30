@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tlvisuals
+Version: 0.0.1
+Summary: Package for parsing and displaying TLVs(Tag-Length-Values)
+Author-email: Razif <m.razif.pramuda@gmail.com>
+Project-URL: Homepage, https://github.com/razzzp/TLVisuals
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TLVisuals
+
+Takes TLV in the form of UTF8 hex values, interprets the Tags, Lengths and Values, and outputs the interpretation in a more readable format.
