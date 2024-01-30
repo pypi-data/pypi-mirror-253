@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sparksql_jupyter/__init__.py
+sparksql_jupyter/sparksql.py
+sparksql_jupyter.egg-info/PKG-INFO
+sparksql_jupyter.egg-info/SOURCES.txt
+sparksql_jupyter.egg-info/dependency_links.txt
+sparksql_jupyter.egg-info/requires.txt
+sparksql_jupyter.egg-info/top_level.txt
