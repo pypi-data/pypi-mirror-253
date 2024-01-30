@@ -1,0 +1,2 @@
+[console_scripts]
+pybinpack = darwin_ssl_sniffer.__main__:cli
