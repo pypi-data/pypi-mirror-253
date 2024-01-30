@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyPortraitArt/__init__.py
+PyPortraitArt/main.py
+PyPortraitArt.egg-info/PKG-INFO
+PyPortraitArt.egg-info/SOURCES.txt
+PyPortraitArt.egg-info/dependency_links.txt
+PyPortraitArt.egg-info/top_level.txt
