@@ -1,0 +1,6 @@
+setup.py
+AMPLE_AIML_Model.egg-info/PKG-INFO
+AMPLE_AIML_Model.egg-info/SOURCES.txt
+AMPLE_AIML_Model.egg-info/dependency_links.txt
+AMPLE_AIML_Model.egg-info/requires.txt
+AMPLE_AIML_Model.egg-info/top_level.txt
