@@ -1,0 +1,7 @@
+README.md
+setup.py
+mobilemad/__init__.py
+mobilemad.egg-info/PKG-INFO
+mobilemad.egg-info/SOURCES.txt
+mobilemad.egg-info/dependency_links.txt
+mobilemad.egg-info/top_level.txt
