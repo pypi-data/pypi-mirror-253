@@ -1,0 +1,78 @@
+
+
+
+
+
+
+#
+#	how to publish:
+#
+#		cp structures/modules_dev/producer/module.MD readme.md
+#		# python3 structures/modules_dev/producer/_status/status.proc.py
+#		(rm -rf dist && python3 -m build --sdist && twine upload dist/*)
+#
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "producer"
+version = "1.0.1"
+requires-python = ">=3.8"
+dependencies = [
+	"onesie",
+
+	"click",
+	"flask",
+]
+
+#license = { file = "license.txt" }
+license = { text = "Mongo SSPL + GPL 3.0" }
+
+description = "rhythms and percussion"
+readme = "readme.md"
+classifiers = [
+
+]
+
+#
+#	https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#keywords
+#
+keywords = [
+	"winks",
+	"hearts",
+	"orbits",
+	"ellipsis",
+	"calendar",
+	"agenda",
+	"priorities",
+	"schedule",
+	"rhythms"
+]
+
+[project.urls]
+GitLab = "https://gitlab.com/offline-money/squash-1/producer"
+
+
+[project.scripts]
+#
+#	https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#creating-executable-scripts
+#	from this_module import clique; clique ()
+#
+producer = "producer:clique"
+
+
+[tool.setuptools.packages.find]
+where = [ "structures/modules_dev" ]
+
+#
+#	https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+#
+[tool.setuptools.package-data]
+"*" = [ "*.HTML", "*.json" ]
+
+
+
+
+
