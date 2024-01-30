@@ -1,0 +1,7 @@
+pygame_matplotlib/__init__.py,sha256=dGg_1qWTNA94riKqOk0GUolg5cByNNpJ15f2_RO2Pws,256
+pygame_matplotlib/backend_pygame.py,sha256=_Abs2s6nbQYOJKoNnnXvmRnX41MHmTEe_4sDFhHykZ0,19731
+pygame_matplotlib/gui_window.py,sha256=0tL_AggY7kLWObh15TF3h1lMgo2Umx4fzCZd8EtCl04,1508
+pygame_matplotlib-0.4.dist-info/METADATA,sha256=hSvDJj_COeoyf1oYXlg-M2Vo2D106L8dCcFT52li3Qo,2474
+pygame_matplotlib-0.4.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+pygame_matplotlib-0.4.dist-info/licenses/LICENSE,sha256=c2rdmpCwg9eWW5YG838a2StGJYg3ZMcn69IW4CClxfg,1065
+pygame_matplotlib-0.4.dist-info/RECORD,,
