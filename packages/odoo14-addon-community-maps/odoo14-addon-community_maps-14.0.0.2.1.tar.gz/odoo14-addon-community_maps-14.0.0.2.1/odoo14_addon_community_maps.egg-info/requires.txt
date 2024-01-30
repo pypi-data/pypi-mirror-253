@@ -1,0 +1,4 @@
+odoo14-addon-base_rest
+odoo14-addon-base_rest_base_structure
+odoo14-addon-metadata
+odoo<14.1dev,>=14.0a
