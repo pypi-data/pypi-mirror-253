@@ -1,0 +1,2 @@
+[isort.formatters]
+vertical-alignment = isort_vertical_alignment_plugin.format:format

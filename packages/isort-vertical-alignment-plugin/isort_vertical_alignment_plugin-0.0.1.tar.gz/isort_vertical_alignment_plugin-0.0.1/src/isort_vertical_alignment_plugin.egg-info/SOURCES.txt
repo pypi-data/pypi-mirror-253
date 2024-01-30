@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/isort_vertical_alignment_plugin/__init__.py
+src/isort_vertical_alignment_plugin/format.py
+src/isort_vertical_alignment_plugin.egg-info/PKG-INFO
+src/isort_vertical_alignment_plugin.egg-info/SOURCES.txt
+src/isort_vertical_alignment_plugin.egg-info/dependency_links.txt
+src/isort_vertical_alignment_plugin.egg-info/entry_points.txt
+src/isort_vertical_alignment_plugin.egg-info/top_level.txt

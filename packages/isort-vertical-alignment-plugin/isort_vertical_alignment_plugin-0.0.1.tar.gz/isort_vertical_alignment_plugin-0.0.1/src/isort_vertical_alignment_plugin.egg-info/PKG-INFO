@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: isort_vertical_alignment_plugin
+Version: 0.0.1
+Summary: A small plugin that vertically aligns isort output
+Author-email: JacksonKontny <jackson.kontny@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# isort Vertical Alignment Plugin
+
+Simple plugin for enabling vertical alignment in isort. 
+
+Set `formatter=vertical-alignment` in `.isort.cfg` to activate
