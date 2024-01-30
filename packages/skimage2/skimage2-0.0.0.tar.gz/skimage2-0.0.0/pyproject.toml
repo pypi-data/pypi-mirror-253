@@ -1,0 +1,16 @@
+[project]
+name = "skimage2"
+version = "0.0.0"
+authors = [
+  { name="scikit-image authors", email="stefanv@berkeley.edu" },
+]
+description = "scikit-image 2.0 placeholder"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/scikit-image/scikit-image"

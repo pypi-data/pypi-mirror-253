@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: skimage2
+Version: 0.0.0
+Summary: scikit-image 2.0 placeholder
+Author-email: scikit-image authors <stefanv@berkeley.edu>
+Project-URL: Homepage, https://github.com/scikit-image/scikit-image
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11

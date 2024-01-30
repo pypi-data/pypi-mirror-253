@@ -1,0 +1,5 @@
+pyproject.toml
+skimage2.egg-info/PKG-INFO
+skimage2.egg-info/SOURCES.txt
+skimage2.egg-info/dependency_links.txt
+skimage2.egg-info/top_level.txt
