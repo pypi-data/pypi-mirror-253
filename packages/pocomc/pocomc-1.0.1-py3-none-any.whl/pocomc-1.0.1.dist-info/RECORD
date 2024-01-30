@@ -1,0 +1,17 @@
+pocomc/__init__.py,sha256=_kHp__EZ9YEX7R1GuT-difAWKri3eVeT0JM5bU31bZU,1093
+pocomc/_version.py,sha256=VAHPzEVbVY57udXNeljbTM8BnJ-ZHOJ6hSmLAd4CYgA,17
+pocomc/flow.py,sha256=6CXemFkYDVEQG4ov3FjSyrMjyf0vJY_ZkenUu2dMLOg,13262
+pocomc/geometry.py,sha256=q0J1dehu4viHlYoBU33-EByd98ZiHMb1Zs722r1niIQ,1707
+pocomc/input_validation.py,sha256=xpcWQYaN2FSAwcAueZG4Gi00_7gYXbji3ELEXgpdikY,1985
+pocomc/mcmc.py,sha256=FmyF5lY__7hPaTEJEAnegSOdCEfSNAWTc-XPmRD_MNE,16481
+pocomc/particles.py,sha256=A5j8MVztUlOdon0gJfeCjFHdDXki-Hv8ttgluDY3EmM,14136
+pocomc/prior.py,sha256=MJHXCUIPKiGcQ-eibC6jQ-braP2WN4hAMZ2ZaHbUsv0,5093
+pocomc/sampler.py,sha256=xrjAoR37d2LeBiwuEPvkftfPbscvJ1qtvBa7Cvh3hwY,27368
+pocomc/scaler.py,sha256=hzMzwA89-qSKYxjueUQn3BnL15Yr3wwncnrBsqOMXdM,15125
+pocomc/student.py,sha256=V2CN1RVzphEgSZhr3chQWiRsHSxI236MdI7JsxyGmpc,2319
+pocomc/tools.py,sha256=R0_PA7jk9SDZcEMTrzEE-2gbjkRYt1iJgJlgs8nyMwU,10140
+pocomc-1.0.1.dist-info/LICENCE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pocomc-1.0.1.dist-info/METADATA,sha256=2gPpXj42tNu9p1i1vE4fFZMqwMQb5K-vHsjCHS6u-ys,3866
+pocomc-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pocomc-1.0.1.dist-info/top_level.txt,sha256=TeZZ2bzc_4I2mLru64aNBP3FA7CBS53rd1eFxeXjEMs,7
+pocomc-1.0.1.dist-info/RECORD,,
