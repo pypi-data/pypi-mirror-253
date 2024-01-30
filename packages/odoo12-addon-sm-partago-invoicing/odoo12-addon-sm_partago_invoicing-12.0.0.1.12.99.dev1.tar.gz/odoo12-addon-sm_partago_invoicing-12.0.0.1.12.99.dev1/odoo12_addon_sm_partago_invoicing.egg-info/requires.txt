@@ -1,0 +1,9 @@
+odoo12-addon-sm_connect
+odoo12-addon-sm_partago_db
+odoo12-addon-sm_partago_tariffs
+odoo12-addon-sm_partago_usage
+odoo12-addon-sm_rewards
+odoo12-addon-sm_teletacs
+odoo12-addon-sm_teletacs
+odoo12-addon-vertical_carsharing
+odoo<12.1dev,>=12.0a
