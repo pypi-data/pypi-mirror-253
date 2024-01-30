@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: spotify_login
+Version: 1.0
+Requires-Dist: selenium ==4.17.2
+
