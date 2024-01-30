@@ -1,0 +1,8 @@
+sf-hamilton
+
+[contribute]
+click>8.0.0
+gitpython
+
+[visualization]
+sf-hamilton[visualization]
