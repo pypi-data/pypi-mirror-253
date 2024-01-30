@@ -1,0 +1,3 @@
+[console_scripts]
+run_tw_experimentation_streamlit=tw_experimentation.streamlit.run_streamlit_app_entry_point:main
+
