@@ -1,0 +1,4 @@
+[flask.commands]
+auth=casual_auth.cli:auth
+core=casual.cli:casual
+

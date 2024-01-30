@@ -1,0 +1,53 @@
+{% extends "auth/admin.base.html.j2" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block appcontent -%}
+  <form class="form-horizontal" method="post" id="auth_role_edit">
+    {{ form.hidden_tag() }}
+    {{ wtf.form_field(form.name,
+                      form_type='horizontal',
+                      horizontal_columns=('lg', 3, 6)) }}
+    {{ wtf.form_field(form.description,
+                      form_type='horizontal',
+                      horizontal_columns=('lg', 3, 6)) }}
+    {{ wtf.form_field(form.submit,
+                      form_type='horizontal',
+                      horizontal_columns=('lg', 3, 6),
+                      button_map={'submit': 'dark btn-block'}) }}
+
+    <h4>Permissions</h4>
+    <div class="row">
+      {% for group in permissions | groupby('group') %}
+        <div class="col-sm-4 pb-4">
+          {{  btn_a(text=group.grouper,
+                    url='#toggle',
+                    size='sm',
+                    design='secondary',
+                    **{ 'onClick': "toggle('" + group.grouper+ "')" }) }}
+
+          {% for permission in group.list | sort(attribute='name') %}
+            <div class="form-check">
+              <input type="checkbox"
+                     name="permissions"
+                     class="form-check-input"
+                     value="{{ permission.name }}"
+                     id="{{ permission.name }}"
+                     data-target="{{ group.grouper }}"
+                     {{ ('checked' if permission in role.permissions) if role is defined }}>
+              <label class="form-check-label" for="{{ permission.name }}">
+                {{ permission.name }}
+              </label>
+            </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+
+    {{ wtf.form_field(form.submit,
+                      form_type='horizontal',
+                      horizontal_columns=('lg', 0, 12),
+                      button_map={'submit': 'dark'}) }}
+  </form>
+{%- endblock %}
+

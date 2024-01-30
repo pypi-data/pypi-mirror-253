@@ -1,0 +1,7 @@
+{% macro badge(text, design=config['CASUAL_THEME_DEFAULT_COLOR']) %}
+<span class="badge bg-{{- design }}">{{ text }}</span>
+{% endmacro %}
+
+{% macro pill(text, design=config['CASUAL_THEME_DEFAULT_COLOR']) %}
+<span class="badge rounded-pill bg-{{- design }}">{{ text }}</span>
+{% endmacro %}

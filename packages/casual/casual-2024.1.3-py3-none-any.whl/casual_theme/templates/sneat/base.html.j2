@@ -1,0 +1,9 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block html_attribs %}
+lang="{{ session.locale }}"
+{% endblock %}
+
+{% block title %}
+{{ config['CASUAL_NAME'] }}
+{% endblock %}
