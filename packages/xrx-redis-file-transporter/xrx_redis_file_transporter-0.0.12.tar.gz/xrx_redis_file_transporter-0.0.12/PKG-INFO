@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xrx_redis_file_transporter
+Version: 0.0.12
+Summary: A redis file transport package
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: # xrx-redis-file-transporter
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
