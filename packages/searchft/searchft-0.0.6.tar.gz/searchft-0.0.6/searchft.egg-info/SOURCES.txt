@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+searchft/__init__.py
+searchft/searchft.py
+searchft/teste.py
+searchft/teste2.py
+searchft.egg-info/PKG-INFO
+searchft.egg-info/SOURCES.txt
+searchft.egg-info/dependency_links.txt
+searchft.egg-info/requires.txt
+searchft.egg-info/top_level.txt
