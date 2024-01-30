@@ -1,0 +1,15 @@
+brainglobe-space>=1.0.0
+click
+meshio
+numpy
+pandas
+requests
+rich>=9.0.0
+tifffile
+treelib
+
+[dev]
+check-manifest
+pre-commit
+pytest
+pytest-cov

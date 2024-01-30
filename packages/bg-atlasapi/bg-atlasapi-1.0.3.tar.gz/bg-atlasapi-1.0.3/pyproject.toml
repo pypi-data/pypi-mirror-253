@@ -1,0 +1,99 @@
+[project]
+name = "bg-atlasapi"
+description = "A lightweight python module to interact with atlases for systems neuroscience"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Luigi Petrucco, Federico Claudi, Adam Tyson", email = "code@adamltyson.com" },
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "brainglobe-space >= 1.0.0",
+    "click",
+    "meshio",
+    "numpy",
+    "pandas",
+    "requests",
+    "rich >= 9.0.0",
+    "tifffile",
+    "treelib",
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://brainglobe.info/documentation/bg-atlasapi/index.html"
+"Source Code" = "https://github.com/brainglobe/bg-atlasapi"
+"Bug Tracker" = "https://github.com/brainglobe/bg-atlasapi/issues"
+"Documentation" = "https://brainglobe.info/documentation/bg-atlasapi/index.html"
+
+[project.optional-dependencies]
+dev = ["check-manifest", "pre-commit", "pytest", "pytest-cov"]
+
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+brainglobe = "bg_atlasapi.cli:bg_cli"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["bg_atlasapi*"]
+exclude = ["tests*"]
+
+[tool.pytest.ini_options]
+addopts = "--cov=bg_atlasapi"
+filterwarnings = ["error"]
+markers = ["slow: marks tests as slow (deselect with '-m \"not slow\"')"]
+
+[tool.black]
+target-version = ['py39', 'py310', 'py311']
+skip-string-normalization = false
+line-length = 79
+
+[tool.setuptools_scm]
+
+[tool.check-manifest]
+ignore = [
+    "*.yaml",
+    "tox.ini",
+    "tests/*",
+    "tests/test_unit/*",
+    "tests/test_integration/*",
+]
+
+[tool.ruff]
+line-length = 79
+exclude = ["__init__.py", "build", ".eggs"]
+select = ["I", "E", "F"]
+fix = true
+
+[tool.tox]
+legacy_tox_ini = """
+# For more information about tox, see https://tox.readthedocs.io/en/latest/
+[tox]
+envlist = py{38,39,310,311}
+
+[gh-actions]
+python =
+    3.9: py39
+    3.10: py310
+    3.11: py311
+
+[testenv]
+extras =
+    dev
+commands = pytest -v --color=yes --cov=bg_atlasapi --cov-report=xml -W ignore::DeprecationWarning
+"""
