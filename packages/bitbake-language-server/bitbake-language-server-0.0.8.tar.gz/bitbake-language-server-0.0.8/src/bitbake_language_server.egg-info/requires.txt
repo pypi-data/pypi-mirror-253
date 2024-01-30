@@ -1,0 +1,5 @@
+oelint-parser>=3.0.2
+pygls
+
+[dev]
+pytest-cov
