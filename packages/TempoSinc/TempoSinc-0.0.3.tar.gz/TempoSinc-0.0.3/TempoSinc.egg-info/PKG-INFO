@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: TempoSinc
+Version: 0.0.3
+Summary: Previsão de tempo
+Author: RaiLeal/JoseMateus
+Author-email: temposinc.gerencia@gmail.com
+License: MIT License
+Keywords: TempoSinc
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# DescriÃ§Ã£o  
+A classe Temposinc foi desenvolvida como uma ferramenta versÃ¡til para a obtenÃ§Ã£o e anÃ¡lise de dados de previsÃ£o do tempo. Com funcionalidades abrangentes, ela permite nÃ£o apenas a recuperaÃ§Ã£o das coordenadas de uma cidade, mas tambÃ©m a obtenÃ§Ã£o detalhada da previsÃ£o do tempo para os prÃ³ximos 7 dias. AlÃ©m disso, oferece recursos para calcular mÃ©dias diÃ¡rias, visualizar probabilidades de precipitaÃ§Ã£o de chuva atravÃ©s de grÃ¡ficos interativos e atÃ© mesmo compartilhar essas informaÃ§Ãµes meteorolÃ³gicas por e-mail.  
+# Funcionalidades  
+â€¢	Obter cordenadas de uma cidade.  
+â€¢	Obter previsÃ£o de tempo para os proxÃ­mos sete dias.  
+â€¢	Obter a media de temperatura para os proxÃ­mos sete dias.   
+â€¢	Obter previsÃ£o da temperatura atual.  
+â€¢	Obter previsÃ£o da temperatura por hora para os proxÃ­mos sete dias.  
+â€¢	Obter previsÃ£o da temperatura por hora de um dia em especÃ­fico.  
+â€¢	ElaboraÃ§Ã£o de um grÃ¡fico que representa a probabilidade de ocorrÃªncia de chuva nos prÃ³ximos sete dias.  
+â€¢	ElaboraÃ§Ã£o de um grÃ¡fico que representa a probabilidade de ocorrÃªncia de chuva por hora de um dia em especÃ­fico.  
+â€¢	Envio de dados climÃ¡ticos por e-mail.  
