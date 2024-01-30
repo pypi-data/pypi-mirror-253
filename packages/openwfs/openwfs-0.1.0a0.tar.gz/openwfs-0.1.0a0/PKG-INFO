@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: openwfs
+Version: 0.1.0a0
+Summary: A libary for performing wavefront shaping experiments and simulations.
+Author: Ivo Vellekoop
+Author-email: i.m.vellekoop@utwente.nl
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENCE.txt
