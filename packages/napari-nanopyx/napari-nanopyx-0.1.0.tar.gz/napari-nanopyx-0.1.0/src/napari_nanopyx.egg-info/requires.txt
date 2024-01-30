@@ -1,0 +1,8 @@
+napari
+nanopyx>=0.2.2
+scikit-image
+magicgui
+
+[testing]
+pytest
+pytest-cov
