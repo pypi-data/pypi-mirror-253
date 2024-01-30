@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: producer
+Version: 1.0.0
+Summary: rhythms and percussion
+License: Mongo SSPL + GPL 3.0
+Project-URL: GitLab, https://gitlab.com/offline-money/squash-1/producer
+Keywords: winks,hearts,orbits,ellipsis,calendar,agenda,priorities,schedule,rhythms
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: onesie
+Requires-Dist: click
+Requires-Dist: flask
+
+
+
+
+******
+
+Bravo!  You have received a Medical Diploma from   
+the Orbital Convergence University International Air and Water Embassy of the Tangerine Planet.  
+
+You are now officially certified to include this module in your practice.
+
+******
+
+
+# producer
