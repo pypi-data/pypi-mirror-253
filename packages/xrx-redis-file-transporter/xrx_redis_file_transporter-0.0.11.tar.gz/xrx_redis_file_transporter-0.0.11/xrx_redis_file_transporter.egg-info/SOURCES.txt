@@ -1,0 +1,7 @@
+README.md
+setup.py
+xrx_redis_file_transporter/__init__.py
+xrx_redis_file_transporter.egg-info/PKG-INFO
+xrx_redis_file_transporter.egg-info/SOURCES.txt
+xrx_redis_file_transporter.egg-info/dependency_links.txt
+xrx_redis_file_transporter.egg-info/top_level.txt
