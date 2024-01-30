@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fs-node-hash
+Version: 0.0.2
+Summary: Hash file contents, directories and strings with sha256
+Home-page: https://github.com/markuspeitl/fs-node-hash
+Author: Markus Peitl
+Author-email: office@markuspeitl.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: recurse-tree-process
+
+# Hash file contents, directories and strings with sha256
+
+### Usage
+
+```
