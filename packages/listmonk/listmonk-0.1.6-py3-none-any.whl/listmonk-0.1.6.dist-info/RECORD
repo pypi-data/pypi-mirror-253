@@ -1,0 +1,12 @@
+listmonk/.DS_Store,sha256=Fo4mN4hkr5DAPqayQWJf7pQOOHGXT1qlb6NAhbdiHQI,6148
+listmonk/__init__.py,sha256=hRbmXkfygJ_F8Tt4wpEApd6bLDyZT7ihLF8zr8ocyZA,1287
+listmonk/urls.py,sha256=9-tqLhB50_ExrxYbhWQ2GomqGeZGdCdZOg-rdTEOhJM,223
+listmonk/errors/__init__.py,sha256=L_2mU8ZPe5Zm6IvOV2rIoN638RnlMWvH-0FTd9Y32XM,103
+listmonk/impl/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+listmonk/impl/__init__.py,sha256=dlZxS4D6RoAADcD7rU4ZZcNgJTHKONgMEneaoQlo0Ls,20477
+listmonk/models/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+listmonk/models/__init__.py,sha256=ZwKI3mN0uI_G7i-J6r5yBOi6VzQCd30TnYHCRK43I_M,1549
+listmonk-0.1.6.dist-info/METADATA,sha256=ZKbKSHjrwC1vQoGReiIR7nfkQKuPj4kpRKALEgdsamY,4618
+listmonk-0.1.6.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+listmonk-0.1.6.dist-info/licenses/LICENSE,sha256=12NN0UxiyDHVbhIG43LgZQLLxijQUO0Uj8TcT0RkR2A,1081
+listmonk-0.1.6.dist-info/RECORD,,
