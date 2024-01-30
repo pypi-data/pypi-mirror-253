@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+tests/test_torchgating.py
+torchgating/__init__.py
+torchgating/run.py
+torchgating/torchgating.py
+torchgating/utils.py
+torchgating/version.py
+torchgating.egg-info/PKG-INFO
+torchgating.egg-info/SOURCES.txt
+torchgating.egg-info/dependency_links.txt
+torchgating.egg-info/entry_points.txt
+torchgating.egg-info/requires.txt
+torchgating.egg-info/top_level.txt
