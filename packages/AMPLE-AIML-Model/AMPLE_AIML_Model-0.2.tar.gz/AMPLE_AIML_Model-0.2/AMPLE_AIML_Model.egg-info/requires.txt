@@ -1,0 +1,9 @@
+tensorflow
+keras_preprocessing
+gensim
+pyspellchecker
+sentencepiece
+nltk
+scikit-learn
+symspellpy
+setuptools>=42
