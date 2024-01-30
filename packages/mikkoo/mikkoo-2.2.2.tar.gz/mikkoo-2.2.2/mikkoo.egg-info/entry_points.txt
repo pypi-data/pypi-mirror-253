@@ -1,0 +1,2 @@
+[console_scripts]
+mikkoo = mikkoo.controller:main
