@@ -1,0 +1,3 @@
+[console_scripts]
+vbpaper=vbpaper.main:main
+
