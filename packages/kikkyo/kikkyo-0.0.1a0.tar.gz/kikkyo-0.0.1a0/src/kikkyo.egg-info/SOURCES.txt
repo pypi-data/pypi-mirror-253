@@ -1,0 +1,5 @@
+setup.py
+src/kikkyo.egg-info/PKG-INFO
+src/kikkyo.egg-info/SOURCES.txt
+src/kikkyo.egg-info/dependency_links.txt
+src/kikkyo.egg-info/top_level.txt
