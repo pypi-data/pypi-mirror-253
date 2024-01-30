@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: omuchatprovider
+Version: 0.1.3
+Summary: Add your description here
+Author-email: am230 <111672334+am230@users.noreply.github.com>
+Requires-Python: >=3.12
+Requires-Dist: aiohttp>=3.9.1
+Requires-Dist: beautifulsoup4>=4.12.2
+Requires-Dist: iwashi>=2.1.5
+Requires-Dist: lxml>=5.0.0
+Description-Content-Type: text/markdown
+
+# provider
+
+Describe your project here.
