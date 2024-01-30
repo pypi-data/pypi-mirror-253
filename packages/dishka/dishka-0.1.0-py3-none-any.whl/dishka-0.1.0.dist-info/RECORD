@@ -1,0 +1,14 @@
+dishka/__init__.py,sha256=8mcqi7gW6gkYKFxS0GCAtOk2nSFzn6iohLVdHFaQfjM,489
+dishka/async_container.py,sha256=RM5gZBOUncPh0YTij9X0wkA-aupiBu4Hf9aCO7PP0TI,5387
+dishka/container.py,sha256=Rmr8WdjnKaHMPkWIzgZ3lT4v8Y0flfUzHQhslWdcAac,4736
+dishka/dependency_source.py,sha256=Cdne0dgbxftN8J4oSfpzMlxHYr6uFAPZgsHP8YZkpnQ,6616
+dishka/exceptions.py,sha256=lfc0pKZ75uv64bY1UsnybyDe80UNlO3u3lIo-5IvaW0,280
+dishka/inject.py,sha256=3kA22RGQJRSuK2XMBbyz_2NcBiB5WuxqYsV2bFbr10M,3150
+dishka/provider.py,sha256=617zKcU0JiFIgPd4482Ei4UUEoT3uwctCkMNENZUpAM,1660
+dishka/registry.py,sha256=2FqMjDrlIA-DxqHUILD0-horfS6nGKgGqgygBbksjG8,2636
+dishka/scope.py,sha256=0bp_uwWyce2hvmJ6Eg6BxO47U1rK3zi1OEW0BZLpg_M,162
+dishka-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dishka-0.1.0.dist-info/METADATA,sha256=AKe9Y_x3Z3u0DG2aSQvzJInZ-8AVe7RagoJr9cC5bEc,21560
+dishka-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+dishka-0.1.0.dist-info/top_level.txt,sha256=j5cNSgYuCug-5ZDQzNKOVKReoLrtZtIfqy7D3lvZcNI,7
+dishka-0.1.0.dist-info/RECORD,,
