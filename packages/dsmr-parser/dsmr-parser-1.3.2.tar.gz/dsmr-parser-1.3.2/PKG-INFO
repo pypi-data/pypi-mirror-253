@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dsmr-parser
+Version: 1.3.2
+Summary: Library to parse Dutch Smart Meter Requirements (DSMR)
+Home-page: https://github.com/ndokter/dsmr_parser
+Author: Nigel Dokter and many others
+Author-email: mail@nldr.net
+License: MIT
+License-File: LICENSE
