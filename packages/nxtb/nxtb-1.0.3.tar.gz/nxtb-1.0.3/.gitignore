@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: 2024 S60W79 <ernetnakisuml@gmail.com>
+# SPDX-FileCopyrightText: 2024 Gregor Düster <git@gdstr.eu>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+*.geojson
+__pycache__
