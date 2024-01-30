@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Pyl3s.egg-info/PKG-INFO
+Pyl3s.egg-info/SOURCES.txt
+Pyl3s.egg-info/dependency_links.txt
+Pyl3s.egg-info/requires.txt
+Pyl3s.egg-info/top_level.txt
+pyl3s/__init__.py
+pyl3s/pyl3s.py
