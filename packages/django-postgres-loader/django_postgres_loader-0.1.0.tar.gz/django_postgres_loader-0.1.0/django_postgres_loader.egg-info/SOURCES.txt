@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+django_postgres_loader/__init__.py
+django_postgres_loader/load.py
+django_postgres_loader/managers.py
+django_postgres_loader.egg-info/PKG-INFO
+django_postgres_loader.egg-info/SOURCES.txt
+django_postgres_loader.egg-info/dependency_links.txt
+django_postgres_loader.egg-info/requires.txt
+django_postgres_loader.egg-info/top_level.txt
+django_postgres_loader/core/__init__.py
+django_postgres_loader/core/definitions.py
+django_postgres_loader/core/field_updaters.py
+django_postgres_loader/utils/__init__.py
+tests/__init__.py
