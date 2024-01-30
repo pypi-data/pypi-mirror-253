@@ -1,0 +1,5 @@
+[pymodaq.instruments]
+redpitaya = pymodaq_plugins_redpitaya
+
+[pymodaq.plugins]
+redpitaya = pymodaq_plugins_redpitaya
