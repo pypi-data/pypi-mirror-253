@@ -1,0 +1,17 @@
+odoo/addons/l10n_it_fatturapa_out_fd/README.rst,sha256=dMHyvHCXsGEp0fCdHX-2h13Z7XwIfwik_NJjGejpt70,3122
+odoo/addons/l10n_it_fatturapa_out_fd/__init__.py,sha256=o78DHoI4mtwy3u0fkdaMwikzsPuLYURO89Lx-3F93C0,89
+odoo/addons/l10n_it_fatturapa_out_fd/__manifest__.py,sha256=Pn57dvVvqFwmjGabT0DOOi-7JbpBMOc-TMdcI1WGThc,627
+odoo/addons/l10n_it_fatturapa_out_fd/i18n/l10n_it_fatturapa_out_fd.pot,sha256=CsYGqx93DVVlq7TrGeknyuo_XyIOu_Qn4d7jJtTUuG8,523
+odoo/addons/l10n_it_fatturapa_out_fd/readme/CONTRIBUTORS.rst,sha256=oIzikxXKOvWqDOj44ny9excNKHjlxI7GMq9iVsyC84M,76
+odoo/addons/l10n_it_fatturapa_out_fd/readme/DESCRIPTION.rst,sha256=YE6cFBP89OPMDb-_3Eq43WEwvlxKORhld84dcfhYcLM,210
+odoo/addons/l10n_it_fatturapa_out_fd/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/l10n_it_fatturapa_out_fd/static/description/index.html,sha256=HsntEs9oEGyXuOZuTB68QuL0-6g1XeUrQ9zDBA5h2aI,12435
+odoo/addons/l10n_it_fatturapa_out_fd/tests/__init__.py,sha256=lSqQnMjo9G4jcMzVOywgklFfJoEnnu7_n0w1mtiU6uc,101
+odoo/addons/l10n_it_fatturapa_out_fd/tests/test_xml_generation.py,sha256=JjKIjs0IdY55aNQ7nWOKddK9kqf9N7P1HWkum_hINUM,1976
+odoo/addons/l10n_it_fatturapa_out_fd/tests/data/IT06363391001_00001.xml,sha256=53_ScEahiQCI1R_B9J-tg4Fo4z0_o2MKjsfssuY5Va8,3632
+odoo/addons/l10n_it_fatturapa_out_fd/wizards/__init__.py,sha256=eV_bkiZ_oK6q0tR1F7-ebXtKwvwDYt1HRDk4jECrt9M,105
+odoo/addons/l10n_it_fatturapa_out_fd/wizards/wizard_export_fatturapa.py,sha256=SaWbo0x5V_XRbHUuIA9xzAsQ4o6cXefae_pbs0stlu8,800
+odoo12_addon_l10n_it_fatturapa_out_fd-12.0.1.0.0.99.dev2.dist-info/METADATA,sha256=xHiQI5vvn8-h2wvfr31Z52sD0oaDJLxjJutWbqvTm7M,3838
+odoo12_addon_l10n_it_fatturapa_out_fd-12.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+odoo12_addon_l10n_it_fatturapa_out_fd-12.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_l10n_it_fatturapa_out_fd-12.0.1.0.0.99.dev2.dist-info/RECORD,,
