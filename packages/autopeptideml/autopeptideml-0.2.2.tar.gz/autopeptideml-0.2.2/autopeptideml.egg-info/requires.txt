@@ -1,0 +1,14 @@
+charset-normalizer
+gdown
+graph-part
+networkx
+optuna
+pandarallel
+scikit-learn
+scikit-plot
+tokenizers
+torch
+transformers
+pandarallel
+lightgbm
+mdpdf
