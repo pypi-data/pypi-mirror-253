@@ -1,0 +1,2 @@
+[console_scripts]
+psrx = __main__:main
