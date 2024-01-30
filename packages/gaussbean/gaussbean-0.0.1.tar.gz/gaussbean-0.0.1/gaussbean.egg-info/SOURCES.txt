@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+gaussbean/__init__.py
+gaussbean/calc.py
+gaussbean.egg-info/PKG-INFO
+gaussbean.egg-info/SOURCES.txt
+gaussbean.egg-info/dependency_links.txt
+gaussbean.egg-info/top_level.txt
+gaussbean/dataset/__init__.py
+gaussbean/dataset/datasetprettier.py
+gaussbean/dataset/datasetsize.py
+gaussbean/single/__init__.py
+gaussbean/single/singleprettier.py
+gaussbean/single/singlesize.py
