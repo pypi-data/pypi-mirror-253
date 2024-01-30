@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: tum_esm_utils
+Version: 1.8.4
+Summary: Python utilities by the Professorship of Environmental Sensing and Modeling at the Technical University of Munich
+Keywords: tum utils utilities environmental sensing modeling python library utilities pydoc-markdown
+Author-Email: Moritz Makowski <moritz.makowski@tum.de>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <4.0,>=3.8
+Requires-Dist: filelock>=3.13.1
+Requires-Dist: requests>=2.31.0
+Requires-Dist: psutil>=5.9.8
+Requires-Dist: pydantic>=2.5.3
+Requires-Dist: polars>=0.20.5
+Requires-Dist: pytest>=7.4.4; extra == "dev"
+Requires-Dist: types-psutil>=5.9.5.20240106; extra == "dev"
+Requires-Dist: types-requests>=2.31.0.20240106; extra == "dev"
+Requires-Dist: pydocstyle>=6.3.0; extra == "dev"
+Requires-Dist: yapf>=0.40.2; extra == "dev"
+Requires-Dist: mypy>=1.8.0; extra == "dev"
+Requires-Dist: pydoc-markdown>=4.8.2; extra == "dev"
+Provides-Extra: dev
+Description-Content-Type: text/markdown
+
+# 📦 &nbsp;TUM ESM Python Utilities
+
+This library is a collection of small functions used in our research projects. Here, we can test and document the functions properly instead of every project dealing with this overhead which allows us to reduce the size of the utility directories of individual projects.
+
+Feel free to use it in any other project ✨
+
+[![PyPI](https://img.shields.io/pypi/v/tum-esm-utils?color=f43f5e&label=latest%20release)](https://pypi.org/project/tum-esm-utils)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tum-esm-utils?color=f43f5e&label=supported%20python%20versions)](https://pypi.org/project/tum-esm-utils/)<br/>
+[![GitHub](https://img.shields.io/github/license/tum-esm/utils?color=f59e0b)](https://github.com/tum-esm/utils/blob/main/LICENSE)
+[![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/tum-esm/utils/test.yaml?branch=main&label=CI%20tests)](https://github.com/tum-esm/utils/actions/workflows/test.yaml)
+[![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/tum-esm/utils?label=codeclimate%20maintainability%20rating)](https://codeclimate.com/github/tum-esm/utils)
+
+<br/>
+
+## For Users
+
+Install the Python library with:
+
+```bash
+pdm add tum_esm_utils
+# or
+pip install tum_esm_utils
+```
+
+Use the API reference at [tum-esm-utils.netlify.app](https://tum-esm-utils.netlify.app).
+
+<br/>
+
+## For Developers
+
+Publish the Package to PyPI:
+
+```bash
+pdm build
+pdm publish
+```
+
+Open documentation page in dev mode
+
+```bash
+cd docs
+npm install
+npm run dev
+```
