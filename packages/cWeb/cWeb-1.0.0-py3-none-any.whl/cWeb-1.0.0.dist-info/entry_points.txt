@@ -1,0 +1,2 @@
+[console_scripts]
+cweb = cweb.cli:run

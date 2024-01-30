@@ -1,0 +1,10 @@
+cweb/__init__.py,sha256=1eGg23-piclK2KBUq4w7Nmw5vZ3SFrie-wSNU-DLMBU,1540
+cweb/cli.py,sha256=3sVG0XbsUdPQBhBW6VG1AlrfP1f4AAEOxGDwBg1-2rQ,1007
+cweb/webapp.py,sha256=PNEmxReR46h_jJGv_9Tj2XRC6zYUWl35tI7yueJfPqo,311
+cweb/webservice.py,sha256=te3erhWIqAyDqT1WHfyGCBMG-JBKdhtWzeaJ7wvO9rk,519
+cWeb-1.0.0.dist-info/LICENSE.txt,sha256=A356-RxY6lv1efDq-ID-T7RKqPHcbuqtkGwqLu_8yyU,1082
+cWeb-1.0.0.dist-info/METADATA,sha256=dgip4wEnMyGDlNMOxLhxeyaghKsxEb_VVibp2ZzDFkI,6667
+cWeb-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cWeb-1.0.0.dist-info/entry_points.txt,sha256=dcN8Jj4OJGm6I3WLyzYBhFJboYk9aPrIaTxPo8UatTg,38
+cWeb-1.0.0.dist-info/top_level.txt,sha256=659imRDy2RN2d8YeRtDOdok_tTGmOkovRbm9UYEotMQ,5
+cWeb-1.0.0.dist-info/RECORD,,
