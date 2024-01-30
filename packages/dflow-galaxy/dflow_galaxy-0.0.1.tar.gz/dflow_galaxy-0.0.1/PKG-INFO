@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dflow-galaxy
+Version: 0.0.1
+Summary: 
+Author: weihong.xu
+Author-email: xuweihong.cn@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
