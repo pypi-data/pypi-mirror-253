@@ -1,0 +1,11 @@
+rimc_engine/__init__.py,sha256=EExB2nh1dgbuFCyk947RdEdxOHIYFT25c2OUF6mxBeg,22
+rimc_engine/convert.py,sha256=4LDCt25bU4u8_ZtkH5EiBxmq6UJ2VvQQt9rqpxOZACo,2207
+rimc_engine/effects.py,sha256=PY0GoNqXebJewbVQxV0GB4AQbbT02Cs6yBhMBo_0IhA,8132
+rimc_engine/recipes.py,sha256=PKF3WrzuaGQaaX1PvAaeLogXWsXagWP7qa1d1dXkVko,4008
+rimc_engine/test_crop.py,sha256=XVIvWWodlJAqswmxddfmR4cUcy2QSPspk9yz0kzJM9g,350
+rimc_engine/test_effects.py,sha256=AwAV3Fru9jMr2TMIGDPE636uM7DUVA-c-1X_tudIFV0,807
+rimc_engine/tools.py,sha256=rusc4IJSr3UnL-g4QNPmYqNpA0bt8RvEWOYhudv5kdg,536
+rimc_engine-0.3.0.dist-info/METADATA,sha256=SBoztS6kSLKTJjt7R2kvhQ4bm4v2ssbdZNm4KSJbWSc,1702
+rimc_engine-0.3.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+rimc_engine-0.3.0.dist-info/licenses/LICENSE,sha256=SavuCJPTEHWEROe-nvg_2SJVClq1xBKn3rCpbKpnnOY,1091
+rimc_engine-0.3.0.dist-info/RECORD,,
