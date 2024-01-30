@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: purediffusion
+Version: 0.1.1
+Summary: A torch implementation for DDPM with DDIM sampling.
+Home-page: https://github.com/puar-playground/purediffusion
+Author: Jian Chen
+Author-email: cjvault1223@gmail.com
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
