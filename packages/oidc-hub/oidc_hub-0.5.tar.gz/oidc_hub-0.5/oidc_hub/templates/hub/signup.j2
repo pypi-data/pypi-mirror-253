@@ -1,0 +1,46 @@
+{% extends "admin/login.html" %}
+{% load i18n static %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Registration') }}</a></h1>
+{% if user.is_anonymous %}
+  {% include "admin/color_theme_toggle.html" %}
+{% endif %}
+{% endblock %}
+
+{% block content %}
+{% if form.errors and not form.non_field_errors %}
+<p class="errornote">
+{% blocktranslate count counter=form.errors.items|length %}Please correct the error below.{% plural %}Please correct the errors below.{% endblocktranslate %}
+</p>
+{% endif %}
+
+{% if form.non_field_errors %}
+{% for error in form.non_field_errors %}
+<p class="errornote">
+    {{ error }}
+</p>
+{% endfor %}
+{% endif %}
+
+<div id="content-main">
+  <form action="{% url 'hub:signup' %}?token={{ token }}" method="post" id="signup-form">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ next }}">
+    <div class="form-row">
+      {{ form.username.errors }}
+      {{ form.username.label_tag }} {{ form.username }}
+    </div>
+    <div class="form-row">
+      {{ form.password.errors }}
+      {{ form.password.label_tag }} {{ form.password }}
+    </div>
+
+    <div class="submit-row" style="display: flex; flex-direction: column;">
+      <input type="submit" value="{% translate 'Create account' %}">
+    </div>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends "admin/base.html" %}
+{% load i18n static %}
+
+{% block title %}{{ site_title|default:_('Research Data Management') }}{% endblock %}
+
+{% block extrastyle %}
+  <link rel="stylesheet" type="text/css" href="{% static 'oidc_hub/css/hub.css' %}">
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'hub:dashboard' %}">{{ site_header|default:_('Research Data Management') }}</a></h1>
+{% endblock %}
+
+{% block usertools %}
+{% if has_permission %}
+<div id="user-tools">
+    {% block welcome-msg %}
+        {% translate 'Welcome,' %}
+        <strong>{% firstof request.user.get_short_name request.user.get_username %}</strong>.
+    {% endblock %}
+    {% block userlinks %}
+        {% if site_url %}
+            <a href="{{ site_url }}">{% translate 'View site' %}</a> /
+        {% endif %}
+        {% if request.user.is_active and request.user.is_staff %}
+            {% url 'django-admindocs-docroot' as docsroot %}
+            {% if docsroot %}
+                <a href="{{ docsroot }}">{% translate 'Documentation' %}</a> /
+            {% endif %}
+        {% endif %}
+        {% if request.user.has_usable_password %}
+        <a href="{% url 'hub:pass_change' %}">{% translate 'Change password' %}</a> /
+        {% endif %}
+        <form id="logout-form" method="post" action="{% url 'hub:signout' %}">
+            {% csrf_token %}
+            <button type="submit">{% translate 'Log out' %}</button>
+        </form>
+        {% include "admin/color_theme_toggle.html" %}
+    {% endblock %}
+</div>
+{% endif %}
+{% endblock %}
+
+{% block breadcrumbs %}
+  <div class="breadcrumbs">
+    <a href="{% url 'hub:dashboard' %}">{% translate 'Dashboard' %}</a>
+    {% if title %} &rsaquo; {{ title }}{% endif %}
+  </div>
+{% endblock %}

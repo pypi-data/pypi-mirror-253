@@ -1,0 +1,107 @@
+div.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .6rem;
+}
+
+#add-invitation {
+  background: var(--darkened-bg);
+  border: .1rem solid var(--hairline-color);
+  border-radius: .3rem;
+  cursor: pointer;
+  color: var(--body-fg);
+  padding: 5px 8px;
+}
+
+#add-invitation:hover {
+  background: var(--hairline-color);
+}
+
+.modal {
+  position: fixed;
+  visibility: hidden;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .6);
+}
+
+
+.modal .modal-content {
+  background: var(--darkened-bg);
+  border-radius: .3rem;
+  padding: 1rem;
+  width: 90vw;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .modal .modal-content {
+    width: 75vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal .modal-content {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .modal .modal-content {
+    width: 25vw;
+  }
+}
+
+.modal .modal-content svg {
+  width: 2rem;
+  cursor: pointer;
+  float: right;
+  fill: var(--body-quiet-color);
+}
+
+.modal .modal-content svg:hover {
+  fill: var(--body-fg);
+}
+
+.modal .modal-content form .submit-row {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.modal .modal-content form .form-row label {
+  margin-bottom: .6rem;
+}
+
+.modal .modal-content form .form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.actions .checked button[type='submit'] {
+  background: var(--darkened-bg);
+  border: .1rem solid var(--hairline-color);
+  border-radius: .3rem;
+  cursor: pointer;
+  color: var(--body-fg);
+  padding: 5px 8px;
+}
+
+.actions .checked button[disabled] {
+  background: var(--hairline-color) !important;
+  cursor: unset;
+  opacity: 25%;
+}
+
+.actions .checked button[type='submit'] svg {
+  width: .6rem;
+  fill: var(--body-fg);
+}
+
+.actions .checked button[type='submit']:hover {
+  background: var(--hairline-color);
+}

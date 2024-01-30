@@ -1,0 +1,27 @@
+    <div class="users-list">
+      {% for user in users %}
+        <div class="user">
+          <aside>
+            {% if request.user.is_staff or request.user.is_superuser %}
+            <input type="checkbox" name="{{ request.user.id }}">
+            {% endif %}
+          </aside>
+          <div class="content">
+            <div class="account">
+              <div class="username">
+                {{ user.username }}
+                {% if user == request.user %}<span class="badge-success">{{ _("It's you") }}</span>{% endif %}
+              </div>
+              <div class="email">{{ user.email }}</div>
+            </div>
+            <div class="role">
+              {% if user.is_staff %}{{ _('Administrator') }}{% else %}{{ _('Member') }}{% endif %}
+            </div>
+            <div class="activity">
+              <p><b>{{ _("User created") }}:</b> {{ user.date_joined }}</p>
+              <p><b>{{ _("Last activity") }}:</b> {{ user.last_login }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}          
+    </div>

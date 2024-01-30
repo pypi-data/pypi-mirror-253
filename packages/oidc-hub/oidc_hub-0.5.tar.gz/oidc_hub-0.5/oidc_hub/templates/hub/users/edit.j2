@@ -1,0 +1,46 @@
+{% extends "hub/base.j2" %}
+{% load i18n static include_static %}
+
+{% block title %}{{ _('Dashboard') }}{% endblock %}
+
+{% block breadcrumbs %}
+  <div class="breadcrumbs">
+    <a href="{% url 'hub:dashboard' %}">{% translate 'Dashboard' %}</a>
+    &rsaquo;
+    <a href="">{{ _('Update') }} {{ user.username }}</a>
+  </div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+  {{ send_reset_link_form }}
+  <form action="{% url 'hub:edit_user' user.id %}" method="post" id="user-edit">
+    {% csrf_token %}
+    {% if form.errors and not form.non_field_errors %}
+    <p class="errornote">
+    {% blocktranslate count counter=form.errors.items|length %}Please correct the error below.{% plural %}Please correct the errors below.{% endblocktranslate %}
+    </p>
+    {% endif %}
+    {% if form.non_field_errors %}
+    {% for error in form.non_field_errors %}
+    <p class="errornote">{{ error }}</p>
+    {% endfor %}
+    {% endif %}
+    <table class="form">
+      {% for field in form %}
+        <tr class="form-row">
+          <td>{{ field.label_tag }}</td>
+          <td class="field-container">
+            <span class="errors">{{ field.errors }}</span>
+            {{ field }}
+            <span class="help">{{ field.help_text|safe }}</span>
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+    <div class="submit-row" style="display: flex; flex-direction: column;">
+      <input type="submit" value="{% translate 'Save changes' %}" style="margin-left: auto;">
+    </div>
+  </form>
+</div>
+{% endblock %}
