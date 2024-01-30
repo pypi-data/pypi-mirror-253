@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: azol
+Version: 0.1.1a1
+Summary: A python-based pentesting library for Azure and Entra ID
+Home-page: https://github.com/cdburkard/azol
+Author: Cody Burkard
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: dataclasses
+
+# Azure Offensive Library
