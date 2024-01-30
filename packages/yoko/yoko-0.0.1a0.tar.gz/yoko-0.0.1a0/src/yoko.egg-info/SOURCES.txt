@@ -1,0 +1,5 @@
+setup.py
+src/yoko.egg-info/PKG-INFO
+src/yoko.egg-info/SOURCES.txt
+src/yoko.egg-info/dependency_links.txt
+src/yoko.egg-info/top_level.txt
