@@ -1,0 +1,6 @@
+setup.py
+monitoringdashboard.egg-info/PKG-INFO
+monitoringdashboard.egg-info/SOURCES.txt
+monitoringdashboard.egg-info/dependency_links.txt
+monitoringdashboard.egg-info/requires.txt
+monitoringdashboard.egg-info/top_level.txt
