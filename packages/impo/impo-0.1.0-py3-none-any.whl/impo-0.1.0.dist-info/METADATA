@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: impo
+Version: 0.1.0
+Summary: check if some module name is imported
+Project-URL: Homepage, https://github.com/PyKeys
+Project-URL: Pythondiscord, https://discord.gg/python
+Author-email: PyKeys <py-keys@hotmail.com>
+License-File: LICENSE.txt
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+#import time
+#from imp import im
+#im.port('time')
+
+
+##use it to check if module name is imported or not.
+##hope make your tasks more easy.
+
+##e-mail: Py-Keys@hotmail.com
