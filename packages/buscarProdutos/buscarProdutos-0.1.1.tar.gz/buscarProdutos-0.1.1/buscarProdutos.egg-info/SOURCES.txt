@@ -1,0 +1,10 @@
+README.md
+setup.py
+buscarProdutos/__init__.py
+buscarProdutos/bibliotecaMagalu.py
+buscarProdutos/bibliotecaMercadoLivre.py
+buscarProdutos.egg-info/PKG-INFO
+buscarProdutos.egg-info/SOURCES.txt
+buscarProdutos.egg-info/dependency_links.txt
+buscarProdutos.egg-info/requires.txt
+buscarProdutos.egg-info/top_level.txt
