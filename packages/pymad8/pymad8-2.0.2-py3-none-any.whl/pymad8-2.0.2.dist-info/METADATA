@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pymad8
+Version: 2.0.2
+Summary: Write MAD8 models and load MAD8 output.
+Author-email: "JAI@RHUL" <stewart.boogert@rhul.ac.uk>
+Maintainer-email: Stewart Boogert <stewart.boogert@rhul.ac.uk>
+Project-URL: homepage, http://www.pp.rhul.ac.uk/bdsim/pymad8
+Project-URL: documentation, http://www.pp.rhul.ac.uk/bdsim/pymad8
+Project-URL: repository, https://bitbucket.org/jairhul/pymad8
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: COPYING.txt
+Requires-Dist: pandas
+Requires-Dist: matplotlib >=3.0
+Requires-Dist: numpy >=1.14
+Requires-Dist: fortranformat
+Requires-Dist: importlib-metadata
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+
+#pymad8#
+
+## Authors ##
+
+M. Deniaud
+S. Boogert
+L. Nevay
+
+## Setup ##
+
+From within the pymad8 root directory:
+
+$ make install
+
+or for development:
+
+$ make develop
