@@ -1,0 +1,14 @@
+hufr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hufr/constants.py,sha256=O1_mSwXwRyPZflvpVefLKrnwMKvj7Q-n-7Kb-auX1o4,165
+hufr/convert.py,sha256=1nRwkDX0x73IZT2r7b2afMkr_KnWtC2V03DFcBFC_Cc,2215
+hufr/models/__init__.py,sha256=PZlqoddikYVHhB2MMNoJJdNYTXyK69kWuLwYrK2lmbE,185
+hufr/models/ner.py,sha256=0xiSqjMkxppyShNluODqwx3So842GqrZDdZC_SwRxy0,4726
+hufr/models/onnx.py,sha256=ESBI7A6cGGAkTLWypShwypfCOLmj9WpusFstUPdou9A,4254
+hufr/models/utils.py,sha256=PjJOh3oe8c7bgYrtkno0GlLPS_N5jU2oaDj45YC6VVU,1247
+hufr/onnx.py,sha256=kcbroQVDJYOKI-tc-gRp9MvVQMf_NmBh6NFJpFNObU8,1982
+hufr/redact.py,sha256=Rt3lIysxZA2Bo0PpJB8J8xUVIXNDJY_J_qU0TmOy5k8,2987
+hufr/utils.py,sha256=RN3fZDVpMUL2V2JyS_aJZR5oDqXHwwD_pR15PSY0DDw,1808
+hufr-2.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hufr-2.0.1.dist-info/METADATA,sha256=EMleDQcA2ivBUp7Uv83Rh1LupXDCFvyytYFPGLNBDP4,2936
+hufr-2.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hufr-2.0.1.dist-info/RECORD,,
