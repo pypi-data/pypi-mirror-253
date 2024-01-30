@@ -1,0 +1,20 @@
+name: Lint code
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Silleellie/pylint-github-action@v2
+        with:
+          lint-path: ./src
+          python-version: 3.11
+          requirements-path: requirements.txt
+          readme-path: README.md
