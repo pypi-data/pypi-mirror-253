@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+certbot_dns_nicru/__init__.py
+certbot_dns_nicru/dns_nicru.py
+certbot_dns_nicru.egg-info/PKG-INFO
+certbot_dns_nicru.egg-info/SOURCES.txt
+certbot_dns_nicru.egg-info/dependency_links.txt
+certbot_dns_nicru.egg-info/entry_points.txt
+certbot_dns_nicru.egg-info/requires.txt
+certbot_dns_nicru.egg-info/top_level.txt
+tests/__init__.py
+tests/test_dns_nicru.py

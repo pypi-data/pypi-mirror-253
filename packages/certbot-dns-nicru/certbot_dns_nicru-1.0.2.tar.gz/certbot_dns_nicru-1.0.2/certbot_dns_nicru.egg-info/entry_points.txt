@@ -1,0 +1,2 @@
+[certbot.plugins]
+dns-nicru = certbot_dns_nicru.dns_nicru:Authenticator
