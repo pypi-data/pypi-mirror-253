@@ -1,0 +1,8 @@
+setup.py
+libpyl3s/__init__.py
+libpyl3s/pyl3slib.py
+libpyl3s.egg-info/PKG-INFO
+libpyl3s.egg-info/SOURCES.txt
+libpyl3s.egg-info/dependency_links.txt
+libpyl3s.egg-info/requires.txt
+libpyl3s.egg-info/top_level.txt
