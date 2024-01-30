@@ -1,0 +1,253 @@
+Metadata-Version: 2.1
+Name: collective.cookiecuttr
+Version: 2.0.1
+Summary: Integration package for cookiecuttr, european guidelines
+Home-page: https://github.com/collective/collective.cookiecuttr
+Author: Franklin Kingma
+Author-email: franklin@fourdigits.nl
+License: GPL
+Keywords: cookies
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 5.2
+Classifier: Framework :: Plone :: 6.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: >=3.6
+Requires-Dist: setuptools
+Requires-Dist: plone.app.registry
+Requires-Dist: plone.app.layout
+Requires-Dist: plone.browserlayer
+Requires-Dist: collective.z3cform.datagridfield
+Provides-Extra: test
+Requires-Dist: plone.app.testing ; extra == 'test'
+Requires-Dist: zope.testrunner ; extra == 'test'
+
+Introduction
+============
+
+This is an integration package for the CookieCuttr jQuery plugin.
+
+
+Compatibility
+=============
+
+- Versions >= 2.0.0 are for Plone 5.2 and 6.0+.
+- Versions >= 1.0.0 are for Plone 5+.
+- Versions 0.7.x are for Plone 4.3.
+
+
+Installation
+============
+
+Add the package name to the eggs part of your zope2 instance and rerun buildout, after a restart
+you can install the package from the Modules controlpanel.
+
+
+Setup
+=====
+
+The package comes with a controlpanel which is accessible through your plone_control_panel or `directly <http://localhost:8080/Plone/@@cookiecuttr-settings>`_.
+Here you can enable the plugin and change some settings.
+
+Text to show your visitor::
+
+    We use cookies. <a href='{{cookiePolicyLink}}' title='read about our cookies'>Read everything</a
+
+Link to page, link to the page which explains your cookiepolicy, for example ``https://plone.org`` or ``/Plone/cookies``.
+
+Text to show in the Accept button::
+
+    Accept if you like cookies!
+
+
+Usage
+=====
+
+We need to be able to decline tracking cookies for Google Analytics; This is done by overriding the default analytics viewlet and check for cookiecuttr.
+
+You can also wrap your own javascript code::
+
+    if (jQuery.cookie('cc_cookie_accept') == "cc_cookie_accept") {
+      ...
+    }
+
+Contributors
+============
+
+- Franklin Kingma, Original Author
+- Jan Branbergen, fixes and improvements
+- Ralph Jacobs, fixes and improvements
+- Peter Uittenbroek, fixes and improvements
+- Mikel Larreategi, multilingual messages, implied consent and tests
+- Natan Žabkar (nightmarebadger), option to move cookie message to the bottom,
+  code cleanup
+- Laurent Lasudry (Affinitic), fixes and improvements, migration to Plone 5
+- Maurits van Rees (Zest), CI and support for Plone 6
+
+Changelog
+=========
+
+
+2.0.1 (2024-01-29)
+------------------
+
+- Fix SyntaxError in javascript with newer jQuery.
+  Clicking the "accept cookies" button now works on Plone 5.2 and 6.0.
+  [maurits]
+
+- Fixed always failing validation in control panel on Plone 6.  [maurits]
+
+- Fix resource bundles on Plone 6.  [maurits]
+
+
+2.0.0 (2023-03-14)
+------------------
+
+- Add support for Plone 5.2 and 6.0, on all officially supported Python 3 versions.
+  Plone 5.2 was working already, but not tested yet.  [maurits]
+
+- Drop support for Python 2.  [maurits]
+
+- Drop support for Plone 5.1.  [maurits]
+
+
+
+1.0.2 (2021-08-18)
+------------------
+
+- Fix datagrifield import.
+  [odelaere]
+
+
+1.0.1 (2020-01-17)
+------------------
+
+- use zope.interface.implementer instead of zope.interface.implements
+  [weberc]
+
+- Get rid of unittest2
+  [gbastien]
+
+
+1.0.0 (2019-05-13)
+------------------
+
+- Add Plone 5 compatibility & drop support for Plone 4
+  [laulaz]
+
+
+0.7.7 (2019-04-23)
+------------------
+
+- Fix text not displaying on accept button
+  See fourdigits/collective.cookiecuttr#19
+  [laulaz]
+
+- Avoid useless reload of the page : cookies are working without it
+  [laulaz]
+
+
+0.7.6 (2018-09-07)
+------------------
+
+- Avoid displaying message multiple times
+  [laulaz]
+
+
+0.7.5 (2016-03-11)
+------------------
+
+- Implement option to move cookie message to the bottom
+  [nightmarebadger]
+
+
+0.7.4 (2014-03-31)
+------------------
+
+- When product is installed but disabled, show the standard contents
+  of the analytics viewlet.
+  Fixes https://github.com/fourdigits/collective.cookiecuttr/issues/5
+  [maurits]
+
+
+0.7.3 (2014-03-28)
+------------------
+
+- Nothing changed yet.
+
+
+0.7.2 (2014-03-28)
+------------------
+
+- Uninstall profile to delete registry configuration [erral]
+
+- Implement implied consent [erral]
+
+- Use collective.z3cform.datagridfield and make it multilingual aware [erral]
+
+
+0.7.1 (2012-11-08)
+------------------
+
+- Fix viewlet rendering, fix test [kingel]
+
+
+0.7 (2012-11-08)
+----------------
+
+- Added Jan and Ralph to the contributors, thanks! [kingel]
+- Started with tests [kingel]
+- Travis setup [kingel]
+- Added controlpanel test [kingel]
+- Added support for sonar [kingel]
+- Fixed viewlet rendering
+
+
+0.6 (2012-10-19)
+----------------
+
+- cleaned up GA-viewlet [Jan Branbergen]
+- Fix GA-viewlet when cookiecuttr is disabled [Jan Branbergen]
+
+
+0.5 (2012-10-04)
+----------------
+
+- plone.resource is not used, removed dependency. Made override for anlytics viewlet [thepjot]
+- javascript is not python, do not put commas at the end of arrays as it will break in ie [kingel]
+
+
+0.4 (2012-09-25)
+----------------
+
+- Changed link functionality so it works with external links [ralphjacobs].
+
+
+0.3 (2012-09-25)
+----------------
+
+- Nothing changed yet.
+
+
+0.2 (2012-09-24)
+----------------
+
+- Nothing changed yet.
+
+
+0.1 (2012-09-24)
+----------------
+
+- Package created using templer
+
+
+
