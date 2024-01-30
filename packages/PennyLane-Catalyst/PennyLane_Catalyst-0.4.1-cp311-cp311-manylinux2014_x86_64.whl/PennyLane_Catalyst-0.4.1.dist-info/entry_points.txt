@@ -1,0 +1,4 @@
+[pennylane.compilers]
+context = catalyst.utils.contexts:EvaluationContext
+ops = catalyst:pennylane_extensions
+qjit = catalyst:qjit
