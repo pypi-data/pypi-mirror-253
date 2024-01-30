@@ -1,0 +1,22 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Comment-Recommendation-Framework"
+version = "0.16.0"
+description = "Framework to develop comment recommendation systems"
+readme = "README.md"
+authors = [{ name = "Anonymous"}]
+license = { file = "LICENSE" }
+keywords = ["commt recommendation", "framework"]
+dependencies = [
+    "django",
+    "neomodel",
+    "scrapy",
+    "selenium",
+    "torch",
+]
+requires-python = ">=3.9"
