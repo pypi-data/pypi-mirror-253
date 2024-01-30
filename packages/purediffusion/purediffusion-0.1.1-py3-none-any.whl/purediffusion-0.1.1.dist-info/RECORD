@@ -1,0 +1,11 @@
+purediffusion/__init__.py,sha256=_aLno7LGbfzmFkEbFv15u9Fpwyr-8ixuoEfaxrRgeiw,106
+purediffusion/cold.py,sha256=7qBRHEiSP27MkOU3qpTitmAp79J3E_WcjhhwWLHOkhE,4945
+purediffusion/dataset.py,sha256=ETk8INM4nrej3L42McBF0hWRizImfWSOVX-UnOGlOsw,682
+purediffusion/gaussian.py,sha256=vGh9TTgKZ-Ot_l5neVV56cHonxo6Cxh7WAa4kPloweA,13002
+purediffusion/model.py,sha256=xXxGH0xRQDDFlnIl3wN1krrd-b6mxH1BVsluNbidP5g,2170
+purediffusion/optimization.py,sha256=7btS8zOz01zAOaCyg7OfrzYeoyEYCkdg9JftbkwWr58,14675
+purediffusion-0.1.1.dist-info/LICENSE,sha256=ipos9aVvSkrw7DFa-P0I6YxhDOSc0auBoNpucjMJldU,1066
+purediffusion-0.1.1.dist-info/METADATA,sha256=HViEH959d5c2STlrZ8F3isQxT9lKrcUpwRoluIW-_58,706
+purediffusion-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+purediffusion-0.1.1.dist-info/top_level.txt,sha256=WspLImf6za5Q2o2Uaizj2_yNYyilr-JI4Z1ELDSgckQ,14
+purediffusion-0.1.1.dist-info/RECORD,,
