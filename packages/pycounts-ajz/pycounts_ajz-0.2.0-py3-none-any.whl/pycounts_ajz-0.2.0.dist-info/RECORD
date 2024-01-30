@@ -1,0 +1,13 @@
+CHANGELOG.md,sha256=ABzYxssSjFfG_4iNy4aobpd8-FqrRxS9Ic9zHZ_a-_M,104
+pycounts_ajz/__init__.py,sha256=t-pItD4zz1lSIZfeR1x9COHhDiSE1HiQxABmvcWIOiA,348
+pycounts_ajz/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycounts_ajz/data/flatland.txt,sha256=2eKSsgmnPSTzCbxbKsT5XM-FlIzS6xsFxBWnCZ8zMb8,213185
+pycounts_ajz/datasets.py,sha256=bcYmgnTtxopjfjD4DbseoQHh5zooxvxcIL1EauzI5Pc,387
+pycounts_ajz/plotting.py,sha256=iLBi8IG6WIy6ciYyWPBVqq4xC2oU-k3uBhRNq9z3o_E,815
+pycounts_ajz/pycounts.py,sha256=ZAa7cBFXEzz4ioPS1MH88QwaPE0SsLjXBfE6hNiX184,1418
+tests/einstein.txt,sha256=jrkLqL9Cvb1k8Aupfo9RRIdFoch-xmE543noCapwtyc,92
+tests/test_pycounts.py,sha256=zQjgh5O1xl_IVn0OukzrGEzjaXe1FqeHJQm-7EE7_XU,532
+pycounts_ajz-0.2.0.dist-info/LICENSE,sha256=i9kfajogVAryJ72Ziqo1i0NU1Bv_7wN1qewz3m12IUs,1069
+pycounts_ajz-0.2.0.dist-info/METADATA,sha256=PngJgQc8dhWp9NHCY4w4ibNTyaSHVAeKeDhh5TOvL2k,1715
+pycounts_ajz-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pycounts_ajz-0.2.0.dist-info/RECORD,,
