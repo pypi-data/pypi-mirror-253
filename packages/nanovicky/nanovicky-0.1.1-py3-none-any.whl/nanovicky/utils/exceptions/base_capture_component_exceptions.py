@@ -1,0 +1,2 @@
+class NoCameraAvailable(Exception):
+    pass
