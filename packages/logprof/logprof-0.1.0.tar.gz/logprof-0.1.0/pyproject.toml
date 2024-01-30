@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "logprof"
+version = "0.1.0"
+description = "A simple logging profiler."
+authors = ["Blair Azzopardi <blairuk@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+classifiers = ["Private :: Do not Upload"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+mypy = "^1.5.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
