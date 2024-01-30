@@ -1,0 +1,9 @@
+_ssentencepiece.cp311-win_amd64.pyd,sha256=VkmKsX46aLecM1kEN_k7JIXy4Aw1kcT5tCvH_w5nKjU,245760
+ssentencepiece_core.lib,sha256=biZspdFZ4WKU9ETXIxg-L7umEZyOmqAeLb3Hc9q0q2c,622378
+ssentencepiece/__init__.py,sha256=NnCfMCZH64O59aN2hVFiUWGz0EGKSGW6mE62Ko5FXVM,65
+ssentencepiece/ssentencepiece.py,sha256=7QGSNtSu-Fe5i39R8xC-uL4iFIXsZCl-3TZcPixPSWk,3087
+simple_sentencepiece-0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+simple_sentencepiece-0.1.dist-info/METADATA,sha256=BX0GLciB62jHbChECq6JkiBMmyXqQ1jUJrydIr5bsTA,681
+simple_sentencepiece-0.1.dist-info/WHEEL,sha256=ircjsfhzblqgSzO8ow7-0pXK-RVqDqNRGQ8F650AUNM,102
+simple_sentencepiece-0.1.dist-info/top_level.txt,sha256=E3oXh8lC-YpnAp-X8LS25NexAVIxKofoc-MPktWaUd4,31
+simple_sentencepiece-0.1.dist-info/RECORD,,
