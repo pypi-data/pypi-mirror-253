@@ -1,0 +1,16 @@
+[package]
+name = "pyofilename"
+version = "0.1.0"
+edition = "2021"
+license = "MIT License"
+description = "Windows-proof safe file name generator."
+authors = ["ilotoki0804 <ilotoki0804@gmail.com>"]
+keywords = ["file", "filename"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "pyofilename"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.19.0"
