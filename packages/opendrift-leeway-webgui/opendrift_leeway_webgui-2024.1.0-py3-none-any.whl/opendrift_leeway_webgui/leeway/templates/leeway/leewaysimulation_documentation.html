@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <h2>Leeway Simulation Documentation</h2>
+    <h3>Background</h3>
+    <p>
+        This software acts as a web user interface for the <a href="https://opendrift.github.io/gallery/example_leeway.html">OpenDrift Leeway</a> model. The basis for the simulation are experiments performed by the US Coast Guard in 1999. The results are published on <a href="https://ntrl.ntis.gov/NTRL/dashboard/searchResults/titleDetail/ADA366414.xhtml">https://ntrl.ntis.gov</a>, which include desriptions of the objects that were tested (2-13 and following pages).
+    </p>
+    <h3>Object Types</h3>
+    <p>The default object type for simulatoins is a life raft (ID: 27). Some alternatives are:</p>
+    <style type="text/css">
+      .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 1px solid;
+      }
+      .tg td {
+        border: 1px solid;
+        padding: 10px 5px;
+      }
+
+    </style>
+    <table class="tg">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Object Name</th>
+                <th>Object Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rubber boat</td>
+                <td>Life-raft, no ballast system, no canopy, no drogue</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Fiberglass boat</td>
+                <td>Skiff - v-hull bow to stern (aluminum, Norway)</td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td>Iron boat</td>
+                <td>Skiff - v-hull bow to stern (aluminum, Norway)</td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td>Wooden boat</td>
+                <td>Skiff - v-hull bow to stern (aluminum, Norway)</td>
+                <td>47</td>
+            </tr>
+            <tr>
+                <td>Fishing Vessel</td>
+                <td>Fishing vessel, general (mean values)</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Person in the Water, unkown state</td>
+                <td>Person-in-water (PIW), unknown state (mean values)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Person in the Water, concious</td>
+                <td>PIW, vertical PFD type III conscious</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Radius</h3>
+    <p>
+        The Simulation spawns 100 particles in a circle around the entered position. The radius controls the size of the circle in meters. If you are uncertain about the position of an object you can increase the radius. The result will be more spread out, too.
+    </p>
+    <p>
+        A position reported by an aircraft is typically precise to 1 nautical mile, that corresponds to a radius of 926 meters. A position reported by GPS can be very precise and corresponds to a radius of 5m.
+    </p>
+    <h3>E-Mail Interface</h3>
+    <p>
+        If you have a low bandwidth connection, you can use the e-mail interface. The simulation parameters can be set in the e-mail subject. Your e-mail address needs to be registered for you user account in this tool first. The result of the simulation will be sent to your e-mail address within a couple of minutes.
+    </p>
+    <ol>
+        <li>Create a new e-mail</li>
+        <li>
+            Enter simulation parameters with adjusted values in the subject: <pre>latitude=33.333;longitude=14.444;duration=48;start_time=2022-12-10 00:00:00;object_type=27</pre>
+        </li>
+        <li>
+            Send the e-mail to <pre>{{ SERVER_EMAIL }}</pre>
+        </li>
+    </ol>
+    <h3>Interpreting Simulation Result</h3>
+    <p>
+        When the simulation is finished, you will receive an e-mail that contains an attached image with the simulation results.
+    </p>
+    <p>
+        The simulation will randomly distribute 100 test particles around your entered coordinates. The default radius for distributing the particles is 1000 meters. If the coordinates are not very clear, you can increase this radius.
+    </p>
+    <p>
+        The starting points of the simulated particles are marked with green dots. If the particle ends up floating in water at the end of the simulation, the particle is marked blue. If the particle ends up on shore, it is marked red.
+    </p>
+    <p>
+        The image shows the trajectories of particles from the starting points to the ending points. The color of the trajectories incdicates the position of a particle at a given time. For example the color green always shows the position of the particles after ~50% of the simulated time range, while orange shows the positions at ~75%.
+    </p>
+    <h3>Example</h3>
+    <p>This is a fictional case as an example of how this tool can be used.</p>
+    <p>
+        It is the 4th of Jan 2023 12:34 local time and you are being alerted by an airplane about a fishing vessel adrift in position 37° 30'N 18°37'E. Your position is 38° 10.1532'N 018° 33.3832'E, that means you are 40nm away and with your top speed of 10kts it takes you 4 hours to reach the last known position. The contact to the drifting vessel is lost and the airplane can not stay on scene so you decide to run a drift simulation.
+        You open the leeway webtool and start to fill out the form:
+        <table class="tg">
+            <tbody>
+                <tr>
+                    <td>Latitude</td>
+                    <td>37° 30'</td>
+                    <td>-&gt; Last known Latitude</td>
+                </tr>
+                <tr>
+                    <td>Longitude</td>
+                    <td>18°37'</td>
+                    <td>-&gt; Last known Longitude</td>
+                </tr>
+                <tr>
+                    <td>Object type</td>
+                    <td>Fishing vessel, general (mean values)</td>
+                    <td>
+                        -&gt; It was reported that it is a fishing vessel, but we do not know the exact type of fishing vessel so we choose general
+                    </td>
+                </tr>
+                <tr>
+                    <td>Start time</td>
+                    <td>2024-01-04 11:34:00</td>
+                    <td>-&gt; The last position was reported at 12:34 local time, that is 11:34 in UTC</td>
+                </tr>
+                <tr>
+                    <td>Duration</td>
+                    <td>4</td>
+                    <td>
+                        -&gt; You calculated that it takes you 4 hours to reach the last known position so you use that as the duration of the simulation. You could also choose a bit more but the result becomes harder to interpret.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Radius</td>
+                    <td>1000</td>
+                    <td>
+                        -&gt; The position was reported by an airplane and only precise to the degrees minutes so you keep the default radius of 1000m.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </p>
+    <p>
+        You recive an e-mail with the simulation result. It is clear the the boat is likely to drift Sout to South-West. As the points are spread across about 8 nautical miles, it is unlikely that you will find the boat from one position.
+    </p>
+    <p>
+        You need to define a search pattern. First, you navigate to the nearest and largest cluster of points, which in this case is in position 37° 28' N 18° 35' E. To reach that position, you set your course to 178.
+    </p>
+    <p>
+        When you reach that position, you need to define a course to the next largest cluster that at the same time covers as many drift positions as possible. You choose position 39° 29' N 18° 39' E as you next and final waypoint. To reach that last waypoint, you set course to 070.
+    </p>
+    <img src="{% static 'image/84eed031-ed5b-4802-a0e9-580b5fd9b93f.png' %}"
+         alt="Simulation result example"
+         width="800"
+         height="800">
+{% endblock content %}
