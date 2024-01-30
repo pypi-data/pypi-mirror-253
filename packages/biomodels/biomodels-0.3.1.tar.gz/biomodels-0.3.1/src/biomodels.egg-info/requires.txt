@@ -1,0 +1,7 @@
+pooch
+pydantic<2.6
+pydantic-xml
+tabulate
+
+[test]
+pytest
