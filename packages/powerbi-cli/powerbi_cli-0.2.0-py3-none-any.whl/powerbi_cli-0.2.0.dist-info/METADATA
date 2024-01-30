@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: powerbi-cli
+Version: 0.2.0
+Summary: PowerBI CLI using REST APIs
+Author: Léo Grosjean
+Author-email: leo.bigjin@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: azure-identity (>=1.14.0,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: pbipy (>=2.5.7,<3.0.0)
+Requires-Dist: structlog (>=23.1.0,<24.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+![PyPI - Version](https://img.shields.io/pypi/v/powerbi-cli?logo=pypi&color=blue&link=https%3A%2F%2Fpypi.org%2Fproject%2Fpowerbi-cli%2F)
+![test](https://ghcr-badge.egpl.dev/lgrosjean/powerbi-cli/latest_tag?color=%2344cc11&ignore=latest&label=docker&trim=-)
+
+# PowerBI CLI application
+
+
+This applicaton is basically a Click wrapper around the [`pbipy`](https://github.com/andrewvillazon/pbipy) Python package, following the NodeJS CLI application [`powerbi-cli`](https://github.com/powerbi-cli/powerbi-cli) convention and documentation.
+
+Its main feature is the Docker image available in parallel which can be used for various task like:
+- Frequently export PowerBI Report `pbix` from PowerBI Service for historization
+- Frequently test PowerBI Dataset through a list of DAX query to monitor dataset performance through time
+
+## Installation
+
+### Using pipx
+
+```bash
+pipx install powerbi-cli
+```
+
+### Using Docker
+
+```bash
+docker pull ghcr.io/lgrosjean/powerbi-cli:latest
+```
+
+## Usage
+
+Please refer to the [sample documentation](./docs/samples/) for list of usages.
+
+
+---
+
+## References
+
+
+- [`pbipy`](https://github.com/andrewvillazon/pbipy)
+- [PowerBI REST API](https://learn.microsoft.com/en-us/rest/api/power-bi/)
+- NodeJS `powerbi-cli` [source code](https://powerbi-cli.github.io/index.html)
+- NodeJS `powerbi-cli` [documentation](https://github.com/powerbi-cli/powerbi-cli)
