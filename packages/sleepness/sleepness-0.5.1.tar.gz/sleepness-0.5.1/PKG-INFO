@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: sleepness
+Version: 0.5.1
+Summary: When you require an sleepness session, use **sleepness**.
+Home-page: https://github.com/toloco/sleepness
+Author: Tolo Palmer
+License: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyAutoGUI==0.9.54
+Requires-Dist: tqdm==4.66.1
+Provides-Extra: testing
+Requires-Dist: pytest==7.2.0; extra == "testing"
+
+Sleepless
+=========
+
+When you require an sleepless session, use **sleepless**.
+
+## USAGE:
+
+```bash
+sleepness --help
+usage: sleepness [-h] [--timer TIMER] [--length [11-1000]] [--wait [1-1000]]
+
+options:
+  -h, --help          show this help message and exit
+  --timer TIMER       Timer (in minutes), 0 means forever
+  --length [11-1000]  Lenght of movement (in secs)
+  --wait [1-1000]     Waiting time between movements (in secs)
+```

@@ -1,0 +1,5 @@
+PyAutoGUI==0.9.54
+tqdm==4.66.1
+
+[testing]
+pytest==7.2.0
