@@ -1,0 +1,10 @@
+setup.py
+hannex_gauss/Binomialdistribution.py
+hannex_gauss/Gaussiandistribution.py
+hannex_gauss/Generaldistribution.py
+hannex_gauss/__init__.py
+hannex_gauss.egg-info/PKG-INFO
+hannex_gauss.egg-info/SOURCES.txt
+hannex_gauss.egg-info/dependency_links.txt
+hannex_gauss.egg-info/not-zip-safe
+hannex_gauss.egg-info/top_level.txt
