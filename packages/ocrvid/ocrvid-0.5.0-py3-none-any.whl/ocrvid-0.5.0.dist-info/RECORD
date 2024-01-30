@@ -1,0 +1,12 @@
+ocrvid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocrvid/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+ocrvid/cli.py,sha256=UxFPcRgEPim9jOlJGqh7qElM61jE1QgrSxa65DGXMXU,2785
+ocrvid/config.py,sha256=NvVKkDM6i2w_lQgT5teSfxm_b8_nrzDtQu69HwK5nh0,528
+ocrvid/ocr.py,sha256=FH4ibXn_hGlbZiRu9_D3Zi9xfp28XMRQZS0YrM_RX30,5727
+ocrvid/video.py,sha256=rb2Wvp-u748B0AULeWVTCKAcLR8KpLVdb6Rv6RexynI,2630
+ocrvid-0.5.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ocrvid-0.5.0.dist-info/METADATA,sha256=7jXdz9d4s31PTTFI6FxzCUF3k3FgdpvwoWRABCyF6tY,4871
+ocrvid-0.5.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ocrvid-0.5.0.dist-info/entry_points.txt,sha256=BoSde7dWncyuPZgkAchZVMvsot40n5X4zQ4dyISfXlA,42
+ocrvid-0.5.0.dist-info/top_level.txt,sha256=7ASxfiqjR0SWSGKpyqlClUQSDgIVK8IG1MPsdp7OmJ4,7
+ocrvid-0.5.0.dist-info/RECORD,,
