@@ -1,0 +1,9 @@
+nanoSQLite/__init__.py,sha256=C8eV66whsd91HW0f2r_0-kz5_kVGemEKYtS1neLJO5s,26
+nanoSQLite/nanoSQLite.py,sha256=c-TkpwZE4Yzz4AJ39OcqNATXP-RJs-J-lp6YVbcom3o,7565
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_database.py,sha256=mhGx4emzdG0OC1ZmPLPwqyUl8mjYNd938kSjUfZ3q5A,6291
+nanoSQLite-1.1.4.dist-info/LICENSE,sha256=PUk21BMh4p4vLphL7khrZ6t37mnZkgl1eSfrpien8lY,1072
+nanoSQLite-1.1.4.dist-info/METADATA,sha256=wLygBtfsmcqMsj8g3m69ImDSSkVdnrjjS3Zqjrnvtiw,3633
+nanoSQLite-1.1.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+nanoSQLite-1.1.4.dist-info/top_level.txt,sha256=eKLrLmK1aqB1c8AQfL4avtUcPMGC1aticSmaSRx37tM,17
+nanoSQLite-1.1.4.dist-info/RECORD,,
