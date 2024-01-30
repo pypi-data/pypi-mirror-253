@@ -1,0 +1,8 @@
+license.txt
+pyproject.toml
+setup.py
+ship_ai_module.egg-info/PKG-INFO
+ship_ai_module.egg-info/SOURCES.txt
+ship_ai_module.egg-info/dependency_links.txt
+ship_ai_module.egg-info/requires.txt
+ship_ai_module.egg-info/top_level.txt

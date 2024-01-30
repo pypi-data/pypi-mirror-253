@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: ship-ai-module
+Version: 0.1.0
+License-File: license.txt
+Requires-Dist: requests==2.26.0

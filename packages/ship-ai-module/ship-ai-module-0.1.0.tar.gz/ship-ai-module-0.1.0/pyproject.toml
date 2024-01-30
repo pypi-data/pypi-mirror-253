@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "wheel", "pep517"]
+build-backend = "setuptools.build_meta"
+
+[tool.pep517.build-system]
+requires = ["setuptools", "wheel", "twine"]
+build-backend = "setuptools.build_meta"
+
+[tool.twine]
+repository-url = "https://upload.pypi.org/legacy/"
+username = "__token__"
+password = "pypi-AgEIcHlwaS5vcmcCJDE1Y2MwZTg5LWUwN2UtNDdiMS05NWI3LWJlZTZlY2IzOWRmYgACKlszLCJmZmI2YzgxNC04ZTg2LTRjN2YtOTY4Yy1lNzcyNDI4YWI4YmIiXQAABiB5wfYs7HHbhxy-prUASPbs3kftdGtecACx63C0f-Vn7w"
