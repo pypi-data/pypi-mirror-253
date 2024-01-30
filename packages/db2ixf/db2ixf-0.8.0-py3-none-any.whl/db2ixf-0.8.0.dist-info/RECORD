@@ -1,0 +1,17 @@
+db2ixf/__init__.py,sha256=cQ5DuxJhufUO5s9urRvN3E6wl9OKcZHfpJZpT8CLKeg,4622
+db2ixf/_version.py,sha256=vspFLRfYI6gAAN7kyihey2lhPos0jxqKaNDWFlKPlmU,411
+db2ixf/cli.py,sha256=pboizkpN-G4Zn_l-gO1rjm2UhJezlpih166qHkjhFOA,8363
+db2ixf/collectors.py,sha256=QT7ffk9oa-Ch1aKfkJGKUtEFRPk4IgDCAtHxHsrg68w,11481
+db2ixf/constants.py,sha256=xLt6olQwTXrB1Sa8nToyz669J3L1e7jxlW9R_tS61zE,5441
+db2ixf/encoders.py,sha256=xXxupAChIHMSIHmEAN1LD4CcdwxAUGzrdQ8__YzMvN0,774
+db2ixf/exceptions.py,sha256=AsC4mIHTPiz5VAo524jy2KJPBrzMtf1W7jytAv99elM,4428
+db2ixf/helpers.py,sha256=jAvr7ef5VZ9ngoLl1uXOfUABOb7yCUSjMr_kW8Qyc9w,10982
+db2ixf/ibmcodecs.py,sha256=fpHjVRJ5Fm_9XGJxHjKy8nKTahTxV-oha21PH5KYdLo,10452
+db2ixf/ixf.py,sha256=E-tDTLgNd7ujJo_bpG5MYcwQMkWaoupXHpGZk3d6Ifo,22041
+db2ixf/logger.py,sha256=uwUIkYPaF_bFsrIt2nb7N2ZwwuumZcVY3XS_cwch1dU,539
+db2ixf-0.8.0.dist-info/LICENSE,sha256=ruBUOguwBq95I_eqycu-R7RkvMFBPWNCWhu-meeBhn8,34512
+db2ixf-0.8.0.dist-info/METADATA,sha256=biv6uJtAQDS3VYgyioeMll0w0liO1s_KX9q4z2aOEB0,9243
+db2ixf-0.8.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+db2ixf-0.8.0.dist-info/entry_points.txt,sha256=7Vaqq9sjkdjmgSqh8N3BGPI_cdcjaqoISddRBwDLswY,42
+db2ixf-0.8.0.dist-info/top_level.txt,sha256=HzAz6JigXlMnzeJmFTh4ybiLcDBt79hVXva4Z6eesK8,7
+db2ixf-0.8.0.dist-info/RECORD,,
