@@ -1,0 +1,8 @@
+ipv8_rust_tunnels-0.1.11.dist-info/METADATA,sha256=rbsZc1Lm2CLuPcXGBhqAa_XjB_N60TPBCijNgq0l-U8,989
+ipv8_rust_tunnels-0.1.11.dist-info/WHEEL,sha256=eY4XaBam3DOjVMBdVjZFnVwL673guG0J24iXn9-TamE,130
+ipv8_rust_tunnels-0.1.11.dist-info/license_files/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ipv8_rust_tunnels/endpoint.py,sha256=zHP8L23-KfMneQdQ_s3dzvyYC_UdSyP2jXqgCGfImdM,6434
+ipv8_rust_tunnels/tests/test_tunnel_community.py,sha256=NVughRFWsP-xLpIc2yVFt2zw6qUlLF-FulBWNZymWQ4,2045
+ipv8_rust_tunnels/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipv8_rust_tunnels/rust_endpoint.pypy38-pp73-x86-linux-gnu.so,sha256=v2A8K_-nDmH664n989tCHsUfoa677r-F7VWuI-cEm9s,1955572
+ipv8_rust_tunnels-0.1.11.dist-info/RECORD,,
