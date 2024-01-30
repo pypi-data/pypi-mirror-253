@@ -1,0 +1,15 @@
+json-merge-patch
+jsonref>=1
+requests
+
+[docs]
+furo
+sphinx
+sphinx-autobuild
+
+[test]
+coveralls
+jsonschema
+pytest
+pytest-cov
+pytest-vcr
