@@ -1,0 +1,49 @@
+
+
+
+
+
+
+#
+#	how to publish:
+#
+#		cp structures/modules/XY_Steroids/module.MD readme.md
+#		(rm -rf dist && python3 -m build --sdist && twine upload dist/*)
+#
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "XY_Steroids"
+version = "2100.0.0"
+dependencies = []
+license = { text = "vir (latin for 'man')" }
+
+# license = { file = "license.txt" }
+
+description = ""
+readme = "readme.md"
+
+
+[project.scripts]
+#
+#	https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#creating-executable-scripts
+#	from XY-steroids import clique; clique ()
+#
+# 	XY-steroids = "XY-steroids:clique"
+#
+
+[tool.setuptools.packages.find]
+where = [ "structures/modules" ]
+
+#
+#	https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+#
+[tool.setuptools.package-data]
+"*" = [ "*.html" ]
+
+
+
+
