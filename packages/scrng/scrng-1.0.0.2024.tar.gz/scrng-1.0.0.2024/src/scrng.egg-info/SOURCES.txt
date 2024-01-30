@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/scrng/__init__.py
+src/scrng/main.py
+src/scrng.egg-info/PKG-INFO
+src/scrng.egg-info/SOURCES.txt
+src/scrng.egg-info/dependency_links.txt
+src/scrng.egg-info/top_level.txt
