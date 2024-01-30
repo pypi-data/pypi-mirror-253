@@ -1,0 +1,2 @@
+[xblock.v1]
+image-explorer = image_explorer:ImageExplorerBlock

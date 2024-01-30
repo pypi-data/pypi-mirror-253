@@ -1,0 +1,63 @@
+{% autoescape off %}
+<div class="image-explorer-xblock-wrapper">
+    <h2>{{title}}</h2>
+    {% if description_html %}
+    <div class="image-explorer-description">
+        {{ description_html }}
+    </div>
+    {% endif %}
+    <div class="image-explorer-wrapper" role="application">
+        <img src="{{background.src}}" class="image-explorer-background" />
+        {% for hotspot in hotspots %}
+        <div class="hotspot-container" data-item-id="{{hotspot.item_id}}" style="position: absolute; top: {{hotspot.y}}; left: {{hotspot.x}};">
+            <button class="image-explorer-hotspot {% if hotspot_coordinates_centered %}centered{% endif %}{% if hotspot.visited %} visited {% endif %}">
+                <span id="icon-plus">
+                    <i class="material-icons">add_circle</i>
+                </span>
+                <span id="icon-check">
+                    <i class="material-icons">check_circle</i>
+                </span>
+            </button>
+            <div role="dialog" aria-modal="true" class="image-explorer-hotspot-reveal" {{hotspot.reveal_style}} data-side="{{ hotspot.feedback.side }}" aria-describedby="{{ie_uid}}_{{hotspot.item_id}}_body" tabindex="0">
+                <div class="image-explorer-hotspot-content-wrapper">
+                    {% if hotspot.feedback.header %}
+                        <span id="{{ie_uid}}_{{hotspot.item_id}}_header" class="image-explorer-hotspot-reveal-header">
+                            {{hotspot.feedback.header}}
+                        </span>
+                    {% endif %}
+                    <div id="{{ie_uid}}_{{hotspot.item_id}}_body">
+                        {% if hotspot.feedback.body %}
+                            <span class="image-explorer-hotspot-reveal-body">
+                                {{hotspot.feedback.body}}
+                            </span>
+                        {% endif %}
+                        {% if hotspot.feedback.youtube %}
+                            <div class="image-explorer-hotspot-reveal-youtube">
+                                <iframe id="{{hotspot.feedback.youtube.id}}" class="youtube-player" type="text/html" width="{{hotspot.feedback.youtube.width}}" height="{{hotspot.feedback.youtube.height}}" src="https://www.youtube.com/embed/{{hotspot.feedback.youtube.video_id}}?enablejsapi=1" frameborder="0"></iframe>
+                            </div>
+                        {% endif %}
+                        {% if hotspot.feedback.ooyala %}
+                            <div class="ooyala-element" id="{{hotspot.feedback.ooyala.id}}" style="width: {{hotspot.feedback.ooyala.width}}px; height: {{hotspot.feedback.ooyala.height}}px;" data-video-id="{{hotspot.feedback.ooyala.video_id}}"></div>
+                        {% endif %}
+                        {% if hotspot.feedback.bcove %}
+                            <video-js
+                                id="{{hotspot.feedback.bcove.id}}"
+                                data-account="{{hotspot.feedback.bcove.account_id}}"
+                                data-player="default"
+                                data-embed="default"
+                                data-video-id="{{hotspot.feedback.bcove.video_id}}"
+                                controls=""
+                                playsinline=""
+                                style="width:{{hotspot.feedback.bcove.width}}; height:{{hotspot.feedback.bcove.height}}">
+                            </video-js>
+                            <script src="https://players.brightcove.net/{{hotspot.feedback.bcove.account_id}}/default_default/index.min.js"></script>
+                        {% endif %}
+                    </div>
+                </div>
+                <button class="image-explorer-close-reveal"><span class="sr-only">Close</span>&#xf057;</button>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endautoescape %}
