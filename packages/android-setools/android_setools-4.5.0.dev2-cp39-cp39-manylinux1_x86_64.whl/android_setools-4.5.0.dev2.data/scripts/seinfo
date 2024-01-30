@@ -1,0 +1,407 @@
+#!python
+# Copyright 2014-2015, Tresys Technology, LLC
+# Copyright 2018-2019, Chris PeBenito <pebenito@ieee.org>
+#
+# SPDX-License-Identifier: GPL-2.0-only
+#
+
+import setools
+import argparse
+import sys
+import logging
+import signal
+import ipaddress
+import warnings
+from typing import Callable, List, Tuple
+
+
+def expand_attr(attr):
+    """Render type and role attributes."""
+    items = "\n\t".join(sorted(str(i) for i in attr.expand()))
+    contents = items if items else "<empty attribute>"
+    return "{0}\n\t{1}".format(attr.statement(), contents)
+
+
+signal.signal(signal.SIGPIPE, signal.SIG_DFL)
+
+parser = argparse.ArgumentParser(description="SELinux policy information tool.")
+parser.add_argument("--version", action="version", version=setools.__version__)
+parser.add_argument("policy", help="Path to the SELinux policy to query.", nargs="?")
+parser.add_argument("-x", "--expand", action="store_true",
+                    help="Print additional information about the specified components.")
+parser.add_argument("--flat", help="Print without item count nor indentation.",
+                    dest="flat", default=False, action="store_true")
+parser.add_argument("-v", "--verbose", action="store_true",
+                    help="Print extra informational messages")
+parser.add_argument("--debug", action="store_true", dest="debug", help="Enable debugging.")
+
+queries = parser.add_argument_group("Component Queries")
+queries.add_argument("-a", "--attribute", help="Print type attributes.", dest="typeattrquery",
+                     nargs='?', const=True, metavar="ATTR")
+queries.add_argument("-b", "--bool", help="Print Booleans.", dest="boolquery",
+                     nargs='?', const=True, metavar="BOOL")
+queries.add_argument("-c", "--class", help="Print object classes.", dest="classquery",
+                     nargs='?', const=True, metavar="CLASS")
+queries.add_argument("-r", "--role", help="Print roles.", dest="rolequery",
+                     nargs='?', const=True, metavar="ROLE")
+queries.add_argument("-t", "--type", help="Print types.", dest="typequery",
+                     nargs='?', const=True, metavar="TYPE")
+queries.add_argument("-u", "--user", help="Print users.", dest="userquery",
+                     nargs='?', const=True, metavar="USER")
+queries.add_argument("--category", help="Print MLS categories.", dest="mlscatsquery",
+                     nargs='?', const=True, metavar="CAT")
+queries.add_argument("--common", help="Print common permission set.", dest="commonquery",
+                     nargs='?', const=True, metavar="COMMON")
+queries.add_argument("--constrain", help="Print constraints.", dest="constraintquery",
+                     nargs='?', const=True, metavar="CLASS")
+queries.add_argument("--default", help="Print default_* rules.", dest="defaultquery",
+                     nargs='?', const=True, metavar="CLASS")
+queries.add_argument("--fs_use", help="Print fs_use statements.", dest="fsusequery",
+                     nargs='?', const=True, metavar="FS_TYPE")
+queries.add_argument("--genfscon", help="Print genfscon statements.", dest="genfsconquery",
+                     nargs='?', const=True, metavar="FS_TYPE")
+queries.add_argument("--ibpkeycon", help="Infiniband pkey statements.",
+                     dest="ibpkeyconquery", nargs='?', const=True, metavar="PKEY[-PKEY]")
+queries.add_argument("--ibendportcon", help="Infiniband endport statements.",
+                     dest="ibendportconquery", nargs='?', const=True, metavar="NAME")
+queries.add_argument("--initialsid", help="Print initial SIDs (contexts).", dest="initialsidquery",
+                     nargs='?', const=True, metavar="NAME")
+queries.add_argument("--netifcon", help="Print netifcon statements.", dest="netifconquery",
+                     nargs='?', const=True, metavar="DEVICE")
+queries.add_argument("--nodecon", help="Print nodecon statements.", dest="nodeconquery",
+                     nargs='?', const=True, metavar="ADDR")
+queries.add_argument("--permissive", help="Print permissive types.", dest="permissivequery",
+                     nargs='?', const=True, metavar="TYPE")
+queries.add_argument("--polcap", help="Print policy capabilities.", dest="polcapquery",
+                     nargs='?', const=True, metavar="NAME")
+queries.add_argument("--portcon", help="Print portcon statements.", dest="portconquery",
+                     nargs='?', const=True, metavar="PORTNUM[-PORTNUM]")
+queries.add_argument("--sensitivity", help="Print MLS sensitivities.", dest="mlssensquery",
+                     nargs='?', const=True, metavar="SENS")
+queries.add_argument("--typebounds", help="Print typebounds statements.", dest="typeboundsquery",
+                     nargs='?', const=True, metavar="BOUND_TYPE")
+queries.add_argument("--validatetrans", help="Print validatetrans.", dest="validatetransquery",
+                     nargs='?', const=True, metavar="CLASS")
+queries.add_argument("--all", help="Print all of the above.  On a Xen policy, the Xen components "
+                     "will also be printed", dest="all", default=False, action="store_true")
+
+xen = parser.add_argument_group("Xen Component Queries")
+xen.add_argument("--ioportcon", help="Print all ioportcon statements.", dest="ioportconquery",
+                 default=False, action="store_true")
+xen.add_argument("--iomemcon", help="Print all iomemcon statements.", dest="iomemconquery",
+                 default=False, action="store_true")
+xen.add_argument("--pcidevicecon", help="Print all pcidevicecon statements.",
+                 dest="pcideviceconquery", default=False, action="store_true")
+xen.add_argument("--pirqcon", help="Print all pirqcon statements.", dest="pirqconquery",
+                 default=False, action="store_true")
+xen.add_argument("--devicetreecon", help="Print all devicetreecon statements.",
+                 dest="devicetreeconquery", default=False, action="store_true")
+
+
+args = parser.parse_args()
+
+if args.debug:
+    logging.basicConfig(level=logging.DEBUG,
+                        format='%(asctime)s|%(levelname)s|%(name)s|%(message)s')
+    if not sys.warnoptions:
+        warnings.simplefilter("default")
+elif args.verbose:
+    logging.basicConfig(level=logging.INFO, format='%(message)s')
+    if not sys.warnoptions:
+        warnings.simplefilter("default")
+else:
+    logging.basicConfig(level=logging.WARNING, format='%(message)s')
+    if not sys.warnoptions:
+        warnings.simplefilter("ignore")
+
+try:
+    p = setools.SELinuxPolicy(args.policy)
+    components: List[Tuple[str, setools.PolicyQuery, Callable]] = []
+
+    if args.boolquery or args.all:
+        bq = setools.BoolQuery(p)
+        if isinstance(args.boolquery, str):
+            if args.policy:
+                bq.name = args.boolquery
+            else:
+                # try to find substitutions for old boolean names
+                bq.name = setools.policyrep.lookup_boolean_name_sub(args.boolquery)
+
+        components.append(("Booleans", bq, lambda x: x.statement()))
+
+    if args.mlscatsquery or args.all:
+        mcq = setools.CategoryQuery(p, alias_deref=True)
+        if isinstance(args.mlscatsquery, str):
+            mcq.name = args.mlscatsquery
+
+        components.append(("Categories", mcq, lambda x: x.statement()))
+
+    if args.classquery or args.all:
+        ocq = setools.ObjClassQuery(p)
+        if isinstance(args.classquery, str):
+            ocq.name = args.classquery
+
+        components.append(("Classes", ocq, lambda x: x.statement()))
+
+    if args.commonquery or args.all:
+        cq = setools.CommonQuery(p)
+        if isinstance(args.commonquery, str):
+            cq.name = args.commonquery
+
+        components.append(("Commons", cq, lambda x: x.statement()))
+
+    if args.constraintquery or args.all:
+        coq = setools.ConstraintQuery(
+            p, ruletype=[setools.ConstraintRuletype.constrain,
+                         setools.ConstraintRuletype.mlsconstrain])
+        if isinstance(args.constraintquery, str):
+            coq.tclass = [args.constraintquery]
+
+        components.append(("Constraints", coq, lambda x: x.statement()))
+
+    if args.defaultquery or args.all:
+        dq: setools.DefaultQuery = setools.DefaultQuery(p)
+        if isinstance(args.defaultquery, str):
+            dq.tclass = [args.defaultquery]
+
+        components.append(("Default rules", dq, lambda x: x.statement()))
+
+    if args.fsusequery or args.all:
+        fq: setools.FSUseQuery = setools.FSUseQuery(p)
+        if isinstance(args.fsusequery, str):
+            fq.fs = args.fsusequery
+
+        components.append(("Fs_use", fq, lambda x: x.statement()))
+
+    if args.genfsconquery or args.all:
+        gq: setools.GenfsconQuery = setools.GenfsconQuery(p)
+        if isinstance(args.genfsconquery, str):
+            gq.fs = args.genfsconquery
+
+        components.append(("Genfscon", gq, lambda x: x.statement()))
+
+    if args.ibendportconquery or args.all:
+        ibepq: setools.IbendportconQuery = setools.IbendportconQuery(p)
+        if isinstance(args.ibendportconquery, str):
+            ibepq.name = args.ibendportconquery
+
+        components.append(("Ibendportcon", ibepq, lambda x: x.statement()))
+
+    if args.ibpkeyconquery or args.all:
+        ibpkq = setools.IbpkeyconQuery(p)
+        if isinstance(args.ibpkeyconquery, str):
+            try:
+                pkeys = [int(i, 16) for i in args.ibpkeyconquery.split("-")]
+            except ValueError:
+                parser.error("Enter a pkey number or range, e.g. 0x22 or 0x6000-0x6020")
+
+            if len(pkeys) == 2:
+                ibpkq.pkeys = setools.IbpkeyconRange(pkeys)
+            elif len(pkeys) == 1:
+                ibpkq.pkeys = setools.IbpkeyconRange(pkeys[0], pkeys[0])
+            else:
+                parser.error("Enter a pkey number or range, e.g. 0x22 or 0x6000-0x6020")
+
+        components.append(("Ibpkeycon", ibpkq, lambda x: x.statement()))
+
+    if args.initialsidquery or args.all:
+        isidq = setools.InitialSIDQuery(p)
+        if isinstance(args.initialsidquery, str):
+            isidq.name = args.initialsidquery
+
+        components.append(("Initial SIDs", isidq, lambda x: x.statement()))
+
+    if args.netifconquery or args.all:
+        netifq = setools.NetifconQuery(p)
+        if isinstance(args.netifconquery, str):
+            netifq.name = args.netifconquery
+
+        components.append(("Netifcon", netifq, lambda x: x.statement()))
+
+    if args.nodeconquery or args.all:
+        nodeq = setools.NodeconQuery(p)
+        if isinstance(args.nodeconquery, str):
+            nodeq.network = ipaddress.ip_network(args.nodeconquery)
+
+        components.append(("Nodecon", nodeq, lambda x: x.statement()))
+
+    if args.permissivequery or args.all:
+        permq = setools.TypeQuery(p, permissive=True, match_permissive=True)
+        if isinstance(args.permissivequery, str):
+            permq.name = args.permissivequery
+
+        components.append(("Permissive Types", permq, lambda x: x.statement()))
+
+    if args.polcapquery or args.all:
+        capq = setools.PolCapQuery(p)
+        if isinstance(args.polcapquery, str):
+            capq.name = args.polcapquery
+
+        components.append(("Polcap", capq, lambda x: x.statement()))
+
+    if args.portconquery or args.all:
+        pcq = setools.PortconQuery(p, ports_subset=True)
+        if isinstance(args.portconquery, str):
+            try:
+                ports = [int(i) for i in args.portconquery.split("-")]
+            except ValueError:
+                parser.error("Enter a port number or range, e.g. 22 or 6000-6020")
+
+            if len(ports) == 2:
+                pcq.ports = setools.PortconRange(ports)
+            elif len(ports) == 1:
+                pcq.ports = setools.PortconRange(ports[0], ports[0])
+            else:
+                parser.error("Enter a port number or range, e.g. 22 or 6000-6020")
+
+        components.append(("Portcon", pcq, lambda x: x.statement()))
+
+    if args.rolequery or args.all:
+        rq = setools.RoleQuery(p)
+        if isinstance(args.rolequery, str):
+            rq.name = args.rolequery
+
+        components.append(("Roles", rq, lambda x: x.statement()))
+
+    if args.mlssensquery or args.all:
+        msq = setools.SensitivityQuery(p, alias_deref=True)
+        if isinstance(args.mlssensquery, str):
+            msq.name = args.mlssensquery
+
+        components.append(("Sensitivities", msq, lambda x: x.statement()))
+
+    if args.typeboundsquery or args.all:
+        tbq = setools.BoundsQuery(
+            p, ruletype=[setools.BoundsRuletype.typebounds])
+        if isinstance(args.typeboundsquery, str):
+            tbq.child = args.typeboundsquery
+
+        components.append(("Typebounds", tbq, lambda x: x.statement()))
+
+    if args.typequery or args.all:
+        tq = setools.TypeQuery(p, alias_deref=True)
+        if isinstance(args.typequery, str):
+            tq.name = args.typequery
+
+        components.append(("Types", tq, lambda x: x.statement()))
+
+    if args.typeattrquery or args.all:
+        taq = setools.TypeAttributeQuery(p)
+        if isinstance(args.typeattrquery, str):
+            taq.name = args.typeattrquery
+
+        components.append(("Type Attributes", taq, expand_attr))
+
+    if args.userquery or args.all:
+        uq = setools.UserQuery(p)
+        if isinstance(args.userquery, str):
+            uq.name = args.userquery
+
+        components.append(("Users", uq, lambda x: x.statement()))
+
+    if args.validatetransquery or args.all:
+        vtq = setools.ConstraintQuery(
+            p, ruletype=[setools.ConstraintRuletype.validatetrans,
+                         setools.ConstraintRuletype.mlsvalidatetrans])
+        if isinstance(args.validatetransquery, str):
+            vtq.tclass = [args.validatetransquery]
+
+        components.append(("Validatetrans", vtq, lambda x: x.statement()))
+
+    if p.target_platform == "xen":
+        if args.ioportconquery or args.all:
+            xiopq = setools.IoportconQuery(p)
+            components.append(("Ioportcon", xiopq, lambda x: x.statement()))
+
+        if args.iomemconquery or args.all:
+            xiomq = setools.IomemconQuery(p)
+            components.append(("Iomemcon", xiomq, lambda x: x.statement()))
+
+        if args.pcideviceconquery or args.all:
+            pcidq = setools.PcideviceconQuery(p)
+            components.append(("Pcidevicecon", pcidq, lambda x: x.statement()))
+
+        if args.pirqconquery or args.all:
+            pirqq = setools.PirqconQuery(p)
+            components.append(("Pirqcon", pirqq, lambda x: x.statement()))
+
+        if args.devicetreeconquery or args.all:
+            dtq = setools.DevicetreeconQuery(p)
+            components.append(("Devicetreecon", dtq, lambda x: x.statement()))
+
+    if (not components or args.all) and not args.flat:
+        mls = "enabled" if p.mls else "disabled"
+
+        print("Statistics for policy file: {0}".format(p))
+        print("Policy Version:             {0} (MLS {1})".format(p.version, mls))
+        print("Target Policy:              {0}".format(p.target_platform))
+        print("Handle unknown classes:     {0}".format(p.handle_unknown))
+        print("  Classes:         {0:7}    Permissions:     {1:7}".format(
+            p.class_count, p.permission_count))
+        print("  Sensitivities:   {0:7}    Categories:      {1:7}".format(
+            p.level_count, p.category_count))
+        print("  Types:           {0:7}    Attributes:      {1:7}".format(
+            p.type_count, p.type_attribute_count))
+        print("  Users:           {0:7}    Roles:           {1:7}".format(
+            p.user_count, p.role_count))
+        print("  Booleans:        {0:7}    Cond. Expr.:     {1:7}".format(
+            p.boolean_count, p.conditional_count))
+        print("  Allow:           {0:7}    Neverallow:      {1:7}".format(
+            p.allow_count, p.neverallow_count))
+        print("  Auditallow:      {0:7}    Dontaudit:       {1:7}".format(
+            p.auditallow_count, p.dontaudit_count))
+        print("  Type_trans:      {0:7}    Type_change:     {1:7}".format(
+            p.type_transition_count, p.type_change_count))
+        print("  Type_member:     {0:7}    Range_trans:     {1:7}".format(
+            p.type_member_count, p.range_transition_count))
+        print("  Role allow:      {0:7}    Role_trans:      {1:7}".format(
+            p.role_allow_count, p.role_transition_count))
+        print("  Constraints:     {0:7}    Validatetrans:   {1:7}".format(
+            p.constraint_count, p.validatetrans_count))
+        print("  MLS Constrain:   {0:7}    MLS Val. Tran:   {1:7}".format(
+            p.mlsconstraint_count, p.mlsvalidatetrans_count))
+        print("  Permissives:     {0:7}    Polcap:          {1:7}".format(
+            p.permissives_count, p.polcap_count))
+        print("  Defaults:        {0:7}    Typebounds:      {1:7}".format(
+            p.default_count, p.typebounds_count))
+
+        if p.target_platform == setools.PolicyTarget.selinux:
+            print("  Allowxperm:      {0:7}    Neverallowxperm: {1:7}".format(
+                p.allowxperm_count, p.neverallowxperm_count))
+            print("  Auditallowxperm: {0:7}    Dontauditxperm:  {1:7}".format(
+                p.auditallowxperm_count, p.dontauditxperm_count))
+            print("  Ibendportcon:    {0:7}    Ibpkeycon:       {1:7}".format(
+                p.ibendportcon_count, p.ibpkeycon_count))
+            print("  Initial SIDs:    {0:7}    Fs_use:          {1:7}".format(
+                p.initialsids_count, p.fs_use_count))
+            print("  Genfscon:        {0:7}    Portcon:         {1:7}".format(
+                p.genfscon_count, p.portcon_count))
+            print("  Netifcon:        {0:7}    Nodecon:         {1:7}".format(
+                p.netifcon_count, p.nodecon_count))
+            print("Android:")
+            print("  NetlinkRoute     {0:7}    NetlinkNeigh:    {1:7}".format(
+                p.android_netlink_route, p.android_netlink_getneigh))
+        elif p.target_platform == setools.PolicyTarget.xen:
+            print("  Initial SIDs:    {0:7}    Devicetreecon:   {1:7}".format(
+                p.initialsids_count, p.devicetreecon_count))
+            print("  Iomemcon:        {0:7}    Ioportcon:       {1:7}".format(
+                p.iomemcon_count, p.ioportcon_count))
+            print("  Pcidevicecon:    {0:7}    Pirqcon:         {1:7}".format(
+                p.pcidevicecon_count, p.pirqcon_count))
+
+    for desc, component, expander in components:
+        results = sorted(component.results())
+        if not args.flat:
+            print("\n{0}: {1}".format(desc, len(results)))
+        for item in results:
+            result = expander(item) if args.expand else item
+            strfmt = "   {0}" if not args.flat else "{0}"
+            print(strfmt.format(result))
+
+except Exception as err:
+    if args.debug:
+        raise
+    else:
+        print(err)
+
+    sys.exit(1)
