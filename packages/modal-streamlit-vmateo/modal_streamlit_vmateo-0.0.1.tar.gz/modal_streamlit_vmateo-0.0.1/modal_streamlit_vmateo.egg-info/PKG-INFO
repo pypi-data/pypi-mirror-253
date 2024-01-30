@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: modal-streamlit-vmateo
+Version: 0.0.1
+Summary: Es una libreria editada de ventana modal para streamlit para mi caso personal
+Home-page: https://github.com/MateoPulido0120/modal-streamlit-mateo.git
+Author: Mateo Pulido
+Author-email: mateo010120@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+Es una libreria editada de ventana modal para streamlit para mi caso personal, empleando Javascript

@@ -1,0 +1,3 @@
+streamlit
+Deprecated==1.2.14
+deprecation

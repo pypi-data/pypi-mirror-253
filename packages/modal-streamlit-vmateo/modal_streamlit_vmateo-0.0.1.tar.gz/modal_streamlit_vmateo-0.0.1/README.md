@@ -1,0 +1,1 @@
+Es una libreria editada de ventana modal para streamlit para mi caso personal, empleando Javascript
