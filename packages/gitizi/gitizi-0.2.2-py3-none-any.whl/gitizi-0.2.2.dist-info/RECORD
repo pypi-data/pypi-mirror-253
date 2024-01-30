@@ -1,0 +1,13 @@
+gitizi/__init__.py,sha256=TUNDr3wfr3d0gYq-0tgeonVKGJBGutt_5cGjnRzdCCQ,16
+gitizi/cli.py,sha256=-ejEOfk0A1UvCMgIU_LCRtAlzQ-DW4bugXoyh5ZlOEg,4551
+gitizi/exceptions.py,sha256=8q-XxgscpjxlmKVnoDYpej4V1kYhjUIPkImyWml9NnM,191
+gitizi/util.py,sha256=dWPNxgjm6mSxRHJSyVriTdECvIIBUma4KlrqQi7DUZA,6359
+gitizi/ai/__init__.py,sha256=E2LSz1scyVUc2HnzUnkAq9ziNjafNXVLEJDZw1amD5c,1796
+gitizi/ai/context/__init__.py,sha256=YFI38pPYY1lqEVTfSH_FLKI3nThm03CwEn0O5foU9ys,102
+gitizi/ai/context/squash.py,sha256=O6KxuF09zbttUSPVVNI-SGsMsgmB4z8fCar25Fp3RwY,2267
+gitizi-0.2.2.dist-info/LICENSE,sha256=SdL3pht-sKaR3fWmfjl6vFQLKv2XlG9QorLxkgzFDgI,1072
+gitizi-0.2.2.dist-info/METADATA,sha256=1sWG2L_yr7NhPOZz5pTq5ILxP9sYAj5ZknlszaX7Zqg,716
+gitizi-0.2.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gitizi-0.2.2.dist-info/entry_points.txt,sha256=kpP5oLySrvrHH6qcjwul4qDF6pGWxlqMgj1mJTgRnVc,75
+gitizi-0.2.2.dist-info/top_level.txt,sha256=fInjIB7qjtAS1DANZ20OtvIUlXb015UAEB2Qm_MQGAk,7
+gitizi-0.2.2.dist-info/RECORD,,
