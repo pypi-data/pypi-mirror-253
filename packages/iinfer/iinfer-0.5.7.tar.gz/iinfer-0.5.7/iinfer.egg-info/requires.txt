@@ -1,0 +1,10 @@
+argcomplete
+eel
+motpy
+opencv-python
+Pillow
+pyyaml
+redis
+requests
+tabulate
+wheel

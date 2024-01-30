@@ -1,0 +1,1248 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.5.0.2.css">
+    <link rel="stylesheet" href="assets/lightbox2/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/tree-menu/css/tree-menu.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <title>iinfer</title>
+    <style type="text/css">
+    .card-hover:hover {
+        box-shadow: 0 0 8px gray;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body lang="ja" class="overflow-hidden p-2">
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top p-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">iinfer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="fileMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            File
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="fileMenuLink">
+                            <li><a class="dropdown-item" href="#" onclick="$('.cmd_add').click();">New Command</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="$('.pipe_add').click();">New Pipeline</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#" onclick="open_output_json_func('open_output_json_path')">Open output_json</a>
+                                <input type="hidden" id="open_output_json_path" value=""/>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" onclick="open_capture_func('open_capture_path')">Open capture</a>
+                                <input type="hidden" id="open_capture_path" value=""/>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="viewMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            View
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="viewMenuLink">
+                            <li><a class="dropdown-item" href="#" onclick="$('#console_modal').modal('show');">Console log</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutMenuLink">
+                            <li><a class="dropdown-item" href="#" onclick="$('#versions_modal').modal('show');">Versions</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="main_container" class="container-fluid overflow-auto" style="margin-top:66px;height:calc(100vh - 120px);">
+        <!-- コマンドリスト -->
+        <h2 class="pb-2 border-bottom">Commands</h2>
+        <div id="cmd_items" class="row">
+        </div>
+        <div class="d-none">
+            <div id="cmd_add">
+                <div class="col-4 p-1">
+                    <div class="card card-hover cmd_card cmd_add">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">[ + ]</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cmd_template">
+                <div class="col-4 p-1">
+                    <div class="card card-hover cmd_card">
+                        <div class="card-body">
+                            <h5 class="cmd_title card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">mode:<span class="cmd_mode"></span>, cmd:<span class="cmd_cmd"></span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- パイプラインリスト -->
+        <h2 class="pb-2 border-bottom">Pipeline</h2>
+        <div id="pipe_items" class="row">
+        </div>
+        <div class="d-none">
+            <div id="pipe_add">
+                <div class="col-4 p-1">
+                    <div class="card card-hover pipe_card pipe_add">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">[ + ]</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pipe_template">
+                <div class="col-4 p-1">
+                    <div class="card card-hover pipe_card">
+                        <div class="card-body">
+                            <h5 class="pipe_title card-title">Pipeline title</h5>
+                            <p class="card-subtitle mb-2 text-muted"><span class="pipe_desc"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- コマンドモーダル -->
+    <div id="cmd_modal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <form id="cmd_form" class="modal-content novalidate">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn btn_window_stack">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window-stack" viewBox="0 0 16 16">
+                            <path d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                            <path d="M12 1a2 2 0 0 1 2 2 2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10ZM2 12V5a2 2 0 0 1 2-2h9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1Zm1-4v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8H3Zm12-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2h12Z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn_window">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
+                            <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                            <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 0px;"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row row_content_common">
+                        <div class="col-12 mb-3">
+                            <div class="input-group">
+                                <label class="input-group-text text-decoration-underline">
+                                    <span class="text-danger">*</span>
+                                    title
+                                </label>
+                                <input name="title" type="text" class="form-control" param_data_type="str" param_data_multi="false" required>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="input-group">
+                                <label class="input-group-text text-decoration-underline">
+                                    <span class="text-danger">*</span>
+                                    mode
+                                </label>
+                                <select name="mode" class="form-select form-select" param_data_type="str" param_data_multi="false" required>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="input-group">
+                                <span class="input-group-text text-decoration-underline">
+                                    <span class="text-danger">*</span>
+                                    cmd
+                                </span>
+                                <select name="cmd" class="form-select form-select" param_data_type="str" param_data_multi="false" required>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-none row_content_template_str">
+                        <div class="col-6 mb-3">
+                            <div class="input-group">
+                                <label class="input-group-text row_content_template_title">title</label>
+                                <input type="text" class="form-control row_content_template_input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-none row_content_template_choice">
+                        <div class="col-6 mb-3">
+                            <div class="input-group">
+                                <label class="input-group-text row_content_template_title">title</label>
+                                <select class="form-select form-select row_content_template_select">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row_content">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="cmd_raw" type="button" class="btn btn-secondary">Raw</button>
+                    <button id="cmd_save" type="button" class="btn btn-success">Save</button>
+                    <button id="cmd_del" type="button" class="btn btn-danger">Delete</button>
+                    <button id="cmd_exec" type="button" class="btn btn-primary">Execute</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- パイプラインモーダル -->
+    <div id="pipe_modal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <form id="pipe_form" class="modal-content novalidate">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn btn_window_stack">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window-stack" viewBox="0 0 16 16">
+                            <path d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                            <path d="M12 1a2 2 0 0 1 2 2 2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10ZM2 12V5a2 2 0 0 1 2-2h9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1Zm1-4v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8H3Zm12-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2h12Z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn_window">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
+                            <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                            <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 0px;"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row row_content_common">
+                        <div class="col-6 mb-3">
+                            <div class="input-group">
+                                <label class="input-group-text text-decoration-underline">
+                                    <span class="text-danger">*</span>
+                                    title
+                                </label>
+                                <input name="title" type="text" class="form-control" param_data_type="str" param_data_multi="false" required>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="input-group">
+                                <label class="input-group-text text-decoration-underline">
+                                    description
+                                </label>
+                                <input name="description" type="text" class="form-control" param_data_type="str" param_data_multi="false"/>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <ol class="list-group list-group-numbered row_content"></ol>
+                        </div>
+                    </div>
+                    <div class="row d-none cmd_select_template">
+                        <li class="list-group-item d-flex justify-content-between align-items-start cmd_select_item">
+                            <div class="input-group ms-2">
+                                <select name="pipe_cmd" class="form-select form-select d-inline-block" param_data_type="str" param_data_multi="true">
+                                </select>
+                                <button type="button" class="btn btn-danger del_buton">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                        <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn btn-success add_buton">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="pipe_raw" type="button" class="btn btn-secondary">Raw</button>
+                    <button id="pipe_save" type="button" class="btn btn-success">Save</button>
+                    <button id="pipe_del" type="button" class="btn btn-danger">Delete</button>
+                    <button id="pipe_exec" type="button" class="btn btn-primary">Execute</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 結果モーダル -->
+    <div id="result_modal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <form id="result_form" class="modal-content novalidate">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn btn_window_stack">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window-stack" viewBox="0 0 16 16">
+                            <path d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                            <path d="M12 1a2 2 0 0 1 2 2 2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10ZM2 12V5a2 2 0 0 1 2-2h9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1Zm1-4v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8H3Zm12-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2h12Z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn_window">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
+                            <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                            <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 0px;"></button>
+                </div>
+                <div class="modal-body overflow-auto"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- ファイラーモーダル -->
+    <div id="filer_modal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <form id="result_form" class="modal-content novalidate">
+                <div class="modal-header">
+                    <h5 class="modal-title text-nowrap">Modal title</h5>
+                    <div class="input-group p-1">
+                        <input type="text" class="form-control filer_address" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary filer_address_bot" type="button" id="button-addon2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <button type="button" class="btn btn_window_stack">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window-stack" viewBox="0 0 16 16">
+                            <path d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                            <path d="M12 1a2 2 0 0 1 2 2 2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10ZM2 12V5a2 2 0 0 1 2-2h9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1Zm1-4v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8H3Zm12-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2h12Z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn_window">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
+                            <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                            <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 0px;"></button>
+                </div>
+                <div class="modal-body row">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- consoleモーダル -->
+    <div id="console_modal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <form id="console_form" class="modal-content novalidate">
+                <div class="modal-header">
+                    <h5 class="modal-title">Console log</h5>
+                    <button type="button" class="btn btn_window_stack">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window-stack" viewBox="0 0 16 16">
+                            <path d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                            <path d="M12 1a2 2 0 0 1 2 2 2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10ZM2 12V5a2 2 0 0 1 2-2h9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1Zm1-4v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8H3Zm12-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2h12Z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn_window">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
+                            <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                            <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 0px;"></button>
+                </div>
+                <div class="modal-body">
+                    <textarea id="console_modal_log" class="form-control overflow-auto w-100" rows="10"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" onclick="$('#console_modal_log').val('');">Clear</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- versionsモーダル -->
+    <div id="versions_modal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <form id="console_form" class="modal-content novalidate">
+                <div class="modal-header">
+                    <h5 class="modal-title">Versions</h5>
+                    <button type="button" class="btn btn_window_stack">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window-stack" viewBox="0 0 16 16">
+                            <path d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                            <path d="M12 1a2 2 0 0 1 2 2 2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10ZM2 12V5a2 2 0 0 1 2-2h9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1Zm1-4v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8H3Zm12-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2h12Z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn_window">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
+                            <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                            <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="margin-left: 0px;"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="versions_iinfer-tab" data-bs-toggle="tab" data-bs-target="#versions_iinfer" type="button" role="tab" aria-controls="versions_iinfer" aria-selected="true">
+                                iinfer
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="versions_used-tab" data-bs-toggle="tab" data-bs-target="#versions_used" type="button" role="tab" aria-controls="versions_used" aria-selected="false">
+                                Used software
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="versions_iinfer" role="tabpanel" aria-labelledby="versions_iinfer-tab">
+                            versions_iinfer
+                        </div>
+                        <div class="tab-pane fade" id="versions_used" role="tabpanel" aria-labelledby="versions_used-tab">
+                            versions_used
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- ローディングマスク -->
+    <div id="loading" class="position-absolute top-0 start-0 w-100 h-100 d-none" style="background:rgba(0, 0, 0, 0.3);z-index:10000;">
+        <div class="text-center position-absolute top-50 start-50 w-100 translate-middle">
+            <div class="spinner-border text-light" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </div>
+    </div>
+    <!-- フッター -->
+    <footer class="bg-dark fixed-bottom text-center text-white p-2 copyright"></footer>
+</body>
+<script type="text/javascript" src="assets/bootstrap/bootstrap.bundle.min.5.0.2.js"></script>
+<script type="text/javascript" src="assets/jquery/jquery.min.3.2.0.js"></script>
+<script type="text/javascript" src="assets/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/jquery-resizable/jquery-resizable.min.js"></script>
+<script type="text/javascript" src="assets/tree-menu/js/tree-menu.js"></script>
+<script type="text/javascript" src="assets/lightbox2/js/lightbox.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    // copyright情報取得
+    copyright_func = async function(){
+        copyright = await eel.copyright()();
+        $('.copyright').text(copyright);
+    };
+    copyright_func();
+    // 保存済みコマンドファイル一覧の取得
+    list_cmd_func = async function(){
+        $('#cmd_items').html('');
+        py_list_cmd = await eel.list_cmd()();
+        $.each(py_list_cmd, function(i, row){
+            elem = $($('#cmd_template').html());
+            elem.find('.cmd_title').text(row['title']);
+            elem.find('.cmd_mode').text(row['mode']);
+            elem.find('.cmd_cmd').text(row['cmd']);
+            $('#cmd_items').append(elem);
+        });
+        $('#cmd_items').append($($('#cmd_add').html()));
+    }
+    list_cmd_func().then(function(){
+        // 配列をoptionタグに変換
+        mkopt = function(arr) {
+            var opt = '';
+            for (var i = 0; arr && i < arr.length; i++) {
+                opt += '<option value="' + arr[i] + '">' + arr[i] + '</option>';
+            }
+            return opt;
+        }
+        // コマンドカードクリック時の処理（モーダルダイアログを開く）
+        cmd_card_func = async function(){
+            py_get_mode_opt = await eel.get_mode_opt()();
+            cmd_modal = $('#cmd_modal');
+            cmd_modal.find('[name="mode"]').html(mkopt(py_get_mode_opt));
+            // モード変更時の処理（モードに対するコマンド一覧を取得）
+            mode_change = async function(){
+                mode = cmd_modal.find('[name="mode"]').val();
+                py_get_cmd_opt = await eel.get_cmd_opt(mode)();
+                cmd_modal.find('[name="cmd"]').html(mkopt(py_get_cmd_opt));
+            }
+            cmd_modal.find('[name="mode"]').off('change');
+            cmd_modal.find('[name="mode"]').change(mode_change);
+            cmd_modal.find('.is-invalid, .is-valid').removeClass('is-invalid').removeClass('is-valid');
+            row_content = cmd_modal.find('.row_content');
+            row_content.html('');
+            // コマンド変更時の処理（コマンドに対するオプション一覧を取得）
+            cmd_change = async function(){
+                mode = cmd_modal.find('[name="mode"]').val();
+                cmd = cmd_modal.find('[name="cmd"]').val();
+                py_get_opt_opt = await eel.get_opt_opt(mode, cmd)();
+                row_content.html('');
+                // オプション一覧をフォームに追加
+                add_form_func = function(i, row, next_elem){
+                    //dict(opt="host", type="str", default="localhost", required=True, multi=False, hide=True, choise=None),
+                    target_name = row['opt'];
+                    if(!row['choise']) {
+                        elem = $(cmd_modal.find('.row_content_template_str').html());
+                        if (next_elem) next_elem.after(elem);
+                        else row_content.append(elem);
+                        input_elem = elem.find('.row_content_template_input');
+                        input_elem.removeClass('row_content_template_input');
+                        input_elem.val(row['default']);
+                    }
+                    else {
+                        elem = $(cmd_modal.find('.row_content_template_choice').html());
+                        if (next_elem) next_elem.after(elem);
+                        else row_content.append(elem);
+                        input_elem = elem.find('.row_content_template_select');
+                        input_elem.removeClass('row_content_template_select');
+                        input_elem.html(mkopt(row['choise']));
+                        input_elem.val(""+row['default']);
+                    }
+                    index = 0;
+                    if (cmd_modal.find('[name="'+target_name+'"]').length > 0) {
+                        index = 0;
+                        $.each(cmd_modal.find('[name="'+target_name+'"][param_data_index]'), function(i, val) {
+                            v = Number($(val).attr('param_data_index'));
+                            if (index <= v) index = v + 1;
+                        });
+                    }
+                    input_elem.attr('name', target_name);
+                    input_elem.attr('id', target_name + index);
+                    input_elem.attr('param_data_index', index);
+                    input_elem.attr('required', row['required']);
+                    input_elem.attr('param_data_type', row['type']);
+                    input_elem.attr('param_data_multi', row['multi']);
+                    // ファイルタイプの場合はファイラーモーダルを開くボタンを追加
+                    if(row['type']=='file'){
+                        btn = $('<button class="btn btn-secondary" type="button">file</button>');
+                        input_elem.parent().append(btn);
+                        mk_func = function(tid, tn){
+                            // tid, tnの値を残すためにクロージャーにする
+                            return function(){
+                                current_path = $('[id="' + tid + '"]').val();
+                                filer_modal_func(tid, tn, current_path);
+                            }
+                        }
+                        btn.click(mk_func(input_elem.attr('id'), input_elem.attr('name')));
+                    }
+                    // マルチの場合は追加ボタンを追加
+                    if(row['multi']){
+                        btn_a = $('<button class="btn btn-secondary add_buton" type="button"></button>');
+                        btn_a.append('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">'
+                                    +'<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>'
+                                    +'</svg>');
+                        input_elem.parent().append(btn_a);
+                        mk_func = function(row, next_elem){
+                            // row, next_elemの値を残すためにクロージャーにする
+                            return function(){add_form_func(0, row, next_elem);}
+                        }
+                        btn_a.click(mk_func(row, input_elem.parent().parent()));
+                        // 2個目以降は削除ボタンを追加
+                        if (cmd_modal.find('[name="'+target_name+'"]').length > 1) {
+                            mk_func = function(del_elem){
+                                // del_elemの値を残すためにクロージャーにする
+                                return function(){del_elem.remove();}
+                            }
+                            btn_t = $('<button class="btn btn-secondary" type="button"></button>');
+                            btn_t.append('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">'
+                                    +'<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>'
+                                    +'<path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>'
+                                    +'</svg>');
+                            input_elem.parent().append(btn_t);
+                            btn_t.click(mk_func(input_elem.parent().parent()));
+                        }
+                    }
+                    title = elem.find('.row_content_template_title');
+                    title.html('');
+                    if (row['required']) {
+                        title.append('<span class="text-danger">*</span>');
+                    }
+                    title.append('<span>' + row['opt'] + '</span>');
+                    if (row['hide']) {
+                        elem.addClass('row_content_hide');
+                    } else {
+                        title.addClass('text-decoration-underline');
+                    }
+                }
+                $.each(py_get_opt_opt, add_form_func);
+                row_content.find('.row_content_hide').hide();
+                // 高度なオプションを表示するリンクを追加
+                if (row_content.children().is('.row_content_hide')) {
+                    show_link = $('<div class="text-center card-hover"><a href="#">[ advanced options ]</a></div>');
+                    show_link.click(function(){
+                        row_content.find('.row_content_hide').toggle();
+                    });
+                    row_content.append(show_link);
+                }
+            }
+            //row_content.find('is-invalid, is-valid').removeClass('is-invalid').removeClass('is-valid');
+            cmd_modal.find('[name="cmd"]').off('change');
+            cmd_modal.find('[name="cmd"]').change(cmd_change);
+            modal_title = $(this).find('.cmd_title').text();
+            if(modal_title != '') {
+                // コマンドファイルの読み込み
+                py_load_cmd = await eel.load_cmd(modal_title)();
+                cmd_modal.find('[name="mode"]').val(py_load_cmd['mode']);
+                await mode_change();
+                cmd_modal.find('[name="cmd"]').val(py_load_cmd['cmd']);
+                await cmd_change();
+                $.each(py_load_cmd, function(key, val){
+                    if (typeof val === 'boolean') {
+                        val = val.toString();
+                    }
+                    // フォームに値をセット
+                    if(Array.isArray(val)){
+                        $.each(val, function(i, v){
+                            e = cmd_modal.find('[name="' + key + '"]').parent().find('.add_buton')[i];
+                            $(e).click();
+                        });
+                        cmd_modal.find('[name="' + key + '"]').each(function(i, e){
+                            $(e).val(val[i]);
+                        });
+                    } else {
+                        cmd_modal.find('[name="' + key + '"]').val(val);
+                    }
+                });
+                $('#cmd_del').show();
+                cmd_modal.find('[name="title"]').attr('readonly', true);
+                cmd_modal.find('[name="mode"]').css('pointer-events', 'none').css('background-color', '#e9ecef');
+                cmd_modal.find('[name="cmd"]').css('pointer-events', 'none').css('background-color', '#e9ecef');
+                cmd_modal.find('[name="name"]').attr('readonly', true);
+            } else {
+                // 新規コマンドファイルの作成
+                modal_title = 'New Command';
+                await mode_change();
+                $('#cmd_del').hide();
+                cmd_modal.find('[name="title"]').val('');
+                cmd_modal.find('[name="title"]').attr('readonly', false);
+                cmd_modal.find('[name="mode"]').css('pointer-events', 'auto').css('background-color', 'transparent');
+                cmd_modal.find('[name="cmd"]').css('pointer-events', 'auto').css('background-color', 'transparent');
+                cmd_modal.find('[name="name"]').attr('readonly', false);
+            }
+            cmd_modal.find('.modal-title').text('Command : ' + modal_title);
+            cmd_modal.modal('show');
+        }
+        $('.cmd_card').off('click');
+        $('.cmd_card').click(cmd_card_func);
+        $('#cmd_save').off('click');
+        // コマンドフォームからパラメータを取得
+        get_param = function(modal_elem) {
+            modal_elem.find('.is-invalid, .is-valid').removeClass('is-invalid').removeClass('is-valid');
+            var opt = {};
+            var title = modal_elem.find('[name="title"]').val();
+            opt["mode"] = modal_elem.find('[name="mode"]').val();
+            opt["cmd"] = modal_elem.find('[name="cmd"]').val();
+            if(!opt["mode"]) delete opt["mode"];
+            if(!opt["cmd"]) delete opt["cmd"];
+            opt["title"] = title;
+            isFloat = function(i){
+                try {
+                    n = Number(i);
+                    return n % 1 !== 0;
+                } catch(e) {
+                    return false;
+                }
+            }
+            isInt = function(i){
+                try {
+                    n = Number(i);
+                    return n % 1 === 0;
+                } catch(e) {
+                    return false;
+                }
+            }
+            // フォームの入力値をチェック（不正な値があればフォームに`is-invalid`クラスを付加する）
+            modal_elem.find('.row_content, .row_content_common').find('input, select').each(function(i, elem){
+                data_name = $(elem).attr('name');
+                data_val = $(elem).val();
+                data_type = $(elem).attr('param_data_type');
+                data_multi = $(elem).attr('param_data_multi');
+                if ($(elem).attr('required') && (!data_val || data_val=='')) {
+                    $(elem).addClass('is-invalid');
+                } else if (data_type=='int') {
+                    if(data_val && data_val!='') {
+                        if(!isInt(data_val)) $(elem).addClass('is-invalid');
+                        else {
+                            $(elem).removeClass('is-invalid');
+                            $(elem).addClass('is-valid');
+                            data_val = parseInt(data_val);
+                        }
+                    } else {
+                        $(elem).removeClass('is-invalid');
+                        $(elem).addClass('is-valid');
+                    }
+                } else if (data_type=='float') {
+                    if(data_val && data_val!='') {
+                        if(!isFloat(data_val) && !isInt(data_val)) $(elem).addClass('is-invalid');
+                        else {
+                            $(elem).removeClass('is-invalid');
+                            $(elem).addClass('is-valid');
+                            data_val = parseFloat(data_val);
+                        }
+                    } else {
+                        $(elem).removeClass('is-invalid');
+                        $(elem).addClass('is-valid');
+                    }
+                } else if (data_type=='bool') {
+                    if(data_val!='true' && data_val!='false') $(elem).addClass('is-invalid');
+                    else {
+                        data_val = data_val=='true';
+                        $(elem).removeClass('is-invalid');
+                        $(elem).addClass('is-valid');
+                    }
+                } else {
+                    $(elem).removeClass('is-invalid');
+                    $(elem).addClass('is-valid');
+                }
+                if(data_multi=='true'){
+                    if(!opt[data_name]) opt[data_name] = [];
+                    if(data_val && data_val!='') opt[data_name].push(data_val);
+                } else {
+                    if(data_val && data_val!='') opt[data_name] = data_val;
+                }
+            });
+            return [title, opt];
+        }
+        // コマンドファイルの保存
+        $('#cmd_save').click(async function(){
+            cmd_modal = $('#cmd_modal');
+            var [title, opt] = get_param(cmd_modal);
+            if (cmd_modal.find('.row_content, .row_content_common').find('.is-invalid').length > 0) {
+                return;
+            }
+            $('#loading').removeClass('d-none');
+            await eel.save_cmd(title, opt)();
+            await list_cmd_func();
+            $('.cmd_card').click(cmd_card_func);
+            if (window.confirm('save success. close this window?')) {
+                cmd_modal.modal('hide');
+            }
+            $('#loading').addClass('d-none');
+        });
+        // コマンドファイルの削除
+        $('#cmd_del').off('click');
+        $('#cmd_del').click(async function(){
+            cmd_modal = $('#cmd_modal');
+            var title = cmd_modal.find('[name="title"]').val();
+            $('#loading').removeClass('d-none');
+            if (window.confirm('delete "' + title + '"?')) {
+                await eel.del_cmd(title)();
+                cmd_modal.modal('hide');
+                await list_cmd_func();
+                $('.cmd_card').click(cmd_card_func);
+            }
+            $('#loading').addClass('d-none');
+        });
+        // コマンドファイルの実行
+        $('#cmd_exec').off('click');
+        $('#cmd_exec').click(async function(){
+            cmd_modal = $('#cmd_modal');
+            var [title, opt] = get_param(cmd_modal);
+            if (cmd_modal.find('.row_content').find('.is-invalid').length > 0) {
+                return;
+            }
+            $('#loading').removeClass('d-none');
+            // コマンドの実行
+            eel.exec_cmd(title, opt)().then(function(result){
+                cmd_modal.modal('hide');
+                view_result_func(title, result);
+                $('#loading').addClass('d-none');
+            });
+        });
+        // RAW表示の実行
+        $('#cmd_raw').off('click');
+        $('#cmd_raw').click(async function(){
+            cmd_modal = $('#cmd_modal');
+            var [title, opt] = get_param(cmd_modal);
+            if (cmd_modal.find('.row_content').find('.is-invalid').length > 0) {
+                return;
+            }
+            $('#loading').removeClass('d-none');
+            // コマンドの実行
+            eel.raw_cmd(title, opt)().then(function(result){
+                view_raw_func(title, result);
+                $('#loading').addClass('d-none');
+            });
+        });
+    });
+    // ファイラーモーダル
+    filer_modal_func = async function(target_id, modal_title, current_path, call_back_func) {
+        filer_modal = $('#filer_modal');
+        filer_modal.find('.modal-title').text(modal_title);
+        filer_modal.find('.modal-body').html('<ul class="tree-menu overflow-auto border col-4"></ul><div class="file-list overflow-auto col-8"></div>');
+        filer_modal.find('.tree-menu').css('height', 'calc(100vh - 180px)');
+        filer_modal.find('.file-list').css('height', 'calc(100vh - 180px)');
+        //filer_modal.find('.tree-menu').resizable({ghost:true});
+        filer_modal.find('.filer_address_bot').off('click');
+        filer_modal.find('.filer_address_bot').click(async function(){
+            current_path = filer_modal.find('.filer_address').val();
+            key = current_path.replace(/[\s\:\\\/\,\.\#\$\%\^\&\!\@\*\(\)\{\}\[\]\'\"\`]/g, '_');
+            current_node = $('#'+key);
+            if (current_node.length <= 0) {
+                alert('invalid path:'+key);
+                return;
+            }
+            await reload_tree(target_id, filer_modal.find('.tree-menu'), current_path, filer_modal.find('.file-list'));
+        });
+
+        reload_tree = async function(target_id, current_node, current_path, file_list_elem){
+            //dict(name=part, is_dir=path.is_dir(), path=str(path), children=children)
+            py_list_tree = await eel.list_tree(current_path)();
+            current_node.html('');
+            $.each(py_list_tree, function(key, node){
+                if(!node['is_dir']) return;
+                li_elem = $('#'+key);
+                if (li_elem.length > 0) {
+                    li_elem.html('<a href="#" class="folder-open">' + node['name'] + '</a>');
+                } else {
+                    li_elem = $('<li id="'+key+'"><a href="#" class="folder-open">' + node['name'] + '</a></li>');
+                    current_node.append(li_elem);
+                }
+                mk_func = function(target_id, current_node, current_path){
+                    // 左側ペインのフォルダを選択した時の処理
+                    return function(){
+                        reload_tree(target_id, current_node, current_path);
+                    }
+                }
+                li_elem.find('a').click(mk_func(target_id, current_node, node['path']));
+                if(node['children']) {
+                    ul_elem = $('<ul/>');
+                    li_elem.append(ul_elem);
+                    $.each(node['children'], function(k, n){
+                        if(!n['is_dir']) return;
+                        li = $('<li id="'+k+'"><a href="#" class="folder-close">' + n['name'] + '</a></li>');
+                        li.find('a').click(mk_func(target_id, ul_elem, n['path']));
+                        ul_elem.append(li);
+                    });
+                }
+            });
+            py_list_tree_keys = Object.keys(py_list_tree);
+            if (py_list_tree_keys.length > 0) {
+                node = py_list_tree[py_list_tree_keys[py_list_tree_keys.length-1]];
+                table = $('<table class="table table-bordered table-hover table-sm"></table>');
+                filer_modal.find('.file-list').html('');
+                filer_modal.find('.file-list').append(table);
+                table_head = $('<thead class="table-dark bg-dark"></thead>');
+                table_head.append($('<tr><th scope="col">-</th><th scope="col">name</th><th scope="col">size</th><th scope="col">last</th></tr>'));
+                table.append(table_head);
+                table_body = $('<tbody></tbody>');
+                table.append(table_body);
+                filer_modal.find('.filer_address').val(node['path']);
+                if(node['children']) {
+                    mk_func = function(target_id, current_node, current_path){
+                        // 右側ペインのフォルダを選択した時の処理
+                        return function(){
+                            reload_tree(target_id, current_node, current_path);
+                        }
+                    }
+                    $.each(node['children'], function(k, n){
+                        if(!n['is_dir']) return;
+                        tr_elem = $('<tr/>');
+                        table_body.append(tr_elem);
+                        td = $('<td><a href="#" class="folder-close">' + n['name'] + '</a></td>');
+                        td.find('a').click(mk_func(target_id, $('#'+k), n['path']));
+                        tr_elem.append($('<td><img src="/assets/tree-menu/image/folder-close.png"></td>'));
+                        tr_elem.append(td);
+                        tr_elem.append($('<td>' + n['size'] + '</td>'));
+                        tr_elem.append($('<td>' + n['last'] + '</td>'));
+                    });
+                    mk_func = function(target_id, current_node, current_path){
+                        // 右側ペインのファイルを選択した時の処理
+                        return function(){
+                            $('[id="'+target_id+'"]').val(current_path);
+                            filer_modal.modal('hide');
+                            if(call_back_func) call_back_func(current_path);
+                        }
+                    }
+                    $.each(node['children'], function(k, n){
+                        if(n['is_dir']) return;
+                        tr_elem = $('<tr/>');
+                        table_body.append(tr_elem);
+                        td = $('<td><a href="#" class="folder-close">' + n['name'] + '</a></td>');
+                        td.find('a').click(mk_func(target_id, $('#'+k), n['path']));
+                        tr_elem.append($('<td><img src="/assets/tree-menu/image/file.png"></td>'));
+                        tr_elem.append(td);
+                        tr_elem.append($('<td>' + n['size'] + '</td>'));
+                        tr_elem.append($('<td>' + n['last'] + '</td>'));
+                    });
+                }
+            }
+        }
+        await reload_tree(target_id, filer_modal.find('.tree-menu'), current_path, filer_modal.find('.file-list'));
+        filer_modal.modal('show');
+    };
+    // 実行結果をモーダルダイアログに表示
+    view_result_func = function(title, result){
+        result_modal = $('#result_modal');
+        result_modal.find('.modal-title').text(title);
+        result_modal.find('.modal-body').html('');
+        mk_table_func = function() {
+            table = $('<table class="table table-bordered table-hover table-sm"></table>');
+            table_head = $('<thead class="table-dark bg-dark"></thead>');
+            table_body = $('<tbody></tbody>');
+            table.append(table_head);
+            table.append(table_body);
+            return table;
+        }
+        result_modal.find('.modal-body').append(mk_table_func());
+        // list型の結果をテーブルに変換
+        list2table = function(data, table_head, table_body){
+            $.each(data, function(i, row){
+                if(row['success'] && typeof row['success'] == "object" && !Array.isArray(row['success'])){
+                    dict2table(row['success'], i==0?table_head:null, table_body, row['output_image']);
+                    return;
+                }
+                if(typeof row == 'string' || row instanceof String){
+                    tr = $('<tr></tr>');
+                    table_body.append(tr);
+                    tr.append($('<td>' + row + '</td>'));
+                    return;
+                }
+                tr = $('<tr></tr>');
+                table_body.append(tr);
+                $.each(row, function(key, val){
+                    if(i==0) {
+                        table_head.append($('<th scope="col">' + key + '</th>'));
+                    }
+                    if(val && val['success'] && Array.isArray(val['success'])){
+                        tbl = mk_table_func()
+                        td = $('<td></td>');
+                        td.append(tbl);
+                        tr.append(td);
+                        list2table(val['success'], tbl.find('thead'), tbl.find('tbody'));
+                    }
+                    else if(val && val['success'] && typeof val['success'] == "object"){
+                        tbl = mk_table_func()
+                        td = $('<td></td>');
+                        td.append(tbl);
+                        tr.append(td);
+                        dict2table(val['success'], tbl.find('thead'), tbl.find('tbody'));
+                    }
+                    else if(val && Array.isArray(val) && val.length > 0 && typeof val[0] == "object"){
+                        tbl = mk_table_func()
+                        td = $('<td></td>');
+                        td.append(tbl);
+                        tr.append(td);
+                        list2table(val, tbl.find('thead'), tbl.find('tbody'));
+                    }
+                    else{
+                        tr.append($('<td>' + val + '</td>'));
+                    }
+                });
+            });
+        }
+        // dict型の結果をテーブルに変換
+        dict2table = function(data, table_head, table_body, output_image){
+            tr = $('<tr></tr>');
+            if(output_image){
+                if(table_head)table_head.append($('<th scope="col">output_image</th>'));
+                img = $('<img class="img-thumbnail">').attr('src', 'data:image/png;base64,' + output_image);
+                img.css('width','100px').css('height','auto');
+                anchor = $('<a href="data:image/jpeg;base64,' + output_image + '" data-lightbox="output_image"></a>').append(img);
+                tr.append($('<td></td>').append(anchor));
+            }
+            $.each(data, function(key, val){
+                if(table_head)table_head.append($('<th scope="col">' + key + '</th>'));
+                tr.append($('<td>' + val + '</td>'));
+            });
+            table_body.append(tr);
+        }
+        // 結果をテーブルに変換
+        if(result['success'] && Array.isArray(result['success'])){
+            list2table(result['success'], table_head, table_body);
+        }
+        else if(result['success'] && typeof result['success'] == "object"){
+            dict2table(result['success'], table_head, table_body, result['output_image']);
+        }
+        else if(Array.isArray(result)){
+            list2table(result, table_head, table_body);
+        }
+        else if(typeof result === "string" || result instanceof String){
+            $('#result_modal').find('.modal-body').html(result);
+        }
+        else {
+            dict2table(result, table_head, table_body);
+        }
+        result_modal.modal('show');
+    }
+    // RAW結果をモーダルダイアログに表示
+    view_raw_func = function(title, result){
+        result_modal = $('#result_modal');
+        result_modal.find('.modal-title').text(title);
+        result_modal.find('.modal-body').html('');
+        table = $('<table class="table table-bordered table-hover table-sm"></table>');
+        table_head = $('<thead class="table-dark bg-dark"></thead>');
+        table_body = $('<tbody></tbody>');
+        table.append(table_head);
+        table.append(table_body);
+        result_modal.find('.modal-body').append(table);
+        // list型の結果をテーブルに変換
+        list2table = function(data, table_head, table_body){
+            $.each(data, function(i, row){
+                tr = $('<tr></tr>');
+                $.each(row, function(key, val){
+                    if(i==0) {
+                        table_head.append($('<th scope="col">' + key + '</th>'));
+                    }
+                    tr.append($('<td>' + val + '</td>'));
+                });
+                table_body.append(tr);
+            });
+        }
+        list2table(result, table_head, table_body);
+        result_modal.modal('show');
+    }
+    // output_jsonファイルを選択して表示する
+    open_output_json_func = function(target_id){
+        // ファイル選択後に結果画面を開く
+        view_output_json_func = function(current_path){
+            eel.load_result(current_path)().then(function(result){
+                view_result_func(current_path, result);
+                $('#loading').addClass('d-none');
+            });
+        };
+        filer_modal_func(target_id, 'output_json', '', view_output_json_func);
+    };
+    // captureファイルを選択して表示する
+    open_capture_func = function(target_id){
+        // ファイル選択後に結果画面を開く
+        view_capture_func = function(current_path){
+            eel.load_capture(current_path)().then(function(result){
+                view_result_func(current_path, result);
+                $('#loading').addClass('d-none');
+            });
+        };
+        filer_modal_func(target_id, 'capture', '', view_capture_func);
+    };
+    // 保存済みパイプラインファイル一覧の取得
+    list_pipe_func = async function(){
+        $('#pipe_items').html('');
+        py_list_pipe = await eel.list_pipe()();
+        $.each(py_list_pipe, function(i, row){
+            elem = $($('#pipe_template').html());
+            elem.find('.pipe_title').text(row['title']);
+            elem.find('.pipe_desc').text(row['description']);
+            $('#pipe_items').append(elem);
+        });
+        $('#pipe_items').append($($('#pipe_add').html()));
+    }
+    list_pipe_func().then(function(){
+        // パイプラインカードクリック時の処理（モーダルダイアログを開く）
+        pipe_card_func = async function(){
+            pipe_modal = $('#pipe_modal');
+            pipe_modal.find('.is-invalid, .is-valid').removeClass('is-invalid').removeClass('is-valid');
+            row_content = pipe_modal.find('.row_content');
+            row_content.html('');
+            modal_title = $(this).find('.pipe_title').text();
+            cmd_select_template_func = function(add_buton, py_list_cmd) {
+                cmd_select_template = $(pipe_modal.find('.cmd_select_template').html());
+                row_content = pipe_modal.find('.row_content');
+                if(row_content.find('.cmd_select_item').length > 0) {
+                    add_buton.parents('.cmd_select_item').after(cmd_select_template);
+                } else {
+                    row_content.append(cmd_select_template);
+                    cmd_select_template.find('[name="pipe_cmd"]').attr('required', true);
+                    cmd_select_template.find('.del_buton').hide();
+                }
+                pipe_cmd_select = cmd_select_template.find('[name="pipe_cmd"]');
+                pipe_cmd_select.append('<option></option>');
+                $.each(py_list_cmd, function(i, cmd){
+                    option = $('<option></option>');
+                    pipe_cmd_select.append(option);
+                    option.attr('value', cmd['title']);
+                    option.text(cmd['title']+'(mode='+cmd['mode']+', cmd='+cmd['cmd']+')');
+                });
+                cmd_select_template.find('.add_buton').click(function(e){
+                    cmd_select_template_func($(this), py_list_cmd);
+                });
+                cmd_select_template.find('.del_buton').click(function(e){
+                    $(this).parents('.cmd_select_item').remove();
+                });
+                return cmd_select_template;
+            }
+            if(modal_title != '') {
+                // パイプラインファイルの読み込み
+                py_list_cmd = await eel.list_cmd()();
+                cmd_select = cmd_select_template_func($(this), py_list_cmd)
+                py_load_pipe = await eel.load_pipe(modal_title)();
+                $.each(py_load_pipe, function(key, val){
+                    if (typeof val === 'boolean') {
+                        val = val.toString();
+                    }
+                    // フォームに値をセット
+                    if(Array.isArray(val)){
+                        $.each(val, function(i, v){
+                            e = pipe_modal.find('[name="' + key + '"]').parent().find('.add_buton')[i];
+                            $(e).click();
+                        });
+                        pipe_modal.find('[name="' + key + '"]').each(function(i, e){
+                            $(e).val(val[i]);
+                        });
+                    } else {
+                        pipe_modal.find('[name="' + key + '"]').val(val);
+                    }
+                });
+                $('#cmd_del').show();
+                pipe_modal.find('[name="title"]').attr('readonly', true);
+            } else {
+                // 新規パイプラインファイルの作成
+                modal_title = 'New Pipeline';
+                $('#cmd_del').hide();
+                pipe_modal.find('[name="title"]').val('');
+                pipe_modal.find('[name="title"]').attr('readonly', false);
+                pipe_modal.find('[name="description"]').val('');
+                py_list_cmd = await eel.list_cmd()();
+                cmd_select = cmd_select_template_func($(this), py_list_cmd)
+            }
+            pipe_modal.find('.modal-title').text('Pipeline : ' + modal_title);
+            pipe_modal.modal('show');
+        }
+        $('.pipe_card').off('click');
+        $('.pipe_card').click(pipe_card_func);
+        $('#pipe_save').off('click');
+        // パイプラインファイルの保存
+        $('#pipe_save').click(async function(){
+            pipe_modal = $('#pipe_modal');
+            var [title, opt] = get_param(pipe_modal);
+            if (pipe_modal.find('.row_content, .row_content_common').find('.is-invalid').length > 0) {
+                return;
+            }
+            $('#loading').removeClass('d-none');
+            await eel.save_pipe(title, opt)();
+            await list_pipe_func();
+            $('.pipe_card').click(pipe_card_func);
+            if (window.confirm('save success. close this window?')) {
+                pipe_modal.modal('hide');
+            }
+            $('#loading').addClass('d-none');
+        });
+        // パイプラインファイルの削除
+        $('#pipe_del').off('click');
+        $('#pipe_del').click(async function(){
+            pipe_modal = $('#pipe_modal');
+            var title = pipe_modal.find('[name="title"]').val();
+            $('#loading').removeClass('d-none');
+            if (window.confirm('delete "' + title + '"?')) {
+                await eel.del_pipe(title)();
+                pipe_modal.modal('hide');
+                await list_pipe_func();
+                $('.pipe_card').click(pipe_card_func);
+            }
+            $('#loading').addClass('d-none');
+        });
+        // パイプラインファイルの実行
+        $('#pipe_exec').off('click');
+        $('#pipe_exec').click(async function(){
+            pipe_modal = $('#pipe_modal');
+            var [title, opt] = get_param(pipe_modal);
+            if (pipe_modal.find('.row_content').find('.is-invalid').length > 0) {
+                return;
+            }
+            $('#loading').removeClass('d-none');
+            // コマンドの実行
+            eel.exec_pipe(title, opt)().then(function(result){
+                pipe_modal.modal('hide');
+                view_result_func(title, result);
+                $('#loading').addClass('d-none');
+            });
+        });
+        // RAW表示の実行
+        $('#pipe_raw').off('click');
+        $('#pipe_raw').click(async function(){
+            pipe_modal = $('#pipe_modal');
+            var [title, opt] = get_param(pipe_modal);
+            if (pipe_modal.find('.row_content').find('.is-invalid').length > 0) {
+                return;
+            }
+            $('#loading').removeClass('d-none');
+            // コマンドの実行
+            eel.raw_pipe(title, opt)().then(function(result){
+                view_raw_func(title, result);
+                $('#loading').addClass('d-none');
+            });
+        });
+    });
+    $('#versions_modal').on('shown.bs.modal	', function(){
+        // iinferのバージョン情報取得
+        versions_iinfer_func = async function(){
+            versions_iinfer = await eel.versions_iinfer()();
+            $('#versions_iinfer').html('');
+            $.each(versions_iinfer, function(i, v){
+                v = v.replace(/<([^>]+)>/g, '<a href="$1" target="_blank">$1</a>');
+                div = $('<div class="d-block"></div>');
+                $('#versions_iinfer').append(div);
+                if(i==0) {
+                    div.addClass('m-3');
+                    div.append('<h4>' + v + '</h4>');
+                } else {
+                    div.addClass('ms-5 me-5');
+                    div.append('<h6>' + v + '</h6>');
+                }
+            });
+        };
+        versions_iinfer_func();
+        // usedのバージョン情報取得
+        versions_used_func = async function(){
+            versions_used = await eel.versions_used()();
+            $('#versions_used').html('');
+            div = $('<div class="overflow-auto" style="height:calc(100vh - 260px);"></div>');
+            table = $('<table class="table table-bordered table-hover table-sm"></table>');
+            table_head = $('<thead class="table-dark bg-dark"></thead>');
+            table_body = $('<tbody></tbody>');
+            table.append(table_head);
+            table.append(table_body);
+            div.append(table);
+            $('#versions_used').append(div);
+            $.each(versions_used, function(i, row){
+                tr = $('<tr></tr>');
+                $.each(row, function(j, cel){
+                    td = $('<td></td>').text(cel);
+                    tr.append(td);
+                });
+                if(i==0) table_head.append(tr);
+                else table_body.append(tr);
+            });
+        };
+        versions_used_func();
+    })
+
+    // modal setting
+    $('.modal-dialog').draggable({cursor:"move",cancel:".modal-body"});
+    $('#filer_modal .modal-dialog').draggable({cursor:"move",cancel:".modal-body, .filer_address"});
+    $('.btn_window_stack').click(function(){
+        $('.btn_window_stack').css('margin-left', '0px').hide();
+        $('.btn_window').css('margin-left', 'auto').show();
+        $(this).parents('.modal-dialog').removeClass('modal-fullscreen');
+    });
+    $('.btn_window').click(function(){
+        $('.btn_window_stack').css('margin-left', 'auto').show();
+        $('.btn_window').css('margin-left', '0px').hide();
+        $(this).parents('.modal-dialog').addClass('modal-fullscreen');
+    });
+    $('.btn_window_stack').css('margin-left', '0px').hide();
+    $('.btn_window').css('margin-left', 'auto').show();
+
+    // disable F5 and Ctrl+R
+    $(document).on('keydown', function(e){
+        if ((e.which || e.keyCode) == 116) {
+            return false;
+        } else if ((e.which || e.keyCode) == 82 && e.ctrlKey) {
+            return false;
+        }
+    });
+    $(window).on("beforeunload", function () {
+        event.preventDefault();
+        event.returnValue = 'Check';
+    });
+    eel.expose(js_console_modal_log_func);
+    function js_console_modal_log_func(line) {
+        elem = $('#console_modal_log');
+        text = elem.val() + line;
+        elem.val(text);
+        elem.get(0).setSelectionRange(text.length-1, text.length-1);
+    };
+});
+</script>
+</html>

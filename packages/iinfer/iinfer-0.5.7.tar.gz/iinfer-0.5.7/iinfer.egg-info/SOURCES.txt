@@ -1,0 +1,185 @@
+LICENSE
+README.md
+setup.py
+iinfer/__init__.py
+iinfer/__main__.py
+iinfer/config.yml
+iinfer/logconf_client.yml
+iinfer/logconf_gui.yml
+iinfer/logconf_install.yml
+iinfer/logconf_postprocess.yml
+iinfer/logconf_redis.yml
+iinfer/logconf_server.yml
+iinfer/version.py
+iinfer.egg-info/PKG-INFO
+iinfer.egg-info/SOURCES.txt
+iinfer.egg-info/dependency_links.txt
+iinfer.egg-info/entry_points.txt
+iinfer.egg-info/requires.txt
+iinfer.egg-info/top_level.txt
+iinfer/app/__init__.py
+iinfer/app/app.py
+iinfer/app/client.py
+iinfer/app/common.py
+iinfer/app/gui.py
+iinfer/app/install.py
+iinfer/app/postprocess.py
+iinfer/app/predict.py
+iinfer/app/redis.py
+iinfer/app/server.py
+iinfer/app/postprocesses/cls_jadge.py
+iinfer/app/postprocesses/csv.py
+iinfer/app/postprocesses/det_clip.py
+iinfer/app/postprocesses/det_face_store.py
+iinfer/app/postprocesses/det_filter.py
+iinfer/app/postprocesses/det_jadge.py
+iinfer/app/postprocesses/httpreq.py
+iinfer/app/predicts/__init__.py
+iinfer/app/predicts/insightface_det.py
+iinfer/app/predicts/mmdet_det_YoloX.py
+iinfer/app/predicts/mmdet_det_YoloX_Lite.py
+iinfer/app/predicts/mmpretrain_cls_swin.py
+iinfer/app/predicts/mmpretrain_cls_swin_Lite.py
+iinfer/app/predicts/mmrotate_det_ReDet.py
+iinfer/app/predicts/onnx_cls_EfficientNet_Lite4.py
+iinfer/app/predicts/onnx_det_TinyYoloV3.py
+iinfer/app/predicts/onnx_det_YoloV3.py
+iinfer/app/predicts/onnx_det_YoloX.py
+iinfer/app/predicts/onnx_det_YoloX_Lite.py
+iinfer/datasets/label_coco.txt
+iinfer/datasets/label_voc.txt
+iinfer/docker/Dockerfile
+iinfer/docker/__init__.py
+iinfer/docker/build.sh
+iinfer/docker/docker-compose.yml
+iinfer/licenses/LICENSE.Babel.2.14.0(BSD License).txt
+iinfer/licenses/LICENSE.Eel.0.16.0(MIT License).txt
+iinfer/licenses/LICENSE.Jinja2.3.1.2(BSD License).txt
+iinfer/licenses/LICENSE.Markdown.3.5.1(BSD License).txt
+iinfer/licenses/LICENSE.MarkupSafe.2.1.3(BSD License).txt
+iinfer/licenses/LICENSE.Pillow.10.1.0(Historical Permission Notice and Disclaimer (HPND)).txt
+iinfer/licenses/LICENSE.PyYAML.6.0.1(MIT License).txt
+iinfer/licenses/LICENSE.Pygments.2.17.2(BSD License).txt
+iinfer/licenses/LICENSE.Sphinx.7.2.6(BSD License).txt
+iinfer/licenses/LICENSE.addict.2.4.0(MIT License).txt
+iinfer/licenses/LICENSE.alabaster.0.7.13(BSD License).txt
+iinfer/licenses/LICENSE.aliyun-python-sdk-core.2.14.0(Apache Software License).txt
+iinfer/licenses/LICENSE.aliyun-python-sdk-kms.2.16.2(Apache Software License).txt
+iinfer/licenses/LICENSE.argcomplete.3.2.1(Apache Software License).txt
+iinfer/licenses/LICENSE.bottle-websocket.0.2.9(MIT License).txt
+iinfer/licenses/LICENSE.bottle.0.12.25(MIT License).txt
+iinfer/licenses/LICENSE.certifi.2023.11.17(Mozilla Public License 2.0 (MPL 2.0)).txt
+iinfer/licenses/LICENSE.cffi.1.16.0(MIT License).txt
+iinfer/licenses/LICENSE.charset-normalizer.3.3.2(MIT License).txt
+iinfer/licenses/LICENSE.click.8.1.7(BSD License).txt
+iinfer/licenses/LICENSE.colorama.0.4.6(BSD License).txt
+iinfer/licenses/LICENSE.coloredlogs.15.0.1(MIT License).txt
+iinfer/licenses/LICENSE.contourpy.1.2.0(BSD License).txt
+iinfer/licenses/LICENSE.crcmod.1.7(MIT License).txt
+iinfer/licenses/LICENSE.cryptography.41.0.7(Apache Software License; BSD License).txt
+iinfer/licenses/LICENSE.cycler.0.12.1(BSD License).txt
+iinfer/licenses/LICENSE.docutils.0.20.1(BSD License; GNU General Public License (GPL); Public Domain; Python Software Foundation License).txt
+iinfer/licenses/LICENSE.einops.0.7.0(MIT License).txt
+iinfer/licenses/LICENSE.filelock.3.13.1(The Unlicense (Unlicense)).txt
+iinfer/licenses/LICENSE.filterpy.1.4.5(MIT License).txt
+iinfer/licenses/LICENSE.flatbuffers.23.5.26(Apache Software License).txt
+iinfer/licenses/LICENSE.fonttools.4.47.0(MIT License).txt
+iinfer/licenses/LICENSE.fsspec.2023.12.2(BSD License).txt
+iinfer/licenses/LICENSE.future.0.18.3(MIT License).txt
+iinfer/licenses/LICENSE.gevent-websocket.0.10.1(Copyright 2011-2017 Jeffrey Gelens jeffrey@noppo.pro).txt
+iinfer/licenses/LICENSE.gevent.23.9.1(MIT License).txt
+iinfer/licenses/LICENSE.greenlet.3.0.3(MIT License).txt
+iinfer/licenses/LICENSE.humanfriendly.10.0(MIT License).txt
+iinfer/licenses/LICENSE.idna.3.6(BSD License).txt
+iinfer/licenses/LICENSE.imagesize.1.4.1(MIT License).txt
+iinfer/licenses/LICENSE.importlib-metadata.7.0.1(Apache Software License).txt
+iinfer/licenses/LICENSE.iniconfig.2.0.0(MIT License).txt
+iinfer/licenses/LICENSE.jaraco.classes.3.3.0(MIT License).txt
+iinfer/licenses/LICENSE.jmespath.0.10.0(MIT License).txt
+iinfer/licenses/LICENSE.keyring.24.3.0(MIT License).txt
+iinfer/licenses/LICENSE.kiwisolver.1.4.5(BSD License).txt
+iinfer/licenses/LICENSE.markdown-it-py.3.0.0(MIT License).txt
+iinfer/licenses/LICENSE.mat4py.0.6.0(MIT License).txt
+iinfer/licenses/LICENSE.matplotlib.3.8.2(Python Software Foundation License).txt
+iinfer/licenses/LICENSE.mdurl.0.1.2(MIT License).txt
+iinfer/licenses/LICENSE.mmcv.2.1.0(Apache Software License).txt
+iinfer/licenses/LICENSE.mmdet.3.2.0(Apache Software License).txt
+iinfer/licenses/LICENSE.mmengine.0.10.2(Apache Software License).txt
+iinfer/licenses/LICENSE.mmpretrain.1.2.0(Apache Software License).txt
+iinfer/licenses/LICENSE.model-index.0.1.11(MIT).txt
+iinfer/licenses/LICENSE.modelindex.0.0.2(MIT).txt
+iinfer/licenses/LICENSE.more-itertools.10.1.0(MIT License).txt
+iinfer/licenses/LICENSE.motpy.0.0.10(MIT License).txt
+iinfer/licenses/LICENSE.mpmath.1.3.0(BSD License).txt
+iinfer/licenses/LICENSE.networkx.3.2.1(BSD License).txt
+iinfer/licenses/LICENSE.nh3.0.2.15(MIT).txt
+iinfer/licenses/LICENSE.numpy.1.26.2(BSD License).txt
+iinfer/licenses/LICENSE.onnxruntime.1.16.3(MIT License).txt
+iinfer/licenses/LICENSE.opencv-python.4.9.0.80(Apache Software License).txt
+iinfer/licenses/LICENSE.opendatalab.0.0.10(MIT License).txt
+iinfer/licenses/LICENSE.openmim.0.3.9(UNKNOWN).txt
+iinfer/licenses/LICENSE.openxlab.0.0.32(Apache License 2.0).txt
+iinfer/licenses/LICENSE.ordered-set.4.1.0(MIT License).txt
+iinfer/licenses/LICENSE.oss2.2.17.0(MIT License).txt
+iinfer/licenses/LICENSE.packaging.23.2(Apache Software License; BSD License).txt
+iinfer/licenses/LICENSE.pandas.2.1.4(BSD License).txt
+iinfer/licenses/LICENSE.pip.23.2.1(MIT License).txt
+iinfer/licenses/LICENSE.pkginfo.1.9.6(MIT License).txt
+iinfer/licenses/LICENSE.platformdirs.4.1.0(MIT License).txt
+iinfer/licenses/LICENSE.pluggy.1.3.0(MIT License).txt
+iinfer/licenses/LICENSE.prettytable.3.9.0(BSD License).txt
+iinfer/licenses/LICENSE.protobuf.4.25.1(3-Clause BSD License).txt
+iinfer/licenses/LICENSE.pycocotools.2.0.7(FreeBSD).txt
+iinfer/licenses/LICENSE.pycparser.2.21(BSD License).txt
+iinfer/licenses/LICENSE.pycryptodome.3.19.1(Apache Software License; BSD License; Public Domain).txt
+iinfer/licenses/LICENSE.pyparsing.3.1.1(MIT License).txt
+iinfer/licenses/LICENSE.pyreadline3.3.4.1(BSD License).txt
+iinfer/licenses/LICENSE.pytest-order.1.2.0(MIT License).txt
+iinfer/licenses/LICENSE.pytest.7.4.4(MIT License).txt
+iinfer/licenses/LICENSE.python-dateutil.2.8.2(Apache Software License; BSD License).txt
+iinfer/licenses/LICENSE.pytz.2023.3.post1(MIT License).txt
+iinfer/licenses/LICENSE.pywin32-ctypes.0.2.2(BSD-3-Clause).txt
+iinfer/licenses/LICENSE.pywin32.306(Python Software Foundation License).txt
+iinfer/licenses/LICENSE.readme-renderer.42.0(Apache Software License).txt
+iinfer/licenses/LICENSE.redis.5.0.1(MIT License).txt
+iinfer/licenses/LICENSE.regex.2023.12.25(Apache Software License).txt
+iinfer/licenses/LICENSE.requests-toolbelt.1.0.0(Apache Software License).txt
+iinfer/licenses/LICENSE.requests.2.28.2(Apache Software License).txt
+iinfer/licenses/LICENSE.rfc3986.2.0.0(Apache Software License).txt
+iinfer/licenses/LICENSE.rich.13.4.2(MIT License).txt
+iinfer/licenses/LICENSE.scipy.1.11.4(BSD License).txt
+iinfer/licenses/LICENSE.setuptools.60.2.0(MIT License).txt
+iinfer/licenses/LICENSE.shapely.2.0.2(BSD License).txt
+iinfer/licenses/LICENSE.six.1.16.0(MIT License).txt
+iinfer/licenses/LICENSE.snowballstemmer.2.2.0(BSD License).txt
+iinfer/licenses/LICENSE.sphinx-conestack-theme.1.0b3(BSD License).txt
+iinfer/licenses/LICENSE.sphinx-fontawesome.0.0.6(GNU General Public License v2 (GPLv2)).txt
+iinfer/licenses/LICENSE.sphinx-rtd-theme.2.0.0(MIT License).txt
+iinfer/licenses/LICENSE.sphinxcontrib-applehelp.1.0.7(BSD License).txt
+iinfer/licenses/LICENSE.sphinxcontrib-devhelp.1.0.5(BSD License).txt
+iinfer/licenses/LICENSE.sphinxcontrib-htmlhelp.2.0.4(BSD License).txt
+iinfer/licenses/LICENSE.sphinxcontrib-jquery.4.1(BSD License).txt
+iinfer/licenses/LICENSE.sphinxcontrib-jsmath.1.0.1(BSD License).txt
+iinfer/licenses/LICENSE.sphinxcontrib-qthelp.1.0.6(BSD License).txt
+iinfer/licenses/LICENSE.sphinxcontrib-serializinghtml.1.1.9(BSD License).txt
+iinfer/licenses/LICENSE.sympy.1.12(BSD License).txt
+iinfer/licenses/LICENSE.tabulate.0.9.0(MIT License).txt
+iinfer/licenses/LICENSE.termcolor.2.4.0(MIT License).txt
+iinfer/licenses/LICENSE.terminaltables.3.1.10(MIT License).txt
+iinfer/licenses/LICENSE.tomli.2.0.1(MIT License).txt
+iinfer/licenses/LICENSE.torch.2.1.2(BSD License).txt
+iinfer/licenses/LICENSE.torchvision.0.16.2(BSD).txt
+iinfer/licenses/LICENSE.tqdm.4.65.2(MIT License; Mozilla Public License 2.0 (MPL 2.0)).txt
+iinfer/licenses/LICENSE.twine.4.0.2(Apache Software License).txt
+iinfer/licenses/LICENSE.typing_extensions.4.9.0(Python Software Foundation License).txt
+iinfer/licenses/LICENSE.tzdata.2023.4(Apache Software License).txt
+iinfer/licenses/LICENSE.urllib3.1.26.18(MIT License).txt
+iinfer/licenses/LICENSE.wcwidth.0.2.13(MIT License).txt
+iinfer/licenses/LICENSE.wheel.0.42.0(MIT License).txt
+iinfer/licenses/LICENSE.whichcraft.0.6.1(BSD License).txt
+iinfer/licenses/LICENSE.yapf.0.40.2(Apache Software License).txt
+iinfer/licenses/LICENSE.zipp.3.17.0(MIT License).txt
+iinfer/licenses/LICENSE.zope.event.5.0(Zope Public License).txt
+iinfer/licenses/LICENSE.zope.interface.6.1(Zope Public License).txt
+iinfer/licenses/files.txt
+iinfer/web/main.html
