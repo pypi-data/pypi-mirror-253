@@ -1,0 +1,155 @@
+from pathlib import Path
+import os
+import glob
+import unittest
+import imsize
+
+
+thisdir = os.path.dirname(__file__)
+imagedir = os.path.join(thisdir, "images")
+
+
+class ReadTest(unittest.TestCase):
+
+    def test_png(self):
+        pngs = glob.glob(os.path.join(imagedir, "*.png"))
+        self.assertTrue(len(pngs) > 0)
+        for i, png in enumerate(sorted(pngs)):
+            info = imsize.read(Path(png))
+            self.assertEqual(info.filetype, "png")
+            self.assertEqual(info.nchan, 3)
+            self.assertTrue(info.width in [600, 450])
+            self.assertTrue(info.height in [600, 450])
+            self.assertEqual(info.bitdepth, 8)
+            self.assertEqual(info.bytedepth, 1)
+            self.assertEqual(info.maxval, 255)
+            self.assertEqual(info.isfloat, False)
+            self.assertEqual(info.uncertain, False)
+            self.assertEqual(info.cfa_raw, False)
+            self.assertEqual(info.nbytes, 600 * 450 * 3)
+            self.assertEqual(info.orientation, 0)
+
+    def test_bmp(self):
+        bmps = glob.glob(os.path.join(imagedir, "*.bmp"))
+        self.assertTrue(len(bmps) > 0)
+        for i, bmp in enumerate(sorted(bmps)):
+            info = imsize.read(Path(bmp))
+            self.assertEqual(info.filetype, "bmp")
+            self.assertEqual(info.nchan, 3)
+            self.assertTrue(info.width, 640)
+            self.assertTrue(info.height, 426)
+            self.assertEqual(info.bitdepth, 8)
+            self.assertEqual(info.bytedepth, 1)
+            self.assertEqual(info.maxval, 255)
+            self.assertEqual(info.isfloat, False)
+            self.assertEqual(info.uncertain, False)
+            self.assertEqual(info.cfa_raw, False)
+            self.assertEqual(info.nbytes, 640 * 426 * 3)
+            self.assertEqual(info.orientation, 0)
+
+    def test_dng_ricoh(self):
+        dngs = glob.glob(os.path.join(imagedir, "R001*.DNG"))
+        self.assertTrue(len(dngs) > 0)
+        for i, dng in enumerate(sorted(dngs)):
+            info = imsize.read(Path(dng))
+            self.assertEqual(info.filetype, "dng")
+            self.assertEqual(info.nchan, 1)
+            self.assertEqual(info.width, 7296)
+            self.assertEqual(info.height, 3648)
+            self.assertEqual(info.bitdepth, 12)
+            self.assertEqual(info.bytedepth, 2)
+            self.assertEqual(info.maxval, 4095)
+            self.assertEqual(info.isfloat, False)
+            self.assertEqual(info.uncertain, False)
+            self.assertEqual(info.cfa_raw, True)
+            self.assertEqual(info.nbytes, info.width * info.height * info.bytedepth)
+            self.assertEqual(info.orientation, 0)
+
+    def test_cr2(self):
+        cr2s = glob.glob(os.path.join(imagedir, "RAW_CANON_1000D.CR2"))
+        self.assertTrue(len(cr2s) > 0)
+        for i, cr2 in enumerate(sorted(cr2s)):
+            info = imsize.read(Path(cr2))
+            self.assertEqual(info.filetype, "cr2")
+            self.assertEqual(info.nchan, 1)
+            self.assertEqual(info.width, 3888)
+            self.assertEqual(info.height, 2592)
+            self.assertEqual(info.bitdepth, 14)
+            self.assertEqual(info.bytedepth, 2)
+            self.assertEqual(info.maxval, 16383)
+            self.assertEqual(info.isfloat, False)
+            self.assertEqual(info.uncertain, True)
+            self.assertEqual(info.cfa_raw, True)
+            self.assertEqual(info.nbytes, info.width * info.height * info.bytedepth)
+            self.assertEqual(info.orientation, 8)
+
+    def test_exr(self):
+        exrs = glob.glob(os.path.join(imagedir, "*.exr"))
+        self.assertTrue(len(exrs) > 0)
+        for i, exr in enumerate(sorted(exrs)):
+            info = imsize.read(Path(exr))
+            self.assertEqual(info.filetype, "exr")
+            self.assertEqual(info.isfloat, True)
+            self.assertEqual(info.cfa_raw, False)
+            self.assertEqual(info.width, 800)
+            self.assertEqual(info.height, 800)
+            self.assertEqual(info.nchan, 1)
+            self.assertEqual(info.bitdepth, 16)
+            self.assertEqual(info.bytedepth, 2)
+
+    def test_npy(self):
+        npys = glob.glob(os.path.join(imagedir, "*.npy"))
+        self.assertTrue(len(npys) > 0)
+        for i, npy in enumerate(sorted(npys)):
+            info = imsize.read(Path(npy))
+            self.assertEqual(info.filetype, "npy")
+            self.assertEqual(info.isfloat, "float" in npy)
+            self.assertEqual(info.width, 20)
+            self.assertEqual(info.height, 10)
+            self.assertEqual(info.nchan, 5)
+            self.assertEqual(info.bitdepth, 16)
+            self.assertEqual(info.bytedepth, 2)
+            self.assertEqual(info.nbytes, 20 * 10 * 5 * 2)
+
+    def test_hdr(self):
+        hdrs = glob.glob(os.path.join(imagedir, "*.hdr"))
+        self.assertTrue(len(hdrs) > 0)
+        for i, hdr in enumerate(sorted(hdrs)):
+            info = imsize.read(Path(hdr))
+            self.assertEqual(info.filetype, "hdr")
+            self.assertEqual(info.isfloat, True)
+            self.assertEqual(info.width, 720)
+            self.assertEqual(info.height, 480)
+            self.assertEqual(info.nchan, 3)
+            self.assertEqual(info.bitdepth, 32)
+            self.assertEqual(info.bytedepth, 4)
+            self.assertEqual(info.nbytes, info.width * info.height * info.nchan * info.bytedepth)
+
+    def test_orientations(self):
+        jpegs = sorted(glob.glob(os.path.join(imagedir, "orientations", "*.jpg")))
+        tiffs = sorted(glob.glob(os.path.join(imagedir, "orientations", "*.tif")))
+        self.assertTrue(len(jpegs) == 16)
+        self.assertTrue(len(tiffs) == 16)
+        for fmt, fileset in zip(["jpeg", "tiff"], [jpegs, tiffs]):
+            for i, filespec in enumerate(fileset):
+                info = imsize.read(Path(filespec))
+                self.assertEqual(info.filetype, fmt)
+                self.assertEqual(info.nchan, 3)
+                self.assertTrue(info.width in [600, 450])
+                self.assertTrue(info.height in [600, 450])
+                self.assertEqual(info.bitdepth, 8)
+                self.assertEqual(info.bytedepth, 1)
+                self.assertEqual(info.maxval, 255)
+                self.assertEqual(info.isfloat, False)
+                self.assertEqual(info.uncertain, False)
+                self.assertEqual(info.cfa_raw, False)
+                self.assertEqual(info.nbytes, 600 * 450 * 3)
+                self.assertEqual(info.orientation, (i % 8) + 1)
+
+    def test_empty_files(self):
+        # TODO: write temporary empty files with all known extensions, then check that we don't crash
+        pass
+
+
+if __name__ == "__main__":
+    unittest.main()

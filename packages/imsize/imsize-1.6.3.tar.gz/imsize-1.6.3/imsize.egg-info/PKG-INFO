@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: imsize
+Version: 1.6.3
+Summary: Lightning-fast extraction of basic image metadata
+Author-email: Tomi Aarnio <tomi.p.aarnio@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2019 Tomi Aarnio
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, http://github.com/toaarnio/imsize
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.26.2
+Requires-Dist: pyexiftool>=0.5.6
+Requires-Dist: pyexiv2>=2.11.0
+Requires-Dist: rawpy>=0.19.0
+
+# imsize
+
+[![Build Status](https://travis-ci.com/toaarnio/imsize.svg?branch=master)](https://travis-ci.com/github/toaarnio/imsize)
+
+Lightning-fast extraction of image dimensions & bit depth. Tested on Python 3.8+ and Ubuntu 22.04.
+
+Supports PGM / PPM / PNM / PFM / PNG / BMP / JPG / TIFF / INSP / EXR / HDR / DNG / CR2 / NEF / RAW / NPY.
+
+**Installing on Linux:**
+```
+pip install imsize
+```
+
+**Documentation:**
+```
+pydoc imsize
+```
+
+**Command-line usage:**
+```
+imsize --help
+```
+
+**Building & installing from source:**
+```
+make install
+```
+
+**Building & releasing to PyPI:**
+```
+make release
+```
