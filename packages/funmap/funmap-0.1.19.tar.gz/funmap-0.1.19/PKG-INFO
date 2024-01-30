@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: funmap
+Version: 0.1.19
+Summary: generate gene co-function networks using omics data
+Home-page: https://github.com/bzhanglab/funmap
+Author: Zhiao Shi
+Author-email: zhiao.shi@gmail.com
+License: MIT license
+Keywords: funmap,bioinformatics,biological-network
+Requires-Python: >=3.7
+License-File: LICENSE
