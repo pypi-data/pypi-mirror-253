@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: cellplots
+Version: 0.0.1rc0
+Summary: Cell-based data- & genomics-forward plotting assistant.
+Home-page: https://github.com/mvinyard/cellplots
+Author: Michael E. Vinyard
+Author-email: mvinyard.ai@gmail.com
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ABCParse>=0.0.7
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+
+# cellplots
+
+
+[![PyPi](https://badgen.net/badge/icon/pypi?icon=pypi&label)](https://https://pypi.org/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/cellplots.svg)](https://pypi.python.org/pypi/cellplots/)
+
+
+A plotting assistant and resource for those working with single-cell and/or genomics data.
