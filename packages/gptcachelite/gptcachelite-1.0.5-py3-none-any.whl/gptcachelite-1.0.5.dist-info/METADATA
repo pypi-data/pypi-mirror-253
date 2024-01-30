@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gptcachelite
+Version: 1.0.5
+Summary: LLM (OpenAI and Mistral) API Wrapper with Semantic Caching via Vlite2. See more at https://github.com/raydelvecchio/gptcachelite.
+Author: Ray Del Vecchio
+Author-email: ray@cerebralvalley.ai
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: vlite2
+Requires-Dist: python-dotenv
+Requires-Dist: mistralai
+
