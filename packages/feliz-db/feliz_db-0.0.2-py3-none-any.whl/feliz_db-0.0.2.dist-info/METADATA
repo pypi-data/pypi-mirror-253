@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: feliz-db
+Version: 0.0.2
+Summary: A framework designed to assist in using databases and compatible with feliz framework
+Home-page: https://github.com/zenith3092/feliz_db
+Author: Vincent Wu, Linga Chen, Brian Yin
+Author-email: zenith3092@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psycopg2-binary
+Requires-Dist: pymongo
+Requires-Dist: mongoengine
+
+# feliz_db
+An ODM / ORM designed to assist in querying data from some kinds of database
