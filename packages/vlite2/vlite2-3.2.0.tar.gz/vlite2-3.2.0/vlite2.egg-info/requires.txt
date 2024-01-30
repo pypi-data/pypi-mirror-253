@@ -1,0 +1,7 @@
+numpy
+Requests
+setuptools
+torch
+transformers
+uuid
+usearch

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: vlite2
+Version: 3.2.0
+Summary: Improved simple vector database, with many advanced proprietary features. Original VLite by @sdan.
+Home-page: https://github.com/raydelvecchio/vlite-v2
+Author: Ray Del Vecchio
+Author-email: ray@cerebralvalley.ai
+License-File: LICENSE
