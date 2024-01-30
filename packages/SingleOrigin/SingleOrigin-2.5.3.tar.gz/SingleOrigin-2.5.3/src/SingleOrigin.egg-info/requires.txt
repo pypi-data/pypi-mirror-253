@@ -1,0 +1,15 @@
+psutil
+joblib
+tqdm
+PyQt5
+numpy>=1.24.1
+pandas
+scipy>=1.9.0
+matplotlib
+matplotlib_scalebar
+imageio
+scikit-image
+scikit-learn
+PyCifRW
+ncempy
+hyperspy>=1.7.5
