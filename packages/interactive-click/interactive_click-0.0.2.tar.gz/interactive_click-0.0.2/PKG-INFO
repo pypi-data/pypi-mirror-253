@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: interactive-click
+Version: 0.0.2
+Project-URL: Documentation, https://github.com/elazarcoh/interactive-click#readme
+Project-URL: Issues, https://github.com/elazarcoh/interactive-click/issues
+Project-URL: Source, https://github.com/elazarcoh/interactive-click
+Author: Elazar
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: click
+Requires-Dist: prompt-toolkit
+Requires-Dist: questionary
+Description-Content-Type: text/markdown
+
+# interactive-click
+
+## Installation
+
+```console
+pip install interactive-click
+```
+
+## Usage
+
+```python
+import click
+
+@click.command()
+@click.option('--name', prompt='Your name', help='The person to greet.')
+def cli(name):
+    click.echo('Hello %s!' % name)
+
+if __name__ == '__main__':
+    import sys
+    
+    # Can be simply run by:
+    #     run_interactive(cli)
+    # But we can also wrap it by checking whether the user is running the script without any arguments
+    if len(sys.argv) == 1:
+        # No arguments, run interactive mode
+        try:
+            from interactive_click import run_interactive
+
+            run_interactive(cli)
+        except ImportError:
+            cli()
+
+    else:
+        cli()
+
+```
+
