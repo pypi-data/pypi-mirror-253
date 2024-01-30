@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: flygym
+Version: 0.0.0
+Summary: Gym environments for NeuroMechFly in various physics simulators
+Author-email: "Neuroengineering Laboratory, EPFL" <sibo.wang@epfl.ch>
+Requires-Python: <3.9,>=3.7
+License-File: LICENSE

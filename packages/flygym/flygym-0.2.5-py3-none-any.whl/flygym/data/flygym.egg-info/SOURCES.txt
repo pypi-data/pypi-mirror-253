@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+data/flygym.egg-info/PKG-INFO
+data/flygym.egg-info/SOURCES.txt
+data/flygym.egg-info/dependency_links.txt
+data/flygym.egg-info/requires.txt
+data/flygym.egg-info/top_level.txt
+tests/test_mujoco.py
