@@ -1,0 +1,15 @@
+djsm/__init__.py,sha256=oHu31OUjy2KSWIIEXbGejdMTpjBlVc_fMpkf2PZMHn4,871
+djsm/apps.py,sha256=QRbBsbt4ZHCJZlLgiGM8GaYoACr5GrxpKd5F0UKleNY,146
+djsm/exceptions.py,sha256=phgaw85Itj3h5keK8Gympks6phXHe1Nh1rjMwh6xB1w,205
+djsm/manager.py,sha256=KXmUO2ErrcQuMc2Qmi6KPYGM7BP9nrxBuO80yiI1Wcc,12724
+djsm/misc.py,sha256=I3moanIy4ZKpREQ01NBJX_kSAleH6PX5NmBEpYR7ljo,2686
+djsm/management/commands/change_cryptkeys.py,sha256=Y8_eTNGNwIBxgWE1qCxJZF8YU1fiyTFHy0ZMcK0Vt1M,642
+djsm/management/commands/djsm_cleanup.py,sha256=FKi50Op8r6DH_IpnwjqwmiCJYC-f4ptXMVmw7W6PSVc,658
+djsm/management/commands/djsm_reload_env.py,sha256=_crtU2bVoBBklo9Fl3D-kts6FqaEre8J52w43_ZGHyw,635
+djsm/management/commands/update_secrets.py,sha256=y-g3JS-_i_ebJ8X_gTrO47ZR_t-6IBjJYZX0bCoWENs,1329
+djsm/management/commands/use_djsm.py,sha256=6eBcFYgAVGA69W7xjfKjdjLkHUByWApZmw2yPUbPZZE,7107
+djsm-0.1.5.dist-info/LICENSE,sha256=gBezXrnJL_nsCsi4PPuw8mET2O6H7TcSgqQVVZMC6a4,1104
+djsm-0.1.5.dist-info/METADATA,sha256=QFwiePyv45O8Q4WrXYTGeN8rLtoE74tjNFVuETaTDQk,8085
+djsm-0.1.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+djsm-0.1.5.dist-info/top_level.txt,sha256=ylhIAadTPGkbrthQC28sd7TiDoIJ0e3JmpITQrA_MRE,5
+djsm-0.1.5.dist-info/RECORD,,
