@@ -1,0 +1,1 @@
+NUM_GRAPHS = 4
