@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytradecn"
+version = "0.0.4"
+description = "a securities client automated trading model based on customized factory pattern design"
+keywords = ["automated", "trade", "broker", "china", "中国", "券商客户端", "自动化交易", "银河证券"]
+
+authors = [
+    {name = "shuideshui", email = "41715399@qq.com"},
+]
+
+readme = "README.md"
+license = {text = "MIT"}
+
+requires-python = ">=3.9"
+
+dependencies = [
+    "pillow",
+    "pywinauto >= 0.6.8",
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Chinese (Simplified)",
+    "Environment :: Win32 (MS Windows)",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sxwyh/pytradecn"
+"Bug Tracker" = "https://github.com/sxwyh/pytradecn/issues"
