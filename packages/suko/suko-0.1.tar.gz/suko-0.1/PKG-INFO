@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: suko
+Version: 0.1
+Summary: suko generator
+Author-email: calcuis <calculatics@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Homepage, https://github.com/calcuis/suko-generator
+Project-URL: Issues, https://github.com/calcuis/suko-generator/issues
+
+## suko-generator
+
+Suko (a modified Sudoku game) is a popular logic-based number-placement puzzle where the objective is to fill a 3x3 grid with digits that compose the grid (often called regions or boxes) contain all of the digits from 1 to 9 without repetition.
+
+This generator is able to generate a random pattern (digits) with sums and hints.
