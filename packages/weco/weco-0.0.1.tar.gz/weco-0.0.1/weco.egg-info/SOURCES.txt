@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+weco/__init__.py
+weco.egg-info/PKG-INFO
+weco.egg-info/SOURCES.txt
+weco.egg-info/dependency_links.txt
+weco.egg-info/top_level.txt
