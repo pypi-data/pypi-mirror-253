@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: grpc_cotea
+Version: 0.9.25
+Summary: GRPC server for running cotea
+Home-page: https://github.com/ispras/cotea
+Author: David Badalyan
+Author-email: dbadalyan@ispras.ru
+Project-URL: Bug Tracker, https://github.com/ispras/cotea/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: cotea ~=1.3
+
+# grpccotea
+
+
+
+## Installation
+
+```
+pip install grpcio
+pip install grpcio-tools
+```
+
+## Run server
+
+In the server env:
+```
+export GRPC_ENABLE_FORK_SUPPORT=0
+export GRPC_POLL_STRATEGY=poll
+```
+
+Run the server:
+```
+python grpc_server.py
+```
+
+## Client example
+File client.py contains client example.

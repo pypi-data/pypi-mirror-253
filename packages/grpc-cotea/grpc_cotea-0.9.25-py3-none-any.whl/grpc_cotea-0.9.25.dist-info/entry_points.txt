@@ -1,0 +1,2 @@
+[console_scripts]
+grpc-cotea = grpc_cotea.grpc_server:main

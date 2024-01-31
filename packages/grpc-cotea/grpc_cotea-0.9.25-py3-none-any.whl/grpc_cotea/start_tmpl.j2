@@ -1,0 +1,11 @@
+---
+- name: Play
+  hosts: {{ hosts }}
+  gather_facts: {{ gather_facts }}
+  tasks:
+  - name: {{ internal_helping_task_name }}
+    debug:
+      msg: "This is internal helping task that does nothing"
+  - name: {{ internal_helping_task_name }}
+    debug:
+      msg: "This is internal helping task that does nothing"
