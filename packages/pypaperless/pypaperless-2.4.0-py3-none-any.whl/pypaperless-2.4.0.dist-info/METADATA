@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: pypaperless
+Version: 2.4.0
+Summary: Little api wrapper for the paperless(-ngx) dms.
+Author-email: Tobias Schulz <public.dev@tbsch.de>
+License: MIT License
+Project-URL: Homepage, https://github.com/tb1337/paperless-api
+Project-URL: GitHub: Source, https://github.com/tb1337/paperless-api
+Project-URL: GitHub: Issues, https://github.com/tb1337/paperless-api/issues
+Project-URL: Coverage: codecov, https://codecov.io/gh/tb1337/paperless-api
+Keywords: library,async,api-client,python3,paperless-ngx
+Platform: any
+Classifier: Environment :: Console
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp ==3.9.2
+Requires-Dist: awesomeversion ==23.11.0
+Requires-Dist: yarl ==1.9.4
+Provides-Extra: test
+Requires-Dist: black ==24.1.1 ; extra == 'test'
+Requires-Dist: codespell ==2.2.6 ; extra == 'test'
+Requires-Dist: mypy ==1.8.0 ; extra == 'test'
+Requires-Dist: ruff ==0.1.14 ; extra == 'test'
+Requires-Dist: pytest <8.0.0 ; extra == 'test'
+Requires-Dist: pytest-asyncio ==0.23.3 ; extra == 'test'
+Requires-Dist: pytest-aiohttp ==1.0.5 ; extra == 'test'
+Requires-Dist: pytest-cov ==4.1.0 ; extra == 'test'
+Requires-Dist: pre-commit ==3.6.0 ; extra == 'test'
+Requires-Dist: pylint ==3.0.3 ; extra == 'test'
+Requires-Dist: fastapi ==0.109.0 ; extra == 'test'
+Requires-Dist: httpx ==0.26.0 ; extra == 'test'
+
+# PyPaperless
+
+![Test Badge](https://github.com/tb1337/paperless-api/actions/workflows/test.yml/badge.svg) [![codecov](https://codecov.io/gh/tb1337/paperless-api/graph/badge.svg?token=IMXRBK3HRE)](https://codecov.io/gh/tb1337/paperless-api)
+
+Little api client for [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx)!
+
+Find out more here:
+
+* Project: https://docs.paperless-ngx.com
+* REST API: https://docs.paperless-ngx.com/api/
+
+## Features
+
+- Depends on aiohttp, works in async environments.
+- Token authentication only. **No credentials anymore.**
+- `list()` requests all object ids of resources.
+- `get()` for each resources. Accepts Django filters.
+- `iterate()` for each endpoint. Accepts Django filters.
+- `create()`, `update()`, `delete()` methods for many resources.
+- Paperless makes use of pagination. We use that too. You have full control.
+- *PyPaperless* only transports data. Your code organizes it.
+
+## Documentation
+
+* [Handling a session](docs/SESSION.md)
+* [Request data](docs/REQUEST.md)
+* [Create, update, delete data](docs/CRUD.md)
+
+## Thanks to
+
+* The Paperless-ngx Team
+* The Home Assistant Community
