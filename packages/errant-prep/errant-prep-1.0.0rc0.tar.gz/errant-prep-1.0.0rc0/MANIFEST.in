@@ -1,0 +1,3 @@
+include errant/components/en/resources/*
+include REAME.md
+exclude *.log
