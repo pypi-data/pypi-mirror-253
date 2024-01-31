@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mario-pipeline-tools
+Version: 0.19
+Summary: Base classes and helpers for common data pipeline tasks
+Home-page: https://github.com/JiscDACT/mario
+Author: scottbw
+Author-email: scott.wilson@jisc.ac.uk
+License: all rights reserved
+Requires-Dist: pandas
+Requires-Dist: tableauhyperapi
+Requires-Dist: pantab
+Requires-Dist: tableau-builder ==0.18
+Requires-Dist: pypika
+Requires-Dist: sqlalchemy
+Requires-Dist: openpyxl
+Provides-Extra: airflow
+Requires-Dist: apache-airflow-providers-common-sql ; extra == 'airflow'
+
+A set of base classes and helpers for common data pipeline tasks, whether using in local control scripts or in Airflow tasks.
