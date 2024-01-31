@@ -1,0 +1,9 @@
+upvest_investment_api/__init__.py,sha256=fyyoQI9fPjO7EE1gCAYOEjZoX_DSq9cLQiO6Slz0740,2960
+upvest_investment_api/env_settings.py,sha256=K6rRjjpxqJ1wDfOGYOi1vO8CQ4BAyNqwSa_aD4ncR4Y,3511
+upvest_investment_api/file_download.py,sha256=ouTXFb4eD7A59Nt8RB4kk1xUhnFQuerhZS4iDAbOPqk,2353
+upvest_investment_api/http_message_signatures.py,sha256=wT0oM4tOPrb5FRgr1zzIdJ7S6BO_5o5BbG15qws3Dks,14706
+upvest_investment_api/requests_auth.py,sha256=r9U3vn-nNtOBM5NKb3GCOIzV6mnKzX2A6jP0wXFnofI,8281
+upvest_investment_api-0.0.1.dist-info/METADATA,sha256=XG8e8UJ8SXA5PjljGoo8cDfxlsScGNu4UKHywFIo8KY,16671
+upvest_investment_api-0.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+upvest_investment_api-0.0.1.dist-info/licenses/LICENSE,sha256=s2Z5oaVjtz-Mm5AiMGXmtRzKGLHb7yNuQBdsa2lzCgA,11340
+upvest_investment_api-0.0.1.dist-info/RECORD,,
