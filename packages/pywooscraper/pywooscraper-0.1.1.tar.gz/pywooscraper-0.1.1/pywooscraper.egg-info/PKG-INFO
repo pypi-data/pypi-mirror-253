@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pywooscraper
+Version: 0.1.1
+Summary: Library for scraping stores with WooCommerce, extracts the total number of products it has.
+Home-page: https://https://github.com/jhonatanjavierdev
+Download-URL: https://github.com/JhonatanJavierDev/PyWooScraper
+Author: Jhon Corella
+Author-email: corella.jhonatan@gmail.com
+License: MIT
+Keywords: scraping,woocommerce,wordpress,scrap
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+PyWooScraper is a Python library for scraping online stores powered by WooCommerce.
+                       It extracts information such as the total number of products available in the store.
+                       This library is useful for gathering data for analytics or other purposes.
+                       
