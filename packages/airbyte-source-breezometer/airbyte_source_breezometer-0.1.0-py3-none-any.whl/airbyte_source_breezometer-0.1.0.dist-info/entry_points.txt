@@ -1,0 +1,2 @@
+[console_scripts]
+source-breezometer = source_breezometer.run:run
