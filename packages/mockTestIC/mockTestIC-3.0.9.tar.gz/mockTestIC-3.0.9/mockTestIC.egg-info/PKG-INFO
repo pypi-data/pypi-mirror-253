@@ -1,0 +1,213 @@
+Metadata-Version: 2.1
+Name: mockTestIC
+Version: 3.0.9
+Summary: O código utiliza a biblioteca Faker para gerar dados fictícios com base em um mapeamento pré-definido. A função fakeJson recebe um dicionário representando dados em formato JSON e substitui os valores associados às chaves de acordo com o mapeamento fornecido. Cada chave do JSON é mapeada para uma função correspondente da biblioteca Faker, gerando assim dados fictícios variados, como nomes, endereços, datas e números. Se uma chave não estiver no mapeamento, a função levanta uma exceção de valor inválido.
+Author: Victor Augusto do Carmo
+Author-email: Victoraugustodocarmo32@gmail.com
+License: MIT License
+Keywords: mockTest,dados falsos,insert de dados falsos,dados ficticios,SQL,gerador de dados,false data,fictitious data,data,dados,data generator
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+Requires-Dist: faker
+Requires-Dist: typing
+Requires-Dist: setuptools
+
+
+# mockTestIC
+Este script Python utiliza a biblioteca Faker para gerar dados ficticios de acordo com as chaves especificadas em um dicionario de entrada. A funcao principal Ã© fakeJson, que recebe um dicionario json_data contendo chaves que representam tipos de dados desejados e valores associados a esses tipos.
+
+# Topicos
+- [Como usar](#como-usar)
+- [FakeJsonFor](#fakejsonfor)
+- [FakeSQL](#fakesql)
+- [Dicionario fakeJsonFor](#dicionario-fakejsonfor)
+- [Dicionario fakeSQL](#dicionario-fakesql)
+- [Contato](#contato)
+
+
+# Como usar
+
+Para utilizar a biblioteca mockTestIC, primeiro e necessario instala-la. Voce pode fazer isso executando o seguinte comando no terminal: 
+
+``` 
+    pip install mockTestIC
+```
+
+Apos a instalacao, importe a biblioteca ou a funcao que deseja no seu codigo da seguinte maneira:
+
+``` 
+    from mockTestIC import fakeJson, fakeJsonFor, fakeSQL
+```
+
+Agora, abaixo, voce encontra um exemplo de como implementar a funcao fakeJson:
+
+## FakeJsonFor
+
+FakeJsonFor ele funciona na mesma maneira unica diferenca que ele aceita ser implementado com FOR no seu codigo:
+
+```
+    from mockTestIC import fakeJsonFor  
+
+dados_json = {
+    "primeiro nome": "primeiroNome",
+    "sobrenome": "sobreNome",
+    "nome completo": "nomeCompleto",
+    "nome usuario": "nomeUser",
+    "prefixo": "prefixo",
+    "suffix": "suffix"
+}
+
+dados_gerados = fakeJson(dados_json)
+
+print(dados_gerados)
+
+#Resultado
+
+dados_gerados {
+     {
+      "primeiro nome": "Daniel",
+      "sobrenome": "Hays",
+      "nome completo": "Lindsey Wilson",
+      "nome usuario": "marissahill",
+      "prefixo": "Misc.",
+      "suffix": "MD"
+    }
+}
+
+
+```
+
+## FakeSQL 
+Agora, abaixo, voce encontra um exemplo de como implementar a funcao fakeSQL, voce atribui um valor a uma:
+
+```
+from mockTestIC import fakeSQL  
+
+sql_string = "INSERT INTO usuarios (id, nome, idade, cidade);"
+
+
+dados_gerados = fakeSQL(sql_string)
+
+
+print("Dados gerados:", dados_gerados)
+
+
+sql_com_dados = sql_string.format(**dados_gerados)
+print(sql_com_dados)
+
+#Resultado
+
+sql_com_dados {
+     {
+      "id": 9170,
+      "nome": "Patrick",
+      "idade": 34,
+      "cidade": "North Katie",
+      "usuario": "andrew40"
+    }
+}
+```
+Lembrando que existe um dicionario de palavras reservadas para gerar esses dados que vai esta abaixo tambem vale lembrar que qualquer texto que passar e estiver uma palavra especifica que esta na biblioteca ele ira gerar esse dado.
+
+
+Lembre-se de que o nome do campo no dicionario dados_json pode ser qualquer um; apenas o valor associado a cada chave deve seguir a formatacao especificada.
+
+Abaixo esta a lista dos tipos de dados suportados pela biblioteca, que podem ser utilizados como valores no dicionario dados_json
+
+## Dicionario fakeJsonFor 
+
+```
+    {
+    "primeiro nome": "primeiroNome",
+    "sobrenome": "sobreNome",
+    "nome completo": "nomeCompleto",
+    "nome usuario": "nomeUser",
+    "prefixo": "prefixo",
+    "suffix": "suffix",
+    "endereco": "endereco",
+    "cidade": "cidade",
+    "estado": "estado",
+    "pais": "pais",
+    "codigo postal": "codigoPostal",
+    "endereco rua": "enderecoRua",
+    "latitude": "latitude",
+    "longitude": "longitude",
+    "numero telefone": "numeroTelefone",
+    "email": "email",
+    "email seguro": "emailSeguro",
+    "data nascimento": "dataNasc",
+    "data seculo": "dataSec",
+    "data decada": "dataDec",
+    "horario": "horario",
+    "data hora": "dataHora",
+    "hora ISO": "horaISO",
+    "frase": "frase",
+    "paragrafo": "paragrafo",
+    "texto": "texto",
+    "empresa": "empresa",
+    "cargo": "cargo",
+    "seguranca social": "segurancaSocial",
+    "numero inteiro": "numeroInteiro",
+    "elemento": "elemento",
+    "amostra": "amostra",
+    "numero flutuante": "numeroFlutuante",
+    "url": "url",
+    "ipv4": "ipv4",
+    "ipv6": "ipv6",
+    "numero cartao": "numeroCartao",
+    "cartao vencimento": "cartaoVencimento"
+}
+```
+
+## Dicionario fakeSQL 
+
+```
+palavras_chave = {
+        "id": fake.random_int(min=1, max=9999),
+        "nome": fake.first_name(),
+        "idade": fake.random_int(min=0, max=120),  # Gera uma idade entre 0 e 120 anos
+        "cidade": fake.city(),  # Gera o nome de uma cidade fictÃ­cia
+        "profissao": fake.job(),  # Gera o nome de uma profissÃ£o fictÃ­cia
+        "sobrenome": fake.last_name(),
+        "completo": fake.name(),
+        "usuario": fake.user_name(),
+        "prefixo": fake.prefix(),
+        "sufixo": fake.suffix(),
+        "endereco": fake.address(),
+        "estado": fake.state(),
+        "pais": fake.country(),
+        "cep": fake.zipcode(),
+        "rua": fake.street_address(),
+        "latitude": fake.latitude(),
+        "longitude": fake.longitude(),
+        "celular": fake.phone_number(),
+        "telefone": fake.phone_number(),
+        "email": fake.email(),
+        "nascimento": fake.date_of_birth().strftime('%Y-%m-%d'), 
+        "cadastro": fake.date_time().strftime('%y-%m-%d'),
+        "horario": fake.time(),
+        "descricao": fake.text(),
+        "empresa": fake.company(),
+        "cargo": fake.job(),
+        "site": fake.url(),
+        "linkedin": fake.url(),
+        "ipv4": fake.ipv4(),
+        "ipv6": fake.ipv6(),
+        "cartao": fake.credit_card_number(),
+        "credito": fake.credit_card_number()
+        "cpf": str(fake.random_int(min=11111111111, max=99999999999)),
+        "rg": str(fake.random_int(min=111111111, max=999999999)),
+        "estoque": fake.random_int(min=0, max=99999),
+        "texto": fake.text(),
+        "salario": fake.random_int(min=100, max=99999),
+        "ativo": fake.boolean()
+    }
+```
+
+
+# Contato {#anocoraContato}
+
+Email: Victoraugustodocarmo32@gmail.com<br> 
+Linkedin: [Victor Augusto](https://www.linkedin.com/in/victor-augusto-2b01a71a6/)<br>
+Github: [@Augustoo22](https://github.com/Augustoo22)<br>
