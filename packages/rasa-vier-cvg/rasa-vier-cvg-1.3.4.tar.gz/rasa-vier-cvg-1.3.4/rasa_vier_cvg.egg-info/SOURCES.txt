@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+rasa_vier_cvg/__init__.py
+rasa_vier_cvg/cvg.py
+rasa_vier_cvg.egg-info/PKG-INFO
+rasa_vier_cvg.egg-info/SOURCES.txt
+rasa_vier_cvg.egg-info/dependency_links.txt
+rasa_vier_cvg.egg-info/requires.txt
+rasa_vier_cvg.egg-info/top_level.txt
