@@ -1,0 +1,7 @@
+{% for item in items %}
+    <x-named-slot-component>
+        <x-slot name="name">
+            item name: {{ item.name }}
+        </x-slot>
+    </x-named-slot-component>
+{% endfor %}
