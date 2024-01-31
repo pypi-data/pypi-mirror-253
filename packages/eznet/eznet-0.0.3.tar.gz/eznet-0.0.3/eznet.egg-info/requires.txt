@@ -1,0 +1,11 @@
+setuptools
+pyyaml
+types-PyYaml
+marshmallow
+marshmallow-dataclass
+lxml
+lxml-stubs
+asyncssh
+click
+rich
+pathlib3x

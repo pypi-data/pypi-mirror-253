@@ -1,0 +1,3 @@
+[console_scripts]
+eznet = eznet.__main__:run
+eznet_to_rundeck = eznet.scripts.export:main
