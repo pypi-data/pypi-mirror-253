@@ -1,0 +1,4 @@
+[console_scripts]
+hangman=hungmen.console:main
+hungmen=hungmen.console:main
+
