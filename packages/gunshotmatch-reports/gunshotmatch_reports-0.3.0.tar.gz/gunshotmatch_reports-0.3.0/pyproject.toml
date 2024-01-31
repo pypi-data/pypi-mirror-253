@@ -1,0 +1,86 @@
+[build-system]
+requires = [ "whey",]
+build-backend = "whey"
+
+[project]
+name = "gunshotmatch-reports"
+version = "0.3.0"
+description = "PDF Report Generation for GunShotMatch."
+readme = "README.rst"
+keywords = []
+dynamic = []
+dependencies = [
+    "domdf-python-tools>=3.8.0.post2",
+    "libgunshotmatch>=0.5.0",
+    "libgunshotmatch-mpl>=0.1.0.post1",
+    "matplotlib>=3.7.2",
+    "reportlab>=4.0.9",
+    "svglib>=1.5.1",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Typing :: Typed",
+]
+requires-python = ">=3.8"
+
+[[project.authors]]
+name = "Dominic Davis-Foster"
+email = "dominic@davis-foster.co.uk"
+
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/GunShotMatch/gunshotmatch-reports"
+"Issue Tracker" = "https://github.com/GunShotMatch/gunshotmatch-reports/issues"
+"Source Code" = "https://github.com/GunShotMatch/gunshotmatch-reports"
+
+[tool.whey]
+base-classifiers = [ "Typing :: Typed",]
+python-versions = [ "3.8", "3.9", "3.10", "3.11", "3.12",]
+python-implementations = [ "CPython",]
+platforms = [ "Windows", "macOS", "Linux",]
+license-key = "MIT"
+package = "gunshotmatch_reports"
+
+[tool.importcheck]
+always = [
+    "gunshotmatch_reports",
+    "gunshotmatch_reports.peaks",
+    "gunshotmatch_reports.chromatogram",
+    "gunshotmatch_reports.utils",
+]
+
+[tool.mypy]
+python_version = "3.8"
+namespace_packages = true
+check_untyped_defs = true
+warn_unused_ignores = true
+no_implicit_optional = true
+show_error_codes = true
+
+[tool.snippet-fmt]
+directives = [ "code-block",]
+
+[tool.dependency-dash."requirements.txt"]
+order = 10
+
+[tool.snippet-fmt.languages.python]
+reformat = true
+
+[tool.snippet-fmt.languages.TOML]
+reformat = true
+
+[tool.snippet-fmt.languages.ini]
+
+[tool.snippet-fmt.languages.json]
