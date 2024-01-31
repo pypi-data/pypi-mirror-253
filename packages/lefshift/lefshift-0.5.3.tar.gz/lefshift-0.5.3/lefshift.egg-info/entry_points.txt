@@ -1,0 +1,2 @@
+[console_scripts]
+lefshift = lefshift.__main__:main
