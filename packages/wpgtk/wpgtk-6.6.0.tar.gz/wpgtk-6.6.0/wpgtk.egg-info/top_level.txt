@@ -1,0 +1,4 @@
+completions
+dist
+venv
+wpgtk
