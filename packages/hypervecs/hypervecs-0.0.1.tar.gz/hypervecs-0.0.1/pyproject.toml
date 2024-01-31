@@ -1,0 +1,71 @@
+[tool.poetry]
+name = "hypervecs"
+version = "0.0.1"
+description = ""
+authors = ["Rishikanth <r3chandr@ucsd.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jax = "*"
+jaxlib = "*"
+# jaxlib = {version = "^0.4.23+cuda11.cudnn86", source = "jax"} #uncomment for cuda support
+equinox = "*"
+numpy = "*"
+loguru = "*"
+scipy = "*"
+
+[[tool.poetry.source]]
+name = "jax"
+url = "https://storage.googleapis.com/jax-releases/jax_cuda_releases.html"
+priority = "explicit"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+pyright = "*"
+ruff = "*"
+pre-commit = "*"
+pytest = "*"
+loguru = "*"
+click = "*"
+holoviews = "^1.18.1"
+matplotlib = "^3.8.2"
+alive-progress = "^3.1.5"
+torch = "^2.1.2"
+torchvision = "^0.16.2"
+
+[tool.poetry.scripts]
+e-prob = "tests.experiments.prob:main"
+e-ml = "tests.experiments.ml:main"
+
+[tool.pyright]
+venvPath = "/Users/rishi/miniconda3/envs"
+venv = "hypervecs"
+useLibraryCodeForTypes = true
+typeCheckingMode = "basic"
+reportUnusedImport = "warning"
+reportUnusedVariable = "warning"
+reportDuplicateImport = "error"
+reportPrivateUsage = "warning"
+reportDeprecated = "warning"
+reportInconsistentConstructor = "error"
+reportMissingSuperCall = "error"
+reportUninitializedInstanceVariable = "error"
+reportUnnecessaryCast = "warning"
+reportUnnecessaryComparison = "warning"
+reportImplicitStringConcatenation = "warning"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+markers = [
+    "hv",
+    "emb",
+    "misc"
+]

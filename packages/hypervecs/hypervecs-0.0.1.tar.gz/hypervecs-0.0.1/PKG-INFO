@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hypervecs
+Version: 0.0.1
+Summary: 
+Author: Rishikanth
+Author-email: r3chandr@ucsd.edu
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: equinox
+Requires-Dist: jax
+Requires-Dist: jaxlib
+Requires-Dist: loguru
+Requires-Dist: numpy
+Requires-Dist: scipy
+Description-Content-Type: text/markdown
+
+# hypervec
+
+A JAX library for Hyperdimensional Computing
