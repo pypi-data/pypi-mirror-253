@@ -1,0 +1,6 @@
+xycmap
+numpy
+gdal
+tqdm
+pandas
+scipy
