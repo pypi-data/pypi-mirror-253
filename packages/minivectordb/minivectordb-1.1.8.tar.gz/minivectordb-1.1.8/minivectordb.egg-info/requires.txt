@@ -1,0 +1,11 @@
+numpy
+onnx
+onnxruntime
+onnxruntime-extensions
+transformers
+faiss-cpu
+torch
+pytest
+pytest-cov
+rank-bm25
+thefuzz[speedup]
