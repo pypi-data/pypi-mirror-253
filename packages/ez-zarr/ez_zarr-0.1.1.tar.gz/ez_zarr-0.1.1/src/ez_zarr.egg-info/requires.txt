@@ -1,0 +1,9 @@
+anndata
+dask
+numpy
+pandas
+zarr
+
+[dev]
+pytest
+pytest-cov
