@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "digital-object"
+version = "0.2.0"
+description = "digital object assets"
+authors = [
+    "Universitäts- und Landesbibliothek Sachsen-Anhalt <development@bibliothek.uni-halle.de>"
+]
+maintainers = [
+    "Uwe Hartwig <uwe.hartwig@bibliothek.uni-halle.de>",
+    "Albrecht Nitsche <albrecht.nitsche@bibliothek.uni-halle.de>",
+]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "digital_object", from="src" },
+]
+repository = 'https://github.com/ulb-sachsen-anhalt/digitized-object'
+homepage = 'https://github.com/ulb-sachsen-anhalt/digitized-object'
+keywords = ["digitization", "digital object", "digitized content", "ocr"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+shapely = "^2.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+pytest-mock = "^3.11.1"
+pylint = "^3.0.2"
+autopep8 = "^2.0.4"
+
+[tool.autopep8]
+max_line_length = 120
+in-place = true
+recursive = true
+aggressive = 3
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
