@@ -1,0 +1,8 @@
+cloudops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudops/logging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudops/logging/google/__init__.py,sha256=RLVgboNN-v7b1DAct2sPpEfLolIO2VRlv1rvKS0zENY,88
+cloudops/logging/google/logging.py,sha256=LVWv-uTp_E133KkuduKjKDoS5e-cGCj92Ggw7J-88iw,1993
+cloudops_logging_google-0.1.7.dist-info/LICENSE,sha256=WTpVHJVcwtu1Qd8tLwC_07HIEfNFasL6doY3jBlabU8,1088
+cloudops_logging_google-0.1.7.dist-info/METADATA,sha256=ReWMXqvKlZe55u418OpBvWFNRkOdLFtaQrPNIJOpLgU,867
+cloudops_logging_google-0.1.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+cloudops_logging_google-0.1.7.dist-info/RECORD,,
