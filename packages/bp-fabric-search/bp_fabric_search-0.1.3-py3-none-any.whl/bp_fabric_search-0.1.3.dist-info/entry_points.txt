@@ -1,0 +1,3 @@
+[console_scripts]
+fabric-search=bp_fabric_search.entrypoint:main
+
