@@ -1,0 +1,13 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/datetime_parser/__init__.py
+src/datetime_parser/parse_time.py
+src/datetime_parser.egg-info/PKG-INFO
+src/datetime_parser.egg-info/SOURCES.txt
+src/datetime_parser.egg-info/dependency_links.txt
+src/datetime_parser.egg-info/requires.txt
+src/datetime_parser.egg-info/top_level.txt
