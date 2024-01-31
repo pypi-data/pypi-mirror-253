@@ -1,0 +1,3 @@
+[console_scripts]
+Linkreg = Linkreg.Linkreg:main
+
