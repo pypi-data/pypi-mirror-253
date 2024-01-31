@@ -1,0 +1,10 @@
+pandas
+tableauhyperapi
+pantab
+tableau-builder==0.18
+pypika
+sqlalchemy
+openpyxl
+
+[Airflow]
+apache-airflow-providers-common-sql
