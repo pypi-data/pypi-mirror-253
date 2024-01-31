@@ -1,0 +1,5 @@
+pandas>=0.25.3
+pygsheets==2.0.5
+pyyaml==6.0.0
+snowflake-connector-python[pandas]>=2.7.8
+snowflake-sqlalchemy>=1.1.10
