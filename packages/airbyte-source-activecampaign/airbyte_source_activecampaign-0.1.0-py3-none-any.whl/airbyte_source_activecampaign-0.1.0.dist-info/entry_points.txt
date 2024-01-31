@@ -1,0 +1,2 @@
+[console_scripts]
+source-activecampaign = source_activecampaign.run:run
