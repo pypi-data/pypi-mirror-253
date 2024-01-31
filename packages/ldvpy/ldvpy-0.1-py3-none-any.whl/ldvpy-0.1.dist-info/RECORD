@@ -1,0 +1,13 @@
+ldv/__init__.py,sha256=cGe8edADdm4UaD7OfhX9pf5OGMXaErIyEKYes2aIFE0,137
+ldv/client.py,sha256=FwmVs8CI2OMfeJQ660zk6gwDWEEy39550Dl1eIlclJE,2081
+ldv/consts.py,sha256=fkSirsNHBUOC5w_e-NvpKdU7ev3Ng2UdYIPswuF_POg,896
+ldv/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ldv/apps/__init__.py,sha256=BGVBjI_uV8p2h4KO9pxqOYmiNq7Iss--J91GREBQ1Es,50
+ldv/apps/base.py,sha256=ZetCNzKrHJU6-_sLnXd36YqQB-hrVDa3J7_cr9F_yAg,727
+ldv/apps/presence.py,sha256=GRyKMA_Sx5jUsK3Jy34uz5er4iXo2f7svlwe-QMigTA,1185
+ldv/apps/rooms.py,sha256=oe1zste3w5RyAU2NtvvpP9W65-8Rks97hXWOQZNjh7g,1993
+ldvpy-0.1.dist-info/LICENSE,sha256=_sDbApL7H2qnGXibrUrvtArwd0LIOt7LrAnK0UiLt90,1064
+ldvpy-0.1.dist-info/METADATA,sha256=8c3FZV_BtyahmIjgZI83l8-mbcwW67EImiYmCwlPVjw,1748
+ldvpy-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ldvpy-0.1.dist-info/top_level.txt,sha256=toctF0GHFszq3iiQcETVgIMcJKWnoxV4SMGnCLiL5Yc,4
+ldvpy-0.1.dist-info/RECORD,,
