@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+open_api_framework/__init__.py
+open_api_framework/apps.py
+open_api_framework/py.typed
+open_api_framework.egg-info/PKG-INFO
+open_api_framework.egg-info/SOURCES.txt
+open_api_framework.egg-info/dependency_links.txt
+open_api_framework.egg-info/requires.txt
+open_api_framework.egg-info/top_level.txt
+tests/test_dummy.py
