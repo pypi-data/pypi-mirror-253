@@ -1,0 +1,8 @@
+README.md
+setup.py
+Socketer/__init__.py
+Socketer/main.py
+Socketer.egg-info/PKG-INFO
+Socketer.egg-info/SOURCES.txt
+Socketer.egg-info/dependency_links.txt
+Socketer.egg-info/top_level.txt
