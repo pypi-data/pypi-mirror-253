@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ad_vision"
+version = "0.0.3"
+authors = [
+  { name="saroj", email="saroj.debnath@adtran.com" },
+]
+description = "A package for vision tasks"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "opencv-python==4.7.0.72",
+    "numpy>=1.23.5",
+    "toch",
+    "tensorflow",
+    "easyocr==1.6.2",
+    "pandas==1.4.4",
+    "tqdm==4.64.1",
+    "seaborn==0.11.2",
+    "pyrealsense2",
+    'importlib-metadata; python_version<"3.10"',
+]
+
+[project.urls]
+Homepage = "https://github.com/SarojDebnath"
+

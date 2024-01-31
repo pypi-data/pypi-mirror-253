@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ad_vision
+Version: 0.0.3
+Summary: A package for vision tasks
+Author-email: saroj <saroj.debnath@adtran.com>
+Project-URL: Homepage, https://github.com/SarojDebnath
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python==4.7.0.72
+Requires-Dist: numpy>=1.23.5
+Requires-Dist: toch
+Requires-Dist: tensorflow
+Requires-Dist: easyocr==1.6.2
+Requires-Dist: pandas==1.4.4
+Requires-Dist: tqdm==4.64.1
+Requires-Dist: seaborn==0.11.2
+Requires-Dist: pyrealsense2
+Requires-Dist: importlib-metadata; python_version < "3.10"
+
+This package will have the continuation. However, this first generation will have some use in production of visual operation.
