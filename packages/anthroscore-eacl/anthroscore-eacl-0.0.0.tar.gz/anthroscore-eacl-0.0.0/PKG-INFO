@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: anthroscore-eacl
+Version: 0.0.0
+Home-page: https://github.com/myracheng/anthroscore
+Author: Myra Cheng
+Author-email: myra@cs.stanford.edu
+License: BSD 2-clause
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+Requires-Dist: regex
+Requires-Dist: spacy==3.7.2
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: transformers
+Requires-Dist: pandas
+Requires-Dist: torch
