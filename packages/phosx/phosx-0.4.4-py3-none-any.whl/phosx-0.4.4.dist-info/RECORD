@@ -1,0 +1,10 @@
+phosx/__init__.py,sha256=6G_giX6Ucuweo7w5OiftoXmbNLoqiU_soXJoU8aiLmY,22
+phosx/assets/logo.png,sha256=XrU8dCRA0rd6g3clhzBhyE1qKzJ7c4UXODCwXvNYKKQ,311166
+phosx/cli.py,sha256=4UwG--wJ9Q3QqztwF7R8f5xKNLKvQptGImgSRJbRI74,2742
+phosx/data/PSSMs.h5,sha256=fRinjW78RZJarK6cYuomxdfCJRnrhWsokd6-7Q6kLG0,675232
+phosx/data/pssm_score_quantiles.h5,sha256=R41lT6K4n13_AsGFkXHY4_q2YoO0bKiboVYNJ9wIJwA,24330040
+phosx/pssm_enrichments.py,sha256=gCdsyXvDa8OM1cTD9tLCCDbvt4KjpAq7s7UYNs8SjrE,13637
+phosx-0.4.4.dist-info/METADATA,sha256=sMeTI20sEjKYR3tWio4NYOwWaKC5aseVRNf91vk9xpo,3434
+phosx-0.4.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+phosx-0.4.4.dist-info/entry_points.txt,sha256=ng9RPifyob2sNsmK-nUYTldzbmGlDhwKeIYoMcKeqZ0,40
+phosx-0.4.4.dist-info/RECORD,,
