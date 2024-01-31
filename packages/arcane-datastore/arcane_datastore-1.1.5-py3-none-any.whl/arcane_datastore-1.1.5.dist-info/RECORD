@@ -1,0 +1,6 @@
+arcane/datastore/__init__.py,sha256=kHN0nUIK7DWJNEcoQFwNuB8up2DCkd89G8TMGMb2foA,46
+arcane/datastore/const.py,sha256=0Hnh2qcV-g1DmExmOeTRm0nM6QkAO9zJZkKe58J05fY,446
+arcane/datastore/datastore.py,sha256=aMkedKZQISfmI7dzTnz9v7FvUIeESV_7m6YNkdrbBwo,5521
+arcane_datastore-1.1.5.dist-info/METADATA,sha256=gRSGRlK_sGxa3lmXr4Fl7IuQ9UebuByRy2Uqv1uhJxM,1259
+arcane_datastore-1.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+arcane_datastore-1.1.5.dist-info/RECORD,,
