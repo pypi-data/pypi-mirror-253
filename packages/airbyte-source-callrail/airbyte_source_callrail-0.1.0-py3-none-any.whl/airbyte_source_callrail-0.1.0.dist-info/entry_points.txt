@@ -1,0 +1,2 @@
+[console_scripts]
+source-callrail = source_callrail.run:run
