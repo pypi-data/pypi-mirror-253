@@ -1,0 +1,8 @@
+attrdict3
+wxpython
+PyInstaller
+requests
+simpleaudio
+
+[mp3]
+streamp3
