@@ -1,0 +1,3 @@
+[console_scripts]
+sdnotify-wrapper = sdnotify_wrapper:main
+
