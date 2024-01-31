@@ -1,0 +1,3 @@
+completions
+venv
+wpgtk
