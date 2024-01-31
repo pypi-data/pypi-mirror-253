@@ -1,0 +1,2 @@
+[console_scripts]
+jabberjay = Jabberjay.jabberjay:main
