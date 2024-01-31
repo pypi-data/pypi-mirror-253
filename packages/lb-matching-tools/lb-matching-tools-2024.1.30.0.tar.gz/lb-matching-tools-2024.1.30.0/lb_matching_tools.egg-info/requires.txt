@@ -1,0 +1,5 @@
+regex
+
+[build]
+build
+twine
