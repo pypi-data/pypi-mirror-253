@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "grooper"
+version = "0.1.1"
+description = ""
+authors = ["Adrian Carreno <adrian.carreno@gomoder.com>", "Rodrigo Troncoso <rodrigo.sepulveda@gomoder.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.2.7"
+pylint = "^2.17.4"
+pytest = "^7.4.0"
+python-dotenv = "^1.0.0"
