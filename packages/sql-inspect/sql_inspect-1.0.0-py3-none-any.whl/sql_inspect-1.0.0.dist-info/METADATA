@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: sql-inspect
+Version: 1.0.0
+Summary: A django middleware package for logging database SQL queries to console
+Author-email: Paul Onyekwelu <paulonyekweluo@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/PaulOnyekwelu/dj-sql-inspect
+Project-URL: Issues, https://github.com/PaulOnyekwelu/dj-sql-inspect/issues
+Keywords: sql,logging,logger,console,Terminal
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlparse >=0.4.4
+Requires-Dist: Pygments >=2.17.2
+
+# SQL-Inspect
+
+The SQ:-Inspect package is a django middleware that inspects view request to database
+and print the SQL translation of the queries to the terminal.
+
+## Installation
+
+include the middleware in the settings.py file as specified below:
+
+```
+MIDDLEWARE = [
+    ...,
+    "sql-inspect.middleware.SQLInspectMiddleware"
+]
+```
