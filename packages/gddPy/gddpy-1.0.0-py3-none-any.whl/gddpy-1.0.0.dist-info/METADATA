@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gddPy
+Version: 1.0.0
+Summary: Library to calculate the growing degree days (GDD) with various formulas
+License: MIT
+Author: Jonathan Hsu
+Author-email: jhsu98@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=1.26.3,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+
