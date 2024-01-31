@@ -1,0 +1,3 @@
+[console_scripts]
+py-git-auto-version = py_git_auto_version.cli:main
+

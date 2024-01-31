@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: py_git_auto_version
+Version: 1.2.0
+Summary: A project built with PDM-Backend
+Author-Email: Michael Gooch <goochmi@gmail.com>
+License: The Unlicense
+Project-URL: Repository, https://github.com/kotoroshinoto/PyGitAutoVersion
+Requires-Python: >=3.10
+Requires-Dist: regex>=2023.12.25
+Requires-Dist: pydantic<1.11,>1.10
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: more-itertools>=10.2.0
+Requires-Dist: rich>=13.7.0; extra == "extras"
+Requires-Dist: regex>=2023.12.25; extra == "extras"
+Requires-Dist: sphinx>=7.2.6; extra == "docs"
+Requires-Dist: pdm>=2.12.2; extra == "dev"
+Requires-Dist: nox>=2023.4.22; extra == "dev"
+Requires-Dist: rich>=13.7.0; extra == "dev"
+Requires-Dist: more-itertools>=10.2.0; extra == "dev"
+Requires-Dist: pylint>=3.0.3; extra == "lint"
+Requires-Dist: flake8>=7.0.0; extra == "lint"
+Requires-Dist: flake8-import-order>=0.18.2; extra == "lint"
+Requires-Dist: pytest>=7.4.4; extra == "test"
+Requires-Dist: click>=8.1.7; extra == "test"
+Provides-Extra: extras
+Provides-Extra: docs
+Provides-Extra: dev
+Provides-Extra: lint
+Provides-Extra: test
+Description-Content-Type: text/markdown
+
+# PyGitAutoVersion
+reads the git information to generate versions for your packages
