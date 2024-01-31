@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+mkdocs-ja-ruby = mkdocs_ja_ruby.plugin:ExtendedMarkdown
+
