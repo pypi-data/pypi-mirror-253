@@ -1,0 +1,1 @@
+import{e as o,u,ap as c}from"./index-WCZ_4nWW.js";function i(...t){const r=[...t,"Prefect Server"],a=o(()=>r.map(e=>u(e)).filter(e=>e!==null).join(" • "));c(()=>document.title=a.value)}export{i as u};
