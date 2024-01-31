@@ -1,0 +1,12 @@
+llm_research/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_research/model/__init__.py,sha256=f4yeRAdL9Z65JeQ7nU8tiHjTYAFTpXu3h1xfpmGI4m0,70
+llm_research/model/base_model.py,sha256=RG2IroeEy3gelYxKZ0WsS2VZWlFTeQBYAu39wLrr4U4,6758
+llm_research/model/models.py,sha256=P1jVpCESaAtwT6jBJ8GwtdjURbUQW8eQnzAd6rbHpbM,1036
+llm_research/model/prompt.py,sha256=nTnRlHC1p0mYldtDohafIr_H-FQJhrdRocZYGf4DLxU,4848
+llm_research/model/utils.py,sha256=piFp0PyTEK1ySibzG8Rorfs-B1P46tzwi3duArNiv3A,1014
+llm_research/process/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_research/process/openai_finetune.py,sha256=bMc4Zbd-BTxJ7LXZhK-tlLBWgHQrV8GCQ0h9mKAyp30,60
+llm_research-0.1.0.dist-info/LICENSE,sha256=igFJt11lMacoDvp9wPDj3edxJlpYtyc_3nQ8yJs4iuE,1071
+llm_research-0.1.0.dist-info/METADATA,sha256=TGAQqy43A91aL4xJpJOY8_E-jmKnJ6-NzpoZjacCCSM,912
+llm_research-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+llm_research-0.1.0.dist-info/RECORD,,
