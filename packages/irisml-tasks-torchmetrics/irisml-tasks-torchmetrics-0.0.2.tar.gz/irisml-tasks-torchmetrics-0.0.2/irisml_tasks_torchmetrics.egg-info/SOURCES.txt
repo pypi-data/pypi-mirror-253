@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+irisml/tasks/evaluate_torchmetrics_classification_multiclass.py
+irisml/tasks/evaluate_torchmetrics_classification_multilabel.py
+irisml_tasks_torchmetrics.egg-info/PKG-INFO
+irisml_tasks_torchmetrics.egg-info/SOURCES.txt
+irisml_tasks_torchmetrics.egg-info/dependency_links.txt
+irisml_tasks_torchmetrics.egg-info/requires.txt
+irisml_tasks_torchmetrics.egg-info/top_level.txt
+test/test_evaluate_torchmetrics_classification_multiclass.py
+test/test_evaluate_torchmetrics_classification_multilabel.py
