@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+plastexshowmore/__init__.py
+plastexshowmore.egg-info/PKG-INFO
+plastexshowmore.egg-info/SOURCES.txt
+plastexshowmore.egg-info/dependency_links.txt
+plastexshowmore.egg-info/requires.txt
+plastexshowmore.egg-info/top_level.txt
