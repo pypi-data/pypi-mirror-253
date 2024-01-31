@@ -1,0 +1,76 @@
+[project]
+name = "ventiotools"
+version = "0.1.1"
+authors = [
+    { name = "Nicolas Bogun", email = "143806426+NicolasBogun@users.noreply.github.com" },
+]
+description = "Tools for usage in the Vent.io ecosystem"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "PyYAML==6.0",
+    "pyspark==3.5.0",
+    "numpy>=1.26.3",
+    "pandas>=2.1.4",
+    "pyarrow>=15.0.0",
+]
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+package-type = "library"
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.4.4",
+]
+lint = [
+    "ruff>=0.1.11",
+    "mypy>=1.8.0",
+    "bandit>=1.7.6",
+]
+
+[tool.pdm.scripts]
+test = "pytest"
+lint = "ruff check ."
+formatcheck = "ruff format --check ."
+typecheck = "mypy --config-file pyproject.toml ."
+bandit = "bandit -c pyproject.toml -r ."
+
+[tool.pdm.scripts._]
+env_file = ".env"
+
+[tool.mypy]
+strict_optional = true
+strict_equality = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+exclude = "tests"
+
+[tool.ruff]
+target-version = "py310"
+
+[tool.bandit]
+exclude_dirs = [
+    ".venv",
+]
+
+[tool.bandit.assert_used]
+skips = [
+    "*/test_*.py",
+]
