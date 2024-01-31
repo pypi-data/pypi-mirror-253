@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pyscanf/__init__.py
+pyscanf.egg-info/PKG-INFO
+pyscanf.egg-info/SOURCES.txt
+pyscanf.egg-info/dependency_links.txt
+pyscanf.egg-info/requires.txt
+pyscanf.egg-info/top_level.txt
+pyscanf/tests/__init__.py
