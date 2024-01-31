@@ -1,0 +1,2 @@
+[console_scripts]
+fair-identifiers-client = fair_identifiers_client:main
