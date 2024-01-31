@@ -1,0 +1,5 @@
+-r requirements-tests.txt
+
+ipython>=8.20.0,<8.21
+ipdb>=0.13,<0.14
+pre-commit>=3.6.0,<3.7

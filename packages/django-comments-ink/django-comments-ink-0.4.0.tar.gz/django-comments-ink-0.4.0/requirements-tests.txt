@@ -1,0 +1,8 @@
+-r requirements.txt
+
+black>=24.1.1,<24.2
+coverage>=7.4.1,<7.5
+coverage-badge>=1.1,<1.2
+pytest>=8.0.0,<8.1
+pytest-django>=4.8.0,<4.9
+tox>=4.12.1,<4.13
