@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pst_wrinkle
+Version: 0.0.7
+Summary: A small package that wraps selected functions for PST outreach events.
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Eyyub Unlu <eselimnl@gmail.com>
+License-File: LICENCE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# About the package
+
+**pst_wrinkle** is a Python package designed to showcase selected functions from the Pf7-Public-Notebooks project within a concise public notebook. Please note that this project is currently a work in progress and may be temporary.
+
+## Installation
+
+You can install `pst_wrinkle` using pip:
+
+```bash
+!pip install pst-wrinkle
+```
+
+## Usage
+
+To import the the package:
+
+```bash
+import pst_wrinkle.pst_wrinkle as pst_wrinkle
+```
+
+Example of running a function: 
+
+```bash
+pst_wrinkle.sample_viewer('PD0129-C', 8, 29000, 30300)
+```
+
