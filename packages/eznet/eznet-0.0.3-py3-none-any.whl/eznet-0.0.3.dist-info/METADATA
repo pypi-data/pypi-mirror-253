@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: eznet
+Version: 0.0.3
+Home-page: https://github.com/omaxx/eznet
+Author: maxx orlov
+Author-email: 
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: pyyaml
+Requires-Dist: types-PyYaml
+Requires-Dist: marshmallow
+Requires-Dist: marshmallow-dataclass
+Requires-Dist: lxml
+Requires-Dist: lxml-stubs
+Requires-Dist: asyncssh
+Requires-Dist: click
+Requires-Dist: rich
+Requires-Dist: pathlib3x
+
