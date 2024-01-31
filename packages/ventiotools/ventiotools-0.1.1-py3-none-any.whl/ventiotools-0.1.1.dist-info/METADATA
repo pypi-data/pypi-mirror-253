@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: ventiotools
+Version: 0.1.1
+Summary: Tools for usage in the Vent.io ecosystem
+Author-Email: Nicolas Bogun <143806426+NicolasBogun@users.noreply.github.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Requires-Dist: PyYAML==6.0
+Requires-Dist: pyspark==3.5.0
+Requires-Dist: numpy>=1.26.3
+Requires-Dist: pandas>=2.1.4
+Requires-Dist: pyarrow>=15.0.0
+Description-Content-Type: text/markdown
+
+# Ventiotools:
+
+Ventiotools is an essential tool developed by vent.io to streamline the collection and management of Python packages within the company's ecosystem. This package provides a unified platform for consolidating information about all packages, making it easier for developers, data scientists, and engineers to access, share, and maintain the company's Python libraries.
+
+## Installation
+
+`ventiotools` is available on PyPI. Simply install it with `pip`:
+
+```         
+$ pip install ventiotools
+```
+
+## Usage
+
+Ventiotools can easily be accessed after installing it via pip:
+
+```         
+>>> import ventiotools 
+>>>
+>>> Your code here... 
+```
+
+# Auto_Feature_Engineering:
+
+Auto_Feature_Engineering is a powerful subpackage of Ventiotools built for efficiently creating features from large datasets by harnessing the capabilities of Apache Spark. This package is specifically tailored to handle statistical and time series feature engineering, making it an ideal choice for data scientists and engineers working with extensive datasets.
+
+For a detailed description, please follow the documentation on our GitHub Repository.
+
+Enjoy!
