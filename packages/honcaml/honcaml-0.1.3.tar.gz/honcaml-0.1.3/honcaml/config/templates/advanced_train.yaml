@@ -1,0 +1,70 @@
+# This configuration file is an example of an advanced configuration
+# Review all keys before using it in a HoNCAML pipeline
+# Keys with appended comment *REQ* means that specify a value is compulsory
+# For all details on configuration parameters, please see the documentation
+
+global:
+  # *REQ* Specify one of the following: [regression, classification]
+  problem_type:
+
+steps:
+  data:
+    extract:
+      # Specify path of file containing input data
+      filepath:
+      # Specify columns that will be used as features to learn from
+      # If not specified, select all columns except target
+      features:
+      # *REQ* Specify target column name
+      target:
+
+    transform:
+      # If specified, data normalization will be done
+      normalize:
+        features:
+          # Normalization module to use
+          # The only one supported is sklearn.preprocessing.StandardScaler          
+          module:
+          # Module params used, specified as key-value
+          params:
+          # Specific columns of features that normalization will apply to            
+          columns:
+        target:
+          module:
+          params:
+          columns:
+
+  model:
+    transform:
+      fit:
+        # Model used for training
+        # Available models are the ones available from sklearn, and of course
+        # just the ones related to the problem type specified.
+        # See: https://scikit-learn.org/stable/supervised_learning.html
+        estimator:
+          # Module that will be used
+          module:
+          # Model hyperparameters, specified as key-value
+          params:
+        # If set, cross validation will be done apart from a simple fitting
+        # Module to use for cross validation and parameters if required.
+        # Should be one of the available in sklearn that apply to the problem.
+        # See: https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation-iterators
+        cross_validation:
+          module:
+          params:
+        # If set, metrics computed in training process will be the one/s
+        # specified here. It is possible to use already existing metrics from
+        # sklearn, or even define custom metrics. See the documentation for
+        # more details.
+        # See: https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics
+        # Both a list and a string (for a single metric) are accepted
+        metrics:
+            
+    load:
+      # *REQ* Specify the folder and the name of the file in which to store model object
+      # The filename should end with the '.sav' extension.
+      filepath:
+      # Path to report train cross validation results if desired; if not, leave
+      # it null
+      results:

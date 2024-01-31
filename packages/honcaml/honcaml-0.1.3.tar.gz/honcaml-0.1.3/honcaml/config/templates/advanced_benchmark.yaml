@@ -1,0 +1,100 @@
+# This configuration file is an example of an advanced configuration
+# Review all keys before using it in a HoNCAML pipeline
+# Keys with appended comment *REQ* means that specify a value is compulsory
+# For all details on configuration parameters, please see the documentation
+
+global:
+  # *REQ* Specify one of the following: [regression, classification]
+  problem_type:
+
+steps:
+  data:
+    extract:
+      # Specify path of file containing input data
+      filepath:
+      # Specify columns that will be used as features to learn from
+      features:
+      # *REQ* Specify target column name
+      target:
+
+    transform:
+      normalize:
+        features:
+          # Normalization module to use
+          # The only one supported is sklearn.preprocessing.StandardScaler
+          module:
+          # Module params used, specified as key-value
+          params:
+          # Specific columns of features that normalization will apply to
+          columns:
+        target:
+          module:
+          params:
+          columns:
+
+  benchmark:
+    transform:
+      # Models and hyperparameters to benchmark; if ommited, defaults are used.
+      # Available models are the ones available from sklearn and torch models,
+      # and of course if they apply to the problem type specified.
+      # See for example: https://scikit-learn.org/stable/supervised_learning.html
+      # Each of the model should be a key, which as values should have as many
+      # keys as hiperparameters to consider in the search space. Each of the
+      # hyperparameters will have a search method and the values desired for
+      # that method, as defined in ray tune documentation.
+      # https://docs.ray.io/en/latest/tune/api/search_space.html
+      # Example:
+      #   sklearn.neighbors.KNeighborsClassifier:
+      #     n_neighbors:
+      #       method: randint
+      #       values:
+      #         - 1
+      #         - 10
+      #     weights:
+      #       method: choice
+      #       values:
+      #         - uniform
+      #         - distance
+      # Deep learning models (implemented in torch) follow a specific format,
+      # which is covered in detail within the documentation
+      models:
+      cross_validation:
+        # Module to use for cross validation and parameters if required.
+        # Should be one of the available in sklearn that apply to the problem.
+        # See: https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation-iterators
+        module:
+        params:
+      # If set, metrics reported in benchmark process will be the one/s
+      # specified here together with the one in the tuner module, if they are
+      # different.  It is possible to use already existing metrics from
+      # sklearn, or even define custom metrics. See the documentation for more
+      # details.
+      # See: # https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics
+      # It should be a list, containing strings (for metric functions without
+      # parameters) or dictionaries, with key as metric name and values as parameters.
+      metrics:
+      # Tuner options specify the exploration and exploitation of the
+      # hyperparameter search defined in the benchmark process: algorithm to
+      # explore the search space, termination, etc.
+      tuner:
+        # Search algorithm module and parameters
+        # See: https://docs.ray.io/en/latest/tune/api/suggestion.html
+        search_algorithm:
+          module:
+          params:
+        # Parameters to be used in tuner config, specified as key-value.
+        # See: https://docs.ray.io/en/latest/tune/api/doc/ray.tune.TuneConfig.html
+        tune_config:
+        # Parameters to be used in configuration run, specified as key-value.
+        # See: https://docs.ray.io/en/latest/ray-air/api/doc/ray.air.RunConfig.html
+        run_config:
+        # Scheduler module and parameters
+        # See: https://docs.ray.io/en/latest/tune/api/schedulers.html
+        scheduler:
+          module:
+          params:
+    load:
+      # *REQ* Specify folder in which to store benchmark results
+      path:
+      # Whether to save best configuration model and hyperparameters
+      save_best_config_params:
