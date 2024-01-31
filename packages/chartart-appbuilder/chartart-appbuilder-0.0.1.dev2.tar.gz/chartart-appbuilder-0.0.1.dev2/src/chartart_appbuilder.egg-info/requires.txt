@@ -1,0 +1,8 @@
+pandas
+numpy
+ipython
+ipykernel
+ipynbname
+openai
+together
+api-client
