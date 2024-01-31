@@ -1,0 +1,12 @@
+django_q_registry/__init__.py,sha256=3EGoMXinhwZ0tzdLD2PZYfmvWiiW7suxCvMr8DQ3_QQ,148
+django_q_registry/apps.py,sha256=Sn2b4MDyrXT_zDaR7incjPmZqLMzcNbYqGxvLpluqns,385
+django_q_registry/conf.py,sha256=i0w1n0wHqX5u6RPzqo1ABsNCtq-LDif2xYmPFqW0x74,511
+django_q_registry/registry.py,sha256=ghUekIe_Nej_DJfUXwVcI0sfRWVckTj7rJ_JStiEFv0,5530
+django_q_registry/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_q_registry/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_q_registry/management/commands/setup_periodic_tasks.py,sha256=lkdU-xGilIU0W8nJ4_m84WWuPfIHIISd7se21qL-a14,318
+django_q_registry-0.1.0.dist-info/METADATA,sha256=zpfe4Ca0xTOkluq5bvu0asvF2lv_vgsubeF_72hZQMk,7188
+django_q_registry-0.1.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+django_q_registry-0.1.0.dist-info/licenses/AUTHORS.md,sha256=1Oe4LbJMzIyl677o_2b6e9tHcI9aDGXGm6eX1pnCDo0,45
+django_q_registry-0.1.0.dist-info/licenses/LICENSE,sha256=Wrfb6pyaYlKLqpZXiBQJrEjaCnaJaB0XRFRoYa47RxQ,1068
+django_q_registry-0.1.0.dist-info/RECORD,,
