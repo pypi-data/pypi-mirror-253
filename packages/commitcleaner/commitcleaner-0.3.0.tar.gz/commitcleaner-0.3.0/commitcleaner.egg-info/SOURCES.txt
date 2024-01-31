@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+commitcleaner/__init__.py
+commitcleaner/cleaner.py
+commitcleaner.egg-info/PKG-INFO
+commitcleaner.egg-info/SOURCES.txt
+commitcleaner.egg-info/dependency_links.txt
+commitcleaner.egg-info/entry_points.txt
+commitcleaner.egg-info/top_level.txt
