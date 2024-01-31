@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: iranholidays
+Version: 0.0.1
+Summary: provides functions to tell if a date is a holiday in Iran or not
+Author-email: 5j9 <5j9@users.noreply.github.com>
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst
+Requires-Dist: jdatetime
+Requires-Dist: hijri-converter

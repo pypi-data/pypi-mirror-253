@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+iranholidays/__init__.py
+iranholidays.egg-info/PKG-INFO
+iranholidays.egg-info/SOURCES.txt
+iranholidays.egg-info/dependency_links.txt
+iranholidays.egg-info/requires.txt
+iranholidays.egg-info/top_level.txt
+iranholidays.egg-info/zip-safe
+tests/test_init.py
