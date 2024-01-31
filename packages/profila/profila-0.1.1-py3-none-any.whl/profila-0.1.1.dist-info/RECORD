@@ -1,0 +1,10 @@
+profila/__init__.py,sha256=bvTEHqqJ5oQpOo16E5dwKBPMuSbPmyG1mCLKE9DO3i4,30
+profila/__main__.py,sha256=4Z4ifbPtPEeMD9rPG7ZApCr4MmFiYcLltkpJVz4QQ3c,1522
+profila/_gdb.py,sha256=-5trRYEsRsII72JkfcibBlpqeKlQnjJ8GrDmjLfpUFc,4099
+profila/_render.py,sha256=MDVcTGR4I9g7heUbGn8X_V9zrJnkiPN5BJu3cV_WLmg,1075
+profila/_stats.py,sha256=CjBg-izdZR0957AP6-uJx1HtYyP6kainsfmzTyAozRk,2820
+profila-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+profila-0.1.1.dist-info/METADATA,sha256=lFXIvXeOdJy9809TC5hA3Ajc8D7sN1CD62RCWLRQDYw,4392
+profila-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+profila-0.1.1.dist-info/top_level.txt,sha256=S6Y30kYEZJzdEHj8iUV0L5i902gwyJmOggD_nWyVPvs,8
+profila-0.1.1.dist-info/RECORD,,
