@@ -1,0 +1,2 @@
+[console_scripts]
+source-aircall = source_aircall.run:run
