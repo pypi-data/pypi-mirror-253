@@ -1,0 +1,13 @@
+digital_object/__init__.py,sha256=dPgkhnMCb1T79u9ZDA72HffLjMIoJZ9Rk1Me2lin3yk,198
+digital_object/common.py,sha256=LDgM8oPkSnEtT21wSlFzqByiLbbdh796RFVgqtR_s0I,2232
+digital_object/digital_object_model.py,sha256=3Jr3hEKozu6dFz8jqMoodk-BpBp2sDhE3ytZy_IO0CI,8025
+digital_object/digital_object_util.py,sha256=OwCwHhF0nlEev5K5ZdN0BRdWbNUMbQKbEd8XUngPI1Y,4379
+digital_object/filter.py,sha256=dVsUj5-R0P2y7_N452pHYL3D-YcKr2ug-i_CkUBgtB8,4555
+digital_object/format_alto_v3_util.py,sha256=6sk0lqlcgCwRJXiHwzXBoqcWQPyX4lc31KqbogI3LeE,5957
+digital_object/format_page_util.py,sha256=0W7RxQo30tUUWZVfoTULdQqMX_8CWEdvKyOnl1_H-Gw,6879
+digital_object/main.py,sha256=mYwEBCca9GkRNToXmE2Bp1WKqv848bqeTlAMhLan370,551
+digital_object/minidom_util.py,sha256=JuT-M_urfLNmlb-1N-Jn0slZeSAahdzfCa6W0Q6fMuE,1705
+digital_object-0.2.0.dist-info/LICENSE,sha256=4wG3C4exYgz_SbwCZZFmPMK9j-ym47z3-Z00VPNPYPM,1107
+digital_object-0.2.0.dist-info/METADATA,sha256=Lc1ZEzcu-jVSJCPQcmkj9itjz7NDt9aAnnWTcXpabtA,1651
+digital_object-0.2.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+digital_object-0.2.0.dist-info/RECORD,,
