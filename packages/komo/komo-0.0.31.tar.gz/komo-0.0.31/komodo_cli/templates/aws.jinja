@@ -1,0 +1,26 @@
+    # (Optional) Set this to the docker image that you want to use. If a requirements.txt is provided 
+    # in your project directory, those requirements will be installed into this image.
+    image: "nvcr.io/nvidia/pytorch:23.12-py3"
+
+    workdir: "/app"
+  
+    # This is the directory that will be copied into your docker image before running it.
+    # Specifying '.' as shown below will use the current project directory.
+    # This means that every time you run a job, all of the files you have in your project directory
+    # (doesn't matter if they're committed with git or not) will be copied into your docker image
+    # before starting the job.
+    workspace: .
+  
+    # TODO: Set the environment variables you want to use here.
+    env:
+      test_var: "test_value"
+
+    # List of mounts, which are objects containing the keys "source", "target", and "type".
+    # "source" is the source path of the mount
+    # "target" is the mount point inside your docker container
+    # "type" is one of ["bind", "volume", "device"]
+    mounts: []
+
+    # This is the default resource that will be used for this backend if no resource is specified
+    # TODO: fill this in with the desired resource
+    default_resource: <name of resource>
