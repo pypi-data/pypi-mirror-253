@@ -1,0 +1,5 @@
+rich>=13.0
+openai>=1.0
+tiktoken>=0.5
+tenacity>=8.2.3
+fastcore>=1.5.29
