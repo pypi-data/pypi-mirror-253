@@ -1,0 +1,16 @@
+crawlee/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crawlee/autoscaling/__init__.py,sha256=Tr9wCzbdF085Mp1MEpHQnfIdG0lEjM6SWLBy75GDt-Y,77
+crawlee/autoscaling/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crawlee/autoscaling/snapshotter.py,sha256=0U6258QEpetWXggBsTSqZADLAroTjEmJfkAUQeIWOkw,4198
+crawlee/autoscaling/system_status.py,sha256=tdJL7RBhVD83qtvuQuOMl3QBKxJwPS6CwnP7TuAHy1s,10458
+crawlee/events/__init__.py,sha256=7vxm0MJnDgy-64w__M6VcTqpX05Op-IP5LR0Y25NV0I,40
+crawlee/events/event_manager.py,sha256=IIaFcbvhFtVKwZP64lf2PYXndI_0s4WmKQaUUOJ5KLA,6967
+crawlee/events/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crawlee/events/types.py,sha256=Rp2kTRE_2Y6sNLTQkZGsE58zmydDaqK3OV1RHUrrkBA,1245
+crawlee/log_config.py,sha256=tpI18_2AMjOaEx1McCiQxpmAsPJPN97PafgjxWDuj_g,4802
+crawlee/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crawlee/utils.py,sha256=_vK2gt8Nz5ic7WnIVZKpnIKFEhHtxXJJD6n_BQMES00,630
+crawlee-0.0.1.dist-info/LICENSE,sha256=AsFjHssKjj4LGd2ZCqXn6FBzMqcWdjQre1byPPSypVw,11355
+crawlee-0.0.1.dist-info/METADATA,sha256=gTvMxx8jEcGTg0ZJuO0OLIjrscBBWfWkzW0r9IVFCAE,1411
+crawlee-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+crawlee-0.0.1.dist-info/RECORD,,
