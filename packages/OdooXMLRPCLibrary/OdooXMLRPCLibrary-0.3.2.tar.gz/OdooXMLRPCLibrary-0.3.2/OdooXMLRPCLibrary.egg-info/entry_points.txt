@@ -1,0 +1,4 @@
+[console_scripts]
+create_contact = OdooXMLRPCLibrary.create_contact:main
+create_sale_order = OdooXMLRPCLibrary.saleOrderModel:main
+
