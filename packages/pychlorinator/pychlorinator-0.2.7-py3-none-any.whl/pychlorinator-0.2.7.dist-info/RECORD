@@ -1,0 +1,9 @@
+pychlorinator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pychlorinator/chlorinator.py,sha256=DkKnnba5AcDSAg_LZwOUlzjAU2cGXRn9bW-IX-73v5w,6114
+pychlorinator/chlorinator_parsers.py,sha256=ifsQkTddBUyE4LkdJeCNQJn3tapxjny17NuXJQFqYNU,11337
+pychlorinator/halo_parsers.py,sha256=r43_eiqvimiIu_Xe5-ZDNu4layIYpfI8v8IZacXKpfk,38585
+pychlorinator/halochlorinator.py,sha256=peLwwHYJtIywcC9_VRHK1rtsGFTQK5QPaQ1h_q3XmtM,10978
+pychlorinator-0.2.7.dist-info/LICENSE,sha256=_hdUCmoRDzki4fYDJfn-5KpG7-7p6YJ6IsbMfrTXN6Y,1078
+pychlorinator-0.2.7.dist-info/METADATA,sha256=yPCSbiHKQZdGsgxbLkI2AP-iykJ7cPwmAra6DCzMG90,1537
+pychlorinator-0.2.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pychlorinator-0.2.7.dist-info/RECORD,,
