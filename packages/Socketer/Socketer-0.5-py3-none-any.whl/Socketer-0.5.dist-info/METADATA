@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Socketer
+Version: 0.5
+Requires-Dist: socket (>=5.11.0)
+
+Socketer is networking system
+
+he can run python on Socketer Browser
+
+and can get any data you want(console, code, file dir, etc)
+
+this is example for make simple server
+'''python
+
+'''
+
+and for use html
+'''python
+
+'''
+
+and for run command in console
+'''python
+
+'''
