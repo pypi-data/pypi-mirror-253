@@ -1,0 +1,5 @@
+python-dotenv
+loguru
+pymysql
+django
+django-stubs
