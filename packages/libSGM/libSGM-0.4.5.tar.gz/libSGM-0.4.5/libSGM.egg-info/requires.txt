@@ -1,0 +1,19 @@
+
+[:python_version < "3.8"]
+numpy
+numba>=0.47.0
+
+[:python_version > "3.7"]
+numpy>=1.22
+numba>=0.55.2
+
+[dev]
+sphinx
+sphinx_rtd_theme
+sphinx_autoapi
+pytest
+pytest-cov
+pylint
+pre-commit
+mypy
+black
