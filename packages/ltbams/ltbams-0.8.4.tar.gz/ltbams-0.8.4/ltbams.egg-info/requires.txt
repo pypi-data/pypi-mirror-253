@@ -1,0 +1,78 @@
+andes
+cvxpy
+kvxopt>=1.3
+matplotlib
+numpy
+openpyxl
+pandas
+psutil
+scipy
+sympy!=1.10.0,>=1.6
+
+[all]
+flake8
+igraph
+ipython
+myst-nb
+myst-parser
+numpydoc
+pydata-sphinx-theme
+pytest==7.4
+sphinx
+sphinx-copybutton
+sphinx-panels
+
+[dev]
+flake8
+igraph
+ipython
+myst-nb
+myst-parser
+numpydoc
+pydata-sphinx-theme
+pytest==7.4
+sphinx
+sphinx-copybutton
+sphinx-panels
+
+[doc]
+myst-nb
+myst-parser
+numpydoc
+pydata-sphinx-theme
+sphinx
+sphinx-copybutton
+sphinx-panels
+
+[flake8 ]
+flake8
+
+[igraph ]
+igraph
+
+[ipython ]
+ipython
+
+[myst-nb ]
+myst-nb
+
+[myst-parser ]
+myst-parser
+
+[numpydoc ]
+numpydoc
+
+[pydata-sphinx-theme ]
+pydata-sphinx-theme
+
+[pytest]
+pytest==7.4
+
+[sphinx ]
+sphinx
+
+[sphinx-copybutton ]
+sphinx-copybutton
+
+[sphinx-panels ]
+sphinx-panels
