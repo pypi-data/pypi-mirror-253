@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: pylint-to-ruff
+Version: 0.3.0
+Summary: Introspect a Pylint configuration and convert it to Ruff
+Project-URL: Documentation, https://github.com/akx/pylint-to-ruff#readme
+Project-URL: Issues, https://github.com/akx/pylint-to-ruff/issues
+Project-URL: Source, https://github.com/akx/pylint-to-ruff
+Author-email: Aarni Koskela <akx@iki.fi>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: lint,pylint,ruff
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Provides-Extra: dev
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: pytest>=7.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# pylint-to-ruff
+
+A friend of [flake8-to-ruff](https://pypi.org/project/flake8-to-ruff/),
+this project attempts to introspect your Pylint configuration and figure out
+what Ruff rules to enable or disable.
+
+## Compatibility
+
+Ruff versions 0.1.4 (November 2023) and newer are supported.
+
+## Usage
+
+You need to be in an environment where both your target Pylint version and
+your target Ruff version are available to execute.
+
+Then, run the program – easiest is `pipx`:
+
+```bash
+pipx run pylint-to-ruff
+```
+
+or if you have installed the package already with Pip, simply
+
+```bash
+pylint-to-ruff
+```
+
+The tool will output a TOML segment you can paste or interpolate into your
+Ruff configuration file.
