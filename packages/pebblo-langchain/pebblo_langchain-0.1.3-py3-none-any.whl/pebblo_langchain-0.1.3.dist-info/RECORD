@@ -1,0 +1,11 @@
+pebblo_langchain/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pebblo_langchain/langchain_community/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pebblo_langchain/langchain_community/document_loaders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pebblo_langchain/langchain_community/document_loaders/pebblo.py,sha256=b68DFSaPDyk6QQiPBB7t7Uiz3YWm7G_Jvz3dlxFTmSQ,8976
+pebblo_langchain/langchain_community/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pebblo_langchain/langchain_community/utilities/pebblo.py,sha256=3miDCcu_B4Ybmt1ah1il4ec0rWZDZCfHFlhRMAC6jUU,5509
+pebblo_langchain-0.1.3.dist-info/LICENSE,sha256=um1w8-ux24ogJxkFKyyglGHYsjX-M53j1H45f_3fbzI,1064
+pebblo_langchain-0.1.3.dist-info/METADATA,sha256=3FQf5Tz63nXfjag66eqCb8OqgZAHs4sf3swXdaw270w,1314
+pebblo_langchain-0.1.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pebblo_langchain-0.1.3.dist-info/top_level.txt,sha256=e0vVlamz3VHDvIVXfM3cpCbdMDKEorzbaC87h0uWo2g,22
+pebblo_langchain-0.1.3.dist-info/RECORD,,
