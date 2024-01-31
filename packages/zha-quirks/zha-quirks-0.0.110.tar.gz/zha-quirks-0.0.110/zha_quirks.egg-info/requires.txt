@@ -1,0 +1,4 @@
+zigpy>=0.60.3
+
+[testing]
+pytest
