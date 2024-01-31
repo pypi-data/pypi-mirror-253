@@ -1,0 +1,2 @@
+[endstone]
+endstone_plugin = endstone_plugin:PythonSamplePlugin
