@@ -1,0 +1,11 @@
+kind: project
+
+configs:
+{% for backend_name, backend_template in backends.items() %}
+  # Config for backend '{{ backend_name }}'
+  {{ backend_name }}:
+{{ backend_template }}
+{% endfor %}
+# The default backend to use if the --backend flag isn't specified
+# TODO: Change this to whichever backend you choose
+default_backend: "{{ first_backend }}"
