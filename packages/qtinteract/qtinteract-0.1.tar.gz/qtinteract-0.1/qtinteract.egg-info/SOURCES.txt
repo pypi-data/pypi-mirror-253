@@ -1,0 +1,9 @@
+README.md
+qtinteract.py
+setup.py
+qtinteract.egg-info/PKG-INFO
+qtinteract.egg-info/SOURCES.txt
+qtinteract.egg-info/dependency_links.txt
+qtinteract.egg-info/not-zip-safe
+qtinteract.egg-info/requires.txt
+qtinteract.egg-info/top_level.txt

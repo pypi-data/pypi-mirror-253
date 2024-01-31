@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: qtinteract
+Version: 0.1
+Summary: Fast interactive plots in Jupyter Notebooks using Qt Widgets
+Home-page: https://github.com/axil/qtinteract
+Author: Lev Maximov
+Author-email: lev.maximov@gmail.com
+License: MIT License
+Keywords: interactive,visualization,qt,widgets,slider
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# qtinteract
+
+A library for building fast interactive plots in Jupyter notebooks using Qt Widgets.
+
+## Installation
+
+    pip install qtinteract
+
+## Usage
+
+    %gui qt5    
+
+    from math import pi
+    from qtinteract import iplot
+
+    def f(x, a):
+        return np.sin(a*x)
+
+    x = np.linspace(0, 2*pi, 101)
+
+    iplot(x, f, a=(1., 5.))
