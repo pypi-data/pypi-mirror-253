@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: gnomes_at_night_gym
+Version: 0.0.1
+Summary: An environment for Gnomes at Night based on OpenAI gym.
+Author: Shenghui Chen
