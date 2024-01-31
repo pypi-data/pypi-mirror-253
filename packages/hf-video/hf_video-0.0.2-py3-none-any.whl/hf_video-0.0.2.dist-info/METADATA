@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hf-video
+Version: 0.0.2
+Summary: A package for handling videos in Huggingface
+Home-page: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.13
+License-File: LICENSE
+Requires-Dist: bson >=0.5.10
+Provides-Extra: dev
+Requires-Dist: pytest >=7.0 ; extra == 'dev'
+Requires-Dist: twine >=4.0.2 ; extra == 'dev'
+
+UNKNOWN
+
