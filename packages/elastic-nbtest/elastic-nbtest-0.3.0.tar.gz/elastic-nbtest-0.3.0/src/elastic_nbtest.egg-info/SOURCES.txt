@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+NOTICE
+README.md
+pyproject.toml
+src/elastic_nbtest.egg-info/PKG-INFO
+src/elastic_nbtest.egg-info/SOURCES.txt
+src/elastic_nbtest.egg-info/dependency_links.txt
+src/elastic_nbtest.egg-info/entry_points.txt
+src/elastic_nbtest.egg-info/not-zip-safe
+src/elastic_nbtest.egg-info/requires.txt
+src/elastic_nbtest.egg-info/top_level.txt
+src/nbtest/__init__.py
+src/nbtest/nbtest.py
+src/nbtest/python3-test-kernel.py
+src/nbtest/python3-test/kernel.json
+tests/test_nbtest.py

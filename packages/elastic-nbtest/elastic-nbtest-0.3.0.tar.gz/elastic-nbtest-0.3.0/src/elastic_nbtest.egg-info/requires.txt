@@ -1,0 +1,4 @@
+jupyter
+rich
+pyyaml
+python-dotenv
