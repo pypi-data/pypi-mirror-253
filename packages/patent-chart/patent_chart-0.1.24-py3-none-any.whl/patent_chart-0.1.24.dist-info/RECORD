@@ -1,0 +1,14 @@
+patent_chart/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+patent_chart/data_structures.py,sha256=B1UwhcUkG_qEYFWvTjGYG5v6W-PfiQ4oaLJj1a0hqZM,908
+patent_chart/embeddings.py,sha256=BrGweO8SViZtGYHCXKYZXp9qmlpfkCAuFraeQ6wNIL0,1843
+patent_chart/evaluation.py,sha256=H7bDWVHZdGrCNBYuMPqKJggWdSXc6CJl9NxW8DNWt4Y,2811
+patent_chart/filtering.py,sha256=f_YIDLszBGIjna5zQn2x1wpXztaOQSN5NFOznS8Hc6E,498
+patent_chart/generator.py,sha256=hDRpfOCWWAcjifFefkxgUSbFyomfJINk6rO_tCgs2kQ,27063
+patent_chart/google_patents.py,sha256=2KAgECUwTM9zMq7UEwOvy84-F9BK5eLfuO4RKhzrWyE,2074
+patent_chart/parser.py,sha256=0_aBehv9jrUnN12XAeNp4OAm4PxdYXnIox9xqos1784,69301
+patent_chart/ranking.py,sha256=5zQw5MbV9Pw6DIegje8OlLMkuAhhS0CB9WbAhw4ugJU,1229
+patent_chart/tests.py,sha256=b2WcYCNJBsZ23qh_-l_IgzsA1tV9tC5Ue7F68OnVaHQ,32541
+patent_chart/utils.py,sha256=8KSd61US6aSza90l1sYsQNbhkbh0cAF8w0G6r_dNpEI,4065
+patent_chart-0.1.24.dist-info/METADATA,sha256=-r0w7Lzfg4D3CqRkEony5eQjli3jnUgWC-OwmisPaBo,719
+patent_chart-0.1.24.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+patent_chart-0.1.24.dist-info/RECORD,,
