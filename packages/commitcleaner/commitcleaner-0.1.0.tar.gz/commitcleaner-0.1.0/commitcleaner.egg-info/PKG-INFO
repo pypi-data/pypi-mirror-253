@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: commitcleaner
+Version: 0.1.0
+Summary: A tool to clean Git commit history.
+Home-page: https://github.com/developer0hye/commitcleaner
+Author: Yonghye Kwon
+Author-email: developer.0hye@gmail.com
+Keywords: git commit clean
+License-File: LICENSE
