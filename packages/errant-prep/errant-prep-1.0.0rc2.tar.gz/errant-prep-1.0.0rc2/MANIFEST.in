@@ -1,0 +1,2 @@
+include REAME.md
+exclude *.log
