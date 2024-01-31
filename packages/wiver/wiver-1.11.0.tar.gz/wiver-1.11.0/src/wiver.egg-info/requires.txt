@@ -1,0 +1,13 @@
+cython
+numpy
+cythonarrays
+matrixconverters
+pandas
+xarray
+h5netcdf
+orca
+openpyxl<=3.1
+
+[test]
+pytest
+pytest-benchmark
