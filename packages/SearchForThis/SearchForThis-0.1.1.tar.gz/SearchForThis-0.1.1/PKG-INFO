@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: SearchForThis
+Version: 0.1.1
+Summary: Projeto final da disciplina de Programação Orientada a Objetos II
+Author: liedson
+Author-email: fabricoliedson@gamil.com
+Keywords: python,web,search
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE

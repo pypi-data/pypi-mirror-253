@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SearchForThis/__init__.py
+SearchForThis/searchft.py
+SearchForThis.egg-info/PKG-INFO
+SearchForThis.egg-info/SOURCES.txt
+SearchForThis.egg-info/dependency_links.txt
+SearchForThis.egg-info/requires.txt
+SearchForThis.egg-info/top_level.txt
