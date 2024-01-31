@@ -1,0 +1,254 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "eventstoredb"
+description = "A EventstoreDB gRPC client written in python ."
+readme = "README.md"
+keywords = [
+    "eventstore",
+    "eventstoredb",
+]
+requires-python = ">=3.9,<3.13"
+authors = [
+    { name = "betaboon", email = "betaboon@0x80.ninja" },
+]
+maintainers = [
+    { name = "betaboon", email = "betaboon@0x80.ninja" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Typing :: Typed",
+]
+dynamic = []
+dependencies = [
+    "betterproto==2.0.0b5",
+    "yarl>=1.9.4",
+]
+version = "0.8.1"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.urls]
+Homepage = "https://github.com/betaboon/EventStoreDB-Client-Python"
+Documentation = "https://betaboon.github.io/EventStoreDB-Client-Python"
+Changelog = "https://github.com/betaboon/EventStoreDB-Client-Python/releases"
+Repository = "https://github.com/betaboon/EventStoreDB-Client-Python"
+"Issue Tracker" = "https://github.com/betaboon/EventStoreDB-Client-Python/issues"
+
+[tool.pdm.dev-dependencies]
+docs = [
+    "furo>=2023.9.10",
+    "myst-parser>=2.0.0",
+    "sphinx-autoapi>=3.0.0",
+    "sphinx-autobuild>=2021.3.14",
+    "sphinx-copybutton>=0.5.2",
+    "sphinx>=7.2.6",
+]
+linting = [
+    "gitlint>=0.19.1",
+    "mypy>=1.8.0",
+    "pre-commit>=3.6.0",
+    "ruff>=0.1.14",
+    "types-requests>=2.31.0.20240125",
+]
+testing = [
+    "pytest-asyncio>=0.23.3",
+    "pytest-cov>=4.1.0",
+    "pytest-docker>=3.0.0",
+    "pytest-mock>=3.12.0",
+    "pytest>=7.4.4",
+]
+dev = [
+    "betterproto[compiler]==2.0.0b5",
+    "grpcio-tools>=1.60.0",
+]
+
+[tool.pdm.options]
+lock = [
+    "--group=:all",
+]
+
+[tool.pdm.version]
+source = "scm"
+write_to = "eventstoredb/__version__.py"
+write_template = "__version__ = \"{}\"\n"
+
+[tool.pdm.scripts._.env]
+EVENTSTOREDB_VERSION = "oss-v23.10.0"
+PROTOC_IN_PATH = "./external/EventStore/src/Protos/Grpc"
+PROTOC_OUT_PATH = "./eventstoredb/generated"
+
+[tool.pdm.scripts.protobuf-update]
+help = "Update EventStore git-module"
+shell = "[ -z \"$EVENTSTOREDB_VERSION\" ] && echo \"env EVENTSTOREDB_VERSION not set\" || (\n  cd ${PROTOC_IN_PATH} && git fetch --depth 1 origin ${EVENTSTOREDB_VERSION} && git checkout FETCH_HEAD\n)\n"
+
+[tool.pdm.scripts.protobuf-generate]
+help = "Generate protobuf code"
+shell = "  mkdir -p ${PROTOC_OUT_PATH} &&\n  python -m grpc_tools.protoc --proto_path=${PROTOC_IN_PATH} --python_betterproto_out=${PROTOC_OUT_PATH} ${PROTOC_IN_PATH}/*.proto\n"
+
+[tool.pdm.scripts.install-git-hooks]
+help = "Install pre-commit hooks"
+cmd = "pre-commit install --install-hooks"
+
+[tool.pdm.scripts.lint]
+help = "Run pre-commit"
+cmd = "pre-commit run --all-files"
+
+[tool.pdm.scripts.test]
+help = "Run tests"
+cmd = "pytest"
+
+[tool.pdm.scripts.docs-build]
+help = "Build docs"
+cmd = "sphinx-build docs docs/_build"
+
+[tool.pdm.scripts.docs-serve]
+help = "Build and serve docs"
+cmd = "sphinx-autobuild --watch eventstoredb docs docs/_build"
+
+[tool.pdm.scripts._ci-lint-code]
+cmd = [
+    "pre-commit",
+    "run",
+    "--show-diff-on-failure",
+    "--from-ref",
+    "${FROM_REF}",
+    "--to-ref",
+    "${TO_REF}",
+]
+
+[tool.pdm.scripts._ci-lint-commits]
+cmd = [
+    "gitlint",
+    "--contrib",
+    "contrib-title-conventional-commits",
+    "--ignore",
+    "body-is-missing",
+    "--commits",
+    "${FROM_REF}..${TO_REF}",
+]
+
+[tool.semantic_release]
+tag_format = "{version}"
+
+[tool.semantic_release.changelog]
+exclude_commit_patterns = [
+    "Merge pull request.*",
+]
+
+[tool.mypy]
+strict = true
+python_version = "3.9"
+exclude = [
+    "^eventstoredb/generated/.*",
+]
+
+[tool.ruff]
+target-version = "py39"
+line-length = 100
+preview = true
+extend-exclude = [
+    "eventstoredb/generated/",
+]
+
+[tool.ruff.lint]
+fixable = [
+    "ALL",
+]
+select = [
+    "A",
+    "ASYNC",
+    "B",
+    "BLE",
+    "C4",
+    "C90",
+    "COM",
+    "D",
+    "DTZ",
+    "E",
+    "ERA",
+    "EXE",
+    "F",
+    "FLY",
+    "FURB",
+    "I",
+    "ICN",
+    "ISC",
+    "N",
+    "NPY",
+    "PD",
+    "PERF",
+    "PIE",
+    "PLC",
+    "PLE",
+    "PLW",
+    "PT",
+    "PTH",
+    "Q",
+    "RET",
+    "RUF",
+    "S",
+    "SIM",
+    "T10",
+    "T20",
+    "TCH",
+    "TID",
+    "TRY",
+    "UP",
+    "W",
+    "YTT",
+]
+ignore = [
+    "A003",
+    "D",
+    "D100",
+    "D104",
+]
+
+[tool.ruff.isort]
+combine-as-imports = true
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.per-file-ignores]
+"tests/**/*" = [
+    "C901",
+    "D",
+    "S",
+    "SIM",
+]
+
+[tool.pytest.ini_options]
+addopts = "--strict-config --strict-markers --cov"
+asyncio_mode = "auto"
+xfail_strict = true
+
+[tool.coverage.run]
+branch = true
+parallel = true
+source = [
+    "eventstoredb",
+]
+omit = [
+    "eventstoredb/generated/*",
+]

@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: eventstoredb
+Version: 0.8.1
+Summary: A EventstoreDB gRPC client written in python .
+Keywords: eventstore eventstoredb
+Author-Email: betaboon <betaboon@0x80.ninja>
+Maintainer-Email: betaboon <betaboon@0x80.ninja>
+License: Apache-2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Project-URL: Homepage, https://github.com/betaboon/EventStoreDB-Client-Python
+Project-URL: Documentation, https://betaboon.github.io/EventStoreDB-Client-Python
+Project-URL: Changelog, https://github.com/betaboon/EventStoreDB-Client-Python/releases
+Project-URL: Repository, https://github.com/betaboon/EventStoreDB-Client-Python
+Project-URL: Issue tracker, https://github.com/betaboon/EventStoreDB-Client-Python/issues
+Requires-Python: <3.13,>=3.9
+Requires-Dist: betterproto==2.0.0b5
+Requires-Dist: yarl>=1.9.4
+Description-Content-Type: text/markdown
+
+# EventstoreDB Client Python
+
+[![ci](https://img.shields.io/github/actions/workflow/status/betaboon/EventStoreDB-Client-Python/ci-main.yaml?style=for-the-badge&branch=main&logo=github&logoColor=white)](https://github.com/betaboon/EventStoreDB-Client-Python/actions/workflows/ci-main.yaml?query=branch%3Amain)
+
+[![version](https://img.shields.io/pypi/v/eventstoredb?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/eventstoredb)
+[![pyversions](https://img.shields.io/pypi/pyversions/eventstoredb?style=for-the-badge&logo=python&logoColor=white)](https://github.com/betaboon/EventStoreDB-Client-Python)
+[![license](https://img.shields.io/pypi/l/eventstoredb?style=for-the-badge)](https://github.com/betaboon/EventStoreDB-Client-Python/LICENSE)
+
+[![docs](https://img.shields.io/badge/docs-blue?style=for-the-badge&label=sphinx&logo=sphinx&logoColor=white)](https://betaboon.github.io/EventStoreDB-Client-Python)
+[![pdm](https://img.shields.io/badge/managed-blue?style=for-the-badge&logo=pdm&logoColor=white&label=pdm&color=%237e56c2)](https://pdm-project.org)
+[![ruff](https://img.shields.io/badge/formatted-blue?style=for-the-badge&logo=ruff&logoColor=white&label=ruff&color=%23d7ff64)](https://astral.sh/ruff)
+
+## What is EventstoreDB Client Python?
+<!-- start description -->
+
+A EventstoreDB gRPC client written in python .
+
+<!-- end description -->
+
+## Features
+<!-- start features -->
+
+<!-- end features -->
+
+## Installation
+<!-- start installation -->
+
+EventstoreDB Client Python can be installed with `pip`:
+
+```text
+pip install eventstoredb
+```
+
+<!-- end installation -->
+
+## Quickstart
+<!-- start quickstart -->
+
+<!-- end quickstart -->
+
+## Contributing
