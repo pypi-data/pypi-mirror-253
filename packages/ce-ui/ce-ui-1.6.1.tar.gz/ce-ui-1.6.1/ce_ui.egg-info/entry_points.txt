@@ -1,0 +1,13 @@
+[topobank.context_processors]
+basket = ce_ui.context_processors.basket_processor
+fixed_tabs = ce_ui.context_processors.fixed_tabs_processor
+versions = ce_ui.context_processors.versions_processor
+
+[topobank.middleware]
+termsandconditions = termsandconditions.middleware.TermsAndConditionsRedirectMiddleware
+
+[topobank.plugins]
+ce_ui = ce_ui.apps.CEUIPluginConfig
+
+[topobank.third_party_apps]
+termsandconditions = termsandconditions

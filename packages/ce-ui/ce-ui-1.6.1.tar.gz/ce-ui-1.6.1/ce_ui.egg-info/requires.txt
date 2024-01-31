@@ -1,0 +1,4 @@
+django
+django-termsandconditions>=2.0.8
+
+[dev]
