@@ -1,0 +1,7 @@
+README.md
+setup.py
+omero_slurm_client.egg-info/PKG-INFO
+omero_slurm_client.egg-info/SOURCES.txt
+omero_slurm_client.egg-info/dependency_links.txt
+omero_slurm_client.egg-info/requires.txt
+omero_slurm_client.egg-info/top_level.txt

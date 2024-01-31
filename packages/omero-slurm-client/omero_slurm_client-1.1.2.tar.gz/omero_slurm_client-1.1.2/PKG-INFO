@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: omero_slurm_client
+Version: 1.1.2
+Summary: deprecated omero_slurm_client package, use biomero instead
+Home-page: https://nl-bioimaging.github.io/biomero/
+Author: T.T. Luik
+Author-email: t.t.luik@amsterdamumc.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+
+# ⚠️⚠️⚠️ Summary ⚠️⚠️⚠️
+
+⚠️⚠️⚠️ The **`omero_slurm_client` PyPI package is deprecated, use `biomero` instead** ⚠️⚠️⚠️
+
+We have renamed the omero_slurm_client package to biomero, to reduce confusion with different names.
+
+Install the latest biomero instead: 
+```
+pip install biomero
+```
+
+Then change your imports to use that package:
+```
+from biomero import SlurmClient
+```
+
+Any new changes, features and bug fixes will only be applied to the `biomero` GitHub and PyPI package: https://pypi.org/project/biomero/
+
+
