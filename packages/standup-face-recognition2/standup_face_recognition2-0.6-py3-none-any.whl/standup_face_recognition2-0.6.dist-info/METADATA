@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: standup-face-recognition2
+Version: 0.6
+Summary: Standup helper: Detects and recognizes the person in the team.
+Author: Timo
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: torch ==2.0.0
+Requires-Dist: torchvision ==0.15.1
+
