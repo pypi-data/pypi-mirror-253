@@ -1,0 +1,3 @@
+[console_scripts]
+panza_executor=panza.executor:main
+
