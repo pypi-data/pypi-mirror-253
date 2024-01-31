@@ -1,0 +1,10 @@
+giza_datasets/__init__.py,sha256=RaNbNoRgJJ7RZeFsT9JUInoFWDPi21Wpxf4rUPX-PTs,136
+giza_datasets/constants.py,sha256=1JpzQe8ozuXkAwSK7qcMwlXtH02vbRxpsIilf1RcuZo,147292
+giza_datasets/defillama_constants.py,sha256=q04cNOlg2f2MFub0-eT0-sCk0gOP-M1JXzZczXrjIWk,635
+giza_datasets/hub.py,sha256=T3zLDGXrQdOFRav0NpW_VyKirUF_WrvLE-XDZgCKnco,3240
+giza_datasets/loaders.py,sha256=nFtvW9YENoiHLYsuTO_rxV67dT-b8UQHoF3QErr5kQU,3101
+giza_datasets/models.py,sha256=WbwnZLcOt9VvdUEMlsMr35o0cAjQOEQpT3_xST5jpbE,1339
+giza_datasets-0.1.0.dist-info/LICENSE,sha256=b16jAJNLODDDHpkCRJl2uXdzi6aOf5G9YU8jraOnsPw,1074
+giza_datasets-0.1.0.dist-info/METADATA,sha256=IoccAOMgSsIdoUiZ1M0q0ym8vgcaLomHOZrxdpjuMI0,4532
+giza_datasets-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+giza_datasets-0.1.0.dist-info/RECORD,,
