@@ -1,0 +1,11 @@
+linkotron/__init__.py,sha256=LezZwaK6fezqLyVRyaSd8HNIMcbNStymZyO3vplrVhI,1842
+linkotron/__main__.py,sha256=XqQRd4atI7OfEzKPTtM9LEjDwM8XX0WnojuD1m-YgmY,97
+linkotron/cli.py,sha256=jS88A6yGXjzWuI-2Yz6o_oVqOuW3aCOesi5o2XSPeSc,1605
+linkotron/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linkotron/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linkotron/scripts/run_command.py,sha256=OUVDbJ4O-13p2sCvdPt5LY-6h2vgG3b3FpRjiR1vGuQ,575
+linkotron-0.2.0.dist-info/METADATA,sha256=1esxUVWUSSxJ-y7uKqFVEQftz3jqt0330iDrFpSmZwg,4868
+linkotron-0.2.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+linkotron-0.2.0.dist-info/entry_points.txt,sha256=q4-Vb50rc1JByA8rRhBvGAhHeJSNk9KK35H4UF_4jhI,76
+linkotron-0.2.0.dist-info/licenses/LICENSE.txt,sha256=czwzAq7xzMjdfa-d17ybACleFkWyqhVlZyajiOGQDc4,1079
+linkotron-0.2.0.dist-info/RECORD,,
