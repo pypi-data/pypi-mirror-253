@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]      # Specify which directory to look for packages
+namespaces = false   # Disable implicit namespaces
+
+[project]
+name = "latents"
+version = "0.0.1"
+description = "A toolkit for latent variable modeling and dimensionality reduction"
+authors = [{ name="Evren Gokcen", email="egokcen@cmu.edu" }]
+readme = "README.rst"
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering"
+]
+keywords = [
+    "latents",
+    "latent variables",
+    "latent variable model",
+    "dimensionality reduction",
+    "machine learning", 
+    "unsupervised learning"
+]
+requires-python = ">=3.10"
+dependencies = [
+
+]
+
+[project.optional-dependencies]
+doc = [
+
+]
+dev = [
+
+]
