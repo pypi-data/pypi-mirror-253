@@ -1,0 +1,2 @@
+[console_scripts]
+honcaml = honcaml.__main__:main
