@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vacuum-openapi
+Version: 0.2.0
+Summary: Python bindings for the vacuum OpenAPI linting/validation Go library
+Home-page: None
+Author: Zach Kanzler
+Author-email: they4kman@gmail.com
+Maintainer: None
+Maintainer-email: None
+Requires-Python: >=3.9,<4.0
+License-File: LICENSE
+Requires-Dist: orjson <4.0.0,>2.2.0
+Requires-Dist: pydantic <3.0.0,>1.8.0
+
+# vacuum-python
