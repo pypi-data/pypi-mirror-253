@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: crawlee
+Version: 0.0.1
+Summary: Crawlee for Python
+Home-page: https://todo.com/
+License: Apache-2.0
+Keywords: apify,automation,chrome,crawlee,crawler,headless,scraper,scraping
+Author: Apify Technologies s.r.o.
+Author-email: support@apify.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: more_itertools (>=10.2.0,<11.0.0)
+Requires-Dist: pyee (>=11.1.0,<12.0.0)
+Requires-Dist: typing-extensions (>=4.1.0,<5.0.0)
+Project-URL: Apify Homepage, https://apify.com
+Project-URL: Changelog, https://github.com/apify/crawlee-py/blob/master/CHANGELOG.md
+Project-URL: Documentation, https://todo.com/
+Project-URL: Issue tracker, https://github.com/apify/crawlee-py/issues
+Project-URL: Repository, https://github.com/apify/crawlee-py
+Project-URL: Source, https://github.com/apify/crawlee-py
+Description-Content-Type: text/markdown
+
+# Crawlee Python
+
