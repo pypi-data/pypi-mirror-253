@@ -1,0 +1,2 @@
+googlesearch-python==1.2.3
+webbrowser>=0.3.1
