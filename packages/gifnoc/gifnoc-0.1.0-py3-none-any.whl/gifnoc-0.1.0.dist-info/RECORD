@@ -1,0 +1,12 @@
+gifnoc/__init__.py,sha256=S0lcmwCf0oziukJCOKF4W1KOnMe3j03lGAXXqSnoj6I,399
+gifnoc/acquire.py,sha256=DGnsCXdKfIq67S7g64xa_6SbHlE8NxbzSXDhmGn9Gmk,2673
+gifnoc/config.py,sha256=Y2L08EEoLEGpO69wWYyId3NUwzsYILCRmxIW_3wybQ8,809
+gifnoc/core.py,sha256=sJ3RbCSUQJhIANPDXjIUKpNAx9o2YdOgDQYTddLeGmI,7892
+gifnoc/docstrings.py,sha256=WR0A5Rqfk24spT_yep6lvM4Oqpk_1ts3Xb6BATAS4LM,4106
+gifnoc/merge.py,sha256=qQKNii89ISN6dUMA0Pszy9z9iSvvE5RxPCclOjdt-VU,1349
+gifnoc/parse.py,sha256=whtaiDCNxBuYymssmGBb0whRM21ChXGqY-YwgjQQKhc,3438
+gifnoc/registry.py,sha256=GeS5nDHxf3aplAW-T-bVSi0p6ZdyJ-O_95mpgmlHhx4,1191
+gifnoc/utils.py,sha256=intrQNkf5hFNV1wXMtfXG7C7VczC9XaqZoRVGeJ-Rw8,2746
+gifnoc-0.1.0.dist-info/METADATA,sha256=itm89C_b70e7O82IEohGHeSr2ecNyQ2SdfWqw14esQ0,2772
+gifnoc-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gifnoc-0.1.0.dist-info/RECORD,,
