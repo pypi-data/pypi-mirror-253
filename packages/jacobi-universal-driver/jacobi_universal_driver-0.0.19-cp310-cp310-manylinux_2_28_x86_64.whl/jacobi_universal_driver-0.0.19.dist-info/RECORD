@@ -1,0 +1,9 @@
+libjacobi-universal-driver.so,sha256=ZGPEavRVaNh7obc91BUIJakbwP-H9k9F9YdHi9g67sY,2072937
+jacobi_driver_universal.cpython-310-x86_64-linux-gnu.so,sha256=USs4dBhlbTZl2swowUnU6XZsE-P9UrRYG1smb_PA-yQ,323073
+librtde.a,sha256=d20Wxx3PsPYshK2EJlosryyGZG0goPCvf6amntfOYxk,3392150
+jacobi_universal_driver.libs/libboost_thread-473b539f.so.1.66.0,sha256=SK_ogBu9NK8SNdF6RcCXk60VNbimYOV1VYG7Ley-rEg,267249
+jacobi_universal_driver.libs/libboost_system-69a6c43e.so.1.66.0,sha256=sd_lA0coUWXm-bluxkOkNrzrxFSAXYDphjPDwBekik8,22905
+jacobi_universal_driver-0.0.19.dist-info/METADATA,sha256=oGzpYdXxKXN3I4mFARYQfxxLOoe8KQ49Rcb1afAICbM,975
+jacobi_universal_driver-0.0.19.dist-info/top_level.txt,sha256=XWGDXZkANUse4fSvRnUOVEohxBuFLtK4TFQ5Iq2ehbg,31
+jacobi_universal_driver-0.0.19.dist-info/RECORD,,
+jacobi_universal_driver-0.0.19.dist-info/WHEEL,sha256=zL8QdYpn40L5zyQJMSDc8czZQHX1BqCvPZ3z2rz6kD0,114
