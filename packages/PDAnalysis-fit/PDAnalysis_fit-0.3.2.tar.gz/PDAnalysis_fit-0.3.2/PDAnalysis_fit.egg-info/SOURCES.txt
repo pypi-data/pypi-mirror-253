@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+PDAnalysis_fit/__init__.py
+PDAnalysis_fit/_version.py
+PDAnalysis_fit/core.py
+PDAnalysis_fit/example.py
+PDAnalysis_fit/utilities.py
+PDAnalysis_fit.egg-info/PKG-INFO
+PDAnalysis_fit.egg-info/SOURCES.txt
+PDAnalysis_fit.egg-info/dependency_links.txt
+PDAnalysis_fit.egg-info/requires.txt
+PDAnalysis_fit.egg-info/top_level.txt
