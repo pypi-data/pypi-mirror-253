@@ -1,0 +1,10 @@
+PDAnalysis_fit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PDAnalysis_fit/_version.py,sha256=7YeBgSVj8ydF7tymPSFdq22NONiQoBjKL1iwcxp4TJo,21
+PDAnalysis_fit/core.py,sha256=U-PD2PkwXSGaiWreV-JJWoOVizkmbU0JAABurO374g0,10104
+PDAnalysis_fit/example.py,sha256=X8MPB275LbdlIVf8Mawtah11TDi5cPI8aDrkduPD7y8,42
+PDAnalysis_fit/utilities.py,sha256=-oPIeRbVrX8DXOWtc1pRFci14ZTpSLQUwyRy65zJBIc,539
+PDAnalysis_fit-0.3.9.dist-info/LICENSE,sha256=nb_gabFuWHZVDrkLOHjO7oSkwfUKUXpM10-eSV_wkoQ,1063
+PDAnalysis_fit-0.3.9.dist-info/METADATA,sha256=y9d1KPKj88KSp3FBbgFKxt_uWVjA1ZX76oDAgEwkC60,1182
+PDAnalysis_fit-0.3.9.dist-info/WHEEL,sha256=iYlv5fX357PQyRT2o6tw1bN-YcKFFHKqB_LwHO5wP-g,110
+PDAnalysis_fit-0.3.9.dist-info/top_level.txt,sha256=RlgGzLwzZW9B9jbd4poFNIGUrLxuy8Fh5dvp_XJHS9k,15
+PDAnalysis_fit-0.3.9.dist-info/RECORD,,
