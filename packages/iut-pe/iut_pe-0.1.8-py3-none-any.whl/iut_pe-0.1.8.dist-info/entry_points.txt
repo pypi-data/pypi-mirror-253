@@ -1,0 +1,5 @@
+[console_scripts]
+iut-pe-build=iut_pe.scripts:build_script
+iut-pe-fetch=iut_pe.scripts:fetch_script
+iut-pe-ping=iut_pe.scripts:ping
+

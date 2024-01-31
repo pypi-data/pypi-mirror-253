@@ -1,0 +1,9 @@
+iut_pe/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iut_pe/helpers.py,sha256=gHvi9iKkvhTjeuAXjOQEy3KIP625zBnr1WgmvXcflTc,14783
+iut_pe/scripts.py,sha256=ZFoLxvGRMN619iaI0j-QuVF4SyUJOEsJXAG2ht-q4mo,8623
+iut_pe/static/template.tex,sha256=OExp9QDWGlxv_IFyYIxTTY-RnvMcXMHitZ2cC5GyZtk,5108
+iut_pe-0.1.8.dist-info/LICENSE,sha256=lvF4V_PrKKfZPa2TC8CZo8tlqaKvs3Bpv9G6XsWWQ4k,483
+iut_pe-0.1.8.dist-info/METADATA,sha256=PZq8WO5d837EvnwIg9Psa4nmHElX_DPuwLMYo4gz1qI,7514
+iut_pe-0.1.8.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+iut_pe-0.1.8.dist-info/entry_points.txt,sha256=AIp0Z5Z8AQoR1Ym1g7AbT0GWL5nJxzNhYtWalAEHuxc,133
+iut_pe-0.1.8.dist-info/RECORD,,
