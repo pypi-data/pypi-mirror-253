@@ -1,0 +1,13 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/pyflattener/__init__.py
+src/pyflattener/flattener.py
+src/pyflattener.egg-info/PKG-INFO
+src/pyflattener.egg-info/SOURCES.txt
+src/pyflattener.egg-info/dependency_links.txt
+src/pyflattener.egg-info/requires.txt
+src/pyflattener.egg-info/top_level.txt
