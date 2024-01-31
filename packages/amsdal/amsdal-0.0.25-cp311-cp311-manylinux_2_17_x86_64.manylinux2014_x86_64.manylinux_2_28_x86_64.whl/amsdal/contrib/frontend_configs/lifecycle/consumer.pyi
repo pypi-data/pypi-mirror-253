@@ -1,0 +1,13 @@
+from _typeshed import Incomplete
+from amsdal_models.schemas.data_models.schema import PropertyData
+from amsdal_utils.lifecycle.consumer import LifecycleConsumer
+from typing import Any
+
+logger: Incomplete
+core_to_frontend_types: Incomplete
+
+def process_property(field_name: str, property_data: PropertyData) -> dict[str, Any]: ...
+def get_default_control(class_name: str) -> dict[str, Any]: ...
+
+class ProcessResponseConsumer(LifecycleConsumer):
+    def on_event(self, request: Any, response: dict[str, Any]) -> None: ...
