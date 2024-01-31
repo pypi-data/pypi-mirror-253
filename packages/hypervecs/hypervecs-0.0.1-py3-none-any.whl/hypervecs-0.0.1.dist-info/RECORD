@@ -1,0 +1,12 @@
+hypervecs/__init__.py,sha256=he08u9ntwtFpNi_ytFrZnnKx6Kd7f6pmlwqgpX9NLlE,359
+hypervecs/embeddings.py,sha256=RWIoZlBF3TGKbyWSkjAU1CMAOQmYD3Pa2o06grBKFhA,2330
+hypervecs/funcs.py,sha256=IQCwCMqytTO7eUuyQZidLQVvtcA0AI0tAO32xvXwfsc,539
+hypervecs/functional.py,sha256=3HdbEjM-Jx31J5_n4oe3f2MHBFr_L-WAgz_mrAUdjlE,475
+hypervecs/hypervector.py,sha256=UBtNgxv3REcbBslGZok_MhWfh1oeAbH-HirhapUH6dQ,6613
+hypervecs/ml.py,sha256=MClZehBD7aEehfBcrjEhkcSEae1sEX2TAmRafKt_mH0,2296
+hypervecs/types.py,sha256=pMyjX2wsomcHfO802othk7VfTu_lfw5t0JSE96pW7AQ,57
+hypervecs-0.0.1.dist-info/LICENSE,sha256=g410Zw_nr_YBiVO7v8l8IwlORmgQqt9W1NCoEXFXTE8,1062
+hypervecs-0.0.1.dist-info/METADATA,sha256=-zR6m-_7EfAJqNU6-Nuhw4fhPX1Vx_sWDgEfqA2eO9I,519
+hypervecs-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hypervecs-0.0.1.dist-info/entry_points.txt,sha256=v873H_hY9ORuWOkF1H_68g3IaK-eghrIcvaIOCO2Qos,85
+hypervecs-0.0.1.dist-info/RECORD,,

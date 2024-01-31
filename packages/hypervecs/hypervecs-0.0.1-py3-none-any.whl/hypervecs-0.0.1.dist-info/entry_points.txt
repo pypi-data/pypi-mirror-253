@@ -1,0 +1,4 @@
+[console_scripts]
+e-ml=tests.experiments.ml:main
+e-prob=tests.experiments.prob:main
+
