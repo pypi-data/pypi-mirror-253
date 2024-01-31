@@ -1,0 +1,10 @@
+menrva/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+menrva/client.py,sha256=KPy-DtZFfEOkQAvkV1DGgxGELX727fOSdp2vJmL614Q,14398
+menrva/config/client.param.json,sha256=utd6Sftn0mZYaAT10SbdS3jMcEZV5tDH6u87PNadnhw,794
+menrva/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+menrva/plugins/scheduler.py,sha256=gp0smjdp4sey9NKcVFd6A-VDId0fgNl8pLkuHO48i4o,14121
+menrva/plugins/worker.py,sha256=-xHdCDtkGejuwIOJzXpiJMzCoC_-D33ymnQmlGfg5RQ,3031
+menrva-0.0.14.dist-info/METADATA,sha256=s39_nO9jB1EaNh46XWiZOxvLg-bIMSGrZ9_213x0QQo,1712
+menrva-0.0.14.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+menrva-0.0.14.dist-info/top_level.txt,sha256=tZS4jJ7yOTvLtCnr5oWybNvdVQga7Jwq44gQI11WkFo,7
+menrva-0.0.14.dist-info/RECORD,,

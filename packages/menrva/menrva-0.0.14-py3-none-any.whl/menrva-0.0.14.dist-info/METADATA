@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: menrva
+Version: 0.0.14
+Summary: Generalized Dask Client for GraphViper Framework
+Author-email: Joshua Hoskins <jhoskins@nrao.edu>, Jan-Willem Steeb <jsteeb@nrao.edu>
+Requires-Python: <3.12,>=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: astropy
+Requires-Dist: auror
+Requires-Dist: dask
+Requires-Dist: dask-jobqueue
+Requires-Dist: distributed
+Requires-Dist: graphviper
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: pytest-html
+Requires-Dist: skriba
+Requires-Dist: zarr
+Provides-Extra: docs
+Requires-Dist: ipykernel ; extra == 'docs'
+Requires-Dist: ipympl ; extra == 'docs'
+Requires-Dist: ipython ; extra == 'docs'
+Requires-Dist: jupyter-client ; extra == 'docs'
+Requires-Dist: nbsphinx ; extra == 'docs'
+Requires-Dist: recommonmark ; extra == 'docs'
+Requires-Dist: scanpydoc ; extra == 'docs'
+Requires-Dist: sphinx-autoapi ; extra == 'docs'
+Requires-Dist: sphinx-autosummary-accessors ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: twine ; extra == 'docs'
+Requires-Dist: pandoc ; extra == 'docs'
+
+# main/Menrva
+
+
+
+## Getting Started
+
+Download links:
+
+SSH clone URL: ssh://git@git.jetbrains.space/odysseus/main/menrva.git
+
+HTTPS clone URL: https://git.jetbrains.space/odysseus/main/menrva.git
+
+
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+## Prerequisites
+
+What things you need to install the software and how to install them.
+
+```
+Examples
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a production system.
+
+## Resources
+
+Add links to external resources for this project, such as CI server, bug tracker, etc.
