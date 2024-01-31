@@ -1,0 +1,1566 @@
+Metadata-Version: 2.1
+Name: Health_Tools
+Version: 0.0.6
+Summary: Ajuda com análise de resultados médicos e laboratoriais.
+Author: Kawan S. Dias
+Author-email: <kawan.dias@ufpi.edu.br>
+Keywords: python,Medical,Data,analysis,simple,health-tools
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# Health_Tools
+
+
+
+Documentação relacionada ao pacote python Health Tools.<br>
+
+
+
+![Build](https://img.shields.io/badge/Build-Pass-brightgreen.svg)
+
+![Versão](https://img.shields.io/badge/Vers%C3%A3o-1.0.6-blue.svg) <br>
+
+
+
+## Instalação
+
+Para instalar o pacote, basta executar o comando abaixo:
+
+```bash
+
+pip install health_tools
+
+```
+
+## Utilização
+
+Para utilizar o pacote, basta importar o módulo desejado:
+
+```python
+
+from health_tools import ht
+
+```
+
+
+
+
+
+
+
+## Módulos
+
+### def calcular_debito_cardiaco(fc, vs, saida='advanced'):
+
+    """
+
+       Calcula o Débito Cardíaco (DC) com base na frequência cardíaca (FC) e no volume sistólico (VS).
+
+
+
+       Parameters:
+
+           fc (float): Frequência cardíaca (batimentos por minuto).
+
+           vs (float): Volume sistólico (mililitros por batimento).
+
+           saida (str, opcional): Tipo de saída desejado ('advanced' para apenas o resultado, 'simple' para resultado e classificação).
+
+
+
+       Returns:
+
+           float or tuple: Débito Cardíaco (mililitros por minuto) ou (Débito Cardíaco, Classificação) dependendo da saída escolhida.
+
+       """
+
+```python
+
+entrada: resultado_simple = verifica_pressão_arterial(130, 60, 'masculino', 40, 'advanced')
+
+         print(resultado_simple)
+
+         
+
+saida: Pressão arterial normal         
+
+
+
+```
+
+```python
+
+entrada: resultado_simple = verifica_pressão_arterial(80, 80, 'feminino', 40, 'advanced')
+
+         print(resultado_simple)
+
+         
+
+saida:  Pressão arterial de estágio 1 
+
+```
+
+
+
+### <font color="orange">def calcular_debito_urinario(<font color="green">volume_urina_Litro, tempo_Hora,saida</font>):</font>
+
+    """
+
+    Calcula o débito urinário e fornece uma classificação.
+
+
+
+    Attributes:
+
+        volume_urina (float): Volume de urina produzido em mililitros.
+
+        tempo (float): Tempo decorrido para a produção de urina em minutos.
+
+
+
+    Returns:
+
+        tuple: Uma tupla contendo o débito urinário calculado em mililitros por minuto e sua classificação.
+
+            O primeiro elemento é o débito urinário calculado.
+
+            O segundo elemento é uma string representando a classificação do débito urinário, que pode ser:
+
+                - 'muito baixo': se o débito urinário for menor que 0.5 ml/min,
+
+                - 'baixo': se o débito urinário estiver entre 0.5 e 1.0 ml/min,
+
+                - 'normal': se o débito urinário estiver entre 1.0 e 2.0 ml/min,
+
+                - 'alto': se o débito urinário estiver entre 2.0 e 3.0 ml/min,
+
+                - 'muito alto': se o débito urinário for maior que 3.0 ml/min.
+
+    """
+
+
+
+```python
+
+entrada: resultado = calcular_debito_urinario(5,2,"simple")
+
+         print(resultado_simple)
+
+
+
+saida: (2.5, 'Produção de urina muito alta')
+
+```
+
+
+
+```python
+
+entrada: resultado_simple = calcular_debito_urinario(100, 60, 'advanced')
+
+         print(resultado_simple)
+
+
+
+saida: 1.0
+
+```
+
+
+
+```python
+
+entrada: resultado_simple = calcular_debito_urinario(100, 60, 'simple')
+
+         print(resultado_simple)
+
+
+
+saida: (1.0, 'Produção de urina baixa')
+
+```
+
+
+
+### <font color="orange">def calcular_fcm(<font color="green">idade, sexo</font>):</font>
+
+ 
+
+    """
+
+    Analisa a Frequência Cardíaca Máxima (FCM) com base na idade e sexo.
+
+
+
+    Attributes:
+
+        idade (int): Idade da pessoa.
+
+        sexo (str): Sexo da pessoa, pode ser 'masculino' ou 'feminino'.
+
+
+
+    Returns:
+
+        tuple: Uma tupla contendo a Frequência Cardíaca Máxima (FCM) e sua categoria de intensidade.
+
+            O primeiro elemento é a Frequência Cardíaca Máxima (FCM) calculada.
+
+            O segundo elemento é uma string representando a categoria de intensidade, que pode ser:
+
+                - 'muito baixa': se a FCM estiver abaixo de 50% da FCM máxima esperada para a idade,
+
+                - 'baixa': se a FCM estiver entre 50% e 60% da FCM máxima esperada para a idade,
+
+                - 'normal': se a FCM estiver entre 60% e 70% da FCM máxima esperada para a idade,
+
+                - 'alta': se a FCM estiver entre 70% e 80% da FCM máxima esperada para a idade,
+
+                - 'muito alta': se a FCM estiver acima de 80% da FCM máxima esperada para a idade.
+
+    """
+
+
+
+```python
+
+entrada: resultado = calcular_fcm(22,"feminino")
+
+         print(resultado)
+
+         
+
+saida: Alta
+
+```
+
+```python
+
+entrada: resultado = calcular_fcm(16,"masculino")
+
+         print(resultado)
+
+         
+
+saida: Muito alta
+
+```
+
+```python
+
+entrada: resultado = calcular_fcm(22,"feminino",'advanced')
+
+         print(resultado)
+
+         
+
+saida: 198
+
+```
+
+
+
+### <font color="orange">def calcular_frequencia_respiratoria(<font color="green">fr, idade</font>):</font>
+
+    """
+
+    Calcula a frequência respiratória e determina em qual categoria se enquadra.
+
+
+
+    Attributes:
+
+        fr (int): Frequência respiratória (número de respirações por minuto).
+
+        idade (int): Idade do indivíduo.
+
+
+
+    Returns:
+
+        str: Categoria da frequência respiratória, que pode ser:
+
+            - 'muito baixa': se a frequência respiratória estiver significativamente abaixo da média para a idade,
+
+            - 'baixa': se a frequência respiratória estiver abaixo da média para a idade,
+
+            - 'normal': se a frequência respiratória estiver dentro da faixa considerada normal para a idade,
+
+            - 'alta': se a frequência respiratória estiver acima da média para a idade,
+
+            - 'muito alta': se a frequência respiratória estiver significativamente acima da média para a idade.
+
+    """
+
+```python
+
+
+
+idade = 25
+
+frequencia_respiratoria = 22
+
+
+
+entrada: categoria_fr = calcular_frequencia_respiratoria(frequencia_respiratoria, idade)
+
+         print("Categoria da Frequência Respiratória:", categoria_fr)
+
+         
+
+saida: Categoria da Frequência Respiratória: muito alta
+
+```
+
+```python
+
+idade = 56
+
+frequencia_respiratoria = 17
+
+
+
+entrada: categoria_fr = calcular_frequencia_respiratoria(frequencia_respiratoria, idade)
+
+         print("Categoria da Frequência Respiratória:", categoria_fr)
+
+         
+
+saida: Categoria da Frequência Respiratória: normal
+
+```
+
+
+
+
+
+### <font color="orange">def calcular_indice_apgar(<font color="green">cor, frequencia_cardiaca, respiracao, tonus_muscular, reflexos,saida</font>):</font>
+
+
+
+
+
+    """
+
+    Calcula o Índice de Apgar com base nos critérios fornecidos.
+
+
+
+    Attributes:
+
+        cor (int): Nota de 0 a 5 referente à cor da pele.
+
+        frequencia_cardiaca (int): Nota de 0 a 5 referente à frequência cardíaca.
+
+        respiracao (int): Nota de 0 a 5 referente à respiração.
+
+        tonus_muscular (int): Nota de 0 a 5 referente ao tônus muscular.
+
+        reflexos (int): Nota de 0 a 5 referente aos reflexos.
+
+
+
+    Returns:
+
+        int: Índice de Apgar total, representando a saúde do recém-nascido no momento do nascimento.
+
+    """
+
+```python
+
+cor = 4
+
+frequencia_cardiaca = 5
+
+respiracao = 3
+
+tonus_muscular = 5
+
+reflexos = 4
+
+
+
+entrada: indice_apgar_total = calcular_indice_apgar(cor, frequencia_cardiaca, respiracao, tonus_muscular, reflexos,saida = "advanced")
+
+         print("Classificação do Índice de Apgar:", indice_apgar_total)
+
+
+
+saida: Classificação do Índice de Apgar: 4.2
+
+```
+
+
+
+```python
+
+cor = 4
+
+frequencia_cardiaca = 5
+
+respiracao = 3
+
+tonus_muscular = 5
+
+reflexos = 4
+
+
+
+entrada: indice_apgar_total = calcular_indice_apgar(cor, frequencia_cardiaca, respiracao, tonus_muscular, reflexos,saida = "simple")
+
+         print("Classificação do Índice de Apgar:", indice_apgar_total)
+
+
+
+saida: Classificação do Índice de Apgar: ótimo
+
+```
+
+
+
+### <font color="orange">def calcular_tfg(<font color="green">creatinina_serica, idade, sexo='masculino', raca='não negra', output='ml/min/1.73m^2'</font>):</font>
+
+
+
+
+
+    """
+
+    Calcula a Taxa de Filtração Glomerular (TFG) utilizando a fórmula do MDRD.
+
+
+
+    Attributes:
+
+        creatinina_serica (float): Valor da creatinina sérica em mg/dL.
+
+        idade (int): Idade do paciente em anos.
+
+        sexo (str): Sexo do paciente ('masculino' ou 'feminino'). Padrão é masculino.
+
+        raca (str): Raça do paciente ('negra' ou 'não negra'). Padrão é não negra.
+
+        output (str): Tipo de saída desejado ('ml/min/1.73m^2' ou 'ml/min'). Padrão é ml/min/1.73m^2.
+
+
+
+    Returns:
+
+        float: Valor da TFG calculada.
+
+    """
+
+```python
+
+entrada: tfg = calcular_tfg(1.2, 30, sexo='masculino', raca='negra', output='ml/min/1.73m^2')
+
+print("TFG:", tfg)
+
+
+
+saida: TFG: 149.0582434290478
+
+```
+
+
+
+```python
+
+entrada: tfg = calcular_tfg(1.2, 60, sexo='feminino', raca='nao negra', output='ml/min/1.73m^2')
+
+print("TFG:", tfg)
+
+
+
+saida: TFG: 79.27718037174775
+
+```
+
+
+
+
+
+### <font color="orange">def calcular_tp(<font color="green">tempo_protrombina, saida='advanced'</font>):</font>
+
+
+
+    """
+
+    Calcula o Tempo de Protrombina (TP) e fornece uma classificação opcional.
+
+
+
+    Attributes:
+
+        tempo_protrombina (float): Tempo de Protrombina em segundos.
+
+        saida (str): Tipo de saída desejado ('advanced' para detalhes completos ou 'simple' para classificação simplificada).
+
+                     Padrão é 'advanced'.
+
+
+
+    Returns:
+
+        float or tuple: Resultado do TP. Se saida='simple', retorna apenas o resultado. Se saida='advanced',
+
+                        retorna o resultado e uma classificação opcional.
+
+    """
+
+```python
+
+entrada: resultado_simple = calcular_tp(12.5, saida='simple')
+
+         print(resultado_simple) 
+
+
+
+saida: Normal
+
+```
+
+
+
+```python
+
+entrada: resultado_advanced = calcular_tp(11.8,'advanced')
+
+         print(resultado_advanced)  
+
+
+
+saida: (11.8, 'Normal')
+
+```
+
+
+
+
+
+### <font color="orange">def calcular_ttpa(<font color="green">tempo_tromboplastina, saida='advanced'</font>):</font>
+
+
+
+
+
+    """
+
+    Calcula o Tempo de Tromboplastina Parcial Ativada (TTPA) e fornece uma classificação opcional.
+
+
+
+    Attributes:
+
+        tempo_tromboplastina (float): Tempo de Tromboplastina Parcial Ativada em segundos.
+
+        saida (str): Tipo de saída desejado ('advanced' para detalhes completos ou 'simple' para classificação simplificada).
+
+                     Padrão é 'advanced'.
+
+
+
+    Returns:
+
+        float or tuple: Resultado do TTPA. Se saida='simple', retorna apenas o resultado. Se saida='advanced',
+
+                        retorna o resultado e uma classificação opcional.
+
+    """
+
+```python
+
+entrada: resultado_simple = calcular_ttpa(30.0, saida='simple')
+
+         print(resultado_simple)  
+
+
+
+saida: Normal
+
+```
+
+
+
+```python
+
+entrada: resultado_advanced = calcular_ttpa(32.5,saida = 'advanced')
+
+         print(resultado_advanced) 
+
+         
+
+saida: 32.5
+
+```
+
+
+
+
+
+### <font color="orange">def teste_capacidade_anaerobica(<font color="green">tempo_em_minutos</font>):</font>
+
+
+
+
+
+    """
+
+    Avalia a capacidade anaeróbica com base no tempo de realização do teste de correr 1 km.
+
+
+
+    Attributes:
+
+        tempo_em_minutos (float): Tempo em minutos que a pessoa levou para realizar o teste.
+
+
+
+    Returns:
+
+        str: Classificação do desempenho (muito baixo, baixo, normal, alto, muito alto).
+
+    """
+
+```python
+
+tempo_teste = 15
+
+
+
+entrada: resultado = teste_capacidade_anaerobica(tempo_teste)
+
+         print("Resultado do teste de capacidade anaeróbica:", resultado)
+
+
+
+saida: Resultado do teste de capacidade anaeróbica: Muito Lento
+
+```
+
+```python
+
+tempo_teste = 9
+
+
+
+entrada: resultado = teste_capacidade_anaerobica(tempo_teste)
+
+         print("Resultado do teste de capacidade anaeróbica:", resultado)
+
+
+
+saida: Resultado do teste de capacidade anaeróbica: Bom
+
+```
+
+
+
+
+
+### <font color="orange">def teste_capacidade_anaerobica(<font color="green">spo2</font>):</font>
+
+
+
+
+
+
+
+    """
+
+    Classifica a saturação de oxigênio (SpO2) em categorias.
+
+
+
+    Attributes:
+
+        spo2 (float): Saturação de oxigênio em porcentagem (%).
+
+
+
+    Returns:
+
+        str: Categoria da saturação de oxigênio.
+
+    """
+
+```python
+
+entrada: resultado = classificar_spo2(92)
+
+         print(resultado)
+
+
+
+saida:
+
+Saturação de oxigênio normal baixa
+
+Resultado do teste de capacidade anaeróbica: Saturação de oxigênio normal baixa
+
+```
+
+```python
+
+entrada:resultado = classificar_spo2(88)
+
+print(resultado)
+
+
+
+saida:
+
+Baixa saturação de oxigênio
+
+Resultado do teste de capacidade anaeróbica: Baixa saturação de oxigênio
+
+```
+
+
+
+### <font color="orange">def teste_funcao_tireoidiana(<font color="green">tsh, t4_total, t4_livre, t3_total, t3_livre, saida='advanced'</font>):</font>
+
+
+
+
+
+    """
+
+    Avalia a função da tireoide medindo os níveis de hormônios tireoidianos no sangue.
+
+
+
+    Attributes:
+
+        tsh (float): Valor do hormônio estimulante da tireoide (TSH) em mIU/L.
+
+        t4_total (float): Valor do hormônio tiroxina total (T4 Total) em nmol/L.
+
+        t4_livre (float): Valor do hormônio tiroxina livre (T4 Livre) em ng/dL.
+
+        t3_total (float): Valor do hormônio tri-iodotironina total (T3 Total) em nmol/L.
+
+        t3_livre (float): Valor do hormônio tri-iodotironina livre (T3 Livre) em pg/mL.
+
+        saida (str): Tipo de saída desejado ('advanced' ou 'simple').
+
+
+
+    Returns:
+
+        str or tuple: Resultado do teste de função tireoidiana. Se 'saida' for 'simple', retorna apenas o resultado. Se 'saida' for 'advanced', retorna o resultado detalhado.
+
+    """
+
+```python
+
+entrada: resultado = teste_funcao_tireoidiana(tsh=2.5, t4_total=110, t4_livre=15, t3_total=2.2, t3_livre=4.5, saida='simple')
+
+         print(resultado)
+
+
+
+saida:
+
+TSH: 2.5 - Classificação: Baixo
+
+T4 Total: 110 - Classificação: Baixo
+
+T4 Livre: 15 - Classificação: Muito alto
+
+T3 Total: 2.2 - Classificação: Normal
+
+T3 Livre: 4.5 - Classificação: Normal
+
+```
+
+
+
+
+
+### <font color="orange">def analisar_status(<font color="green">valor, referencia</font>):</font>
+
+
+
+    """
+
+    Analisa o status de um valor em relação a uma faixa de referência.(teste_funcao_tireoidiana())
+
+
+
+    Attributes:
+
+        valor (float): O valor a ser analisado.
+
+        referencia (list): A faixa de referência na forma [min, max].
+
+
+
+    Returns:
+
+        str: O status do valor em relação à faixa de referência.
+
+    """
+
+
+
+### <font color="orange">def classificar_espirometria(<font color="green">fe_v1, cvf, sexo, idade</font>):</font>
+
+
+
+
+
+    """
+
+    Analisa os resultados de uma espirometria e fornece uma avaliação básica.
+
+
+
+    Attributes:
+
+        fe_v1 (float): Volume Expiratório Forçado no Primeiro Segundo (em litros).
+
+        cvf (float): Capacidade Vital Forçada (em litros).
+
+        sexo (str): Sexo da pessoa ('masculino' ou 'feminino').
+
+        idade (int): Idade da pessoa (em anos).
+
+
+
+    Returns:
+
+        str: Uma string indicando a avaliação básica dos resultados.
+
+    """
+
+```python
+
+entrada: resultado_analise = classificar_espirometria(3.0, 4.0, 'masculino', 35)
+
+         print(resultado_analise)
+
+
+
+saida:Possível restrição pulmonar.
+
+```
+
+```python
+
+entrada: resultado_analise = classificar_espirometria(5.0, 4.0, 'feminino', 35)
+
+         print(resultado_analise)
+
+
+
+saida: Valores normais.
+
+```
+
+
+
+### <font color="orange">def classificar_glicemia(<font color="green">glicemia</font>):</font>
+
+
+
+
+
+    """
+
+    Classifica a concentração de glicose no sangue (glicemia) em categorias.
+
+
+
+    Attributes:
+
+        glicemia (float): Concentração de glicose no sangue em mg/dL.
+
+
+
+    Returns:
+
+        str: Categoria da glicemia.
+
+    """
+
+```python
+
+entrada: resultado = classificar_glicemia(139)
+
+         print(resultado)
+
+
+
+saida:Diabetes (Muito alta)
+
+```
+
+```python
+
+entrada: resultado = classificar_glicemia(98)
+
+         print(resultado)
+
+
+
+saida:Normal
+
+```
+
+
+
+
+
+### <font color="orange">def classificar_pvc(<font color="green">pvc</font>):</font>
+
+
+
+    """
+
+    Classifica a Pressão Venosa Central (PVC) em categorias.
+
+
+
+    Attributes:
+
+        pvc (float): Pressão Venosa Central em mmHg.
+
+
+
+    Returns:
+
+        str: Categoria da PVC.
+
+    """
+
+```python
+
+presao_venosa_central = 5.0  
+
+entrada: categoria_pvc = classificar_pvc(presao_venosa_central)
+
+         print("Categoria da Pressão Venosa Central:", categoria_pvc)
+
+
+
+saida:Categoria da Pressão Venosa Central: Baixa
+
+```
+
+```python
+
+presao_venosa_central = 5.0  
+
+entrada: categoria_pvc = classificar_pvc(presao_venosa_central)
+
+         print("Categoria da Pressão Venosa Central:", categoria_pvc)
+
+
+
+saida:Categoria da Pressão Venosa Central: Muito baixa
+
+```
+
+
+
+
+
+### <font color="orange">def contar_hemacias(<font color="green">numero_hemacias, sexo,saida</font>):</font>
+
+
+
+    """
+
+    Conta o número de hemácias no sangue e retorna uma métrica de 0 a 25.
+
+
+
+    Attributes:
+
+        numero_hemacias (float): Número de hemácias em milhões por microlitro (milhões/μL).
+
+        sexo (str): Sexo da pessoa ('masculino' ou 'feminino').
+
+
+
+    Returns:
+
+        float: Métrica de 0 a 25 representando o número de hemácias.
+
+    """
+
+```python
+
+entrada: resultado_hemacias = contar_hemacias(8.2, "masculino","simple")
+
+         print("Métrica de hemácias:", resultado_hemacias)
+
+
+
+saida:
+
+Muito Alta
+
+Métrica de hemácias: 20.499999999999996
+
+```
+
+```python
+
+entrada: resultado_hemacias = contar_hemacias(8.9, "feminino","advanced")
+
+print("Métrica de hemácias:", resultado_hemacias)
+
+
+
+saida: Métrica de hemácias: 22.708333333333336
+
+```
+
+
+
+### <font color="orange">def contar_leucocitos(<font color="green">numero_leucocitos,saida</font>):</font>
+
+
+
+    """
+
+    Conta o número de glóbulos brancos no sangue e retorna uma métrica de 0 a 25.
+
+
+
+    Attributes:
+
+        numero_leucocitos (float): Número de glóbulos brancos em milhares por microlitro (milhares/µL).
+
+        saida (str): Define o tipo de saída desejada ('simple' para uma classificação simplificada).
+
+
+
+    Returns:
+
+        float: Métrica de 0 a 25 representando o número de glóbulos brancos.
+
+    """
+
+```python
+
+entrada: resultado_hemacias = contar_leucocitos(7.0,"simple")
+
+         print(resultado_hemacias)
+
+
+
+saida:
+
+Normal
+
+6.25
+
+```
+
+```python
+
+entrada: resultado_hemacias = contar_leucocitos(9.0,"simple")
+
+         print(resultado_hemacias)
+
+
+
+saida:
+
+Alta
+
+9.375
+
+```
+
+
+
+### <font color="orange">def contar_plaquetas(<font color="green">numero_plaquetas,saida</font>):</font>
+
+
+
+
+
+    """
+
+    Conta o número de plaquetas no sangue e retorna uma métrica de 0 a 25.
+
+
+
+    Attributes:
+
+        numero_plaquetas (float): Número de plaquetas por microlitro (por μL).
+
+        saida (str): Indica o tipo de saída desejada ('simple' para uma classificação simplificada).
+
+
+
+    Returns:
+
+        float: Métrica de 0 a 25 representando o número de plaquetas.
+
+    """
+
+```python
+
+entrada: resultado = contar_plaquetas(1000000,"simple")
+
+         print(resltado)
+
+
+
+saida:
+
+extremamente Alta
+
+25
+
+```
+
+```python
+
+entrada: resultado = contar_plaquetas(900000,"simple")
+
+         print(resltado)
+
+
+
+saida:
+
+extremamente Alta
+
+22.5
+
+```
+
+```python
+
+entrada: resultado = contar_plaquetas(300000,"simple")
+
+         print(resltado)
+
+
+
+saida:
+
+Baixa
+
+9.375
+
+```
+
+
+
+```python
+
+entrada: resltado = contar_plaquetas(450000,"advanced")
+
+         print(resltado)
+
+
+
+saida:12.5
+
+```
+
+
+
+
+
+### <font color="orange">def teste_capacidade_anaerobica(<font color="green">ast, alt, alp, bilirrubina_total, bilirrubina_direta, bilirrubina_indireta, saida='advanced'</font>):</font>
+
+
+
+    """
+
+    Avalia a saúde do fígado com base nos níveis de enzimas hepáticas e bilirrubina no sangue.
+
+
+
+    Attributes:
+
+        ast (float): Nível da enzima AST (aspartato aminotransferase) no sangue em U/L.
+
+        alt (float): Nível da enzima ALT (alanina aminotransferase) no sangue em U/L.
+
+        alp (float): Nível da enzima ALP (fosfatase alcalina) no sangue em U/L.
+
+        bilirrubina_total (float): Nível total de bilirrubina no sangue em mg/dL.
+
+        bilirrubina_direta (float): Nível de bilirrubina direta no sangue em mg/dL.
+
+        bilirrubina_indireta (float): Nível de bilirrubina indireta no sangue em mg/dL.
+
+        saida (str): Tipo de saída desejado ('advanced' para detalhado ou 'simple' para resumido).
+
+
+
+    Returns:
+
+        dict or str: Se 'saida' for 'advanced', retorna um dicionário com os resultados detalhados.
+
+                     Se 'saida' for 'simple', retorna uma classificação simplificada da função hepática.
+
+    """
+
+```python
+
+entrada: resultado = teste_funcao_hepatica(ast=30, alt=40, alp=100, bilirrubina_total=1.0, bilirrubina_direta=0.2, bilirrubina_indireta=0.8, saida='simple')
+
+         print(resultado)
+
+
+
+saida:Normal
+
+```
+
+```python
+
+entrada: resultado = teste_funcao_hepatica(ast=30, alt=40, alp=100, bilirrubina_total=1.0, bilirrubina_direta=0.2, bilirrubina_indireta=0.8, saida='advanced')
+
+         print(resultado)
+
+
+
+saida:{'resultado': 'Normal', 'detalhes': 'A função hepática está dentro dos limites normais.'}
+
+```
+
+
+
+
+
+### <font color="orange">def teste_funcao_renal(<font color="green">creatinina, ureia, saida</font>):</font>
+
+
+
+
+
+    """
+
+    Avalia a saúde dos rins com base nos níveis de creatinina e ureia no sangue.
+
+
+
+    Attributes:
+
+        creatinina (float): Nível de creatinina no sangue em mg/dL.
+
+        ureia (float): Nível de ureia no sangue em mg/dL.
+
+        saida (str): Tipo de saída desejado ('advanced' para detalhado ou 'simple' para resumido).
+
+
+
+    Returns:
+
+        dict or str: Se 'saida' for 'advanced', retorna um dicionário com os resultados detalhados.
+
+                     Se 'saida' for 'simple', retorna uma classificação simplificada da função renal.
+
+    """
+
+
+
+```python
+
+entrada: resultado = teste_funcao_renal(0.2,1.2,'advanced')
+
+         print(resultado)
+
+
+
+saida:Normal
+
+```
+
+```python
+
+entrada: resultado = teste_funcao_renal(0.2,1.2,'simple')
+
+         print(resultado)
+
+
+
+saida:{'resultado': 'Normal', 'detalhes': 'A função renal está dentro dos limites normais.'}
+
+```
+
+
+
+
+
+### <font color="orange">def verifica_pressão_arterial(<font color="green">sistólica, diastólica, sexo, idade, saida='simple'</font>):</font>
+
+
+
+    """
+
+    Verifica a pressão arterial e fornece uma classificação baseada nos valores da pressão sistólica e diastólica, sexo e idade.
+
+
+
+    Attributes:
+
+        sistolica (int): Valor da pressão arterial sistólica.
+
+        diastolica (int): Valor da pressão arterial diastólica.
+
+        sexo (str): Sexo da pessoa ('masculino' ou 'feminino').
+
+        idade (int): Idade da pessoa em anos.
+
+        saida (str): Tipo de saída desejado ('simple' para apenas o valor da classificação ou 'advanced' para a descrição completa).
+
+
+
+    Returns:
+
+        str or float: Se 'saida' for 'simple', retorna a classificação da pressão arterial (muito baixa, baixa, normal, elevada, estágio 1 ou estágio 2).
+
+                      Se 'saida' for 'advanced', retorna o valor da classificação de acordo com a faixa de referência.
+
+    """
+
+```python
+
+entrada: resultado = verifica_pressão_arterial(85,55,"masculino", 45,'advanced')
+
+         print(resultado)
+
+
+
+saida:Pressão arterial baixa
+
+```
+
+```python
+
+entrada: resultado = verifica_pressão_arterial(100,70,"feminino", 50,'advanced')
+
+         print(resultado)
+
+
+
+saida:Pressão arterial normal
+
+```
+
+```python
+
+entrada = resultado = verifica_pressão_arterial(110,80,"feminino", 44,'simple')
+
+          print(resultado)
+
+
+
+saida: 18 
+
+```
+
+
+
+
+
+### <font color="orange">def medir_pressão_arterial(<font color="green">sistólica, diastólica</font>):</font>
+
+
+
+
+
+    """
+
+    Classifica a pressão arterial com base nos valores da pressão sistólica e diastólica.(verifica_pressão_arterial)
+
+
+
+    Attributes:
+
+        sistolica (int): Valor da pressão arterial sistólica.
+
+        diastolica (int): Valor da pressão arterial diastólica.
+
+
+
+    Returns:
+
+        str: Classificação da pressão arterial, que pode ser 'Pressão arterial normal', 'Pressão arterial elevada', 'Pressão arterial de estágio 1' ou 'Pressão arterial de estágio 2'.
+
+    """
+
+
+
+### <font color="orange">def verifica_imc(<font color="green">peso, altura, sexo, saida</font>):</font>
+
+
+
+
+
+    """
+
+    Calcula o Índice de Massa Corporal (IMC).
+
+
+
+    Attributes:
+
+        peso (float): Peso da pessoa em quilogramas (kg).
+
+        altura (float): Altura da pessoa em metros (m).
+
+        sexo (str): Sexo da pessoa ('masculino' ou 'feminino').
+
+        saida (str): Tipo de saída desejado ('simple' ou outro valor para saída avançada).
+
+
+
+    Returns:
+
+        float or dict: Valor do IMC calculado. Se 'saida' for 'simple', retorna apenas o valor do IMC.
+
+                       Se 'saida' for outro valor, retorna um dicionário com o IMC e uma classificação do estado de peso.
+
+    """
+
+```python
+
+entrada: resultado_simple = verifica_imc(70, 1.80, "masculino", "simple")
+
+         print(resultado_simple)
+
+
+
+saida:normal
+
+```
+
+```python
+
+entrada: resultado = verifica_imc(70, 1.50, "masculino", "simple")
+
+         print(resultado)
+
+
+
+saida:obesidade
+
+```
+
+
+
+```python
+
+entrada: resultado = verifica_imc(90, 1.50, "masculino", "simple")
+
+         print(resultado)
+
+
+
+saida:obesidade morbida
+
+```
+
+
+
+## Referências
+
+[Calculo MDRD](https://www.revportcardiol.org/pt-taxa-filtracao-glomerular-que-formula-articulo-S0870255112001096#:~:text=Para%20cada%20doente%2C%20foi%20calculado,valores%20do%20score%20de%20GRACE.)
+
+
+
+[Calculadora IMC](https://www.nutryun.com.br/tabela-imc)
+
+
+
+[Taxa de Filtração Glomerular Estimada](https://www.rbac.org.br/artigos/taxa-de-filtracao-glomerular-estimada-em-adultos/#:~:text=A%20taxa%20de%20filtra%C3%A7%C3%A3o%20glomerular%20(TFG)%20%C3%A9%20a%20medida%20da,da%20avalia%C3%A7%C3%A3o%20da%20fun%C3%A7%C3%A3o%20renal.)
+
+
+
+[Contagem Global de Leucócitos](https://www.biomedicinapadrao.com.br/2011/09/contagem-global-de-leucocitos.html)
+
+
+
+[Hemácias](https://www.tuasaude.com/hemacias/)
+
+
+
+[Contagem de Plaquetas](https://medicoresponde.com.br/para-que-serve-a-contagem-das-plaquetas-e-como-entender-os-resultados/)
+
+
+
+[Plaquetas Baixas - CUF](https://www.cuf.pt/mais-saude/plaquetas-baixas-o-que-pode-significar)
+
+
+
+[Zona de Frequência Cardíaca de Treino](https://altaperformanceciclismo.com.br/passo-a-passo-de-como-calcular-sua-zona-de-frequencia-cardiaca-de-treino/#:~:text=A%20f%C3%B3rmula%20%C3%A9%20simples%20FCMax,188bpm%20(batidas%20por%20minuto).)
+
+
+
+[Débito Cardíaco - Significados](https://www.significados.com.br/debito-cardiaco/#:~:text=DC%20%3D%20FC%20x%20VS&text=Por%20exemplo%3A%20se%20o%20cora%C3%A7%C3%A3o,litros%20de%20sangue%20por%20minuto).)
+
+
+
+[Débito Cardíaco - Blog Memed](https://blog.memed.com.br/o-que-e-debito-cardiaco/)
+
+
+
+[Tempo de Tromboplastina Parcial Ativada (TTPA) - Rede D'Or São Luiz](https://www.rededorsaoluiz.com.br/exames-e-procedimentos/analises-clinicas/ttpa)
+
+
+
+[Tempo de Tromboplastina Parcial Ativada (TTPA) - Fleury](https://www.fleury.com.br/medico/exames/tempo-de-tromboplastina-parcial-ativada-urgente-optica-plasma)
+
+
+
+[Análise da Hemostasia - Kasvi](https://kasvi.com.br/analise-da-hemostasia/)
+
+
+
+[Escala de Apgar - Saúde CE](https://www.saude.ce.gov.br/2023/04/13/primeiros-minutos-de-vida-escala-de-apgar-auxilia-na-assistencia-neonatal/#:~:text=A%20pediatra%20e%20neonatologista%20Ana,irritabilidade%20reflexa%20e%20t%C3%B4nus%20muscular.)
+
+
+
+[Escala de Apgar - Saúde CE (outra fonte)](https://www.saude.ce.gov.br/2023/04/13/primeiros-minutos-de-vida-escala-de-apgar-auxilia-na-assistencia-neonatal/)
+
+
+
+[Índice de Apgar - CUF](https://www.cuf.pt/mais-saude/o-que-e-o-indice-de-apgar)
+
+
+
+[Escala de Apgar - Medicina UFMG](https://www.medicina.ufmg.br/observaped/escala-de-apgar/)
+
+
+
+[Pressão Venosa Central (PVC)](https://blog.portaleducacao.com.br/pressao-venosa-central-pvc/#:~:text=A%20PVC%20%C3%A9%20uma%20medida,t%C3%B4nus%20vasomotor%20e%20press%C3%A3o%20intrator%C3%A1cica.&text=Cintra%20(2003)%20refor%C3%A7a%20que%20o,diast%C3%B3lica%20final%20do%20ventr%C3%ADculo%20direito.)
+
+
+
+[Glicemia - Dasa](https://dasa.com.br/blog/saude/glicemia/#:~:text=A%20glicemia%20%C3%A9%20a%20concentra%C3%A7%C3%A3o,de%20glicemia%20e%20evitar%20complica%C3%A7%C3%B5es.)
+
+
+
+[Valores Normais da Glicemia - ABESO](https://abeso.org.br/qual-o-valor-normal-da-glicemia-saiba-o-que-e-e-como-medir-corretamente/)
+
+
+
+[Glicose - Delboni Auriemo](https://delboniauriemo.com.br/saude/glicose)
+
+
+
+
+
+
+
+
+
