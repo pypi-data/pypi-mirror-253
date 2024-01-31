@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+qeapp_xps/__init__.py
+qeapp_xps/result.py
+qeapp_xps/setting.py
+qeapp_xps/workchain.py
+qeapp_xps.egg-info/PKG-INFO
+qeapp_xps.egg-info/SOURCES.txt
+qeapp_xps.egg-info/dependency_links.txt
+qeapp_xps.egg-info/entry_points.txt
+qeapp_xps.egg-info/requires.txt
+qeapp_xps.egg-info/top_level.txt
