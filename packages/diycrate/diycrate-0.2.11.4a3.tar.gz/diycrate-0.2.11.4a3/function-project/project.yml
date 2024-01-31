@@ -1,0 +1,21 @@
+parameters: {}
+environment: {}
+packages:
+    - name: sample
+      shared: false
+      environment: {}
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: hello
+          binary: false
+          main: "main"
+          runtime: python:3.11
+          web: "raw"
+          webSecure: false
+          parameters: {}
+          environment:
+            CLIENT_ID: "${CLIENT_ID}"
+            CLIENT_SECRET: "${CLIENT_SECRET}"
+          annotations: {}
+          limits: {}
