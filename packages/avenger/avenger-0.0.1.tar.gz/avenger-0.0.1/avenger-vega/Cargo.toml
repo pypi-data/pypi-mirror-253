@@ -1,0 +1,45 @@
+[package]
+name = "avenger-vega"
+version = "0.0.1-a1"
+edition = "2021"
+
+[features]
+image-request = [ "reqwest",]
+
+[dependencies]
+cfg-if = "1"
+csscolorparser = "0.6.2"
+
+[dependencies.avenger]
+path = "../avenger"
+version = "0.0.1-a1"
+
+[dependencies.thiserror]
+workspace = true
+
+[dependencies.serde]
+workspace = true
+
+[dependencies.serde_json]
+version = "1.0.111"
+
+[dependencies.lyon_extra]
+workspace = true
+
+[dependencies.lyon_path]
+workspace = true
+features = [ "serialization",]
+
+[dependencies.image]
+workspace = true
+default-features = false
+features = [ "png",]
+
+[dependencies.reqwest]
+version = "0.11.23"
+features = [ "blocking", "rustls",]
+optional = true
+
+[dependencies.pyo3]
+workspace = true
+optional = true
