@@ -1,0 +1,10 @@
+ua_banktools/banks/__init__.py,sha256=30m-JYvF7GLGtRL1NTsvOCAbo17SDbtdBv5YCYGoZIY,42
+ua_banktools/banks/base.py,sha256=SX-dxNniMKEfUWiZK7h7KvxoyhGwntmUJ1kNGDuaZFs,1019
+ua_banktools/banks/privatbank.py,sha256=Iv_f_0WDeTUDLbHa8OODa9K5wre6ltuxqc6NWPagSGA,3059
+ua_banktools/banks/privatbank_types.py,sha256=wmn7iVIv3VdCW7mxlJ--wx5ZN57jC_C5j6KbaeLK2u4,4127
+ua_banktools/core/__init__.py,sha256=rvWyMXLlI_LBZEGObA2-AilcyV-cp97I_HyCTHuSjMA,21
+ua_banktools/core/ipn.py,sha256=2Zr5Zo5tWuHHAIeUHVOQC6UW21c64VL2gE13WGaAN0U,2885
+ua_banktools-0.0.6.dist-info/LICENSE,sha256=JvnmxTU9BIw5qfGKfInPWebtA4FPQDnd_7MWz2iCYW4,1072
+ua_banktools-0.0.6.dist-info/METADATA,sha256=WDBae7I7dj8bacG4NXlvrPtfNa49VppAKnex7l48qIM,615
+ua_banktools-0.0.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ua_banktools-0.0.6.dist-info/RECORD,,
