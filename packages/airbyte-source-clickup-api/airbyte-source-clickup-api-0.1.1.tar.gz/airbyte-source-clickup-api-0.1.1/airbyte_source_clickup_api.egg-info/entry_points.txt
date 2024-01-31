@@ -1,0 +1,2 @@
+[console_scripts]
+source-clickup-api = source_clickup_api.run:run
