@@ -1,0 +1,2 @@
+[console_scripts]
+source-coda = source_coda.run:run
