@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: dependency-injector-fork
+Version: 4.42.1
+Summary: Dependency injection framework for Python
+Home-page: https://github.com/ets-labs/python-dependency-injector
+Download-URL: https://pypi.python.org/pypi/dependency_injector
+Author: Roman Mogylatov
+Author-email: rmogilatov@gmail.com
+Maintainer: Roman Mogylatov
+Maintainer-email: rmogilatov@gmail.com
+License: BSD New
+Keywords: Dependency injection,DI,Inversion of Control,IoC,Factory,Singleton,Design patterns,Flask
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: Bottle
+Classifier: Framework :: Django
+Classifier: Framework :: Flask
+Classifier: Framework :: Pylons
+Classifier: Framework :: Pyramid
+Classifier: Framework :: Pytest
+Classifier: Framework :: TurboGears
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE.rst
+Requires-Dist: six <=1.16.0,>=1.7.0
+Provides-Extra: aiohttp
+Requires-Dist: aiohttp ; extra == 'aiohttp'
+Provides-Extra: flask
+Requires-Dist: flask ; extra == 'flask'
+Provides-Extra: pydantic
+Requires-Dist: pydantic ; extra == 'pydantic'
+Provides-Extra: yaml
+Requires-Dist: pyyaml ; extra == 'yaml'
+
+The sole purpose of this fork is to publish a package that supports python3.12.
+Like the author of the original library, I don't have a lot of free time right
+now, and I'm not sure that I can keep this fork up to date.
+
+Please use the [documentation](https://python-dependency-injector.ets-labs.org/) of the original library.
