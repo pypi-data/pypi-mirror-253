@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: gitlab-project-configurator
+Version: 5.8.4
+Summary: Manage, deploy and update your gitlab projects configuration as source.
+Author: Nestor
+Author-email: list.rsl_nestor@renault.com
+Requires-Python: >=3.8.2,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: anyconfig
+Requires-Dist: arrow (>=1.0)
+Requires-Dist: attrs
+Requires-Dist: bandit (>=1.7.5,<2.0.0)
+Requires-Dist: boltons
+Requires-Dist: click (>=7)
+Requires-Dist: click-config-file
+Requires-Dist: colorama
+Requires-Dist: dictns
+Requires-Dist: dotmap
+Requires-Dist: fastjsonschema
+Requires-Dist: gitchangelog (>=3.0.4,<4.0.0)
+Requires-Dist: gitpython
+Requires-Dist: jinja2 (>=2.1)
+Requires-Dist: jsonschema
+Requires-Dist: path
+Requires-Dist: python-gitlab (<3)
+Requires-Dist: pyyaml
+Requires-Dist: rfc3987
+Requires-Dist: rich (>=13.6.0,<14.0.0)
+Requires-Dist: ruamel.yaml
+Requires-Dist: seep
+Requires-Dist: sentry-sdk
+Requires-Dist: sortedcontainers
+Requires-Dist: strict-rfc3339
+Requires-Dist: structlog
+Requires-Dist: webcolors

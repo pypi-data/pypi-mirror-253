@@ -1,0 +1,126 @@
+[tool.poetry]
+name = "gitlab-project-configurator"
+version = "5.8.4"
+description = "Manage, deploy and update your gitlab projects configuration as source."
+authors = ["Nestor <list.rsl_nestor@renault.com>"]
+
+packages = [
+    { include="gpc", from="." },
+]
+
+[[tool.poetry.source]]
+name = "pypi"
+priority = "default"
+
+[tool.poetry.scripts]
+gpc = "gpc.cli:main"
+
+[tool.poetry.dependencies]
+python = ">=3.8.2,<4"
+sortedcontainers = "*"
+structlog = "*"
+boltons = "*"
+path = "*"
+attrs = "*"
+anyconfig = "*"
+"ruamel.yaml" = "*"
+pyyaml = "*"
+jsonschema = "*"
+gitpython = "*"
+python-gitlab = "<3"
+click = ">=7"
+dotmap = "*"
+fastjsonschema = "*"
+dictns = "*"
+colorama = "*"
+webcolors = "*"
+strict-rfc3339 = "*"
+rfc3987 = "*"
+seep = "*"
+sentry-sdk = "*"
+jinja2 = ">=2.1"
+arrow = ">=1.0"
+click-config-file = "*"
+gitchangelog = "^3.0.4"
+bandit = "^1.7.5"
+rich = "^13.6.0"
+
+[tool.poetry.group.analysis.dependencies]
+astroid = "*"
+bandit = "*"
+black = "*"
+flake8 = ">=5"
+flake8-comprehensions = ">=3.10"
+git-fame = "*"
+gitlint = "*"
+isort = "*"
+mypy = "*"
+pre-commit = "*"
+pycodestyle = ">=2.10"
+pydocstyle = "*"
+pyflakes = "*"
+pylint = "*"
+pylint-pytest = "*"
+pyupgrade = "*"
+rope = "*"
+typed-ast = "*"
+types-requests = "*"
+
+[tool.poetry.group.test.dependencies]
+behave = "*"
+mock = "*"
+pytest = "*"
+pyfakefs = "*"
+pytest-cov = "*"
+pytest-html = { version = "<4", python = ">=3.8.2,<4"}
+pytest-mock = "*"
+pytest-structlog = "*"
+pytest-watch = "*"
+
+[tool.poetry.group.doc.dependencies]
+docutils = "*"
+fspath = "*"
+myst-parser = ">=0.18"
+recommonmark = "*"
+markupsafe= "*"
+rstcheck = "*"
+sphinx = { version = "<7.2", python = ">=3.8.2,<4"}
+sphinx_rtd_theme = "*"
+sphinx-autodoc-annotation = "*"
+sphinx-autodoc-typehints = "*"
+sphinx-click = "*"
+sphinx-jsonschema = "*"
+sphinxcontrib-apidoc = "*"
+linuxdoc = "^20221127"
+commitizen = "*"
+
+
+[tool.isort]
+profile = "black"
+line_length = 100
+force_single_line = true
+atomic = true
+include_trailing_comma = true
+lines_after_imports = 2
+lines_between_types = 1
+use_parentheses = true
+filter_files = true
+
+known_third_party = ["setuptools"]
+known_first_party = "gpc"
+
+sections = [
+    "STDLIB",
+    "THIRDPARTY",
+    "FIRSTPARTY",
+    "LOCALFOLDER",
+]
+default_section = "THIRDPARTY"
+import_heading_stdlib = "Standard Library"
+import_heading_firstparty = "Gitlab-Project-Configurator Modules"
+import_heading_thirdparty = "Third Party Libraries"
+import_heading_deps = "RSWL Dependencies"
+
+
+[tool.black]
+line-length = 100
