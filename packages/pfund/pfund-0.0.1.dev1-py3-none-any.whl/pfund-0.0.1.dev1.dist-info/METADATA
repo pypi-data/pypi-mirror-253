@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pfund
+Version: 0.0.1.dev1
+Summary: Algo-Trading Framework for TradFi+CeFi+DeFi, supporting machine learning models, paper+live trading, vectorized+event-driven backtesting and hyperparameter tuning
+Home-page: https://pfund.ai
+License: Apache-2.0
+Keywords: trading,algo-trading,TradFi,CeFi,DeFi,portfolio management,investment,backtesting,machine learning
+Author: Stephen Yau
+Author-email: softwareentrepreneer+pfund@gmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: orjson (>=3.9.12,<4.0.0)
+Requires-Dist: pandas (>=2.2.0,<3.0.0)
+Requires-Dist: psutil (>=5.9.8,<6.0.0)
+Requires-Dist: python-telegram-bot (>=20.7,<21.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: pyzmq (>=25.1.2,<26.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: schedule (>=1.2.1,<2.0.0)
+Requires-Dist: scikit-learn (>=1.4.0,<2.0.0)
+Requires-Dist: ta (>=0.11.0,<0.12.0)
+Requires-Dist: torch (>=2.1.2,<3.0.0)
+Requires-Dist: websocket-client (>=1.7.0,<2.0.0)
+Project-URL: Documentation, https://pfund.ai/docs
+Project-URL: Repository, https://github.com/PFund-Software-Ltd/pfund
+Description-Content-Type: text/markdown
+
+[![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)
