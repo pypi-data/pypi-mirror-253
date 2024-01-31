@@ -1,0 +1,17 @@
+integration_tests/__init__.py,sha256=4Hw-PX1-VgESLF16cDdvuYCzGJtHntThLF4qIiULWeo,61
+integration_tests/acceptance.py,sha256=VAt-At7bkaZ2HJ9W-uf_XNkVuYeI7oz_h_vplBrtcQE,313
+integration_tests/configured_catalog.json,sha256=-GCKABo3XqH12cet6QcyIaf5VliS5Jq8PPnOFd1Kl-Y,878
+integration_tests/invalid_config.json,sha256=-W9opO0QajpotcBKotxgYxpL8zeKkTicA6xY7Tk5CLo,33
+integration_tests/sample_config.json,sha256=5XasvVT_oJVWeqvA6lf9wZlwezgNlKs1oe0WCl3EflQ,32
+source_emailoctopus/__init__.py,sha256=t59ScKS9gY3WcVOlnI_jjg9x4dU7h8l3NdWX4WNlFfI,136
+source_emailoctopus/manifest.yaml,sha256=loTXWkLy9q-aJjD_RmCvucXRmqDZTrJnyrHXlmGjuh4,1931
+source_emailoctopus/run.py,sha256=zmTseE0z7gNf3Fas--YAze2WpdWY9vTN-vm0pQGqf5E,248
+source_emailoctopus/source.py,sha256=62GSOpRDQwWKXeUsl6A7NsjEpSJfJOlP5-Mp6tBcJZ4,481
+source_emailoctopus/spec.yaml,sha256=cPlYfxqmKCHBZy-_7ariLDSVNjXlxrzZuHtYkScnKek,573
+source_emailoctopus/schemas/campaigns.json,sha256=ztx7SkJFt9amLovQyjeMdDLBCaQaIB8lISQ36rrnqfU,1652
+source_emailoctopus/schemas/lists.json,sha256=ZHJ6ZPyDGeVGp8WOlGzePrP0YEo7XeJWH29yLZITwos,2170
+airbyte_source_emailoctopus-0.1.0.dist-info/METADATA,sha256=CKcleaOFffol3XYCO7jLbrSe2LCIxewrBbGINMD9Hqc,4283
+airbyte_source_emailoctopus-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+airbyte_source_emailoctopus-0.1.0.dist-info/entry_points.txt,sha256=CBappnuC23Uq0bqRpjuz11m8LD9pFcmuYQVq-vcuWRM,68
+airbyte_source_emailoctopus-0.1.0.dist-info/top_level.txt,sha256=0R_90H1KAoJInQ347GjRVPzJKUaJLGKbLH7LDXmb8FA,38
+airbyte_source_emailoctopus-0.1.0.dist-info/RECORD,,
