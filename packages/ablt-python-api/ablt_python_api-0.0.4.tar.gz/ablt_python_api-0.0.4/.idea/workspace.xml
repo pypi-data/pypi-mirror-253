@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BlackConnectSettings" port="45486" lineLength="120" triggerOnReformat="true" targetSpecificVersions="true" pythonTargets="py3.9,py3.10,py3.11" />
+  <component name="ChangeListManager">
+    <list default="true" id="309c98dc-107c-43a1-806f-a1589a128f0f" name="Changes" comment="Bump to 0.0.4 (bump GA actions for Python to v5)" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2XfQjpuEG6VIHzEHCjbkkVnFR72" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ilyavereshchagin/Work/ablt_python_api/pyproject.toml&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;me.lensvol.blackconnect.settings&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ablt_python_api" />
+      <recent name="$PROJECT_DIR$/tests/sync" />
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$/tests/async" />
+      <recent name="$PROJECT_DIR$/.github/workflows" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/async" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="309c98dc-107c-43a1-806f-a1589a128f0f" name="Changes" comment="" />
+      <created>1699017792104</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699017792104</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Fix linters">
+      <created>1699295703773</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1699295703773</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Fix docstrings">
+      <created>1699296829410</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1699296829410</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Fix CHANGELOG.md and TODO.md">
+      <created>1699297608958</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1699297608958</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Fix ABLT_BEARER_TOKEN">
+      <created>1699297805648</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1699297805648</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Add tests for chat (not stream mode)">
+      <created>1700066392819</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1700066392819</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Add tests for chat (not stream mode)">
+      <created>1700066464489</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1700066464489</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Add tests for chat (stream mode)">
+      <created>1700068294474</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1700068294474</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Add tests for chat (stream mode)">
+      <created>1700068474759</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1700068474759</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Fix tests">
+      <created>1700149092307</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1700149092307</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Fix tests">
+      <created>1700149964886</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1700149964887</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Fix tests">
+      <created>1700150306385</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1700150306385</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Fix tests">
+      <created>1700150644093</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1700150644093</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Fix tests">
+      <created>1700150783892</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1700150783892</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Fix tests">
+      <created>1700151277110</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1700151277110</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Fix tests">
+      <created>1700151814577</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1700151814577</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Fix tests">
+      <created>1700152149170</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1700152149170</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Fix tests">
+      <created>1700152913636</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1700152913636</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Fix tests">
+      <created>1700153086159</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1700153086159</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Fix tests">
+      <created>1700153866548</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1700153866548</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Fix tests">
+      <created>1700154342746</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1700154342746</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Fix tests">
+      <created>1700155163530</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1700155163530</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Fix tests">
+      <created>1700156778809</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1700156778809</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Fix tests">
+      <created>1700157199081</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1700157199082</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Add README.md">
+      <created>1700235247396</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1700235247397</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Add README.md">
+      <created>1700244764377</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1700244764377</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Add README.md">
+      <created>1700244831697</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1700244831697</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Add README.md">
+      <created>1700244875968</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1700244875968</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Add README.md">
+      <created>1700246216570</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1700246216570</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Add README.md">
+      <created>1700246479994</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1700246479994</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Add README.md">
+      <created>1700247112701</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1700247112701</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Add README.md">
+      <created>1700247431049</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1700247431050</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Add README.md">
+      <created>1700248666544</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1700248666544</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Add README.md">
+      <created>1700248797053</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1700248797053</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Add README.md">
+      <created>1700248961741</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1700248961741</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Add sync API">
+      <created>1700486141371</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1700486141372</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Add sync API tests">
+      <created>1700493110556</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1700493110556</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Fix linters">
+      <created>1700494060248</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1700494060248</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Fix linters">
+      <created>1700495021350</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1700495021350</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Fix linters">
+      <created>1700495739196</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1700495739196</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Fix linters">
+      <created>1700496605231</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1700496605231</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Fix linters">
+      <created>1700497798547</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1700497798548</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Fix linters">
+      <created>1700498700439</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1700498700439</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Bump to 0.0.2 (enable async)">
+      <created>1700501108311</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1700501108311</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Bump to 0.0.2 (enable async)">
+      <created>1700501252121</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1700501252121</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Bump to 0.0.2 (enable async)">
+      <created>1700501398550</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1700501398550</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Bump to 0.0.2 (enable sync)">
+      <created>1700501504598</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1700501504598</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Bump to 0.0.2 (enable sync)">
+      <created>1700502056084</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1700502056084</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Bump to 0.0.2 (enable sync)">
+      <created>1700503108945</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1700503108945</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Bump to 0.0.2 (enable sync)">
+      <created>1700503615668</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1700503615668</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Add tests" />
+    <MESSAGE value="Linter fixes" />
+    <MESSAGE value="Linters fixes" />
+    <MESSAGE value="Add bots tests" />
+    <MESSAGE value="Add other and statistics tests" />
+    <MESSAGE value="Fix docstrings" />
+    <MESSAGE value="Fix CHANGELOG.md and TODO.md" />
+    <MESSAGE value="Fix ABLT_BEARER_TOKEN" />
+    <MESSAGE value="Add tests for chat (not stream mode)" />
+    <MESSAGE value="Add tests for chat (stream mode)" />
+    <MESSAGE value="Fix tests" />
+    <MESSAGE value="Add README.md" />
+    <MESSAGE value="Add sync API" />
+    <MESSAGE value="Add sync API tests" />
+    <MESSAGE value="Fix linters" />
+    <MESSAGE value="Bump to 0.0.2 (enable async)" />
+    <MESSAGE value="Bump to 0.0.2 (enable sync)" />
+    <MESSAGE value="Bump to 0.0.3 (enable ssl verification in tests)" />
+    <MESSAGE value="Bump to 0.0.4 (bump GA actions for Python to v5)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bump to 0.0.4 (bump GA actions for Python to v5)" />
+  </component>
+</project>
