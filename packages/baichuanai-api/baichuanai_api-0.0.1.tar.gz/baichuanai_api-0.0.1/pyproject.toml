@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "baichuanai-api"
+version = "0.0.1"
+description = "Python SDK for the Baichuan AI API"
+packages = [
+    {include = "baichuanai"}
+]
+authors = ["Yi ZHANG <yizhang.dev@gmail.com>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+homepage = "https://pypi.org/project/baichuanai-api"
+repository = "https://github.com/imyizhang/baichuanai-api"
+documentation = "https://baichuanai-api.readthedocs.io/en/latest/"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
