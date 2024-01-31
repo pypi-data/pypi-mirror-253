@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: arrest
+Version: 0.1.7
+Summary: Arrest is a wrapper of pydantic and httpx to make your REST api calls type-safe and structured
+Home-page: https://s-bose.github.io/arrest
+License: MIT
+Keywords: arrest,rest,pydantic,httpx,api
+Author: shiladitya
+Author-email: shiladitya_basu@live.com
+Requires-Python: >=3.10,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: argcomplete (>=3.2.2,<4.0.0)
+Requires-Dist: backoff (>=2.2.1,<3.0.0)
+Requires-Dist: datamodel-code-generator[openapi] (>=0.25.2,<0.26.0)
+Requires-Dist: httpx (>=0.24.1,<0.25.0)
+Requires-Dist: jinja2[openapi] (>=3.1.3,<4.0.0)
+Requires-Dist: orjson (>=3.9.10,<4.0.0)
+Requires-Dist: pydantic (>=2.6.0,<3.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Project-URL: Documentation, https://s-bose.github.io/arrest
+Project-URL: Repository, https://github.com/s-bose/arrest
+Description-Content-Type: text/markdown
+
+# Arrest
+
+[![Tests](https://github.com/s-bose/arrest/actions/workflows/tests.yml/badge.svg)](https://github.com/s-bose/arrest/actions/workflows/tests.yml)
+
+[![codecov](https://codecov.io/github/s-bose/arrest/graph/badge.svg?token=VBU3156QHP)](https://codecov.io/github/s-bose/arrest)
+
+[![PyPi](https://img.shields.io/pypi/v/arrest.svg)](https://pypi.python.org/pypi/arrest)
+
+- Documentation: https://s-bose.github.io/arrest/
+
+Enable data validation for REST APIs.
+
+Built on top of Pydantic and httpx.
+Arrest is like a postman client for your microservice apis. It provides a simple layer of Pydantic encapsulation over Httpx HTTP calls to ensure structural integrity of your api definitions in a single file, as well as provide Pydantic's strength of data validation.
+
+## Installation
+
+```bash
+pip install arrest
+```
+
+## Getting Started
+
+```python
+
+from arrest import Resource, Service
+from arrest.exceptions import ArrestHTTPException
+
+
+xyz_service = Service(
+    name="xyz",
+    url="http://www.xyz-service.default.local.cluster:80",
+    resources=[
+        Resource(
+            route="/users",
+            handlers=[
+                ("GET", "/"),
+                ("GET", "/{user_id:int}"),
+                ("POST", "/")
+            ]
+        )
+    ]
+)
+
+try:
+    response = await xyz_service.users.get("/123")
+except ArrestHTTPException as exc:
+    logging.warning(f"{exc.status_code} {exc.data}")
+```
+
