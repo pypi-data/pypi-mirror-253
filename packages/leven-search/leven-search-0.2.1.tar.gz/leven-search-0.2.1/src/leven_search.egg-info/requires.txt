@@ -1,0 +1,6 @@
+
+[tests]
+pytest
+nltk
+coverage
+coverage-badge

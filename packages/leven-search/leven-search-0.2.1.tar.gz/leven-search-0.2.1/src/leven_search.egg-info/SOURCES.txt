@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/leven_search/__init__.py
+src/leven_search/config.py
+src/leven_search/cost.py
+src/leven_search/leven_search.py
+src/leven_search/result.py
+src/leven_search/state.py
+src/leven_search/trie.py
+src/leven_search.egg-info/PKG-INFO
+src/leven_search.egg-info/SOURCES.txt
+src/leven_search.egg-info/dependency_links.txt
+src/leven_search.egg-info/requires.txt
+src/leven_search.egg-info/top_level.txt
