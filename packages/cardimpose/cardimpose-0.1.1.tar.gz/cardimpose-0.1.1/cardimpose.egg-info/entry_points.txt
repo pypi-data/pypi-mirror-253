@@ -1,0 +1,2 @@
+[console_scripts]
+cardimpose = cardimpose.cardimpose:main
