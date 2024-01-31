@@ -1,0 +1,10 @@
+README.md
+setup.py
+TextTools/__init__.py
+TextTools/main.py
+TextTools_poo2.egg-info/PKG-INFO
+TextTools_poo2.egg-info/SOURCES.txt
+TextTools_poo2.egg-info/dependency_links.txt
+TextTools_poo2.egg-info/entry_points.txt
+TextTools_poo2.egg-info/requires.txt
+TextTools_poo2.egg-info/top_level.txt
