@@ -1,0 +1,14 @@
+[project]
+name = "pyipx800v3"
+description = "lib to interact with IPX800v3"
+version = "0.1.0"
+authors = [
+    { name = "Xavier ROQUES", email = "xavier.roques@gmail.com" }
+]
+dependencies = [
+    "requests"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

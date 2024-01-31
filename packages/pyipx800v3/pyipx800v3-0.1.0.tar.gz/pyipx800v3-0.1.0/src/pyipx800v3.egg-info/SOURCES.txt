@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+src/pyipx800v3/__init__.py
+src/pyipx800v3/pyipx800v3.py
+src/pyipx800v3.egg-info/PKG-INFO
+src/pyipx800v3.egg-info/SOURCES.txt
+src/pyipx800v3.egg-info/dependency_links.txt
+src/pyipx800v3.egg-info/requires.txt
+src/pyipx800v3.egg-info/top_level.txt
