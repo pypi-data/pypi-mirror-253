@@ -1,0 +1,17 @@
+conversion_type	original_phoneme_id	converted_phoneme_id	original_phoneme_grapheme_representation	converted_phoneme_grapheme_representation
+voiced_to_voiceless_obstruent	C_1.2.1	C_1.1.1	b	p
+voiceless_to_voiced_obstruent	C_1.1.1	C_1.2.1	p	b
+voiced_to_voiceless_obstruent	C_2.2.1	C_2.1.1	d	t
+voiceless_to_voiced_obstruent	C_2.1.1	C_2.2.1	t	d
+voiced_to_voiceless_obstruent	C_3.2	C_3.1	g	k
+voiceless_to_voiced_obstruent	C_3.1	C_3.2	k	g
+voiced_to_voiceless_obstruent	C_5.2	C_5.1	z	s
+voiceless_to_voiced_obstruent	C_5.1	C_5.2	s	z
+voiced_to_voiceless_obstruent	C_6.2	C_6.1	ž	š
+voiceless_to_voiced_obstruent	C_6.1	C_6.2	š	ž
+voiced_to_voiceless_obstruent	C_7.2	C_7.1	h	h
+voiceless_to_voiced_obstruent	C_7.1	C_7.2	h	h
+voiced_to_voiceless_obstruent	C_9.2	C_9.1	dž	č
+voiceless_to_voiced_obstruent	C_9.1	C_9.2	č	dž
+voiced_to_voiceless_obstruent	C_8.2	C_8.1	dz	c
+voiceless_to_voiced_obstruent	C_8.1	C_8.2	c	dz

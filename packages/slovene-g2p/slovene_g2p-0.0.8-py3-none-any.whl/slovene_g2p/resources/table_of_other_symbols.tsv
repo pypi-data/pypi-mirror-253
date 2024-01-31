@@ -1,0 +1,4 @@
+phoneme_id	description	ipa_symbol	ipa_unicode_hex	ipa_python_sourcecode	sampa_symbol	sampa_unicode_hex	sampa_python_sourcecode	cjvt_ipa_detailed_representation	cjvt_ipa_robust_representation	cjvt_sampa_detailed_representation	cjvt_sampa_robust_representation	zrc_ipa_representation
+S_1	Vowel length mark	ː	02D0	\u02D0	:	003A	\u003A	ː	ː	:	:	ː
+S_2.1	Primary stress mark	ˈ	02C8	\u02C8	"	0022	\u0022	ˈ	ˈ	"	"	ˈ
+S_2.2	Secondary stress mark	ˌ	02CC	\u02CC	%	0025	\u0025	ˌ	ˌ	%	%	ˌ

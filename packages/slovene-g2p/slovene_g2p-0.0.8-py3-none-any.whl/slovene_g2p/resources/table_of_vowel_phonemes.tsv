@@ -1,0 +1,18 @@
+phoneme_id	height	backness	roundness	length	comment	ipa_symbol	ipa_unicode_hex	ipa_python_sourcecode	sampa_symbol	sampa_unicode_hex	sampa_python_sourcecode	cjvt_ipa_detailed_representation	cjvt_ipa_robust_representation	cjvt_sampa_detailed_representation	cjvt_sampa_robust_representation	zrc_ipa_representation
+V_1.1	Open	Front	Unrounded	Short		a	0061	\u0061	a	0061	\u0061	a	a	a	a	a
+V_1.2	Open	Front	Unrounded	Long		aː	0061 02D0	\u0061\u02D0	a:	0061 003A	\u0061\u003A	aː	aː	a:	a:	aː
+V_2.1	Open-mid	Front	Unrounded	Short		ɛ	025B	\u025B	E	0045	\u0045	ɛ	ɛ	E	E	ɛ
+V_2.2	Open-mid	Front	Unrounded	Long		ɛː	025B 02D0	\u025B\u02D0	E:	0045 003A	\u0045\u003A	ɛː	ɛː	E:	E:	ɛː
+V_3.1	Open-mid	Back	Rounded	Short		ɔ	0254	\u0254	O	004F	\u004F	ɔ	ɔ	O	O	ɔ
+V_3.2	Open-mid	Back	Rounded	Long		ɔː	0254 02D0	\u0254\u02D0	O:	004F 003A	\u004F\u003A	ɔː	ɔː	O:	O:	ɔː
+V_4	Open-mid	Back	Unrounded	Short	In Slovene according to Jurgec	ʌ 	028C	\u028C	V	0056	\u0056	ʌ 	ʌ 	V	V	ʌ 
+V_5	Mid	Central	_	Short		ə	0259	\u0259	@	0040	\u0040	ə	ə	@	@	ə
+V_6.1	Close-mid	Front	Unrounded	Short		e	0065	\u0065	e	0065	\u0065	e	e	e	e	e
+V_6.2	Close-mid	Front	Unrounded	Long		eː	0065 02D0	\u0065\u02D0	e:	0065 003A	\u0065\u003A	eː	eː	e:	e:	eː
+V_7.1	Close-mid	Back	Rounded	Short		o	006F	\u006F	o	006F	\u006F	o	o	o	o	o
+V_7.2	Close-mid	Back	Rounded	Long		oː	006F 02D0	\u006F\u02D0	o:	006F 003A	\u006F\u003A	oː	oː	o:	o:	oː
+V_8	Near-close	Front	Unrounded	Short	Semi-high front unrounded vowel	ɪ	026A	\u026A	I	0049	\u0049	ɪ	ɪ	I	I	ɪ
+V_9.1	Close	Front	Unrounded	Short		i	0069	\u0069	i	0069	\u0069	i	i	i	i	i
+V_9.2	Close	Front	Unrounded	Long		iː	0069 02D0	\u0069\u02D0	i:	0069 003A	\u0069\u003A	iː	iː	i:	i:	iː
+V_10.1	Close	Back	Rounded	Short		u	0075	\u0075	u	0075	\u0075	u	u	u	u	u
+V_10.2	Close	Back	Rounded	Long		uː	0075 02D0	\u0075\u02D0	u:	0075 003A	\u0075\u003A	uː	uː	u:	u:	uː

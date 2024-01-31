@@ -1,0 +1,41 @@
+phoneme_id	manner_of_articulation	place_of_articulation	voiced_or_voiceless	alophone	standardness	comment	ipa_symbol	ipa_unicode_hex	ipa_unicode_python_code	sampa_symbol	sampa_unicode_hex	sampa_unicode_python_code	cjvt_ipa_detailed_representation	cjvt_ipa_robust_representation	cjvt_sampa_detailed_representation	cjvt_sampa_robust_representation	zrc_ipa_representation
+C_1.1.1	plosive	bilabial	voiceless	no	yes		p	0070	\u0070	p	0070	\u0070	p	p	p	p	p
+C_1.1.2	plosive	bilabial	voiceless	yes	yes	favkalni p: opora se dela z mehkim nebom v nosno votlino - pred "m"	pⁿ	0070 207F	\u0070\u207F	p_n	0070 005F 006E	\u0070\u005F\u006E	pⁿ	p	p_n	p	p
+C_1.1.3	plosive	labiodental	voiceless	yes	yes	zobnoustnični p: pred "v" in "f"	p̪ʷ	0070 032A 02B7	\u0070\u032A\u02B7	p_f	0070 005F 0066	\u0070\u005F\u0066	p̪ʷ	p	p_f	p	p
+C_1.2.1	plosive	bilabial	voiced	no	yes		b	0062	\u0062	b	0062	\u0062	b	b	b	b	b
+C_1.2.2	plosive	bilabial	voiced	yes	yes	favkalni b: opora se dela z mehkim nebom v nosno votlino - pred "m"	bⁿ	0062 207F	\u0062\u207F	b_n	0062 005F 006E	\u0062\u005F\u006E	bⁿ	b	b_n	b	b
+C_1.2.3	plosive	labiodental	voiced	yes	yes	zobnoustnični b: pred "v" in "f"	b̪ʷ	0062 032A 02B7	\u0062\u032A\u02B7	b_f	0062 005F 0066	\u0062\u005F\u0066	b̪ʷ	b	b_f	b	b
+C_2.1.1	plosive	alveolar	voiceless	no	yes		t	0074	\u0074	t	0074	\u0074	t	t	t	t	t
+C_2.1.2	plosive	alveolar	voiceless	yes	yes	obstranski t: opora se dela ob robovih jezika - pred "l"	tˡ	0074 02E1	\u0074\u02E1	t_l	0074 005F 006C	\u0074\u005F\u006C	tˡ	t	t_l	t	t
+C_2.1.3	plosive	alveolar	voiceless	yes	yes	favkalni t: opora se dela z mehkim nebom v nosno votlino - pred "n"	tⁿ	0074 207F	\u0074\u207F	t_n	0074 005F 006E	\u0074\u005F\u006E	tⁿ	t	t_n	t	t
+C_2.2.1	plosive	alveolar	voiced	no	yes		d	0064	\u0064	d	0064	\u0064	d	d	d	d	d
+C_2.2.2	plosive	alveolar	voiced	yes	yes	obstranski d: opora se dela ob robovih jezika - pred "l"	dˡ	0064 02E1	\u0064\u02E1	d_l	0064 005F 006C	\u0064\u005F\u006C	dˡ	d	d_l	d	d
+C_2.2.3	plosive	alveolar	voiced	yes	yes	favkalni d: opora se dela z mehkim nebom v nosno votlino - pred "n"	dⁿ	0064 207F	\u0064\u207F	d_n	0064 005F 006E	\u0064\u005F\u006E	dⁿ	d	d_n	d	d
+C_3.1	plosive	velar	voiceless	no	yes		k	006B	\u006B	k	006B	\u006B	k	k	k	k	k
+C_3.2	plosive	velar	voiced	no	yes	CAREFUL: g vs. ɡ	ɡ	0261	\u0261	g	0067	\u0067	ɡ	ɡ	g	g	ɡ
+C_4	fricative	labiodental	voiceless	no	yes		f	0066	\u0066	f	0066	\u0066	f	f	f	f	f
+C_5.1	fricative	alveolar	voiceless	no	yes		s	0073	\u0073	s	0073	\u0073	s	s	s	s	s
+C_5.2	fricative	alveolar	voiced	no	yes		z	007A	\u007A	z	007A	\u007A	z	z	z	z	z
+C_6.1	fricative	postalveolar	voiceless	no	yes		ʃ	0283	\u0283	S	0053	\u0053	ʃ	ʃ	S	S	ʃ
+C_6.2	fricative	postalveolar	voiced	no	yes		ʒ	0292	\u0292	Z	005A	\u005A	ʒ	ʒ	Z	Z	ʒ
+C_7.1	fricative	velar	voiceless	no	yes		x	0078	\u0078	x	0058	\u0058	x	x	x	x	x
+C_7.2	fricative	velar	voiced	yes	yes	only occurs between words (vrh gore)	ɣ	0263	\u0263	G	0047	\u0047	ɣ	ɣ	G	G	ɣ
+C_8.1	affricate	alveolar	voiceless	no	yes		ʦ	02A6	\u02A6	ts	0074 0073	\u0074\u0073	ʦ	ʦ	ts	ts	ʦ
+C_8.2	affricate	alveolar	voiced	no	yes		ʣ	02A3	\u02A3	dz	0064 007A	\u0064\u007A	ʣ	ʣ	dz	dz	ʣ
+C_9.1	affricate	postalveolar	voiceless	no	yes		ʧ	02A7	\u02A7	tS	0074 0053	\u0074\u0053	ʧ	ʧ	tS	tS	ʧ
+C_9.2	affricate	postalveolar	voiced	no	yes		ʤ	02A4	\u02A4	dZ	0064 005A	\u0064\u005A	ʤ	ʤ	dZ	dZ	ʤ
+C_10	tap	alveolar	_	no	yes		ɾ	027E	\u027E	r	0072	\u0072	ɾ	ɾ	r	r	ɾ
+C_11	approximant	palatal	_	no	yes		j	006A	\u006A	j	006A	\u006A	j	j	j	j	j
+C_12.1	approximant	labiodental	_	no	yes	technically voiced (like many other consonants), but I only add 'voiced/voiceless' if it's relevant for conversions	ʋ	028B	\u028B	v	0076	\u0076	ʋ	ʋ	v	v	ʋ
+C_12.2	approximant	labial-velar	_	yes	yes		w	0077	\u0077	w	0077	\u0077	w	w	w	w	w
+C_12.3	approximant	labial-velar	_	yes	yes		ʍ	028D	\u028D	W	0057	\u0057	ʍ	ʍ	W	W	ʍ
+C_12.4	semivowel	_	_	yes	yes		u̯	0075 032F	\u0075\u032F	U	0055	\u0055	u̯	u̯	U	U	u̯
+C_13.1	lateral_approximant	alveolar	_	no	yes		l	006C	\u006C	l	006C	\u006C	l	l	l	l	l
+C_13.2	lateral_approximant	alveolar	_	yes	yes	before j at the end of a word (datelj)	lʲ	006C 02B2	\u006C\u02B2	l'	006C 0027	\u006C\u0027	lʲ	l	l'	l	l
+C_14.1	nasal	bilabial	_	no	yes		m	006D	\u006D	m	006D	\u006D	m	m	m	m	m
+C_14.2	nasal	labiodental	_	no	yes		ɱ	0271	\u0271	F	0046	\u0046	ɱ	ɱ	F	F	ɱ
+C_15.1	nasal	alveolar	_	no	yes		n	006E	\u006E	n	006E	\u006E	n	n	n	n	n
+C_15.2	nasal	velar	_	no	yes		ŋ	014B	\u014B	N	004E	\u004E	ŋ	ŋ	N	N	ŋ
+C_15.3	nasal	alveolar	_	yes	yes	before j at the end of a word (vonj)	nʲ	006E 02B2	\u006E\u02B2	n'	004E 0027	\u004E\u0027	nʲ	n	n'	n	n
+C_X.2	fricative	glottal	voiced	yes	no	Breathy-voiced glottal fricative; only in dialectal speech	ɦ	0266	\u0266	h\	0068 005C	\u0068\u005C	ɦ	ɦ	h\	h\	ɦ
+C_X.3	trill	uvular	voiced	yes	no	Used instead of ɾ by some speakers	ʀ	0280	\u0280	R\	0052 005C	\u0052\u005C	ʀ	ʀ	R\	R\	ʀ

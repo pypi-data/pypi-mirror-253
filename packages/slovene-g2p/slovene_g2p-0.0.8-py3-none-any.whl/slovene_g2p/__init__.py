@@ -1,0 +1,1 @@
+from .SloveneG2P import SloveneG2P

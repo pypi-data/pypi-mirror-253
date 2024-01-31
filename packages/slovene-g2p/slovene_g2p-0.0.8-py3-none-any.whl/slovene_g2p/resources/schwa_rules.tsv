@@ -1,0 +1,196 @@
+Sz3.1.o	odločitev	Sozei, Sozet, Sozdr, Sozmr	ev – @v
+Sz3.1.l	/	Slzei, Slzet, Slzdr, Slzmr	ev – @v
+Sz3.1.l-ednina	Lokev	Slzei, Slzet	ev – @v
+Sz3.1.l-množina	Ponikve	Slzmr	ev – @v
+Sz3.1.o-V1	cerkev	Sozei, Sozet, Sozdr, Sozmr	ev – @v
+Sz5.1.o	igra	Sozdr, Sozmr	er – @r
+Sz5.1.l	Petra	Slzdr, Slzmr	er – @r
+Sz5.1.o-množina	citre	Sozmr	er – @r
+Sz5.1.l-množina	Pekre	Slzmr	er – @r
+Sz5.1.o-V1	sestra	Sozdr, Sozmr	er – @r
+Sz5.2.o	izkušnja	Sozdr, Sozmr	enj – @nj
+Sz5.2.l	/	Slzdr, Slzmr	enj – @nj
+Sz5.2.l-množina	Bitnje	Slzmr	enj – @nj
+Sz5.3.o	kaplja	Sozdr, Sozmr	elj – @lj
+Sz5.3.l	/	Slzdr, Slzmr	elj – @lj
+Sz5.3.o-množina	grablje	Sozmr	elj – @lj
+Sz5.3.l-množina	Trbovlje	Slzmr	elj – @lj
+Sz5.3.o-V1	zemlja	Sozdr, Sozmr	elj – @lj
+Sz5.4.o	megla	Sozdr, Sozmr	el – @l
+Sz5.4.l	/	Slzdr, Slzdr	el – @l
+Sz5.4.o-množina	orgle	Sozmr	el – @l
+Sz5.4.l-množina	Murgle	Slzmr	el – @l
+Sz5.4.o-V1	metla	Sozdr, Sozmr	el – @l
+Sz5.5.o	tekma	Sozdr, Sozmr	em – @m
+Sz5.5.l	/	Slzdr, Slzmr	em – @m
+Sz5.6.o	opna	Sozdr, Sozmr	en – @n
+Sz5.6.l	Vesna	Slzdr, Slzmr	en – @n
+Sz5.6.l-množina	Ravne	Slzmr	en – @n
+Sz5.7.o	spužva	Sozdr, Sozmr	ev – @v
+Sz5.7.l	/	Slzdr, Slzmr	ev – @v
+Sz7.1.o	bolezen	Sozei, Sozet	en – @n
+Sz7.1.l	/	Slzei, Slzet	en – @n
+Sz7.2.o	misel	Sozei, Sozet	el – @l
+Sz7.2.l	/	Slzei, Slzet	el – @l
+Sz7.3.o	povodenj	Sozei, Sozet	enj – @nj
+Sz7.3.l	/	Slzei, Slzet	enj – @nj
+Sz7.4.o	pesem	Sozei, Sozet	em – @m
+Sz7.4.l	/	Slzei, Slzet	em – @m
+Sz8.1.o	/	Sozei, Sozet	en – @n
+Sz8.1.l	/	Slzei, Slzet	en – @n
+Sz8.1.o-V3	raven	Sozei, Sozet	en – @n
+Sz8.3.o	/	Sozei, Sozet	er – @r
+Sz8.3.l	/	Slzei, Slzet	er – @r
+Sz8.3.o-V3	reber	Sozei, Sozet	er – @r
+Sz8.4.o	/	Sozei, Sozet	et – @t
+Sz8.4.l	/	Slzei, Slzet	et – @t
+Sz8.4.o-V3	lahet	Sozei, Sozet	et – @t
+Sm3.1.o	odstotek	Somei, Sometn	ek – @k
+Sm3.1.l	Orehek	Slmei, Slmetn	ek – @k
+Sm3.1.o-ednina	nameček	Somei, Sometn	ek – @k
+Sm3.1.l-ednina	Podčetrtek	Slmei, Slmetn	ek – @k
+Sm3.2.o	deček	Somei	ek – @k
+Sm3.2.l	Božiček	Slmei	ek – @k
+Sm3.3.o	sejem	Somei, Sometn	em – @m
+Sm3.3.l	/	Slmei, Slmetn	em – @m
+Sm3.3.o-ednina	turizem	Somei, Sometn	em – @m
+Sm3.3.l-ednina	Videm	Slmei, Slmetn	em – @m
+Sm3.4.o	mikroorganizem	Somei	em – @m
+Sm3.4.l	Erazem	Somei	em – @m
+Sm3.5.o	meter	Somei, Sometn	er – @r
+Sm3.5.l	Peter	Slmei, Slmetn	er – @r
+Sm3.5.o-ednina	koper	Somei, Sometn	er – @r
+Sm3.5.l-ednina	Koper	Slmei, Slmetn	er – @r
+Sm3.6.o	minister	Somei	er – @r
+Sm3.6.l	Aleksander	Slmei	er – @r
+Sm3.9.o	posel	Somei, Sometn	el – @l
+Sm3.9.l	/	Slmei, Slmetn	el – @l
+Sm3.9.l-ednina	Basel	Slmei, Slmetn	el – @l
+Sm3.10.o	osel	Somei	el – @l
+Sm3.10.l	Pavel	Slmei	el – @l
+Sm3.11.o	kamen	Somei, Sometn	en – @n
+Sm3.11.o-ednina	česen	Somei, Sometn	en – @n
+Sm3.11.l-ednina	München	Slmei, Slmetn	en – @n
+Sm3.12.o	oven	Somei	en – @n
+Sm3.12.l	Domen	Somei	en – @n
+Sm3.13.o	mozeg	Somei, Sometn	eg – @g
+Sm3.13.l	/	Slmei, Slmetn	eg – @g
+Sm3.13.o-ednina	bezeg	Somei, Sometn	eg – @g
+Sm3.14.o	mezeg	Somei	eg – @g
+Sm3.14.l	/	Slmei	eg – @g
+Sm3.15.o	hrbet	Somei, Sometn	et – @t
+Sm3.15.l	/	Slmei, Slmetn	et – @t
+Sm3.15.o-ednina	ocet	Somei, Sometn	et – @t
+Sm3.16.o	valpet	Somei	et – @t
+Sm3.16.l	/	Slmei	et – @t
+Sm3.17.o	pes	Somei	es – @s
+Sm3.17.l	/	Slmei	es – @s
+Sm3.18.o	oves	Somei, Sometn	es – @s
+Sm3.18.l	/	Slmei, Slmetn	es – @s
+Sm3.19.o	veter	Somei, Sometn	er – @r
+Sm3.19.l	/	Slmei, Slmetn	er – @r
+Sm3.21.o	/	Somei	ell – @ll
+Sm3.21.l	Russell	Somei	ell – @ll
+Sm4.1.o	marec	Somei, Sometn	ec – @c
+Sm4.1.l	Žalec	Slmei, Slmetn	ec – @c
+Sm4.1.o-ednina	svinec	Somei, Sometn	ec – @c
+Sm4.1.l-ednina	Gradec	Slmei, Slmetn	ec – @c
+Sm4.1.o-V3	konec	Somei, Sometn	ec – @c
+Sm4.2.o	igralec	Somei	ec – @c
+Sm4.2.l	Avstrijec	Slmei	ec – @c
+Sm4.3.o	čevelj	Somei, Sometn	elj – @lj
+Sm4.3.l	/	Slmei, Slmetn	elj – @lj
+Sm4.3.o-ednina	žajbelj	Somei, Sometn	elj – @lj
+Sm4.3.l-ednina	Bruselj	Slmei, Slmetn	elj – @lj
+Sm4.4.o	rabelj	Somei	elj – @lj
+Sm4.4.l	Avbelj	Slmei	elj – @lj
+Sm4.5.o	ogenj	Somei, Sometn	enj – @nj
+Sm4.5.l	/	Slmei, Slmetn	enj – @nj
+Sm4.5.l-ednina	Sovodenj	Slmei, Slmetn	enj – @nj
+Sm4.6.o	suženj	Somei	enj – @nj
+Sm4.6.l	/	Slmei	enj – @nj
+Sm4.7.o	/	Somei, Sometn	eš – @š
+Sm4.7.l	/	Slmei, Slmetn	eš – @š
+Sm4.7.l-ednina	Mengeš	Slmei, Slmetn	eš – @š
+Sm7.4.o	tesla	Somdr, Sommr	el – @l
+Sm7.4.l	/	Slmdr, Slmmr	el – @l
+Sm9.5.o	buhtelj	ALL FORMS	elj – @lj
+Sm9.5.l	/	ALL FORMS	elj – @lj
+Sm9.6.o	kapelj	ALL FORMS	elj – @lj
+Sm9.6.l	/	ALL FORMS	elj – @lj
+Ss3.2.o	ozemlje	Sosdr, Sosmr	elj – @lj
+Ss3.2.l	/	Slsdr, Slsmr	elj – @lj
+Ss4.1.o	ministrstvo	Sosdr, Sosmr	ev – @v
+Ss4.1.l	/	Slsdr, Slsmr	ev – @v
+Ss4.2.o	geslo	Sosdr, Sosmr	el – @l
+Ss4.2.l	/	Slsdr, Slsmr	el – @l
+Ss4.3.o	okno	Sosdr, Sosmr	en – @n
+Ss4.3.l	/	Slsdr, Slsmr	en – @n
+Ss4.4.o	jutro	Sosdr, Sosmr	er – @r
+Ss4.4.l	/	Slsdr, Slsmr	er – @r
+Ss4.4.o-množina	jetra	Sosmr	er – @r
+Ss4.5.o	pismo	Sosdr, Sosmr	em – @m
+Ss4.5.l	/	Slsdr, Slsmr	em – @m
+P3.1.p	državen	Ppnmein, Ppnmetn	en – @n
+P3.1.d	/	Pdnmein, Pdnmetn	en – @n
+P3.1.s	/	Psnmein, Psnmet	en – @n
+P3.1.p-V1	cveten	Ppnmein, Ppnmetn	en – @n
+P3.2.p	pomemben	Ppnmein, Ppnmetn	en – @n
+P3.2.d	/	Pdnmein, Pdnmetn	en – @n
+P3.2.s	/	Psnmein, Psnmet	en – @n
+P3.2.p-V1	hladen	Ppnmein, Ppnmetn	en – @n
+P3.3.p	dobrodošel	Ppnmein, Ppnmetn	el – @l
+P3.3.d	pretekel	Pdnmein, Pdnmetn	el – @l
+P3.3.s	/	Psnmein, Psnmet	el – @l
+P3.3.p-V1	presvetel	Ppnmein, Ppnmetn	el – @l
+P3.4.p	topel	Ppnmein, Ppnmetn	el – @l
+P3.4.d	/	Pdnmein, Pdnmetn	el – @l
+P3.4.s	/	Psnmein, Psnmet	el – @l
+P3.4.p-V1	svetel	Ppnmein, Ppnmetn	el – @l
+P3.5.p	grenek	Ppnmein, Ppnmetn	ek – @k
+P3.5.d	/	Pdnmein, Pdnmetn	ek – @k
+P3.5.s	/	Psnmein, Psnmet	ek – @k
+P3.5.p-V1	plehek	Ppnmein, Ppnmetn	ek – @k
+P3.6.p	redek	Ppnmein, Ppnmetn	ek – @k
+P3.6.d	/	Pdnmein, Pdnmetn	ek – @k
+P3.6.s	/	Psnmein, Psnmet	ek – @k
+P3.6.p-V1	šibek	Ppnmein, Ppnmetn	ek – @k
+P3.7.p	jeder	Ppnmein, Ppnmetn	er – @r
+P3.7.d	/	Pdnmein, Pdnmetn	er – @r
+P3.7.s	/	Psnmein, Psnmet	er – @r
+P3.8.p	hiter	Ppnmein, Ppnmetn	er – @r
+P3.8.d	/	Pdnmein, Pdnmetn	er – @r
+P3.8.s 	/	Psnmein, Psnmet	er – @r
+P3.9.p	mrtev	Ppnmein, Ppnmetn	ev – @v
+P3.9.d	/	Pdnmein, Pdnmetn	ev – @v
+P3.9.s	/	Psnmein, Psnmet	ev – @v
+P3.10.p	plitev	Ppnmein, Ppnmetn	ev – @v
+P3.10.d	/	Pdnmein, Pdnmetn	ev – @v
+P3.10.s	/	Psnmein, Psnmet	ev – @v
+P4.2.p	nizek	Ppnmein, Ppnmetn	ek – @k
+P4.2.d	/	Pdnmein, Pdnmetn	ek – @k
+P4.2.s	/	Psnmein, Psnmet	ek – @k
+P4.3.p	/	Ppnmein, Ppnmetn	ek – @k
+P4.3.d	/	Pdnmein, Pdnmetn	ek – @k
+P4.3.s	/	Psnmein, Psnmet	ek – @k
+P4.3.p-V1	lahek	Ppnmein, Ppnmetn	ek – @k
+P4.4.p	/	Ppnmein, Ppnmetn	ek – @k
+P4.4.d	/	Pdnmein, Pdnmetn	ek – @k
+P4.4.s	/	Psnmein, Psnmet	ek – @k
+P4.4.p-V1	težek	Ppnmein, Ppnmetn	ek – @k
+P5.4.p	/	Ppnmein, Ppnmetn	ek – @k
+P5.4.d	/	Pdnmein, Pdnmetn	ek – @k
+P5.4.s	/	Psnmein, Psnmet	ek – @k
+P5.4.p-V1	sladek	Ppnmein, Ppnmetn	ek – @k
+P5.5.p	tanek	Ppnmein, Ppnmetn	ek – @k
+P5.5.d	/	Pdnmein, Pdnmetn	ek – @k
+P5.5.s	/	Psnmein, Psnmet	ek – @k
+P5.6.p	kratek	Ppnmein, Ppnmetn	ek – @k
+P5.6.d	/	Pdnmein, Pdnmetn	ek – @k
+P5.6.s	/	Psnmein, Psnmet	ek – @k
+P5.7.p	majhen	Ppnmein, Ppnmetn	en – @n
+P5.7.d	/	Pdnmein, Pdnmetn	en – @n
+P5.7.s	/	Psnmein, Psnmet	en – @n
+P5.9.p	dober	Ppnmein, Ppnmetn	er – @r
+P5.9.d	/	Pdnmein, Pdnmetn	er – @r
+P5.9.s	/	Psnmein, Psnmetn	er – @r

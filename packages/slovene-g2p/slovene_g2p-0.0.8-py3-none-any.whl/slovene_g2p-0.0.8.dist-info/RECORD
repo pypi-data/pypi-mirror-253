@@ -1,0 +1,13 @@
+slovene_g2p/SloveneG2P.py,sha256=Hzgdtn7o1otyZ4AKS04SlUvbLucsSeWP8_u-Z4rOMu0,57731
+slovene_g2p/__init__.py,sha256=8CpmZsVlnjM9ZUoDYeEZWOjzU23HeD4qUV4jH4LBWmY,34
+slovene_g2p/resources/SloveneG2P_phoneme_set.json,sha256=VO8aThfC0bfTGq5QUO1_1pJ7F-iv-sJ4VcPPcYu5EgU,33566
+slovene_g2p/resources/schwa_rules.tsv,sha256=IsoI-DybmRibAmC2pr8yqQZaDqxTU7ZbO3E42P3myK4,7632
+slovene_g2p/resources/table_of_consonant_phonemes.tsv,sha256=tffFegjh1nSQiZNlXjVTnLgv3TxcPPzVmotmJBt6O18,4896
+slovene_g2p/resources/table_of_obstruent_conversions.tsv,sha256=0ofD1yOmPkQlJIXX5Lq6SC1N4JaC6tk7zNUi1Ya58-I,919
+slovene_g2p/resources/table_of_other_symbols.tsv,sha256=kQlXSEkMmWhdEPbxZ46Icba4AmvJggm212zdQcTU2fI,486
+slovene_g2p/resources/table_of_vowel_phonemes.tsv,sha256=Jtcsab-l7v3OHWxUQAEUTwablEhIHJA5q86nv1qD9zA,1892
+slovene_g2p-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+slovene_g2p-0.0.8.dist-info/METADATA,sha256=uS9IvBrisIhYWCA7-NnFdL0eWLqQysv8sGliWIifZVY,1039
+slovene_g2p-0.0.8.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+slovene_g2p-0.0.8.dist-info/top_level.txt,sha256=QTcXqfZVtN2zK6iBoKyWjN40eE3pfL74DKu7VzzUcAc,12
+slovene_g2p-0.0.8.dist-info/RECORD,,
