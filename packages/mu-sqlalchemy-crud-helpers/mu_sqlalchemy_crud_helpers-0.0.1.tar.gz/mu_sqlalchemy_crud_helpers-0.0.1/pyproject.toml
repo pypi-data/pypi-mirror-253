@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "mu_sqlalchemy_crud_helpers/_version.py"
+
+[project]
+name = "mu_sqlalchemy_crud_helpers"
+version = "0.0.1"
+authors = [
+    { name="Alain PEREZ RIAÑO", email="aperez@mondragon.edu" },
+]
+description = "A set of helpers for CRUD operations with SQLAlchemy"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "sqlalchemy ~= 2.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest ~= 7.0",
+    "aiosqlite ~= 0.19",
+    "pytest-asyncio ~= 0.15"
+]
+
+[project.urls]
+Homepage = "https://github.com/mu-sse/mu-sqlalchemy-crud-helpers"
+Issues = "https://github.com/mu-sse/mu-sqlalchemy-crud-helpers/issues"

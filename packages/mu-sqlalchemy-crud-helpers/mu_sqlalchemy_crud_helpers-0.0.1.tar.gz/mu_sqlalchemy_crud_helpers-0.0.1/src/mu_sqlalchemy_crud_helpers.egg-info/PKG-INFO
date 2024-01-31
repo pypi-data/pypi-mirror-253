@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mu_sqlalchemy_crud_helpers
+Version: 0.0.1
+Summary: A set of helpers for CRUD operations with SQLAlchemy
+Author-email: Alain PEREZ RIAÑO <aperez@mondragon.edu>
+Project-URL: Homepage, https://github.com/mu-sse/mu-sqlalchemy-crud-helpers
+Project-URL: Issues, https://github.com/mu-sse/mu-sqlalchemy-crud-helpers/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlalchemy~=2.0
+Provides-Extra: test
+Requires-Dist: pytest~=7.0; extra == "test"
+Requires-Dist: aiosqlite~=0.19; extra == "test"
+Requires-Dist: pytest-asyncio~=0.15; extra == "test"
+
+# mu-sqlalchemy-crud-helpers
+
+A set of helpers for CRUD operations with SQLAlchemy.
