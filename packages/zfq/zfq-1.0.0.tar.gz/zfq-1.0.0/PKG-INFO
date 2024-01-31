@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: zfq
+Version: 1.0.0
+Summary: FastQ file compressor
+Home-page: https://github.com/bialimed/zfq
+Author: Frederic Escudie
+Author-email: UNKNOWN
+License: GNU GPL v3
+Description: UNKNOWN
+Keywords: bioinformatics compression fastq
+Platform: UNKNOWN
