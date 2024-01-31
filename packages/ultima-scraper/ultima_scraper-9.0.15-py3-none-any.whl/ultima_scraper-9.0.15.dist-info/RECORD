@@ -1,0 +1,17 @@
+ultima_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ultima_scraper/api.py,sha256=WqO2h_xmy0XbmsDUv-2f8KKrMje2pHLaccTsTvktbwo,4749
+ultima_scraper/docs/assets/img/1.png,sha256=Y1ebQ8RaVcGVsDxrzrIGx0kSkGARMQaYzsxaWo1wy9U,46557
+ultima_scraper/docs/assets/img/2.png,sha256=eNtn9N_Z2nRKQ9XVaGsvRfzciXz919YYoufxuFuo_IU,14438
+ultima_scraper/docs/assets/img/3.png,sha256=nLGsscvjaTMYg7Wx6NjpGL66aNN_Nl0pNpZoUut35Ag,19399
+ultima_scraper/docs/assets/img/4.png,sha256=axLx9nXV31453yLaEyeAs5vzrRbIr-zvmdUbthD4DCw,18591
+ultima_scraper/docs/assets/img/5.png,sha256=sFvvAnifcvRK-TboiqH1f4fKncMxEHA1Wz0sNcbVjjQ,34610
+ultima_scraper/docs/assets/img/64255399-96a86700-cf21-11e9-8c62-87a483f33701.png,sha256=PKl8vSZ6ma63cKkBZu3foBWotx8Q1pnsNnUWAy3MLj8,143112
+ultima_scraper/docs/assets/img/icon.ico,sha256=G10iaI43HtJv2wam8zt0l6PytC1cAgVohmmO21rmDhg,43458
+ultima_scraper/managers/dashboard_controller_api.py,sha256=O9IB7MsguZOcyjk5vYuwKDWMhjIu-vqti4oF4_AKFAE,3924
+ultima_scraper/managers/ui_manager.py,sha256=iInEoprN7RiqPlQqNvT-UbGvCtI6V0FL8ZuSn5Nim_s,1286
+ultima_scraper/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ultima_scraper/ultima_scraper.py,sha256=PHHy2r1CNR-2Dzj-z01iaGTTw05hhiYnKPFhZYNb9hg,21452
+ultima_scraper-9.0.15.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+ultima_scraper-9.0.15.dist-info/METADATA,sha256=5ugjjqtyrW3yjNI4o212zq5WDFtD9FgEJhb7ek7L7Hs,11510
+ultima_scraper-9.0.15.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+ultima_scraper-9.0.15.dist-info/RECORD,,
