@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: gpt_translate
+Version: 1.2
+Summary: A tool to translate markdown files using GPT-4
+Author-email: Thomas Capelle <tcapelle@pm.me>
+Project-URL: homepage, https://github.com/tcapelle/gpt_translate
+Keywords: artificial intelligence,generative models,natural language processing,openai
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: rich >=13.0
+Requires-Dist: openai >=1.0
+Requires-Dist: tiktoken >=0.5
+Requires-Dist: tenacity >=8.2.3
+Requires-Dist: fastcore >=1.5.29
+
+[![PyPI version](https://badge.fury.io/py/termgpt.svg)](https://badge.fury.io/py/gpt_translate)
+
+# gpt_translate
+
+
+This is a tool to translate the language in Markdown files.
+
+> You will need and OpenAI API key to use this tool.
+
+## Installation
+You have to clone the repo and then do:
+
+```bash
+$ cd gpt_translate
+$ pip install .
+```
+## Usage
+
+We use GPT4 by default. You can change this on `configs/model_config.yaml`
+
+> You can add new languages by providing the language translation dictionaries in `configs/language_dicts`
+
+
+To translate a single file:
+
+```bash
+$ gpt_translate.file README.md README_es_.md --language es
+```
+
+to translate a full folder recursively:
+
+```bash
+$ gpt_translate.folder docs docs_ja --language ja
+```
+
+If you don't know what to do, you can always do:
+
+```bash
+$ gpt_translate --help
+```
