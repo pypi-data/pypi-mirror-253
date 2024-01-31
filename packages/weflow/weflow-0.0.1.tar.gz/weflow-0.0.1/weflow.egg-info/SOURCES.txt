@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+weflow/__init__.py
+weflow.egg-info/PKG-INFO
+weflow.egg-info/SOURCES.txt
+weflow.egg-info/dependency_links.txt
+weflow.egg-info/top_level.txt
