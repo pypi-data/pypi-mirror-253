@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: baichuanai
+Version: 0.0.1
+Summary: Python SDK for the Baichuan AI API
+Home-page: https://pypi.org/project/baichuanai
+License: BSD-3-Clause
+Author: Yi ZHANG
+Author-email: yizhang.dev@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Documentation, https://baichuanai.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/imyizhang/baichuanai
+Description-Content-Type: text/markdown
+
+# Baichuan AI API
+
+[![GitHub][github_badge]][github_link] [![PyPI][pypi_badge]][pypi_link]
+
+Python SDK for the Baichuan AI API
+
+
+
+## Installation
+
+```bash
+pip install baichuanai
+```
+
+
+
+## Quickstart
+
+```python
+import baichuanai
+```
+
+
+
+## License
+
+Baichuan AI API has a BSD-3-Clause license, as found in the [LICENSE](https://github.com/imyizhang/baichuanai/blob/main/LICENSE) file.
+
+
+
+## Contributing
+
+
+
+## Changelog
+
+
+
+[github_badge]: https://badgen.net/badge/icon/GitHub?icon=github&color=black&label
+[github_link]: https://github.com/imyizhang/baichuanai
+
+
+
+[pypi_badge]: https://badgen.net/pypi/v/baichuanai?icon=pypi&color=black&label
+[pypi_link]: https://www.pypi.org/project/baichuanai
