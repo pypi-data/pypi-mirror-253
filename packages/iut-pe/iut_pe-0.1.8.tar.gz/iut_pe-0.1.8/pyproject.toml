@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "iut-pe"
+version = "0.1.8"
+description = "Outil de création de fiches de poursuites d'études lié à ScoDoc"
+authors = ["Emmanuel Roubin <emmanuel.roubin@univ-grenoble-alpes.fr>"]
+maintainers = ["Emmanuel Roubin <emmanuel.roubin@univ-grenoble-alpes.fr>"]
+homepage = "https://gricad-gitlab.univ-grenoble-alpes.fr/roubine/iut-pe"
+repository = "https://gricad-gitlab.univ-grenoble-alpes.fr/roubine/iut-pe"
+keywords = ["BUT", "Poursuites d'études"]
+readme = "README.md"
+license = "LICENSE"
+classifiers = [
+    "Natural Language :: French",
+    "License :: Public Domain"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+requests = "*"
+pyyaml = "*"
+
+[tool.poetry.group.dev]
+optional = true
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pre-commit = "*"
+flake8 = "*"
+black = "*"
+coverage = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+iut-pe-ping = "iut_pe.scripts:ping"
+iut-pe-fetch= "iut_pe.scripts:fetch_script"
+iut-pe-build= "iut_pe.scripts:build_script"
+
+[tool.black]
+target-version = ["py38", "py39", "py310", "py311", "py312"]
+line-length = 500
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+ignore_errors = true
+omit = ["__init__.py", "tests/*"]
+exclude_also = ["if __name__ == .__main__.:"]
+
+[tool.coverage.html]
+directory = "coverage"

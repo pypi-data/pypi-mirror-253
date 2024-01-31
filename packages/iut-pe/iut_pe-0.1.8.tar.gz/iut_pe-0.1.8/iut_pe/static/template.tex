@@ -1,0 +1,93 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[a4paper, left=1.5cm, right=1.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{etoolbox}
+\usepackage{tabularx,booktabs,multirow}
+\pagestyle{empty}
+
+% \DeclareUnicodeCharacter{0301}{É}
+
+SED_VARIABLES
+
+\begin{document}
+
+% Header with logo and address
+\begin{minipage}[T]{0.51\textwidth}
+    %     \includegraphics[height=2cm]{SED_LOGO}
+    SED_LOGO
+    \vfill
+\end{minipage}%
+\hfill
+\vline
+\hfill
+\begin{minipage}[T]{0.45\textwidth}
+    \raggedleft
+    SED_ADDRESS
+\end{minipage}
+
+\vspace{1em}
+\begin{center}
+    \fbox{\parbox{\textwidth}{\centering\huge\textbf{Fiche de \titre}}}
+\end{center}
+\vspace{0.5em}
+\begin{center}
+    \begin{description}
+        \item[Candidat] \candidat
+        \item[Promotion] \promotion
+        \item[BUT Préparé] \but
+        \item[Parcours] \parcours
+        \item[Semestres suivis] \semestres
+        % \item[Formation] \alternant
+    \end{description}
+\end{center}
+\vspace{1em}
+\noindent Résultats de l'étudiant dans le cursus en IUT:
+\begin{center}
+\resizebox{\textwidth}{!}{%
+\renewcommand{\arraystretch}{1.5} % Adjust the factor as needed
+\begin{tabular}{|l||ccc|ccc|ccc|ccc|ccc||ccc|}
+
+\hline
+                              & \multicolumn{15}{c||}{Blocs de compétences} & \multicolumn{3}{c|}{Ressources} \\\hline
+\multirow{2}{*}{\bf Semestre} & \multicolumn{3}{c|}{BC1}      & \multicolumn{3}{c|}{BC2}             & \multicolumn{3}{c|}{BC3}          & \multicolumn{3}{c|}{BC4}       & \multicolumn{3}{c||}{BC5}     & \multirow{2}{*}{MAT$^1$}  & \multirow{2}{*}{COM$^2$}  & \multirow{2}{*}{ANG$^3$} \\
+                              & \multicolumn{3}{c|}{\bca} & \multicolumn{3}{c|}{\bcb} & \multicolumn{3}{c|}{\bcc} & \multicolumn{3}{c|}{\bcd} & \multicolumn{3}{c||}{\bce} &      &      &     \\\hline\hline
+\ifdefined\sema\sema & \bf\semacaa & \semacab & \semacac& \bf\semacba & \semacbb & \semacbc& \bf\semacca & \semaccb & \semaccc& \bf\semacda & \semacdb & \semacdc& \bf\semacea & \semaceb & \semacec& \bf\semara& \bf\semarb& \bf\semarc\\\hline\fi
+\ifdefined\semb\semb & \bf\sembcaa & \sembcab & \sembcac& \bf\sembcba & \sembcbb & \sembcbc& \bf\sembcca & \sembccb & \sembccc& \bf\sembcda & \sembcdb & \sembcdc& \bf\sembcea & \sembceb & \sembcec& \bf\sembra& \bf\sembrb& \bf\sembrc\\\hline\fi
+\ifdefined\semc\semc & \bf\semccaa & \semccab & \semccac& \bf\semccba & \semccbb & \semccbc& \bf\semccca & \semcccb & \semcccc& \bf\semccda & \semccdb & \semccdc& \bf\semccea & \semcceb & \semccec& \bf\semcra& \bf\semcrb& \bf\semcrc\\\hline\fi
+\ifdefined\semd\semd & \bf\semdcaa & \semdcab & \semdcac& \bf\semdcba & \semdcbb & \semdcbc& \bf\semdcca & \semdccb & \semdccc& \bf\semdcda & \semdcdb & \semdcdc& \bf\semdcea & \semdceb & \semdcec& \bf\semdra& \bf\semdrb& \bf\semdrc\\\hline\fi
+\ifdefined\seme\seme & \bf\semecaa & \semecab & \semecac& \bf\semecba & \semecbb & \semecbc& \bf\semecca & \semeccb & \semeccc& \bf\semecda & \semecdb & \semecdc& \bf\semecea & \semeceb & \semecec& \bf\semera& \bf\semerb& \bf\semerc\\\hline\fi
+\ifdefined\semf\semf & \bf\semfcaa & \semfcab & \semfcac& \bf\semfcba & \semfcbb & \semfcbc& \bf\semfcca & \semfccb & \semfccc& \bf\semfcda & \semfcdb & \semfcdc& \bf\semfcea & \semfceb & \semfcec& \bf\semfra& \bf\semfrb& \bf\semfrc\\\hline\fi
+
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{\rotatebox{75}{\hspace{0.7em}Etudiant }} & \multicolumn{1}{c}{\rotatebox{75}{Promotion }} & \multicolumn{1}{c}{\rotatebox{75}{\hspace{2.3em}Rang }} &  \multicolumn{1}{c}{\rotatebox{75}{\hspace{0.7em}Etudiant }} & \multicolumn{1}{c}{\rotatebox{75}{Promotion }} & \multicolumn{1}{c}{\rotatebox{75}{\hspace{2.3em}Rang }} &  \multicolumn{1}{c}{\rotatebox{75}{\hspace{0.7em}Etudiant }} & \multicolumn{1}{c}{\rotatebox{75}{Promotion }} & \multicolumn{1}{c}{\rotatebox{75}{\hspace{2.3em}Rang }} &  \multicolumn{1}{c}{\rotatebox{75}{\hspace{0.7em}Etudiant }} & \multicolumn{1}{c}{\rotatebox{75}{Promotion }} & \multicolumn{1}{c}{\rotatebox{75}{\hspace{2.3em}Rang }} &  \multicolumn{1}{c}{\rotatebox{75}{\hspace{0.7em}Etudiant }} & \multicolumn{1}{c}{\rotatebox{75}{Promotion }} & \multicolumn{1}{c}{\rotatebox{75}{\hspace{2.3em}Rang }} & \multicolumn{1}{c}{\rotatebox{75}{\hspace{0.7em}Etudiant }} & \multicolumn{1}{c}{\rotatebox{75}{\hspace{0.7em}Etudiant }} & \multicolumn{1}{c}{\rotatebox{75}{\hspace{0.7em}Etudiant }}
+
+
+\end{tabular}%
+}
+\end{center}
+
+\noindent Assiduité aux enseignements : \assiduite
+
+\ifdefined\avis\vspace{1em}\noindent Avis du département : \avis.\fi
+
+\vfill\hfill
+\begin{minipage}[T]{0.5\textwidth}
+    Fait à SED_CITY, le {\today},\\
+    Le responsable poursuites d'études et réorientation,\\
+    SED_NAME,\\
+\end{minipage}
+\begin{minipage}[T]{0.2\textwidth}
+    %     \includegraphics[height=2cm]{SED_SIGN}
+    SED_SIGN
+\end{minipage}%
+
+\vfill
+
+\noindent % This prevents paragraph indentation
+\hspace*{\fill} % Fill the space before the line
+\rule{0.5\textwidth}{0.4pt}\\
+\hspace*{\fill}{\footnotesize $^1$ Mathématiques $^2$ Expression - Communication $^3$ Anglais }
+\end{document}
