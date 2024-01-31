@@ -1,0 +1,2 @@
+[console_scripts]
+chembl_downloader = chembl_downloader.cli:main
