@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pfeed
+Version: 0.0.1.dev1
+Summary: A Modern Data Pipeline for Algo-Trading, supporting getting both Real-Time and Historical Data.
+Author: Stephen Yau
+Author-email: softwareentrepreneer+pfeed@gmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: minio (>=7.2.3,<8.0.0)
+Requires-Dist: orjson (>=3.9.12,<4.0.0)
+Requires-Dist: pandas (>=2.2.0,<3.0.0)
+Requires-Dist: pyarrow (>=15.0.0,<16.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: ray (>=2.9.1,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Requires-Dist: yfinance (>=0.2.36,<0.3.0)
+Description-Content-Type: text/markdown
+
+## Setup
+```bash
+poetry install
+```
+
+## Start Processing Historical Data
+```
+python main.py -m historical -p BTC_USDT_PERP -s bybit --no-minio
+# or
+from pfeed import bybit
+bybit.run_historical(...)
+```
+
+## Start Streaming Live Data (supports PAPER trading)
+```python
+python main.py -e live -s bybit -m streaming
+```
+
