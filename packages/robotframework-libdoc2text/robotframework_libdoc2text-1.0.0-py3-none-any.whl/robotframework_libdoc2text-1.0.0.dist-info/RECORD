@@ -1,0 +1,10 @@
+Libdoc2Text/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+Libdoc2Text/__main__.py,sha256=UwCbrKDkIExJKVC3D-FJL8wpGxVN-ZuO5ylcI3uyeEE,71
+Libdoc2Text/libdoc2text.py,sha256=Ta7oXh2WdczhhI_LCf6S9tRUQcWHqGkkjc82-xsLRh0,1620
+Libdoc2Text/templates/library.adoc.jinja,sha256=O9cuhd-SoAuGpG6EmIRKdpAvgHNcnT74H-jH_hkdm48,287
+Libdoc2Text/templates/library.md.jinja,sha256=hTJ-1kcZK8c3YE3rPMxVBjJP2514aLlZ8Hg57hvjZW0,279
+robotframework_libdoc2text-1.0.0.dist-info/entry_points.txt,sha256=dF1wyYF-df7YSf_TBy6DQcVuwyKAkLELytRn8uvpsJ8,59
+robotframework_libdoc2text-1.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+robotframework_libdoc2text-1.0.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+robotframework_libdoc2text-1.0.0.dist-info/METADATA,sha256=-R48K2iwXP0mpcN4ibWdc7yfprcMZkVlzJlMmxSYUeM,1512
+robotframework_libdoc2text-1.0.0.dist-info/RECORD,,
