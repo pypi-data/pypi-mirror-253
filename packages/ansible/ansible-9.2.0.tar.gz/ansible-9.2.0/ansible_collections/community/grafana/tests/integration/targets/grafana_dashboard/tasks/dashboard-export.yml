@@ -1,0 +1,27 @@
+---
+- name: Check export grafana dashboard to file
+  community.grafana.grafana_dashboard:
+    grafana_url: "{{ grafana_url }}"
+    grafana_user: "{{ grafana_username }}"
+    grafana_password: "{{ grafana_password }}"
+    state: export
+    path: /tmp/dashboard_export.json
+    overwrite: true
+    uid: "{{ result.uid }}"
+  register: result
+- ansible.builtin.assert:
+    that:
+      - result.failed == false
+      - result.changed == true
+      - result.msg == 'Dashboard ' ~ result.uid ~ ' exported to /tmp/dashboard_export.json'
+
+- name: Load /tmp/dashboard_export.json or fail if missing
+  ansible.builtin.set_fact:
+    exported_dashboard_lines: "{{ lookup('file', '/tmp/dashboard_export.json').splitlines() }}"
+
+- name: Assert that exported dashboard contains formatted JSON
+  ansible.builtin.assert:
+    that:
+      - exported_dashboard_lines | length >= 2
+      - exported_dashboard_lines[0] == '{'
+      - exported_dashboard_lines[-1] == '}'

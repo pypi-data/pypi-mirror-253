@@ -1,0 +1,14 @@
+---
+- name: Delete dashboard
+  community.grafana.grafana_dashboard:
+    grafana_url: "{{ grafana_url }}"
+    grafana_user: "{{ grafana_username }}"
+    grafana_password: "{{ grafana_password }}"
+    state: absent
+    uid: "{{ result.uid }}"
+  register: result
+- ansible.builtin.assert:
+    that:
+      - result.failed == false
+      - result.changed == true
+      - result.msg == 'Dashboard ' ~ result.uid ~ ' deleted'

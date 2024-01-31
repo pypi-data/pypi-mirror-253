@@ -1,0 +1,37 @@
+---
+- name: Check import grafana dashboard from id
+  community.grafana.grafana_dashboard:
+    grafana_url: "{{ grafana_url }}"
+    grafana_user: "{{ grafana_username }}"
+    grafana_password: "{{ grafana_password }}"
+    state: present
+    commit_message: Updated by ansible
+    dashboard_id: "6098"
+    dashboard_revision: "1"
+    overwrite: true
+  register: result
+- ansible.builtin.assert:
+    that:
+      - result.failed == false
+      - result.changed == true
+      - result.msg == 'Dashboard Zabbix Host Status created'
+
+- name: Check import grafana dashboard from id idempotency
+  community.grafana.grafana_dashboard:
+    grafana_url: "{{ grafana_url }}"
+    grafana_user: "{{ grafana_username }}"
+    grafana_password: "{{ grafana_password }}"
+    state: present
+    commit_message: Updated by ansible
+    dashboard_id: "6098"
+    dashboard_revision: "1"
+    overwrite: true
+  register: result
+- ansible.builtin.assert:
+    that:
+      - result.failed == false
+      - result.changed == false
+      - result.msg == 'Dashboard Zabbix Host Status unchanged.'
+
+- ansible.builtin.include_tasks:
+    file: delete-dashboard.yml
