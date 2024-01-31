@@ -1,0 +1,12 @@
+leven_search/__init__.py,sha256=yYG2IkaOe6ktPV8e_SpHDuTYLMn0uBlFtbE4iUivDuM,158
+leven_search/config.py,sha256=Lbn1dMIrr0hXRcP4gcqoywFvSZyNtzN6Xsn9-v7vuro,184
+leven_search/cost.py,sha256=38vddmv8hDToCHCwl1IlX7ylUekXZIQj405osHapgjU,1943
+leven_search/leven_search.py,sha256=z5ADckwqTYuIiGupsu8ME5M9clP_xgSfV9Ao6UDcglI,3198
+leven_search/result.py,sha256=E0Bjq8xhea_vEFwd5V39-inRTFfs9KxagmeproxWSw4,1288
+leven_search/state.py,sha256=DyHWtL4mPhlAvt9emO6CXGnSPJf0NmN8d97Z9UdpOI0,501
+leven_search/trie.py,sha256=XAHxkZgB9vQQd5BgRx_jysbcc5ntvgWyLstqi_aL26g,3097
+leven_search-0.2.1.dist-info/LICENSE,sha256=qltxHRoUjLIHqZm_XInfNPp8PhyI43gaoMWKXiVc4sg,1073
+leven_search-0.2.1.dist-info/METADATA,sha256=R21DzFYGW2X9bWaYHF7onPx_4SoQZdscGn7e7UPibtE,5020
+leven_search-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+leven_search-0.2.1.dist-info/top_level.txt,sha256=5xre4UUiTSX0a-wJkXhxNdWgexgLjERw_JiI0y4pbGM,13
+leven_search-0.2.1.dist-info/RECORD,,
