@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: py_lets_be_rational_gen
+Version: 1.0.0
+Summary: Pure python implementation of Peter Jaeckel's LetsBeRational.
+Home-page: 
+Maintainer: 
+Maintainer-email: 
+License: MIT
+Requires-Dist: numpy
+
+Modified lib

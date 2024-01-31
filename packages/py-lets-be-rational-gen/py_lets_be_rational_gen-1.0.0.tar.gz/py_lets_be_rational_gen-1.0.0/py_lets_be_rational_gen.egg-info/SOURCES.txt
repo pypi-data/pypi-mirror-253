@@ -1,0 +1,17 @@
+README.rst
+setup.py
+py_lets_be_rational/__init__.py
+py_lets_be_rational/constants.py
+py_lets_be_rational/erf_cody.py
+py_lets_be_rational/exceptions.py
+py_lets_be_rational/lets_be_rational.py
+py_lets_be_rational/normaldistribution.py
+py_lets_be_rational/numba_helper.py
+py_lets_be_rational/rationalcubic.py
+py_lets_be_rational_gen.egg-info/PKG-INFO
+py_lets_be_rational_gen.egg-info/SOURCES.txt
+py_lets_be_rational_gen.egg-info/dependency_links.txt
+py_lets_be_rational_gen.egg-info/requires.txt
+py_lets_be_rational_gen.egg-info/top_level.txt
+tests/test_profile_py_lets_be_rational.py
+tests/test_public_functions.py
