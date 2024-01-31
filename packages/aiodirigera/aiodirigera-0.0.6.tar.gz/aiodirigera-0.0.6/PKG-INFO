@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: aiodirigera
+Version: 0.0.6
+Summary: Python module to talk to Ikea Dirigera.
+Author-email: Matt Lloyd <matt.lloyd@protonmail.com>
+License: MIT
+Platform: any
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: asyncio-throttle
+Provides-Extra: test
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: pytest==7.4.3; extra == "test"
+Requires-Dist: pytest-asyncio==0.23.2; extra == "test"
+Requires-Dist: pytest-aiohttp==1.0.5; extra == "test"
+Requires-Dist: pytest-httpserver==1.0.8; extra == "test"
+Requires-Dist: pytest-cov==4.1.0; extra == "test"
+Requires-Dist: pylint==3.0.2; extra == "test"
+Provides-Extra: dev
+Requires-Dist: python-dotenv; extra == "dev"
+Requires-Dist: build; extra == "dev"
+
+# aiodirigera
