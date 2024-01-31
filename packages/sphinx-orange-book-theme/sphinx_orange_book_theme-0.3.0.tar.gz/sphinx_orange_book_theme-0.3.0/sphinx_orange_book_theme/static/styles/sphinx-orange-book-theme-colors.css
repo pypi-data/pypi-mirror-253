@@ -1,0 +1,76 @@
+/* ****************************************************************************
+ * Customization of colors in sphinx-book-theme.
+ * Reference: https://pydata-sphinx-theme.readthedocs.io/en/latest/user_guide/styling.html
+ *
+ * This file is generated from scripts/sphinx-orange-book-theme-colors.css.jinja
+ * in sphinx_orange_book_theme source code.
+ *************************************************************************** */
+
+/* ****************************************************************************
+ * Colors
+ *************************************************************************** */
+html[data-theme="light"] {
+  /* teal in the original theme */
+  --pst-color-primary: #df671f;
+  --pst-color-primary-bg: #fec9ae;
+  /* violet in the original theme */
+  --pst-color-secondary: #a58713;
+  --pst-color-secondary-bg: #f1d17d;
+  /* pink in the original theme */
+  --pst-color-accent: #379f14;
+  --pst-color-accent-bg: #b8e0a3;
+  /* gray in the original theme */
+  --pst-color-background: white;
+  --pst-color-on-background: white;
+  --pst-color-surface: #f2ece9;
+  --pst-color-on-surface: #312723;
+  --pst-color-text-base: #312723;
+  --pst-color-text-muted: #6a5347;
+  --pst-color-border: #cfb8ad;
+  --pst-color-border-muted: #e0d1ca;
+  /* info, warning, success, danger */
+  --pst-color-info: #379f14;
+  --pst-color-info-bg: #b8e0a3;
+  --pst-color-warning: #df671f;
+  --pst-color-warning-bg: #fec9ae;
+  --pst-color-success: #379f14;
+  --pst-color-success-bg: #b8e0a3;
+  --pst-color-danger: #ff3c20;
+  --pst-color-danger-bg: #ffc1ad;
+  /* inline code */
+  --pst-color-inline-code-links: #df671f;
+  --pst-color-inline-code: #379f14;
+}
+
+html[data-theme="dark"] {
+  /* teal in the original theme */
+  --pst-color-primary: #ee8b54;
+  --pst-color-primary-bg: #663113;
+  /* violet in the original theme */
+  --pst-color-secondary: #c4a10d;
+  --pst-color-secondary-bg: #4c3e13;
+  /* pink in the original theme */
+  --pst-color-accent: #59b937;
+  --pst-color-accent-bg: #224814;
+  /* gray in the original theme */
+  --pst-color-background: black;
+  --pst-color-on-background: #312723;
+  --pst-color-surface: #312723;
+  --pst-color-on-surface: #f2ece9;
+  --pst-color-text-base: #f2ece9;
+  --pst-color-text-muted: #bc9e8f;
+  --pst-color-border: #896a5a;
+  --pst-color-border-muted: #6a5347;
+  /* info, warning, success, danger */
+  --pst-color-info: #59b937;
+  --pst-color-info-bg: #224814;
+  --pst-color-warning: #ee8b54;
+  --pst-color-warning-bg: #663113;
+  --pst-color-success: #59b937;
+  --pst-color-success-bg: #224814;
+  --pst-color-danger: #ff7553;
+  --pst-color-danger-bg: #7c1a0c;
+  /* inline code */
+  --pst-color-inline-code-links: #ee8b54;
+  --pst-color-inline-code: #59b937;
+}
