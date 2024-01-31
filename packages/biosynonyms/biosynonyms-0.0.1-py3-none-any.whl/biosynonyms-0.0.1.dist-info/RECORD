@@ -1,0 +1,12 @@
+biosynonyms/__init__.py,sha256=lLFPIr6YNPHrRyWF-Yfw3iv6ndvYlBQYsMfiQL4vLK0,341
+biosynonyms/lint.py,sha256=V8ZunyqXmKKWjH5UTeL9asLTDX54lPyCpCX8os9Li2A,687
+biosynonyms/predict.py,sha256=spSwHZZlhoIN2dKlGnzU666MgeHoUYSr76SP_M-6d7k,10153
+biosynonyms/resources/__init__.py,sha256=yJzfxCxt6Ui-HFQWGbMyvIbuhLqWel8RmbS-gMeAS70,4684
+biosynonyms/resources/negatives.tsv,sha256=918weDDUujbrIvgbIwtirTWIHnQKGJQanWzVSxG3Mzs,154
+biosynonyms/resources/positives.tsv,sha256=ymg43-MOstMmQkY5BaRcZLHi54NRrMmsyuoAU0vOIs4,2368
+biosynonyms/resources/unentities.tsv,sha256=33BHk0Wvw4d95s0gf1n-ZzoVSvjo7dn6A86XwWhqk2c,5563
+biosynonyms-0.0.1.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+biosynonyms-0.0.1.dist-info/METADATA,sha256=2S34nleaK_i6UcueuVeMhdj0p9uRLD0ymbEIt_j15xo,7584
+biosynonyms-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+biosynonyms-0.0.1.dist-info/top_level.txt,sha256=rBrh8rNwU4vh8nDvVG3kwpOWOviv_r2p4ybi0TjtFgk,12
+biosynonyms-0.0.1.dist-info/RECORD,,
