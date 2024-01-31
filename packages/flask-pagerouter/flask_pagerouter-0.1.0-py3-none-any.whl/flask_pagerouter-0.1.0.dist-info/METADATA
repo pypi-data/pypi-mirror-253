@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: flask-pagerouter
+Version: 0.1.0
+Summary: A lightweight Python library for page routing in Flask applications.
+Author: Etienne DTS
+License: MIT
+Requires-Dist: Flask
+
