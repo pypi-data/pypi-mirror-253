@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: grooper
+Version: 0.1.1
+Summary: 
+Author: Adrian Carreno
+Author-email: adrian.carreno@gomoder.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Python Grooper Wrapper
+
+This wrapper encapsulates the functionality provided in the grooper API.
+
+## Usage
+
+```python
+import grooper.core import API, Batch
+
+API.key = <API Key>
+API.url = <API URL>
+
+batch = Batch.find(<Batch ID>)
+print(batch)
+```
+
+## Testing
+
+To run the tests, you need to have `pytest` and `coverage` installed. To run the tests and generate a coverage report, run the following commands:
+
+```bash
+coverage run --source=. -m pytest
+coverage report
+```
+
+Before committing, make sure you are styling appropriately your code. For that, you can run the following command (assuming you have installed `black`, `isort` and `pylint`):
+
+```bash
+black .
+isort .
+pylint grooper tests
+```
+
