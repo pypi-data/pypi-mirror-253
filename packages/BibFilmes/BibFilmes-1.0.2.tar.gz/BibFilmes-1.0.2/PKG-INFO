@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: BibFilmes
+Version: 1.0.2
+Author: Luiz Felipe
+Author-email: luiz.nogueira@ufpi.edu.br
+License: MIT License
+Keywords: BibFilmes
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+
+Bib Filmes é uma biblioteca na linguagem python, desenvolvida na disciplina de Programação orientada a objetos 2 na Universidade federal do Piauí!
+Suas principais funções:
+1-Dado um gênero de filme, rankear os principais por avaliação;
+2-Dado um gênero, recomendar um filme sobre aquele gênero;
+3-Realizar uma tabela sobre informações pertinentes daquele filme.
