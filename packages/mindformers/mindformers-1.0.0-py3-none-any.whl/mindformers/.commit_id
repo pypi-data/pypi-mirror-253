@@ -1,0 +1,8 @@
+r1.0
+commit 7f9b584
+Merge: 14b815f 4ceb21a
+Author: Lin <heqinglin4@huawei.com>
+Date:   Mon Jan 22 10:47:26 2024 +0000
+
+    !2175 回退 'Pull Request !2138 : 【r1.0】910b默认配置infnan mode同步提交'
+    Merge pull request !2175 from huanglei/revert-merge-2138-r1.0
