@@ -1,0 +1,11 @@
+aiohttp
+
+[dev]
+build
+twine
+
+[test]
+pytest
+pytest-asyncio
+websockets
+coverage
