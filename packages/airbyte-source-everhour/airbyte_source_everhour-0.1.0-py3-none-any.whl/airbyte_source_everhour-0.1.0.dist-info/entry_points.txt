@@ -1,0 +1,2 @@
+[console_scripts]
+source-everhour = source_everhour.run:run
