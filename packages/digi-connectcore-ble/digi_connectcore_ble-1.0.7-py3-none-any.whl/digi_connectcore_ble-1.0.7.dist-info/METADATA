@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: digi-connectcore-ble
+Version: 1.0.7
+Summary: Digi ConnectCore Bluetooth Low Energy library
+Home-page: https://github.com/digi-embedded/connectcore-ble-python
+Author: Digi International Inc.
+Author-email: tech.support@digi.com
+License: Mozilla Public License 2.0 (MPL 2.0)
+Project-URL: Documentation, https://digi-connectcore-ble.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/digi-embedded/connectcore-ble-python
+Project-URL: Tracker, https://github.com/digi-embedded/connectcore-ble-python/issues
+Keywords: bluetooth,connectcore,ble,digi,xbee
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Games/Entertainment
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, !=3.6.*, !=3.7.*
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: bluezero ~=0.7.1
+Requires-Dist: digi-xbee ~=1.4.1
+Requires-Dist: pycairo ~=1.21.0
+Requires-Dist: pycryptodome ~=3.15.0
+Requires-Dist: pyserial ~=3.5
+Requires-Dist: six ~=1.16.0
+Requires-Dist: srp ~=1.0.19
+Requires-Dist: dbus-python ~=1.2.18 ; platform_system != "Windows"
+Requires-Dist: PyGObject ~=3.42.2 ; platform_system != "Windows"
+
+Digi ConnectCore Bluetooth Low Energy Python library |pypiversion| |pythonversion|
+==================================================================================
+
+This project contains the source code of the ConnectCore Bluetooth Low Energy
+Python library, an easy-to-use API developed in Python that allows your Digi
+International's `ConnectCore <https://www.digi.com/products/browse/connectcore>`_
+modules to interact with mobile applications using the `Digi IoT Mobile SDK
+<https://www.digi.com/resources/documentation/digidocs/90002568>`_
+through Bluetooth Low Energy.
+
+This source has been contributed by Digi International.
+
+
+Installation
+------------
+
+You can install ConnectCore Bluetooth Low Energy Python library using `pip
+<https://pip.pypa.io/en/stable/>`_::
+
+    $ pip install digi-connectcore-ble
+
+
+Install from Source
+-------------------
+
+You can install ConnectCore Bluetooth Low Energy Python library directly from
+sources. To do so, extract the source code to your computer and execute the
+following command::
+
+    $ pip install <path_to_connectcore-ble-python_dir>
+
+
+Documentation
+-------------
+
+ConnectCore Bluetooth Low Energy Python library has user guide and API
+reference documentation hosted on Read the Docs. You can find the latest,
+most up to date, documentation at
+`latest docs <https://digi-connectcore-ble.readthedocs.io/en/latest/>`_. To see only those
+features which have been released, check out the
+`stable docs <https://digi-connectcore-ble.readthedocs.io/en/stable/>`_.
+
+
+How to contribute
+-----------------
+
+The contributing guidelines are in the `CONTRIBUTING.rst document
+<https://github.com/digi-embedded/connectcore-ble-python/blob/master/CONTRIBUTING.rst>`_.
+
+
+License
+-------
+
+Copyright 2022, 2023, Digi International Inc.
+
+The `MPL 2.0 license <https://github.com/digi-embedded/connectcore-ble-python/blob/master/LICENSE.txt>`_
+covers the majority of this project with the following exceptions:
+
+* The `ISC license <https://github.com/digi-embedded/connectcore-ble-python/blob/master/examples/LICENSE.txt>`_
+  covers the contents of the examples directory.
+
+.. |pypiversion| image:: https://badge.fury.io/py/digi-connectcore-ble.svg
+    :target: https://pypi.org/project/digi-connectcore-ble/
+.. |pythonversion| image:: https://img.shields.io/pypi/pyversions/digi-connectcore-ble.svg
+    :alt: PyPI - Python Version
