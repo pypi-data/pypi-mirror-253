@@ -1,0 +1,2 @@
+[console_scripts]
+source-dv-360 = source_dv_360.run:run
