@@ -1,0 +1,6 @@
+README.md
+setup.py
+moeda_br.egg-info/PKG-INFO
+moeda_br.egg-info/SOURCES.txt
+moeda_br.egg-info/dependency_links.txt
+moeda_br.egg-info/top_level.txt
