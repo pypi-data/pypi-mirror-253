@@ -1,0 +1,2 @@
+[console_scripts]
+texttools = TextTools.main:cli

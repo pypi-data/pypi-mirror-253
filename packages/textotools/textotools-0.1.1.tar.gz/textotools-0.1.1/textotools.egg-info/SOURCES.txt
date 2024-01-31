@@ -1,0 +1,10 @@
+README.md
+setup.py
+textotools/__init__.py
+textotools/main.py
+textotools.egg-info/PKG-INFO
+textotools.egg-info/SOURCES.txt
+textotools.egg-info/dependency_links.txt
+textotools.egg-info/entry_points.txt
+textotools.egg-info/requires.txt
+textotools.egg-info/top_level.txt

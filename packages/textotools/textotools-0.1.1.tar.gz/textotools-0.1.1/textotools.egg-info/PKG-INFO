@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: textotools
+Version: 0.1.1
+Author: Marcos, Anna
+Author-email: annabeatriz_2019@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Requires-Dist: Click
