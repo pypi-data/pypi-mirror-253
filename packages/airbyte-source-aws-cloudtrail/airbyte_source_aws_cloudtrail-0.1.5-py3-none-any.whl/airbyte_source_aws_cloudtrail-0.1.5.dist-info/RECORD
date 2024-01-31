@@ -1,0 +1,16 @@
+integration_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+integration_tests/abnormal_state.json,sha256=DriLVOOvWnjlOvXBmd4A-l9KmQqJ4gR09AG4elXY31M,61
+integration_tests/acceptance.py,sha256=8eU9iSDbmHyufPvAouJGhPMgPAFTCP8IKIKHLm7u5TE,435
+integration_tests/configured_catalog.json,sha256=5qE5KepjYUv0hVrJ8F3MXS8PZv-wR2jgig83bk9r-1c,387
+integration_tests/invalid_config.json,sha256=qx408iSKsE4eOi1Y_jcDuHZk7w7N_i8_8cWWV6bwhxg,141
+integration_tests/state.json,sha256=N2x83a_ikvog6mj964s5taqTdVzNGM7hdx_zL9VzGdc,61
+source_aws_cloudtrail/__init__.py,sha256=BGHIjp0xLfpJQG54ErriN_LMi1Z5uC3SEo-A19axOb8,1148
+source_aws_cloudtrail/run.py,sha256=ISWdNuO-meZM4wcddFvVuWUl7ozZNpMe-htYnrIxryA,252
+source_aws_cloudtrail/source.py,sha256=3flFwPghYcGDpkFfsxYZ2sQR_5qOQqrbjAujAuUj3LU,7560
+source_aws_cloudtrail/spec.json,sha256=k1jwqQj045h4YnjAW26hoCkT_eD5oQ3yAXV4aHi0YsI,1705
+source_aws_cloudtrail/schemas/management_events.json,sha256=YfKZuCJ9Qf78S4R4uSJpX-yjDkO8JxOGMnmd_qZLfyo,893
+airbyte_source_aws_cloudtrail-0.1.5.dist-info/METADATA,sha256=wFnKaqUNAFAVFoIcBYnSZPR592zbVVUK4SykwY4ijVY,5524
+airbyte_source_aws_cloudtrail-0.1.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+airbyte_source_aws_cloudtrail-0.1.5.dist-info/entry_points.txt,sha256=gsbLx9SxY3opyVLnD4PVVeAvMkEK2y0Iyj2Jex_KdtM,72
+airbyte_source_aws_cloudtrail-0.1.5.dist-info/top_level.txt,sha256=z8HAnd0wxKKGrWhk1fnfiepTAwyTtvoko94EghTLPF4,40
+airbyte_source_aws_cloudtrail-0.1.5.dist-info/RECORD,,
