@@ -1,0 +1,11 @@
+Django>=3.2
+
+[jinja2]
+jinja2>=2.9.6
+
+[tests]
+pytest
+pytest-cov
+pytest-django
+pytest-ruff
+jinja2>=2.9.6
