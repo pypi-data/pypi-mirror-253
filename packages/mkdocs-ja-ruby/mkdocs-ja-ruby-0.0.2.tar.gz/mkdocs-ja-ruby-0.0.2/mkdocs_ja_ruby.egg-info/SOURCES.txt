@@ -1,0 +1,8 @@
+setup.py
+mkdocs_ja_ruby/__init__.py
+mkdocs_ja_ruby/plugin.py
+mkdocs_ja_ruby.egg-info/PKG-INFO
+mkdocs_ja_ruby.egg-info/SOURCES.txt
+mkdocs_ja_ruby.egg-info/dependency_links.txt
+mkdocs_ja_ruby.egg-info/entry_points.txt
+mkdocs_ja_ruby.egg-info/top_level.txt
