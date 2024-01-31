@@ -1,0 +1,2 @@
+[console_scripts]
+source-chartmogul = source_chartmogul.run:run
