@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: SearchForThis
+Version: 0.1.2
+Summary: Projeto final da disciplina de Programação Orientada a Objetos II
+Author: liedson
+Author-email: fabricoliedson@gamil.com
+Keywords: python,web,search
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Descrição
+A `SearchForThis` é uma biblioteca que efetua pesquisas em motores de busca na web.
+
+# Funcionalidades
+* Realizar buscas por conteúdos desejados
+* Acessar links retornados
+
+# Biblioteca
+### Instalação
+```python
+pip install SearchForThis
+```
+
+### Importação
+```python
+import SearchForThis
+```
+### Formas de utilização
+```python
+search = SearchForThis.Searchft
+```
+`Ou`
+```python
+from SearchForThis import Searchft
+``` 
+
+### Acessando métodos
+Uma das formas de acessar os métodos da classe, é a seguinte:
+```python
+Searchft.method()
+```
+Onde `method`, é o nome método que você deseja utilizar.
+
+### Realizando buscas:
+Use o método `buscar` da classe, da seguinte forma:
+```python
+resultado = Search.buscar(conteúdo_da_busca, size)
+```
+A variável size, armazena a quantidade de links que você deseja buscar. O conteúdo da busca deve ser uma string.
+
+### Visitando links
+Use o método `visitarLink`, da seguinte forma:
+```python
+Searchft.visitarLink(link)
+```
+O link deve ser uma string.
+
+# Exemplos de uso
+
+```python
+import SearchForThis
+
+search = SearchForThis.Searchft
+# buscando links 
+resultados = search.buscar('python', 5)
+
+# imprime a lista com os resultados 
+print(resultados)
+
+# visitando links retornados
+search.visitarLink(resultados[1])
+```
+
+```python
+import SearchForThis
+
+search = SearchForThis.Searchft
+# busca pelo produto
+resultados = search.pesquisarProduto(produto)
+
+# imprime a lista com os resultados 
+print(resultados)
+```
+
+Os exemplos ilustrados com imagens, podem ser vistos no linkk a seguir:  https://github.com/Liedsonfsa/pacote-poo2/blob/master/README.md
+
