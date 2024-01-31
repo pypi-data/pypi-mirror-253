@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bypasssafe
+Version: 0.4
+Summary: Valt de senhas e gerador
+Author: MarcosDalessandro
+Author-email: marcosdalessandroclima@ufpi.edu.br
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bcrypt (>=3.2.0,<4.0.0)
+Requires-Dist: psycopg2 (>=2.9.9,<3.0.0)
+Description-Content-Type: text/markdown
+
+Readme do pacote
