@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "py_canalyzer"
+version = "0.0.1"
+description = "Python CANalyzer Package"
+authors = ["chaitu-ycr <chaitu.ycr@gmail.com>"]
+license = "LICENSE"
+readme = "README.md"
+homepage = "https://github.com/chaitu-ycr/py_canalyzer.git"
+repository = "https://github.com/chaitu-ycr/py_canalyzer.git"
+documentation = "https://chaitu-ycr.github.io/py_canalyzer/"
+keywords = ["Vector", "CANalyzer", "py_canalyzer"]
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Software Development :: Embedded Systems"
+]
+packages = [
+    { include = "py_canalyzer.py", from = "src" },
+    { include = "py_canalyzer_utils/*.py", from = "src"},
+    { include = "py_canalyzer_utils/app_utils/*.py", from = "src"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pywin32 = "^306"
+pytest-html = "^4.1.1"
+
+[tool.poetry.group.dev.dependencies]
+mkdocstrings-python = "^1.7.5"
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
