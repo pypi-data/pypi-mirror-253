@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+scPECA_test.egg-info/PKG-INFO
+scPECA_test.egg-info/SOURCES.txt
+scPECA_test.egg-info/dependency_links.txt
+scPECA_test.egg-info/top_level.txt
