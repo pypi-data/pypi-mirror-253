@@ -1,0 +1,12 @@
+typelog/__init__.py,sha256=tzZCGrbHGBWgo6jLT9uWa6WIh3mBjJBv8jDK6RVkGOE,94
+typelog/logcore.py,sha256=RZXoPE6_7aYox7tTgW76b1CaBipzu22OJdQzCzlINEM,2881
+typelog/logtypes.py,sha256=TIQGSLjWJPeAINHXYZku4Kkw6WWpoPwZgv7Nc6IEuiE,822
+typelog/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typelog/settings.py,sha256=Gss2g1rzv0gQPHk6xjrBIiY1nU4ggxeS9YFm3am3Syk,465
+typelog/types.py,sha256=-Sy861-B34h_37amU-A7eVnYTqDTJSau7Vj98YzWQZE,257
+typelog/utils.py,sha256=wZT2I7KVckXGfI8qEMg7SmH64JdwsRjnk6pfBE7vKO8,3678
+typelog-0.2.9.dist-info/LICENSE,sha256=zBWQPD6Oxv8jSpo9MUt-h5BymUSmkywmNAK13ZPFF4I,1121
+typelog-0.2.9.dist-info/METADATA,sha256=mZyhykNBOdWAc2IplFvSvWX808ec5tf1CKMT-2JtNBo,5190
+typelog-0.2.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+typelog-0.2.9.dist-info/top_level.txt,sha256=YyhXgXzoNxhkd37cAFT9_nIiXdTnI_R0POogLpqtaUM,8
+typelog-0.2.9.dist-info/RECORD,,
