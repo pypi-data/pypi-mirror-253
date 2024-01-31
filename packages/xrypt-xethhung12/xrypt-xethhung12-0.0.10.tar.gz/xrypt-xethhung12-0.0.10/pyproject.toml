@@ -1,0 +1,19 @@
+[build-system]
+requires = [ "setuptools>=61.0",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xrypt-xethhung12"
+version = "0.0.10"
+description = "A simple tools to hybrid encryption and decryption"
+readme = "readme.md"
+requires-python = ">=3.7"
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+dependencies = [ "crypto", "cryptography", "pycryptodome",]
+[[project.authors]]
+name = "Xeth Hung"
+email = "admin@xethh.me"
+
+[project.urls]
+Homepage = "https://github.com/xh-dev-py/xrypt-xethhung12"
+"Bug Tracker" = "https://github.com/xh-dev-py/xrypt-xethhung12/issues"
