@@ -1,0 +1,9 @@
+tsloader/__init__.py,sha256=qQc4c0jXj5Us4dIDsNy6G0qVLhHvu7zDfIFfcSynuVk,107
+tsloader/datamodule.py,sha256=Cf46m6p_GSjdM1FExXk22l5GwvMDmAj2U9MZ5eu6ci8,5279
+tsloader/dataset.py,sha256=HphZCRpK5FHOsmK4urRbb92KlS0Yrm67tVNswpaUhR0,7743
+tsloader/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsloader-3.1.0.dist-info/LICENSE,sha256=_gVxCFRtPWOku9ETP1BAr-WvVRYack76yA71ZhFfqlw,1073
+tsloader-3.1.0.dist-info/METADATA,sha256=KL8NCfJlDTMtmAUhORGTQ822gM1cARXrKLS9l6J0VHI,3899
+tsloader-3.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tsloader-3.1.0.dist-info/top_level.txt,sha256=SpF36-C-BNjQ4IN0J74-ZXT2m_sHu9A4HmZTUvIJJS4,9
+tsloader-3.1.0.dist-info/RECORD,,
