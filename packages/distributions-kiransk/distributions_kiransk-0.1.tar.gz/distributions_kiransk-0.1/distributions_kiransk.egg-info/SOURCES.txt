@@ -1,0 +1,10 @@
+setup.py
+distributions_kiransk/Binomialdistribution.py
+distributions_kiransk/Gaussiandistribution.py
+distributions_kiransk/Generaldistribution.py
+distributions_kiransk/__init__.py
+distributions_kiransk.egg-info/PKG-INFO
+distributions_kiransk.egg-info/SOURCES.txt
+distributions_kiransk.egg-info/dependency_links.txt
+distributions_kiransk.egg-info/not-zip-safe
+distributions_kiransk.egg-info/top_level.txt
