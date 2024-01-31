@@ -1,0 +1,7 @@
+adult/__init__.py,sha256=OfbPbnWgsS0J2IbeyDFNUNfkr-f8l5HikNaslZjrSjs,200
+adult/adult.py,sha256=R0yel4HmwtuH_ITm--Q68y6BRbeuR7BtljYFADs5ECA,15068
+adult/adult_raw.py,sha256=dni5_luhGRXt4ElHWS_7gF8aJLez2fxCBaEsaPYeJv8,1431
+adult_dataset-2.1.0.dist-info/LICENSE,sha256=IGiayQhhdI3GZeSDbzJZIT2Vu0CR3q8JpddfzjaxRrI,1070
+adult_dataset-2.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+adult_dataset-2.1.0.dist-info/METADATA,sha256=H9ZBxRfm9ppaFlrU2PwvrzHF9tavFcMqcOFdeof29eA,2795
+adult_dataset-2.1.0.dist-info/RECORD,,
