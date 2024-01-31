@@ -1,0 +1,11 @@
+edfi_api_client/__init__.py,sha256=LgmoOS04nV2_B4InFZs0yenS_OOYFhY2hDqqt4pNBJE,127
+edfi_api_client/edfi_client.py,sha256=P5nUJoq24abWKEp632scKiKq5pwjzKhOFtRIq7QNWSM,17360
+edfi_api_client/edfi_endpoint.py,sha256=peubCifz3E7lLkseflimhhm0YpE4cAlKXDRTrgexWas,23924
+edfi_api_client/edfi_params.py,sha256=IulXqPyIUfDqjb_Pux3ICHQmnEsZqr8-ld87EBCFxAs,6402
+edfi_api_client/edfi_swagger.py,sha256=BI5tva2beXyerDHnw2QnvF7Vj5IZhT1fPwG3wsY0jY0,3793
+edfi_api_client/util.py,sha256=cAsJ_niLXs1qxlRwEEsAgNu0sz7kCkAoFsAPqM0OL94,1037
+edfi_api_client-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+edfi_api_client-0.2.1.dist-info/METADATA,sha256=vfFx5Be5IV_0WjAa0TQnYN99uP_3Pf_0wRSv6WA_i3Y,23345
+edfi_api_client-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+edfi_api_client-0.2.1.dist-info/top_level.txt,sha256=I0RTU6qPcDdmlDR1HmAcZnSymrkKcL_ZeWsbUViiKhQ,16
+edfi_api_client-0.2.1.dist-info/RECORD,,
