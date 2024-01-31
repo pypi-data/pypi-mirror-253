@@ -1,0 +1,5 @@
+setup.py
+valyli_app.egg-info/PKG-INFO
+valyli_app.egg-info/SOURCES.txt
+valyli_app.egg-info/dependency_links.txt
+valyli_app.egg-info/top_level.txt
