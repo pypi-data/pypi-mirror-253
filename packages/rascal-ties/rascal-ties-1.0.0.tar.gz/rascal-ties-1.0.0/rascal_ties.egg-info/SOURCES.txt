@@ -1,0 +1,7 @@
+README.md
+setup.py
+rascal_ties.egg-info/PKG-INFO
+rascal_ties.egg-info/SOURCES.txt
+rascal_ties.egg-info/dependency_links.txt
+rascal_ties.egg-info/requires.txt
+rascal_ties.egg-info/top_level.txt
