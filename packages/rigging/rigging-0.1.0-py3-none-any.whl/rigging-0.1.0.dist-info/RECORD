@@ -1,0 +1,13 @@
+rigging/__init__.py,sha256=YPqt630b8u-4I1K9pbeSn5xtwdk05NZ8mG7lK9Ukq6g,488
+rigging/chat.py,sha256=I6Pt-e4ljXj0piay5w8B99k3SOKODx6zqss4gWGEQOw,10417
+rigging/error.py,sha256=9tuN9841W81A2fzevuu8JHhHCjYvXBlhBOnAik-kg8o,457
+rigging/generator.py,sha256=ar9JyLn0sGwoft4VdQLARItx4-HXdWioVoz-_hVbNx0,4705
+rigging/logging.py,sha256=UofuP4jlQmgxHeEmrkf4-wlDveBls7o9VS-DS-L-VD8,1488
+rigging/message.py,sha256=lhM4qeCIpN5X6y7_I_-7pkcJZQuiMQ2iwMCVIvrLCm4,4645
+rigging/model.py,sha256=TOIxxrPLhe5QCgDpPEx6Amv368Xmkl47pxox_vrZinI,4626
+rigging/prompt.py,sha256=ZWKYSNYlplApxFUS3331K0WYdGdW8ssjskdg7nf5CkA,1023
+rigging/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rigging/tool.py,sha256=yUCFCw-88BAhrI_gQDrx4C9SDrzt1bnvK__Pg4yvVyE,8302
+rigging-0.1.0.dist-info/METADATA,sha256=PtRD2iSPrc1ubluQq-40PwB-a-XjjjMu8UiHntBLz5Y,5207
+rigging-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+rigging-0.1.0.dist-info/RECORD,,
