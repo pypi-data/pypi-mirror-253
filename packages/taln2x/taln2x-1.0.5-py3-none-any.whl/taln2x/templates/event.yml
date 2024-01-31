@@ -1,0 +1,22 @@
+abbrev: MYCONF #used as a prefix for papers' pdf files
+title: 19e REncontres MYCONF #used in proceedings' frontpage (for default tex template)
+url: https://gitlab.inria.fr/talnarchives/taln2x #used in proceedings' frontpage (for default tex template)
+booktitle: Actes des 19e REncontres MYCONF #used in proceedings' frontpage (for default tex template)
+short_booktitle: Actes de MYCONF #used in papers' header
+begin: 2017-06-26
+end: 2017-06-30
+location: Orléans, France
+publisher: ATALA
+chairs:
+  - UNETELLE, Machine
+  - TRUC, Machin
+tracks:
+  main:
+    fullname: "Volume 1 : conférence principale" #used in proceedings' frontpage and papers' footer, cannot be empty
+    startpage: 1
+    order: title
+    sessions: long;short;demo #sessions are optional
+    long: "Papiers longs"
+    short: "Papiers courts"
+    demo: "Démonstrations"
+    accept: ACCEPT_long;ACCEPT_short;ACCEPT_demo
