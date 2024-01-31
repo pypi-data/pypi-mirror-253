@@ -1,0 +1,11 @@
+prefix=/Users/jenkins/agent-working-dir/.mslib/fmt_9.1.0_41033c8b466b6940b559edd1939b8765
+exec_prefix=/Users/jenkins/agent-working-dir/.mslib/fmt_9.1.0_41033c8b466b6940b559edd1939b8765
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: fmt
+Description: A modern formatting library
+Version: 9.1.0
+Libs: -L${libdir} -lfmt
+Cflags: -I${includedir}
+
