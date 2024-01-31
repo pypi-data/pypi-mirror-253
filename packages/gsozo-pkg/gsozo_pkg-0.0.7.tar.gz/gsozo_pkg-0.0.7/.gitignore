@@ -1,0 +1,15 @@
+__pycache__
+.ipynb_checkpoints
+.p
+.pickle
+.env
+backup/
+log/
+dist/
+*.log
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+build/
+gsozo_pkg.egg-info/
