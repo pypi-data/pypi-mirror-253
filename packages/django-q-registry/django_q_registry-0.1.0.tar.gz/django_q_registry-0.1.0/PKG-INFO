@@ -1,0 +1,210 @@
+Metadata-Version: 2.1
+Name: django-q-registry
+Version: 0.1.0
+Summary: A Django app to register Django Q tasks.
+Project-URL: Documentation, https://github.com/joshuadavidthomas/django-q-registry#readme
+Project-URL: Issues, https://github.com/joshuadavidthomas/django-q-registry/issues
+Project-URL: Source, https://github.com/joshuadavidthomas/django-q-registry
+Author-email: Josh <josh@joshthomas.dev>
+License: MIT License
+        
+        Copyright (c) 2023 Josh Thomas
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: AUTHORS.md
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Requires-Dist: django-q2>=1.4.3
+Requires-Dist: django>=3.2
+Provides-Extra: dev
+Requires-Dist: bumpver; extra == 'dev'
+Requires-Dist: coverage[toml]; extra == 'dev'
+Requires-Dist: django-stubs; extra == 'dev'
+Requires-Dist: django-stubs-ext; extra == 'dev'
+Requires-Dist: faker; extra == 'dev'
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: model-bakery; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: nox; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: pytest-django; extra == 'dev'
+Requires-Dist: pytest-randomly; extra == 'dev'
+Requires-Dist: pytest-reverse; extra == 'dev'
+Requires-Dist: pytest-xdist; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: cogapp; extra == 'docs'
+Requires-Dist: furo; extra == 'docs'
+Requires-Dist: myst-parser; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-autobuild; extra == 'docs'
+Requires-Dist: sphinx-copybutton; extra == 'docs'
+Requires-Dist: sphinx-inline-tabs; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: pre-commit; extra == 'lint'
+Description-Content-Type: text/markdown
+
+# django-q-registry
+
+[![PyPI](https://img.shields.io/pypi/v/django-q-registry)](https://pypi.org/project/django-q-registry/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-q-registry)
+![Django Version](https://img.shields.io/badge/django-3.2%20%7C%204.2%20%7C%205.0-%2344B78B?labelColor=%23092E20)
+<!-- https://shields.io/badges -->
+<!-- django-3.2 | 4.2 | 5.0-#44B78B -->
+<!-- labelColor=%23092E20 -->
+
+A Django app that provides a registry for Django Q2 periodic tasks.
+
+## Requirements
+
+- Python 3.8, 3.9, 3.10, 3.11, or 3.12
+- Django 3.2, 4.2, or 5.0
+- Django Q2 1.4.3 or later
+    - This package has only been tested with the Django ORM broker. The other's may work, but they have not been tested.
+
+## Getting Started
+
+1. Install the package from PyPI:
+
+```bash
+python -m pip install django-q-registry
+```
+
+2. Add the app to your Django project's `INSTALLED_APPS`:
+
+```python
+INSTALLED_APPS = [
+    ...,
+    "django_q_registry",
+    ...,
+]
+```
+
+## Usage
+
+### Registering Periodic Tasks
+
+There are three supported ways to register periodic tasks:
+
+1. In a `tasks.py` file in a Django app, using the `@register_task` decorator:
+
+```python
+# tasks.py
+from django.core.mail import send_mail
+from django_q.models import Schedule
+from django_q_registry import register_task
+
+
+@register_task(
+    name="Send periodic test email",
+    schedule_type=Schedule.CRON,
+    # https://crontab.guru/#*/5_*_*_*_*
+    cron="*/5 * * * *",
+)
+def send_test_email():
+    send_mail(
+        subject="Test email",
+        message="This is a test email.",
+        from_email="noreply@example.com",
+        recipient_list=["johndoe@example.com"],
+    )
+```
+
+2. In a `tasks.py` file in a Django app, using the `registry.register` function directly:
+
+```python
+# tasks.py
+from django.core.mail import send_mail
+from django_q.models import Schedule
+from django_q_registry.registry import registry
+
+
+registry.register(
+    send_mail,
+    name="Send periodic test email",
+    kwargs={
+        "subject": "Test email",
+        "message": "This is a test email.",
+        "from_email": "noreply@example.com",
+        "recipient_list": ["janedoe@example.com"],
+    },
+    schedule_type=Schedule.CRON,
+    # https://crontab.guru/#*/5_*_*_*_*
+    cron="*/5 * * * *",
+)
+```
+
+3. In a Django project's `settings.py` file, using the `Q_REGISTRY["TASKS"]` setting:
+
+```python
+# settings.py
+from django_q.models import Schedule
+
+
+Q_REGISTRY = {
+    "TASKS": [
+        {
+            "name": "Send periodic test email",
+            "func": "django.core.mail.send_mail",
+            "kwargs": {
+                "subject": "Test email",
+                "message": "This is a test email.",
+                "from_email": "noreply@example.com",
+                "recipient_list": ["janedoe@example.com"],
+            },
+            "schedule_type": Schedule.CRON,
+            # https://crontab.guru/#*/5_*_*_*_*
+            "cron": "*/5 * * * *",
+        },
+    ],
+}
+```
+
+### Setting up Periodic Tasks in Production
+
+At some point in your project's deployment process, run the `setup_periodic_tasks` management command:
+
+```bash
+python manage.py migrate
+python manage.py setup_periodic_tasks
+```
+
+This command automatically registers periodic tasks from `tasks.py` files in Django apps, and from the `Q_REGISTRY["TASKS"]` setting. It also cleans up any periodic tasks that are no longer registered.
+
+## License
+
+`django-q-registry` is licensed under the MIT license. See the [`LICENSE`](LICENSE) file for more information.
