@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ovos_testpkg/__init__.py
+ovos_testpkg/version.py
+ovos_testpkg.egg-info/PKG-INFO
+ovos_testpkg.egg-info/SOURCES.txt
+ovos_testpkg.egg-info/dependency_links.txt
+ovos_testpkg.egg-info/entry_points.txt
+ovos_testpkg.egg-info/top_level.txt
