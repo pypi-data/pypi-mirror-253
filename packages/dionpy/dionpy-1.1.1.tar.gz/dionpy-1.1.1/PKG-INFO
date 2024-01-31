@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: dionpy
+Version: 1.1.1
+Summary: Dynamic ionosphere model for global 21 cm experiments
+Home-page: https://github.com/lap1dem/dionpy
+License: MIT
+Author: Vadym Bidula
+Author-email: vadym.bidula@gmail.com
+Requires-Python: >=3.9,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: numba
+Requires-Dist: echaim (>=1.0.8,<2.0.0)
+Requires-Dist: ffmpeg-progress-yield (>=0.7.8,<0.8.0)
+Requires-Dist: h5py (>=3.7.0,<4.0.0)
+Requires-Dist: healpy (>=1.16.1,<2.0.0)
+Requires-Dist: iricore (>=1.6.1,<2.0.0)
+Requires-Dist: it (>=1.0.0,<2.0.0)
+Requires-Dist: matplotlib (>=3.6.0,<4.0.0)
+Requires-Dist: numba (>=0.58.1,<0.59.0) ; extra == "numba"
+Requires-Dist: numpy (>=1.22,<2.0)
+Requires-Dist: pymap3d (>=3.0.1,<4.0.0)
+Requires-Dist: pytz (>=2023.3,<2024.0)
+Requires-Dist: scipy (>=1.9.3,<2.0.0)
+Requires-Dist: skyfield (>=1.46,<2.0)
+Requires-Dist: tqdm (>=4.66,<5.0)
+Project-URL: Repository, https://github.com/lap1dem/dionpy
+Description-Content-Type: text/markdown
+
+[//]: # (![]&#40;docs/images/logos/logo_wide.png&#41;)
+
+# DIonPy
+The `dionpy` package provides model of ionosphere refraction and attenuation based on the 
+[IRI2020 Ionosphere Model](https://irimodel.org/).
+
+More details are available at our [documentation page](https://dionpy.readthedocs.io/en/latest/).
