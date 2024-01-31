@@ -1,0 +1,4 @@
+setproctitle
+python-thingsdb
+prompt-toolkit
+pygments

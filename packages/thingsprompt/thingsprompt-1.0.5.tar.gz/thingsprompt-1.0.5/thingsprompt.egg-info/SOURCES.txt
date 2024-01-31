@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+requirements.txt
+setup.py
+.github/FUNDING.yml
+bin/things-prompt
+thingsprompt.egg-info/PKG-INFO
+thingsprompt.egg-info/SOURCES.txt
+thingsprompt.egg-info/dependency_links.txt
+thingsprompt.egg-info/requires.txt
+thingsprompt.egg-info/top_level.txt
