@@ -1,0 +1,16 @@
+wiver/__init__.py,sha256=3e8gRpKXon-PvLdbtdgduhuzxPXVq9FNYLM2QeXLZyw,35
+wiver/_version.py,sha256=gt5b1a5p47B_eRvzzMuYTkMjqBzdt5prvirt9H-kcks,24
+wiver/run_wiver.py,sha256=IuJApw9danP9BjYRM0mOYR79Ql8_xCnqpPr6dTnZQzA,12855
+wiver/wiver_cython.c,sha256=DuQrZcjDWblBwSnU-nUQALjR4apdEofkvfvuZSzfP0M,2026930
+wiver/wiver_cython.cp310-win_amd64.pyd,sha256=0L4kwIy3CVSduGBvIezNY6vDEuWRqPM6jfdeqBeHsXI,330240
+wiver/wiver_cython.pxd,sha256=RIM67oYv89skdiIumtq2RTWBG-3F0nDI2kGg0Gm6q1k,4047
+wiver/wiver_cython.pyx,sha256=L0VVvI6FUKZi9ruTSIMRH0YCQCsG8ITrVCmULoPJ78U,20081
+wiver/wiver_cython.pyxbld,sha256=ErjfMSjOzxKVt3uxhIUNJyDz1Mk5cG8OTnpDMwFlvEI,168
+wiver/wiver_python.py,sha256=B-XUzNGc4Vfv4X2KvjTuj8BKtI-e5NLgfjMg5clnz1Q,30788
+wiver/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wiver/tests/test_wiver.py,sha256=ziKxfk5uesodsdr4HGJ9ZYXJ-AxfSqj51uTQVFUH-24,32119
+wiver/tests/test_wiver_benchmark.py,sha256=oDJPGcPlA88Dn2XjiP0LUe_YJNAOfMFy8eLcmgpkkP8,3404
+wiver-1.11.0.dist-info/METADATA,sha256=DHGMYEmQNfW97GTW5xk1q9aDXAABOrlcHMemMIpB7tI,1294
+wiver-1.11.0.dist-info/WHEEL,sha256=5JPYeYl5ZdvdSkrGS4u21mmpPzpFx42qrXOSIgWf4pg,102
+wiver-1.11.0.dist-info/top_level.txt,sha256=OBQw6Gh8B28mTSqyzQOZwfATCxUKa9Q59E7897lhNao,6
+wiver-1.11.0.dist-info/RECORD,,
