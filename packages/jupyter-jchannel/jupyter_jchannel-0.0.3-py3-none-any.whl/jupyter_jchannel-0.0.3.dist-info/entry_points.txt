@@ -1,0 +1,5 @@
+[console_scripts]
+docs=scripts:docs
+notebooks=scripts:notebooks
+tests=scripts:tests
+

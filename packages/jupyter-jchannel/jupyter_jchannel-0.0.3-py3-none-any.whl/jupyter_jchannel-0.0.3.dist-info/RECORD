@@ -1,0 +1,11 @@
+jchannel/__init__.py,sha256=eDA_LMYHmzwMS0c0cKF-PR0FmADC7TwRWY-bHEZYQ4Q,35
+jchannel/frontend/__init__.py,sha256=n-tRITUNpuCJGDZxxNfChRqUDRH9_mUMqXbFJQkzoXY,85
+jchannel/frontend/abstract.py,sha256=49NNEDxN7jSsf7KvnWS9g5Fa0Wy5ohDeqEdro_tHK-Y,289
+jchannel/frontend/ipython.py,sha256=DKa7wCNOWsSwQ2cG29V8MQVffinyOjJlJAOf8MOKnuU,290
+jchannel/registry.py,sha256=nMJxSWvKdkOnnULQaBpREvRKBvtmzs8xtQ39z3-HQC8,266
+jchannel/server.py,sha256=azY6x03Ll0Wk-6PQnEJwOqmBp9tuwMBVgOXoZAtetlI,9061
+jupyter_jchannel-0.0.3.dist-info/LICENSE,sha256=C-zxZWe-t3-iUrdmRjHdF3yPmhiJ5ImVtFN5xxMOUwM,14198
+jupyter_jchannel-0.0.3.dist-info/METADATA,sha256=JdJI1Hc7Zl65HQD4E4XIbnlH3ydEp95ZZUDaS6S5Azw,1118
+jupyter_jchannel-0.0.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+jupyter_jchannel-0.0.3.dist-info/entry_points.txt,sha256=z1CRhbL7LVYWF20eo5VM_SSD3lyyWSeduON-CZWPe-c,85
+jupyter_jchannel-0.0.3.dist-info/RECORD,,
