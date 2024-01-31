@@ -1,0 +1,11 @@
+docopt
+pandas
+numpy
+quantiphy
+tqdm
+gdstk-mabrains
+pyaml
+PyYAML
+typing_extensions
+networkx
+Pyarrow
