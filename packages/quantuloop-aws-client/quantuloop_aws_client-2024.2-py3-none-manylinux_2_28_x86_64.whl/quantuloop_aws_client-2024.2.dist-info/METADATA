@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: quantuloop-aws-client
+Version: 2024.2
+Summary: 
+Author: Quantuloop
+Author-email: dev@quantuloop.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bcrypt (>=4.1.2,<5.0.0)
+Requires-Dist: cryptography (>=42.0.1,<43.0.0)
+Requires-Dist: ket-lang (>=0.7,<0.8)
+Description-Content-Type: text/markdown
+
+# Quantuloop AWS Client
+
+Client to access your quantum simulator server on AWS. For more information, visit <https://simulator.quantuloop.com>.
+
