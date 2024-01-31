@@ -1,0 +1,12 @@
+README.md
+setup.py
+flask_kafka/__init__.py
+flask_kafka/consumer.py
+flask_kafka/consumer_legacy.py
+flask_kafka/flask_kafka.py
+flask_kafka/producer.py
+flask_kafka.egg-info/PKG-INFO
+flask_kafka.egg-info/SOURCES.txt
+flask_kafka.egg-info/dependency_links.txt
+flask_kafka.egg-info/requires.txt
+flask_kafka.egg-info/top_level.txt
