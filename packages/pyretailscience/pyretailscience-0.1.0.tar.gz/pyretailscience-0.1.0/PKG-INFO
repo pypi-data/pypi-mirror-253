@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pyretailscience
+Version: 0.1.0
+Summary: Retail Data Science Tools
+License: Elastic-2.0
+Author: Murray Vanwyk
+Author-email: 2493311+mvanwyk@users.noreply.github.com
+Requires-Python: >=3.10,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: matplotlib (>=3.8.2,<4.0.0)
+Requires-Dist: numpy (>=1.26.3,<2.0.0)
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Requires-Dist: pyarrow (>=14.0.2,<15.0.0)
+Requires-Dist: seaborn (>=0.13.1,<0.14.0)
+Requires-Dist: strictyaml (>=1.7.3,<2.0.0)
+Description-Content-Type: text/markdown
+
+![pyretailscience logo](logo.png)
+
+# pyretailscience
+
+⚡ Democratizing retail data analytics for all retailers ⚡
+
+pyretailscience is a Python package designed for performing analytics on retail data. Additionally, the package includes functionality for generating test data to facilitate testing and development.
