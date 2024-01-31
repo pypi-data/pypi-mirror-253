@@ -1,0 +1,5 @@
+llama_index/readers/notion/__init__.py,sha256=u7eAWJjxtYD4KEd3mWNLG-MMCrhPqJHdhOG0Qfn8wKw,94
+llama_index/readers/notion/base.py,sha256=ZfmEpJNHEX2p374AW3SJoloMP2Vp8s2lT7Mbel8pAF0,6317
+flying_delta_readers_notion-0.1.0.dist-info/METADATA,sha256=PaIXwO6Aisl5J0-FFQIhoQAZjHlBI6vdOJstpeHBt4o,597
+flying_delta_readers_notion-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+flying_delta_readers_notion-0.1.0.dist-info/RECORD,,
