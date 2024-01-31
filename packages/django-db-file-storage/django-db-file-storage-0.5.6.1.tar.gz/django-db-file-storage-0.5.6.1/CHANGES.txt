@@ -1,0 +1,28 @@
+0.1.0       2013-03-24      Initial release.
+0.2.0       2013-11-14      Adding ability to get the image without downloading it.
+0.2.1       2013-12-04      Refactoring code and adding sphinx documentation.
+0.2.2       2015-02-14      Applying pep-8 rules, adding delete_file functions, documenting previously undocumented views.
+0.2.5       2015-02-14      Linking to the demo/tests project.
+0.2.5       2015-02-14      Adjustment in _get_unique_filename function.
+0.2.7       2015-04-02      Adjustment so files can be saved/retrieved without using ModelForms.
+0.2.9       2015-05-27      Refactoring of widgets code and adding widget for the Django Admin; some pep-8 corrections.
+0.2.10      2015-06-13      Putting demo/test project inside the main repo, updating documentation files.
+0.2.11      2015-06-14      Python3 compatibility
+0.2.12      2015-06-14      Showing Build Status and Code Health on the README
+0.3.0       2015-06-14      Test suite (passing) for Python (2.7, 3.3, 3.4) and Django (1.6, 1.7, 1.8)
+0.3.1       2015-07-11      Adding a DatabaseFileStorage subclass that can be used with Form Wizards
+0.3.2       2015-11-15      Adding Windows compatibility
+0.3.3       2015-11-15      Fixing lib for OSs other than Linux
+0.4.0       2016-03-25      Dropped support for Python 3.3, Django 1.6 and Django 1.7 ; Change license to MIT License
+0.4.1       2016-05-14      Fixing Windows compatibility (finally)
+0.4.2       2017-03-17      Support PKs with custom names; support Python 3.6 & Django 1.10
+0.4.3       2017-10-09      Let Django serialize DatabaseFileStorage instances
+0.4.4       2017-12-02      Support Django 1.11
+0.4.5       2017-12-05      Bugfix: include templates in installation
+0.4.6       2018-01-06      Bugfix: fix widgets rendering when form has no values
+0.5.0       2018-01-27      Support Django 2.0
+0.5.1       2018-02-21      Bugfix: Fix error when unsaved File Objects don't have a `url` attribute
+0.5.2       2018-04-04      Include templates when packaging the app
+0.5.3       2018-08-25      Add support for storing file contents in a BinaryField; drop support for Python 3.4 and Django 1.8~1.10
+0.5.4       2020-02-02      Add support for Django 3.0.2
+0.5.5       2020-05-31      Allow extra headers in download/view file views
