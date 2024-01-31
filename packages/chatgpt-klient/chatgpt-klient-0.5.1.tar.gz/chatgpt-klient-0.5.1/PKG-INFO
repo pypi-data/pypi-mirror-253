@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: chatgpt-klient
+Version: 0.5.1
+Requires-Dist: requests>2.31.0
+Requires-Dist: rich>13.4.1
+Requires-Dist: tiktoken>0.4.0
+Requires-Dist: logutils-serpucga>0.1.9
+Requires-Dist: openai>1.10.0
