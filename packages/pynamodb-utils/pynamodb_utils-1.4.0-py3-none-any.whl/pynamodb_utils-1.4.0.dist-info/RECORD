@@ -1,0 +1,13 @@
+pynamodb_utils/__init__.py,sha256=2hvvis9GInXoeLNh42oIgdKur5iEdUGotRSlU4tpb3w,169
+pynamodb_utils/attributes.py,sha256=d_dyAe4IzOYyVS3XDcaNlQmit2CneO3UCKtZ8Qij_rQ,5153
+pynamodb_utils/conditions.py,sha256=rNfCcwVJ9kRRCBSrRoD7h17eMQeP1q-DH2joxa0Wvck,3314
+pynamodb_utils/exceptions.py,sha256=hH_Ur0QOQOtiUEG84gPfahM6VlbDHVVXgtiEtoZI0mc,318
+pynamodb_utils/models.py,sha256=ZpjYE24k9vGlM76-CtSVH7wFDrh5Wg-qDBmnChLFD6U,3751
+pynamodb_utils/parsers.py,sha256=U0_Q_lFJYgoeiWbsA0bpO11ElXVG04lieAUIbXO_Ao8,6984
+pynamodb_utils/serializers.py,sha256=jE-nOat_5ofOyWbpHBNeSfmWNohi_uaLXxXaEudjRlY,4836
+pynamodb_utils/utils.py,sha256=zbnrZ5gIlF3-07uTE0BBnSuLEdxRCaqAl7MauKlpwCE,3853
+pynamodb_utils-1.4.0.dist-info/LICENSE,sha256=Xz_WP2dJJwc4peiNGRytl8_MF3fEznh_Aa2fyGxFBh8,1073
+pynamodb_utils-1.4.0.dist-info/METADATA,sha256=rmTycx6dSgJLbB0f4yXeOgDhBbB_5ImIZHddMpwznbk,3720
+pynamodb_utils-1.4.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+pynamodb_utils-1.4.0.dist-info/top_level.txt,sha256=NY8CBAiYWh-yA5lKJBOMN9E3wr9jplkMTOcFmyoB1L8,15
+pynamodb_utils-1.4.0.dist-info/RECORD,,
