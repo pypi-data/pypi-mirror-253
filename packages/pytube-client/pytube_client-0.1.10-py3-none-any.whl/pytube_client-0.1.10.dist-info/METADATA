@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pytube-client
+Version: 0.1.10
+Summary: A Python package tailored for seamless interaction with the YouTube Data API. Designed for simplicity and flexibility, this package empowers developers to effortlessly incorporate YouTube functionalities into their applications.
+Home-page: https://github.com/dancoon/pytube-client
+License: MIT
+Keywords: youtube,api,data,video,audio,stream,download,caption,subtitle,thumbnail,search,channel,playlist,video,audio,stream,download,caption,subtitle,thumbnail,search,channel,playlist
+Author: Ian Dancun
+Author-email: dancoonmwangi@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Repository, https://github.com/dancoon/pytube-client
+Description-Content-Type: text/markdown
+
+# pytube-client
+A Python package tailored for seamless interaction with the YouTube Data API. Designed for simplicity and flexibility, this package empowers developers to effortlessly incorporate YouTube functionalities into their applications.
+
