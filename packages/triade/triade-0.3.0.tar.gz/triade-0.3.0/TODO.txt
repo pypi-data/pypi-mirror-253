@@ -1,0 +1,4 @@
+- implement error classes
+  - ForbiddenChangeError
+  - ForbiddenWriteError
+  - ForbiddenDeleteError
