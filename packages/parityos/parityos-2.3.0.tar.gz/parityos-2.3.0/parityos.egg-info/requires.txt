@@ -1,0 +1,15 @@
+requests
+
+[all]
+sympy
+cirq-core
+qiskit<1
+
+[cirq]
+cirq-core
+
+[qiskit]
+qiskit<1
+
+[spinz]
+sympy
