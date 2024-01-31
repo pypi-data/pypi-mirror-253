@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: psrx
+Version: 3.1.2
+Summary: doing all configuration by one click
+Author: Eslam
+License: MIT
+Requires-Dist: clipboard==0.0.4
+Requires-Dist: colorama==0.4.6
+Requires-Dist: junos-eznc==2.6.8
+Requires-Dist: lxml==5.1.0
+Requires-Dist: pandas==2.2.0
+Requires-Dist: prompt_toolkit==3.0.43
+Requires-Dist: setuptools==69.0.3
+Requires-Dist: termcolor==2.4.0
+
+*****ALL extract files goes to C:/*****
+*****ALL extract files goes to C:/*****
