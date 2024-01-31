@@ -1,0 +1,10 @@
+evalhyd/__init__.py,sha256=G9GquwGCRBHPq6TKnBIGRk0T3mnziTVoWYgdYGLFkG8,163
+evalhyd/_evalhyd.cpython-39-darwin.so,sha256=JMFCdYKPKvMtzzR5_WbdLtv0GhPS6ILl6jBoyz3Wzuo,4063048
+evalhyd/evald.py,sha256=Cdp56iknWPGHxOf_KKem1bvOik8NjexopyjerZPPfeA,2348
+evalhyd/evalp.py,sha256=nled3_lE9GQGPrbDuCP8fy4UEqeS146ktskVfCYuutM,1947
+evalhyd/version.py,sha256=9CgKa75ECl6YKgME235a4hqtr7et0Z1oemnK8n7JBIY,26
+evalhyd_python-0.1.2.0.dist-info/LICENCE.rst,sha256=kmFOxVthrAkW2WxQuBDsOrONZCWubG7Qvn6qx476GDY,35580
+evalhyd_python-0.1.2.0.dist-info/METADATA,sha256=ShEHGbXNN3ohmcFnUo82Ma917zIygoG3Cy0v3-XzLrQ,848
+evalhyd_python-0.1.2.0.dist-info/WHEEL,sha256=9dxRMs2hZVMSSLljMw5IW-60A9OTvJNez8AkvhjPq2M,110
+evalhyd_python-0.1.2.0.dist-info/top_level.txt,sha256=LnNEQW4H7fOM43uJtOxqJDv2UBq1BWpGxTRM7fL-s_U,8
+evalhyd_python-0.1.2.0.dist-info/RECORD,,
