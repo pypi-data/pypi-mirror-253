@@ -1,0 +1,17 @@
+# Python
+*.pyc
+
+# PyPI
+dist
+
+# Project
+data
+
+# Models
+*.pth
+
+# JetBrains
+.idea
+
+# macOS
+.DS_Store
