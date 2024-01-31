@@ -1,0 +1,2 @@
+Version: 1.3.7
+Arguments: ['C:\\Users\\jenkins\\AppData\\Local\\Temp\\2\\build-env-xs99ye6i\\Scripts\\delvewheel', 'repair', '-v', '-w', 'D:\\jenkins\\agent-working-dir\\workspace\\Compile_CPU_Windows_PY38\\mindquantum\\dist\\delocated', '--add-path', 'C:\\Users\\jenkins\\.mslib\\fmt_9.1.0_e8309599659f1d32f0b12541759205db\\lib', 'D:\\jenkins\\agent-working-dir\\workspace\\Compile_CPU_Windows_PY38\\mindquantum\\dist\\temp\\mindquantum-0.9.11-cp38-cp38-win_amd64.whl']
