@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+wecoai/__init__.py
+wecoai.egg-info/PKG-INFO
+wecoai.egg-info/SOURCES.txt
+wecoai.egg-info/dependency_links.txt
+wecoai.egg-info/top_level.txt
