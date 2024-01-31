@@ -1,0 +1,197 @@
+Metadata-Version: 2.1
+Name: honcaml
+Version: 0.1.3
+Summary: Holistic and No Code Auto Machine Learning
+Author-email: Xavier de Juan <xavier.dejuan@eurecat.org>, Joan Erráez <joan.erraez@eurecat.org>, Jordi Casals <jordi.casalsg@eurecat.org>, Marina Rosell <marina.rosellg@eurecat.org>, Cristina Soler <cristina.soler@eurecat.org>, Cirus Iniesta <cirus.iniesta@eurecat.org>, Luca Piras <luca.piras@eurecat.org>
+Maintainer-email: Applied Machine Learning <aml@eurecat.org>
+License: BSD License
+        
+        Copyright (c) 2022, Eurecat Centre Tecnològic de Catalunya
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without modification,
+        are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice, this
+          list of conditions and the following disclaimer in the documentation and/or
+          other materials provided with the distribution.
+        
+        * Neither the name of Eurecat nor the names of its
+          contributors may be used to endorse or promote products derived from this
+          software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+        IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+        INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+        BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+        DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+        OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+        OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+        OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://github.com/Eurecat/honcaml
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: BSD License 
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: joblib
+Requires-Dist: openpyxl
+Requires-Dist: optuna
+Requires-Dist: pandas
+Requires-Dist: pyyaml
+Requires-Dist: ray ==2.0.0
+Requires-Dist: ray[tune]
+Requires-Dist: scikit-learn
+Requires-Dist: streamlit
+Requires-Dist: torch ==2.0.1
+Provides-Extra: check
+Requires-Dist: flake8 ; extra == 'check'
+Provides-Extra: document
+Requires-Dist: sphinx ; extra == 'document'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+# HoNCAML
+
+HoNCAML (Holistic No Code Automated Machine Learning) is a tool aimed to run
+automated machine learning pipelines for problems of different nature; main
+types of pipeline would be:
+
+1. Training the best possible model for the problem at hand
+2. Use this model to predict other instances
+
+## Why HoNCAML
+
+### Focus
+
+HoNCAML has been designed having the following aspects in mind:
+
+* Ease of use
+* Modularity
+* Extensibility
+* Simpler is better
+
+### Users
+
+There are (at least) two main types of users who could benefit from this tool:
+
+1. **Regular users**: In terms of programming experience and/or machine learning
+   knowledge. It would be possible for them to get results in an easy way.
+2. **Advanced users**: It is possible to customise experiments in order to
+   adapt to a specific use case that a user with previous knowledge would like.
+
+### Pipelines
+
+This library assumes data has tabular format, and is clean enough to be used to
+train models.
+
+At this moment, the following types of problems are supported:
+
+* Regression
+* Classification
+
+Regarding available models, the following are supported:
+
+* Sklearn models
+* Pytorch (neural net) models
+
+However, due to its nature, extend the library to include other type of
+problems and models should be not only feasible, but intuitive.
+
+## Installation
+
+To set up and install HoNCAML, just run the following within a virtual
+environment:
+
+   ```commandline
+   make install
+   ```
+Virtual environment directory is located in **./venv** by default, but it can
+be changed by changing the variable *ENV_PATH* located in **Makefile**.
+
+## Quick usage
+
+For a quick train execution, given that a dataset is available with the target
+value informed, it is necessary to first create a basic configuration file:
+
+   ```commandline
+   honcaml -b {config_file} -t {pipeline_type}
+   ```
+
+Being ``{config_file}`` the path to the file containing the configuration in
+yaml extension, and being ``{pipeline_type}`` one of the supported: train, predict
+or benchmark.
+
+The specified keys of the file should be filled in, and afterwards it is
+possible to run the intended pipeline with the following command:
+
+   ```commandline
+   honcaml -c {config_file}
+   ```
+
+This will run the pipeline and export the trained model.
+
+## Detailed configuration
+
+In the case of advanced configuration, there is the option of generating a more
+complete one, instead of the basic mentioned above:
+
+```commandline
+   honcaml -a {config_file} -t {pipeline_type}
+```
+
+Advanced configuration files contain comments with required information to fill
+in the blanks. All the details of the configuration file are explained in
+the documentation. Moreover, many examples can be found at
+[examples](honcaml/config/examples).
+
+## Executing from the GUI
+
+To run the HoNCAML GUI locally in a web browser tab, run the following command:
+
+   ```commnadline
+   honcaml -g
+   ```
+
+It allows to execute HoNCAML providing a datafile and a configuration file, or
+to manually select the configuration options instead of providing the file.
+
+When using the manual configuration, it allows both levels of configuration:
+Basic, for a faster execution, and Advanced, allows users to configure the
+model hyperparameters; and three functionalities: Benchmark, Train and Predict.
+
+## Contribute
+
+All contributions are more than welcome! For further information, please refer
+to the [contribution documentation](CONTRIBUTING.md).
+
+# Bugs
+
+If you find any bug, please report it as an issue.
+
+# Contact
+
+Should you have any inquiry regarding the library or its development, please
+contact the [Applied Machine Learning team](mailto:aml@eurecat.org).
