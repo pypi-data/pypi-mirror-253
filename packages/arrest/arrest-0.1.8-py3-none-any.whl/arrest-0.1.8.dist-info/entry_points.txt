@@ -1,0 +1,3 @@
+[console_scripts]
+arrest=arrest.__main__:main
+
