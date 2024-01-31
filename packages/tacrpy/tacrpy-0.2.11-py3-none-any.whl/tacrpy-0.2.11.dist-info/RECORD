@@ -1,0 +1,16 @@
+tacrpy/__init__.py,sha256=jBECAp24dmrB-A1i9_WFZXF2blSMB-bjN0xalOS5O78,42
+tacrpy/data_fetcher.py,sha256=wUH3CFOCQ1TNM5vbxAtYRDEj5WjWtvImFslfxwqGk04,15476
+tacrpy/datahub/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tacrpy/datahub/data_lineage.py,sha256=qdTS6PBvzs7xgwYginuYOTTqXJ9-Rw0oEQnEjf9NQ2g,3511
+tacrpy/datahub/datasets.py,sha256=Qo1prZ7ooBUJR97WLDHzIEeKhtoCvXpvSo2-IYMUw58,17181
+tacrpy/datahub/glossary.py,sha256=NIEoiltKbXmGhzgiBag5GEP_yJQpTHl-_uHFdo2Qzak,18820
+tacrpy/datahub/import_checks.py,sha256=_BiTC5GYGVQBc4kJRvLowHzwg8XTv-MAevG70-jD8Bg,6114
+tacrpy/datahub/openapi.py,sha256=KMt76hteM1ChO0G1ViV0altXn7nhDnWgzutKFlMrRkg,2225
+tacrpy/nlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tacrpy/nlp/fulltext.py,sha256=e0XKcRlX3TBPckQYWwOWt63iLHtbekv9udlHsGzugnI,727
+tacrpy/nlp/preprocessing.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tacrpy/nlp/semantic.py,sha256=VDCFQABSzlA2hBxynZyx7N1xlxeGAAp16Mc_Ycb1xh4,1570
+tacrpy-0.2.11.dist-info/METADATA,sha256=RVLdcifji9plLqsDTjCoS7ynuMgSTzIDW5-FEiP2L1w,505
+tacrpy-0.2.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tacrpy-0.2.11.dist-info/top_level.txt,sha256=BqpXuN5c5p-Kf_Qv8U1hT8dbV6NhdnLZ7QQa4wAvBH4,7
+tacrpy-0.2.11.dist-info/RECORD,,
