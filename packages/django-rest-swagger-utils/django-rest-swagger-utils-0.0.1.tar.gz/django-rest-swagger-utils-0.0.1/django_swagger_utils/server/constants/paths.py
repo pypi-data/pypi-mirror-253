@@ -1,0 +1,7 @@
+API_SPEC_PATH = "{}/api_specs"
+VIEWS_ABS_PATH = "{}/views"
+API_SPEC_FILE_NAME = "api_spec.json"
+INIT_FILE_NAME = "__init__.py"
+TESTS_DIRECTORY_NAME = "tests"
+API_SPEC_OPERATION_ID = "operationId"
+API_SPEC_RESPONSES = "responses"
