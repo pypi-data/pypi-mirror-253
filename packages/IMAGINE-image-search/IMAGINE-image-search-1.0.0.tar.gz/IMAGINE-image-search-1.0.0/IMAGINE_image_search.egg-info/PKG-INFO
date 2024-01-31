@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: IMAGINE-image-search
+Version: 1.0.0
+Summary: A package to search for specific image information embedded in the files' metadata (e.g. aspect ratio, pixel count, image resolution) and display the results.
+Author-email: Luise Pevestorff <luisepevestorff@hotmail.de>
+Project-URL: Homepage, https://github.com/luisepevestorff/IMAGINE
+Project-URL: Documentation, https://imagine-imagesearch.readthedocs.io/en/latest/
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: imageio>=2.33.1
+Requires-Dist: pillow>=10.2.0
+
+# IMAGINE
+A software package searching for specific image information embedded in the files' metadata (e.g. aspect ratio, pixel count, image resolution) and display the results.
+
+The full documentation can be found here: https://imagine-imagesearch.readthedocs.io/en/latest/
+
+[![codecov](https://codecov.io/gh/luisepevestorff/IMAGINE/graph/badge.svg?token=RDP4FLTCQN)](https://codecov.io/gh/luisepevestorff/IMAGINE)
+[![CodeCov](https://github.com/luisepevestorff/IMAGINE/actions/workflows/workflow_codecov.yml/badge.svg)](https://github.com/luisepevestorff/IMAGINE/actions/workflows/workflow_codecov.yml)

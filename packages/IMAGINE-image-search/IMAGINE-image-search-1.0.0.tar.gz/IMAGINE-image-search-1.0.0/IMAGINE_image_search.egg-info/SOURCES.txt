@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+IMAGINE/IMAGINE_SingleEdition.py
+IMAGINE/__init__.py
+IMAGINE/check_file_format.py
+IMAGINE/get_image_data.py
+IMAGINE_image_search.egg-info/PKG-INFO
+IMAGINE_image_search.egg-info/SOURCES.txt
+IMAGINE_image_search.egg-info/dependency_links.txt
+IMAGINE_image_search.egg-info/requires.txt
+IMAGINE_image_search.egg-info/top_level.txt
+test/__init__.py
+test/test_check_file_format.py
+test/test_get_image_data.py

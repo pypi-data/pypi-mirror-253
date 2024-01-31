@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "IMAGINE-image-search"
+version = "1.0.0"
+authors = [
+  { name="Luise Pevestorff", email="luisepevestorff@hotmail.de" },
+]
+description = "A package to search for specific image information embedded in the files' metadata (e.g. aspect ratio, pixel count, image resolution) and display the results."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "imageio>=2.33.1", "pillow>=10.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/luisepevestorff/IMAGINE"
+Documentation = "https://imagine-imagesearch.readthedocs.io/en/latest/"
+
+[tool.setuptools]
+packages = ["test", "IMAGINE"]
+
