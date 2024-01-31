@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["sql-inspect"]
+
+[project]
+name = "sql-inspect"
+version = "1.0.0"
+description = "A django middleware package for logging database SQL queries to console"
+readme = "README.md"
+license = { text = "MIT"}
+authors = [{ name = "Paul Onyekwelu", email = "paulonyekweluo@gmail.com"}]
+
+keywords = ["sql", "logging", "logger", "console", "Terminal"]
+
+requires-python = ">=3.11"
+
+dependencies = ["sqlparse>=0.4.4", "Pygments>=2.17.2"]
+
+[project.urls]
+Homepage = "https://github.com/PaulOnyekwelu/dj-sql-inspect"
+Issues = "https://github.com/PaulOnyekwelu/dj-sql-inspect/issues"

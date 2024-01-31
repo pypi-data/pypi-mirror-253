@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+sql-inspect/__init__.py
+sql-inspect/middleware.py
+sql_inspect.egg-info/PKG-INFO
+sql_inspect.egg-info/SOURCES.txt
+sql_inspect.egg-info/dependency_links.txt
+sql_inspect.egg-info/requires.txt
+sql_inspect.egg-info/top_level.txt
+tests/test_demo.py
