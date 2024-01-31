@@ -1,0 +1,2 @@
+include README.md LICENSE NOTICE
+include src/nbtest/python3-test/*
