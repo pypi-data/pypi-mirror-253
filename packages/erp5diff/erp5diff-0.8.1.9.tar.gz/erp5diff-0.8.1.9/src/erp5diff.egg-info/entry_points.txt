@@ -1,0 +1,2 @@
+[console_scripts]
+erp5diff = ERP5Diff:main
