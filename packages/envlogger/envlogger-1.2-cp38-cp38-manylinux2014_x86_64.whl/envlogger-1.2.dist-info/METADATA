@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: envlogger
+Version: 1.2
+Summary: EnvLogger: A tool for recording trajectories.
+Author: DeepMind
+License: Apache 2.0
+License-File: LICENSE
+Requires-Dist: absl-py
+Requires-Dist: dm-env
+Requires-Dist: numpy
+Requires-Dist: protobuf (>=3.14)
+Requires-Dist: setuptools (!=50.0.0)
+Provides-Extra: tfds
+Requires-Dist: tensorflow ; extra == 'tfds'
+Requires-Dist: tfds-nightly ; extra == 'tfds'
+
