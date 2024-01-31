@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pyipx800v3
+Version: 0.1.0
+Summary: lib to interact with IPX800v3
+Author-email: Xavier ROQUES <xavier.roques@gmail.com>
+License-File: LICENSE
+Requires-Dist: requests
+
