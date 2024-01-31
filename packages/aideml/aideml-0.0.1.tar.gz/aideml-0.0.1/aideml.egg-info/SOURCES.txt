@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+aideml/__init__.py
+aideml.egg-info/PKG-INFO
+aideml.egg-info/SOURCES.txt
+aideml.egg-info/dependency_links.txt
+aideml.egg-info/top_level.txt
