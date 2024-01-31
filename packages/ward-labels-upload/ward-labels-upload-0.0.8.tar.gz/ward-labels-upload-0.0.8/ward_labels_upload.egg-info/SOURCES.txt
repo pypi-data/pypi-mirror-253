@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+ward_labels_upload/__init__.py
+ward_labels_upload/config.py
+ward_labels_upload/domain.py
+ward_labels_upload/upload.py
+ward_labels_upload/utils.py
+ward_labels_upload.egg-info/PKG-INFO
+ward_labels_upload.egg-info/SOURCES.txt
+ward_labels_upload.egg-info/dependency_links.txt
+ward_labels_upload.egg-info/requires.txt
+ward_labels_upload.egg-info/top_level.txt
