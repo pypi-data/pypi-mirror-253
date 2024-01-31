@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+Linkreg/Linkreg.py
+Linkreg/__init__.py
+Linkreg/data_process.py
+Linkreg/gene_class.py
+Linkreg.egg-info/PKG-INFO
+Linkreg.egg-info/SOURCES.txt
+Linkreg.egg-info/dependency_links.txt
+Linkreg.egg-info/entry_points.txt
+Linkreg.egg-info/top_level.txt
