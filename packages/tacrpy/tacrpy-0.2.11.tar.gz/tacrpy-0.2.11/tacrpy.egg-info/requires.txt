@@ -1,0 +1,6 @@
+pandas
+gspread
+numpy
+sentence-transformers
+nltk
+requests
