@@ -1,0 +1,9 @@
+setup.py
+pywooscraper/__init__.py
+pywooscraper/scraper.py
+pywooscraper/utils.py
+pywooscraper.egg-info/PKG-INFO
+pywooscraper.egg-info/SOURCES.txt
+pywooscraper.egg-info/dependency_links.txt
+pywooscraper.egg-info/requires.txt
+pywooscraper.egg-info/top_level.txt
