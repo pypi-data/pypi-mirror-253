@@ -1,0 +1,12 @@
+cwtch/types.py,sha256=MAQjZ9JZpZ18klOHxDU7Myz2M3L0IVXKj1EMdJD4G3M,2254
+cwtch/metadata.py,sha256=dsXplM6N3Xb-nIQQQjP_aEEqvwt6aUQzSx7YRRYJbyc,4045
+cwtch/cwtch.py,sha256=N54w_tt8_kdiNWfTN1E9uzEzoP8jNA0CfL0WtMSchRg,22519
+cwtch/__init__.py,sha256=Aai1eddrqnmLA_ybrDH09L1HnLjubr2vmWlNjtKcYB4,364
+cwtch/core.cpython-312-x86_64-linux-gnu.so,sha256=BOoWldTolAIK69cB58RGG3gSb_7FISGlzugrWqFe79A,5498368
+cwtch/core.cpython-311-x86_64-linux-gnu.so,sha256=tkygm5dDSM8v8C0shO_JGBMCBNsGN9YV2UN3ixtcfRM,4756560
+cwtch/errors.py,sha256=WNPgK0schzX006-hYFu0KZZCS1rWYkz_IE7XiGRcALA,788
+cwtch-0.1.0a5.dist-info/METADATA,sha256=uZidAbAxQ9GBlFpbbJv8j_kRvEDaYIt74XZkLHYBnfY,1020
+cwtch-0.1.0a5.dist-info/LICENSE,sha256=Wk7uAQHNzNZYbZ8BVvJKMepby7UdoiTBc00DPle6qB0,1068
+cwtch-0.1.0a5.dist-info/RECORD,,
+cwtch-0.1.0a5.dist-info/WHEEL,sha256=Ff-S8e0cmrxSi9aXfEITFbw0vZzLWn3PrAPHMzElOZQ,149
+ext/core.pyx,sha256=Ke67sfE2I5LPncIGgiOoSpiakauMjH9EIMkl6ezxy7s,37095
