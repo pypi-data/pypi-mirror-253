@@ -1,0 +1,8 @@
+README.md
+setup.py
+ppsrx.egg-info/PKG-INFO
+ppsrx.egg-info/SOURCES.txt
+ppsrx.egg-info/dependency_links.txt
+ppsrx.egg-info/entry_points.txt
+ppsrx.egg-info/requires.txt
+ppsrx.egg-info/top_level.txt
