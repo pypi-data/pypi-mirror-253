@@ -1,0 +1,60 @@
+[project]
+# For more information on how to specify metadata, see
+# https://packaging.python.org/en/latest/specifications/pyproject-toml/
+name = "sdnotify-wrapper-py"
+description = "Notify readiness to systemd by writing to stdout in a service"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE.txt"}
+authors = [
+    {name = "Simon Holesch", email = "simon@holesch.de"},
+]
+keywords = ["systemd", "daemon", "s6", "sd_notify"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Boot :: Init",
+    "Topic :: System :: Systems Administration",
+]
+dependencies = []
+dynamic = ["version"]
+
+[project.urls]
+Issues = "https://github.com/holesch/sdnotify-wrapper-py/issues"
+Source = "https://github.com/holesch/sdnotify-wrapper-py"
+
+[project.scripts]
+sdnotify-wrapper = "sdnotify_wrapper:main"
+
+[project.optional-dependencies]
+test = [
+    "black",
+    "codespell",
+    "isort",
+    "pylint",
+]
+
+[build-system]
+build-backend = "mesonpy"
+requires = ["meson-python"]
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "missing-module-docstring",
+]
+
+[tool.isort]
+profile = "black"
