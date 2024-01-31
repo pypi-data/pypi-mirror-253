@@ -1,0 +1,2 @@
+[console_scripts]
+lefqm = lefqm.__main__:main
