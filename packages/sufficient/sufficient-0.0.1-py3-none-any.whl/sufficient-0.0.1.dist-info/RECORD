@@ -1,0 +1,13 @@
+sufficient/__about__.py,sha256=Ci4TQ8pZ7_uZ384IN7wV3htaKQLXlZes8-ML5sRSlVs,124
+sufficient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sufficient/examples/degen.py,sha256=YN6PlzjVFNqeGKAKg9THCyWJtXy9Qx1Uredg2KroiIY,1482
+sufficient/examples/example.py,sha256=vz0DtFg5W6nFttCww_HAd85oGYYxHxvp4tnqmvceuFM,1198
+sufficient/frames/__init__.py,sha256=a14ZSA9LjRzG2GWrc-O09t7SnZ07d7y9sliHWRqbhvA,117
+sufficient/frames/farcaster_client.py,sha256=26OlwPbptibgZwRWQ4JFqWAQk4zJf4RnnI9fn_2Ypfk,1960
+sufficient/frames/frame_app_loader.py,sha256=wAXOmLNLUq3v7qW7MF9VDfNMeB0Zmq-NwHnRK06XrP0,1747
+sufficient/frames/frame_app_runner.py,sha256=OdNEXJ5VVC1mKKAavlajUvOtvZYve2_78_aikEJwX-g,4212
+sufficient/frames/frame_context.py,sha256=kx5MUVOre-IbDLUaGyqiYRsLC8_qnOAVJzCx5NPPf68,3221
+sufficient-0.0.1.dist-info/METADATA,sha256=PpDwCbrZV2BYXck8gj6Q6szCIAChgVCMaYMBhLMCH_E,1496
+sufficient-0.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+sufficient-0.0.1.dist-info/licenses/LICENSE.txt,sha256=s21AwL5NIJYI57f3rtefh0eJcgQxfgeiJnlXrszrPwc,1074
+sufficient-0.0.1.dist-info/RECORD,,
