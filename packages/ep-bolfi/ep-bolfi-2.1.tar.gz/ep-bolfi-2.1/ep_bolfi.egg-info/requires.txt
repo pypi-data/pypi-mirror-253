@@ -1,0 +1,11 @@
+elfi
+matplotlib
+numpy
+pybamm
+scipy
+sympy
+pyarrow
+pyimpspec
+h5py
+scikit-learn
+tabulate
