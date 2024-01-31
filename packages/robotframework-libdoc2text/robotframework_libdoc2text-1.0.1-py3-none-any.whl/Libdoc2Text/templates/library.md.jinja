@@ -1,0 +1,22 @@
+# {{name}}
+
+{{doc}}
+
+## <a id="Keywords"/>Keywords
+
+{% for keyword in keywords %}
+### {{keyword.name}}
+
+#### Arguments
+
+| Name | Default value |
+|------|---------------|
+{% for arg in keyword.args -%}
+|{{arg.name}}|{{arg.defaultValue}}|
+{% endfor %}
+
+#### Documentation
+
+{{keyword.doc}}
+
+{% endfor %}

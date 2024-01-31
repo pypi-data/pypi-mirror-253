@@ -1,0 +1,3 @@
+[console_scripts]
+libdoc2text=Libdoc2Text.libdoc2text:cli
+
