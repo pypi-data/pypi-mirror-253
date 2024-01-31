@@ -1,0 +1,10 @@
+ez_zarr/__init__.py,sha256=Y3iAiOqXn6LV9P8gPnfDlJaNwoQjh9i-2aEkQvlZ-74,70
+ez_zarr/__main__.py,sha256=-EDD68oK_38wBB650CMLkmJl63p-Aq7m9x8BgYH-eO8,897
+ez_zarr/_version.py,sha256=PKIMyjdUACH4-ONvtunQCnYE2UhlMfp9su83e3HXl5E,411
+ez_zarr/hcs_wrappers.py,sha256=99nYPRg3KHWfIoWO06ZI6lWjYmSfR7JIOAKWp-bQME8,32831
+ez_zarr-0.1.1.dist-info/LICENSE,sha256=E-_9KSZd4XS2biN_I1rgrUGmXsWx7A_6nvhqtXs96mE,1109
+ez_zarr-0.1.1.dist-info/METADATA,sha256=KpFykm2swzJoCgh69yXhzouurSawzfBk9KeHbS7g-x4,4849
+ez_zarr-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ez_zarr-0.1.1.dist-info/entry_points.txt,sha256=fBjmEa-hXZpXRpKBuaif13ESHzUKqKy9jUt5G9Q9imk,50
+ez_zarr-0.1.1.dist-info/top_level.txt,sha256=brrn2czbKP_N_qbItog_16NPCWiDTkgDhGHDi_h5ayU,8
+ez_zarr-0.1.1.dist-info/RECORD,,
