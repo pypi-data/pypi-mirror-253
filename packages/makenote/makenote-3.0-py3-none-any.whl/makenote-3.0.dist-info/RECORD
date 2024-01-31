@@ -1,0 +1,13 @@
+makenote/__init__.py,sha256=5f-dL23SITdqJpbFqY-avnmNzxAVz6xJh--gbw_osMA,20
+makenote/cli.py,sha256=gtTXdoYTUD2T5ewY-k13OufgXzDMVf63er8IyGMmrRA,5936
+makenote/convert_old_db_to_new.py,sha256=ZPBLHc8zeBMvyzWkZ9xBfaz2HiQv7FKsEk0n69BAJHo,5494
+makenote/dbmanager.py,sha256=h_zPmzs3uSXZ3LHDo1m0Aj1YjeyxzuUNwG_XzdVV4X0,13010
+makenote/main.py,sha256=al9KpRFJSB4fC2m_QcvUoFYdPj_DhU0sY9lUyG-Ztro,14943
+makenote/makenote.conf,sha256=sDoYrgW4OGuJcEE2Rh9NMNoLI1OiacBaVe4Z-f9gZV0,167
+makenote-3.0.data/data/makenote.conf,sha256=sDoYrgW4OGuJcEE2Rh9NMNoLI1OiacBaVe4Z-f9gZV0,167
+makenote-3.0.data/scripts/makenote,sha256=aBKybUw5bPJZjGwDKgfxicpVQVih8QdAIcTr7LGMsfE,155
+makenote-3.0.dist-info/LICENSE,sha256=EDNKolfZwqzjwV8uF_EmpqT-ZnS1b1mue9J8MVdQ-VA,35099
+makenote-3.0.dist-info/METADATA,sha256=D2awg8SfK0nSK6qTXIp_7_k5YGykURj4_2OjgKQE-Nw,2728
+makenote-3.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+makenote-3.0.dist-info/top_level.txt,sha256=C9KLIKlcZbG1d-Rhpmu0_Q-Eb7GIWp9OX1ekrqewXVg,9
+makenote-3.0.dist-info/RECORD,,
