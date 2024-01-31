@@ -1,0 +1,165 @@
+[build-system]
+requires = [
+    "setuptools>=69.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pypaperless"
+version = "v2.4.0"
+description = "Little api wrapper for the paperless(-ngx) dms."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Tobias Schulz", email = "public.dev@tbsch.de" },
+]
+keywords = [
+    "library",
+    "async",
+    "api-client",
+    "python3",
+    "paperless-ngx",
+]
+classifiers = [
+    "Environment :: Console",
+    "Framework :: AsyncIO",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "aiohttp==3.9.2",
+    "awesomeversion==23.11.0",
+    "yarl==1.9.4",
+]
+
+[project.license]
+text = "MIT License"
+
+[project.urls]
+Homepage = "https://github.com/tb1337/paperless-api"
+"GitHub: Source" = "https://github.com/tb1337/paperless-api"
+"GitHub: Issues" = "https://github.com/tb1337/paperless-api/issues"
+"Coverage: codecov" = "https://codecov.io/gh/tb1337/paperless-api"
+
+[project.optional-dependencies]
+test = [
+    "black==24.1.1",
+    "codespell==2.2.6",
+    "mypy==1.8.0",
+    "ruff==0.1.14",
+    "pytest<8.0.0",
+    "pytest-asyncio==0.23.3",
+    "pytest-aiohttp==1.0.5",
+    "pytest-cov==4.1.0",
+    "pre-commit==3.6.0",
+    "pylint==3.0.3",
+    "fastapi==0.109.0",
+    "httpx==0.26.0",
+]
+
+[tool.codespell]
+ignore-words-list = "dependees,"
+
+[tool.black]
+target-version = [
+    "py311",
+]
+line-length = 100
+
+[tool.mypy]
+python_version = "3.11"
+check_untyped_defs = true
+disallow_any_generics = false
+disallow_incomplete_defs = true
+disallow_untyped_calls = false
+disallow_untyped_defs = true
+mypy_path = "pypaperless/"
+no_implicit_optional = true
+show_error_codes = true
+warn_incomplete_stub = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_unused_ignores = true
+
+[tool.pytest.ini_options]
+pythonpath = [
+    ".",
+    "pypaperless",
+]
+testpaths = [
+    "tests",
+]
+norecursedirs = [
+    ".git",
+    "testing_config",
+]
+log_format = "%(asctime)s.%(msecs)03d %(levelname)-8s %(threadName)s %(name)s:%(filename)s:%(lineno)s %(message)s"
+log_date_format = "%Y-%m-%d %H:%M:%S"
+asyncio_mode = "auto"
+
+[tool.setuptools]
+platforms = [
+    "any",
+]
+zip-safe = false
+packages = [
+    "pypaperless",
+]
+include-package-data = true
+
+[tool.setuptools.package-data]
+pypaperless = [
+    "py.typed",
+]
+
+[tool.ruff]
+fix = true
+show-fixes = true
+select = [
+    "E",
+    "F",
+    "W",
+    "I",
+    "N",
+    "D",
+    "UP",
+    "PL",
+    "Q",
+    "SIM",
+    "TID",
+    "ARG",
+]
+ignore = [
+    "PLR2004",
+    "N818",
+]
+extend-exclude = [
+    "app_vars.py",
+]
+unfixable = [
+    "F841",
+]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.flake8-annotations]
+allow-star-arg-any = true
+suppress-dummy-args = true
+
+[tool.ruff.flake8-builtins]
+builtins-ignorelist = [
+    "id",
+]
+
+[tool.ruff.pydocstyle]
+convention = "pep257"
+
+[tool.ruff.pylint]
+max-branches = 25
+max-returns = 15
+max-args = 10
+max-statements = 50
