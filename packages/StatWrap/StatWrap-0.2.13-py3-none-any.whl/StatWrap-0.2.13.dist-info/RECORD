@@ -1,0 +1,14 @@
+statwrap/__init__.py,sha256=upJUYcthFU2RNF58CLB4yBpEZNMe_JU3okpSL0tRvGs,135
+statwrap/core.py,sha256=rzdyu4bxJVVw09dBOCvdtsQSX37knS2n8Q8LXZAN-Rs,1766
+statwrap/data.py,sha256=3SyhrtIavx2FS7jdDydW5qqhYN33o4TXkFO0VHC154E,4331
+statwrap/fpp.py,sha256=0jGUgp9Pc4tRAf2TjWc83CTthtG3AV27q_EOM3yWhuw,12914
+statwrap/sheets.py,sha256=Lj69LBNikwneyw89BkgVib5SVcjshsT2v0_bVfFl5tc,9019
+statwrap/utils.py,sha256=aU3pThO8ojFPTshO4gA67SvW54KUANBONWun4xLBUBc,10670
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_fpp.py,sha256=hRAYnLlIfMqoSIH21iKngwmR8zcx6y23h84-2HQWgs0,455
+tests/test_sheets.py,sha256=oBS-xlks9Z7-yPm4Omf_BIAv1nLpGo62OmSg2JyrODM,878
+StatWrap-0.2.13.dist-info/LICENSE,sha256=0lU3LN3DgvwRm_dshijfUX_D0Vuw8XurQ0yBF1lwciE,1502
+StatWrap-0.2.13.dist-info/METADATA,sha256=UAJzvgZ5vIskiK4kd6RETYHNI2gCNT5IFTgAtul3LHk,2240
+StatWrap-0.2.13.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+StatWrap-0.2.13.dist-info/top_level.txt,sha256=h7vH5-pSdKRyn4YI_zfc4sp9rmeMGp6bI5CRtHTax1Q,15
+StatWrap-0.2.13.dist-info/RECORD,,
