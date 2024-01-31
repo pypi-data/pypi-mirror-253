@@ -1,0 +1,5 @@
+[console_scripts]
+build_all=scripts:build_all
+build_forest=scripts:build_forest
+build_sunvalley=scripts:build_sunvalley
+
