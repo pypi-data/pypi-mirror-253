@@ -1,0 +1,1 @@
+include src/FM15_transform/resources/*.json src/FM15_transform/resources/*.csv

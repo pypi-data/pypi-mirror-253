@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: FM15_transform
+Version: 0.0.9
+Summary: Package for converting FM15 METAR TAC messages or an individual METAR message to BUFR4
+Author-email: Alexander Thompson <alexander.thompson@noaa.gov>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Keywords: WMO,METAR,FM-15,BUFR,decoding,weather,observations
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: csv2bufr
+Requires-Dist: eccodes
+Requires-Dist: cfunits
+
+# FM15_transform
+
+FM15_transform provides functionality to transform raw FM15 (METAR) TAC messages
+into their corresponding bufr4 translations as well as extraction of geojson records
+of the individual observations formatted for use by a WIS2 node.
+
+## Installation
+
+### Requirements
+- Python 3.7 and above
+- [ecCodes](https://confluence.ecmwf.int/display/ECC)
+- [UDUNITS-2](https://www.unidata.ucar.edu/software/udunits/)
+
+### Dependencies
+
+Dependencies are listed in requirements.txt. Dependencies are automatically installed during FM15_transform installation.
+
+### pip
+
+Install latest stable version from [PyPI](https://pypi.org/project/FM15_transform).
+
+```bash
+pip3 install FM15_transform
+```
+
+### UDUNITS-2 Installation and Configuration
+
+UDUNITS-2 is a C library that provides support for units of physical quantities
+
+If the UDUNITS-2 shared library file (```libudunits2.so.0``` on GNU/Linux or ```libudunits2.0.dylibfile``` on MacOS) is in a non-standard location then its directory path should be added to the ```LD_LIBRARY_PATH``` environment variable. It may also be necessary to specify the location (directory path and file name) of the ```udunits2.xml``` file in the ```UDUNITS2_XML_PATH``` environment variable, although the default location is usually correct. For example, ```export UDUNITS2_XML_PATH=/home/user/anaconda3/share/udunits/udunits2.xml```.
+
+If you get an error that looks like ```assert(0 == _ut_unmap_symbol_to_unit(_ut_system, _c_char_p(b'Sv'), _UT_ASCII))``` then setting the ```UDUNITS2_XML_PATH``` environment variable is the likely solution.
+
+UDUNITS is available via conda with:
+
+```bash
+$ conda install -c conda-forge udunits2>=2.2.25
+```
+
+Alternatively, you can download and install UDUNITS directly from its source distribution following the documentation outlined
+on the [unidata website](https://docs.unidata.ucar.edu/udunits/current/#Source)
+
+### Environment variable configuration
+
+You will need to add an environment variable to your system called ```ECCODES_DEFINITION_PATH``` that points to the definitions
+folder inside ecCodes. Once ecCodes is installed on your system, you can find this directory using the command:
+
+```bash
+find . -samefile */share/eccodes/definitions
+```
+
+If you encounter a warning from ecmwflibs about ignoring your specified environment variable, instead use the variable name ```ECMWFLIBS_ECCODES_DEFINITION_PATH```
+
+## Transform FM15 files from the command line
+
+```bash
+#   basic cli command to transform TAC file of metar(s) and print resulting geojson records
+#   both month and year as int values
+transform-file example_metars.txt month year
+```
+
+## Releasing
+
+```bash
+#   uploading to PyPI
+#   make sure to update version number in pyproject.toml using vim or another IDE
+rm -fr build dist *.egg-info
+python3 -m build
+twine upload dist/*
+```
+
+## Contact
+
+* [Alex Thompson](https://github.com/aothompson)
