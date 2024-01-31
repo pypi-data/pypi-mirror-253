@@ -1,0 +1,4 @@
+marshmallow<4,>=3.5
+requests<3,>=2
+marshmallow-dataclass<8.6.0,>=8.5.8
+typing-extensions
