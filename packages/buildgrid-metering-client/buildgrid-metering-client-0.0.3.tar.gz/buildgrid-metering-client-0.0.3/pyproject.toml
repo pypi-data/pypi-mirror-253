@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "buildgrid-metering-client"
+version = "0.0.3"
+requires-python = ">=3.8"
+description = "Client library of buildgrid-metering service"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["buildgrid"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "pydantic >= 1.10",
+    "aiohttp >= 3.8",
+    "async_lru >= 2.0",
+    "tenacity >= 8.2",
+    "cachetools >= 5.3",
+    "requests >= 2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    # Testing
+    "pytest",
+    "pytest-cov",
+    "pytest-asyncio",
+    "httpx",
+    # Typing
+    "mypy",
+    "types-cachetools",
+    "types-requests >= 2.31.0",
+    # Formating / linting
+    "isort",
+    "black",
+    "flake8",
+]
+
+[project.urls]
+homepage = "https://gitlab.com/BuildGrid/buildgrid-metering-client"
+repository = "https://gitlab.com/BuildGrid/buildgrid-metering-client.git"
+
+[tool.setuptools.packages.find]
+include = ["buildgrid_metering*"]
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.mypy]
+strict = true
+plugins = ["pydantic.mypy"]
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+warn_untyped_fields = true
+
+[tool.black]
+line-length = 119
+skip-numeric-underscore-normalization = true
+
+[tool.isort]
+line_length = 119
+multi_line_output = 3
+include_trailing_comma = true
+use_parentheses = true
+ensure_newline_before_comments = true
