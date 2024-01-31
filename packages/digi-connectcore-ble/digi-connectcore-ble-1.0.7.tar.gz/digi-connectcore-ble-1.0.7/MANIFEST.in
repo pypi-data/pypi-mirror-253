@@ -1,0 +1,8 @@
+# Example files
+recursive-include examples *
+
+# Misc
+include release_notes.txt
+include LICENSE.txt
+include README.rst
+include requirements.txt
