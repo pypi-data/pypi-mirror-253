@@ -1,0 +1,10 @@
+ibm_scc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ibm_scc/common.py,sha256=MsuOrki-MtYu-1yzAWYYSSjYR4qpWeWqutocVQx-KHE,2360
+ibm_scc/security_and_compliance_center_api_v3.py,sha256=1FVECYEp7iwt-0kVUEHWM_7YpE2OnwOp_sC9Ek0oiqg,545905
+ibm_scc/version.py,sha256=36vvgIFPuntc6c46bUohX5IjVHegK-xgPQ-36XjVbVg,649
+ibm_scc-4.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ibm_scc-4.0.1.dist-info/METADATA,sha256=4qC7LUBWjLfpwC7mlh1esPW-k0VEaqQNrunQk9_kgQM,5007
+ibm_scc-4.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ibm_scc-4.0.1.dist-info/top_level.txt,sha256=08o8IE_0FmfkRRymdz2nWsg4rLAhtVHFFYWtYJBvp88,8
+ibm_scc-4.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ibm_scc-4.0.1.dist-info/RECORD,,
