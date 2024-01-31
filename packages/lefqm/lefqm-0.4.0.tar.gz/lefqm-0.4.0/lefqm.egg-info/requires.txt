@@ -1,0 +1,4 @@
+lefshift>=0.5.0
+numpy>=1.23.5
+pandas>=1.5.2
+rdkit>=2022.09.3
