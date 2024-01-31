@@ -1,0 +1,15 @@
+falcon_evaluate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+falcon_evaluate/context_relevancy.py,sha256=Vx5BEtp4U2bkPV5dcvD-DTvUyGaSsu6mYmZ7v7LJBLQ,1079
+falcon_evaluate/evaluate.py,sha256=3ELFmyAwq0ph85I_yZ5xGnmq6kjWIEJ9oBUFJQ_fbg8,11832
+falcon_evaluate/fairness.py,sha256=Xqny_347SO99oAirZ2x5Me207zpP0z6bgni-KULWWHk,1488
+falcon_evaluate/fevaluate_plot.py,sha256=4s2BKWPOEKg8OK9-NCR9xC1iRY_NG1hKqBhmN2SEipc,5976
+falcon_evaluate/fevaluate_reliability.py,sha256=5ntKpteuun-QRDJe4ZJFN-0lA9jvLyJS3xyTuv0rJZw,4750
+falcon_evaluate/fevaluate_results.py,sha256=e2KHKI85vTysemJZYDl2igBQPNwBziqpozkEKFg23kk,5776
+falcon_evaluate/machine_ethics.py,sha256=_QqK6YFRd7tQ6KdNpBz9cV4Zb5bbLE5viYOBRFJCqeQ,3098
+falcon_evaluate/security.py,sha256=EGo95WZvSWSotCl60iQtoPqjpB5pNfmMbC7VsBdqJkk,3360
+falcon_evaluate/user_analytics.py,sha256=yhhihknnyxZyMimBkEjM3wJWatT5wmH9vSO1WfD-qTY,4479
+falcon_evaluate/utils.py,sha256=8e3FaDHxkX3akyZ6dQtbtMWJj8TJrPkkKjTQAUWdBLg,3092
+falcon_evaluate-0.1.13.0.dist-info/LICENSE,sha256=3tnRrXshSL0nyMOUEL5zhAXu3O1JawHte6PJeTzD8Fc,1087
+falcon_evaluate-0.1.13.0.dist-info/METADATA,sha256=Gyad_oeZYc2expb5qaEWJ61msDQZvldIkpPpeHcAOGw,25379
+falcon_evaluate-0.1.13.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+falcon_evaluate-0.1.13.0.dist-info/RECORD,,
