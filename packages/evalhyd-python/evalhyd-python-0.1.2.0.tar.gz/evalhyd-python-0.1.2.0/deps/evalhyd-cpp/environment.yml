@@ -1,0 +1,14 @@
+channels:
+  - conda-forge
+dependencies:
+  # Build dependencies
+  - cxx-compiler
+  - c-compiler
+  - cmake
+  - make
+  # Host dependencies
+  - xtl
+  - xtensor
+  # Test dependencies
+  - gtest
+  - gmock

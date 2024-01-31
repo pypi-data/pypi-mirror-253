@@ -1,0 +1,10 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+# find public dependencies
+find_dependency(xtensor @xtensor_VERSION@)
+
+if(NOT TARGET EvalHyd::evalhyd)
+    include("${CMAKE_CURRENT_LIST_DIR}/EvalHydTargets.cmake")
+endif()

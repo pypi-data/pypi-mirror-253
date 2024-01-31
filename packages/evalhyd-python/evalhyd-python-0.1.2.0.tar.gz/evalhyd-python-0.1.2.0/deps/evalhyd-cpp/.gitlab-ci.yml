@@ -1,0 +1,16 @@
+image: mambaorg/micromamba
+
+stages:
+  - build_and_test
+
+build-and-test:
+  stage: build_and_test
+  script:
+    # install dependencies
+    - micromamba install --yes --file environment.yml
+    # configure evalhyd
+    - cmake -B build -D CMAKE_BUILD_TYPE=Release -D CMAKE_PREFIX_PATH="$CONDA_PREFIX"
+    # compile evalhyd
+    - cmake --build build --parallel
+    # run tests
+    - ./build/tests/evalhyd_tests

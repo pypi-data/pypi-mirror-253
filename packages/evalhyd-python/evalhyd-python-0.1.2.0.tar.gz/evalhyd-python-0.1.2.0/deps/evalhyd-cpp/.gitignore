@@ -1,0 +1,5 @@
+# CMake directories
+build/
+
+# macOS specific
+.DS_Store
