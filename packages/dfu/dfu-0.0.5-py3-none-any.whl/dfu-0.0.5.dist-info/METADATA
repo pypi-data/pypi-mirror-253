@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dfu
+Version: 0.0.5
+Summary: Create installers from btrfs snapshots
+Project-URL: Documentation, https://github.com/intentionally-left-nil/dfu#readme
+Project-URL: Issues, https://github.com/intentionally-left-nil/dfu/issues
+Project-URL: Source, https://github.com/intentionally-left-nil/dfu
+Author-email: Anil Kulkarni <anil@terminal.space>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.12
+Requires-Dist: click>=8.1.7
+Requires-Dist: msgspec>=0.18.5
+Requires-Dist: platformdirs>=4.1.0
+Requires-Dist: tomlkit>=0.12.3
+Requires-Dist: unidiff>=0.7.5
+Description-Content-Type: text/markdown
+
+# dfu
+Create installers based off btrfs snapshots
