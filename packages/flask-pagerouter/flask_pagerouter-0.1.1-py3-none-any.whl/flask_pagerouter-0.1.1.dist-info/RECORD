@@ -1,0 +1,8 @@
+flask_pagerouter/PageRouter.py,sha256=XolCnddQR9F9dz36wSs5VVLAMLfj415NJN6rePtZAw8,4362
+flask_pagerouter/__init__.py,sha256=uQbdNk5hWXNAeVnYzMTxht-8sonpV98KWO_R3t3_qBM,95
+flask_pagerouter/pyx_html.py,sha256=V4ursD3-iNi9TruF28s3G4u2FtYfPtfZNHL5I6gsSnc,40314
+flask_pagerouter/pyx_template.py,sha256=h1017FIWHGKE69ij095NMN8LzOq-OfAqXbzezy2c3Yc,1174
+flask_pagerouter-0.1.1.dist-info/METADATA,sha256=T-JRqRv7BX8oaOCztBQmxmUe3JAsM2e7bPkk328aE4s,8995
+flask_pagerouter-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+flask_pagerouter-0.1.1.dist-info/top_level.txt,sha256=1m6hlOIGK2C2vYe5P0Af3h1EVRnItXV_vKF5Wg57Zec,17
+flask_pagerouter-0.1.1.dist-info/RECORD,,
