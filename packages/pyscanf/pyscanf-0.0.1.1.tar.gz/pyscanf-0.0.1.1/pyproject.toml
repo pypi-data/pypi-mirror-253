@@ -1,0 +1,29 @@
+[project]
+name = "pyscanf"
+version = "0.0.1.1"
+authors = [
+  { name="kemplerart", email="kirilstrezikozin@gmail.com" },
+]
+description = "Read formatted input from the standard input in C style"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/KirilStrezikozin/pyscanf"
+Issues = "https://github.com/KirilStrezikozin/pyscanf/issues"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "-v",
+    "--import-mode=importlib",
+]
