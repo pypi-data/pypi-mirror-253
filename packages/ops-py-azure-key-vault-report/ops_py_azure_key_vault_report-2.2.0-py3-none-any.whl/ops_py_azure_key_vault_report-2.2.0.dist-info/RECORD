@@ -1,0 +1,8 @@
+azure_key_vault_report/__init__.py,sha256=BoeTMyLYbjIpiqXlYdsRK7wyvhVlv0VHbWky5OFMTEg,142
+azure_key_vault_report/az_cmd.py,sha256=REMzvGaabRAikXvg5mwQax4w15mwIIGgGWt0ywkJ16g,2847
+azure_key_vault_report/azure_key_vault_report.py,sha256=ar1Z7YthjEsVor270XJMwpfiJ2I6NiDLEFUwNB2Cud8,22298
+azure_key_vault_report/ms_teams_json.py,sha256=-N9CiZKsZbSGzRytktP5iDnrjP03NifAfCJxJz93-WE,1400
+ops_py_azure_key_vault_report-2.2.0.dist-info/METADATA,sha256=n05kR9WFAGBovwqynriy5Cy4YiOWnFQGQX5MR4VIfWQ,157
+ops_py_azure_key_vault_report-2.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ops_py_azure_key_vault_report-2.2.0.dist-info/top_level.txt,sha256=xgmOtDZu3riIE_f5A0HqKBNgmBcMuME2tjFbM2xo9MQ,23
+ops_py_azure_key_vault_report-2.2.0.dist-info/RECORD,,
