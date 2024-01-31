@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+BibFilmes/Rankear.py
+BibFilmes/Recomendar.py
+BibFilmes/Tabelar.py
+BibFilmes/__init__.py
+BibFilmes.egg-info/PKG-INFO
+BibFilmes.egg-info/SOURCES.txt
+BibFilmes.egg-info/dependency_links.txt
+BibFilmes.egg-info/requires.txt
+BibFilmes.egg-info/top_level.txt
