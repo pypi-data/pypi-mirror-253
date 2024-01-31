@@ -1,0 +1,7 @@
+torch
+numpy
+triton
+
+[sfno]
+tensorly
+tensorly-torch
