@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "hungmen"
+version = "0.1.2"
+description = ""
+authors = ["Sam <sbrobson@crimson.ua.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+hangman = "hungmen.console:main"
+hungmen = "hungmen.console:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
