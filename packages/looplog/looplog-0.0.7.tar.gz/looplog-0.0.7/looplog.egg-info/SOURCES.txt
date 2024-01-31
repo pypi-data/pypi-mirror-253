@@ -1,0 +1,15 @@
+.gitignore
+.pre-commit-config.yaml
+README.md
+pyproject.toml
+tests.py
+.github/workflows/pypi.yaml
+.github/workflows/tests.yaml
+looplog/__init__.py
+looplog/_version.py
+looplog/demo.py
+looplog.egg-info/PKG-INFO
+looplog.egg-info/SOURCES.txt
+looplog.egg-info/dependency_links.txt
+looplog.egg-info/requires.txt
+looplog.egg-info/top_level.txt
