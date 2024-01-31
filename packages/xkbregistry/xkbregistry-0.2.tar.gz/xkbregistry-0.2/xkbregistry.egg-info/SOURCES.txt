@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+tests/__init__.py
+tests/test_rxkb.py
+xkbregistry/__init__.py
+xkbregistry/ffi_build.py
+xkbregistry/rxkb.py
+xkbregistry.egg-info/PKG-INFO
+xkbregistry.egg-info/SOURCES.txt
+xkbregistry.egg-info/dependency_links.txt
+xkbregistry.egg-info/requires.txt
+xkbregistry.egg-info/top_level.txt
