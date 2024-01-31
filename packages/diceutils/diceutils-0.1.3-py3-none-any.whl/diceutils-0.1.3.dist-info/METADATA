@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: diceutils
+Version: 0.1.3
+Summary: 骰娘相关插件
+Author-Email: 苏向夜 <fu050409@163.com>
+License: Apache-2.0
+Requires-Python: >=3.10
+Requires-Dist: infini>=2.0.1
+Requires-Dist: pyyaml>=6.0.1
+Description-Content-Type: text/markdown
+
+# diceutils
