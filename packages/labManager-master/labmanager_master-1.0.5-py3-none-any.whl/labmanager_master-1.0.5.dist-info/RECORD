@@ -1,0 +1,11 @@
+labManager/master.py,sha256=4m9Gx3Gat5ohrPVTjU0xbZ2LD-2XyziJtL0AlAD3b0g,50838
+labManager/GUI/master/__init__.py,sha256=YjcIyfVXl6ygTbs1JJKTAhbvapgljtBmSwyimgOvRtM,117920
+labManager/GUI/master/_impl/computer_list.py,sha256=Cwz5-gbRqQS4kjjmzT_pJDcgRMmuWZLSPR32WF-hvQY,16135
+labManager/GUI/master/_impl/file_commander.py,sha256=5TBHHrzExS5AiZJK-qXhpH1ogTP9vN4RNgf4ddRuXY8,14019
+labManager/GUI/master/_impl/filepicker.py,sha256=Sk4dbgrS1-p8LtKt1QuORJtdl3PujtcD5koCiRx53no,68297
+labManager/GUI/master/_impl/msgbox.py,sha256=8ce0nPJuGeNF4zRni3d3hg59tqqJ0zqKe1ks330ScJA,2485
+labManager/GUI/master/_impl/utils.py,sha256=zksD2KDkPVcf1b93Smr_PcT2tWKO0yjFTwF4LKiVtX0,9838
+labmanager_master-1.0.5.dist-info/METADATA,sha256=FArG9Q09Nvllzo3pQEq6cFEtCod34yEz45xwQbJ7AHM,10467
+labmanager_master-1.0.5.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+labmanager_master-1.0.5.dist-info/licenses/LICENSE,sha256=GZTc2OM_YmSuo_GYj4wHFGVYCjvvnH3YofGk_3ZJHig,1082
+labmanager_master-1.0.5.dist-info/RECORD,,
