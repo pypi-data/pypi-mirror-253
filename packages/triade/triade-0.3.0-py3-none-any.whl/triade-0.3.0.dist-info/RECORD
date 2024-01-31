@@ -1,0 +1,11 @@
+triade/__init__.py,sha256=rhZuWqepbVVWO6P-4VJ02pum_fRwUEAGT4zJePRDuV8,133
+triade/cli.py,sha256=HpaFeL6QQ9GXP9EtRt_lmNs6sXXMScMXxHtZc_uThe4,5722
+triade/errors.py,sha256=ihWzUgD4mJt1larYK5KweL9ZXvjpHKWYZamnzXGgCb0,446
+triade/lib.py,sha256=MQXI_Uzxenam650mHKTfsy990wjqDXH6h2VoElG1FiE,1345
+triade/thesaurus.py,sha256=734JR8BOLQNRmJn3_mq6YhqOxl9Tf8vTxHEaRLTNQYA,1937
+triade/xml_lib.py,sha256=dijm_jFGd0yaGBQDLK-6B68Jus_xH5Tllvfusf9T56k,16151
+triade-0.3.0.dist-info/METADATA,sha256=tzw0F3sqdN669Q7mWTovgQzcsK89eNJ_sbEuOB3GH1M,646
+triade-0.3.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+triade-0.3.0.dist-info/entry_points.txt,sha256=-uDLTxJHqpCCeNsOJstgwrP0kj7WeMu1L_QEQF89Zyc,43
+triade-0.3.0.dist-info/licenses/LICENSE,sha256=5a2T8s-aOqQzKcuRDXE2j5s5Guh1F9jlh24xch18SNw,1074
+triade-0.3.0.dist-info/RECORD,,
