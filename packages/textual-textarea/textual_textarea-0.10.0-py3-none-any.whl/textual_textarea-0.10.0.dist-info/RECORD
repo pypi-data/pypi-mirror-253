@@ -1,0 +1,17 @@
+textual_textarea/__init__.py,sha256=0R8JbcVodBWihI2fRDcwz7FSOMxu32P2r5Irym0IqQA,388
+textual_textarea/__main__.py,sha256=ovrCb4XcKYKeRd2AMt-buGxzxo4AJobhp72QhOB_T3M,1041
+textual_textarea/autocomplete.py,sha256=UH3AEQ2z9jbX21QzmUtvcA39j8u1GFtoyHrZTIxLtVk,7502
+textual_textarea/colors.py,sha256=Kdi-jM6vYkwezufciutzQQDTKX3s4E_C1ivWzCzYI1U,7599
+textual_textarea/comments.py,sha256=ZMSa_InZfy3CpztOpy4ySjDC_jLKRnpBj5Yfmz9vCd4,3510
+textual_textarea/containers.py,sha256=7q2QowZE_ZsZPiWAH4DYxe_9pKCi_z70xIPjfWHXU9E,1190
+textual_textarea/error_modal.py,sha256=RWl_tcH4s25GjPQexM5j8mqLbMOx4O5XTCSgdWkXYkE,2019
+textual_textarea/key_handlers.py,sha256=8jMtHeydNnJvwMLEm0a0vwfRHgUMK6UE4GbESwkfS4A,292
+textual_textarea/messages.py,sha256=NgGzPbaufScFhjWt1PF2LpP3kKYYJWTiKlKlmAl6RYQ,887
+textual_textarea/path_input.py,sha256=tdpzrF2KJhskSmQur9yPh-NKLA_T3BRMa8IQh_dKjZc,4128
+textual_textarea/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+textual_textarea/serde.py,sha256=p4QMz9qaV95RCyFn-OsHe_xhM55BPLD9rdb68b4oM_w,450
+textual_textarea/textarea.py,sha256=MoVyVevNW3v7shp7nfADW7uSlctG2Otl-6SAI2OFyZc,43374
+textual_textarea-0.10.0.dist-info/LICENSE,sha256=Wdf1mXEX48JTe3Unchs3u8M7sUOB6v0fGsMI5WP7bB4,1068
+textual_textarea-0.10.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+textual_textarea-0.10.0.dist-info/METADATA,sha256=VmPksFT0Ajy-EIgf_3goJiJhhyJ44e9G_GTcWU20Y2g,6605
+textual_textarea-0.10.0.dist-info/RECORD,,
