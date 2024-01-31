@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "labManager-master"
+version = "1.0.2"
+description = "System for managing multi-station multi-tenant lab setups - master."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "Diederick Niehorster", email = "diederick_c.niehorster@humlab.lu.se" },
+]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering",
+    "Topic :: System :: Software Distribution",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "labManager-common==1.0.2",
+    "Authlib",
+    "httpx",
+]
+
+[project.optional-dependencies]
+GUI  = ["imgui_bundle==1.3.0",
+        "natsort"]
+
+[project.urls]
+"Source Code" = "https://github.com/dcnieho/labManager/tree/master/labManager-master"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/labManager"]
