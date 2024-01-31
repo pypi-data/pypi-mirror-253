@@ -1,0 +1,2 @@
+[console_scripts]
+launch_gui = qmenta.sdk.tool_maker.launch_gui:main
