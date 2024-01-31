@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+opro/src/opro.py
+opro/src/farsight_opro.egg-info/PKG-INFO
+opro/src/farsight_opro.egg-info/SOURCES.txt
+opro/src/farsight_opro.egg-info/dependency_links.txt
+opro/src/farsight_opro.egg-info/requires.txt
+opro/src/farsight_opro.egg-info/top_level.txt
