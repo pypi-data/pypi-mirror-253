@@ -1,0 +1,6 @@
+include *.txt
+include *.md
+include *.rst
+recursive-include RikPy *.py
+
+exclude RikPy/test.py
