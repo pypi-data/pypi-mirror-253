@@ -1,0 +1,4 @@
+Name: nlohmann_json
+Description: JSON for Modern C++
+Version: 3.11.2
+Cflags: -I/Users/jenkins/agent-working-dir/.mslib/nlohmann_json_3.11.2_fa2a2862cb8a33aa4ec67348be093f6a/include
